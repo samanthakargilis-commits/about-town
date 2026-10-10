@@ -1,0 +1,8 @@
+__pycache__/
+.cache/
+app/events.json
+app/ics/
+app/profile.json
+app/follow.json
+# raw Goodreads export stays on your computer (it has your reviews); data/follow.json is built from it
+data/goodreads_library_export.csv
