@@ -38,13 +38,11 @@ def fetch(f, start, end):
     if "\\u0022" in text or "\\u003C" in text:
         text = text.encode().decode("unicode_escape", errors="ignore")
     objs = objects_with(text, '"PId":')
-    if objs:
-        print("  cityspark sample:", {k: objs[0].get(k) for k in ("Date", "DateStart", "StartLocal", "StartUTC", "HasTime", "AllDay")})
     out, seen = [], set()
     for o in objs:
         pid = o.get("PId")
         title = clean(o.get("Name"))
-        st = to_local(pick(o, "StartLocal", "DateStart", "StartDate"))
+        st = to_local(pick(o, "StartUTC", "StartLocal", "DateStart"))
         if not pid or not title or not st or pid in seen:
             continue
         seen.add(pid)
@@ -52,7 +50,7 @@ def fetch(f, start, end):
         link = o.get("PrimaryUrl") or next((l.get("url") or l.get("Url") for l in links if isinstance(l, dict) and (l.get("url") or l.get("Url"))), None)
         out.append(Event(
             source=NAME, source_id=str(pid), source_url=f"{PAGE}#/details/{pid}", ticket_url=link,
-            title=title, start=iso(st), end=iso(to_local(pick(o, "EndLocal", "DateEnd", "EndDate"))),
+            title=title, start=iso(st), end=iso(to_local(pick(o, "EndUTC", "EndLocal", "DateEnd"))),
             all_day=bool(o.get("AllDay")) or o.get("HasTime") is False,
             description=html_to_text(o.get("Summary") or o.get("Description") or o.get("Short") or "")[:1000],
             venue=clean(pick(o, "Venue", "VenueName", "Location") or ""),

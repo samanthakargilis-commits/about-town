@@ -39,7 +39,15 @@ def parse_day(html_soup, day: dt.date):
         venue = ""
         # read the venue from the element holding "Cost:", not the whole block (the blurb follows it)
         node = block.find(string=re.compile(r"Cost:", re.I))
-        meta = clean(node.parent.get_text(" ")) if node is not None and node.parent is not None else text
+        meta, el = text, node.parent if node is not None else None
+        for _ in range(3):
+            if el is None or el is block:
+                break
+            t = clean(el.get_text(" "))
+            if re.search(r"cost:[^|]*\|\s*\S", t, re.I):
+                meta = t
+                break
+            el = el.parent
         m = re.search(r"cost:[^|]*\|\s*([^|]{3,90})", meta, re.I)
         if m:
             venue = clean(m.group(1))
