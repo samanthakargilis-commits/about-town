@@ -1,3 +1,2 @@
-https://www.keplers.org/
 raw:https://portal.cityspark.com/PortalScripts/DestinationPA
-https://www.eventbrite.com/d/ca--san-francisco/meditation/
+raw:https://www.keplers.org/upcoming-events-internal?format=json

@@ -17,7 +17,9 @@ for url in sys.argv[1:]:
             text = f.get(url[4:])
             for m in re.finditer(r"https?://[^\s'\"<>]+|/api/[^\s'\"<>]+|/v\d/[^\s'\"<>]+", text):
                 print("  url:", m.group(0)[:200])
-            print(text[:8000])
+            dec = text.encode().decode("unicode_escape", errors="ignore") if "\\u003C" in text else text
+            i = max(0, dec.find("ticketmaster") - 3000)
+            print(dec[i:i + 6000])
         except Exception as exc:
             print("  FETCH FAILED:", exc)
         continue
