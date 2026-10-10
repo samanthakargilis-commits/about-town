@@ -47,7 +47,7 @@ jobs:
 
       - name: Inspect pages
         if: ${{ github.event.inputs.inspect || hashFiles('tools/inspect-urls.txt') != '' }}
-        run: python tools/inspect_page.py ${{ github.event.inputs.inspect }} $(cat tools/inspect-urls.txt 2>/dev/null)
+        run: python tools/inspect_page.py ${{ github.event.inputs.inspect }} $(cat tools/inspect-urls.txt 2>/dev/null) | tee app/inspect.txt
 
       - name: Gather events
         env:
@@ -56,7 +56,7 @@ jobs:
           OWNER="${GITHUB_REPOSITORY%%/*}"; NAME="${GITHUB_REPOSITORY#*/}"
           ARGS="--previous https://${OWNER,,}.github.io/${NAME}/events.json"
           if [ -n "${{ github.event.inputs.only }}" ]; then ARGS="$ARGS --only ${{ github.event.inputs.only }}"; fi
-          python -m ingest $ARGS
+          python -m ingest $ARGS 2>&1 | tee app/run-log.txt
           python tools/summary.py app/events.json >> "$GITHUB_STEP_SUMMARY"
 
       - uses: actions/upload-artifact@v4
