@@ -1,0 +1,271 @@
+"""Daily job: run every adapter, merge, filter to the corridor, score, write app/events.json.
+
+    python -m ingest                      # all sources
+    python -m ingest --only funcheap,luma # some sources
+    python -m ingest --previous https://<user>.github.io/<repo>/events.json   # carry first_seen forward
+"""
+from __future__ import annotations
+
+import argparse
+import datetime as dt
+import importlib
+import json
+import re
+import shutil
+import sys
+import time
+import traceback
+from urllib.parse import urlparse
+
+import requests
+
+from . import ai
+from .area import in_area
+from .core import (CACHE_DIR, ROOT, BudgetExceeded, Fetcher, clean, html_to_text, iso, jsonld_events,
+                   now, og, short_hash, to_local)
+from .ics import write_ics
+from .score import Scorer, best_sub_event, norm
+
+# Working sources first (see the shortlist test); the rest are best effort.
+ADAPTERS = ["funcheap", "secretsf", "luma", "citylights", "greenapple", "keplers", "broadwaysf",
+            "dothebay", "eventbrite", "meetup", "dice", "partiful", "paloalto", "substack"]
+LISTING_PRIORITY = {"broadwaysf": 0, "citylights": 0, "greenapple": 0, "keplers": 0, "luma": 1, "partiful": 1,
+                    "eventbrite": 1, "meetup": 1, "dice": 1, "dothebay": 2, "funcheap": 2, "paloalto": 2,
+                    "secretsf": 5, "sfgirlchronicle": 5, "eddieslist": 5}
+STOP = {"the", "a", "an", "at", "in", "with", "and", "presents", "present", "sf", "san", "francisco", "free", "of", "w"}
+OUT = ROOT / "app"
+
+
+def window():
+    start = now().replace(hour=0, minute=0, second=0, microsecond=0)
+    # through the end of next month, so the 1st-of-month plan always covers a full month
+    first_next = (start.replace(day=1) + dt.timedelta(days=32)).replace(day=1)
+    end = (first_next + dt.timedelta(days=32)).replace(day=1) - dt.timedelta(minutes=1)
+    return start, end
+
+
+def title_tokens(title):
+    return {t for t in norm(title).split() if t not in STOP and len(t) > 1}
+
+
+def dedupe_key(ev):
+    toks = sorted(title_tokens(ev["title"]))[:6]
+    return f"{'-'.join(toks)}|{ev['start'][:10]}"
+
+
+def merge(events):
+    """Merge the same event listed on two sites (same day, similar title)."""
+    by_day = {}
+    for ev in events:
+        by_day.setdefault(ev["start"][:10], []).append(ev)
+    merged = []
+    for day, items in by_day.items():
+        items.sort(key=lambda e: LISTING_PRIORITY.get(e["source"], 3))
+        kept = []
+        for ev in items:
+            toks = title_tokens(ev["title"])
+            twin = None
+            for k in kept:
+                kt = title_tokens(k["title"])
+                if toks and kt and len(toks & kt) / len(toks | kt) >= 0.6:
+                    twin = k
+                    break
+            if twin is None:
+                ev["also_on"] = []
+                kept.append(ev)
+                continue
+            twin["also_on"].append({"source": ev["source"], "url": ev["source_url"]})
+            for f in ("description", "image_url", "venue", "address", "price", "ticket_url", "end"):
+                if not twin.get(f) and ev.get(f):
+                    twin[f] = ev[f]
+            if len(ev.get("description") or "") > len(twin.get("description") or ""):
+                twin["description"] = ev["description"]
+            if twin.get("all_day") and not ev.get("all_day"):
+                twin["start"], twin["all_day"] = ev["start"], False
+            twin["people"] = sorted(set(twin.get("people", [])) | set(ev.get("people", [])))
+            twin["tags"] = sorted(set(twin.get("tags", [])) | set(ev.get("tags", [])))
+        merged += kept
+    return merged
+
+
+def collapse_recurring(events, per_week=1):
+    """A weekly karaoke night shouldn't fill every slot: keep one per week."""
+    seen = {}
+    out = []
+    for ev in sorted(events, key=lambda e: e["start"]):
+        if not ev.get("recurring"):
+            out.append(ev)
+            continue
+        week = to_local(ev["start"]).isocalendar()[:2]
+        key = (" ".join(sorted(title_tokens(ev["title"]))), week)
+        if seen.get(key, 0) < per_week:
+            seen[key] = seen.get(key, 0) + 1
+            out.append(ev)
+    return out
+
+
+def enrich(events, fetcher, limit):
+    """Fill descriptions/images from each event's own page (cached for 3 days),
+    and read fair/festival pages for a lineup to headline the best piece."""
+    done = 0
+    for ev in events:
+        if done >= limit:
+            break
+        need = len(ev.get("description") or "") < 80 or not ev.get("image_url") or ev.get("_festival")
+        host = urlparse(ev["source_url"]).netloc
+        if not need or host.endswith("secretsanfrancisco.com") or "substack" in host:
+            continue
+        try:
+            soup = fetcher.soup(ev["source_url"], cache_hours=72)
+        except BudgetExceeded:
+            break
+        except Exception:
+            continue
+        done += 1
+        desc = og(soup, "description") or ""
+        for node in jsonld_events(soup):
+            if node.get("description"):
+                desc = html_to_text(node["description"]) if len(html_to_text(node["description"])) > len(desc) else desc
+        main = soup.find("article") or soup.find("main") or soup.find(class_=re.compile("entry-content|post-content|event-description"))
+        body = clean(main.get_text(" "))[:1500] if main else ""
+        ev["description"] = clean(desc if len(desc) > 120 else (desc + " " + body))[:1200]
+        ev["image_url"] = ev.get("image_url") or og(soup, "image")
+        if ev.get("_festival") and main:
+            lines = [clean(li.get_text(" ")) for li in main.find_all(["li", "h3", "h4", "strong"])]
+            ev["_lineup"] = [l for l in lines if l]
+
+
+def previous_first_seen(src):
+    if not src:
+        return {}
+    try:
+        if src.startswith("http"):
+            data = requests.get(src, timeout=30).json()
+        else:
+            data = json.loads(open(src).read())
+    except Exception as exc:
+        print(f"(no previous events.json: {exc})", file=sys.stderr)
+        return {}
+    seen = {}
+    for e in data.get("events", []):
+        seen[e["id"]] = e["first_seen"]
+        seen[e["dedupe_key"]] = e["first_seen"]
+    return seen
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--only", help="comma-separated adapters")
+    ap.add_argument("--previous", help="previous events.json (URL or path) for first_seen")
+    ap.add_argument("--enrich", type=int, default=90, help="max detail pages to read per run")
+    ap.add_argument("--out", default=str(OUT / "events.json"))
+    args = ap.parse_args(argv)
+
+    profile = json.loads((ROOT / "data" / "profile.json").read_text())
+    follow = json.loads((ROOT / "data" / "follow.json").read_text())
+    scorer = Scorer(profile, follow)
+    start, end = window()
+    names = args.only.split(",") if args.only else ADAPTERS
+
+    raw, health = [], []
+    for name in names:
+        mod = importlib.import_module(f".adapters.{name}", __package__)
+        fetcher = Fetcher()
+        t0 = time.time()
+        status = {"name": mod.NAME, "label": mod.LABEL, "count": 0, "ok": True, "error": None}
+        try:
+            events = mod.fetch(fetcher, start, end)
+            status["count"] = len(events)
+            raw += [e.to_dict() for e in events]
+            if not events:
+                status["ok"] = False
+                status["error"] = "returned zero events"
+        except Exception as exc:  # one broken source never breaks the others
+            status["ok"] = False
+            status["error"] = f"{type(exc).__name__}: {exc}"[:300]
+            traceback.print_exc()
+        status["requests"] = fetcher.count
+        status["seconds"] = round(time.time() - t0, 1)
+        health.append(status)
+        print(f"{mod.LABEL:24} {status['count']:4} events  {fetcher.count:3} requests  "
+              f"{'OK' if status['ok'] else 'FAIL: ' + str(status['error'])}", flush=True)
+
+    # window + area
+    events = []
+    for ev in raw:
+        s = to_local(ev["start"])
+        e = to_local(ev["end"]) if ev.get("end") else None
+        if not s:
+            continue
+        running = e and s < start <= e   # multi-day run already underway
+        if not (start <= s <= end or running):
+            continue
+        if not in_area(ev):
+            continue
+        events.append(ev)
+    print(f"in window and area: {len(events)} of {len(raw)}")
+
+    events = collapse_recurring(merge(events))
+    print(f"after merging duplicates: {len(events)}")
+
+    # first pass score, enrich the most promising, second pass
+    for ev in events:
+        s = scorer.score(ev)
+        ev["_pre"] = s["score"] if s else -99
+        ev["_festival"] = bool(s and s["is_festival"])
+    events = [e for e in events if e["_pre"] > -99]
+    events.sort(key=lambda e: -e["_pre"])
+    enrich(events, Fetcher(delay=1.0, max_requests=args.enrich), args.enrich)
+
+    ai_tags = ai.tag_events(events, profile) if ai.enabled() else {}
+    shutil.rmtree(OUT / "ics", ignore_errors=True)
+    seen = previous_first_seen(args.previous)
+    stamp = iso(now())
+    out = []
+    for ev in events:
+        s = scorer.score(ev, ai_tags.get(ev["id"]))
+        if s is None:
+            continue
+        ev.update({k: s[k] for k in ("score", "tags", "why", "followed", "followed_kind")})
+        sub = None
+        tags_ai = ai_tags.get(ev["id"]) or {}
+        if tags_ai.get("sub_event"):
+            sub = tags_ai["sub_event"]
+        elif ev.get("_lineup"):
+            sub = best_sub_event(ev, ev["_lineup"], profile)
+        if sub and sub.get("title"):
+            ev["parent_event"] = {"title": ev["title"], "url": ev["source_url"]}
+            ev["title"] = f"{sub['title']}, at {ev['title']}"
+            if sub.get("time"):
+                hh, mm = [int(x) for x in sub["time"].split(":")[:2]]
+                st = to_local(ev["start"]).replace(hour=hh, minute=mm)
+                ev["start"], ev["all_day"], ev["end"] = iso(st), False, iso(st + dt.timedelta(hours=1))
+        ev["people"] = sorted(set(ev.get("people", [])) | set(tags_ai.get("people", [])))
+        ev["dedupe_key"] = dedupe_key(ev)
+        ev["first_seen"] = seen.get(ev["id"]) or seen.get(ev["dedupe_key"]) or stamp
+        for k in [k for k in ev if k.startswith("_")]:
+            del ev[k]
+        ev["description"] = (ev.get("description") or "")[:600]
+        ev["ics"] = write_ics(ev, OUT / "ics")
+        out.append(ev)
+
+    out.sort(key=lambda e: e["start"])
+    payload = {
+        "generated": stamp,
+        "window": {"start": iso(start), "end": iso(end)},
+        "ai": ai.enabled(),
+        "sources": health,
+        "events": out,
+    }
+    with open(args.out, "w") as fh:
+        json.dump(payload, fh, ensure_ascii=False, indent=1)
+    for name in ("profile.json", "follow.json"):   # the app reads these too
+        shutil.copy(ROOT / "data" / name, OUT / name)
+    print(f"wrote {len(out)} events to {args.out}")
+    broken = [h["label"] for h in health if not h["ok"]]
+    if broken:
+        print("::warning::Sources with zero events or errors: " + ", ".join(broken))
+
+
+if __name__ == "__main__":
+    main()

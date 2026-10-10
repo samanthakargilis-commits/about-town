@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bay Events</title>
+  <meta name="description" content="Your month of SF to Palo Alto events, picked for you.">
+  <meta name="theme-color" content="#fff6ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#17131c" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Bay Events">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header class="top">
+      <div class="top-row">
+        <div>
+          <div class="eyebrow" id="eyebrow">Your month</div>
+          <h1 id="title">Bay Events</h1>
+        </div>
+        <div class="fill" id="fill" aria-label="Picks this month"></div>
+      </div>
+      <div class="month-switch" id="monthSwitch" role="tablist"></div>
+    </header>
+
+    <main id="view" tabindex="-1"></main>
+
+    <nav class="tabs" role="tablist">
+      <button data-tab="plan" class="tab on" role="tab"><span class="ti">🗓️</span><span>Plan</span></button>
+      <button data-tab="new" class="tab" role="tab"><span class="ti">✨</span><span>New</span><b class="badge" id="newBadge" hidden></b></button>
+      <button data-tab="picks" class="tab" role="tab"><span class="ti">💛</span><span>Picks</span></button>
+      <button data-tab="me" class="tab" role="tab"><span class="ti">🙂</span><span>You</span></button>
+    </nav>
+  </div>
+
+  <div class="sheet-wrap" id="sheetWrap" hidden>
+    <div class="sheet-bg" data-close></div>
+    <section class="sheet" id="sheet" role="dialog" aria-modal="true"></section>
+  </div>
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+{
+  "_note": "David's starting profile. Interests and favorite times BOOST ranking; they never filter. Edit freely; the app also learns from Add / Maybe / Not for me on the phone.",
+  "home_area": "San Francisco to Palo Alto (Peninsula corridor)",
+  "favorite_times": [
+    {"label": "Thursday evening", "weekday": 3, "from_hour": 17, "to_hour": 23, "boost": 1.5}
+  ],
+  "interests": {
+    "craft": {"label": "Craft", "weight": 2.0, "keywords": ["craft", "crafting", "maker", "makers", "knit", "knitting", "crochet", "embroider", "sewing", "quilt", "pottery", "ceramics", "clay", "weaving", "zine", "collage", "bookbinding", "printmaking", "candle making", "terrarium", "workshop: make", "diy", "puppet", "renegade craft", "craft fair", "jewelry making", "flower arranging", "papercraft", "origami", "linocut", "watercolor workshop"]},
+    "meditation": {"label": "Meditation", "weight": 2.0, "keywords": ["meditation", "meditate", "mindfulness", "sound bath", "soundbath", "breathwork", "dharma", "zen", "sitting group", "yoga nidra", "contemplative"]},
+    "spirituality": {"label": "Spirituality", "weight": 1.8, "keywords": ["spiritual", "spirituality", "tarot", "astrology", "ritual", "altar", "dia de los muertos", "día de los muertos", "sacred", "mystic", "mystical", "reiki", "full moon", "new moon", "moon circle", "ceremony", "buddhist", "retreat", "kirtan", "chant", "eckhart tolle", "four agreements"]},
+    "musical_theatre": {"label": "Musical theatre", "weight": 2.4, "keywords": ["musical", "broadway", "show tune", "show-tune", "showtune", "cabaret", "sing-along musical", "hamilton", "wicked", "sondheim", "orpheum", "golden gate theatre", "curran", "broadwaysf"]},
+    "theatre": {"label": "Theatre", "weight": 2.0, "keywords": ["theatre", "theater", "play ", "playhouse", "improv", "neo-futurists", "monologue", "staged reading", "one-person show", "solo show", "immersive", "shakespeare", "playwright", "drama", "act theater", "berkeley rep", "stage"]},
+    "comedy": {"label": "Comedy", "weight": 2.2, "keywords": ["comedy", "comedian", "stand-up", "standup", "stand up", "comic", "improv", "sketch", "roast", "open mic comedy", "cobb's", "punch line", "laugh", "funny"]},
+    "singing": {"label": "Singing", "weight": 2.2, "keywords": ["karaoke", "sing-along", "singalong", "sing along", "choir", "chorus", "open mic", "singing", "song circle", "a cappella", "acapella", "vocal", "carol", "caroling", "piano bar"]},
+    "art": {"label": "Art", "weight": 1.8, "keywords": ["art ", "artist", "artists", "gallery", "exhibit", "exhibition", "open studios", "art walk", "art stroll", "mural", "painting", "drawing", "drink & draw", "drink and draw", "figure drawing", "sculpture", "photography", "art fair", "installation", "art maze", "printmaking", "illustration"]},
+    "museums": {"label": "Museum exhibits", "weight": 2.0, "keywords": ["museum", "exhibit", "exhibition", "sfmoma", "de young", "legion of honor", "asian art museum", "exploratorium", "california academy of sciences", "cal academy", "nightlife", "after dark", "contemporary jewish museum", "yerba buena center", "ybca", "cantor arts center", "anderson collection", "computer history museum", "museum of craft and design", "walt disney family museum", "museum of the african diaspora", "moad", "glbt historical society", "tenderloin museum", "chinese historical society", "palo alto art center", "new exhibition", "now on view", "retrospective"]},
+    "reading": {"label": "Reading", "weight": 2.2, "keywords": ["book club", "author talk", "author event", "book launch", "book signing", "signing", "in conversation", "reading", "bookstore", "library", "literary", "book fair", "book festival", "novel", "memoir", "kepler's", "city lights", "green apple", "romantasy", "romance novel", "fantasy author", "booktok"]},
+    "writing": {"label": "Writing", "weight": 1.8, "keywords": ["writing workshop", "writers", "writer", "poetry", "poem", "poet", "spoken word", "open mic poetry", "zine", "write-in", "insta-plays", "storytelling", "story slam", "moth", "essay", "literary reading", "lit "]},
+    "discourse": {"label": "Discourse", "weight": 1.8, "keywords": ["salon", "debate", "talk", "lecture", "panel", "conversation", "discussion", "symposium", "q&a", "ideas", "philosophy", "socratic", "long now", "commonwealth club", "city arts & lectures", "forum", "town hall"]},
+    "queer": {"label": "Gay / queer", "weight": 2.2, "keywords": ["queer", "gay", "lgbt", "lgbtq", "lgbtqia", "drag", "pride", "trans ", "lesbian", "castro", "bi+", "nonbinary", "sapphic", "glbt", "big gay", "folsom", "dyke"]},
+    "weird": {"label": "Weird & unusual", "weight": 2.0, "keywords": ["weird", "bizarre", "unusual", "oddities", "absurd", "costume", "parade", "impersonator", "contest", "burlesque", "haunted", "ghost", "seance", "séance", "puppet", "circus", "sideshow", "taxidermy", "silent disco", "immersive", "secret", "underground", "clown", "drunk theatre", "drunk history", "sandcastle", "bay to breakers", "pillow fight", "cake picnic", "maze", "infinite wrench", "magic show", "magician"]}
+  },
+  "reading_tastes": {
+    "label": "Your reading tastes",
+    "weight": 1.2,
+    "keywords": ["romantasy", "fantasy", "romance", "rom-com", "romcom", "myth", "mythology", "retelling", "greek myth", "humor", "humorist", "essays", "essayist", "literary fiction", "cultural criticism", "thriller", "suspense", "self-growth", "witch", "witches", "fae", "dragon"]
+  },
+  "never": ["kids only", "toddler", "storytime for babies", "networking mixer", "crypto", "web3", "real estate seminar", "mlm", "pitch night", "hackathon", "career fair", "job fair", "speed networking"],
+  "downrank_tags": {"tech": -1.5},
+  "highlights_per_week": 3,
+  "events_per_week": 10,
+  "max_price": null,
+  "notes": "Budget and travel distance are still open questions in brief.md."
+}
