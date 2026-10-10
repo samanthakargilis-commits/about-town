@@ -1,4 +1,3 @@
-https://citylights.com/events/
-https://greenapplebooks.com/events
-https://www.keplers.org/upcoming-events
-https://www.destinationpaloalto.com/calendar
+https://www.keplers.org/
+raw:https://portal.cityspark.com/PortalScripts/DestinationPA
+https://www.eventbrite.com/d/ca--san-francisco/meditation/

@@ -12,6 +12,15 @@ from ingest.core import Fetcher, jsonld_events, next_data  # noqa: E402
 f = Fetcher(delay=1)
 for url in sys.argv[1:]:
     print("=" * 80, "\n", url)
+    if url.startswith("raw:"):
+        try:
+            text = f.get(url[4:])
+            for m in re.finditer(r"https?://[^\s'\"<>]+|/api/[^\s'\"<>]+|/v\d/[^\s'\"<>]+", text):
+                print("  url:", m.group(0)[:200])
+            print(text[:8000])
+        except Exception as exc:
+            print("  FETCH FAILED:", exc)
+        continue
     try:
         html = f.get(url)
     except Exception as exc:
@@ -26,6 +35,9 @@ for url in sys.argv[1:]:
         print("  feed:", l.get("type"), urljoin(url, l.get("href", "")))
     for a in soup.find_all("a", href=re.compile(r"ical|\.ics|webcal|/feed|rss", re.I))[:8]:
         print("  feed link:", urljoin(url, a["href"]))
+    for a in soup.find_all("a", href=True):
+        if re.search(r"event|calendar", a["href"] + a.get_text(), re.I):
+            print("  event-ish link:", urljoin(url, a["href"]), "|", a.get_text(" ", strip=True)[:60])
     pats = collections.Counter()
     for a in soup.find_all("a", href=True):
         p = urlparse(urljoin(url, a["href"]))
