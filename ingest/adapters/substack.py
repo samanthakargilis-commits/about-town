@@ -19,6 +19,9 @@ def newsletters():
 
 
 def fetch(f, start, end):
+    if not ai.enabled():
+        # newsletter posts are prose; rule-based reading picked up guides, not events
+        raise RuntimeError("needs AI extraction (no ANTHROPIC_API_KEY set)")
     out = []
     for nl in newsletters():
         try:

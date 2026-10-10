@@ -14,7 +14,7 @@ from .core import to_local
 
 TECH = re.compile(r"\b(startup|start-up|founders?|vc|venture|demo day|pitch|hackathon|saas|gtm|devs?|developers?|"
                   r"engineers?|engineering|ai agents?|llms?|genai|gen ai|machine learning|ml |web3|crypto|blockchain|"
-                  r"product managers?|b2b|fundrais\w*|yc|y combinator|networking)\b", re.I)
+                  r"product managers?|b2b|fundrais\w*|yc|y combinator|networking|ai|nvidia|gpus?|robotics|fireside chat|open source|inference|tech week|sdks?|apis?|devtools|afterparty)\b", re.I)
 KIDS = re.compile(r"\b(kids?|children|child|toddlers?|ages \d|grades? \d|family storytime|storytime|teens?|tweens?|young readers|middle grade)\b", re.I)
 FESTIVAL = re.compile(r"\b(fair|festival|fest|street fair|convention|con\b|expo|carnival|block party|market)\b", re.I)
 

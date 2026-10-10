@@ -92,6 +92,13 @@ def collapse_recurring(events, per_week=1):
     """A weekly karaoke night shouldn't fill every slot: keep one per week."""
     seen = {}
     out = []
+    counts = {}
+    for ev in events:
+        k = " ".join(sorted(title_tokens(ev["title"])))
+        counts[k] = counts.get(k, 0) + 1
+    for ev in events:
+        if counts[" ".join(sorted(title_tokens(ev["title"])))] >= 3:
+            ev["recurring"] = True      # e.g. Funcheap posts a weekly show as separate listings
     for ev in sorted(events, key=lambda e: e["start"]):
         if not ev.get("recurring"):
             out.append(ev)

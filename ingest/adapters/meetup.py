@@ -30,7 +30,8 @@ def fetch(f, start, end):
                 description=clean(d.get("description") or "")[:800],
                 venue=clean(venue.get("name") if isinstance(venue, dict) else ""),
                 address=clean(venue.get("address") if isinstance(venue, dict) else ""),
-                city=clean(venue.get("city") if isinstance(venue, dict) else ""),
+                city="Online" if d.get("eventType") == "ONLINE" or d.get("isOnline") else
+                clean(venue.get("city") if isinstance(venue, dict) else ""),
                 recurring=bool(d.get("series")), image_url=(d.get("featuredEventPhoto") or {}).get("highResUrl")
                 if isinstance(d.get("featuredEventPhoto"), dict) else None,
                 people=[clean(group.get("name"))] if isinstance(group, dict) and group.get("name") else [],

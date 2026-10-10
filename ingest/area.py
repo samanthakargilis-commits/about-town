@@ -33,7 +33,7 @@ SF_DEFAULT = {"funcheap", "secretsf", "citylights", "greenapple", "broadwaysf", 
 
 def in_area(ev: dict) -> bool:
     city = (ev.get("city") or "").lower().replace(", ca", "").strip()
-    if city in IN_AREA:
+    if city in IN_AREA and not OUT_RE.search(ev.get("title", "")):
         return True
     if city and city not in IN_AREA and OUT_RE.search(city):
         return False

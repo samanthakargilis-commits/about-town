@@ -22,6 +22,8 @@ def is_event_url(url):
 
 
 def tidy_title(title):
+    title = re.sub(r"^\$\d+ off:\s*", "", title, flags=re.I)
+    title = re.sub(r"\s*\((?:SF|San Francisco|oct|nov|dec|jan|feb|mar|apr|may|jun|jul|aug|sep|every|\w+ \d{1,2}[-–]\d{1,2})[^)]*\)\s*$", "", title, flags=re.I)
     title = re.sub(r"^\d{1,2}/\d{1,2}(?:/\d{2,4})?(?:\s*[-–]\s*\d{1,2}/\d{1,2}(?:/\d{2,4})?)?:\s*", "", title)
     title = re.sub(r"\s*[-–]\s*(FREE|\$\d+.*)$", "", title, flags=re.I)
     return clean(title)
@@ -46,7 +48,7 @@ def parse_day(html_soup, day: dt.date):
             source_url=url,
             title=title.split("|")[0].strip() if "|" in title else title,
             start=iso(start), end=iso(end), all_day=all_day,
-            description="", venue=venue, city="San Francisco",
+            description="", venue=venue,
             price=price_from(text), recurring=recurring,
         ))
     return events

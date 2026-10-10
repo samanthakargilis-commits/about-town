@@ -169,6 +169,8 @@ def article_events(html: str, source: str, article_url: str, ref: dt.date,
     for heading, text, links in sections_by_heading(soup):
         if not heading or len(heading) > 140 or len(text) < 20:
             continue
+        if re.search(r"\?|at a glance|^(when|where|what|why|how|is|are|getting|tips|faq|related|more)\b|\bguide\b", heading, re.I):
+            continue
         dates = find_dates(heading + " " + text, ref)
         if not dates:
             continue
