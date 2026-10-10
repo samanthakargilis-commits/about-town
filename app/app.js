@@ -356,9 +356,13 @@ function weekStart(d) {
 
 function upcoming() {
   const t = today0();
+  const now = new Date();
   return data.events.filter((ev) => {
     const s = new Date(ev.start);
-    return (s >= t || (ev.end && new Date(ev.end) >= t)) && !isHidden(ev);
+    const e = ev.end ? new Date(ev.end) : null;
+    // timed events that already started today drop off; all-day ones and runs stay
+    const live = ev.all_day ? s >= t : (s >= now || (e && e >= now));
+    return live && !isHidden(ev);
   });
 }
 
