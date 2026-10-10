@@ -202,7 +202,7 @@ def main(argv=None):
     for ev in raw:
         s = to_local(ev["start"])
         e = to_local(ev["end"]) if ev.get("end") else None
-        if not s:
+        if not s or len(ev["title"]) < 5 or ev["title"].lower() in ("date", "event", "tbd", "sold out"):
             continue
         running = e and s < start <= e   # multi-day run already underway
         if not (start <= s <= end or running):
