@@ -39,7 +39,7 @@ def fetch(f, start, end):
         text = text.encode().decode("unicode_escape", errors="ignore")
     objs = objects_with(text, '"PId":')
     if objs:
-        print("  cityspark keys:", sorted(objs[0].keys())[:40])
+        print("  cityspark sample:", {k: objs[0].get(k) for k in ("Date", "DateStart", "StartLocal", "StartUTC", "HasTime", "AllDay")})
     out, seen = [], set()
     for o in objs:
         pid = o.get("PId")

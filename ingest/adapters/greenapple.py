@@ -20,6 +20,8 @@ def fetch(f, start, end):
             events, _ = listing_page(f, page, NAME, lambda u: bool(EVENT.match(u)), city="San Francisco",
                                      default_hour=19, date_from_url=date_from_url)
         except Exception:
+            if not out:
+                raise
             break
         if not events:
             break

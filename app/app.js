@@ -246,7 +246,7 @@ function cardHTML(ev, { hero = false } = {}) {
   const st = S.status[ev.id];
   const f = followedIn(ev);
   const fresh = isNew(ev);
-  const img = ev.image_url ? `style="background-image:url('${esc(ev.image_url)}')"` : '';
+  const img = ev.image_url ? `style="background-image:url('${esc(ev.image_url)}'), var(--grad)"` : '';
   const run = runText(ev);
   return `<article class="card ${hero ? 'hero' : ''} ${st || ''}" data-id="${esc(ev.id)}">
     ${hero ? `<div class="img ${ev.image_url ? '' : 'noimg'}" ${img}><span class="b love">You'll love this</span></div>` : ''}
@@ -454,7 +454,7 @@ function renderNew(v) {
 }
 
 function swipeHTML(ev, behind) {
-  const img = ev.image_url ? `style="background-image:url('${esc(ev.image_url)}')"` : '';
+  const img = ev.image_url ? `style="background-image:url('${esc(ev.image_url)}'), var(--grad)"` : '';
   const f = followedIn(ev);
   return `<div class="swipe ${behind ? 'behind' : ''}" data-id="${esc(ev.id)}">
     <div class="img" ${img}><span class="stamp yes">ADD</span><span class="stamp no">NOPE</span><span class="stamp mb">MAYBE</span></div>

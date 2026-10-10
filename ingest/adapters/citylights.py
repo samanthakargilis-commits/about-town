@@ -9,6 +9,8 @@ URL = "https://citylights.com/events/"
 def fetch(f, start, end):
     events, soup = listing_page(f, URL, NAME, lambda u: bool(re.match(r"https://citylights\.com/events/[^/]+/?$", u)) and u.rstrip("/") != URL.rstrip("/"),
                                 city="San Francisco")
+    if not events and "sucuri" in str(soup).lower():
+        raise RuntimeError("blocked by the site's bot protection (Sucuri JavaScript check)")
     for e in events:
         txt = (e.description or "").lower()
         if re.search(r"\bvirtual\b|\bonline\b|zoom", txt) and "instore" not in txt and "in-store" not in txt:

@@ -31,13 +31,16 @@ def tidy_title(title):
 
 def parse_day(html_soup, day: dt.date):
     events = []
-    for url, title, text, _ in link_blocks(html_soup, BASE, is_event_url):
+    for url, title, text, block in link_blocks(html_soup, BASE, is_event_url):
         title = tidy_title(title)
         recurring = bool(re.search(r"\bevery (mon|tue|wed|thu|fri|sat|sun)", text, re.I))
         start, all_day = at_time(day, text.split(title, 1)[-1] or text)
         end = end_time(start, text) if not all_day else None
         venue = ""
-        m = re.search(r"cost:[^|]*\|\s*([^|]{3,90})", text, re.I)
+        # read the venue from the element holding "Cost:", not the whole block (the blurb follows it)
+        node = block.find(string=re.compile(r"Cost:", re.I))
+        meta = clean(node.parent.get_text(" ")) if node is not None and node.parent is not None else text
+        m = re.search(r"cost:[^|]*\|\s*([^|]{3,90})", meta, re.I)
         if m:
             venue = clean(m.group(1))
             # the listing's blurb follows the venue with no separator
