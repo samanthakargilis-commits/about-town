@@ -44,21 +44,22 @@ def fetch(f, start, end):
     for o in objs:
         pid = o.get("PId")
         title = clean(o.get("Name"))
-        st = to_local(pick(o, "DateStart", "StartUTC", "StartDate", "Start", "DateStartUTC", "StartTime"))
+        st = to_local(pick(o, "StartLocal", "DateStart", "StartDate"))
         if not pid or not title or not st or pid in seen:
             continue
         seen.add(pid)
         links = o.get("Links") or []
-        link = next((l.get("url") or l.get("Url") for l in links if isinstance(l, dict) and (l.get("url") or l.get("Url"))), None)
+        link = o.get("PrimaryUrl") or next((l.get("url") or l.get("Url") for l in links if isinstance(l, dict) and (l.get("url") or l.get("Url"))), None)
         out.append(Event(
             source=NAME, source_id=str(pid), source_url=f"{PAGE}#/details/{pid}", ticket_url=link,
-            title=title, start=iso(st), end=iso(to_local(pick(o, "DateEnd", "EndUTC", "EndDate", "End"))),
-            all_day=bool(o.get("AllDay")),
+            title=title, start=iso(st), end=iso(to_local(pick(o, "EndLocal", "DateEnd", "EndDate"))),
+            all_day=bool(o.get("AllDay")) or o.get("HasTime") is False,
             description=html_to_text(o.get("Summary") or o.get("Description") or o.get("Short") or "")[:1000],
             venue=clean(pick(o, "Venue", "VenueName", "Location") or ""),
             address=clean(pick(o, "Address", "Street") or ""),
             city=clean((pick(o, "CityState", "City") or "").split(",")[0]),
             image_url=(o.get("LargeImg") or o.get("MediumImg") or o.get("SmallImg")),
-            price=clean(str(pick(o, "Price", "Cost") or "")),
+            price="free" if o.get("Free") else clean(str(pick(o, "PriceText", "Price") or "")),
+            sponsored=bool(o.get("IsPromotion")),
         ))
     return out

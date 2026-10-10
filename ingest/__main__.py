@@ -133,7 +133,7 @@ def enrich(events, fetcher, limit):
         for node in jsonld_events(soup):
             if node.get("description"):
                 desc = html_to_text(node["description"]) if len(html_to_text(node["description"])) > len(desc) else desc
-        main = soup.find("article") or soup.find("main") or soup.find(class_=re.compile("entry-content|post-content|event-description"))
+        main = soup.find(class_=re.compile("entry-content|post-content|event-description|eventitem-column-content")) or soup.find("article")
         body = clean(main.get_text(" "))[:1500] if main else ""
         ev["description"] = clean(desc if len(desc) > 120 else (desc + " " + body))[:1200]
         ev["image_url"] = ev.get("image_url") or og(soup, "image")

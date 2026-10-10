@@ -28,7 +28,7 @@
   "never": ["kids only", "toddler", "storytime for babies", "networking mixer", "crypto", "web3", "real estate seminar", "mlm", "pitch night", "hackathon", "career fair", "job fair", "speed networking"],
   "downrank_tags": {"tech": -1.5},
   "highlights_per_week": 3,
-  "events_per_week": 10,
+  "events_per_week": 7,
   "max_price": null,
   "notes": "Budget and travel distance are still open questions in brief.md."
 }

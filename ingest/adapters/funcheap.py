@@ -40,6 +40,9 @@ def parse_day(html_soup, day: dt.date):
         m = re.search(r"cost:[^|]*\|\s*([^|]{3,90})", text, re.I)
         if m:
             venue = clean(m.group(1))
+            # the listing's blurb follows the venue with no separator
+            venue = re.split(r"(?<=\))\s|\s(?=(?:From|Join|Come|Get|Celebrate|Enjoy|Experience|This|The|Each|Every|Free|Grab|Head|Learn|Watch|See|Don't|It's|Spend|Bring|Take)\b)", venue)[0]
+            venue = re.sub(r"\s*\((SF|San Francisco)\)$", "", venue)[:70]
         elif "|" in title:
             title, venue = [clean(x) for x in title.split("|", 1)]
         events.append(Event(
