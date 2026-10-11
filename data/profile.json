@@ -593,11 +593,12 @@
   "highlights_per_week": 3,
   "events_per_week": 7,
   "max_price": null,
-  "notes": "Budget is still open in brief.md. Travel: short hops on weeknights, day trips (Sonoma, East Bay, South Bay) on weekends, and further on weeknights for performers he follows (from his calendar export).",
+  "notes": "Budget is still open in brief.md. Travel: short hops on weeknights, day trips (Sonoma, East Bay, South Bay) on weekends, and further on weeknights for performers he follows (from his calendar export). Never anything on Saturday or Sunday that starts before 9am.",
   "home": {
     "label": "Presidio Heights",
     "lat": 37.7886,
     "lng": -122.4467,
     "_note": "neighborhood center only; the exact address is set on the phone"
-  }
+  },
+  "weekend_earliest_hour": 9
 }

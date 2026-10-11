@@ -35,6 +35,7 @@ const SHOW = /\b(comed\w*|stand-?up|improv|show|tour|live|concert|perform\w*|mus
 
 let data = { events: [], sources: [] };
 let profile = null;
+let weather = null;   // weather.json: the 16-day forecast for SF and the sunny escapes
 let follow = null;
 let tab = 'cal';
 let monthOffset = 0;
@@ -253,6 +254,7 @@ function buildFollowIndex() {
   }
   followMemo = new Map();
   scoreMemo = new Map();
+  earlyMemo = new Map();
 }
 let followMemo = new Map();   // event id -> followInfo answer (reset when the follow list changes)
 let scoreMemo = new Map();    // event id -> personalScore (reset on every render)
@@ -352,7 +354,7 @@ function distPenalty(ev) {
 }
 
 function scoreOf(ev) {
-  let s = (ev.score || 0) + distPenalty(ev);
+  let s = (ev.score || 0) + distPenalty(ev) + (sunEscape(ev) ? 1.5 : 0);
   for (const t of learnTags(ev)) s += Math.max(-3, Math.min(3, S.tagW[t] || 0));
   for (const t of ev.tags || []) if (S.interests[t] !== undefined) s += INTEREST_LEVELS[S.interests[t]];
   const f = followInfo(ev);
@@ -444,6 +446,42 @@ async function copyLink(ev) {
 
 // ------------------------------------------------------------------ rendering: one event
 
+// Fog: when SF is grey and Marin (or the Peninsula, East Bay, Sonoma) is sunny,
+// daytime events there move up. The forecast reaches 16 days out.
+const AREA_NAME = { marin: 'in Marin', peninsula: 'on the Peninsula', eastbay: 'in the East Bay', sonoma: 'in Sonoma' };
+const OUTDOORS = /outdoor|open[- ]air|garden|park\b|hike|hiking|trail|beach|picnic|farm\b|farms|orchard|vineyard|winery|wine country|fair\b|faire|festival|market|zoo\b|plaza|block party|street|canoe|kayak|paddle|lawn|on the green|pumpkin patch|corn maze/i;
+function areaOf(ev) {
+  const { lat, lng } = ev;
+  if (lat == null) return null;
+  if (lat >= 38.1) return lng < -122.2 ? 'sonoma' : null;
+  if (lat >= 37.83 && lng < -122.4) return 'marin';
+  if (lat < 37.62 && lat > 37.2 && lng < -121.95) return 'peninsula';
+  if (lng > -122.33 && lat > 37.6 && lat < 38.05 && lng < -121.9) return 'eastbay';
+  return null;
+}
+const sunMemo = new Map();
+function sunEscape(ev) {
+  if (!weather) return null;
+  if (!sunMemo.has(ev.id)) sunMemo.set(ev.id, sunOf(ev));
+  return sunMemo.get(ev.id);
+}
+function sunOf(ev) {
+  const area = areaOf(ev);
+  if (!area || !OUTDOORS.test(`${ev.title} ${ev.venue || ''} ${(ev.description || '').slice(0, 400)}`)) return null;   // sun matters outside
+  if (ev.end && new Date(ev.end) - new Date(ev.start) > 36 * 3600e3) return null;   // a run: no single day
+  if (!ev.all_day && Number(parts(new Date(ev.start)).hour) >= 17) return null;      // after dark, sun doesn't matter
+  const day = weather.days[dayKey(new Date(ev.start))];
+  const sf = day?.sf, there = day?.[area];
+  if (!sf || !there) return null;
+  if (sf.sun < 0.45 && there.sun >= 0.7 && (there.rain ?? 0) < 40) return { area, hi: there.hi, sfHi: sf.hi };
+  return null;
+}
+function sunLine(ev) {
+  const w = sunEscape(ev);
+  if (!w) return '';
+  return `☀️ Sunny ${AREA_NAME[w.area]}${w.hi != null ? ` (${w.hi}°)` : ''}, grey in SF`;
+}
+
 function starLine(ev) {
   const f = followInfo(ev);
   if (!f) return '';
@@ -474,6 +512,7 @@ function evRow(ev, { showDay = false } = {}) {
       <h3>${esc(ev.title)}</h3>
       <div class="meta">${meta}</div>
       ${star ? `<div class="star">${star}</div>` : ''}
+      ${sunEscape(ev) ? `<div class="sun">${esc(sunLine(ev))}</div>` : ''}
       ${labels.length ? `<div class="tags">${labels.join('')}</div>` : ''}
     </div>
     <button class="plus ${st === 'added' ? 'on' : st === 'maybe' ? 'maybe' : ''}" data-act="added" aria-label="${st === 'added' ? 'In your plan' : 'Add to plan'}">${st === 'added' ? '✓' : st === 'maybe' ? '?' : '+'}</button>
@@ -530,6 +569,7 @@ function openSheet(ev) {
       <h2>${esc(ev.title)}</h2>
       <div class="where">${esc(where)}${distText(distOf(ev)) ? ` · <b>${esc(distText(distOf(ev)))} ${fromWhere()}</b>` : ''}${ev.price ? ` · ${esc(ev.price === 'free' ? 'Free' : ev.price)}` : ''}</div>
       ${star ? `<div class="star">${star}<a href="#" data-act="block">Not this person</a></div>` : ''}
+      ${sunEscape(ev) ? `<div class="sun">${esc(sunLine(ev))}</div>` : ''}
       <div class="acts">
         <button class="btn ${st === 'added' ? 'on' : 'cherry'}" data-act="added">${st === 'added' ? '✓ In your plan' : '＋ Add to plan'}</button>
         <button class="btn maybe ${st === 'maybe' ? 'on' : ''}" data-act="maybe">Maybe</button>
@@ -608,8 +648,27 @@ function upcomingAll() {
     const e = ev.end ? new Date(ev.end) : null;
     // timed events that already started today drop off; all-day ones and runs stay
     const live = ev.all_day ? s >= t || (e && e >= t) : (s >= now || (e && e >= now));
-    return live && !isHidden(ev);
+    return live && !isHidden(ev) && !tooEarly(ev);
   });
+}
+
+// Weekend mornings are for sleeping in: nothing that starts before 9 (profile.json),
+// unless it carries on late enough to show up after 9, or it's someone you follow.
+let earlyMemo = new Map();     // reset with scoreMemo: it depends on your choices
+function tooEarly(ev) {
+  if (!earlyMemo.has(ev.id)) earlyMemo.set(ev.id, earlyOf(ev));
+  return earlyMemo.get(ev.id);
+}
+function earlyOf(ev) {
+  const first = profile?.weekend_earliest_hour;
+  if (first == null || ev.all_day || S.status[ev.id] || followInfo(ev)) return false;
+  const s = new Date(ev.start);
+  const p = parts(s);
+  if (p.weekday !== 'Sat' && p.weekday !== 'Sun') return false;
+  const h = Number(p.hour) + s.getMinutes() / 60;
+  if (h >= first || h < 4) return false;                       // 4am is the tail of a Friday night out
+  const hoursLong = ev.end ? (new Date(ev.end) - s) / 3600e3 : 0;
+  return h + hoursLong <= first + 2;                          // on past 11: go late
 }
 const upcoming = () => upcomingAll().filter(inRange);
 
@@ -1015,6 +1074,7 @@ function renderHeader() {
 
 function render() {
   scoreMemo = new Map();
+  earlyMemo = new Map();
   renderHeader();
   const v = $('#view');
   ({ cal: renderCal, tonight: renderTonight, new: renderNew, picks: renderPicks, me: renderMe })[tab](v);
@@ -1122,6 +1182,7 @@ async function start() {
   }
   buildFollowIndex();
   render();
+  getJSON('weather.json').then((w) => { weather = w; sunMemo.clear(); render(); }).catch(() => {});   // optional
   if (S.where === 'near') findMe();
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
 }
