@@ -15,8 +15,24 @@ MAX_PAGES = 90
 SOLD = ("soldout", "outofstock", "discontinued")
 
 
-def offer_of(soup) -> dict:
+def full(soup, eid) -> bool:
+    """The page's own data says the guest list is full (the schema.org offer
+    still says InStock then, so this is the real sold-out signal)."""
+    for d in find_dicts(next_data(soup) or {}, ("id", "atCapacity")):
+        if d.get("id") == eid:
+            return bool(d.get("atCapacity"))
+    return False
+
+
+def offer_of(soup, eid=None) -> dict:
     """{"price": "free"|"$20"|"", "sold_out": bool} from the page's Event offers."""
+    o = _offer(soup)
+    if o and eid and full(soup, eid):
+        o["sold_out"] = True
+    return o
+
+
+def _offer(soup) -> dict:
     for node in jsonld_events(soup):
         offers = node.get("offers") or []
         offers = offers if isinstance(offers, list) else [offers]
@@ -43,7 +59,7 @@ def add_offers(f, events):
             if read >= MAX_PAGES:
                 continue
             try:
-                hit = {**offer_of(f.soup(e.source_url)), "t": int(now)}
+                hit = {**offer_of(f.soup(e.source_url), e.source_id), "t": int(now)}
             except BudgetExceeded:
                 break
             except Exception as exc:

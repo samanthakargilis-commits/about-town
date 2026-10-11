@@ -187,6 +187,11 @@ class NewSources(unittest.TestCase):
         self.assertEqual(partiful.offer_of(page("InStock")), {"price": "$20", "sold_out": False})
         self.assertEqual(partiful.offer_of(page("SoldOut")), {"price": "$20", "sold_out": True})
         self.assertEqual(partiful.offer_of(page("InStock", 0))["price"], "free")
+        capped = BeautifulSoup(str(page("InStock")) + '<script id="__NEXT_DATA__" type="application/json">'
+                               '{"props":{"pageProps":{"event":{"id":"X18","isCapped":true,"atCapacity":true,"remainingCapacity":0},'
+                               '"similar":[{"id":"Y9","atCapacity":false}]}}}</script>', "lxml")
+        self.assertTrue(partiful.offer_of(capped, "X18")["sold_out"])
+        self.assertFalse(partiful.offer_of(capped, "Y9")["sold_out"])
 
     def test_sfpl_presidio(self):
         from ingest.adapters import sfpl
