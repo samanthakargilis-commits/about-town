@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e5e014c4dd33@bay-events
+DTSTAMP:20261011T045557Z
+DTSTART;TZID=America/Los_Angeles:20261017T090000
+DTEND;TZID=America/Los_Angeles:20261017T170000
+SUMMARY:54th Annual Half Moon Bay Art & Pumpkin Festival
+LOCATION:Downtown Half Moon Bay\, Main St.\, Half Moon Bay\, CA\, Half Moo
+ n Bay
+URL:https://sf.funcheap.com/54th-annual-moon-bay-art-pumpkin-festival-oct-
+ 1718/
+DESCRIPTION:Fairs & festivals + Art · Half Moon Bay\nhttps://sf.funcheap.
+ com/54th-annual-moon-bay-art-pumpkin-festival-oct-1718/\n\n54th Annual Ha
+ lf Moon Bay Art & Pumpkin Festival (Oct. 17-18) Megalith Welcome to the W
+ orld Pumpkin Capital! The legendary Half Moon Bay Art & Pumpkin Festival 
+ returns October 17 & 18\, 2026\, transforming historic Main Street into t
+ he ultimate celebration of autumn\, pumpkins\, art\, food\, music and goo
+ d old fashioned fun. Admission is FREE. The experience begins before you 
+ even arrive. Cruise the bre
+END:VEVENT
+END:VCALENDAR

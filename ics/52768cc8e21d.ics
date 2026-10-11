@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:52768cc8e21d@bay-events
+DTSTAMP:20261011T045557Z
+DTSTART;TZID=America/Los_Angeles:20261104T110000
+DTEND;TZID=America/Los_Angeles:20261104T170000
+SUMMARY:SF’s GLBT History Museum: Free First Wednesday
+LOCATION:GLBT Historical Society Museum\, 4127 18th St. San Francisco\, CA
+URL:https://sf.funcheap.com/sfs-glbt-history-museum-free-first-wednesday-4
+ 8/
+DESCRIPTION:Gay / queer + Museum exhibits\nhttps://sf.funcheap.com/sfs-glb
+ t-history-museum-free-first-wednesday-48/\n\nSF’s GLBT History Museum: 
+ Free First Wednesday GLBT History Museum Located in SF’s Castro Distric
+ t\, the GLBT Historical Society Museum is the first full-scale\, stand-al
+ one museum of its kind in the United States. The museum celebrates 100 ye
+ ars of the city’s vast queer past through dynamic exhibitions and progr
+ amming. Normally\, admission is $10\, but on the first Wednesday of every
+  month\, admission
+END:VEVENT
+END:VCALENDAR

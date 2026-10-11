@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a24fd4b2ad4b@bay-events
+DTSTAMP:20261011T045559Z
+DTSTART;TZID=America/Los_Angeles:20261025T130000
+DTEND;TZID=America/Los_Angeles:20261025T150000
+SUMMARY:Bean-Up
+LOCATION:Willard Park\, 2730 Hillegass Ave Berkeley\, Berkeley
+URL:https://partiful.com/e/SIIEWOi3tt5NHzlr9WBq
+DESCRIPTION:Berkeley\nhttps://partiful.com/e/SIIEWOi3tt5NHzlr9WBq\n\nDo yo
+ u love beans? Join your fellow Bay Area Bean Lovers to celebrate the best
+  holiday and the best food. What is a bean-up? A place to let your love o
+ f beans run wild\, build community\, and eat some really incredible food.
+  Assemble with your fellow bean lovers\, bring a bean dish\, I’ll have 
+ a bean bake\, and celebrate our love of legumes. Make sure to label your 
+ dish and include any major allergens 
+END:VEVENT
+END:VCALENDAR

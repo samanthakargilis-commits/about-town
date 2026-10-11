@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:191bbbb61413@bay-events
+DTSTAMP:20261011T045557Z
+DTSTART;TZID=America/Los_Angeles:20261023T180000
+DTEND;TZID=America/Los_Angeles:20261023T200000
+SUMMARY:FriGay Flicks: Rocky Horror Picture Show
+LOCATION:CORA\, 2211 Palm Ave\, San Mateo\, CA 94403\, USA\, San Mateo\, C
+ A San Mateo\, San Mateo
+URL:https://www.meetup.com/san-mateo-county-pride/events/316561039/
+DESCRIPTION:Gay / queer + Weird & unusual · San Mateo\nhttps://www.meetup
+ .com/san-mateo-county-pride/events/316561039/\n\n**FriGay Flicks: The Roc
+ ky Horror Picture Show (Rated R)** We hope you can join the San Mateo Cou
+ nty Pride Center and CORA on Friday\, October 23 for a screening of “Th
+ e Rocky Horror Picture Show”! Let’s get ready for Halloween with this
+  cult classic. Join us at CORA San Mateo in the Carelle Room on Friday\, 
+ October 23rd! This event is free and open to the public. Costumes encoura
+ ged! Snacks will be
+END:VEVENT
+END:VCALENDAR

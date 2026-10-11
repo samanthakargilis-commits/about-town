@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:94a9125ba13f@bay-events
+DTSTAMP:20261011T045557Z
+DTSTART;TZID=America/Los_Angeles:20261016T183000
+DTEND;TZID=America/Los_Angeles:20261016T203000
+SUMMARY:Guided Meditation And Live Harp Music
+LOCATION:Brahma Kumaris Meditation Center\, 401 Baker St\, San Francisco\,
+  CA San Francisco\, San Francisco
+URL:https://www.meetup.com/sf-meditation/events/316730278/
+DESCRIPTION:Meditation + Spirituality\nhttps://www.meetup.com/sf-meditatio
+ n/events/316730278/\n\nExplore a great way to wind down from the week wit
+ h **deep stillness** and **profound energy**. The guided meditation is in
+ terspersed with silence and music that has proven to rejuvenate both expe
+ rienced and novice meditators. It is followed by spiritual sharing. This 
+ group meets every Friday. **Musician: [Kyoko Kimura](https://www.harpheal
+ s.net/)**\, certified healing harpist \\* Everyone welcome t
+END:VEVENT
+END:VCALENDAR

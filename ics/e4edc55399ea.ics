@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e4edc55399ea@bay-events
+DTSTAMP:20261011T045557Z
+DTSTART;TZID=America/Los_Angeles:20261027T210000
+DTEND;TZID=America/Los_Angeles:20261027T233000
+SUMMARY:cine cue presents ★: the craft
+LOCATION:Roxie Theater\, 3117 16th St San Francisco\, San Francisco
+URL:https://partiful.com/e/h6YYc5rG42JsJ9zHCjMX
+DESCRIPTION:Craft + Theatre\nhttps://partiful.com/e/h6YYc5rG42JsJ9zHCjMX\n
+ \ncine cue is a film club with a pool bar debrief 🎱 on a mission to sa
+ ve independent theatre and bring back bar culture 💿 ◈ after transfer
+ ring to a los angeles high school\, sarah finds that her telekinetic gift
+  appeals to a group of three wannabe witches\, who happen to be seeking a
+  fourth member for their rituals. ◈ bonnie\, rochelle\, and nancy\, lik
+ e sarah herself\, all have troubled backgrounds\, whic
+END:VEVENT
+END:VCALENDAR

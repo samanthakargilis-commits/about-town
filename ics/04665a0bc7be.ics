@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:04665a0bc7be@bay-events
+DTSTAMP:20261011T045557Z
+DTSTART;TZID=America/Los_Angeles:20261103T110000
+DTEND;TZID=America/Los_Angeles:20261103T170000
+SUMMARY:SF’s Cartoon Art Museum’s “Pay What You Wish” Day (First T
+ uesdays)
+LOCATION:Cartoon Art Museum\, 781 Beach Street\, San Francisco\, Californi
+ a 94109\, San Francisco
+URL:https://sf.funcheap.com/sfs-cartoon-art-museums-pay-what-you-wish-day-
+ first-tuesdays-32/
+DESCRIPTION:Art + Museum exhibits\nhttps://sf.funcheap.com/sfs-cartoon-art
+ -museums-pay-what-you-wish-day-first-tuesdays-32/\n\n
+END:VEVENT
+END:VCALENDAR

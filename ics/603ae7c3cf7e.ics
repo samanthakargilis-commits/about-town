@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:603ae7c3cf7e@bay-events
+DTSTAMP:20261011T045556Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+SUMMARY:Making Faces: A Puppet Crafting Workshop with Creativity Explored
+LOCATION:Yerba Buena Center for the Arts\, 701 Mission St\, San Francisco\
+ , CA\, San Francisco
+URL:https://sf.funcheap.com/making-faces-puppet-crafting-workshop-creativi
+ ty-explored/
+DESCRIPTION:Craft + Weird & unusual\nhttps://sf.funcheap.com/making-faces-
+ puppet-crafting-workshop-creativity-explored/\n\nSubmitted by the Event O
+ rganizerPhoto courtesy of Creativity ExploredLearn to craft a puppet read
+ y for center stage! Join Creativity Explored artists for a hands-on\, dro
+ p-in workshop to build your very own hand or stick puppet. In this family
+ -friendly activity\, participants will be guided through the steps of des
+ igning\, assembling\, and puppeteering their work of art. Disclaimer: Ple
+ ase double chec
+END:VEVENT
+END:VCALENDAR

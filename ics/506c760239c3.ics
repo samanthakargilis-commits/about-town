@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:506c760239c3@bay-events
+DTSTAMP:20261011T045559Z
+DTSTART;TZID=America/Los_Angeles:20261024T150000
+DTEND;TZID=America/Los_Angeles:20261024T170000
+SUMMARY:October’s Book: The Lies of Locke Lamora by Scott Lynch
+LOCATION:Java Beach Cafe\, 1396 La Playa Street\, San Francisco\, CA San F
+ rancisco\, San Francisco
+URL:https://www.meetup.com/sf-fantasy-book-club/events/316176067/
+DESCRIPTION:Art\nhttps://www.meetup.com/sf-fantasy-book-club/events/316176
+ 067/\n\nJoin us to discuss *Lies of Locke Lamora* (2006) by Scott Lynch. 
+ 📚 **The Pitch**: In the island city of Camorr\, orphan-turned-thief Lo
+ cke Lamora leads the Gentlemen Bastards\, an elite gang of con artists fo
+ oling even the underworld’s most feared crime lord. But when a mysterio
+ us\, deadlier player enters the game\, Locke must out-scheme an enemy who
+  might finally be smarter than him. Genre: Epic Fant
+END:VEVENT
+END:VCALENDAR
