@@ -13,7 +13,8 @@ f = Fetcher(delay=1)
 for url in sys.argv[1:]:
     print("=" * 80, "\n", url)
     if url.startswith("raw:"):
-        url, _, needle = url.partition("|")     # raw:<url>|<text to show the page around>
+        url, _, needle = url.partition("|")     # raw:<url>|<text+to+show+the+page+around>
+        needle = needle.replace("+", " ")
         try:
             text = f.get(url[4:])
             for m in re.finditer(r"https?://[^\s'\"<>]+|/api/[^\s'\"<>]+|/v\d/[^\s'\"<>]+", text):
