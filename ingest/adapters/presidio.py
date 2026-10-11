@@ -18,6 +18,7 @@ PLACES = [
     (re.compile(r"sports basement", re.I), "Sports Basement Presidio", "610 Old Mason St"),
 ]
 CHORES = re.compile(r"^volunteer\b|stewards|litter pickup|landscaping and maintenance|nursery", re.I)
+THEATRE = re.compile(r"\bat (the )?presidio theat(re|er)$", re.I)     # the theatre's own source lists these
 
 
 def place(title):
@@ -32,7 +33,7 @@ def to_event(it):
     utc = lambda k: to_local(it[k].replace(" ", "T") + "Z") if it.get(k) else None
     st = utc("utc_start_date") or to_local(it.get("start_date"))
     title = html_to_text(it.get("title") or "")
-    if not st or not title or CHORES.search(title):
+    if not st or not title or CHORES.search(title) or THEATRE.search(title):
         return None
     venue, address = place(title)
     cost = clean(it.get("cost") or "")
