@@ -10,7 +10,7 @@ sys.path.insert(0, ".")
 from ingest.core import Fetcher, jsonld_events, next_data  # noqa: E402
 
 f = Fetcher(delay=1)
-for url in sys.argv[1:]:
+for url in [u.replace("^", "&") for u in sys.argv[1:]]:   # ^ stands for & (the args pass through bash)
     print("=" * 80, "\n", url)
     if url.startswith("grep:"):
         url, _, needle = url.partition("#")     # grep:<url>#<regex>: every match, with context
