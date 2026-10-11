@@ -22,7 +22,7 @@ OUT_OF_AREA = [
     "cupertino", "campbell", "los gatos", "milpitas", "saratoga", "santa cruz", "sacramento",
     "lake merritt", "jack london square", "temescal", "rockridge", "fruitvale", "chabot space",
     "fox theater", "fox theatre oakland", "paramount theatre", "greek theatre", "freight & salvage",
-    "uc theatre", "uc theater", "cornerstone berkeley", "yoshi's", "the new parish", "east bay",
+    "uc theatre", "uc theater", "new parkway", "cornerstone berkeley", "yoshi's", "the new parish", "east bay",
     "online", "virtual", "zoom", "livestream", "webinar",
 ]
 OUT_RE = re.compile(r"\b(" + "|".join(re.escape(x) for x in OUT_OF_AREA) + r")\b", re.I)
