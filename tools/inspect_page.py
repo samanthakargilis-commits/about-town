@@ -57,3 +57,9 @@ for url in sys.argv[1:]:
     nd = next_data(soup)
     if nd:
         print("  next_data keys:", list(nd.get("props", {}).get("pageProps", {}).keys())[:20])
+    for node in jsonld_events(soup)[:2]:
+        print("  jsonld location:", json.dumps(node.get("location"))[:600])
+    for m in soup.find_all("meta", attrs={"property": re.compile(r"place|geo|location", re.I)}):
+        print("  meta:", m.get("property"), m.get("content"))
+    for m in soup.find_all("meta", attrs={"name": re.compile(r"geo|ICBM", re.I)}):
+        print("  meta:", m.get("name"), m.get("content"))
