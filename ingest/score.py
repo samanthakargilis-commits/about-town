@@ -21,6 +21,12 @@ FOR_KIDS_TITLE = re.compile(r"\b(story ?time|toddlers?|bab(y|ies)\b(?! shower)|i
                             r"children'?s?|trick[- ]or[- ]treat\w*|sat prep|homework|for teens|teen (night|program|club)|tween|lego)", re.I)
 FOR_KIDS_TEXT = re.compile(r"\b(for|ages?)\s+(babies|toddlers|infants|preschoolers|little ones|young children|children|kids|[0-9]{1,2}\s*(-|–|to)\s*([0-9]|1[0-2])\b)", re.I)
 FOR_KIDS_AUDIENCE = re.compile(r"^(babies|toddlers|preschoolers|kids|children|teens|tweens)\b", re.I)   # SFPL leads with its audience
+# a tech, founder or networking event by its title (the body alone is too noisy:
+# a choir concert's page can say "developer")
+TECH_TITLE = re.compile(r"\b(AI|A\.I\.|agentic|LLMs?|GPUs?|robotics|founders?|startups?|start-ups?|builders?|engineer(s|ing)?|"
+                        r"devs?|developers?|hackathon|demo day|pitch (night|competition)|VCs?|venture|networking|tech ?week|"
+                        r"#\w*tech\w*|disrupt|saas|b2b|web3|crypto|product managers?|open source|nvidia|openai|vercel|"
+                        r"coreweave|y ?combinator|yc)\b", re.I)
 FESTIVAL = re.compile(r"\b(fair|festival|fest|street fair|convention|con\b|expo|carnival|block party|market)\b", re.I)
 
 
@@ -89,6 +95,8 @@ class Scorer:
         if self.paid_hosted(ev, title_n):
             return None
         if self.profile.get("no_kids_events") and for_kids(ev):
+            return None
+        if self.profile.get("no_tech_events") and TECH_TITLE.search(ev["title"]) and not self.followed_in(title_n):
             return None
 
         points, reasons, hits = 0.0, [], []

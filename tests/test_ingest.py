@@ -95,6 +95,11 @@ def ev(title, start="2026-10-15T20:00-07:00", **kw):
 class Scoring(unittest.TestCase):
     s = Scorer(PROFILE, FOLLOW)
 
+    def test_no_tech_or_networking(self):
+        self.assertIsNone(self.s.score(ev("Founders Panel: The Agentic Stack", source="luma")))
+        self.assertIsNone(self.s.score(ev("Free 2026 South Bay Transit Summit + Networking")))
+        self.assertIsNotNone(self.s.score(ev("Sudo Choir Annual Concert", description="by developers who sing")))
+
     def test_no_kids_events(self):
         self.assertIsNone(self.s.score(ev("Storytime: For Toddlers", source="sfpl")))
         self.assertIsNone(self.s.score(ev("Performance: Mariela's Music Time", description="Babies, Toddlers or Preschoolers · Dance & Music")))
@@ -133,7 +138,9 @@ class Scoring(unittest.TestCase):
         self.assertIsNone(self.s.score(ev("Storytime for kids with Jeff Kinney")))
 
     def test_tech_downranked_and_never(self):
-        tech = self.s.score(ev("Founders demo day: AI agents", start="2026-10-17T18:00-07:00"))
+        # a tech title is hidden; tech words only in the body still cost points
+        self.assertIsNone(self.s.score(ev("Founders demo day: AI agents", start="2026-10-17T18:00-07:00")))
+        tech = self.s.score(ev("Thursday mixer", description="for founders and engineers", start="2026-10-17T18:00-07:00"))
         self.assertIn("tech", tech["tags"])
         self.assertLess(tech["score"], 0)
         self.assertIsNone(self.s.score(ev("Crypto networking mixer")))
