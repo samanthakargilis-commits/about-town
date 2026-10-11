@@ -565,3 +565,13 @@ class GuidePlaces(unittest.TestCase):
         enrich([ev], FakeFetcher({"https://x.test/show": page}), 10)
         self.assertEqual((ev["venue"], ev["address"]), ("The Chapel", "777 Valencia St"))
         self.assertIn("proper description", ev["description"])
+
+
+class SiteIcons(unittest.TestCase):
+    def test_small_icon_first(self):
+        from ingest import icons
+        soup = BeautifulSoup('<link rel="apple-touch-icon" href="/a.png"><link rel="icon" sizes="192x192" href="/big.png">'
+                             '<link rel="icon" sizes="32x32" href="/f32.png">', "lxml")
+        self.assertEqual(icons.candidates(soup, "https://partiful.com/")[:2],
+                         ["https://partiful.com/f32.png", "https://partiful.com/big.png"])
+        self.assertEqual(icons.host_of("https://www.eventbrite.com/e/x"), "eventbrite.com")

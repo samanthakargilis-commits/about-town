@@ -168,6 +168,13 @@ function displayDate(ev) {
   return d;
 }
 const linkOf = (ev) => ev.ticket_url || ev.source_url;
+// the listing site's own little icon, so a Partiful party reads differently from a library talk
+const siteIcon = (ev) => {
+  let host = '';
+  try { host = new URL(ev.source_url).hostname.replace(/^www\./, ''); } catch (e) { return ''; }
+  const src = (data.icons || {})[host];
+  return src ? `<img class="site" src="${esc(src)}" alt="" title="${esc(sourceLabel(ev.source))}" loading="lazy" onerror="this.remove()">` : '';
+};
 const sourceLabel = (id) => (data.sources.find((s) => s.name === id) || {}).label || id;
 
 function toast(msg, undo) {
@@ -531,7 +538,7 @@ function evRow(ev, { showDay = false } = {}) {
     <div class="body" data-open>
       ${showDay ? `<div class="day">${esc(fmt(displayDate(ev), { weekday: 'short', month: 'short', day: 'numeric' }))}</div>` : ''}
       <h3>${esc(ev.title)}</h3>
-      <div class="meta">${meta}</div>
+      <div class="meta">${siteIcon(ev)}${meta}</div>
       ${star ? `<div class="star">${star}</div>` : ''}
       ${sunEscape(ev) ? `<div class="sun">${esc(sunLine(ev))}</div>` : ''}
       ${labels.length ? `<div class="tags">${labels.join('')}</div>` : ''}

@@ -109,6 +109,7 @@ main { overflow-x: clip; }
 .ev .day { font-size: 12px; font-weight: 700; color: var(--cherry); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 2px; }
 .ev h3 { font-family: var(--serif); font-variation-settings: "SOFT" 100; font-size: 17.5px; font-weight: 600; line-height: 1.2; margin: 0; }
 .ev .meta { color: var(--sub); font-size: 13px; margin-top: 4px; }
+.ev .meta img.site { width: 13px; height: 13px; border-radius: 3px; vertical-align: -2px; margin-right: 5px; object-fit: contain; opacity: .9; }
 .ev .star { margin-top: 6px; font-size: 13px; font-weight: 700; color: var(--butter-ink); }
 .ev .sun, .sheet .sun { margin-top: 6px; font-size: 13px; font-weight: 700; color: var(--butter-ink); }
 .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }

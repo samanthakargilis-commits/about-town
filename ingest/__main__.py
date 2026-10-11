@@ -19,7 +19,7 @@ from urllib.parse import urlparse
 
 import requests
 
-from . import ai, geocode, place, weather
+from . import ai, geocode, icons, place, weather
 from .area import keep
 from .core import (CACHE_DIR, ROOT, BudgetExceeded, Fetcher, clean, html_to_text, iso, jsonld_events,
                    now, og, short_hash, to_local)
@@ -318,11 +318,18 @@ def main(argv=None):
         out.append(ev)
 
     out.sort(key=lambda e: e["start"])
+    try:
+        site_icons, note = icons.write(out, Fetcher(delay=0.5, max_requests=100), OUT)
+        print(note)
+    except Exception as exc:          # icons are decoration; never fail a run over them
+        site_icons = {}
+        print(f"site icons skipped: {exc}")
     payload = {
         "generated": stamp,
         "window": {"start": iso(start), "end": iso(end)},
         "ai": ai.enabled(),
         "sources": health,
+        "icons": site_icons,
         "events": out,
     }
     with open(args.out, "w") as fh:
