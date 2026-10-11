@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6180334f0b32@bay-events
+DTSTAMP:20261011T050317Z
+DTSTART;TZID=America/Los_Angeles:20261024T140000
+DTEND;TZID=America/Los_Angeles:20261024T160000
+SUMMARY:Book #2: Big Swiss-Jen Beagin
+LOCATION:The Punchdown\, 1737 Broadway Street\, Oakland\, CA Oakland\, Oak
+ land
+URL:https://www.meetup.com/ladies-get-lit/events/316743824/
+DESCRIPTION:Comedy + Reading · Oakland\nhttps://www.meetup.com/ladies-get
+ -lit/events/316743824/\n\n**Hi everyone!** **For October\, the winning bo
+ ok is Big Swiss by Jen Beagin.** **Darkly funny\, provocative\, and wildl
+ y unconventional.** **A contemporary novel about a 45-year-old transcript
+ ionist who falls into an explosive affair with one of a sex therapist’s
+  clients.** **Themes to explore and discuss during our next meetup (if yo
+ u feel comfortable)** **• Female pleasure** **• Trauma** **• Moder
+END:VEVENT
+END:VCALENDAR

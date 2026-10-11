@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4cb4aa861e71@bay-events
+DTSTAMP:20261011T050318Z
+DTSTART;TZID=America/Los_Angeles:20261025T100000
+DTEND;TZID=America/Los_Angeles:20261025T133000
+SUMMARY:Halloween Trick-or-Treat Trail 2026 at Winchester Mystery House (S
+ an Jose)
+LOCATION:Winchester Mystery House Gardens\, 525 S Winchester Blvd\, San Jo
+ se\, CA 95128\, San Jose
+URL:https://sf.funcheap.com/halloween-trickortreat-trail-2026-winchester-m
+ ystery-house-san-jose/
+DESCRIPTION:San Jose\nhttps://sf.funcheap.com/halloween-trickortreat-trail
+ -2026-winchester-mystery-house-san-jose/\n\n
+END:VEVENT
+END:VCALENDAR

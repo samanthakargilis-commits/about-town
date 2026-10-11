@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:641411b3df3a@bay-events
+DTSTAMP:20261011T050316Z
+DTSTART;TZID=America/Los_Angeles:20261022T180000
+DTEND;TZID=America/Los_Angeles:20261022T220000
+SUMMARY:Día De Los Muertos “NightLife” 2026 at Cal Academy of Science
+ s
+LOCATION:California Academy of Sciences\, 55 Music Concourse Drive\, San F
+ rancisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/da-de-los-muertos-nightlife-2026-cal-academy-s
+ ciences-sf/
+DESCRIPTION:Museum exhibits + Spirituality · Thursday evening\nhttps://sf
+ .funcheap.com/da-de-los-muertos-nightlife-2026-cal-academy-sciences-sf/\n
+ \nMission Lotería | Mission Street San FranciscoCalifornia Academy of Sc
+ iences presents its fourth annual Día de los Muertos NightLife\, una noc
+ he en Michoacán\, for guests ages 21 and over. The museum-wide evening i
+ ncludes an alebrije unveiling honoring alligator Claude\, a community ofr
+ enda\, calavera face painting\, lotería\, crafts\, traditional Aztec dan
+ ce and folklórico performances\, music by Trio Sa
+END:VEVENT
+END:VCALENDAR

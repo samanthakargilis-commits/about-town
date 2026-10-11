@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:07bf0196525e@bay-events
+DTSTAMP:20261011T050318Z
+DTSTART;TZID=America/Los_Angeles:20261018T190000
+DTEND;TZID=America/Los_Angeles:20261018T210000
+SUMMARY:Single and Ready to Mingle\, 50+
+LOCATION:Mog Asu Wine Bar & Bottle Shop\, 1 Blackfield Dr Ste 14\, Belvede
+ re Tiburon\, CA 94920\, USA\, Tiburon\, CA Tiburon\, Tiburon
+URL:https://www.meetup.com/iwanttodothatsf/events/316641687/
+DESCRIPTION:Tiburon\nhttps://www.meetup.com/iwanttodothatsf/events/3166416
+ 87/\n\nMeet new single friends\, 50+. Enjoy a gorgeous venue\, and make c
+ onnections easily with our FUN Mixer Game! Dress to impress and join us f
+ or a memorable evening. WHEN: Sunday\, Oct 18\, 2026\, 7-9pm. WHERE:[Mog 
+ Asu Wine Bar](https://www.mogasu-ca.com/) at The Cove Shopping Center\, 1
+  Blackfield Drive #14\, Tiburon\, CA. Free parking! **[TICKETS](https://w
+ ww.eventbrite.com/e/marin-singlemingle-for-50-tick
+END:VEVENT
+END:VCALENDAR

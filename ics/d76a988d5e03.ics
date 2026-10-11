@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d76a988d5e03@bay-events
+DTSTAMP:20261011T050318Z
+DTSTART;TZID=America/Los_Angeles:20261017T120000
+DTEND;TZID=America/Los_Angeles:20261017T160000
+SUMMARY:COFFEE x HOUSE
+LOCATION:215 Washington St\, 215 Washington St Oakland\, Oakland
+URL:https://partiful.com/e/12g0qnwRrfs6WRdisLeB
+DESCRIPTION:Oakland\nhttps://partiful.com/e/12g0qnwRrfs6WRdisLeB\n\nCoffee
+  x House is back October 17 from 12–4 PM Good coffee. Fresh pastries. H
+ ouse music all afternoon. DJ Dingus and Yipzus on the decks\, with coffee
+  by Bloomstock keeping everyone properly caffeinated. Good people\, good 
+ music\, and a reason to get out of the house for a few hours. Come throug
+ h\, grab a coffee\, hang for a set\, meet some people\, and stay as long 
+ as you want. Coffee x House October 17
+END:VEVENT
+END:VCALENDAR

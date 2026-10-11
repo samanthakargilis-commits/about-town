@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c0904d2367c9@bay-events
+DTSTAMP:20261011T050317Z
+DTSTART;TZID=America/Los_Angeles:20261020T180000
+DTEND;TZID=America/Los_Angeles:20261020T210000
+SUMMARY:826 Valencia’s “Writer’s Block Party”: $40 for Unlimited B
+ eer & Wine + Free Books (2026)
+LOCATION:Southern Pacific Brewing\, 620 Treat Ave\, San Francisco\, CA\, S
+ an Francisco
+URL:https://sf.funcheap.com/826-valencias-writers-block-party-40-unlimited
+ -beer-wine-free-books-2026/
+DESCRIPTION:Fairs & festivals + Writing\nhttps://sf.funcheap.com/826-valen
+ cias-writers-block-party-40-unlimited-beer-wine-free-books-2026/\n\n826 V
+ alencia826 Valencia’s Associate Board hosts its 2026 Writer’s Block P
+ arty at Southern Pacific Brewing\, a 21+ fundraiser supporting the organi
+ zation’s free writing and tutoring programs for San Francisco youth. Th
+ e neighborhood-themed event includes unlimited beer and wine\, free books
+ \, activities\, a silent auction\, and surprises\, with indoor and outdoo
+ r space available. 826 Valencia Associate 
+END:VEVENT
+END:VCALENDAR

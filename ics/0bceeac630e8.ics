@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0bceeac630e8@bay-events
+DTSTAMP:20261011T050316Z
+DTSTART;TZID=America/Los_Angeles:20261012T180000
+DTEND;TZID=America/Los_Angeles:20261012T200000
+SUMMARY:Karaoke (on a stage!)
+LOCATION:The Mint Karaoke Lounge\, 1942 Market St\, San Francisco\, CA San
+  Francisco\, San Francisco
+URL:https://www.meetup.com/sf-beginner-karaoke-group-small-group-no-judgme
+ nt/events/316848425/
+DESCRIPTION:Singing + Theatre\nhttps://www.meetup.com/sf-beginner-karaoke-
+ group-small-group-no-judgment/events/316848425/\n\nCome join us for karao
+ ke at the Mint!! This is different than our private room events and will 
+ be on a live stage. Please try to keep your RSVP up to date as this event
+  will max out at 10 people. I look forward to seeing you there!
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f51a3a7f6403@bay-events
+DTSTAMP:20261011T050318Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:Service Learning: Holiday Projects
+LOCATION:Filoli\, 86 Cañada Rd Woodside\, CA\, Woodside
+URL:https://filoli.org/whats-on/events/service-learning-holiday-projects/
+DESCRIPTION:Woodside\nhttps://filoli.org/whats-on/events/service-learning-
+ holiday-projects/\n\nJoin the Horticulture team as they embark on turning
+  Filoli into a holiday wonderland! Transforming the historical estate int
+ o a wintery paradise is no easy feat.
+END:VEVENT
+END:VCALENDAR

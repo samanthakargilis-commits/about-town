@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2cea6679704c@bay-events
+DTSTAMP:20261011T050316Z
+DTSTART;TZID=America/Los_Angeles:20261015T150000
+DTEND;TZID=America/Los_Angeles:20261015T200000
+SUMMARY:“Haunted Halloween Hoopla” Artisan Night Market
+LOCATION:Fifty Vara\, 1735 Noriega St\, San Francisco\, CA 94122\, San Fra
+ ncisco
+URL:https://sf.funcheap.com/haunted-halloween-hoopla-artisan-night-market-
+ sf/
+DESCRIPTION:Fairs & festivals + Weird & unusual\nhttps://sf.funcheap.com/h
+ aunted-halloween-hoopla-artisan-night-market-sf/\n\nJune HerreriaJoin us 
+ Thursday October 15 for amazing food\, drinks\, retail\, and artisan vend
+ ors! Admission is free and we welcome everyone at this family-friendly ni
+ ght market. The Haunted Halloween Hoopla at Fifty Vara is a destination f
+ or all ages and abilities. Expect fun music and amazing handcrafted treas
+ ures to take home! The marketplace full of makers & crafters will be upst
+ airs and restaura
+END:VEVENT
+END:VCALENDAR

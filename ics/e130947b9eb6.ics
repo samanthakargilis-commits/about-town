@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e130947b9eb6@bay-events
+DTSTAMP:20261011T050317Z
+DTSTART;TZID=America/Los_Angeles:20261016T190000
+DTEND;TZID=America/Los_Angeles:20261016T210000
+SUMMARY:Here-ish & Queer-ish: Stories of Queer Jewish California
+LOCATION:JCCSF\, 3200 California Street\, San Francisco
+URL:https://www.jccsf.org/event/hereish-and-queerish-stories-of-queer-jewi
+ sh-california/
+DESCRIPTION:Gay / queer + Singing\nhttps://www.jccsf.org/event/hereish-and
+ -queerish-stories-of-queer-jewish-california/\n\nJoin Keshet\, Nice Jewis
+ h Boys+\, and Sapphic Jewish Social Club for a joyful Shabbat with storie
+ s\, laughter\, live performances\, and an open mic. Come share your voice
+  and queer Jewish joy.
+END:VEVENT
+END:VCALENDAR

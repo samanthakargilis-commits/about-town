@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fba48cd4456f@bay-events
+DTSTAMP:20261011T050318Z
+DTSTART;TZID=America/Los_Angeles:20261103T190000
+DTEND;TZID=America/Los_Angeles:20261103T210000
+SUMMARY:SF CogSci #34: Tapes Together Strong
+LOCATION:Frontier Tower - Biotech Lab\, 995 Market St.\, San Francisco\, C
+ A San Francisco\, San Francisco
+URL:https://www.meetup.com/san-francisco-cognitive-science-meetup-group/ev
+ ents/316672374/
+DESCRIPTION:Reading\nhttps://www.meetup.com/san-francisco-cognitive-scienc
+ e-meetup-group/events/316672374/\n\nNote: this session has been moved fro
+ m November 17 to November 3 — same time\, same place. Sorry for the shu
+ ffle. The vote for SF CogSci #34 is in. We’ll be reading [Tapes Togethe
+ r Strong: The Co-evolution of Computation and Cooperation](https://arxiv.
+ org/html/2609.10817v1)\, by Jha\, Cicala\, Agüera y Arcas\, Richards\, J
+ aques\, Kleiman-Weiner\, and Niklasson (2026). You can read it here. See 
+ you Tuesday
+END:VEVENT
+END:VCALENDAR

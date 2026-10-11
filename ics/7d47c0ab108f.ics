@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7d47c0ab108f@bay-events
+DTSTAMP:20261011T050318Z
+DTSTART;TZID=America/Los_Angeles:20261025T110000
+DTEND;TZID=America/Los_Angeles:20261025T170000
+SUMMARY:SF’s “World of Dumplings” 2026: Free Community Food Fest (Fe
+ rry Building)
+LOCATION:Ferry Building\, The Embarcadero and Ferry Plaza\, San Francisco\
+ , CA\, San Francisco
+URL:https://sf.funcheap.com/sfs-world-dumplings-2026-free-community-food-f
+ est-ferry-building/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/sfs-world-dumplings-
+ 2026-free-community-food-fest-ferry-building/\n\n
+END:VEVENT
+END:VCALENDAR

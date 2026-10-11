@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c127b60ecfcf@bay-events
+DTSTAMP:20261011T050318Z
+DTSTART;TZID=America/Los_Angeles:20261010T080000
+DTEND;TZID=America/Los_Angeles:20261010T110000
+SUMMARY:California Rugby vs West Coast 7s
+LOCATION:Stanford
+URL:https://events.berkeley.edu/events/day/categories/Exhibits%7CFilms%7CL
+ ectures%7COther%7CPerforming%20Arts%7CSports
+DESCRIPTION:Stanford\nhttps://events.berkeley.edu/events/day/categories/Ex
+ hibits%7CFilms%7CLectures%7COther%7CPerforming%20Arts%7CSports\n\nCalifor
+ nia rugby competes in the West Coast 7s tournament\, a fast-paced rugby s
+ evens competition with high-energy matches.
+END:VEVENT
+END:VCALENDAR

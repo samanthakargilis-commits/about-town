@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ddfadeb2e59e@bay-events
+DTSTAMP:20261011T050317Z
+DTSTART;TZID=America/Los_Angeles:20261017T101500
+DTEND;TZID=America/Los_Angeles:20261017T121500
+SUMMARY:Shut Up & Write Already! Fremont & East SF Bay
+LOCATION:San Francisco\, San Francisco
+URL:https://www.meetup.com/shutupandwritesfo/events/316738751/
+DESCRIPTION:Reading + Writing\nhttps://www.meetup.com/shutupandwritesfo/ev
+ ents/316738751/\n\n**IMPORTANT NOTICE:** This event is listed on the Shut
+  Up & Write! website. To see full event details\, RSVP\, or ask any quest
+ ions\, make sure to join the group here: [https://www.shutupwrite.com/ser
+ ies/id2vH3i21V00](https://www.shutupwrite.com/series/id2vH3i21V00) Please
+  see the listing on the Shut Up & Write! website for full and updated eve
+ nt location details. \\-\\-\\- Hello\, Starting a Shut Up & W
+END:VEVENT
+END:VCALENDAR

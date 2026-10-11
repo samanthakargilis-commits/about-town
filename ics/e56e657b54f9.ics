@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e56e657b54f9@bay-events
+DTSTAMP:20261011T050316Z
+DTSTART;TZID=America/Los_Angeles:20261011T100000
+DTEND;TZID=America/Los_Angeles:20261011T140000
+SUMMARY:Free Model Boats on Parade + Sailboat Race (Golden Gate Park)
+LOCATION:Spreckels Lake\, Golden Gate Park\, 36th Avenue \, San Francisco\
+ , CA\, San Francisco
+URL:https://sf.funcheap.com/free-model-boats-parade-sailboat-race-golden-g
+ ate-park/
+DESCRIPTION:Fairs & festivals + Weird & unusual\nhttps://sf.funcheap.com/f
+ ree-model-boats-parade-sailboat-race-golden-gate-park/\n\nSF Model Yacht 
+ ClubSan Francisco Model Yacht Club presents Model Boats on Parade\, dozen
+ s of boats on display and running on the lake. Sailboat race at 1 p.m. Hi
+ storic Model Yacht Club Building open as well. Disclaimer: Please double 
+ check event information with the event organizer as events can be cancele
+ d\, details can change after they are added to our calendar\, and errors 
+ do occur.
+END:VEVENT
+END:VCALENDAR

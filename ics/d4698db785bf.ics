@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d4698db785bf@bay-events
+DTSTAMP:20261011T050318Z
+DTSTART;TZID=America/Los_Angeles:20261017T110000
+DTEND;TZID=America/Los_Angeles:20261017T160000
+SUMMARY:Hey Diva x Dot’s Pizza Popup Pt. 2
+LOCATION:Clarion Alley Mural Project\, null Between 17th & 18th St/ Missio
+ n and Valencia St San Francisco\, San Francisco
+URL:https://partiful.com/e/z1t3CpUDXipNMo3O9RSI
+DESCRIPTION:Art\nhttps://partiful.com/e/z1t3CpUDXipNMo3O9RSI\n\nMUNI SL*TS
+  WE ARE GIVING BACK... AGAIN!!️🚋 Every hat sold at this pop-up will 
+ include a $5 donation to Market Street Railway\, the nonprofit keeping SF
+ ’s vintage streetcars alive and our beloved transit system running!! AL
+ SO my friend Vijay is bringing his sourdough pizza pop-up @dots_pizza so 
+ you can leave with a hat AND a full stomach\, 🫃💋✨ In addition to 
+ hats\, I’ll be selling my block printed clo
+END:VEVENT
+END:VCALENDAR

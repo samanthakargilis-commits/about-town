@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c25f26c8b425@bay-events
+DTSTAMP:20261011T050318Z
+DTSTART;TZID=America/Los_Angeles:20261112T183000
+DTEND;TZID=America/Los_Angeles:20261112T203000
+SUMMARY:SF State’s Free Public Rooftop Stargazing Nights w/ Huge Telesco
+ pe
+LOCATION:San Francisco State University Observatory\, Thornton Hall\, 10th
+  Floor San Francisco State University 1600 Holloway Avenue San Francisco\
+ , CA 94132
+URL:https://sf.funcheap.com/sf-states-free-public-rooftop-stargazing-night
+ s-w-huge-telescope-nov-2026-2/
+DESCRIPTION:Thursday evening\nhttps://sf.funcheap.com/sf-states-free-publi
+ c-rooftop-stargazing-nights-w-huge-telescope-nov-2026-2/\n\n
+END:VEVENT
+END:VCALENDAR

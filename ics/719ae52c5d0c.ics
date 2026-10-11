@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:719ae52c5d0c@bay-events
+DTSTAMP:20261011T050317Z
+DTSTART;TZID=America/Los_Angeles:20261017T170000
+DTEND;TZID=America/Los_Angeles:20261017T190000
+SUMMARY:Our Monthly Concert
+LOCATION:6320 San Pablo Avenue\, 6320 San Pablo Ave\, Oakland\, CA 94608\,
+  USA\, Oakland\, CA Oakland\, Oakland
+URL:https://www.meetup.com/bay-area-music-circle/events/315221283/
+DESCRIPTION:Concerts · Oakland\nhttps://www.meetup.com/bay-area-music-cir
+ cle/events/315221283/\n\nThis event consists of * A concert with 6-8 perf
+ ormers\, followed by * A potluck supper and classical "jam session"\, hel
+ d at a member's home. If you want to perform for the concert please sign 
+ up here\, preferably well in advance of the event: https://goo.gl/HgfXBz 
+ If you haven't performed one of our events before\, you must attend at le
+ ast one BAMC concert as a listener prior to performing. Speak wi
+END:VEVENT
+END:VCALENDAR

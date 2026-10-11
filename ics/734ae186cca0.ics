@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:734ae186cca0@bay-events
+DTSTAMP:20261011T050316Z
+DTSTART;TZID=America/Los_Angeles:20261104T180000
+DTEND;TZID=America/Los_Angeles:20261104T193000
+SUMMARY:Free Behind-the-Scenes Talk: How SF Neo-Futurists Run 100 Shows a 
+ Year
+LOCATION:SFPL Main Library Steve Silver Room (4th Floor)\, 100 Larkin Stre
+ et\, San Francisco\, San Francisco
+URL:https://sf.funcheap.com/free-behindthescenes-talk-sf-neofuturists-run-
+ 100-shows-year-sf-main-library/
+DESCRIPTION:Theatre + Discourse\nhttps://sf.funcheap.com/free-behindthesce
+ nes-talk-sf-neofuturists-run-100-shows-year-sf-main-library/\n\nSF Neo-Fu
+ turistsLearn what it takes to write\, direct and perform 100 SHOWS A YEAR
+  as a small group of artists who also RUN THE BUSINESS together. It’s n
+ ot a sitcom\, it’s The San Francisco Neo-Futurists. They put on the Inf
+ inite Wrench\, the show the SF Chronicle calls one of “22 San Francisco
+  things everyone must do!” They’ll pull back the curtain on how they 
+ operate as a non-hierarchical consensus
+END:VEVENT
+END:VCALENDAR

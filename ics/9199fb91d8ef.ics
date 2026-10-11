@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9199fb91d8ef@bay-events
+DTSTAMP:20261011T050316Z
+DTSTART;TZID=America/Los_Angeles:20261017T090000
+DTEND;TZID=America/Los_Angeles:20261017T110000
+SUMMARY:Brava Theater Block Party
+LOCATION:Brava Theater Center\, 2781 24th St San Francisco\, San Francisco
+URL:https://partiful.com/e/j3GJ1vfRd4IX4OLKh1k4
+DESCRIPTION:Fairs & festivals + Theatre\nhttps://partiful.com/e/j3GJ1vfRd4
+ IX4OLKh1k4\n\nBrava Theater is throwing a free 40th anniversary block par
+ ty in the Mission on Saturday\, October 17\, celebrating four decades of 
+ women in the arts with the whole neighborhood invited. Expect live perfor
+ mances and a proper street-party atmosphere outside the historic theater.
+  The post says the event is free with RSVP\, so grab your spot ahead of t
+ ime\, and get there around noon when things kick off.
+END:VEVENT
+END:VCALENDAR

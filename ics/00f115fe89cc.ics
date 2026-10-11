@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:00f115fe89cc@bay-events
+DTSTAMP:20261011T050317Z
+DTSTART;TZID=America/Los_Angeles:20261012T183000
+DTEND;TZID=America/Los_Angeles:20261012T203000
+SUMMARY:Profs & Pints San Francisco: The Rise of Vampires
+LOCATION:The Dairy at the Presidio Sports Basement\, 610 Old Mason Street\
+ , San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/profs-and-pints-sf-bay-area/events/316615770/
+DESCRIPTION:Reading + Weird & unusual\nhttps://www.meetup.com/profs-and-pi
+ nts-sf-bay-area/events/316615770/\n\n[Profs and Pints San Francisco](http
+ s://www.profsandpints.com/sfbayarea) presents: **“The Rise of Vampires\
+ ,”** on the folkloric origins and literary evolution of today’s fange
+ d fiends\, with Sara Hackenberg\, professor of English at San Francisco S
+ tate University and scholar of Victorian literature and literature’s va
+ mpire tradition. [Tickets must be purchased online\, at [https://events.t
+ icketleap.c
+END:VEVENT
+END:VCALENDAR

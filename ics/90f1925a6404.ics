@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:90f1925a6404@bay-events
+DTSTAMP:20261011T050316Z
+DTSTART;TZID=America/Los_Angeles:20261015T170000
+DTEND;TZID=America/Los_Angeles:20261015T200000
+SUMMARY:Big Art Loop: “Waterfront Walkabout” Free SF Art Stroll (Embar
+ cadero)
+LOCATION:The event stretches from Pier 14 to the Exploratorium\, 1 Ferry B
+ uilding San Francisco\, CA
+URL:https://sf.funcheap.com/big-art-loop-waterfront-walkabout-free-sf-art-
+ stroll-embarcadero/
+DESCRIPTION:Art + Theatre · Thursday evening\nhttps://sf.funcheap.com/big
+ -art-loop-waterfront-walkabout-free-sf-art-stroll-embarcadero/\n\nBig Art
+  Loop: “Waterfront Walkabout” Free SF Art Stroll (Embarcadero) Poster
+  Art by Hollis Callas San Francisco’s new event series where live music
+ \, interactive pop-ups\, & monumental art set the stage for a bayside str
+ oll like no other! Launching September 17 and returning monthly every thi
+ rd Thursday this fall\, Waterfront Walkabout is a free series inviting yo
+ u to experience the Big Art Loop – Po
+END:VEVENT
+END:VCALENDAR
