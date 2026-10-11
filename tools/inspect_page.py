@@ -24,6 +24,17 @@ for url in sys.argv[1:]:
         except Exception as exc:
             print("  FETCH FAILED:", exc)
         continue
+    if url.startswith("save:"):
+        import pathlib                          # save:<url>: the whole page, for building an adapter offline
+        try:
+            out = pathlib.Path("app/saved")
+            out.mkdir(parents=True, exist_ok=True)
+            name = re.sub(r"[^a-z0-9]+", "_", url[5:].split("//", 1)[-1].lower()).strip("_")[:90] + ".html"
+            (out / name).write_text(f.get(url[5:]))
+            print("  saved", name)
+        except Exception as exc:
+            print("  FETCH FAILED:", exc)
+        continue
     if url.startswith("raw:"):
         url, _, needle = url.partition("#")     # raw:<url>#<text+to+show+the+page+around>
         needle = needle.replace("+", " ")
