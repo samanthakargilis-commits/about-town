@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cbf0052040ef@bay-events
+DTSTAMP:20261011T040003Z
+DTSTART;TZID=America/Los_Angeles:20261031T210000
+DTEND;TZID=America/Los_Angeles:20261101T030000
+SUMMARY:10/31 - Halloween Night at The Café 👻
+LOCATION:The Café\, 2369 Market St San Francisco\, San Francisco
+URL:https://partiful.com/e/ZJgYRLcGKKN2feZR1IB5
+DESCRIPTION:Weird & unusual\nhttps://partiful.com/e/ZJgYRLcGKKN2feZR1IB5\n
+ \nHalloween at The Café is getting sexy\, spooky & WILD. $600 costume co
+ ntest\, go-go dancers\, & a Halloween night full of tricks & treats. HALL
+ OWEEN AT THE CAFÉ. 🎃 This Halloween\, The Café is turning it ALL the
+  way up with Ms. Mahlae hosting the night and DJ Deft in the DJ booth. Br
+ ing the look you’ve been waiting all year to wear. Sexy\, scary\, outra
+ geous\, or completely over the top. This is your nig
+END:VEVENT
+END:VCALENDAR

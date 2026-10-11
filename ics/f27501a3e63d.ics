@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f27501a3e63d@bay-events
+DTSTAMP:20261011T040002Z
+DTSTART;TZID=America/Los_Angeles:20261012T183000
+DTEND;TZID=America/Los_Angeles:20261012T203000
+SUMMARY:Shut Up and Write - In-person at Sana'a Cafe! - Monday Nights
+LOCATION:Sana’a cafe\, 199 New Montgomery St\, San Francisco\, CA San Fr
+ ancisco\, San Francisco
+URL:https://www.meetup.com/shutupandwritesfo/events/316673205/
+DESCRIPTION:Writing + Comedy\nhttps://www.meetup.com/shutupandwritesfo/eve
+ nts/316673205/\n\nWe're getting into our writing groove in person for the
+  first time since the pandemic. The original Shut Up and Write\, formerly
+  of Crossroads Café in SF\, is now at Sana'a Cafe\, 199 New Montgomery S
+ treet\, San Francisco\, CA 94105. Join us at our new location at Sana'a C
+ afe\, where there is wonderful Yemenite Coffee\, tea\, chai\, ice chocola
+ te\, other drinks\, and various tasty pastries to quench your wri
+END:VEVENT
+END:VCALENDAR

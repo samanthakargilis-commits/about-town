@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:baaa0409678a@bay-events
+DTSTAMP:20261011T040003Z
+DTSTART;TZID=America/Los_Angeles:20261010T193000
+DTEND;TZID=America/Los_Angeles:20261010T213000
+SUMMARY:“Mortified Live” Embarrassing Teen Diary Storytelling (Berkele
+ y)
+LOCATION:Ashkenaz\, 1317 San Pablo Ave.\, Berkeley CA\, Berkeley
+URL:https://sf.funcheap.com/mortified-live-embarrassing-teen-diary-storyte
+ lling-berkeley-6/
+DESCRIPTION:Writing · Berkeley\nhttps://sf.funcheap.com/mortified-live-em
+ barrassing-teen-diary-storytelling-berkeley-6/\n\n
+END:VEVENT
+END:VCALENDAR

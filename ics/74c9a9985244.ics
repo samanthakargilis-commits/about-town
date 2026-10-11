@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:74c9a9985244@bay-events
+DTSTAMP:20261011T040002Z
+DTSTART;TZID=America/Los_Angeles:20261011T100000
+DTEND;TZID=America/Los_Angeles:20261011T120000
+SUMMARY:NEW LOCATION Sunday Coffee & Crafting
+LOCATION:The Hidden Cafe\, 1250 Addison Street\, Suite 111\, Berkeley\, CA
+  Berkeley\, Berkeley
+URL:https://www.meetup.com/east-bay-fiber-arts/events/316439722/
+DESCRIPTION:Craft + Gay / queer · Berkeley\nhttps://www.meetup.com/east-b
+ ay-fiber-arts/events/316439722/\n\nMoving to Hidden Cafe since the weathe
+ r is looking nice tomorrow! Come join us for our bi-weekly Coffee & Craft
+ ing to enjoy some company and cafe fare while making progress on your cur
+ rent WIP! As always\, crafters of all kind are welcome to join\, even if 
+ your preferred medium only loosely fits the definition of "fiber" craft.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4135c590c06c@bay-events
+DTSTAMP:20261011T040002Z
+DTSTART;TZID=America/Los_Angeles:20261023T170000
+DTEND;TZID=America/Los_Angeles:20261023T210000
+SUMMARY:Berkeley Art Club: Halloween Market
+LOCATION:Donkey & Goat Winery\, 1340 Fifth St Berkeley\, Berkeley
+URL:https://partiful.com/e/HlX6nORxjvuMWnipn0jK
+DESCRIPTION:Art + Animals · Berkeley\nhttps://partiful.com/e/HlX6nORxjvuM
+ Wnipn0jK\n\nJoin us for our Halloween Market at Donkey and Goat Winery! E
+ njoy live music\, food and wine while shopping from 21 local artists and 
+ makers. This event is also a fundraiser for the Berkeley Humane Society! 
+ Vendor fees are being donated to Berkeley Humane to support animal welfar
+ e. There will also be opportunities to donate during the event! Berkeley 
+ Humane will also have a table at the market wher
+END:VEVENT
+END:VCALENDAR

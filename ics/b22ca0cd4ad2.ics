@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b22ca0cd4ad2@bay-events
+DTSTAMP:20261011T040002Z
+DTSTART;TZID=America/Los_Angeles:20261105T120000
+DTEND;TZID=America/Los_Angeles:20261105T170000
+SUMMARY:Free First Thursdays at SF’s Museum of Craft and Design
+LOCATION:Museum of Craft and Design\, 2569 Third Street\, San Francisco\, 
+ CA 94107\, San Francisco
+URL:https://sf.funcheap.com/free-first-thursdays-at-sfs-museum-of-craft-an
+ d-design-17/
+DESCRIPTION:Craft + Museum exhibits\nhttps://sf.funcheap.com/free-first-th
+ ursdays-at-sfs-museum-of-craft-and-design-17/\n\nFree First Thursdays at 
+ SF’s Museum of Craft and Design Minnosh Zomorrodinia There’s no bette
+ r time to visit the Museum of Craft and Design than on their Free First T
+ hursdays. Committed to making art\, craft\, and design accessible to ever
+ yone\, the Museum of Craft and Design is free on the first Thursday of ev
+ ery month. Museum of Craft and Design’s Free First Thursdays Every Firs
+ t Thursday | Noon to
+END:VEVENT
+END:VCALENDAR

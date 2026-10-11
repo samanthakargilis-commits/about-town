@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4b14947bac68@bay-events
+DTSTAMP:20261011T040003Z
+DTSTART;TZID=America/Los_Angeles:20261030T160000
+DTEND;TZID=America/Los_Angeles:20261030T220000
+SUMMARY:Hayes Valley’s Glowing Halloween “Trick-or-Treat Trail” + Fr
+ ee Outdoor Movie (2026)
+LOCATION:Hayes Valley\, Hayes St. and Laguna St.\, San Francisco\, CA\, Sa
+ n Francisco
+URL:https://sf.funcheap.com/hayes-valleys-glowing-halloween-trickortreat-t
+ rail-free-outdoor-movie-2026/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/hayes-valleys-glowin
+ g-halloween-trickortreat-trail-free-outdoor-movie-2026/\n\n
+END:VEVENT
+END:VCALENDAR

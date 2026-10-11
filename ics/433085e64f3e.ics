@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:433085e64f3e@bay-events
+DTSTAMP:20261011T040002Z
+DTSTART;TZID=America/Los_Angeles:20261031T173000
+DTEND;TZID=America/Los_Angeles:20261031T200000
+SUMMARY:Ocular Oddities: 21+ After Hours at the Museum of the Eye
+LOCATION:Truhlsen-Marmor Museum of the Eye\, 645 Beach St\, San Francisco\
+ , CA 94109\, San Francisco
+URL:https://sf.funcheap.com/ocular-oddities-hours-museum-eye-2/
+DESCRIPTION:Museum exhibits + Weird & unusual\nhttps://sf.funcheap.com/ocu
+ lar-oddities-hours-museum-eye-2/\n\nMuseum of the EyeGet into the Hallowe
+ en spirit at this 21+ after-hours event at the Museum of the Eye. Explore
+  rarely seen artifacts\, from 19th-century glass eyeballs to articulated 
+ skulls\, and hear strange stories from ophthalmology’s past + enjoy a h
+ osted beer & wine bar. Ocular Oddities: After Hours Saturday\, October 31
+ \, 2026 | 5:30p – 8p Truhlsen – Marmor Museum of the Eye\, 645 Beach 
+ St\, SF FR
+END:VEVENT
+END:VCALENDAR

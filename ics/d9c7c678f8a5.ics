@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d9c7c678f8a5@bay-events
+DTSTAMP:20261011T040001Z
+DTSTART;TZID=America/Los_Angeles:20261025T110000
+DTEND;TZID=America/Los_Angeles:20261025T140000
+SUMMARY:Rockridge Halloween Parade 2026 w/ 40+ Trick-Or-Treat Stops (Oakla
+ nd)
+LOCATION:College Avenue btwn Broadway and Alcatraz\, College Avenue btwn B
+ roadway and Alcatraz\, Oakland\, CA\, Oakland
+URL:https://sf.funcheap.com/rockridge-halloween-parade-2026-40-trickortrea
+ t-stops-oakland/
+DESCRIPTION:Fairs & festivals + Weird & unusual · Oakland\nhttps://sf.fun
+ cheap.com/rockridge-halloween-parade-2026-40-trickortreat-stops-oakland/\
+ n\nRockridge OaklandThe 34th Annual Rockridge Halloween Parade is a free 
+ district-wide event along College Avenue (about 13 blocks – from Broadw
+ ay to Alcatraz) in Oakland featuring trick-or-treating at more than 40 bu
+ sinesses\, crafts\, music\, story time\, costume contests for kids and pu
+ ps\, and Halloween-themed activities at local businesses. Original Event 
+ Description: _Save the date for the spookiest
+END:VEVENT
+END:VCALENDAR
