@@ -1189,20 +1189,26 @@ function render() {
 
 // New here: the first row slides over once to show "Not for me" under it, with a small
 // callout. It plays on the first three opens and stops for good after the first real swipe.
-let peeked = false;
+let peeked = false, peekIO = null;
 function swipePeek(v) {
+  peekIO?.disconnect();        // a re-render replaced the row it was waiting on
   if (peeked || S.swipeTipOff || (S.swipePeeks || 0) >= 3) return;
   const row = v.querySelector('.ev');
   if (!row) return;
-  peeked = true;
-  S.swipePeeks = (S.swipePeeks || 0) + 1; save();
-  const tip = document.createElement('div');
-  tip.className = 'swipe-tip';
-  tip.textContent = 'Swipe left to skip';
-  row.before(tip);
-  setTimeout(() => row.classList.add('peek'), 700);
-  setTimeout(() => { row.classList.remove('peek'); tip.classList.add('gone'); }, 2600);
-  setTimeout(() => tip.remove(), 3100);
+  // wait until the row is on screen (on the calendar it starts below the month)
+  peekIO = new IntersectionObserver((seen) => {
+    if (!seen[0].isIntersecting || peeked) return;
+    peeked = true; peekIO.disconnect();
+    S.swipePeeks = (S.swipePeeks || 0) + 1; save();
+    const tip = document.createElement('div');
+    tip.className = 'swipe-tip';
+    tip.textContent = 'Swipe left to skip';
+    row.before(tip);
+    setTimeout(() => row.classList.add('peek'), 600);
+    setTimeout(() => { row.classList.remove('peek'); tip.classList.add('gone'); }, 2500);
+    setTimeout(() => tip.remove(), 3000);
+  }, { threshold: 0.9 });
+  peekIO.observe(row);
 }
 
 function bind() {
