@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ed0d855f7eb2@bay-events
+DTSTAMP:20261011T050617Z
+DTSTART;TZID=America/Los_Angeles:20261011T160000
+DTEND;TZID=America/Los_Angeles:20261011T173000
+SUMMARY:Sudo Choir Annual Concert - 拾度合唱团专场音乐会
+LOCATION:Valley Presbyterian Church\, Valley Presbyterian Church\, 945 Por
+ tola Rd\, Portola Valley\, CA 94028\, USA\, Portola Valley
+URL:https://luma.com/npeldzkc
+DESCRIPTION:Singing + Concerts · Portola Valley\nhttps://luma.com/npeldzk
+ c\n\nSudo Choir\, founded in 2024\, is a vibrant\, young Chinese mixed-vo
+ ice choir based in the San Francisco Bay Area. Continuously pushing music
+ al boundaries\, Sudo Choir has successfully produced four standalone conc
+ erts\, performed as featured guest artists at the Stanford Memorial Churc
+ h Summer Service\, and joined forces with the GG Orchestra as the feature
+ d chorus for two concerts in 2026. Celebrating
+END:VEVENT
+END:VCALENDAR

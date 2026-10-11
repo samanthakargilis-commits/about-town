@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9734d5fcf58c@bay-events
+DTSTAMP:20261011T050617Z
+DTSTART;TZID=America/Los_Angeles:20261101T140000
+DTEND;TZID=America/Los_Angeles:20261101T200000
+SUMMARY:“Castro Art Mart” 2026: Drag\, Music + Art (1st Sundays)
+LOCATION:Noe Street between Market and Beaver\, Noe Street between Market 
+ and Beaver\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/castro-art-mart-2026-drag-music-art-1st-sunday
+ s-7/
+DESCRIPTION:Gay / queer + Art\nhttps://sf.funcheap.com/castro-art-mart-202
+ 6-drag-music-art-1st-sundays-7/\n\n“Castro Art Mart” 2026: Drag\, Mus
+ ic + Art (1st Sundays) Join us for Castro Art Mart\, a vibrant community 
+ event celebrating local creativity! Experience a lively day in the heart 
+ of The Castro as Castro Art Mart brings together talented local artists\,
+  makers\, musicians\, and performers for an unforgettable celebration of 
+ art\, culture\, and connection. Held every first Sunday of the month\, th
+ is open-a
+END:VEVENT
+END:VCALENDAR

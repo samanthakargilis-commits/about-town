@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:99a43a3148d3@bay-events
+DTSTAMP:20261011T050618Z
+DTSTART;TZID=America/Los_Angeles:20261021T180000
+DTEND;TZID=America/Los_Angeles:20261021T200000
+SUMMARY:Habermas and the Instruments of Domination
+LOCATION:The Fold\, 3359 26th St\, San Francisco\, CA 94110\, USA\, San Fr
+ ancisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/sf-philosophy-reading-group/events/316895642/
+DESCRIPTION:Writing\nhttps://www.meetup.com/sf-philosophy-reading-group/ev
+ ents/316895642/\n\nScience and technology are often celebrated as engines
+  of human progress\, promising greater freedom\, prosperity\, and control
+  over our environment. But what if technological progress also serves to 
+ reinforce existing structures of power? What happens when political and m
+ oral questions are increasingly treated as technical problems to be solve
+ d by experts? In his influential 1968 essay *Technology a
+END:VEVENT
+END:VCALENDAR

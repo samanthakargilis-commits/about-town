@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:61793573fbac@bay-events
+DTSTAMP:20261011T050618Z
+DTSTART;TZID=America/Los_Angeles:20261020T190000
+DTEND;TZID=America/Los_Angeles:20261020T210000
+SUMMARY:SF CogSci #33: Behave\, by Robert Sapolsky
+LOCATION:Frontier Tower - Biotech Lab\, 995 Market St.\, San Francisco\, C
+ A San Francisco\, San Francisco
+URL:https://www.meetup.com/san-francisco-cognitive-science-meetup-group/ev
+ ents/316672362/
+DESCRIPTION:Reading\nhttps://www.meetup.com/san-francisco-cognitive-scienc
+ e-meetup-group/events/316672362/\n\nWe're continuing Behave\, by Robert S
+ apolsky - moving on from chapters 1-6\, which we discussed last time\, an
+ d doing the rest of the book. If you're attending in person\, please be s
+ ure to register [here](https://luma.com/san-francisco-cognitive-science-r
+ eading--5c00) as well\, so you can get into the building. Thank you! Tom
+END:VEVENT
+END:VCALENDAR

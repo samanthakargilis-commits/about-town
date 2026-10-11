@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:74dedefab17b@bay-events
+DTSTAMP:20261011T050617Z
+DTSTART;TZID=America/Los_Angeles:20261021T190000
+DTEND;TZID=America/Los_Angeles:20261021T213000
+SUMMARY:“Back to the Future” Day Comedy Show w/ Claudia Wells (Jennife
+ r Parker from the Film)
+LOCATION:Boom Boom Room\, 1601 Fillmore St.\, San Francisco\, CA\, San Fra
+ ncisco
+URL:https://sf.funcheap.com/future-day-comedy-show-claudia-wells-jennifer-
+ parker-film/
+DESCRIPTION:Comedy\nhttps://sf.funcheap.com/future-day-comedy-show-claudia
+ -wells-jennifer-parker-film/\n\n
+END:VEVENT
+END:VCALENDAR

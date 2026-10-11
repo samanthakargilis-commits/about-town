@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:386f0e397a07@bay-events
+DTSTAMP:20261011T050618Z
+DTSTART;TZID=America/Los_Angeles:20261015T073000
+DTEND;TZID=America/Los_Angeles:20261015T093000
+SUMMARY:Morning Meditation at the SF Dharma Collective
+LOCATION:SF Dharma Collective\, 2929 24th St\, San Francisco\, CA San Fran
+ cisco\, San Francisco
+URL:https://www.meetup.com/san-francisco-mindfulness-meetup/events/3167097
+ 66/
+DESCRIPTION:Meditation\nhttps://www.meetup.com/san-francisco-mindfulness-m
+ eetup/events/316709766/\n\n**Join us in person at 2929 24th street** **OR
+  online via Zoom: [https://tinyurl.com/SFDharma](https://tinyurl.com/SFDh
+ arma) (password: 108108)** **or 301-715-8592 to join by phone. Meeting ID
+ : 545 039 806** Every day\, 7:30 - 8:15am\, build your practice with by-d
+ onation\, open morning meditation. Everyone is welcome. Morning meditatio
+ ns are peer-led and folks are welcome to come late or leave early
+END:VEVENT
+END:VCALENDAR

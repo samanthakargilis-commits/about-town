@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:94c4aeb5b637@bay-events
+DTSTAMP:20261011T050618Z
+DTSTART;TZID=America/Los_Angeles:20261108T120000
+DTEND;TZID=America/Los_Angeles:20261108T150000
+SUMMARY:Free “Blankets & Blockbusters” Toy Story 5 Outdoor Movie (Thri
+ ve City)
+LOCATION:Thrive City\, 1 Warriors Way San Francisco\, CA
+URL:https://sf.funcheap.com/free-blankets-blockbusters-toy-story-5-outdoor
+ -movie-thrive-city/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/free-blankets-blockb
+ usters-toy-story-5-outdoor-movie-thrive-city/\n\n
+END:VEVENT
+END:VCALENDAR

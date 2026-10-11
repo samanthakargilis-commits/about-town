@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e73901e3545c@bay-events
+DTSTAMP:20261011T050618Z
+DTSTART;TZID=America/Los_Angeles:20261017T100000
+DTEND;TZID=America/Los_Angeles:20261017T140000
+SUMMARY:Farmers Market & Face Masks
+LOCATION:Ferry Building\, 1 Ferry Building San Francisco\, San Francisco
+URL:https://partiful.com/e/ETXLOIkz6dGwzfuhUNTC
+DESCRIPTION:Meditation\nhttps://partiful.com/e/ETXLOIkz6dGwzfuhUNTC\n\nHos
+ ted by EVE\, a women's community focused on personal growth\, self-love\,
+  and connection. Join us for a morning at the Ferry Plaza Farmers Market!
+  We'll kick things off with a market scavenger hunt\, then head to a near
+ by park to make natural face masks from fresh market ingredients and wind
+  down with a guided meditation 🌿🍯🥑🧘‍♀️ Pre-sale tix $8\
+ , At the Door $10 Pay via Venmo to secure your spot! Se
+END:VEVENT
+END:VCALENDAR

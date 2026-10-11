@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4ab9b1c792f3@bay-events
+DTSTAMP:20261011T050618Z
+DTSTART;TZID=America/Los_Angeles:20261018T103000
+DTEND;TZID=America/Los_Angeles:20261018T123000
+SUMMARY:Golden Gate Walk Club X Work is Canceled
+LOCATION:Across the Street from Flywheel Coffee (the big tree)\, 672 Stany
+ an St San Francisco\, San Francisco
+URL:https://partiful.com/e/EaVFNA72dpUYV2gffcdM
+DESCRIPTION:Discourse\nhttps://partiful.com/e/EaVFNA72dpUYV2gffcdM\n\nLike
+  a run club but you don’t have to run! Come alone or with friends! 70% 
+ of people come solo This time though we are doing walk club with a twist:
+  no work talk of any kind as we are cohosting with Work is Canceled At Wo
+ rk is Canceled we believe that there is more to someone than what they do
+  for work so at our events the only rule is no work talk. Everything else
+  is on the table: stories\, curios
+END:VEVENT
+END:VCALENDAR

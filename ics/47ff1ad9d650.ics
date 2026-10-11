@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:47ff1ad9d650@bay-events
+DTSTAMP:20261011T050618Z
+DTSTART;TZID=America/Los_Angeles:20261017T070000
+DTEND;TZID=America/Los_Angeles:20261017T160000
+SUMMARY:38th Annual SF Old Car Picnic 2026 w/ Classic Vehicles (Golden Gat
+ e Park)
+LOCATION:Hellman Hollow (aka Historic Speedway Meadow)\, 800 John F Kenned
+ y Dr\, Hellman Hollow Picnic Area\, San Francisco\, CA 94122\, San Franci
+ sco
+URL:https://sf.funcheap.com/38th-annual-sf-car-picnic-2026-classic-vehicle
+ s-golden-gate-park/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/38th-annual-sf-car-p
+ icnic-2026-classic-vehicles-golden-gate-park/\n\n
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:aefbb8b5cbf1@bay-events
+DTSTAMP:20261011T050617Z
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
+SUMMARY:Golden Gate Park “The Whale’s Tail” Beer/Wine Garden + Live 
+ Music (Summer 2026)
+LOCATION:&#8220\;The Whale&#8217\;s Tale&#8221\; Beer &#038\; Wine Garden 
+ (Golden G\, JFK Promenade\, 14th Avenue East Meadow\, Golden Gate Park\, 
+ Golden Gate Park
+URL:https://sf.funcheap.com/golden-gate-park-the-whales-tail-beer-wine-gar
+ den-live-music-summer-2026-28/
+DESCRIPTION:Animals + Concerts · Golden Gate Park\nhttps://sf.funcheap.co
+ m/golden-gate-park-the-whales-tail-beer-wine-garden-live-music-summer-202
+ 6-28/\n\nSubmitted by the Event OrganizerGolden Gate Park “The Whale’
+ s Tail” Beer/Wine Garden + Live Music (Summer 2026) Illuminate The Whal
+ e’s Tale is a seasonal\, open-air destination for live music\, food and
+  drinks\, community programming and relaxing afternoons. Open Saturdays a
+ nd Sundays and select holidays beginning Memorial Day weekend\, the Whale
+ ’s Tail features a rotating lineup of musical acts throu
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2c89922ce31c@bay-events
+DTSTAMP:20261011T050618Z
+DTSTART;TZID=America/Los_Angeles:20261117T183000
+DTEND;TZID=America/Los_Angeles:20261117T200000
+SUMMARY:Community Gratitude: Meet Your Neighbors
+LOCATION:Eureka Valley - Harvey Milk Branch Library\, 3555 16th St San Fra
+ ncisco\, San Francisco
+URL:https://partiful.com/e/7rn4GaH3pcU7yUAougrS
+DESCRIPTION:Reading\nhttps://partiful.com/e/7rn4GaH3pcU7yUAougrS\n\nHello\
+ , my name is... Meet your neighbors! Learn their names! Remember their na
+ mes! Say hi when you see them! No one will make you--but consider invisib
+ le ink...let your creativity flourish :) Decorate a fun reusable name tag
+ \, put it on\, and come meet your neighbors. Enjoy the library’s patio\
+ , connect with people from your community\, and enjoy some light refreshm
+ ents.
+END:VEVENT
+END:VCALENDAR
