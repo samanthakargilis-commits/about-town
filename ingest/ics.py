@@ -62,7 +62,7 @@ VTIMEZONE = [
 
 def calendar(events):
     stamp = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Bay Events//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH"]
+    lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Fogbook//EN", "CALSCALE:GREGORIAN", "METHOD:PUBLISH"]
     lines += VTIMEZONE
     for ev in events:
         lines += vevent(ev, stamp)

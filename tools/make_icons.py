@@ -1,39 +1,36 @@
-"""Draw the app icons (a sunset-gradient tile with a calendar and a star)."""
+"""Draw the Fogbook icons: a pumpkin tile, a cream datebook page and a puff of fog."""
 import pathlib
 from PIL import Image, ImageDraw
 
 OUT = pathlib.Path(__file__).resolve().parent.parent / "app" / "icons"
+PUMPKIN, CREAM, COCOA, CHERRY, FOG = (233, 135, 75), (251, 245, 236), (61, 43, 38), (184, 71, 58), (255, 253, 248)
 
 
 def tile(size, pad_ratio=0.0):
-    img = Image.new("RGB", (size, size))
-    top, mid, bot = (255, 154, 139), (255, 90, 120), (123, 92, 255)
-    px = img.load()
-    for y in range(size):
-        for x in range(size):
-            t = (x + y) / (2 * size)
-            a, b, u = (top, mid, t * 2) if t < .5 else (mid, bot, (t - .5) * 2)
-            px[x, y] = tuple(int(a[i] + (b[i] - a[i]) * u) for i in range(3))
+    k = 4                                   # draw big, shrink for smooth edges
+    S = size * k
+    img = Image.new("RGB", (S, S), PUMPKIN)
     d = ImageDraw.Draw(img)
-    s = size * (1 - pad_ratio)
-    o = (size - s) / 2
-    # calendar body
-    x0, y0, x1, y1 = o + s * .22, o + s * .26, o + s * .78, o + s * .80
-    d.rounded_rectangle([x0, y0, x1, y1], radius=s * .08, fill=(255, 250, 245))
-    d.rounded_rectangle([x0, y0, x1, y0 + s * .14], radius=s * .08, fill=(34, 26, 43))
-    d.rectangle([x0, y0 + s * .08, x1, y0 + s * .14], fill=(34, 26, 43))
+    s = S * (1 - pad_ratio)
+    o = (S - s) / 2
+    # datebook page
+    x0, y0, x1, y1 = o + s * .2, o + s * .2, o + s * .8, o + s * .76
+    d.rounded_rectangle([x0, y0, x1, y1], radius=s * .07, fill=CREAM)
+    d.rounded_rectangle([x0, y0, x1, y0 + s * .15], radius=s * .07, fill=COCOA)
+    d.rectangle([x0, y0 + s * .08, x1, y0 + s * .15], fill=COCOA)
     for cx in (x0 + s * .14, x1 - s * .14):
-        d.rounded_rectangle([cx - s * .03, y0 - s * .06, cx + s * .03, y0 + s * .05], radius=s * .03, fill=(255, 250, 245))
-    # star
-    import math
-    cx, cy, r1, r2 = size / 2, o + s * .56, s * .15, s * .065
-    pts = []
-    for i in range(10):
-        ang = -math.pi / 2 + i * math.pi / 5
-        r = r1 if i % 2 == 0 else r2
-        pts.append((cx + r * math.cos(ang), cy + r * math.sin(ang)))
-    d.polygon(pts, fill=(255, 182, 39))
-    return img
+        d.rounded_rectangle([cx - s * .028, y0 - s * .06, cx + s * .028, y0 + s * .05], radius=s * .028, fill=CREAM)
+    # a planned day: one cherry dot in the grid
+    for i in range(3):
+        for j in range(2):
+            cx, cy = x0 + s * (.13 + i * .17), y0 + s * (.26 + j * .14)
+            r = s * .035
+            d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=CHERRY if (i, j) == (1, 0) else (234, 223, 210))
+    # fog rolling in over the bottom
+    for cx, cy, r in ((.30, .74, .11), (.47, .69, .14), (.65, .73, .12), (.78, .78, .08)):
+        d.ellipse([o + s * (cx - r), o + s * (cy - r), o + s * (cx + r), o + s * (cy + r)], fill=FOG)
+    d.rounded_rectangle([o + s * .2, o + s * .74, o + s * .86, o + s * .86], radius=s * .06, fill=FOG)
+    return img.resize((size, size), Image.LANCZOS)
 
 
 OUT.mkdir(parents=True, exist_ok=True)
