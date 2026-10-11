@@ -152,6 +152,47 @@ def miss():
     return {"miss": int(time.time()), "v": 2}
 
 
+class Refused(Exception):
+    pass
+
+
+def nominatim(session, q):
+    r = session.get(URL, params={"q": q, "format": "json", "limit": 1, "viewbox": VIEWBOX,
+                                 "bounded": 1, "countrycodes": "us"}, timeout=20)
+    if r.status_code != 200:
+        raise Refused(r.status_code)
+    hits = r.json()
+    return [round(float(hits[0]["lat"]), 5), round(float(hits[0]["lon"]), 5)] if hits else None
+
+
+PHOTON = "https://photon.komoot.io/api/"
+GENERIC = set("the a an and at of in on sf san francisco ca california bar theater theatre cafe restaurant club hall house "
+              "room center centre gallery studio park street st avenue ave road rd way market shop store new old".split())
+
+
+def words(text):
+    return {w for w in re.findall(r"[a-z0-9]+", (text or "").lower()) if w not in GENERIC and len(w) > 2}
+
+
+def photon_ok(q: str, props: dict) -> bool:
+    """Photon matches loosely ("Roxie Theater" came back as the Great Star Theater),
+    so keep its answer only if it shares a real word with what was asked."""
+    asked = words(q.split(",")[0])
+    named = words(" ".join(str(props.get(k) or "") for k in ("name", "street")))
+    return bool(asked & named) or bool(asked & {w + "s" for w in named}) or bool({w + "s" for w in asked} & named)
+
+
+def photon(session, q):
+    r = session.get(PHOTON, params={"q": q.replace(",", " "), "limit": 1, "bbox": "-123.2,36.8,-121.3,38.6"}, timeout=20)
+    if r.status_code != 200:
+        raise Refused(r.status_code)
+    feats = r.json().get("features") or []
+    if not feats or not photon_ok(q, feats[0].get("properties") or {}):
+        return None
+    lng, lat = feats[0]["geometry"]["coordinates"][:2]
+    return [round(float(lat), 5), round(float(lng), 5)]
+
+
 def fill(events: list[dict], max_lookups: int = 350) -> dict:
     try:
         cache = json.loads(CACHE.read_text())
@@ -180,26 +221,28 @@ def fill(events: list[dict], max_lookups: int = 350) -> dict:
                 corners += 1
                 continue
         town = town_query(ev)
-        for q in queries(ev) + ([town] if town else []):
-            key = q.lower()
+        qs = queries(ev)
+        # Nominatim wants the map's exact name ("Castro Theatre", not "The Castro Theatre");
+        # Photon forgives spelling ("Black Bird Bookstore") but guesses, so its answer has to share a real word
+        tries = [("n", q) for q in qs] + [("n", q[4:]) for q in qs if q.lower().startswith("the ")] + \
+                [("p", q) for q in qs[:2]] + ([("n", town)] if town else [])
+        for kind, q in tries:
+            key = q.lower() if kind == "n" else "photon:" + q.lower()
             if not fresh(cache.get(key)):
                 if looked >= max_lookups or refused >= 5:
                     continue
                 looked += 1
                 try:
-                    r = session.get(URL, params={"q": q, "format": "json", "limit": 1, "viewbox": VIEWBOX,
-                                                 "bounded": 1, "countrycodes": "us"}, timeout=20)
-                    if r.status_code != 200:
-                        refused += 1                   # turned away, not "no such place": ask again next run
-                    else:
-                        hits = r.json()
-                        cache[key] = [round(float(hits[0]["lat"]), 5), round(float(hits[0]["lon"]), 5)] if hits else miss()
-                except (requests.RequestException, ValueError, KeyError, IndexError):
+                    got = nominatim(session, q) if kind == "n" else photon(session, q)
+                    cache[key] = got or miss()
+                except Refused:
+                    refused += 1                       # turned away, not "no such place": ask again next run
+                except (requests.RequestException, ValueError, KeyError, IndexError, TypeError):
                     refused += 1
                 time.sleep(1.1)
             if isinstance(cache.get(key), list):
                 ev["lat"], ev["lng"] = cache[key]
-                if q == town:
+                if kind == "n" and q == town:
                     ev["near_town"] = True             # the app says "~31 mi"
                     towns += 1
                 found += 1

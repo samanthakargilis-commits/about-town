@@ -109,6 +109,7 @@ main { overflow-x: clip; }
 .dist { border-radius: 6px; padding: 0 5px; white-space: nowrap; }
 .ev .chip { flex: none; width: 54px; border-radius: 12px; padding: 8px 0; text-align: center; font-weight: 700; font-size: 13.5px; line-height: 1.15; align-self: flex-start; }
 .ev .chip small { display: block; font-weight: 600; font-size: 10.5px; opacity: .75; letter-spacing: .3px; }
+.ev .chip .to { display: block; font-size: 10.5px; font-weight: 600; margin-top: 4px; padding-top: 4px; border-top: 1px solid currentColor; border-top-color: color-mix(in srgb, currentColor 25%, transparent); white-space: nowrap; }
 .ev .body { flex: 1; min-width: 0; }
 .ev .day { font-size: 12px; font-weight: 700; color: var(--cherry); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 2px; }
 .ev h3 { font-family: var(--serif); font-variation-settings: "SOFT" 100; font-size: 17.5px; font-weight: 600; line-height: 1.2; margin: 0; }
@@ -262,3 +263,7 @@ button, a, .d, .ev { touch-action: manipulation; }
 .src span:first-child { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .x-btn { border: 0; background: none; color: var(--sub); font-size: 13px; padding: 0 0 0 10px; }
 .field.col input { flex: none; }
+.slots { display: flex; gap: 6px; margin: 0 0 12px; overflow-x: auto; scrollbar-width: none; }
+.slots::-webkit-scrollbar { display: none; }
+.slot { flex: none; height: 32px; padding: 0 13px; border-radius: 99px; border: 1.5px solid var(--line); background: var(--paper); color: var(--cocoa); font: inherit; font-size: 13.5px; font-weight: 600; }
+.slot.on { background: var(--cocoa); border-color: var(--cocoa); color: var(--paper); }

@@ -531,10 +531,36 @@ function starLine(ev) {
   return `⭐ ${esc(f.name)}${why ? ` · ${why}` : ''}`;
 }
 
+// the left-hand time: when it starts and, if it says, when it ends ("10 AM / to 2 PM");
+// something already going shows "Now / to 2 PM"
+const endsSameDay = (ev) => ev.end && !ev.all_day && new Date(ev.end) > new Date(ev.start) && new Date(ev.end) - new Date(ev.start) <= 14 * 3600e3;
+function timeChip(ev) {
+  if (ev.all_day) return 'All<small>DAY</small>';
+  const short = (d) => fmt(d, { hour: 'numeric', minute: '2-digit' }).replace(':00', '');
+  const to = endsSameDay(ev) ? `<span class="to">to ${esc(short(new Date(ev.end)))}</span>` : '';
+  if (to && new Date(ev.start) <= new Date()) return `Now${to}`;
+  return esc(clock(ev)).replace(/ (AM|PM)/, '<small>$1</small>') + to;
+}
+
+// Morning / Afternoon / Evening above a day's list: anything on during those hours
+const SLOTS = { morning: [6, 12], afternoon: [12, 17], evening: [17, 28] };
+let slot = 'any';
+function inSlot(ev) {
+  if (slot === 'any') return true;
+  const [a, b] = SLOTS[slot];
+  if (ev.all_day || runDays(ev) > 1.5) return slot !== 'evening';       // fairs and patches are daytime
+  const s = new Date(ev.start);
+  const h = Number(parts(s).hour) + s.getMinutes() / 60;
+  const len = endsSameDay(ev) ? (new Date(ev.end) - s) / 3600e3 : 2;
+  return h < b && h + len > a;
+}
+const slotChips = () => `<div class="slots">${[['any', 'Any time'], ['morning', 'Morning'], ['afternoon', 'Afternoon'], ['evening', 'Evening']]
+  .map(([k, label]) => `<button class="slot ${slot === k ? 'on' : ''}" data-slot="${k}">${label}</button>`).join('')}</div>`;
+
 function evRow(ev, { showDay = false } = {}) {
   const st = S.status[ev.id];
   const c = colorOf(ev);
-  const t = ev.all_day ? 'All<small>DAY</small>' : esc(clock(ev)).replace(/ (AM|PM)/, '<small>$1</small>');
+  const t = timeChip(ev);
   const mi = distOf(ev);
   const meta = [
     esc(ev.venue || (ev.city && !/san francisco/i.test(ev.city) ? ev.city : '')),
@@ -698,7 +724,7 @@ function upcomingAll() {
     const s = new Date(ev.start);
     const e = ev.end ? new Date(ev.end) : null;
     // timed events that already started today drop off; all-day ones and runs stay
-    const live = ev.all_day ? s >= t || (e && e >= t) : (s >= now || (e && e >= now));
+    const live = ev.all_day ? s >= t || (e && e >= t) : (s >= now || (e ? e >= now : s.getTime() + 3600e3 >= now.getTime()));   // no end given: an hour's grace
     return live && !isHidden(ev) && !tooEarly(ev);
   });
 }
@@ -795,12 +821,14 @@ function renderCal(v) {
     grid += `<button class="${cls}" data-day="${k}" ${past ? 'disabled' : ''}><span class="n">${Number(k.slice(8))}</span><span class="dots">${past ? '' : colors.map((c) => `<i style="background:var(--${c})"></i>`).join('')}</span></button>`;
   }
   $('#subline').innerHTML = planned ? `<b>${planned} plan${planned > 1 ? 's' : ''}</b> on your calendar this month` : 'Tap a day to see what’s good';
-  const list = days.get(selDay) || [];
+  const all = days.get(selDay) || [];
+  const list = all.filter(inSlot);
   const sd = atNoon(selDay);
   v.innerHTML = `<div class="cal"><div class="dow">${['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((x) => `<span>${x}</span>`).join('')}</div><div class="grid">${grid}</div></div>
     <div class="dayhead"><h2>${esc(fmt(sd, { weekday: 'long' }))}, <em>${esc(fmt(sd, { month: 'short', day: 'numeric' }))}</em></h2><small>${list.length ? `${list.length} option${list.length > 1 ? 's' : ''}` : ''}</small></div>
     ${nudgeHTML() || tipHTML(list.length)}
-    ${list.length ? dayList(list, selDay) : `<p class="hint">Nothing near ${S.where === 'near' ? 'you' : 'home'} yet. Lots of events are posted 1 to 2 weeks out, so check back.</p>`}`;
+    ${all.length ? slotChips() : ''}
+    ${list.length ? dayList(list, selDay) : all.length ? `<p class="hint">Nothing in the ${slot} that day. <a href="#" data-slot="any">Show any time</a></p>` : `<p class="hint">Nothing near ${S.where === 'near' ? 'you' : 'home'} yet. Lots of events are posted 1 to 2 weeks out, so check back.</p>`}`;
 }
 
 function renderTonight(v) {
@@ -1234,6 +1262,7 @@ function bind() {
     const no = e.target.closest('[data-ig-no]'); if (no) { S.igRejected.push(no.dataset.igNo); save(); return render(); }
     const ub = e.target.closest('[data-unblock]'); if (ub) { e.preventDefault(); S.blockedPeople = S.blockedPeople.filter((p) => p !== ub.dataset.unblock); save(); buildFollowIndex(); return render(); }
     const uh = e.target.closest('[data-unhide]'); if (uh) { e.preventDefault(); S.hiddenTags = S.hiddenTags.filter((t) => t !== uh.dataset.unhide); save(); return render(); }
+    const sl = e.target.closest('[data-slot]'); if (sl) { e.preventDefault(); slot = sl.dataset.slot; return render(); }
     const ra = e.target.closest('[data-rmask]'); if (ra) { S.sourceAsks.splice(Number(ra.dataset.rmask), 1); save(); return render(); }
     if (e.target.closest('[data-export]')) return exportBackup();
     onEventClick(e);
@@ -1289,6 +1318,10 @@ async function start() {
   }
   buildFollowIndex();
   render();
+  // as the day goes on, what's over drops off (the app can sit open for hours)
+  const refresh = () => { if (tab !== 'me' && $('#sheetWrap').hidden && document.visibilityState === 'visible') render(); };
+  setInterval(refresh, 5 * 60e3);
+  document.addEventListener('visibilitychange', refresh);
   getJSON('weather.json').then((w) => { weather = w; sunMemo.clear(); render(); }).catch(() => {});   // optional
   if (S.where === 'near') findMe();
   if ('serviceWorker' in navigator) {

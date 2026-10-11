@@ -670,6 +670,12 @@ class MapSpots(unittest.TestCase):
         self.assertEqual(geocode.town_query({"city": "San Francisco", "venue": "Bar Shiru"}), "")
         self.assertEqual(geocode.town_query({"city": "", "address": "4235 Spring Hill Rd."}), "")
 
+    def test_photon_guesses_need_a_shared_word(self):
+        from ingest.geocode import photon_ok
+        self.assertFalse(photon_ok("Roxie Theater, San Francisco", {"name": "Great Star Theater", "street": "Jackson Street"}))
+        self.assertFalse(photon_ok("Bar Shiru, San Francisco", {"name": "Tonga Room & Hurricane Bar"}))
+        self.assertTrue(photon_ok("Black Bird Bookstore, San Francisco", {"name": "Black Bird Book Store"}))
+
     def test_refused_lookups_are_not_remembered_as_misses(self):
         from ingest import geocode
         self.assertFalse(geocode.fresh({"miss": 9e12}))           # an old-style miss gets asked again
