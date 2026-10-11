@@ -158,9 +158,10 @@ function displayDate(ev) {
   const s = new Date(ev.start);
   const t = today0();
   let d = s < t && ev.end && new Date(ev.end) >= t ? t : s;
-  // a long run out of town (Nightfall at Filoli) is a weekend outing: list it from the Friday
+  // a long run out of town (Nightfall at Filoli) is a weekend outing: list it from the Friday;
   const e = ev.end && new Date(ev.end);
-  if (e && e - s > 36 * 3600e3 && (distOf(ev) ?? 0) > FAR_RUN_MILES) {
+  // so is one across the bay: Berkeley and Oakland wait for the weekend unless it's someone you follow
+  if (e && e - s > 36 * 3600e3 && ((distOf(ev) ?? 0) > FAR_RUN_MILES || (ev.trip && !ev.followed))) {
     let f = d;
     for (let i = 0; i < 7 && !['Fri', 'Sat', 'Sun'].includes(parts(f).weekday); i++) f = new Date(f.getTime() + 864e5);
     if (f <= e) d = f;
