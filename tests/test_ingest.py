@@ -182,6 +182,10 @@ class NewSources(unittest.TestCase):
         self.assertEqual(evs[0].city, "Woodside")
         self.assertEqual(evs[0].source_url, "https://filoli.org/whats-on/events/nightfall/")
         self.assertTrue(area.in_area(evs[0].to_dict()))
+        self.assertFalse(evs[0].all_day)
+        day = page.replace("2026-09-26T17:30:00-07:00", "2026-10-17").replace("2026-11-01T22:00:00-08:00", "2026-10-17")
+        f.pages[filoli.BASE + "/whats-on/events/nightfall/"] = day
+        self.assertTrue(filoli.fetch(f, dt.datetime(2026, 10, 10, tzinfo=TZ), dt.datetime(2026, 12, 10, tzinfo=TZ))[0].all_day)
 
     def test_sfpl_presidio(self):
         from ingest.adapters import sfpl

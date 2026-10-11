@@ -44,6 +44,8 @@ def fetch(f, start, end):
             if not e:
                 continue
             e.source_url = url
+            # their pages give dates without times ("2026-10-17"): a day out, not midnight
+            e.all_day = e.start[11:16] == "00:00" and (not e.end or e.end[11:16] == "00:00")
             e.venue = e.venue or "Filoli"
             e.address = e.address or "86 Cañada Rd"
             e.city = "Woodside"
