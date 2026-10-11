@@ -20,7 +20,7 @@ from urllib.parse import urlparse
 import requests
 
 from . import ai, geocode, place
-from .area import in_area
+from .area import keep
 from .core import (CACHE_DIR, ROOT, BudgetExceeded, Fetcher, clean, html_to_text, iso, jsonld_events,
                    now, og, short_hash, to_local)
 from .ics import write_ics
@@ -210,7 +210,7 @@ def main(argv=None):
         running = e and s < start <= e   # multi-day run already underway
         if not (start <= s <= end or running):
             continue
-        if not in_area(ev):
+        if not keep(ev):
             continue
         events.append(ev)
     print(f"in window and area: {len(events)} of {len(raw)}")
@@ -220,7 +220,7 @@ def main(argv=None):
 
     # read addresses off event pages for listings that lack them, then re-check the area
     print("places:", place.locate(events, Fetcher(delay=1.0, max_requests=args.locate)), flush=True)
-    events = [e for e in events if in_area(e)]
+    events = [e for e in events if keep(e)]
     print(f"in area once placed: {len(events)}")
 
     # first pass score, enrich the most promising, second pass
