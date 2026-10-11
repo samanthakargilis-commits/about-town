@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7376f816e36c@bay-events
+DTSTAMP:20261011T182530Z
+DTSTART;TZID=America/Los_Angeles:20261011T103000
+DTEND;TZID=America/Los_Angeles:20261011T160000
+SUMMARY:Resort-O-Rama 2026: Mid-Century ’50s Architecture Bash at Flamin
+ go Resort (Santa Rosa)
+LOCATION:Flamingo Resort and Spa\, 2777 4th St\, Santa Rosa\, CA 95405\, S
+ anta Rosa
+URL:https://sf.funcheap.com/resort-o-rama-2026-mid-century-50s-architectur
+ e-bash-at-flamingo-resort-santa-rosa/
+DESCRIPTION:Comedy · A yearly tradition · Santa Rosa\nhttps://sf.funchea
+ p.com/resort-o-rama-2026-mid-century-50s-architecture-bash-at-flamingo-re
+ sort-santa-rosa/\n\nEvent: Resort-O-Rama When: October 8th -11th Where: F
+ lamingo Resort in Santa Rosa\, California. FREE Marketplace on Sunday! Th
+ ere are Day Seminars Free- $27.76\, Lots of ala carte options depending o
+ n interest from $27.76-$499. Evening events are higher priced tickets We 
+ are thrilled to announce ...
+END:VEVENT
+END:VCALENDAR

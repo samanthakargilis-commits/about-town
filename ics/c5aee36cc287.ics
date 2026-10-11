@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c5aee36cc287@bay-events
+DTSTAMP:20261011T182530Z
+DTSTART;TZID=America/Los_Angeles:20261017T100000
+DTEND;TZID=America/Los_Angeles:20261017T173000
+SUMMARY:Filipino American International Book Festival
+LOCATION:San Francisco Main Library\, Koret Auditorium\, 100 Larkin Street
+ \, San Francisco\, CA 94102\, San Francisco
+URL:https://sf.funcheap.com/filipino-american-international-book-festival-
+ sf-main-library/
+DESCRIPTION:Reading + Fairs & festivals\nhttps://sf.funcheap.com/filipino-
+ american-international-book-festival-sf-main-library/\n\nOct. 17-18\, 10 
+ a.m. to 5:30 p.m. both days Explore the richness and variety of Filipino 
+ diasporic literature this Filipino American History Month. The Filipino A
+ merican International Book Festival (FilBookFest) returns in October for 
+ its 8th iteration\, continuing its legacy as the largest Filipino America
+ n ...
+END:VEVENT
+END:VCALENDAR

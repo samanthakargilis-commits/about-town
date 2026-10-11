@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e48b2bc9e10d@bay-events
+DTSTAMP:20261011T182532Z
+DTSTART;TZID=America/Los_Angeles:20261010T100000
+DTEND;TZID=America/Los_Angeles:20261010T120000
+SUMMARY:Service & Readiness Expo at Fleet Fest
+LOCATION:Fleet Fest
+URL:https://sf.funcheap.com/city-guide/sfs-fleet-week-festival-guide/
+DESCRIPTION:Featured on Funcheap\nhttps://sf.funcheap.com/city-guide/sfs-f
+ leet-week-festival-guide/\n\nOctober 10-11 | 10 AM-5 PM | Fleet Fest | FR
+ EE Part of Fleet Fest\, this open-air expo focuses on disaster preparedne
+ ss and emergency response. Learn how military and civilian agencies prepa
+ re for earthquakes\, flooding and other emergencies\, meet medical\, resc
+ ue and logistics teams\, and get a closer look at military equipment. Exh
+ ibitors include the Navy\, Marines\, Coast Guard\, Army\, California Nati
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2fca28590699@bay-events
+DTSTAMP:20261011T182529Z
+DTSTART;TZID=America/Los_Angeles:20261024T110000
+DTEND;TZID=America/Los_Angeles:20261024T150000
+SUMMARY:Alemany Farm Harvest Festival 2026: Free BBQ + Farm Tours
+LOCATION:Alemany Farm\, 700 Alemany Blvd\, San Francisco\, CA\, San Franci
+ sco
+URL:https://sf.funcheap.com/alemany-farm-harvest-festival-2026-free-bbq-fa
+ rm-tours-sf/
+DESCRIPTION:Big Bay Area traditions + Fairs & festivals\nhttps://sf.funche
+ ap.com/alemany-farm-harvest-festival-2026-free-bbq-farm-tours-sf/\n\nAlem
+ any Farm’s annual Harvest Festival includes a free community BBQ\, eco 
+ activities\, live music\, games\, face painting\, and farm tours. The fre
+ e family-oriented event takes place at Alemany Farm in San Francisco. Ori
+ ginal Event Description: _sweet friends\, we are having our annual harves
+ t festival celebration on october ...
+END:VEVENT
+END:VCALENDAR

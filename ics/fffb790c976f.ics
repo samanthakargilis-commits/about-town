@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fffb790c976f@bay-events
+DTSTAMP:20261011T182534Z
+DTSTART;TZID=America/Los_Angeles:20261011T090000
+DTEND;TZID=America/Los_Angeles:20261011T140000
+SUMMARY:Outer Sunset Farmers Market
+LOCATION:Outer Sunset Farmers Market\, 37th Ave and Pacheco\, San Francisc
+ o\, CA San Francisco\, Pacheco
+URL:https://ma.to/event/outer-sunset-farmers-market-11-oct-2026
+DESCRIPTION:Pacheco\nhttps://ma.to/event/outer-sunset-farmers-market-11-oc
+ t-2026\n\nJoin us at the Outer Sunset Farmers Market and Mercantile\, hel
+ d every Sunday from 9am to 2pm at 37th Ave and Pacheco. Featuring a wide 
+ array of local produce\, prepared goods\, and food trucks. Live performan
+ ces from local musicians throughout the day. Special activities for Octob
+ er 11th: - 11:00 AM: Koji Fermentation Demo by Aedan Fermented Foods. Lea
+ rn about Japanese fermentation culture with limi
+END:VEVENT
+END:VCALENDAR

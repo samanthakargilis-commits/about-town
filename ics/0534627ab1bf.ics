@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0534627ab1bf@bay-events
+DTSTAMP:20261011T182534Z
+DTSTART;TZID=America/Los_Angeles:20261011T130000
+DTEND;TZID=America/Los_Angeles:20261011T190000
+SUMMARY:3DS LAN Party and Hangout
+LOCATION:The MADE\, San Francisco\, San Francisco
+URL:https://ma.to/event/3ds-lan-party-11-oct-2026
+DESCRIPTION:Museum exhibits\nhttps://ma.to/event/3ds-lan-party-11-oct-2026
+ \n\nBring your own Nintendo 3DS/2DS and games to The MADE for an afternoo
+ n of multiplayer gaming. The museum will be transformed into Luigi's Mans
+ ion for this handheld session. Admission is $15 ($10 with student ID). Ev
+ ent runs from 1–7 pm.
+END:VEVENT
+END:VCALENDAR

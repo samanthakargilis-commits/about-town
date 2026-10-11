@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:239f86e1400a@bay-events
+DTSTAMP:20261011T182530Z
+DTSTART;TZID=America/Los_Angeles:20261015T180000
+DTEND;TZID=America/Los_Angeles:20261015T200000
+SUMMARY:SFVS Members Only: Book Club October Meeting
+LOCATION:San Francisco\, San Francisco
+URL:https://www.meetup.com/sfvegansociety/events/316606708/
+DESCRIPTION:Reading + Discourse · Thursday evening\nhttps://www.meetup.co
+ m/sfvegansociety/events/316606708/\n\n**\\*\\*\\*SFVS Members Only Event 
+ RSVP Via Zeffy Not Meetup\\*\\*\\*** The RSVP invite was sent directly to
+  members on 9/21. Please [message us](bookclub@sfvs.org) if [you are a me
+ mber](https://www.sfvs.org/membership) and didn't receive an invite. Join
+  fellow SFVS members for our October book club gathering where we will be
+  discussing the first couple of sections of John Sanbonmatsu's 2025 book\
+ , The O
+END:VEVENT
+END:VCALENDAR

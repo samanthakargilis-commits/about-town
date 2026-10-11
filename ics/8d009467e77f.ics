@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8d009467e77f@bay-events
+DTSTAMP:20261011T182535Z
+DTSTART;TZID=America/Los_Angeles:20261018T163000
+DTEND;TZID=America/Los_Angeles:20261018T213000
+SUMMARY:Foodwise Sunday Supper: A Farm to City Feast
+LOCATION:San Francisco Ferry Building Grand Hall\, One Ferry Building\, Sa
+ n Francisco\, CA 94111 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/foodwise-sunday-supper-a-farm-to-city-fea
+ st-tickets-1990131463781
+DESCRIPTION:New in your area\nhttps://www.eventbrite.com/e/foodwise-sunday
+ -supper-a-farm-to-city-feast-tickets-1990131463781\n\nJoin Foodwise and 3
+ 5 top restaurants for an elegant four-course feast and fundraising gala s
+ upporting local farms and healthy communities.
+END:VEVENT
+END:VCALENDAR

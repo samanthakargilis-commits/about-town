@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d236f128e12c@bay-events
+DTSTAMP:20261011T182534Z
+DTSTART;TZID=America/Los_Angeles:20261023T164500
+DTEND;TZID=America/Los_Angeles:20261023T174500
+SUMMARY:“Stranger Things” Laser Show: 80s Hits in the Dome (San Jose)
+LOCATION:The Tech Interactive\, 201 S Market St. San Jose
+URL:https://sf.funcheap.com/stranger-laser-show-80s-hits-dome-san-jose/
+DESCRIPTION:Camp & Halloween + Theatre\nhttps://sf.funcheap.com/stranger-l
+ aser-show-80s-hits-dome-san-jose/\n\nLASERS! at The Tech: Stranger Things
+  Fans cannot get enough of the retro vibe of the hit series Stranger Thin
+ gs. Take a trip to the upside-down in the safety of the Dome Theater at T
+ he Tech Interactive. Experience the 1980s tunes and soundscapes from the 
+ show\, ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ad53a983aa97@bay-events
+DTSTAMP:20261011T182533Z
+DTSTART;TZID=America/Los_Angeles:20261112T140000
+DTEND;TZID=America/Los_Angeles:20261112T150000
+SUMMARY:Activity: Wild Goose Qigong
+LOCATION:Presidio Branch Library\, 3150 Sacramento St\, San Francisco
+URL:https://sfpl.org/events/2026/11/12/activity-wild-goose-qigong
+DESCRIPTION:Craft + Reading · Near home for lunch\nhttps://sfpl.org/event
+ s/2026/11/12/activity-wild-goose-qigong\n\nAdults · Weaving Stories: Asi
+ an American\, Native Hawaiian and Pacific Islander Interest · Health & W
+ ellness
+END:VEVENT
+END:VCALENDAR

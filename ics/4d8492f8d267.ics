@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4d8492f8d267@bay-events
+DTSTAMP:20261011T182532Z
+DTSTART;TZID=America/Los_Angeles:20261011T120000
+DTEND;TZID=America/Los_Angeles:20261011T220000
+SUMMARY:Mill Valley Film Festival
+LOCATION:Multiple venues\, San Francisco\, San Francisco
+URL:https://ma.to/event/mill-valley-film-festival-11-oct-2026-1
+DESCRIPTION:Fairs & festivals\nhttps://ma.to/event/mill-valley-film-festiv
+ al-11-oct-2026-1\n\nThe 49th Mill Valley Film Festival features a deep Fr
+ ench selection this year with nearly 20 films on the roster. Highlights i
+ nclude 'In Waves' by former Villa Albertine resident Phuong Mai Nguyen an
+ d Andrey Zvyagintsev’s 'Minotaur'\, which took the Grand Prix at Cannes
+  and is France’s Oscar submission. Screenings are spread across Marin a
+ nd Berkeley. Check the profile for the full schedule and tic
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:61df33caddf3@bay-events
+DTSTAMP:20261011T182534Z
+DTSTART;TZID=America/Los_Angeles:20261011T090000
+DTEND;TZID=America/Los_Angeles:20261011T170000
+SUMMARY:Garden Curator Workshop
+LOCATION:Hakone Estate and Gardens\, Palo Alto\, Palo Alto
+URL:https://ma.to/event/bamboo-garden-fence-workshop-2026-10-11
+DESCRIPTION:Palo Alto\nhttps://ma.to/event/bamboo-garden-fence-workshop-20
+ 26-10-11\n\nJoin Hakone Garden Curator Jacob Kellner for two full days of
+  hands-on learning in the garden. Participants will work alongside Jacob 
+ to explore Japanese gardening techniques\, use various tools and material
+ s\, and take part in a garden building project\, including the constructi
+ on of a bamboo garden fence. Dates: October 10–11\, 2026 Time: 9 AM–5
+  PM daily Lunch\, tools\, and materials are provided. Par
+END:VEVENT
+END:VCALENDAR

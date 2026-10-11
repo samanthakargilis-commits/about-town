@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:76e13d62d870@bay-events
+DTSTAMP:20261011T182534Z
+DTSTART;TZID=America/Los_Angeles:20261017T093000
+DTEND;TZID=America/Los_Angeles:20261017T113000
+SUMMARY:Treasure Hunt: Admission Prices by Entry Time
+LOCATION:
+URL:https://sf.funcheap.com/city-guide/sf-opera-hosts-rare-costume-sale-tr
+ easure-hunt-halloween/
+DESCRIPTION:Weird & unusual · Featured on Funcheap\nhttps://sf.funcheap.c
+ om/city-guide/sf-opera-hosts-rare-costume-sale-treasure-hunt-halloween/\n
+ \nSaturday\, October 17 9:30 am–12:30 pm entry: $25 1:00–4:30 pm entr
+ y: $15 Sunday\, October 18 9:30 am–12:30 pm entry: $10 1:00–4:30 pm e
+ ntry: $5 Admission includes two hours of shopping\; costume purchases cos
+ t extra. Choose an earlier entry for the best selection or a later entry 
+ for cheaper admission.
+END:VEVENT
+END:VCALENDAR

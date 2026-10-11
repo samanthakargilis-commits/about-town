@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0295fe4e5eba@bay-events
+DTSTAMP:20261011T182531Z
+DTSTART;TZID=America/Los_Angeles:20261014T170000
+DTEND;TZID=America/Los_Angeles:20261014T200000
+SUMMARY:Silhouettes: Figure Drawing
+LOCATION:African American Art & Culture\, 762 Fulton St San Francisco\, Sa
+ n Francisco
+URL:https://ma.to/event/silhouettes-figure-drawing-15-oct-2026
+DESCRIPTION:Art + Musical theatre\nhttps://ma.to/event/silhouettes-figure-
+ drawing-15-oct-2026\n\nE Gallery returns to San Francisco for Silhouettes
+ \, an eclectic creative gathering and figure drawing session. This creati
+ ve sanctuary invites artists to ground themselves in the process\, draw a
+  live model\, and connect with other local creatives in a supportive spac
+ e. The event features candle-lit ambiance\, an auction\, a giveaway\, mus
+ ical interludes\, and complimentary refreshments. Please visit ht
+END:VEVENT
+END:VCALENDAR

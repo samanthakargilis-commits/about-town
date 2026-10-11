@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0c54bec13b88@bay-events
+DTSTAMP:20261011T182530Z
+DTSTART;TZID=America/Los_Angeles:20260918T090000
+DTEND;TZID=America/Los_Angeles:20260918T110000
+SUMMARY:Westbrae Pumpkin Patch
+LOCATION:1272 Gilman Ave\, Berkeley
+URL:https://westbrae-nursery.com/
+DESCRIPTION:Fairs & festivals + U-pick farms · Featured on Funcheap · Be
+ rkeley\nhttps://westbrae-nursery.com/\n\nNorth Berkeley | 1272 Gilman Ave
+ \, Berkeley | September 18 – October 31\, 2026 | 9am – 5:30pm Westbra
+ e Nursery \, a worker-owned cooperative\, runs its annual Pumpkin Patch f
+ rom September 18-October 31\, 2026 \, with 100% of pumpkin sales benefiti
+ ng Cornell Elementary School in Albany. Pumpkins range from about $5-$35 
+ \, and the patch is free to browse. Westbrae will also host bake sales on
+  October 3 and
+END:VEVENT
+END:VCALENDAR

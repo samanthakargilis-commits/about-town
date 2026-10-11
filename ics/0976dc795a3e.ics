@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0976dc795a3e@bay-events
+DTSTAMP:20261011T182535Z
+DTSTART;TZID=America/Los_Angeles:20261017T143000
+DTEND;TZID=America/Los_Angeles:20261017T160000
+SUMMARY:The Saturday Roller Disco - 1st Session - All Ages - 2:30 P.M. to 
+ 4 P.M.
+LOCATION:Church Of 8 Wheels\, 554 Fillmore Street\, San Francisco\, CA 941
+ 17 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/the-saturday-roller-disco-1st-session-all
+ -ages-230-pm-to-4-pm-tickets-1978867374587
+DESCRIPTION:Dance nights\nhttps://www.eventbrite.com/e/the-saturday-roller
+ -disco-1st-session-all-ages-230-pm-to-4-pm-tickets-1978867374587\n\nThe s
+ econd session of the Saturday Roller Disco
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:eca63ec2ed2b@bay-events
+DTSTAMP:20261011T182532Z
+DTSTART;TZID=America/Los_Angeles:20261020T190000
+DTEND;TZID=America/Los_Angeles:20261020T203000
+SUMMARY:benny blanco - In Conversation
+LOCATION:Jewish Community Center of San Francisco\, 3200 California Street
+ \, San Francisco\, CA 94118 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/benny-blanco-in-conversation-tickets-2002
+ 229006858
+DESCRIPTION:Reading + Discourse\nhttps://www.eventbrite.com/e/benny-blanco
+ -in-conversation-tickets-2002229006858\n\nThe Grammy Award–nominated pr
+ oducer\, artist\, actor\, and author discusses why getting it wrong may a
+ ctually get you where you want to go.
+END:VEVENT
+END:VCALENDAR

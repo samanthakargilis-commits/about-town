@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b365579d84be@bay-events
+DTSTAMP:20261011T182531Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:Oktoberfest at SideTrack in Pleasanton
+LOCATION:SideTrack Bar + Grill\, 30 West Angela Street\, Pleasanton\, Plea
+ santon
+URL:https://sf.funcheap.com/oktoberfest-sidetrack-pleasanton/
+DESCRIPTION:Cultural festivals · Pleasanton\nhttps://sf.funcheap.com/okto
+ berfest-sidetrack-pleasanton/\n\nIt’s time to take out your lederhosen 
+ and dirndl dress! SideTrack’s Oktoberfest celebration is back\, bringin
+ g a biergarten experience to downtown Pleasanton on Friday\, October 16 a
+ nd Saturday\, October 17! The two-day event features a special menu of Ge
+ rman food and drink\, live entertainment by Polkageist West\, fun games .
+ ..
+END:VEVENT
+END:VCALENDAR

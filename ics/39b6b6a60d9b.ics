@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:39b6b6a60d9b@bay-events
+DTSTAMP:20261011T182531Z
+DTSTART;TZID=America/Los_Angeles:20261017T100000
+DTEND;TZID=America/Los_Angeles:20261017T130000
+SUMMARY:Free Chalk Art Event (El Cerrito)
+LOCATION:Bart Path adjacent to Centennial Park\, El Cerrito\, Between Stoc
+ kton Ave and Eureka Ave\, El Cerrito\, El Cerrito
+URL:https://sf.funcheap.com/free-chalk-art-event-el-cerrito/
+DESCRIPTION:Art · El Cerrito\nhttps://sf.funcheap.com/free-chalk-art-even
+ t-el-cerrito/\n\nJoin the City of El Cerrito in celebrating United Agains
+ t Hate Week with a free chalk art event on Saturday Oct 17 from 10 am –
+  1 pm! Professional artist live drawing\, music\, and read aloud story ti
+ me thanks to reccomendations from the El Cerrito ...
+END:VEVENT
+END:VCALENDAR

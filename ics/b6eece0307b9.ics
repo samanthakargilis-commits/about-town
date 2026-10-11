@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b6eece0307b9@bay-events
+DTSTAMP:20261011T182531Z
+DTSTART;TZID=America/Los_Angeles:20261026T190000
+DTEND;TZID=America/Los_Angeles:20261026T220000
+SUMMARY:Free SF Comedy Show “Hayes Valley Comedy Night” at The Functio
+ n
+LOCATION:The Function\, 1414 Market Street\, San Francisco\, CA\, San Fran
+ cisco
+URL:https://sf.funcheap.com/free-sf-comedy-show-hayes-valley-comedy-night-
+ at-the-function-every-monday-19/
+DESCRIPTION:Comedy\nhttps://sf.funcheap.com/free-sf-comedy-show-hayes-vall
+ ey-comedy-night-at-the-function-every-monday-19/\n\nWelcome to the heart 
+ of laughter right on the edge of SF’s vibrant Hayes Valley district! St
+ ep into a world of hilarity and at the newest addition to the city’s co
+ medy scene – a chic\, upscale comedy club boasting avant-garde decor\, 
+ an upstairs lounge and a roster of top-notch comedians. ...
+END:VEVENT
+END:VCALENDAR

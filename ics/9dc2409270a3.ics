@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9dc2409270a3@bay-events
+DTSTAMP:20261011T182533Z
+DTSTART;TZID=America/Los_Angeles:20261011T130000
+DTEND;TZID=America/Los_Angeles:20261011T143000
+SUMMARY:The Savage Mind: David Treuer
+LOCATION:Grace Cathedral\, 1100 California St\, San Francisco San Francisc
+ o\, San Francisco
+URL:https://ma.to/event/the-savage-mind-david-treuer-11-oct-2026
+DESCRIPTION:Discourse\nhttps://ma.to/event/the-savage-mind-david-treuer-11
+ -oct-2026\n\nNational Book Award finalist David Treuer joins The Very Rev
+ . Malcolm Clemens Young to discuss his work\, The Savage Mind. Writing in
+  the aftermath of George Floyd’s murder and January 6\, Treuer traces t
+ he American legacy of frontier violence through his own family history—
+ from his upbringing on the Leech Lake reservation to his parents’ lives
+  as a Jewish Holocaust refugee and the first American In
+END:VEVENT
+END:VCALENDAR

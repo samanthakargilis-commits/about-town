@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:47f251becaad@bay-events
+DTSTAMP:20261011T182531Z
+DTSTART;TZID=America/Los_Angeles:20261015T190000
+DTEND;TZID=America/Los_Angeles:20261015T210000
+SUMMARY:Redemption Time
+LOCATION:Presidio Theatre\, 99 Moraga Ave\, San Francisco
+URL:https://www.presidiotheatre.org/ticket-path?EventInstanceId=78202&Show
+ Name=redemption-time&ShowId=130&performance=1
+DESCRIPTION:A walk from home + Theatre · Thursday evening\nhttps://www.pr
+ esidiotheatre.org/ticket-path?EventInstanceId=78202&ShowName=redemption-t
+ ime&ShowId=130&performance=1\n\nRedemption Time is a 70-minute multimedia
+  concert film that weaves together the stories and work of two formerly i
+ ncarcerated artists: the celebrated poet Jimmy
+END:VEVENT
+END:VCALENDAR

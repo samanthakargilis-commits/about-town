@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:36e6a9af4df1@bay-events
+DTSTAMP:20261011T182529Z
+DTSTART;TZID=America/Los_Angeles:20261015T180000
+DTEND;TZID=America/Los_Angeles:20261015T200000
+SUMMARY:Beats\, Brews & Vines Free Downtown Millbrae Festival
+LOCATION:Downtown Millbrae\, Broadway & Victoria Ave.\, Millbrae\, CA 9403
+ 0\, Millbrae
+URL:https://sf.funcheap.com/beats-brews-vines-free-downtown-millbrae-festi
+ val-4/
+DESCRIPTION:Fairs & festivals + Musical theatre · Thursday evening · Mil
+ lbrae\nhttps://sf.funcheap.com/beats-brews-vines-free-downtown-millbrae-f
+ estival-4/\n\nSpend your summer nights in Downtown Millbrae at Beats\, Br
+ ews & Vines\, a free outdoor concert series featuring live music\, local 
+ food\, and refreshing drinks! Join us every third Thursday from August th
+ rough October\, 6:00–8:00 PM\, at Broadway & Hillcrest. 2026 Beats\, Br
+ ews & Vines ...
+END:VEVENT
+END:VCALENDAR

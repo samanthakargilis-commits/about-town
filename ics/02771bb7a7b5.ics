@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:02771bb7a7b5@bay-events
+DTSTAMP:20261011T182531Z
+DTSTART;TZID=America/Los_Angeles:20261011T100000
+DTEND;TZID=America/Los_Angeles:20261011T160000
+SUMMARY:USS Ashland Public Tours
+LOCATION:Pier 35\, San Francisco\, San Francisco
+URL:https://ma.to/event/uss-ashland-public-tours-2026-10-11
+DESCRIPTION:Big Bay Area traditions + Fairs & festivals\nhttps://ma.to/eve
+ nt/uss-ashland-public-tours-2026-10-11\n\nPublic tours of USS Ashland\, a
+ n amphibious ship with a flight deck and well deck. Tours run from 10am t
+ o 4pm. The ship is docked at Pier 35. Note: tours are not available on Fr
+ iday due to the Parade of Ships. Part of Fleet Week celebrations.
+END:VEVENT
+END:VCALENDAR

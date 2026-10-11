@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:15dabfc32636@bay-events
+DTSTAMP:20261011T182534Z
+DTSTART;TZID=America/Los_Angeles:20261011T110000
+DTEND;TZID=America/Los_Angeles:20261011T150000
+SUMMARY:Rooftop Nikkei Brunch
+LOCATION:Kaiyō Rooftop\, 701 3rd St. San Francisco\, San Francisco
+URL:https://ma.to/event/rooftop-nikkei-brunch-11-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/rooftop-nikkei-brunch-11
+ -oct-2026\n\nJoin Kaiyō Rooftop for a weekend of Nikkei brunch and cockt
+ ail specials with views of the San Francisco skyline from the 12th floor.
+  The venue is 21+. Brunch is served Saturdays and Sundays from 11am to 3p
+ m. Reservations available via Resy or the official website.
+END:VEVENT
+END:VCALENDAR

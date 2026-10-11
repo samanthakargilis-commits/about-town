@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c981555cde71@bay-events
+DTSTAMP:20261011T182534Z
+DTSTART;TZID=America/Los_Angeles:20261011T090000
+DTEND;TZID=America/Los_Angeles:20261011T140000
+SUMMARY:Downtown San Mateo Farmers' Market
+LOCATION:Downtown San Mateo Farmers' Market\, San Francisco\, San Mateo
+URL:https://ma.to/event/downtown-san-mateo-farmers-market-2026-10-11
+DESCRIPTION:San Mateo\nhttps://ma.to/event/downtown-san-mateo-farmers-mark
+ et-2026-10-11\n\nThis year-round farmers market in downtown San Mateo off
+ ers fresh produce\, seasonal favorites\, and locally made goods. Sundays 
+ from 9:00 AM to 2:00 PM.
+END:VEVENT
+END:VCALENDAR

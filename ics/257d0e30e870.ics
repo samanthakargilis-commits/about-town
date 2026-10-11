@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:257d0e30e870@bay-events
+DTSTAMP:20261011T182534Z
+DTSTART;TZID=America/Los_Angeles:20261020T120000
+DTEND;TZID=America/Los_Angeles:20261020T150000
+SUMMARY:SF’s Free Concerts & Food Trucks: “Civic Center Soundtrack”
+LOCATION:Fulton Plaza\, Fulton and Larkin\, San Francisco\, CA\, San Franc
+ isco
+URL:https://sf.funcheap.com/sfs-free-concerts-food-trucks-civic-center-sou
+ ndtrack-every-tue-thu-54/
+DESCRIPTION:Concerts + Reading\nhttps://sf.funcheap.com/sfs-free-concerts-
+ food-trucks-civic-center-soundtrack-every-tue-thu-54/\n\nSF’s Free Conc
+ erts & Food Trucks: “Civic Center Soundtrack” (Every Tue/Thu) Jon Bau
+ er c/o Illuminate San Francisco’s free lunchtime concert series is back
+ . The Civic Center Soundtrack returns for its third season starting Tuesd
+ ay\, April 14\, 2026\, bringing live music to Fulton Plaza twice a week t
+ hrough October. Concerts take place Tuesdays and Thursdays from 12 pm to 
+ 3 pm outside the San Francisco
+END:VEVENT
+END:VCALENDAR

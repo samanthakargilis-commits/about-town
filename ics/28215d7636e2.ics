@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:28215d7636e2@bay-events
+DTSTAMP:20261011T182529Z
+DTSTART;VALUE=DATE:20261004
+DTEND;VALUE=DATE:20261005
+SUMMARY:2026 San Francisco Fleet Week
+LOCATION:Northern Waterfront\, San Francisco
+URL:https://sf.funcheap.com/city-guide/october-street-fairs-festivals/
+DESCRIPTION:Big Bay Area traditions + Fairs & festivals · Featured on Fun
+ cheap\nhttps://sf.funcheap.com/city-guide/october-street-fairs-festivals/
+ \n\nOctober 4-12\, 2026 – SF (Northern Waterfront) – FREE – The ann
+ ual Fleet Week airshow and festival is back with more than a full week of
+  events including ship tours\, the Parade of Ships\, Fleet Fest\, K9 show
+ cases\, and the three-day airshow running October 9-11\, 2026 \, highligh
+ ted by the Blue Angels buzzing around the city.
+END:VEVENT
+END:VCALENDAR

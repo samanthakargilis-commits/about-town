@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:28857816b9b0@bay-events
+DTSTAMP:20261011T182533Z
+DTSTART;TZID=America/Los_Angeles:20261028T180000
+DTEND;TZID=America/Los_Angeles:20261028T200000
+SUMMARY:Love Potion Crafts Night
+LOCATION:The Love Potion Library - Books\, Tea\, Wine\, The Love Potion Li
+ brary - Books\, Tea\, Wine\, 284 Noe St\, San Francisco\, CA 94114\, USA\
+ , San Francisco
+URL:https://luma.com/71c8ntml
+DESCRIPTION:Craft + Reading · Your reading tastes\nhttps://luma.com/71c8n
+ tml\n\nWhat's better than discussions about wonderful books while you cra
+ ft? Welcome to Love Potion Crafters\, where rival hobbies become lovers. 
+ This is a monthly meetup where we combine our love for romance reading an
+ d crafts. Here's the deal: on the last Wednesday of the month\, we gather
+  at the Love Potion Library to craft\, connect\, and dig into our book of
+  the month. Think of it as a book club\, but on
+END:VEVENT
+END:VCALENDAR

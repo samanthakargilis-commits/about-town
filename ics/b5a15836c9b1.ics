@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b5a15836c9b1@bay-events
+DTSTAMP:20261011T182533Z
+DTSTART;TZID=America/Los_Angeles:20261011T130000
+DTEND;TZID=America/Los_Angeles:20261011T190000
+SUMMARY:Japanese Collectible Pop Up
+LOCATION:Chameleon Vintage\, 1572 Haight St\, San Francisco\, CA 94117 San
+  Francisco\, San Francisco
+URL:https://ma.to/event/japanese-collectible-pop-up-11-oct-2026
+DESCRIPTION:Theatre\nhttps://ma.to/event/japanese-collectible-pop-up-11-oc
+ t-2026\n\nTokyo Beatniks is back for a Japanese collectible pop-up statio
+ ned outside Chameleon Vintage. Expect a truckload of rare collectibles\, 
+ figures\, magazines\, and retro games. Guest Toyko Beatniks will be vendi
+ ng out of an old Japanese Kei Van and bringing a Neo Geo Candy Cabinet Ar
+ cade for everyone to play. Sam Naftaly will also be on-site with his otak
+ u-inspired jewelry and additional rare collectib
+END:VEVENT
+END:VCALENDAR

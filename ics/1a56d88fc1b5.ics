@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1a56d88fc1b5@bay-events
+DTSTAMP:20261011T182531Z
+DTSTART;TZID=America/Los_Angeles:20261011T130000
+DTEND;TZID=America/Los_Angeles:20261011T150000
+SUMMARY:Quietly Queer: City Lights & Park Hang
+LOCATION:Réveille Coffee Co.\, 200 Columbus Ave\, San Francisco\, CA 9413
+ 3\, USA\, San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/quietly-queer-meetup-for-lgbtq-introverts-and-a
+ llies/events/316700552/
+DESCRIPTION:Reading + Gay / queer\nhttps://www.meetup.com/quietly-queer-me
+ etup-for-lgbtq-introverts-and-allies/events/316700552/\n\nHi folx - Join 
+ us for a Quietly Queer chill afternoon hang in North Beach\, San Francisc
+ o! We'll meet at **Réveille Coffee Co.**\, grab a beverage or snack\, an
+ d head to **City Lights Booksellers** to browse their selection before ma
+ king our way over to **Washington Square** to hang out in the park togeth
+ er for the rest of the time. This is a low-pressure\, come-as-you-are gat
+ hering for LGBTQ+ folks t
+END:VEVENT
+END:VCALENDAR

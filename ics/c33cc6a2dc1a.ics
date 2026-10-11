@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c33cc6a2dc1a@bay-events
+DTSTAMP:20261011T182534Z
+DTSTART;TZID=America/Los_Angeles:20261011T090000
+DTEND;TZID=America/Los_Angeles:20261011T133000
+SUMMARY:Hello Bachata 5 Year Anniversary
+LOCATION:Verdi Club\, 2424 Mariposa St\, San Francisco San Francisco\, San
+  Francisco
+URL:https://ma.to/event/hello-bachata-5-year-anniversary-11-oct-2026
+DESCRIPTION:Dance nights\nhttps://ma.to/event/hello-bachata-5-year-anniver
+ sary-11-oct-2026\n\nHello Bachata and Hello Kizomba celebrate their 5-yea
+ r anniversary with a daytime dance party at the Verdi Club. Two floors: M
+ ain Floor features Bachata (and some Salsa)\; 2nd Floor features Kizomba 
+ (Urban Kiz\, Ghetto Zouk\, Afro House\, Kompa\, Doucer\, Tarraxo\, and mo
+ re). Lessons (3:00 PM – 4:00 PM): - Bachata: Ngoc & Tien Tran (Main Flo
+ or) - Urban Kiz: Tyler (2nd Floor) Live DJs (4:00 PM – 8:30 PM):
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6bba91d91f1f@bay-events
+DTSTAMP:20261011T182530Z
+DTSTART;TZID=America/Los_Angeles:20261107T100000
+DTEND;TZID=America/Los_Angeles:20261107T150000
+SUMMARY:SF’s Free Día de los Muertos + Diwali Celebration w/ Fire Cerem
+ ony (Presido Tunnel Tops)
+LOCATION:Crissy Field Center\, 603 Mason Street San Francisco\, CA 94129
+URL:https://sf.funcheap.com/sfs-free-da-de-los-muertos-diwali-celebration-
+ fire-ceremony-presido-tunnel-tops/
+DESCRIPTION:Cultural festivals + Spirituality\nhttps://sf.funcheap.com/sfs
+ -free-da-de-los-muertos-diwali-celebration-fire-ceremony-presido-tunnel-t
+ ops/\n\nJoin us at the Presidio Tunnel Tops for a family-friendly Día de
+  los Muertos & Diwali event in the park. Celebrated annually in the fall 
+ season\, these two distinct cultural observances come together in a natio
+ nal park to honor South Asian and Latinx traditions. Designed ...
+END:VEVENT
+END:VCALENDAR

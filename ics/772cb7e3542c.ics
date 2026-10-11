@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:772cb7e3542c@bay-events
+DTSTAMP:20261011T182534Z
+DTSTART;TZID=America/Los_Angeles:20261011T110000
+DTEND;TZID=America/Los_Angeles:20261011T160000
+SUMMARY:Afternoon Tea at Elliston Vineyards
+LOCATION:Elliston Vineyards\, Palo Alto\, Palo Alto
+URL:https://ma.to/event/afternoon-tea-elliston-vineyards-2026-10-11
+DESCRIPTION:Palo Alto\nhttps://ma.to/event/afternoon-tea-elliston-vineyard
+ s-2026-10-11\n\nAfternoon tea is served on the outdoor patio at Elliston 
+ Vineyards on weekends from 11am to 4pm\, with a tiered stand of tea-time 
+ bites alongside tea and juice. The historic mansion and grounds can be ad
+ mired on the property\, where ostriches can also be viewed. Elliston Vine
+ yards sits in Sunol\, California\, in the Historic Livermore Valley Wine 
+ Country\, with a parking lot on site. Advance reservatio
+END:VEVENT
+END:VCALENDAR

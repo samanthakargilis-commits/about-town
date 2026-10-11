@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:384d45a85aca@bay-events
+DTSTAMP:20261011T182531Z
+DTSTART;TZID=America/Los_Angeles:20261016T170000
+DTEND;TZID=America/Los_Angeles:20261016T210000
+SUMMARY:Pleasant Hill Night Market: Food\, Music & Performances
+LOCATION:Chilpancingo Park\, 200 Golf Club Rd\, Pleasant Hill\, CA\, Pleas
+ ant Hill
+URL:https://sf.funcheap.com/pleasant-hills-new-night-market-12/
+DESCRIPTION:Fairs & festivals · Pleasant Hill\nhttps://sf.funcheap.com/pl
+ easant-hills-new-night-market-12/\n\nPleasant Hill Night Market Will Retu
+ rn in May 2026 After a successful first season\, the Night Market will be
+  back in May 2026 with food\, music\, merchandise\, activities and more! 
+ Visit Pleasant Hill California for more info. After getting so much love 
+ and support from ...
+END:VEVENT
+END:VCALENDAR

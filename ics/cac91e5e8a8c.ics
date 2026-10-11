@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cac91e5e8a8c@bay-events
+DTSTAMP:20261011T182532Z
+DTSTART;TZID=America/Los_Angeles:20261011T200000
+DTEND;TZID=America/Los_Angeles:20261011T235900
+SUMMARY:Flop Fest Weekend 2
+LOCATION:Church of Clown\, 2400 Bayshore Blvd San Francisco\, San Francisc
+ o
+URL:https://ma.to/event/flop-fest-weekend-2-2026-10-11
+DESCRIPTION:Musical theatre + Weird & unusual\nhttps://ma.to/event/flop-fe
+ st-weekend-2-2026-10-11\n\nFlop Fest weekend 2 at Church of Clown (2400 B
+ ayshore Blvd). Sunday\, October 11\, 2026. Featuring Gra\, Señor Babyhea
+ d\, SLÜRT\, Clown Cabaret\, and Les Cabotins. Sliding scale $20–$40\, 
+ no one turned away for lack of funds.
+END:VEVENT
+END:VCALENDAR

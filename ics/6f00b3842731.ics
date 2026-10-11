@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6f00b3842731@bay-events
+DTSTAMP:20261011T182532Z
+DTSTART;TZID=America/Los_Angeles:20261030T180000
+DTEND;TZID=America/Los_Angeles:20261030T210000
+SUMMARY:Drink n Draw @ Moth Belly Gallery
+LOCATION:Moth Belly Gallery\, 912 Larkin St San Francisco\, San Francisco
+URL:https://partiful.com/e/SwZdagvkUsobypYU1Fd0
+DESCRIPTION:Art + Writing\nhttps://partiful.com/e/SwZdagvkUsobypYU1Fd0\n\n
+ 🗣️ Sketchboard Presents: Drink n' Draw at Moth Belly Gallery. Come j
+ oin us for a relaxing in community with live music\, and friendly vibes. 
+ 📅 Friday\, October 30th 📍 912 Larkin Street\, SF ⌛️ 6-9pm 🎟
+ ️ FIRST COME FIRST SERVE SEATING!!!! 🍻 BYOB or grab one at the galle
+ ry to support them 🎨 We'll have some art supplies on deck or bring you
+ r own! ❌ No oil paints\, spray paint\, transphobes\, AI\, smart glass
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:45f3e41b791b@bay-events
+DTSTAMP:20261011T182530Z
+DTSTART;TZID=America/Los_Angeles:20261114T190000
+DTEND;TZID=America/Los_Angeles:20261114T220000
+SUMMARY:FREE: Oakland Comedy Saturday Night @ Secret Speakeasy (7p + 9p Sh
+ ows)
+LOCATION:Secret Location (Oakland)\, Oakland\, CA
+URL:https://sf.funcheap.com/free-oakland-comedy-saturday-night-secret-spea
+ keasy-7p-9p-shows-113/
+DESCRIPTION:Comedy + Weird & unusual\nhttps://sf.funcheap.com/free-oakland
+ -comedy-saturday-night-secret-speakeasy-7p-9p-shows-113/\n\nGet ready for
+  our “HellaSecret” speakeasy comedy show in Oakland. A series of pop-
+ up live comedy shows at unique spots all across the bay. We’ll take ove
+ r a venue and you’ll get an email with the secret location. This HellaS
+ ecret comedy show takes place in a ...
+END:VEVENT
+END:VCALENDAR

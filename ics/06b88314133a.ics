@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:06b88314133a@bay-events
+DTSTAMP:20261011T182535Z
+DTSTART;TZID=America/Los_Angeles:20261012T110000
+DTEND;TZID=America/Los_Angeles:20261012T130000
+SUMMARY:Wheel Throwing Workshop for Beginners: Small-Group Pottery
+LOCATION:North Mayfair Avenue\, North Mayfair Avenue\, Daly City\, CA 9401
+ 5 Daly City\, Daly City
+URL:https://www.eventbrite.com/e/wheel-throwing-workshop-for-beginners-sma
+ ll-group-pottery-registration-2001894397031
+DESCRIPTION:Craft · Daly City\nhttps://www.eventbrite.com/e/wheel-throwin
+ g-workshop-for-beginners-small-group-pottery-registration-2001894397031\n
+ \nExplore your creativity with clay in this intimate\, 2-student wheel th
+ rowing class in San Francisco! $95 per person\, beginners welcome!
+END:VEVENT
+END:VCALENDAR

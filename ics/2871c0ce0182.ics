@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2871c0ce0182@bay-events
+DTSTAMP:20261011T182530Z
+DTSTART;TZID=America/Los_Angeles:20261017T110000
+DTEND;TZID=America/Los_Angeles:20261017T170000
+SUMMARY:San Francisco Photobook Fair
+LOCATION:Harvey Milk Photo Center\, 50 Scott St San Francisco\, San Franci
+ sco
+URL:https://partiful.com/e/LlOxT9SxTOKBXJFlHvG6
+DESCRIPTION:Fairs & festivals + Craft\nhttps://partiful.com/e/LlOxT9SxTOKB
+ XJFlHvG6\n\nThe San Francisco Photobook Fair will host over 30 tables of 
+ publishers and vendors selling and promoting photography books\, magazine
+ s\, and zine publications during a two-day weekend event hosted at the Ha
+ rvey Milk Photo Center. The fair will take place October 17th and 18th 20
+ 26 and will be open to the public for free. The Harvey Milk Photo Center 
+ invites photobook publishers and artists to join 
+END:VEVENT
+END:VCALENDAR

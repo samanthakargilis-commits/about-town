@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5c8178c32a1c@bay-events
+DTSTAMP:20261011T182534Z
+DTSTART;TZID=America/Los_Angeles:20261011T000000
+DTEND;TZID=America/Los_Angeles:20261011T020000
+SUMMARY:Cherry Crimson Fog Launch
+LOCATION:Molly Tea\, 3969 Rivermark Plaza\, Santa Clara\, CA 95054 San Fra
+ ncisco\, Santa Clara
+URL:https://ma.to/event/cherry-crimson-fog-2026-10-11
+DESCRIPTION:Santa Clara\nhttps://ma.to/event/cherry-crimson-fog-2026-10-11
+ \n\nMolly Tea Santa Clara launches the Cherry Crimson Fog\, a new cherry-
+ flavored drink. Purchase the drink and participate in the Snap & Share to
+  Win promotion: share 3 photos featuring Molly Tea and Cherry Crimson Fog
+  on social media with #MollyTeaSantaClara and #CherryReverie\, tag @molly
+ teausaofficial\, and receive a Pink Molly Tea Bag. Limited to 100 bags pe
+ r day\, first come\, first served\, while sup
+END:VEVENT
+END:VCALENDAR

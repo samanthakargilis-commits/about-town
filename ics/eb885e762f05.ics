@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:eb885e762f05@bay-events
+DTSTAMP:20261011T182534Z
+DTSTART;TZID=America/Los_Angeles:20261011T090000
+DTEND;TZID=America/Los_Angeles:20261011T130000
+SUMMARY:Cal Bear Decorating at Studio 26
+LOCATION:Studio 26\, 5303 Claremont Ave\, Oakland San Francisco\, Oakland
+URL:https://ma.to/event/cal-bear-decorating-studio-26-2026-10-11
+DESCRIPTION:Oakland\nhttps://ma.to/event/cal-bear-decorating-studio-26-202
+ 6-10-11\n\nA family friendly Cal Bear decorating session at Studio 26\, p
+ art of Cal's homecoming weekend in Oakland. Visitors customize their own 
+ Cal bear using a selection of decorations\, and all supplies are provided
+ . The drop-in session runs 9am-1pm on Sunday\, October 11\, so attendees 
+ can arrive at any point within that window and take as long as they need.
+  Sign-up is offered through the link in the organi
+END:VEVENT
+END:VCALENDAR

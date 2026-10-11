@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:92cce2164699@bay-events
+DTSTAMP:20261011T182533Z
+DTSTART;TZID=America/Los_Angeles:20261017T100000
+DTEND;TZID=America/Los_Angeles:20261017T153000
+SUMMARY:Community Carbon Removal Challenge
+LOCATION:Press Building (Sustainability Accelerator)\, 425 Santa Teresa St
+ reet\, Stanford\, CA 94305 Stanford\, Stanford
+URL:https://www.eventbrite.com/e/community-carbon-removal-challenge-ticket
+ s-1998019434915
+DESCRIPTION:Stanford\nhttps://www.eventbrite.com/e/community-carbon-remova
+ l-challenge-tickets-1998019434915\n\nAre you wondering how we can reverse
+  climate change\; not just keep it from getting worse? If so\, this uniqu
+ e event is for you.
+END:VEVENT
+END:VCALENDAR

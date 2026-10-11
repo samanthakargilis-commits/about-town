@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:41dfffe21c93@bay-events
+DTSTAMP:20261011T182535Z
+DTSTART;TZID=America/Los_Angeles:20261018T190000
+DTEND;TZID=America/Los_Angeles:20261018T210000
+SUMMARY:The Nancy Gilliland Trio 2026
+LOCATION:Redwood City Woman's Club\, 149 Clinton Street\, Redwood City\, C
+ A 94062 Redwood City\, Redwood City
+URL:https://www.eventbrite.com/e/the-nancy-gilliland-trio-2026-tickets-199
+ 8390697371
+DESCRIPTION:Concerts + Musical theatre · Redwood City\nhttps://www.eventb
+ rite.com/e/the-nancy-gilliland-trio-2026-tickets-1998390697371\n\nGet rea
+ dy for a musical journey through the Great American Songbook with The Nan
+ cy Gilliland Trio - it's going to be a night to remember!
+END:VEVENT
+END:VCALENDAR

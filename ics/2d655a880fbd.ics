@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2d655a880fbd@bay-events
+DTSTAMP:20261011T182532Z
+DTSTART;TZID=America/Los_Angeles:20261011T160000
+DTEND;TZID=America/Los_Angeles:20261011T173000
+SUMMARY:Melissa King: Book Celebration
+LOCATION:Book Passage SF Ferry Bldg\, San Francisco\, San Francisco
+URL:https://ma.to/event/melissa-king-the-girl-who-became-king-11-oct-2026
+DESCRIPTION:Reading + Gay / queer\nhttps://ma.to/event/melissa-king-the-gi
+ rl-who-became-king-11-oct-2026\n\nJoin Book Passage at the Ferry Building
+  for a meet-and-greet celebration of award-winning chef\, author\, and ac
+ tivist Melissa King. The event marks the release of her memoir\, 'The Gir
+ l Who Became King\,' an intimate and heartfelt exploration of family\, fo
+ od\, and her journey as a queer Chinese American chef. Tickets are availa
+ ble on the profile.
+END:VEVENT
+END:VCALENDAR

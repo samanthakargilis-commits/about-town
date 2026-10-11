@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a6980c834c76@bay-events
+DTSTAMP:20261011T182532Z
+DTSTART;TZID=America/Los_Angeles:20261018T140000
+DTEND;TZID=America/Los_Angeles:20261018T150000
+SUMMARY:Studio 8 Film Festival Kick-Off: No Nothing Cinema & George Kuchar
+LOCATION:Phyllis Wattis Theater\, SFMOMA 1st floor\, 151 3rd Street\, San 
+ Francisco\, CA 94103 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/studio-8-film-festival-kick-off-no-nothin
+ g-cinema-george-kuchar-tickets-1998223498274
+DESCRIPTION:Fairs & festivals + Theatre\nhttps://www.eventbrite.com/e/stud
+ io-8-film-festival-kick-off-no-nothing-cinema-george-kuchar-tickets-19982
+ 23498274\n\nThis free screening at SFMOMA kicks off the 3rd Studio 8 Film
+  Festival: rare films from the legendary No Nothing Cinema + George Kucha
+ r
+END:VEVENT
+END:VCALENDAR

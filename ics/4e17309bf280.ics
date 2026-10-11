@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4e17309bf280@bay-events
+DTSTAMP:20261011T182532Z
+DTSTART;TZID=America/Los_Angeles:20261011T100000
+DTEND;TZID=America/Los_Angeles:20261011T120000
+SUMMARY:Wallace & Gromit: Were-Rabbit
+LOCATION:4 Star Theatre\, 2200 Clement St San Francisco\, San Francisco
+URL:https://ma.to/event/wallace-and-gromit-were-rabbit-2026-10-11
+DESCRIPTION:Theatre\nhttps://ma.to/event/wallace-and-gromit-were-rabbit-20
+ 26-10-11\n\nFree screening of 'Wallace & Gromit: The Curse of the Were-Ra
+ bbit' at 10:00 am. Complimentary popcorn. Tickets available at 4-star-mov
+ ies.com.
+END:VEVENT
+END:VCALENDAR

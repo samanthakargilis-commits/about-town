@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ffc57fc2fed2@bay-events
+DTSTAMP:20261011T182534Z
+DTSTART;TZID=America/Los_Angeles:20261011T170000
+DTEND;TZID=America/Los_Angeles:20261011T200000
+SUMMARY:Dominique and the Diamonds
+LOCATION:Old Western Saloon\, Point Reyes\, CA San Francisco\, Point Reyes
+URL:https://ma.to/event/dominique-and-the-diamonds-2026-10-11
+DESCRIPTION:Point Reyes\nhttps://ma.to/event/dominique-and-the-diamonds-20
+ 26-10-11\n\nDominique and the Diamonds bring the Honky Tonk Queen Tour to
+  the Old Western Saloon in Point Reyes on Sunday\, October 11\, with Eliz
+ a Thorn on the bill. The show starts at 5:00 PM and admission is $10.
+END:VEVENT
+END:VCALENDAR

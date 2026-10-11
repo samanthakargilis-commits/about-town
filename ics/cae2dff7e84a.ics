@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cae2dff7e84a@bay-events
+DTSTAMP:20261011T182531Z
+DTSTART;TZID=America/Los_Angeles:20261103T100000
+DTEND;TZID=America/Los_Angeles:20261103T120000
+SUMMARY:Transportation & Senior Services Resource Fair (Redwood City)
+LOCATION:Veterans Memorial Senior Center\, 1333 Madison Avenue\, Redwood C
+ ity\, Redwood City
+URL:https://sf.funcheap.com/transportation-senior-services-resource-fair-r
+ edwood-city/
+DESCRIPTION:Fairs & festivals · Redwood City\nhttps://sf.funcheap.com/tra
+ nsportation-senior-services-resource-fair-redwood-city/\n\nCome gather in
+ formation and engage with staff of local organizations that offer crucial
+  transportation and services to older adults in San Mateo County! Free to
+  attend. Bring family and friends! Need a ride to the resource fair? Via 
+ Assist is offering free-rides to residents who live from Burlingame ...
+END:VEVENT
+END:VCALENDAR

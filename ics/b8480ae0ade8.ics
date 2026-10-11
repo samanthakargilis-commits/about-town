@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b8480ae0ade8@bay-events
+DTSTAMP:20261011T182532Z
+DTSTART;TZID=America/Los_Angeles:20261011T110000
+DTEND;TZID=America/Los_Angeles:20261011T120000
+SUMMARY:Adventures of Harley: Book 2
+LOCATION:On Waverly\, 162 Waverly Place San Francisco\, San Francisco
+URL:https://ma.to/event/adventures-of-harley-book-2-11-oct-2026
+DESCRIPTION:Reading + Theatre\nhttps://ma.to/event/adventures-of-harley-bo
+ ok-2-11-oct-2026\n\nJoin us for a live immersive reading of 'Adventures o
+ f Harley: Book 2 – Ochomundo\,' where Harley heads underwater on a top 
+ secret mission. The reading features an all-new score from Melanie\, Jack
+ ie\, and Karam\, plus a special guest appearance by Ray. Story and art ar
+ e by Jordan and Remo. Part of the Sunday Storytime series at On Waverly i
+ n San Francisco's Chinatown.
+END:VEVENT
+END:VCALENDAR

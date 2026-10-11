@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cffdc5a40474@bay-events
+DTSTAMP:20261011T182534Z
+DTSTART;TZID=America/Los_Angeles:20261011T100000
+DTEND;TZID=America/Los_Angeles:20261011T140000
+SUMMARY:Pastry Pop-Up at Caché Bistro
+LOCATION:Caché Bistro\, 1235 9th Ave\, San Francisco\, CA 94122 San Franc
+ isco\, San Francisco
+URL:https://ma.to/event/pastry-pop-up-cache-bistro-2026-10-11
+DESCRIPTION:New in your area\nhttps://ma.to/event/pastry-pop-up-cache-bist
+ ro-2026-10-11\n\nCaché Bistro's pastry pop-up serves hazelnut caramel co
+ okies at 1235 9th Ave. The pop-up runs on Saturdays and Sundays starting 
+ at 10am and continues until the cookies sell out.
+END:VEVENT
+END:VCALENDAR

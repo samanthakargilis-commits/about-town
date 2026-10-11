@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:620e57abc1ca@bay-events
+DTSTAMP:20261011T182534Z
+DTSTART;TZID=America/Los_Angeles:20261012T120000
+DTEND;TZID=America/Los_Angeles:20261012T160000
+SUMMARY:SF’s Indigenous Peoples Day at Yerba Buena Gardens
+LOCATION:Yerba Buena Gardens (Esplanade)\, 773 Mission St.\, San Francisco
+ \, CA\, San Francisco
+URL:https://sf.funcheap.com/sfs-indigenous-peoples-day-at-yerba-buena-gard
+ ens/
+DESCRIPTION:Art · Near work for lunch\nhttps://sf.funcheap.com/sfs-indige
+ nous-peoples-day-at-yerba-buena-gardens/\n\nIndigenous Peoples Day Mon\, 
+ Oct 12 | 12:00pm – 4:00pm Great Lawn\, Yerba Buena Gardens Mission St. 
+ between 3rd & 4th Sts. San Francisco\, CA Join us in celebration of San F
+ rancisco Indigenous Peoples Day with a magnificent profusion of Native Am
+ erican art\, music and vendors. The event highlights the ...
+END:VEVENT
+END:VCALENDAR

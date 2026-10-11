@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6b6653114bf9@bay-events
+DTSTAMP:20261011T182532Z
+DTSTART;TZID=America/Los_Angeles:20261016T190000
+DTEND;TZID=America/Los_Angeles:20261016T210000
+SUMMARY:Queer Crush @ Mission Cliffs
+LOCATION:Mission Cliffs\, 2295 Harrison St\, San Francisco\, CA San Franci
+ sco\, San Francisco
+URL:https://www.meetup.com/queer-crush-norcal/events/316766783/
+DESCRIPTION:Gay / queer\nhttps://www.meetup.com/queer-crush-norcal/events/
+ 316766783/\n\n🎟️ free for [@touchstoneclimbing](https://www.instagra
+ m.com/touchstoneclimbing/) gym members! 🎫 $20 day pass for non-members
+  (thats a 33% discount on the regular price!) 🧗🏻‍♂️rentals ar
+ e FREE for QC attendees\, so no need to worry if you don’t have climbin
+ g shoes or a harness (if you wanna climb ropes!) 🎉this is an all level
+ s meet up\, so no matter your experience\, you’re welcome to join us! 
+ ⏰come e
+END:VEVENT
+END:VCALENDAR

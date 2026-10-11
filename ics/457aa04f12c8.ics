@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:457aa04f12c8@bay-events
+DTSTAMP:20261011T182534Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Filoli Unwrapped
+LOCATION:Filoli\, 86 Cañada Rd Woodside\, CA\, Woodside
+URL:https://filoli.org/whats-on/events/filoli-unwrapped/
+DESCRIPTION:Woodside\nhttps://filoli.org/whats-on/events/filoli-unwrapped/
+ \n\nGo behind the scenes on a special holiday tour of the historic House!
+  You’ll get exclusive upstairs access while uncovering hidden stories a
+ nd rich history along the way.
+END:VEVENT
+END:VCALENDAR

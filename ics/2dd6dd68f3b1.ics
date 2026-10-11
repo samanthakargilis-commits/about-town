@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2dd6dd68f3b1@bay-events
+DTSTAMP:20261011T182530Z
+DTSTART;TZID=America/Los_Angeles:20261031T093000
+DTEND;TZID=America/Los_Angeles:20261031T171500
+SUMMARY:Free “Legion of Honor” Museum Day for Bay Area Residents
+LOCATION:Legion of Honor\, 100 34th Avenue\, San Francisco\, CA 94121\, Sa
+ n Francisco
+URL:https://sf.funcheap.com/free-legion-of-honor-museum-day-for-bay-area-r
+ esidents-every-saturday-340/
+DESCRIPTION:Museum exhibits + Art\nhttps://sf.funcheap.com/free-legion-of-
+ honor-museum-day-for-bay-area-residents-every-saturday-340/\n\nEvery Satu
+ rday\, the de Young offers free general admission to the permanent galler
+ ies to Bay Area residents. Please note that admission to any special exhi
+ bits is not included nor discounted and will require the full admission p
+ rice. Saturdays feature engaging art experiences for the entire family\, 
+ ...
+END:VEVENT
+END:VCALENDAR

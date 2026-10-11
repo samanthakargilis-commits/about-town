@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ef68b5e4b8f2@bay-events
+DTSTAMP:20261011T182531Z
+DTSTART;TZID=America/Los_Angeles:20261013T180000
+DTEND;TZID=America/Los_Angeles:20261013T193000
+SUMMARY:Invitation | Abandonment
+LOCATION:Et al.\, 2831a Mission St\, SF San Francisco\, San Francisco
+URL:https://ma.to/event/invitation-abandonment-2026-10-13
+DESCRIPTION:Big Bay Area traditions + Writing\nhttps://ma.to/event/invitat
+ ion-abandonment-2026-10-13\n\nInvitation | Abandonment: A Collective Poem
+  in Assembly is a free Litquake event at Et al. in San Francisco. Rooted 
+ in practices of care\, vulnerability and experimentation\, it asks how we
+  dwell in the spaces between spaces and what must be invited or abandoned
+  there. Aracelis Girmay\, Ladan Khoddam-Khorasani\, Gabriel Cortez and Do
+ ra Prieto give readings\, and those in the room help write a collabora
+END:VEVENT
+END:VCALENDAR

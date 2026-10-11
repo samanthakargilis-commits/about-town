@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2b0ada82517f@bay-events
+DTSTAMP:20261011T182533Z
+DTSTART;TZID=America/Los_Angeles:20261011T120000
+DTEND;TZID=America/Los_Angeles:20261011T150000
+SUMMARY:Entre Amigos Food & Music
+LOCATION:La Mar SF Patio\, San Francisco\, San Francisco
+URL:https://ma.to/event/entre-amigos-2026-10-11
+DESCRIPTION:Concerts\nhttps://ma.to/event/entre-amigos-2026-10-11\n\nEntre
+  Amigos: A Hispanic Food & Music Celebration closes out Hispanic Heritage
+  Month on the La Mar waterfront patio\, bringing together some of the Bay
+  Area's Hispanic and Latin American restaurants for one afternoon of sign
+ ature bites\, live music\, dancing and Latin spirits. Telefèric Barcelon
+ a\, Xica and Pacifico join La Mar\, with signature bites from each partic
+ ipating restaurant served on the pat
+END:VEVENT
+END:VCALENDAR

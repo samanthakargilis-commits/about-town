@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:32cbafe3a209@bay-events
+DTSTAMP:20261011T182532Z
+DTSTART;TZID=America/Los_Angeles:20261018T180000
+DTEND;TZID=America/Los_Angeles:20261018T210000
+SUMMARY:Thirst Draft: Write Drunk\, Edit Never
+LOCATION:Madrone Art Bar\, 500 Divisadero St San Francisco\, San Francisco
+URL:https://partiful.com/e/ozOADNkxVYUpfep9FNsn
+DESCRIPTION:Singing + Theatre\nhttps://partiful.com/e/ozOADNkxVYUpfep9FNsn
+ \n\nAn event for writers — and for writing. Everyone gets the same prom
+ pt when they walk in the door. What ends up on the page is up to you! Her
+ e’s how it works: Write whatever you want — poem\, song\, short story
+ \, joke... anything works! Interpret the prompt however you like\, but tr
+ y to incorporate it in some way Work alone or collaborate with friends/st
+ rangers — no word count or time limit Sign up by 
+END:VEVENT
+END:VCALENDAR

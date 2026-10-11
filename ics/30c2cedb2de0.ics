@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:30c2cedb2de0@bay-events
+DTSTAMP:20261011T182530Z
+DTSTART;TZID=America/Los_Angeles:20261015T190000
+DTEND;TZID=America/Los_Angeles:20261015T210000
+SUMMARY:Take a FUN Improv Class (in-person) - then After Party!
+LOCATION:Leela Improv Theatre\, 450 Geary Street\, Suite 200\, San Francis
+ co\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/thursdayimprovclass/events/316681605/
+DESCRIPTION:Comedy + Theatre · Thursday evening\nhttps://www.meetup.com/t
+ hursdayimprovclass/events/316681605/\n\nWelcome to the fun!!! Here are al
+ l the details: Step 1.) You must register and pay $25 on Eventbrite ([htt
+ ps://thursdayimprovclass.eventbrite.com](https://thursdayimprovclass.even
+ tbrite.com)) to secure your place in the class (not just on this Meetup).
+  Online registration ends at 7:00 PM every Thursday for that week. $25 on
+ line registration for the class is located here: [https://thursdayimprovc
+ la
+END:VEVENT
+END:VCALENDAR

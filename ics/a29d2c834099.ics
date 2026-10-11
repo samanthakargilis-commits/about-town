@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a29d2c834099@bay-events
+DTSTAMP:20261011T182529Z
+DTSTART;TZID=America/Los_Angeles:20261017T090000
+DTEND;TZID=America/Los_Angeles:20261017T110000
+SUMMARY:2026 Half Moon Bay Art & Pumpkin Festival
+LOCATION:Downtown Half Moon Bay\, Half Moon Bay
+URL:https://sf.funcheap.com/city-guide/october-street-fairs-festivals/
+DESCRIPTION:Big Bay Area traditions + Fairs & festivals · A yearly tradit
+ ion · Half Moon Bay\nhttps://sf.funcheap.com/city-guide/october-street-f
+ airs-festivals/\n\nWelcome to the World Pumpkin Capital! The legendary Ha
+ lf Moon Bay Art & Pumpkin Festival returns October 17 & 18\, 2026\, trans
+ forming historic Main Street into the ultimate celebration of autumn\, pu
+ mpkins\, art\, food\, music and good old fashioned fun. Admission is FREE
+ . The experience ...
+END:VEVENT
+END:VCALENDAR

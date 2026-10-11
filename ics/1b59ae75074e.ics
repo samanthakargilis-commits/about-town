@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1b59ae75074e@bay-events
+DTSTAMP:20261011T182534Z
+DTSTART;TZID=America/Los_Angeles:20261011T153000
+DTEND;TZID=America/Los_Angeles:20261011T173000
+SUMMARY:DEVO: Restorations and Revelations
+LOCATION:Alamo Drafthouse\, 2550 Mission St\, San Francisco San Francisco\
+ , San Francisco
+URL:https://ma.to/event/devo-restorations-and-revelations-2026-10-11
+DESCRIPTION:Discourse\nhttps://ma.to/event/devo-restorations-and-revelatio
+ ns-2026-10-11\n\nA screening of the program 'DEVO: Restorations and Revel
+ ations - Collected Film Works 1976-1984'\, featuring newly restored films
+  and rare footage. The screening is followed by a live discussion and Q&A
+  with DEVO co-founder Gerald V. Casale and video archivist Peter Conheim.
+  The 80-minute collection includes restored versions of classic videos li
+ ke 'Satisfaction'\, 'Freedom of Choice'\, 'Whip It'\, an
+END:VEVENT
+END:VCALENDAR

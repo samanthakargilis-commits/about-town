@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ab47a0aab427@bay-events
+DTSTAMP:20261011T182530Z
+DTSTART;TZID=America/Los_Angeles:20261106T180000
+DTEND;TZID=America/Los_Angeles:20261106T210000
+SUMMARY:Oakland Art Murmur (First Fridays Art Walk)
+LOCATION:Broadway/Telegraph\, Grand and Broadway\, Oakland\, CA\, Oakland
+URL:https://sf.funcheap.com/oakland-art-murmur-first-fridays-art-walk-137/
+DESCRIPTION:Art + Musical theatre · Oakland\nhttps://sf.funcheap.com/oakl
+ and-art-murmur-first-fridays-art-walk-137/\n\nOver 30 Oakland Art Murmur 
+ affiliate venues have coordinated openings on the first Friday of every m
+ onth. Oakland Art Murmur presents a free monthly evening art walk\, known
+  as the ‘Art Murmur.” Every first Friday of the month\, affiliate ven
+ ues are open to the public from 6-9 ...
+END:VEVENT
+END:VCALENDAR

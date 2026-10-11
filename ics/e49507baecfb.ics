@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e49507baecfb@bay-events
+DTSTAMP:20261011T182535Z
+DTSTART;TZID=America/Los_Angeles:20261016T203000
+DTEND;TZID=America/Los_Angeles:20261016T223000
+SUMMARY:Blind Illusion/ Hemotoxin/ Parabellum
+LOCATION:Neck of the Woods\, 406 Clement St\, San Francisco
+URL:https://www.ticketweb.com/event/blind-illusion-hemotoxin-parabellum-ne
+ ck-of-the-woods-tickets/14303934?theme=nwoods&REFID=clientsitewp
+DESCRIPTION:New in your area\nhttps://www.ticketweb.com/event/blind-illusi
+ on-hemotoxin-parabellum-neck-of-the-woods-tickets/14303934?theme=nwoods&R
+ EFID=clientsitewp\n\n
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f80cf140e1b6@bay-events
+DTSTAMP:20261011T182532Z
+DTSTART;VALUE=DATE:20261105
+DTEND;VALUE=DATE:20261106
+SUMMARY:Sadderday: An Emo/Pop-Punk/Screamo Dance Party
+LOCATION:SF\, 2800 24th St\, San Francisco\, CA 94110\, San Francisco
+URL:https://sf.funcheap.com/sadderday-an-emo-pop-punk-screamo-dance-party-
+ sf-103/
+DESCRIPTION:Dance nights\nhttps://sf.funcheap.com/sadderday-an-emo-pop-pun
+ k-screamo-dance-party-sf-103/\n\nA night to relive the days of white belt
+ s\, myspace\, and bangs. Lots of them. Emo\, pop punk\, post-hardcore\, s
+ creamo\, indie\, electro\, 90s and 2000s all night long. The party gets d
+ own at 9:30 pm on the First Thursday of each month at Pop’s Bar. – ..
+ .
+END:VEVENT
+END:VCALENDAR

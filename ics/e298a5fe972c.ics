@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e298a5fe972c@bay-events
+DTSTAMP:20261011T182534Z
+DTSTART;TZID=America/Los_Angeles:20261114T203000
+DTEND;TZID=America/Los_Angeles:20261115T003000
+SUMMARY:The Avengers ~ Pansy Division
+LOCATION:Bottom Of The Hill\, 1233 17th Street\, San Francisco\, Californi
+ a 94107\, United States San Francisco\, San Francisco
+URL:https://dice.fm/event/6a6799a18b02ba0001c3c81b
+DESCRIPTION:New in your area\nhttps://dice.fm/event/6a6799a18b02ba0001c3c8
+ 1b\n\nSan Francisco's very own punks\, The Avengers\, rip open Saturday n
+ ight and Pansy Division ignites the club with their trailblazing humor an
+ d incisive lyrics. The Bottom of the Hill does not use QR codes for entry
+ . You must present a valid photo ID that matches the name on your DICE ti
+ cket to enter. All ticket transfers must be completed through the DICE ap
+ p before the transfer deadline. Instruction
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d1eb6bce6460@bay-events
+DTSTAMP:20261011T182530Z
+DTSTART;TZID=America/Los_Angeles:20261011T140000
+DTEND;TZID=America/Los_Angeles:20261011T150000
+SUMMARY:Virginians and Their Dishes
+LOCATION:Legion of Honor\, San Francisco\, San Francisco
+URL:https://ma.to/event/virginians-and-their-dishes-2026-10-11
+DESCRIPTION:Craft + Museum exhibits\nhttps://ma.to/event/virginians-and-th
+ eir-dishes-2026-10-11\n\nVirginians and Their Dishes: Ceramic Highlights 
+ from Williamsburg is held at the Legion of Honor on Oct 11 as part of the
+  museum's October programme. Organ Concerts take place at the Legion on O
+ ct 10\, 17\, 24 and 31\, and A Closer Look: June Wayne\, Corita Kent\, an
+ d a New Age for Printmaking is on Oct 10.
+END:VEVENT
+END:VCALENDAR

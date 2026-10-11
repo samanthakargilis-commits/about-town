@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5cad9da888fa@bay-events
+DTSTAMP:20261011T182530Z
+DTSTART;TZID=America/Los_Angeles:20261011T100000
+DTEND;TZID=America/Los_Angeles:20261011T170000
+SUMMARY:Fleet Week at Battery Ledyard
+LOCATION:Battery Ledyard\, Angel Island\, CA San Francisco\, San Francisco
+URL:https://ma.to/event/fleet-week-at-battery-ledyard-11-oct-2026
+DESCRIPTION:Big Bay Area traditions + Fairs & festivals\nhttps://ma.to/eve
+ nt/fleet-week-at-battery-ledyard-11-oct-2026\n\nTake in the Fleet Week ac
+ tion from the vantage point of Battery Ledyard. Visitors can hike or take
+  a shuttle to the site. Food and lunch options are available for purchase
+  from the Angel Island Cafe.
+END:VEVENT
+END:VCALENDAR

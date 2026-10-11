@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a765af0c14d5@bay-events
+DTSTAMP:20261011T182533Z
+DTSTART;TZID=America/Los_Angeles:20261012T190000
+DTEND;TZID=America/Los_Angeles:20261012T220000
+SUMMARY:Studio Works: On Prototyping
+LOCATION:TIAT\, 151 Powell St\, San Francisco San Francisco\, San Francisc
+ o
+URL:https://ma.to/event/studio-works-prototyping-13-oct-2026
+DESCRIPTION:Art + Discourse\nhttps://ma.to/event/studio-works-prototyping-
+ 13-oct-2026\n\nStudio Works is an experimental artist incubator run at TI
+ AT with DFOS and Metalabel. This session's theme is prototyping. Particip
+ ants develop an artifact rooted in individual creative practices\, moving
+  through desire\, concepting\, prototyping\, production\, distribution an
+ d sales while learning from artist-led studios and building alongside one
+  another. The session includes a guest studio overview\,
+END:VEVENT
+END:VCALENDAR

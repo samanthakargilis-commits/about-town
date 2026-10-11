@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2496a46d30ec@bay-events
+DTSTAMP:20261011T182529Z
+DTSTART;TZID=America/Los_Angeles:20261011T123000
+DTEND;TZID=America/Los_Angeles:20261011T150000
+SUMMARY:SF’s Annual Italian Heritage Festival & Parade 2026
+LOCATION:Fisherman's Wharf\, Jefferson and Taylor\, San Francisco\, CA\, S
+ an Francisco
+URL:https://sf.funcheap.com/san-francisco-italian-heritage-parade-festival
+ /
+DESCRIPTION:Big Bay Area traditions + Fairs & festivals · A yearly tradit
+ ion\nhttps://sf.funcheap.com/san-francisco-italian-heritage-parade-festiv
+ al/\n\nThe San Francisco Italian Heritage Parade returns to the streets o
+ f San Francisco on Sunday\, October 11\, 2026\, bringing Italian-American
+  culture\, music\, performances\, floats\, and community groups to the st
+ reets of North Beach. The San Francisco Italian Heritage Parade is the lo
+ ngest continuously running Italian Heritage ...
+END:VEVENT
+END:VCALENDAR

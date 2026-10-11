@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6f328f88944a@bay-events
+DTSTAMP:20261011T182533Z
+DTSTART;TZID=America/Los_Angeles:20261014T190000
+DTEND;TZID=America/Los_Angeles:20261014T210000
+SUMMARY:The Buddy Holly Story
+LOCATION:4 Star Theater\, 2200 Clement St\, San Francisco
+URL:https://ticketing.uswest.veezi.com/purchase/20026?siteToken=d2atbcege5
+ knqsavntt91g1250
+DESCRIPTION:Singing\nhttps://ticketing.uswest.veezi.com/purchase/20026?sit
+ eToken=d2atbcege5knqsavntt91g1250\n\nHis story will have you singing\, la
+ ughing\, crying\, cheering\, and stomping your feet A chronicle of the ri
+ se and brief career of rock ’n’ roll star Buddy Holly\, who aspires t
+ o play music the way he wants it to sound. Holly and his band\, the Crick
+ ets\, are first invited to record in Nashville\, where they encounter cre
+ ative differences with the producing staff. Later they play a major booki
+ ng at the A
+END:VEVENT
+END:VCALENDAR

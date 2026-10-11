@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:45727346adea@bay-events
+DTSTAMP:20261011T182535Z
+DTSTART;TZID=America/Los_Angeles:20261017T100000
+DTEND;TZID=America/Los_Angeles:20261017T170000
+SUMMARY:The Throne Card Show - San Jose
+LOCATION:DoubleTree by Hilton Hotel San Jose\, 2050 Gateway Place\, San Jo
+ se\, CA 95110 San Jose\, San Jose
+URL:https://www.eventbrite.com/e/the-throne-card-show-san-jose-tickets-200
+ 2116916593
+DESCRIPTION:San Jose\nhttps://www.eventbrite.com/e/the-throne-card-show-sa
+ n-jose-tickets-2002116916593\n\nCard show in San Jose featuring 150+ vend
+ or tables with sports cards\, Pokémon\, TCG\, collectibles\, buying\, se
+ lling & trading!
+END:VEVENT
+END:VCALENDAR

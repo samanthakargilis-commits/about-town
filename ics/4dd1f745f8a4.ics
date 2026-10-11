@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4dd1f745f8a4@bay-events
+DTSTAMP:20261011T182534Z
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
+SUMMARY:All Italian Day Car and Motorcycle Show (Alameda)
+LOCATION:Main Street Soccer Field 2040 Main Street\, Alameda CA\, 2040 Mai
+ n Street\, Alameda\, CA\, Alameda
+URL:https://sf.funcheap.com/italian-day-car-motorcycle-show-alameda/
+DESCRIPTION:A yearly tradition · Alameda\nhttps://sf.funcheap.com/italian
+ -day-car-motorcycle-show-alameda/\n\nCome see mopeds\, motorcycles and ca
+ rs of Italian make and design. Vespa\, Ducati\, Fiat\, Lancia\, Alfa\, Fe
+ rrari\, Lamborghini\, Maserati and more from the early 1900s to today’s
+  supercars. Sunday\, October 11\, 2026. Please join The Northern Californ
+ ia Alfa Romeo Association and Special Olympics Northern California for ou
+ r ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1c02b4bbc3cd@bay-events
+DTSTAMP:20261011T182533Z
+DTSTART;TZID=America/Los_Angeles:20261011T161500
+DTEND;TZID=America/Los_Angeles:20261011T191500
+SUMMARY:HOT GIRL HIKE 🩵🥾
+LOCATION:Round Valley Regional Preserve\, Round Valley Regional Preserve\,
+  19450 Marsh Creek Rd\, Brentwood\, CA 94513\, USA\, Brentwood
+URL:https://luma.com/xt8ffyvi
+DESCRIPTION:Fairs & festivals · Brentwood\nhttps://luma.com/xt8ffyvi\n\nH
+ OT GIRL HIKE CLUB — SESSION 6 Our next 925 Hot Girl Hike is here! We’
+ re heading back to Round Valley Regional Preserve for our last sunset hik
+ e of the year before the time change — and fair warning\, girls... this
+  one is going to make us WORK. Miwok + Hardy Canyon Loop Round Valley Reg
+ ional Preserve Meet up 4:15 PM | Hike starts 4:30 PM SHARP 4.7 miles 1\,0
+ 20 ft elevation gain Approx. 2–2.5 hours M
+END:VEVENT
+END:VCALENDAR

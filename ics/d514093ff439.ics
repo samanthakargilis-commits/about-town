@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d514093ff439@bay-events
+DTSTAMP:20261011T182534Z
+DTSTART;TZID=America/Los_Angeles:20261012T190000
+DTEND;TZID=America/Los_Angeles:20261012T230000
+SUMMARY:Triclops! ~ Wife ~ Gumby's Junk
+LOCATION:Bottom Of The Hill\, 1233 17th Street\, San Francisco\, Californi
+ a 94107\, United States San Francisco\, San Francisco
+URL:https://dice.fm/event/6a9a04fb538ad50001fc6d4f
+DESCRIPTION:Art\nhttps://dice.fm/event/6a9a04fb538ad50001fc6d4f\n\nNoted f
+ or its over-the-top live show\, Triclops! headlines\, Wife returns to ban
+ g it out and Gumby's Junk ignites the experience with an art rock set for
+  the ages. The Bottom of the Hill does not use QR codes for entry. You mu
+ st present a valid photo ID that matches the name on your DICE ticket to 
+ enter. All ticket transfers must be completed through the DICE app before
+  the transfer deadline. Instru
+END:VEVENT
+END:VCALENDAR
