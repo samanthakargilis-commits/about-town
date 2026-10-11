@@ -97,6 +97,20 @@ def price_from(text: str) -> str:
     return "free" if val.lower().startswith("free") else val.replace(" ", "")
 
 
+def about_day(text: str, day: dt.date, ref: dt.date) -> str:
+    """Only the sentences of a roundup section that are about `day`: a sentence
+    naming some other date (a gala the night before) is dropped, along with the
+    undated sentences after it, so its price or time isn't pinned on this event."""
+    keep, ours = [], True
+    for sentence in re.split(r"(?<=[.!?])\s+", text):
+        dates = find_dates(sentence, ref)
+        if dates:       # an undated sentence follows the date named before it
+            ours = any(a <= day <= (b or a) for a, b in dates)
+        if ours:
+            keep.append(sentence)
+    return " ".join(keep)
+
+
 def at_time(day: dt.date, text: str, default_hour: Optional[int] = None):
     """Combine a date with the first time found in text."""
     t = parse_time(text)
@@ -175,7 +189,8 @@ def article_events(html: str, source: str, article_url: str, ref: dt.date,
         if not dates:
             continue
         start_day, end_day = dates[0]
-        start, all_day = at_time(start_day, text)
+        own = about_day(text, start_day, ref)
+        start, all_day = at_time(start_day, own)
         external = [l for l in links if l.startswith("http") and urlparse(l).netloc not in urlparse(article_url).netloc]
         ticket = external[0] if external else None
         venue = ""
@@ -193,7 +208,7 @@ def article_events(html: str, source: str, article_url: str, ref: dt.date,
             all_day=all_day,
             description=text[:1000],
             venue=venue,
-            price=price_from(text),
+            price=price_from(own),
             sponsored=bool(ticket and any(h in ticket for h in sponsored_hosts)),
         ))
     return out

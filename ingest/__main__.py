@@ -19,7 +19,7 @@ from urllib.parse import urlparse
 
 import requests
 
-from . import ai, geocode, place
+from . import ai, geocode, place, weather
 from .area import keep
 from .core import (CACHE_DIR, ROOT, BudgetExceeded, Fetcher, clean, html_to_text, iso, jsonld_events,
                    now, og, short_hash, to_local)
@@ -282,6 +282,7 @@ def main(argv=None):
     for name in ("profile.json", "follow.json"):   # the app reads these too
         shutil.copy(ROOT / "data" / name, OUT / name)
     print(f"wrote {len(out)} events to {args.out}")
+    print(weather.write(OUT / "weather.json"))
     broken = [h["label"] for h in health if not h["ok"]]
     if broken:
         print("::warning::Sources with zero events or errors: " + ", ".join(broken))
