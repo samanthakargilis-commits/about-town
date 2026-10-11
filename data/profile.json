@@ -744,10 +744,10 @@
   "no_kids_events": true,
   "no_tech_events": true,
   "price": {
-    "_note": "likes free events; a paid event should be worth it. A drink minimum counts as paying (about $10 a drink)",
-    "free_boost": 1.2,
-    "dollars_per_point": 15,
-    "max_penalty": 3.0,
+    "_note": "free events first, always; a paid event has to be an exceptional fit (a yearly tradition like the county fair) to rank with them. A drink minimum counts as paying (about $10 a drink)",
+    "free_boost": 2.0,
+    "dollars_per_point": 10,
+    "max_penalty": 4.0,
     "paid_party_penalty": 2.5,
     "drink_minimum_dollars": 10
   },
