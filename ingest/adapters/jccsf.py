@@ -1,7 +1,10 @@
 """JCC San Francisco (3200 California St): talks, music, arts and holidays.
 The site runs The Events Calendar for WordPress, whose REST feed lists events
 as JSON; the month pages' JSON-LD are the fallback."""
-from ..core import Event, clean, event_from_jsonld, geo_of, html_to_text, iso, jsonld_events, to_local
+import re
+
+from ..core import BudgetExceeded, Event, clean, event_from_jsonld, geo_of, html_to_text, iso, jsonld_events, to_local
+from ..heuristics import price_from
 
 NAME, LABEL = "jccsf", "JCC San Francisco"
 BASE = "https://www.jccsf.org"
@@ -41,10 +44,32 @@ def from_api(f, start, end):
     return out
 
 
+def page_prices(f, events, limit=40):
+    """The feed's cost is "Free" by default; the price people see is printed
+    on each event page ("$20 - $42"), so read it there (pages cached a day)."""
+    read = 0
+    for e in events:
+        if e.price or read >= limit:
+            continue
+        try:
+            soup = f.soup(e.source_url, cache_hours=24)
+        except BudgetExceeded:
+            break
+        except Exception as exc:
+            print(f"  jccsf {e.source_url}: {exc}")
+            continue
+        read += 1
+        tag = soup.find(class_=re.compile(r"single-event-(hero|aside)__price"))
+        if tag:
+            e.price = price_from(clean(tag.get_text(" "))) or ""
+    print(f"  jccsf prices: {read} pages read, {sum(1 for e in events if e.price)} of {len(events)} priced")
+
+
 def fetch(f, start, end):
     try:
         events = from_api(f, start, end)
         if events:
+            page_prices(f, events)
             return events
     except Exception as exc:
         print(f"  jccsf api: {exc}")
