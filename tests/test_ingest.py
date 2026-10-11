@@ -163,15 +163,22 @@ class NewSources(unittest.TestCase):
     def test_sfpl_presidio(self):
         from ingest.adapters import sfpl
         page = """<div class="view-content">
-          <div class="views-row"><a href="/events/2026/10/14/author-talk-new-memoir">Author: A New Memoir</a>
-            <div class="event__meta">Wednesday, October 14 6:00 pm - 7:30 pm Presidio Branch Library</div></div>
-          <div class="views-row"><a href="/events/2026/10/15/canceled-social">Canceled: Social Hour</a>
-            <div class="event__meta">Thursday, October 15 2:00 pm Presidio Branch Library</div></div></div>"""
+          <div class="views-row"><article class="event"><div class="event__date"><span>Wednesday, 10/14/2026, 6:00 - 7:30</span></div>
+            <h2 class="event__title"><a href="/events/2026/10/14/author-talk-new-memoir"><span>Author: A New Memoir</span></a></h2>
+            <div class="event__audience"><div class="field__item"><a>Adults</a></div></div>
+            <div class="event__location"><div class="field__item">Presidio</div></div></article></div>
+          <div class="views-row"><article class="event"><div class="event__date"><span>Thursday, 10/15/2026, 10:30 - 11:00</span></div>
+            <h2 class="event__title"><a href="/events/2026/10/15/storytime"><span>Storytime: For Toddlers</span></a></h2>
+            <div class="event__location"><div class="field__item">Presidio</div></div></article></div>
+          <div class="views-row"><article class="event"><div class="event__date"><span>Thursday, 10/15/2026, 2:00 - 3:00</span></div>
+            <h2 class="event__title"><a href="/events/2026/10/15/canceled-social"><span>Canceled: Social Hour</span></a></h2>
+            <div class="event__location"><div class="field__item">Presidio</div></div></article></div></div>"""
         f = FakeFetcher({"https://sfpl.org/events?field_event_location_target_id=59&page=0": page,
                          "https://sfpl.org/events": "<html></html>"})
         evs = sfpl.fetch(f, None, None)
-        self.assertEqual(len(evs), 1)
+        self.assertEqual(len(evs), 2)
         e = evs[0]
+        self.assertTrue(evs[1].start.startswith("2026-10-15T10:30"))   # morning stays morning
         self.assertEqual(e.title, "Author: A New Memoir")
         self.assertTrue(e.start.startswith("2026-10-14T18:00"))
         self.assertTrue(e.end.startswith("2026-10-14T19:30"))
