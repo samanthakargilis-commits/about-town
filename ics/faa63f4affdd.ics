@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:faa63f4affdd@bay-events
+DTSTAMP:20261011T031323Z
+DTSTART;TZID=America/Los_Angeles:20261101T110000
+DTEND;TZID=America/Los_Angeles:20261101T170000
+SUMMARY:“Castro Art Mart” Mini Block Party on Noe St.
+LOCATION:Market & Noe\, Market and Castro\, San Francisco\, CA\, San Franc
+ isco
+URL:https://sf.funcheap.com/castro-art-mart-mini-block-party-on-noe-st-eve
+ ry-first-sunday-52/
+DESCRIPTION:Gay / queer + Art\nhttps://sf.funcheap.com/castro-art-mart-min
+ i-block-party-on-noe-st-every-first-sunday-52/\n\n“Castro Art Mart” M
+ ini Block Party on Noe St. (Every First Sunday) Castro Art Mart The Castr
+ o Art Mart Features LGBTQ Artists\, Live Music\, and Drag Performances ev
+ ery 1st Sunday of the month on Noe St and Market St (Next to the Lookout 
+ Bar)\, 11-5pm. Come enjoy this Free\, Family & Friendly event hosted by C
+ astro Merchants\, while supporting local artists\, musicians\, drag perfo
+ rmers\, and small busine
+END:VEVENT
+END:VCALENDAR

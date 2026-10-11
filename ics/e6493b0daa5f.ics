@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e6493b0daa5f@bay-events
+DTSTAMP:20261011T031323Z
+DTSTART;TZID=America/Los_Angeles:20261014T180000
+DTEND;TZID=America/Los_Angeles:20261014T200000
+SUMMARY:Queers who Craft: Pumpkin Painting
+LOCATION:San Francisco\, San Francisco
+URL:https://www.meetup.com/queer-connection/events/316801642/
+DESCRIPTION:Craft + Art\nhttps://www.meetup.com/queer-connection/events/31
+ 6801642/\n\nFind Meetup events so you can do more of what matters to you.
+  Or create your own group and meet people near you who share your interes
+ ts.
+END:VEVENT
+END:VCALENDAR

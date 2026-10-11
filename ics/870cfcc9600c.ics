@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:870cfcc9600c@bay-events
+DTSTAMP:20261011T031325Z
+DTSTART;TZID=America/Los_Angeles:20261024T110000
+DTEND;TZID=America/Los_Angeles:20261024T123000
+SUMMARY:Fall Walk
+LOCATION:Conservatory of Flowers\, 100 John F Kennedy Dr San Francisco\, S
+ an Francisco
+URL:https://partiful.com/e/eFrXxYIuhEFIKe7GAAD1
+DESCRIPTION:New in your area\nhttps://partiful.com/e/eFrXxYIuhEFIKe7GAAD1\
+ n\nJoin for a relaxed autumn stroll through Golden Gate Park. We'll wande
+ r through gardens\, past the Conservatory of Flowers and along shaded pat
+ hs at an easy pace\, with plenty of time to chat\, snap photos and meet t
+ he people. Bring a light layer\, comfy walking shoes and a water bottle. 
+ Length: About 1 hour Meeting point: The front lawn of the Conservatory of
+  Flowers\, 100 John F. Kennedy Drive.
+END:VEVENT
+END:VCALENDAR

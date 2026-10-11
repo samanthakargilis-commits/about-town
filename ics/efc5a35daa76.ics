@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:efc5a35daa76@bay-events
+DTSTAMP:20261011T031325Z
+DTSTART;TZID=America/Los_Angeles:20261030T190000
+DTEND;TZID=America/Los_Angeles:20261030T210000
+SUMMARY:Candlelit Concert
+LOCATION:Palo Alto Children's Theater\, Castle Stage\, 1305 Middlefield Rd
+  Palo Alto\, Palo Alto
+URL:https://partiful.com/e/pXvWEVS04Bpj6nwNG8pN
+DESCRIPTION:Theatre · Palo Alto\nhttps://partiful.com/e/pXvWEVS04Bpj6nwNG
+ 8pN\n\nCome to the Teen Arts Council’s Candlelit Concert to enjoy candl
+ elit\, Halloween ambiance and live teen performances! Decorate polaroid p
+ hotos\, get your face painted\, and take a swing at our candy pinata! Enj
+ oy our candy salad and chip and dip bars. Halloween costumes are encourag
+ ed!
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cb0d10b049a8@bay-events
+DTSTAMP:20261011T031323Z
+DTSTART;TZID=America/Los_Angeles:20261117T190000
+DTEND;TZID=America/Los_Angeles:20261117T210000
+SUMMARY:Dancing with Challenge Practice Lab
+LOCATION:2929 24th Street\, 2929 24th St\, San Francisco\, CA 94110\, USA\
+ , San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/san-francisco-mindfulness-meetup/events/3165719
+ 09/
+DESCRIPTION:Meditation + Spirituality\nhttps://www.meetup.com/san-francisc
+ o-mindfulness-meetup/events/316571909/\n\n## with Nichol Chase Dancing wi
+ th Challenge: Practice Lab is a monthly gathering for anyone seeking grea
+ ter resilience\, clarity\, and well-being amid the complexity of modern l
+ ife. Together\, we’ll explore practical\, evidence-informed approaches 
+ that help us meet life’s inevitable challenges with greater steadiness\
+ , wisdom\, and compassion. Drawing from yogic and Buddhist philosophy\, p
+ sychology\, and 
+END:VEVENT
+END:VCALENDAR

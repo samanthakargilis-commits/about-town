@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8ed8ca150673@bay-events
+DTSTAMP:20261011T031324Z
+DTSTART;TZID=America/Los_Angeles:20261114T110000
+DTEND;TZID=America/Los_Angeles:20261114T120000
+SUMMARY:Celebration: Travel the Philippines with Christina Newhard
+LOCATION:Presidio Branch Library\, 3150 Sacramento St\, San Francisco
+URL:https://sfpl.org/events/2026/11/14/celebration-travel-philippines-chri
+ stina-newhard
+DESCRIPTION:Reading\nhttps://sfpl.org/events/2026/11/14/celebration-travel
+ -philippines-christina-newhard\n\nFamilies · Celebrations · Filipino Am
+ erican Interest
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:518a9c4995c8@bay-events
+DTSTAMP:20261011T031324Z
+DTSTART;TZID=America/Los_Angeles:20261013T183000
+DTEND;TZID=America/Los_Angeles:20261013T203000
+SUMMARY:Living with Purpose: Translating Spiritual Power into Daily Purpos
+ e
+LOCATION:Brahma Kumaris Meditation Center\, 401 Baker St\, San Francisco\,
+  CA San Francisco\, San Francisco
+URL:https://www.meetup.com/sf-meditation/events/316597805/
+DESCRIPTION:Spirituality + Meditation\nhttps://www.meetup.com/sf-meditatio
+ n/events/316597805/\n\nTrue spirituality is not isolated to a meditation 
+ cushion\; it comes alive in every action we take. In our final session\, 
+ explore how to integrate spiritual principles into your career\, communit
+ y\, and daily routine. Transform ordinary tasks into **Karma Yoga**—ser
+ vice that brings personal fulfillment and uplifts those around you. **Key
+  Takeaways:** * **Mindful Action:** Learn how to infuse your dai
+END:VEVENT
+END:VCALENDAR

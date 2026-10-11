@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:927431d899ac@bay-events
+DTSTAMP:20261011T031324Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Drawn Together—A Drawing Club for Everyone
+LOCATION:San Francisco Main Public Library\, 100 Larkin St\, San Francisco
+ \, CA 94102\, San Francisco
+URL:https://sf.funcheap.com/drawn-togethera-drawing-club/
+DESCRIPTION:Art + Comedy\nhttps://sf.funcheap.com/drawn-togethera-drawing-
+ club/\n\nSubmitted by the Event OrganizerSFPLDraw in a calm and supportiv
+ e community space for all levels (including you!). Doodle\, practice\, ex
+ periment with new materials\, or finish that drawing/comic/manga page you
+ ’ve been procrastinating on. This is a great place to try something new
+ \, make mistakes (the fuel of creativity!) and have fun. All styles and s
+ kill levels encouraged. This is a drop-in\, free-fo
+END:VEVENT
+END:VCALENDAR
