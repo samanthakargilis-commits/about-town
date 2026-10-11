@@ -249,6 +249,9 @@ class NewSources(unittest.TestCase):
         self.assertEqual(e.title, "Comedy & Kugel")
         self.assertTrue(e.start.startswith("2026-10-21T19:30"))   # UTC -> Pacific
         self.assertEqual((e.lat, e.lng), (37.7869, -122.4467))
+        self.assertEqual(e.price, "$25")
+        api["events"][0]["cost"] = "Free"     # their feed's default, even for ticketed talks
+        self.assertEqual(jccsf.fetch(FakeFetcher({jccsf.API: api}), start, start + dt.timedelta(days=60))[0].price, "")
 
     def test_geo_and_richmond_district(self):
         from ingest.core import geo_of

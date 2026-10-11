@@ -29,7 +29,9 @@ def from_api(f, start, end):
                 description=html_to_text(it.get("description") or it.get("excerpt") or "")[:1000],
                 image_url=img.get("url"), venue=clean(v.get("venue") or "JCC San Francisco"),
                 address=clean(v.get("address") or "3200 California St"), city=clean(v.get("city") or "San Francisco"),
-                price="free" if cost.lower() in ("free", "$0") else cost,
+                # JCC's feed says "Free" for most events, including ticketed ones sold
+                # through an Eventbrite widget ($20-40 talks), so "Free" means unknown
+                price="" if cost.lower() in ("free", "$0", "0") else cost,
                 tags=[clean(c.get("name")) for c in it.get("categories") or [] if isinstance(c, dict)],
                 ticket_url=it.get("website") or None, lat=lat, lng=lng,
             ))
@@ -54,6 +56,7 @@ def fetch(f, start, end):
             if e and e.id not in seen:
                 seen.add(e.id)
                 e.venue = e.venue or "JCC San Francisco"
+                e.price = "" if e.price == "free" else e.price     # same unreliable "Free" as the feed
                 e.city = e.city or "San Francisco"
                 out.append(e)
     return out
