@@ -139,15 +139,21 @@ def collapse_recurring(events, per_week=1):
 
 
 def enrich(events, fetcher, limit):
-    """Fill descriptions/images from each event's own page (cached for 3 days),
-    and read fair/festival pages for a lineup to headline the best piece."""
+    """Fill descriptions, places and images from each event's own page
+    (cached for 3 days), and read fair/festival pages for a lineup to headline
+    the best piece. A roundup page that several events share is about all of
+    them, so it never stands in for one event's blurb or picture."""
+    shared = {}
+    for ev in events:
+        shared[ev["source_url"]] = shared.get(ev["source_url"], 0) + 1
     done = 0
     for ev in events:
         if done >= limit:
             break
-        need = len(ev.get("description") or "") < 80 or not ev.get("image_url") or ev.get("_festival")
+        short = len(ev.get("description") or "") < 80
+        need = short or not ev.get("image_url") or not (ev.get("venue") or ev.get("address")) or ev.get("_festival")
         host = urlparse(ev["source_url"]).netloc
-        if not need or host.endswith("secretsanfrancisco.com") or "substack" in host:
+        if not need or shared[ev["source_url"]] > 1 or host.endswith("secretsanfrancisco.com") or "substack" in host:
             continue
         try:
             soup = fetcher.soup(ev["source_url"], cache_hours=72)
@@ -160,13 +166,25 @@ def enrich(events, fetcher, limit):
         for node in jsonld_events(soup):
             if node.get("description"):
                 desc = html_to_text(node["description"]) if len(html_to_text(node["description"])) > len(desc) else desc
+            loc = node.get("location")
+            loc = loc[0] if isinstance(loc, list) and loc else loc
+            if isinstance(loc, dict) and not (ev.get("venue") or ev.get("address")):
+                addr = loc.get("address")
+                street = clean(addr.get("streetAddress") or "") if isinstance(addr, dict) else clean(addr or "")
+                ev["venue"] = clean(loc.get("name") or "")[:80]
+                ev["address"] = street if street != ev["venue"] else ""
+                if isinstance(addr, dict) and addr.get("addressLocality") and not ev.get("city"):
+                    ev["city"] = clean(addr["addressLocality"])
         main = soup.find(class_=re.compile("entry-content|post-content|event-description|eventitem-column-content")) or soup.find("article")
         body = clean(main.get_text(" "))[:1500] if main else ""
-        ev["description"] = clean(desc if len(desc) > 120 else (desc + " " + body))[:1200]
+        found = clean(desc if len(desc) > 120 else (desc + " " + body))[:1200]
+        if short and len(found) > len(ev.get("description") or ""):
+            ev["description"] = found
         ev["image_url"] = ev.get("image_url") or og(soup, "image")
         if ev.get("_festival") and main:
             lines = [clean(li.get_text(" ")) for li in main.find_all(["li", "h3", "h4", "strong"])]
             ev["_lineup"] = [l for l in lines if l]
+    print(f"detail pages read: {done}")
 
 
 def previous_first_seen(src):
@@ -191,7 +209,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", help="comma-separated adapters")
     ap.add_argument("--previous", help="previous events.json (URL or path) for first_seen")
-    ap.add_argument("--enrich", type=int, default=90, help="max detail pages to read per run")
+    ap.add_argument("--enrich", type=int, default=160, help="max detail pages to read per run")
     ap.add_argument("--out", default=str(OUT / "events.json"))
     ap.add_argument("--geocode", type=int, default=350, help="max new venue lookups per run")
     ap.add_argument("--no-geocode", action="store_true")

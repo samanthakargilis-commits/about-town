@@ -736,9 +736,11 @@ function dayList(list, key) {
   const picked = list.filter((ev) => S.status[ev.id] === 'added' || S.status[ev.id] === 'maybe');
   const rest = list.filter((ev) => !picked.includes(ev));
   const all = expanded.has(key);
-  const shown = [...picked, ...(all ? rest : rest.slice(0, Math.max(0, DAY_SHOW - picked.length)))]
-    .sort((a, b) => (a.all_day - b.all_day) || new Date(a.start) - new Date(b.start));
-  const more = rest.length - Math.max(0, DAY_SHOW - picked.length);
+  const byTime = (a, b) => (a.all_day - b.all_day) || new Date(a.start) - new Date(b.start);
+  const cut = Math.max(0, DAY_SHOW - picked.length);
+  // the first few stay put when the list opens up; the extra ones follow them
+  const shown = [...[...picked, ...rest.slice(0, cut)].sort(byTime), ...(all ? rest.slice(cut).sort(byTime) : [])];
+  const more = rest.length - cut;
   return shown.map((ev) => evRow(ev)).join('') +
     (more > 0 ? `<button class="more-btn" data-more="${key}">${all ? 'Show fewer' : `Show ${more} more`}</button>` : '');
 }

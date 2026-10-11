@@ -123,9 +123,43 @@ def guide_events(html_soup, url, ref: dt.date):
             ev.ticket_url = None
         if subject and not set(subject.lower().split()) & set(ev.title.lower().split()):
             ev.title = f"{subject}: {ev.title}"       # "Air Show" alone says little in a list
+        if not ev.venue:
+            ev.venue, ev.address, city = guide_place(ev.description)
+            ev.city = ev.city or city
         ev.tags = ["featured"]
         out.append(ev)
     return out
+
+
+STREET = re.compile(r"^\d+ [\w .'-]+? (st|street|ave|avenue|rd|road|blvd|way|dr|drive|ln|lane|hwy|highway|pl|ct)\b", re.I)
+SF_NAMES = {"sf", "san francisco"}
+
+
+def guide_place(text: str) -> tuple[str, str, str]:
+    """(venue, address, city) from a guide line. Roundups write
+    "Sunday, October 4 – SF (Castro) – FREE – ..."; single-event guides
+    "October 10 | 9 AM-5 PM | Duboce Park | FREE"; farm guides
+    "North Berkeley | 1272 Gilman Ave, Berkeley | September 18 ..."."""
+    head = text[:300]
+    when = re.compile(r"\$|^free\b|\d\s*[ap]\.?m|\bnoon\b|\d{4}|\b(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\w*\.? \d", re.I)
+    if " | " in head:
+        parts = [clean(p) for p in head.split(" | ")][:5]
+        for p in parts:
+            if STREET.match(p):
+                street, _, town = p.partition(",")
+                return "", clean(street), clean(town)
+        for p in parts:
+            if p and len(p) <= 70 and not when.search(p):
+                name, _, rest = p.partition(",")
+                rest = clean(rest).rstrip(".")
+                return clean(name), rest if STREET.match(rest) else "", ""
+        return "", "", ""
+    parts = [clean(p) for p in re.split(r"\s+–\s+", head)]
+    if len(parts) > 2 and len(parts[1]) <= 60 and not when.search(parts[1]):
+        m = re.fullmatch(r"([^()]+?)\s*\(([^()]+)\)", parts[1])
+        town, spot = (m.group(1), m.group(2)) if m else (parts[1], "")
+        return spot, "", "San Francisco" if town.lower() in SF_NAMES else town
+    return "", "", ""
 
 
 def guide_subject(html_soup) -> str:

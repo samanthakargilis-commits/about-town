@@ -535,3 +535,33 @@ class EventbriteBrowse(unittest.TestCase):
         self.assertIn("78", e.price)
         self.assertTrue(e.sold_out)
         self.assertEqual(e.source_url, "https://www.eventbrite.com/e/waters-1")
+
+
+class GuidePlaces(unittest.TestCase):
+    def test_guide_lines(self):
+        self.assertEqual(funcheap.guide_place("Sunday, October 4, 2026 – SF (Castro) – FREE – Street fair"),
+                         ("Castro", "", "San Francisco"))
+        self.assertEqual(funcheap.guide_place("Saturday, October 10 | 10 AM-2 PM | Duboce Park | FREE Dogs"),
+                         ("Duboce Park", "", ""))
+        self.assertEqual(funcheap.guide_place("North Berkeley | 1272 Gilman Ave, Berkeley | September 18"),
+                         ("", "1272 Gilman Ave", "Berkeley"))
+
+    def test_roundup_page_never_replaces_a_blurb(self):
+        from ingest.__main__ import enrich
+        page = '<meta property="og:description" content="Here is a round-up of October events">'
+        evs = [{"source_url": "https://x.test/roundup", "description": "Sunday – SF (Castro) – FREE – a long, real blurb about the fair " * 2},
+               {"source_url": "https://x.test/roundup", "description": "short"}]
+        enrich(evs, FakeFetcher({"https://x.test/roundup": page}), 10)
+        self.assertIn("real blurb", evs[0]["description"])
+        self.assertEqual(evs[1]["description"], "short")
+
+    def test_event_page_fills_place(self):
+        from ingest.__main__ import enrich
+        page = ('<script type="application/ld+json">' + json.dumps({"@type": "Event", "name": "Show", "startDate": "2026-10-20T20:00",
+                "description": "A proper description of the show that runs long enough to count as a real blurb for it.",
+                "location": {"@type": "Place", "name": "The Chapel", "address": {"streetAddress": "777 Valencia St", "addressLocality": "San Francisco"}}})
+                + '</script>')
+        ev = {"source_url": "https://x.test/show", "description": ""}
+        enrich([ev], FakeFetcher({"https://x.test/show": page}), 10)
+        self.assertEqual((ev["venue"], ev["address"]), ("The Chapel", "777 Valencia St"))
+        self.assertIn("proper description", ev["description"])
