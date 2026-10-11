@@ -169,6 +169,20 @@ class FakeFetcher:
 
 
 class NewSources(unittest.TestCase):
+    def test_filoli_event_pages(self):
+        from ingest.adapters import filoli
+        listing = """<a href="/whats-on/events/nightfall/">Nightfall</a> <a href="/whats-on/events/?category=tours">Tours</a>
+          <a href="/whats-on/events/nightfall/">Find out more</a> <a href="/private-events/">Private</a>"""
+        page = """<script type="application/ld+json">{"@context":"https://schema.org","@type":"Event","name":"Nightfall",
+          "startDate":"2026-09-26T17:30:00-07:00","endDate":"2026-11-01T22:00:00-08:00",
+          "location":{"@type":"Place","address":{"@type":"PostalAddress","streetAddress":"86 Ca\u00f1ada Rd","addressLocality":"Woodside, CA"}}}</script>"""
+        f = FakeFetcher({filoli.LIST + "?p=1": listing, filoli.LIST + "?p=2": "<p>none</p>", filoli.BASE + "/whats-on/events/nightfall/": page})
+        evs = filoli.fetch(f, dt.datetime(2026, 10, 10, tzinfo=TZ), dt.datetime(2026, 12, 10, tzinfo=TZ))
+        self.assertEqual([e.title for e in evs], ["Nightfall"])
+        self.assertEqual(evs[0].city, "Woodside")
+        self.assertEqual(evs[0].source_url, "https://filoli.org/whats-on/events/nightfall/")
+        self.assertTrue(area.in_area(evs[0].to_dict()))
+
     def test_sfpl_presidio(self):
         from ingest.adapters import sfpl
         page = """<div class="view-content">
