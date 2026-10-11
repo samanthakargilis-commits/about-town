@@ -600,3 +600,26 @@ class Tastes(unittest.TestCase):
         r = self.s.score(dict(title="Annunciation Greek Food Festival", start="2026-10-17T12:00-07:00",
                               source="funcheap", price="free", description=""))
         self.assertIn("Greek", r["why"])
+
+
+class PresidioSources(unittest.TestCase):
+    def test_park_feed(self):
+        from ingest.adapters import presidio
+        feed = {"total_pages": 1, "events": [
+            {"id": 1, "title": "Presidio Chapel&#8217;s Monthly Concert Series: Jason Sia", "utc_start_date": "2026-10-17 19:00:00",
+             "utc_end_date": "2026-10-17 20:00:00", "url": "https://presidio.gov/explore/events/chapel/2026-10-17/", "cost": ""},
+            {"id": 2, "title": "Volunteer: Presidio Forest Stewards (Friday)", "utc_start_date": "2026-10-16 16:00:00"}]}
+        start = dt.datetime(2026, 10, 11, tzinfo=TZ)
+        out = presidio.fetch(FakeFetcher({presidio.API: feed}), start, start + dt.timedelta(days=30))
+        self.assertEqual(len(out), 1)
+        self.assertEqual((out[0].venue, out[0].start), ("Presidio Chapel", "2026-10-17T12:00-07:00"))
+
+    def test_theatre_performances(self):
+        from ingest.adapters import presidiotheatre
+        offer = lambda t: {"validFrom": t, "url": "https://www.presidiotheatre.org/ticket-path?ShowName=dakhabrakha"}
+        node = {"@type": "TheaterEvent", "name": "DakhaBrakha", "startDate": "2027-01-16",
+                "offers": [offer("2027-01-17 14:00:00"), offer("2027-01-16 19:30:00")]}
+        soup = BeautifulSoup(f'<script type="application/ld+json">{json.dumps(node)}</script>', "lxml")
+        out = presidiotheatre.parse(soup)
+        self.assertEqual([e.start for e in out], ["2027-01-16T19:30-08:00", "2027-01-17T14:00-08:00"])
+        self.assertEqual(out[0].source_url, "https://www.presidiotheatre.org/show-details/dakhabrakha")

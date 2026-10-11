@@ -658,6 +658,17 @@
         "nowruz",
         "holi festival"
       ]
+    },
+    "presidio": {
+      "label": "A walk from home",
+      "weight": 2.0,
+      "keywords": [
+        "presidio chapel",
+        "presidio theatre",
+        "presidio theater",
+        "presidio chapels"
+      ],
+      "_note": "David walks to the Presidio Chapel's concerts and the Presidio Theatre"
     }
   },
   "reading_tastes": {
