@@ -313,6 +313,14 @@ class BigEvents(unittest.TestCase):
         self.assertEqual(corner_of("Haight and Ashbury St"), ("Haight", "Ashbury"))
         self.assertIsNone(corner_of("3201 Ulloa St"))
 
+    def test_paid_concerts_need_a_reason(self):
+        unknown = Scoring.s.score(ev("SF Unplugged in North Beach: Some Singer + Another", price="$20", venue="Paname SF"))
+        great = Scoring.s.score(ev("SF Unplugged: Some Singer", price="$20", venue="The Fillmore"))
+        free = Scoring.s.score(ev("SF Unplugged: Some Singer", price="free", venue="Paname SF"))
+        self.assertGreater(great["score"] - unknown["score"], 2)
+        self.assertGreater(free["score"] - unknown["score"], 3)
+        self.assertIsNone(Scoring.s.score(ev("SF Unplugged in North Beach: Tristan Lake Leabu + Anthony Arya", price="$20")))
+
     def test_life_skills_hidden_by_title_only(self):
         self.assertIsNone(Scoring.s.score(ev("Stressless Taxes for Artists, Creatives, and Freelancers")))
         self.assertIsNone(Scoring.s.score(ev("Resume Help for Job Seekers")))

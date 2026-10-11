@@ -666,7 +666,8 @@
     "job fair",
     "speed networking",
     "hiring fair",
-    "claudia rankine"
+    "claudia rankine",
+    "tristan lake leabu"
   ],
   "never_in_title": {
     "_note": "life-skills sessions (library-style help with taxes, jobs, money, computers); matched on the title only, since a writing group's page can say 'resume'",
@@ -867,6 +868,42 @@
     "skip_interests_for": [
       "film",
       "cinema-concert"
+    ]
+  },
+  "paid_concerts": {
+    "_note": "gets free concert tickets elsewhere, so a paid show by an artist not on the follow list rarely makes sense, unless the venue is a great one",
+    "penalty": 2.5,
+    "great_venues": [
+      "the fillmore",
+      "fillmore",
+      "the warfield",
+      "warfield",
+      "castro theatre",
+      "the castro",
+      "bill graham civic",
+      "greek theatre",
+      "fox theater",
+      "fox theatre",
+      "the masonic",
+      "davies symphony hall",
+      "war memorial opera house",
+      "sf opera",
+      "sf symphony",
+      "stern grove",
+      "frost amphitheater",
+      "grace cathedral",
+      "chase center",
+      "oracle park",
+      "the independent",
+      "great american music hall",
+      "august hall",
+      "the regency ballroom",
+      "sf jazz",
+      "sfjazz",
+      "herbst theatre",
+      "yerba buena center",
+      "golden gate park bandshell",
+      "shoreline amphitheatre"
     ]
   }
 }

@@ -31,6 +31,9 @@ TECH_TITLE = re.compile(r"\b(AI|A\.I\.|agentic|LLMs?|GPUs?|robotics|founders?|st
 DRINK_MIN = re.compile(r"\b(one|two|three|1|2|3)[- ]drink min(imum)?\b|\bdrink minimum\b|\bminimum (of )?(one|two|three|1|2|3) drinks?\b", re.I)
 NUMBER = {"one": 1, "two": 2, "three": 3, "1": 1, "2": 2, "3": 3}
 DRINKS = re.compile(r"\b(unlimited (beer|wine|drinks)|open bar|drink tickets?|bottomless|mixer|mingle|mingling|happy hour|social)\b", re.I)
+CONCERT = re.compile(r"\b(concert|live music|unplugged|acoustic|singer[- ]songwriter|album release|in concert|"
+                     r"band|live set|dj set|recital|quartet|trio|orchestra|symphony|jazz|folk|indie rock|punk|metal)\b", re.I)
+NOT_A_SHOW = re.compile(r"\b(class|lessons?|workshop|sale|drawing|film|screening|salsa|bachata|swing dance|karaoke|open mic)\b", re.I)
 FESTIVAL = re.compile(r"\b(fair|festival|fest|street fair|convention|con\b|expo|carnival|block party|market)\b", re.I)
 
 
@@ -135,6 +138,23 @@ class Scorer:
                 return ft[key]["weight"]
         return 0.0
 
+    def paid_concert_penalty(self, ev: dict, interests: list, followed: bool) -> float:
+        """A paid show by an artist you don't follow, at an ordinary venue: you'd
+        get free tickets to something better. Great venues still count."""
+        rule = self.profile.get("paid_concerts")
+        price = (ev.get("price") or "").lower()
+        if not rule or followed or price in ("", "free") or "$" not in price:
+            return 0.0
+        title = ev.get("title", "")
+        is_show = ev.get("source") in ("dice", "neckofthewoods") or \
+            "cinema-concert" in (ev.get("tags") or []) or CONCERT.search(title)
+        if not is_show or NOT_A_SHOW.search(title):
+            return 0.0
+        place = norm(" ".join([ev.get("venue") or "", ev.get("title") or ""]))
+        if any(kw_regex(v).search(place) for v in rule.get("great_venues", [])):
+            return 0.0
+        return rule["penalty"]
+
     def score(self, ev: dict, ai_tags: dict | None = None) -> dict | None:
         """Returns the scoring fields for one event, or None if it's on the never list."""
         title_n = norm(ev["title"])
@@ -222,6 +242,7 @@ class Scorer:
             tags.append("kids")
             points -= 1.5
         points += self.price_points(ev, full, bool(badge), points)
+        points -= self.paid_concert_penalty(ev, interests, bool(badge))
         if ev.get("sponsored"):
             points -= 0.5
         if ev.get("recurring"):
