@@ -15,6 +15,7 @@ import requests
 from .core import CACHE_DIR, clean
 
 URL = "https://nominatim.openstreetmap.org/search"
+OVERPASS = "https://overpass-api.de/api/interpreter"     # free; for street corners, which Nominatim can't find
 UA = "bay-events/1.0 (personal event planner; github.com/samanthakargilis-commits/bay-events)"
 VIEWBOX = "-123.2,38.6,-121.3,36.8"   # Bay Area out to Sonoma and Santa Cruz, west,north,east,south
 CACHE = CACHE_DIR / "geo.json"
@@ -36,6 +37,30 @@ def town_of(addr: str) -> str:
         if b and not re.search(r"\d", b) and len(b) > 2:
             return b
     return ""
+
+
+SUFFIX = re.compile(r"\s+(st|street|ave|avenue|blvd|boulevard|rd|road|dr|drive|way|pl|place|ln|lane|ter|terrace|ct|court)\.?$", re.I)
+
+
+def corner_of(addr: str):
+    """Two cross streets ("Steiner & Hermann", "Haight and Ashbury St") as a
+    pair of street names, or None."""
+    first = re.sub(r"\(.*?\)", "", html.unescape(addr or "")).split(",")[0].strip(" .")
+    m = re.match(r"^([A-Za-z][A-Za-z0-9 .'-]{1,30}?)\s+(?:&|and|at|@|/)\s+([A-Za-z0-9][A-Za-z0-9 .'-]{1,30})$", first, re.I)
+    if not m or re.match(r"^\d+\s", first):
+        return None
+    return tuple(SUFFIX.sub("", clean(x)) for x in m.groups())
+
+
+def corner_spot(session, a: str, b: str, city: str):
+    """Where two streets meet, from OpenStreetMap's Overpass API."""
+    name = lambda x: "^" + re.escape(x).replace("\\ ", " ") + "( |$)"
+    q = (f'[out:json][timeout:25];area["name"="{city}"]["boundary"="administrative"]->.c;'
+         f'way(area.c)[highway][name~"{name(a)}",i]->.a;way(area.c)[highway][name~"{name(b)}",i]->.b;'
+         f'node(w.a)(w.b);out 1;')
+    r = session.post(OVERPASS, data={"data": q}, timeout=40)
+    nodes = r.json().get("elements", []) if r.ok else []
+    return [round(nodes[0]["lat"], 5), round(nodes[0]["lon"], 5)] if nodes else None
 
 
 def queries(ev: dict) -> list[str]:
@@ -76,10 +101,26 @@ def fill(events: list[dict], max_lookups: int = 350) -> dict:
         cache = {}
     session = requests.Session()
     session.headers["User-Agent"] = UA
-    looked = found = 0
+    looked = found = corners = 0
     for ev in events:
         if ev.get("lat") is not None or ev.get("city") == "Online":
             continue
+        corner = corner_of(ev.get("address") or "")
+        if corner:
+            city = ev.get("city") if ev.get("city") and ev["city"].lower() not in ("sf",) else "San Francisco"
+            key = f"corner:{corner[0]}&{corner[1]}|{city}".lower()
+            if not fresh(cache.get(key)) and looked < max_lookups:
+                looked += 1
+                try:
+                    cache[key] = corner_spot(session, *corner, city) or {"miss": int(time.time())}
+                except (requests.RequestException, ValueError, KeyError):
+                    cache[key] = {"miss": int(time.time())}
+                time.sleep(1.1)
+            if isinstance(cache.get(key), list):
+                ev["lat"], ev["lng"] = cache[key]
+                found += 1
+                corners += 1
+                continue
         for q in queries(ev):
             key = q.lower()
             if not fresh(cache.get(key)):
@@ -101,4 +142,4 @@ def fill(events: list[dict], max_lookups: int = 350) -> dict:
     CACHE.parent.mkdir(exist_ok=True)
     CACHE.write_text(json.dumps(cache, indent=0))
     have = sum(1 for e in events if e.get("lat") is not None)
-    return {"lookups": looked, "matched_now": found, "with_spot": have, "total": len(events)}
+    return {"lookups": looked, "matched_now": found, "corners": corners, "with_spot": have, "total": len(events)}

@@ -134,6 +134,16 @@ function when(ev) {
   const day = fmt(s, { weekday: 'short', month: 'short', day: 'numeric' });
   return ev.all_day ? day : `${day} · ${clock(ev).replace(' ', '').toLowerCase()}`;
 }
+// on an event's own page: when it ends too, "Mon, Oct 12 · 5:30–8pm"
+function whenFull(ev) {
+  if (ev.all_day || !ev.end) return when(ev);
+  const s = new Date(ev.start), e = new Date(ev.end);
+  if (e - s >= 36 * 3600e3 || e <= s) return when(ev);       // a run shows its dates instead
+  const t = (d) => fmt(d, { hour: 'numeric', minute: '2-digit' }).replace(':00', '').replace(' ', '').toLowerCase();
+  const a = t(s), b = t(e);
+  const start = a.slice(-2) === b.slice(-2) ? a.slice(0, -2) : a;   // 5:30–8pm, 11am–2pm
+  return `${fmt(s, { weekday: 'short', month: 'short', day: 'numeric' })} · ${start}–${b}`;
+}
 function runText(ev) {
   if (!ev.end) return '';
   const s = new Date(ev.start), e = new Date(ev.end);
@@ -567,7 +577,7 @@ function openSheet(ev) {
   const where = [ev.venue, ev.address !== ev.venue ? ev.address : '', ev.city].filter(Boolean).join(' · ');
   $('#sheet').innerHTML = `<div class="grab"></div><button class="x" data-close aria-label="Close">✕</button>${img}
     <div data-id="${esc(ev.id)}">
-      <div class="when">${esc(when(ev))}${runText(ev) ? ` · ${esc(runText(ev))}` : ''}</div>
+      <div class="when">${esc(whenFull(ev))}${runText(ev) ? ` · ${esc(runText(ev))}` : ''}</div>
       <h2>${esc(ev.title)}</h2>
       <div class="where">${esc(where)}${distText(distOf(ev)) ? ` · <b>${esc(distText(distOf(ev)))} ${fromWhere()}</b>` : ''}${ev.price ? ` · ${esc(ev.price === 'free' ? 'Free' : ev.price)}` : ''}</div>
       ${star ? `<div class="star">${star}<a href="#" data-act="block">Not this person</a></div>` : ''}

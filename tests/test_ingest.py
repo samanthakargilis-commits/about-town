@@ -298,6 +298,21 @@ class BigEvents(unittest.TestCase):
                                      description="There is a two-drink minimum to help support our local bar scene."))
         self.assertGreater(plain["score"] - minimum["score"], 2)
 
+    def test_guide_run_folds_into_official_days(self):
+        def item(src, start, end, tags):
+            return dict(ev("Fleet Week Air Show" if src == "fleetweek" else "Fleet Week: Air Show", start=start, end=end, tags=tags),
+                        source=src, id=f"{src}{start}")
+        out = collapse_recurring(merge([item("funcheap", "2026-10-09T16:00-07:00", "2026-10-11T23:00-07:00", ["featured"]),
+                                        item("fleetweek", "2026-10-10T12:00-07:00", "2026-10-10T16:00-07:00", ["annual"]),
+                                        item("fleetweek", "2026-10-11T12:00-07:00", "2026-10-11T16:00-07:00", ["annual"])]))
+        self.assertEqual([(e["source"], e["start"][:10]) for e in out], [("fleetweek", "2026-10-10"), ("fleetweek", "2026-10-11")])
+
+    def test_cross_streets(self):
+        from ingest.geocode import corner_of
+        self.assertEqual(corner_of("Steiner & Hermann, San Francisco, CA"), ("Steiner", "Hermann"))
+        self.assertEqual(corner_of("Haight and Ashbury St"), ("Haight", "Ashbury"))
+        self.assertIsNone(corner_of("3201 Ulloa St"))
+
     def test_life_skills_hidden_by_title_only(self):
         self.assertIsNone(Scoring.s.score(ev("Stressless Taxes for Artists, Creatives, and Freelancers")))
         self.assertIsNone(Scoring.s.score(ev("Resume Help for Job Seekers")))

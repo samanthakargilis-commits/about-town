@@ -87,7 +87,30 @@ def merge(events):
             twin["people"] = sorted(set(twin.get("people", [])) | set(ev.get("people", [])))
             twin["tags"] = sorted(set(twin.get("tags", [])) | set(ev.get("tags", [])))
         merged += kept
-    return merged
+    return fold_runs(merged)
+
+
+def fold_runs(events):
+    """A guide's "Air Show, Oct 9-11" is the same thing as the official site's
+    three air show days: keep the better source's listings, drop the run."""
+    def is_run(e):
+        return e.get("end") and (to_local(e["end"]) - to_local(e["start"])).total_seconds() > 36 * 3600
+    rank = lambda e: LISTING_PRIORITY.get(e["source"], 3)
+    drop = set()
+    for r in events:
+        if not is_run(r):
+            continue
+        rt = title_tokens(r["title"])
+        for o in events:
+            if o is r or o["id"] in drop or rank(o) >= rank(r):
+                continue
+            ot = title_tokens(o["title"])
+            overlap = o["start"][:10] <= r["end"][:10] and (o.get("end") or o["start"])[:10] >= r["start"][:10]
+            if overlap and rt and ot and len(rt & ot) / len(rt | ot) >= 0.6:
+                o.setdefault("also_on", []).append({"source": r["source"], "url": r["source_url"]})
+                drop.add(r["id"])
+                break
+    return [e for e in events if e["id"] not in drop]
 
 
 def collapse_recurring(events, per_week=1):
@@ -99,6 +122,8 @@ def collapse_recurring(events, per_week=1):
         k = " ".join(sorted(title_tokens(ev["title"])))
         counts[k] = counts.get(k, 0) + 1
     for ev in events:
+        if {"annual", "featured"} & set(ev.get("tags") or []):
+            continue                    # a three-day air show isn't a weekly karaoke night
         if counts[" ".join(sorted(title_tokens(ev["title"])))] >= 3:
             ev["recurring"] = True      # e.g. Funcheap posts a weekly show as separate listings
     for ev in sorted(events, key=lambda e: e["start"]):
