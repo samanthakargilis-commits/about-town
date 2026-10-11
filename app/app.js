@@ -26,8 +26,8 @@ const SEASONS = [
 ];
 
 // one pastel per kind of event
-const COLOR = { comedy: 'butter', musical_theatre: 'rose', theatre: 'rose', singing: 'rose', art: 'sage', museums: 'sage', craft: 'peach', weird: 'peach', reading: 'robin', writing: 'robin', discourse: 'robin', meditation: 'lav', spirituality: 'lav', queer: 'lav' };
-const SHORT = { comedy: 'Comedy', musical_theatre: 'Musicals', theatre: 'Theatre', singing: 'Singing', art: 'Art', museums: 'Museums', craft: 'Craft', weird: 'Weird', reading: 'Books', writing: 'Writing', discourse: 'Talks', meditation: 'Meditation', spirituality: 'Spiritual', queer: 'Queer' };
+const COLOR = { animals: 'sage', comedy: 'butter', musical_theatre: 'rose', theatre: 'rose', singing: 'rose', art: 'sage', museums: 'sage', craft: 'peach', weird: 'peach', reading: 'robin', writing: 'robin', discourse: 'robin', meditation: 'lav', spirituality: 'lav', queer: 'lav' };
+const SHORT = { animals: 'Animals', comedy: 'Comedy', musical_theatre: 'Musicals', theatre: 'Theatre', singing: 'Singing', art: 'Art', museums: 'Museums', craft: 'Craft', weird: 'Weird', reading: 'Books', writing: 'Writing', discourse: 'Talks', meditation: 'Meditation', spirituality: 'Spiritual', queer: 'Queer' };
 const colorOf = (ev) => COLOR[(ev.tags || []).find((t) => COLOR[t])] || 'peach';
 
 const PENINSULA = /\b(palo alto|menlo park|redwood city|mountain view|los altos|stanford|san carlos|belmont|atherton|portola valley|woodside|half moon bay|sunnyvale|foster city|san mateo|burlingame|millbrae|cupertino)\b/i;
