@@ -1224,7 +1224,15 @@ async function start() {
   render();
   getJSON('weather.json').then((w) => { weather = w; sunMemo.clear(); render(); }).catch(() => {});   // optional
   if (S.where === 'near') findMe();
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+  if ('serviceWorker' in navigator) {
+    // check for a new version whenever the app comes back to the front, and
+    // switch to it at once (a home-screen app can stay open for days)
+    const had = !!navigator.serviceWorker.controller;
+    navigator.serviceWorker.addEventListener('controllerchange', () => { if (had) location.reload(); });
+    navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).then((reg) => {
+      document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'visible') reg.update().catch(() => {}); });
+    }).catch(() => {});
+  }
 }
 
 start();
