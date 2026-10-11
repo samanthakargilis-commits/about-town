@@ -71,6 +71,15 @@ class Parsing(unittest.TestCase):
         self.assertTrue(evs[1].sponsored)
         self.assertEqual(evs[1].end[:10], "2026-11-15")
 
+    def test_article_price_from_other_day_is_ignored(self):
+        html = """<article><h2>Italian Heritage Festival and Parade</h2>
+        <p>On Sunday, October 11, the annual Italian Heritage Parade returns to North Beach at 12:30 p.m.
+        On October 10, you can check out the Il Gran Ballo, a black-tie ball at the Westin St. Francis.
+        The celebration will feature live music, and tickets are on sale now for $325.00 at 8 p.m.</p></article>"""
+        e = article_events(html, "secretsf", "https://secretsanfrancisco.com/x/", dt.date(2026, 10, 1))[0]
+        self.assertEqual(e.start, "2026-10-11T12:30-07:00")
+        self.assertEqual(e.price, "")
+
     def test_greenapple_date_from_url(self):
         self.assertEqual(greenapple.date_from_url("https://greenapplebooks.com/event/2026-10-06/offsite-ayad-akhtar"), dt.date(2026, 10, 6))
 
@@ -264,3 +273,28 @@ class Distance(unittest.TestCase):
         self.assertFalse(area.keep({"title": "Talk", "city": "Online", "source": "luma", "start": sat}))
         self.assertFalse(area.keep({"title": "Expo", "city": "Sacramento", "source": "luma", "start": sat}))
         self.assertTrue(area.keep({"title": "Comedy", "city": "San Francisco", "source": "luma", "start": wed}))
+
+
+class Weather(unittest.TestCase):
+    def test_forecast_rows_by_area(self):
+        from ingest import weather
+
+        class Resp:
+            def raise_for_status(self): pass
+            def json(self):
+                row = lambda sun: {"daily": {"time": ["2026-10-17"], "sunshine_duration": [sun], "daylight_duration": [40000],
+                                             "temperature_2m_max": [71.4], "precipitation_probability_max": [5], "weather_code": [1]}}
+                return [row(8000), row(36000), row(30000), row(32000), row(38000)]
+
+        class Session:
+            def get(self, url, **kw):
+                self.params = kw["params"]
+                return Resp()
+
+        s = Session()
+        out = weather.forecast(s)
+        self.assertEqual(s.params["forecast_days"], 16)
+        day = out["days"]["2026-10-17"]
+        self.assertEqual(day["sf"]["sun"], 0.2)
+        self.assertEqual(day["marin"]["sun"], 0.9)
+        self.assertEqual(day["marin"]["hi"], 71)
