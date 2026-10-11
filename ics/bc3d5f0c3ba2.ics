@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bc3d5f0c3ba2@bay-events
+DTSTAMP:20261011T045030Z
+DTSTART;TZID=America/Los_Angeles:20261027T100000
+DTEND;TZID=America/Los_Angeles:20261027T120000
+SUMMARY:Transportation and Senior Services Resource Fair (Burlingame)
+LOCATION:Burlingame Community Center: Sequioa Room\, 850 Burlingame Avenue
+ \, Burlingame\, Burlingame
+URL:https://sf.funcheap.com/transportation-senior-services-resource-fair-b
+ urlingame/
+DESCRIPTION:Fairs & festivals · Burlingame\nhttps://sf.funcheap.com/trans
+ portation-senior-services-resource-fair-burlingame/\n\n
+END:VEVENT
+END:VCALENDAR

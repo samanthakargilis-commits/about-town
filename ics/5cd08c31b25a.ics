@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5cd08c31b25a@bay-events
+DTSTAMP:20261011T045030Z
+DTSTART;TZID=America/Los_Angeles:20261010T210000
+DTEND;TZID=America/Los_Angeles:20261011T013000
+SUMMARY:FUN FUN CLUB
+LOCATION:Thee Stork Club\, 2330 Telegraph Ave Oakland\, Oakland
+URL:https://partiful.com/e/TiFhLhrNgGqyKXT8T1El
+DESCRIPTION:Dance nights · Oakland\nhttps://partiful.com/e/TiFhLhrNgGqyKX
+ T8T1El\n\nFUN FUN CLUB A nü dance party ft the eclectic sounds of ITALO!
+  Hi-NRG ! &&& MORE! With DJs Petrē and Big Wink of Italo Disco at Thee S
+ tork Club Live visuals by Crístal Vision Electric performances throughou
+ t the night from: Mike Hunt Piss E Sissy And a delicious surprise guest (
+ ?)! $12 adv $15 at the door Join the club and bring your funfun looks Ins
+ ta-tags: @petr3petr3petr3 @bigwinkshop @pisse.pa
+END:VEVENT
+END:VCALENDAR

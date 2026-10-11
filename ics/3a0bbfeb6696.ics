@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3a0bbfeb6696@bay-events
+DTSTAMP:20261011T045030Z
+DTSTART;TZID=America/Los_Angeles:20261115T170000
+DTEND;TZID=America/Los_Angeles:20261115T190000
+SUMMARY:Ketubah Renaissance – Reception with the Curator
+LOCATION:JCCSF\, 3200 California Street\, San Francisco
+URL:https://www.jccsf.org/event/ketubah-renaissance-reception-with-the-cur
+ ator/
+DESCRIPTION:Museum exhibits + Art\nhttps://www.jccsf.org/event/ketubah-ren
+ aissance-reception-with-the-curator/\n\nJoin the curator to explore the h
+ istory behind the exhibit more deeply.
+END:VEVENT
+END:VCALENDAR

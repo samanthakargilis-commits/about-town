@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2a578afa78b6@bay-events
+DTSTAMP:20261011T045029Z
+DTSTART;TZID=America/Los_Angeles:20261022T210000
+DTEND;TZID=America/Los_Angeles:20261023T020000
+SUMMARY:Crazy Karaoke: SF’s Wild New Thursday Night Party + $3 Shots
+LOCATION:The Function\, 1414 Market Street\, San Francisco\, CA\, San Fran
+ cisco
+URL:https://sf.funcheap.com/crazy-karaoke-sfs-wild-new-thursday-night-part
+ y-3-shots-sf-3/
+DESCRIPTION:Singing · Thursday evening\nhttps://sf.funcheap.com/crazy-kar
+ aoke-sfs-wild-new-thursday-night-party-3-shots-sf-3/\n\n
+END:VEVENT
+END:VCALENDAR

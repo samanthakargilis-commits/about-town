@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:239d1ee3f9f8@bay-events
+DTSTAMP:20261011T045029Z
+DTSTART;TZID=America/Los_Angeles:20261015T180000
+DTEND;TZID=America/Los_Angeles:20261015T200000
+SUMMARY:Drink & Draw 21+ In San Francisco Every 3rd Thursday! FREE to join
+ !
+LOCATION:540 club @ 540 Clement Street\, San Francisco\, 540 Clement Stree
+ t\, San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/meetup-group-glpdmivm/events/311714267/
+DESCRIPTION:Art + Concerts · Thursday evening\nhttps://www.meetup.com/mee
+ tup-group-glpdmivm/events/311714267/\n\nGrab your art supplies and come j
+ oin us for a community Drink & Draw at 540 Bar in San Francisco to join.2
+ 1+ FREE TO JOIN (but please 2 drink boozy/not min to support our local on
+ ly small businesses) All levels of skills are welcome! Every 3rd Thursday
+ s 6-8pm 21+ RSVP to let me know you’re coming! These activities are fre
+ e because we pay for them\, please support by: Grabbing a beverage or few
+  (boo
+END:VEVENT
+END:VCALENDAR

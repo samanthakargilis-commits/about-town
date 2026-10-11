@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9622c9bed789@bay-events
+DTSTAMP:20261011T045030Z
+DTSTART;TZID=America/Los_Angeles:20261020T193000
+DTEND;TZID=America/Los_Angeles:20261020T213000
+SUMMARY:Horror Classic “The Ring” Film with Live Orchestra w/ SF Symph
+ ony
+LOCATION:Davies Symphony Hall\, 201 Van Ness Ave\, San Francisco\, CA 9410
+ 2\, San Francisco
+URL:https://sf.funcheap.com/horror-classic-the-ring-film-with-live-orchest
+ ra-with-sf-symphony/
+DESCRIPTION:Concerts\nhttps://sf.funcheap.com/horror-classic-the-ring-film
+ -with-live-orchestra-with-sf-symphony/\n\n
+END:VEVENT
+END:VCALENDAR

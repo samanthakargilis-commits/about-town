@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ba93b50d32b5@bay-events
+DTSTAMP:20261011T045030Z
+DTSTART;TZID=America/Los_Angeles:20261024T120000
+DTEND;TZID=America/Los_Angeles:20261024T170000
+SUMMARY:Thrill-O-Ween: Free Outdoor Halloween Fest w/ Costume Contest (Thr
+ ive City)
+LOCATION:Thrive City\, 1 Warriors Way San Francisco\, CA
+URL:https://sf.funcheap.com/thrilloween-free-outdoor-halloween-fest-costum
+ e-contest-thrive-city/
+DESCRIPTION:Weird & unusual\nhttps://sf.funcheap.com/thrilloween-free-outd
+ oor-halloween-fest-costume-contest-thrive-city/\n\n
+END:VEVENT
+END:VCALENDAR

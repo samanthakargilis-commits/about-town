@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:edf653eee9a2@bay-events
+DTSTAMP:20261011T045030Z
+DTSTART;TZID=America/Los_Angeles:20261011T120000
+DTEND;TZID=America/Los_Angeles:20261011T150000
+SUMMARY:Peninsula Touch Grass Club
+LOCATION:Pomponio State Beach\, null null Half Moon Bay\, Half Moon Bay
+URL:https://partiful.com/e/NKiOxrBjbg4W9jdAripN
+DESCRIPTION:Theatre + Discourse · Half Moon Bay\nhttps://partiful.com/e/N
+ KiOxrBjbg4W9jdAripN\n\nJoin us for a casual beginner chess meetup at Pomp
+ onio State Beach ♟️ This is a small\, relaxed gathering for anyone wh
+ o is new to chess\, a little rusty\, or simply looking for a fun way to m
+ eet new people while enjoying the outdoors. No experience is necessary\, 
+ and there’s no pressure to be competitive\, we’ll play a few games\, 
+ learn from each other\, and enjoy some good conversation by the beach. On
+END:VEVENT
+END:VCALENDAR

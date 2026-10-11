@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:144b1f727110@bay-events
+DTSTAMP:20261011T045030Z
+DTSTART;TZID=America/Los_Angeles:20261014T190000
+DTEND;TZID=America/Los_Angeles:20261014T210000
+SUMMARY:Lotería @ Nook Wine Bar
+LOCATION:Nook\, 1500 Hyde St San Francisco\, San Francisco
+URL:https://partiful.com/e/9404LRtD6JtfuXU0aoYu
+DESCRIPTION:New in your area\nhttps://partiful.com/e/9404LRtD6JtfuXU0aoYu\
+ n\nJoin us on Wednesday at Nook for Lotería! This Partiful will continue
+  to be updated with the next upcoming date. OCTOBER DATES: 10/14 & 10/28 
+ Plan to arrive by 7PM to get settled and ensure you get game pieces! We w
+ ill have prizes\, discounts\, and more throughout the night. Lotería is 
+ a family friendly\, traditional\, Mexican board game of chance\, played a
+ cross many LatinX Communities.
+END:VEVENT
+END:VCALENDAR

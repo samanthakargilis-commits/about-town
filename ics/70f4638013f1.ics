@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:70f4638013f1@bay-events
+DTSTAMP:20261011T045030Z
+DTSTART;TZID=America/Los_Angeles:20261012T190000
+DTEND;TZID=America/Los_Angeles:20261012T210000
+SUMMARY:SF Chess Club - Indigenous Peoples Day!
+LOCATION:Anina\, 482 Hayes St San Francisco\, San Francisco
+URL:https://partiful.com/e/enRASNbaLqIkAiW3JBbR
+DESCRIPTION:New in your area\nhttps://partiful.com/e/enRASNbaLqIkAiW3JBbR\
+ n\nAnina is 21+ BRING YOUR ID - outside food is allowed! Connor + Andrew 
+ are out of town! chess club is still on! Bring extra boards if you have o
+ ne! make sure you get a drink - our hosts at Anina are very supportive! A
+ ll Levels Welcome - Every Monday Night Chess with San Francisco Chess Clu
+ b! (7 - 9:30 PM~) @ Anina Check out our social media! Follow our Partiful
+  - sfchess.club Instagram (most import
+END:VEVENT
+END:VCALENDAR

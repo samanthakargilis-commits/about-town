@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:04868d5b5e61@bay-events
+DTSTAMP:20261011T045030Z
+DTSTART;TZID=America/Los_Angeles:20261016T190000
+DTEND;TZID=America/Los_Angeles:20261016T210000
+SUMMARY:Open Mic Night
+LOCATION:1924 Cedar St\, 1924 Cedar St\, Berkeley\, CA Berkeley\, Berkeley
+URL:https://www.meetup.com/music-at-berkeley-fellowship-uu/events/31669657
+ 0/
+DESCRIPTION:Singing · Berkeley\nhttps://www.meetup.com/music-at-berkeley-
+ fellowship-uu/events/316696570/\n\n*Musicians\, Poets\, Magicians\, Comed
+ ians\, Storytellers\, etc.* **Hosted by Lady Driftwood\;** and her two se
+ nse. **Featuring Sharon Knight and Winter\;** Celtic-inspired folk rock d
+ uo **Sign-ups begin 6:30. Show time 7:00pm** Perform or just come to enjo
+ y! BYO potluck refreshments (optional) Suggested donation $10–$20 No on
+ e turned away. Sponsored by BFUU Social Justice Committee
+END:VEVENT
+END:VCALENDAR

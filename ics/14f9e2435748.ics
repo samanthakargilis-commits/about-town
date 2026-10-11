@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:14f9e2435748@bay-events
+DTSTAMP:20261011T045029Z
+DTSTART;TZID=America/Los_Angeles:20261112T180000
+DTEND;TZID=America/Los_Angeles:20261112T191500
+SUMMARY:Performance: Kim Shuck’s Poem Jam Celebrates Janice Gould’s Th
+ is Music
+LOCATION:San Francisco Public Library\, Main Library\, Latino Room (lower 
+ level)\, 100 Larkin Street\, San Francisco\, San Francisco
+URL:https://sf.funcheap.com/performance-kim-shucks-poem-jam-celebrates-jan
+ ice-goulds-music/
+DESCRIPTION:Writing + Reading · Your reading tastes · Thursday evening\n
+ https://sf.funcheap.com/performance-kim-shucks-poem-jam-celebrates-janice
+ -goulds-music/\n\nK. ShuckSan Francisco Poet Laureate emerita Kim Shuck a
+ nd special guests celebrate This Music\, a memoir in prose poems by the l
+ ate Native poet and essayist Janice Gould at SFPL’s Monthly poetry read
+ ing. Disclaimer: Please double check event information with the event org
+ anizer as events can be canceled\, details can change after they are adde
+ d to our calendar\, and errors do occur.
+END:VEVENT
+END:VCALENDAR

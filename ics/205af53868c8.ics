@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:205af53868c8@bay-events
+DTSTAMP:20261011T045030Z
+DTSTART;TZID=America/Los_Angeles:20261014T193000
+DTEND;TZID=America/Los_Angeles:20261014T210000
+SUMMARY:Jon Ronson – Adventures in a World Of Unraveling Men
+LOCATION:JCCSF\, 3200 California Street\, San Francisco
+URL:https://www.jccsf.org/event/jon-ronson-adventures-in-a-world-of-unrave
+ ling-men/
+DESCRIPTION:Comedy\nhttps://www.jccsf.org/event/jon-ronson-adventures-in-a
+ -world-of-unraveling-men/\n\nThe bestselling author takes on the modern m
+ asculinity crisis in a deeply strange\, darkly comic one-man show.
+END:VEVENT
+END:VCALENDAR

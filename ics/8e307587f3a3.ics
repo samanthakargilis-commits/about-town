@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8e307587f3a3@bay-events
+DTSTAMP:20261011T045030Z
+DTSTART;TZID=America/Los_Angeles:20261017T110000
+DTEND;TZID=America/Los_Angeles:20261017T130000
+SUMMARY:Promenade decouverte Art Deco @ San Francisco
+LOCATION:140 New Montgomery\, 140 New Montgomery\, San Francisco\, CA 9410
+ 5\, USA\, San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/lesgaulois/events/316689932/
+DESCRIPTION:Art\nhttps://www.meetup.com/lesgaulois/events/316689932/\n\nPr
+ omenade decouverte des immeubles Art Deco de la Marina ou Financial Distr
+ ict [a definir bientot] et de l'histoire du mouvement Art Deco. [details 
+ a venir]
+END:VEVENT
+END:VCALENDAR

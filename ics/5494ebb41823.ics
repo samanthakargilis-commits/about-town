@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5494ebb41823@bay-events
+DTSTAMP:20261011T045030Z
+DTSTART;TZID=America/Los_Angeles:20261014T180000
+DTEND;TZID=America/Los_Angeles:20261014T190000
+SUMMARY:Jon Else with Scott D. Sagan
+LOCATION:Kepler&#39\;s Books\, 1010 El Camino Real Menlo Park\, CA\, 94025
+ \, Menlo Park
+URL:https://www.keplers.org/upcoming-events-internal/jon-else
+DESCRIPTION:Menlo Park\nhttps://www.keplers.org/upcoming-events-internal/j
+ on-else\n\nLocal author Jon Else joins us with Frenchman Flat\, the story
+  of a single nuclear bomb’s deep origins\, brief life during the Cold W
+ ar\, and lasting environmental and political legacies.
+END:VEVENT
+END:VCALENDAR
