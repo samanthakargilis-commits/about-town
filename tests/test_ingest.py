@@ -191,6 +191,10 @@ class NewSources(unittest.TestCase):
         self.assertIn("comedy", evs[0].tags)
         r = Scoring.s.score(evs[0].to_dict())
         self.assertEqual(r["followed"], "Gus Heagerty")
+    def test_broadwaysf_run_dates(self):
+        from ingest.adapters import broadwaysf
+        html = r'x\"title\":\"Oh, Mary!\",\"dates\":\"Tue, Oct 13 - Sun, Nov 1, 2026\",\"infoBarText\"'
+        self.assertEqual(broadwaysf.runs(html), {"oh, mary!": (dt.date(2026, 10, 13), dt.date(2026, 11, 1))})
 
     def test_partiful_offer(self):
         from ingest.adapters import partiful
