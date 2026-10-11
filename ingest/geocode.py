@@ -59,7 +59,9 @@ def corner_of(addr: str):
 
 def corner_spot(session, a: str, b: str, city: str):
     """Where two streets meet, from OpenStreetMap's Overpass API."""
-    name = lambda x: "^" + re.escape(x).replace("\\ ", " ") + "( |$)"
+    # "Mission" is Mission Street, not Mission Bay Boulevard, which also crosses 3rd
+    kinds = "Street|Avenue|Boulevard|Way|Road|Drive|Place|Lane|Terrace|Court|Alley|Plaza"
+    name = lambda x: "^" + re.escape(x).replace("\\ ", " ") + f"( ({kinds}))?$"
     q = (f'[out:json][timeout:25];area["name"="{city}"]["boundary"="administrative"]->.c;'
          f'way(area.c)[highway][name~"{name(a)}",i]->.a;way(area.c)[highway][name~"{name(b)}",i]->.b;'
          f'node(w.a)(w.b);out 1;')
@@ -113,7 +115,7 @@ def fill(events: list[dict], max_lookups: int = 350) -> dict:
         corner = corner_of(ev.get("address") or "")
         if corner:
             city = ev.get("city") if ev.get("city") and ev["city"].lower() not in ("sf",) else "San Francisco"
-            key = f"corner:{corner[0]}&{corner[1]}|{city}".lower()
+            key = f"corner2:{corner[0]}&{corner[1]}|{city}".lower()
             if not fresh(cache.get(key)) and looked < max_lookups:
                 looked += 1
                 try:
