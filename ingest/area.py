@@ -65,7 +65,8 @@ def in_area(ev: dict) -> bool:
 
 
 def weekend_slot(ev: dict) -> bool:
-    """Friday evening, Saturday or Sunday, or a run long enough to pick a weekend day."""
+    """Friday, Saturday or Sunday, or a run long enough to pick a weekend day.
+    (Monday to Thursday across the bay is a no unless it's someone David follows.)"""
     from .core import to_local   # local import: core imports nothing from here
     s = to_local(ev.get("start"))
     if not s:
@@ -73,7 +74,7 @@ def weekend_slot(ev: dict) -> bool:
     e = to_local(ev.get("end")) if ev.get("end") else None
     if e and (e - s).total_seconds() > 36 * 3600:
         return True
-    return s.weekday() >= 5 or (s.weekday() == 4 and (s.hour >= 17 or ev.get("all_day")))
+    return s.weekday() >= 4
 
 
 def keep(ev: dict, fan=None) -> bool:

@@ -303,7 +303,8 @@ def event_from_jsonld(node: dict, source: str, fallback_url: str = "") -> Option
         offers = offers[0] if offers else {}
     price = ""
     if isinstance(offers, dict):
-        p, high = money(offers.get("price") or offers.get("lowPrice")), money(offers.get("highPrice"))
+        p = money(offers.get("price")) if offers.get("price") not in (None, "") else money(offers.get("lowPrice"))
+        high = money(offers.get("highPrice"))
         if p == 0 and not high:
             price = "free"
         elif p == 0:

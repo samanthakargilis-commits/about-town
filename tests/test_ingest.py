@@ -623,3 +623,16 @@ class PresidioSources(unittest.TestCase):
         out = presidiotheatre.parse(soup)
         self.assertEqual([e.start for e in out], ["2027-01-16T19:30-08:00", "2027-01-17T14:00-08:00"])
         self.assertEqual(out[0].source_url, "https://www.presidiotheatre.org/show-details/dakhabrakha")
+
+
+class MatoSource(unittest.TestCase):
+    def test_town_in_the_place_wins(self):
+        from ingest.adapters import mato
+        node = {"@type": "Event", "name": "Flannel & Foliage", "startDate": "2026-10-23T10:00:00.000-07:00",
+                "endDate": "2026-10-23T18:00:00.000-07:00",
+                "location": {"@type": "Place", "name": "Downtown Danville", "address": {"addressLocality": "San Francisco"}},
+                "offers": {"@type": "Offer", "price": 0, "availability": "https://schema.org/InStock"}}
+        soup = BeautifulSoup(f'<script type="application/ld+json">{json.dumps(node)}</script>', "lxml")
+        e = mato.from_page(soup, "https://ma.to/event/flannel-foliage-gilmore-girls-festival-23-oct-2026")
+        self.assertEqual((e.city, e.price), ("Danville", "free"))
+        self.assertEqual(mato.day_of(e.source_url, dt.date(2026, 10, 11)), "2026-10-23")
