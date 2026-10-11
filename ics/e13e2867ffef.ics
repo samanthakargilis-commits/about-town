@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e13e2867ffef@bay-events
+DTSTAMP:20261011T042840Z
+DTSTART;TZID=America/Los_Angeles:20261017T103000
+DTEND;TZID=America/Los_Angeles:20261017T123000
+SUMMARY:Shut Up & Write!® in the Central Richmond (Cafe Enchante)
+LOCATION:Cafe Enchante (26th and Geary)\, 6157 Geary Blvd.\, San Francisco
+ \, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/shutupandwritesfo/events/316738706/
+DESCRIPTION:Writing + Craft\nhttps://www.meetup.com/shutupandwritesfo/even
+ ts/316738706/\n\n**Coworking for writers in your area!** Join us for some
+  focused writing time. All writers and all experience levels are welcome 
+ and don’t worry\, no one will see what you've written. This session is 
+ about getting your writing done and meeting other writers in your area. W
+ hen you show up\, say hello to everyone\, grab a drink\, and get your wri
+ ting tools ready. Once you’re all settled\, take some time 
+END:VEVENT
+END:VCALENDAR

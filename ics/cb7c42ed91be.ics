@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cb7c42ed91be@bay-events
+DTSTAMP:20261011T042840Z
+DTSTART;TZID=America/Los_Angeles:20261124T130000
+DTEND;TZID=America/Los_Angeles:20261124T140000
+SUMMARY:A Joyful Thanksgiving Concert: Come Celebrate with Us
+LOCATION:JCCSF\, 3200 California Street\, San Francisco
+URL:https://www.jccsf.org/event/a-joyful-thanksgiving-concert-come-celebra
+ te-with-us/
+DESCRIPTION:Concerts + Musical theatre\nhttps://www.jccsf.org/event/a-joyf
+ ul-thanksgiving-concert-come-celebrate-with-us/\n\nBe part of this festiv
+ e musical event with our special guests\, accordionist Jim Rebhan and sop
+ rano Barbara Hollinger. It’s a great way to embrace the holiday spirit.
+END:VEVENT
+END:VCALENDAR

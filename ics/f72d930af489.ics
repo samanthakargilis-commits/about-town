@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f72d930af489@bay-events
+DTSTAMP:20261011T042839Z
+DTSTART;TZID=America/Los_Angeles:20261031T100000
+DTEND;TZID=America/Los_Angeles:20261031T120000
+SUMMARY:October Book Club: The Only One Left
+LOCATION:Philz\, 403 Corte Madera Town Center\, Corte Madera\, CA Corte Ma
+ dera\, Corte Madera
+URL:https://www.meetup.com/millennial-book-lovers-of-marin/events/31682395
+ 3/
+DESCRIPTION:⭐ Riley Sager · Reading · Corte Madera\nhttps://www.meetup
+ .com/millennial-book-lovers-of-marin/events/316823953/\n\nThe arrival of 
+ October means it’s time for a spooky book! For the next meet up in Octo
+ ber\, we’ll be reading The Only One Left by Riley Sager. The Marin libr
+ ary system has plenty of copies available. Happy reading!
+END:VEVENT
+END:VCALENDAR

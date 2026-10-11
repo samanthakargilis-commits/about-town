@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2de8a088254b@bay-events
+DTSTAMP:20261011T042841Z
+DTSTART;TZID=America/Los_Angeles:20261011T111500
+DTEND;TZID=America/Los_Angeles:20261011T131500
+SUMMARY:Hot Girls Grow Wealth Brunch - Cubita SF 💸🥂
+LOCATION:Cubita\, 2516 Mission St\, San Francisco\, CA 94110\, USA\, San F
+ rancisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/glow-girl-social-club/events/316705149/
+DESCRIPTION:Discourse\nhttps://www.meetup.com/glow-girl-social-club/events
+ /316705149/\n\nCome join for a casual brunch where we’ll eat\, sip\, co
+ nnect\, and have open conversations about money\, building wealth\, and t
+ he life we want to create ✨ This is a space to talk about money without
+  the pressure of having it all figured out. Whether you’re just getting
+  started with your finances or already on your wealth-building journey\, 
+ come as you are! **\\*What to expect**:\\* 🥂 Brunch\, drinks & go
+END:VEVENT
+END:VCALENDAR

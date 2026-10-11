@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3ae2c2c5d208@bay-events
+DTSTAMP:20261011T042839Z
+DTSTART;TZID=America/Los_Angeles:20261023T180000
+DTEND;TZID=America/Los_Angeles:20261023T200000
+SUMMARY:Queer Fiber Arts group
+LOCATION:3207 Lakeshore Ave\, 3207 Lakeshore Ave\, Oakland\, CA Oakland\, 
+ Oakland
+URL:https://www.meetup.com/oakland-lgbt-meetup/events/316711903/
+DESCRIPTION:Gay / queer + Craft · Oakland\nhttps://www.meetup.com/oakland
+ -lgbt-meetup/events/316711903/\n\n🧶✨ **Fiber Fridays at the Oakland 
+ LGBTQ Center!** ✨🧶 THIS WILL BE OUR LAST FIBER ARTS FOR THE YEAR! ST
+ OP BY AND SPEND SOME TIME WITH US! Join us every **4th Friday** from **6
+ –8 PM** for a cozy evening of creativity\, community\, and connection. 
+ Bring your knitting\, crochet\, weaving—or just come hang out and learn
+  something new! 🌈 Our group brings together enthusiasts of all things 
+ fiber—crochet\, kni
+END:VEVENT
+END:VCALENDAR

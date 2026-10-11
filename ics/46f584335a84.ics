@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:46f584335a84@bay-events
+DTSTAMP:20261011T042841Z
+DTSTART;TZID=America/Los_Angeles:20261010T093000
+DTEND;TZID=America/Los_Angeles:20261010T113000
+SUMMARY:Trail Maintenance: South Leaf Trail (Pt. 5)
+LOCATION:Los Altos
+URL:http://www.openspace.org/events/volunteer-projects/trail-maintenance-s
+ outh-leaf-trail-pt-5
+DESCRIPTION:Los Altos\nhttp://www.openspace.org/events/volunteer-projects/
+ trail-maintenance-south-leaf-trail-pt-5\n\nA community trail maintenance 
+ session on the South Leaf Trail\, helping keep the path in good shape for
+  hikers. Volunteers should come prepared to work outdoors.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:50dba00f6000@bay-events
+DTSTAMP:20261011T042840Z
+DTSTART;TZID=America/Los_Angeles:20261018T170000
+DTEND;TZID=America/Los_Angeles:20261018T190000
+SUMMARY:SF Indian Music Project Jam @ San Jose
+LOCATION:4835 Doyle Rd\, 4835 Doyle Rd San Jose\, San Jose
+URL:https://partiful.com/e/8lr2yb4i83Cc1o98P6p3
+DESCRIPTION:Singing + Fairs & festivals · San Jose\nhttps://partiful.com/
+ e/8lr2yb4i83Cc1o98P6p3\n\nGet ready for an evening of great company\, and
+  stripped-down melodies! We are hosting a casual\, community acoustic jam
+  in San Jose\, and you're invited to be part of the music. This is a musi
+ c performance next to a pumpkin patch. There will be English and Hindi mu
+ sic. ​Whether you want to belt out your favorite Bollywood classics\, h
+ armonize on some American pop / halloween tracks\, or just sit back 
+END:VEVENT
+END:VCALENDAR

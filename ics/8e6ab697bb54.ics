@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8e6ab697bb54@bay-events
+DTSTAMP:20261011T042840Z
+DTSTART;TZID=America/Los_Angeles:20261105T170000
+DTEND;TZID=America/Los_Angeles:20261105T220000
+SUMMARY:SF’s Free DFT Monthly Block Party: “Downtown First Thursdays
+ ” (2026)
+LOCATION:2nd Street between Market and Howard Streets\, San Francisco
+URL:https://sf.funcheap.com/sfs-free-dft-monthly-block-party-downtown-firs
+ t-thursdays-2026-10/
+DESCRIPTION:Fairs & festivals + Gay / queer · Thursday evening\nhttps://s
+ f.funcheap.com/sfs-free-dft-monthly-block-party-downtown-first-thursdays-
+ 2026-10/\n\nSF’s Free DFT Monthly Block Party: “Downtown First Thursd
+ ays” (2026) Into The Streets Downtown First Thursdays is back in 2026 f
+ or a full year of street parties in 2026\, starting Jan 1\, 2026\, with a
+  New Year’s Day Edition and returning every first Thursday with a new d
+ owntown block party. DJs – Live Performances – Dancing – Drag – F
+ ood Trucks – Shopping – Fashion\, and new surprises every month. “D
+END:VEVENT
+END:VCALENDAR
