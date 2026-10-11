@@ -26,8 +26,8 @@ const SEASONS = [
 ];
 
 // one pastel per kind of event
-const COLOR = { animals: 'sage', comedy: 'butter', musical_theatre: 'rose', theatre: 'rose', singing: 'rose', art: 'sage', museums: 'sage', craft: 'peach', weird: 'peach', reading: 'robin', writing: 'robin', discourse: 'robin', meditation: 'lav', spirituality: 'lav', queer: 'lav' };
-const SHORT = { animals: 'Animals', comedy: 'Comedy', musical_theatre: 'Musicals', theatre: 'Theatre', singing: 'Singing', art: 'Art', museums: 'Museums', craft: 'Craft', weird: 'Weird', reading: 'Books', writing: 'Writing', discourse: 'Talks', meditation: 'Meditation', spirituality: 'Spiritual', queer: 'Queer' };
+const COLOR = { animals: 'sage', fairs: 'butter', vintage: 'peach', music: 'rose', dance: 'lav', comedy: 'butter', musical_theatre: 'rose', theatre: 'rose', singing: 'rose', art: 'sage', museums: 'sage', craft: 'peach', weird: 'peach', reading: 'robin', writing: 'robin', discourse: 'robin', meditation: 'lav', spirituality: 'lav', queer: 'lav' };
+const SHORT = { animals: 'Animals', fairs: 'Fairs', vintage: 'Sales', music: 'Concerts', dance: 'Dancing', comedy: 'Comedy', musical_theatre: 'Musicals', theatre: 'Theatre', singing: 'Singing', art: 'Art', museums: 'Museums', craft: 'Craft', weird: 'Weird', reading: 'Books', writing: 'Writing', discourse: 'Talks', meditation: 'Meditation', spirituality: 'Spiritual', queer: 'Queer' };
 const colorOf = (ev) => COLOR[(ev.tags || []).find((t) => COLOR[t])] || 'peach';
 
 const PENINSULA = /\b(palo alto|menlo park|redwood city|mountain view|los altos|stanford|san carlos|belmont|atherton|portola valley|woodside|half moon bay|sunnyvale|foster city|san mateo|burlingame|millbrae|cupertino)\b/i;
@@ -176,7 +176,7 @@ function distText(mi) {
 }
 const shortDist = (mi) => (mi < 0.95 ? `${Math.max(2, Math.round(mi * 20))} min walk` : mi < 10 ? `${mi.toFixed(1)} mi` : `${Math.round(mi)} mi`);
 const fromWhere = () => (S.where === 'near' && nearPos ? 'from you' : 'from home');
-const TRIP_MILES = 60;   // Friday evening and weekend day trips (Sonoma, the East Bay)
+const TRIP_MILES = 90;   // Friday evening and weekend day trips (Sonoma, the East Bay), and shows by people you follow
 const slotMemo = new Map();
 function weekendSlot(ev) {
   if (!slotMemo.has(ev.id)) slotMemo.set(ev.id, slotOf(ev));
@@ -189,7 +189,7 @@ function slotOf(ev) {
 }
 function inRange(ev) {
   const d = distOf(ev);
-  const trip = S.where === 'home' && weekendSlot(ev);
+  const trip = S.where === 'home' && (weekendSlot(ev) || !!followInfo(ev));
   if (d != null) return d <= (RADIUS[S.where] || 15) || (trip && d <= TRIP_MILES);
   if (ev.trip) return trip;
   // no map spot: go by the city name
@@ -342,8 +342,9 @@ function distPenalty(ev) {
   if (mi == null) return 0;
   const run = ev.end && new Date(ev.end) - new Date(ev.start) > 36 * 3600e3;   // you pick the day
   const p = parts(new Date(ev.start));
-  const weekend = weekendSlot(ev);
+  if (followInfo(ev)) return -Math.min(2, Math.max(0, mi - 5) * 0.04);   // you'd cross the bay for them, any night
   const friNight = !run && p.weekday === 'Fri' && Number(p.hour) >= 17;
+  const weekend = weekendSlot(ev);
   if (weekend && !friNight) return -Math.min(2, Math.max(0, mi - 5) * 0.04);
   if (friNight) return -Math.min(4, Math.max(0, mi - 3) * 0.25);
   // a weeknight: walkable or a short ride is fine, across town costs a lot

@@ -75,14 +75,15 @@ def weekend_slot(ev: dict) -> bool:
     return s.weekday() >= 5 or (s.weekday() == 4 and (s.hour >= 17 or ev.get("all_day")))
 
 
-def keep(ev: dict) -> bool:
-    """In the SF-Peninsula corridor, or a Bay Area day trip on a weekend (marked trip=True)."""
+def keep(ev: dict, fan=None) -> bool:
+    """In the SF-Peninsula corridor, or a Bay Area day trip (marked trip=True) on a weekend,
+    or any night for a performer you follow (fan(ev) is true)."""
     if in_area(ev):
         return True
     text = " ".join([ev.get("city") or "", ev.get("venue") or "", ev.get("address") or "", ev.get("title") or ""]).lower()
     if any(re.search(rf"\b{re.escape(w)}\b", text) for w in FAR_OR_ONLINE):
         return False
-    if weekend_slot(ev):
+    if weekend_slot(ev) or (fan and fan(ev)):
         ev["trip"] = True
         return True
     return False

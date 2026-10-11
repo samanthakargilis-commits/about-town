@@ -258,6 +258,9 @@ class Distance(unittest.TestCase):
         self.assertTrue(area.keep(fair(sat)))
         self.assertTrue(fair(sat) | {"trip": True})
         self.assertFalse(area.keep(fair(wed)))
+        show = {"title": "Audrey Hobert", "city": "Oakland", "source": "dice", "start": wed}
+        self.assertFalse(area.keep(dict(show)))
+        self.assertTrue(area.keep(dict(show), fan=lambda e: "Hobert" in e["title"]))
         self.assertFalse(area.keep({"title": "Talk", "city": "Online", "source": "luma", "start": sat}))
         self.assertFalse(area.keep({"title": "Expo", "city": "Sacramento", "source": "luma", "start": sat}))
         self.assertTrue(area.keep({"title": "Comedy", "city": "San Francisco", "source": "luma", "start": wed}))
