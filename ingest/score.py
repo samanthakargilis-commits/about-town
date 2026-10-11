@@ -27,6 +27,7 @@ TECH_TITLE = re.compile(r"\b(AI|A\.I\.|agentic|LLMs?|GPUs?|robotics|founders?|st
                         r"devs?|developers?|hackathon|demo day|pitch (night|competition)|VCs?|venture|networking|tech ?week|"
                         r"#\w*tech\w*|disrupt|saas|b2b|web3|crypto|product managers?|open source|nvidia|openai|vercel|"
                         r"coreweave|y ?combinator|yc)\b", re.I)
+DRINKS = re.compile(r"\b(unlimited (beer|wine|drinks)|open bar|drink tickets?|bottomless|mixer|mingle|mingling|happy hour|social)\b", re.I)
 FESTIVAL = re.compile(r"\b(fair|festival|fest|street fair|convention|con\b|expo|carnival|block party|market)\b", re.I)
 
 
@@ -83,6 +84,27 @@ class Scorer:
         if ev.get("source") not in self.hosted_sources or (ev.get("price") or "").lower() == "free":
             return False
         return any(kw_regex(n).search(title_n) for n in self.hosted_kw)
+
+    def price_points(self, ev: dict, full: str, followed: bool, points: float) -> float:
+        """Free is a plus; paying has to be worth it. A ticket costs points by
+        the dollar, less for someone you follow or a strong match, and a paid
+        drinks-and-mingling party costs the most."""
+        p = self.profile.get("price") or {}
+        price = (ev.get("price") or "").lower()
+        if price == "free":
+            return p.get("free_boost", 0.3)
+        dollars = [float(x) for x in re.findall(r"\$\s?(\d+(?:\.\d\d)?)", price)]
+        if not dollars or not p:
+            return 0.0
+        cost = min(dollars)
+        hit = -min(p.get("max_penalty", 3.0), cost / p.get("dollars_per_point", 15))
+        if followed:
+            hit *= 0.25
+        elif points >= 4:
+            hit *= 0.5          # a show squarely in your interests can be worth paying for
+        if cost >= 15 and DRINKS.search(full):
+            hit -= p.get("paid_party_penalty", 2.5)
+        return hit
 
     def score(self, ev: dict, ai_tags: dict | None = None) -> dict | None:
         """Returns the scoring fields for one event, or None if it's on the never list."""
@@ -153,8 +175,7 @@ class Scorer:
         if kids:
             tags.append("kids")
             points -= 1.5
-        if (ev.get("price") or "").lower() == "free":
-            points += 0.3
+        points += self.price_points(ev, full, bool(badge), points)
         if ev.get("sponsored"):
             points -= 0.5
         if ev.get("recurring"):

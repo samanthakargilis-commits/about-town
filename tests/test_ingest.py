@@ -95,6 +95,14 @@ def ev(title, start="2026-10-15T20:00-07:00", **kw):
 class Scoring(unittest.TestCase):
     s = Scorer(PROFILE, FOLLOW)
 
+    def test_price_matters(self):
+        party = "826 Valencia\u2019s \u201cWriter\u2019s Block Party\u201d: $40 for Unlimited Beer & Wine"
+        paid = self.s.score(ev(party, price="$40", description="unlimited beer & wine for writers"))
+        free = self.s.score(ev(party, price="free", description="unlimited beer & wine for writers"))
+        self.assertGreater(free["score"] - paid["score"], 5)
+        show = self.s.score(ev("Broadway musical sing-along cabaret", price="$40"))
+        self.assertGreater(show["score"], paid["score"])
+
     def test_no_tech_or_networking(self):
         self.assertIsNone(self.s.score(ev("Founders Panel: The Agentic Stack", source="luma")))
         self.assertIsNone(self.s.score(ev("Free 2026 South Bay Transit Summit + Networking")))
