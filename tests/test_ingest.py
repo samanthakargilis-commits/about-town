@@ -95,6 +95,13 @@ def ev(title, start="2026-10-15T20:00-07:00", **kw):
 class Scoring(unittest.TestCase):
     s = Scorer(PROFILE, FOLLOW)
 
+    def test_no_kids_events(self):
+        self.assertIsNone(self.s.score(ev("Storytime: For Toddlers", source="sfpl")))
+        self.assertIsNone(self.s.score(ev("Performance: Mariela's Music Time", description="Babies, Toddlers or Preschoolers · Dance & Music")))
+        self.assertIsNone(self.s.score(ev("SF \u201cHalloween Hoopla\u201d Kids\u2019 Festival in the Park")))
+        self.assertIsNotNone(self.s.score(ev("Aquarium of the Bay: Underwater Pumpkin Carving w/ Kids Free")))
+        self.assertIsNotNone(self.s.score(ev("\u201cMortified Live\u201d Embarrassing Teen Diary Storytelling")))
+
     def test_paid_partiful_painting_is_never(self):
         title = "golden gate bridge/fleet week picnic & watercolor workshop"
         self.assertIsNone(self.s.score(ev(title, source="partiful", price="$25")))
@@ -121,9 +128,9 @@ class Scoring(unittest.TestCase):
         plain = self.s.score(ev("An evening with Jane Doe", source="citylights"))
         self.assertGreaterEqual(r["score"], plain["score"] + 6)
 
-    def test_kids_author_not_badged(self):
-        r = self.s.score(ev("Storytime for kids with Jeff Kinney"))
-        self.assertIsNone(r["followed"])
+    def test_kids_author_event_hidden(self):
+        # a children's storytime is hidden outright now, even with an author you follow
+        self.assertIsNone(self.s.score(ev("Storytime for kids with Jeff Kinney")))
 
     def test_tech_downranked_and_never(self):
         tech = self.s.score(ev("Founders demo day: AI agents", start="2026-10-17T18:00-07:00"))

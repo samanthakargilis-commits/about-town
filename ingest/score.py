@@ -16,7 +16,19 @@ TECH = re.compile(r"\b(startup|start-up|founders?|vc|venture|demo day|pitch|hack
                   r"engineers?|engineering|ai agents?|llms?|genai|gen ai|machine learning|ml |web3|crypto|blockchain|"
                   r"product managers?|b2b|fundrais\w*|yc|y combinator|networking|ai|nvidia|gpus?|robotics|fireside chat|open source|inference|tech week|sdks?|apis?|devtools|afterparty)\b", re.I)
 KIDS = re.compile(r"\b(kids?|children|child|toddlers?|ages \d|grades? \d|family storytime|storytime|teens?|tweens?|young readers|middle grade)\b", re.I)
+# events that are for children, not just open to them ("Kids free" stays)
+FOR_KIDS_TITLE = re.compile(r"\b(story ?time|toddlers?|bab(y|ies)\b(?! shower)|infants?|preschool\w*|kinder\w*|kids?'?s?\b(?!\s+(eat\s+)?free)|"
+                            r"children'?s?|trick[- ]or[- ]treat\w*|sat prep|homework|for teens|teen (night|program|club)|tween|lego)", re.I)
+FOR_KIDS_TEXT = re.compile(r"\b(for|ages?)\s+(babies|toddlers|infants|preschoolers|little ones|young children|children|kids|[0-9]{1,2}\s*(-|–|to)\s*([0-9]|1[0-2])\b)", re.I)
+FOR_KIDS_AUDIENCE = re.compile(r"^(babies|toddlers|preschoolers|kids|children|teens|tweens)\b", re.I)   # SFPL leads with its audience
 FESTIVAL = re.compile(r"\b(fair|festival|fest|street fair|convention|con\b|expo|carnival|block party|market)\b", re.I)
+
+
+def for_kids(ev: dict) -> bool:
+    """A children's event: storytime, toddler music, a kids' festival. Grown-up
+    events that let kids in free, or a teen-diary comedy night, don't count."""
+    desc = (ev.get("description") or "").strip()
+    return bool(FOR_KIDS_TITLE.search(ev.get("title", "")) or FOR_KIDS_TEXT.search(desc[:400]) or FOR_KIDS_AUDIENCE.match(desc))
 
 
 def norm(text: str) -> str:
@@ -75,6 +87,8 @@ class Scorer:
         if any(kw_regex(n).search(full) for n in self.never):
             return None
         if self.paid_hosted(ev, title_n):
+            return None
+        if self.profile.get("no_kids_events") and for_kids(ev):
             return None
 
         points, reasons, hits = 0.0, [], []
