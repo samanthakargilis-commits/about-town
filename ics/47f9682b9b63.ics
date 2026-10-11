@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Fogbook//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:47f9682b9b63@bay-events
+DTSTAMP:20261011T022610Z
+DTSTART;TZID=America/Los_Angeles:20261114T130000
+DTEND;TZID=America/Los_Angeles:20261114T160000
+SUMMARY:Junksgiving
+LOCATION:
+URL:https://partiful.com/e/RHjHhusTnUqWGjUqYyxK
+DESCRIPTION:Reading + Craft\nhttps://partiful.com/e/RHjHhusTnUqWGjUqYyxK\n
+ \n🩷🦃✨ JUNKSGIVING ✨🦃🩷 A Friendsgiving for Junk Journal Lo
+ vers Three local junk journal clubs. One very special library. One epic a
+ fternoon of crafting\, connecting\, snacking\, and celebrating our little
+  creative community. 💕📖✂️ Crafty Crew + Stockton Junk Journal C
+ lub + Confetti & Chaos Junk Journal Club are coming together for Junksgiv
+ ing at the Escalon Branch Library\, and we want YOU there! Whether 
+END:VEVENT
+END:VCALENDAR

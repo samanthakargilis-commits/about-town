@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Fogbook//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:748be876a451@bay-events
+DTSTAMP:20261011T022610Z
+DTSTART;TZID=America/Los_Angeles:20261011T160000
+DTEND;TZID=America/Los_Angeles:20261011T200000
+SUMMARY:⊹ new moon\, new pages: twilight journal night
+LOCATION:
+URL:https://partiful.com/e/ywS01dkC2cQwU5YdsNnX
+DESCRIPTION:Spirituality\nhttps://partiful.com/e/ywS01dkC2cQwU5YdsNnX\n\nj
+ ournalers\, where the hell have you been loca!? you’re invited to new m
+ oon\, new pages: a twilight themed journal night with 707 journal club! b
+ ring your blankets\, pillows\, and come dressed cozy for our twilight & j
+ ournaling movie night on oct 11! your ticket includes a twilight themed s
+ crap pack: ♡ 1 new moon\, new pages sticker sheet ♡ 2 new moon\, new 
+ pages die cut stickers ♡ 1 skin of a killer di
+END:VEVENT
+END:VCALENDAR

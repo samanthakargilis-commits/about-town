@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Fogbook//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:19d0aa9265b0@bay-events
+DTSTAMP:20261011T022610Z
+DTSTART;TZID=America/Los_Angeles:20261017T110000
+DTEND;TZID=America/Los_Angeles:20261017T130000
+SUMMARY:Joe Bataan YBG Festival Weekend
+LOCATION:
+URL:https://partiful.com/e/7smveZIRyFzu0Iq9gsAB
+DESCRIPTION:Theatre\nhttps://partiful.com/e/7smveZIRyFzu0Iq9gsAB\n\nYBG Fe
+ stival's Weekend Sessions bring boogaloo legend Joe Bataan to Yerba Buena
+  Gardens\, with an opening set from MeloDious Expect a free outdoor after
+ noon concert on the gardens' main stage. RSVP free at ybgfestival.org\, a
+ nd note the DJ set starts at 1 PM ahead of Bataan at 2\, arrive early to 
+ claim a good spot on the lawn This event is not hosted by Partiful. It is
+  an event we recommend\, hosted b
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Fogbook//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1f3935975fab@bay-events
+DTSTAMP:20261011T022610Z
+DTSTART;TZID=America/Los_Angeles:20261021T130000
+DTEND;TZID=America/Los_Angeles:20261021T140000
+SUMMARY:Aging or Sage-ing: Thriving as the Seasons Change
+LOCATION:JCCSF\, 3200 California Street\, San Francisco
+URL:https://www.jccsf.org/event/aging-or-sage-ing-thriving-as-the-seasons-
+ change/
+DESCRIPTION:New in your area\nhttps://www.jccsf.org/event/aging-or-sage-in
+ g-thriving-as-the-seasons-change/\n\nDrink in Jewish wisdom along with tr
+ aditional herbal tea. Prepare for a spirited move into autumn\, reflected
+  in your life and in the vibrant foliage.
+END:VEVENT
+END:VCALENDAR

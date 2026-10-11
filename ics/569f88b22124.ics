@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Fogbook//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:569f88b22124@bay-events
+DTSTAMP:20261011T022609Z
+DTSTART;TZID=America/Los_Angeles:20261010T100000
+DTEND;TZID=America/Los_Angeles:20261010T140000
+SUMMARY:The Rhinoceros Project Sewing Circles
+LOCATION:Downtown Library\, 270 Forest Ave\, Palo Alto
+URL:https://paloalto.bibliocommons.com/events/6a1f0f9643b41b3d006b10d5
+DESCRIPTION:Craft + Reading · Palo Alto\nhttps://paloalto.bibliocommons.c
+ om/events/6a1f0f9643b41b3d006b10d5\n\nA community sewing circle where par
+ ticipants contribute to an embroidered map project\, connecting Palo Alto
+  to historic routes across California and Mexico.
+END:VEVENT
+END:VCALENDAR

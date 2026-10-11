@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Fogbook//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:51e6bacfda0a@bay-events
+DTSTAMP:20261011T022609Z
+DTSTART;TZID=America/Los_Angeles:20261018T200000
+DTEND;TZID=America/Los_Angeles:20261018T220000
+SUMMARY:SF’s Wild “Big Gay Halloween” at Great Star Theater
+LOCATION:Great Star Theater
+URL:https://sf.funcheap.com/big-gay-halloween/
+DESCRIPTION:Gay / queer + Theatre\nhttps://sf.funcheap.com/big-gay-hallowe
+ en/\n\nTicketfulStep right up\, if you dare\, for an evening of wildly wi
+ cked entertainment. We’ve summoned an elite cast of acrobats\, ghouls\,
+  drag royalty\, and deadly dancers who are ready to serve nothing but tri
+ cks and treats. Normally $30-$45\, you can get complimentary tickets to B
+ ig Gay Halloween for October 11\,15\,18\,22\,25 if you are a member of Ti
+ cketful. We are haunting San Francisco for just three 
+END:VEVENT
+END:VCALENDAR

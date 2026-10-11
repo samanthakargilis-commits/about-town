@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Fogbook//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:286a66d62ce2@bay-events
+DTSTAMP:20261011T022609Z
+DTSTART;TZID=America/Los_Angeles:20261010T170000
+DTEND;TZID=America/Los_Angeles:20261010T220000
+SUMMARY:Lunada’s “New Moon Fest” 2026: 25th Anniversary Lit + Poetry
+  Night (Mission)
+LOCATION:Galería de la Raza Studio 24
+URL:https://sf.funcheap.com/lunadas-moon-fest-2026-25th-anniversary-lit-po
+ etry-night-mission/
+DESCRIPTION:Spirituality + Writing\nhttps://sf.funcheap.com/lunadas-moon-f
+ est-2026-25th-anniversary-lit-poetry-night-mission/\n\nGalería de la Raz
+ aGalería de la Raza’s Lunada New Moon Fest marks the 25th anniversary 
+ of Lunada Literary Lounge and serves as the final stop of Litquake’s ¡
+ Poetry on la Veinti Cuatro! crawl. The free event features poetry and spo
+ ken-word performances\, musica\, an open mic\, a DJ and local vendors at 
+ Studio 24 in the Mission. Original Event Description: _🌌 🌒 Celebrat
+ e 25 years of literary magic unde
+END:VEVENT
+END:VCALENDAR

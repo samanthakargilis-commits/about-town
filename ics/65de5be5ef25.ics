@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Fogbook//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:65de5be5ef25@bay-events
+DTSTAMP:20261011T022610Z
+DTSTART;TZID=America/Los_Angeles:20261017T110000
+DTEND;TZID=America/Los_Angeles:20261017T160000
+SUMMARY:Oakstead Market
+LOCATION:
+URL:https://partiful.com/e/pqFMKZkh2JtJLsseG5YZ
+DESCRIPTION:Craft + Art\nhttps://partiful.com/e/pqFMKZkh2JtJLsseG5YZ\n\nFr
+ ee art market by artists for artists (+you) Featuring emerging makers and
+  experienced creators. Easy street parking\, family and pet friendly shop
+ ping\, unique gifts and made to order pizza. What’s not to love? Join u
+ s for a sweet fall afternoon and get your holiday shopping done early. No
+  need to procrastinate when it’s all here. Located near enough to Berke
+ ley Bowl West and technically in Oaklan
+END:VEVENT
+END:VCALENDAR

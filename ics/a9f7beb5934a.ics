@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Fogbook//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a9f7beb5934a@bay-events
+DTSTAMP:20261011T022609Z
+DTSTART;TZID=America/Los_Angeles:20261029T200000
+DTEND;TZID=America/Los_Angeles:20261029T210000
+SUMMARY:SF’s “Drunk Theatre” Halloween Special: Nightmare on Valenci
+ a St.
+LOCATION:Eclectic Box
+URL:https://sf.funcheap.com/sf-drunk-theatre-halloween-special-nightmare-o
+ n-valencia-st-oct-29/
+DESCRIPTION:Theatre + Weird & unusual · Thursday evening\nhttps://sf.func
+ heap.com/sf-drunk-theatre-halloween-special-nightmare-on-valencia-st-oct-
+ 29/\n\nDrunk Theatre LLCA comedian takes five shots of whiskey in a row a
+ nd tries to perform an improvised play with sober comedians. What could g
+ o wrong?! Drunk Theatre is the entirely improvised\, unpredictable\, and 
+ crazy comedy show that’ll kick your weekend into overdrive. See what th
+ e SF Chronicle\, CBS\, LA Times\, SF Weekly\, SFGate\, Thrillist\, and Ti
+ meOut have all been talking about. Nightmare on Vale
+END:VEVENT
+END:VCALENDAR
