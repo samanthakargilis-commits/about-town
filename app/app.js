@@ -551,7 +551,7 @@ function onEventClick(e) {
 
 function openSheet(ev) {
   const st = S.status[ev.id];
-  const img = ev.image_url ? `<div class="img" style="background-image:url('${esc(ev.image_url)}')"></div>` : '';
+  const img = ev.image_url ? '<div class="img" hidden></div>' : '';   // shown only once a real photo loads
   const links = [
     `<a href="${esc(ev.source_url)}" target="_blank" rel="noopener">Open on ${esc(sourceLabel(ev.source))} ↗</a>`,
     ev.ticket_url && ev.ticket_url !== ev.source_url ? `<a href="${esc(ev.ticket_url)}" target="_blank" rel="noopener">Tickets / RSVP ↗</a>` : '',
@@ -583,6 +583,15 @@ function openSheet(ev) {
     <div class="links">${links}</div>`;
   const sheet = $('#sheet');
   sheet.style.transform = ''; sheet.scrollTop = 0;
+  const box = $('.img', sheet);
+  if (box) {
+    const im = new Image();
+    im.onload = () => {
+      // skip broken links and tiny logos rather than showing an empty grey box
+      if (im.naturalWidth >= 200 && box.isConnected) { box.style.backgroundImage = `url("${im.src}")`; box.hidden = false; }
+    };
+    im.src = ev.image_url;
+  }
   $('#sheetWrap').hidden = false;
   document.documentElement.classList.add('locked');
   $('#sheet [data-copy]').onclick = (e) => { e.preventDefault(); copyLink(ev); };
