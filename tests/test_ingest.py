@@ -508,3 +508,30 @@ class Weather(unittest.TestCase):
         self.assertEqual(day["sf"]["sun"], 0.2)
         self.assertEqual(day["marin"]["sun"], 0.9)
         self.assertEqual(day["marin"]["hi"], 71)
+
+
+class EventbriteBrowse(unittest.TestCase):
+    def test_category_page_then_event_page(self):
+        from ingest.adapters import eventbrite
+        ld = lambda d: f'<script type="application/ld+json">{json.dumps(d)}</script>'
+        listing = ld({"@type": "ItemList", "itemListElement": [
+            {"@type": "ListItem", "item": {"@type": "Event", "name": "Waters", "startDate": "2026-10-20",
+                                            "url": "https://www.eventbrite.com/e/waters-1?aff=x"}},
+            {"@type": "ListItem", "item": {"@type": "Event", "name": "Later", "startDate": "2027-03-01",
+                                            "url": "https://www.eventbrite.com/e/later-2"}}]})
+        page = ld({"@type": "Event", "name": "A John Waters Christmas", "startDate": "2026-10-20T20:00:00-07:00",
+                   "endDate": "2026-10-20T23:00:00-07:00", "url": "https://www.eventbrite.com/e/waters-1",
+                   "location": {"@type": "Place", "name": "Great American Music Hall",
+                                "address": {"streetAddress": "859 O'Farrell St", "addressLocality": "San Francisco"}},
+                   "offers": [{"@type": "AggregateOffer", "lowPrice": "78.18", "highPrice": "153.6",
+                               "priceCurrency": "USD", "availability": "https://schema.org/SoldOut"}]})
+        f = FakeFetcher({"https://www.eventbrite.com/b/ca--san-francisco/arts/": listing,
+                         "https://www.eventbrite.com/e/waters-1": page})
+        start = dt.datetime(2026, 10, 11, tzinfo=TZ)
+        out = eventbrite.fetch(f, start, start + dt.timedelta(days=60))
+        self.assertEqual(len(out), 1)
+        e = out[0]
+        self.assertEqual(e.start, "2026-10-20T20:00-07:00")
+        self.assertIn("78", e.price)
+        self.assertTrue(e.sold_out)
+        self.assertEqual(e.source_url, "https://www.eventbrite.com/e/waters-1")
