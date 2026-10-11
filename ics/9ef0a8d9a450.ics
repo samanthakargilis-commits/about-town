@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bay Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9ef0a8d9a450@bay-events
+DTSTAMP:20261011T020811Z
+DTSTART;TZID=America/Los_Angeles:20261024T090000
+DTEND;TZID=America/Los_Angeles:20261024T120000
+SUMMARY:Latinx Surf Meet up
+LOCATION:
+URL:https://partiful.com/e/RRHnO4NFXBWnCSxmLMSo
+DESCRIPTION:New in your area\nhttps://partiful.com/e/RRHnO4NFXBWnCSxmLMSo\
+ n\nOpen to the public! Free beach day hang to celebrate Latino/Hispanic H
+ eritage Month! Come enjoy some time on the beach or in the water. Must pr
+ ovide your own items or rent\, there are 3 local shops walkable to rent s
+ uit and board. TBD conditions & weather. Follow @latinxsurfclub for updat
+ es and general meet ups.
+END:VEVENT
+END:VCALENDAR

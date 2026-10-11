@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bay Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1122fc282d03@bay-events
+DTSTAMP:20261011T020810Z
+DTSTART;TZID=America/Los_Angeles:20261028T180000
+DTEND;TZID=America/Los_Angeles:20261028T210000
+SUMMARY:OUTRÉ COLLECTIVE FASHION SHOW
+LOCATION:
+URL:https://partiful.com/e/NUukL6vN2S26QvFxFqpj
+DESCRIPTION:Art\nhttps://partiful.com/e/NUukL6vN2S26QvFxFqpj\n\nOur event 
+ is a fashion show featuring five student designers across the Bay Area wh
+ o are partnering with Upcyclers.com to create a maximalist vintage archiv
+ al one-of-a-kind event that is also promoting the importance of sustainab
+ ility. Enjoy the runway show\, mingle with guests\, and grab a drink at t
+ he bar. A perfect way to spend your Wednesday night <3 Featuring: Maria\,
+  Malia\, Desi\, Jolie\, Ava At 
+END:VEVENT
+END:VCALENDAR

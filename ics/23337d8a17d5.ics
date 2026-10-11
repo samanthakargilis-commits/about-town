@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bay Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:23337d8a17d5@bay-events
+DTSTAMP:20261011T020810Z
+DTSTART;TZID=America/Los_Angeles:20261010T080000
+DTEND;TZID=America/Los_Angeles:20261010T134500
+SUMMARY:2026 Silicon Valley Latino Leadership Summit
+LOCATION:Computer History Museum\, 1401 N Shoreline Blvd\, Mountain View
+URL:https://www.eventbrite.com/e/2026-silicon-valley-latino-leadership-sum
+ mit-tickets-1991957327990
+DESCRIPTION:Museum exhibits · Mountain View\nhttps://www.eventbrite.com/e
+ /2026-silicon-valley-latino-leadership-summit-tickets-1991957327990\n\nA 
+ one-day leadership summit for the Latino community\, designed to ignite p
+ urpose and connection among Silicon Valley professionals.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bay Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3d0ded6278a4@bay-events
+DTSTAMP:20261011T020810Z
+DTSTART;TZID=America/Los_Angeles:20261031T200000
+DTEND;TZID=America/Los_Angeles:20261031T220000
+SUMMARY:Middle Dog @ Plough & Stars
+LOCATION:
+URL:https://partiful.com/e/onAzUYtzLl4yo5Eee1W1
+DESCRIPTION:Weird & unusual\nhttps://partiful.com/e/onAzUYtzLl4yo5Eee1W1\n
+ \n🎃 Halloween Night with Middle Dog! 🐕‍🦺 Get spooky with Middl
+ e Dog at the Plough & Stars on all Hallows Eve! Come dressed to impress f
+ or a costume contest then stick around for a night of live music\, drinks
+ \, and Halloween mayhem. 👻 Doors: 8:00 PM 🎸 Music: 8:15 PM 📍 Plo
+ ugh & Stars Costumes encouraged. Good times guaranteed. See you Halloween
+  night!
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bay Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ea503ae7befe@bay-events
+DTSTAMP:20261011T020809Z
+DTSTART;TZID=America/Los_Angeles:20261016T160000
+DTEND;TZID=America/Los_Angeles:20261016T180000
+SUMMARY:“Politics is a Funny Business” Art & Poster Exhibit at Pier 23
+LOCATION:Pier 23 Cafe Waterfront Gallery
+URL:https://sf.funcheap.com/politics-funny-business-art-poster-exhibit-pie
+ r-23-sf/
+DESCRIPTION:Comedy + Museum exhibits\nhttps://sf.funcheap.com/politics-fun
+ ny-business-art-poster-exhibit-pier-23-sf/\n\nSpain RodriguezPolitics is 
+ a Funny Business\, an eclectic group of vintage political memorabilia of 
+ and by offbeat San Francisco players will open at Pier 23 Cafe Waterfront
+  Gallery\, Friday\, October 16\, 2026\, from 4-6 pm. Art include posters 
+ by Spain Rodriguez\, S. Clay Wilson\, Victor Moscoso\, Lil’ Tuffy\, and
+  the “Picasso of the Tenderloin.” Exhibit collected by Penny deVries 
+ in memory of the former
+END:VEVENT
+END:VCALENDAR

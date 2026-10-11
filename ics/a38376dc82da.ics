@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bay Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a38376dc82da@bay-events
+DTSTAMP:20261011T020810Z
+DTSTART;TZID=America/Los_Angeles:20261014T180000
+DTEND;TZID=America/Los_Angeles:20261014T203000
+SUMMARY:October Open Paint Night
+LOCATION:
+URL:https://partiful.com/e/7hgV6CJRRhywseVvTWq4
+DESCRIPTION:Art\nhttps://partiful.com/e/7hgV6CJRRhywseVvTWq4\n\nCome hang 
+ out and paint at Root Division! October’s Open Paint Night theme is Gat
+ hering Season. Think fall-ish\, cozy-ish\, spooky-ish. Or ignore the them
+ e completely and paint whatever you'd like :) We'll provide: *Drinks + sn
+ acks *Basic acrylic supplies (or bring your own!) *Reference photos + thi
+ ngs to paint *Good music + space to spread out This isn’t a class or gu
+ ided painting. Just grab a spot
+END:VEVENT
+END:VCALENDAR

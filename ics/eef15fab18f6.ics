@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bay Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:eef15fab18f6@bay-events
+DTSTAMP:20261011T020809Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:Beetlejuice at Crane Cove Park
+LOCATION:
+URL:https://secretsanfrancisco.com/san-franciscos-outdoor-movie-beetlejuic
+ e-free/
+DESCRIPTION:Comedy + Weird & unusual\nhttps://secretsanfrancisco.com/san-f
+ ranciscos-outdoor-movie-beetlejuice-free/\n\nPrevious Sundown Cinema. Cou
+ rtesy of SF Standard On Friday\, October 16\, Crane Cove Park will host a
+  free screening of the classic Tim Burton movie Beetlejuice. The screenin
+ g is the final part of the popular Sundown Cinema movie series\, which re
+ turned for 2026 this June. Since then\, the program has hosted popular ou
+ tdoor screenings at parks across the city\, often drawing major crowds fo
+ r the wholes
+END:VEVENT
+END:VCALENDAR

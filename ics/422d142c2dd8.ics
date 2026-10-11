@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bay Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:422d142c2dd8@bay-events
+DTSTAMP:20261011T020810Z
+DTSTART;TZID=America/Los_Angeles:20261013T100000
+DTEND;TZID=America/Los_Angeles:20261013T120000
+SUMMARY:Shut Up & Write!® at Precita Park Cafe
+LOCATION:Precita Park Cafe\, 500 Precita Ave.\, San Francisco\, ca San Fra
+ ncisco\, San Francisco
+URL:https://www.meetup.com/shutupandwritesfo/events/316488195/
+DESCRIPTION:Craft + Writing\nhttps://www.meetup.com/shutupandwritesfo/even
+ ts/316488195/\n\nJoin us for some focused writing time. All writers and a
+ ll experience levels are welcome and don’t worry\, no one will see what
+  you've written. This session is about getting your writing done and meet
+ ing other writers in your area. When you show up\, say hello to everyone\
+ , grab a drink\, and get your writing tools ready. Once you’re all sett
+ led\, take some time to chat with your fellow writers. Once e
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bay Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f3033daeabc5@bay-events
+DTSTAMP:20261011T020810Z
+DTSTART;TZID=America/Los_Angeles:20261014T183000
+DTEND;TZID=America/Los_Angeles:20261014T193000
+SUMMARY:Discover Southeast Asia Art Masterpieces: Angkor Wat & Buddhas
+LOCATION:San Francisco Main Public Library
+URL:https://sf.funcheap.com/discover-southeast-asia-art-masterpieces-angko
+ r-wat-buddhas-sf-main-library/
+DESCRIPTION:Art + Reading\nhttps://sf.funcheap.com/discover-southeast-asia
+ -art-masterpieces-angkor-wat-buddhas-sf-main-library/\n\nAsian Art Museum
+ Eleven countries\, thousands of years\, millions of people: explore the c
+ ultures of Southeast Asia as reflected in secular and religious artworks 
+ from this fascinating region. This program features objects from the coll
+ ection of the Asian Art Museum\, including sculptures from Angkor Wat in 
+ Cambodia\; Buddhas from Myanmar\; ceramics from Vietnam\; and textiles fr
+ om the Philippines. Conne
+END:VEVENT
+END:VCALENDAR

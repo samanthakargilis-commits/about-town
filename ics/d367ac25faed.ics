@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bay Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d367ac25faed@bay-events
+DTSTAMP:20261011T020810Z
+DTSTART;TZID=America/Los_Angeles:20261029T193000
+DTEND;TZID=America/Los_Angeles:20261029T210000
+SUMMARY:Free HellaFunny Thursday Comedy Night (Downtown SF)
+LOCATION:The Function
+URL:https://sf.funcheap.com/free-hellafunny-thursday-comedy-night-downtown
+ -sf-19/
+DESCRIPTION:Comedy · Thursday evening\nhttps://sf.funcheap.com/free-hella
+ funny-thursday-comedy-night-downtown-sf-19/\n\n“Hayes Valley Comedy Nig
+ ht” at SF’s Only Black-Owned Comedy Club (The Function) HellaFunny We
+ lcome to the heart of laughter right on the edge of SF’s vibrant Hayes 
+ Valley district! Step into a world of hilarity and at the newest addition
+  to the city’s comedy scene – a chic\, upscale comedy club boasting a
+ vant-garde decor\, an upstairs lounge and a roster of top-notch comedians
+ . The Function promises
+END:VEVENT
+END:VCALENDAR

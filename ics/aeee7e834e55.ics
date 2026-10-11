@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bay Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:aeee7e834e55@bay-events
+DTSTAMP:20261011T020810Z
+DTSTART;TZID=America/Los_Angeles:20261027T180000
+DTEND;TZID=America/Los_Angeles:20261027T200000
+SUMMARY:Queer Crush @ Benchmark SF
+LOCATION:Benchmark Climbing\, 1414 Van Ness Ave\, San Francisco\, CA San F
+ rancisco\, San Francisco
+URL:https://www.meetup.com/queer-crush-norcal/events/316766862/
+DESCRIPTION:Gay / queer\nhttps://www.meetup.com/queer-crush-norcal/events/
+ 316766862/\n\n🎟️ free for Benchmark gym members! 🎫 $20 discounted
+  day pass for non-members 🧗🏻‍♂️rentals are FREE for QC attend
+ ees\, so no need to worry if you don’t have climbing shoes or a harness
+  (if you wanna climb ropes!) 🎉this is an all levels meet up\, so no ma
+ tter your experience\, you’re welcome to join us! ⏰come early so that
+  you make it to our intro circle and you get to make community with other
+  members
+END:VEVENT
+END:VCALENDAR

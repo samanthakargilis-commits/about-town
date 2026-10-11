@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bay Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:01b3456cedf7@bay-events
+DTSTAMP:20261011T020810Z
+DTSTART;TZID=America/Los_Angeles:20261119T190000
+DTEND;TZID=America/Los_Angeles:20261119T210000
+SUMMARY:Book Club Double Feature! 📚 🎃
+LOCATION:
+URL:https://www.meetup.com/marin-county-millenials/events/316900616/
+DESCRIPTION:Reading · Your reading tastes · Thursday evening\nhttps://ww
+ w.meetup.com/marin-county-millenials/events/316900616/\n\nPick your spook
+ y season read! 👻📚 Read either or both books! Just be prepared for s
+ poilers for the other\, even if you only read one. 🖤Mexican Gothic by 
+ Silvia Moreno-Garcia A glamorous young woman visits her cousin at a myste
+ rious mansion in 1950s Mexico\, where dark family secrets and unsettling 
+ horrors await 🖤The Dead Romantics by Ashley Poston A romance ghostwrit
+ er who’s lost her faith in love re
+END:VEVENT
+END:VCALENDAR

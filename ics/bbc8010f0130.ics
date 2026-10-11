@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bay Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bbc8010f0130@bay-events
+DTSTAMP:20261011T020811Z
+DTSTART;TZID=America/Los_Angeles:20261028T183000
+DTEND;TZID=America/Los_Angeles:20261028T213000
+SUMMARY:Spooky Wine Bar Crawl
+LOCATION:
+URL:https://partiful.com/e/VBYdhpdVTRQ6Np46ywS6
+DESCRIPTION:New in your area\nhttps://partiful.com/e/VBYdhpdVTRQ6Np46ywS6\
+ n\nJoin Wine Club SF for a night of good wine\, new friends\, and explori
+ ng San Francisco one wine bar at a time. 🍷 We’ll hit two local wine 
+ bars\, with a glass included at each stop. Come solo\, bring a friend\, m
+ eet someone new\, and discover a few spots worth coming back to. Exact ro
+ ute will be shared with ticket holders before the crawl. 21+ only. No win
+ e knowledge required—just bring your curiosity + 
+END:VEVENT
+END:VCALENDAR

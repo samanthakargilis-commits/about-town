@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bay Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:61993f74f0a2@bay-events
+DTSTAMP:20261011T020810Z
+DTSTART;TZID=America/Los_Angeles:20261011T140000
+DTEND;TZID=America/Los_Angeles:20261011T160000
+SUMMARY:golden gate bridge/fleet week picnic & watercolor workshop
+LOCATION:
+URL:https://partiful.com/e/X18ZP9Ine1bTEpl8PiPu
+DESCRIPTION:Craft + Art\nhttps://partiful.com/e/X18ZP9Ine1bTEpl8PiPu\n\nSp
+ end your afternoon painting San Francisco's most iconic views in a fun\, 
+ relaxed\, and welcoming outdoor watercolor class. This beginner-friendly 
+ workshop includes step-by-step instruction and painting materials. All yo
+ u need to bring is something to sit on\, such as a picnic blanket or chai
+ r! Bonus: This event takes place during Fleet Week\, so we’ll get to se
+ e the Blue Angels show too! Note: This 
+END:VEVENT
+END:VCALENDAR

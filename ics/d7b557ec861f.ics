@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Bay Events//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d7b557ec861f@bay-events
+DTSTAMP:20261011T020810Z
+DTSTART;TZID=America/Los_Angeles:20261016T180000
+DTEND;TZID=America/Los_Angeles:20261016T220000
+SUMMARY:Opening Night
+LOCATION:
+URL:https://partiful.com/e/kwJQZzhVWdxaaKjb9kla
+DESCRIPTION:Art + Discourse\nhttps://partiful.com/e/kwJQZzhVWdxaaKjb9kla\n
+ \nThere is one force that binds us all\, and we're opening our doors so w
+ e can revel in it together. Come celebrate the softness\, the joy\, and t
+ he tenderness our cultures overflow with. This is a living archive\, and 
+ every person who walks through adds to it. The night will hold: 🌸 Comp
+ limentary bites by chef Asha Loupy\, From Head to Table 🌸 Drinks inclu
+ ding local winemakers and NA bevs by Casamara Cl
+END:VEVENT
+END:VCALENDAR
