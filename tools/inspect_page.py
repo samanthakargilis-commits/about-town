@@ -12,6 +12,18 @@ from ingest.core import Fetcher, jsonld_events, next_data  # noqa: E402
 f = Fetcher(delay=1)
 for url in sys.argv[1:]:
     print("=" * 80, "\n", url)
+    if url.startswith("grep:"):
+        url, _, needle = url.partition("#")     # grep:<url>#<regex>: every match, with context
+        try:
+            text = f.get(url[5:])
+            dec = text.encode().decode("unicode_escape", errors="ignore") if "\\u003C" in text else text
+            hits = list(re.finditer(needle.replace("+", " "), dec, re.I))
+            print(f"  {len(hits)} matches for {needle!r}")
+            for m in hits[:25]:
+                print("  ...", dec[max(0, m.start() - 250):m.end() + 250].replace("\n", " "))
+        except Exception as exc:
+            print("  FETCH FAILED:", exc)
+        continue
     if url.startswith("raw:"):
         url, _, needle = url.partition("#")     # raw:<url>#<text+to+show+the+page+around>
         needle = needle.replace("+", " ")
