@@ -138,7 +138,9 @@ function runText(ev) {
   if (!ev.end) return '';
   const s = new Date(ev.start), e = new Date(ev.end);
   if (e - s < 36 * 3600e3) return '';
-  return `through ${fmt(e, { month: 'short', day: 'numeric' })}`;
+  const md = (d) => fmt(d, { month: 'short', day: 'numeric' });
+  // opening day: show the whole run; once it's on, just when it closes
+  return s >= today0() ? `${md(s)} – ${md(e)}` : `through ${md(e)}`;
 }
 function displayDate(ev) {
   // a run that started already shows up today
