@@ -1,6 +1,6 @@
 {
-  "name": "Fogbook",
-  "short_name": "Fogbook",
+  "name": "About Town",
+  "short_name": "About Town",
   "description": "Your month of Bay Area events, picked for you.",
   "start_url": "./",
   "scope": "./",
