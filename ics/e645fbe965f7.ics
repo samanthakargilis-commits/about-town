@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e645fbe965f7@bay-events
+DTSTAMP:20261011T174929Z
+DTSTART;TZID=America/Los_Angeles:20261028T180000
+DTEND;TZID=America/Los_Angeles:20261028T213000
+SUMMARY:SF’s “Terror Vault” 1874 Halloween Haunt (Final Week 2026)
+LOCATION:San Francisco Mint\, 5th St.\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/10-off-tix-sfs-terror-vault-1874-halloween-hau
+ nt-final-week-2026/
+DESCRIPTION:Camp & Halloween + Theatre · Featured on Funcheap\nhttps://sf
+ .funcheap.com/10-off-tix-sfs-terror-vault-1874-halloween-haunt-final-week
+ -2026/\n\nSan Francisco’s premiere haunted attraction returns for 2026 
+ with “SLASHED: Return to Hellville” an all-new\, bigger\, and more te
+ rrifying theatrical and immersive experience from the insane mind of Peac
+ hes Christ. Brand new for 2026: Thirty-seven years after the infamous Hel
+ lville massacre\, a terrifying new evil has ...
+END:VEVENT
+END:VCALENDAR

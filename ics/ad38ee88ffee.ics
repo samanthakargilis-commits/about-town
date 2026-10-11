@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ad38ee88ffee@bay-events
+DTSTAMP:20261011T174933Z
+DTSTART;TZID=America/Los_Angeles:20261011T080000
+DTEND;TZID=America/Los_Angeles:20261011T103000
+SUMMARY:Dawn Pop-Up at Boba Bliss
+LOCATION:Boba Bliss\, Castro Valley\, Palo Alto\, Castro Valley
+URL:https://ma.to/event/dawn-pop-up-at-boba-bliss-2026-10-11
+DESCRIPTION:Gay / queer · Castro Valley\nhttps://ma.to/event/dawn-pop-up-
+ at-boba-bliss-2026-10-11\n\nDawn is popping up at Boba Bliss in Castro Va
+ lley again\, serving Vietnamese coffee and salt bread from 8:00 AM to 10:
+ 30 AM on Oct 10 and Oct 11. New drinks are the Lemongrass Peach Green Tea
+ \, a green tea infused with lemongrass and sweet peach\, and the Matcha E
+ inspänner from the new matcha lineup\, a smooth\, earthy matcha with a r
+ ich\, creamy layer that is a little sweet and a little bitter. Salt br
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7c61a79aa139@bay-events
+DTSTAMP:20261011T174932Z
+DTSTART;TZID=America/Los_Angeles:20261115T100000
+DTEND;TZID=America/Los_Angeles:20261115T120000
+SUMMARY:SF’s Free “Sundays at the Beach” Tai Chi Day (Great Highway)
+LOCATION:The Great Highway\, Judah and Great Highway\, San Francisco\, CA\
+ , San Francisco
+URL:https://sf.funcheap.com/sfs-free-sundays-at-the-beach-tai-chi-day-grea
+ t-highway-40/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/sfs-free-sundays-at-
+ the-beach-tai-chi-day-great-highway-40/\n\nJoin us for Tai Chi this Sunda
+ y! 10am at Judah and Great Highway Park This monthly course is for beginn
+ ers and experienced students of tai chi alike. Plus\, coffee is on us at 
+ @javabeachsf after the course. As a reminder\, Sundays at the Beach is ..
+ .
+END:VEVENT
+END:VCALENDAR

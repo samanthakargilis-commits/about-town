@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:531e1e5f1bbf@bay-events
+DTSTAMP:20261011T174929Z
+DTSTART;TZID=America/Los_Angeles:20261011T110000
+DTEND;TZID=America/Los_Angeles:20261011T150000
+SUMMARY:Litquake Writers Weekend
+LOCATION:447 Minna St\, 447 Minna St\, SF San Francisco\, San Francisco
+URL:https://ma.to/event/litquake-writers-weekend-2026-10-11
+DESCRIPTION:Big Bay Area traditions + Writing\nhttps://ma.to/event/litquak
+ e-writers-weekend-2026-10-11\n\nLitquake's annual Writers Weekend is a fr
+ ee two-day mini-conference for aspiring writers and those honing their wr
+ iting and publishing tools\, held at 447 Minna St in San Francisco. The S
+ unday programme opens at 11:00 am with the panel "Voice Lessons: Crafting
+  an Artist Statement that Proves You're Human\," featuring Britta Stromey
+ er\, Cristina Deptula\, Rachel Neumann and Janine Kovac. "The Unconvent
+END:VEVENT
+END:VCALENDAR

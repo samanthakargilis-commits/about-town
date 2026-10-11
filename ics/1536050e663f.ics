@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1536050e663f@bay-events
+DTSTAMP:20261011T174929Z
+DTSTART;TZID=America/Los_Angeles:20261016T093000
+DTEND;TZID=America/Los_Angeles:20261016T173000
+SUMMARY:Westbrae Pumpkin Patch 2026 in North Berkeley
+LOCATION:Westbrae Nursery\, 1272 Gilman Ave\, Berkeley\, CA\, Berkeley
+URL:https://sf.funcheap.com/westbrae-pumpkin-patch-2026-in-north-berkeley-
+ sept-18-oct-31-3/
+DESCRIPTION:Fairs & festivals + U-pick farms · A yearly tradition · Berk
+ eley\nhttps://sf.funcheap.com/westbrae-pumpkin-patch-2026-in-north-berkel
+ ey-sept-18-oct-31-3/\n\nFall is just around the corner\, and we’re exci
+ ted to share a great local opportunity for families to enjoy a seasonal t
+ radition while supporting our schools. Westbrae Nursery in North Berkeley
+ \, located at the corner of Gilman and Santa Fe\, will host its annual pu
+ mpkin ...
+END:VEVENT
+END:VCALENDAR

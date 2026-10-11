@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9ff68d5dee93@bay-events
+DTSTAMP:20261011T174934Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Sammy Virji
+LOCATION:Cow Palace\, 2600 Geneva Ave\, Daly City\, CA\, Daly City
+URL:https://sf.funcheap.com/sammy-virji/
+DESCRIPTION:Daly City\nhttps://sf.funcheap.com/sammy-virji/\n\nFri Nov 13\
+ , 2026 – 8:00 PM Goldenvoice Presents Sammy Virji with Sam Gellaitry\, 
+ Saint Ludo Cow Palace\, Daly City\, CA\, United States | Ages: 18 & Over 
+ Cow Palace 2600 Geneva Avenue\, Daly City\, CA\, 94014415-404-4100 Get Di
+ rectionsOpens in new tab Event Overview THIS EVENT IS 18+ A valid\, physi
+ cal government-issued photo ID is required for entry where applicable and
+  for the purchase ...
+END:VEVENT
+END:VCALENDAR

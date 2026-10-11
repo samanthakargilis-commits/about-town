@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:577bc945788a@bay-events
+DTSTAMP:20261011T174932Z
+DTSTART;TZID=America/Los_Angeles:20261120T210000
+DTEND;TZID=America/Los_Angeles:20261120T230000
+SUMMARY:Jonny Wild - Who Let The Zoo Out
+LOCATION:Public Works Loft\, 161 Erie St San Francisco\, San Francisco
+URL:https://partiful.com/e/xkCpYzSvIhGGh4OHj5f9
+DESCRIPTION:Animals\nhttps://partiful.com/e/xkCpYzSvIhGGh4OHj5f9\n\nPrepar
+ e to get wild and let out your rowdy inner animal! This zoo themed party 
+ will be full of the fauna of the jungle\, savanna\, and other ecosystems 
+ of the world. Your dancemoves will turn feral and untamed as the pumping 
+ grooves of DJs Momentum\, Sweaty\, Spreki\, and Jonny Wild unleash the an
+ imals inside of you. You're encouraged to come dressed as whatever critte
+ r inspires you and to release your
+END:VEVENT
+END:VCALENDAR

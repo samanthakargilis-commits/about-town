@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3622cdab4c14@bay-events
+DTSTAMP:20261011T174932Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Trail & Habitat Volunteer Work: Restoring Laguna Honda’s Lost Tr
+ ails
+LOCATION:SF\, 375 Laguna Honda Blvd\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/trail-habitat-volunteer-work-restoring-laguna-
+ hondas-lost-trails-sf-108/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/trail-habitat-volunt
+ eer-work-restoring-laguna-hondas-lost-trails-sf-108/\n\nDid you know that
+  there’s another trail system in San Francisco? The trails have been of
+ f the radar for some time. SF Urban Riders is proud to announce that they
+ ’re working with the Laguna Honda Hospital and Rehabilitation Center in
+  improving the historic multi­ use ...
+END:VEVENT
+END:VCALENDAR

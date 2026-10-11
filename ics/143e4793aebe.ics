@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:143e4793aebe@bay-events
+DTSTAMP:20261011T174931Z
+DTSTART;TZID=America/Los_Angeles:20261011T090000
+DTEND;TZID=America/Los_Angeles:20261011T170000
+SUMMARY:Goblin Jamboree
+LOCATION:Bay Area Discovery Museum\, 557 McReynolds Rd\, Sausalito San Fra
+ ncisco\, Sausalito
+URL:https://ma.to/event/goblin-jamboree-11-oct-2026
+DESCRIPTION:Craft + Camp & Halloween · Sausalito\nhttps://ma.to/event/gob
+ lin-jamboree-11-oct-2026\n\nGoblin Jamboree at the Bay Area Discovery Mus
+ eum transforms the museum into a Halloween wonderland. Activities include
+  dashing under giant spiders\, mixing fizzing brews in Goblin Village\, c
+ reating creepy creatures\, digging for bugs\, a hay maze\, a glow party\,
+  and web weaving. Costumes are encouraged. Admission: $30 general\, $5 me
+ mbers\, $10 SNAP/WIC (in-person only). Members need tickets. Arrive ear
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f807f4a0ce4f@bay-events
+DTSTAMP:20261011T174933Z
+DTSTART;TZID=America/Los_Angeles:20261012T201000
+DTEND;TZID=America/Los_Angeles:20261012T222000
+SUMMARY:The Piano Teacher in 35mm
+LOCATION:The Roxie Theater\, San Francisco\, San Francisco
+URL:https://ma.to/event/the-piano-teacher-35mm-2026-10-12
+DESCRIPTION:Theatre\nhttps://ma.to/event/the-piano-teacher-35mm-2026-10-12
+ \n\nMichael Haneke's The Piano Teacher is presented as Alejo's staff pick
+ \, screening in 35mm and featuring Isabelle Huppert in one of her noted s
+ creen performances. Tickets are available on the Roxie website.
+END:VEVENT
+END:VCALENDAR

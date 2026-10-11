@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a7d8366929c5@bay-events
+DTSTAMP:20261011T174932Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:“Biblio Bistro” Farmers’ Market Cooking School
+LOCATION:UN Plaza\, Market St. & Hyde St\, San Francisco\, CA\, San Franci
+ sco
+URL:https://sf.funcheap.com/biblio-bistro-farmers-market-cooking-school-un
+ -plaza-121/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/biblio-bistro-farmer
+ s-market-cooking-school-un-plaza-121/\n\nWondering how to prepare the bea
+ utiful produce that our local farmers are growing and selling at the Farm
+ ers Market? Come check out a live demonstration of how to sauté a featur
+ ed vegetable at the Heart of the City Farmers Market with Biblio Bistro\,
+  the Library’s mobile ...
+END:VEVENT
+END:VCALENDAR

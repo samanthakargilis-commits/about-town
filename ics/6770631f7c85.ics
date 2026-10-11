@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6770631f7c85@bay-events
+DTSTAMP:20261011T174932Z
+DTSTART;TZID=America/Los_Angeles:20261011T120000
+DTEND;TZID=America/Los_Angeles:20261011T160000
+SUMMARY:MAKIBEKI: SOMA Pilipinas Pride
+LOCATION:Yerba Buena Gardens\, San Francisco\, San Francisco
+URL:https://ma.to/event/makibeki-soma-pilipinas-pride-2026-10-11
+DESCRIPTION:Gay / queer\nhttps://ma.to/event/makibeki-soma-pilipinas-pride
+ -2026-10-11\n\nJoin the 2nd annual MAKIBEKI: SOMA Pilipinas Pride! The ev
+ ent starts at 12pm with a Procession & Press Conference at the East Garde
+ n of Yerba Buena Gardens\, followed by Main Programming from 1pm to 4pm. 
+ Hosted by Ehra Amaya and Mx Kiki Krunch\, with performances by Mabuhay Bi
+ tches\, Filipinx\, Mocha Fapalatte\, Cesar Cadabes\, Guerilla Pump\, Astr
+ alogik\, and the 2026 GAPA Royalties. Organized by Mx Kiki
+END:VEVENT
+END:VCALENDAR

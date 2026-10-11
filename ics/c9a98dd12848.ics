@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c9a98dd12848@bay-events
+DTSTAMP:20261011T174934Z
+DTSTART;TZID=America/Los_Angeles:20261029T150000
+DTEND;TZID=America/Los_Angeles:20261029T170000
+SUMMARY:[Cal Alumni SF] Bears at the Pyramid: Cal Alumni of San Francisco 
+ Is Back!
+LOCATION:Morgan Lewis & Bockius LLP\, 600 Montgomery Street\, #Suite 2300\
+ , San Francisco\, CA 94111 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/cal-alumni-sf-bears-at-the-pyramid-cal-al
+ umni-of-san-francisco-is-back-tickets-1997877738096
+DESCRIPTION:New in your area\nhttps://www.eventbrite.com/e/cal-alumni-sf-b
+ ears-at-the-pyramid-cal-alumni-of-san-francisco-is-back-tickets-199787773
+ 8096\n\nJoin us at the Transamerica Pyramid on October 29 for featured sp
+ eakers\, networking\, and light bites.
+END:VEVENT
+END:VCALENDAR

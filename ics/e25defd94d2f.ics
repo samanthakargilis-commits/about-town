@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e25defd94d2f@bay-events
+DTSTAMP:20261011T174934Z
+DTSTART;TZID=America/Los_Angeles:20261027T190000
+DTEND;TZID=America/Los_Angeles:20261027T223000
+SUMMARY:Seanchoíche San Francisco | Love
+LOCATION:Casements Bar\, 2351 Mission Street\, San Francisco\, California 
+ 94110\, United States San Francisco\, San Francisco
+URL:https://dice.fm/event/6ac634d3c72f650001cab481
+DESCRIPTION:Writing\nhttps://dice.fm/event/6ac634d3c72f650001cab481\n\nVer
+ y excited to be bringing Seanchoíche\, which is a storytelling night tha
+ t started out in Dublin\, back to San Francisco on October 27th. Seancho
+ íche is a storytelling events collective from Ireland that have been run
+ ning storytelling nights across multiple locations all around the world. 
+ Starting off in Dublin\, and soon launching events in Amsterdam\, London\
+ , Melbourne\, Sydney\, New York and furthe
+END:VEVENT
+END:VCALENDAR

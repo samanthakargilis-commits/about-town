@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:33ba82a2e4f5@bay-events
+DTSTAMP:20261011T174929Z
+DTSTART;TZID=America/Los_Angeles:20261022T183000
+DTEND;TZID=America/Los_Angeles:20261022T203000
+SUMMARY:Book Club: "Cat's People" by Tanya Guerrero
+LOCATION:Burlingame\, Burlingame
+URL:https://www.meetup.com/burlingame-san-mateo-20s-30s-40s/events/3166171
+ 24/
+DESCRIPTION:Reading + Camp & Halloween · Thursday evening · Burlingame\n
+ https://www.meetup.com/burlingame-san-mateo-20s-30s-40s/events/316617124/
+ \n\nHalloween is coming up but instead of reading a scary horror story\, 
+ let's read an uplifting tale where a black cat is a main character! We'll
+  discuss "Cat's People" by Tanya Guerrero. There are several copies avail
+ able at the library so it should be easy to get! The location is TBD but 
+ will be in the Burlingame/San Mateo/Foster City area. We'll decide after 
+ the September meeting! Everyone will be 
+END:VEVENT
+END:VCALENDAR

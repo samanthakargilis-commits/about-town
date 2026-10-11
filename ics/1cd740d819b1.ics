@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1cd740d819b1@bay-events
+DTSTAMP:20261011T174931Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:The Clift Royal Sonesta Hotel Speaker Series: Making History Fun A
+ gain
+LOCATION:The Clift Royal Sonesta Hotel\, 495 Geary St\, San Francisco\, CA
+  94102\, San Francisco
+URL:https://sf.funcheap.com/clift-royal-sonesta-hotel-speaker-series-makin
+ g-history-fun-4/
+DESCRIPTION:Writing\nhttps://sf.funcheap.com/clift-royal-sonesta-hotel-spe
+ aker-series-making-history-fun-4/\n\nThe Clift Royal Sonesta Hotel\, a Sa
+ n Francisco landmark since 1915\, continues its monthly speaker series\, 
+ Making History Fun Again\, designed to celebrate the city’s legendary p
+ ast through lively storytelling\, fascinating personalities and unforgett
+ able local history. On Thursday\, October 15\, award-winning arts and cul
+ ture journalist Rae ...
+END:VEVENT
+END:VCALENDAR

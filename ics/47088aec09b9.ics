@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:47088aec09b9@bay-events
+DTSTAMP:20261011T174929Z
+DTSTART;TZID=America/Los_Angeles:20261011T110000
+DTEND;TZID=America/Los_Angeles:20261011T170000
+SUMMARY:SF’s Free Outdoor “Butchertown Jazz Festival” 2026 (Bayview)
+LOCATION:Gratta Wines\, 2022 Lane Street\, San Francisco\, CA 94124\, San 
+ Francisco
+URL:https://sf.funcheap.com/sfs-free-outdoor-butchertown-jazz-festival-202
+ 6-bayview/
+DESCRIPTION:Fairs & festivals + Craft\nhttps://sf.funcheap.com/sfs-free-ou
+ tdoor-butchertown-jazz-festival-2026-bayview/\n\nThe 7th Annual Butcherto
+ wn Jazz Festival is a free\, family-friendly event at Gratta Wines in San
+  Francisco’s Bayview\, featuring live jazz and soul performances\, loca
+ l food and wine\, artists\, makers\, and community organizations. Attende
+ es can enjoy a vibrant outdoor neighborhood celebration that highlights t
+ he creativity ...
+END:VEVENT
+END:VCALENDAR

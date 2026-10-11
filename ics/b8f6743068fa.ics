@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b8f6743068fa@bay-events
+DTSTAMP:20261011T174929Z
+DTSTART;TZID=America/Los_Angeles:20261012T090000
+DTEND;TZID=America/Los_Angeles:20261012T120000
+SUMMARY:Fleet Week High School Band Challenge
+LOCATION:Golden Gate Park Band Shell\, San Francisco
+URL:https://fleetweeksf.org/high-school-band-challenge/
+DESCRIPTION:Big Bay Area traditions + Fairs & festivals · A yearly tradit
+ ion\nhttps://fleetweeksf.org/high-school-band-challenge/\n\nMonday\, Octo
+ ber 12 | 9 AM-noon | Golden Gate Park Bandshell | FREE The 1st Marine Div
+ ision Band kicks off the morning before select Bay Area high school bands
+  take the stage to compete for prize money supporting their school music 
+ programs. The 2026 competition includes a $10\,000 grand prize sponsored 
+ by the Loop Community Foundation and a $6\,000 Commissioner’s Award .
+END:VEVENT
+END:VCALENDAR

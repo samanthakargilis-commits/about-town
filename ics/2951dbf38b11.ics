@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2951dbf38b11@bay-events
+DTSTAMP:20261011T174930Z
+DTSTART;TZID=America/Los_Angeles:20261013T210000
+DTEND;TZID=America/Los_Angeles:20261014T000000
+SUMMARY:Weekly Comedy Open Mic
+LOCATION:Emperor Norton's Boozeland\, 510 Larkin Street\, San Francisco Sa
+ n Francisco\, San Francisco
+URL:https://ma.to/event/comedy-open-mic-emperor-nortons-boozeland-13-oct-2
+ 026
+DESCRIPTION:Comedy + Singing\nhttps://ma.to/event/comedy-open-mic-emperor-
+ nortons-boozeland-13-oct-2026\n\nOk Good Comedy launches a brand new week
+ ly comedy open mic in the Tenderloin. Happening at Emperor Norton’s Boo
+ zeland\, the night features 4-minute sets\, with an option to get 6 minut
+ es if you buy a drink. Sign-ups are available on BACN and in person. The 
+ room is hosted on rotation by Chantavy Tornado\, Charlie Norton\, and Bai
+ ley Miller. A new spot to work on material\, bomb\, or just support the l
+ oca
+END:VEVENT
+END:VCALENDAR

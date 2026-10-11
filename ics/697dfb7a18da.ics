@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:697dfb7a18da@bay-events
+DTSTAMP:20261011T174930Z
+DTSTART;TZID=America/Los_Angeles:20261011T110000
+DTEND;TZID=America/Los_Angeles:20261011T150000
+SUMMARY:Kaiyō Fleet Week Brunch
+LOCATION:Kaiyō Handroll Bar\, 1838 Union St\, San Francisco San Francisco
+ \, San Francisco
+URL:https://ma.to/event/kaiyo-fleet-week-brunch-2026-10-11
+DESCRIPTION:Big Bay Area traditions + Fairs & festivals\nhttps://ma.to/eve
+ nt/kaiyo-fleet-week-brunch-2026-10-11\n\nBrunch service at Kaiyō Handrol
+ l Bar in the Marina\, 11am to 3pm on Sunday\, October 11\, during Fleet W
+ eek weekend. The venue opens early at 11am all weekend for the festivitie
+ s and serves handrolls\, ceviche\, cocktails and matcha\, with space to r
+ egroup away from the Marina Green crowds. Tables can be booked at kaiyoha
+ ndrollbar.com. Sunday's service continues with happy hour from 3pm to 5pm
+  and dinne
+END:VEVENT
+END:VCALENDAR

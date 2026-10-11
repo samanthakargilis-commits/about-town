@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a8b29cba12a0@bay-events
+DTSTAMP:20261011T174933Z
+DTSTART;TZID=America/Los_Angeles:20261015T100000
+DTEND;TZID=America/Los_Angeles:20261015T190000
+SUMMARY:San Francisco Fall Show 2026: Show Days and Lectures
+LOCATION:Festival Pavilion\, Fort Mason Center\, 2 Marina Boulevard\, San 
+ Francisco\, CA 94109 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/san-francisco-fall-show-2026-show-days-an
+ d-lectures-tickets-1996824605147
+DESCRIPTION:Fairs & festivals + Art\nhttps://www.eventbrite.com/e/san-fran
+ cisco-fall-show-2026-show-days-and-lectures-tickets-1996824605147\n\nThe 
+ San Francisco Fall Show is the leading art\, antiques\, and design fair o
+ n the West Coast\, with renowned dealers from around the globe.
+END:VEVENT
+END:VCALENDAR

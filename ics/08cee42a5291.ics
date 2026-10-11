@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:08cee42a5291@bay-events
+DTSTAMP:20261011T174934Z
+DTSTART;TZID=America/Los_Angeles:20261017T080000
+DTEND;TZID=America/Los_Angeles:20261017T100000
+SUMMARY:Tacobell Ultra Marathon
+LOCATION:5200 Coast Hwy\, 5200 Coast Hwy Pacifica\, Pacifica
+URL:https://partiful.com/e/tOzTNvmV9Fmerww4P3Tu
+DESCRIPTION:Pacifica\nhttps://partiful.com/e/tOzTNvmV9Fmerww4P3Tu\n\nWe’
+ re running an unofficial Tacobell Ultra Marathon (31.1 miles) right here 
+ in SF! Starting from the most beautiful Tacobell in the country in Pacifi
+ ca and ending at the Cantina on Embarcadero for some boozy Baja Blast. We
+ ’re going to be going really slow\, the goal here is completion. All pa
+ ces welcome! Come join us for the whole thing or just a leg! More details
+  in the comments.
+END:VEVENT
+END:VCALENDAR

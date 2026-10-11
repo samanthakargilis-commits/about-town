@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c9e9d5d26f3e@bay-events
+DTSTAMP:20261011T174934Z
+DTSTART;TZID=America/Los_Angeles:20261031T140000
+DTEND;TZID=America/Los_Angeles:20261031T210000
+SUMMARY:ZHU - ON THE MOVE - Halloween San Francisco
+LOCATION:Gold Bar Whiskey Distillery Tasting Room\, 1 Avenue of the Palms\
+ , #167\, San Francisco\, CA 94130 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/zhu-on-the-move-halloween-san-francisco-t
+ ickets-1988635747052
+DESCRIPTION:Camp & Halloween\nhttps://www.eventbrite.com/e/zhu-on-the-move
+ -halloween-san-francisco-tickets-1988635747052\n\nIn celebration of ZHU's
+  new album\, BLACK MIDAS\, he is going 'On the Move' taking over iconic v
+ enues across the US. Halloween he plays SF
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a9706c295d98@bay-events
+DTSTAMP:20261011T174933Z
+DTSTART;TZID=America/Los_Angeles:20261011T170000
+DTEND;TZID=America/Los_Angeles:20261011T193000
+SUMMARY:Trinket Charm Workshop
+LOCATION:SoFA Pocket Park\, 540 S 1st St\, San Jose Palo Alto\, San Jose
+URL:https://ma.to/event/trinket-charm-workshop-2026-10-11
+DESCRIPTION:Art · San Jose\nhttps://ma.to/event/trinket-charm-workshop-20
+ 26-10-11\n\nTrinket Charm Workshop presented by Art Pocket SJ at SoFA Poc
+ ket Park\, led by Star Lahey-Buckley (@p1nkharv3st). Attendees turn their
+  own treasures and tchotchkes into keychains and bring a trinket of their
+  choosing. Tools\, beads and some trinkets are provided\, with limited su
+ pplies available for those at the beginning of their collector journeys.
+END:VEVENT
+END:VCALENDAR

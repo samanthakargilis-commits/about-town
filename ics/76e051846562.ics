@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:76e051846562@bay-events
+DTSTAMP:20261011T174930Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Saturday Write Fever: Insta-Plays Written & Performed
+LOCATION:SF\, 156 Eddy Street\, San Francisco\, San Francisco
+URL:https://sf.funcheap.com/saturday-write-fever-insta-plays-written-perfo
+ rmed-sf-145/
+DESCRIPTION:Writing + Theatre\nhttps://sf.funcheap.com/saturday-write-feve
+ r-insta-plays-written-performed-sf-145/\n\nEvery second Saturday of the m
+ onth\, EXIT Theatre invites writers\, actors\, directors\, theater creato
+ rs and theater audiences alike to a free evening of quick script-making a
+ nd flash-fried performance. Join in for: 8:30 pm: Mixer 9 pm: Writing spr
+ int where writers have 30 minutes to generate original monologues based .
+ ..
+END:VEVENT
+END:VCALENDAR

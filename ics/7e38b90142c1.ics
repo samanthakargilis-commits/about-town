@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7e38b90142c1@bay-events
+DTSTAMP:20261011T174931Z
+DTSTART;TZID=America/Los_Angeles:20261024T150000
+DTEND;TZID=America/Los_Angeles:20261024T170000
+SUMMARY:Community Art Making on the Beach - Let's Make Monumental Art Toge
+ ther!
+LOCATION:Ocean Beach\, 704 Great Highway\, San Francisco\, CA 94121 San Fr
+ ancisco\, San Francisco
+URL:https://www.eventbrite.com/e/community-art-making-on-the-beach-lets-ma
+ ke-monumental-art-together-registration-1995168995173
+DESCRIPTION:Art\nhttps://www.eventbrite.com/e/community-art-making-on-the-
+ beach-lets-make-monumental-art-together-registration-1995168995173\n\nFre
+ e gathering to create an enormous\, temporary artwork together at the bea
+ ch.
+END:VEVENT
+END:VCALENDAR

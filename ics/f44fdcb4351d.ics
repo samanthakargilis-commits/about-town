@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f44fdcb4351d@bay-events
+DTSTAMP:20261011T174933Z
+DTSTART;TZID=America/Los_Angeles:20261117T144500
+DTEND;TZID=America/Los_Angeles:20261117T164500
+SUMMARY:A Quiet Hour: Buddhist Meditation for Everyday Anxiety\, San Franc
+ isco
+LOCATION:St John of God Church\, 1290 5th Avenue\, Irving St\, San Francis
+ co\, CA 94122\, USA\, San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/bay-area-meditation-group/events/316835703/
+DESCRIPTION:Meditation + Spirituality\nhttps://www.meetup.com/bay-area-med
+ itation-group/events/316835703/\n\nAnxiety and restlessness can build up 
+ quietly over a week\, in ways we don't always notice until we sit still. 
+ This session offers a simple introduction to Chan meditation\, a practice
+  many people use to settle the mind and ease that restlessness. We'll als
+ o introduce Pure Land practice\, a complementary tradition some find brin
+ gs additional calm and steadiness. Led by two nuns from Dharma Treasury T
+END:VEVENT
+END:VCALENDAR

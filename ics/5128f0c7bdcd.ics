@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5128f0c7bdcd@bay-events
+DTSTAMP:20261011T174930Z
+DTSTART;TZID=America/Los_Angeles:20261011T140000
+DTEND;TZID=America/Los_Angeles:20261011T160000
+SUMMARY:Figaro Family Experience
+LOCATION:Wilsey Opera Center\, San Francisco\, San Francisco
+URL:https://ma.to/event/figaro-family-experience-11-oct-2026
+DESCRIPTION:Theatre + Weird & unusual\nhttps://ma.to/event/figaro-family-e
+ xperience-11-oct-2026\n\nBearitone the Opera Bear hosts an immersive fami
+ ly afternoon inspired by Mozart’s The Marriage of Figaro. Kids and fami
+ lies can prepare in the Bridal Salon before attending a ceremony featurin
+ g surprise operatic performances. The celebration continues with dancing\
+ , crafts\, sweet treats\, and wedding portraits. Registration begins Sept
+ ember 13 on the profile.
+END:VEVENT
+END:VCALENDAR

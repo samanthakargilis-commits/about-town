@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0a7fe6b602aa@bay-events
+DTSTAMP:20261011T174933Z
+DTSTART;TZID=America/Los_Angeles:20261017T210000
+DTEND;TZID=America/Los_Angeles:20261017T230000
+SUMMARY:Buzzworks Halloween
+LOCATION:BuzzWorks\, 365 11th St San Francisco\, San Francisco
+URL:https://partiful.com/e/MxbxNbkVyTDuK2ZfGFWp
+DESCRIPTION:Camp & Halloween\nhttps://partiful.com/e/MxbxNbkVyTDuK2ZfGFWp\
+ n\nYou're invited to Buzzworks Halloween Expect a night full of arcade ga
+ mes\, billiards\, food\, cocktails\, and great music by your favorite DJs
+  DJ lineup: DJ Ell hooCHi DJ Melly Zookey b2b Loved Ones No cover all nig
+ ht Costumes are encouraged See you guys at the event 🫶
+END:VEVENT
+END:VCALENDAR

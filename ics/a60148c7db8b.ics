@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a60148c7db8b@bay-events
+DTSTAMP:20261011T174930Z
+DTSTART;TZID=America/Los_Angeles:20261030T100000
+DTEND;TZID=America/Los_Angeles:20261030T140000
+SUMMARY:Free Halloween Hike: Creepy Presidio Pet Cemetery Stories
+LOCATION:Rafiki Coalition\, 601 Cesar Chavez\, San Francisco\, CA 94124\, 
+ San Francisco
+URL:https://sf.funcheap.com/free-halloween-hike-creepy-presidio-pet-cemete
+ ry-stories-sf/
+DESCRIPTION:Camp & Halloween + Weird & unusual\nhttps://sf.funcheap.com/fr
+ ee-halloween-hike-creepy-presidio-pet-cemetery-stories-sf/\n\nThis hike i
+ ncludes a visit to the Pet Cemetery to hear creepy stories from Presidio 
+ lore. Wear a costume if you dare! Please meet at Rafiki Coalition (601 Ce
+ sar Chavez Street\, San Francisco\, CA 94124) 20 minutes early for COVID 
+ testing. A free shuttle promptly leaves ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7851120105e4@bay-events
+DTSTAMP:20261011T174933Z
+DTSTART;TZID=America/Los_Angeles:20261011T150000
+DTEND;TZID=America/Los_Angeles:20261011T200000
+SUMMARY:Last Day Party of the Year
+LOCATION:El Rio\, San Francisco\, San Francisco
+URL:https://ma.to/event/last-day-party-of-the-year-2026-10-11
+DESCRIPTION:New in your area\nhttps://ma.to/event/last-day-party-of-the-ye
+ ar-2026-10-11\n\nJoin El Rio for the Last Day Party of the Year with @rnb
+ andribs. Party on the patio with DJ sets by knowpaslaps\, djken_z_o\, djo
+ rtizzzz\, tr1xamillion\, and 143.tommy. Food by @prubechusf. RSVP on the 
+ website for $30 entry\; $35 at the door. 21+ only. Sunday\, October 11\, 
+ 3-8pm.
+END:VEVENT
+END:VCALENDAR

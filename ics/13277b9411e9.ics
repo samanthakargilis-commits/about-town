@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:13277b9411e9@bay-events
+DTSTAMP:20261011T174930Z
+DTSTART;TZID=America/Los_Angeles:20261018T150000
+DTEND;TZID=America/Los_Angeles:20261018T170000
+SUMMARY:SF’s Civic Music Free Concerts (2026)
+LOCATION:Herbst Theatre\, 401 Van Ness Avenue\, San Francisco\, CA\, San F
+ rancisco
+URL:https://sf.funcheap.com/sfs-civic-music-free-concerts-2026/
+DESCRIPTION:Concerts + Theatre\nhttps://sf.funcheap.com/sfs-civic-music-fr
+ ee-concerts-2026/\n\nThe San Francisco Civic Music Association is dedicat
+ ed to offering numerous opportunities for classical music lovers and amat
+ eur musicians in the San Francisco Bay Area. Our ensembles are open to al
+ l musicians and our concerts are free and available to the public. We’d
+  love to ...
+END:VEVENT
+END:VCALENDAR

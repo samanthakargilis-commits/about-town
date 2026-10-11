@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c0a243ee2dbe@bay-events
+DTSTAMP:20261011T174931Z
+DTSTART;TZID=America/Los_Angeles:20261011T100000
+DTEND;TZID=America/Los_Angeles:20261011T120000
+SUMMARY:Dads with Strollers Meetup at SF’s Francisco Park
+LOCATION:Francisco Park\, 2445 Hyde Street\, San Francisco\, CA\, San Fran
+ cisco
+URL:https://sf.funcheap.com/dads-strollers-meetup-sfs-francisco-park/
+DESCRIPTION:Discourse\nhttps://sf.funcheap.com/dads-strollers-meetup-sfs-f
+ rancisco-park/\n\nJoin us for Dads with Strollers Meetup on Sunday\, Octo
+ ber 11 from 10am-12noon! Meet a local group of Dads for a friendly walk a
+ nd talk session. Coffee and Bob’s donuts will be provided. We meet at t
+ he lower Children’s Playground. Everyone welcome. We really love ...
+END:VEVENT
+END:VCALENDAR

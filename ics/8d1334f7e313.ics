@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8d1334f7e313@bay-events
+DTSTAMP:20261011T174933Z
+DTSTART;TZID=America/Los_Angeles:20261011T210000
+DTEND;TZID=America/Los_Angeles:20261012T020000
+SUMMARY:The Egyptian Lover
+LOCATION:DNA Lounge\, 375 Eleventh St\, San Francisco\, CA San Francisco\,
+  San Francisco
+URL:https://ma.to/event/the-egyptian-lover-12-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/the-egyptian-lover-12-oc
+ t-2026\n\nElectro-hop legend The Egyptian Lover is heading to San Francis
+ co for a night at DNA Lounge. The pioneer will be spinning live with supp
+ ort from the LS Sound System crew. Doors open at 9pm. Tickets available a
+ t dnalounge.com.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cfb306c982dd@bay-events
+DTSTAMP:20261011T174933Z
+DTSTART;TZID=America/Los_Angeles:20261011T160000
+DTEND;TZID=America/Los_Angeles:20261011T173000
+SUMMARY:Silent Sunday 071: Avanti
+LOCATION:Bar Shiru\, San Francisco\, San Francisco
+URL:https://ma.to/event/silent-sunday-071-11-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/silent-sunday-071-11-oct
+ -2026\n\nEdition 071 of Silent Sunday at Bar Shiru plays Alessandro Corti
+ ni's Avanti on vinyl. The session runs from 4:00 PM to 5:30 PM with the m
+ usic left to do the talking. Bar Shiru is a hi-fi listening bar focused m
+ ostly on jazz and soul\, always on vinyl\, and welcomes groups of six or 
+ fewer.
+END:VEVENT
+END:VCALENDAR

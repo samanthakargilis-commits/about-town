@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:264c3ea19c71@bay-events
+DTSTAMP:20261011T174933Z
+DTSTART;TZID=America/Los_Angeles:20261011T190000
+DTEND;TZID=America/Los_Angeles:20261011T210000
+SUMMARY:Elephant Gym: More Real Than Dreams
+LOCATION:4 Star Theater\, 2200 Clement St\, San Francisco
+URL:https://ticketing.uswest.veezi.com/purchase/19867?siteToken=d2atbcege5
+ knqsavntt91g1250
+DESCRIPTION:New in your area\nhttps://ticketing.uswest.veezi.com/purchase/
+ 19867?siteToken=d2atbcege5knqsavntt91g1250\n\nElephant Gym successfully c
+ ompleted a world tour spanning 60 cities across 23 countries. However\, b
+ ehind this achievement lay an unseen crisis of disbandment\, along with h
+ idden conflicts and struggles. What does it truly mean to be a band? The 
+ film was first screened in October 2025 at the Kaohsiung Film Festival\, 
+ one of Taiwan’s leading film festivals\, and will also be shown in thea
+ ters in both J
+END:VEVENT
+END:VCALENDAR

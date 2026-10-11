@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3df3fe53b59d@bay-events
+DTSTAMP:20261011T174930Z
+DTSTART;TZID=America/Los_Angeles:20261013T100000
+DTEND;TZID=America/Los_Angeles:20261013T170000
+SUMMARY:Emory Douglas: In Our Lifetime
+LOCATION:African American Art & Culture Complex\, San Francisco\, San Fran
+ cisco
+URL:https://ma.to/event/emory-douglas-in-our-lifetime-2026-10-13
+DESCRIPTION:Museum exhibits + Art\nhttps://ma.to/event/emory-douglas-in-ou
+ r-lifetime-2026-10-13\n\nEmory Douglas: In Our Lifetime is a survey of th
+ e work and vision of the artist spanning over 50 years. This three-floor 
+ exhibit is co-curated by Rio Yañez and Rosalind McGary and features the 
+ work of Emory Douglas\, former Minister of Culture for the Black Panther 
+ Party. Free and open to the public Monday - Saturday\, 10am - 5pm.
+END:VEVENT
+END:VCALENDAR

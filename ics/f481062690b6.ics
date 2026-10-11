@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f481062690b6@bay-events
+DTSTAMP:20261011T174934Z
+DTSTART;TZID=America/Los_Angeles:20261011T103000
+DTEND;TZID=America/Los_Angeles:20261011T143000
+SUMMARY:Bottomless Mimosa Brunch
+LOCATION:Bar TZA\, 2481 Mission St\, San Francisco\, CA 94110 San Francisc
+ o\, San Francisco
+URL:https://ma.to/event/bottomless-mimosa-brunch-11-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/bottomless-mimosa-brunch
+ -11-oct-2026\n\nBar TZA hosts bottomless brunch every Saturday and Sunday
+  from 10:30am to 2:30pm. The 90-minute unlimited mimosa package is includ
+ ed with the purchase of a brunch entrée or available on its own for $35.
+  Signature flavors include Orange (classic)\, Hibiscus\, Tropical (mango 
+ & piña)\, Passion Fruit\, Pomegranate\, Grapefruit\, and Cranberry. Brun
+ ch entrées include options like New York Steak ($60)\, Churr
+END:VEVENT
+END:VCALENDAR

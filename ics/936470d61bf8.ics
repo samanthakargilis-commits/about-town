@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:936470d61bf8@bay-events
+DTSTAMP:20261011T174932Z
+DTSTART;TZID=America/Los_Angeles:20261106T180000
+DTEND;TZID=America/Los_Angeles:20261106T210000
+SUMMARY:“OUTSIDE - The Escape” Opening Reception
+LOCATION:Oakland\, CA\, Oakland
+URL:https://luma.com/kq0pyd51
+DESCRIPTION:Theatre + Museum exhibits · Oakland\nhttps://luma.com/kq0pyd5
+ 1\n\nArtwork by De’Vonne Foxworth. Curated by Tolani Verissimo. Present
+ ed by Joyce Gordon Foundation. “OUTSIDE” is the first exhibit present
+ ation by Bay Area artist De’Vonne Foxworth\, and it’s only fitting to
+  experience it at the pulse of fine art in downtown Oakland - Joyce Gordo
+ n Gallery. At its heart\, “OUTSIDE” explores escapism and the liberat
+ ing freedom found in choosing where our minds\, bodies\, a
+END:VEVENT
+END:VCALENDAR

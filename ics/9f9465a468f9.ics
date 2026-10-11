@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9f9465a468f9@bay-events
+DTSTAMP:20261011T174933Z
+DTSTART;TZID=America/Los_Angeles:20261011T120000
+DTEND;TZID=America/Los_Angeles:20261011T150000
+SUMMARY:Brews & Bounce: Filipino Day Party
+LOCATION:Señor Sisig\, 330 17th St\, Oakland\, CA 94612 San Francisco\, O
+ akland
+URL:https://ma.to/event/brews-bounce-filipino-day-party-11-oct-2026
+DESCRIPTION:Oakland\nhttps://ma.to/event/brews-bounce-filipino-day-party-1
+ 1-oct-2026\n\nCelebrate Filipino American History Month with a day party 
+ on the dance floor at Señor Sisig. Featuring sounds inspired by the isla
+ nds and the diaspora by Trixamillion\, Mikel back-to-back with Mood Ring\
+ , and Honeyd1p back-to-back with Markymethod. Specialty drinks by Corazon
+  Tequila and Fever Tree. 12:00 PM – 3:00 PM. RSVP via link in bio.
+END:VEVENT
+END:VCALENDAR

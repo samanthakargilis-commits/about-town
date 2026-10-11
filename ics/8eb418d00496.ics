@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8eb418d00496@bay-events
+DTSTAMP:20261011T174932Z
+DTSTART;TZID=America/Los_Angeles:20261014T190000
+DTEND;TZID=America/Los_Angeles:20261014T230000
+SUMMARY:Chuckles Comedy Show
+LOCATION:El Rio\, 3158 Mission St\, San Francisco San Francisco\, San Fran
+ cisco
+URL:https://ma.to/event/chuckles-comedy-show-15-oct-2026
+DESCRIPTION:Comedy\nhttps://ma.to/event/chuckles-comedy-show-15-oct-2026\n
+ \nChuckles Comedy Show at El Rio. Hosted by Carinne Salnave. Featuring co
+ medians: Myles Brown\, Clara Bijl\, Doug Cordell\, and Lady Roc. Music by
+  DJ The Junior. Doors at 7 PM\, show at 8 PM. $5-$10 suggested donation a
+ t the door.
+END:VEVENT
+END:VCALENDAR

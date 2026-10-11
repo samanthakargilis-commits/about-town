@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c9f22d1e98c8@bay-events
+DTSTAMP:20261011T174933Z
+DTSTART;TZID=America/Los_Angeles:20261011T170000
+DTEND;TZID=America/Los_Angeles:20261011T230000
+SUMMARY:DJ Heartbreak's TLC Party Bus
+LOCATION:Chateau Walnut Creek\, San Francisco\, Walnut Creek
+URL:https://ma.to/event/dj-heartbreaks-tlc-party-bus-2026-10-11
+DESCRIPTION:Concerts · Walnut Creek\nhttps://ma.to/event/dj-heartbreaks-t
+ lc-party-bus-2026-10-11\n\nDJ Heartbreak's TLC Concert Party Bus takes th
+ e R&B Brunch experience on the road on Sunday\, October 11. After brunch 
+ at Chateau Walnut Creek\, a private bus travels to the TLC concert at Toy
+ ota Pavilion in Concord\, with DJ Heartbreak playing live on the bus for 
+ the entire ride. The soundtrack leans on R&B classics and sing-alongs\, w
+ ith plenty of TLC to set up the show. Admission covers round-trip 
+END:VEVENT
+END:VCALENDAR

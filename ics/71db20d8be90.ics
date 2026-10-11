@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:71db20d8be90@bay-events
+DTSTAMP:20261011T174932Z
+DTSTART;TZID=America/Los_Angeles:20261024T170000
+DTEND;TZID=America/Los_Angeles:20261024T190000
+SUMMARY:Oktoberfest Gaming Potluck
+LOCATION:9927 Stanley Ave\, 9927 Stanley Ave\, Oakland\, CA Oakland\, Oakl
+ and
+URL:https://www.meetup.com/eastbay-gay-board-gamers/events/316833962/
+DESCRIPTION:Cultural festivals · Oakland\nhttps://www.meetup.com/eastbay-
+ gay-board-gamers/events/316833962/\n\nApologies for going all summer with
+ out hosting any events! But the wait is over\, because we are celebrating
+  Oktoberfest the right way - food\, drink\, and Euro Gaming! \\` Bring yo
+ ur favorite fall dish or snack for our dinner potluck\, as well as your f
+ avorite games. I will be providing beverages (yes\, including beer)\, and
+  my own collection of board games (including my new favorite - Rolling in
+  Wonder
+END:VEVENT
+END:VCALENDAR

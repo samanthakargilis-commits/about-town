@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b5e7b24846fa@bay-events
+DTSTAMP:20261011T174930Z
+DTSTART;TZID=America/Los_Angeles:20261018T110000
+DTEND;TZID=America/Los_Angeles:20261018T160000
+SUMMARY:“Sunday Streets” SF’s Free Street Festival & Block Party (Ex
+ celsior)
+LOCATION:Excelsior Sunday Streets\, Silver Avenue and Geneva Avenue\, San 
+ Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/sunday-streets-sfs-free-street-festival-block-
+ party-excelsior-2/
+DESCRIPTION:Fairs & festivals\nhttps://sf.funcheap.com/sunday-streets-sfs-
+ free-street-festival-block-party-excelsior-2/\n\nSan Francisco’s 2026 s
+ eason of Sunday Streets returns with four events across The City. Since 2
+ 008\, Sunday Streets has transformed San Francisco’s streets into car-f
+ ree community spaces\, bringing neighbors together for a day of connectio
+ n\, movement\, and fun. Sunday Streets 2026 Season Schedule Please note .
+ ..
+END:VEVENT
+END:VCALENDAR

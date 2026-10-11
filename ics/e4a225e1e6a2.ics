@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e4a225e1e6a2@bay-events
+DTSTAMP:20261011T174931Z
+DTSTART;TZID=America/Los_Angeles:20261011T110000
+DTEND;TZID=America/Los_Angeles:20261011T140000
+SUMMARY:Teapot Workshop with Susan Gold
+LOCATION:Uncle Paul’s Ceramics North Beach Studio\, 403 Broadway\, North
+  Beach\, San Francisco San Francisco\, San Francisco
+URL:https://ma.to/event/teapot-workshop-with-susan-gold-2026-10-11
+DESCRIPTION:Craft + Musical theatre\nhttps://ma.to/event/teapot-workshop-w
+ ith-susan-gold-2026-10-11\n\nSusan Gold teaches a two-day teapot workshop
+  in the Featured Artist Series at Uncle Paul's Ceramics North Beach Studi
+ o\, 403 Broadway in North Beach\, San Francisco. Sessions run 11am-2pm on
+  October 10 and October 11\; the session on October 11 is the second day.
+  The workshop is held in collaboration with the SF Ceramic Artists Guild\
+ , whose members receive $50 off\; Guild membership can be signed up f
+END:VEVENT
+END:VCALENDAR

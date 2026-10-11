@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:42074fe89362@bay-events
+DTSTAMP:20261011T174932Z
+DTSTART;TZID=America/Los_Angeles:20261014T180000
+DTEND;TZID=America/Los_Angeles:20261014T210000
+SUMMARY:Hardtech After Party @Whipsaw
+LOCATION:55 Mississippi St\, 55 Mississippi St\, San Francisco\, CA 94107\
+ , USA\, San Francisco
+URL:https://luma.com/xejashz9
+DESCRIPTION:Theatre + Weird & unusual\nhttps://luma.com/xejashz9\n\nAre yo
+ u building the future of hardware? Come connect with fellow founders\, en
+ gineers\, and investors who are pushing the boundaries of hardtech from r
+ obotics and wearables to connected devices\, medtech\, and beyond. Whipsa
+ w is hosting an evening of conversation\, community\, and collaboration f
+ or hardware enthusiasts straight from the TechCrunch Disrupt floor. Expec
+ t a mix of deep tech founders\, prod
+END:VEVENT
+END:VCALENDAR

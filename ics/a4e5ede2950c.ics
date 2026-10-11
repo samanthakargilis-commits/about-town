@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a4e5ede2950c@bay-events
+DTSTAMP:20261011T174931Z
+DTSTART;TZID=America/Los_Angeles:20261027T070000
+DTEND;TZID=America/Los_Angeles:20261027T090000
+SUMMARY:Free National Parks Day: Muir Woods + Yosemite: Teddy Roosevelt’
+ s Bday 2026
+LOCATION:All Over California
+URL:https://sf.funcheap.com/free-national-parks-day-muir-woods-yosemite-te
+ ddy-roosevelts-bday-2026/
+DESCRIPTION:A yearly tradition\nhttps://sf.funcheap.com/free-national-park
+ s-day-muir-woods-yosemite-teddy-roosevelts-bday-2026/\n\nSometimes you’
+ ve just got to get away from it all and clear your head with the peace an
+ d serenity of a national park. On certain “fee-free” days throughout 
+ the year\, enjoy free entry to all national parks and monuments\, includi
+ ng Muir Woods and Yosemite National Park\, and ...
+END:VEVENT
+END:VCALENDAR

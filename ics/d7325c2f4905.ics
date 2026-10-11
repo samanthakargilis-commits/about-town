@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d7325c2f4905@bay-events
+DTSTAMP:20261011T174932Z
+DTSTART;TZID=America/Los_Angeles:20261114T130000
+DTEND;TZID=America/Los_Angeles:20261114T153000
+SUMMARY:Black Girls Blooming 🌸 Saturday Writing Club
+LOCATION:Nirvana Soul\, 315 S First St San Jose\, San Jose
+URL:https://partiful.com/e/EkVCU6Hn8MrQVkOC9mdZ
+DESCRIPTION:Craft + Discourse · San Jose\nhttps://partiful.com/e/EkVCU6Hn
+ 8MrQVkOC9mdZ\n\nWhat happens when Black women cultivate their gardens and
+  allow themselves to bloom? 🌸 Join Anayo Awuzie\, editor-in-chief of C
+ arefree Magazine and author of Black Women In Bloom\, for an easeful\, fe
+ el good Saturday afternoon of writing\, connection\, and community to cel
+ ebrate our stories and launch of Carefree Mag's book\, Black Women in Blo
+ om 🌸 💐 Bring your pens and notebooks! we'll have journal and
+END:VEVENT
+END:VCALENDAR

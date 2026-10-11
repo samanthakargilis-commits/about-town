@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e315edd87d5b@bay-events
+DTSTAMP:20261011T174934Z
+DTSTART;TZID=America/Los_Angeles:20261012T140000
+DTEND;TZID=America/Los_Angeles:20261012T160000
+SUMMARY:Ray J. Lau TAKEOVER Matinee
+LOCATION:Cobb's Comedy Club\, San Francisco\, San Francisco
+URL:https://ma.to/event/ray-j-lau-takeover-matinee-2026-10-12
+DESCRIPTION:Comedy\nhttps://ma.to/event/ray-j-lau-takeover-matinee-2026-10
+ -12\n\nRay J. Lau's San Francisco TAKEOVER continues with a Monday matine
+ e show at Cobb's Comedy Club. Grab an early seat and enjoy a beverage fro
+ m the special featured menu. Tickets still available.
+END:VEVENT
+END:VCALENDAR

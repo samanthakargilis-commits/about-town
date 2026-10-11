@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bddcaa500b1a@bay-events
+DTSTAMP:20261011T174933Z
+DTSTART;TZID=America/Los_Angeles:20261011T123000
+DTEND;TZID=America/Los_Angeles:20261011T143000
+SUMMARY:ROLL FOG Film Preview + Q&A
+LOCATION:4 Star Theater\, 2200 Clement St\, San Francisco\, CA 94121 San F
+ rancisco\, San Francisco
+URL:https://ma.to/event/roll-fog-film-preview-11-oct-2026
+DESCRIPTION:Discourse + Theatre\nhttps://ma.to/event/roll-fog-film-preview
+ -11-oct-2026\n\nA preview screening of ROLL FOG\, a 40-minute work-in-pro
+ gress sample of the San Francisco fútbol documentary. The film\, part of
+  the 2026 SFFILM FilmHouse Residency\, follows the historic Kezar Stadium
+ -based SF City FC and its struggle against displacement by finance-backed
+  clubs. Director d.e.diaz will be joined by SF City FC players for a live
+  audience Q&A following the screening. Part of a projec
+END:VEVENT
+END:VCALENDAR

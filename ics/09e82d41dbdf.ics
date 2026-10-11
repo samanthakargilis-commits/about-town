@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:09e82d41dbdf@bay-events
+DTSTAMP:20261011T174929Z
+DTSTART;TZID=America/Los_Angeles:20261011T120000
+DTEND;TZID=America/Los_Angeles:20261011T180000
+SUMMARY:7th Annual Butchertown Jazz Fest
+LOCATION:Lane Street\, Lane Street between Underwood and Van Dyke\, San Fr
+ ancisco\, CA San Francisco\, San Francisco
+URL:https://ma.to/event/butchertown-jazz-fest-11-oct-2026
+DESCRIPTION:Gay / queer + Fairs & festivals\nhttps://ma.to/event/butcherto
+ wn-jazz-fest-11-oct-2026\n\nThe 7th Annual Butchertown Jazz Festival retu
+ rns to the Bayview for an afternoon of live music\, wine\, and local comm
+ erce. Hosted by Gratta Wines\, this free all-ages outdoor festival takes 
+ place on Lane Street between Underwood and Van Dyke. Lineup: 12:00 PM Bat
+ uki (drumming)\, 12:30 PM Elenah (reggae\, cumbia)\, 2:00 PM Salsa Y Sol 
+ (Latin Jazz)\, 3:30 PM Lavay Smith & Her Red Hot Skillet Lickers\, and 
+END:VEVENT
+END:VCALENDAR

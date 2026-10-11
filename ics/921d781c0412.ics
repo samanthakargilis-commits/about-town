@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:921d781c0412@bay-events
+DTSTAMP:20261011T174933Z
+DTSTART;TZID=America/Los_Angeles:20261014T183000
+DTEND;TZID=America/Los_Angeles:20261014T210000
+SUMMARY:Critical Tea Theory: Gongfu Tea & Gongfu Uncles
+LOCATION:tiat\, tiat\, 151 Powell St\, San Francisco\, CA 94102\, USA\, Sa
+ n Francisco
+URL:https://luma.com/criticalteatheory
+DESCRIPTION:Meditation + Theatre\nhttps://luma.com/criticalteatheory\n\nFr
+ om D.T. Suzuki’s teachings on Zen Buddhism to tea ceremony and Daoist b
+ reathwork practices\, Bay area counterculture in the 1960s took inspirati
+ on from Eastern esoteric traditions\, responding to a profound disillusio
+ nment with Western modernity and late-stage capitalism with a desire for 
+ rituals of connection and slowness. Zen\, yoga\, and other contemplative 
+ traditions became central to the counte
+END:VEVENT
+END:VCALENDAR

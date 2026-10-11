@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:988459df629b@bay-events
+DTSTAMP:20261011T174933Z
+DTSTART;TZID=America/Los_Angeles:20261106T170000
+DTEND;TZID=America/Los_Angeles:20261106T230000
+SUMMARY:$1 Drink Fridays: “Battle of the Decades” DJ Party (North Beac
+ h)
+LOCATION:Monroe\, 473 Broadway Street\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/1-drink-fridays-battle-of-the-decades-dj-party
+ -north-beach-262/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/1-drink-fridays-batt
+ le-of-the-decades-dj-party-north-beach-262/\n\nFridays are now a little b
+ it more awesome. Did someone say $1 drinks? Monroe in North Beach hosts 
+ “Battle of the Decades” DJ party and happy hour every Friday with a D
+ J spinning progressive tunes. Every hour is a different decade – with d
+ rink prices ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d85a1c4e0c5e@bay-events
+DTSTAMP:20261011T174932Z
+DTSTART;TZID=America/Los_Angeles:20261011T160000
+DTEND;TZID=America/Los_Angeles:20261011T171500
+SUMMARY:The Loyal Man
+LOCATION:Roxie Theater\, 3117 16th Street\, San Francisco\, CA 94103 San F
+ rancisco\, San Francisco
+URL:https://www.eventbrite.com/e/the-loyal-man-tickets-1999872449331
+DESCRIPTION:Fairs & festivals + Theatre\nhttps://www.eventbrite.com/e/the-
+ loyal-man-tickets-1999872449331\n\nThe Loyal Man screens at the Roxie The
+ ater as part of the Third i Film Festival\, with director and lead actor 
+ Lawrence Valin present and a Q&A held after the film. Valin's first full-
+ length film as both star and director is a romantic gangster thriller and
+  his first French-Sri Lankan Tamil film\, following his sold-out opening 
+ night film Little Jaffna at last year's festival. Valin plays Aathi\, an 
+END:VEVENT
+END:VCALENDAR

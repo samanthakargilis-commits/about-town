@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b23d31745faa@bay-events
+DTSTAMP:20261011T174931Z
+DTSTART;TZID=America/Los_Angeles:20261011T193000
+DTEND;TZID=America/Los_Angeles:20261011T220000
+SUMMARY:The Big Queer Pubquiz
+LOCATION:St Mary's Pub\, 3845 Mission St. San Francisco\, San Francisco
+URL:https://ma.to/event/the-big-queer-pubquiz-12-oct-2026
+DESCRIPTION:Gay / queer + Weird & unusual\nhttps://ma.to/event/the-big-que
+ er-pubquiz-12-oct-2026\n\nThe Big Queer Pubquiz is held at St Mary's Pub 
+ every Sunday\, excluding the first Sunday of the month. Expect fun trivia
+  tests and weird prizes in a community-focused atmosphere. This weekly ev
+ ent runs from 7:30 PM to 10:00 PM.
+END:VEVENT
+END:VCALENDAR

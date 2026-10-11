@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2411c24a6d55@bay-events
+DTSTAMP:20261011T174930Z
+DTSTART;TZID=America/Los_Angeles:20261103T093000
+DTEND;TZID=America/Los_Angeles:20261103T171500
+SUMMARY:“Legion of Honor” Museum Free Day (First Tuesdays)
+LOCATION:Legion of Honor\, 100 34th Avenue\, San Francisco\, CA 94121\, Sa
+ n Francisco
+URL:https://sf.funcheap.com/legion-of-honor-museum-free-day-first-tuesdays
+ -67/
+DESCRIPTION:Museum exhibits + Art\nhttps://sf.funcheap.com/legion-of-honor
+ -museum-free-day-first-tuesdays-67/\n\nThe Legion of Honor displays a col
+ lection of 4\,000 years of ancient and European art in an exquisite Beaux
+ -Arts building in an unforgettable setting overlooking the Golden Gate Br
+ idge. Normally\, general admission is $20 for adults\, but on the first T
+ uesday of the month\, admission ...
+END:VEVENT
+END:VCALENDAR

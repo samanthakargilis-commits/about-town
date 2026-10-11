@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:78ac47198513@bay-events
+DTSTAMP:20261011T174931Z
+DTSTART;TZID=America/Los_Angeles:20261109T100000
+DTEND;TZID=America/Los_Angeles:20261109T130000
+SUMMARY:Veteran’s Day Freebie: Free Dental Screenings w/ X-Rays for Vete
+ rans
+LOCATION:University of the Pacific School of Dentistry\, 155 5th St\, San 
+ Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/veterans-day-freebie-free-dental-screenings-xr
+ ays-veterans-sf/
+DESCRIPTION:A yearly tradition\nhttps://sf.funcheap.com/veterans-day-freeb
+ ie-free-dental-screenings-xrays-veterans-sf/\n\nGive Veterans A Smile is 
+ free of charge for veterans and active-duty members of the United States
+ ’ armed forces • Free screenings\, including dental X-rays\; teeth\, 
+ gum and tissue checks\; blood pressure and glucose testing\; and oral can
+ cer screenings • Get your questions answered by University of ...
+END:VEVENT
+END:VCALENDAR

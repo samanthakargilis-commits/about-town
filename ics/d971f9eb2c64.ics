@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d971f9eb2c64@bay-events
+DTSTAMP:20261011T174933Z
+DTSTART;TZID=America/Los_Angeles:20261017T120000
+DTEND;TZID=America/Los_Angeles:20261017T140000
+SUMMARY:Take Time to Write at El Jardin
+LOCATION:El Jardin\, 12411 San Pablo Ave\, Richmond\, CA 94805\, Richmond\
+ , CA Richmond\, Richmond
+URL:https://www.meetup.com/east-bay-time-to-write/events/316739159/
+DESCRIPTION:Writing · Richmond\nhttps://www.meetup.com/east-bay-time-to-w
+ rite/events/316739159/\n\nLet's meet up to write on Saturday at El Jardin
+  in South Richmond. Anyone who writes is welcome! We'll be inside of El J
+ ardin\, and I'll have a sign saying "Take Time to Write". We'll write in 
+ two 50-minute blocks\, with breaks in between and after. Come find us bet
+ ween Noon and 12:30 to get set up in time for our first one at 1:30. Sche
+ dule: 12:00 - arrive\, get drinks\, chat 12:30 - first focused wr
+END:VEVENT
+END:VCALENDAR

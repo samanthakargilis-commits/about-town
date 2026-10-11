@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ce361109caea@bay-events
+DTSTAMP:20261011T174932Z
+DTSTART;TZID=America/Los_Angeles:20261013T190000
+DTEND;TZID=America/Los_Angeles:20261013T230000
+SUMMARY:Wolves of Glendale ~ Cor64
+LOCATION:Bottom Of The Hill\, 1233 17th Street\, San Francisco\, Californi
+ a 94107\, United States San Francisco\, San Francisco
+URL:https://dice.fm/event/6a679e05bc315a00019beef3
+DESCRIPTION:Comedy + Concerts\nhttps://dice.fm/event/6a679e05bc315a00019be
+ ef3\n\nWolves of Glendale are bringing their Go to the Woods! tour to Bot
+ tom of the Hill. The LA-based trio blends sophisticated musicality with s
+ harp comedy for a show that's as funny as it is loud. Just announced for 
+ a Tuesday night in Potrero Hill.
+END:VEVENT
+END:VCALENDAR

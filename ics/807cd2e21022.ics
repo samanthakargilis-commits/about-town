@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:807cd2e21022@bay-events
+DTSTAMP:20261011T174933Z
+DTSTART;TZID=America/Los_Angeles:20261011T140000
+DTEND;TZID=America/Los_Angeles:20261011T160000
+SUMMARY:San Mateo Podcast Club - Psychology of Money
+LOCATION:Hillsdale Shopping Center\, 60 31st Ave\, San Mateo\, CA 94403\, 
+ USA\, San Mateo\, CA San Mateo\, San Mateo
+URL:https://www.meetup.com/cafe-finance/events/316849575/
+DESCRIPTION:Reading + Discourse · San Mateo\nhttps://www.meetup.com/cafe-
+ finance/events/316849575/\n\nThe book club has been running successfully 
+ for 3 months in San Francisco. Thus\, I am expanding to Peninsular area. 
+ Instead of Book Club\, it will be a Podcast Club since I won't be able to
+  run another weekly book club. The podcast I choose will be interviews wi
+ th an author of a financial book. I would highly recommend to read the bo
+ ok\, but at least watch or listen to the podcasts. We will kick sta
+END:VEVENT
+END:VCALENDAR

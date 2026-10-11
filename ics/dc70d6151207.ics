@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dc70d6151207@bay-events
+DTSTAMP:20261011T174934Z
+DTSTART;TZID=America/Los_Angeles:20261013T170000
+DTEND;TZID=America/Los_Angeles:20261013T193000
+SUMMARY:Swimming Home — Documentary World Premiere + Q&A with Erwan Le R
+ oy
+LOCATION:Marina Theater\, 2149 Chestnut Street\, San Francisco\, CA 94123 
+ San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/swimming-home-documentary-world-premiere-
+ qa-with-erwan-le-roy-tickets-1999712369528
+DESCRIPTION:New in your area\nhttps://www.eventbrite.com/e/swimming-home-d
+ ocumentary-world-premiere-qa-with-erwan-le-roy-tickets-1999712369528\n\nW
+ orld premiere of Swimming Home\, a documentary about Erwan Le Roy’s sol
+ o English Channel swim (21 miles\, no wetsuit)\, followed by a live Q&A w
+ ith Erwan. Doors 5pm\, film 5:30pm at Marina Theater on Chestnut Street. 
+ Every ticket sale goes 100% to Gustave Roussy cancer ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:207fec7934e3@bay-events
+DTSTAMP:20261011T174929Z
+DTSTART;TZID=America/Los_Angeles:20261011T150000
+DTEND;TZID=America/Los_Angeles:20261011T170000
+SUMMARY:9 to 5 + Peaches Christ
+LOCATION:The Castro Theatre\, San Francisco\, San Francisco
+URL:https://ma.to/event/9-to-5-peaches-christ-11-oct-2026
+DESCRIPTION:⭐ Dolly Parton · Reading + Gay / queer\nhttps://ma.to/event
+ /9-to-5-peaches-christ-11-oct-2026\n\nA tribute to Dolly Parton featuring
+  a screening of the iconic 9 to 5 and a drag performance by Peaches Chris
+ t. In partnership with Another Planet Entertainment\, with a portion of t
+ he proceeds going to Dolly Parton’s Imagination Library. This event is 
+ part of the Frameline Fall Showcase. Doors open at 2 PM\, show at 3 PM.
+END:VEVENT
+END:VCALENDAR

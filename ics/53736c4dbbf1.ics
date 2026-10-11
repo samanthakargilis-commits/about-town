@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:53736c4dbbf1@bay-events
+DTSTAMP:20261011T174934Z
+DTSTART;TZID=America/Los_Angeles:20261030T213000
+DTEND;TZID=America/Los_Angeles:20261031T020000
+SUMMARY:Princess Halloween: BOO! Ball w/ JANE DON'T (10/30)
+LOCATION:OASIS\, 298 11th Street\, San Francisco\, CA 94103 San Francisco\
+ , San Francisco
+URL:https://www.eventbrite.com/e/princess-halloween-boo-ball-w-jane-dont-1
+ 030-tickets-1996063761443
+DESCRIPTION:Camp & Halloween\nhttps://www.eventbrite.com/e/princess-hallow
+ een-boo-ball-w-jane-dont-1030-tickets-1996063761443\n\nOctober 30th & 31s
+ t -- Sink your fangs into the most spooktacular event of the year. Miss B
+ oo Ball? Witch\, please!
+END:VEVENT
+END:VCALENDAR

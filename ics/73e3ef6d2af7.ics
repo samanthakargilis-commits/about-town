@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:73e3ef6d2af7@bay-events
+DTSTAMP:20261011T174929Z
+DTSTART;TZID=America/Los_Angeles:20261106T170000
+DTEND;TZID=America/Los_Angeles:20261106T213000
+SUMMARY:“Oakland First Fridays” Street Festival
+LOCATION:Telegraph & 27th\, Telegraph Ave and 27th St\, Oakland\, CA\, Oak
+ land
+URL:https://sf.funcheap.com/oakland-first-fridays-street-festival-86/
+DESCRIPTION:Fairs & festivals + Theatre · Oakland\nhttps://sf.funcheap.co
+ m/oakland-first-fridays-street-festival-86/\n\nOakland First Fridays is a
+ n immersive art and community experience on the first Friday of each mont
+ h from 5-9:30pm for five huge blocks on Telegraph Avenue between 27th Str
+ eet & 22nd Street. Photography from @skyhighoakland via Oakland First Fri
+ days Oakland’s KONO district (Koreatown/Northgate) springs to life ...
+END:VEVENT
+END:VCALENDAR

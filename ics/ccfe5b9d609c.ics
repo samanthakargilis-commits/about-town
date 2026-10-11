@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ccfe5b9d609c@bay-events
+DTSTAMP:20261011T174934Z
+DTSTART;TZID=America/Los_Angeles:20261031T173000
+DTEND;TZID=America/Los_Angeles:20261031T200000
+SUMMARY:Sushi Making Class: Date Night\, San Francisco by Breakthrough Sus
+ hi
+LOCATION:Hotel Kabuki\, 1625 Post Street\, San Francisco\, CA 94115 San Fr
+ ancisco\, San Francisco
+URL:https://www.eventbrite.com/e/sushi-making-class-date-night-san-francis
+ co-by-breakthrough-sushi-tickets-1995902455974
+DESCRIPTION:New in your area\nhttps://www.eventbrite.com/e/sushi-making-cl
+ ass-date-night-san-francisco-by-breakthrough-sushi-tickets-1995902455974\
+ n\nCan you imagine leaving tonight having made your own beautiful sushi 
+ — together — with fresh\, sustainable fish you sliced yourself?
+END:VEVENT
+END:VCALENDAR

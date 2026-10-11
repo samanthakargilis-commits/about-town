@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:776a985b080f@bay-events
+DTSTAMP:20261011T174930Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:Franks Cabaret: A Good Ships Fundraiser
+LOCATION:Irelands\, 3920 Geary Blvd
+URL:https://sf.funcheap.com/franks-cabaret-good-ships-fundraiser/
+DESCRIPTION:Musical theatre + Singing\nhttps://sf.funcheap.com/franks-caba
+ ret-good-ships-fundraiser/\n\nCalling all unconventional conventionalists
+ \, Frank n Furter cordially invites you to his cabaret! Frank has decided
+  to dabble in directing so what better chance to throw a party in his hon
+ or. Join us as for a night of spooky performances\, including drag and li
+ ve singing\, ...
+END:VEVENT
+END:VCALENDAR

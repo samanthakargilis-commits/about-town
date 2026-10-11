@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c770b49d4c5a@bay-events
+DTSTAMP:20261011T174929Z
+DTSTART;TZID=America/Los_Angeles:20261011T110000
+DTEND;TZID=America/Los_Angeles:20261011T130000
+SUMMARY:San Francisco Fleet Week 2026: Golden West Travis Brass Band
+LOCATION:SkyStar Wheel Fisherman’s Wharf\, 2860 Taylor St\, San Francisc
+ o\, CA 94133\, San Francisco
+URL:https://sf.funcheap.com/san-francisco-fleet-week-2026-golden-west-trav
+ is-brass-band/
+DESCRIPTION:Big Bay Area traditions + Fairs & festivals · A yearly tradit
+ ion\nhttps://sf.funcheap.com/san-francisco-fleet-week-2026-golden-west-tr
+ avis-brass-band/\n\nLook up in the sky when you hear the roaring of jet e
+ ngines and head down to SF’s northern waterfront for San Francisco’s 
+ annual Fleet Week air show and festival. San Francisco Fleet Week returns
+  October 4-12\, 2026\, bringing more than a full week of ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d6e1f71e44d3@bay-events
+DTSTAMP:20261011T174933Z
+DTSTART;TZID=America/Los_Angeles:20261014T193000
+DTEND;TZID=America/Los_Angeles:20261014T233000
+SUMMARY:Flip'n Fierce Pinball Night
+LOCATION:The Detour\, 2200A Market St\, San Francisco\, CA San Francisco\,
+  San Francisco
+URL:https://ma.to/event/flipn-fierce-2026-10-14
+DESCRIPTION:Theatre\nhttps://ma.to/event/flipn-fierce-2026-10-14\n\nFlip'n
+  Fierce is a monthly pinball night hosted by Loma Prietta at The Detour. 
+ Players can learn how to play pinball and play with other pinball players
+ \, with prizes to win and all skill levels welcome. Entry is $5. Sign-up 
+ begins at 6:30 PM and play starts at 7:30 PM. The Detour is at 2200A Mark
+ et St\, San Francisco\, CA.
+END:VEVENT
+END:VCALENDAR

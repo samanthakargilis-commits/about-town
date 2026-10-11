@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:88f3252cc8a4@bay-events
+DTSTAMP:20261011T174933Z
+DTSTART;TZID=America/Los_Angeles:20261011T083000
+DTEND;TZID=America/Los_Angeles:20261011T113000
+SUMMARY:Wake and Make
+LOCATION:Studio Twenty Six\, 5303 Claremont Ave San Francisco\, San Franci
+ sco
+URL:https://ma.to/event/wake-and-make-11-oct-2026
+DESCRIPTION:Craft\nhttps://ma.to/event/wake-and-make-11-oct-2026\n\nA morn
+ ing creative session for collaging. All materials are provided and no pri
+ or experience is required. Part of the Craft Sundays series. Registration
+  for future events is available on the profile.
+END:VEVENT
+END:VCALENDAR

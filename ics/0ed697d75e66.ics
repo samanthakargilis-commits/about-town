@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0ed697d75e66@bay-events
+DTSTAMP:20261011T174932Z
+DTSTART;TZID=America/Los_Angeles:20261011T132500
+DTEND;TZID=America/Los_Angeles:20261011T180000
+SUMMARY:49ers vs Seahawks Watch Party
+LOCATION:Mayes\, 1233 Polk St SF\, CA San Francisco\, San Francisco
+URL:https://ma.to/event/49ers-vs-seahawks-watch-party-2026-10-11
+DESCRIPTION:New in your area\nhttps://ma.to/event/49ers-vs-seahawks-watch-
+ party-2026-10-11\n\nThe 49ers face the Seahawks on screen at Mayes\, with
+  live game audio and multiple projectors and TV screens. Food\, beats and
+  drinks round out the watch party\, and red and gold attire is encouraged
+ . Doors open at 12pm and the game kicks off at 1:25pm. All ages are welco
+ me. Free admission\, with reserved seating also available\; RSVP or direc
+ t message to book.
+END:VEVENT
+END:VCALENDAR

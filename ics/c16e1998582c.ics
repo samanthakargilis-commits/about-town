@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c16e1998582c@bay-events
+DTSTAMP:20261011T174931Z
+DTSTART;TZID=America/Los_Angeles:20261011T180000
+DTEND;TZID=America/Los_Angeles:20261011T200000
+SUMMARY:Who’s to Say This Isn’t a Garden
+LOCATION:The Secret Alley\, 180 Capp St San Francisco\, San Francisco
+URL:https://partiful.com/e/4Mb4FY1jgSIukeld6Zzv
+DESCRIPTION:Weird & unusual + Art\nhttps://partiful.com/e/4Mb4FY1jgSIukeld
+ 6Zzv\n\nJoin us for a night of poetry featuring poets: Emma Wood Collyn C
+ ooper Adrienne Gilliam Emily Rose Cronan Holly Juliet Zimbert We will hav
+ e an interactive art piece to engage with throughout the night. Please br
+ ing something to add to it—absurdity encouraged. Because who's to say t
+ his isn't a garden. Hope to see you there 🦞🪁
+END:VEVENT
+END:VCALENDAR
