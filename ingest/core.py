@@ -48,6 +48,8 @@ class Event:
     recurring: bool = False
     sponsored: bool = False
     ticket_url: Optional[str] = None                # tickets / RSVP link when it differs from source_url
+    lat: Optional[float] = None                     # venue map spot, for distance in the app
+    lng: Optional[float] = None
 
     @property
     def id(self) -> str:
@@ -308,7 +310,31 @@ def event_from_jsonld(node: dict, source: str, fallback_url: str = "") -> Option
         city=city,
         price=price,
         people=people,
+        lat=geo_of(loc)[0] if isinstance(loc, dict) else None,
+        lng=geo_of(loc)[1] if isinstance(loc, dict) else None,
     )
+
+
+def geo_of(*nodes) -> tuple[Optional[float], Optional[float]]:
+    """Find a latitude/longitude pair in source data (any of the usual key names,
+    one level of nesting under geo/coordinate/location), inside the Bay Area."""
+    lat_keys = ("latitude", "lat", "geo_latitude", "Latitude", "Lat")
+    lng_keys = ("longitude", "lng", "lon", "geo_longitude", "Longitude", "Lng", "Lon")
+    stack = [n for n in nodes if isinstance(n, dict)]
+    for node in list(stack):
+        for k in ("geo", "coordinate", "coordinates", "location", "Location", "venue", "geo_address_info"):
+            if isinstance(node.get(k), dict):
+                stack.append(node[k])
+    for node in stack:
+        la = next((node[k] for k in lat_keys if node.get(k) not in (None, "")), None)
+        ln = next((node[k] for k in lng_keys if node.get(k) not in (None, "")), None)
+        try:
+            la, ln = float(la), float(ln)
+        except (TypeError, ValueError):
+            continue
+        if 36.8 < la < 38.6 and -123.2 < ln < -121.3:
+            return round(la, 5), round(ln, 5)
+    return None, None
 
 
 def next_data(soup: BeautifulSoup) -> Optional[dict]:

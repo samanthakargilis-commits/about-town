@@ -1,5 +1,5 @@
 """Partiful Explore (SF). Public explore page only; private invites are invisible."""
-from ..core import Event, clean, iso, next_data, to_local
+from ..core import geo_of, Event, clean, iso, next_data, to_local
 from ..heuristics import find_dicts
 
 NAME, LABEL = "partiful", "Partiful Explore"
@@ -22,5 +22,6 @@ def fetch(f, start, end):
                          description=clean(d.get("description") or "")[:800],
                          image_url=(d.get("image") or {}).get("url") if isinstance(d.get("image"), dict) else None,
                          venue=clean(loc.get("name") if isinstance(loc, dict) else ""),
-                         city=clean(loc.get("city") if isinstance(loc, dict) else "")))
+                         city=clean(loc.get("city") if isinstance(loc, dict) else ""),
+                         lat=geo_of(loc)[0], lng=geo_of(loc)[1]))
     return out

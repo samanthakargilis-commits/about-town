@@ -28,18 +28,26 @@ OUT_OF_AREA = [
 OUT_RE = re.compile(r"\b(" + "|".join(re.escape(x) for x in OUT_OF_AREA) + r")\b", re.I)
 # Sources whose listings are SF unless they say otherwise
 SF_DEFAULT = {"funcheap", "secretsf", "citylights", "greenapple", "broadwaysf", "partiful", "dothebay",
-              "dice", "luma", "sfgirlchronicle", "eddieslist"}
+              "dice", "luma", "sfgirlchronicle", "eddieslist", "sfpl", "jccsf"}
+
+
+SF_RICHMOND = re.compile(r"\b(inner |outer |the )?richmond( district)?\b(?=.*\b(district|sf|san francisco)\b)|\b(inner|outer) richmond\b|\brichmond district\b", re.I)
+
+
+def out_of_area(text: str):
+    # the Richmond District is in SF; Richmond the city is not
+    return OUT_RE.search(SF_RICHMOND.sub(" ", text))
 
 
 def in_area(ev: dict) -> bool:
     city = (ev.get("city") or "").lower().replace(", ca", "").strip()
-    if city in IN_AREA and not OUT_RE.search(ev.get("title", "")):
+    if city in IN_AREA and not out_of_area(ev.get("title", "")):
         return True
     if city and city not in IN_AREA and OUT_RE.search(city):
         return False
     where = " ".join([ev.get("venue", ""), ev.get("address", ""), ev.get("title", ""),
                       ev.get("source_url", "").rsplit("/", 2)[-2] if ev.get("source_url") else ""])
-    if OUT_RE.search(where.replace("-", " ")):
+    if out_of_area(where.replace("-", " ")):
         # "Oakland" in an SF venue name is rare; an explicit SF/Peninsula city wins
         if not re.search(r"\b(san francisco|palo alto|menlo park|redwood city|san mateo|mountain view)\b", where, re.I):
             return False

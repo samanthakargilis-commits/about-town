@@ -19,7 +19,7 @@ from urllib.parse import urlparse
 
 import requests
 
-from . import ai
+from . import ai, geocode
 from .area import in_area
 from .core import (CACHE_DIR, ROOT, BudgetExceeded, Fetcher, clean, html_to_text, iso, jsonld_events,
                    now, og, short_hash, to_local)
@@ -27,9 +27,9 @@ from .ics import write_ics
 from .score import Scorer, best_sub_event, norm
 
 # Working sources first (see the shortlist test); the rest are best effort.
-ADAPTERS = ["funcheap", "secretsf", "luma", "citylights", "greenapple", "keplers", "broadwaysf",
+ADAPTERS = ["funcheap", "secretsf", "luma", "sfpl", "jccsf", "citylights", "greenapple", "keplers", "broadwaysf",
             "dothebay", "eventbrite", "meetup", "dice", "partiful", "paloalto", "substack"]
-LISTING_PRIORITY = {"broadwaysf": 0, "citylights": 0, "greenapple": 0, "keplers": 0, "luma": 1, "partiful": 1,
+LISTING_PRIORITY = {"sfpl": 0, "jccsf": 0, "broadwaysf": 0, "citylights": 0, "greenapple": 0, "keplers": 0, "luma": 1, "partiful": 1,
                     "eventbrite": 1, "meetup": 1, "dice": 1, "dothebay": 2, "funcheap": 2, "paloalto": 2,
                     "secretsf": 5, "sfgirlchronicle": 5, "eddieslist": 5}
 STOP = {"the", "a", "an", "at", "in", "with", "and", "presents", "present", "sf", "san", "francisco", "free", "of", "w"}
@@ -75,7 +75,7 @@ def merge(events):
                 kept.append(ev)
                 continue
             twin["also_on"].append({"source": ev["source"], "url": ev["source_url"]})
-            for f in ("description", "image_url", "venue", "address", "price", "ticket_url", "end"):
+            for f in ("description", "image_url", "venue", "address", "price", "ticket_url", "end", "lat", "lng"):
                 if not twin.get(f) and ev.get(f):
                     twin[f] = ev[f]
             if len(ev.get("description") or "") > len(twin.get("description") or ""):
@@ -166,6 +166,8 @@ def main(argv=None):
     ap.add_argument("--previous", help="previous events.json (URL or path) for first_seen")
     ap.add_argument("--enrich", type=int, default=90, help="max detail pages to read per run")
     ap.add_argument("--out", default=str(OUT / "events.json"))
+    ap.add_argument("--geocode", type=int, default=350, help="max new venue lookups per run")
+    ap.add_argument("--no-geocode", action="store_true")
     args = ap.parse_args(argv)
 
     profile = json.loads((ROOT / "data" / "profile.json").read_text())
@@ -223,6 +225,9 @@ def main(argv=None):
     events = [e for e in events if e["_pre"] > -99]
     events.sort(key=lambda e: -e["_pre"])
     enrich(events, Fetcher(delay=1.0, max_requests=args.enrich), args.enrich)
+
+    if not args.no_geocode:
+        print("map spots:", geocode.fill(events, max_lookups=args.geocode), flush=True)
 
     ai_tags = ai.tag_events(events, profile) if ai.enabled() else {}
     shutil.rmtree(OUT / "ics", ignore_errors=True)

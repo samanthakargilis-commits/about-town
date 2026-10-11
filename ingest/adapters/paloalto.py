@@ -3,7 +3,7 @@ carries the listings as JSON, which this reads."""
 import json
 import re
 
-from ..core import Event, clean, html_to_text, iso, to_local
+from ..core import geo_of, Event, clean, html_to_text, iso, to_local
 
 NAME, LABEL = "paloalto", "Destination Palo Alto"
 SCRIPT = "https://portal.cityspark.com/PortalScripts/DestinationPA"
@@ -59,5 +59,6 @@ def fetch(f, start, end):
             image_url=(o.get("LargeImg") or o.get("MediumImg") or o.get("SmallImg")),
             price="free" if o.get("Free") else clean(str(pick(o, "PriceText", "Price") or "")),
             sponsored=bool(o.get("IsPromotion")),
+            lat=geo_of(o)[0], lng=geo_of(o)[1],
         ))
     return out

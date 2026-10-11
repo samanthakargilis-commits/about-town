@@ -1,7 +1,7 @@
 """Meetup: public event search for recurring groups that fit a weekly habit."""
 from urllib.parse import quote
 
-from ..core import Event, clean, event_from_jsonld, iso, jsonld_events, next_data, to_local
+from ..core import geo_of, Event, clean, event_from_jsonld, iso, jsonld_events, next_data, to_local
 from ..heuristics import find_dicts
 
 NAME, LABEL = "meetup", "Meetup"
@@ -35,6 +35,7 @@ def fetch(f, start, end):
                 recurring=bool(d.get("series")), image_url=(d.get("featuredEventPhoto") or {}).get("highResUrl")
                 if isinstance(d.get("featuredEventPhoto"), dict) else None,
                 people=[clean(group.get("name"))] if isinstance(group, dict) and group.get("name") else [],
+                lat=geo_of(venue)[0], lng=geo_of(venue)[1],
             ))
         for e in found:
             if e.source_url not in seen:
