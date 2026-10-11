@@ -180,6 +180,18 @@ class FakeFetcher:
 
 
 class NewSources(unittest.TestCase):
+    def test_comedy_clubs(self):
+        from ingest.adapters import comedyclubs
+        show = """<script type="application/ld+json">[{"@context":"https://schema.org","@type":"ComedyEvent","name":"Gus Heagerty",
+          "startDate":"2026-10-20T19:30:00-07:00","url":"https://www.ticketmaster.com/gus-heagerty/event/1C00",
+          "location":{"@type":"Place","name":"Cobb's Comedy Club","address":{"@type":"PostalAddress","streetAddress":"915 Columbus Avenue","addressLocality":"San Francisco"}}}]</script>"""
+        f = FakeFetcher({"https://www.cobbscomedy.com/": show, "https://www.punchlinecomedyclub.com/": "<p></p>"})
+        evs = comedyclubs.fetch(f, dt.datetime(2026, 10, 10, tzinfo=TZ), dt.datetime(2026, 12, 10, tzinfo=TZ))
+        self.assertEqual([(e.title, e.venue) for e in evs], [("Gus Heagerty", "Cobb's Comedy Club")])
+        self.assertIn("comedy", evs[0].tags)
+        r = Scoring.s.score(evs[0].to_dict())
+        self.assertEqual(r["followed"], "Gus Heagerty")
+
     def test_partiful_offer(self):
         from ingest.adapters import partiful
         page = lambda avail, price=20: BeautifulSoup('<script type="application/ld+json">{"@type":"Event","name":"x","startDate":"2026-10-11T21:00:00.000Z",'
