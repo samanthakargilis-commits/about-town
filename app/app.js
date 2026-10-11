@@ -152,11 +152,20 @@ function runText(ev) {
   // opening day: show the whole run; once it's on, just when it closes
   return s >= today0() ? `${md(s)} – ${md(e)}` : `through ${md(e)}`;
 }
+const FAR_RUN_MILES = 12;
 function displayDate(ev) {
   // a run that started already shows up today
   const s = new Date(ev.start);
   const t = today0();
-  return s < t && ev.end && new Date(ev.end) >= t ? t : s;
+  let d = s < t && ev.end && new Date(ev.end) >= t ? t : s;
+  // a long run out of town (Nightfall at Filoli) is a weekend outing: list it from the Friday
+  const e = ev.end && new Date(ev.end);
+  if (e && e - s > 36 * 3600e3 && (distOf(ev) ?? 0) > FAR_RUN_MILES) {
+    let f = d;
+    for (let i = 0; i < 7 && !['Fri', 'Sat', 'Sun'].includes(parts(f).weekday); i++) f = new Date(f.getTime() + 864e5);
+    if (f <= e) d = f;
+  }
+  return d;
 }
 const linkOf = (ev) => ev.ticket_url || ev.source_url;
 const sourceLabel = (id) => (data.sources.find((s) => s.name === id) || {}).label || id;

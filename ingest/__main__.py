@@ -108,8 +108,8 @@ def fold_runs(events):
             overlap = o["start"][:10] <= r["end"][:10] and (o.get("end") or o["start"])[:10] >= r["start"][:10]
             if overlap and rt and ot and len(rt & ot) / len(rt | ot) >= 0.6:
                 o.setdefault("also_on", []).append({"source": r["source"], "url": r["source_url"]})
+                o["tags"] = sorted(set(o.get("tags") or []) | set(r.get("tags") or []))   # featured by the guide
                 drop.add(r["id"])
-                break
     return [e for e in events if e["id"] not in drop]
 
 
