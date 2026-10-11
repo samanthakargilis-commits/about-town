@@ -43,9 +43,16 @@ def from_page(soup, url):
         # at the Castro); free only counts when the page says so
         if e.price == "free" and not re.search(r"\bfree\b", f"{e.title} {e.description}", re.I):
             e.price = ""
-        town = TOWN.search(" ".join([e.venue or "", e.address or ""]))
-        if town:
-            e.city = town.group(1).title()
+        # the address's town is the listing page's city, not the event's: "229 Water St.,
+        # Petaluma" comes as "229 Water St., Petaluma San Francisco"
+        listing_city = e.city
+        if listing_city and (e.address or "").endswith(listing_city) and e.address != listing_city:
+            e.address = e.address[: -len(listing_city)].strip(" ,")
+        elif e.address == listing_city:
+            e.address = ""
+        towns = TOWN.findall(" ".join([e.venue or "", e.address or ""]))
+        if towns:
+            e.city = towns[-1].title()
         offers = node.get("offers")
         offers = offers if isinstance(offers, list) else [offers] if isinstance(offers, dict) else []
         e.sold_out = bool(offers) and all("SoldOut" in str(o.get("availability", "")) for o in offers if isinstance(o, dict))

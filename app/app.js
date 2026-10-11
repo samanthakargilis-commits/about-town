@@ -64,7 +64,9 @@ const blank = () => ({
   home: null,          // { label, lat, lng } set on this phone
   where: 'home',
   homeTipOff: false,
+  swipePeeks: 0,         // times the first row has shown how to swipe it away
   swipeTipOff: false,
+  sourceAsks: [],      // { url, note, at } sites asked for on the You tab
 });
 let S = load();
 
@@ -205,6 +207,11 @@ function distText(mi) {
   return mi < 10 ? `${mi.toFixed(1)} mi` : `${Math.round(mi)} mi`;
 }
 const shortDist = (mi) => (mi < 0.95 ? `${Math.max(2, Math.round(mi * 20))} min walk` : mi < 10 ? `${mi.toFixed(1)} mi` : `${Math.round(mi)} mi`);
+// close: a walk (about 20 minutes); medium: a short ride across town; far: over a bridge or out of town
+const CLOSE_MILES = 1, MEDIUM_MILES = 5;
+const distBand = (mi) => (mi <= CLOSE_MILES ? 'close' : mi <= MEDIUM_MILES ? 'medium' : 'far');
+// only the town is known (a Petaluma beer garden Nominatim can't find): the miles are to the middle of town
+const about = (ev) => (ev.near_town ? '~' : '');
 const fromWhere = () => (S.where === 'near' && nearPos ? 'from you' : 'from home');
 const TRIP_MILES = 90;   // Friday evening and weekend day trips (Sonoma, the East Bay), and shows by people you follow
 const slotMemo = new Map();
@@ -382,8 +389,14 @@ function distPenalty(ev) {
   return -Math.min(5, Math.max(0, Math.min(mi, 3) - 1.5) * 0.6 + Math.max(0, mi - 3) * 1.0);
 }
 
+// something on for more than four days (a pumpkin patch all autumn) can be any day, so it
+// yields to the things that are only on this one, unless nothing else is a good match
+const LONG_RUN_DAYS = 4, LONG_RUN_PENALTY = 3;
+const runDays = (ev) => (ev.end ? (new Date(ev.end) - new Date(ev.start)) / 864e5 : 0);
+const longRun = (ev) => runDays(ev) > LONG_RUN_DAYS;
+
 function scoreOf(ev) {
-  let s = (ev.score || 0) + distPenalty(ev) + (sunEscape(ev) ? 1.5 : 0);
+  let s = (ev.score || 0) + distPenalty(ev) + (sunEscape(ev) ? 1.5 : 0) - (longRun(ev) && !followInfo(ev) ? LONG_RUN_PENALTY : 0);
   for (const t of learnTags(ev)) s += Math.max(-3, Math.min(3, S.tagW[t] || 0));
   for (const t of ev.tags || []) if (S.interests[t] !== undefined) s += INTEREST_LEVELS[S.interests[t]];
   const f = followInfo(ev);
@@ -535,7 +548,7 @@ function evRow(ev, { showDay = false } = {}) {
   if (run) labels.push(`<span>${esc(run)}</span>`);
   const star = starLine(ev);
   return `<article class="ev" data-id="${esc(ev.id)}">
-    <div class="side"><div class="chip" style="background:var(--${c});color:var(--${c}-ink)">${t}</div>${mi != null ? `<div class="mi ${mi < 0.95 ? 'walk' : ''}">${esc(shortDist(mi))}</div>` : ''}</div>
+    <div class="side"><div class="chip" style="background:var(--${c});color:var(--${c}-ink)">${t}</div>${mi != null ? `<div class="mi ${distBand(mi)}">${about(ev)}${esc(shortDist(mi))}</div>` : ''}</div>
     <div class="body" data-open>
       ${showDay ? `<div class="day">${esc(fmt(displayDate(ev), { weekday: 'short', month: 'short', day: 'numeric' }))}</div>` : ''}
       <h3>${esc(ev.title)}</h3>
@@ -596,7 +609,7 @@ function openSheet(ev) {
     <div data-id="${esc(ev.id)}">
       <div class="when">${esc(whenFull(ev))}${runText(ev) ? ` · ${esc(runText(ev))}` : ''}</div>
       <h2>${esc(ev.title)}</h2>
-      <div class="where">${esc(where)}${distText(distOf(ev)) ? ` · <b>${esc(distText(distOf(ev)))} ${fromWhere()}</b>` : ''}${ev.price ? ` · ${esc(ev.price === 'free' ? 'Free' : ev.price)}` : ''}</div>
+      <div class="where">${esc(where)}${distText(distOf(ev)) ? ` · <b class="dist ${distBand(distOf(ev))}">${about(ev)}${esc(distText(distOf(ev)))} ${fromWhere()}</b>` : ''}${ev.price ? ` · ${esc(ev.price === 'free' ? 'Free' : ev.price)}` : ''}</div>
       ${star ? `<div class="star">${star}<a href="#" data-act="block">Not this person</a></div>` : ''}
       ${sunEscape(ev) ? `<div class="sun">${esc(sunLine(ev))}</div>` : ''}
       <div class="acts">
@@ -736,7 +749,6 @@ function tipHTML(n) {
   if (!S.home && S.where === 'home' && !S.homeTipOff) {
     return `<p class="hint">Miles are from the middle of ${esc(homePos().label)}. <a href="#" data-tip="home">Add your street address</a> for exact ones, or <a href="#" data-tip="nohome">skip</a>.</p>`;
   }
-  if (n && !S.swipeTipOff) return '<p class="hint">Swipe left on anything that’s not for you. Your picks learn from it.</p>';
   return '';
 }
 
@@ -744,7 +756,9 @@ function dayList(list, key) {
   const picked = list.filter((ev) => S.status[ev.id] === 'added' || S.status[ev.id] === 'maybe');
   const rest = list.filter((ev) => !picked.includes(ev));
   const all = expanded.has(key);
-  const byTime = (a, b) => (a.all_day - b.all_day) || new Date(a.start) - new Date(b.start);
+  // one-day things by start time; all-day things and runs (whose start may be weeks ago) after them
+  const later = (ev) => (ev.all_day || runDays(ev) > 1.5 ? 1 : 0);
+  const byTime = (a, b) => (later(a) - later(b)) || (later(a) ? personalScore(b) - personalScore(a) : new Date(a.start) - new Date(b.start));
   const cut = Math.max(0, DAY_SHOW - picked.length);
   // the first few stay put when the list opens up; the extra ones follow them
   const shown = [...[...picked, ...rest.slice(0, cut)].sort(byTime), ...(all ? rest.slice(cut).sort(byTime) : [])];
@@ -972,6 +986,20 @@ function renderPicks(v) {
     ${maybe.length ? `<div class="dayhead"><h2>Maybe</h2><small>${maybe.length}</small></div>${maybe.map((ev) => evRow(ev, { showDay: true })).join('')}` : ''}`;
 }
 
+const REPO = 'samanthakargilis-commits/bay-events';
+const hostOf = (u) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return u; } };
+// a site asked for here: waiting for the next update, reading fine, or not readable
+function askStatus(a) {
+  const got = data.sources.find((s) => s.added && (s.url === a.url || hostOf(s.url) === hostOf(a.url)));
+  if (!got) return { cls: 'wait', text: 'Sent, waiting for the next update' };
+  if (got.ok) return { cls: 'good', text: `${got.count} event${got.count === 1 ? '' : 's'}` };
+  return { cls: 'bad', text: "Can't read it yet" };
+}
+function sendSourceAsk(url, note) {
+  const body = `Link: ${url}\n\n${note ? `Note: ${note}\n\n` : ''}(Sent from the About Town app's You tab)`;
+  window.open(`https://github.com/${REPO}/issues/new?title=${encodeURIComponent(`Add source: ${hostOf(url)}`)}&body=${encodeURIComponent(body)}`, '_blank');
+}
+
 function renderMe(v) {
   const ints = profile ? Object.entries(profile.interests) : [];
   const lv = (k) => (S.interests[k] === undefined ? 1 : S.interests[k]);
@@ -1011,6 +1039,15 @@ function renderMe(v) {
   </div>` : ''}
   <div class="section"><h2>Backup</h2><p class="sub">Your choices live on this phone. Save a backup now and then.</p>
     <div class="row-btns"><button class="btn primary" data-export>Export backup</button><label class="btn file-btn">Restore<input type="file" accept=".json" id="restoreFile"></label></div>
+  </div>
+  <div class="section"><h2>Add a source</h2>
+    <p class="sub">Paste a venue's or calendar's events page. It opens a short GitHub note for you to send; the next update reads the site and its events join your list.</p>
+    <form class="field col" id="addSource"><input id="sourceUrl" type="url" inputmode="url" placeholder="https://…/events" autocomplete="off" required>
+      <input id="sourceNote" placeholder="What's good there? (optional)" autocomplete="off"><button class="btn primary">Send</button></form>
+    ${(S.sourceAsks || []).length ? `<div style="margin-top:10px">${S.sourceAsks.map((a, i) => {
+      const st = askStatus(a);
+      return `<div class="src"><span>${esc(hostOf(a.url))}</span><span class="${st.cls}">${esc(st.text)}</span><button class="x-btn" data-rmask="${i}" aria-label="Remove">✕</button></div>`;
+    }).join('')}</div>` : ''}
   </div>
   <div class="section"><h2>Sources</h2><p class="sub">${gen ? `Updated ${ago < 1 ? 'just now' : ago < 24 ? `${ago}h ago` : `${Math.round(ago / 24)}d ago`}` : 'Not updated yet'} · ${data.events.length} events${data.ai ? ' · AI tagging on' : ''}</p>
     ${data.sources.map((s) => `<div class="src"><span>${esc(s.label)}</span><span class="${s.ok ? 'good' : 'bad'}">${s.ok ? s.count : (s.error || '').includes('zero') ? '0 events' : 'not working'}</span></div>`).join('')}
@@ -1119,6 +1156,25 @@ function render() {
   const v = $('#view');
   ({ cal: renderCal, tonight: renderTonight, new: renderNew, picks: renderPicks, me: renderMe })[tab](v);
   document.querySelectorAll('.tab').forEach((t) => t.classList.toggle('on', t.dataset.tab === tab));
+  swipePeek(v);
+}
+
+// New here: the first row slides over once to show "Not for me" under it, with a small
+// callout. It plays on the first three opens and stops for good after the first real swipe.
+let peeked = false;
+function swipePeek(v) {
+  if (peeked || S.swipeTipOff || (S.swipePeeks || 0) >= 3) return;
+  const row = v.querySelector('.ev');
+  if (!row) return;
+  peeked = true;
+  S.swipePeeks = (S.swipePeeks || 0) + 1; save();
+  const tip = document.createElement('div');
+  tip.className = 'swipe-tip';
+  tip.textContent = 'Swipe left to skip';
+  row.before(tip);
+  setTimeout(() => row.classList.add('peek'), 700);
+  setTimeout(() => { row.classList.remove('peek'); tip.classList.add('gone'); }, 2600);
+  setTimeout(() => tip.remove(), 3100);
 }
 
 function bind() {
@@ -1178,6 +1234,7 @@ function bind() {
     const no = e.target.closest('[data-ig-no]'); if (no) { S.igRejected.push(no.dataset.igNo); save(); return render(); }
     const ub = e.target.closest('[data-unblock]'); if (ub) { e.preventDefault(); S.blockedPeople = S.blockedPeople.filter((p) => p !== ub.dataset.unblock); save(); buildFollowIndex(); return render(); }
     const uh = e.target.closest('[data-unhide]'); if (uh) { e.preventDefault(); S.hiddenTags = S.hiddenTags.filter((t) => t !== uh.dataset.unhide); save(); return render(); }
+    const ra = e.target.closest('[data-rmask]'); if (ra) { S.sourceAsks.splice(Number(ra.dataset.rmask), 1); save(); return render(); }
     if (e.target.closest('[data-export]')) return exportBackup();
     onEventClick(e);
   });
@@ -1186,6 +1243,16 @@ function bind() {
     if (e.target.id === 'addPerson') {
       const name = $('#personName').value.trim();
       if (name) { S.people.push(name); save(); buildFollowIndex(); render(); toast(`Following ${name}`); }
+    }
+    if (e.target.id === 'addSource') {
+      let url = $('#sourceUrl').value.trim();
+      if (!/^https?:\/\//i.test(url)) url = `https://${url}`;
+      if (/instagram\.com|reddit\.com|facebook\.com/i.test(url)) return toast("That site doesn't allow reading its events");
+      const note = $('#sourceNote').value.trim();
+      sendSourceAsk(url, note);
+      S.sourceAsks = [...(S.sourceAsks || []).filter((a) => a.url !== url), { url, note, at: Date.now() }];
+      save(); render(); toast('Sent. Its events show up after the next update');
+      return;
     }
     if (e.target.id === 'homeForm') {
       const addr = $('#homeAddr').value.trim();

@@ -19,7 +19,7 @@ from urllib.parse import urlparse
 
 import requests
 
-from . import ai, geocode, icons, place, weather
+from . import added, ai, geocode, icons, place, weather
 from .area import keep
 from .core import (CACHE_DIR, ROOT, BudgetExceeded, Fetcher, clean, html_to_text, iso, jsonld_events,
                    now, og, short_hash, to_local)
@@ -215,6 +215,7 @@ def main(argv=None):
     ap.add_argument("--out", default=str(OUT / "events.json"))
     ap.add_argument("--geocode", type=int, default=350, help="max new venue lookups per run")
     ap.add_argument("--no-geocode", action="store_true")
+    ap.add_argument("--requests", default="requests.json", help="the repo's open issues (sources added in the app)")
     ap.add_argument("--locate", type=int, default=400, help="max event pages to read for an address per run")
     args = ap.parse_args(argv)
 
@@ -247,6 +248,26 @@ def main(argv=None):
         status["seconds"] = round(time.time() - t0, 1)
         health.append(status)
         print(f"{mod.LABEL:24} {status['count']:4} events  {fetcher.count:3} requests  "
+              f"{'OK' if status['ok'] else 'FAIL: ' + str(status['error'])}", flush=True)
+
+    # sites added from the app, each read on its own so one that fails doesn't stop the rest
+    for req in ([] if args.only else added.load(args.requests)):
+        fetcher = Fetcher(max_requests=added.MAX_REQUESTS)
+        t0 = time.time()
+        status = {"name": req["name"], "label": req["host"], "count": 0, "ok": True, "error": None,
+                  "added": True, "url": req["url"], "issue": req["issue"]}
+        try:
+            events = added.fetch(fetcher, req, start, end)
+            status["count"] = len(events)
+            raw += [e.to_dict() for e in events]
+            if not events:
+                status["ok"], status["error"] = False, "returned zero events"
+        except Exception as exc:
+            status["ok"], status["error"] = False, f"{type(exc).__name__}: {exc}"[:300]
+        status["requests"] = fetcher.count
+        status["seconds"] = round(time.time() - t0, 1)
+        health.append(status)
+        print(f"{'+ ' + req['host']:24} {status['count']:4} events  {fetcher.count:3} requests  "
               f"{'OK' if status['ok'] else 'FAIL: ' + str(status['error'])}", flush=True)
 
     # window + area, and nothing you can't get into
