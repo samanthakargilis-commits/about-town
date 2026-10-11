@@ -206,3 +206,39 @@ class NewSources(unittest.TestCase):
         self.assertEqual(geo_of({"lat": 40.7, "lng": -74.0}), (None, None))       # not the Bay Area
         self.assertTrue(area.in_area({"city": "San Francisco", "title": "Book club, Richmond District edition"}))
         self.assertFalse(area.in_area({"city": "", "title": "Richmond Art Walk", "source": "funcheap"}))
+
+
+class Places(unittest.TestCase):
+    def test_locate_reads_event_pages(self):
+        import tempfile
+        from ingest import geocode, place
+
+        def page(loc):
+            node = {"@context": "https://schema.org", "@type": "Event", "name": "x", "startDate": "2026-10-10T19:00", "location": loc}
+            return f'<script type="application/ld+json">{json.dumps(node)}</script>'
+        pages = {
+            "https://sf.funcheap.com/ghost/": page({"@type": "Place", "name": "Magnolia's Brewery (IN FRONT)", "address": "1398 Haight Street, San Francisco"}),
+            "https://sf.funcheap.com/mix/": page({"@type": "Place", "name": "Orinda Theatre Square", "address": "2 Orinda Theatre Sq, Orinda, CA 94563"}),
+            "https://partiful.com/e/abc": page({"@type": "Place", "name": "Thee Stork Club", "address": {
+                "@type": "PostalAddress", "streetAddress": "2330 Telegraph Ave", "addressLocality": "Oakland"}}),
+        }
+        evs = [{"source": "funcheap", "title": "Ghost Hunt (Haight-Ashbury)", "source_url": "https://sf.funcheap.com/ghost/", "venue": ""},
+               {"source": "funcheap", "title": "Art of Mixology", "source_url": "https://sf.funcheap.com/mix/", "venue": ""},
+               {"source": "partiful", "title": "FUN FUN CLUB", "source_url": "https://partiful.com/e/abc", "venue": ""}]
+        with tempfile.TemporaryDirectory() as d:
+            place.CACHE = pathlib.Path(d) / "places.json"
+            stats = place.locate(evs, FakeFetcher(pages))
+            self.assertEqual(stats["placed"], 3)
+            # a second run reads nothing new
+            self.assertEqual(place.locate(evs, FakeFetcher({}))["pages_read"], 0)
+        self.assertEqual(evs[0]["address"], "1398 Haight Street, San Francisco")
+        self.assertEqual(evs[0]["city"], "San Francisco")
+        self.assertEqual(evs[1]["city"], "Orinda")
+        self.assertEqual(evs[2]["city"], "Oakland")
+        self.assertEqual([area.in_area(e) for e in evs], [True, False, False])
+        self.assertEqual(geocode.queries(evs[0])[0], "1398 Haight Street, San Francisco")
+        self.assertIn("Haight-Ashbury, San Francisco",
+                      geocode.queries({"title": "Ghost Hunt (Haight-Ashbury)", "venue": ""}))
+        self.assertEqual(geocode.queries({"title": "Comedy (7p + 9p)", "venue": ""}), [])
+        self.assertFalse(geocode.fresh(None))
+        self.assertTrue(geocode.fresh([37.7, -122.4]))

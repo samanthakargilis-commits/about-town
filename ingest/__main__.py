@@ -19,7 +19,7 @@ from urllib.parse import urlparse
 
 import requests
 
-from . import ai, geocode
+from . import ai, geocode, place
 from .area import in_area
 from .core import (CACHE_DIR, ROOT, BudgetExceeded, Fetcher, clean, html_to_text, iso, jsonld_events,
                    now, og, short_hash, to_local)
@@ -168,6 +168,7 @@ def main(argv=None):
     ap.add_argument("--out", default=str(OUT / "events.json"))
     ap.add_argument("--geocode", type=int, default=350, help="max new venue lookups per run")
     ap.add_argument("--no-geocode", action="store_true")
+    ap.add_argument("--locate", type=int, default=400, help="max event pages to read for an address per run")
     args = ap.parse_args(argv)
 
     profile = json.loads((ROOT / "data" / "profile.json").read_text())
@@ -216,6 +217,11 @@ def main(argv=None):
 
     events = collapse_recurring(merge(events))
     print(f"after merging duplicates: {len(events)}")
+
+    # read addresses off event pages for listings that lack them, then re-check the area
+    print("places:", place.locate(events, Fetcher(delay=1.0, max_requests=args.locate)), flush=True)
+    events = [e for e in events if in_area(e)]
+    print(f"in area once placed: {len(events)}")
 
     # first pass score, enrich the most promising, second pass
     for ev in events:

@@ -62,6 +62,8 @@ const blank = () => ({
   decidedAt: {},
   home: null,          // { label, lat, lng } set on this phone
   where: 'home',
+  homeTipOff: false,
+  swipeTipOff: false,
 });
 let S = load();
 
@@ -77,18 +79,49 @@ function save() {
 
 const $ = (s, el = document) => el.querySelector(s);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const fmt = (d, o) => new Intl.DateTimeFormat('en-US', { timeZone: TZ, ...o }).format(d);
-const parts = (d) => Object.fromEntries(new Intl.DateTimeFormat('en-US', { timeZone: TZ, year: 'numeric', month: 'numeric', day: 'numeric', weekday: 'short', hour: 'numeric', hourCycle: 'h23' }).formatToParts(d).map((p) => [p.type, p.value]));
-const dayKey = (d) => { const p = parts(d); return `${p.year}-${String(p.month).padStart(2, '0')}-${String(p.day).padStart(2, '0')}`; };
+// Intl formatters are slow to build, so each one is made once
+const fmtCache = new Map();
+const formatter = (o) => {
+  const k = JSON.stringify(o);
+  if (!fmtCache.has(k)) fmtCache.set(k, new Intl.DateTimeFormat('en-US', { timeZone: TZ, ...o }));
+  return fmtCache.get(k);
+};
+const fmt = (d, o) => formatter(o).format(d);
+const PARTS = { year: 'numeric', month: 'numeric', day: 'numeric', weekday: 'short', hour: 'numeric', hourCycle: 'h23' };
+const parts = (d) => Object.fromEntries(formatter(PARTS).formatToParts(d).map((p) => [p.type, p.value]));
+const keyMemo = new Map();
+const dayKey = (d) => {
+  const t = d.getTime();
+  let k = keyMemo.get(t);
+  if (!k) {
+    const p = parts(d);
+    k = `${p.year}-${String(p.month).padStart(2, '0')}-${String(p.day).padStart(2, '0')}`;
+    if (keyMemo.size > 5000) keyMemo.clear();
+    keyMemo.set(t, k);
+  }
+  return k;
+};
 const norm = (s) => (s || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[.'’]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
-const today0 = () => { const k = dayKey(new Date()); return new Date(`${k}T00:00:00${offsetFor(k)}`); };
+let todayMemo = { at: 0, d: null };
+const today0 = () => {
+  if (Date.now() - todayMemo.at > 60e3) {
+    const k = dayKey(new Date());
+    todayMemo = { at: Date.now(), d: new Date(`${k}T00:00:00${offsetFor(k)}`) };
+  }
+  return todayMemo.d;
+};
 const atNoon = (k) => new Date(`${k}T12:00:00${offsetFor(k)}`);
 const reEsc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
+const offsetMemo = new Map();
 function offsetFor(k) {
+  if (!offsetMemo.has(k)) offsetMemo.set(k, offsetOf(k));
+  return offsetMemo.get(k);
+}
+function offsetOf(k) {
   // Pacific offset for a local date (handles DST)
   const d = new Date(`${k}T12:00:00Z`);
-  const tz = new Intl.DateTimeFormat('en-US', { timeZone: TZ, timeZoneName: 'shortOffset' }).formatToParts(d).find((p) => p.type === 'timeZoneName').value;
+  const tz = formatter({ timeZoneName: 'shortOffset' }).formatToParts(d).find((p) => p.type === 'timeZoneName').value;
   const m = tz.match(/GMT([+-]\d+)/);
   const h = m ? parseInt(m[1], 10) : -8;
   return `${h < 0 ? '-' : '+'}${String(Math.abs(h)).padStart(2, '0')}:00`;
@@ -141,6 +174,8 @@ function distText(mi) {
   if (mi < 0.95) return `${mi.toFixed(1)} mi · ${Math.max(2, Math.round(mi * 20))} min walk`;
   return mi < 10 ? `${mi.toFixed(1)} mi` : `${Math.round(mi)} mi`;
 }
+const shortDist = (mi) => (mi < 0.95 ? `${Math.max(2, Math.round(mi * 20))} min walk` : mi < 10 ? `${mi.toFixed(1)} mi` : `${Math.round(mi)} mi`);
+const fromWhere = () => (S.where === 'near' && nearPos ? 'from you' : 'from home');
 function inRange(ev) {
   const d = distOf(ev);
   if (d != null) return d <= (RADIUS[S.where] || 15);
@@ -190,28 +225,52 @@ function buildFollowIndex() {
   }
   const blocked = new Set(S.blockedPeople.map(norm));
   followIndex = list.filter((f) => !blocked.has(norm(f.name)))
-    .map((f) => ({ ...f, re: new RegExp(`(?<![a-z0-9])${reEsc(norm(f.name))}(?![a-z0-9])`) }));
+    .map((f, order) => ({ ...f, order, re: new RegExp(`(?<![a-z0-9])${reEsc(norm(f.name))}(?![a-z0-9])`) }));
   // "John Mulaney" in a listing matches the handle @johnmulaney
   followIndex.joined = new Set(handles.map((h) => h.replace(/[^a-z]/g, '')).filter((x) => x.length >= 8));
   followIndex.raw = new Set(handles);
   followIndex.bare = handles.map((h) => [h, h.replace(/[^a-z]/g, '')]).filter(([, b]) => b.length >= 5);
   followIndex.blocked = blocked;
+  // look names up by their first word, so each event only tests the few names it could hold
+  followIndex.byFirst = new Map();
+  for (const f of followIndex) {
+    const k = norm(f.name).split(' ')[0];
+    if (!followIndex.byFirst.has(k)) followIndex.byFirst.set(k, []);
+    followIndex.byFirst.get(k).push(f);
+  }
+  followMemo = new Map();
+  scoreMemo = new Map();
 }
+let followMemo = new Map();   // event id -> followInfo answer (reset when the follow list changes)
+let scoreMemo = new Map();    // event id -> personalScore (reset on every render)
 
 const isShow = (ev) => ['comedy', 'theatre', 'musical_theatre', 'singing'].some((t) => (ev.tags || []).includes(t)) || SHOW.test(ev.title);
 const namesIn = (text) => [...new Set(text.match(/\b[A-Z][a-zA-Z'’-]+(?:\s+[A-Z][a-zA-Z'’-]+){1,2}\b/g) || [])];
 
 function followInfo(ev) {
   if (!followIndex) buildFollowIndex();
+  if (followMemo.has(ev.id)) return followMemo.get(ev.id);
+  const f = findFollow(ev);
+  followMemo.set(ev.id, f);
+  return f;
+}
+
+function findFollow(ev) {
   if (ev.followed && !followIndex.blocked.has(norm(ev.followed))) {
     return { name: ev.followed, kind: ev.followed_kind === 'performer' ? 'performer' : 'author' };
   }
   const text = norm(`${ev.title} ${ev.description} ${(ev.people || []).join(' ')}`);
   const show = isShow(ev);
-  for (const f of followIndex) {
-    if (f.kind === 'instagram' && !show) continue;   // friends rarely headline; performers do
-    if (f.re.test(text)) return f;
+  const words = new Set(text.split(' '));
+  let best = null, bestAt = Infinity;
+  for (const w of words) {
+    for (const f of followIndex.byFirst.get(w) || []) {
+      if (f.kind === 'instagram' && !show) continue;   // friends rarely headline; performers do
+      const at = f.order;
+      if (at < bestAt && f.re.test(text)) { best = f; bestAt = at; }
+    }
   }
+  if (best) return best;
   if (!show) return null;
   const raw = `${ev.title} ${ev.description}`;
   for (const m of raw.matchAll(/@([A-Za-z0-9._]{3,30})/g)) if (followIndex.raw.has(m[1].toLowerCase())) return { name: '@' + m[1], kind: 'instagram' };
@@ -259,6 +318,12 @@ function timeTags(ev) {
 const learnTags = (ev) => [...(ev.tags || []), ...timeTags(ev), `src:${ev.source}`];
 
 function personalScore(ev) {
+  let s = scoreMemo.get(ev.id);
+  if (s === undefined) { s = scoreOf(ev); scoreMemo.set(ev.id, s); }
+  return s;
+}
+
+function scoreOf(ev) {
   let s = ev.score || 0;
   for (const t of learnTags(ev)) s += Math.max(-3, Math.min(3, S.tagW[t] || 0));
   for (const t of ev.tags || []) if (S.interests[t] !== undefined) s += INTEREST_LEVELS[S.interests[t]];
@@ -362,10 +427,9 @@ function evRow(ev, { showDay = false } = {}) {
   const st = S.status[ev.id];
   const c = colorOf(ev);
   const t = ev.all_day ? 'All<small>DAY</small>' : esc(clock(ev)).replace(/ (AM|PM)/, '<small>$1</small>');
-  const dist = distText(distOf(ev));
+  const mi = distOf(ev);
   const meta = [
     esc(ev.venue || (ev.city && !/san francisco/i.test(ev.city) ? ev.city : '')),
-    dist ? `<span class="dist">${esc(dist)}</span>` : '',
     ev.price ? esc(ev.price === 'free' ? 'Free' : ev.price) : '',
   ].filter(Boolean).join(' · ');
   const labels = (ev.tags || []).filter((x) => SHORT[x]).slice(0, 2)
@@ -375,7 +439,7 @@ function evRow(ev, { showDay = false } = {}) {
   if (run) labels.push(`<span>${esc(run)}</span>`);
   const star = starLine(ev);
   return `<article class="ev" data-id="${esc(ev.id)}">
-    <div class="chip" style="background:var(--${c});color:var(--${c}-ink)">${t}</div>
+    <div class="side"><div class="chip" style="background:var(--${c});color:var(--${c}-ink)">${t}</div>${mi != null ? `<div class="mi ${mi < 0.95 ? 'walk' : ''}">${esc(shortDist(mi))}</div>` : ''}</div>
     <div class="body" data-open>
       ${showDay ? `<div class="day">${esc(fmt(displayDate(ev), { weekday: 'short', month: 'short', day: 'numeric' }))}</div>` : ''}
       <h3>${esc(ev.title)}</h3>
@@ -431,11 +495,11 @@ function openSheet(ev) {
   ].join('');
   const star = starLine(ev);
   const where = [ev.venue, ev.address !== ev.venue ? ev.address : '', ev.city].filter(Boolean).join(' · ');
-  $('#sheet').innerHTML = `<div class="grab"></div>${img}
+  $('#sheet').innerHTML = `<div class="grab"></div><button class="x" data-close aria-label="Close">✕</button>${img}
     <div data-id="${esc(ev.id)}">
       <div class="when">${esc(when(ev))}${runText(ev) ? ` · ${esc(runText(ev))}` : ''}</div>
       <h2>${esc(ev.title)}</h2>
-      <div class="where">${esc(where)}${distText(distOf(ev)) ? ` · ${esc(distText(distOf(ev)))}` : ''}${ev.price ? ` · ${esc(ev.price === 'free' ? 'Free' : ev.price)}` : ''}</div>
+      <div class="where">${esc(where)}${distText(distOf(ev)) ? ` · <b>${esc(distText(distOf(ev)))} ${fromWhere()}</b>` : ''}${ev.price ? ` · ${esc(ev.price === 'free' ? 'Free' : ev.price)}` : ''}</div>
       ${star ? `<div class="star">${star}<a href="#" data-act="block">Not this person</a></div>` : ''}
       <div class="acts">
         <button class="btn ${st === 'added' ? 'on' : 'cherry'}" data-act="added">${st === 'added' ? '✓ In your plan' : '＋ Add to plan'}</button>
@@ -448,11 +512,51 @@ function openSheet(ev) {
       <p class="desc">${esc(ev.description || '')}</p>
     </div>
     <div class="links">${links}</div>`;
+  const sheet = $('#sheet');
+  sheet.style.transform = ''; sheet.scrollTop = 0;
   $('#sheetWrap').hidden = false;
+  document.documentElement.classList.add('locked');
   $('#sheet [data-copy]').onclick = (e) => { e.preventDefault(); copyLink(ev); };
   $('#sheet').onclick = (e) => { if (e.target.closest('[data-act],[data-cal]')) { if (e.target.closest('[data-act="block"]')) e.preventDefault(); onEventClick(e); } };
 }
-function closeSheet() { $('#sheetWrap').hidden = true; }
+function closeSheet() {
+  const wrap = $('#sheetWrap');
+  if (wrap.hidden || wrap.classList.contains('closing')) return;
+  wrap.classList.add('closing');
+  $('#sheet').style.transform = '';
+  setTimeout(() => { wrap.hidden = true; wrap.classList.remove('closing'); document.documentElement.classList.remove('locked'); }, 220);
+}
+
+// drag the sheet down to put it away (from the grab bar, or anywhere once it's scrolled to the top)
+function bindSheetDrag() {
+  const sheet = $('#sheet'), bg = $('#sheetWrap .sheet-bg');
+  let y0 = null, t0 = 0, dy = 0, dragging = false;
+  sheet.addEventListener('touchstart', (e) => {
+    if (e.touches.length !== 1) return;
+    y0 = e.touches[0].clientY; t0 = Date.now(); dy = 0;
+    dragging = sheet.scrollTop <= 0 || !!e.target.closest('.grab');
+  }, { passive: true });
+  sheet.addEventListener('touchmove', (e) => {
+    if (y0 == null || !dragging) return;
+    dy = e.touches[0].clientY - y0;
+    if (dy <= 0) { sheet.style.transform = ''; return; }   // pulling up: let it scroll
+    e.preventDefault();
+    sheet.style.transition = 'none';
+    sheet.style.transform = `translateY(${dy}px)`;
+    bg.style.opacity = String(Math.max(0.2, 1 - dy / 400));
+  }, { passive: false });
+  const end = () => {
+    if (y0 == null) return;
+    const fast = dy > 40 && dy / Math.max(1, Date.now() - t0) > 0.5;
+    sheet.style.transition = ''; bg.style.opacity = '';
+    if (dragging && (dy > 110 || fast)) closeSheet();
+    else sheet.style.transform = '';
+    y0 = null; dy = 0; dragging = false;
+  };
+  sheet.addEventListener('touchend', end);
+  sheet.addEventListener('touchcancel', end);
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeSheet(); });
+}
 
 // ------------------------------------------------------------------ which events
 
@@ -502,6 +606,14 @@ function nudgeHTML() {
   return '';
 }
 
+function tipHTML(n) {
+  if (!S.home && S.where === 'home' && !S.homeTipOff) {
+    return `<p class="hint">Miles are from the middle of ${esc(homePos().label)}. <a href="#" data-tip="home">Add your street address</a> for exact ones, or <a href="#" data-tip="nohome">skip</a>.</p>`;
+  }
+  if (n && !S.swipeTipOff) return '<p class="hint">Swipe left on anything that’s not for you. Your picks learn from it.</p>';
+  return '';
+}
+
 function dayList(list, key) {
   const picked = list.filter((ev) => S.status[ev.id] === 'added' || S.status[ev.id] === 'maybe');
   const rest = list.filter((ev) => !picked.includes(ev));
@@ -545,7 +657,7 @@ function renderCal(v) {
   const sd = atNoon(selDay);
   v.innerHTML = `<div class="cal"><div class="dow">${['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((x) => `<span>${x}</span>`).join('')}</div><div class="grid">${grid}</div></div>
     <div class="dayhead"><h2>${esc(fmt(sd, { weekday: 'long' }))}, <em>${esc(fmt(sd, { month: 'short', day: 'numeric' }))}</em></h2><small>${list.length ? `${list.length} option${list.length > 1 ? 's' : ''}` : ''}</small></div>
-    ${nudgeHTML()}
+    ${nudgeHTML() || tipHTML(list.length)}
     ${list.length ? dayList(list, selDay) : `<p class="hint">Nothing near ${S.where === 'near' ? 'you' : 'home'} yet. Lots of events are posted 1 to 2 weeks out, so check back.</p>`}`;
 }
 
@@ -650,6 +762,52 @@ function bindSwipe() {
     top.style.transform = ''; Object.values(stamps).forEach((s) => (s.style.opacity = 0));
     dx = dy = 0;
   };
+}
+
+// swipe an event row left to say "not for me" (it hides and teaches the picks)
+function bindRowSwipe(view) {
+  let row = null, x0 = 0, y0 = 0, dx = 0, mode = null;
+  view.addEventListener('touchstart', (e) => {
+    row = e.touches.length === 1 && !e.target.closest('.plus') ? e.target.closest('.ev') : null;
+    if (!row) return;
+    x0 = e.touches[0].clientX; y0 = e.touches[0].clientY; dx = 0; mode = null;
+  }, { passive: true });
+  view.addEventListener('touchmove', (e) => {
+    if (!row) return;
+    const mx = e.touches[0].clientX - x0, my = e.touches[0].clientY - y0;
+    if (!mode && Math.abs(mx) + Math.abs(my) > 10) mode = Math.abs(mx) > Math.abs(my) * 1.3 && mx < 0 ? 'swipe' : 'scroll';
+    if (mode !== 'swipe') return;
+    e.preventDefault();
+    dx = Math.min(0, mx);
+    row.style.transition = 'none';
+    row.style.transform = `translateX(${dx}px)`;
+    row.classList.toggle('nope', dx < -90);
+    row.style.setProperty('--nope', Math.min(1, -dx / 90));
+  }, { passive: false });
+  const end = () => {
+    if (!row) return;
+    const r = row; row = null;
+    if (mode !== 'swipe') return;
+    mode = 'swiped'; setTimeout(() => (mode = null), 50);
+    r.style.transition = '';
+    if (dx < -90) {
+      const ev = byId(r.dataset.id);
+      r.style.transform = 'translateX(-110%)'; r.style.opacity = '0';
+      setTimeout(() => {
+        if (!ev) return render();
+        const prev = decide(ev, 'not');
+        if (!S.swipeTipOff) { S.swipeTipOff = true; save(); }
+        toast("Skipped. We'll show fewer like this", () => { decide(ev, prev || 'not'); render(); });
+        render();
+      }, 210);
+    } else {
+      r.style.transform = ''; r.classList.remove('nope');
+    }
+  };
+  view.addEventListener('touchend', end);
+  view.addEventListener('touchcancel', end);
+  // a swipe shouldn't also open the event
+  view.addEventListener('click', (e) => { if (mode === 'swiped') { e.stopPropagation(); e.preventDefault(); } }, true);
 }
 
 function fling(status) {
@@ -827,6 +985,7 @@ function renderHeader() {
 }
 
 function render() {
+  scoreMemo = new Map();
   renderHeader();
   const v = $('#view');
   ({ cal: renderCal, tonight: renderTonight, new: renderNew, picks: renderPicks, me: renderMe })[tab](v);
@@ -853,9 +1012,19 @@ function bind() {
     if (S.where === 'near' && !nearPos) findMe();
     render();
   };
-  $('#sheetWrap').onclick = (e) => { if (e.target.hasAttribute('data-close')) closeSheet(); };
+  $('#sheetWrap').onclick = (e) => { if (e.target.closest('[data-close]')) closeSheet(); };
+  bindSheetDrag();
   const v = $('#view');
+  bindRowSwipe(v);
   v.addEventListener('click', (e) => {
+    const tip = e.target.closest('[data-tip]');
+    if (tip) {
+      e.preventDefault();
+      if (tip.dataset.tip === 'nohome') { S.homeTipOff = true; save(); render(); return; }
+      document.querySelector('[data-tab="me"]').click();
+      setTimeout(() => { const i = $('#homeAddr'); if (i) { i.scrollIntoView({ block: 'center' }); i.focus(); } }, 50);
+      return;
+    }
     const day = e.target.closest('[data-day]');
     if (day) { selDay = day.dataset.day; render(); return; }
     const g = e.target.closest('[data-goto]'); if (g) { tab = g.dataset.goto; return render(); }
