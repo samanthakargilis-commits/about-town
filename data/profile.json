@@ -609,12 +609,21 @@
   "highlights_per_week": 3,
   "events_per_week": 7,
   "max_price": null,
-  "notes": "Budget is still open in brief.md. Travel: short hops on weeknights, day trips (Sonoma, East Bay, South Bay) on weekends, and further on weeknights for performers he follows (from his calendar export). Never anything on Saturday or Sunday that starts before 9am.",
+  "notes": "Budget is still open in brief.md. Travel: short hops on weeknights, day trips (Sonoma, East Bay, South Bay) on weekends, and further on weeknights for performers he follows (from his calendar export). Never anything on Saturday or Sunday that starts before 9am. No kids: never children's events (storytime, toddler music, kids' festivals). Never tech, founder, AI-builder or networking events. Cheap: free events first; a paid drinks-and-mingling party ($40 unlimited beer and wine) is a no.",
   "home": {
     "label": "Presidio Heights",
     "lat": 37.7886,
     "lng": -122.4467,
     "_note": "neighborhood center only; the exact address is set on the phone"
   },
-  "weekend_earliest_hour": 9
+  "weekend_earliest_hour": 9,
+  "no_kids_events": true,
+  "no_tech_events": true,
+  "price": {
+    "_note": "likes free events; a paid event should be worth it",
+    "free_boost": 1.2,
+    "dollars_per_point": 15,
+    "max_penalty": 3.0,
+    "paid_party_penalty": 2.5
+  }
 }

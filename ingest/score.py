@@ -16,7 +16,26 @@ TECH = re.compile(r"\b(startup|start-up|founders?|vc|venture|demo day|pitch|hack
                   r"engineers?|engineering|ai agents?|llms?|genai|gen ai|machine learning|ml |web3|crypto|blockchain|"
                   r"product managers?|b2b|fundrais\w*|yc|y combinator|networking|ai|nvidia|gpus?|robotics|fireside chat|open source|inference|tech week|sdks?|apis?|devtools|afterparty)\b", re.I)
 KIDS = re.compile(r"\b(kids?|children|child|toddlers?|ages \d|grades? \d|family storytime|storytime|teens?|tweens?|young readers|middle grade)\b", re.I)
+# events that are for children, not just open to them ("Kids free" stays)
+FOR_KIDS_TITLE = re.compile(r"\b(story ?time|toddlers?|bab(y|ies)\b(?! shower)|infants?|preschool\w*|kinder\w*|kids?'?s?\b(?!\s+(eat\s+)?free)|"
+                            r"children'?s?|trick[- ]or[- ]treat\w*|sat prep|homework|for teens|teen (night|program|club)|tween|lego)", re.I)
+FOR_KIDS_TEXT = re.compile(r"\b(for|ages?)\s+(babies|toddlers|infants|preschoolers|little ones|young children|children|kids|[0-9]{1,2}\s*(-|–|to)\s*([0-9]|1[0-2])\b)", re.I)
+FOR_KIDS_AUDIENCE = re.compile(r"^(babies|toddlers|preschoolers|kids|children|teens|tweens)\b", re.I)   # SFPL leads with its audience
+# a tech, founder or networking event by its title (the body alone is too noisy:
+# a choir concert's page can say "developer")
+TECH_TITLE = re.compile(r"\b(AI|A\.I\.|agentic|LLMs?|GPUs?|robotics|founders?|startups?|start-ups?|builders?|engineer(s|ing)?|"
+                        r"devs?|developers?|hackathon|demo day|pitch (night|competition)|VCs?|venture|networking|tech ?week|"
+                        r"#\w*tech\w*|disrupt|saas|b2b|web3|crypto|product managers?|open source|nvidia|openai|vercel|"
+                        r"coreweave|y ?combinator|yc)\b", re.I)
+DRINKS = re.compile(r"\b(unlimited (beer|wine|drinks)|open bar|drink tickets?|bottomless|mixer|mingle|mingling|happy hour|social)\b", re.I)
 FESTIVAL = re.compile(r"\b(fair|festival|fest|street fair|convention|con\b|expo|carnival|block party|market)\b", re.I)
+
+
+def for_kids(ev: dict) -> bool:
+    """A children's event: storytime, toddler music, a kids' festival. Grown-up
+    events that let kids in free, or a teen-diary comedy night, don't count."""
+    desc = (ev.get("description") or "").strip()
+    return bool(FOR_KIDS_TITLE.search(ev.get("title", "")) or FOR_KIDS_TEXT.search(desc[:400]) or FOR_KIDS_AUDIENCE.match(desc))
 
 
 def norm(text: str) -> str:
@@ -66,6 +85,27 @@ class Scorer:
             return False
         return any(kw_regex(n).search(title_n) for n in self.hosted_kw)
 
+    def price_points(self, ev: dict, full: str, followed: bool, points: float) -> float:
+        """Free is a plus; paying has to be worth it. A ticket costs points by
+        the dollar, less for someone you follow or a strong match, and a paid
+        drinks-and-mingling party costs the most."""
+        p = self.profile.get("price") or {}
+        price = (ev.get("price") or "").lower()
+        if price == "free":
+            return p.get("free_boost", 0.3)
+        dollars = [float(x) for x in re.findall(r"\$\s?(\d+(?:\.\d\d)?)", price)]
+        if not dollars or not p:
+            return 0.0
+        cost = min(dollars)
+        hit = -min(p.get("max_penalty", 3.0), cost / p.get("dollars_per_point", 15))
+        if followed:
+            hit *= 0.25
+        elif points >= 4:
+            hit *= 0.5          # a show squarely in your interests can be worth paying for
+        if cost >= 15 and DRINKS.search(full):
+            hit -= p.get("paid_party_penalty", 2.5)
+        return hit
+
     def score(self, ev: dict, ai_tags: dict | None = None) -> dict | None:
         """Returns the scoring fields for one event, or None if it's on the never list."""
         title_n = norm(ev["title"])
@@ -75,6 +115,10 @@ class Scorer:
         if any(kw_regex(n).search(full) for n in self.never):
             return None
         if self.paid_hosted(ev, title_n):
+            return None
+        if self.profile.get("no_kids_events") and for_kids(ev):
+            return None
+        if self.profile.get("no_tech_events") and TECH_TITLE.search(ev["title"]) and not self.followed_in(title_n):
             return None
 
         points, reasons, hits = 0.0, [], []
@@ -131,8 +175,7 @@ class Scorer:
         if kids:
             tags.append("kids")
             points -= 1.5
-        if (ev.get("price") or "").lower() == "free":
-            points += 0.3
+        points += self.price_points(ev, full, bool(badge), points)
         if ev.get("sponsored"):
             points -= 0.5
         if ev.get("recurring"):
