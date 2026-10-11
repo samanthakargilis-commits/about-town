@@ -169,6 +169,11 @@ class FakeFetcher:
 
 
 class NewSources(unittest.TestCase):
+    def test_broadwaysf_run_dates(self):
+        from ingest.adapters import broadwaysf
+        html = r'x\"title\":\"Oh, Mary!\",\"dates\":\"Tue, Oct 13 - Sun, Nov 1, 2026\",\"infoBarText\"'
+        self.assertEqual(broadwaysf.runs(html), {"oh, mary!": (dt.date(2026, 10, 13), dt.date(2026, 11, 1))})
+
     def test_filoli_event_pages(self):
         from ingest.adapters import filoli
         listing = """<a href="/whats-on/events/nightfall/">Nightfall</a> <a href="/whats-on/events/?category=tours">Tours</a>
