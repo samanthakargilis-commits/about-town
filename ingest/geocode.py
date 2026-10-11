@@ -45,7 +45,12 @@ SUFFIX = re.compile(r"\s+(st|street|ave|avenue|blvd|boulevard|rd|road|dr|drive|w
 def corner_of(addr: str):
     """Two cross streets ("Steiner & Hermann", "Haight and Ashbury St") as a
     pair of street names, or None."""
-    first = re.sub(r"\(.*?\)", "", html.unescape(addr or "")).split(",")[0].strip(" .")
+    text = re.sub(r"\(.*?\)", "", html.unescape(addr or ""))
+    # "Mission St. between 3rd & 4th Sts." is the corner of the street and the first cross street
+    m = re.search(r"([A-Za-z0-9][A-Za-z0-9 .'-]{1,30}?)\s+between\s+([A-Za-z0-9][A-Za-z0-9.'-]{0,20}(?: [A-Za-z0-9.'-]{1,20})?)\s+(?:&|and)\s", text, re.I)
+    if m:
+        return tuple(SUFFIX.sub("", clean(x)) for x in m.groups())
+    first = text.split(",")[0].strip(" .")
     m = re.match(r"^([A-Za-z][A-Za-z0-9 .'-]{1,30}?)\s+(?:&|and|at|@|/)\s+([A-Za-z0-9][A-Za-z0-9 .'-]{1,30})$", first, re.I)
     if not m or re.match(r"^\d+\s", first):
         return None

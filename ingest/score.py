@@ -6,6 +6,7 @@ except the explicit "never" list in profile.json.
 from __future__ import annotations
 
 import datetime as dt
+import math
 import re
 import unicodedata
 from functools import lru_cache
@@ -26,7 +27,13 @@ FOR_KIDS_AUDIENCE = re.compile(r"^(babies|toddlers|preschoolers|kids|children|te
 TECH_TITLE = re.compile(r"\b(AI|A\.I\.|agentic|LLMs?|GPUs?|robotics|founders?|startups?|start-ups?|builders?|engineer(s|ing)?|"
                         r"devs?|developers?|hackathon|demo day|pitch (night|competition)|VCs?|venture|networking|tech ?week|"
                         r"#\w*tech\w*|disrupt|saas|b2b|web3|crypto|product managers?|open source|nvidia|openai|vercel|"
-                        r"coreweave|y ?combinator|yc)\b", re.I)
+                        r"coreweave|y ?combinator|yc|databases?|software|data science|cloud|cybersecurity|fintech|"
+                        r"khosla|trillion[- ]dollar|demo|claude|anthropic|chatgpt|gemini|hackers?|"
+                        r"professionals?|career|linkedin|headshots?|in growth)\b", re.I)
+# Luma lists the host's calendar as the blurb: a company's events calendar is a tech event
+TECH_HOST = re.compile(r"\b(vercel|digitalocean|claude|anthropic|openai|a16z|sequoia|khosla|github|databricks|snowflake|"
+                       r"aws|google (cloud|developers?)|adaptive software|community events)\b", re.I)
+PAID_ART = re.compile(r"\b(gallery|galleries|opening reception|art show|group (show|exhibition)|art walk)\b", re.I)
 # "free, two-drink minimum" isn't free
 DRINK_MIN = re.compile(r"\b(one|two|three|1|2|3)[- ]drink min(imum)?\b|\bdrink minimum\b|\bminimum (of )?(one|two|three|1|2|3) drinks?\b", re.I)
 NUMBER = {"one": 1, "two": 2, "three": 3, "1": 1, "2": 2, "3": 3}
@@ -35,6 +42,12 @@ CONCERT = re.compile(r"\b(concert|live music|unplugged|acoustic|singer[- ]songwr
                      r"band|live set|dj set|recital|quartet|trio|orchestra|symphony|jazz|folk|indie rock|punk|metal)\b", re.I)
 NOT_A_SHOW = re.compile(r"\b(class|lessons?|workshop|sale|drawing|film|screening|salsa|bachata|swing dance|karaoke|open mic)\b", re.I)
 FESTIVAL = re.compile(r"\b(fair|festival|fest|street fair|convention|con\b|expo|carnival|block party|market)\b", re.I)
+
+
+def miles(lat1, lng1, lat2, lng2) -> float:
+    dy = (lat2 - lat1) * 69.0
+    dx = (lng2 - lng1) * 69.0 * math.cos(math.radians((lat1 + lat2) / 2))
+    return math.hypot(dx, dy)
 
 
 def drink_minimum(ev: dict) -> int:
@@ -138,6 +151,26 @@ class Scorer:
                 return ft[key]["weight"]
         return 0.0
 
+    def weekday_daytime(self, ev, start, reasons, interests) -> float:
+        """A weekday daytime event only works on a lunch break: near work, or
+        near home on a work-from-home day. Anywhere else it's a no, unless it's
+        a big yearly tradition worth a day off (the Fleet Week air show)."""
+        rule = self.profile.get("weekday_daytime")
+        if not rule or not start or ev.get("all_day") or start.weekday() >= 5 or "traditions" in interests:
+            return 0.0
+        if not (rule["from_hour"] <= start.hour + start.minute / 60 < rule["to_hour"]):
+            return 0.0
+        end = to_local(ev.get("end")) if ev.get("end") else None
+        if end and (end - start).total_seconds() > 6 * 3600:
+            return 0.0                       # an all-day fair or a long run can wait for the evening
+        lat, lng = ev.get("lat"), ev.get("lng")
+        if lat is not None and lng is not None:
+            for spot in rule["near"]:
+                if miles(lat, lng, spot["lat"], spot["lng"]) <= spot["miles"]:
+                    reasons.insert(0, spot["why"])
+                    return rule["near_boost"]
+        return -rule["penalty"]
+
     def paid_concert_penalty(self, ev: dict, interests: list, followed: bool) -> float:
         """A paid show by an artist you don't follow, at an ordinary venue: you'd
         get free tickets to something better. Great venues still count."""
@@ -169,7 +202,8 @@ class Scorer:
             return None
         if self.profile.get("no_kids_events") and for_kids(ev):
             return None
-        if self.profile.get("no_tech_events") and TECH_TITLE.search(ev["title"]) and not self.followed_in(title_n):
+        if self.profile.get("no_tech_events") and not self.followed_in(title_n) and (
+                TECH_TITLE.search(ev["title"]) or (ev.get("source") == "luma" and TECH_HOST.search(ev.get("description") or ""))):
             return None
 
         points, reasons, hits = 0.0, [], []
@@ -232,6 +266,10 @@ class Scorer:
                 if start.weekday() == t["weekday"] and t["from_hour"] <= start.hour < t["to_hour"]:
                     points += t["boost"]
                     time_label = t["label"]
+
+        points += self.weekday_daytime(ev, start, reasons, interests)
+        if PAID_ART.search(full) and "$" in (ev.get("price") or "") and not badge:
+            points -= self.profile.get("price", {}).get("paid_art_penalty", 2.0)   # art shows only when free
 
         is_tech = bool(TECH.search(full)) or bool(ai_tags and ai_tags.get("is_tech"))
         tags = list(interests) + sorted(source_tags & {"annual", "featured", "film"})

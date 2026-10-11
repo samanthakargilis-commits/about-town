@@ -13,7 +13,7 @@
   "interests": {
     "craft": {
       "label": "Craft",
-      "weight": 2.0,
+      "weight": 2.4,
       "keywords": [
         "craft",
         "crafting",
@@ -621,6 +621,43 @@
         "orchard",
         "farm day"
       ]
+    },
+    "greek": {
+      "label": "Greek",
+      "weight": 3.0,
+      "keywords": [
+        "greek",
+        "hellenic",
+        "glendi",
+        "panigiri",
+        "greek festival",
+        "greek food festival",
+        "opa"
+      ]
+    },
+    "cultural": {
+      "label": "Cultural festivals",
+      "weight": 2.2,
+      "keywords": [
+        "heritage festival",
+        "heritage parade",
+        "heritage day",
+        "cultural festival",
+        "culture festival",
+        "moon festival",
+        "autumn moon",
+        "mid autumn",
+        "day of the dead",
+        "dia de los muertos",
+        "diwali",
+        "oktoberfest",
+        "obon",
+        "matsuri",
+        "festa",
+        "lunar new year",
+        "nowruz",
+        "holi festival"
+      ]
     }
   },
   "reading_tastes": {
@@ -708,7 +745,10 @@
       "smartphone basics",
       "email basics",
       "small business",
-      "bookkeeping"
+      "bookkeeping",
+      "networking",
+      "professional mixer",
+      "speed networking"
     ]
   },
   "never_paid_hosted": {
@@ -749,7 +789,8 @@
     "dollars_per_point": 10,
     "max_penalty": 4.0,
     "paid_party_penalty": 2.5,
-    "drink_minimum_dollars": 10
+    "drink_minimum_dollars": 10,
+    "paid_art_penalty": 2.0
   },
   "tag_boosts": {
     "_note": "a source's own marks: Funcheap's annual events are the city's big yearly traditions, and its home-page city guides are what it features most",
@@ -904,6 +945,27 @@
       "yerba buena center",
       "golden gate park bandshell",
       "shoreline amphitheatre"
+    ]
+  },
+  "weekday_daytime": {
+    "_note": "weekday 10:30am-3pm only on a lunch break: near work (neighborhood-level point; the exact office isn't stored) or near home",
+    "from_hour": 10.5,
+    "to_hour": 15,
+    "penalty": 3.0,
+    "near_boost": 0.5,
+    "near": [
+      {
+        "lat": 37.7895,
+        "lng": -122.3945,
+        "miles": 0.6,
+        "why": "Near work for lunch"
+      },
+      {
+        "lat": 37.7886,
+        "lng": -122.4467,
+        "miles": 0.8,
+        "why": "Near home for lunch"
+      }
     ]
   }
 }

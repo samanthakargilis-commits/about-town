@@ -575,3 +575,28 @@ class SiteIcons(unittest.TestCase):
         self.assertEqual(icons.candidates(soup, "https://partiful.com/")[:2],
                          ["https://partiful.com/f32.png", "https://partiful.com/big.png"])
         self.assertEqual(icons.host_of("https://www.eventbrite.com/e/x"), "eventbrite.com")
+
+
+class Tastes(unittest.TestCase):
+    def setUp(self):
+        self.s = Scorer(json.loads((pathlib.Path(__file__).parent.parent / "data" / "profile.json").read_text()), {})
+
+    def test_lunchtime_only_near_work_or_home(self):
+        base = dict(title="Lunchtime Concert", start="2026-10-14T12:30-07:00", source="funcheap", price="free", description="")
+        near = self.s.score(dict(base, lat=37.7903, lng=-122.3960))      # Salesforce Park
+        far = self.s.score(dict(base, lat=37.7599, lng=-122.4148))       # the Mission
+        self.assertIn("Near work", near["why"])
+        self.assertGreater(near["score"], far["score"] + 3)
+
+    def test_no_tech_or_networking(self):
+        self.assertIsNone(self.s.score(dict(title="The Trillion Dollar Teams — In conversation with Vinod Khosla",
+                                            start="2026-10-14T18:00-07:00", source="luma", description="Personal")))
+        self.assertIsNone(self.s.score(dict(title="Fast Forward", start="2026-10-14T18:00-07:00", source="luma",
+                                            description="Vercel Events")))
+        self.assertIsNone(self.s.score(dict(title="Young Professionals Networking Night", start="2026-10-14T18:00-07:00",
+                                            source="eventbrite", description="")))
+
+    def test_greek_festival(self):
+        r = self.s.score(dict(title="Annunciation Greek Food Festival", start="2026-10-17T12:00-07:00",
+                              source="funcheap", price="free", description=""))
+        self.assertIn("Greek", r["why"])
