@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6b47e434d8cd@bay-events
+DTSTAMP:20261011T043642Z
+DTSTART;TZID=America/Los_Angeles:20261017T190000
+DTEND;TZID=America/Los_Angeles:20261017T210000
+SUMMARY:Singles' Speed Dating | Saturday\, 7–9 PM | Paris 75\, SF
+LOCATION:Le Petit Paris 75\, 515 Broadway\, San Francisco\, CA San Francis
+ co\, San Francisco
+URL:https://www.meetup.com/zelo-chat/events/315717582/
+DESCRIPTION:New in your area\nhttps://www.meetup.com/zelo-chat/events/3157
+ 17582/\n\n**Singles' Speed Dating \\| Saturday\\\, 7–9 PM \\| Paris 75\
+ \\, SF** Join The Love Star for an intimate evening of good vibes\, great
+  people\, and maybe a little cosmic chemistry. Whether you're serious abo
+ ut finding someone or just open to what the stars have planned\, this is 
+ your night. Here's how the evening flows: 1\\. Check in at thelovestar\\.
+ com before you arrive\\. Your birth chart is already workin
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:72e08384b85d@bay-events
+DTSTAMP:20261011T043641Z
+DTSTART;TZID=America/Los_Angeles:20261028T180000
+DTEND;TZID=America/Los_Angeles:20261028T210000
+SUMMARY:Mahjong in the Mission
+LOCATION:Society of Thumbs\, 1398 Valencia St San Francisco\, San Francisc
+ o
+URL:https://partiful.com/e/YPvjPux7NIFBcz5cqqhj
+DESCRIPTION:Theatre + Art\nhttps://partiful.com/e/YPvjPux7NIFBcz5cqqhj\n\n
+ Join Mo Pai Mahjong Club for mahjong night! We'll be transforming Society
+  of Thumbs—part art studio\, part neighborhood hub—into an open play 
+ area. Having grown up in the Mission and Excelsior\, I thought it would b
+ e fun to pop up in a new neighborhood. Come go offline with me and shuffl
+ e some tiles in this creative new third space. Details: 🀄️ Admission
+  includes a dedicated playing seat for 3 hours
+END:VEVENT
+END:VCALENDAR

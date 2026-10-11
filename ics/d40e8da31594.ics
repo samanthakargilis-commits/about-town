@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d40e8da31594@bay-events
+DTSTAMP:20261011T043641Z
+DTSTART;TZID=America/Los_Angeles:20261024T130000
+DTEND;TZID=America/Los_Angeles:20261024T153000
+SUMMARY:Matcha Society: Halloween Edition🎃🍵
+LOCATION:Karma Cafe\, 1901 Hayes St San Francisco\, San Francisco
+URL:https://partiful.com/e/mV9Y8FTlhlxMMPnBzYQa
+DESCRIPTION:Theatre + Discourse\nhttps://partiful.com/e/mV9Y8FTlhlxMMPnBzY
+ Qa\n\nSpooky season calls for a slightly different Matcha Society meetup 
+ 🎃🍵 This time we’re heading to Karma Cafe\, a cozy café known for
+  going all-in on seasonal decorations\, including Halloween 👻. They’
+ ve also offered pumpkin spice and other seasonal drinks in past fall seas
+ ons\, so whether you’re a matcha person\, coffee person\, or just want 
+ something sweet\, there should be plenty to choose from. We’ll 
+END:VEVENT
+END:VCALENDAR

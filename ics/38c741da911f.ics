@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:38c741da911f@bay-events
+DTSTAMP:20261011T043642Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:Flora Party: Thanksgiving Centerpieces
+LOCATION:Filoli\, 86 Cañada Rd Woodside\, CA\, Woodside
+URL:https://filoli.org/whats-on/events/flora-party-thanksgiving-centerpiec
+ es/
+DESCRIPTION:Discourse · Woodside\nhttps://filoli.org/whats-on/events/flor
+ a-party-thanksgiving-centerpieces/\n\nCreate a show-stopping centerpiece 
+ sure to be the talk of your Thanksgiving table.
+END:VEVENT
+END:VCALENDAR

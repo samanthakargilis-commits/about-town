@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5528d835c644@bay-events
+DTSTAMP:20261011T043641Z
+DTSTART;TZID=America/Los_Angeles:20261011T110000
+DTEND;TZID=America/Los_Angeles:20261011T130000
+SUMMARY:Sit Down and Write
+LOCATION:Ultimate Grounds Et Al\, 4225 Park Blvd\, Oakland\, CA Oakland\, 
+ Oakland
+URL:https://www.meetup.com/oakland-creative-writers/events/316654049/
+DESCRIPTION:Reading + Writing · Oakland\nhttps://www.meetup.com/oakland-c
+ reative-writers/events/316654049/\n\nWriters write. And if you haven't wr
+ itten in a room full of writers writing\, you haven't lived! It's a nice 
+ feeling\, at the least. 11:00 a.m. Arrive\, find a spot\, support our pat
+ ron by purchasing a beverage and/or snack and tipping well. Then socializ
+ e until writing-time begins! A few minutes before\, we'll go around the c
+ ircle introducing ourselves\, our writing passions\, and our goal for the
+  day. 
+END:VEVENT
+END:VCALENDAR

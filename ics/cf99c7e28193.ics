@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cf99c7e28193@bay-events
+DTSTAMP:20261011T043640Z
+DTSTART;TZID=America/Los_Angeles:20261015T190000
+DTEND;TZID=America/Los_Angeles:20261016T000000
+SUMMARY:Free Halloween Costume Swap & Craft Night
+LOCATION:Public Works\, 161 Erie St San Francisco\, San Francisco
+URL:https://partiful.com/e/vER83EMgG4AIFkRsnL1u
+DESCRIPTION:Craft + Weird & unusual · Thursday evening\nhttps://partiful.
+ com/e/vER83EMgG4AIFkRsnL1u\n\n🎃 FREE HALLOWEEN COSTUME SWAP + CRAFT NI
+ GHT 👻 Hosted by Public Works Got a costume collecting dust in your clo
+ set? A bag of weird craft supplies you’ve been meaning to use? A half-f
+ inished Halloween masterpiece that needs some attention? Bring it all! Jo
+ in us for a community costume swap + crafty hangout where we’ll trade c
+ ostumes\, accessories\, fabrics\, trinkets\, and other costumey treasures
+  while
+END:VEVENT
+END:VCALENDAR

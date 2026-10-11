@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4bd4e8bc14f4@bay-events
+DTSTAMP:20261011T043640Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:One-Night Market Street Arts & Theater Festival: 50+ Experiences
+LOCATION:Market Street (btwn 5th &#038\; Van Ness )\, Market Street at 5th
+  Street\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/onenight-market-street-arts-theater-festival-5
+ 0-experiences-sf/
+DESCRIPTION:Fairs & festivals + Theatre\nhttps://sf.funcheap.com/onenight-
+ market-street-arts-theater-festival-50-experiences-sf/\n\nSubmitted by th
+ e Event OrganizerMarket Street Arts / MMBAF A one-night-only live arts an
+ d theater experience that celebrates the deep history of entertainment cu
+ lture on Market Street. 104 partners\, 50+ experiences\, 35+ locations\, 
+ 6 blocks\, 3 public plazas\, 1 Night Only! Market Street transforms into 
+ a walkable arts spectacle. Free public performances\, ticketed shows at i
+ conic venues\, and tons of 
+END:VEVENT
+END:VCALENDAR

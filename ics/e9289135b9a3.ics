@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e9289135b9a3@bay-events
+DTSTAMP:20261011T043642Z
+DTSTART;TZID=America/Los_Angeles:20261010T100000
+DTEND;TZID=America/Los_Angeles:20261010T120000
+SUMMARY:The Power of Compost - Palo Alto- Composting Basics Workshop
+LOCATION:PADG - Palo Alto Demonstration Garden at Eleanor Pardee Park\, 85
+ 1 Center Drive (intersection of Center Drive and Martin Street)\, Palo Al
+ to
+URL:https://www.eventbrite.com/e/palo-alto-composting-basics-workshop-tick
+ ets-1977395916416?aff=oddtdtcr
+DESCRIPTION:Palo Alto\nhttps://www.eventbrite.com/e/palo-alto-composting-b
+ asics-workshop-tickets-1977395916416?aff=oddtdtcr\n\nAn in-person worksho
+ p at a garden compost site teaching how to turn kitchen scraps and yard w
+ aste into compost. Led by certified Master Composters for beginners and t
+ hose refreshing their skills.
+END:VEVENT
+END:VCALENDAR

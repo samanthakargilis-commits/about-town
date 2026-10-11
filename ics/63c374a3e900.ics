@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:63c374a3e900@bay-events
+DTSTAMP:20261011T043642Z
+DTSTART;TZID=America/Los_Angeles:20261018T123000
+DTEND;TZID=America/Los_Angeles:20261018T153000
+SUMMARY:Make a Friend Picnic
+LOCATION:Potrero del Sol Park (La Raza)\, Portrero Avenue and 25th Street 
+ San Francisco\, San Francisco
+URL:https://partiful.com/e/NnTYzma0yrGAehRuRl1v
+DESCRIPTION:Theatre\nhttps://partiful.com/e/NnTYzma0yrGAehRuRl1v\n\nMost i
+ mportantly: you’re all awesome. You signed up to a stranger’s event b
+ ecause you wanted to make a friend. You put yourself out there to meet pe
+ ople you don’t know\, which is hard\, and you did it anyway. So thank y
+ ou. That took guts\, and I'm not going to let that go to waste. What to e
+ xpect: 🦆 A giant game of duck duck goose (yes\, as adults\, and yes\, 
+ you will run) 🧊 Icebreaker bingo\, with gift 
+END:VEVENT
+END:VCALENDAR

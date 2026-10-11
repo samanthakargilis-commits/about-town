@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b49777cee34f@bay-events
+DTSTAMP:20261011T043641Z
+DTSTART;TZID=America/Los_Angeles:20261107T100000
+DTEND;TZID=America/Los_Angeles:20261107T140000
+SUMMARY:“History in Motion” Free Grand Opening Celebration (San Mateo 
+ County History Museum)
+LOCATION:San Mateo County History Museum\, 2200 Broadway Street\, Redwood 
+ City\, CA\, Redwood City
+URL:https://sf.funcheap.com/history-motion-free-grand-opening-celebration-
+ san-mateo-county-history-museum/
+DESCRIPTION:Museum exhibits · Redwood City\nhttps://sf.funcheap.com/histo
+ ry-motion-free-grand-opening-celebration-san-mateo-county-history-museum/
+ \n\n
+END:VEVENT
+END:VCALENDAR

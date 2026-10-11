@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ad9c5639c7c5@bay-events
+DTSTAMP:20261011T043641Z
+DTSTART;TZID=America/Los_Angeles:20261011T113000
+DTEND;TZID=America/Los_Angeles:20261011T133000
+SUMMARY:Spooky Yap & Craft
+LOCATION:Playback Coffee\, 87 N San Pedro St San Jose\, San Jose
+URL:https://partiful.com/e/UFSfjt3uPDPvj0t0WYz3
+DESCRIPTION:Craft + Art · San Jose\nhttps://partiful.com/e/UFSfjt3uPDPvj0
+ t0WYz3\n\nJoin us for the first Journaling Baddies in the Bay event! Spoo
+ ky Yap and Craft! We’ll be meeting at Playback Coffee and bring any jou
+ rnaling\, craft\, or art activity you’re working on! Bonus points if it
+ ’s spooky or Halloween themed 👻 We’ll have an area of some small s
+ tuff to use so please bring your own supplies! Come hangout and enjoy cra
+ fting with fellow baddies! 🎃👻
+END:VEVENT
+END:VCALENDAR

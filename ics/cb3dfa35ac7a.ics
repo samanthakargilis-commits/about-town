@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cb3dfa35ac7a@bay-events
+DTSTAMP:20261011T043641Z
+DTSTART;TZID=America/Los_Angeles:20261031T120000
+DTEND;TZID=America/Los_Angeles:20261031T150000
+SUMMARY:SF “Halloween Hoopla” Kids’ Festival in the Park + Costume P
+ arade (2026)
+LOCATION:Yerba Buena Gardens\, Children’s Garden\, Yerba Buena Children
+ ’s Garden\, Howard St. btwn 3rd & 4th Sts. SoMa\, San Francisco\, CA\, 
+ San Francisco
+URL:https://sf.funcheap.com/sf-halloween-hoopla-kids-festival-in-the-park-
+ costume-parade/
+DESCRIPTION:Fairs & festivals + Weird & unusual\nhttps://sf.funcheap.com/s
+ f-halloween-hoopla-kids-festival-in-the-park-costume-parade/\n\n
+END:VEVENT
+END:VCALENDAR
