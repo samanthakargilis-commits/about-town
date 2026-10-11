@@ -87,7 +87,7 @@ main { padding: 6px 12px 0; outline: none; }
 /* ---------- a day's list */
 .dayhead { padding: 22px 10px 6px; display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
 .dayhead h2 { font-family: var(--serif); font-variation-settings: "SOFT" 100; font-size: 25px; font-weight: 600; margin: 0; line-height: 1.1; }
-.dayhead h2 em { font-weight: 400; color: var(--cherry); }
+.dayhead h2 em { font-style: normal; font-weight: inherit; color: inherit; }
 .dayhead small { color: var(--sub); font-size: 13.5px; flex: none; }
 
 .ev { display: flex; gap: 12px; background: var(--paper); border-radius: 18px; padding: 14px 14px 14px 12px; margin-bottom: 10px; box-shadow: 0 1px 0 var(--line); transition: transform .15s; }
