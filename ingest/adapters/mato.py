@@ -16,7 +16,8 @@ CATEGORIES = ["comedy", "markets", "visual-arts", "performing-arts", "workshops"
               "live-music", "film", "talks", "food-and-drinks"]
 LISTINGS = ([f"{BASE}/events/san-francisco", f"{BASE}/events/san-francisco/this-weekend"]
             + [f"{BASE}/events/san-francisco/anytime/{c}" for c in CATEGORIES] + [f"{BASE}/events/palo-alto"])
-MAX_EVENT_PAGES = 100
+MAX_EVENT_PAGES = 200
+MAX_REQUESTS = 230
 TOWNS = sorted(area.IN_AREA | set(area.OUT_OF_AREA) - set(area.FAR_OR_ONLINE), key=len, reverse=True)
 TOWN = re.compile(r"\b(" + "|".join(re.escape(t) for t in TOWNS if len(t) > 3) + r")\b", re.I)
 
@@ -38,6 +39,10 @@ def from_page(soup, url):
         if not e:
             continue
         e.source_url = url
+        # Mato's offer says $0 when it doesn't know the price (a Peaches Christ show
+        # at the Castro); free only counts when the page says so
+        if e.price == "free" and not re.search(r"\bfree\b", f"{e.title} {e.description}", re.I):
+            e.price = ""
         town = TOWN.search(" ".join([e.venue or "", e.address or ""]))
         if town:
             e.city = town.group(1).title()

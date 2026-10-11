@@ -229,7 +229,7 @@ def main(argv=None):
     raw, health = [], []
     for name in names:
         mod = importlib.import_module(f".adapters.{name}", __package__)
-        fetcher = Fetcher()
+        fetcher = Fetcher(max_requests=getattr(mod, "MAX_REQUESTS", 120))   # a source that reads each event page asks for more
         t0 = time.time()
         status = {"name": mod.NAME, "label": mod.LABEL, "count": 0, "ok": True, "error": None}
         try:

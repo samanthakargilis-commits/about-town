@@ -628,7 +628,7 @@ class PresidioSources(unittest.TestCase):
 class MatoSource(unittest.TestCase):
     def test_town_in_the_place_wins(self):
         from ingest.adapters import mato
-        node = {"@type": "Event", "name": "Flannel & Foliage", "startDate": "2026-10-23T10:00:00.000-07:00",
+        node = {"@type": "Event", "name": "Flannel & Foliage", "description": "Free general admission.", "startDate": "2026-10-23T10:00:00.000-07:00",
                 "endDate": "2026-10-23T18:00:00.000-07:00",
                 "location": {"@type": "Place", "name": "Downtown Danville", "address": {"addressLocality": "San Francisco"}},
                 "offers": {"@type": "Offer", "price": 0, "availability": "https://schema.org/InStock"}}
@@ -636,3 +636,6 @@ class MatoSource(unittest.TestCase):
         e = mato.from_page(soup, "https://ma.to/event/flannel-foliage-gilmore-girls-festival-23-oct-2026")
         self.assertEqual((e.city, e.price), ("Danville", "free"))
         self.assertEqual(mato.day_of(e.source_url, dt.date(2026, 10, 11)), "2026-10-23")
+        node.update(name="9 to 5 + Peaches Christ", description="A drag tribute.")
+        soup = BeautifulSoup(f'<script type="application/ld+json">{json.dumps(node)}</script>', "lxml")
+        self.assertEqual(mato.from_page(soup, "https://ma.to/event/x").price, "")    # $0 means unknown
