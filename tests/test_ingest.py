@@ -180,6 +180,14 @@ class FakeFetcher:
 
 
 class NewSources(unittest.TestCase):
+    def test_partiful_offer(self):
+        from ingest.adapters import partiful
+        page = lambda avail, price=20: BeautifulSoup('<script type="application/ld+json">{"@type":"Event","name":"x","startDate":"2026-10-11T21:00:00.000Z",'
+                                     '"offers":[{"@type":"Offer","price":%s,"availability":"https://schema.org/%s"}]}</script>' % (price, avail), "lxml")
+        self.assertEqual(partiful.offer_of(page("InStock")), {"price": "$20", "sold_out": False})
+        self.assertEqual(partiful.offer_of(page("SoldOut")), {"price": "$20", "sold_out": True})
+        self.assertEqual(partiful.offer_of(page("InStock", 0))["price"], "free")
+
     def test_sfpl_presidio(self):
         from ingest.adapters import sfpl
         page = """<div class="view-content">
