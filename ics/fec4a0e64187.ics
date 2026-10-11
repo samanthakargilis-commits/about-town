@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fec4a0e64187@bay-events
+DTSTAMP:20261011T222718Z
+DTSTART;TZID=America/Los_Angeles:20261013T190000
+DTEND;TZID=America/Los_Angeles:20261013T210000
+SUMMARY:[FREE!] The Outbreak Era: Why Infectious Diseases Keep Making Head
+ lines
+LOCATION:SPARK Social SF\, SPARK Social SF\, 601 Mission Bay Blvd North\, 
+ San Francisco\, CA 94158\, USA\, San Francisco
+URL:https://luma.com/q3txkamq
+DESCRIPTION:Discourse\nhttps://luma.com/q3txkamq\n\nPLEASE NOTE: A ticket 
+ is required for entry\, but does not guarantee admission. Space is limite
+ d\, and entry is first come\, first served until we reach capacity. Doors
+  open at 7 PM\, so we strongly recommend arriving early! 🦠 Why does it
+  feel like every week brings a new infectious disease headline? Measles\,
+  an explosive cyclospora outbreak\, a hantavirus scare aboard a cruise sh
+ ip\, an ongoing Ebola o
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2c6723263992@bay-events
+DTSTAMP:20261011T222719Z
+DTSTART;TZID=America/Los_Angeles:20261012T183000
+DTEND;TZID=America/Los_Angeles:20261012T200000
+SUMMARY:cine cue a-listers ★: texas chain saw massacre
+LOCATION:Alamo Drafthouse Cinema\, 2550 Mission St San Francisco\, San Fra
+ ncisco
+URL:https://partiful.com/e/5cl53ZA30qdjbi3UGFcr
+DESCRIPTION:Theatre\nhttps://partiful.com/e/5cl53ZA30qdjbi3UGFcr\n\ncine c
+ ue is a film club with a pool bar debrief 🎱 on a mission to save indep
+ endent theatre and bring back bar culture 💿 ◈ director tobe hooper
+ ’s ferocious classic follows five friends that fall victim to the grote
+ sque Leatherface and his cannibalistic family. ◈ facing controversy and
+  censorship throughout its troubled release\, the texas chain saw massacr
+ e has stood the test of time to become a lan
+END:VEVENT
+END:VCALENDAR

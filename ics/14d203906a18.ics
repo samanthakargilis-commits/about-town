@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:14d203906a18@bay-events
+DTSTAMP:20261011T222716Z
+DTSTART;TZID=America/Los_Angeles:20261011T120000
+DTEND;TZID=America/Los_Angeles:20261011T170000
+SUMMARY:SF Open Studios: Pam Jue
+LOCATION:111 Minna Gallery\, San Francisco
+URL:https://ma.to/event/sf-open-studios-pam-jue-11-oct-2026-1
+DESCRIPTION:Big Bay Area traditions + Art\nhttps://ma.to/event/sf-open-stu
+ dios-pam-jue-11-oct-2026-1\n\nArtist Pam Jue presents works from her Impe
+ rmanence series as part of SF Open Studios. The collection features medit
+ ative abstract pieces exploring stillness and change through varying visu
+ al sensations and textures.
+END:VEVENT
+END:VCALENDAR

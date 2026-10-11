@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4f6b3f9e8373@bay-events
+DTSTAMP:20261011T222718Z
+DTSTART;TZID=America/Los_Angeles:20261025T120000
+DTEND;TZID=America/Los_Angeles:20261025T180000
+SUMMARY:SF Music Day 2026
+LOCATION:San Francisco War Memorial & Performing Arts Center\, 401 Van Nes
+ s Avenue\, San Francisco\, CA 94102 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/sf-music-day-2026-tickets-1996763292760
+DESCRIPTION:Concerts\nhttps://www.eventbrite.com/e/sf-music-day-2026-ticke
+ ts-1996763292760\n\nJoin us for a free\, full day of live music at SF Mus
+ ic Day\, celebrating the richness and diversity of the Bay Area music com
+ munity.
+END:VEVENT
+END:VCALENDAR

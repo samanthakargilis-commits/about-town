@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cafb811b3858@bay-events
+DTSTAMP:20261011T222720Z
+DTSTART;TZID=America/Los_Angeles:20261023T170000
+DTEND;TZID=America/Los_Angeles:20261023T203000
+SUMMARY:Stained Glass Basics: Make a Suncatcher
+LOCATION:Visual Philosophy\, 1065 The Alameda\, San Jose\, CA 95126 San Jo
+ se\, San Jose
+URL:https://www.eventbrite.com/e/stained-glass-basics-make-a-suncatcher-ti
+ ckets-1997512024236
+DESCRIPTION:Discourse · San Jose\nhttps://www.eventbrite.com/e/stained-gl
+ ass-basics-make-a-suncatcher-tickets-1997512024236\n\nCome explore the wo
+ rld of stained glass where color\, texture design and light converge to c
+ reate vibrant\, visual delights!
+END:VEVENT
+END:VCALENDAR

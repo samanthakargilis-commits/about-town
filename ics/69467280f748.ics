@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:69467280f748@bay-events
+DTSTAMP:20261011T222718Z
+DTSTART;TZID=America/Los_Angeles:20261101T094500
+DTEND;TZID=America/Los_Angeles:20261101T110000
+SUMMARY:Lower Nob Hill Weekly Cleanup w/ Free Lunch for Volunteers
+LOCATION:Lower Nob Hill Neighborhood/Another Cafe\, 1191 Pine Street (meet
+  on Leavenworth St. side)\, San Francisco\, San Francisco
+URL:https://sf.funcheap.com/lower-nob-hill-weekly-cleanup-w-free-lunch-for
+ -volunteers-sf-5/
+DESCRIPTION:Comedy\nhttps://sf.funcheap.com/lower-nob-hill-weekly-cleanup-
+ w-free-lunch-for-volunteers-sf-5/\n\nLower Nob Hill Weekly Cleanup Sunday
+ s\, 9:45 AM to 11:00 AM Meet outside Another Cafe at 1191 Pine St Grab a 
+ picker\, meet the people on your block\, and leave the sidewalks cleaner 
+ than you found them. We provide all the supplies: grabbers\, bags\, glove
+ s\, ...
+END:VEVENT
+END:VCALENDAR

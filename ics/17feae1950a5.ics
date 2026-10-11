@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:17feae1950a5@bay-events
+DTSTAMP:20261011T222719Z
+DTSTART;TZID=America/Los_Angeles:20261011T120000
+DTEND;TZID=America/Los_Angeles:20261011T200000
+SUMMARY:Family Sundays at MINIBOSS
+LOCATION:MINIBOSS\, Palo Alto
+URL:https://ma.to/event/family-sundays-at-miniboss-2026-10-11
+DESCRIPTION:Theatre · Palo Alto\nhttps://ma.to/event/family-sundays-at-mi
+ niboss-2026-10-11\n\nMINIBOSS\, the arcade bar in Downtown San Jose\, set
+ s aside Sundays for family play. The venue's classic arcade cabinets and 
+ pinball machines are the focus\, and the sessions are open to all ages\, 
+ with families and individual visitors both welcome. Cocktails are served 
+ at the bar.
+END:VEVENT
+END:VCALENDAR

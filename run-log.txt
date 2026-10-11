@@ -1,0 +1,89 @@
+  funcheap guides: 21 read, 156 events, featuring ['fleet week', 'grass painting', 'tall ship', 'terror vault', 'treasure hunt', 'zoolights']
+SF Funcheap               667 events   38 requests  OK
+Secret San Francisco        8 events    7 requests  OK
+Luma                       67 events    3 requests  OK
+SF Public Library (Presidio)   43 events    3 requests  OK
+  jccsf prices: 21 pages read, 24 of 25 priced
+JCC San Francisco          25 events    1 requests  OK
+Traceback (most recent call last):
+  File "/home/runner/work/bay-events/bay-events/ingest/__main__.py", line 237, in main
+    events = mod.fetch(fetcher, start, end)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/bay-events/bay-events/ingest/adapters/citylights.py", line 13, in fetch
+    raise RuntimeError("blocked by the site's bot protection (Sucuri JavaScript check)")
+RuntimeError: blocked by the site's bot protection (Sucuri JavaScript check)
+City Lights                 0 events    1 requests  FAIL: RuntimeError: blocked by the site's bot protection (Sucuri JavaScript check)
+Traceback (most recent call last):
+  File "/home/runner/work/bay-events/bay-events/ingest/__main__.py", line 237, in main
+    events = mod.fetch(fetcher, start, end)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/bay-events/bay-events/ingest/adapters/greenapple.py", line 20, in fetch
+    events, _ = listing_page(f, page, NAME, lambda u: bool(EVENT.match(u)), city="San Francisco",
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/bay-events/bay-events/ingest/heuristics.py", line 238, in listing_page
+    soup = f.soup(url)
+           ^^^^^^^^^^^
+  File "/home/runner/work/bay-events/bay-events/ingest/core.py", line 229, in soup
+    return BeautifulSoup(self.get(url, **kw), "lxml")
+                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/bay-events/bay-events/ingest/core.py", line 222, in get
+    resp.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://greenapplebooks.com/events
+Green Apple Books           0 events    1 requests  FAIL: HTTPError: 403 Client Error: Forbidden for url: https://greenapplebooks.com/events
+Kepler's Books             18 events    1 requests  OK
+BroadwaySF                 23 events    1 requests  OK
+Traceback (most recent call last):
+  File "/home/runner/work/bay-events/bay-events/ingest/__main__.py", line 237, in main
+    events = mod.fetch(fetcher, start, end)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/bay-events/bay-events/ingest/adapters/dothebay.py", line 17, in fetch
+    events, _ = listing_page(f, url, NAME, lambda u: bool(EVENT.match(u)), ref=day,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/bay-events/bay-events/ingest/heuristics.py", line 238, in listing_page
+    soup = f.soup(url)
+           ^^^^^^^^^^^
+  File "/home/runner/work/bay-events/bay-events/ingest/core.py", line 229, in soup
+    return BeautifulSoup(self.get(url, **kw), "lxml")
+                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/bay-events/bay-events/ingest/core.py", line 222, in get
+    resp.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/requests/models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://dothebay.com/events/2026/10/11
+DoTheBay                    0 events    1 requests  FAIL: HTTPError: 403 Client Error: Forbidden for url: https://dothebay.com/events/2026/10/11
+  eventbrite: 94 listed, 74 event pages read
+Eventbrite                 74 events   27 requests  OK
+Meetup                    143 events    8 requests  OK
+Dice                       30 events    2 requests  OK
+  partiful offers: 3 pages read, 3 priced, 15 sold out, of 72
+Partiful Explore           74 events    4 requests  OK
+Destination Palo Alto       9 events    1 requests  OK
+Filoli                     20 events   25 requests  OK
+Cobb's & Punch Line        50 events    2 requests  OK
+SF Fleet Week               4 events    1 requests  OK
+Neck of the Woods          53 events    3 requests  OK
+4 Star Theater             21 events    1 requests  OK
+Presidio Theatre            2 events    1 requests  OK
+The Presidio               90 events    3 requests  OK
+  mato: 188 listed, 188 event pages read
+Mato                      188 events   31 requests  OK
+Traceback (most recent call last):
+  File "/home/runner/work/bay-events/bay-events/ingest/__main__.py", line 237, in main
+    events = mod.fetch(fetcher, start, end)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/bay-events/bay-events/ingest/adapters/substack.py", line 24, in fetch
+    raise RuntimeError("needs AI extraction (no ANTHROPIC_API_KEY set)")
+RuntimeError: needs AI extraction (no ANTHROPIC_API_KEY set)
+Newsletters                 0 events    0 requests  FAIL: RuntimeError: needs AI extraction (no ANTHROPIC_API_KEY set)
+in window and area: 1435 of 1609 (19 sold out)
+after merging duplicates: 1280
+places: {'pages_read': 20, 'placed': 646}
+in area once placed: 1267
+detail pages read: 160
+map spots: {'lookups': 37, 'refused': 0, 'matched_now': 1067, 'corners': 27, 'town_only': 23, 'with_spot': 1126, 'total': 1196}
+site icons: 21 of 21 sites (0 fetched)
+wrote 1193 events to /home/runner/work/bay-events/bay-events/app/events.json
+weather: 16 days (2026-10-11 to 2026-10-26)
+::warning::Sources with zero events or errors: City Lights, Green Apple Books, DoTheBay, Newsletters

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:df31b7357c42@bay-events
+DTSTAMP:20261011T222719Z
+DTSTART;TZID=America/Los_Angeles:20261106T173000
+DTEND;TZID=America/Los_Angeles:20261106T210000
+SUMMARY:ZooLights: San Francisco Zoo & Gardens
+LOCATION:San Francisco Zoo & Gardens
+URL:https://sf.funcheap.com/city-guide/sfs-zoolights-frozen-forest-time-8-
+ years/
+DESCRIPTION:Animals · Featured on Funcheap\nhttps://sf.funcheap.com/city-
+ guide/sfs-zoolights-frozen-forest-time-8-years/\n\nSan Francisco Zoo & Ga
+ rdens is thrilled to announce its all-new\, two-month-long ZooLights even
+ ing holiday program that will light up the Zoo in spectacular fashion fro
+ m November 6 through January 3\, 2027. The nighttime event represents the
+  return of ZooLights\, which the Zoo last hosted ...
+END:VEVENT
+END:VCALENDAR

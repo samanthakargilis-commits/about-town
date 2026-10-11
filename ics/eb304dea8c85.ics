@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:eb304dea8c85@bay-events
+DTSTAMP:20261011T222718Z
+DTSTART;TZID=America/Los_Angeles:20261011T190000
+DTEND;TZID=America/Los_Angeles:20261011T210000
+SUMMARY:50% Off Karaoke Happy Hour
+LOCATION:Magpie and Tiger\, 2725 El Camino Real Suite 107\, Santa Clara\, 
+ CA 95051\, Santa Clara
+URL:https://ma.to/event/karaoke-happy-hour-2026-10-11
+DESCRIPTION:Singing · Santa Clara\nhttps://ma.to/event/karaoke-happy-hour
+ -2026-10-11\n\nThe karaoke happy hour at Magpie and Tiger takes 50% off t
+ he karaoke room price during the discount window. Weekday happy hour runs
+  7:00 PM to 9:00 PM Sunday through Thursday\, with the venue closed on Mo
+ ndays\, and weekend happy hour runs 6:00 PM to 8:00 PM on Friday and Satu
+ rday\; regular room prices apply outside those hours. The offer began on 
+ 3 May 2026. Private karaoke rooms are offered togethe
+END:VEVENT
+END:VCALENDAR

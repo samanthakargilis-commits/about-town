@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:60a62d23f175@bay-events
+DTSTAMP:20261011T222721Z
+DTSTART;TZID=America/Los_Angeles:20261016T213000
+DTEND;TZID=America/Los_Angeles:20261017T000000
+SUMMARY:OCT 16 | FRIDAY | BOLLYWOOD NEON GLOW PARTY | MOUNTAIN VIEW
+LOCATION:Opal Social Club\, 251 Castro Street\, Mountain View\, CA 94041 M
+ ountain View\, Mountain View
+URL:https://www.eventbrite.com/e/oct-16-friday-bollywood-neon-glow-party-m
+ ountain-view-tickets-2002680002799
+DESCRIPTION:Mountain View\nhttps://www.eventbrite.com/e/oct-16-friday-boll
+ ywood-neon-glow-party-mountain-view-tickets-2002680002799\n\n⚡ Join the
+  Neon Party! EDM\,Top 40\, Bollywood\, Hindi & Bhangra remixes + TikTok t
+ rends all night! Neon accessories & tattoos
+END:VEVENT
+END:VCALENDAR

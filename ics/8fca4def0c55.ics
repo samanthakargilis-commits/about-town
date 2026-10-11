@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8fca4def0c55@bay-events
+DTSTAMP:20261011T222720Z
+DTSTART;TZID=America/Los_Angeles:20261011T094500
+DTEND;TZID=America/Los_Angeles:20261011T200000
+SUMMARY:Sunday Football at O'Flaherty's
+LOCATION:O'Flaherty's Irish Pub\, 25 N. San Pedro St.\, San Jose\, San Jos
+ e
+URL:https://ma.to/event/sunday-football-11-oct-2026
+DESCRIPTION:San Jose\nhttps://ma.to/event/sunday-football-11-oct-2026\n\nO
+ 'Flaherty's Irish Pub shows every NFL game via Sunday Ticket on eight big
+  screens indoors and out. Doors open at 9:45am. 40+ beers are on tap\, an
+ d lunch starts at 11am. Featuring a 49ers vs. Commanders game ticket give
+ away\; winner drawn after the final afternoon NFL game ends. Must be pres
+ ent to win. Enjoy $4 Bud Light and $5 tequila specials.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3ba1c7c1d2f7@bay-events
+DTSTAMP:20261011T222717Z
+DTSTART;TZID=America/Los_Angeles:20261024T160000
+DTEND;TZID=America/Los_Angeles:20261024T200000
+SUMMARY:Hagerty’s RADwood NorCal: Bay Area ’80s & ’90s Car Festival 
+ (Alameda)
+LOCATION:Gold Bar Hangar\, 2505 Monarch St\, Bldg. 22\, Alameda\, CA\, Ala
+ meda
+URL:https://sf.funcheap.com/hagertys-radwood-norcal-bay-area-80s-90s-car-f
+ estival-alameda-2/
+DESCRIPTION:Fairs & festivals · Alameda\nhttps://sf.funcheap.com/hagertys
+ -radwood-norcal-bay-area-80s-90s-car-festival-alameda-2/\n\nRADwood by Ha
+ gerty: A celebration of the 80’s & 90’s cars & culture. RADwood NorCa
+ l rolls into Alameda in the Bay Area on Saturday\, October 24\, 4:00pm to
+  8pm local time for an evening celebration of ’80s and ’90s automotiv
+ e culture. The free\, family-friendly event will bring ...
+END:VEVENT
+END:VCALENDAR

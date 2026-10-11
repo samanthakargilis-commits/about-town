@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cd922adad67b@bay-events
+DTSTAMP:20261011T222720Z
+DTSTART;TZID=America/Los_Angeles:20261101T130000
+DTEND;TZID=America/Los_Angeles:20261101T150000
+SUMMARY:SF’s First Ever Halloween “Cookie Picnic” (Levi’s Plaza)
+LOCATION:Levi's Plaza\, 1255 Battery St\, San Francisco\, CA 94111\, San F
+ rancisco
+URL:https://sf.funcheap.com/sfs-halloween-cookie-picnic-levis-plaza/
+DESCRIPTION:Camp & Halloween\nhttps://sf.funcheap.com/sfs-halloween-cookie
+ -picnic-levis-plaza/\n\nThe sold-out Halloween 2026 Cookie Picnic takes p
+ lace at Levi’s Plaza on November 1. Attendees bring two dozen homemade 
+ cookies to share\, sample seasonal and Halloween-inspired bakes\, meet fe
+ llow bakers\, and are encouraged to wear costumes. Original Event Descrip
+ tion: San Francisco\, COOKIE PICNIC is here! And this ...
+END:VEVENT
+END:VCALENDAR

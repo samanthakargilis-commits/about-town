@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:73d556b13e9d@bay-events
+DTSTAMP:20261011T222717Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:Drink & Draw Art Event & Raffle
+LOCATION:The Knockout\, 3223 Mission St\, San Francisco\, CA\, San Francis
+ co
+URL:https://sf.funcheap.com/drink-draw-art-event-raffle-the-knockout-147/
+DESCRIPTION:Art\nhttps://sf.funcheap.com/drink-draw-art-event-raffle-the-k
+ nockout-147/\n\nAt Drink and Draw\, artsy bar patrons draw to a theme and
+  submit their artwork into a raffle for cocktails and other prizes at The
+  Knockout in the Mission District. The artwork gets scanned online for al
+ l to admire. Drink and Draw happens every first Wednesday of the ...
+END:VEVENT
+END:VCALENDAR

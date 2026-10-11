@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0acff4aa9370@bay-events
+DTSTAMP:20261011T222715Z
+DTSTART;TZID=America/Los_Angeles:20261011T100000
+DTEND;TZID=America/Los_Angeles:20261011T200000
+SUMMARY:Italian Heritage Parade Day
+LOCATION:San Francisco Italian Athletic Club\, North Beach\, San Francisco
+ \, CA\, San Francisco
+URL:https://ma.to/event/italian-heritage-parade-day-2026-10-11
+DESCRIPTION:Big Bay Area traditions + Fairs & festivals\nhttps://ma.to/eve
+ nt/italian-heritage-parade-day-2026-10-11\n\nThe 158th San Francisco Ital
+ ian Heritage Parade returns to North Beach. A city tradition since 1868\,
+  this annual celebration honors Italian-American culture with marching ba
+ nds\, floats\, performers\, and community groups. The procession kicks of
+ f at 12:30 p.m. near Fisherman’s Wharf\, follows Columbus Avenue throug
+ h North Beach\, and finishes at Washington Square. Join Supervisor Danny 
+ Sauter's parade
+END:VEVENT
+END:VCALENDAR

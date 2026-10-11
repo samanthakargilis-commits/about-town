@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:895bc2ff826f@bay-events
+DTSTAMP:20261011T222719Z
+DTSTART;TZID=America/Los_Angeles:20261012T190000
+DTEND;TZID=America/Los_Angeles:20261012T200000
+SUMMARY:What's Poppin! Live Talkshow
+LOCATION:The Complex SF\, San Francisco
+URL:https://ma.to/event/whats-poppin-live-talkshow-13-oct-2026
+DESCRIPTION:Discourse\nhttps://ma.to/event/whats-poppin-live-talkshow-13-o
+ ct-2026\n\nWhat's Poppin! is the Bay Area's arts and entertainment livest
+ ream talk show hosted by Sierra Camille and Steve Ward Moore. New episode
+ s are broadcast live every other Monday at 7pm from The Complex SF. Join 
+ in person or watch live on Twitch and YouTube. Full episodes are availabl
+ e on YouTube.
+END:VEVENT
+END:VCALENDAR

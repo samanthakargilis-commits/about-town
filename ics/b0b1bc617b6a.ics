@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b0b1bc617b6a@bay-events
+DTSTAMP:20261011T222717Z
+DTSTART;TZID=America/Los_Angeles:20261011T150000
+DTEND;TZID=America/Los_Angeles:20261011T170000
+SUMMARY:Free Ferry Lawn / Waterfront Concert at Jack London Square (Oaklan
+ d)
+LOCATION:Jack London Square\, 472 Water St\, Oakland\, CA 94607\, Oakland
+URL:https://sf.funcheap.com/free-ferry-lawn-waterfront-concert-at-jack-lon
+ don-square-oakland/
+DESCRIPTION:Concerts · Oakland\nhttps://sf.funcheap.com/free-ferry-lawn-w
+ aterfront-concert-at-jack-london-square-oakland/\n\nKev Choice performs a
+  free waterfront concert at Jack London Square’s Ferry Lawn. The Oaklan
+ d musician blends hip-hop\, R&B\, jazz\, funk\, soul\, and classical musi
+ c\, and has served as music director for Lauryn Hill. Bring a blanket and
+  settle in for an afternoon of live ...
+END:VEVENT
+END:VCALENDAR

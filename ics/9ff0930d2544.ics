@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9ff0930d2544@bay-events
+DTSTAMP:20261011T222719Z
+DTSTART;TZID=America/Los_Angeles:20261014T180000
+DTEND;TZID=America/Los_Angeles:20261014T200000
+SUMMARY:Ghostly Flowers Paint & Sip
+LOCATION:Laughing Monk Scotts Valley\, San Francisco
+URL:https://ma.to/event/ghostly-flowers-paint-sip-14-oct-2026
+DESCRIPTION:Art\nhttps://ma.to/event/ghostly-flowers-paint-sip-14-oct-2026
+ \n\nGrab a drink and follow step-by-step instructions to create your own 
+ Ghostly Flowers painting on a 16x20 canvas. All supplies are included and
+  no experience is necessary. Reserve your seat on the profile.
+END:VEVENT
+END:VCALENDAR

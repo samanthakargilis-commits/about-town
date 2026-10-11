@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:596431971862@bay-events
+DTSTAMP:20261011T222719Z
+DTSTART;TZID=America/Los_Angeles:20261021T190000
+DTEND;TZID=America/Los_Angeles:20261021T200000
+SUMMARY:Kelly McGonigal
+LOCATION:Kepler's Books\, 1010 El Camino Real Menlo Park\, CA\, 94025\, Me
+ nlo Park
+URL:https://www.keplers.org/upcoming-events-internal/kelly-mcgonigal
+DESCRIPTION:Reading · Menlo Park\nhttps://www.keplers.org/upcoming-events
+ -internal/kelly-mcgonigal\n\nWhat if joy was a resource to draw from\, an
+ d not something to fear? Bestselling author and psychologist Kelly McGoni
+ gal shows us how to find and embrace the feeling of joy–even in tough t
+ imes.
+END:VEVENT
+END:VCALENDAR

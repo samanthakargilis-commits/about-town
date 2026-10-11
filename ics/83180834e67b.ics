@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:83180834e67b@bay-events
+DTSTAMP:20261011T222716Z
+DTSTART;TZID=America/Los_Angeles:20261011T040000
+DTEND;TZID=America/Los_Angeles:20261011T060000
+SUMMARY:ArtSpan Open Studios
+LOCATION:Root Division\, 1131 Mission Street\, San Francisco\, San Francis
+ co
+URL:https://ma.to/event/artspan-open-studios-11-oct-2026
+DESCRIPTION:Big Bay Area traditions + Art\nhttps://ma.to/event/artspan-ope
+ n-studios-11-oct-2026\n\nRoot Division and ArtSpan present an open studio
+ s event on October 10 and 11\, from 11 am to 5 pm. Meet participating art
+ ists including Lois Wang\, Jasper Wilde\, Taylor Stoneman\, and Shrey Pur
+ ohit. Shrey Purohit will be celebrating his birthday at his studio and of
+ fering postcards. Visit the studios in person to view new collage artwork
+ s and paintings\, and explore the city scenes. RSVP at thethirdpl
+END:VEVENT
+END:VCALENDAR

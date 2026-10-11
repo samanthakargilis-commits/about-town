@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7736ebc83c41@bay-events
+DTSTAMP:20261011T222717Z
+DTSTART;TZID=America/Los_Angeles:20261021T235900
+DTEND;TZID=America/Los_Angeles:20261022T015900
+SUMMARY:Orionids Meteor Shower: Most Beautiful Shower of 2026
+LOCATION:San Francisco Bay Area
+URL:https://sf.funcheap.com/orionid-meteor-shower-halleys-comets-debris/
+DESCRIPTION:A yearly tradition\nhttps://sf.funcheap.com/orionid-meteor-sho
+ wer-halleys-comets-debris/\n\nThe Orionids\, which peak during mid-Octobe
+ r each year\, are considered to be one of the most beautiful showers of t
+ he year. Orionid meteors are known for their brightness and their speed. 
+ These meteors are fast—they travel at about 148\,000 mph (66 km/s) into
+  the Earth’s ...
+END:VEVENT
+END:VCALENDAR

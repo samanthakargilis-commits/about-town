@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b6c1e40999f1@bay-events
+DTSTAMP:20261011T222716Z
+DTSTART;TZID=America/Los_Angeles:20261018T120000
+DTEND;TZID=America/Los_Angeles:20261018T140000
+SUMMARY:Book Club: The Very Secret Society of Irregular Witches
+LOCATION:San Jose\, San Jose
+URL:https://www.meetup.com/bookish-happy-hours-more/events/316192043/
+DESCRIPTION:Reading + Weird & unusual · Your reading tastes · San Jose\n
+ https://www.meetup.com/bookish-happy-hours-more/events/316192043/\n\nFind
+  Meetup events so you can do more of what matters to you. Or create your 
+ own group and meet people near you who share your interests.
+END:VEVENT
+END:VCALENDAR

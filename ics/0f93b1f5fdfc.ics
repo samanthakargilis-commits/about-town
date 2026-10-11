@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0f93b1f5fdfc@bay-events
+DTSTAMP:20261011T222717Z
+DTSTART;TZID=America/Los_Angeles:20261011T190000
+DTEND;TZID=America/Los_Angeles:20261011T210000
+SUMMARY:Black Bird x Same Page Book Club
+LOCATION:Black Bird Bookstore\, San Francisco
+URL:https://ma.to/event/black-bird-same-page-book-club-12-oct-2026
+DESCRIPTION:Reading\nhttps://ma.to/event/black-bird-same-page-book-club-12
+ -oct-2026\n\nThe Black Bird x Same Page book club discusses this month's 
+ novel 'Meet Me in the Garden'\, chosen for its connection to San Francisc
+ o. Author Nina LaCour joins for the second half of the event. Free with R
+ SVP.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c08fe4166f42@bay-events
+DTSTAMP:20261011T222718Z
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
+SUMMARY:Improv(e) Your Dating Life
+LOCATION:BATS Bayfront Theater\, 2 Marina Blvd\, Bldg B\, San Francisco\, 
+ CA\, San Francisco
+URL:https://sf.funcheap.com/improve-dating-life-8/
+DESCRIPTION:Comedy + Theatre\nhttps://sf.funcheap.com/improve-dating-life-
+ 8/\n\nExplore your dating tendencies\, expand your dating pool\, and live
+  in the moment in this improv-based dating course. This is a single day\,
+  2-hour workshop. Choose from any of the dates below. Dates: Sunday Oct 1
+ 1\, 2-4pm Friday Nov 6\, 6:30-8:30pm Friday Dec 4\, 6:30-8:30pm Requireme
+ nts: 18 Years + Location: 2 Marina Blvd\, ...
+END:VEVENT
+END:VCALENDAR

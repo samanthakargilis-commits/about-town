@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:77bfff43d62b@bay-events
+DTSTAMP:20261011T222715Z
+DTSTART;TZID=America/Los_Angeles:20261108T130000
+DTEND;TZID=America/Los_Angeles:20261108T170000
+SUMMARY:San Francisco Diwali Festival at Yerba Buena Gardens 2026
+LOCATION:Great Lawn\, Yerba Buena Gardens\, Mission St. between 3rd & 4th 
+ Sts. San Francisco\, CA
+URL:https://sf.funcheap.com/san-francisco-diwali-festival-yerba-buena-gard
+ ens-2026/
+DESCRIPTION:Fairs & festivals + Cultural festivals\nhttps://sf.funcheap.co
+ m/san-francisco-diwali-festival-yerba-buena-gardens-2026/\n\nThe San Fran
+ cisco Diwali Festival brings together contemporary and traditional South 
+ Asian performances for a vibrant outdoor celebration. Set in the beautifu
+ l Yerba Buena Gardens\, this free\, all-ages event invites you to relax\,
+  dance\, and celebrate Diwali. Enjoy live performances throughout the day
+ \, along with a ...
+END:VEVENT
+END:VCALENDAR

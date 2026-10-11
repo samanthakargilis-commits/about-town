@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b129f71bdcfa@bay-events
+DTSTAMP:20261011T222720Z
+DTSTART;TZID=America/Los_Angeles:20261011T210000
+DTEND;TZID=America/Los_Angeles:20261012T020000
+SUMMARY:Champion Returns: Reggae Dancehall
+LOCATION:The Knockout\, San Francisco
+URL:https://ma.to/event/champion-returns-2026-10-11
+DESCRIPTION:New in your area\nhttps://ma.to/event/champion-returns-2026-10
+ -11\n\nReggae and dancehall night with Champion Returns at The Knockout. 
+ Music by DJs SPLIFF SKANKIN\, @jahyzer\, and @djtrueverse. Plus @paul_cos
+ turos at the bar. Vibes from 9pm. 21+ with ID. Every second Sunday of the
+  month.
+END:VEVENT
+END:VCALENDAR

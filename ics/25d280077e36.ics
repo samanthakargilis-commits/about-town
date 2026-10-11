@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:25d280077e36@bay-events
+DTSTAMP:20261011T222716Z
+DTSTART;TZID=America/Los_Angeles:20261011T143000
+DTEND;TZID=America/Los_Angeles:20261011T163000
+SUMMARY:Kronos Quartet: Placeless
+LOCATION:Bing Concert Hall\, Palo Alto
+URL:https://ma.to/event/kronos-quartet-placeless-11-oct-2026
+DESCRIPTION:Concerts + Singing · Palo Alto\nhttps://ma.to/event/kronos-qu
+ artet-placeless-11-oct-2026\n\nGrammy-winning Kronos Quartet collaborates
+  with acclaimed Iranian vocalists Mahsa and Marjan Vahdat for their Place
+ less program at Bing Concert Hall. This performance reunites the artists 
+ following their 2019 album collaboration\, blending contemporary string q
+ uartet traditions with Iranian vocal artistry. Tickets are available on t
+ he profile.
+END:VEVENT
+END:VCALENDAR

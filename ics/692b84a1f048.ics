@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:692b84a1f048@bay-events
+DTSTAMP:20261011T222715Z
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
+SUMMARY:San José Wind Symphony Presents\, A Novel Concert
+LOCATION:McAfee Performing Arts and Lecture Center\, 20300 Herriman Ave\, 
+ Saratoga\, CA 95070\, Saratoga
+URL:https://sf.funcheap.com/san-jos-wind-symphony-presents-concert/
+DESCRIPTION:Reading + Concerts · Your reading tastes · Saratoga\nhttps:/
+ /sf.funcheap.com/san-jos-wind-symphony-presents-concert/\n\nThe San José
+  Wind Symphony is pleased to present its 2026-27 season titled “Storyte
+ llers.” This season explores the many ways music tells stories through 
+ literature\, mythology\, cultural traditions\, film\, history\, and commu
+ nity. A Novel Concert\, Sunday \,October 11. Step into the pages of great
+  literature brought to life through ...
+END:VEVENT
+END:VCALENDAR

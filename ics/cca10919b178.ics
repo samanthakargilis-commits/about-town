@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cca10919b178@bay-events
+DTSTAMP:20261011T222716Z
+DTSTART;TZID=America/Los_Angeles:20261025T150000
+DTEND;TZID=America/Los_Angeles:20261025T170000
+SUMMARY:Glam Pumpkin Night: Halloween Paint\, Decorate & Sip in San Franci
+ sco
+LOCATION:1 Polk St\, 1 Polk St\, San Francisco\, CA 94102\, USA\, San Fran
+ cisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/feel-create-connect-sf-by-tbart-studio/events/3
+ 16878244/
+DESCRIPTION:Camp & Halloween + Craft\nhttps://www.meetup.com/feel-create-c
+ onnect-sf-by-tbart-studio/events/316878244/\n\n**Halloween\, but make it 
+ glam. ✨🎃** Spend your Sunday afternoon in San Francisco with wine\, 
+ beautiful food\, good company and a little creative escape. GLAM PUMPKIN 
+ NIGHT is a stylish Halloween-weekend experience at Bar & Bean Fusion wher
+ e we’ll paint and decorate beautiful pumpkins with pearls\, rhinestones
+ \, metallic details and acrylic paint. Come with your friends\, make it a
+  creative date — or co
+END:VEVENT
+END:VCALENDAR

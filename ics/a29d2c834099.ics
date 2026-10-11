@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a29d2c834099@bay-events
+DTSTAMP:20261011T222715Z
+DTSTART;TZID=America/Los_Angeles:20261017T090000
+DTEND;TZID=America/Los_Angeles:20261017T110000
+SUMMARY:2026 Half Moon Bay Art & Pumpkin Festival
+LOCATION:Downtown Half Moon Bay\, Main Street\, Half Moon Bay\, CA\, Half 
+ Moon Bay
+URL:https://sf.funcheap.com/city-guide/october-street-fairs-festivals/
+DESCRIPTION:Big Bay Area traditions + Fairs & festivals · A yearly tradit
+ ion · Half Moon Bay\nhttps://sf.funcheap.com/city-guide/october-street-f
+ airs-festivals/\n\nThe iconic Half Moon Bay Art & Pumpkin Festival takes 
+ over historic Main Street. This massive Bay Area tradition features giant
+  gourds\, a lively parade\, festive costumes\, and plenty of local food v
+ endors. Don't miss the local artistry and the legendary celebration of co
+ astal autumn culture. Glass pumpkin artists will also be showcasing their
+  work hand-blown from molten glass.
+END:VEVENT
+END:VCALENDAR

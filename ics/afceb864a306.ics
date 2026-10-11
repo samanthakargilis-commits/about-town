@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:afceb864a306@bay-events
+DTSTAMP:20261011T222719Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:“Sunday Assembly” Silicon Valley Community Gathering
+LOCATION:Mountain View\, 890 Church St\, Mountain View\, CA\, Mountain Vie
+ w
+URL:https://sf.funcheap.com/sunday-assembly-silicon-valley-community-gathe
+ ring-mountain-view-118/
+DESCRIPTION:Mountain View\nhttps://sf.funcheap.com/sunday-assembly-silicon
+ -valley-community-gathering-mountain-view-118/\n\n“Live Better\, Help O
+ ften\, Wonder More” is the motto for Sunday Assembly Silicon Valley (SA
+ SV)\, an international community movement that celebrates life. The radic
+ ally inclusive SASV is a secular and service nonprofit that celebrates li
+ fe\, welcomes all people and supports everyone fulfilling their potential
+ . It aims ...
+END:VEVENT
+END:VCALENDAR

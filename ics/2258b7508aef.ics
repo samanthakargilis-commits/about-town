@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2258b7508aef@bay-events
+DTSTAMP:20261011T222716Z
+DTSTART;TZID=America/Los_Angeles:20261017T110000
+DTEND;TZID=America/Los_Angeles:20261017T160000
+SUMMARY:2026 Bay Area Science Festival w/ 125+ Free Hands-on Experiences (
+ UCSF)
+LOCATION:UCSF Mission Bay Campus\, Koret Quad\, San Francisco\, CA 94158\,
+  San Francisco
+URL:https://sf.funcheap.com/bay-area-science-festival-ucsf/
+DESCRIPTION:Fairs & festivals · A yearly tradition\nhttps://sf.funcheap.c
+ om/bay-area-science-festival-ucsf/\n\nDiscover science fun and excitement
+  together at the Bay Area Science Festival\, Northern California’s larg
+ est free celebration of science. The festival returns to UCSF’s Mission
+  Bay Campus for one big day of 125+ hands-on experiences\, jaw-dropping d
+ emonstrations\, games\, behind-the-scenes lab tours\, film screenings and
+  science talks. ...
+END:VEVENT
+END:VCALENDAR

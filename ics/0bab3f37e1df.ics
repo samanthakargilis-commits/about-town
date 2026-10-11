@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0bab3f37e1df@bay-events
+DTSTAMP:20261011T222715Z
+DTSTART;TZID=America/Los_Angeles:20261016T180000
+DTEND;TZID=America/Los_Angeles:20261016T210000
+SUMMARY:Salvi Soul Encuentro 2026: SF’s Free Salvadoran Culture Festival
+LOCATION:Casa De Apoyo\, 4834 Mission St.\, San Francisco\, CA\, San Franc
+ isco
+URL:https://sf.funcheap.com/salvi-soul-encuentro-2026-sfs-free-salvadoran-
+ culture-festival-oct-14-18/
+DESCRIPTION:Fairs & festivals + Cultural festivals\nhttps://sf.funcheap.co
+ m/salvi-soul-encuentro-2026-sfs-free-salvadoran-culture-festival-oct-14-1
+ 8/\n\nSalvi Soul Encuentro is a four-date celebration of Salvadoran herit
+ age in San Francisco’s Excelsior and Mission Districts. The program inc
+ ludes Salvadoran storytelling at Casa De Apoyo\, a poetry and vinyl recor
+ d showcase\, a bike tour tracing the legacy of Los Siete de la Raza\, and
+  ...
+END:VEVENT
+END:VCALENDAR

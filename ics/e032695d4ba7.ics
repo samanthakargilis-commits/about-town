@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e032695d4ba7@bay-events
+DTSTAMP:20261011T222717Z
+DTSTART;TZID=America/Los_Angeles:20261108T120000
+DTEND;TZID=America/Los_Angeles:20261108T160000
+SUMMARY:“Free Oakland Up” Market: Shop for Free Treasures
+LOCATION:Free Oakland Up\, 2809 MacArthur Blvd\, Oakland\, CA\, Oakland
+URL:https://sf.funcheap.com/free-oakland-up-market-shop-for-free-treasures
+ -every-friday-sunday-25/
+DESCRIPTION:Craft + Art · Oakland\nhttps://sf.funcheap.com/free-oakland-u
+ p-market-shop-for-free-treasures-every-friday-sunday-25/\n\nFree Oakland 
+ UP\, a Social Practice Project by Jocelyn Meggait\, is open Fridays throu
+ gh Sundays from 12–4 PM\, offering free materials for art\, collage\, a
+ nd junk journals such as ephemera\, electronics parts\, books\, and house
+ hold goods. Outdoor items are entirely free to take (just don’t ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4e8fbc051761@bay-events
+DTSTAMP:20261011T222716Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Shame Cave Comedy Show: A Shameful Yet Shameless Night
+LOCATION:SF\, 491 Potrero Ave\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/shame-cave-comedy-show-a-shameful-yet-shameles
+ s-night-sf-99/
+DESCRIPTION:Comedy\nhttps://sf.funcheap.com/shame-cave-comedy-show-a-shame
+ ful-yet-shameless-night-sf-99/\n\nA delightful evening of comedy\, happen
+ ing every 2nd Thursday. Shameful things will be discussed by the shameles
+ s and shameful. Maybe reach catharsis\, and if not\, there’s drinks. Ho
+ sted by the ever-shame-wracked Annette Mullaney and featuring the best of
+  Bay Area and visiting comedians. Shame Cave Comedy Show: ...
+END:VEVENT
+END:VCALENDAR

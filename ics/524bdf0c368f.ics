@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:524bdf0c368f@bay-events
+DTSTAMP:20261011T222716Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:Holiday ice rinks in San Francisco
+LOCATION:
+URL:https://secretsanfrancisco.com/new-holiday-ice-rink-fishermans-wharf-s
+ f/
+DESCRIPTION:Big Bay Area traditions + Fairs & festivals\nhttps://secretsan
+ francisco.com/new-holiday-ice-rink-fishermans-wharf-sf/\n\nThe waterfront
+  rink joins several other pop-ups for the holidays\, including the iconic
+  rink in Union Square that is set to open on November 4 and run through J
+ anuary 18. Thrive City also hosts an ice rink\, although dates for 2026 h
+ ave yet to be announced. Some other notable holiday events to look out fo
+ r this year include the beloved gingerbread house at the Fairmont Hotel\,
+  holiday markets perfect
+END:VEVENT
+END:VCALENDAR

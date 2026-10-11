@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1e8780ba3527@bay-events
+DTSTAMP:20261011T222720Z
+DTSTART;TZID=America/Los_Angeles:20261012T080000
+DTEND;TZID=America/Los_Angeles:20261012T130000
+SUMMARY:Safeway Pumpkin Weigh-Off
+LOCATION:Half Moon Bay\, Half Moon Bay
+URL:https://ma.to/event/safeway-pumpkin-weigh-off-12-oct-2026
+DESCRIPTION:Half Moon Bay\nhttps://ma.to/event/safeway-pumpkin-weigh-off-1
+ 2-oct-2026\n\nThe 53rd Safeway World Championship Pumpkin Weigh-Off retur
+ ns to Half Moon Bay. Last year’s champion weighed in at an incredible 2
+ \,346 pounds. Watch as massive gourds from across the region compete for 
+ the top title.
+END:VEVENT
+END:VCALENDAR

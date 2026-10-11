@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f00f8a82e196@bay-events
+DTSTAMP:20261011T222715Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:SF’s Annual Sandcastle Classic 2026
+LOCATION:Ocean Beach\, San Francisco
+URL:https://sf.funcheap.com/city-guide/october-street-fairs-festivals/
+DESCRIPTION:Weird & unusual + Concerts · Featured on Funcheap\nhttps://sf
+ .funcheap.com/city-guide/october-street-fairs-festivals/\n\nSaturday\, Oc
+ tober 24\, 2026 – SF (Ocean Beach) – FREE – For one day\, Ocean Bea
+ ch is home to the largest sandcastle contest in Northern California \; fe
+ aturing dozens of jaw-dropping\, supersized sand sculptures \; plus there
+  are food trucks and live music all day.
+END:VEVENT
+END:VCALENDAR

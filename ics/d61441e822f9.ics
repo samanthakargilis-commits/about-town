@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d61441e822f9@bay-events
+DTSTAMP:20261011T222718Z
+DTSTART;TZID=America/Los_Angeles:20261011T130000
+DTEND;TZID=America/Los_Angeles:20261011T160000
+SUMMARY:Shiba Social + Pet Portraits
+LOCATION:Campbell Park & Woofboard\, 389 E Campbell Ave\, Campbell\, CA 95
+ 008\, Campbell
+URL:https://ma.to/event/shiba-social-pet-portraits-2026-10-11
+DESCRIPTION:Weird & unusual + Art · Campbell\nhttps://ma.to/event/shiba-s
+ ocial-pet-portraits-2026-10-11\n\nCo-hosted with Bay Area Shiba Inu Club\
+ , the Shiba Social brings local Shiba Inus and their people together. The
+  afternoon opens at 1:00 PM at Campbell Park with a costume contest and g
+ roup photo\, then moves to Woofboard from 2:00 PM to 4:00 PM for the soci
+ al\, custom pet portraits by Itzy Bitzy Art Shop and 10% off in-store pur
+ chases. Custom pet portraits can be preordered.
+END:VEVENT
+END:VCALENDAR

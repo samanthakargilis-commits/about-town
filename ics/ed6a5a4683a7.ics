@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ed6a5a4683a7@bay-events
+DTSTAMP:20261011T222717Z
+DTSTART;TZID=America/Los_Angeles:20261015T160000
+DTEND;TZID=America/Los_Angeles:20261015T190000
+SUMMARY:The Crossing 5th Anniversary
+LOCATION:The Crossing at East Cut\, 250 Main St.\, San Francisco
+URL:https://ma.to/event/the-crossing-5th-anniversary-15-oct-2026
+DESCRIPTION:Fairs & festivals\nhttps://ma.to/event/the-crossing-5th-annive
+ rsary-15-oct-2026\n\nThe Crossing celebrates its 5th anniversary and The 
+ East Cut’s 10th with a community block party. Expect a live DJ\, bar sp
+ ecials at The Greyhound\, a pop-up shop from Ruby’s Old & New\, a live 
+ photobooth\, and a pop-up with Paid-Time Off. The evening includes a ribb
+ on cutting for the site's brand-new basketball court. This event is free 
+ and open to the public\; RSVP on the profile.
+END:VEVENT
+END:VCALENDAR

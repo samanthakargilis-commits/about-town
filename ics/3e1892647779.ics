@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3e1892647779@bay-events
+DTSTAMP:20261011T222717Z
+DTSTART;TZID=America/Los_Angeles:20261011T160000
+DTEND;TZID=America/Los_Angeles:20261011T180000
+SUMMARY:Spell Bottle Crafting
+LOCATION:Whiskerwood Haven\, 3000 Geary Blvd\, San Francisco\, CA\, San Fr
+ ancisco
+URL:https://ma.to/event/spell-bottle-crafting-2026-10-11
+DESCRIPTION:Craft + Camp & Halloween\nhttps://ma.to/event/spell-bottle-cra
+ fting-2026-10-11\n\nSpell bottle crafting session at Whiskerwood Haven's 
+ cat lounge from 4pm to 6pm. It is part of the lounge's October Halloween 
+ calendar\, which invites visitors to spend time with the adoptable cats. 
+ Advance booking is available.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3a64c31ab4d7@bay-events
+DTSTAMP:20261011T222718Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:Bat Week Screening of ‘The Invisible Mammal’
+LOCATION:Burlingame Recreation Center\, 850 Burlingame Ave.\, Burlingame\,
+  CA\, Burlingame
+URL:https://sf.funcheap.com/bat-week-screening-the-invisible-mammal/
+DESCRIPTION:Burlingame\nhttps://sf.funcheap.com/bat-week-screening-the-inv
+ isible-mammal/\n\nAward-winning documentary highlights global bat extinct
+ ion crisis The Citizens Environmental Council invites you to a free scree
+ ning of an award-winning documentary highlighting the fight to save North
+  American bats on Wednesday\, October 21\, from 6 to 8 p.m. at the Burlin
+ game Community Center at 850 Burlingame Ave. ...
+END:VEVENT
+END:VCALENDAR

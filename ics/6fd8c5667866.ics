@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6fd8c5667866@bay-events
+DTSTAMP:20261011T222720Z
+DTSTART;TZID=America/Los_Angeles:20261024T193000
+DTEND;TZID=America/Los_Angeles:20261024T213000
+SUMMARY:Evil Dead II
+LOCATION:4 Star Theater\, 2200 Clement St\, San Francisco
+URL:https://ticketing.uswest.veezi.com/purchase/20064?siteToken=d2atbcege5
+ knqsavntt91g1250
+DESCRIPTION:New in your area\nhttps://ticketing.uswest.veezi.com/purchase/
+ 20064?siteToken=d2atbcege5knqsavntt91g1250\n\nRated R. Ashley Williams tr
+ avels to a secluded cabin in the woods with his girlfriend Linda where th
+ ey find a tape recording of a professor and a book of evil. This unleashe
+ s a bunch of evil spirits that constantly terrorize Ash. Meanwhile a jour
+ nalist comes to the area to study the book of evil. Ash and her end up ha
+ ving to survive this swarm of evil until morning comes.
+END:VEVENT
+END:VCALENDAR

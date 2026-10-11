@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d585a3da313e@bay-events
+DTSTAMP:20261011T222715Z
+DTSTART;TZID=America/Los_Angeles:20261011T100000
+DTEND;TZID=America/Los_Angeles:20261011T210000
+SUMMARY:Fleet Week at PIER 39
+LOCATION:Pier 39\, Pier 39\, The Embarcadero\, San Francisco CA\, San Fran
+ cisco
+URL:https://sf.funcheap.com/fleet-week-at-pier-39-oct-7-11-3/
+DESCRIPTION:Big Bay Area traditions + Fairs & festivals · Featured on Fun
+ cheap\nhttps://sf.funcheap.com/fleet-week-at-pier-39-oct-7-11-3/\n\nDid y
+ ou know that PIER 39 is THE place to experience the Fleet Week action? En
+ joy live music from military and local bands backed by front-row views of
+  the Bay\, spectacular ship sightings\, and unforgettable aerial performa
+ nces overhead. From the Parade of Ships to the ...
+END:VEVENT
+END:VCALENDAR

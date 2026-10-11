@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:53051f264b79@bay-events
+DTSTAMP:20261011T222718Z
+DTSTART;TZID=America/Los_Angeles:20261018T100000
+DTEND;TZID=America/Los_Angeles:20261018T120000
+SUMMARY:Cultivating a Boundless Heart
+LOCATION:SF Dharma Collective\, 2929 24th St\, San Francisco\, CA San Fran
+ cisco\, San Francisco
+URL:https://www.meetup.com/san-francisco-mindfulness-meetup/events/3167666
+ 42/
+DESCRIPTION:Meditation + Spirituality\nhttps://www.meetup.com/san-francisc
+ o-mindfulness-meetup/events/316766642/\n\n## Daylong Insight Retreat **Dw
+ elling in the Divine Abodes of Lovingkindness\, Compassion\, Joy and Equa
+ nimity** **with Kitty Costello and David Onek** This daylong meditation r
+ etreat explores the cultivation of the four brahmavihāras\, or “divine
+  abodes”: lovingkindness\, compassion\, sympathetic joy\, and equanimit
+ y. Through periods of meditation\, reflection\, and inquiry\, we will exp
+ lore these qualiti
+END:VEVENT
+END:VCALENDAR

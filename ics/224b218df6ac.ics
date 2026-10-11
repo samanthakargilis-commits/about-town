@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:224b218df6ac@bay-events
+DTSTAMP:20261011T222718Z
+DTSTART;TZID=America/Los_Angeles:20261021T190000
+DTEND;TZID=America/Los_Angeles:20261021T204500
+SUMMARY:Craft & Mingle × Cozy Cubs
+LOCATION:Sunset Commons\, 1600 Irving St San Francisco\, San Francisco
+URL:https://partiful.com/e/NVTGrzjGekAYvSIPBXjR
+DESCRIPTION:Craft\nhttps://partiful.com/e/NVTGrzjGekAYvSIPBXjR\n\nLet’s 
+ craft together! Bring your project-in-progress\, or come as you are for a
+ n analog evening with cozy vibes and creative inspiration. This month’s
+  Sunset Commons Craft & Mingle is a collab with Cozy Cubs Puzzle Club! Sa
+ ge (Cozy Cubs) and Carmen (Sunset Commons) are hosting the Build-a-Bearna
+ rd Challenge. You can make whatever you want at Craft & Mingle. This mont
+ h\, we challenge you to create an
+END:VEVENT
+END:VCALENDAR

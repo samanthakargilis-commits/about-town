@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:432c5ca54a0d@bay-events
+DTSTAMP:20261011T222719Z
+DTSTART;TZID=America/Los_Angeles:20261011T090000
+DTEND;TZID=America/Los_Angeles:20261011T170000
+SUMMARY:Fleet Fest
+LOCATION:Fisherman's Wharf SkyStar Wheel and Pier 27\, 2860 Taylor St\, Sa
+ n Francisco\, CA 94111\, San Francisco
+URL:https://ma.to/event/fleet-fest-2026-10-11
+DESCRIPTION:Concerts\nhttps://ma.to/event/fleet-fest-2026-10-11\n\nFleet F
+ est brings live music from local and military bands\, food trucks\, drink
+ s\, local vendors and family-friendly activities throughout the day to th
+ e Fisherman's Wharf SkyStar Wheel and Pier 27. It runs 9am to 5pm on Sund
+ ay\, October 11.
+END:VEVENT
+END:VCALENDAR

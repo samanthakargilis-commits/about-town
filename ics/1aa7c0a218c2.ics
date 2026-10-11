@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1aa7c0a218c2@bay-events
+DTSTAMP:20261011T222718Z
+DTSTART;TZID=America/Los_Angeles:20261030T183000
+DTEND;TZID=America/Los_Angeles:20261030T200000
+SUMMARY:Book release with Green Apple and Kirk Lombard at Sports Basement
+LOCATION:Sports Basement Presidio\, 610 Old Mason St\, San Francisco
+URL:https://presidio.gov/explore/events/book-release-with-green-apple-and-
+ kirk-lombard-at-sports-basement/
+DESCRIPTION:Reading\nhttps://presidio.gov/explore/events/book-release-with
+ -green-apple-and-kirk-lombard-at-sports-basement/\n\nJoin Green Apple Boo
+ ks and author Kirk Lombard at Sports Basement Presidio in San Francisco f
+ or the release of his new book\, The Shadow Stream.
+END:VEVENT
+END:VCALENDAR

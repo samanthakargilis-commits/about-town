@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f85f71eac513@bay-events
+DTSTAMP:20261011T222716Z
+DTSTART;TZID=America/Los_Angeles:20261022T180000
+DTEND;TZID=America/Los_Angeles:20261022T193000
+SUMMARY:Presentation: Eyewitness to the Resistance
+LOCATION:San Francisco Main Library\, Koret Auditorium\, 100 Larkin Street
+ \, San Francisco\, CA 94102\, San Francisco
+URL:https://sf.funcheap.com/presentation-eyewitness-resistance-sf-main-lib
+ rary/
+DESCRIPTION:Reading + Discourse · Thursday evening\nhttps://sf.funcheap.c
+ om/presentation-eyewitness-resistance-sf-main-library/\n\nIndivisible SF 
+ presents a panel of local photojournalists from Pro Bono Photo and other 
+ news organizations who share selections from their portfolios and discuss
+  the role photojournalism plays in documenting protest\, civic action and
+  pro-democracy movements. From the civil rights and voting rights movemen
+ ts of the ...
+END:VEVENT
+END:VCALENDAR

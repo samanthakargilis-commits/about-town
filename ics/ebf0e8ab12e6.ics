@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ebf0e8ab12e6@bay-events
+DTSTAMP:20261011T222719Z
+DTSTART;TZID=America/Los_Angeles:20261110T130000
+DTEND;TZID=America/Los_Angeles:20261110T143000
+SUMMARY:Cream: The Legendary Reign of the Original Rock Supergroup
+LOCATION:JCCSF\, 3200 California Street\, San Francisco
+URL:https://www.jccsf.org/event/cream-the-legendary-reign-of-the-original-
+ rock-supergroup/
+DESCRIPTION:Musical theatre + Concerts · Near home for lunch\nhttps://www
+ .jccsf.org/event/cream-the-legendary-reign-of-the-original-rock-supergrou
+ p/\n\nThrill to film clips of 1960s musical pioneers Cream\, whose powerf
+ ul and dynamic sound belied the fact they were a trio. Their classics liv
+ e on.
+END:VEVENT
+END:VCALENDAR

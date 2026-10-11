@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e42e26c28c91@bay-events
+DTSTAMP:20261011T222718Z
+DTSTART;TZID=America/Los_Angeles:20261014T163000
+DTEND;TZID=America/Los_Angeles:20261014T183000
+SUMMARY:Recharge Wednesday – Open Meditation\, 4–5:30 PM
+LOCATION:Dharma Treasury Temple\, 3201 Ulloa St\, San Francisco\, CA 94116
+ \, USA\, San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/bay-area-meditation-group/events/316701857/
+DESCRIPTION:Meditation\nhttps://www.meetup.com/bay-area-meditation-group/e
+ vents/316701857/\n\nHalfway through the week — halfway is a good place 
+ to stop and reset. Midweek doesn't have to wear you down before it's over
+ . Stop by for ten minutes or stay the full ninety — whatever your Wedne
+ sday allows. This Chan meditation session is a chance to set the week's m
+ omentum down for a while and come back steadier: calmer\, more patient\, 
+ less reactive. Open to all levels. No obligation to stay the 
+END:VEVENT
+END:VCALENDAR

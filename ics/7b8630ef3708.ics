@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7b8630ef3708@bay-events
+DTSTAMP:20261011T222715Z
+DTSTART;TZID=America/Los_Angeles:20261115T110000
+DTEND;TZID=America/Los_Angeles:20261115T130000
+SUMMARY:Holiday Mercato w/ Artisan Cheese + Hand-Poured Candles (Sonoma)
+LOCATION:Jacuzzi Family Vineyards\, 24724 Arnold Dr\, Sonoma\, CA 95476\, 
+ Sonoma
+URL:https://sf.funcheap.com/holiday-mercato-artisan-cheese-handpoured-cand
+ les-sonoma/
+DESCRIPTION:Craft + Art · A yearly tradition · Sonoma\nhttps://sf.funche
+ ap.com/holiday-mercato-artisan-cheese-handpoured-candles-sonoma/\n\nThe h
+ olidays are just around the corner\, and it’s time to get festive! Join
+  us at Jacuzzi for our annual Holiday Mercato\, featuring seasonal produc
+ ts and gifts from Jacuzzi Family Vineyards and The Olive Press alongside 
+ a curated collection of local artisans and makers. Shop art ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:29fa09e2ab36@bay-events
+DTSTAMP:20261011T222720Z
+DTSTART;TZID=America/Los_Angeles:20261011T120000
+DTEND;TZID=America/Los_Angeles:20261011T150000
+SUMMARY:Summer Lunch Happy Hour
+LOCATION:Izakaya Sozai\, 1500 Irving St\, San Francisco\, CA 94122\, San F
+ rancisco
+URL:https://ma.to/event/summer-lunch-happy-hour-11-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/summer-lunch-happy-hour-
+ 11-oct-2026\n\nIzakaya Sozai's Summer Lunch Happy Hour runs every Saturda
+ y and Sunday from 12 PM to 3 PM. Enjoy discounted bites\, ramen\, yakitor
+ i\, sake\, and beer. Flyer specials include the Famous Sozai Ramen with g
+ yoza combo at $23\, takoyaki at $7\, chicken karaage at $14\, kabocha cro
+ quette at $11\, small hot sake at $7\, and draft beer at $7. Happy hour m
+ enu also features yakitori skewers and $7 Asahi draft.
+END:VEVENT
+END:VCALENDAR

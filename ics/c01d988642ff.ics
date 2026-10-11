@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c01d988642ff@bay-events
+DTSTAMP:20261011T222721Z
+DTSTART;TZID=America/Los_Angeles:20261106T110000
+DTEND;TZID=America/Los_Angeles:20261106T123000
+SUMMARY:Workshop – Yiddish Song Smuggling\, with Daniel Kahn
+LOCATION:JCCSF\, 3200 California Street\, San Francisco
+URL:https://www.jccsf.org/event/workshop-yiddish-song-smuggling-with-danie
+ l-kahn/
+DESCRIPTION:Near home for lunch\nhttps://www.jccsf.org/event/workshop-yidd
+ ish-song-smuggling-with-daniel-kahn/\n\nCross borders of language\, music
+ \, and tradition with Daniel Kahn in a hands-on exploration of translatio
+ n\, adaptation\, and the possibilities of modern Yiddish song.
+END:VEVENT
+END:VCALENDAR

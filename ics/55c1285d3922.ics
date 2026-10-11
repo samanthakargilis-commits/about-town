@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:55c1285d3922@bay-events
+DTSTAMP:20261011T222716Z
+DTSTART;TZID=America/Los_Angeles:20261011T120000
+DTEND;TZID=America/Los_Angeles:20261011T180000
+SUMMARY:Electric Contrasts: the Art of the Detail
+LOCATION:Stanford University\, 450 Serra Mall\, Stanford
+URL:https://events.stanford.edu/event/electric-contrasts-the-art-of-the-de
+ tail-7315
+DESCRIPTION:Art + Reading · Stanford\nhttps://events.stanford.edu/event/e
+ lectric-contrasts-the-art-of-the-detail-7315\n\nThis library exhibition d
+ raws on vintage photobooks and magazines to show how black-and-white phot
+ ographic details of Old Masters transformed modern ways of seeing.
+END:VEVENT
+END:VCALENDAR

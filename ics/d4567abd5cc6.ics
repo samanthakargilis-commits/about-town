@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d4567abd5cc6@bay-events
+DTSTAMP:20261011T222720Z
+DTSTART;TZID=America/Los_Angeles:20261011T120000
+DTEND;TZID=America/Los_Angeles:20261011T210000
+SUMMARY:Mango Sticky Rice Bingsu
+LOCATION:Snowtime\, 715 W Hamilton Ave Ste 1130\, Campbell\, CA 95008\, Ca
+ mpbell
+URL:https://ma.to/event/mango-sticky-rice-bingsu-11-oct-2026
+DESCRIPTION:Campbell\nhttps://ma.to/event/mango-sticky-rice-bingsu-11-oct-
+ 2026\n\nSnowtime serves a limited-time mango sticky rice bingsu: fluffy s
+ haved snow topped with fresh mango\, sweet sticky rice and a scoop of ice
+  cream\, bringing the flavours of the classic Thai dessert together in on
+ e bowl. The item is offered Friday through Sunday only\, with limited qua
+ ntities available each day.
+END:VEVENT
+END:VCALENDAR

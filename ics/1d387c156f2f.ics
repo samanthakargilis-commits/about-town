@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1d387c156f2f@bay-events
+DTSTAMP:20261011T222719Z
+DTSTART;TZID=America/Los_Angeles:20261018T110000
+DTEND;TZID=America/Los_Angeles:20261018T120000
+SUMMARY:The Buddhist Path
+LOCATION:Kadampa Meditation Center SF\, 3324 17th Street\, San Francisco\,
+  CA 94110 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/the-buddhist-path-tickets-1963473850141
+DESCRIPTION:Spirituality + Meditation\nhttps://www.eventbrite.com/e/the-bu
+ ddhist-path-tickets-1963473850141\n\nDiscover Buddhist meditation as a to
+ ol for developing happiness\, inner peace\, patience and love. Two free p
+ asses for future classes.
+END:VEVENT
+END:VCALENDAR

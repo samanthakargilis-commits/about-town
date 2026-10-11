@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:578700dee5d7@bay-events
+DTSTAMP:20261011T222718Z
+DTSTART;TZID=America/Los_Angeles:20261011T100000
+DTEND;TZID=America/Los_Angeles:20261011T160000
+SUMMARY:Inner Sunset Flea Market
+LOCATION:Inner Sunset\, Irving Street (9th–11th Ave.)\, San Francisco
+URL:https://ma.to/event/inner-sunset-flea-market-11-oct-2026
+DESCRIPTION:Estate & sample sales + Weird & unusual\nhttps://ma.to/event/i
+ nner-sunset-flea-market-11-oct-2026\n\nThe Inner Sunset Flea Market retur
+ ns for its annual Tricks\, Treats & Treasures market on Sunday\, October 
+ 11\, 2026. This neighborhood celebration features a curated mix of vintag
+ e treasures\, local artisanal goods\, street food\, and family-friendly e
+ ntertainment\, including a kids costume swap and an Inner Sunset Merchant
+  scavenger hunt. Taking place on Irving Street between 9th and 11th Avenu
+ es\, the 
+END:VEVENT
+END:VCALENDAR

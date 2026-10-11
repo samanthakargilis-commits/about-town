@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b7721daa4764@bay-events
+DTSTAMP:20261011T222720Z
+DTSTART;TZID=America/Los_Angeles:20261014T190000
+DTEND;TZID=America/Los_Angeles:20261014T210000
+SUMMARY:How Can We Lower Our Risk of Dementia? The Science of Brain Aging
+LOCATION:473A Haight St\, 473A Haight St\, San Francisco\, CA 94117\, USA\
+ , San Francisco
+URL:https://luma.com/17bjjusb
+DESCRIPTION:Art + Discourse\nhttps://luma.com/17bjjusb\n\n🧓 How much sa
+ y do we actually have in how our brains age? We're all going to age\, but
+  the path our brains take along the way is not entirely out of our hands.
+  In this talk\, clinical scientist Dr. Breanna Bullard explores the scien
+ ce of successful aging: what actually happens inside the brain over the d
+ ecades\, why some people stay sharp well into later life while others don
+ 't\, and how much of that 
+END:VEVENT
+END:VCALENDAR

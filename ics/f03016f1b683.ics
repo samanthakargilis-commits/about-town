@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f03016f1b683@bay-events
+DTSTAMP:20261011T222718Z
+DTSTART;TZID=America/Los_Angeles:20261014T180000
+DTEND;TZID=America/Los_Angeles:20261014T210000
+SUMMARY:Meridian No 05
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/meridian05
+DESCRIPTION:Craft + Art\nhttps://luma.com/meridian05\n\nNamed for the peak
+ . Built for those chasing it. Meridian is a monthly short-form talk serie
+ s by Noon celebrating people at the height of their craft— and the inte
+ ntion behind what they make. A side project\, a quiet obsession\, a quest
+ ion they keep returning to\, something built with no deliverable expected
+ . Three speakers\, 10 minutes each. October's lineup: German Bauer\, Desi
+ gn for the not-yet\, by r
+END:VEVENT
+END:VCALENDAR

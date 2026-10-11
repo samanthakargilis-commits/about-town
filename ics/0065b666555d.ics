@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0065b666555d@bay-events
+DTSTAMP:20261011T222717Z
+DTSTART;TZID=America/Los_Angeles:20261011T193000
+DTEND;TZID=America/Los_Angeles:20261011T220000
+SUMMARY:Kronos Quartet & Vahdat Sisters
+LOCATION:Bing Concert Hall\, 327 Lasuen St\, Stanford\, CA 94305\, Stanfor
+ d
+URL:https://ma.to/event/kronos-quartet-vahdat-12-oct-2026
+DESCRIPTION:Concerts + Musical theatre · Stanford\nhttps://ma.to/event/kr
+ onos-quartet-vahdat-12-oct-2026\n\nInternationally acclaimed Iranian voca
+ list Mahsa Vahdat joins her sister Marjane Vahdat and the renowned Kronos
+  Quartet at Bing Concert Hall for a performance titled 'Placeless'. This 
+ unique concert brings together a global blend of musical styles as part o
+ f the America 250 series. Tickets available via the link in the profile.
+END:VEVENT
+END:VCALENDAR

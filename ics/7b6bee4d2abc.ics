@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7b6bee4d2abc@bay-events
+DTSTAMP:20261011T222717Z
+DTSTART;TZID=America/Los_Angeles:20261108T100000
+DTEND;TZID=America/Los_Angeles:20261108T110000
+SUMMARY:“Manny’s Neighborhood Trash Cleanup” w/ $1 Beer & Free Yoga 
+ Classes\, Free Fries
+LOCATION:Manny’s\, 3092 16th St San Francisco\, CA 94103
+URL:https://sf.funcheap.com/mannys-neighborhood-trash-cleanup-w-1-beer-fre
+ e-yoga-classes-free-fries-sf-157/
+DESCRIPTION:Meditation\nhttps://sf.funcheap.com/mannys-neighborhood-trash-
+ cleanup-w-1-beer-free-yoga-classes-free-fries-sf-157/\n\nTired? Sunday Fu
+ nday. Wired? Sunday done-day. Make our neighborhood better\, brunch with 
+ cool people (sorry not sorry\, we’re biased)\, get deals to some fave l
+ ocal spots\, and wrap it up before the Sunday Scaries hit with an easy ho
+ ur of picking up trash around our ...
+END:VEVENT
+END:VCALENDAR

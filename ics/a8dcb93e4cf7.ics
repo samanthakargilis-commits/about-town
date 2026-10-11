@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a8dcb93e4cf7@bay-events
+DTSTAMP:20261011T222720Z
+DTSTART;TZID=America/Los_Angeles:20261021T173000
+DTEND;TZID=America/Los_Angeles:20261021T193000
+SUMMARY:Apna Chulha
+LOCATION:San Francisco\, San Francisco
+URL:https://www.meetup.com/mission-district-girlfriends/events/316895453/
+DESCRIPTION:New in your area\nhttps://www.meetup.com/mission-district-girl
+ friends/events/316895453/\n\nFind Meetup events so you can do more of wha
+ t matters to you. Or create your own group and meet people near you who s
+ hare your interests.
+END:VEVENT
+END:VCALENDAR

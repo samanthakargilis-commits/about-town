@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cab020303726@bay-events
+DTSTAMP:20261011T222715Z
+DTSTART;TZID=America/Los_Angeles:20261023T193000
+DTEND;TZID=America/Los_Angeles:20261023T213000
+SUMMARY:“Science Is a Drag” Galactic Drag Show Under the Stars at Chab
+ ot (Oakland)
+LOCATION:Chabot Space & Science Center\, 10000 Skyline Blvd. Oakland\, CA
+URL:https://sf.funcheap.com/science-drag-galactic-drag-show-stars-chabot-o
+ akland/
+DESCRIPTION:Gay / queer + Camp & Halloween · A yearly tradition\nhttps://
+ sf.funcheap.com/science-drag-galactic-drag-show-stars-chabot-oakland/\n\n
+ $20 Adults\, 18+\, $10 for Members Buy Tickets Chabot’s annual drag sho
+ w is BACK! Set your phasers to STUNNING and get ready for a night of sala
+ cious science\, galactic gags\, and queer joy. Host VERA! and a cast of k
+ ings\, queens\, and space royals will be serving ...
+END:VEVENT
+END:VCALENDAR

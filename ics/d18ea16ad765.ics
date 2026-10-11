@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d18ea16ad765@bay-events
+DTSTAMP:20261011T222717Z
+DTSTART;TZID=America/Los_Angeles:20261024T180000
+DTEND;TZID=America/Los_Angeles:20261024T200000
+SUMMARY:Tiny Apartment A̶r̶t̶ Rocky Horror Music Show
+LOCATION:1117 Geary Blvd\, 1117 Geary Blvd San Francisco\, San Francisco
+URL:https://partiful.com/e/JhCrl7ji9yYZCFbA1wbm
+DESCRIPTION:Camp & Halloween + Art\nhttps://partiful.com/e/JhCrl7ji9yYZCFb
+ A1wbm\n\ntiny apartment art show is back for Halloween for a sexy\, campy
+ \, rocky horror-esque show on the patio. Come dressed up and bring your p
+ erformances - we won’t be showing visual art this time (you’ll have t
+ o wait for our winter show for that). We have a line up of bands/ artists
+  (announcement soon) and opportunities for open mic. Come to party\, pre-
+ game\, meet homies\, experience live art ✌️ This time
+END:VEVENT
+END:VCALENDAR

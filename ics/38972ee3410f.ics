@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:38972ee3410f@bay-events
+DTSTAMP:20261011T222720Z
+DTSTART;TZID=America/Los_Angeles:20261101T130000
+DTEND;TZID=America/Los_Angeles:20261101T170000
+SUMMARY:SF’s Aquarium of the Bay: Underwater Pumpkin Carving w/ Kids Fre
+ e
+LOCATION:PIER 39\, PIER 39\, The Embarcadero at Beach Street\, San Francis
+ co\, CA 94133\, San Francisco
+URL:https://sf.funcheap.com/sfs-aquarium-of-the-bay-underwater-pumpkin-car
+ ving-w-kids-free-oct-31-nov-1/
+DESCRIPTION:Animals + Camp & Halloween\nhttps://sf.funcheap.com/sfs-aquari
+ um-of-the-bay-underwater-pumpkin-carving-w-kids-free-oct-31-nov-1/\n\nAqu
+ arium of the Bay hosts its Fish or Treat Halloween program at PIER 39 on 
+ October 31 and November 1\, featuring underwater pumpkin carving from 1-2
+  PM\, otter pumpkin enrichment at 2 PM\, and an all-day arts and crafts t
+ able. A trick-or-treat candy station is ...
+END:VEVENT
+END:VCALENDAR

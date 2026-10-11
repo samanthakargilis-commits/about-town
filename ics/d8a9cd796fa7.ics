@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d8a9cd796fa7@bay-events
+DTSTAMP:20261011T222718Z
+DTSTART;TZID=America/Los_Angeles:20261027T193000
+DTEND;TZID=America/Los_Angeles:20261027T220000
+SUMMARY:$1 Margaritas & “Disco Taco Tuesday” at Underdogs (SoMa)
+LOCATION:Underdogs Cantina\, 128 King St.\, San Francisco\, CA\, San Franc
+ isco
+URL:https://sf.funcheap.com/1-margaritas-disco-taco-tuesday-at-underdogs-s
+ oma-120/
+DESCRIPTION:Dance nights\nhttps://sf.funcheap.com/1-margaritas-disco-taco-
+ tuesday-at-underdogs-soma-120/\n\nJoin us for a Disco Taco Tuesday at Und
+ erdogs Cantina with $1 MARGARITAS from 7:30pm – 8pm! $1 Margs & Disco T
+ aco Tuesday Every Tuesday at 7:30pm Underdogs Cantina\, 128 King St. (Acr
+ oss from ballpark)\, SF FREE (No Cover) $1 MARGARITAS from 7:30pm – 8:0
+ 0pm ...
+END:VEVENT
+END:VCALENDAR

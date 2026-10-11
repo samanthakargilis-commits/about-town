@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:138f7f94e471@bay-events
+DTSTAMP:20261011T222716Z
+DTSTART;TZID=America/Los_Angeles:20261012T190000
+DTEND;TZID=America/Los_Angeles:20261012T210000
+SUMMARY:Transgender Awareness
+LOCATION:Queer Arts Featured\, 575 Castro St\, San Francisco\, San Francis
+ co
+URL:https://ma.to/event/transgender-awareness-2026-10-12
+DESCRIPTION:Craft + Gay / queer\nhttps://ma.to/event/transgender-awareness
+ -2026-10-12\n\nTransgender Awareness is an optional workshop within the S
+ OS Drop In gathering\, held Monday\, October 12th from 7pm to 9pm at Quee
+ r Arts Featured\, 575 Castro St. It is presented by Queer Wellness Roundt
+ able San Francisco and covers transgender and non-binary wellness\, inclu
+ ding gender as a social construct\, gender identity and expression versus
+  sexual orientation\, pronouns\, TGNC historical trauma\, 
+END:VEVENT
+END:VCALENDAR

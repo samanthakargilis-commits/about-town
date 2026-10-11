@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2e694333ee9b@bay-events
+DTSTAMP:20261011T222720Z
+DTSTART;TZID=America/Los_Angeles:20261018T130000
+DTEND;TZID=America/Los_Angeles:20261018T180000
+SUMMARY:Indian Matrimonial Matchmaking Event – Bay Area\, California
+LOCATION:India Community Center (ICC)\, 525 Los Coches Street\, Milpitas\,
+  CA 95035 Milpitas\, Milpitas
+URL:https://www.eventbrite.com/e/indian-matrimonial-matchmaking-event-bay-
+ area-california-tickets-1995509696219
+DESCRIPTION:Milpitas\nhttps://www.eventbrite.com/e/indian-matrimonial-matc
+ hmaking-event-bay-area-california-tickets-1995509696219\n\nMeet genuine I
+ ndian singles in Bay Area in person through guided one-on-one conversatio
+ ns and meaningful connections in a welcoming setting.
+END:VEVENT
+END:VCALENDAR

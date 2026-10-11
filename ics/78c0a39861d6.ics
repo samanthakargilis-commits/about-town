@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:78c0a39861d6@bay-events
+DTSTAMP:20261011T222720Z
+DTSTART;TZID=America/Los_Angeles:20261011T190000
+DTEND;TZID=America/Los_Angeles:20261011T230000
+SUMMARY:Nogu Svelo!
+LOCATION:Kilowatt\, 3160 16th Street\, San Francisco\, California 94103\, 
+ United States San Francisco\, San Francisco
+URL:https://dice.fm/event/6a2329d211b9b4000181c013
+DESCRIPTION:Art\nhttps://dice.fm/event/6a2329d211b9b4000181c013\n\nNogu Sv
+ elo! is a contemporary Russian rock band. The group was founded by Maxim 
+ Pokrovsky\, the only consistent member and author of nearly all of the ba
+ nd's work. The band's work is diverse and influenced by a variety of styl
+ es\, including alternative rock\, pop punk\, punk rock\, art punk\, exper
+ imental rock and others. VIP / Meet & Greet — Premium package including
+ : - early entry - meet & greet with 
+END:VEVENT
+END:VCALENDAR

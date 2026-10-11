@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1802da65fd01@bay-events
+DTSTAMP:20261011T222716Z
+DTSTART;TZID=America/Los_Angeles:20261011T170000
+DTEND;TZID=America/Los_Angeles:20261011T180000
+SUMMARY:Joe Paulino Howl & (My) Howl
+LOCATION:Specs' Twelve Adler Museum Cafe\, San Francisco
+URL:https://ma.to/event/joe-paulino-howl-my-howl-2026-10-11
+DESCRIPTION:Reading + Museum exhibits\nhttps://ma.to/event/joe-paulino-how
+ l-my-howl-2026-10-11\n\nJoe Paulino gives a reading of Howl and (My) Howl
+  at Specs' Twelve Adler Museum Cafe in North Beach\, San Francisco\, from
+  5 to 6 PM. Free entry as part of the venue's October programme of free e
+ vents\; the venue is 21+.
+END:VEVENT
+END:VCALENDAR

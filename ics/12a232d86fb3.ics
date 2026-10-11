@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:12a232d86fb3@bay-events
+DTSTAMP:20261011T222717Z
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
+SUMMARY:Anime & Manga Club: An Afternoon Full Of Fun
+LOCATION:SF\, 1833 Page Street\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/anime-manga-club-an-afternoon-full-of-fun-sf-1
+ 15/
+DESCRIPTION:Reading + Art\nhttps://sf.funcheap.com/anime-manga-club-an-aft
+ ernoon-full-of-fun-sf-115/\n\nCome join at the Park Branch Library\, ever
+ y 2nd Sunday of the month\, for an afternoon of anime\, manga\, discussio
+ n\, art\, and lots of fun. Snacks and refreshments will be provided. This
+  club is for teens ages 12-18 years old.
+END:VEVENT
+END:VCALENDAR

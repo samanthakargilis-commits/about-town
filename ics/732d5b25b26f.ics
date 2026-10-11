@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:732d5b25b26f@bay-events
+DTSTAMP:20261011T222715Z
+DTSTART;TZID=America/Los_Angeles:20261002T090000
+DTEND;TZID=America/Los_Angeles:20261002T110000
+SUMMARY:Clancy’s Pumpkin Patch & Mini Hay Maze
+LOCATION:1620 7th Ave.
+URL:https://www.clancystrees.com/gallery
+DESCRIPTION:Fairs & festivals + U-pick farms · Featured on Funcheap\nhttp
+ s://www.clancystrees.com/gallery\n\nSan Francisco | 1620 7th Ave. | Octob
+ er 2-31 | Open daily 9 am to 9 pm Clancy’s opened San Francisco’s fir
+ st Pumpkin Patch in 1979. You’ll find a wide variety of pumpkins as wel
+ l as gourds\, corn stalks\, and Indian corn. During October\, come see th
+ e ghosts in the trees\, the scarecrows in their patch\, live turkeys \, a
+ nd run through fun corn maze . You can even take a hayride in the middle 
+ of San Fra
+END:VEVENT
+END:VCALENDAR
