@@ -27,8 +27,20 @@ TECH_TITLE = re.compile(r"\b(AI|A\.I\.|agentic|LLMs?|GPUs?|robotics|founders?|st
                         r"devs?|developers?|hackathon|demo day|pitch (night|competition)|VCs?|venture|networking|tech ?week|"
                         r"#\w*tech\w*|disrupt|saas|b2b|web3|crypto|product managers?|open source|nvidia|openai|vercel|"
                         r"coreweave|y ?combinator|yc)\b", re.I)
+# "free, two-drink minimum" isn't free
+DRINK_MIN = re.compile(r"\b(one|two|three|1|2|3)[- ]drink min(imum)?\b|\bdrink minimum\b|\bminimum (of )?(one|two|three|1|2|3) drinks?\b", re.I)
+NUMBER = {"one": 1, "two": 2, "three": 3, "1": 1, "2": 2, "3": 3}
 DRINKS = re.compile(r"\b(unlimited (beer|wine|drinks)|open bar|drink tickets?|bottomless|mixer|mingle|mingling|happy hour|social)\b", re.I)
 FESTIVAL = re.compile(r"\b(fair|festival|fest|street fair|convention|con\b|expo|carnival|block party|market)\b", re.I)
+
+
+def drink_minimum(ev: dict) -> int:
+    """How many drinks a "drink minimum" asks for (0 if none)."""
+    m = DRINK_MIN.search(" ".join([ev.get("price") or "", ev.get("title") or "", ev.get("description") or ""]))
+    if not m:
+        return 0
+    word = next((g for g in (m.group(1), m.group(4)) if g), "1")
+    return NUMBER.get(word.lower(), 1)
 
 
 def for_kids(ev: dict) -> bool:
@@ -67,6 +79,7 @@ class Scorer:
         self.downrank = {norm(n): n for n in follow.get("authors_downrank", [])}
         self.kids_authors = {norm(n) for n in follow.get("kids_authors", [])}
         self.never = [norm(x) for x in profile.get("never", [])]
+        self.never_title = [norm(x) for x in (profile.get("never_in_title") or {}).get("keywords", [])]
         hosted = profile.get("never_paid_hosted") or {}
         self.hosted_sources = set(hosted.get("sources", []))
         self.hosted_kw = [norm(x) for x in hosted.get("keywords", [])]
@@ -91,9 +104,12 @@ class Scorer:
         drinks-and-mingling party costs the most."""
         p = self.profile.get("price") or {}
         price = (ev.get("price") or "").lower()
-        if price == "free":
-            return p.get("free_boost", 0.3)
         dollars = [float(x) for x in re.findall(r"\$\s?(\d+(?:\.\d\d)?)", price)]
+        minimum = drink_minimum(ev)
+        if minimum and not dollars:
+            dollars = [minimum * p.get("drink_minimum_dollars", 10)]
+        elif price == "free":
+            return p.get("free_boost", 0.3)
         if not dollars or not p:
             return 0.0
         cost = min(dollars)
@@ -106,6 +122,19 @@ class Scorer:
             hit -= p.get("paid_party_penalty", 2.5)
         return hit
 
+    @staticmethod
+    def film_points(ft: dict, title_n: str, full: str, reasons: list) -> float:
+        """A screening: up for the kinds of movies you like, down for gory
+        horror, action and sports movies (unless the title itself is one you'd
+        like: Rocky Horror is camp, not horror)."""
+        if matches(ft["dislike"]["keywords"], full) and not matches(ft["like"]["keywords"], title_n):
+            return ft["dislike"]["weight"]
+        for key in ("like", "maybe"):
+            if matches(ft[key]["keywords"], full):
+                reasons.append(ft[key]["label"])
+                return ft[key]["weight"]
+        return 0.0
+
     def score(self, ev: dict, ai_tags: dict | None = None) -> dict | None:
         """Returns the scoring fields for one event, or None if it's on the never list."""
         title_n = norm(ev["title"])
@@ -113,6 +142,8 @@ class Scorer:
                                 " ".join(ev.get("people", []))]))
         full = title_n + " " + body_n
         if any(kw_regex(n).search(full) for n in self.never):
+            return None
+        if any(kw_regex(n).search(title_n) for n in self.never_title):
             return None
         if self.paid_hosted(ev, title_n):
             return None
@@ -122,7 +153,14 @@ class Scorer:
             return None
 
         points, reasons, hits = 0.0, [], []
+        ft = self.profile.get("film_tastes")
+        film = bool(ft and ft["tag"] in (ev.get("tags") or []))
+        # a cinema isn't theatre, and a novel's film isn't a reading
+        at_cinema = bool(ft and set(ft.get("skip_interests_for", [])) & set(ev.get("tags") or []))
+        skip = set(ft.get("skip_interests", [])) if at_cinema else set()
         for key, spec in self.profile["interests"].items():
+            if key in skip:
+                continue
             in_title = matches(spec["keywords"], title_n)
             in_body = matches(spec["keywords"], body_n)
             if in_title or in_body:
@@ -139,6 +177,14 @@ class Scorer:
             points += (ai_tags.get("fit", 5) - 5) * 0.5
         # stacking interests is good, but with diminishing returns
         points = min(points, 8.0)
+
+        source_tags = set(ev.get("tags") or [])
+        for tag, boost in (self.profile.get("tag_boosts") or {}).items():
+            if isinstance(boost, dict) and tag in source_tags:
+                points += boost["points"]
+                reasons.append(boost["why"])
+        if film:
+            points += self.film_points(ft, title_n, full, reasons)
 
         rt = self.profile.get("reading_tastes")
         if rt and "reading" in interests and matches(rt["keywords"], full):
@@ -168,7 +214,7 @@ class Scorer:
                     time_label = t["label"]
 
         is_tech = bool(TECH.search(full)) or bool(ai_tags and ai_tags.get("is_tech"))
-        tags = list(interests)
+        tags = list(interests) + sorted(source_tags & {"annual", "featured", "film"})
         if is_tech:
             tags.append("tech")
             points += self.profile.get("downrank_tags", {}).get("tech", -1.0)

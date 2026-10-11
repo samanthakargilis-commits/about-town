@@ -28,9 +28,10 @@ from .score import Scorer, best_sub_event, norm
 
 # Working sources first (see the shortlist test); the rest are best effort.
 ADAPTERS = ["funcheap", "secretsf", "luma", "sfpl", "jccsf", "citylights", "greenapple", "keplers", "broadwaysf",
-            "dothebay", "eventbrite", "meetup", "dice", "partiful", "paloalto", "filoli", "comedyclubs", "substack"]
+            "dothebay", "eventbrite", "meetup", "dice", "partiful", "paloalto", "filoli", "comedyclubs", "fleetweek", "neckofthewoods", "fourstar", "substack"]
 LISTING_PRIORITY = {"sfpl": 0, "jccsf": 0, "broadwaysf": 0, "citylights": 0, "greenapple": 0, "keplers": 0, "luma": 1, "partiful": 1,
                     "eventbrite": 1, "meetup": 1, "dice": 1, "dothebay": 2, "funcheap": 2, "paloalto": 2, "filoli": 0, "comedyclubs": 0,
+                    "fleetweek": 0, "neckofthewoods": 0, "fourstar": 0,
                     "secretsf": 5, "sfgirlchronicle": 5, "eddieslist": 5}
 STOP = {"the", "a", "an", "at", "in", "with", "and", "presents", "present", "sf", "san", "francisco", "free", "of", "w"}
 OUT = ROOT / "app"

@@ -90,6 +90,7 @@ PRICE_RE = re.compile(r"(free(?: with rsvp)?|\$\s?\d+(?:\.\d\d)?(?:\s?[-–]\s?\
 def price_from(text: str) -> str:
     m = re.search(r"cost:\s*([^|]+)", text, re.I)
     chunk = m.group(1) if m else text
+    chunk = re.sub(r"\$\s?\d+(?:\.\d\d)?\s*off\b", "", chunk, flags=re.I)    # "$10 off tix" is a discount
     p = PRICE_RE.search(chunk)
     if not p:
         return ""
