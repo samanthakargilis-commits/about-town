@@ -134,6 +134,16 @@ function when(ev) {
   const day = fmt(s, { weekday: 'short', month: 'short', day: 'numeric' });
   return ev.all_day ? day : `${day} · ${clock(ev).replace(' ', '').toLowerCase()}`;
 }
+// on an event's own page: when it ends too, "Mon, Oct 12 · 5:30–8pm"
+function whenFull(ev) {
+  if (ev.all_day || !ev.end) return when(ev);
+  const s = new Date(ev.start), e = new Date(ev.end);
+  if (e - s >= 36 * 3600e3 || e <= s) return when(ev);       // a run shows its dates instead
+  const t = (d) => fmt(d, { hour: 'numeric', minute: '2-digit' }).replace(':00', '').replace(' ', '').toLowerCase();
+  const a = t(s), b = t(e);
+  const start = a.slice(-2) === b.slice(-2) ? a.slice(0, -2) : a;   // 5:30–8pm, 11am–2pm
+  return `${fmt(s, { weekday: 'short', month: 'short', day: 'numeric' })} · ${start}–${b}`;
+}
 function runText(ev) {
   if (!ev.end) return '';
   const s = new Date(ev.start), e = new Date(ev.end);
@@ -142,13 +152,30 @@ function runText(ev) {
   // opening day: show the whole run; once it's on, just when it closes
   return s >= today0() ? `${md(s)} – ${md(e)}` : `through ${md(e)}`;
 }
+const FAR_RUN_MILES = 12;
 function displayDate(ev) {
   // a run that started already shows up today
   const s = new Date(ev.start);
   const t = today0();
-  return s < t && ev.end && new Date(ev.end) >= t ? t : s;
+  let d = s < t && ev.end && new Date(ev.end) >= t ? t : s;
+  // a long run out of town (Nightfall at Filoli) is a weekend outing: list it from the Friday;
+  const e = ev.end && new Date(ev.end);
+  // so is one across the bay: Berkeley and Oakland wait for the weekend unless it's someone you follow
+  if (e && e - s > 36 * 3600e3 && ((distOf(ev) ?? 0) > FAR_RUN_MILES || (ev.trip && !ev.followed))) {
+    let f = d;
+    for (let i = 0; i < 7 && !['Fri', 'Sat', 'Sun'].includes(parts(f).weekday); i++) f = new Date(f.getTime() + 864e5);
+    if (f <= e) d = f;
+  }
+  return d;
 }
 const linkOf = (ev) => ev.ticket_url || ev.source_url;
+// the listing site's own little icon, so a Partiful party reads differently from a library talk
+const siteIcon = (ev) => {
+  let host = '';
+  try { host = new URL(ev.source_url).hostname.replace(/^www\./, ''); } catch (e) { return ''; }
+  const src = (data.icons || {})[host];
+  return src ? `<img class="site" src="${esc(src)}" alt="" title="${esc(sourceLabel(ev.source))}" loading="lazy" onerror="this.remove()">` : '';
+};
 const sourceLabel = (id) => (data.sources.find((s) => s.name === id) || {}).label || id;
 
 function toast(msg, undo) {
@@ -512,7 +539,7 @@ function evRow(ev, { showDay = false } = {}) {
     <div class="body" data-open>
       ${showDay ? `<div class="day">${esc(fmt(displayDate(ev), { weekday: 'short', month: 'short', day: 'numeric' }))}</div>` : ''}
       <h3>${esc(ev.title)}</h3>
-      <div class="meta">${meta}</div>
+      <div class="meta">${siteIcon(ev)}${meta}</div>
       ${star ? `<div class="star">${star}</div>` : ''}
       ${sunEscape(ev) ? `<div class="sun">${esc(sunLine(ev))}</div>` : ''}
       ${labels.length ? `<div class="tags">${labels.join('')}</div>` : ''}
@@ -567,7 +594,7 @@ function openSheet(ev) {
   const where = [ev.venue, ev.address !== ev.venue ? ev.address : '', ev.city].filter(Boolean).join(' · ');
   $('#sheet').innerHTML = `<div class="grab"></div><button class="x" data-close aria-label="Close">✕</button>${img}
     <div data-id="${esc(ev.id)}">
-      <div class="when">${esc(when(ev))}${runText(ev) ? ` · ${esc(runText(ev))}` : ''}</div>
+      <div class="when">${esc(whenFull(ev))}${runText(ev) ? ` · ${esc(runText(ev))}` : ''}</div>
       <h2>${esc(ev.title)}</h2>
       <div class="where">${esc(where)}${distText(distOf(ev)) ? ` · <b>${esc(distText(distOf(ev)))} ${fromWhere()}</b>` : ''}${ev.price ? ` · ${esc(ev.price === 'free' ? 'Free' : ev.price)}` : ''}</div>
       ${star ? `<div class="star">${star}<a href="#" data-act="block">Not this person</a></div>` : ''}
@@ -717,9 +744,11 @@ function dayList(list, key) {
   const picked = list.filter((ev) => S.status[ev.id] === 'added' || S.status[ev.id] === 'maybe');
   const rest = list.filter((ev) => !picked.includes(ev));
   const all = expanded.has(key);
-  const shown = [...picked, ...(all ? rest : rest.slice(0, Math.max(0, DAY_SHOW - picked.length)))]
-    .sort((a, b) => (a.all_day - b.all_day) || new Date(a.start) - new Date(b.start));
-  const more = rest.length - Math.max(0, DAY_SHOW - picked.length);
+  const byTime = (a, b) => (a.all_day - b.all_day) || new Date(a.start) - new Date(b.start);
+  const cut = Math.max(0, DAY_SHOW - picked.length);
+  // the first few stay put when the list opens up; the extra ones follow them
+  const shown = [...[...picked, ...rest.slice(0, cut)].sort(byTime), ...(all ? rest.slice(cut).sort(byTime) : [])];
+  const more = rest.length - cut;
   return shown.map((ev) => evRow(ev)).join('') +
     (more > 0 ? `<button class="more-btn" data-more="${key}">${all ? 'Show fewer' : `Show ${more} more`}</button>` : '');
 }

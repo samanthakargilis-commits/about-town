@@ -201,6 +201,132 @@ class FakeFetcher:
         return BeautifulSoup(self.get(url, **kw), "lxml")
 
 
+class BigEvents(unittest.TestCase):
+    """Fleet Week, Terror Vault and the other things a list shouldn't bury."""
+    def test_funcheap_promo_title_categories_and_blurb(self):
+        page = """<div id="post-1" class="tanbox post category-top-pick category-halloween category-sponsored">
+          <span class="title entry-title"><a href="https://sf.funcheap.com/10-off-tix-sfs-terror-vault-2026/">$10 Off Tix: SF’s “Terror Vault” Halloween Haunt (2026)</a></span>
+          <div class="meta">Thursday, October 15 &#150; 6:00 pm - Ends at 9:30 pm | Cost: $10 off* | San Francisco Mint</div></div>
+          <div id="post-2" class="tanbox post category-annual-event-2"><span class="title"><a href="https://sf.funcheap.com/italian-heritage-parade-2026/">Italian Heritage Parade</a></span>
+          <div class="meta">Sunday, October 11 &#150; 12:30 pm | Cost: FREE | North Beach</div></div>
+          <script type="application/ld+json">[{"@type":"Event","name":"x","url":"https://sf.funcheap.com/10-off-tix-sfs-terror-vault-2026/",
+          "description":"San Francisco’s premiere haunted attraction returns"}]</script>"""
+        evs = {e.title: e for e in funcheap.parse_day(BeautifulSoup(page, "lxml"), dt.date(2026, 10, 15))}
+        tv = evs["SF’s “Terror Vault” Halloween Haunt (2026)"]
+        self.assertEqual(tv.price, "")                     # "$10 off" is a discount, not the price
+        self.assertEqual(tv.tags, ["halloween"])           # "top pick" is on most posts: not kept
+        self.assertIn("haunted attraction", tv.description)
+        self.assertEqual(evs["Italian Heritage Parade"].tags, ["annual"])
+
+    def test_funcheap_city_guide(self):
+        guide = """<h1>SF’s “Fleet Week” 2026 Air Show + Full Schedule (Oct. 4-12)</h1><div class="entry">
+          <h2>Air Show</h2><p>The Blue Angels fly October 9-11, 12pm-4pm at Marina Green. Free to watch.</p>
+          <h2>Thursday, October 8, 2026</h2><p>Practice day: the Blue Angels fly at 1pm on October 8.</p>
+          <h2>Ship Tours</h2><p>Tour Navy ships October 7-12 at Piers 27 and 35. Free.</p>
+          <h3>Fleet Week Transportation</h3><p>Muni runs extra trains October 9-11.</p></div>
+          <div id="sidebar"><h3>Most Popular Upcoming Events</h3><p>Lots on October 10.</p></div>"""
+        home = '<a href="https://sf.funcheap.com/city-guide/sfs-fleet-week-festival-guide/">Fleet Week</a>'
+        day = """<div id="post-3" class="post"><span class="title"><a href="https://sf.funcheap.com/fleet-week-at-pier-39/">Fleet Week at PIER 39</a></span>
+          <div class="meta">Saturday, October 10 &#150; 10:00 am | Cost: FREE | Pier 39</div></div>"""
+        f = FakeFetcher({"https://sf.funcheap.com/city-guide/": guide, "https://sf.funcheap.com/2026/": day, "https://sf.funcheap.com/": home})
+        evs = funcheap.fetch(f, dt.datetime(2026, 10, 10, tzinfo=TZ), dt.datetime(2026, 10, 10, 23, tzinfo=TZ))
+        titles = {e.title: e for e in evs}
+        self.assertEqual(sorted(titles), ["Fleet Week at PIER 39", "Fleet Week: Air Show", "Fleet Week: Ship Tours"])
+        self.assertEqual(titles["Fleet Week: Air Show"].tags, ["featured"])
+        self.assertIn("featured", titles["Fleet Week at PIER 39"].tags)     # a day post about the featured event
+
+    def test_fleet_week_official_schedule(self):
+        from ingest.adapters import fleetweek
+        page = """<div class="pp-content-post pp-content-carousel-post"><h3><a href="https://fleetweeksf.org/air-show/">Air Show</a></h3>
+          <div class="pp-content-grid-post-excerpt"><div><strong>October 9 &#8211; 11<br/> 12:00 PM &#8211; 4:00 PM</strong></div>
+          <div><strong>Marina Green</strong></div><p>World-class aviation.</p></div></div>
+          <div class="pp-content-post pp-content-carousel-post"><h3><a href="https://fleetweeksf.org/events/ship-tours/">Ship Tours</a></h3>
+          <div class="pp-content-grid-post-excerpt"><div><strong>Tuesday 10/6-Monday 10/12<br/>10:00 AM &#8211; 4:00 PM</strong></div>
+          <div><strong>Piers 27 &amp; 35</strong></div><p>Climb aboard.</p></div></div>"""
+        evs = fleetweek.parse(BeautifulSoup(page, "lxml"), dt.date(2026, 10, 1))
+        shows = [e for e in evs if "Air Show" in e.title]
+        self.assertEqual([e.start for e in shows], ["2026-10-09T12:00-07:00", "2026-10-10T12:00-07:00", "2026-10-11T12:00-07:00"])
+        self.assertEqual((shows[0].title, shows[0].venue, shows[0].end), ("Fleet Week Air Show", "Marina Green", "2026-10-09T16:00-07:00"))
+        tours = [e for e in evs if "Ship Tours" in e.title]
+        self.assertEqual([(e.start, e.end) for e in tours], [("2026-10-06T10:00-07:00", "2026-10-12T16:00-07:00")])   # a week: one run
+        r = Scoring.s.score(shows[0].to_dict())
+        self.assertIn("traditions", r["tags"])
+        self.assertGreater(r["score"], 4)
+
+    def test_neck_of_the_woods(self):
+        from ingest.adapters import neckofthewoods
+        sec = lambda name, date, time, price, btn: f"""<div class="tw-section"><span class="tw-event-date">{date}</span>
+          <div class="tw-name"><a href="https://www.neckofthewoodssf.com/tm-event/{name.lower().replace(' ', '-')}/">{name}</a></div>
+          <span class="tw-event-time">Show: {time}</span><span class="tw-price">{price}</span>
+          <a class="tw-buy-tix-btn" href="https://www.ticketweb.com/event/x">{btn}</a></div>"""
+        page = '<div class="tw-plugin-upcoming-event-list">' + sec("Karaoke Tuesday", "Tue, Oct 27", "9:00 pm", "$0.00", "Buy Tickets") + \
+            sec("Big Show", "Sat, Oct 31", "8:00 pm", "$24.66", "Sold Out") + "</div>"
+        evs = neckofthewoods.parse(BeautifulSoup(page, "lxml"), dt.date(2026, 10, 11))
+        self.assertEqual([(e.title, e.start, e.price, e.sold_out) for e in evs],
+                         [("Karaoke Tuesday", "2026-10-27T21:00-07:00", "free", False), ("Big Show", "2026-10-31T20:00-07:00", "$24.66", True)])
+        self.assertEqual(evs[0].address, "406 Clement St")
+
+    def test_four_star_films_and_tastes(self):
+        from ingest.adapters import fourstar
+        film = lambda code, title, rating, desc, day, times: f"""<div class="film" id="{code}"><h3 class="title">{title}</h3>
+          <p><span class="censor">{rating}</span></p><p class="film-desc">{desc}</p><div class="sessions"><div class="date-container">
+          <h4 class="date">{day}</h4><ul class="session-times">{''.join(f'<li><a href="/purchase/1"><time>{t}</time></a></li>' for t in times)}</ul></div></div></div>"""
+        page = '<div id="sessionsByFilmConent">' + \
+            film("A", "Wallace &amp; Gromit: The Curse of the Were-Rabbit", "G", "A cozy claymation comedy.", "Saturday 24, October", ["12:30 PM", "5:15 PM"]) + \
+            film("B", "Evil Dead II", "R", "A gory horror sequel.", "Saturday 24, October", ["7:30 PM"]) + \
+            film("C", "LIVE MUSIC: The Wildwoods", "", "Folk trio.", "Wednesday 28, October", ["8:00 PM"]) + "</div>"
+        evs = {e.title: e for e in fourstar.parse(BeautifulSoup(page, "lxml"), dt.date(2026, 10, 11))}
+        wg = evs["Wallace & Gromit: The Curse of the Were-Rabbit"]
+        self.assertEqual((wg.start, wg.venue, wg.tags), ("2026-10-24T12:30-07:00", "4 Star Theater", ["film"]))
+        self.assertTrue(wg.description.startswith("Also at 5:15 PM."))
+        good, gory = (Scoring.s.score(evs[t].to_dict()) for t in ("Wallace & Gromit: The Curse of the Were-Rabbit", "Evil Dead II"))
+        self.assertGreater(good["score"], 2)
+        self.assertLess(gory["score"], 0)
+        self.assertNotIn("theatre", good["tags"])            # "4 Star Theater" is a cinema
+        self.assertNotIn("theatre", Scoring.s.score(evs["LIVE MUSIC: The Wildwoods"].to_dict())["tags"])
+
+    def test_camp_and_featured_lift_terror_vault(self):
+        tv = Scoring.s.score(ev("SF’s “Terror Vault” 1874 Halloween Haunt (2026)", tags=["featured", "halloween"],
+                                description="San Francisco’s premiere haunted attraction returns"))
+        self.assertIn("camp", tv["tags"])
+        self.assertIn("featured", tv["tags"])
+        self.assertGreater(tv["score"], 5)
+
+    def test_drink_minimum_is_not_free(self):
+        plain = Scoring.s.score(ev("Crazy Funny Asians Comedy Showcase", price="free"))
+        minimum = Scoring.s.score(ev("Crazy Funny Asians Comedy Showcase", price="free",
+                                     description="There is a two-drink minimum to help support our local bar scene."))
+        self.assertGreater(plain["score"] - minimum["score"], 2)
+
+    def test_guide_run_folds_into_official_days(self):
+        def item(src, start, end, tags):
+            return dict(ev("Fleet Week Air Show" if src == "fleetweek" else "Fleet Week: Air Show", start=start, end=end, tags=tags),
+                        source=src, id=f"{src}{start}")
+        out = collapse_recurring(merge([item("funcheap", "2026-10-09T16:00-07:00", "2026-10-11T23:00-07:00", ["featured"]),
+                                        item("fleetweek", "2026-10-10T12:00-07:00", "2026-10-10T16:00-07:00", ["annual"]),
+                                        item("fleetweek", "2026-10-11T12:00-07:00", "2026-10-11T16:00-07:00", ["annual"])]))
+        self.assertEqual([(e["source"], e["start"][:10]) for e in out], [("fleetweek", "2026-10-10"), ("fleetweek", "2026-10-11")])
+
+    def test_cross_streets(self):
+        from ingest.geocode import corner_of
+        self.assertEqual(corner_of("Steiner & Hermann, San Francisco, CA"), ("Steiner", "Hermann"))
+        self.assertEqual(corner_of("Haight and Ashbury St"), ("Haight", "Ashbury"))
+        self.assertIsNone(corner_of("3201 Ulloa St"))
+
+    def test_paid_concerts_need_a_reason(self):
+        unknown = Scoring.s.score(ev("SF Unplugged in North Beach: Some Singer + Another", price="$20", venue="Paname SF"))
+        great = Scoring.s.score(ev("SF Unplugged: Some Singer", price="$20", venue="The Fillmore"))
+        free = Scoring.s.score(ev("SF Unplugged: Some Singer", price="free", venue="Paname SF"))
+        self.assertGreater(great["score"] - unknown["score"], 2)
+        self.assertGreater(free["score"] - unknown["score"], 3)
+        self.assertIsNone(Scoring.s.score(ev("SF Unplugged in North Beach: Tristan Lake Leabu + Anthony Arya", price="$20")))
+
+    def test_life_skills_hidden_by_title_only(self):
+        self.assertIsNone(Scoring.s.score(ev("Stressless Taxes for Artists, Creatives, and Freelancers")))
+        self.assertIsNone(Scoring.s.score(ev("Resume Help for Job Seekers")))
+        self.assertIsNotNone(Scoring.s.score(ev("Shut Up & Write!", description="we resume writing after a short break")))
+
+
 class NewSources(unittest.TestCase):
     def test_comedy_clubs(self):
         from ingest.adapters import comedyclubs
@@ -382,3 +508,134 @@ class Weather(unittest.TestCase):
         self.assertEqual(day["sf"]["sun"], 0.2)
         self.assertEqual(day["marin"]["sun"], 0.9)
         self.assertEqual(day["marin"]["hi"], 71)
+
+
+class EventbriteBrowse(unittest.TestCase):
+    def test_category_page_then_event_page(self):
+        from ingest.adapters import eventbrite
+        ld = lambda d: f'<script type="application/ld+json">{json.dumps(d)}</script>'
+        listing = ld({"@type": "ItemList", "itemListElement": [
+            {"@type": "ListItem", "item": {"@type": "Event", "name": "Waters", "startDate": "2026-10-20",
+                                            "url": "https://www.eventbrite.com/e/waters-1?aff=x"}},
+            {"@type": "ListItem", "item": {"@type": "Event", "name": "Later", "startDate": "2027-03-01",
+                                            "url": "https://www.eventbrite.com/e/later-2"}}]})
+        page = ld({"@type": "Event", "name": "A John Waters Christmas", "startDate": "2026-10-20T20:00:00-07:00",
+                   "endDate": "2026-10-20T23:00:00-07:00", "url": "https://www.eventbrite.com/e/waters-1",
+                   "location": {"@type": "Place", "name": "Great American Music Hall",
+                                "address": {"streetAddress": "859 O'Farrell St", "addressLocality": "San Francisco"}},
+                   "offers": [{"@type": "AggregateOffer", "lowPrice": "78.18", "highPrice": "153.6",
+                               "priceCurrency": "USD", "availability": "https://schema.org/SoldOut"}]})
+        f = FakeFetcher({"https://www.eventbrite.com/b/ca--san-francisco/arts/": listing,
+                         "https://www.eventbrite.com/e/waters-1": page})
+        start = dt.datetime(2026, 10, 11, tzinfo=TZ)
+        out = eventbrite.fetch(f, start, start + dt.timedelta(days=60))
+        self.assertEqual(len(out), 1)
+        e = out[0]
+        self.assertEqual(e.start, "2026-10-20T20:00-07:00")
+        self.assertIn("78", e.price)
+        self.assertTrue(e.sold_out)
+        self.assertEqual(e.source_url, "https://www.eventbrite.com/e/waters-1")
+
+
+class GuidePlaces(unittest.TestCase):
+    def test_guide_lines(self):
+        self.assertEqual(funcheap.guide_place("Sunday, October 4, 2026 – SF (Castro) – FREE – Street fair"),
+                         ("Castro", "", "San Francisco"))
+        self.assertEqual(funcheap.guide_place("Saturday, October 10 | 10 AM-2 PM | Duboce Park | FREE Dogs"),
+                         ("Duboce Park", "", ""))
+        self.assertEqual(funcheap.guide_place("North Berkeley | 1272 Gilman Ave, Berkeley | September 18"),
+                         ("", "1272 Gilman Ave", "Berkeley"))
+
+    def test_roundup_page_never_replaces_a_blurb(self):
+        from ingest.__main__ import enrich
+        page = '<meta property="og:description" content="Here is a round-up of October events">'
+        evs = [{"source_url": "https://x.test/roundup", "description": "Sunday – SF (Castro) – FREE – a long, real blurb about the fair " * 2},
+               {"source_url": "https://x.test/roundup", "description": "short"}]
+        enrich(evs, FakeFetcher({"https://x.test/roundup": page}), 10)
+        self.assertIn("real blurb", evs[0]["description"])
+        self.assertEqual(evs[1]["description"], "short")
+
+    def test_event_page_fills_place(self):
+        from ingest.__main__ import enrich
+        page = ('<script type="application/ld+json">' + json.dumps({"@type": "Event", "name": "Show", "startDate": "2026-10-20T20:00",
+                "description": "A proper description of the show that runs long enough to count as a real blurb for it.",
+                "location": {"@type": "Place", "name": "The Chapel", "address": {"streetAddress": "777 Valencia St", "addressLocality": "San Francisco"}}})
+                + '</script>')
+        ev = {"source_url": "https://x.test/show", "description": ""}
+        enrich([ev], FakeFetcher({"https://x.test/show": page}), 10)
+        self.assertEqual((ev["venue"], ev["address"]), ("The Chapel", "777 Valencia St"))
+        self.assertIn("proper description", ev["description"])
+
+
+class SiteIcons(unittest.TestCase):
+    def test_small_icon_first(self):
+        from ingest import icons
+        soup = BeautifulSoup('<link rel="apple-touch-icon" href="/a.png"><link rel="icon" sizes="192x192" href="/big.png">'
+                             '<link rel="icon" sizes="32x32" href="/f32.png">', "lxml")
+        self.assertEqual(icons.candidates(soup, "https://partiful.com/")[:2],
+                         ["https://partiful.com/f32.png", "https://partiful.com/big.png"])
+        self.assertEqual(icons.host_of("https://www.eventbrite.com/e/x"), "eventbrite.com")
+
+
+class Tastes(unittest.TestCase):
+    def setUp(self):
+        self.s = Scorer(json.loads((pathlib.Path(__file__).parent.parent / "data" / "profile.json").read_text()), {})
+
+    def test_lunchtime_only_near_work_or_home(self):
+        base = dict(title="Lunchtime Concert", start="2026-10-14T12:30-07:00", source="funcheap", price="free", description="")
+        near = self.s.score(dict(base, lat=37.7903, lng=-122.3960))      # Salesforce Park
+        far = self.s.score(dict(base, lat=37.7599, lng=-122.4148))       # the Mission
+        self.assertIn("Near work", near["why"])
+        self.assertGreater(near["score"], far["score"] + 3)
+
+    def test_no_tech_or_networking(self):
+        self.assertIsNone(self.s.score(dict(title="The Trillion Dollar Teams — In conversation with Vinod Khosla",
+                                            start="2026-10-14T18:00-07:00", source="luma", description="Personal")))
+        self.assertIsNone(self.s.score(dict(title="Fast Forward", start="2026-10-14T18:00-07:00", source="luma",
+                                            description="Vercel Events")))
+        self.assertIsNone(self.s.score(dict(title="Young Professionals Networking Night", start="2026-10-14T18:00-07:00",
+                                            source="eventbrite", description="")))
+
+    def test_greek_festival(self):
+        r = self.s.score(dict(title="Annunciation Greek Food Festival", start="2026-10-17T12:00-07:00",
+                              source="funcheap", price="free", description=""))
+        self.assertIn("Greek", r["why"])
+
+
+class PresidioSources(unittest.TestCase):
+    def test_park_feed(self):
+        from ingest.adapters import presidio
+        feed = {"total_pages": 1, "events": [
+            {"id": 1, "title": "Presidio Chapel&#8217;s Monthly Concert Series: Jason Sia", "utc_start_date": "2026-10-17 19:00:00",
+             "utc_end_date": "2026-10-17 20:00:00", "url": "https://presidio.gov/explore/events/chapel/2026-10-17/", "cost": ""},
+            {"id": 2, "title": "Volunteer: Presidio Forest Stewards (Friday)", "utc_start_date": "2026-10-16 16:00:00"}]}
+        start = dt.datetime(2026, 10, 11, tzinfo=TZ)
+        out = presidio.fetch(FakeFetcher({presidio.API: feed}), start, start + dt.timedelta(days=30))
+        self.assertEqual(len(out), 1)
+        self.assertEqual((out[0].venue, out[0].start), ("Presidio Chapel", "2026-10-17T12:00-07:00"))
+
+    def test_theatre_performances(self):
+        from ingest.adapters import presidiotheatre
+        offer = lambda t: {"validFrom": t, "url": "https://www.presidiotheatre.org/ticket-path?ShowName=dakhabrakha"}
+        node = {"@type": "TheaterEvent", "name": "DakhaBrakha", "startDate": "2027-01-16",
+                "offers": [offer("2027-01-17 14:00:00"), offer("2027-01-16 19:30:00")]}
+        soup = BeautifulSoup(f'<script type="application/ld+json">{json.dumps(node)}</script>', "lxml")
+        out = presidiotheatre.parse(soup)
+        self.assertEqual([e.start for e in out], ["2027-01-16T19:30-08:00", "2027-01-17T14:00-08:00"])
+        self.assertEqual(out[0].source_url, "https://www.presidiotheatre.org/show-details/dakhabrakha")
+
+
+class MatoSource(unittest.TestCase):
+    def test_town_in_the_place_wins(self):
+        from ingest.adapters import mato
+        node = {"@type": "Event", "name": "Flannel & Foliage", "description": "Free general admission.", "startDate": "2026-10-23T10:00:00.000-07:00",
+                "endDate": "2026-10-23T18:00:00.000-07:00",
+                "location": {"@type": "Place", "name": "Downtown Danville", "address": {"addressLocality": "San Francisco"}},
+                "offers": {"@type": "Offer", "price": 0, "availability": "https://schema.org/InStock"}}
+        soup = BeautifulSoup(f'<script type="application/ld+json">{json.dumps(node)}</script>', "lxml")
+        e = mato.from_page(soup, "https://ma.to/event/flannel-foliage-gilmore-girls-festival-23-oct-2026")
+        self.assertEqual((e.city, e.price), ("Danville", "free"))
+        self.assertEqual(mato.day_of(e.source_url, dt.date(2026, 10, 11)), "2026-10-23")
+        node.update(name="9 to 5 + Peaches Christ", description="A drag tribute.")
+        soup = BeautifulSoup(f'<script type="application/ld+json">{json.dumps(node)}</script>', "lxml")
+        self.assertEqual(mato.from_page(soup, "https://ma.to/event/x").price, "")    # $0 means unknown

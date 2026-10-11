@@ -87,7 +87,7 @@ main { padding: 6px 12px 0; outline: none; }
 /* ---------- a day's list */
 .dayhead { padding: 22px 10px 6px; display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
 .dayhead h2 { font-family: var(--serif); font-variation-settings: "SOFT" 100; font-size: 25px; font-weight: 600; margin: 0; line-height: 1.1; }
-.dayhead h2 em { font-weight: 400; color: var(--cherry); }
+.dayhead h2 em { font-style: normal; font-weight: inherit; color: inherit; }
 .dayhead small { color: var(--sub); font-size: 13.5px; flex: none; }
 
 .ev { display: flex; gap: 12px; background: var(--paper); border-radius: 18px; padding: 14px 14px 14px 12px; margin-bottom: 10px; box-shadow: 0 1px 0 var(--line); transition: transform .15s; }
@@ -109,6 +109,7 @@ main { overflow-x: clip; }
 .ev .day { font-size: 12px; font-weight: 700; color: var(--cherry); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 2px; }
 .ev h3 { font-family: var(--serif); font-variation-settings: "SOFT" 100; font-size: 17.5px; font-weight: 600; line-height: 1.2; margin: 0; }
 .ev .meta { color: var(--sub); font-size: 13px; margin-top: 4px; }
+.ev .meta img.site { width: 13px; height: 13px; border-radius: 3px; vertical-align: -2px; margin-right: 5px; object-fit: contain; opacity: .9; }
 .ev .star { margin-top: 6px; font-size: 13px; font-weight: 700; color: var(--butter-ink); }
 .ev .sun, .sheet .sun { margin-top: 6px; font-size: 13px; font-weight: 700; color: var(--butter-ink); }
 .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }

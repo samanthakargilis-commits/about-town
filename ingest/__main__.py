@@ -19,7 +19,7 @@ from urllib.parse import urlparse
 
 import requests
 
-from . import ai, geocode, place, weather
+from . import ai, geocode, icons, place, weather
 from .area import keep
 from .core import (CACHE_DIR, ROOT, BudgetExceeded, Fetcher, clean, html_to_text, iso, jsonld_events,
                    now, og, short_hash, to_local)
@@ -28,9 +28,10 @@ from .score import Scorer, best_sub_event, norm
 
 # Working sources first (see the shortlist test); the rest are best effort.
 ADAPTERS = ["funcheap", "secretsf", "luma", "sfpl", "jccsf", "citylights", "greenapple", "keplers", "broadwaysf",
-            "dothebay", "eventbrite", "meetup", "dice", "partiful", "paloalto", "filoli", "comedyclubs", "substack"]
+            "dothebay", "eventbrite", "meetup", "dice", "partiful", "paloalto", "filoli", "comedyclubs", "fleetweek", "neckofthewoods", "fourstar", "presidiotheatre", "presidio", "mato", "substack"]
 LISTING_PRIORITY = {"sfpl": 0, "jccsf": 0, "broadwaysf": 0, "citylights": 0, "greenapple": 0, "keplers": 0, "luma": 1, "partiful": 1,
                     "eventbrite": 1, "meetup": 1, "dice": 1, "dothebay": 2, "funcheap": 2, "paloalto": 2, "filoli": 0, "comedyclubs": 0,
+                    "fleetweek": 0, "neckofthewoods": 0, "fourstar": 0, "presidiotheatre": 0, "presidio": 1, "mato": 2,
                     "secretsf": 5, "sfgirlchronicle": 5, "eddieslist": 5}
 STOP = {"the", "a", "an", "at", "in", "with", "and", "presents", "present", "sf", "san", "francisco", "free", "of", "w"}
 OUT = ROOT / "app"
@@ -86,7 +87,30 @@ def merge(events):
             twin["people"] = sorted(set(twin.get("people", [])) | set(ev.get("people", [])))
             twin["tags"] = sorted(set(twin.get("tags", [])) | set(ev.get("tags", [])))
         merged += kept
-    return merged
+    return fold_runs(merged)
+
+
+def fold_runs(events):
+    """A guide's "Air Show, Oct 9-11" is the same thing as the official site's
+    three air show days: keep the better source's listings, drop the run."""
+    def is_run(e):
+        return e.get("end") and (to_local(e["end"]) - to_local(e["start"])).total_seconds() > 36 * 3600
+    rank = lambda e: LISTING_PRIORITY.get(e["source"], 3)
+    drop = set()
+    for r in events:
+        if not is_run(r):
+            continue
+        rt = title_tokens(r["title"])
+        for o in events:
+            if o is r or o["id"] in drop or rank(o) >= rank(r):
+                continue
+            ot = title_tokens(o["title"])
+            overlap = o["start"][:10] <= r["end"][:10] and (o.get("end") or o["start"])[:10] >= r["start"][:10]
+            if overlap and rt and ot and len(rt & ot) / len(rt | ot) >= 0.6:
+                o.setdefault("also_on", []).append({"source": r["source"], "url": r["source_url"]})
+                o["tags"] = sorted(set(o.get("tags") or []) | set(r.get("tags") or []))   # featured by the guide
+                drop.add(r["id"])
+    return [e for e in events if e["id"] not in drop]
 
 
 def collapse_recurring(events, per_week=1):
@@ -98,6 +122,8 @@ def collapse_recurring(events, per_week=1):
         k = " ".join(sorted(title_tokens(ev["title"])))
         counts[k] = counts.get(k, 0) + 1
     for ev in events:
+        if {"annual", "featured"} & set(ev.get("tags") or []):
+            continue                    # a three-day air show isn't a weekly karaoke night
         if counts[" ".join(sorted(title_tokens(ev["title"])))] >= 3:
             ev["recurring"] = True      # e.g. Funcheap posts a weekly show as separate listings
     for ev in sorted(events, key=lambda e: e["start"]):
@@ -113,15 +139,23 @@ def collapse_recurring(events, per_week=1):
 
 
 def enrich(events, fetcher, limit):
-    """Fill descriptions/images from each event's own page (cached for 3 days),
-    and read fair/festival pages for a lineup to headline the best piece."""
-    done = 0
+    """Fill descriptions, places and images from each event's own page
+    (cached for 3 days), and read fair/festival pages for a lineup to headline
+    the best piece. A roundup page that several events share is about all of
+    them, so it never stands in for one event's blurb or picture."""
+    shared = {}
     for ev in events:
+        shared[ev["source_url"]] = shared.get(ev["source_url"], 0) + 1
+    done = 0
+    # a missing blurb or place first, a missing picture after
+    lacking = lambda ev: len(ev.get("description") or "") < 80 or not (ev.get("venue") or ev.get("address"))
+    for ev in sorted(events, key=lambda ev: not lacking(ev)):
         if done >= limit:
             break
-        need = len(ev.get("description") or "") < 80 or not ev.get("image_url") or ev.get("_festival")
+        short = len(ev.get("description") or "") < 80
+        need = short or not ev.get("image_url") or not (ev.get("venue") or ev.get("address")) or ev.get("_festival")
         host = urlparse(ev["source_url"]).netloc
-        if not need or host.endswith("secretsanfrancisco.com") or "substack" in host:
+        if not need or shared[ev["source_url"]] > 1 or host.endswith("secretsanfrancisco.com") or "substack" in host:
             continue
         try:
             soup = fetcher.soup(ev["source_url"], cache_hours=72)
@@ -134,13 +168,25 @@ def enrich(events, fetcher, limit):
         for node in jsonld_events(soup):
             if node.get("description"):
                 desc = html_to_text(node["description"]) if len(html_to_text(node["description"])) > len(desc) else desc
+            loc = node.get("location")
+            loc = loc[0] if isinstance(loc, list) and loc else loc
+            if isinstance(loc, dict) and not (ev.get("venue") or ev.get("address")):
+                addr = loc.get("address")
+                street = clean(addr.get("streetAddress") or "") if isinstance(addr, dict) else clean(addr or "")
+                ev["venue"] = clean(loc.get("name") or "")[:80]
+                ev["address"] = street if street != ev["venue"] else ""
+                if isinstance(addr, dict) and addr.get("addressLocality") and not ev.get("city"):
+                    ev["city"] = clean(addr["addressLocality"])
         main = soup.find(class_=re.compile("entry-content|post-content|event-description|eventitem-column-content")) or soup.find("article")
         body = clean(main.get_text(" "))[:1500] if main else ""
-        ev["description"] = clean(desc if len(desc) > 120 else (desc + " " + body))[:1200]
+        found = clean(desc if len(desc) > 120 else (desc + " " + body))[:1200]
+        if short and len(found) > len(ev.get("description") or ""):
+            ev["description"] = found
         ev["image_url"] = ev.get("image_url") or og(soup, "image")
         if ev.get("_festival") and main:
             lines = [clean(li.get_text(" ")) for li in main.find_all(["li", "h3", "h4", "strong"])]
             ev["_lineup"] = [l for l in lines if l]
+    print(f"detail pages read: {done}")
 
 
 def previous_first_seen(src):
@@ -165,7 +211,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", help="comma-separated adapters")
     ap.add_argument("--previous", help="previous events.json (URL or path) for first_seen")
-    ap.add_argument("--enrich", type=int, default=90, help="max detail pages to read per run")
+    ap.add_argument("--enrich", type=int, default=160, help="max detail pages to read per run")
     ap.add_argument("--out", default=str(OUT / "events.json"))
     ap.add_argument("--geocode", type=int, default=350, help="max new venue lookups per run")
     ap.add_argument("--no-geocode", action="store_true")
@@ -183,7 +229,7 @@ def main(argv=None):
     raw, health = [], []
     for name in names:
         mod = importlib.import_module(f".adapters.{name}", __package__)
-        fetcher = Fetcher()
+        fetcher = Fetcher(max_requests=getattr(mod, "MAX_REQUESTS", 120))   # a source that reads each event page asks for more
         t0 = time.time()
         status = {"name": mod.NAME, "label": mod.LABEL, "count": 0, "ok": True, "error": None}
         try:
@@ -274,11 +320,18 @@ def main(argv=None):
         out.append(ev)
 
     out.sort(key=lambda e: e["start"])
+    try:
+        site_icons, note = icons.write(out, Fetcher(delay=0.5, max_requests=100), OUT)
+        print(note)
+    except Exception as exc:          # icons are decoration; never fail a run over them
+        site_icons = {}
+        print(f"site icons skipped: {exc}")
     payload = {
         "generated": stamp,
         "window": {"start": iso(start), "end": iso(end)},
         "ai": ai.enabled(),
         "sources": health,
+        "icons": site_icons,
         "events": out,
     }
     with open(args.out, "w") as fh:
