@@ -1,6 +1,6 @@
 // App shell is cached for instant, offline starts; events.json and calendar
 // files always try the network first so the plan is fresh.
-const VERSION = 'v5';
+const VERSION = 'v6';
 const SHELL = ['./', 'index.html', 'styles.css', 'app.js', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/apple-touch-icon.png'];
 
 self.addEventListener('install', (e) => {

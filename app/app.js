@@ -79,18 +79,49 @@ function save() {
 
 const $ = (s, el = document) => el.querySelector(s);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const fmt = (d, o) => new Intl.DateTimeFormat('en-US', { timeZone: TZ, ...o }).format(d);
-const parts = (d) => Object.fromEntries(new Intl.DateTimeFormat('en-US', { timeZone: TZ, year: 'numeric', month: 'numeric', day: 'numeric', weekday: 'short', hour: 'numeric', hourCycle: 'h23' }).formatToParts(d).map((p) => [p.type, p.value]));
-const dayKey = (d) => { const p = parts(d); return `${p.year}-${String(p.month).padStart(2, '0')}-${String(p.day).padStart(2, '0')}`; };
+// Intl formatters are slow to build, so each one is made once
+const fmtCache = new Map();
+const formatter = (o) => {
+  const k = JSON.stringify(o);
+  if (!fmtCache.has(k)) fmtCache.set(k, new Intl.DateTimeFormat('en-US', { timeZone: TZ, ...o }));
+  return fmtCache.get(k);
+};
+const fmt = (d, o) => formatter(o).format(d);
+const PARTS = { year: 'numeric', month: 'numeric', day: 'numeric', weekday: 'short', hour: 'numeric', hourCycle: 'h23' };
+const parts = (d) => Object.fromEntries(formatter(PARTS).formatToParts(d).map((p) => [p.type, p.value]));
+const keyMemo = new Map();
+const dayKey = (d) => {
+  const t = d.getTime();
+  let k = keyMemo.get(t);
+  if (!k) {
+    const p = parts(d);
+    k = `${p.year}-${String(p.month).padStart(2, '0')}-${String(p.day).padStart(2, '0')}`;
+    if (keyMemo.size > 5000) keyMemo.clear();
+    keyMemo.set(t, k);
+  }
+  return k;
+};
 const norm = (s) => (s || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[.'’]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
-const today0 = () => { const k = dayKey(new Date()); return new Date(`${k}T00:00:00${offsetFor(k)}`); };
+let todayMemo = { at: 0, d: null };
+const today0 = () => {
+  if (Date.now() - todayMemo.at > 60e3) {
+    const k = dayKey(new Date());
+    todayMemo = { at: Date.now(), d: new Date(`${k}T00:00:00${offsetFor(k)}`) };
+  }
+  return todayMemo.d;
+};
 const atNoon = (k) => new Date(`${k}T12:00:00${offsetFor(k)}`);
 const reEsc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
+const offsetMemo = new Map();
 function offsetFor(k) {
+  if (!offsetMemo.has(k)) offsetMemo.set(k, offsetOf(k));
+  return offsetMemo.get(k);
+}
+function offsetOf(k) {
   // Pacific offset for a local date (handles DST)
   const d = new Date(`${k}T12:00:00Z`);
-  const tz = new Intl.DateTimeFormat('en-US', { timeZone: TZ, timeZoneName: 'shortOffset' }).formatToParts(d).find((p) => p.type === 'timeZoneName').value;
+  const tz = formatter({ timeZoneName: 'shortOffset' }).formatToParts(d).find((p) => p.type === 'timeZoneName').value;
   const m = tz.match(/GMT([+-]\d+)/);
   const h = m ? parseInt(m[1], 10) : -8;
   return `${h < 0 ? '-' : '+'}${String(Math.abs(h)).padStart(2, '0')}:00`;
@@ -194,28 +225,52 @@ function buildFollowIndex() {
   }
   const blocked = new Set(S.blockedPeople.map(norm));
   followIndex = list.filter((f) => !blocked.has(norm(f.name)))
-    .map((f) => ({ ...f, re: new RegExp(`(?<![a-z0-9])${reEsc(norm(f.name))}(?![a-z0-9])`) }));
+    .map((f, order) => ({ ...f, order, re: new RegExp(`(?<![a-z0-9])${reEsc(norm(f.name))}(?![a-z0-9])`) }));
   // "John Mulaney" in a listing matches the handle @johnmulaney
   followIndex.joined = new Set(handles.map((h) => h.replace(/[^a-z]/g, '')).filter((x) => x.length >= 8));
   followIndex.raw = new Set(handles);
   followIndex.bare = handles.map((h) => [h, h.replace(/[^a-z]/g, '')]).filter(([, b]) => b.length >= 5);
   followIndex.blocked = blocked;
+  // look names up by their first word, so each event only tests the few names it could hold
+  followIndex.byFirst = new Map();
+  for (const f of followIndex) {
+    const k = norm(f.name).split(' ')[0];
+    if (!followIndex.byFirst.has(k)) followIndex.byFirst.set(k, []);
+    followIndex.byFirst.get(k).push(f);
+  }
+  followMemo = new Map();
+  scoreMemo = new Map();
 }
+let followMemo = new Map();   // event id -> followInfo answer (reset when the follow list changes)
+let scoreMemo = new Map();    // event id -> personalScore (reset on every render)
 
 const isShow = (ev) => ['comedy', 'theatre', 'musical_theatre', 'singing'].some((t) => (ev.tags || []).includes(t)) || SHOW.test(ev.title);
 const namesIn = (text) => [...new Set(text.match(/\b[A-Z][a-zA-Z'’-]+(?:\s+[A-Z][a-zA-Z'’-]+){1,2}\b/g) || [])];
 
 function followInfo(ev) {
   if (!followIndex) buildFollowIndex();
+  if (followMemo.has(ev.id)) return followMemo.get(ev.id);
+  const f = findFollow(ev);
+  followMemo.set(ev.id, f);
+  return f;
+}
+
+function findFollow(ev) {
   if (ev.followed && !followIndex.blocked.has(norm(ev.followed))) {
     return { name: ev.followed, kind: ev.followed_kind === 'performer' ? 'performer' : 'author' };
   }
   const text = norm(`${ev.title} ${ev.description} ${(ev.people || []).join(' ')}`);
   const show = isShow(ev);
-  for (const f of followIndex) {
-    if (f.kind === 'instagram' && !show) continue;   // friends rarely headline; performers do
-    if (f.re.test(text)) return f;
+  const words = new Set(text.split(' '));
+  let best = null, bestAt = Infinity;
+  for (const w of words) {
+    for (const f of followIndex.byFirst.get(w) || []) {
+      if (f.kind === 'instagram' && !show) continue;   // friends rarely headline; performers do
+      const at = f.order;
+      if (at < bestAt && f.re.test(text)) { best = f; bestAt = at; }
+    }
   }
+  if (best) return best;
   if (!show) return null;
   const raw = `${ev.title} ${ev.description}`;
   for (const m of raw.matchAll(/@([A-Za-z0-9._]{3,30})/g)) if (followIndex.raw.has(m[1].toLowerCase())) return { name: '@' + m[1], kind: 'instagram' };
@@ -263,6 +318,12 @@ function timeTags(ev) {
 const learnTags = (ev) => [...(ev.tags || []), ...timeTags(ev), `src:${ev.source}`];
 
 function personalScore(ev) {
+  let s = scoreMemo.get(ev.id);
+  if (s === undefined) { s = scoreOf(ev); scoreMemo.set(ev.id, s); }
+  return s;
+}
+
+function scoreOf(ev) {
   let s = ev.score || 0;
   for (const t of learnTags(ev)) s += Math.max(-3, Math.min(3, S.tagW[t] || 0));
   for (const t of ev.tags || []) if (S.interests[t] !== undefined) s += INTEREST_LEVELS[S.interests[t]];
@@ -924,6 +985,7 @@ function renderHeader() {
 }
 
 function render() {
+  scoreMemo = new Map();
   renderHeader();
   const v = $('#view');
   ({ cal: renderCal, tonight: renderTonight, new: renderNew, picks: renderPicks, me: renderMe })[tab](v);

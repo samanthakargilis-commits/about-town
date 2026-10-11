@@ -93,7 +93,7 @@ main { padding: 6px 12px 0; outline: none; }
 .ev { display: flex; gap: 12px; background: var(--paper); border-radius: 18px; padding: 14px 14px 14px 12px; margin-bottom: 10px; box-shadow: 0 1px 0 var(--line); transition: transform .15s; }
 .ev:active { transform: scale(.99); }
 main { overflow-x: clip; }
-.ev { position: relative; touch-action: pan-y; transition: transform .2s, opacity .2s; }
+.ev { position: relative; touch-action: pan-y !important; transition: transform .2s, opacity .2s; }
 .ev::after {
   content: "✕  Not for me"; position: absolute; top: 0; bottom: 0; left: calc(100% + 10px); width: 140px; display: flex; align-items: center;
   padding-left: 14px; border-radius: 18px; background: var(--rose, #F4C9C4); color: var(--cherry); font-weight: 700; font-size: 14px;
@@ -236,3 +236,4 @@ html.locked, html.locked body { overflow: hidden; }
 @keyframes fade { from { opacity: 0; } }
 @keyframes pop { 50% { transform: scale(1.15); } }
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+button, a, .d, .ev { touch-action: manipulation; }
