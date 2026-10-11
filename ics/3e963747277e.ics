@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3e963747277e@bay-events
+DTSTAMP:20261011T023018Z
+DTSTART;TZID=America/Los_Angeles:20261016T190000
+DTEND;TZID=America/Los_Angeles:20261016T210000
+SUMMARY:Nathan Fielder Lookalike Contest!
+LOCATION:
+URL:https://partiful.com/e/QL08WVx6BiB9fbRnxZwv
+DESCRIPTION:Weird & unusual + Comedy\nhttps://partiful.com/e/QL08WVx6BiB9f
+ bRnxZwv\n\nIn honor of Nathan Fielder’s “You Can See Everything” do
+ cumentary being released this October\, New Parkway Theater would like to
+  invite you to a special edition of our weekly “Love In The Wild” eve
+ nt. We will be hosting a Nathan Fielder and Elizabeth Holmes look alike c
+ ontest! This event is a super-interactive team-based mixer hosted by loca
+ l comedian Dua Shamsi. Come be voted the best lookalike o
+END:VEVENT
+END:VCALENDAR

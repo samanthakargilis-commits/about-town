@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d11e5bd396e4@bay-events
+DTSTAMP:20261011T023019Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Thursday Night Poem Jam
+LOCATION:SF Main Library
+URL:https://sf.funcheap.com/thursday-night-poem-jam-sf-main-library-98/
+DESCRIPTION:Writing + Reading\nhttps://sf.funcheap.com/thursday-night-poem
+ -jam-sf-main-library-98/\n\nSubmitted by the Event OrganizerThursday Nigh
+ t Poem Jam | SF Main LibraryJoin San Francisco Main Public Library with t
+ alented poets for a poetry jam. The Main Library’s monthly Poem Jam poe
+ try reading series\, moderated by Kim Shuck\, takes place on Thursdays at
+  6 pm in the Main Library. Thursday Night Poem Jam Every 2nd Thursday | 6
+  pm San Francisco Main Public Library\, 100 Larkin St\, San Francisco
+END:VEVENT
+END:VCALENDAR

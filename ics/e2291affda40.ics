@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e2291affda40@bay-events
+DTSTAMP:20261011T023018Z
+DTSTART;TZID=America/Los_Angeles:20261106T221500
+DTEND;TZID=America/Los_Angeles:20261106T231500
+SUMMARY:“The Ritual” Comedy Show in The Mission
+LOCATION:Endgames Improv Theater & Bar
+URL:https://sf.funcheap.com/5-off-the-ritual-comedy-show-in-the-mission-sf
+ -84/
+DESCRIPTION:Comedy + Spirituality\nhttps://sf.funcheap.com/5-off-the-ritua
+ l-comedy-show-in-the-mission-sf-84/\n\n$5 Off: “The Ritual” Comedy Sh
+ ow in The Mission (SF) Endgames Improv Once a week\, in the late hours of
+  what used to be “not considered late\,” a group of degenerates and m
+ isfits gather to perform a seance unlike anything seen before. So comical
+ ly evil that you may get sick to your stomach. The Ritual will be improvi
+ sed\, gut wrenchingly funny\, with a tinge of fuckery. While you can just
+  sit there an
+END:VEVENT
+END:VCALENDAR

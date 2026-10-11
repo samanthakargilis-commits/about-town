@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:01702c5d2f29@bay-events
+DTSTAMP:20261011T023019Z
+DTSTART;TZID=America/Los_Angeles:20261011T184500
+DTEND;TZID=America/Los_Angeles:20261011T204500
+SUMMARY:The Cinema Club
+LOCATION:
+URL:https://partiful.com/e/pvtqtqLOACDotSHX8fub
+DESCRIPTION:Discourse\nhttps://partiful.com/e/pvtqtqLOACDotSHX8fub\n\nThe 
+ Cinema Club 🎬 A curated movie night for people who love good films\, g
+ ood company. For our first screening: Verity. We’ll meet shortly before
+  the film and settle in together. Optional discussion afterward for anyon
+ e who wants to stay 🎟 Tickets are purchased individually 💺 Seating 
+ details will be shared with confirmed guests Limited guest list. Location
+  and screening details will be revealed onc
+END:VEVENT
+END:VCALENDAR

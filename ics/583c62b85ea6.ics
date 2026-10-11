@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:583c62b85ea6@bay-events
+DTSTAMP:20261011T023018Z
+DTSTART;TZID=America/Los_Angeles:20261013T190000
+DTEND;TZID=America/Los_Angeles:20261013T203000
+SUMMARY:SF’s “Circus By The Bay” Night: History Panel + Wild Live Ac
+ ts (Fort Mason)
+LOCATION:Cowell Theater\, Pier 2/Gateway Pavilion\, FMCAC
+URL:https://sf.funcheap.com/sfs-circus-bay-night-history-panel-wild-live-a
+ cts-fort-mason/
+DESCRIPTION:Weird & unusual + Discourse\nhttps://sf.funcheap.com/sfs-circu
+ s-bay-night-history-panel-wild-live-acts-fort-mason/\n\nFort Mason Center
+  for Arts & CultureCowell Theater hosts a panel conversation and live per
+ formances exploring San Francisco’s new American circus movement. Pickl
+ e Family Circus and New Pickle Circus veterans Gypsy Snider\, Shana Carro
+ ll\, Jeff Raz\, and Tandy Beal will discuss the scene’s history\, along
+ side archival photos and video and performances by artists from Prescott 
+ Circus\, Dear San Francisco
+END:VEVENT
+END:VCALENDAR

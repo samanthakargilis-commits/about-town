@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dab49c791be3@bay-events
+DTSTAMP:20261011T023019Z
+DTSTART;TZID=America/Los_Angeles:20261113T190000
+DTEND;TZID=America/Los_Angeles:20261113T220000
+SUMMARY:SF’s HellaSecret “Crazy Funny Asians” Friday Night Comedy Sh
+ owcase (7p + 9p)
+LOCATION:Secret Location
+URL:https://sf.funcheap.com/sfs-hellasecret-crazy-funny-asians-friday-nigh
+ t-comedy-showcase-7p-9p-82/
+DESCRIPTION:Comedy + Craft\nhttps://sf.funcheap.com/sfs-hellasecret-crazy-
+ funny-asians-friday-night-comedy-showcase-7p-9p-82/\n\nSF’s HellaSecret
+  “Crazy Funny Asians” Friday Night Comedy Showcase (7p + 9p) HellaFun
+ ny Inspired by the blockbuster movie\, see some of the Bay Area’s top c
+ omedians at San Francisco’s Crazy Funny Asians comedy showcase\, presen
+ ted by Funcheap and HellaFunny. Let’s celebrate the Bay’s Asian-Ameri
+ can culture and heritage with laughs at a secret location – a two-floor
+  comedy club near BART with a full 
+END:VEVENT
+END:VCALENDAR

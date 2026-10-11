@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:eb249be24e47@bay-events
+DTSTAMP:20261011T023018Z
+DTSTART;TZID=America/Los_Angeles:20261028T200000
+DTEND;TZID=America/Los_Angeles:20261029T000000
+SUMMARY:“Oh Rocky” Immersive Rocky Horror Club Night + Drag & Tarot Re
+ adings (El Rio)
+LOCATION:El Rio
+URL:https://sf.funcheap.com/rocky-immersive-rocky-horror-club-night-drag-t
+ arot-readings-el-rio/
+DESCRIPTION:Gay / queer + Theatre\nhttps://sf.funcheap.com/rocky-immersive
+ -rocky-horror-club-night-drag-tarot-readings-el-rio/\n\nGood ShipsGood Sh
+ ips presents Oh\, Rocky!\, a 21+ immersive Rocky Horror club night at El 
+ Rio. The event includes performances by queens\, kings\, and other charac
+ ters\, plus tarot card readings and a costume contest. Doors open at 8 PM
+ \, the show begins at 8:30 PM\, and the party runs until midnight. Origin
+ al Event Description: _OH\, ROCKY!🖤🩸 The stage is set\, the creatur
+ es of the night are here\, and Goo
+END:VEVENT
+END:VCALENDAR

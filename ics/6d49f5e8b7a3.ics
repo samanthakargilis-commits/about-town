@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6d49f5e8b7a3@bay-events
+DTSTAMP:20261011T023018Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:Mirus Gallery Presents: Nostalgia – A Group Exhibition
+LOCATION:
+URL:https://sf.funcheap.com/mirus-gallery-presents-nostalgia-group-exhibit
+ ion/
+DESCRIPTION:Museum exhibits + Art\nhttps://sf.funcheap.com/mirus-gallery-p
+ resents-nostalgia-group-exhibition/\n\nSubmitted by the Event OrganizerMi
+ rus GalleryMirus Gallery San Francisco presents Nostalgia\, a dynamic gro
+ up show featuring a menagerie of creative interpretations of the phenomen
+ on of nostalgia by artists from California and beyond. This collection of
+  artists uniquely reveals an element of a simpler time\, and what colored
+  time-treasured memories. Join us in our celebration of yesteryear throug
+ h a
+END:VEVENT
+END:VCALENDAR

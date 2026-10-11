@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:aa5c3219d31a@bay-events
+DTSTAMP:20261011T023019Z
+DTSTART;TZID=America/Los_Angeles:20261017T110000
+DTEND;TZID=America/Los_Angeles:20261017T130000
+SUMMARY:Lands End Community Hike
+LOCATION:
+URL:https://partiful.com/e/uoxo5Qw2sRG32y0KNCow
+DESCRIPTION:New in your area\nhttps://partiful.com/e/uoxo5Qw2sRG32y0KNCow\
+ n\nCome join us for a scenic community hike through Lands End with beauti
+ ful coastal views\, fresh air\, and good company along the way! We’ll m
+ ake our way along the trails taking in the ocean\, cliffs\, and iconic Sa
+ n Francisco views. This is a great chance to get outside\, meet new peopl
+ e\, and enjoy some movement together. 🥾 What to bring: Comfortable wal
+ king/hiking shoes Water Layers — it can get chill
+END:VEVENT
+END:VCALENDAR

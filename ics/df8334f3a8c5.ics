@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:df8334f3a8c5@bay-events
+DTSTAMP:20261011T023019Z
+DTSTART;TZID=America/Los_Angeles:20261017T110000
+DTEND;TZID=America/Los_Angeles:20261017T130000
+SUMMARY:Meet Me on the Mat 💖 Pilates on the Green
+LOCATION:Marina Green\, Marina Green\, San Francisco\, CA San Francisco\, 
+ San Francisco
+URL:https://www.meetup.com/glow-girl-social-club/events/316621572/
+DESCRIPTION:Reading\nhttps://www.meetup.com/glow-girl-social-club/events/3
+ 16621572/\n\n**📣 IMPORTANT: PLEASE READ CAREFULLY** **🎟️ Standard
+  Release — $35 (8 spots left)** **Venmo @GlowGirl-SocialClub** **Other 
+ payment methods https://theglowgirlsocialclub.com/events/meet-me-on-the-m
+ at** **We’re ending summer outside.** **JETSET Pilates is opening in th
+ e Marina\, so naturally we convinced them to bring Pilates to the Marina 
+ Green and let us bring a bunch of girls with us.** **So on Sa
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1b171479f802@bay-events
+DTSTAMP:20261011T023019Z
+DTSTART;TZID=America/Los_Angeles:20261113T210000
+DTEND;TZID=America/Los_Angeles:20261113T230000
+SUMMARY:SF Neo-Futurists “The Infinite Wrench” (30 Plays in 60 Minutes
+ \, every Fri & Sat)
+LOCATION:447 Minna St.
+URL:https://sf.funcheap.com/sf-neo-futurists-the-infinite-wrench-30-plays-
+ in-60-minutes-every-fri-sat-80/
+DESCRIPTION:Theatre + Weird & unusual\nhttps://sf.funcheap.com/sf-neo-futu
+ rists-the-infinite-wrench-30-plays-in-60-minutes-every-fri-sat-80/\n\nSF 
+ Neo-Futurists “The Infinite Wrench” (30 Plays in 60 Minutes\, every F
+ ri & Sat) San Francisco Neo-Futurists See the show the SF Chronicle calls
+  one of 22 San Francisco things everyone must do! 50 weekends a year\, th
+ e critically-acclaimed San Francisco Neo-Futurists present The Infinite W
+ rench\, an attempt to perform 30 bite-sized plays in a frantic race again
+ st the clock\, in an order determined by
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e4409784d09a@bay-events
+DTSTAMP:20261011T023019Z
+DTSTART;TZID=America/Los_Angeles:20261019T180000
+DTEND;TZID=America/Los_Angeles:20261019T220000
+SUMMARY:line at ivy room with leo\, kay\, & nora
+LOCATION:
+URL:https://partiful.com/e/YSJvOlyEyH11WYgzWVUw
+DESCRIPTION:New in your area\nhttps://partiful.com/e/YSJvOlyEyH11WYgzWVUw\
+ n\nnew class and party every third Monday of the month at Ivy Room in the
+  east bay! all levels\, no experience necessary! lessons ranging from beg
+ inner to advanced with lots of time for requests. $5-15 sliding scale\, N
+ OTAFLOF we can’t wait to dance with you!
+END:VEVENT
+END:VCALENDAR

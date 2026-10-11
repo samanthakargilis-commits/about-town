@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d0cec4c9b12a@bay-events
+DTSTAMP:20261011T023019Z
+DTSTART;TZID=America/Los_Angeles:20261025T140000
+DTEND;TZID=America/Los_Angeles:20261025T170000
+SUMMARY:SF Click Collective Presents: Sutro Bathhouse Halloween Photowalk
+LOCATION:
+URL:https://partiful.com/e/IpmUnSsC1yQvTlSNLTwy
+DESCRIPTION:Art\nhttps://partiful.com/e/IpmUnSsC1yQvTlSNLTwy\n\nHiya\, eve
+ ryone! 👋🌸 This month is spooky season and what kind of horror enthu
+ siast would I be if I didn’t make this a Halloween themed photography m
+ eetup? 🎃 This month the group voted on Sutro Baths! Built in 1894 by f
+ ormer San Francisco mayor and entrepreneur Adolph Sutro\, the massive gla
+ ss-roofed complex opened in 1896. With its sea-battered concrete ruins of
+  a grand 19th-century public bathhouse
+END:VEVENT
+END:VCALENDAR

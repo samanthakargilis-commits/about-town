@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7cee05cb06b3@bay-events
+DTSTAMP:20261011T023019Z
+DTSTART;TZID=America/Los_Angeles:20261110T190000
+DTEND;TZID=America/Los_Angeles:20261110T200000
+SUMMARY:Bryant Lin with Laurel Braitman
+LOCATION:Kepler&#39\;s Books\, 1010 El Camino Real Menlo Park\, CA\, 94025
+ \, Menlo Park
+URL:https://www.keplers.org/upcoming-events-internal/bryant-lin
+DESCRIPTION:Menlo Park\nhttps://www.keplers.org/upcoming-events-internal/b
+ ryant-lin\n\nLeading cancer researcher Bryant Lin distills the lessons fo
+ r living that he’s learned as a physician—and as a patient\, after be
+ ing diagnosed with his own terminal illness.
+END:VEVENT
+END:VCALENDAR

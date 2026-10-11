@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f677cc8a54de@bay-events
+DTSTAMP:20261011T023019Z
+DTSTART;TZID=America/Los_Angeles:20261024T193000
+DTEND;TZID=America/Los_Angeles:20261024T223000
+SUMMARY:🇵🇭 FilipinUp FAHM Fest
+LOCATION:
+URL:https://partiful.com/e/Fp8UEu1NEXvChwg4TmKQ
+DESCRIPTION:Craft\nhttps://partiful.com/e/Fp8UEu1NEXvChwg4TmKQ\n\n🧗‍
+ ♂️ FilipinUp and Touchstone Climbing Present: FilipinUp FAHM Fest: A 
+ Filipino-American History Month Celebration & Fundraiser 🇵🇭 Celebra
+ te culture\, community\, and climbing at Pacific Pipe—the nation’s la
+ rgest climbing gym. FAHM FEST brings everyone together for an unforgettab
+ le night packed with music\, movement\, flavor\, and local craft. Whether
+  you're a seasoned climber\, trying it for the first 
+END:VEVENT
+END:VCALENDAR

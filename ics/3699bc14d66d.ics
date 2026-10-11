@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3699bc14d66d@bay-events
+DTSTAMP:20261011T023019Z
+DTSTART;TZID=America/Los_Angeles:20261017T190000
+DTEND;TZID=America/Los_Angeles:20261017T230000
+SUMMARY:Date My EX!
+LOCATION:Kilowatt\, San Francisco
+URL:https://dice.fm/event/6a8de525c2a75900013f700a
+DESCRIPTION:New in your area\nhttps://dice.fm/event/6a8de525c2a75900013f70
+ 0a\n\nCuffing season is right around the corner\, but so is spooky season
+ \, and we're feeling festive 👻❤️‍🔥 For one night only\, join 
+ us at Date My... Ex? That's right\, we want to hear from you - is your ex
+  worth dating?? Three kisses\, three dates\, three months\, three years -
+  all timelines are on the table. Join us at Kilowatt on October 17th! Eve
+ nt 8-10\, DJ on at 10pm. Tix $15 in advance\, $20 at the door.
+END:VEVENT
+END:VCALENDAR

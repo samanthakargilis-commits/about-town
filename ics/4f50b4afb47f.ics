@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4f50b4afb47f@bay-events
+DTSTAMP:20261011T023019Z
+DTSTART;TZID=America/Los_Angeles:20261028T190000
+DTEND;TZID=America/Los_Angeles:20261028T210000
+SUMMARY:Book\, Coffee\, Chit Chat\, etc. (Wednesday Edition)
+LOCATION:Flying Pig Bistro Pub\, 433 South Van Ness Avenue\, San Francisco
+ \, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/the-san-francisco-not-quite-a-book-club-book-cl
+ ub/events/316115224/
+DESCRIPTION:New in your area\nhttps://www.meetup.com/the-san-francisco-not
+ -quite-a-book-club-book-club/events/316115224/\n\nATTENTION: We are now m
+ eeting in person again! Please follow current recommendations around mask
+  usage to keep everyone safe. Masks are always welcome and accepted\, no 
+ matter the current regulations. If you'd like to meet online check out ou
+ r meeting on the first Wednesday of every month. It's that time again! Le
+ t's chit chat about the books we exchanged last time and welcome newcomer
+ s bringing th
+END:VEVENT
+END:VCALENDAR
