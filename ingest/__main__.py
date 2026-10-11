@@ -34,6 +34,7 @@ LISTING_PRIORITY = {"sfpl": 0, "jccsf": 0, "broadwaysf": 0, "citylights": 0, "gr
                     "secretsf": 5, "sfgirlchronicle": 5, "eddieslist": 5}
 STOP = {"the", "a", "an", "at", "in", "with", "and", "presents", "present", "sf", "san", "francisco", "free", "of", "w"}
 OUT = ROOT / "app"
+SOLD_OUT = re.compile(r"\bsold[\s-]*out\b(?!\s*(?:show|run|crowd|audience)s?\b)", re.I)
 
 
 def window():
@@ -202,8 +203,8 @@ def main(argv=None):
         print(f"{mod.LABEL:24} {status['count']:4} events  {fetcher.count:3} requests  "
               f"{'OK' if status['ok'] else 'FAIL: ' + str(status['error'])}", flush=True)
 
-    # window + area
-    events = []
+    # window + area, and nothing you can't get into
+    events, sold_out = [], 0
     for ev in raw:
         s = to_local(ev["start"])
         e = to_local(ev["end"]) if ev.get("end") else None
@@ -214,8 +215,11 @@ def main(argv=None):
             continue
         if not keep(ev, fan):
             continue
+        if ev.get("sold_out") or SOLD_OUT.search(ev["title"]):
+            sold_out += 1
+            continue
         events.append(ev)
-    print(f"in window and area: {len(events)} of {len(raw)}")
+    print(f"in window and area: {len(events)} of {len(raw)} ({sold_out} sold out)")
 
     events = collapse_recurring(merge(events))
     print(f"after merging duplicates: {len(events)}")

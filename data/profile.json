@@ -587,6 +587,22 @@
     "speed networking",
     "hiring fair"
   ],
+  "never_paid_hosted": {
+    "_note": "paid painting workshops someone runs through Partiful; free ones still show",
+    "sources": [
+      "partiful"
+    ],
+    "keywords": [
+      "paint",
+      "painting",
+      "watercolor",
+      "watercolour",
+      "sip and paint",
+      "paint and sip",
+      "paint night",
+      "canvas"
+    ]
+  },
   "downrank_tags": {
     "tech": -1.5
   },
