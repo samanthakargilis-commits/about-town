@@ -13,6 +13,7 @@ URL = "https://partiful.com/explore/sf"
 CACHE = CACHE_DIR / "partiful.json"
 MAX_PAGES = 90
 SOLD = ("soldout", "outofstock", "discontinued")
+VERSION = 2             # bump when what's read off the page changes, so the cache is re-read
 
 
 def full(soup, eid) -> bool:
@@ -55,11 +56,11 @@ def add_offers(f, events):
     now, read = time.time(), 0
     for e in events:
         hit = cache.get(e.source_id)
-        if hit is None or now - hit.get("t", 0) > 20 * 3600:
+        if hit is None or hit.get("v") != VERSION or now - hit.get("t", 0) > 20 * 3600:
             if read >= MAX_PAGES:
                 continue
             try:
-                hit = {**offer_of(f.soup(e.source_url), e.source_id), "t": int(now)}
+                hit = {**offer_of(f.soup(e.source_url), e.source_id), "t": int(now), "v": VERSION}
             except BudgetExceeded:
                 break
             except Exception as exc:
@@ -69,6 +70,8 @@ def add_offers(f, events):
             cache[e.source_id] = hit
         e.price = e.price or hit.get("price", "")
         e.sold_out = bool(hit.get("sold_out"))
+    print(f"  partiful offers: {read} pages read, {sum(1 for e in events if e.price)} priced, "
+          f"{sum(1 for e in events if e.sold_out)} sold out, of {len(events)}")
     cache = {k: v for k, v in cache.items() if now - v.get("t", 0) < 30 * 86400}
     CACHE.parent.mkdir(exist_ok=True)
     CACHE.write_text(json.dumps(cache))
