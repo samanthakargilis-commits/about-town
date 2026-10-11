@@ -1,0 +1,143 @@
+"""Parser and scoring checks on small hand-written pages (shaped like the
+real sites). Real-source runs happen in the daily workflow."""
+import datetime as dt
+import json
+import pathlib
+import unittest
+
+from bs4 import BeautifulSoup
+
+from ingest import area, ics
+from ingest.__main__ import collapse_recurring, merge
+from ingest.adapters import funcheap, greenapple
+from ingest.core import TZ, find_dates, parse_time
+from ingest.heuristics import article_events
+from ingest.score import Scorer
+
+ROOT = pathlib.Path(__file__).resolve().parent.parent
+PROFILE = json.loads((ROOT / "data" / "profile.json").read_text())
+FOLLOW = json.loads((ROOT / "data" / "follow.json").read_text())
+
+FUNCHEAP_DAY = """
+<html><body><div id="content">
+ <div class="tanbox"><span class="title"><a href="https://sf.funcheap.com/big-gay-halloween/" title="Big Gay Halloween">Big Gay Halloween</a></span>
+   <div class="meta">Thursday, October 15 – 8:00 pm - Ends at 10:00 pm | Cost: $30-45 | Great Star Theater</div></div>
+ <div class="tanbox"><span class="title"><a href="https://sf.funcheap.com/crazy-karaoke-sf-3/">Crazy Karaoke: SF's Wild Thursday Party</a></span>
+   <div class="meta">Every Thursday – 9:00 pm | Cost: FREE w/ RSVP | The Function</div></div>
+ <table><tr><td>6:00 pm</td><td><a href="https://sf.funcheap.com/lake-merritt-lantern-walk/">Lantern Walk (Oakland)</a></td><td>FREE</td></tr></table>
+</div>
+<div id="sidebar"><a href="https://sf.funcheap.com/most-popular-thing/">Popular thing 7:00 pm</a></div>
+<a href="https://sf.funcheap.com/category/event/">Category 8pm</a>
+</body></html>"""
+
+ARTICLE = """
+<h2>1. Exploratorium After Dark: Día de los Muertos</h2>
+<p>The museum's adults-only night returns on Thursday, October 22, from 6pm to 10pm with talks and altars.</p>
+<p>Where: Exploratorium, Pier 15</p>
+<h2>2. A cozy new bakery</h2><p>Open daily with great croissants and no date at all, sadly.</p>
+<h2>3. Renegade Craft Fair</h2><p>More than 250 makers fill Fort Mason November 14 & 15. <a href="https://feverup.com/x">Tickets</a></p>
+"""
+
+
+class Parsing(unittest.TestCase):
+    def test_times_and_dates(self):
+        self.assertEqual(parse_time("doors 7:30 pm"), (19, 30))
+        self.assertEqual(parse_time("12am"), (0, 0))
+        ref = dt.date(2026, 10, 10)
+        self.assertEqual(find_dates("Nov. 14 & 15", ref)[0], (dt.date(2026, 11, 14), dt.date(2026, 11, 15)))
+        self.assertEqual(find_dates("January 3", ref)[0][0], dt.date(2027, 1, 3))
+        self.assertEqual(find_dates("Oct 22–25, 2026", ref)[0], (dt.date(2026, 10, 22), dt.date(2026, 10, 25)))
+
+    def test_funcheap_day_page(self):
+        evs = funcheap.parse_day(BeautifulSoup(FUNCHEAP_DAY, "lxml"), dt.date(2026, 10, 15))
+        titles = [e.title for e in evs]
+        self.assertIn("Big Gay Halloween", titles)
+        self.assertNotIn("Popular thing", titles)          # sidebar ignored
+        self.assertNotIn("Category", " ".join(titles))     # category links ignored
+        bgh = next(e for e in evs if e.title == "Big Gay Halloween")
+        self.assertEqual(bgh.start, "2026-10-15T20:00-07:00")
+        self.assertEqual(bgh.end, "2026-10-15T22:00-07:00")
+        self.assertEqual(bgh.price, "$30-45")
+        self.assertEqual(bgh.venue, "Great Star Theater")
+        karaoke = next(e for e in evs if "Karaoke" in e.title)
+        self.assertTrue(karaoke.recurring)
+        self.assertEqual(karaoke.price, "free")
+
+    def test_article_extraction_drops_undated(self):
+        evs = article_events(ARTICLE, "secretsf", "https://secretsanfrancisco.com/things-to-do-october/", dt.date(2026, 10, 1))
+        self.assertEqual([e.title for e in evs], ["Exploratorium After Dark: Día de los Muertos", "Renegade Craft Fair"])
+        self.assertEqual(evs[0].start, "2026-10-22T18:00-07:00")
+        self.assertEqual(evs[0].venue, "Exploratorium, Pier 15")
+        self.assertTrue(evs[1].sponsored)
+        self.assertEqual(evs[1].end[:10], "2026-11-15")
+
+    def test_greenapple_date_from_url(self):
+        self.assertEqual(greenapple.date_from_url("https://greenapplebooks.com/event/2026-10-06/offsite-ayad-akhtar"), dt.date(2026, 10, 6))
+
+
+def ev(title, start="2026-10-15T20:00-07:00", **kw):
+    base = dict(id=f"x:{title}", source="funcheap", source_url="https://sf.funcheap.com/x/", title=title, start=start,
+                end=None, all_day=False, description="", venue="", address="", city="", price="", tags=[], people=[],
+                recurring=False, sponsored=False)
+    base.update(kw)
+    return base
+
+
+class Scoring(unittest.TestCase):
+    s = Scorer(PROFILE, FOLLOW)
+
+    def test_interests_boost_and_thursday(self):
+        thu = self.s.score(ev("Drag show-tune sing-along"))
+        sat = self.s.score(ev("Drag show-tune sing-along", start="2026-10-17T20:00-07:00"))
+        self.assertGreater(thu["score"], sat["score"])
+        self.assertIn("Thursday evening", thu["why"])
+        self.assertTrue({"queer", "musical_theatre", "singing"} <= set(thu["tags"]))
+        self.assertGreater(sat["score"], 2)       # boosts never filter: Saturday still scores well
+
+    def test_followed_author_badge(self):
+        r = self.s.score(ev("An evening with David Sedaris", source="citylights"))
+        self.assertEqual(r["followed"], "David Sedaris")
+        self.assertTrue(r["why"].startswith("⭐ David Sedaris"))
+        plain = self.s.score(ev("An evening with Jane Doe", source="citylights"))
+        self.assertGreaterEqual(r["score"], plain["score"] + 6)
+
+    def test_kids_author_not_badged(self):
+        r = self.s.score(ev("Storytime for kids with Jeff Kinney"))
+        self.assertIsNone(r["followed"])
+
+    def test_tech_downranked_and_never(self):
+        tech = self.s.score(ev("Founders demo day: AI agents", start="2026-10-17T18:00-07:00"))
+        self.assertIn("tech", tech["tags"])
+        self.assertLess(tech["score"], 0)
+        self.assertIsNone(self.s.score(ev("Crypto networking mixer")))
+
+
+class Pipeline(unittest.TestCase):
+    def test_area(self):
+        self.assertTrue(area.in_area(ev("Big Gay Halloween", venue="Great Star Theater")))
+        self.assertFalse(area.in_area(ev("Lantern Walk (Oakland)")))
+        self.assertTrue(area.in_area(ev("Talk", source="keplers", city="Menlo Park")))
+        self.assertFalse(area.in_area(ev("Talk", source="citylights", city="Online")))
+        self.assertFalse(area.in_area(ev("Comedy", source="eventbrite", city="Berkeley")))
+
+    def test_merge_duplicates_across_sources(self):
+        a = ev("Renegade Craft Fair", source="secretsf", start="2026-11-14T10:00-08:00", description="short")
+        b = ev("Renegade Craft Fair at Fort Mason", source="funcheap", start="2026-11-14T10:00-08:00", source_url="https://sf.funcheap.com/renegade/")
+        out = merge([a, b])
+        self.assertEqual(len(out), 1)
+        self.assertEqual(out[0]["source"], "funcheap")       # listing site wins over the article
+        self.assertEqual(out[0]["also_on"][0]["source"], "secretsf")
+
+    def test_recurring_one_per_week(self):
+        items = [ev("Crazy Karaoke", start=f"2026-10-{d}T21:00-07:00", recurring=True, id=f"k{d}") for d in (15, 16, 22)]
+        self.assertEqual(len(collapse_recurring(items)), 2)
+
+    def test_ics(self):
+        text = ics.calendar([dict(ev("Big Gay Halloween; drag, acrobats", end="2026-10-15T22:00-07:00"), why="Queer · Thursday evening")])
+        self.assertIn("DTSTART;TZID=America/Los_Angeles:20261015T200000", text)
+        self.assertIn(r"SUMMARY:Big Gay Halloween\; drag\, acrobats", text)
+        self.assertTrue(all(len(l.encode()) <= 75 for l in text.split("\r\n")))
+
+
+if __name__ == "__main__":
+    unittest.main()
