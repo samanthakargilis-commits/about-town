@@ -256,15 +256,11 @@ def jsonld_events(soup: BeautifulSoup) -> list[dict]:
     return found
 
 
-def event_from_jsonld(node: dict, source: str, fallback_url: str = "") -> Optional[Event]:
-    title = clean(node.get("name"))
-    start = to_local(node.get("startDate"))
-    if not title or not start:
-        return None
-    loc = node.get("location") or {}
+def place_of(loc) -> tuple[str, str, str]:
+    """(venue, address, city) from a schema.org Place."""
+    venue = address = city = ""
     if isinstance(loc, list):
         loc = loc[0] if loc else {}
-    venue = address = city = ""
     if isinstance(loc, dict):
         venue = clean(loc.get("name"))
         addr = loc.get("address") or {}
@@ -273,8 +269,24 @@ def event_from_jsonld(node: dict, source: str, fallback_url: str = "") -> Option
             city = clean(addr.get("addressLocality"))
         elif isinstance(addr, str):
             address = clean(addr)
+            # "1398 Haight Street, San Francisco" / "2 Orinda Theatre Sq, Orinda, CA 94563"
+            bits = [b.strip() for b in re.sub(r",?\s*(CA|California)\b.*$", "", address).split(",")]
+            if len(bits) > 1 and not re.search(r"\d", bits[-1]):
+                city = bits[-1]
         if loc.get("@type") == "VirtualLocation":
             city = "Online"
+    return venue, address, city
+
+
+def event_from_jsonld(node: dict, source: str, fallback_url: str = "") -> Optional[Event]:
+    title = clean(node.get("name"))
+    start = to_local(node.get("startDate"))
+    if not title or not start:
+        return None
+    loc = node.get("location") or {}
+    if isinstance(loc, list):
+        loc = loc[0] if loc else {}
+    venue, address, city = place_of(loc)
     offers = node.get("offers") or {}
     if isinstance(offers, list):
         offers = offers[0] if offers else {}
