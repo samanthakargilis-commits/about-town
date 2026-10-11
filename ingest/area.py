@@ -84,7 +84,8 @@ def keep(ev: dict, fan=None) -> bool:
     text = " ".join([ev.get("city") or "", ev.get("venue") or "", ev.get("address") or "", ev.get("title") or ""]).lower()
     if any(re.search(rf"\b{re.escape(w)}\b", text) for w in FAR_OR_ONLINE):
         return False
-    if weekend_slot(ev) or (fan and fan(ev)):
+    # a day trip is somewhere in the Bay we can name, not anywhere a listing site reaches (Willits)
+    if (weekend_slot(ev) and OUT_RE.search(text)) or (fan and fan(ev)):
         ev["trip"] = True
         return True
     return False

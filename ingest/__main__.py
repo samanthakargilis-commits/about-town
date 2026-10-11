@@ -147,7 +147,9 @@ def enrich(events, fetcher, limit):
     for ev in events:
         shared[ev["source_url"]] = shared.get(ev["source_url"], 0) + 1
     done = 0
-    for ev in events:
+    # a missing blurb or place first, a missing picture after
+    lacking = lambda ev: len(ev.get("description") or "") < 80 or not (ev.get("venue") or ev.get("address"))
+    for ev in sorted(events, key=lambda ev: not lacking(ev)):
         if done >= limit:
             break
         short = len(ev.get("description") or "") < 80
