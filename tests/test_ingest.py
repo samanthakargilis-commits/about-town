@@ -180,6 +180,11 @@ class FakeFetcher:
 
 
 class NewSources(unittest.TestCase):
+    def test_broadwaysf_run_dates(self):
+        from ingest.adapters import broadwaysf
+        html = r'x\"title\":\"Oh, Mary!\",\"dates\":\"Tue, Oct 13 - Sun, Nov 1, 2026\",\"infoBarText\"'
+        self.assertEqual(broadwaysf.runs(html), {"oh, mary!": (dt.date(2026, 10, 13), dt.date(2026, 11, 1))})
+
     def test_partiful_offer(self):
         from ingest.adapters import partiful
         page = lambda avail, price=20: BeautifulSoup('<script type="application/ld+json">{"@type":"Event","name":"x","startDate":"2026-10-11T21:00:00.000Z",'
