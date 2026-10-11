@@ -95,6 +95,17 @@ def ev(title, start="2026-10-15T20:00-07:00", **kw):
 class Scoring(unittest.TestCase):
     s = Scorer(PROFILE, FOLLOW)
 
+    def test_paid_partiful_painting_is_never(self):
+        title = "golden gate bridge/fleet week picnic & watercolor workshop"
+        self.assertIsNone(self.s.score(ev(title, source="partiful", price="$25")))
+        self.assertIsNotNone(self.s.score(ev(title, source="partiful", price="free")))
+        self.assertIsNotNone(self.s.score(ev(title, source="funcheap", price="$25")))
+
+    def test_sold_out_titles(self):
+        from ingest.__main__ import SOLD_OUT
+        self.assertTrue(SOLD_OUT.search("Comedy Night (SOLD OUT)"))
+        self.assertFalse(SOLD_OUT.search("After a sold-out run, Wicked returns"))
+
     def test_interests_boost_and_thursday(self):
         thu = self.s.score(ev("Drag show-tune sing-along"))
         sat = self.s.score(ev("Drag show-tune sing-along", start="2026-10-17T20:00-07:00"))

@@ -50,6 +50,7 @@ class Event:
     ticket_url: Optional[str] = None                # tickets / RSVP link when it differs from source_url
     lat: Optional[float] = None                     # venue map spot, for distance in the app
     lng: Optional[float] = None
+    sold_out: bool = False                          # no tickets left: dropped, since you can't go
 
     @property
     def id(self) -> str:

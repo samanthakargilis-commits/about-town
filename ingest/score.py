@@ -48,6 +48,9 @@ class Scorer:
         self.downrank = {norm(n): n for n in follow.get("authors_downrank", [])}
         self.kids_authors = {norm(n) for n in follow.get("kids_authors", [])}
         self.never = [norm(x) for x in profile.get("never", [])]
+        hosted = profile.get("never_paid_hosted") or {}
+        self.hosted_sources = set(hosted.get("sources", []))
+        self.hosted_kw = [norm(x) for x in hosted.get("keywords", [])]
 
     def followed_in(self, text_norm):
         hits = []
@@ -56,6 +59,13 @@ class Scorer:
                 hits.append((name, kind))
         return hits
 
+    def paid_hosted(self, ev: dict, title_n: str) -> bool:
+        """A paid painting workshop someone runs through Partiful: never.
+        Free ones and museums' or studios' own listings are unaffected."""
+        if ev.get("source") not in self.hosted_sources or (ev.get("price") or "").lower() == "free":
+            return False
+        return any(kw_regex(n).search(title_n) for n in self.hosted_kw)
+
     def score(self, ev: dict, ai_tags: dict | None = None) -> dict | None:
         """Returns the scoring fields for one event, or None if it's on the never list."""
         title_n = norm(ev["title"])
@@ -63,6 +73,8 @@ class Scorer:
                                 " ".join(ev.get("people", []))]))
         full = title_n + " " + body_n
         if any(kw_regex(n).search(full) for n in self.never):
+            return None
+        if self.paid_hosted(ev, title_n):
             return None
 
         points, reasons, hits = 0.0, [], []
