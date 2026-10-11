@@ -95,6 +95,17 @@ def ev(title, start="2026-10-15T20:00-07:00", **kw):
 class Scoring(unittest.TestCase):
     s = Scorer(PROFILE, FOLLOW)
 
+    def test_paid_partiful_painting_is_never(self):
+        title = "golden gate bridge/fleet week picnic & watercolor workshop"
+        self.assertIsNone(self.s.score(ev(title, source="partiful", price="$25")))
+        self.assertIsNotNone(self.s.score(ev(title, source="partiful", price="free")))
+        self.assertIsNotNone(self.s.score(ev(title, source="funcheap", price="$25")))
+
+    def test_sold_out_titles(self):
+        from ingest.__main__ import SOLD_OUT
+        self.assertTrue(SOLD_OUT.search("Comedy Night (SOLD OUT)"))
+        self.assertFalse(SOLD_OUT.search("After a sold-out run, Wicked returns"))
+
     def test_interests_boost_and_thursday(self):
         thu = self.s.score(ev("Drag show-tune sing-along"))
         sat = self.s.score(ev("Drag show-tune sing-along", start="2026-10-17T20:00-07:00"))
@@ -169,6 +180,18 @@ class FakeFetcher:
 
 
 class NewSources(unittest.TestCase):
+    def test_partiful_offer(self):
+        from ingest.adapters import partiful
+        page = lambda avail, price=20: BeautifulSoup('<script type="application/ld+json">{"@type":"Event","name":"x","startDate":"2026-10-11T21:00:00.000Z",'
+                                     '"offers":[{"@type":"Offer","price":%s,"availability":"https://schema.org/%s"}]}</script>' % (price, avail), "lxml")
+        self.assertEqual(partiful.offer_of(page("InStock")), {"price": "$20", "sold_out": False})
+        self.assertEqual(partiful.offer_of(page("SoldOut")), {"price": "$20", "sold_out": True})
+        self.assertEqual(partiful.offer_of(page("InStock", 0))["price"], "free")
+        capped = BeautifulSoup(str(page("InStock")) + '<script id="__NEXT_DATA__" type="application/json">'
+                               '{"props":{"pageProps":{"event":{"id":"X18","isCapped":true,"atCapacity":true,"remainingCapacity":0},'
+                               '"similar":[{"id":"Y9","atCapacity":false}]}}}</script>', "lxml")
+        self.assertTrue(partiful.offer_of(capped, "X18")["sold_out"])
+        self.assertFalse(partiful.offer_of(capped, "Y9")["sold_out"])
     def test_filoli_event_pages(self):
         from ingest.adapters import filoli
         listing = """<a href="/whats-on/events/nightfall/">Nightfall</a> <a href="/whats-on/events/?category=tours">Tours</a>
