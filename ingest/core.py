@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import datetime as dt
 import hashlib
+import html as htmllib
 import json
 import os
 import pathlib
@@ -68,6 +69,8 @@ def clean(text: Optional[str]) -> str:
     if not text:
         return ""
     text = unicodedata.normalize("NFKC", str(text))
+    if "&" in text and ";" in text:          # "Kepler&#39;s" from feeds that escape twice
+        text = htmllib.unescape(text)
     return re.sub(r"\s+", " ", text).strip()
 
 
@@ -279,6 +282,13 @@ def place_of(loc) -> tuple[str, str, str]:
     return venue, address, city
 
 
+def money(v) -> Optional[float]:
+    try:
+        return float(str(v).replace("$", "").replace(",", "")) if v not in (None, "") else None
+    except ValueError:
+        return None
+
+
 def event_from_jsonld(node: dict, source: str, fallback_url: str = "") -> Optional[Event]:
     title = clean(node.get("name"))
     start = to_local(node.get("startDate"))
@@ -293,11 +303,13 @@ def event_from_jsonld(node: dict, source: str, fallback_url: str = "") -> Option
         offers = offers[0] if offers else {}
     price = ""
     if isinstance(offers, dict):
-        p = offers.get("price") or offers.get("lowPrice")
-        if p in (0, "0", "0.00", 0.0):
+        p, high = money(offers.get("price") or offers.get("lowPrice")), money(offers.get("highPrice"))
+        if p == 0 and not high:
             price = "free"
+        elif p == 0:
+            price = f"free–${high:g}"             # free RSVP with paid tiers
         elif p:
-            price = f"${p}"
+            price = f"${p:.2f}".replace(".00", "")
     image = node.get("image")
     if isinstance(image, list):
         image = image[0] if image else None

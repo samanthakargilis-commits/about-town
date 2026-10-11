@@ -58,8 +58,9 @@ def in_area(ev: dict) -> bool:
         if not re.search(r"\b(san francisco|palo alto|menlo park|redwood city|san mateo|mountain view)\b", where, re.I):
             return False
     if city:
-        # a named city we don't know: keep only if it's not obviously out of area
-        return not OUT_RE.search(city)
+        # a named city we don't know: keep only if it's not obviously out of area.
+        # Eventbrite's category pages reach well past the Bay (Willits, Fort Bragg)
+        return ev.get("source") != "eventbrite" and not OUT_RE.search(city)
     return ev.get("source") in SF_DEFAULT or ev.get("source") in {"keplers", "paloalto", "meetup", "eventbrite"}
 
 
