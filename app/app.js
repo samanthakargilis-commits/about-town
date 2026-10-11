@@ -1,4 +1,4 @@
-// Fogbook: reads events.json (written by the daily job) and keeps all of
+// About Town: reads events.json (written by the daily job) and keeps all of
 // David's choices, home spot and learned taste on the phone (localStorage).
 
 const TZ = 'America/Los_Angeles';
@@ -303,7 +303,7 @@ function icsFor(evs) {
   const local = (d) => { const p = Object.fromEntries(new Intl.DateTimeFormat('en-US', { timeZone: TZ, year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23' }).formatToParts(d).map((x) => [x.type, x.value])); return `${p.year}${p.month}${p.day}T${p.hour}${p.minute}${p.second}`; };
   const e = (s) => String(s || '').replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\n/g, '\\n');
   const stamp = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
-  const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Fogbook//EN', 'METHOD:PUBLISH'];
+  const lines = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//About Town//EN', 'METHOD:PUBLISH'];
   for (const ev of evs) {
     const s = new Date(ev.start);
     let en = ev.end ? new Date(ev.end) : new Date(s.getTime() + 2 * 3600e3);

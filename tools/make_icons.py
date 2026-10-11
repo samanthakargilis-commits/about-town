@@ -1,4 +1,4 @@
-"""Draw the Fogbook icons: a pumpkin tile, a cream datebook page and a puff of fog."""
+"""Draw the About Town icons: a pumpkin tile, a cream datebook page and a puff of fog."""
 import pathlib
 from PIL import Image, ImageDraw
 

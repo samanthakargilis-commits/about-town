@@ -1,4 +1,4 @@
-# Fogbook
+# About Town
 
 A personal event planner for the San Francisco to Palo Alto corridor. A daily
 GitHub Actions job gathers events from 14 sources, merges duplicates, keeps the
