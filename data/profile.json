@@ -45,7 +45,10 @@
         "papercraft",
         "origami",
         "linocut",
-        "watercolor workshop"
+        "watercolor workshop",
+        "gouache",
+        "painting workshop",
+        "paint night"
       ]
     },
     "meditation": {
@@ -62,7 +65,11 @@
         "zen",
         "sitting group",
         "yoga nidra",
-        "contemplative"
+        "contemplative",
+        "yoga",
+        "restorative yoga",
+        "vinyasa",
+        "yin yoga"
       ]
     },
     "spirituality": {
@@ -138,7 +145,7 @@
     },
     "comedy": {
       "label": "Comedy",
-      "weight": 2.2,
+      "weight": 2.4,
       "keywords": [
         "comedy",
         "comedian",
@@ -373,7 +380,166 @@
         "maze",
         "infinite wrench",
         "magic show",
-        "magician"
+        "magician",
+        "lookalike contest",
+        "look-alike contest",
+        "costume contest"
+      ]
+    },
+    "animals": {
+      "label": "Animals",
+      "weight": 2.4,
+      "keywords": [
+        "zoo",
+        "zoos",
+        "oakland zoo",
+        "sf zoo",
+        "san francisco zoo",
+        "aquarium",
+        "aquarium of the bay",
+        "animal",
+        "animals",
+        "wildlife",
+        "wild animals",
+        "petting zoo",
+        "farm animals",
+        "penguin",
+        "penguins",
+        "otter",
+        "otters",
+        "sea lion",
+        "sea lions",
+        "elephant seal",
+        "whale watching",
+        "whales",
+        "marine mammal",
+        "marine mammal center",
+        "tide pool",
+        "tide pools",
+        "tidepool",
+        "birding",
+        "bird walk",
+        "birdwatching",
+        "bird watching",
+        "owl",
+        "owls",
+        "raptor",
+        "raptors",
+        "butterfly",
+        "butterflies",
+        "reptile",
+        "reptiles",
+        "goats",
+        "goat yoga",
+        "alpaca",
+        "alpacas",
+        "llama",
+        "llamas",
+        "pony",
+        "ponies",
+        "puppy",
+        "puppies",
+        "kitten",
+        "kittens",
+        "cat cafe",
+        "cat café",
+        "pet adoption",
+        "adoption event",
+        "spca",
+        "humane society",
+        "wildcare",
+        "rescue animals",
+        "dog parade",
+        "corgi",
+        "corgis",
+        "bunnies",
+        "bunny"
+      ]
+    },
+    "fairs": {
+      "label": "Fairs & festivals",
+      "weight": 2.2,
+      "keywords": [
+        "fair",
+        "faire",
+        "county fair",
+        "street fair",
+        "renaissance fair",
+        "renaissance faire",
+        "ren faire",
+        "apple fair",
+        "art festival",
+        "arts festival",
+        "festival of the arts",
+        "art and wine festival",
+        "oyster fest",
+        "oyster festival",
+        "flower show",
+        "dahlia",
+        "makers market",
+        "maker market",
+        "holiday market",
+        "night market",
+        "fleet week",
+        "block party",
+        "parade",
+        "hardly strictly",
+        "folsom street fair",
+        "harvest festival",
+        "pumpkin patch",
+        "festival"
+      ]
+    },
+    "vintage": {
+      "label": "Estate & sample sales",
+      "weight": 1.8,
+      "keywords": [
+        "estate sale",
+        "sample sale",
+        "flea market",
+        "vintage market",
+        "vintage fair",
+        "antique fair",
+        "antiques fair",
+        "swap meet",
+        "rummage sale",
+        "thrift",
+        "clothing swap"
+      ]
+    },
+    "music": {
+      "label": "Concerts",
+      "weight": 2.0,
+      "keywords": [
+        "concert",
+        "concerts",
+        "live music",
+        "opera",
+        "opera in the park",
+        "chamber music",
+        "trio",
+        "quartet",
+        "recital",
+        "symphony",
+        "orchestra",
+        "flower piano",
+        "singer-songwriter",
+        "choir",
+        "acoustic set"
+      ]
+    },
+    "dance": {
+      "label": "Dance nights",
+      "weight": 1.6,
+      "keywords": [
+        "dance party",
+        "club night",
+        "queer dance party",
+        "disco",
+        "dj set",
+        "dance night",
+        "silent disco",
+        "drag brunch"
       ]
     }
   },
@@ -418,7 +584,8 @@
     "hackathon",
     "career fair",
     "job fair",
-    "speed networking"
+    "speed networking",
+    "hiring fair"
   ],
   "downrank_tags": {
     "tech": -1.5
@@ -426,7 +593,7 @@
   "highlights_per_week": 3,
   "events_per_week": 7,
   "max_price": null,
-  "notes": "Budget and travel distance are still open questions in brief.md.",
+  "notes": "Budget is still open in brief.md. Travel: short hops on weeknights, day trips (Sonoma, East Bay, South Bay) on weekends, and further on weeknights for performers he follows (from his calendar export).",
   "home": {
     "label": "Presidio Heights",
     "lat": 37.7886,

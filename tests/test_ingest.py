@@ -242,3 +242,25 @@ class Places(unittest.TestCase):
         self.assertEqual(geocode.queries({"title": "Comedy (7p + 9p)", "venue": ""}), [])
         self.assertFalse(geocode.fresh(None))
         self.assertTrue(geocode.fresh([37.7, -122.4]))
+
+
+class Distance(unittest.TestCase):
+    def test_messy_addresses_and_weekend_trips(self):
+        from ingest import geocode
+        q = lambda a, city="San Francisco": geocode.queries({"address": a, "city": city, "venue": "", "title": ""})
+        self.assertEqual(q("3201 Ulloa St, San Francisco, CA 94116, USA, San Francisco, CA San Francisco"),
+                         ["3201 Ulloa St, San Francisco"])
+        self.assertEqual(q("2965 Mission St (btwn 25th and 26th), San Francisco, CA")[0], "2965 Mission St, San Francisco")
+        self.assertEqual(q("288 Golf Course Dr W, Rohnert Park, CA", ""), ["288 Golf Course Dr W, Rohnert Park"])
+        self.assertEqual(q("San Francisco, CA"), [])
+        sat, wed = "2026-10-17T11:00:00-07:00", "2026-10-14T19:00:00-07:00"
+        fair = lambda start: {"title": "Harvest Fair", "city": "Santa Rosa", "source": "funcheap", "start": start}
+        self.assertTrue(area.keep(fair(sat)))
+        self.assertTrue(fair(sat) | {"trip": True})
+        self.assertFalse(area.keep(fair(wed)))
+        show = {"title": "Audrey Hobert", "city": "Oakland", "source": "dice", "start": wed}
+        self.assertFalse(area.keep(dict(show)))
+        self.assertTrue(area.keep(dict(show), fan=lambda e: "Hobert" in e["title"]))
+        self.assertFalse(area.keep({"title": "Talk", "city": "Online", "source": "luma", "start": sat}))
+        self.assertFalse(area.keep({"title": "Expo", "city": "Sacramento", "source": "luma", "start": sat}))
+        self.assertTrue(area.keep({"title": "Comedy", "city": "San Francisco", "source": "luma", "start": wed}))

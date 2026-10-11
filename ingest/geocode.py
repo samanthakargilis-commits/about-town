@@ -5,6 +5,7 @@ every answer cached in .cache/geo.json, so each venue is looked up once.
 Events whose source already gave coordinates are left alone."""
 from __future__ import annotations
 
+import html
 import json
 import re
 import time
@@ -15,8 +16,26 @@ from .core import CACHE_DIR, clean
 
 URL = "https://nominatim.openstreetmap.org/search"
 UA = "bay-events/1.0 (personal event planner; github.com/samanthakargilis-commits/bay-events)"
-VIEWBOX = "-123.0,38.2,-121.7,37.1"   # SF Bay Area, west,north,east,south
+VIEWBOX = "-123.2,38.6,-121.3,36.8"   # Bay Area out to Sonoma and Santa Cruz, west,north,east,south
 CACHE = CACHE_DIR / "geo.json"
+
+
+def street_of(addr: str) -> str:
+    """The street part of a listing's address: "3201 Ulloa St, San Francisco, CA 94116, USA, ..."
+    gives "3201 Ulloa St"; asides like "(btwn 25th and 26th)" are dropped."""
+    first = re.sub(r"\(.*?\)", "", addr).split(",")[0].strip(" .")
+    m = re.match(r"^(\d+[A-Za-z]?\s+[A-Za-z0-9 .'-]+?)(?:\s+(?:#|suite|ste|unit|apt|floor)\b.*)?$", first, re.I)
+    return clean(m.group(1)) if m else ""
+
+
+def town_of(addr: str) -> str:
+    """The town after the street, if the address names one ("..., Rohnert Park, CA")."""
+    bits = [clean(b) for b in re.sub(r"\(.*?\)", "", addr).split(",")[1:]]
+    for b in bits:
+        b = re.sub(r"\b(CA|California|USA|United States)\b|\d{5}", "", b, flags=re.I).strip(" .")
+        if b and not re.search(r"\d", b) and len(b) > 2:
+            return b
+    return ""
 
 
 def queries(ev: dict) -> list[str]:
@@ -24,10 +43,13 @@ def queries(ev: dict) -> list[str]:
     if not city or city.lower() in ("sf", "online"):
         city = "San Francisco"
     venue = re.sub(r"\(.*?\)", "", ev.get("venue") or "").strip(" ,-")
-    addr = ev.get("address") or ""
+    addr = html.unescape(ev.get("address") or "")
     out = []
-    if re.match(r"^\d+\s+\w", addr):                  # a street address
-        out.append(f"{addr}, {city}" if city.lower() not in addr.lower() else addr)
+    street = street_of(addr)
+    if street and re.search(r"\b(CA|California)\s+9\d{4}\b", street, re.I):
+        out.append(street)                             # "628 2nd Avenue Crockett California 94525"
+    elif street:                                       # "3201 Ulloa St", "1191 Pine Street"
+        out.append(f"{street}, {town_of(addr) or city}")
     if venue and len(venue) > 3:
         out.append(f"{venue}, {city}")
         first = venue.split(",")[0].strip()          # "SFPL Main Library, 4th floor"

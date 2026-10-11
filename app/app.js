@@ -26,8 +26,8 @@ const SEASONS = [
 ];
 
 // one pastel per kind of event
-const COLOR = { comedy: 'butter', musical_theatre: 'rose', theatre: 'rose', singing: 'rose', art: 'sage', museums: 'sage', craft: 'peach', weird: 'peach', reading: 'robin', writing: 'robin', discourse: 'robin', meditation: 'lav', spirituality: 'lav', queer: 'lav' };
-const SHORT = { comedy: 'Comedy', musical_theatre: 'Musicals', theatre: 'Theatre', singing: 'Singing', art: 'Art', museums: 'Museums', craft: 'Craft', weird: 'Weird', reading: 'Books', writing: 'Writing', discourse: 'Talks', meditation: 'Meditation', spirituality: 'Spiritual', queer: 'Queer' };
+const COLOR = { animals: 'sage', fairs: 'butter', vintage: 'peach', music: 'rose', dance: 'lav', comedy: 'butter', musical_theatre: 'rose', theatre: 'rose', singing: 'rose', art: 'sage', museums: 'sage', craft: 'peach', weird: 'peach', reading: 'robin', writing: 'robin', discourse: 'robin', meditation: 'lav', spirituality: 'lav', queer: 'lav' };
+const SHORT = { animals: 'Animals', fairs: 'Fairs', vintage: 'Sales', music: 'Concerts', dance: 'Dancing', comedy: 'Comedy', musical_theatre: 'Musicals', theatre: 'Theatre', singing: 'Singing', art: 'Art', museums: 'Museums', craft: 'Craft', weird: 'Weird', reading: 'Books', writing: 'Writing', discourse: 'Talks', meditation: 'Meditation', spirituality: 'Spiritual', queer: 'Queer' };
 const colorOf = (ev) => COLOR[(ev.tags || []).find((t) => COLOR[t])] || 'peach';
 
 const PENINSULA = /\b(palo alto|menlo park|redwood city|mountain view|los altos|stanford|san carlos|belmont|atherton|portola valley|woodside|half moon bay|sunnyvale|foster city|san mateo|burlingame|millbrae|cupertino)\b/i;
@@ -176,9 +176,22 @@ function distText(mi) {
 }
 const shortDist = (mi) => (mi < 0.95 ? `${Math.max(2, Math.round(mi * 20))} min walk` : mi < 10 ? `${mi.toFixed(1)} mi` : `${Math.round(mi)} mi`);
 const fromWhere = () => (S.where === 'near' && nearPos ? 'from you' : 'from home');
+const TRIP_MILES = 90;   // Friday evening and weekend day trips (Sonoma, the East Bay), and shows by people you follow
+const slotMemo = new Map();
+function weekendSlot(ev) {
+  if (!slotMemo.has(ev.id)) slotMemo.set(ev.id, slotOf(ev));
+  return slotMemo.get(ev.id);
+}
+function slotOf(ev) {
+  if (ev.end && new Date(ev.end) - new Date(ev.start) > 36 * 3600e3) return true;   // a run: pick a weekend day
+  const p = parts(new Date(ev.start));
+  return p.weekday === 'Sat' || p.weekday === 'Sun' || (p.weekday === 'Fri' && (Number(p.hour) >= 17 || ev.all_day));
+}
 function inRange(ev) {
   const d = distOf(ev);
-  if (d != null) return d <= (RADIUS[S.where] || 15);
+  const trip = S.where === 'home' && (weekendSlot(ev) || !!followInfo(ev));
+  if (d != null) return d <= (RADIUS[S.where] || 15) || (trip && d <= TRIP_MILES);
+  if (ev.trip) return trip;
   // no map spot: go by the city name
   const south = (o) => o.lat < 37.6;
   return south(origin()) === PENINSULA.test(`${ev.city || ''} ${ev.venue || ''}`);
@@ -323,8 +336,23 @@ function personalScore(ev) {
   return s;
 }
 
+// How far you'll go depends on the day: a short hop on a weeknight, a day trip on the weekend.
+function distPenalty(ev) {
+  const mi = distOf(ev);
+  if (mi == null) return 0;
+  const run = ev.end && new Date(ev.end) - new Date(ev.start) > 36 * 3600e3;   // you pick the day
+  const p = parts(new Date(ev.start));
+  if (followInfo(ev)) return -Math.min(2, Math.max(0, mi - 5) * 0.04);   // you'd cross the bay for them, any night
+  const friNight = !run && p.weekday === 'Fri' && Number(p.hour) >= 17;
+  const weekend = weekendSlot(ev);
+  if (weekend && !friNight) return -Math.min(2, Math.max(0, mi - 5) * 0.04);
+  if (friNight) return -Math.min(4, Math.max(0, mi - 3) * 0.25);
+  // a weeknight: walkable or a short ride is fine, across town costs a lot
+  return -Math.min(5, Math.max(0, Math.min(mi, 3) - 1.5) * 0.6 + Math.max(0, mi - 3) * 1.0);
+}
+
 function scoreOf(ev) {
-  let s = ev.score || 0;
+  let s = (ev.score || 0) + distPenalty(ev);
   for (const t of learnTags(ev)) s += Math.max(-3, Math.min(3, S.tagW[t] || 0));
   for (const t of ev.tags || []) if (S.interests[t] !== undefined) s += INTEREST_LEVELS[S.interests[t]];
   const f = followInfo(ev);
@@ -435,6 +463,7 @@ function evRow(ev, { showDay = false } = {}) {
   const labels = (ev.tags || []).filter((x) => SHORT[x]).slice(0, 2)
     .map((x) => `<span style="background:var(--${COLOR[x]});color:var(--${COLOR[x]}-ink)">${SHORT[x]}</span>`);
   if (/thursday evening/i.test(ev.why || '')) labels.push('<span>Thursday night</span>');
+  if (mi != null && mi > RADIUS.home) labels.push('<span>Day trip</span>');
   const run = runText(ev);
   if (run) labels.push(`<span>${esc(run)}</span>`);
   const star = starLine(ev);
@@ -678,7 +707,7 @@ function renderTonight(v) {
     label = 'Tomorrow';
   }
   // good and close beats great and far for a last-minute plan
-  const rank = (ev) => personalScore(ev) - 0.5 * (distOf(ev) ?? 4);
+  const rank = (ev) => personalScore(ev) - 0.2 * (distOf(ev) ?? 4);   // distance by day is already in the score
   const timed = list.filter((ev) => !ev.all_day).sort((a, b) => rank(b) - rank(a));
   const allDay = list.filter((ev) => ev.all_day).sort((a, b) => rank(b) - rank(a));
   $('#title').innerHTML = `${label} <em>${esc(fmt(label === 'Tonight' ? now : new Date(now.getTime() + 86400e3), { weekday: 'short' }))}</em>`;
