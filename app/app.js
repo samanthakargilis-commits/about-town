@@ -1,17 +1,45 @@
 // Bay Events: reads events.json (written by the daily job) and keeps all of
-// David's choices and learned taste on the phone (localStorage).
+// David's choices, home spot and learned taste on the phone (localStorage).
 
 const TZ = 'America/Los_Angeles';
 const STORE = 'bay-events-v1';
 const LEARN = { added: 0.6, maybe: 0.25, not: -0.5, shared: 0.3 };
 const INTEREST_LEVELS = { 2: 1.5, 1: 0, 0: -1.5 };  // love / like / not into
-const HERO_MIN = 5;
+const DOT_MIN = 2.5;        // a day gets a dot for each kind of event scoring at least this
+const DAY_SHOW = 6;         // events listed per day before "show more"
+const RADIUS = { home: 15, near: 10 };  // miles
+
+// the header color follows the season
+const SEASONS = [
+  { bg: '#9DB4CF', ink: '#2B2F3D', em: '#F4F8FC', sub: '#3A4558' },  // Jan
+  { bg: '#D98A9A', ink: '#3D2B26', em: '#FFF1F3', sub: '#5A2C35' },  // Feb
+  { bg: '#A8C48C', ink: '#2E3A22', em: '#F7FBEF', sub: '#3F5530' },  // Mar
+  { bg: '#EBAEC0', ink: '#3D2B26', em: '#FFF4F7', sub: '#6A3442' },  // Apr
+  { bg: '#EFC75E', ink: '#3D2B26', em: '#FFF8E2', sub: '#5E4710' },  // May
+  { bg: '#F2A760', ink: '#3D2B26', em: '#FFF2E2', sub: '#5A3420' },  // Jun
+  { bg: '#E5745F', ink: '#3D1F1A', em: '#FFEDE6', sub: '#5A2318' },  // Jul
+  { bg: '#E9B05A', ink: '#3D2B26', em: '#FFF5E3', sub: '#5A3D14' },  // Aug
+  { bg: '#D4A440', ink: '#3D2B26', em: '#FFF6DE', sub: '#574012' },  // Sep
+  { bg: '#E9874B', ink: '#3D2B26', em: '#FFF1DE', sub: '#5A3424' },  // Oct: pumpkin
+  { bg: '#A9502F', ink: '#FFF1E6', em: '#F6C99B', sub: '#F3D9C8' },  // Nov: rust
+  { bg: '#3F6B4E', ink: '#FBF5EC', em: '#F2C6C2', sub: '#D6E3D6' },  // Dec: pine
+];
+
+// one pastel per kind of event
+const COLOR = { comedy: 'butter', musical_theatre: 'rose', theatre: 'rose', singing: 'rose', art: 'sage', museums: 'sage', craft: 'peach', weird: 'peach', reading: 'robin', writing: 'robin', discourse: 'robin', meditation: 'lav', spirituality: 'lav', queer: 'lav' };
+const SHORT = { comedy: 'Comedy', musical_theatre: 'Musicals', theatre: 'Theatre', singing: 'Singing', art: 'Art', museums: 'Museums', craft: 'Craft', weird: 'Weird', reading: 'Books', writing: 'Writing', discourse: 'Talks', meditation: 'Meditation', spirituality: 'Spiritual', queer: 'Queer' };
+const colorOf = (ev) => COLOR[(ev.tags || []).find((t) => COLOR[t])] || 'peach';
+
+const PENINSULA = /\b(palo alto|menlo park|redwood city|mountain view|los altos|stanford|san carlos|belmont|atherton|portola valley|woodside|half moon bay|sunnyvale|foster city|san mateo|burlingame|millbrae|cupertino)\b/i;
+const SHOW = /\b(comed\w*|stand-?up|improv|show|tour|live|concert|perform\w*|musical|theat\w*|cabaret|sketch|open mic|special|taping|podcast)\b/i;
 
 let data = { events: [], sources: [] };
 let profile = null;
 let follow = null;
-let tab = 'plan';
+let tab = 'cal';
 let monthOffset = 0;
+let selDay = null;
+let nearPos = null;
 let expanded = new Set();
 
 // ------------------------------------------------------------------ state
@@ -23,12 +51,17 @@ const blank = () => ({
   addCount: {},        // tag -> times added
   interests: {},       // interest key -> level 0/1/2
   people: [],          // names typed in
-  igHandles: [],       // from Instagram export
+  igHandles: [],       // from the Instagram export
+  igConfirmed: {},     // handle -> real name ("patreegs" -> "Pat Regan")
+  igRejected: [],      // "handle|name" pairs answered no
+  blockedPeople: [],   // "not this person"
   authorsExtra: [],    // from a Goodreads CSV imported on the phone
   hiddenTags: [],
   dismissedNudges: [],
   lastReview: null,
   decidedAt: {},
+  home: null,          // { label, lat, lng } set on this phone
+  where: 'home',
 });
 let S = load();
 
@@ -49,6 +82,8 @@ const parts = (d) => Object.fromEntries(new Intl.DateTimeFormat('en-US', { timeZ
 const dayKey = (d) => { const p = parts(d); return `${p.year}-${String(p.month).padStart(2, '0')}-${String(p.day).padStart(2, '0')}`; };
 const norm = (s) => (s || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[.'’]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
 const today0 = () => { const k = dayKey(new Date()); return new Date(`${k}T00:00:00${offsetFor(k)}`); };
+const atNoon = (k) => new Date(`${k}T12:00:00${offsetFor(k)}`);
+const reEsc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 function offsetFor(k) {
   // Pacific offset for a local date (handles DST)
@@ -59,12 +94,11 @@ function offsetFor(k) {
   return `${h < 0 ? '-' : '+'}${String(Math.abs(h)).padStart(2, '0')}:00`;
 }
 
+const clock = (ev) => fmt(new Date(ev.start), { hour: 'numeric', minute: '2-digit' }).replace(':00', '');
 function when(ev) {
   const s = new Date(ev.start);
   const day = fmt(s, { weekday: 'short', month: 'short', day: 'numeric' });
-  if (ev.all_day) return day;
-  const t = fmt(s, { hour: 'numeric', minute: '2-digit' }).replace(':00', '').replace(' ', '').toLowerCase();
-  return `${day} · ${t}`;
+  return ev.all_day ? day : `${day} · ${clock(ev).replace(' ', '').toLowerCase()}`;
 }
 function runText(ev) {
   if (!ev.end) return '';
@@ -78,7 +112,6 @@ function displayDate(ev) {
   const t = today0();
   return s < t && ev.end && new Date(ev.end) >= t ? t : s;
 }
-const placeOf = (ev) => [ev.venue, ev.city && !/san francisco/i.test(ev.city) && !(ev.venue || '').includes(ev.city) ? ev.city : ''].filter(Boolean).join(' · ');
 const linkOf = (ev) => ev.ticket_url || ev.source_url;
 const sourceLabel = (id) => (data.sources.find((s) => s.name === id) || {}).label || id;
 
@@ -91,47 +124,129 @@ function toast(msg, undo) {
   if (undo) $('#undo').onclick = () => { undo(); el.hidden = true; };
 }
 
+// ------------------------------------------------------------------ where
+
+const homePos = () => S.home || profile?.home || { label: 'San Francisco', lat: 37.7749, lng: -122.4194 };
+const origin = () => (S.where === 'near' && nearPos ? nearPos : homePos());
+
+function miles(a, b) {
+  const R = 3958.8, rad = Math.PI / 180;
+  const dLat = (b.lat - a.lat) * rad, dLng = (b.lng - a.lng) * rad;
+  const h = Math.sin(dLat / 2) ** 2 + Math.cos(a.lat * rad) * Math.cos(b.lat * rad) * Math.sin(dLng / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(h));
+}
+const distOf = (ev) => (ev.lat != null && ev.lng != null ? miles(origin(), ev) : null);
+function distText(mi) {
+  if (mi == null) return '';
+  if (mi < 0.95) return `${mi.toFixed(1)} mi · ${Math.max(2, Math.round(mi * 20))} min walk`;
+  return mi < 10 ? `${mi.toFixed(1)} mi` : `${Math.round(mi)} mi`;
+}
+function inRange(ev) {
+  const d = distOf(ev);
+  if (d != null) return d <= (RADIUS[S.where] || 15);
+  // no map spot: go by the city name
+  const south = (o) => o.lat < 37.6;
+  return south(origin()) === PENINSULA.test(`${ev.city || ''} ${ev.venue || ''}`);
+}
+
+function findMe() {
+  if (!navigator.geolocation) { toast("This phone can't share its location"); return; }
+  $('#subline').textContent = 'Finding you…';
+  navigator.geolocation.getCurrentPosition(
+    (p) => { nearPos = { label: 'you', lat: p.coords.latitude, lng: p.coords.longitude }; render(); },
+    () => { S.where = 'home'; save(); render(); toast('Location is off, so distances are from home'); },
+    { enableHighAccuracy: false, timeout: 10000, maximumAge: 600000 },
+  );
+}
+
+async function setHome(address) {
+  const q = new URLSearchParams({ format: 'json', limit: '1', q: address, countrycodes: 'us' });
+  const r = await fetch(`https://nominatim.openstreetmap.org/search?${q}`, { headers: { Accept: 'application/json' } });
+  const [hit] = await r.json();
+  if (!hit) throw new Error("couldn't find that address");
+  S.home = { label: address, lat: Number(hit.lat), lng: Number(hit.lon) };
+  save();
+}
+
 // ------------------------------------------------------------------ taste
 
-function followNames() {
-  const list = [];
-  if (follow) {
-    for (const n of follow.authors_favorite || []) list.push([n, 'author']);
-    for (const n of follow.authors_new_books || []) list.push([n, 'author']);
-    for (const n of follow.performers || []) list.push([n, 'performer']);
-  }
-  for (const n of S.people) list.push([n, 'performer']);
-  for (const n of S.authorsExtra) list.push([n, 'author']);
-  return list.filter(([n]) => norm(n).length >= 4);
-}
 let followIndex = null;
 function buildFollowIndex() {
-  followIndex = followNames().map(([name, kind]) => ({ name, kind, re: new RegExp(`(?<![a-z0-9])${norm(name).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?![a-z0-9])`) }));
+  const list = [];
+  const add = (name, kind) => { if (norm(name).length >= 4) list.push({ name, kind }); };
+  if (follow) {
+    for (const n of follow.authors_favorite || []) add(n, 'author');
+    for (const n of follow.authors_new_books || []) add(n, 'author');
+    for (const n of follow.performers || []) add(n, 'performer');
+  }
+  for (const n of S.people) add(n, 'you');
+  for (const n of S.authorsExtra) add(n, 'author');
+  for (const n of Object.values(S.igConfirmed)) add(n, 'instagram');
+  // "gus.heagerty" and "cat_cohen" spell out a name
   const handles = S.igHandles.map((h) => h.toLowerCase().replace(/^@/, ''));
-  followIndex.handles = new Set(handles.flatMap((h) => {
-    const bare = h.replace(/[._\d]+/g, '');
-    const trimmed = bare.replace(/^(the|its|real|official)/, '').replace(/(comedy|comic|official|music|art|live|sf|tv)$/, '');
-    return [bare, trimmed].filter((x) => x.length >= 6);
-  }));
-  followIndex.rawHandles = new Set(handles);
+  for (const h of handles) {
+    const bits = h.split(/[._]+/).filter(Boolean);
+    if (bits.length >= 2 && bits.length <= 3 && bits.every((b) => /^[a-z]{2,}$/.test(b))) add(bits.join(' '), 'instagram');
+  }
+  const blocked = new Set(S.blockedPeople.map(norm));
+  followIndex = list.filter((f) => !blocked.has(norm(f.name)))
+    .map((f) => ({ ...f, re: new RegExp(`(?<![a-z0-9])${reEsc(norm(f.name))}(?![a-z0-9])`) }));
+  // "John Mulaney" in a listing matches the handle @johnmulaney
+  followIndex.joined = new Set(handles.map((h) => h.replace(/[^a-z]/g, '')).filter((x) => x.length >= 8));
+  followIndex.raw = new Set(handles);
+  followIndex.bare = handles.map((h) => [h, h.replace(/[^a-z]/g, '')]).filter(([, b]) => b.length >= 5);
+  followIndex.blocked = blocked;
 }
 
-function followedIn(ev) {
-  if (ev.followed) return ev.followed;
+const isShow = (ev) => ['comedy', 'theatre', 'musical_theatre', 'singing'].some((t) => (ev.tags || []).includes(t)) || SHOW.test(ev.title);
+const namesIn = (text) => [...new Set(text.match(/\b[A-Z][a-zA-Z'’-]+(?:\s+[A-Z][a-zA-Z'’-]+){1,2}\b/g) || [])];
+
+function followInfo(ev) {
   if (!followIndex) buildFollowIndex();
+  if (ev.followed && !followIndex.blocked.has(norm(ev.followed))) {
+    return { name: ev.followed, kind: ev.followed_kind === 'performer' ? 'performer' : 'author' };
+  }
   const text = norm(`${ev.title} ${ev.description} ${(ev.people || []).join(' ')}`);
-  for (const f of followIndex) if (f.re.test(text)) return f.name;
+  const show = isShow(ev);
+  for (const f of followIndex) {
+    if (f.kind === 'instagram' && !show) continue;   // friends rarely headline; performers do
+    if (f.re.test(text)) return f;
+  }
+  if (!show) return null;
   const raw = `${ev.title} ${ev.description}`;
-  for (const m of raw.matchAll(/@([A-Za-z0-9._]{3,30})/g)) if (followIndex.rawHandles.has(m[1].toLowerCase())) return '@' + m[1];
-  if (followIndex.handles.size) {
-    // "John Mulaney" in a listing matches the handle @johnmulaney
-    const names = raw.match(/\b[A-Z][a-zA-Z'’-]+(?:\s+[A-Z][a-zA-Z'’-]+){1,2}\b/g) || [];
-    for (const n of names) {
-      const joined = norm(n).replace(/ /g, '');
-      if (followIndex.handles.has(joined)) return n;
-    }
+  for (const m of raw.matchAll(/@([A-Za-z0-9._]{3,30})/g)) if (followIndex.raw.has(m[1].toLowerCase())) return { name: '@' + m[1], kind: 'instagram' };
+  for (const n of namesIn(raw)) {
+    if (followIndex.joined.has(norm(n).replace(/ /g, '')) && !followIndex.blocked.has(norm(n))) return { name: n, kind: 'instagram' };
   }
   return null;
+}
+
+// usernames that might be a performer named in a listing ("patreegs" ~ "Pat Regan")
+function igSuggestions() {
+  if (!followIndex) buildFollowIndex();
+  if (!followIndex.bare.length) return [];
+  const known = new Set(Object.keys(S.igConfirmed));
+  const out = [], seen = new Set();
+  for (const ev of upcomingAll()) {
+    if (!isShow(ev) || followInfo(ev)) continue;
+    for (const n of namesIn(`${ev.title} ${ev.description}`)) {
+      const w = norm(n).split(' ');
+      if (w.length !== 2) continue;
+      const [first, last] = w;
+      if (first.length < 3 || last.length < 3) continue;
+      for (const [h, b] of followIndex.bare) {
+        const key = `${h}|${n}`;
+        if (known.has(h) || seen.has(key) || S.igRejected.includes(key)) continue;
+        const rest = b.slice(first.length);
+        if (b.startsWith(first) && rest.length >= 2 && rest.startsWith(last.slice(0, 2)) && b.length <= first.length + last.length + 3) {
+          seen.add(key);
+          out.push({ handle: h, name: n, ev });
+        }
+      }
+    }
+    if (out.length >= 8) break;
+  }
+  return out;
 }
 
 function timeTags(ev) {
@@ -147,15 +262,10 @@ function personalScore(ev) {
   let s = ev.score || 0;
   for (const t of learnTags(ev)) s += Math.max(-3, Math.min(3, S.tagW[t] || 0));
   for (const t of ev.tags || []) if (S.interests[t] !== undefined) s += INTEREST_LEVELS[S.interests[t]];
-  if (!ev.followed && followedIn(ev)) s += 6;
+  const f = followInfo(ev);
+  if (ev.followed && !f) s -= 6;                 // "not this person"
+  if (f && !ev.followed) s += f.kind === 'instagram' ? 5 : 6;
   return s;
-}
-
-function whyLine(ev) {
-  const f = followedIn(ev);
-  let why = ev.why || '';
-  if (f && !why.includes(f)) why = `⭐ ${f} · ${why}`;
-  return why;
 }
 
 const isHidden = (ev) => (ev.tags || []).some((t) => S.hiddenTags.includes(t));
@@ -190,7 +300,6 @@ function googleCal(ev) {
 }
 
 function icsFor(evs) {
-  const pad = (n) => String(n).padStart(2, '0');
   const local = (d) => { const p = Object.fromEntries(new Intl.DateTimeFormat('en-US', { timeZone: TZ, year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23' }).formatToParts(d).map((x) => [x.type, x.value])); return `${p.year}${p.month}${p.day}T${p.hour}${p.minute}${p.second}`; };
   const e = (s) => String(s || '').replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\n/g, '\\n');
   const stamp = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
@@ -240,58 +349,68 @@ async function copyLink(ev) {
   catch { prompt('Copy this:', `${shareText(ev)} · ${linkOf(ev)}`); }
 }
 
-// ------------------------------------------------------------------ rendering: cards
+// ------------------------------------------------------------------ rendering: one event
 
-function cardHTML(ev, { hero = false } = {}) {
+function starLine(ev) {
+  const f = followInfo(ev);
+  if (!f) return '';
+  const why = { instagram: 'you follow them', author: 'an author you love', performer: 'on your list', you: 'on your list' }[f.kind] || '';
+  return `⭐ ${esc(f.name)}${why ? ` · ${why}` : ''}`;
+}
+
+function evRow(ev, { showDay = false } = {}) {
   const st = S.status[ev.id];
-  const f = followedIn(ev);
-  const fresh = isNew(ev);
-  const img = ev.image_url ? `style="background-image:url('${esc(ev.image_url)}'), var(--grad)"` : '';
+  const c = colorOf(ev);
+  const t = ev.all_day ? 'All<small>DAY</small>' : esc(clock(ev)).replace(/ (AM|PM)/, '<small>$1</small>');
+  const dist = distText(distOf(ev));
+  const meta = [
+    esc(ev.venue || (ev.city && !/san francisco/i.test(ev.city) ? ev.city : '')),
+    dist ? `<span class="dist">${esc(dist)}</span>` : '',
+    ev.price ? esc(ev.price === 'free' ? 'Free' : ev.price) : '',
+  ].filter(Boolean).join(' · ');
+  const labels = (ev.tags || []).filter((x) => SHORT[x]).slice(0, 2)
+    .map((x) => `<span style="background:var(--${COLOR[x]});color:var(--${COLOR[x]}-ink)">${SHORT[x]}</span>`);
+  if (/thursday evening/i.test(ev.why || '')) labels.push('<span>Thursday night</span>');
   const run = runText(ev);
-  return `<article class="card ${hero ? 'hero' : ''} ${st || ''}" data-id="${esc(ev.id)}">
-    ${hero ? `<div class="img ${ev.image_url ? '' : 'noimg'}" ${img}><span class="b love">You'll love this</span></div>` : ''}
+  if (run) labels.push(`<span>${esc(run)}</span>`);
+  const star = starLine(ev);
+  return `<article class="ev" data-id="${esc(ev.id)}">
+    <div class="chip" style="background:var(--${c});color:var(--${c}-ink)">${t}</div>
     <div class="body" data-open>
-      ${!hero && ev.image_url ? `<div class="thumb" ${img}></div>` : ''}
-      <div class="when">${esc(when(ev))}${run ? `<span class="dot"></span><span class="run">${esc(run)}</span>` : ''}</div>
+      ${showDay ? `<div class="day">${esc(fmt(displayDate(ev), { weekday: 'short', month: 'short', day: 'numeric' }))}</div>` : ''}
       <h3>${esc(ev.title)}</h3>
-      ${ev.parent_event ? '' : ''}
-      <div class="where">${esc(placeOf(ev))}${ev.price ? ` · ${esc(ev.price === 'free' ? 'Free' : ev.price)}` : ''}</div>
-      <div class="why">${esc(whyLine(ev))}</div>
-      ${f || fresh || ev.sponsored ? `<div class="badges">${f ? '<span class="b follow">⭐ Someone you follow</span>' : ''}${fresh ? '<span class="b new">New</span>' : ''}${ev.sponsored ? '<span class="b sponsor">May be sponsored</span>' : ''}</div>` : ''}
+      <div class="meta">${meta}</div>
+      ${star ? `<div class="star">${star}</div>` : ''}
+      ${labels.length ? `<div class="tags">${labels.join('')}</div>` : ''}
     </div>
-    <div class="actions">
-      <button class="act add ${st === 'added' ? 'on' : ''}" data-act="added">${st === 'added' ? '✓ Added' : '＋ Add'}</button>
-      <button class="act maybe ${st === 'maybe' ? 'on' : ''}" data-act="maybe">Maybe</button>
-      <button class="act" data-act="not" aria-label="Not for me">Not for me</button>
-      <span class="sp"></span>
-      <a class="act icon" href="${esc(ev.ics)}" data-cal aria-label="Add to calendar">📅</a>
-      <button class="act icon" data-act="share" aria-label="Share">↗︎</button>
-    </div>
+    <button class="plus ${st === 'added' ? 'on' : st === 'maybe' ? 'maybe' : ''}" data-act="added" aria-label="${st === 'added' ? 'In your plan' : 'Add to plan'}">${st === 'added' ? '✓' : st === 'maybe' ? '?' : '+'}</button>
   </article>`;
 }
 
 function byId(id) { return data.events.find((e) => e.id === id); }
 
-function onCardClick(e) {
-  const card = e.target.closest('.card');
-  if (!card) return;
-  const ev = byId(card.dataset.id);
+function onEventClick(e) {
+  const row = e.target.closest('[data-id]');
+  if (!row) return;
+  const ev = byId(row.dataset.id);
   if (!ev) return;
   const btn = e.target.closest('[data-act]');
   if (btn) {
     const act = btn.dataset.act;
     if (act === 'share') return share(ev);
+    if (act === 'block') { const f = followInfo(ev); if (f) { S.blockedPeople.push(f.name); save(); buildFollowIndex(); toast(`Okay, ${f.name} isn't who you follow`); } closeSheet(); return render(); }
     const prev = decide(ev, act);
     const now = S.status[ev.id];
-    if (now === 'added') toast('Added to your plan · tap 📅 for your calendar');
-    if (now === 'not') toast('Hidden. We\'ll show fewer like this', () => { decide(ev, prev || 'not'); render(); });
+    if (now === 'added') toast('In your plan · open it for your calendar');
+    if (now === 'not') toast("Hidden. We'll show fewer like this", () => { decide(ev, prev || 'not'); render(); });
+    if (btn.closest('.sheet')) closeSheet();
     render();
-    const el = document.querySelector(`.card[data-id="${CSS.escape(ev.id)}"]`);
+    const el = document.querySelector(`.ev[data-id="${CSS.escape(ev.id)}"] .plus`);
     if (el && now === 'added') el.classList.add('pop');
     return;
   }
   if (e.target.closest('[data-cal]')) {
-    // the .ics link opens the calendar sheet; adding it also counts as a yes
+    // opening the .ics also counts as a yes
     if (S.status[ev.id] !== 'added') { decide(ev, 'added'); setTimeout(render, 300); }
     return;
   }
@@ -306,33 +425,36 @@ function openSheet(ev) {
     ev.ticket_url && ev.ticket_url !== ev.source_url ? `<a href="${esc(ev.ticket_url)}" target="_blank" rel="noopener">Tickets / RSVP ↗</a>` : '',
     ev.parent_event ? `<a href="${esc(ev.parent_event.url)}" target="_blank" rel="noopener">Part of ${esc(ev.parent_event.title)} ↗</a>` : '',
     ...(ev.also_on || []).map((a) => `<a href="${esc(a.url)}" target="_blank" rel="noopener">Also on ${esc(sourceLabel(a.source))} ↗</a>`),
+    ev.lat != null ? `<a href="https://maps.apple.com/?daddr=${ev.lat},${ev.lng}&q=${encodeURIComponent(ev.venue || ev.title)}" target="_blank" rel="noopener">Directions ↗</a>` : '',
     `<a href="${esc(googleCal(ev))}" target="_blank" rel="noopener">Add to Google Calendar ↗</a>`,
-    `<a href="#" data-copy>Copy link</a>`,
+    '<a href="#" data-copy>Copy link</a>',
   ].join('');
+  const star = starLine(ev);
+  const where = [ev.venue, ev.address !== ev.venue ? ev.address : '', ev.city].filter(Boolean).join(' · ');
   $('#sheet').innerHTML = `<div class="grab"></div>${img}
-    <div class="card ${st || ''}" data-id="${esc(ev.id)}" style="box-shadow:none;margin:0">
-      <div class="when" style="padding:0 2px">${esc(when(ev))}${runText(ev) ? ` · ${esc(runText(ev))}` : ''}</div>
+    <div data-id="${esc(ev.id)}">
+      <div class="when">${esc(when(ev))}${runText(ev) ? ` · ${esc(runText(ev))}` : ''}</div>
       <h2>${esc(ev.title)}</h2>
-      <div class="where">${esc([ev.venue, ev.address !== ev.venue ? ev.address : '', ev.city].filter(Boolean).join(' · '))}${ev.price ? ` · ${esc(ev.price)}` : ''}</div>
-      <div class="why" style="margin:10px 0">${esc(whyLine(ev))}</div>
+      <div class="where">${esc(where)}${distText(distOf(ev)) ? ` · ${esc(distText(distOf(ev)))}` : ''}${ev.price ? ` · ${esc(ev.price === 'free' ? 'Free' : ev.price)}` : ''}</div>
+      ${star ? `<div class="star">${star}<a href="#" data-act="block">Not this person</a></div>` : ''}
+      <div class="acts">
+        <button class="btn ${st === 'added' ? 'on' : 'cherry'}" data-act="added">${st === 'added' ? '✓ In your plan' : '＋ Add to plan'}</button>
+        <button class="btn maybe ${st === 'maybe' ? 'on' : ''}" data-act="maybe">Maybe</button>
+        <button class="btn" data-act="not">Not for me</button>
+        <a class="btn" href="${esc(ev.ics)}" data-cal>📅 Calendar</a>
+        <button class="btn" data-act="share">Share</button>
+      </div>
       ${ev.people && ev.people.length ? `<div class="small">With ${esc(ev.people.slice(0, 6).join(', '))}</div>` : ''}
       <p class="desc">${esc(ev.description || '')}</p>
-      <div class="actions" style="padding-left:0">
-        <button class="act add ${st === 'added' ? 'on' : ''}" data-act="added">${st === 'added' ? '✓ Added' : '＋ Add'}</button>
-        <button class="act maybe ${st === 'maybe' ? 'on' : ''}" data-act="maybe">Maybe</button>
-        <button class="act" data-act="not">Not for me</button>
-        <a class="act icon" href="${esc(ev.ics)}" data-cal aria-label="Add to calendar">📅</a>
-        <button class="act icon" data-act="share" aria-label="Share">↗︎</button>
-      </div>
     </div>
     <div class="links">${links}</div>`;
   $('#sheetWrap').hidden = false;
   $('#sheet [data-copy]').onclick = (e) => { e.preventDefault(); copyLink(ev); };
-  $('#sheet').onclick = (e) => { if (e.target.closest('[data-act],[data-cal]')) { onCardClick(e); if (e.target.closest('[data-act]')) closeSheet(); } };
+  $('#sheet').onclick = (e) => { if (e.target.closest('[data-act],[data-cal]')) { if (e.target.closest('[data-act="block"]')) e.preventDefault(); onEventClick(e); } };
 }
 function closeSheet() { $('#sheetWrap').hidden = true; }
 
-// ------------------------------------------------------------------ views
+// ------------------------------------------------------------------ which events
 
 function monthRange(offset) {
   const p = parts(new Date());
@@ -342,28 +464,31 @@ function monthRange(offset) {
   const start = new Date(`${k}T00:00:00${offsetFor(k)}`);
   const nm = m === 12 ? `${y + 1}-01-01` : `${y}-${String(m + 1).padStart(2, '0')}-01`;
   const end = new Date(`${nm}T00:00:00${offsetFor(nm)}`);
-  return { start, end, label: fmt(start, { month: 'long' }) };
+  return { start, end, y, m, label: fmt(atNoon(k), { month: 'long' }) };
 }
 
-function weekStart(d) {
-  const k = dayKey(d);
-  const base = new Date(`${k}T12:00:00${offsetFor(k)}`);
-  const dow = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'].indexOf(parts(base).weekday);
-  const ws = new Date(base.getTime() - dow * 86400e3);
-  const wk = dayKey(ws);
-  return new Date(`${wk}T00:00:00${offsetFor(wk)}`);
-}
-
-function upcoming() {
+function upcomingAll() {
   const t = today0();
   const now = new Date();
   return data.events.filter((ev) => {
     const s = new Date(ev.start);
     const e = ev.end ? new Date(ev.end) : null;
     // timed events that already started today drop off; all-day ones and runs stay
-    const live = ev.all_day ? s >= t : (s >= now || (e && e >= now));
+    const live = ev.all_day ? s >= t || (e && e >= t) : (s >= now || (e && e >= now));
     return live && !isHidden(ev);
   });
+}
+const upcoming = () => upcomingAll().filter(inRange);
+
+function byDay(evs) {
+  const m = new Map();
+  for (const ev of evs) {
+    const k = dayKey(displayDate(ev));
+    if (!m.has(k)) m.set(k, []);
+    m.get(k).push(ev);
+  }
+  for (const list of m.values()) list.sort((a, b) => personalScore(b) - personalScore(a));
+  return m;
 }
 
 function nudgeHTML() {
@@ -377,50 +502,80 @@ function nudgeHTML() {
   return '';
 }
 
-function renderPlan(v) {
-  const { start, end, label } = monthRange(monthOffset);
+function dayList(list, key) {
+  const picked = list.filter((ev) => S.status[ev.id] === 'added' || S.status[ev.id] === 'maybe');
+  const rest = list.filter((ev) => !picked.includes(ev));
+  const all = expanded.has(key);
+  const shown = [...picked, ...(all ? rest : rest.slice(0, Math.max(0, DAY_SHOW - picked.length)))]
+    .sort((a, b) => (a.all_day - b.all_day) || new Date(a.start) - new Date(b.start));
+  const more = rest.length - Math.max(0, DAY_SHOW - picked.length);
+  return shown.map((ev) => evRow(ev)).join('') +
+    (more > 0 ? `<button class="more-btn" data-more="${key}">${all ? 'Show fewer' : `Show ${more} more`}</button>` : '');
+}
+
+// ------------------------------------------------------------------ views
+
+function renderCal(v) {
+  const { start, end, y, m } = monthRange(monthOffset);
+  const t = today0(), tk = dayKey(t);
+  const days = byDay(upcoming().filter((ev) => S.status[ev.id] !== 'not'));
+  const nDays = Math.round((end - start) / 86400e3);
+  const keys = Array.from({ length: nDays }, (_, i) => `${y}-${String(m).padStart(2, '0')}-${String(i + 1).padStart(2, '0')}`);
+  if (!selDay || !keys.includes(selDay) || selDay < tk) selDay = keys.find((k) => k >= tk && days.get(k)?.length) || keys.find((k) => k >= tk) || keys[0];
+  const lead = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].indexOf(parts(atNoon(keys[0])).weekday);
+  let grid = '<div></div>'.repeat(lead);
+  let planned = 0;
+  for (const k of keys) {
+    const list = days.get(k) || [];
+    const past = k < tk;
+    const picked = list.some((ev) => S.status[ev.id] === 'added');
+    if (picked) planned += list.filter((ev) => S.status[ev.id] === 'added').length;
+    const colors = [];
+    for (const ev of list) {
+      if (personalScore(ev) < DOT_MIN) break;
+      const c = colorOf(ev);
+      if (!colors.includes(c)) colors.push(c);
+      if (colors.length === 3) break;
+    }
+    const cls = ['d', past && 'past', k === tk && 'today', k === selDay && 'sel', picked && 'picked'].filter(Boolean).join(' ');
+    grid += `<button class="${cls}" data-day="${k}" ${past ? 'disabled' : ''}><span class="n">${Number(k.slice(8))}</span><span class="dots">${past ? '' : colors.map((c) => `<i style="background:var(--${c})"></i>`).join('')}</span></button>`;
+  }
+  $('#subline').innerHTML = planned ? `<b>${planned} plan${planned > 1 ? 's' : ''}</b> on your calendar this month` : 'Tap a day to see what’s good';
+  const list = days.get(selDay) || [];
+  const sd = atNoon(selDay);
+  v.innerHTML = `<div class="cal"><div class="dow">${['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((x) => `<span>${x}</span>`).join('')}</div><div class="grid">${grid}</div></div>
+    <div class="dayhead"><h2>${esc(fmt(sd, { weekday: 'long' }))}, <em>${esc(fmt(sd, { month: 'short', day: 'numeric' }))}</em></h2><small>${list.length ? `${list.length} option${list.length > 1 ? 's' : ''}` : ''}</small></div>
+    ${nudgeHTML()}
+    ${list.length ? dayList(list, selDay) : `<p class="hint">Nothing near ${S.where === 'near' ? 'you' : 'home'} yet. Lots of events are posted 1 to 2 weeks out, so check back.</p>`}`;
+}
+
+function renderTonight(v) {
+  const now = new Date();
   const t = today0();
-  const perWeek = profile?.events_per_week || 10;
-  const heroN = profile?.highlights_per_week || 3;
+  const cutoff = new Date(t.getTime() + 27 * 3600e3);  // 3am
   const evs = upcoming().filter((ev) => S.status[ev.id] !== 'not');
-  const weeks = new Map();
-  for (const ev of evs) {
-    const d = displayDate(ev);
-    if (d < start || d >= end || d < t) continue;
-    const ws = weekStart(d).getTime();
-    if (!weeks.has(ws)) weeks.set(ws, []);
-    weeks.get(ws).push(ev);
+  const pick = (from, to) => evs.filter((ev) => {
+    const s = new Date(ev.start), e = ev.end ? new Date(ev.end) : null;
+    if (ev.all_day) return dayKey(displayDate(ev)) === dayKey(from);
+    return (s >= new Date(from.getTime() - 30 * 60e3) && s < to) || (e && s < from && e > from && e - s < 12 * 3600e3);
+  });
+  let list = pick(now, cutoff), label = 'Tonight';
+  if (!list.filter((ev) => !ev.all_day).length) {
+    const tm = new Date(t.getTime() + 24 * 3600e3 + 3600e3);
+    list = pick(new Date(`${dayKey(tm)}T00:00:00${offsetFor(dayKey(tm))}`), new Date(t.getTime() + 51 * 3600e3));
+    label = 'Tomorrow';
   }
-  $('#eyebrow').textContent = monthOffset === 0 ? 'Your month' : 'Coming up';
-  $('#title').textContent = label;
-  const keys = [...weeks.keys()].sort((a, b) => a - b);
-  if (!keys.length) {
-    v.innerHTML = `<div class="empty"><div class="big">🌙</div><h2>Nothing here yet</h2><p>New events land every morning. Many are posted 1 to 2 weeks out, so check back.</p></div>`;
-    return;
-  }
-  let html = nudgeHTML();
-  for (const ws of keys) {
-    const list = weeks.get(ws).map((ev) => ({ ev, s: personalScore(ev) })).sort((a, b) => b.s - a.s);
-    const picked = list.filter((x) => S.status[x.ev.id] === 'added' || S.status[x.ev.id] === 'maybe');
-    const rest = list.filter((x) => !picked.includes(x));
-    const heroes = rest.filter((x) => x.s >= HERO_MIN).slice(0, heroN);
-    const others = rest.filter((x) => !heroes.includes(x));
-    const showAll = expanded.has(ws);
-    const room = Math.max(0, perWeek - heroes.length - picked.length);
-    const shown = showAll ? others : others.slice(0, room);
-    shown.sort((a, b) => new Date(displayDate(a.ev)) - new Date(displayDate(b.ev)));
-    const pickedSorted = picked.sort((a, b) => displayDate(a.ev) - displayDate(b.ev));
-    const wsd = new Date(ws);
-    const added = picked.filter((x) => S.status[x.ev.id] === 'added').length;
-    html += `<section class="week"><div class="week-head"><h2>${wsd < t ? 'This week' : 'Week of ' + esc(fmt(wsd, { month: 'short', day: 'numeric' }))}</h2>
-      <span class="meta">${added ? `${added} planned · ` : ''}${list.length} options</span></div>
-      ${heroes.map((x) => cardHTML(x.ev, { hero: true })).join('')}
-      ${pickedSorted.map((x) => cardHTML(x.ev)).join('')}
-      ${shown.map((x) => cardHTML(x.ev)).join('')}
-      ${others.length > room ? `<button class="more-btn" data-more="${ws}">${showAll ? 'Show fewer' : `Show ${others.length - room} more this week`}</button>` : ''}
-    </section>`;
-  }
-  v.innerHTML = html;
+  // good and close beats great and far for a last-minute plan
+  const rank = (ev) => personalScore(ev) - 0.5 * (distOf(ev) ?? 4);
+  const timed = list.filter((ev) => !ev.all_day).sort((a, b) => rank(b) - rank(a));
+  const allDay = list.filter((ev) => ev.all_day).sort((a, b) => rank(b) - rank(a));
+  $('#title').innerHTML = `${label} <em>${esc(fmt(label === 'Tonight' ? now : new Date(now.getTime() + 86400e3), { weekday: 'short' }))}</em>`;
+  $('#subline').textContent = `${timed.length} thing${timed.length === 1 ? '' : 's'} near ${S.where === 'near' && nearPos ? 'you' : 'home'}, best and closest first`;
+  const k = `tonight-${label}`;
+  const top = expanded.has(k) ? timed : timed.slice(0, 10);
+  v.innerHTML = `${top.map((ev) => evRow(ev)).join('') || `<p class="hint">Nothing good left ${label.toLowerCase()}. The calendar has the rest of the month.</p>`}
+    ${timed.length > 10 ? `<button class="more-btn" data-more="${k}">${expanded.has(k) ? 'Show fewer' : `Show ${timed.length - 10} more`}</button>` : ''}
+    ${allDay.length ? `<div class="dayhead"><h2>All day <em>&amp; ongoing</em></h2></div>${allDay.slice(0, 6).map((ev) => evRow(ev)).join('')}` : ''}`;
 }
 
 function isNew(ev) {
@@ -434,40 +589,39 @@ function newQueue() {
 }
 
 function renderNew(v) {
-  $('#eyebrow').textContent = 'Weekly top-up';
-  $('#title').textContent = 'New for you';
   const q = newQueue();
+  $('#subline').textContent = 'Fresh since you last looked';
   if (!q.length) {
-    v.innerHTML = `<div class="empty"><div class="big">🎉</div><h2>You're all caught up</h2><p>Fresh events show up here as they're posted. Your plan has the rest.</p>
-      <button class="btn primary" data-goto="plan">See my plan</button></div>`;
+    v.innerHTML = `<div class="empty"><div class="big">🎂</div><h2>You're all caught up</h2><p>Fresh events show up here as they're posted. Your calendar has the rest.</p>
+      <button class="btn primary" data-goto="cal">See my calendar</button></div>`;
     if (S.lastReview == null || newQueue.lastShown) { S.lastReview = Date.now(); save(); }
     return;
   }
   newQueue.lastShown = true;
-  const weekend = q.filter((ev) => /Sat|Sun|Fri/.test(fmt(new Date(ev.start), { weekday: 'short' }))).length;
   v.innerHTML = `<div class="deck-head"><h2>${q.length} new thing${q.length > 1 ? 's' : ''} popped up</h2>
-      <p>${weekend ? `${weekend} on a weekend · ` : ''}swipe right to add, left to skip</p></div>
+      <p>Swipe right to add, left to skip</p></div>
     <div class="deck" id="deck">${q.slice(0, 2).reverse().map((ev, i, arr) => swipeHTML(ev, i < arr.length - 1)).join('')}</div>
     <div class="deck-btns">
-      <button class="round" data-swipe="not" aria-label="Not for me">✕</button>
+      <button class="round no" data-swipe="not" aria-label="Not for me">✕</button>
       <button class="round sm" data-swipe="maybe" aria-label="Maybe">?</button>
-      <button class="round" data-swipe="added" aria-label="Add">♥</button>
+      <button class="round yes" data-swipe="added" aria-label="Add">♥</button>
     </div>
     <p class="small" style="text-align:center;margin-top:14px"><a href="#" data-skipall>Mark all as seen</a></p>`;
   bindSwipe();
 }
 
 function swipeHTML(ev, behind) {
-  const img = ev.image_url ? `style="background-image:url('${esc(ev.image_url)}'), var(--grad)"` : '';
-  const f = followedIn(ev);
+  const c = colorOf(ev);
+  const img = ev.image_url ? `style="background-image:url('${esc(ev.image_url)}');background-color:var(--${c})"` : `style="background-color:var(--${c})"`;
+  const star = starLine(ev);
+  const d = distText(distOf(ev));
   return `<div class="swipe ${behind ? 'behind' : ''}" data-id="${esc(ev.id)}">
     <div class="img" ${img}><span class="stamp yes">ADD</span><span class="stamp no">NOPE</span><span class="stamp mb">MAYBE</span></div>
     <div class="body">
-      <div class="card" style="box-shadow:none;margin:0;background:none"><div class="when">${esc(when(ev))}${runText(ev) ? ` · ${esc(runText(ev))}` : ''}</div></div>
+      <div class="when">${esc(when(ev))}${runText(ev) ? ` · ${esc(runText(ev))}` : ''}</div>
       <h3>${esc(ev.title)}</h3>
-      <div class="where small">${esc(placeOf(ev))}${ev.price ? ` · ${esc(ev.price)}` : ''}</div>
-      <div class="card" style="box-shadow:none;margin:0;background:none"><div class="why">${esc(whyLine(ev))}</div>
-      ${f ? '<div class="badges"><span class="b follow">⭐ Someone you follow</span></div>' : ''}</div>
+      <div class="small">${esc([ev.venue, d, ev.price === 'free' ? 'Free' : ev.price].filter(Boolean).join(' · '))}</div>
+      ${star ? `<div class="small" style="color:var(--butter-ink);font-weight:700;margin-top:6px">${star}</div>` : ''}
     </div></div>`;
 }
 
@@ -505,7 +659,7 @@ function fling(status) {
   const out = { added: 'translate(140%, -10%) rotate(20deg)', not: 'translate(-140%, -10%) rotate(-20deg)', maybe: 'translate(0, -140%)' }[status];
   top.style.transform = out; top.style.opacity = 0;
   decide(ev, status);
-  if (status === 'added') toast('Added · tap 📅 on it in your plan for your calendar');
+  if (status === 'added') toast('In your plan');
   setTimeout(() => {
     if (!newQueue().length) { S.lastReview = Date.now(); save(); }
     render();
@@ -518,24 +672,21 @@ function picks() {
 }
 
 function renderPicks(v) {
-  $('#eyebrow').textContent = 'Your plans';
-  $('#title').textContent = 'Picks';
   const t = today0();
   const list = picks().filter((ev) => displayDate(ev) >= t || (ev.end && new Date(ev.end) >= t));
   const added = list.filter((ev) => S.status[ev.id] === 'added');
   const maybe = list.filter((ev) => S.status[ev.id] === 'maybe');
+  $('#subline').innerHTML = added.length ? `<b>${added.length} going</b>${maybe.length ? ` · ${maybe.length} maybe` : ''}` : '';
   if (!list.length) {
-    v.innerHTML = `<div class="empty"><div class="big">💛</div><h2>No picks yet</h2><p>Tap ＋ Add on anything that sounds fun.</p><button class="btn primary" data-goto="plan">Browse my month</button></div>`;
+    v.innerHTML = `<div class="empty"><div class="big">🧁</div><h2>No picks yet</h2><p>Tap + on anything that sounds fun.</p><button class="btn primary" data-goto="cal">Browse my month</button></div>`;
     return;
   }
-  v.innerHTML = `${added.length ? `<button class="btn primary block" data-addall>📅 Add all ${added.length} to my calendar</button>` : ''}
-    ${added.length ? `<div class="week"><div class="week-head"><h2>Going</h2><span class="meta">${added.length}</span></div>${added.map((ev) => cardHTML(ev)).join('')}</div>` : ''}
-    ${maybe.length ? `<div class="week"><div class="week-head"><h2>Maybe</h2><span class="meta">${maybe.length}</span></div>${maybe.map((ev) => cardHTML(ev)).join('')}</div>` : ''}`;
+  v.innerHTML = `${added.length ? `<button class="btn cherry block" data-addall>📅 Add all ${added.length} to my calendar</button>` : ''}
+    ${added.length ? `<div class="dayhead"><h2>Going</h2><small>${added.length}</small></div>${added.map((ev) => evRow(ev, { showDay: true })).join('')}` : ''}
+    ${maybe.length ? `<div class="dayhead"><h2>Maybe</h2><small>${maybe.length}</small></div>${maybe.map((ev) => evRow(ev, { showDay: true })).join('')}` : ''}`;
 }
 
 function renderMe(v) {
-  $('#eyebrow').textContent = 'Your taste';
-  $('#title').textContent = 'You';
   const ints = profile ? Object.entries(profile.interests) : [];
   const lv = (k) => (S.interests[k] === undefined ? 1 : S.interests[k]);
   const learned = Object.entries(S.tagW).filter(([t, w]) => Math.abs(w) >= 0.5 && !t.startsWith('src:'))
@@ -543,23 +694,33 @@ function renderMe(v) {
   const authors = follow ? (follow.authors_favorite || []).length + (follow.authors_new_books || []).length : 0;
   const gen = data.generated ? new Date(data.generated) : null;
   const ago = gen ? Math.round((Date.now() - gen) / 3600e3) : null;
+  const sugg = igSuggestions();
+  const home = homePos();
+  const mapped = data.events.filter((e) => e.lat != null).length;
+  $('#subline').textContent = 'Your taste, your people, your home spot';
   v.innerHTML = `
-  <div class="section"><h2>Interests</h2><p class="sub">Tap to cycle: ♥ love it, like it, not into it. These boost ranking; they never hide events.</p>
-    <div class="chips">${ints.map(([k, s]) => `<button class="chip lv${lv(k)}" data-int="${k}">${lv(k) === 2 ? '♥ ' : ''}${esc(s.label)}</button>`).join('')}</div>
-    <p class="small" style="margin:12px 0 0">Favorite time: ${esc((profile?.favorite_times || []).map((t) => t.label).join(', ') || 'none')}</p>
+  <div class="section"><h2>Home</h2>
+    <p class="sub">Distances are from ${S.home ? esc(S.home.label) : `${esc(home.label)} (roughly)`}. Your address stays on this phone. It's looked up once on OpenStreetMap to find the spot.</p>
+    <form class="field" id="homeForm"><input id="homeAddr" placeholder="Your street address" autocomplete="street-address" value="${S.home ? esc(S.home.label) : ''}"><button class="btn primary">Save</button></form>
+    <p class="small" style="margin:10px 0 0">${mapped} of ${data.events.length} events have a map spot so far.</p>
   </div>
   <div class="section"><h2>People you follow</h2>
-    <p class="sub">Any event naming them gets ⭐. ${authors} authors from Goodreads${S.igHandles.length ? ` · ${S.igHandles.length} Instagram follows` : ''}${S.authorsExtra.length ? ` · ${S.authorsExtra.length} from your latest Goodreads import` : ''}.</p>
-    <div class="chips">${S.people.map((p, i) => `<button class="chip" data-rmp="${i}">${esc(p)}<span class="x">✕</span></button>`).join('') || '<span class="small">No comedians or performers added yet.</span>'}</div>
+    <p class="sub">Events naming them get a ⭐. ${authors} authors from Goodreads${S.igHandles.length ? ` · ${S.igHandles.length} Instagram follows` : ''}${S.authorsExtra.length ? ` · ${S.authorsExtra.length} from your latest Goodreads import` : ''}. Instagram follows only count for shows, since most are friends.</p>
+    ${sugg.length ? `<div style="margin:0 0 12px">${sugg.map((s) => `<div class="suggest"><span>Is <b>@${esc(s.handle)}</b> ${esc(s.name)}? <span class="small">(${esc(s.ev.title.slice(0, 48))})</span></span><button class="btn cherry" data-ig-yes="${esc(s.handle)}" data-name="${esc(s.name)}">Yes</button><button class="btn" data-ig-no="${esc(s.handle)}|${esc(s.name)}">No</button></div>`).join('')}</div>` : ''}
+    <div class="chips">${S.people.map((p, i) => `<button class="pchip" data-rmp="${i}">${esc(p)}<span class="x">✕</span></button>`).join('')}${Object.entries(S.igConfirmed).map(([h, n]) => `<button class="pchip" data-rmig="${esc(h)}">${esc(n)} <span class="small">@${esc(h)}</span><span class="x">✕</span></button>`).join('')}</div>
     <form class="field" id="addPerson"><input id="personName" placeholder="Add a comedian, performer, artist…" autocomplete="off"><button class="btn primary">Add</button></form>
     <div class="row-btns" style="margin-top:10px">
-      <label class="btn file-btn">Import Instagram follows<input type="file" accept=".json,application/json" id="igFile"></label>
+      <label class="btn file-btn">Import Instagram follows<input type="file" accept=".json,.html,.htm,application/json,text/html" id="igFile"></label>
       <label class="btn file-btn">Import Goodreads CSV<input type="file" accept=".csv,text/csv" id="grFile"></label>
     </div>
-    <p class="small">Instagram: Settings → Your activity → Download your information → Followers and following (JSON). The app only reads names from the file; it never contacts Instagram.</p>
+    <p class="small">Instagram: pick <b>following.html</b> (or following.json) from your Instagram download. The app only reads usernames from it and never contacts Instagram.${S.blockedPeople.length ? ` Not followed: ${S.blockedPeople.map((p) => `<a href="#" data-unblock="${esc(p)}">${esc(p)} ✕</a>`).join(', ')}` : ''}</p>
+  </div>
+  <div class="section"><h2>Interests</h2><p class="sub">Tap to cycle: ♥ love it, like it, not into it. These boost ranking; they never hide events.</p>
+    <div class="chips">${ints.map(([k, s]) => `<button class="pchip lv${lv(k)}" data-int="${k}">${lv(k) === 2 ? '♥ ' : ''}${esc(s.label)}</button>`).join('')}</div>
+    <p class="small" style="margin:12px 0 0">Favorite time: ${esc((profile?.favorite_times || []).map((t) => t.label).join(', ') || 'none')}</p>
   </div>
   ${learned.length ? `<div class="section"><h2>What it's learned</h2><p class="sub">From your Add, Maybe and Not for me taps.</p>
-    <div class="chips">${learned.slice(0, 14).map(([t, w]) => `<span class="chip">${w > 0 ? '▲' : '▼'} ${esc(t.startsWith('t:') ? t.slice(2).replace('-', ' ') : profile?.interests?.[t]?.label || t)}</span>`).join('')}</div>
+    <div class="chips">${learned.slice(0, 14).map(([t, w]) => `<span class="pchip">${w > 0 ? '▲' : '▼'} ${esc(t.startsWith('t:') ? t.slice(2).replace('-', ' ') : profile?.interests?.[t]?.label || t)}</span>`).join('')}</div>
     ${S.hiddenTags.length ? `<p class="small" style="margin-top:10px">Hidden: ${S.hiddenTags.map((t) => `<a href="#" data-unhide="${esc(t)}">${esc(profile?.interests?.[t]?.label || t)} ✕</a>`).join(', ')}</p>` : ''}
   </div>` : ''}
   <div class="section"><h2>Backup</h2><p class="sub">Your choices live on this phone. Save a backup now and then.</p>
@@ -573,16 +734,26 @@ function renderMe(v) {
 // ------------------------------------------------------------------ imports
 
 async function importInstagram(file) {
-  const json = JSON.parse(await file.text());
-  const list = Array.isArray(json) ? json : (json.relationships_following || json.following || []);
+  const text = await file.text();
   const handles = [];
-  for (const item of list) {
-    for (const d of item.string_list_data || []) if (d.value) handles.push(d.value);
-    if (item.title && !(item.string_list_data || []).length) handles.push(item.title);
+  if (/^\s*[[{]/.test(text)) {
+    const json = JSON.parse(text);
+    const list = Array.isArray(json) ? json : (json.relationships_following || json.following || []);
+    for (const item of list) {
+      for (const d of item.string_list_data || []) if (d.value) handles.push(d.value);
+      if (item.title && !(item.string_list_data || []).length) handles.push(item.title);
+    }
+  } else {
+    // the HTML export links each account as instagram.com/_u/<handle>
+    for (const m of text.matchAll(/instagram\.com\/(?:_u\/)?([A-Za-z0-9._]{2,30})/g)) {
+      if (!/^(accounts|explore|p|reel|reels|stories|direct|_u)$/i.test(m[1])) handles.push(m[1]);
+    }
   }
-  S.igHandles = [...new Set([...S.igHandles, ...handles])];
+  const fresh = [...new Set(handles.map((h) => h.toLowerCase()))];
+  if (!fresh.length) throw new Error('no usernames found');
+  S.igHandles = [...new Set([...S.igHandles, ...fresh])];
   save(); buildFollowIndex();
-  toast(`Imported ${handles.length} follows`);
+  toast(`Imported ${fresh.length} follows`);
 }
 
 function parseCSV(text) {
@@ -627,23 +798,29 @@ function exportBackup() {
 
 // ------------------------------------------------------------------ shell
 
+function applySeason(month) {
+  const s = SEASONS[month - 1];
+  const r = document.documentElement.style;
+  r.setProperty('--season', s.bg); r.setProperty('--season-ink', s.ink);
+  r.setProperty('--season-em', s.em); r.setProperty('--season-sub', s.sub);
+  $('#themeColor')?.setAttribute('content', s.bg);
+}
+
 function renderHeader() {
-  const sw = $('#monthSwitch');
-  if (tab === 'plan') {
-    sw.hidden = false;
-    sw.innerHTML = [0, 1].map((o) => `<button class="pill ${o === monthOffset ? 'on' : ''}" data-month="${o}">${esc(monthRange(o).label)}</button>`).join('');
-  } else sw.hidden = true;
-  // "my month visibly fills in": one bar per week, taller with each pick
-  const { start, end } = monthRange(monthOffset);
-  const weeks = [];
-  for (let d = weekStart(start); d < end; d = new Date(d.getTime() + 7 * 86400e3 + 3600e3)) weeks.push(weekStart(d).getTime());
-  const counts = Object.fromEntries(weeks.map((w) => [w, 0]));
-  for (const ev of data.events) {
-    if (S.status[ev.id] !== 'added') continue;
-    const w = weekStart(displayDate(ev)).getTime();
-    if (w in counts) counts[w]++;
-  }
-  $('#fill').innerHTML = weeks.map((w) => `<span class="wk ${counts[w] ? 'has' : ''}" style="height:${10 + Math.min(4, counts[w]) * 7}px"></span>`).join('');
+  const { y, m, label } = monthRange(tab === 'cal' ? monthOffset : 0);
+  applySeason(m);
+  $('#where').hidden = !['cal', 'tonight'].includes(tab);
+  document.querySelectorAll('#where [data-where]').forEach((b) => b.classList.toggle('on', b.dataset.where === S.where));
+  $('#arrows').hidden = tab !== 'cal';
+  $('[data-month="-1"]').disabled = monthOffset <= 0;
+  $('[data-month="1"]').disabled = monthOffset >= 1;
+  $('#title').innerHTML = {
+    cal: `${esc(label)} <em>${y}</em>`,
+    tonight: 'Tonight',
+    new: 'New <em>for you</em>',
+    picks: 'Your <em>picks</em>',
+    me: 'You',
+  }[tab];
   const n = newQueue().length;
   const b = $('#newBadge');
   b.hidden = !n; b.textContent = n;
@@ -652,7 +829,7 @@ function renderHeader() {
 function render() {
   renderHeader();
   const v = $('#view');
-  ({ plan: renderPlan, new: renderNew, picks: renderPicks, me: renderMe })[tab](v);
+  ({ cal: renderCal, tonight: renderTonight, new: renderNew, picks: renderPicks, me: renderMe })[tab](v);
   document.querySelectorAll('.tab').forEach((t) => t.classList.toggle('on', t.dataset.tab === tab));
 }
 
@@ -663,13 +840,27 @@ function bind() {
     if (tab === 'new' && t.dataset.tab !== 'new') newQueue.lastShown = false;
     tab = t.dataset.tab; render(); window.scrollTo({ top: 0 });
   };
-  $('#monthSwitch').onclick = (e) => { const b = e.target.closest('[data-month]'); if (b) { monthOffset = Number(b.dataset.month); render(); window.scrollTo({ top: 0 }); } };
+  $('#arrows').onclick = (e) => {
+    const b = e.target.closest('[data-month]');
+    if (!b) return;
+    monthOffset = Math.max(0, Math.min(1, monthOffset + Number(b.dataset.month)));
+    selDay = null; render();
+  };
+  $('#where').onclick = (e) => {
+    const b = e.target.closest('[data-where]');
+    if (!b) return;
+    S.where = b.dataset.where; save();
+    if (S.where === 'near' && !nearPos) findMe();
+    render();
+  };
   $('#sheetWrap').onclick = (e) => { if (e.target.hasAttribute('data-close')) closeSheet(); };
   const v = $('#view');
   v.addEventListener('click', (e) => {
+    const day = e.target.closest('[data-day]');
+    if (day) { selDay = day.dataset.day; render(); return; }
     const g = e.target.closest('[data-goto]'); if (g) { tab = g.dataset.goto; return render(); }
     const more = e.target.closest('[data-more]');
-    if (more) { const k = Number(more.dataset.more); expanded.has(k) ? expanded.delete(k) : expanded.add(k); return render(); }
+    if (more) { const k = more.dataset.more; expanded.has(k) ? expanded.delete(k) : expanded.add(k); return render(); }
     const n = e.target.closest('[data-nudge]');
     if (n) {
       const tag = n.closest('.nudge').dataset.tag;
@@ -683,15 +874,27 @@ function bind() {
     const ic = e.target.closest('[data-int]');
     if (ic) { const k = ic.dataset.int; const cur = S.interests[k] === undefined ? 1 : S.interests[k]; S.interests[k] = (cur + 2) % 3; save(); return render(); }
     const rm = e.target.closest('[data-rmp]'); if (rm) { S.people.splice(Number(rm.dataset.rmp), 1); save(); buildFollowIndex(); return render(); }
+    const rmig = e.target.closest('[data-rmig]'); if (rmig) { delete S.igConfirmed[rmig.dataset.rmig]; save(); buildFollowIndex(); return render(); }
+    const yes = e.target.closest('[data-ig-yes]');
+    if (yes) { S.igConfirmed[yes.dataset.igYes] = yes.dataset.name; save(); buildFollowIndex(); toast(`⭐ ${yes.dataset.name}`); return render(); }
+    const no = e.target.closest('[data-ig-no]'); if (no) { S.igRejected.push(no.dataset.igNo); save(); return render(); }
+    const ub = e.target.closest('[data-unblock]'); if (ub) { e.preventDefault(); S.blockedPeople = S.blockedPeople.filter((p) => p !== ub.dataset.unblock); save(); buildFollowIndex(); return render(); }
     const uh = e.target.closest('[data-unhide]'); if (uh) { e.preventDefault(); S.hiddenTags = S.hiddenTags.filter((t) => t !== uh.dataset.unhide); save(); return render(); }
     if (e.target.closest('[data-export]')) return exportBackup();
-    onCardClick(e);
+    onEventClick(e);
   });
-  v.addEventListener('submit', (e) => {
-    if (e.target.id !== 'addPerson') return;
+  v.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const name = $('#personName').value.trim();
-    if (name) { S.people.push(name); save(); buildFollowIndex(); render(); toast(`Following ${name}`); }
+    if (e.target.id === 'addPerson') {
+      const name = $('#personName').value.trim();
+      if (name) { S.people.push(name); save(); buildFollowIndex(); render(); toast(`Following ${name}`); }
+    }
+    if (e.target.id === 'homeForm') {
+      const addr = $('#homeAddr').value.trim();
+      if (!addr) { S.home = null; save(); return render(); }
+      try { await setHome(addr); toast('Home saved'); } catch (err) { toast(`Couldn't find that (${err.message})`); }
+      render();
+    }
   });
   v.addEventListener('change', async (e) => {
     const file = e.target.files && e.target.files[0];
@@ -721,6 +924,7 @@ async function start() {
   }
   buildFollowIndex();
   render();
+  if (S.where === 'near') findMe();
   if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
 }
 

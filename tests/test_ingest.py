@@ -141,3 +141,68 @@ class Pipeline(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class FakeFetcher:
+    """Serves canned pages/JSON instead of the network."""
+    def __init__(self, pages):
+        self.pages, self.count = pages, 0
+
+    def get(self, url, params=None, as_json=False, **kw):
+        key = url + ("?" + "&".join(f"{k}={v}" for k, v in sorted((params or {}).items())) if params else "")
+        for k, v in self.pages.items():
+            if key.startswith(k):
+                return v
+        raise RuntimeError("no page for " + key)
+
+    def soup(self, url, **kw):
+        return BeautifulSoup(self.get(url, **kw), "lxml")
+
+
+class NewSources(unittest.TestCase):
+    def test_sfpl_presidio(self):
+        from ingest.adapters import sfpl
+        page = """<div class="view-content">
+          <div class="views-row"><article class="event"><div class="event__date"><span>Wednesday, 10/14/2026, 6:00 - 7:30</span></div>
+            <h2 class="event__title"><a href="/events/2026/10/14/author-talk-new-memoir"><span>Author: A New Memoir</span></a></h2>
+            <div class="event__audience"><div class="field__item"><a>Adults</a></div></div>
+            <div class="event__location"><div class="field__item">Presidio</div></div></article></div>
+          <div class="views-row"><article class="event"><div class="event__date"><span>Thursday, 10/15/2026, 10:30 - 11:00</span></div>
+            <h2 class="event__title"><a href="/events/2026/10/15/storytime"><span>Storytime: For Toddlers</span></a></h2>
+            <div class="event__location"><div class="field__item">Presidio</div></div></article></div>
+          <div class="views-row"><article class="event"><div class="event__date"><span>Thursday, 10/15/2026, 2:00 - 3:00</span></div>
+            <h2 class="event__title"><a href="/events/2026/10/15/canceled-social"><span>Canceled: Social Hour</span></a></h2>
+            <div class="event__location"><div class="field__item">Presidio</div></div></article></div></div>"""
+        f = FakeFetcher({"https://sfpl.org/events?field_event_location_target_id=59&page=0": page,
+                         "https://sfpl.org/events": "<html></html>"})
+        evs = sfpl.fetch(f, None, None)
+        self.assertEqual(len(evs), 2)
+        e = evs[0]
+        self.assertTrue(evs[1].start.startswith("2026-10-15T10:30"))   # morning stays morning
+        self.assertEqual(e.title, "Author: A New Memoir")
+        self.assertTrue(e.start.startswith("2026-10-14T18:00"))
+        self.assertTrue(e.end.startswith("2026-10-14T19:30"))
+        self.assertEqual(e.venue, "Presidio Branch Library")
+
+    def test_jccsf_api(self):
+        from ingest.adapters import jccsf
+        api = {"events": [{"id": 7, "title": "Comedy &amp; Kugel", "url": "https://www.jccsf.org/event/comedy-kugel/",
+                           "utc_start_date": "2026-10-22 02:30:00", "utc_end_date": "2026-10-22 04:00:00",
+                           "description": "<p>Stand-up night</p>", "cost": "$25",
+                           "venue": {"venue": "JCCSF", "address": "3200 California St", "city": "San Francisco",
+                                     "geo_lat": "37.7869", "geo_lng": "-122.4467"}}], "total_pages": 1}
+        f = FakeFetcher({jccsf.API: api})
+        start = dt.datetime(2026, 10, 1, tzinfo=TZ)
+        evs = jccsf.fetch(f, start, start + dt.timedelta(days=60))
+        self.assertEqual(len(evs), 1)
+        e = evs[0]
+        self.assertEqual(e.title, "Comedy & Kugel")
+        self.assertTrue(e.start.startswith("2026-10-21T19:30"))   # UTC -> Pacific
+        self.assertEqual((e.lat, e.lng), (37.7869, -122.4467))
+
+    def test_geo_and_richmond_district(self):
+        from ingest.core import geo_of
+        self.assertEqual(geo_of({"location": {"latitude": "37.78", "longitude": "-122.41"}}), (37.78, -122.41))
+        self.assertEqual(geo_of({"lat": 40.7, "lng": -74.0}), (None, None))       # not the Bay Area
+        self.assertTrue(area.in_area({"city": "San Francisco", "title": "Book club, Richmond District edition"}))
+        self.assertFalse(area.in_area({"city": "", "title": "Richmond Art Walk", "source": "funcheap"}))

@@ -13,12 +13,14 @@ f = Fetcher(delay=1)
 for url in sys.argv[1:]:
     print("=" * 80, "\n", url)
     if url.startswith("raw:"):
+        url, _, needle = url.partition("#")     # raw:<url>#<text+to+show+the+page+around>
+        needle = needle.replace("+", " ")
         try:
             text = f.get(url[4:])
             for m in re.finditer(r"https?://[^\s'\"<>]+|/api/[^\s'\"<>]+|/v\d/[^\s'\"<>]+", text):
                 print("  url:", m.group(0)[:200])
             dec = text.encode().decode("unicode_escape", errors="ignore") if "\\u003C" in text else text
-            i = max(0, dec.find("ticketmaster") - 3000)
+            i = max(0, dec.find(needle or "ticketmaster") - 3000)
             print(dec[i:i + 6000])
         except Exception as exc:
             print("  FETCH FAILED:", exc)

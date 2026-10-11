@@ -1,7 +1,7 @@
 """Luma: the public discover feed for San Francisco (paginated JSON)."""
 import datetime as dt
 
-from ..core import Event, clean, iso, to_local
+from ..core import geo_of, Event, clean, iso, to_local
 from ..heuristics import find_dicts
 from ..core import next_data
 
@@ -38,6 +38,7 @@ def to_event(entry):
         address=clean(geo.get("full_address") or geo.get("short_address") or ""),
         city=clean(geo.get("city") or geo.get("city_state") or ""), price=price, people=hosts,
         description=clean((entry.get("calendar") or {}).get("name") or ""),
+        lat=geo_of(ev.get("coordinate"), geo, ev)[0], lng=geo_of(ev.get("coordinate"), geo, ev)[1],
     )
 
 

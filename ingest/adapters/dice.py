@@ -1,5 +1,5 @@
 """Dice: ticketed concerts, DJ nights and live-music events in SF."""
-from ..core import Event, clean, event_from_jsonld, iso, jsonld_events, next_data, to_local
+from ..core import geo_of, Event, clean, event_from_jsonld, iso, jsonld_events, next_data, to_local
 from ..heuristics import find_dicts
 
 NAME, LABEL = "dice", "Dice"
@@ -28,7 +28,7 @@ def fetch(f, start, end):
                                 title=clean(d["name"]), start=iso(st),
                                 end=iso(to_local(dates.get("event_end_date"))), venue=clean(v.get("name")),
                                 city=clean((v.get("city") or {}).get("name") if isinstance(v.get("city"), dict) else ""),
-                                people=artists, tags=["music"]))
+                                people=artists, tags=["music"], lat=geo_of(v)[0], lng=geo_of(v)[1]))
         if events:
             return events
     return []
