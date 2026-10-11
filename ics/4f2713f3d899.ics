@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4f2713f3d899@bay-events
+DTSTAMP:20261011T050651Z
+DTSTART;TZID=America/Los_Angeles:20261114T110000
+DTEND;TZID=America/Los_Angeles:20261114T130000
+SUMMARY:2nd Saturday "Not quite a book club" in the Richmond District
+LOCATION:Bazaar Café\, 5927 California St\, San Francisco\, CA San Franci
+ sco\, San Francisco
+URL:https://www.meetup.com/the-san-francisco-not-quite-a-book-club-book-cl
+ ub/events/315130276/
+DESCRIPTION:Reading + Discourse · Your reading tastes\nhttps://www.meetup
+ .com/the-san-francisco-not-quite-a-book-club-book-club/events/315130276/\
+ n\nShow up having read a book\\* you want to talk about. Get a beverage a
+ nd/or food inside the cafe. We will probably meet outside in Bazaar Cafe'
+ s back garden.\\*\\* (The garden is accessible through an alley. There is
+  a door to the alley next to the register inside. You can also go directl
+ y to the back garden from the street via the alley entrance on the right 
+ side of the right Cafe window.) Once you'
+END:VEVENT
+END:VCALENDAR

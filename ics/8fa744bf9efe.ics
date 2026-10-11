@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8fa744bf9efe@bay-events
+DTSTAMP:20261011T050651Z
+DTSTART;TZID=America/Los_Angeles:20261015T210000
+DTEND;TZID=America/Los_Angeles:20261016T020000
+SUMMARY:Crazy Karaoke: SF’s Wild New Thursday Night Party + $3 Shots
+LOCATION:The Function\, 1414 Market Street\, San Francisco\, CA\, San Fran
+ cisco
+URL:https://sf.funcheap.com/crazy-karaoke-sfs-wild-new-thursday-night-part
+ y-3-shots-sf-2/
+DESCRIPTION:Singing + Theatre · Thursday evening\nhttps://sf.funcheap.com
+ /crazy-karaoke-sfs-wild-new-thursday-night-party-3-shots-sf-2/\n\nCrazy K
+ araoke: SF’s Wild New Thursday Night Party + $3 Shots (SF) HellaFunny S
+ ing all night. 1000+ songs. Crazy Hour $3 shots every hour! 🎤 CRAZY KA
+ RAOKE THURSDAYS AT THE FUNCTION Thursdays | 9PM until close Grab the mic 
+ and sing your heart out at San Francisco’s newest karaoke night. Free w
+ ith RSVP – 21+ Whether you’re a seasoned performer\, a shower singer\
+ , or just there to cheer on your friends\,
+END:VEVENT
+END:VCALENDAR

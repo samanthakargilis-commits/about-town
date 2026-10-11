@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b20c1f1ad2c4@bay-events
+DTSTAMP:20261011T050651Z
+DTSTART;TZID=America/Los_Angeles:20261014T160000
+DTEND;TZID=America/Los_Angeles:20261014T180000
+SUMMARY:The Trillion Dollar Teams — In conversation with Vinod Khosla
+LOCATION:San Francisco
+URL:https://luma.com/27l6yt6y
+DESCRIPTION:Reading + Discourse\nhttps://luma.com/27l6yt6y\n\nThe companie
+ s Vinod Khosla backed early are worth more than a trillion dollars today.
+  He credits the teams\, not the theses. He has argued for a decade that a
+  company becomes the people it hires\, not the plan it makes. "Hire great
+  people" is useless advice\, in his telling — the real work is hiring a
+ gainst your specific risks. Join us for a conversation with Vinod Khosla\
+ , founder of Khosla Ventures\,
+END:VEVENT
+END:VCALENDAR

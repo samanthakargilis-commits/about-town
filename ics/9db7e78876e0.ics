@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9db7e78876e0@bay-events
+DTSTAMP:20261011T050652Z
+DTSTART;TZID=America/Los_Angeles:20261011T103000
+DTEND;TZID=America/Los_Angeles:20261011T123000
+SUMMARY:Community Sing in Golden Gate Park [Free]
+LOCATION:Mother's Meadow\, Golden Gate Park\, Martin Luther King Jr Dr & S
+ tow Lake Dr\, San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/community-singing-in-golden-gate-park/events/31
+ 6800251/
+DESCRIPTION:Singing + Craft\nhttps://www.meetup.com/community-singing-in-g
+ olden-gate-park/events/316800251/\n\nCome make new friends and beautiful 
+ music—**everyone is welcome** at our free monthly *Singing in the Park*
+  event! Whether you're a confident singer\, total beginner\, or just in t
+ he mood to listen and soak up the sunshine\, this is a happy\, judgment-f
+ ree space to connect through music. **SECOND SUNDAY OF EVERY MONTH**. **W
+ hat to Expect:** **11:00-11:10 AM**: Arrive\, chat\, and meet new faces *
+ *11:10–
+END:VEVENT
+END:VCALENDAR

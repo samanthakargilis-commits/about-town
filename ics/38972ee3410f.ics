@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:38972ee3410f@bay-events
+DTSTAMP:20261011T050653Z
+DTSTART;TZID=America/Los_Angeles:20261101T130000
+DTEND;TZID=America/Los_Angeles:20261101T170000
+SUMMARY:SF’s Aquarium of the Bay: Underwater Pumpkin Carving w/ Kids Fre
+ e
+LOCATION:PIER 39\, PIER 39\, The Embarcadero at Beach Street\, San Francis
+ co\, CA 94133\, San Francisco
+URL:https://sf.funcheap.com/sfs-aquarium-of-the-bay-underwater-pumpkin-car
+ ving-w-kids-free-oct-31-nov-1/
+DESCRIPTION:Animals\nhttps://sf.funcheap.com/sfs-aquarium-of-the-bay-under
+ water-pumpkin-carving-w-kids-free-oct-31-nov-1/\n\n
+END:VEVENT
+END:VCALENDAR

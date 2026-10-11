@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bcc994f3cf19@bay-events
+DTSTAMP:20261011T050652Z
+DTSTART;TZID=America/Los_Angeles:20261011T100000
+DTEND;TZID=America/Los_Angeles:20261011T120000
+SUMMARY:Take Time to Write at Cafe Leila
+LOCATION:Cafe Leila\, 1724 San Pablo Avenue\, Berkeley\, CA Berkeley\, Ber
+ keley
+URL:https://www.meetup.com/east-bay-time-to-write/events/316652795/
+DESCRIPTION:Writing · Berkeley\nhttps://www.meetup.com/east-bay-time-to-w
+ rite/events/316652795/\n\nNOTE: I CANNOT HOST TODAY - BUT I'VE LEFT THE E
+ VENT ON THE CALENDAR SO OTHERS CAN STILL GATHER TO WRITE. Let's meet up t
+ o write on Sunday at Cafe Leila at 1724 San Pablo Avenue in Berkeley (cro
+ ss street is Francisco St). Anyone who writes is welcome! Please not that
+  this event is in ADDITION to the ongoing meeting at Cafenated Coffee on 
+ Vine St. (we are outgrowing that space). We'll be inside of t
+END:VEVENT
+END:VCALENDAR

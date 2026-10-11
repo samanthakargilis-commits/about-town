@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ec475fa34927@bay-events
+DTSTAMP:20261011T050653Z
+DTSTART;TZID=America/Los_Angeles:20261024T180000
+DTEND;TZID=America/Los_Angeles:20261024T200000
+SUMMARY:Starchild
+LOCATION:828 Harrison St\, 828 Harrison St Oakland\, Oakland
+URL:https://partiful.com/e/cNvdAjunD8hpaXLHGI68
+DESCRIPTION:Oakland\nhttps://partiful.com/e/cNvdAjunD8hpaXLHGI68\n\nCome w
+ itness the beauty of love\, healing\, vulnerability\, & the becoming of X
+ tarmystiK Featuring special performances by : ✨🌸• SaLanea • Nata
+ lie Ford•Summertimeky•🌸✨ STARCHILD is more than my first EP. It 
+ is proof that I made it through everything that was supposed to break me.
+  There were moments in my journey when I didn’t know where my entire fo
+ undation was unstable\, moments of survival\, moments 
+END:VEVENT
+END:VCALENDAR

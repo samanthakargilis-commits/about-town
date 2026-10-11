@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c7bd5301b6c9@bay-events
+DTSTAMP:20261011T050651Z
+DTSTART;TZID=America/Los_Angeles:20261016T200000
+DTEND;TZID=America/Los_Angeles:20261016T210000
+SUMMARY:“The Confessional” SF’s Wild “Sins & Secrets” Improv Com
+ edy Show
+LOCATION:Endgames Improv Theater & Bar\, 2965 Mission St (btwn 25th and 26
+ th)\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/5-off-the-confessional-sfs-wild-sins-secrets-i
+ mprov-comedy-show-189/
+DESCRIPTION:Comedy + Theatre\nhttps://sf.funcheap.com/5-off-the-confession
+ al-sfs-wild-sins-secrets-improv-comedy-show-189/\n\n
+END:VEVENT
+END:VCALENDAR

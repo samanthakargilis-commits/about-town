@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:42b6b7779950@bay-events
+DTSTAMP:20261011T050652Z
+DTSTART;TZID=America/Los_Angeles:20261018T090000
+DTEND;TZID=America/Los_Angeles:20261018T110000
+SUMMARY:Medicine Master Buddha Repentance\, San Francisco
+LOCATION:Dharma Treasury Temple\, 3201 Ulloa St\, San Francisco\, CA 94116
+ \, USA\, San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/bay-area-meditation-group/events/316897535/
+DESCRIPTION:Meditation + Spirituality\nhttps://www.meetup.com/bay-area-med
+ itation-group/events/316897535/\n\nJoin us for a peaceful gathering dedic
+ ated to the Medicine Buddha\, the embodiment of healing\, compassion\, an
+ d boundless light. Together\, we will chant the repentance verses to clea
+ r our minds\, release stress\, and pray for the health and well-being of 
+ our families and loved ones. Event Details: * Date: Sunday\, October 18\,
+  2026 * Time: 9:00 AM * Location: Dharma Treasury Temple * Address: 3201 
+ Ulloa
+END:VEVENT
+END:VCALENDAR

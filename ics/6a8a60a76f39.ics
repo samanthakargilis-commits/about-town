@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6a8a60a76f39@bay-events
+DTSTAMP:20261011T050652Z
+DTSTART;TZID=America/Los_Angeles:20261021T190000
+DTEND;TZID=America/Los_Angeles:20261021T213000
+SUMMARY:The Last Waltz – Co-Presented with SFFILM
+LOCATION:JCCSF\, 3200 California Street\, San Francisco
+URL:https://www.jccsf.org/event/the-last-waltz-co-presented-with-sffilm/
+DESCRIPTION:Concerts\nhttps://www.jccsf.org/event/the-last-waltz-co-presen
+ ted-with-sffilm/\n\nCelebrating the 50th anniversary of The Band’s lege
+ ndary farewell concert\, Martin Scorsese’s The Last Waltz captures an u
+ nforgettable night at Bill Graham’s Winterland Ballroom in San Francisc
+ o\, creating one of cinema’s most influential music documentaries.
+END:VEVENT
+END:VCALENDAR

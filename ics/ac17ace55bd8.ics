@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ac17ace55bd8@bay-events
+DTSTAMP:20261011T050652Z
+DTSTART;TZID=America/Los_Angeles:20261015T190000
+DTEND;TZID=America/Los_Angeles:20261015T210000
+SUMMARY:Black & Dating: A Black-Centered Mixer Open to All
+LOCATION:DACHA Kitchen & Bar\, 1085 Sutter St\, San Francisco\, CA 94109\,
+  USA\, San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/iwanttodothatsf/events/316699599/
+DESCRIPTION:Discourse · Thursday evening\nhttps://www.meetup.com/iwanttod
+ othatsf/events/316699599/\n\nWhether you’re African American or simply 
+ interested in meeting Black singles\, this is a wonderful opportunity to 
+ expand your social circle\, spark new friendships\, and perhaps even meet
+  someone special. **Adult** **Singles of all races and ethnicities are wa
+ rmly welcome**. Adults of all ages. Dress to impress and enjoy an evening
+  of lively conversation at a lovely restaurant. Our signature FUN Mix
+END:VEVENT
+END:VCALENDAR
