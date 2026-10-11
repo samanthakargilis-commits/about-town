@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:af27d64ff0a2@bay-events
+DTSTAMP:20261011T042358Z
+DTSTART;TZID=America/Los_Angeles:20261030T200000
+DTEND;TZID=America/Los_Angeles:20261030T210000
+SUMMARY:“The Confessional” SF’s Wild “Sins & Secrets” Improv Com
+ edy Show
+LOCATION:Endgames Improv Theater & Bar\, 2965 Mission St (btwn 25th and 26
+ th)\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/5-off-the-confessional-sfs-wild-sins-secrets-i
+ mprov-comedy-show-193/
+DESCRIPTION:Comedy + Theatre\nhttps://sf.funcheap.com/5-off-the-confession
+ al-sfs-wild-sins-secrets-improv-comedy-show-193/\n\n$5 Off: “The Confes
+ sional” SF’s Wild “Sins & Secrets” Improv Comedy Show Endgames Im
+ prov\, LLC From the mild to the wild\, all of us have guilty pleasures\, 
+ moments of being bad\, and the down right awful. Audiences submit written
+  sins and secrets\, and we weave a fully improvised comedy show. Don’t 
+ worry\, it’s anonymous. No one will know about the thing you do when yo
+ u’re alone. The Confessional Every
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:04897ff6e1e4@bay-events
+DTSTAMP:20261011T042400Z
+DTSTART;TZID=America/Los_Angeles:20261017T151500
+DTEND;TZID=America/Los_Angeles:20261017T173000
+SUMMARY:San Francisco Cat Walk - Mission
+LOCATION:Mission SF
+URL:https://partiful.com/e/5aa3kWz1nZSwG6D3zICX
+DESCRIPTION:New in your area\nhttps://partiful.com/e/5aa3kWz1nZSwG6D3zICX\
+ n\nJoin for a slow\, free afternoon stroll through the Mission\, stopping
+  at the homes of window cats who have agreed to star in the walk. ──
+ ──୨ৎ──── Additional Information shared the morning of the
+  cat walk. Location details + maps with cat descriptions will be shared a
+ t the park! ────୨ৎ──── ⋆🐾⋆ Why it's capped at 
+ 100 ⋆🐾⋆ I wish I could include everyone\, but this is our very fir
+ st cat walk\, and I want
+END:VEVENT
+END:VCALENDAR

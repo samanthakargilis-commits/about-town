@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bdc2f1263ae1@bay-events
+DTSTAMP:20261011T042400Z
+DTSTART;TZID=America/Los_Angeles:20261023T180000
+DTEND;TZID=America/Los_Angeles:20261023T200000
+SUMMARY:Fall Hoops Night
+LOCATION:JCC San Francisco\, 3200 California Street\, San Francisco
+URL:https://www.jccsf.org/event/fall-hoops-night/
+DESCRIPTION:New in your area\nhttps://www.jccsf.org/event/fall-hoops-night
+ /\n\nFriday nights are for hoops! Kids can hit the court for basketball\,
+  friendly competition\, pizza and plenty of fun with friends.
+END:VEVENT
+END:VCALENDAR

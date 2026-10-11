@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:62b984a0d78a@bay-events
+DTSTAMP:20261011T042359Z
+DTSTART;TZID=America/Los_Angeles:20261025T120000
+DTEND;TZID=America/Los_Angeles:20261025T133000
+SUMMARY:🌎🥟 World of Dumplings Meetup! 🥟🌎
+LOCATION:Ferry Building\, 1 Ferry Building San Francisco\, San Francisco
+URL:https://partiful.com/e/xHcmxKSkeDxQtMkuyreH
+DESCRIPTION:Discourse\nhttps://partiful.com/e/xHcmxKSkeDxQtMkuyreH\n\n🌎
+ 🥟 World of Dumplings 🥟🌎 Let’s explore San Francisco’s dumpli
+ ng scene together! 🥢✨ We’ll be making our way around the Ferry Bui
+ lding to try dumplings from different culinary traditions — steamed\, p
+ an-fried\, filled with meat\, seafood\, veggies\, and everything in betwe
+ en. 🥟🥟🥟 Think of it as a little dumpling adventure around the wo
+ rld 🌏\, with plenty of food\, conversation\, and new people along the 
+ way
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:604c67233726@bay-events
+DTSTAMP:20261011T042359Z
+DTSTART;TZID=America/Los_Angeles:20261012T090000
+DTEND;TZID=America/Los_Angeles:20261012T100000
+SUMMARY:Japanese Tea Garden’s Free Admission Hour (Golden Gate Park)
+LOCATION:Japanese Tea Garden\, 75 Hagiwara Tea Garden Dr\, San Francisco\,
+  CA\, San Francisco
+URL:https://sf.funcheap.com/japanese-tea-gardens-free-admission-hour-golde
+ n-gate-park-434/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/japanese-tea-gardens
+ -free-admission-hour-golden-gate-park-434/\n\n
+END:VEVENT
+END:VCALENDAR

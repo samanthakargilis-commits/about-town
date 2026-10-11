@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:63cab8180458@bay-events
+DTSTAMP:20261011T042359Z
+DTSTART;TZID=America/Los_Angeles:20261010T100000
+DTEND;TZID=America/Los_Angeles:20261010T210000
+SUMMARY:“The Great Elephant Migration” 30 Elephant Sculptures (Downtow
+ n Livermore)
+LOCATION:Stockmen’s Park\, N. Livermore Avenue and Railroad Avenue\, Liv
+ ermore\, Livermore
+URL:https://sf.funcheap.com/great-elephant-migration-30-elephant-sculpture
+ s-downtown-livermore/
+DESCRIPTION:Livermore\nhttps://sf.funcheap.com/great-elephant-migration-30
+ -elephant-sculptures-downtown-livermore/\n\n
+END:VEVENT
+END:VCALENDAR

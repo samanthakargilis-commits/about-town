@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:68f4c06ac637@bay-events
+DTSTAMP:20261011T042359Z
+DTSTART;TZID=America/Los_Angeles:20261106T180000
+DTEND;TZID=America/Los_Angeles:20261106T190000
+SUMMARY:Kristi Yamaguchi Holiday Ice Rink Opening Ceremony 2026 (San Ramon
+ )
+LOCATION:City Center Bishop Ranch\, 6000 Bollinger Canyon Rd\, San Ramon\,
+  CA 94583\, San Ramon
+URL:https://sf.funcheap.com/kristi-yamaguchi-holiday-ice-rink-opening-cere
+ mony-2025-san-ramon/
+DESCRIPTION:Spirituality · San Ramon\nhttps://sf.funcheap.com/kristi-yama
+ guchi-holiday-ice-rink-opening-ceremony-2025-san-ramon/\n\n
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:43f3f279bc51@bay-events
+DTSTAMP:20261011T042359Z
+DTSTART;TZID=America/Los_Angeles:20261107T110000
+DTEND;TZID=America/Los_Angeles:20261107T130000
+SUMMARY:sf clothing swap
+LOCATION:Golden Gate Park\, 501 Stanyan St San Francisco\, San Francisco
+URL:https://partiful.com/e/ebMOF4yMUZl9MjSb7p2x
+DESCRIPTION:Estate & sample sales\nhttps://partiful.com/e/ebMOF4yMUZl9MjSb
+ 7p2x\n\nDo you look at your closet and feel uninspired. Want to replicate
+  the rush of buying new clothes without spending money? Well\, clothing s
+ wap is the perfect way to walk away with new inspo without hurting your p
+ ockets Bring 5-10 of your fav clothing items that you never seem to wear 
+ Some examples of why you wouldn’t wear them - don’t fit right but sup
+ er cute - used to love but never reach for anymo
+END:VEVENT
+END:VCALENDAR

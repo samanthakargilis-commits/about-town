@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e9bdd8666dcf@bay-events
+DTSTAMP:20261011T042358Z
+DTSTART;TZID=America/Los_Angeles:20261028T140000
+DTEND;TZID=America/Los_Angeles:20261028T160000
+SUMMARY:Free Art Workshop: Pop-up Mini Haunted House (YBCA)
+LOCATION:Yerba Buena Center for the Arts\, 701 Mission St\, San Francisco\
+ , CA\, San Francisco
+URL:https://sf.funcheap.com/free-art-workshop-popup-mini-haunted-house-ybc
+ a-2/
+DESCRIPTION:Museum exhibits + Weird & unusual\nhttps://sf.funcheap.com/fre
+ e-art-workshop-popup-mini-haunted-house-ybca-2/\n\nPhoto by Senior Manage
+ r of Educational Programs Rea Lynn de GuzmanCreate art inspired by our pr
+ ogramming at this drop-in art workshop! All ages welcome\, all materials 
+ provided. Construct a pop-up mini haunted house in light of Halloween. Ad
+ d objects to set a mood for your haunted house. Disclaimer: Please double
+  check event information with the event organizer as events can be cancel
+ ed\, details ca
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d7aafd0d14e8@bay-events
+DTSTAMP:20261011T042358Z
+DTSTART;TZID=America/Los_Angeles:20261107T150000
+DTEND;TZID=America/Los_Angeles:20261107T200000
+SUMMARY:Free Alameduh Zine Release Party w/ DJs + Hyperlocal Food (Alameda
+ )
+LOCATION:Faction Brewing\, 2501 Monarch St.\, Alameda\, CA\, Alameda
+URL:https://sf.funcheap.com/free-alameduh-zine-release-party-djs-hyperloca
+ l-food-alameda/
+DESCRIPTION:Craft + Writing · Alameda\nhttps://sf.funcheap.com/free-alame
+ duh-zine-release-party-djs-hyperlocal-food-alameda/\n\nALAMEDUHALAMEDUH Z
+ INE ISSUE 2 RELEASE PARTY Free entry! Hyperlocal food! DJ + record store!
+  100% Alameda pop-up market! Community art project! + more! Music from: G
+ old Digger Records Food from: Calafia Taqueria Pound 4 Pound Burgers Suga
+  & Spice Cookie Co. 100% Alameda pop-up market featuring: ALAMEDUH Amy Li
+ u Big Softie Coven of Stitches East2West Pottery EBB Garden Goods Fire an
+ d Glassworks Frie
+END:VEVENT
+END:VCALENDAR

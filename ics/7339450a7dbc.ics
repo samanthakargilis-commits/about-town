@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7339450a7dbc@bay-events
+DTSTAMP:20261011T042359Z
+DTSTART;TZID=America/Los_Angeles:20261108T170000
+DTEND;TZID=America/Los_Angeles:20261108T203000
+SUMMARY:Hold on to Your Music – A Mother’s Legacy
+LOCATION:JCCSF\, 3200 California Street\, San Francisco
+URL:https://www.jccsf.org/event/hold-on-to-your-music-a-mothers-legacy/
+DESCRIPTION:Art + Discourse\nhttps://www.jccsf.org/event/hold-on-to-your-m
+ usic-a-mothers-legacy/\n\nMona Golabek\, the Grammy-nominated artist\, sh
+ ares her mother’s journey from Nazi-occupied Vienna to wartime London t
+ hrough the multi-award winning film\, performance\, and conversation.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cddaa6da97ba@bay-events
+DTSTAMP:20261011T042358Z
+DTSTART;TZID=America/Los_Angeles:20261031T130000
+DTEND;TZID=America/Los_Angeles:20261031T190000
+SUMMARY:Tricks Treats & Trinkets: Halloween Makers Market 2026 (San Jose)
+LOCATION:Spark Social San Jose\, 140 S Montgomery St\, San Jose\, CA\, San
+  Jose
+URL:https://sf.funcheap.com/tricks-treats-trinkets-halloween-makers-market
+ -2026-san-jose/
+DESCRIPTION:Fairs & festivals + Craft · San Jose\nhttps://sf.funcheap.com
+ /tricks-treats-trinkets-halloween-makers-market-2026-san-jose/\n\nTricks 
+ Treats & Trinkets: Halloween Makers Market 2026 (San Jose)Tricks\, Treats
+  & Trinkets is a Halloween Day collaboration market at Spark Social San J
+ ose featuring local artists\, creatives\, and small businesses. The San J
+ ose Makers event includes treats\, trinkets\, oddities\, spooky vibes\, a
+ nd community-focused shopping. Original Event Description: _Tricks\, Trea
+ ts & Trinkets Tricks\, Treats & Trink
+END:VEVENT
+END:VCALENDAR

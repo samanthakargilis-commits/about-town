@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:01b0ddc8d128@bay-events
+DTSTAMP:20261011T042358Z
+DTSTART;TZID=America/Los_Angeles:20261011T123000
+DTEND;TZID=America/Los_Angeles:20261011T143000
+SUMMARY:San Francisco’s Italian Heritage Festival and Parade
+LOCATION:
+URL:https://sfitalianheritage.org/events/
+DESCRIPTION:Fairs & festivals + Weird & unusual\nhttps://sfitalianheritage
+ .org/events/\n\n2019 Italian Heritage Parade. Photo via SF Italian Herita
+ ge Parade On Sunday\, October 11\, the annual Italian Heritage Parade wil
+ l once again return to North Beach\, bringing a vibrant celebration to th
+ e neighborhood. The beloved tradition is the oldest Italian Heritage Para
+ de in the United States and dates back to 1868. The parade began as a Col
+ umbus Parade\, but it eventually changed to the Italian
+END:VEVENT
+END:VCALENDAR
