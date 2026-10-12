@@ -727,3 +727,19 @@ class PastEvents(unittest.TestCase):
         self.assertEqual([e["id"] for e in got], ["a"])
         self.assertTrue(got[0]["past"])
         self.assertEqual(len(got[0]["description"]), 300)
+
+
+class Prices(unittest.TestCase):
+    def test_cheapest_offer_wins(self):
+        from ingest.core import offer_price
+        self.assertEqual(offer_price([{"price": "60"}, {"price": "32.00"}]), "$32")
+        self.assertEqual(offer_price({"@type": "AggregateOffer", "lowPrice": 0, "highPrice": 40}), "free–$40")
+        self.assertEqual(offer_price({"price": 0}), "free")
+        self.assertEqual(offer_price({}), "")
+
+    def test_prices_in_words(self):
+        from ingest.heuristics import price_in_text
+        self.assertEqual(price_in_text("7:00 PM Doors 8:00 PM Music $22 ADV / $27 DOOR"), "$22")
+        self.assertEqual(price_in_text("Tai Chi. Free and open to all ages."), "free")
+        self.assertEqual(price_in_text("$5 beers and $10 off with code"), "")
+        self.assertEqual(price_in_text("RSVP for $30 entry; $35 at the door"), "$30")
