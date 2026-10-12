@@ -1,0 +1,7 @@
+SF Public Library (Presidio)   43 events    3 requests  OK
+in window and area: 42 of 43
+after merging duplicates: 35
+places: {'pages_read': 0, 'placed': 0}
+in area once placed: 35
+map spots: {'lookups': 0, 'matched_now': 29, 'with_spot': 29, 'total': 29}
+wrote 29 events to /home/runner/work/bay-events/bay-events/app/events.json

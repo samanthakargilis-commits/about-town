@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:11c71ba68c3d@bay-events
+DTSTAMP:20261012T082409Z
+DTSTART;TZID=America/Los_Angeles:20261110T150000
+DTEND;TZID=America/Los_Angeles:20261110T160000
+SUMMARY:Book Club: Cozy Capers & Mysteries
+LOCATION:Presidio Branch Library\, 3150 Sacramento St\, San Francisco
+URL:https://sfpl.org/events/2026/11/10/book-club-cozy-capers-mysteries
+DESCRIPTION:Reading + Discourse\nhttps://sfpl.org/events/2026/11/10/book-c
+ lub-cozy-capers-mysteries\n\nA monthly discussion on crime novels featuri
+ ng sleuths\, quirky supporting characters and homey communities. This mon
+ th's novel is Moonlight Murder by Uzma Jalaluddin from the Detective Aunt
+ y Investigates series. Kausar Khan must solve another murder in Toronto
+ —this time linked to one of her granddaughters. Double doses of intrigu
+ e arise as clues pile up that inspire Kausar to finally search for wh
+END:VEVENT
+END:VCALENDAR
