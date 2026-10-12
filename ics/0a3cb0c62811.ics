@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0a3cb0c62811@bay-events
+DTSTAMP:20261012T083815Z
+DTSTART;TZID=America/Los_Angeles:20261013T190000
+DTEND;TZID=America/Los_Angeles:20261013T203000
+SUMMARY:CIRCUS BY THE BAY
+LOCATION:The Cowell Theater\, 2 Marina Boulevard\, San Francisco\, CA 9412
+ 3 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/circus-by-the-bay-tickets-1999623076450
+DESCRIPTION:Weird & unusual + Musical theatre\nhttps://www.eventbrite.com/
+ e/circus-by-the-bay-tickets-1999623076450\n\nCircus By the Bay brings tog
+ ether Pickle Family Circus and New Pickle Circus veterans Gypsy Snider\, 
+ Shana Carroll\, Jeff Raz and Tandy Beal for a conversation\, topped off b
+ y live performances from Unique Derique\, Chloe Somers Walier\, Elise Hin
+ g and San Francisco Youth Circus. The evening looks at San Francisco as a
+ n epicenter of the 1970s New Circus revival\, the one-ring\, "not-so-big-
+ top" style bui
+END:VEVENT
+END:VCALENDAR

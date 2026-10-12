@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6e1063e9dd6b@bay-events
+DTSTAMP:20261012T083817Z
+DTSTART;TZID=America/Los_Angeles:20261016T163000
+DTEND;TZID=America/Los_Angeles:20261016T180000
+SUMMARY:Free NFL Stories w/ Peter King + 49ers Architect Carmen Policy (Be
+ rkeley)
+LOCATION:Sports Basement (Berkeley)\, 2727 Milvia St\, Berkeley\, CA\, Ber
+ keley
+URL:https://sf.funcheap.com/free-nfl-stories-peter-king-49ers-architect-ca
+ rmen-policy-berkeley/
+DESCRIPTION:Berkeley\nhttps://sf.funcheap.com/free-nfl-stories-peter-king-
+ 49ers-architect-carmen-policy-berkeley/\n\nAre you ready for some footbal
+ l? Join fellow fans and scholars of the game for an afternoon with award-
+ winning sports columnist Peter King. Are you ready for some football? Kic
+ k off a weekend of big games—including Cal’s home matchup with Wake F
+ orest and culminating with the ...
+END:VEVENT
+END:VCALENDAR

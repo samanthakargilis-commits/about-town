@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0ec90521be3f@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261013T183000
+DTEND;TZID=America/Los_Angeles:20261013T220000
+SUMMARY:Trivia with Coach Mahoney
+LOCATION:Rikki’s Bar\, 2223 Market Street\, San Francisco\, San Francisc
+ o
+URL:https://ma.to/event/trivia-with-coach-mahoney-2026-10-13
+DESCRIPTION:New in your area\nhttps://ma.to/event/trivia-with-coach-mahone
+ y-2026-10-13\n\nCoach Mahoney hosts trivia at Rikki’s Bar. Sign-ups ope
+ n at 6:30pm. Topics include current events\, women’s sports\, San Franc
+ isco history\, and more. Prizes for the top three teams. Drink specials f
+ rom Origen Holistic Spirits. Keep an eye on Coach Mahoney’s Instagram f
+ or clues and extra point opportunities.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:28ec52cc7b91@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261025T140000
+DTEND;TZID=America/Los_Angeles:20261025T160000
+SUMMARY:Napa $5 Folk Festival
+LOCATION:Native Sons of the Golden West\, 927 Coombs St. Napa\, CA 94559
+URL:https://sf.funcheap.com/napa-5-folk-festival/
+DESCRIPTION:Fairs & festivals + Concerts\nhttps://sf.funcheap.com/napa-5-f
+ olk-festival/\n\nA $5 music festival in Napa? That’s right! Not Loud Co
+ ncerts presents the Napa $5 Folk Festival on Oct 25 from 2 – 5 pm. This
+  is a festival like no other – 9 bands\, 3 stages\, all indoors in down
+ town Napa\, and all not too loud! ...
+END:VEVENT
+END:VCALENDAR

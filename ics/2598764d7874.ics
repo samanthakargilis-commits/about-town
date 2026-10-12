@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2598764d7874@bay-events
+DTSTAMP:20261012T083817Z
+DTSTART;TZID=America/Los_Angeles:20261030T180000
+DTEND;TZID=America/Los_Angeles:20261030T210000
+SUMMARY:San Francisco Critical Mass (Last Friday of the Month)
+LOCATION:Embarcadero Plaza\, 1 Market Street\, San Francisco\, CA\, San Fr
+ ancisco
+URL:https://sf.funcheap.com/san-francisco-critical-mass-last-friday-of-the
+ -month-17/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/san-francisco-critic
+ al-mass-last-friday-of-the-month-17/\n\nCritical Mass is a mass bicycle r
+ ide that takes place on the last Friday of each month in San Francisco. M
+ eet and 6pm\, ride at 6:30 pm from Embarcadero Plaza (foot of Market Stre
+ et) and in cities around the world. Everyone is invited. No one is ...
+END:VEVENT
+END:VCALENDAR

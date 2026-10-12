@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:36c313f55640@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261012T160000
+DTEND;TZID=America/Los_Angeles:20261012T180000
+SUMMARY:Happy Hour at The Cavalier
+LOCATION:The Cavalier\, 360 Jessie St\, San Francisco\, CA 94103\, San Fra
+ ncisco
+URL:https://ma.to/event/happy-hour-the-cavalier-2026-10-12
+DESCRIPTION:New in your area\nhttps://ma.to/event/happy-hour-the-cavalier-
+ 2026-10-12\n\nHappy hour at The Cavalier\, 360 Jessie St in San Francisco
+ \, runs Monday through Saturday from 4 to 6 PM. The offer repeats weekly\
+ , and reservations are available through OpenTable.
+END:VEVENT
+END:VCALENDAR

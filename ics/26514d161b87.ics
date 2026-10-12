@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:26514d161b87@bay-events
+DTSTAMP:20261012T083815Z
+DTSTART;TZID=America/Los_Angeles:20261107T170000
+DTEND;TZID=America/Los_Angeles:20261107T200000
+SUMMARY:Free Grand Opening: Downtown Berkeley’s “Zero Empty Spaces” 
+ Arts Marketplace
+LOCATION:Zero Empty Spaces Berkeley\, Former Half Price Books\, 2036 Shatt
+ uck Avenue\, Berkeley\, CA 94704\, Berkeley
+URL:https://sf.funcheap.com/free-grand-opening-downtown-berkeleys-empty-sp
+ aces-arts-marketplace/
+DESCRIPTION:Craft + Art · Berkeley\nhttps://sf.funcheap.com/free-grand-op
+ ening-downtown-berkeleys-empty-spaces-arts-marketplace/\n\nCelebrate the 
+ grand opening of Zero Empty Spaces Berkeley\, the organization’s first 
+ California location\, inside the former Half Price Books in Downtown Berk
+ eley. Explore a once-vacant storefront transformed into a retail arts mar
+ ketplace and community-focused gallery featuring local artists\, makers\,
+  designers\, and creative entrepreneurs. Meet ...
+END:VEVENT
+END:VCALENDAR

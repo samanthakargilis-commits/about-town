@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b5fd533d3b85@bay-events
+DTSTAMP:20261012T083816Z
+DTSTART;TZID=America/Los_Angeles:20261028T190000
+DTEND;TZID=America/Los_Angeles:20261028T220000
+SUMMARY:Scaling Intelligence —Modal x Gray Area Commissions — OPENING 
+ NIGHT
+LOCATION:Gray Area / Grand Theater\, Gray Area / Grand Theater\, 2665 Miss
+ ion St\, San Francisco\, CA 94110\, USA\, San Francisco
+URL:https://luma.com/5j93bc4c
+DESCRIPTION:Craft + Theatre\nhttps://luma.com/5j93bc4c\n\nBe among the fir
+ st to experience Scaling Intelligence\, a new exhibition bringing togethe
+ r 11 commissioned projects exploring the possibilities of computing at sc
+ ale with artificial intelligence. As aesthetic practices evolve\, how can
+  artists help us interpret new realities unlocked through scaling intelli
+ gence? Each selected artist\, culture maker\, or collective receives a ca
+ sh stipend\, materials s
+END:VEVENT
+END:VCALENDAR

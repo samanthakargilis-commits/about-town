@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2b6d67dab91e@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+SUMMARY:Taste of Filoli Tour
+LOCATION:Filoli\, 86 Cañada Rd Woodside\, CA\, Woodside
+URL:https://filoli.org/whats-on/events/taste-of-filoli-tour/
+DESCRIPTION:Woodside\nhttps://filoli.org/whats-on/events/taste-of-filoli-t
+ our/\n\nTour the gardens and taste local honey & jams from our production
+  garden\, a tasting of Chase Wines plus a sweet treat along the way.
+END:VEVENT
+END:VCALENDAR

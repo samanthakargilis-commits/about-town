@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:df3507d2aa6f@bay-events
+DTSTAMP:20261012T083817Z
+DTSTART;TZID=America/Los_Angeles:20261025T100000
+DTEND;TZID=America/Los_Angeles:20261025T160000
+SUMMARY:Football Sundays: Outdoor Big Screen NFL Games + Lawn Fun (Thrive 
+ City)
+LOCATION:Thrive City\, 1 Warriors Way San Francisco\, CA
+URL:https://sf.funcheap.com/football-sundays-outdoor-big-screen-nfl-games-
+ lawn-fun-thrive-city/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/football-sundays-out
+ door-big-screen-nfl-games-lawn-fun-thrive-city/\n\nCatch NFL games on the
+  big screen at Thrive City’s Football Sundays in San Francisco. Enjoy a
+  community atmosphere with lawn games and team spirit. Lawn chairs are pr
+ ovided on a first-come\, first-served basis. Parking is available at the 
+ Chase Center Garage. Event is free ...
+END:VEVENT
+END:VCALENDAR

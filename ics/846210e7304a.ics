@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:846210e7304a@bay-events
+DTSTAMP:20261012T083815Z
+DTSTART;TZID=America/Los_Angeles:20261025T100000
+DTEND;TZID=America/Los_Angeles:20261025T110000
+SUMMARY:Free Yoga in the Park
+LOCATION:The Presidio\, San Francisco
+URL:https://presidio.gov/explore/events/free-yoga-in-the-park/2026-10-25/
+DESCRIPTION:Meditation\nhttps://presidio.gov/explore/events/free-yoga-in-t
+ he-park/2026-10-25/\n\nJoin us for a community yoga session on Sunday\, O
+ ctober 25 with yoga instructor Lucy Marr @lucymarrandthestars from Nob Hi
+ ll Yoga @nobhillyoga from 10-11am. Bring a friend\, a yoga mat/towel\, an
+ d an extra layer for a relaxing yoga session. All levels are welcome. Sug
+ gested donation: $10+ No ...
+END:VEVENT
+END:VCALENDAR

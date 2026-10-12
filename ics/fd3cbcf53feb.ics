@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fd3cbcf53feb@bay-events
+DTSTAMP:20261012T083817Z
+DTSTART;TZID=America/Los_Angeles:20261015T180000
+DTEND;TZID=America/Los_Angeles:20261015T210000
+SUMMARY:Besties at Bella
+LOCATION:Bella SF\, 316 11th St\, San Francisco
+URL:https://ma.to/event/besties-at-bella-15-oct-2026
+DESCRIPTION:Thursday evening\nhttps://ma.to/event/besties-at-bella-15-oct-
+ 2026\n\nA social event designed for female professionals in San Francisco
+  to connect and find their tribe. The evening features girl dinner food s
+ ervice\, specialty cocktails\, and wellness and beauty giveaways. Expect 
+ DJs providing the soundtrack alongside various activities. Tickets are av
+ ailable on the profile.
+END:VEVENT
+END:VCALENDAR

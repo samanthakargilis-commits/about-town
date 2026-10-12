@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7095992325b6@bay-events
+DTSTAMP:20261012T083814Z
+DTSTART;TZID=America/Los_Angeles:20261012T110000
+DTEND;TZID=America/Los_Angeles:20261012T200000
+SUMMARY:Fleet Week Holiday Brunch
+LOCATION:Radhaus\, Fort Mason Center\, San Francisco\, CA\, San Francisco
+URL:https://ma.to/event/fleet-week-holiday-brunch-2026-10-12
+DESCRIPTION:Big Bay Area traditions + Fairs & festivals\nhttps://ma.to/eve
+ nt/fleet-week-holiday-brunch-2026-10-12\n\nRadhaus opens early at 11am on
+  Monday\, October 12th\, serving holiday brunch all day long. Enjoy water
+ front views of the Bay and Golden Gate Bridge while taking in Fleet Week 
+ events including the Blue Angels. Food and Bier available.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f3e48e97abfa@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261028T183000
+DTEND;TZID=America/Los_Angeles:20261028T203000
+SUMMARY:Casey's Craft Club: Decoupage Candle Holder
+LOCATION:Common Space\, 3108B Fillmore Street\, San Francisco\, CA 94123 S
+ an Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/caseys-craft-club-decoupage-candle-holder
+ -tickets-2000642077309
+DESCRIPTION:Craft\nhttps://www.eventbrite.com/e/caseys-craft-club-decoupag
+ e-candle-holder-tickets-2000642077309\n\nCraft Club is a welcoming space 
+ to get crafty\, meet friends & build community.
+END:VEVENT
+END:VCALENDAR

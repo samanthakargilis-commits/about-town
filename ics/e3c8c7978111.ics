@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e3c8c7978111@bay-events
+DTSTAMP:20261012T083816Z
+DTSTART;TZID=America/Los_Angeles:20261012T200000
+DTEND;TZID=America/Los_Angeles:20261012T230000
+SUMMARY:Love Spells
+LOCATION:Cafe Du Nord\, 2170 Market St\, San Francisco
+URL:https://ma.to/event/love-spells-cafe-du-nord-12-oct-2026
+DESCRIPTION:Concerts + Spirituality\nhttps://ma.to/event/love-spells-cafe-
+ du-nord-12-oct-2026\n\nLove Spells\, the mystic lovechild of singer-songw
+ riter Sir Taegen Harris\, stops in San Francisco for the Love Is The Law 
+ World Tour. Harris blends ethereal vocals\, delicate percussion\, and soo
+ thing guitar riffs into a nostalgic fusion of indie rock and dream pop. T
+ he performance centers on themes of intimacy\, romanticism\, and heartbre
+ ak. Artist presale begins June 2nd\, with general on-sale startin
+END:VEVENT
+END:VCALENDAR

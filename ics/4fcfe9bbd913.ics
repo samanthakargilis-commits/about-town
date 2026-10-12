@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4fcfe9bbd913@bay-events
+DTSTAMP:20261012T083816Z
+DTSTART;TZID=America/Los_Angeles:20261031T110000
+DTEND;TZID=America/Los_Angeles:20261031T130000
+SUMMARY:SF Cake Picnic Fall 2026: Taste 100s of Cakes on Halloween (Levi
+ ’s Plaza)
+LOCATION:Levi's Plaza\, 1255 Battery St\, San Francisco\, CA 94111\, San F
+ rancisco
+URL:https://sf.funcheap.com/sf-cake-picnic-fall-2026-taste-100s-cakes-hall
+ oween-levis-plaza/
+DESCRIPTION:Camp & Halloween + Weird & unusual\nhttps://sf.funcheap.com/sf
+ -cake-picnic-fall-2026-taste-100s-cakes-halloween-levis-plaza/\n\nSpend H
+ alloween morning with CAKE PICNIC at Levi’s Plaza for a sweet and spook
+ y celebration near the Bay! This is our first-ever Halloween CAKE PICNIC 
+ and it’s so special. You won’t want to miss it! We’re gathering out
+ side among the trees and autumn air to share ...
+END:VEVENT
+END:VCALENDAR

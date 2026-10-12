@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d73360d0f237@bay-events
+DTSTAMP:20261012T083817Z
+DTSTART;TZID=America/Los_Angeles:20261013T170000
+DTEND;TZID=America/Los_Angeles:20261013T203000
+SUMMARY:Black Civic Empowerment Lab
+LOCATION:African American Art & Culture\, 762 Fulton Street\, SF\, CA\, 94
+ 102\, San Francisco
+URL:https://ma.to/event/black-civic-empowerment-lab-14-oct-2026
+DESCRIPTION:Art\nhttps://ma.to/event/black-civic-empowerment-lab-14-oct-20
+ 26\n\nJoin members of the Alpha Phi Alpha Fraternity Inc. Gamma Chi Lambd
+ a chapter for a Black Civic Empowerment Lab as part of their A Voteless P
+ eople is a Hopeless People initiative. Over the course of the evening\, g
+ uests will learn about ballot measures for San Francisco and California\,
+  receive voter registration assistance\, and enjoy dinner\, music\, and c
+ ommunity. Held in Dance Studio B (2nd Floor).
+END:VEVENT
+END:VCALENDAR

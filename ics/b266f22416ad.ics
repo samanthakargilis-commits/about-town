@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b266f22416ad@bay-events
+DTSTAMP:20261012T083819Z
+DTSTART;VALUE=DATE:20261011
+DTEND;VALUE=DATE:20261012
+SUMMARY:Fleet Week Lunch on the California Hornblower
+LOCATION:Pier 3\, Pier 3\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/fleet-week-lunch-california-hornblower/
+DESCRIPTION:Big Bay Area traditions + Fairs & festivals · Featured on Fun
+ cheap\nhttps://sf.funcheap.com/fleet-week-lunch-california-hornblower/\n\
+ nThe 2026 Fleet Week Air Show comes to San Francisco! Do not miss this op
+ portunity to watch the Blue Angels as they prepare their expert maneuvers
+  for the weekend shows. Enjoy this three-hour cruise on board the Califor
+ nia Hornblower with the best views of the ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5d1a99a52f1a@bay-events
+DTSTAMP:20261012T083814Z
+DTSTART;TZID=America/Los_Angeles:20261013T200000
+DTEND;TZID=America/Los_Angeles:20261013T230000
+SUMMARY:Jose Simioni Jazz Trio
+LOCATION:Specs' Twelve Adler Museum Cafe\, San Francisco
+URL:https://ma.to/event/jose-simioni-jazz-trio-2026-10-13
+DESCRIPTION:Concerts + Museum exhibits\nhttps://ma.to/event/jose-simioni-j
+ azz-trio-2026-10-13\n\nThe Jose Simioni Jazz Trio performs at Specs' Twel
+ ve Adler Museum Cafe in North Beach\, San Francisco\, from 8 to 11 PM. Fr
+ ee entry as part of the venue's October programme of free events\; the ve
+ nue is 21+.
+END:VEVENT
+END:VCALENDAR

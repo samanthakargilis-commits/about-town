@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7d0107ad18b9@bay-events
+DTSTAMP:20261012T083816Z
+DTSTART;TZID=America/Los_Angeles:20261031T100000
+DTEND;TZID=America/Los_Angeles:20261031T220000
+SUMMARY:Halloween SF World Naked Bike Ride
+LOCATION:Rincon Park\, Folsom St. and Embarcadero Dr.\, San Francisco\, CA
+ \, San Francisco
+URL:https://sf.funcheap.com/halloween-sf-world-naked-bike-ride-oct-2026/
+DESCRIPTION:Camp & Halloween\nhttps://sf.funcheap.com/halloween-sf-world-n
+ aked-bike-ride-oct-2026/\n\nThe creepy menace of “politics” & “ai
+ ” & “flock cams” political clowns got you down? We’ve got just th
+ e right Big Pick Me Up Remedy\, Treat & CureRx in store for you just befo
+ re the Big S/Election coverage heats up! We’re putting our peds to the 
+ pedal & ...
+END:VEVENT
+END:VCALENDAR

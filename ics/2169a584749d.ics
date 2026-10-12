@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2169a584749d@bay-events
+DTSTAMP:20261012T083813Z
+DTSTART;TZID=America/Los_Angeles:20261025T123000
+DTEND;TZID=America/Los_Angeles:20261025T143000
+SUMMARY:SF’s World of Dumplings Food Festival
+LOCATION:7th West Oakland – 1255 7th St\, Oakland Celebrate Filipino Ame
+ rican History Month with Bab
+URL:https://sf.funcheap.com/city-guide/october-street-fairs-festivals/
+DESCRIPTION:Fairs & festivals + Theatre · Featured on Funcheap\nhttps://s
+ f.funcheap.com/city-guide/october-street-fairs-festivals/\n\nSunday\, Oct
+ ober 25\, 2026 – SF (Ferry Building) – FREE – Eat your way around t
+ he world with 25+ restaurants serving dumplings from across the globe \, 
+ plus live music\, performances\, cooking demos\, eating contests\, trivia
+ \, family activities and more. Monday\, October 12 SF’s Indigenous Peop
+ les Day at Yerba Buena Gardens Monday\, October 12 – 12:00 pm - Ends at
+  4:00 pm | Cost: FREE | Yerba Buena Gardens
+END:VEVENT
+END:VCALENDAR

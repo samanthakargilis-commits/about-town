@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b4a4c634468c@bay-events
+DTSTAMP:20261012T083816Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:USF School of Education Open House
+LOCATION:USF School of Education\, 2350 Turk Blvd
+URL:https://sf.funcheap.com/usf-school-education-open-house/
+DESCRIPTION:Discourse\nhttps://sf.funcheap.com/usf-school-education-open-h
+ ouse/\n\nCome learn about University of San Francisco School of Education
+  doctoral\, master’s\, and credential programs at our open house. Parti
+ cipate in faculty-led breakout sessions for in-depth discussion about you
+ r programs of interest. Event attendees will meet with faculty\, get help
+  with application questions\, attend a current ...
+END:VEVENT
+END:VCALENDAR

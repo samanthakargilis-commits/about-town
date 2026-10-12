@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4178e99ed05b@bay-events
+DTSTAMP:20261012T083819Z
+DTSTART;TZID=America/Los_Angeles:20261012T113000
+DTEND;TZID=America/Los_Angeles:20261012T143000
+SUMMARY:Prix Fixe Lunch at Meyhouse
+LOCATION:Meyhouse\, Palo Alto
+URL:https://ma.to/event/meyhouse-prix-fixe-lunch-2026-10-12
+DESCRIPTION:Palo Alto\nhttps://ma.to/event/meyhouse-prix-fixe-lunch-2026-1
+ 0-12\n\nMeyhouse in Downtown Palo Alto serves lunch Monday through Friday
+ \, with a $44.95 three-course prix fixe alongside the regular lunch menu.
+  The Meyhane-style small plates are made for sharing family style\, with 
+ options such as mesquite fire-grilled octopus\, lemon cured branzino and 
+ Antep-style marinated tenderloin. Wine\, non-alcoholic cocktails\, baklav
+ a and ice cream are also available during lunch.
+END:VEVENT
+END:VCALENDAR

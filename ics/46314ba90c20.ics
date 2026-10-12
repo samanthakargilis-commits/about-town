@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:46314ba90c20@bay-events
+DTSTAMP:20261012T083816Z
+DTSTART;TZID=America/Los_Angeles:20261031T210000
+DTEND;TZID=America/Los_Angeles:20261031T230000
+SUMMARY:Horror Hi-Fi at Pubic Works San Francisco
+LOCATION:Public Works\, 161 Erie St San Francisco\, San Francisco
+URL:https://partiful.com/e/N8Bm5fnbjO1BzVBRzq6Q
+DESCRIPTION:Camp & Halloween + Dance nights\nhttps://partiful.com/e/N8Bm5f
+ nbjO1BzVBRzq6Q\n\nWelcome to the realm of perpetual Halloween. Horror Hi-
+ Fi returns to Public Works for their annual Halloween season discotheque.
+  Tech-Noir\, Sad-Girl Disco\, Zombie-Wave and Italo-Giallo. Extended DJ s
+ ets from Alex Oxley and Roxanne Roll.
+END:VEVENT
+END:VCALENDAR

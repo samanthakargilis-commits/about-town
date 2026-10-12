@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2aadb0669a1c@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261122T110000
+DTEND;TZID=America/Los_Angeles:20261122T120000
+SUMMARY:Presidio Guided Walk: 250 Years on the Presidio
+LOCATION:The Presidio\, San Francisco
+URL:https://presidio.gov/explore/events/presidio-guided-walk-250-years-on-
+ the-presidio/2026-11-22/
+DESCRIPTION:New in your area\nhttps://presidio.gov/explore/events/presidio
+ -guided-walk-250-years-on-the-presidio/2026-11-22/\n\nJoin National Park 
+ Service Rangers for a guided walk at the Presidio to explore Presidio Tun
+ nel Tops\, the Main Post\, and the park’s layered history.
+END:VEVENT
+END:VCALENDAR

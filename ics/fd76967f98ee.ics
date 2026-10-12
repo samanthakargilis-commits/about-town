@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fd76967f98ee@bay-events
+DTSTAMP:20261012T083816Z
+DTSTART;TZID=America/Los_Angeles:20261024T113000
+DTEND;TZID=America/Los_Angeles:20261024T133000
+SUMMARY:Book Club: "Tomorrow\, and Tomorrow\, and Tomorrow" by Gabrielle Z
+ evin
+LOCATION:Haraz Coffee House\, 1452 Franklin St\, San Francisco\, CA 94109\
+ , USA\, San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/san-francisco-saturday-book-club/events/3168231
+ 15/
+DESCRIPTION:Reading + Discourse\nhttps://www.meetup.com/san-francisco-satu
+ rday-book-club/events/316823115/\n\nOur first meetup. We will discuss Gab
+ rielle Zevin's Tomorrow\, and Tomorrow\, and Tomorrow over coffee. Whethe
+ r you loved it\, hated it\, or are still reading\, come talk it through w
+ ith us. All readers welcome.
+END:VEVENT
+END:VCALENDAR

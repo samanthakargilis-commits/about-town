@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1ae32b18c33b@bay-events
+DTSTAMP:20261012T083819Z
+DTSTART;TZID=America/Los_Angeles:20261011T180000
+DTEND;TZID=America/Los_Angeles:20261011T210000
+SUMMARY:Lazy Bear Restaurant Week Dinner
+LOCATION:Lazy Bear\, 3416 19th St\, San Francisco\, CA 94110\, San Francis
+ co
+URL:https://ma.to/event/lazy-bear-restaurant-week-2026-10-11
+DESCRIPTION:New in your area\nhttps://ma.to/event/lazy-bear-restaurant-wee
+ k-2026-10-11\n\nDine at Lazy Bear on October 11 during the San Francisco 
+ StarChefs Rising Stars Restaurant Week (September 30 to October 14). Chef
+  Genoa Pieron's halibut crudo\, a reinterpretation of a classic steakhous
+ e salad\, features little gems\, New Zealand spinach\, and chickweed in a
+  nasturtium vinaigrette\, ser
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:41b2345a401e@bay-events
+DTSTAMP:20261012T083815Z
+DTSTART;TZID=America/Los_Angeles:20261025T110000
+DTEND;TZID=America/Los_Angeles:20261025T140000
+SUMMARY:“Lindy in the Park” Swing Dance Party (Golden Gate Park)
+LOCATION:JFK Drive Lindy Hop Spot\, JFK Dr. & Music Concourse Dr\, San Fra
+ ncisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/lindy-in-the-park-swing-dance-party-golden-gat
+ e-park-276/
+DESCRIPTION:Dance nights + Museum exhibits\nhttps://sf.funcheap.com/lindy-
+ in-the-park-swing-dance-party-golden-gate-park-276/\n\nGet ready to swing
+  in Golden Gate Park every sunny Sunday at “Lindy in the Park\,” a we
+ ekly free event near the de Young Museum\, when the streets of Golden Gat
+ e Park are closed to traffic and the dancers take over. This in person ev
+ ent resumed ...
+END:VEVENT
+END:VCALENDAR

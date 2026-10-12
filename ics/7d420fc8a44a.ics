@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7d420fc8a44a@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261012T190000
+DTEND;TZID=America/Los_Angeles:20261012T200000
+SUMMARY:October Salsa Class
+LOCATION:DanzHaus Dance Center\, San Francisco
+URL:https://ma.to/event/october-salsa-class-2026-10-12
+DESCRIPTION:New in your area\nhttps://ma.to/event/october-salsa-class-2026
+ -10-12\n\nSecond session of a four-week October salsa series at DanzHaus 
+ Dance Center\, held upstairs on October 5\, 12\, 19 and 26. Each 7–8 PM
+  class covers partnerwork\, footwork and social dancing\, and no partner 
+ is required. A 4-class monthly package is available\; spots are limited\,
+  and bundles and prices are listed on the TodosX app.
+END:VEVENT
+END:VCALENDAR

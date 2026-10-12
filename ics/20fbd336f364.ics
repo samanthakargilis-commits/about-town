@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:20fbd336f364@bay-events
+DTSTAMP:20261012T083819Z
+DTSTART;TZID=America/Los_Angeles:20261011T200000
+DTEND;TZID=America/Los_Angeles:20261011T220000
+SUMMARY:Tubong to Living Ancestors
+LOCATION:Dance Mission Theater\, 3316 24th St\, San Francisco\, CA 94110\,
+  San Francisco
+URL:https://ma.to/event/tubong-to-living-ancestors-11-oct-2026
+DESCRIPTION:Theatre + Art\nhttps://ma.to/event/tubong-to-living-ancestors-
+ 11-oct-2026\n\nKULARTS presents a three-night tribute of music\, dance\, 
+ film\, and poetry honoring seventeen legacy artists during Filipino Ameri
+ can History Month and Indigenous Peoples Day. Directed and choreographed 
+ by Alleluia Panis with music direction by John Calloway\, the production 
+ features the Alleluia Panis
+END:VEVENT
+END:VCALENDAR

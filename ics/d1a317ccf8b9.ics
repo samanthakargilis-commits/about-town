@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d1a317ccf8b9@bay-events
+DTSTAMP:20261012T083819Z
+DTSTART;TZID=America/Los_Angeles:20261011T150000
+DTEND;TZID=America/Los_Angeles:20261011T230000
+SUMMARY:The Bay’s Huge “626 Night Market” w/ 200+ Food & Shopping St
+ alls
+LOCATION:Alameda County Fairgrounds\, 2100 Valley Ave. Pleasanton\, CA 945
+ 66
+URL:https://sf.funcheap.com/the-bays-huge-626-night-market-w-200-food-shop
+ ping-stalls-2026-3/
+DESCRIPTION:Fairs & festivals\nhttps://sf.funcheap.com/the-bays-huge-626-n
+ ight-market-w-200-food-shopping-stalls-2026-3/\n\nEverything tastes bette
+ r at night. Bring family and friends to eat all your favorite snacks at t
+ he 15th season of 626 Night Market (formerly known as the NorCal Night Ma
+ rket). Inspired by the famous open-air nighttime bazaars of Asia\, this i
+ conic Californian festival\, named after ...
+END:VEVENT
+END:VCALENDAR

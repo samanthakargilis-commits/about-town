@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a0b7714019e3@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:Portland State University Women's Tennis vs ITA Northwest Regional
+LOCATION:Palo Alto
+URL:https://goviks.com/calendar.aspx?game_id=5975&amp;sport_id=12
+DESCRIPTION:Concerts · Palo Alto\nhttps://goviks.com/calendar.aspx?game_i
+ d=5975&amp\;sport_id=12\n\nStay updated with the latest events in Palo Al
+ to. Explore our comprehensive calendar featuring local festivals\, concer
+ ts\, workshops\, and more. Plan your visit with Destination Palo Alto.
+END:VEVENT
+END:VCALENDAR

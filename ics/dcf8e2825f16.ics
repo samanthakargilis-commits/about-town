@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dcf8e2825f16@bay-events
+DTSTAMP:20261012T083819Z
+DTSTART;TZID=America/Los_Angeles:20261011T190000
+DTEND;TZID=America/Los_Angeles:20261011T213000
+SUMMARY:An Evening with David Byrne
+LOCATION:Sydney Goldstein Theater\, San Francisco
+URL:https://ma.to/event/an-evening-with-david-byrne-12-oct-2026
+DESCRIPTION:Theatre + Discourse\nhttps://ma.to/event/an-evening-with-david
+ -byrne-12-oct-2026\n\nDavid Byrne takes the stage at the Sydney Goldstein
+  Theater for a live program as part of the City Arts & Lectures series. J
+ oin David Byrne for an evening talk about his new book Sleeping Beauties\
+ , exploring how groundbreaking ideas in the arts and sciences fall asleep
+  and are reawakened. Tickets ar
+END:VEVENT
+END:VCALENDAR

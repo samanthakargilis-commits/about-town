@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:33297da34514@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261013T120000
+DTEND;TZID=America/Los_Angeles:20261013T200000
+SUMMARY:Oaktown Birthday Crawl
+LOCATION:Bay Area\, California\, San Francisco
+URL:https://ma.to/event/oaktown-birthday-crawl-2026-10-13
+DESCRIPTION:New in your area\nhttps://ma.to/event/oaktown-birthday-crawl-2
+ 026-10-13\n\nJoin Oaktown Spice Shop for its 15th anniversary celebration
+ ! Throughout Oct 8–25\, enjoy a self-guided crawl of Bay Area restauran
+ ts featuring spice-forward menus crafted with Oaktown's small-batch blend
+ s. Visit participating bars\, pizzerias\, ice cream shops\, bagel spots\,
+  and coffee shops for exclusive bites.
+END:VEVENT
+END:VCALENDAR

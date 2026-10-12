@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e9b7574ba22b@bay-events
+DTSTAMP:20261012T083816Z
+DTSTART;TZID=America/Los_Angeles:20261013T180000
+DTEND;TZID=America/Los_Angeles:20261013T203000
+SUMMARY:Ukraine Defense Tech: Ecosystem Night
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/dzv3yxux
+DESCRIPTION:Discourse\nhttps://luma.com/dzv3yxux\n\nJoin us for an off-the
+ -record deep "dive in" with the founders building Ukraine's defense-tech 
+ sector in real time. Timed to the opening evening of TechCrunch Disrupt\,
+  this gathering brings together Ukrainian DefTech founders\, US investors
+ \, policy voices\, and the broader Bay Area defense-tech community for a 
+ night of candid conversation and direct access to the startups shaping un
+ manned systems\, e
+END:VEVENT
+END:VCALENDAR

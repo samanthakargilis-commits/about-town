@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dd179c7fd8e0@bay-events
+DTSTAMP:20261012T083816Z
+DTSTART;TZID=America/Los_Angeles:20261024T110000
+DTEND;TZID=America/Los_Angeles:20261024T130000
+SUMMARY:SF’s “BYOP” Pumpkin Carving Party 2026 (Duboce Park)
+LOCATION:Duboce Park Upper Lawn\, Duboce Avenue and Scott Street\, San Fra
+ ncisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/sfs-byop-pumpkin-carving-party-2026-duboce-par
+ k/
+DESCRIPTION:Camp & Halloween\nhttps://sf.funcheap.com/sfs-byop-pumpkin-car
+ ving-party-2026-duboce-park/\n\nFree pumpkin-carving gathering at the Upp
+ er Lawn in Duboce Park on October 24. Participants should bring their own
+  pumpkin. Original Event Description: _Join us for pumpkin carving in Dub
+ oce Park on Saturday\, October 24 from 11 AM to 1 PM on the Upper Lawn. A
+ lthough the event ...
+END:VEVENT
+END:VCALENDAR

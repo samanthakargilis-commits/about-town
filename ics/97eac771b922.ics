@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:97eac771b922@bay-events
+DTSTAMP:20261012T083817Z
+DTSTART;TZID=America/Los_Angeles:20261015T100000
+DTEND;TZID=America/Los_Angeles:20261015T120000
+SUMMARY:Drawing from the Local Universe
+LOCATION:Case for Making\, San Francisco
+URL:https://ma.to/event/drawing-from-the-local-universe-2026-10-15
+DESCRIPTION:Art\nhttps://ma.to/event/drawing-from-the-local-universe-2026-
+ 10-15\n\nJoin Case for Making and @studiogalison for an in-person botanic
+ al illustration workshop. Focus on drawing and painting as a way to conne
+ ct with plants\, stones\, and other subjects around you. Using pen drawin
+ g and watercolor\, spend quality time with non-human characters. No techn
+ ical perfection required.
+END:VEVENT
+END:VCALENDAR

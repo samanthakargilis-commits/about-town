@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c04e83480414@bay-events
+DTSTAMP:20261012T083816Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:Tapas Tuesday – 10% Off all Spanish Tapas
+LOCATION:Bota Tapas & Paella Bar\, 490 Geary Street\, San Francisco\, CA 9
+ 4102\, San Francisco
+URL:https://sf.funcheap.com/tapas-tuesday-10-spanish-tapas/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/tapas-tuesday-10-spa
+ nish-tapas/\n\nBota Tapas & Paella Bar near Downtown San Francisco and Un
+ ion Square is doing “Tapas Tuesdays” and enjoy all of our delicious S
+ panish Tapas at 10% Off. Just mention “Tapas Tuesday” to our server b
+ efore ordering to get the discount. About Bota Tapas and Paella Bar As ..
+ .
+END:VEVENT
+END:VCALENDAR

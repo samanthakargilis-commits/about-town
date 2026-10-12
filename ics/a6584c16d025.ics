@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a6584c16d025@bay-events
+DTSTAMP:20261012T083819Z
+DTSTART;TZID=America/Los_Angeles:20261011T170000
+DTEND;TZID=America/Los_Angeles:20261011T220000
+SUMMARY:Fall Menu at Dalva
+LOCATION:Dalva\, 3121 16th St\, San Francisco\, San Francisco
+URL:https://ma.to/event/fall-menu-at-dalva-2026-10-11
+DESCRIPTION:New in your area\nhttps://ma.to/event/fall-menu-at-dalva-2026-
+ 10-11\n\nPetite Percebes presents their first fall menu at Dalva at The H
+ ideout. Enjoy dishes inspired by preserved flavors and seasonal market ge
+ ms. Sunday\, October 11\, 5pm-10pm at 3121 16th St\, San Francisco.
+END:VEVENT
+END:VCALENDAR

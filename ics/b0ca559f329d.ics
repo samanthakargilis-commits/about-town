@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b0ca559f329d@bay-events
+DTSTAMP:20261012T083814Z
+DTSTART;TZID=America/Los_Angeles:20261013T200000
+DTEND;TZID=America/Los_Angeles:20261013T220000
+SUMMARY:Office Killer
+LOCATION:The Roxie Theater\, San Francisco
+URL:https://ma.to/event/office-killer-14-oct-2026
+DESCRIPTION:Comedy + Singing\nhttps://ma.to/event/office-killer-14-oct-202
+ 6\n\nCindy Sherman's first and only feature\, co-written by Todd Haynes a
+ nd newly restored in 4K. Stars Carol Kane\, Molly Ringwald\, Jeanne Tripp
+ lehorn\, and Barbara Sukowa. A stylish workplace horror-comedy that turns
+  '90s corporate downsizing into something bloody. This screening is part 
+ of the Roxie Theater's October series 'Her Work Is Never Done\,' which ex
+ amines the labor expected of women in exhaust
+END:VEVENT
+END:VCALENDAR

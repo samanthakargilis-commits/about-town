@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:63ded15ae200@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261012T110000
+DTEND;TZID=America/Los_Angeles:20261012T220000
+SUMMARY:Tacolicious School Project
+LOCATION:Tacolicious Mission\, San Francisco
+URL:https://ma.to/event/tacolicious-school-project-mission-2026-10-12
+DESCRIPTION:New in your area\nhttps://ma.to/event/tacolicious-school-proje
+ ct-mission-2026-10-12\n\nEvery Monday during the school year\, a portion 
+ of sales from Tacolicious locations goes directly to a local school. Visi
+ t the Mission location to help fund school programs. No additional ticket
+  required\; just dine in or take out.
+END:VEVENT
+END:VCALENDAR

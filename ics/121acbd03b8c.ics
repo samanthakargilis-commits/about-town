@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:121acbd03b8c@bay-events
+DTSTAMP:20261012T083816Z
+DTSTART;TZID=America/Los_Angeles:20261109T180000
+DTEND;TZID=America/Los_Angeles:20261109T200000
+SUMMARY:Deep Cuts Book Club: DCBC Comes of Age
+LOCATION:Kepler's Books\, 1010 El Camino Real #100 Menlo Park\, CA 94025\,
+  Menlo Park
+URL:https://www.keplers.org/upcoming-events-internal/bookclub-2026
+DESCRIPTION:Reading · Menlo Park\nhttps://www.keplers.org/upcoming-events
+ -internal/bookclub-2026\n\nDeep Cuts Book Club is back with four incredib
+ le coming of age novels. Buy Tickets on Eventbrite Buy Tickets The Deep C
+ uts Book Club is back for our fourth year of communal reading. This year 
+ we are investigating what it means to come of age in vastly different pla
+ ces across the 20th century and taking our cues from four icons of litera
+ ture. This year we will examine the works of L. M. Montgomery\,
+END:VEVENT
+END:VCALENDAR

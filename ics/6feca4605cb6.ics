@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6feca4605cb6@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261016T190000
+DTEND;TZID=America/Los_Angeles:20261016T213000
+SUMMARY:The Devils (35mm Opening)
+LOCATION:Alamo Drafthouse\, San Francisco
+URL:https://ma.to/event/the-devils-35mm-opening-16-oct-2026-1
+DESCRIPTION:New in your area\nhttps://ma.to/event/the-devils-35mm-opening-
+ 16-oct-2026-1\n\nKen Russell’s legendary and once-banned historical hor
+ ror arrives on 35mm. This exclusive one-week engagement kicks off on Octo
+ ber 16. A raw\, visceral depiction of religious hysteria\, sex\, and powe
+ r in 17th-century France\, presented in its original film format.
+END:VEVENT
+END:VCALENDAR

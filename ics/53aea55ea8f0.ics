@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:53aea55ea8f0@bay-events
+DTSTAMP:20261012T083815Z
+DTSTART;TZID=America/Los_Angeles:20261015T180000
+DTEND;TZID=America/Los_Angeles:20261015T220000
+SUMMARY:Rooftop Radio: K-pop
+LOCATION:SFMOMA\, San Francisco
+URL:https://ma.to/event/rooftop-radio-k-pop-sfmoma-15-oct-2026
+DESCRIPTION:Gay / queer + Camp & Halloween · Thursday evening\nhttps://ma
+ .to/event/rooftop-radio-k-pop-sfmoma-15-oct-2026\n\nRooftop Radio wraps u
+ p the year with a K-pop takeover. Expect dance performances by Groobeu\, 
+ K-Pop Up SF\, Homeground\, and Eclipse K-pop\, alongside drag sets from H
+ ello Sassi Fran and The Mojo Carter. DJs Cazuo\, AyumiPlease\, and Peter 
+ Lo will be on the decks while you decorate toploaders with Kloud K-Pop or
+  hit the photo booth. Art-making activities on the 4th floor are inspired
+  by the RM x SFMOMA 
+END:VEVENT
+END:VCALENDAR

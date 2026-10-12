@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:38b4549f2ced@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261013T193000
+DTEND;TZID=America/Los_Angeles:20261013T213000
+SUMMARY:SF Congressional Debate
+LOCATION:Sydney Goldstein Theater\, San Francisco
+URL:https://ma.to/event/sf-congressional-debate-14-oct-2026
+DESCRIPTION:Discourse + Theatre\nhttps://ma.to/event/sf-congressional-deba
+ te-14-oct-2026\n\nMission Local co-hosts a live Congressional debate at t
+ he Sydney Goldstein Theater featuring State Senator Scott Wiener and Supe
+ rvisor Connie Chan\, who are vying for the CA-11 seat. Moderated by Joe E
+ skenazi and Heather Knight. Tickets start at $36\, with virtual options a
+ vailable for $5.75. A recording will be available for free after the deba
+ te. Tickets are available through City Arts & Lectures.
+END:VEVENT
+END:VCALENDAR

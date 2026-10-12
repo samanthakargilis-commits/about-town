@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:aabb5ad4bb0f@bay-events
+DTSTAMP:20261012T083819Z
+DTSTART;TZID=America/Los_Angeles:20261011T120000
+DTEND;TZID=America/Los_Angeles:20261011T160000
+SUMMARY:San Francisco Fleet Week 2026: Blue Angels Air Show
+LOCATION:Marina Green\, Marina Blvd & Fillmore St.\, San Francisco CA\, Sa
+ n Francisco
+URL:https://sf.funcheap.com/san-francisco-fleet-week-2024-blue-angels-air-
+ show-3/
+DESCRIPTION:Big Bay Area traditions + Fairs & festivals · A yearly tradit
+ ion\nhttps://sf.funcheap.com/san-francisco-fleet-week-2024-blue-angels-ai
+ r-show-3/\n\nLook up in the sky when you hear the roaring of jet engines 
+ and head down to SF’s northern waterfront for San Francisco’s annual 
+ Fleet Week air show and festival. San Francisco Fleet Week returns Octobe
+ r 4-12\, 2026\, bringing more than a full week of ...
+END:VEVENT
+END:VCALENDAR

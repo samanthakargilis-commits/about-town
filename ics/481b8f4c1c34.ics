@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:481b8f4c1c34@bay-events
+DTSTAMP:20261012T083816Z
+DTSTART;TZID=America/Los_Angeles:20261014T190000
+DTEND;TZID=America/Los_Angeles:20261014T210000
+SUMMARY:MOUSE - Fall Showcase Screening
+LOCATION:Vogue Theatre\, San Francisco
+URL:https://ma.to/event/mouse-fall-showcase-15-oct-2026
+DESCRIPTION:Gay / queer + Theatre\nhttps://ma.to/event/mouse-fall-showcase
+ -15-oct-2026\n\nA screening of the coming-of-age drama Mouse\, part of th
+ e Frameline Film Society fall showcase\, which presents intimate screenin
+ gs and San Francisco premieres of queer films. Starring Iman Vellani and 
+ Sophie Okonedo. Kelly O'Sullivan and Alex Thompson are also credited. Tic
+ kets are on sale now.
+END:VEVENT
+END:VCALENDAR

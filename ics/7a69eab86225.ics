@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7a69eab86225@bay-events
+DTSTAMP:20261012T083816Z
+DTSTART;TZID=America/Los_Angeles:20261013T190000
+DTEND;TZID=America/Los_Angeles:20261013T203000
+SUMMARY:Manufacturing in China for Artists
+LOCATION:TIAT\, 151 Powell St\, San Francisco\, San Francisco
+URL:https://ma.to/event/manufacturing-in-china-for-artists-14-oct-2026
+DESCRIPTION:Art + Discourse\nhttps://ma.to/event/manufacturing-in-china-fo
+ r-artists-14-oct-2026\n\nArtists Danielle Baskin and Taylor Tabb lead a c
+ onversation on the practicalities and complexities of manufacturing and p
+ roducing hardware in China. This talk explores the logistical and creativ
+ e challenges of working with manufacturing processes in China for artisti
+ c practices.
+END:VEVENT
+END:VCALENDAR

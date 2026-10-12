@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b50e846f3ee7@bay-events
+DTSTAMP:20261012T083819Z
+DTSTART;TZID=America/Los_Angeles:20261011T173000
+DTEND;TZID=America/Los_Angeles:20261011T220000
+SUMMARY:Restaurant Week at Mister Jiu's
+LOCATION:Mister Jiu's\, San Francisco
+URL:https://ma.to/event/restaurant-week-at-mister-jius-2026-10-11
+DESCRIPTION:New in your area\nhttps://ma.to/event/restaurant-week-at-miste
+ r-jius-2026-10-11\n\nMister Jiu's joins the San Francisco StarChefs Risin
+ g Stars Restaurant Week\, which runs September 30 to October 14. The rest
+ aurant's beverage director\, Garrett Marks\, is celebrated as a Rising St
+ ar Bartender\, presented by Campari Academy. Marks built the bar programs
+  at Mister Jiu's and at Moongate 
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e13bd71695cd@bay-events
+DTSTAMP:20261012T083815Z
+DTSTART;TZID=America/Los_Angeles:20261106T170000
+DTEND;TZID=America/Los_Angeles:20261106T210000
+SUMMARY:South First Fridays Art Walk (San Jose)
+LOCATION:SoFA District (San Jose)\, South First Street and William Street\
+ , San Jose\, CA\, San Jose
+URL:https://sf.funcheap.com/south-first-fridays-art-walk-san-jose-156/
+DESCRIPTION:Art · San Jose\nhttps://sf.funcheap.com/south-first-fridays-a
+ rt-walk-san-jose-156/\n\nJoin an eclectic evening of arts and culture in 
+ downtown San Jose’s SoFA district (and beyond) every first Friday of th
+ e month. Please note that South First Fridays is typically canceled in Ju
+ ly and January due to the holidays. South First Fridays hours depend on .
+ ..
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a2ffb545dce9@bay-events
+DTSTAMP:20261012T083814Z
+DTSTART;TZID=America/Los_Angeles:20261017T100000
+DTEND;TZID=America/Los_Angeles:20261017T160000
+SUMMARY:Secondhand Saturdays: Halloween
+LOCATION:37th Ave & Ortega\, 37th Ave & Ortega St\, San Francisco\, CA\, S
+ an Francisco
+URL:https://ma.to/event/secondhand-saturdays-halloween-17-oct-2026
+DESCRIPTION:Camp & Halloween + Craft\nhttps://ma.to/event/secondhand-satur
+ days-halloween-17-oct-2026\n\nSecondhand Saturdays is a curated\, modern 
+ flea market in the Outer Sunset featuring 60+ vendors\, local artists\, m
+ akers\, and food options. The October 17th Halloween market features resi
+ dent DJs\, live music\, local food\, and Halloween crafts for all ages. V
+ isit the Artship to make pumpkin glasses and decorate mini pumpkins. Shop
+ pers can participate in the costume challenge by posting a photo of thei
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b5e67db6701a@bay-events
+DTSTAMP:20261012T083819Z
+DTSTART;TZID=America/Los_Angeles:20261031T130000
+DTEND;TZID=America/Los_Angeles:20261031T153000
+SUMMARY:Intro/Community Painting class: Tending the Creative Fire
+LOCATION:The Center for Creative Exploration\, 300 Chenery Street\, San Fr
+ ancisco\, CA 94131 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/introcommunity-painting-class-tending-the
+ -creative-fire-registration-2002462351799
+DESCRIPTION:Art\nhttps://www.eventbrite.com/e/introcommunity-painting-clas
+ s-tending-the-creative-fire-registration-2002462351799\n\nCome paint with
+  us in to ignite your creativity and connect with community!
+END:VEVENT
+END:VCALENDAR

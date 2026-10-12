@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:55d7b33faa4c@bay-events
+DTSTAMP:20261012T083817Z
+DTSTART;TZID=America/Los_Angeles:20261013T180000
+DTEND;TZID=America/Los_Angeles:20261013T193000
+SUMMARY:Latinx in Architecture Talk
+LOCATION:Center for Architecture + Design\, San Francisco
+URL:https://ma.to/event/latinx-in-architecture-talk-2026-10-13
+DESCRIPTION:Discourse\nhttps://ma.to/event/latinx-in-architecture-talk-202
+ 6-10-13\n\nJoin AIASF Latinx in Architecture (LiA) and Carlos Augusto Gar
+ cia\, AIA of BSHArchitects for a discussion on how community-centered des
+ ign is transforming the built environment to fight climate inequity. Cele
+ brate Hispanic Heritage Month. Limited spots left – RSVP required via l
+ ink in organizer's bio.
+END:VEVENT
+END:VCALENDAR

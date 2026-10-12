@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a30cf9b2b3ac@bay-events
+DTSTAMP:20261012T083819Z
+DTSTART;TZID=America/Los_Angeles:20261011T170000
+DTEND;TZID=America/Los_Angeles:20261011T220000
+SUMMARY:Blue Angels at The Terrace
+LOCATION:Angler San Francisco\, San Francisco
+URL:https://ma.to/event/blue-angels-at-the-terrace-2026-10-11
+DESCRIPTION:Big Bay Area traditions + Fairs & festivals\nhttps://ma.to/eve
+ nt/blue-angels-at-the-terrace-2026-10-11\n\nEnjoy dinner on The Terrace a
+ t Angler\, open on the Embarcadero starting at 5pm. No reservations neede
+ d – walk in and take in the Blue Angels overhead as part of Fleet Week.
+  Drinks and dinner available\, weather permitting.
+END:VEVENT
+END:VCALENDAR

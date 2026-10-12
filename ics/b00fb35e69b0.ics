@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b00fb35e69b0@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261012T160000
+DTEND;TZID=America/Los_Angeles:20261012T180000
+SUMMARY:Happy Hour at Bar TZA
+LOCATION:Bar TZA\, 2481 Mission St.\, San Francisco\, CA 94110\, San Franc
+ isco
+URL:https://ma.to/event/bar-tza-happy-hour-2026-10-12
+DESCRIPTION:New in your area\nhttps://ma.to/event/bar-tza-happy-hour-2026-
+ 10-12\n\nBar TZA's Mission District happy hour serves oysters\, ceviche\,
+  quesabirria\, micheladas and margaritas. Monday's session runs 4-6 pm as
+  part of the Monday-Friday weekday happy hour\; weekend sessions run Satu
+ rday and Sunday\, 3-5 pm. The bar is 21+.
+END:VEVENT
+END:VCALENDAR

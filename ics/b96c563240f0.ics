@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b96c563240f0@bay-events
+DTSTAMP:20261012T083816Z
+DTSTART;TZID=America/Los_Angeles:20261013T190000
+DTEND;TZID=America/Los_Angeles:20261013T213000
+SUMMARY:Bay Area Biosecurity Lightning Talks 02
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/tv0ho16s
+DESCRIPTION:Discourse\nhttps://luma.com/tv0ho16s\n\nWe're hosting a meetup
+  for people working on biosecurity in the Bay Area. Think: pandemic preve
+ ntion technology\, evaluating AI for biorisks\, better KYC for synthetic 
+ DNA. Schedule: 7:00 - 7:30 Meet and mingle 7:30 - 8:30 Lightning talks + 
+ Q&A 8:30 - 9:30 Drinks and discussions Featured lightning talks: Detectin
+ g biological misuse in AI transcripts - Colby Fagan\, Co-lead @ Astral De
+ tection Securing
+END:VEVENT
+END:VCALENDAR

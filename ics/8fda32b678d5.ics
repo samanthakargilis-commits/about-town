@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8fda32b678d5@bay-events
+DTSTAMP:20261012T083814Z
+DTSTART;TZID=America/Los_Angeles:20261012T190000
+DTEND;TZID=America/Los_Angeles:20261012T220000
+SUMMARY:James Gallagher Trio
+LOCATION:Specs' Twelve Adler Museum Cafe\, San Francisco
+URL:https://ma.to/event/james-gallagher-trio-2026-10-12
+DESCRIPTION:Concerts + Museum exhibits\nhttps://ma.to/event/james-gallaghe
+ r-trio-2026-10-12\n\nThe James Gallagher Trio performs at Specs' Twelve A
+ dler Museum Cafe in North Beach\, San Francisco\, from 7 to 10 PM. Free e
+ ntry as part of the venue's October programme of free events\; the venue 
+ is 21+.
+END:VEVENT
+END:VCALENDAR

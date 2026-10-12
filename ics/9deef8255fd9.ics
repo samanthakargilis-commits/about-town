@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9deef8255fd9@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261016T210000
+DTEND;TZID=America/Los_Angeles:20261017T020000
+SUMMARY:PLAYGRND SERIES OAKLAND
+LOCATION:Continental Club\, 1658 12th Street\, Oakland\, California 94607\
+ , United States Oakland\, Oakland
+URL:https://dice.fm/event/6a6b90c5ca1d73000199bb4b
+DESCRIPTION:Oakland\nhttps://dice.fm/event/6a6b90c5ca1d73000199bb4b\n\nThe
+  Premier Hiphop and R&B Experience is coming to Oakland! We're turning up
+  the vibes and bringing that Playgrnd Series energy. So put on your flyes
+ t fit\, or show some skin and get ready to sing your hearts out\, cuz we 
+ are turning it UP another notch!! Lineup: Sounds by: Olea\, DJ KenZo\, LE
+ XAPEEL Hosted by: Shank Dress code: Yellow & Green Please note: this even
+ t will be filmed and photographed. E
+END:VEVENT
+END:VCALENDAR

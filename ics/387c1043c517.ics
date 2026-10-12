@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:387c1043c517@bay-events
+DTSTAMP:20261012T083816Z
+DTSTART;TZID=America/Los_Angeles:20261014T180000
+DTEND;TZID=America/Los_Angeles:20261014T200000
+SUMMARY:To Serve the People: Opening
+LOCATION:African American Art & Culture\, 762 Fulton Street\, San Francisc
+ o\, CA 94102\, San Francisco
+URL:https://ma.to/event/to-serve-the-people-opening-14-oct-2026
+DESCRIPTION:Museum exhibits + Art\nhttps://ma.to/event/to-serve-the-people
+ -opening-14-oct-2026\n\nA pictorial history of the Black Panther movement
+ ’s community programs and their multi-generational impact. The exhibit 
+ presents the visions of cofounders Huey P. Newton and Bobby Seale to serv
+ e the people\, body and soul\, through historic photographs and ephemera.
+  This opening reception is a chance to gather with the community during t
+ he one-week limited run which concludes on October 17th. Ticket
+END:VEVENT
+END:VCALENDAR

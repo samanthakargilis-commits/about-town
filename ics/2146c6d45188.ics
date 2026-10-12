@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2146c6d45188@bay-events
+DTSTAMP:20261012T083814Z
+DTSTART;TZID=America/Los_Angeles:20260724T210000
+DTEND;TZID=America/Los_Angeles:20260724T230000
+SUMMARY:“Bhangra and Beats” Night Market 2026
+LOCATION:
+URL:https://www.bhangraandbeats.com/
+DESCRIPTION:Fairs & festivals + Cultural festivals · Featured on Funcheap
+ \nhttps://www.bhangraandbeats.com/\n\nJuly 24 & November 13\, 2026 Time: 
+ 4-9pm | All Ages\, 21+ to drink Yerba Buena Gardens\, Jessie Square & Yer
+ ba Buena Lanen\, San Francisco FREE San Francisco’s beloved Bhangra & B
+ eats Night Market returns in 2026 for two massive celebrations \, includi
+ ng a special Diwali edition this fall.
+END:VEVENT
+END:VCALENDAR

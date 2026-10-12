@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:95eadd6c60d5@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261013T190000
+DTEND;TZID=America/Los_Angeles:20261013T230000
+SUMMARY:Zolita: Hell’s Belles Tour
+LOCATION:Rickshaw Stop\, 155 Fell St\, San Francisco
+URL:https://ma.to/event/zolita-14-oct-2026
+DESCRIPTION:Gay / queer + Concerts\nhttps://ma.to/event/zolita-14-oct-2026
+ \n\nQueer pop icon Zolita brings her Hell’s Belles Tour to San Francisc
+ o with support from erth2emily. This is an all-ages show co-produced by A
+ pe Concerts. Doors open at 7pm. Tickets $26 advance / $31 at door.
+END:VEVENT
+END:VCALENDAR

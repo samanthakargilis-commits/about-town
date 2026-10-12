@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:279a56c476f7@bay-events
+DTSTAMP:20261012T083817Z
+DTSTART;TZID=America/Los_Angeles:20261014T180000
+DTEND;TZID=America/Los_Angeles:20261014T200000
+SUMMARY:Reimagining Local News: From the Ground Up with Tiny News Collecti
+ ve
+LOCATION:KALW -\, 988 Market St\, 9th Floor\, San Francisco\, CA\, San Fra
+ ncisco
+URL:https://sf.funcheap.com/reimagining-local-news-ground-tiny-news-collec
+ tive/
+DESCRIPTION:Discourse\nhttps://sf.funcheap.com/reimagining-local-news-grou
+ nd-tiny-news-collective/\n\nJoin Tiny News Collective for a conversation 
+ with the community-centered founders rebuilding and reimagining local new
+ s. From the Ground Up: The Founders Reimagining Local News You already kn
+ ow one story about local news: outlets shrinking and closing\, and chains
+  buying up what remains. But across the country\, and ...
+END:VEVENT
+END:VCALENDAR

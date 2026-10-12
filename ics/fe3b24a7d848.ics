@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fe3b24a7d848@bay-events
+DTSTAMP:20261012T083819Z
+DTSTART;TZID=America/Los_Angeles:20261011T180000
+DTEND;TZID=America/Los_Angeles:20261011T214500
+SUMMARY:Ray Lau: The Mustache Tour
+LOCATION:Cobb's Comedy Club\, 915 Columbus Ave\, San Francisco
+URL:https://ma.to/event/ray-lau-the-mustache-tour-12-oct-2026
+DESCRIPTION:Comedy\nhttps://ma.to/event/ray-lau-the-mustache-tour-12-oct-2
+ 026\n\nThe Mustache Tour Part 2 arrives at Cobb's Comedy Club. This perfo
+ rmance is the final scheduled Sunday show of the run\, added due to high 
+ demand following the sell-out of the first eight sets at Punch Line. This
+  show closes out his week in San Francisco. Check venue profile for ticke
+ t availability.
+END:VEVENT
+END:VCALENDAR

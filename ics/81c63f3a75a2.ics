@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:81c63f3a75a2@bay-events
+DTSTAMP:20261012T083814Z
+DTSTART;TZID=America/Los_Angeles:20261012T200000
+DTEND;TZID=America/Los_Angeles:20261012T220000
+SUMMARY:Big Gay Circus
+LOCATION:Great Star Theater\, San Francisco
+URL:https://ma.to/event/big-gay-circus-12-oct-2026
+DESCRIPTION:Gay / queer + Weird & unusual\nhttps://ma.to/event/big-gay-cir
+ cus-12-oct-2026\n\nBig Gay Circus returns to the Great Star Theater for a
+  Halloween run that promises to be bigger and gayer than ever. Catch the 
+ spectacle in Chinatown from October 8th through the 25th. Tickets are ava
+ ilable on the profile.
+END:VEVENT
+END:VCALENDAR

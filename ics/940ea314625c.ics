@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:940ea314625c@bay-events
+DTSTAMP:20261012T083816Z
+DTSTART;TZID=America/Los_Angeles:20261015T190000
+DTEND;TZID=America/Los_Angeles:20261015T220000
+SUMMARY:Bring Your Own Beamer (BYOB)
+LOCATION:Gray Area\, 2665 Mission Street\, San Francisco\, San Francisco
+URL:https://ma.to/event/bring-your-own-beamer-2026-10-15
+DESCRIPTION:Art · Thursday evening\nhttps://ma.to/event/bring-your-own-be
+ amer-2026-10-15\n\nBring Your Own Beamer returns to Gray Area on October 
+ 15 for a one-night-only pop-up show of projector-based art\, 7–10pm. Cr
+ eated by net artist Rafaël Rozendaal\, BYOB invites artists to bring the
+ ir own beamers and take over the space with ephemeral\, experimental work
+ \, from hypnotic loops and generative systems to strange hardware contrap
+ tions and happy accidents. Featured artists: @480productions\,
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bcf4ef8f5d85@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261013T210000
+DTEND;TZID=America/Los_Angeles:20261014T020000
+SUMMARY:Interzone: Electric Resurrection
+LOCATION:F8 Nightclub\, 1192 Folsom St\, San Francisco
+URL:https://ma.to/event/interzone-electric-resurrection-14-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/interzone-electric-resur
+ rection-14-oct-2026\n\nInterzone presents Electric Resurrection\, a mad s
+ cientist-themed night featuring darkwave\, EBM\, and industrial music. Re
+ sident DJ Hex Embrace is joined by guest DJs Malvirus and Byter. Dress up
+  as a mad scientist or Frankenstein's monster. 21+ event. Cover is $5 or 
+ free before 10pm.
+END:VEVENT
+END:VCALENDAR

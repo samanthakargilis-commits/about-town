@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8f5cf2595ad1@bay-events
+DTSTAMP:20261012T083819Z
+DTSTART;TZID=America/Los_Angeles:20261011T190000
+DTEND;TZID=America/Los_Angeles:20261011T230000
+SUMMARY:Cross Stitch & Let Them Eat Horses
+LOCATION:Neck Of The Woods\, 406 Clement St\, San Francisco\, San Francisc
+ o
+URL:https://ma.to/event/cross-stitch-let-them-eat-horses-11-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/cross-stitch-let-them-ea
+ t-horses-11-oct-2026\n\nPinUp Presents a Sunday night lineup at Neck Of T
+ he Woods. Reno power pop outfit Cross Stitch headlines\, supported by alt
+ ernative rock band Let Them Eat Horses and shoegaze acts Luna Ivy and Spl
+ endor. Tickets are available on the profile for twelve dollars or at the 
+ door for fifteen.
+END:VEVENT
+END:VCALENDAR

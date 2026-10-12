@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f4e63c058213@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261024T090000
+DTEND;TZID=America/Los_Angeles:20261024T123000
+SUMMARY:Nine-Hole Shotgun Scramble: The Girls are Taking Over the Course 
+ 💗
+LOCATION:Golden Gate Park Golf Course\, Golden Gate Park Golf Course\, 970
+  47th Ave\, San Francisco\, CA 94121\, USA\, San Francisco
+URL:https://luma.com/v2uw1zdx
+DESCRIPTION:New in your area\nhttps://luma.com/v2uw1zdx\n\nYour Saturday m
+ orning plans just got better because the girls are taking over the golf c
+ ourse!! Join us as we rent out the entire course for a women-only shotgun
+  scramble\, where every fairway\, green\, and tee box is filled with Fair
+ way Social Club members. It's not every day the course belongs to the gir
+ ls. 💗 We'll tee off together in a shotgun start\, with every group beg
+ inning at the same time fro
+END:VEVENT
+END:VCALENDAR

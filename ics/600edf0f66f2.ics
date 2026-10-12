@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:600edf0f66f2@bay-events
+DTSTAMP:20261012T083819Z
+DTSTART;TZID=America/Los_Angeles:20261011T190000
+DTEND;TZID=America/Los_Angeles:20261011T220000
+SUMMARY:Dolly Parton Tribute: 9 to 5
+LOCATION:The Castro Theatre\, San Francisco
+URL:https://ma.to/event/dolly-parton-tribute-9-to-5-11-oct-2026
+DESCRIPTION:⭐ Dolly Parton · Gay / queer + Theatre\nhttps://ma.to/event
+ /dolly-parton-tribute-9-to-5-11-oct-2026\n\nThe tribute series for Dolly 
+ Parton wraps up at The Castro Theatre with a screening of the classic 9 t
+ o 5. Presented by Frameline and Another Planet Entertainment. Tickets ava
+ ilable on the profile.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ade261ef5d87@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261013T180000
+DTEND;TZID=America/Los_Angeles:20261013T200000
+SUMMARY:MCCLA Community Meeting
+LOCATION:Mission Cultural Center\, 2868 Mission Street\, San Francisco\, S
+ an Francisco
+URL:https://ma.to/event/mccla-community-meeting-13-oct-2026
+DESCRIPTION:Discourse\nhttps://ma.to/event/mccla-community-meeting-13-oct-
+ 2026\n\nA community gathering at the Mission Cultural Center for Latino A
+ rts to share updates and discuss the next chapter for the space. Topics i
+ nclude the center’s current status\, board recruitment\, and the relaun
+ ch of their fundraising campaign. It's an opportunity for the community t
+ o reconnect and be part of the conversation about what comes next for thi
+ s long-standing cultural home in the Mission di
+END:VEVENT
+END:VCALENDAR

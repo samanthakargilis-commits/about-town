@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1686b2e3b028@bay-events
+DTSTAMP:20261012T083815Z
+DTSTART;TZID=America/Los_Angeles:20261108T170000
+DTEND;TZID=America/Los_Angeles:20261108T190000
+SUMMARY:Lit Fic at the Bar—November Meeting
+LOCATION:Double Standard\, 2424 Telegraph Ave Oakland\, Oakland
+URL:https://partiful.com/e/YPuiqyWgOqUXVgda5u7q
+DESCRIPTION:Writing + Reading · Your reading tastes · Oakland\nhttps://p
+ artiful.com/e/YPuiqyWgOqUXVgda5u7q\n\nWe’ll be discussing Sunburn by Ch
+ loe Michelle Howarth 📚 An astute and tender portrayal of first love\, 
+ adolescent anxiety\, and the realities of growing up in a small town wher
+ e tradition holds people tightly in its grasp. Can't wait to discuss over
+  drinks at Double Standard! About Lit Fic at the Bar: If you like reading
+  and if you like bars\, this is the book club for you! We meet once a mon
+ th at a 
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fd11adc617b3@bay-events
+DTSTAMP:20261012T083819Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:The Bay’s Huge “626 Night Market”
+LOCATION:Alameda County Fairgrounds\, Pleasanton
+URL:https://sf.funcheap.com/city-guide/october-street-fairs-festivals/
+DESCRIPTION:Fairs & festivals · Featured on Funcheap · Pleasanton\nhttps
+ ://sf.funcheap.com/city-guide/october-street-fairs-festivals/\n\nFri-Sun\
+ , October 9-11\, 2026 – Pleasanton (Alameda County Fairgrounds) – $8 
+ – Inspired by the famous open-air nighttime bazaars of Asia\, come read
+ y to feast and explore 200+ food\, merchandise\, crafts\, arts\, games\, 
+ music\, and entertainment attractions .
+END:VEVENT
+END:VCALENDAR

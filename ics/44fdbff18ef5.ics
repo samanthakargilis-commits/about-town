@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:44fdbff18ef5@bay-events
+DTSTAMP:20261012T083813Z
+DTSTART;TZID=America/Los_Angeles:20261012T100000
+DTEND;TZID=America/Los_Angeles:20261012T180000
+SUMMARY:Fleet Week Aquarium Admission
+LOCATION:Aquarium of the Bay\, PIER 39\, San Francisco
+URL:https://ma.to/event/fleet-week-aquarium-admission-2026-10-12
+DESCRIPTION:Big Bay Area traditions + Animals\nhttps://ma.to/event/fleet-w
+ eek-aquarium-admission-2026-10-12\n\nAquarium of the Bay marks Fleet Week
+  with free admission for active and veteran service members and 20% off a
+ dmission for their friends and family. A valid military ID is required\, 
+ and the offer runs from October 4-12\, 2026 at PIER 39. Note: There will 
+ also be a limited number of Fleet Week Watch Party tickets for sale on Sa
+ turday\, October 10th.
+END:VEVENT
+END:VCALENDAR

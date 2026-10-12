@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:eb385afce264@bay-events
+DTSTAMP:20261012T083814Z
+DTSTART;TZID=America/Los_Angeles:20261013T183000
+DTEND;TZID=America/Los_Angeles:20261013T203000
+SUMMARY:Masterclass: Women Behind the Wines
+LOCATION:San Francisco Wine Society\, 408 Merchant St\, San Francisco\, CA
+  94111\, San Francisco
+URL:https://ma.to/event/masterclass-women-behind-the-wines-2026-10-13
+DESCRIPTION:⭐ Dolly Parton\nhttps://ma.to/event/masterclass-women-behind
+ -the-wines-2026-10-13\n\nMasterclass: Women Behind the Wines is the secon
+ d of two masterclasses in San Francisco Wine Society's five-week fifth-an
+ niversary celebration\, which also features a tribute to Dolly Parton\, t
+ he launch of the Winemaker Bocce Series and the third annual SFWS vs. SFF
+ D Station 13 Rib Cook-Off. The session centres on the women behind the wi
+ nes.
+END:VEVENT
+END:VCALENDAR

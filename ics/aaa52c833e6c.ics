@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:aaa52c833e6c@bay-events
+DTSTAMP:20261012T083816Z
+DTSTART;TZID=America/Los_Angeles:20261115T130000
+DTEND;TZID=America/Los_Angeles:20261115T170000
+SUMMARY:Golden Gate Park Sunday Roller Disco Party
+LOCATION:Skatin' Place\, 6th Ave. and Kennedy Drive\, San Francisco\, CA\,
+  San Francisco
+URL:https://sf.funcheap.com/golden-gate-park-sunday-roller-disco-party-sf-
+ 304/
+DESCRIPTION:Dance nights\nhttps://sf.funcheap.com/golden-gate-park-sunday-
+ roller-disco-party-sf-304/\n\nThere is a place in San Francisco’s Golde
+ n Gate Park that is heaven for Bay Area inline skaters and roller skaters
+  who like to boogie to the funky beat on wheels. The Godfather of Skate b
+ rings his mobile DJ unit and plays groovy tunes for ...
+END:VEVENT
+END:VCALENDAR

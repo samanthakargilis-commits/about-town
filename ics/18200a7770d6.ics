@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:18200a7770d6@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261016T170000
+DTEND;TZID=America/Los_Angeles:20261016T190000
+SUMMARY:Blacklight Ceramic Skull Painting with Emilio Cortez
+LOCATION:255 W Julian St\, 255 West Julian Street\, San Jose\, CA 95110 Sa
+ n Jose\, San Jose
+URL:https://www.eventbrite.com/e/blacklight-ceramic-skull-painting-with-em
+ ilio-cortez-tickets-2000522521715
+DESCRIPTION:Art + Craft · San Jose\nhttps://www.eventbrite.com/e/blacklig
+ ht-ceramic-skull-painting-with-emilio-cortez-tickets-2000522521715\n\nGlo
+ w in the dark and craft a trippy\, neon-painted ceramic skull under black
+ light
+END:VEVENT
+END:VCALENDAR

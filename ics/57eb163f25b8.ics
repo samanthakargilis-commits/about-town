@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:57eb163f25b8@bay-events
+DTSTAMP:20261012T083815Z
+DTSTART;TZID=America/Los_Angeles:20261013T190000
+DTEND;TZID=America/Los_Angeles:20261013T210000
+SUMMARY:Oh\, Mary!
+LOCATION:Curran Theater\, San Francisco
+URL:https://www.broadwaysf.com/events/oh-mary/curran-theater/
+DESCRIPTION:Musical theatre + Comedy\nhttps://www.broadwaysf.com/events/oh
+ -mary/curran-theater/\n\nThe North American Tour cast of Cole Escola’s 
+ Broadway hit\, 'Oh\, Mary!'\, arrives at the Curran Theatre for a three-w
+ eek engagement beginning October 13\, 2026. This 80-minute one-act play d
+ epicts a miserable\, alcoholic Mary Todd Lincoln in the weeks leading up 
+ to the assassination of Abraham Lincoln. Experience this 'diabolical' and
+  unhinged comedy presented in association with American Conservator
+END:VEVENT
+END:VCALENDAR

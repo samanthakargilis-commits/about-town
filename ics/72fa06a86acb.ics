@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:72fa06a86acb@bay-events
+DTSTAMP:20261012T083819Z
+DTSTART;TZID=America/Los_Angeles:20261011T170000
+DTEND;TZID=America/Los_Angeles:20261011T220000
+SUMMARY:Shabu Shabu Weekend at Ozumo
+LOCATION:Ozumo San Francisco\, San Francisco
+URL:https://ma.to/event/shabu-shabu-weekend-12-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/shabu-shabu-weekend-12-o
+ ct-2026\n\nJoin Ozumo San Francisco for their weekly shabu shabu dinner e
+ xperience. Enjoy thinly sliced wagyu beef\, napa cabbage\, assorted mushr
+ ooms\, and green vegetables\, cooked in a simmering pot at your table. Av
+ ailable Friday through Sunday. Book your table via OpenTable.
+END:VEVENT
+END:VCALENDAR

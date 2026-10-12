@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f35344325033@bay-events
+DTSTAMP:20261012T083815Z
+DTSTART;TZID=America/Los_Angeles:20261014T180000
+DTEND;TZID=America/Los_Angeles:20261014T200000
+SUMMARY:Patch Bay Inaugural Session
+LOCATION:Gray Area / Grand Theater\, 2665 Mission Street\, San Francisco\,
+  San Francisco
+URL:https://ma.to/event/patch-bay-inaugural-session-2026-10-14
+DESCRIPTION:Theatre + Museum exhibits\nhttps://ma.to/event/patch-bay-inaug
+ ural-session-2026-10-14\n\nThe inaugural Patch Bay session features artis
+ t talks by Yoon Chung Han and Tori Sommerhof. Han discusses Dreaming Babi
+ es: illi\, her solo exhibition transforming the gallery into a speculativ
+ e nursery of 23 virtual babies drawn from genetic data. Sommerhof shares 
+ Requiem Aternum\, an experimental found-media film currently screening as
+  part of the Machine Vitrine spotlight series. The evening inclu
+END:VEVENT
+END:VCALENDAR

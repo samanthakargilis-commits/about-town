@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6d855519cfef@bay-events
+DTSTAMP:20261012T083819Z
+DTSTART;TZID=America/Los_Angeles:20261011T180000
+DTEND;TZID=America/Los_Angeles:20261011T210000
+SUMMARY:DrMandu Jazz Collaborative Live
+LOCATION:Ocean Ale House\, San Francisco
+URL:https://ma.to/event/drmandu-jazz-collaborative-2026-10-11
+DESCRIPTION:New in your area\nhttps://ma.to/event/drmandu-jazz-collaborati
+ ve-2026-10-11\n\nDrMandu Jazz Collaborative performs live at Ocean Ale Ho
+ use on Sunday\, October 11\, from 6pm to 9pm. The evening pairs the band'
+ s jazz set with pub food\, beer\, wine and cocktails. The group appears a
+ s part of Ocean Ale House's 2nd Sundays series\, and the venue's music pr
+ ogramme presents the performan
+END:VEVENT
+END:VCALENDAR

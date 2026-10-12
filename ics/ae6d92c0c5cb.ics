@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ae6d92c0c5cb@bay-events
+DTSTAMP:20261012T083819Z
+DTSTART;TZID=America/Los_Angeles:20261011T190000
+DTEND;TZID=America/Los_Angeles:20261011T230000
+SUMMARY:HOUSE OF HER
+LOCATION:Blondie's Bar\, 540 Valencia St.\, San Francisco
+URL:https://ma.to/event/house-of-her-12-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/house-of-her-12-oct-2026
+ \n\nHOUSE OF HER takes over Blondie's Bar for a Sunday night party celebr
+ ating women behind the decks. Enjoy house music all night long\, with a l
+ ineup curated by Bay Area female DJs\, plus martinis and cocktails. Join 
+ us in the Mission District for good vibes\, great energy\, and dancing. F
+ ree entry\, 7-11 
+END:VEVENT
+END:VCALENDAR

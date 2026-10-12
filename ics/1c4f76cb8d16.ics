@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1c4f76cb8d16@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261023T210000
+DTEND;TZID=America/Los_Angeles:20261024T020000
+SUMMARY:BOXOWEEN
+LOCATION:Club Waziema\, Club Waziema\, 543 Divisadero St\, San Francisco\,
+  CA 94117\, USA\, San Francisco
+URL:https://luma.com/5q6cxdme
+DESCRIPTION:Gay / queer + Camp & Halloween\nhttps://luma.com/5q6cxdme\n\nb
+ ox is a sapphic party series for lesbians and those who date them <3 IT'S
+  BOXOWEEN!!!!! come celebrate halloween a week early: costumes & dancing 
+ are mandatory. boxoween boxoween boxoween!!! we have some tricks up our s
+ leeve for this one ... costume contest 9:30-10p with prizes for top 3 cos
+ tumes. power hour b2b DJ dance set from 11-1am. DJs: OSHE\, Ali Stack & K
+ atrina Allick see you there xx. —- 
+END:VEVENT
+END:VCALENDAR

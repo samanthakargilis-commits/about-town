@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ec8e531bacf0@bay-events
+DTSTAMP:20261012T083815Z
+DTSTART;TZID=America/Los_Angeles:20261017T140000
+DTEND;TZID=America/Los_Angeles:20261017T163000
+SUMMARY:Joe Bataan at YBG Festival
+LOCATION:Yerba Buena Gardens\, 750 Howard Street\, San Francisco\, CA 9410
+ 3 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/joe-bataan-at-ybg-festival-tickets-198636
+ 2430501
+DESCRIPTION:Fairs & festivals + Theatre\nhttps://www.eventbrite.com/e/joe-
+ bataan-at-ybg-festival-tickets-1986362430501\n\nYBG Festival's Weekend Se
+ ssions bring boogaloo legend Joe Bataan to Yerba Buena Gardens\, with an 
+ opening set from MeloDious Expect a free outdoor afternoon concert on the
+  gardens' main stage. RSVP free at ybgfestival.org\, and note the DJ set 
+ starts at 1 PM ahead of Bataan at 2\, arrive early to claim a good spot o
+ n the lawn This event is not hosted by Partiful. It is an event we recomm
+ end\, hosted b
+END:VEVENT
+END:VCALENDAR

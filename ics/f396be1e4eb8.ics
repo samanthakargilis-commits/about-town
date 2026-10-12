@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f396be1e4eb8@bay-events
+DTSTAMP:20261012T083816Z
+DTSTART;VALUE=DATE:20261112
+DTEND;VALUE=DATE:20261113
+SUMMARY:Every Thursday: “Inner Circle” Dance Party at White Rabbit
+LOCATION:White Rabbit\, 3138 Fillmore St.\, San Francisco\, CA\, San Franc
+ isco
+URL:https://sf.funcheap.com/every-thursday-inner-circle-dance-party-at-whi
+ te-rabbit-sf-96/
+DESCRIPTION:Dance nights\nhttps://sf.funcheap.com/every-thursday-inner-cir
+ cle-dance-party-at-white-rabbit-sf-96/\n\nFree Thursday Party featuring D
+ Js spinning House\, Disco\, Remixes\, Currents\, Classics and more every 
+ Thursday at White Rabbit. Join us at White Rabbit on Thursdays for Inner 
+ Circle\, a weekly get-together dedicated to the DJ and a love for dance m
+ usic. No cover. No worries! ...
+END:VEVENT
+END:VCALENDAR

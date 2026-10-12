@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:23e3fc635c47@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261016T190000
+DTEND;TZID=America/Los_Angeles:20261016T220000
+SUMMARY:Transit Books Presents: Our Party in the Forest
+LOCATION:Donkey & Goat Winery\, Donkey & Goat Winery\, 1340 Fifth St\, Ber
+ keley\, CA 94710\, USA\, Berkeley
+URL:https://luma.com/lqqg6oue
+DESCRIPTION:Berkeley\nhttps://luma.com/lqqg6oue\n\nFor the last decade\, T
+ ransit Books has been publishing award-winning literature from around the
+  world\, fostering cultural conversations\, and hosting events in the Bay
+  Area and beyond. This October\, we're hosting our 2nd Annual Big Fall Fu
+ ndraiser to celebrate the transformative power of international literatur
+ e—and how great our community is at themed dress-up parties. Tickets in
+ clude 2 drinks and
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:57bdf1535628@bay-events
+DTSTAMP:20261012T083819Z
+DTSTART;TZID=America/Los_Angeles:20261011T160000
+DTEND;TZID=America/Los_Angeles:20261011T183000
+SUMMARY:The Loyal Man screening + Q&A
+LOCATION:Roxie Theater\, San Francisco
+URL:https://ma.to/event/the-loyal-man-screening-qa-2026-10-11
+DESCRIPTION:Discourse + Fairs & festivals\nhttps://ma.to/event/the-loyal-m
+ an-screening-qa-2026-10-11\n\nThe Loyal Man screens at the Roxie Theater 
+ as part of the Third i Film Festival\, with director and lead actor Lawre
+ nce Valin present and a Q&A held after the film. Valin's first full-lengt
+ h film as both star and director is a romantic gangster thriller and his 
+ first French-Sri Lankan Tamil film\, fol
+END:VEVENT
+END:VCALENDAR

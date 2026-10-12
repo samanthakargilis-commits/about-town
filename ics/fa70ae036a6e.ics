@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fa70ae036a6e@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261024T170000
+DTEND;TZID=America/Los_Angeles:20261024T190000
+SUMMARY:Suver + Lightweight Champion + Friday Harbor @ The Knockout
+LOCATION:The Knockout\, 3223 Mission St San Francisco\, San Francisco
+URL:https://partiful.com/e/F8WDhW2Nq8anSDlCIBuE
+DESCRIPTION:New in your area\nhttps://partiful.com/e/F8WDhW2Nq8anSDlCIBuE\
+ n\nDoors at 5pm ~~~ $10 at the door Friday Harbor (SF) BC: https://friday
+ harbormusic.bandcamp.com/ YT: https://www.youtube.com/@FridayHarborTheBan
+ d Insta: https://www.instagram.com/fridayharbortheband/ Suver (SF) BC: su
+ ver.bandcamp.com Insta: https://www.instagram.com/suverband?stkn=MW15dnpm
+ ZWJpdXVnOA== Lightweight Champion (SEA) BC: https://lightweightchampion.b
+ andcamp.com/ Insta: https://www.instag
+END:VEVENT
+END:VCALENDAR

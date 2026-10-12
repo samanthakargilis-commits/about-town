@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:53ac7801462c@bay-events
+DTSTAMP:20261012T083817Z
+DTSTART;TZID=America/Los_Angeles:20261015T160000
+DTEND;TZID=America/Los_Angeles:20261015T190000
+SUMMARY:The Crossing’s 5th Anniversary Party w/ DJs + Basketball Court R
+ ibbon Cutting
+LOCATION:The Crossing at East Cut\, 200 Folsom St.\, San Francisco\, CA\, 
+ San Francisco
+URL:https://sf.funcheap.com/crossings-5th-anniversary-party-djs-basketball
+ -court-ribbon-cutting-sf/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/crossings-5th-annive
+ rsary-party-djs-basketball-court-ribbon-cutting-sf/\n\nWe’re celebratin
+ g five years of The Crossing and 10 years of The East Cut! It’s been a 
+ wild ride\, and we’re so excited to celebrate five years of bringing ou
+ r downtown community together. There’s no better feeling! ​Join us on
+  Thursday\, October 15th\, from 4 to ...
+END:VEVENT
+END:VCALENDAR

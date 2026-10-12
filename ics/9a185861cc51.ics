@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9a185861cc51@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261012T080000
+DTEND;TZID=America/Los_Angeles:20261012T150000
+SUMMARY:Tallios Coffee and Tea Pop Up
+LOCATION:Together Wine Lounge\, San Francisco
+URL:https://ma.to/event/tallios-coffee-and-tea-pop-up-2026-10-12
+DESCRIPTION:New in your area\nhttps://ma.to/event/tallios-coffee-and-tea-p
+ op-up-2026-10-12\n\nTallios Coffee and Tea runs a daytime pop-up at Toget
+ her Wine Lounge in Dogpatch\, serving coffee and tea Monday through Satur
+ day from 8:00 AM to 3:00 PM. The lounge offers space to sip\, work and sn
+ ack during the pop-up. Customers with questions can reach the organisers 
+ by direct message or at info@togetherloungesf.com.
+END:VEVENT
+END:VCALENDAR

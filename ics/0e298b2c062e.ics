@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0e298b2c062e@bay-events
+DTSTAMP:20261012T083817Z
+DTSTART;TZID=America/Los_Angeles:20261014T190000
+DTEND;TZID=America/Los_Angeles:20261014T210000
+SUMMARY:L’Objet du Délit (Crescendo)
+LOCATION:Century Redwood City\, Redwood City
+URL:https://ma.to/event/lobjet-du-delit-screening-oct-14-2026
+DESCRIPTION:Theatre · Redwood City\nhttps://ma.to/event/lobjet-du-delit-s
+ creening-oct-14-2026\n\nScreening of the French drama L’Objet du Délit
+  (Crescendo) at Century Redwood City. While rehearsing Mozart’s The Mar
+ riage of Figaro\, an accusation of sexual abuse shakes the company\, expo
+ sing hidden tensions and challenging long-held assumptions. The film expl
+ ores the complexities of the #MeToo movement. Wednesday\, October 14th at
+  7:00 PM.
+END:VEVENT
+END:VCALENDAR

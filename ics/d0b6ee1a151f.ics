@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d0b6ee1a151f@bay-events
+DTSTAMP:20261012T083816Z
+DTSTART;TZID=America/Los_Angeles:20261016T210000
+DTEND;TZID=America/Los_Angeles:20261017T020000
+SUMMARY:Dragons\, Dykes\, & DJs
+LOCATION:The Great Northern\, San Francisco
+URL:https://ma.to/event/dragons-dykes-djs-16-oct-2026
+DESCRIPTION:Gay / queer + Fairs & festivals\nhttps://ma.to/event/dragons-d
+ ykes-djs-16-oct-2026\n\nA queer renaissance themed rave featuring vendors
+ \, gogos\, and DJs. Costumes are the move—pull up in your best ren fair
+ e and fantasy looks. Hosted by Dolly Romano with sets from Lil Bebe Cybor
+ g\, Oshe\, and Arktoi. Tickets available on the profile.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c23f7318f0b3@bay-events
+DTSTAMP:20261012T083815Z
+DTSTART;TZID=America/Los_Angeles:20261016T170000
+DTEND;TZID=America/Los_Angeles:20261016T220000
+SUMMARY:Castro Night Market
+LOCATION:Castro and 18th\, San Francisco\, San Francisco
+URL:https://ma.to/event/castro-night-market-2026-10-16
+DESCRIPTION:Gay / queer + Fairs & festivals\nhttps://ma.to/event/castro-ni
+ ght-market-2026-10-16\n\nThe Castro Night Market takes over the streets a
+ round Castro and 18th for an evening of local food\, shopping and live en
+ tertainment. Vendors range from food and retail to local nonprofits and c
+ ommunity organizations\, and the monthly market prioritizes queer-owned a
+ nd Castro-based businesses. Entertainment runs across two stages\, the Ne
+ on Garden and Rainbow Meadow. The market runs from 5 to 10 PM a
+END:VEVENT
+END:VCALENDAR

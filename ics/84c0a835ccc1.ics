@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:84c0a835ccc1@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261012T190000
+DTEND;TZID=America/Los_Angeles:20261012T220000
+SUMMARY:SWITCH/BOARD: Die Die Derby
+LOCATION:Stookey's Club Moderne\, Bush at Taylor\, SF\, San Francisco
+URL:https://ma.to/event/switchboard-die-die-derby-13-oct-2026
+DESCRIPTION:Musical theatre\nhttps://ma.to/event/switchboard-die-die-derby
+ -13-oct-2026\n\nSWITCH/BOARD returns with 'Die Die Derby\, the Ann Margar
+ et murders.' An improvised horror radio screenplay and musical featuring 
+ improvisational prowess from Sean Owens and Nicole Odell\, with spontaneo
+ us musical accompaniment by Brendan Getzell. This is the second of three 
+ remaining shows in the season. Five themed cocktails designed for the sho
+ w by Stookey's resident mixologists Kelly Blong and M
+END:VEVENT
+END:VCALENDAR

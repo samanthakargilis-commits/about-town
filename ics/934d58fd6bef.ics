@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:934d58fd6bef@bay-events
+DTSTAMP:20261012T083816Z
+DTSTART;TZID=America/Los_Angeles:20261014T180000
+DTEND;TZID=America/Los_Angeles:20261014T190000
+SUMMARY:The Science Scoop: Women’s Health Breakthroughs w/ UCSF Professo
+ r
+LOCATION:Byers Auditorium\, Genentech Hall\, 250 Campus Way\, San Francisc
+ o\, CA 94158\, San Francisco
+URL:https://sf.funcheap.com/science-scoop-womens-health-breakthroughs-ucsf
+ -professor-sf/
+DESCRIPTION:Discourse\nhttps://sf.funcheap.com/science-scoop-womens-health
+ -breakthroughs-ucsf-professor-sf/\n\nThe Science Scoop Please join us for
+  the next session of The Science Scoop\, a quarterly public lecture serie
+ s hosted by UCSF Basic Sciences. Discovery for ALL! We invite you to lear
+ n about how curiosity-driven research is leading to critical medical adva
+ nces. Through engaging lectures geared towards ...
+END:VEVENT
+END:VCALENDAR

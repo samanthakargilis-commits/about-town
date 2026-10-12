@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f8d48ee4f312@bay-events
+DTSTAMP:20261012T083816Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+SUMMARY:Workout Wednesdays at SF’s Union Square
+LOCATION:Union Square Park\, Geary and Powell\, San Francisco\, CA\, San F
+ rancisco
+URL:https://sf.funcheap.com/workout-wednesdays-at-sfs-union-square-sept-23
+ -oct-14-2/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/workout-wednesdays-a
+ t-sfs-union-square-sept-23-oct-14-2/\n\nGet ready to move\, groove\, and 
+ feel amazing at this free outdoor fitness class led by Rae Studios! Break
+  a sweat and meet a new community at this rotating class. Workout Wednesd
+ ays Every Wednesday\, September 23 – October 14\, 2026 | 5:30p – 6:30
+ p Union ...
+END:VEVENT
+END:VCALENDAR

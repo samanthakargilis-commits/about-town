@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:adb912743a41@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261024T103000
+DTEND;TZID=America/Los_Angeles:20261024T123000
+SUMMARY:Whack Donuts 2-Year Anniversary Jam
+LOCATION:Whack Donuts\, 4 Embarcadero Center\, Ste 4507 San Francisco\, Sa
+ n Francisco
+URL:https://partiful.com/e/fkQ0Y5cRuS8tpTERiVWd
+DESCRIPTION:New in your area\nhttps://partiful.com/e/fkQ0Y5cRuS8tpTERiVWd\
+ n\nWhack Donuts is celebrating its 2-year anniversary with a big annivers
+ ary jam at Embarcadero Plaza on Saturday\, October 24\, built around brea
+ kin' battles and neighborhood community Expect DJs\, dance battles\, donu
+ ts\, and a raffle with donated prizes\, all free This event is not hosted
+  by Partiful. It is an event we recommend\, hosted by Whack Donuts. Find 
+ more details at the link above
+END:VEVENT
+END:VCALENDAR

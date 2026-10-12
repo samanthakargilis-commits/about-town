@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e30866087e23@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261016T200000
+DTEND;TZID=America/Los_Angeles:20261016T230000
+SUMMARY:Hana Stretton + Phipps Pt
+LOCATION:The Lab\, 2948 16th Street\, San Francisco\, California 94103\, U
+ nited States San Francisco\, San Francisco
+URL:https://dice.fm/event/6a31de50d26b33000114b314
+DESCRIPTION:Art\nhttps://dice.fm/event/6a31de50d26b33000114b314\n\n**Hana 
+ Stretton** is a British/Australian composer\, singer and producer known f
+ or her remarkably warm production style and uniquely spacious songform. I
+ n 2023\, her debut album\, *Soon*\, earned a beloved status among discern
+ ing listeners around the globe. This stunning work caught the ear of one 
+ Phil Elverum\, who lovingly reissued *Soon* through his own label in 2024
+ \, furthering the album’s reach an
+END:VEVENT
+END:VCALENDAR

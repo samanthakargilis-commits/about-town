@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f1c6ce0d0958@bay-events
+DTSTAMP:20261012T083819Z
+DTSTART;TZID=America/Los_Angeles:20261011T130000
+DTEND;TZID=America/Los_Angeles:20261011T150000
+SUMMARY:“SF Bookish” Fall Picnic & Book Club at Washington Square Park
+  (North Beach)
+LOCATION:Washington Square Park\, Filbert St & Stockton St\, San Francisco
+ \, CA 94133\, San Francisco
+URL:https://sf.funcheap.com/sf-bookish-fall-picnic-book-club-washington-sq
+ uare-park-north-beach/
+DESCRIPTION:Reading\nhttps://sf.funcheap.com/sf-bookish-fall-picnic-book-c
+ lub-washington-square-park-north-beach/\n\nSF Bookish hosts a fall picnic
+  and book-club gathering at Washington Square Park in North Beach. Partic
+ ipants will discuss Trust by Hernan Diaz. Original Event Description: _sf
+  bookish Sunday\, Oct 11 1:00pm Washington Square Park Filbert & Stockton
+  St\, San Francisco\, CA Join us for a fall (sf summer
+END:VEVENT
+END:VCALENDAR

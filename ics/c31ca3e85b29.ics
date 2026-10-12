@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c31ca3e85b29@bay-events
+DTSTAMP:20261012T083819Z
+DTSTART;TZID=America/Los_Angeles:20261011T140000
+DTEND;TZID=America/Los_Angeles:20261011T170000
+SUMMARY:“Pitch” Free Outdoor Queer Dance Theater on a Softball Field (
+ Oakland)
+LOCATION:Mosswood Park\, W. MacArthur Blvd. and Webster St.\, Oakland\, CA
+ \, Oakland
+URL:https://sf.funcheap.com/pitch-free-outdoor-queer-dance-theater-softbal
+ l-field-oakland/
+DESCRIPTION:Gay / queer + Theatre · Oakland\nhttps://sf.funcheap.com/pitc
+ h-free-outdoor-queer-dance-theater-softball-field-oakland/\n\nAs the pilo
+ t performance of The Dyke HERstory Dance Tour\, PITCH a new\, site-specif
+ ic dance theater project exploring Bay Area queer history through movemen
+ t\, storytelling\, and community engagement. Set on the softball field\, 
+ five dancers embody Bay Area dyke ancestors reuniting as an all-star “g
+ host
+END:VEVENT
+END:VCALENDAR

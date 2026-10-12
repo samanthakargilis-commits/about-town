@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8fbe01d0d48e@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261103T200000
+DTEND;TZID=America/Los_Angeles:20261103T220000
+SUMMARY:Welcome to ALTERNA - Goth Night at the Church of 8 Wheels
+LOCATION:Church Of 8 Wheels\, 554 Fillmore Street\, San Francisco\, CA 941
+ 17 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/welcome-to-alterna-goth-night-at-the-chur
+ ch-of-8-wheels-tickets-1903360836499
+DESCRIPTION:Spirituality\nhttps://www.eventbrite.com/e/welcome-to-alterna-
+ goth-night-at-the-church-of-8-wheels-tickets-1903360836499\n\nWelcome to 
+ ALTERNA - New Wave - Dark Wave - Synthpop and Post Punk Skate Party! Join
+  us at the Church Of 8 Wheels for a night of retro vibes
+END:VEVENT
+END:VCALENDAR

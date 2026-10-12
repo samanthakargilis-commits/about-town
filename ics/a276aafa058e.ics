@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a276aafa058e@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261012T160000
+DTEND;TZID=America/Los_Angeles:20261012T200000
+SUMMARY:The Saloon Live with Roger Rocha
+LOCATION:The Saloon\, San Francisco
+URL:https://ma.to/event/the-saloon-with-roger-rocha-2026-10-12
+DESCRIPTION:New in your area\nhttps://ma.to/event/the-saloon-with-roger-ro
+ cha-2026-10-12\n\nLive guitar performance at The Saloon with Roger Rocha\
+ , running 4-8 PM. The date is one of a month-long programme of October pe
+ rformances listed by the guitarist.
+END:VEVENT
+END:VCALENDAR

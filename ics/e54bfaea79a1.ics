@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e54bfaea79a1@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261017T163000
+DTEND;TZID=America/Los_Angeles:20261017T180000
+SUMMARY:Steven Chanan in Recital
+LOCATION:Unitarian Universalist Church of Palo Alto\, 505 East Charleston 
+ Road\, Palo Alto\, CA 94306 Palo Alto\, Palo Alto
+URL:https://www.eventbrite.com/e/steven-chanan-in-recital-tickets-19922629
+ 23033
+DESCRIPTION:Concerts · Palo Alto\nhttps://www.eventbrite.com/e/steven-cha
+ nan-in-recital-tickets-1992262923033\n\nSteven Chanan performs a solo rec
+ ital of jazzy and classical favorites!
+END:VEVENT
+END:VCALENDAR

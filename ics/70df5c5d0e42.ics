@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:70df5c5d0e42@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261013T080000
+DTEND;TZID=America/Los_Angeles:20261013T140000
+SUMMARY:Rudy at Ferry Plaza
+LOCATION:Ferry Plaza Farmers Market\, San Francisco
+URL:https://ma.to/event/rudy-at-ferry-plaza-2026-10-13
+DESCRIPTION:New in your area\nhttps://ma.to/event/rudy-at-ferry-plaza-2026
+ -10-13\n\nMeet Rudy from Green Thumb Farms at the Ferry Plaza Farmers Mar
+ ket on Tuesday. Find fall produce including marigolds\, Kabocha\, Delicat
+ a\, and pumpkin squash alongside leafy greens and other fresh vegetables.
+END:VEVENT
+END:VCALENDAR

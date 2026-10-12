@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3bb7e91464f4@bay-events
+DTSTAMP:20261012T083816Z
+DTSTART;TZID=America/Los_Angeles:20261013T170000
+DTEND;TZID=America/Los_Angeles:20261013T193000
+SUMMARY:Swimming Home: World Premiere
+LOCATION:Marina Theatre\, San Francisco
+URL:https://ma.to/event/swimming-home-marina-theatre-13-oct-2026
+DESCRIPTION:Theatre + Discourse\nhttps://ma.to/event/swimming-home-marina-
+ theatre-13-oct-2026\n\nWorld premiere of Swimming Home\, a documentary tr
+ acking French-born San Franciscan Erwan Le Roy as he trains to swim the E
+ nglish Channel solo—no wetsuit\, 21 miles of freezing water. What began
+  as a promise to his mother after her cancer diagnosis turned into a year
+ -long test of endurance and grief. Doors open at 5:00pm and the 74-minute
+  screening starts promptly at 5:30pm\, followed by a live Q&A w
+END:VEVENT
+END:VCALENDAR

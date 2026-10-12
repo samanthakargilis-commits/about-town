@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d512b4b10d6b@bay-events
+DTSTAMP:20261012T083816Z
+DTSTART;TZID=America/Los_Angeles:20261017T130000
+DTEND;TZID=America/Los_Angeles:20261017T170000
+SUMMARY:Frens & Family Community Portrait Day
+LOCATION:A Loft of One’s Own\, 5757 Horton St Emeryville\, Emeryville
+URL:https://partiful.com/e/fW7VsE7zc3oejSvPDcM2
+DESCRIPTION:Museum exhibits + Art · Emeryville\nhttps://partiful.com/e/fW
+ 7VsE7zc3oejSvPDcM2\n\nWe truly could not have done this without the suppo
+ rt and encouragement of our friends\, family and crew. Join us for our op
+ ening weekend Community Portrait Day for a chill afternoon as we debut Ho
+ ld Me Tender. Hold Me Tender is an archive of the people and places that 
+ hold us. Community Portrait Day extends that outward: guests sit for a po
+ rtrait with photographer Sabrina Sellers inside the exhibi
+END:VEVENT
+END:VCALENDAR

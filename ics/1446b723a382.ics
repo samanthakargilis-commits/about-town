@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1446b723a382@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261017T200000
+DTEND;TZID=America/Los_Angeles:20261017T230000
+SUMMARY:Marisa Anderson + Camellia Boutros
+LOCATION:The Lab\, 2948 16th Street\, San Francisco\, California 94103\, U
+ nited States San Francisco\, San Francisco
+URL:https://dice.fm/event/6a10a0e5f83cb400019dc82d
+DESCRIPTION:Musical theatre\nhttps://dice.fm/event/6a10a0e5f83cb400019dc82
+ d\n\n**Marisa Anderson's** music transcends borders. The topography of he
+ r work interrogates the intersections of artistry and expression with for
+ m and tradition. A singular guitarist and voracious musical collaborator\
+ , Anderson crafts pieces bursting with equal parts reverence and curiosit
+ y\, contouring familiar shapes into work that is wholly her own. *The Ant
+ hology of UnAmerican Folk Music* is a coll
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cb0758b58af7@bay-events
+DTSTAMP:20261012T083815Z
+DTSTART;TZID=America/Los_Angeles:20261015T193000
+DTEND;TZID=America/Los_Angeles:20261015T213000
+SUMMARY:Blood and Black Lace Screening
+LOCATION:Balboa Theater\, San Francisco
+URL:https://ma.to/event/blood-and-black-lace-screening-2026-10-15
+DESCRIPTION:Theatre + Art · Thursday evening\nhttps://ma.to/event/blood-a
+ nd-black-lace-screening-2026-10-15\n\nBalboa Theater's Gallery 3630 serie
+ s presents Mario Bava's Blood and Black Lace on October 15. The film is w
+ idely considered an essential forefather of the slasher genre\, telling a
+  thrilling tale of mysterious murders in a house of high fashion. The scr
+ eening at the Balboa Theater begins at 7:30 pm. Flyer by @wy4ttg.
+END:VEVENT
+END:VCALENDAR

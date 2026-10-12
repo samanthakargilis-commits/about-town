@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:00796e5f2352@bay-events
+DTSTAMP:20261012T083815Z
+DTSTART;TZID=America/Los_Angeles:20261013T180000
+DTEND;TZID=America/Los_Angeles:20261013T220000
+SUMMARY:The Pirate Chess Takeover
+LOCATION:Mother\, 3079 16th St\, San Francisco\, CA 94103\, San Francisco
+URL:https://ma.to/event/the-pirate-chess-takeover-13-oct-2026
+DESCRIPTION:Gay / queer + Camp & Halloween\nhttps://ma.to/event/the-pirate
+ -chess-takeover-13-oct-2026\n\nThee O’ Queer Chess Club plunders Mother
+  for a special Halloween event. Gamescape SF provides the boards for an o
+ pen chess lounge all night. Expect giveaways from Boochcraft and a "Pirat
+ es of the Queeribbean" costume contest—so dress in your best sea clothe
+ s. 21+ only.
+END:VEVENT
+END:VCALENDAR

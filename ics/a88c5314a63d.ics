@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a88c5314a63d@bay-events
+DTSTAMP:20261012T083819Z
+DTSTART;TZID=America/Los_Angeles:20261015T190000
+DTEND;TZID=America/Los_Angeles:20261015T210000
+SUMMARY:TJ's Treat Bag Decorating at The Sunlight Space
+LOCATION:The Sunlight Space\, 2059 Grant Road\, Los Altos\, CA 94024 Los A
+ ltos\, Los Altos
+URL:https://www.eventbrite.com/e/tjs-treat-bag-decorating-at-the-sunlight-
+ space-tickets-1999048517930
+DESCRIPTION:Thursday evening · Los Altos\nhttps://www.eventbrite.com/e/tj
+ s-treat-bag-decorating-at-the-sunlight-space-tickets-1999048517930\n\nPut
+  down your phone and embrace the spookiest szn by decorating your own TJ'
+ s tote bag and enjoying TJ's snacks!
+END:VEVENT
+END:VCALENDAR

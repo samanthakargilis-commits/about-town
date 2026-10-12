@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e4732dc9fa60@bay-events
+DTSTAMP:20261012T083818Z
+DTSTART;TZID=America/Los_Angeles:20261012T190000
+DTEND;TZID=America/Los_Angeles:20261012T210000
+SUMMARY:Salsa & Bachata Mondays
+LOCATION:Neck of the Woods\, San Francisco
+URL:https://ma.to/event/salsa-bachata-mondays-2026-10-12
+DESCRIPTION:New in your area\nhttps://ma.to/event/salsa-bachata-mondays-20
+ 26-10-12\n\nJoin Salsa Crazy Mondays for salsa and bachata dance lessons 
+ at Neck of the Woods in San Francisco. All levels welcome. No experience 
+ necessary. Come after work for a fun evening of Latin dancing.
+END:VEVENT
+END:VCALENDAR

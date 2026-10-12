@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:eba90f1ed880@bay-events
+DTSTAMP:20261012T083819Z
+DTSTART;TZID=America/Los_Angeles:20261011T170000
+DTEND;TZID=America/Los_Angeles:20261011T183000
+SUMMARY:Tomas Moniz at La Peña
+LOCATION:La Peña\, 3105 Shattuck Ave.\, Berkeley\, Berkeley
+URL:https://ma.to/event/tomas-moniz-la-pena-2026-10-11
+DESCRIPTION:Reading · Berkeley\nhttps://ma.to/event/tomas-moniz-la-pena-2
+ 026-10-11\n\nOct 12 · La Peña\, San Francisco. Tomas Moniz discusses hi
+ s novel King of Aloe Vera at La Peña. When Sunday\, 11 October 5 p.m. Ad
+ d to Calendar Add to Calendar About Tomas Moniz discusses his novel King 
+ of Aloe Vera at La Peña. Organisers and Promoters Tomas Moniz Where La P
+ eña 3105 Shattuck Ave.\, Ber
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b31814f737cd@bay-events
+DTSTAMP:20261012T083817Z
+DTSTART;TZID=America/Los_Angeles:20261017T140000
+DTEND;TZID=America/Los_Angeles:20261017T160000
+SUMMARY:The Geography Within Us: A Poetry Gathering on Place\, Memory\, an
+ d Belonging
+LOCATION:The Hidden Cafe\, 1250 Addison St Suite 111\, Berkeley\, CA Berke
+ ley\, Berkeley
+URL:https://www.meetup.com/kaavya-connections-world-poetry-and-literature/
+ events/316448047/
+DESCRIPTION:Writing · Berkeley\nhttps://www.meetup.com/kaavya-connections
+ -world-poetry-and-literature/events/316448047/\n\nPerhaps home is not sim
+ ply the place we come from. Perhaps it is a language in which our name so
+ unds different. A kitchen where someone knows what we like to eat. A city
+  whose streets our feet remember. A landscape whose seasons still live so
+ mewhere in the body. A person beside whom we do not have to explain ourse
+ lves. A song that returns us somewhere. Or a place where we arrived as st
+ rangers and\,
+END:VEVENT
+END:VCALENDAR
