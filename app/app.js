@@ -609,6 +609,15 @@ function evRow(ev, { showDay = false, over = false } = {}) {
   </article>`;
 }
 
+// Google Maps (its app opens if it's on the phone): the street address when there is one,
+// since a pin from a town's middle or a guessed venue is rougher than the listing's own words
+function directions(ev) {
+  if (ev.city === 'Online' || /secret location|\btba\b|\btbd\b/i.test(ev.venue || '')) return '';
+  const where = [ev.venue, ev.address, ev.city].filter(Boolean).join(', ');
+  const dest = ev.address && /\d/.test(ev.address) ? where : ev.lat != null && !ev.near_town ? `${ev.lat},${ev.lng}` : where;
+  return dest ? `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(dest)}` : '';
+}
+
 function byId(id) { return data.events.find((e) => e.id === id); }
 
 function onEventClick(e) {
@@ -647,7 +656,7 @@ function openSheet(ev) {
     ev.ticket_url && ev.ticket_url !== ev.source_url ? `<a href="${esc(ev.ticket_url)}" target="_blank" rel="noopener">Tickets / RSVP ↗</a>` : '',
     ev.parent_event ? `<a href="${esc(ev.parent_event.url)}" target="_blank" rel="noopener">Part of ${esc(ev.parent_event.title)} ↗</a>` : '',
     ...(ev.also_on || []).map((a) => `<a href="${esc(a.url)}" target="_blank" rel="noopener">Also on ${esc(sourceLabel(a.source))} ↗</a>`),
-    ev.lat != null ? `<a href="https://maps.apple.com/?daddr=${ev.lat},${ev.lng}&q=${encodeURIComponent(ev.venue || ev.title)}" target="_blank" rel="noopener">Directions ↗</a>` : '',
+    directions(ev) ? `<a href="${esc(directions(ev))}" target="_blank" rel="noopener">Directions ↗</a>` : '',
     `<a href="${esc(googleCal(ev))}" target="_blank" rel="noopener">Add to Google Calendar ↗</a>`,
     '<a href="#" data-copy>Copy link</a>',
   ].join('');
