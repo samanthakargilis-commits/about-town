@@ -267,3 +267,16 @@ button, a, .d, .ev { touch-action: manipulation; }
 .slots::-webkit-scrollbar { display: none; }
 .slot { flex: none; height: 32px; padding: 0 13px; border-radius: 99px; border: 1.5px solid var(--line); background: var(--paper); color: var(--cocoa); font: inherit; font-size: 13.5px; font-weight: 600; }
 .slot.on { background: var(--cocoa); border-color: var(--cocoa); color: var(--paper); }
+
+/* ---------- what's already over: quiet, paper-toned, still tappable */
+.overhead { display: flex; align-items: center; gap: 10px; margin: 22px 4px 10px; color: var(--sub); font-size: 12.5px; font-weight: 700; letter-spacing: .6px; text-transform: uppercase; }
+.overhead::after { content: ""; flex: 1; height: 1px; background: var(--line); }
+.overhead small { order: 2; font-weight: 600; letter-spacing: 0; }
+.ev.over { background: color-mix(in srgb, var(--paper) 55%, var(--cream)); box-shadow: none; border: 1px dashed var(--line); }
+.ev.over .chip, .ev.over .mi, .ev.over .tags span, .ev.over .meta img.site { filter: grayscale(1); opacity: .55; }
+.ev.over h3 { color: color-mix(in srgb, var(--cocoa) 55%, var(--cream)); }
+.ev.over .meta { opacity: .7; }
+.ev.over .plus:not(.on):not(.maybe) { opacity: .35; }
+.ev.over .plus.on, .ev.over .plus.maybe { filter: saturate(.6); }
+.d.past .dots i { opacity: .35; }
+.d.past.sel .n { color: var(--cream); }

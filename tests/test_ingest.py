@@ -711,3 +711,19 @@ class AddedSources(unittest.TestCase):
         self.assertEqual((e.title, e.venue, e.source_url), ("Noon Piano, Bach", "Presidio Chapel", "https://x.example/e/1"))
         self.assertEqual(e.start, "2026-10-14T12:00-07:00")
         self.assertEqual(e.description, "A long line")
+
+
+class PastEvents(unittest.TestCase):
+    def test_last_month_is_kept_greyed(self):
+        from ingest.__main__ import past_events
+        start = dt.datetime(2026, 10, 12, tzinfo=TZ)
+        prev = {"events": [
+            {"id": "a", "start": "2026-10-10T19:00:00-07:00", "end": "2026-10-10T21:00:00-07:00", "description": "x" * 900},
+            {"id": "b", "start": "2026-08-01T19:00:00-07:00"},                                              # too long ago
+            {"id": "c", "start": "2026-10-01T10:00:00-07:00", "end": "2026-10-31T17:00:00-07:00"},          # still running
+            {"id": "d", "start": "2026-10-11T19:00:00-07:00"},                                              # listed again today
+        ]}
+        got = past_events(prev, start, {"d"})
+        self.assertEqual([e["id"] for e in got], ["a"])
+        self.assertTrue(got[0]["past"])
+        self.assertEqual(len(got[0]["description"]), 300)

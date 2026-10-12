@@ -66,7 +66,8 @@ const blank = () => ({
   homeTipOff: false,
   swipePeeks: 0,         // times the first row has shown how to swipe it away
   swipeTipOff: false,
-  sourceAsks: [],      // { url, note, at } sites asked for on the You tab
+  sourceAsks: [],
+  kept: {},            // id -> a copy of each event you added or marked maybe, so past picks stay findable      // { url, note, at } sites asked for on the You tab
 });
 let S = load();
 
@@ -405,6 +406,26 @@ function scoreOf(ev) {
   return s;
 }
 
+// your picks are copied onto the phone: the shared list only goes back a month
+const KEEP_KEYS = ['id', 'title', 'start', 'end', 'all_day', 'venue', 'address', 'city', 'price', 'source', 'source_url', 'ticket_url', 'image_url', 'tags', 'lat', 'lng', 'near_town', 'ics', 'score', 'why'];
+function keep(ev) {
+  S.kept = S.kept || {};
+  if (S.status[ev.id] === 'added' || S.status[ev.id] === 'maybe') {
+    S.kept[ev.id] = Object.fromEntries(KEEP_KEYS.filter((k) => ev[k] !== undefined).map((k) => [k, ev[k]]));
+    S.kept[ev.id].description = (ev.description || '').slice(0, 300);
+  } else delete S.kept[ev.id];
+}
+function restoreKept() {
+  const have = new Set(data.events.map((e) => e.id));
+  for (const ev of data.events) if (S.status[ev.id] && !S.kept?.[ev.id]) keep(ev);
+  for (const [id, ev] of Object.entries(S.kept || {})) {
+    if (have.has(id) || !S.status[id]) continue;
+    if (new Date(ev.end || ev.start) > new Date()) continue;    // still ahead but gone from the list: let it go
+    data.events.push({ ...ev, past: true, tags: ev.tags || [], also_on: [] });
+  }
+  save();
+}
+
 const isHidden = (ev) => (ev.tags || []).some((t) => S.hiddenTags.includes(t));
 
 function decide(ev, status) {
@@ -421,6 +442,7 @@ function decide(ev, status) {
   }
   if (status) { S.status[ev.id] = status; S.decidedAt[ev.id] = Date.now(); }
   else { delete S.status[ev.id]; delete S.decidedAt[ev.id]; }
+  keep(ev);
   save();
   return prev;
 }
@@ -557,10 +579,10 @@ function inSlot(ev) {
 const slotChips = () => `<div class="slots">${[['any', 'Any time'], ['morning', 'Morning'], ['afternoon', 'Afternoon'], ['evening', 'Evening']]
   .map(([k, label]) => `<button class="slot ${slot === k ? 'on' : ''}" data-slot="${k}">${label}</button>`).join('')}</div>`;
 
-function evRow(ev, { showDay = false } = {}) {
+function evRow(ev, { showDay = false, over = false } = {}) {
   const st = S.status[ev.id];
   const c = colorOf(ev);
-  const t = timeChip(ev);
+  const t = over && !ev.all_day ? esc(clock(ev)).replace(/ (AM|PM)/, '<small>$1</small>') : timeChip(ev);
   const mi = distOf(ev);
   const meta = [
     esc(ev.venue || (ev.city && !/san francisco/i.test(ev.city) ? ev.city : '')),
@@ -573,7 +595,7 @@ function evRow(ev, { showDay = false } = {}) {
   const run = runText(ev);
   if (run) labels.push(`<span>${esc(run)}</span>`);
   const star = starLine(ev);
-  return `<article class="ev" data-id="${esc(ev.id)}">
+  return `<article class="ev${over ? ' over' : ''}" data-id="${esc(ev.id)}">
     <div class="side"><div class="chip" style="background:var(--${c});color:var(--${c}-ink)">${t}</div>${mi != null ? `<div class="mi ${distBand(mi)}">${about(ev)}${esc(shortDist(mi))}</div>` : ''}</div>
     <div class="body" data-open>
       ${showDay ? `<div class="day">${esc(fmt(displayDate(ev), { weekday: 'short', month: 'short', day: 'numeric' }))}</div>` : ''}
@@ -710,6 +732,7 @@ function monthRange(offset) {
   const p = parts(new Date());
   let y = Number(p.year), m = Number(p.month) + offset;
   while (m > 12) { m -= 12; y++; }
+  while (m < 1) { m += 12; y--; }
   const k = `${y}-${String(m).padStart(2, '0')}-01`;
   const start = new Date(`${k}T00:00:00${offsetFor(k)}`);
   const nm = m === 12 ? `${y + 1}-01-01` : `${y}-${String(m + 1).padStart(2, '0')}-01`;
@@ -717,17 +740,20 @@ function monthRange(offset) {
   return { start, end, y, m, label: fmt(atNoon(k), { month: 'long' }) };
 }
 
-function upcomingAll() {
-  const t = today0();
-  const now = new Date();
-  return data.events.filter((ev) => {
-    const s = new Date(ev.start);
-    const e = ev.end ? new Date(ev.end) : null;
-    // timed events that already started today drop off; all-day ones and runs stay
-    const live = ev.all_day ? s >= t || (e && e >= t) : (s >= now || (e ? e >= now : s.getTime() + 3600e3 >= now.getTime()));   // no end given: an hour's grace
-    return live && !isHidden(ev) && !tooEarly(ev);
-  });
+// still on: all-day things and runs through today; a timed one until it ends (no end given: an hour's grace)
+function isLive(ev) {
+  const t = today0(), now = Date.now();
+  const s = new Date(ev.start).getTime();
+  const e = ev.end ? new Date(ev.end).getTime() : null;
+  if (ev.past) return false;
+  return ev.all_day ? s >= t || (e && e >= t) : (s >= now || (e ? e >= now : s + 3600e3 >= now));
 }
+const visible = (ev) => !isHidden(ev) && !tooEarly(ev);
+function upcomingAll() {
+  return data.events.filter((ev) => isLive(ev) && visible(ev));
+}
+// the calendar also shows what's over (greyed, at the bottom) and last month's days
+const calendarEvents = () => data.events.filter((ev) => visible(ev) && inRange(ev));
 
 // Weekend mornings are for sleeping in: nothing that starts before 9 (profile.json),
 // unless it carries on late enough to show up after 9, or it's someone you follow.
@@ -798,10 +824,10 @@ function dayList(list, key) {
 function renderCal(v) {
   const { start, end, y, m } = monthRange(monthOffset);
   const t = today0(), tk = dayKey(t);
-  const days = byDay(upcoming().filter((ev) => S.status[ev.id] !== 'not'));
+  const days = byDay(calendarEvents().filter((ev) => S.status[ev.id] !== 'not'));
   const nDays = Math.round((end - start) / 86400e3);
   const keys = Array.from({ length: nDays }, (_, i) => `${y}-${String(m).padStart(2, '0')}-${String(i + 1).padStart(2, '0')}`);
-  if (!selDay || !keys.includes(selDay) || selDay < tk) selDay = keys.find((k) => k >= tk && days.get(k)?.length) || keys.find((k) => k >= tk) || keys[0];
+  if (!selDay || !keys.includes(selDay)) selDay = keys.find((k) => k >= tk && days.get(k)?.length) || keys.find((k) => k >= tk) || keys[0];
   const lead = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'].indexOf(parts(atNoon(keys[0])).weekday);
   let grid = '<div></div>'.repeat(lead);
   let planned = 0;
@@ -818,17 +844,32 @@ function renderCal(v) {
       if (colors.length === 3) break;
     }
     const cls = ['d', past && 'past', k === tk && 'today', k === selDay && 'sel', picked && 'picked'].filter(Boolean).join(' ');
-    grid += `<button class="${cls}" data-day="${k}" ${past ? 'disabled' : ''}><span class="n">${Number(k.slice(8))}</span><span class="dots">${past ? '' : colors.map((c) => `<i style="background:var(--${c})"></i>`).join('')}</span></button>`;
+    grid += `<button class="${cls}" data-day="${k}"><span class="n">${Number(k.slice(8))}</span><span class="dots">${colors.map((c) => `<i style="background:var(--${c})"></i>`).join('')}</span></button>`;
   }
   $('#subline').innerHTML = planned ? `<b>${planned} plan${planned > 1 ? 's' : ''}</b> on your calendar this month` : 'Tap a day to see what’s good';
   const all = days.get(selDay) || [];
-  const list = all.filter(inSlot);
+  const inSlotAll = all.filter(inSlot);
+  const list = inSlotAll.filter(isLive), over = inSlotAll.filter((ev) => !isLive(ev));
   const sd = atNoon(selDay);
+  const wasDay = selDay < tk;
   v.innerHTML = `<div class="cal"><div class="dow">${['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((x) => `<span>${x}</span>`).join('')}</div><div class="grid">${grid}</div></div>
-    <div class="dayhead"><h2>${esc(fmt(sd, { weekday: 'long' }))}, <em>${esc(fmt(sd, { month: 'short', day: 'numeric' }))}</em></h2><small>${list.length ? `${list.length} option${list.length > 1 ? 's' : ''}` : ''}</small></div>
+    <div class="dayhead"><h2>${esc(fmt(sd, { weekday: 'long' }))}, <em>${esc(fmt(sd, { month: 'short', day: 'numeric' }))}</em></h2><small>${wasDay ? (over.length ? `${over.length} were on` : '') : list.length ? `${list.length} option${list.length > 1 ? 's' : ''}` : ''}</small></div>
     ${nudgeHTML() || tipHTML(list.length)}
     ${all.length ? slotChips() : ''}
-    ${list.length ? dayList(list, selDay) : all.length ? `<p class="hint">Nothing in the ${slot} that day. <a href="#" data-slot="any">Show any time</a></p>` : `<p class="hint">Nothing near ${S.where === 'near' ? 'you' : 'home'} yet. Lots of events are posted 1 to 2 weeks out, so check back.</p>`}`;
+    ${list.length ? dayList(list, selDay) : over.length ? '' : all.length ? `<p class="hint">Nothing in the ${slot} that day. <a href="#" data-slot="any">Show any time</a></p>` : wasDay ? '<p class="hint">Nothing saved for this day. The app keeps the last month.</p>' : `<p class="hint">Nothing near ${S.where === 'near' ? 'you' : 'home'} yet. Lots of events are posted 1 to 2 weeks out, so check back.</p>`}
+    ${over.length ? overList(over, selDay, wasDay) : ''}`;
+}
+
+// what's already over: greyed at the bottom, your picks first, still tappable
+function overList(list, key, wasDay) {
+  const mine = (ev) => (S.status[ev.id] === 'added' ? 2 : S.status[ev.id] === 'maybe' ? 1 : 0);
+  const sorted = [...list].sort((a, b) => (mine(b) - mine(a)) || personalScore(b) - personalScore(a));
+  const k = `over:${key}`, all = expanded.has(k);
+  const cut = Math.max(DAY_SHOW, sorted.filter(mine).length);
+  const shown = all ? sorted : sorted.slice(0, cut);
+  return `${wasDay ? '' : `<div class="overhead"><span>Already over</span><small>${list.length}</small></div>`}
+    <div class="overlist">${shown.map((ev) => evRow(ev, { over: true })).join('')}</div>
+    ${sorted.length > cut ? `<button class="more-btn" data-more="${esc(k)}">${all ? 'Show fewer' : `Show ${sorted.length - cut} more`}</button>` : ''}`;
 }
 
 function renderTonight(v) {
@@ -1163,7 +1204,7 @@ function renderHeader() {
   $('#where').hidden = !['cal', 'tonight'].includes(tab);
   document.querySelectorAll('#where [data-where]').forEach((b) => b.classList.toggle('on', b.dataset.where === S.where));
   $('#arrows').hidden = tab !== 'cal';
-  $('[data-month="-1"]').disabled = monthOffset <= 0;
+  $('[data-month="-1"]').disabled = monthOffset <= -1;
   $('[data-month="1"]').disabled = monthOffset >= 1;
   $('#title').innerHTML = {
     cal: `${esc(label)} <em>${y}</em>`,
@@ -1221,7 +1262,7 @@ function bind() {
   $('#arrows').onclick = (e) => {
     const b = e.target.closest('[data-month]');
     if (!b) return;
-    monthOffset = Math.max(0, Math.min(1, monthOffset + Number(b.dataset.month)));
+    monthOffset = Math.max(-1, Math.min(1, monthOffset + Number(b.dataset.month)));
     selDay = null; render();
   };
   $('#where').onclick = (e) => {
@@ -1323,6 +1364,7 @@ async function start() {
     return;
   }
   buildFollowIndex();
+  restoreKept();
   render();
   // as the day goes on, what's over drops off (the app can sit open for hours)
   const refresh = () => { if (tab !== 'me' && $('#sheetWrap').hidden && document.visibilityState === 'visible') render(); };
