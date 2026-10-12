@@ -22,7 +22,8 @@ import requests
 from . import added, ai, geocode, icons, place, weather
 from .area import keep
 from .core import (CACHE_DIR, ROOT, BudgetExceeded, Fetcher, clean, html_to_text, iso, jsonld_events,
-                   now, og, short_hash, to_local)
+                   now, offer_price, og, short_hash, to_local)
+from .heuristics import price_in_text
 from .ics import write_ics
 from .score import Scorer, best_sub_event, norm
 
@@ -153,7 +154,7 @@ def enrich(events, fetcher, limit):
         if done >= limit:
             break
         short = len(ev.get("description") or "") < 80
-        need = short or not ev.get("image_url") or not (ev.get("venue") or ev.get("address")) or ev.get("_festival")
+        need = short or not ev.get("image_url") or not (ev.get("venue") or ev.get("address")) or ev.get("_festival") or not ev.get("price")
         host = urlparse(ev["source_url"]).netloc
         if not need or shared[ev["source_url"]] > 1 or host.endswith("secretsanfrancisco.com") or "substack" in host:
             continue
@@ -166,6 +167,8 @@ def enrich(events, fetcher, limit):
         done += 1
         desc = og(soup, "description") or ""
         for node in jsonld_events(soup):
+            if not ev.get("price") and node.get("offers"):
+                ev["price"] = offer_price(node["offers"])
             if node.get("description"):
                 desc = html_to_text(node["description"]) if len(html_to_text(node["description"])) > len(desc) else desc
             loc = node.get("location")
@@ -189,22 +192,42 @@ def enrich(events, fetcher, limit):
     print(f"detail pages read: {done}")
 
 
-def previous_first_seen(src):
+def load_previous(src) -> dict:
     if not src:
         return {}
     try:
         if src.startswith("http"):
-            data = requests.get(src, timeout=30).json()
-        else:
-            data = json.loads(open(src).read())
+            return requests.get(src, timeout=30).json()
+        return json.loads(open(src).read())
     except Exception as exc:
         print(f"(no previous events.json: {exc})", file=sys.stderr)
         return {}
+
+
+def previous_first_seen(data: dict) -> dict:
     seen = {}
     for e in data.get("events", []):
         seen[e["id"]] = e["first_seen"]
         seen[e["dedupe_key"]] = e["first_seen"]
     return seen
+
+
+PAST_DAYS = 31
+
+
+def past_events(data: dict, start: dt.datetime, current_ids: set) -> list[dict]:
+    """Last month's events, carried from run to run, so the calendar can show
+    what was on (greyed) and what you starred. Sources only list what's ahead."""
+    cutoff = start - dt.timedelta(days=PAST_DAYS)
+    out = []
+    for e in data.get("events", []):
+        s = to_local(e.get("start"))
+        end = to_local(e.get("end")) if e.get("end") else s
+        if not s or e.get("id") in current_ids or not (cutoff <= s and end < start):
+            continue
+        e = dict(e, past=True, description=(e.get("description") or "")[:300])
+        out.append(e)
+    return out
 
 
 def main(argv=None):
@@ -305,12 +328,21 @@ def main(argv=None):
     events.sort(key=lambda e: -e["_pre"])
     enrich(events, Fetcher(delay=1.0, max_requests=args.enrich), args.enrich)
 
+    # a price the listing only gave in words ("Tickets $25", "free and open to the public")
+    worded = 0
+    for ev in events:
+        if not ev.get("price"):
+            ev["price"] = price_in_text(f"{ev.get('title', '')}. {ev.get('description', '')}")
+            worded += bool(ev["price"])
+    print(f"prices read from descriptions: {worded}; still unpriced: {sum(1 for e in events if not e.get('price'))}")
+
     if not args.no_geocode:
         print("map spots:", geocode.fill(events, max_lookups=args.geocode), flush=True)
 
     ai_tags = ai.tag_events(events, profile) if ai.enabled() else {}
     shutil.rmtree(OUT / "ics", ignore_errors=True)
-    seen = previous_first_seen(args.previous)
+    previous = load_previous(args.previous)
+    seen = previous_first_seen(previous)
     stamp = iso(now())
     out = []
     for ev in events:
@@ -340,6 +372,11 @@ def main(argv=None):
         ev["ics"] = write_ics(ev, OUT / "ics")
         out.append(ev)
 
+    past = past_events(previous, start, {e["id"] for e in out})
+    for ev in past:
+        ev["ics"] = write_ics(ev, OUT / "ics")
+    print(f"past events kept for the calendar: {len(past)}")
+    out += past
     out.sort(key=lambda e: e["start"])
     try:
         site_icons, note = icons.write(out, Fetcher(delay=0.5, max_requests=100), OUT)

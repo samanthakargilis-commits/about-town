@@ -20,6 +20,10 @@ def fetch(f, start, end):
             start_dt = to_local(d.get("dateTime"))
             if not start_dt:
                 continue
+            # Meetup lists a fee when there is one; no fee means it's free to RSVP
+            fee = d.get("feeSettings")
+            price = "" if "feeSettings" not in d else "free" if not fee else \
+                f"${float(fee.get('amount') or 0):.2f}".replace(".00", "") if isinstance(fee, dict) and fee.get("amount") else ""
             venue = d.get("venue") or {}
             if isinstance(venue, dict) and venue.get("__ref"):
                 venue = {}
@@ -35,7 +39,7 @@ def fetch(f, start, end):
                 recurring=bool(d.get("series")), image_url=(d.get("featuredEventPhoto") or {}).get("highResUrl")
                 if isinstance(d.get("featuredEventPhoto"), dict) else None,
                 people=[clean(group.get("name"))] if isinstance(group, dict) and group.get("name") else [],
-                lat=geo_of(venue)[0], lng=geo_of(venue)[1],
+                lat=geo_of(venue)[0], lng=geo_of(venue)[1], price=price,
             ))
         for e in found:
             if e.source_url not in seen:

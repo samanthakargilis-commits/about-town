@@ -289,6 +289,27 @@ def money(v) -> Optional[float]:
         return None
 
 
+def offer_price(offers) -> str:
+    """The cheapest way in, from schema.org offers: "free", "$32", "free–$40"
+    (a free RSVP with paid tiers). Every offer counts, not just the first."""
+    items = offers if isinstance(offers, list) else [offers] if isinstance(offers, dict) else []
+    lows, highs = [], []
+    for o in items:
+        if not isinstance(o, dict):
+            continue
+        p = money(o.get("price")) if o.get("price") not in (None, "") else money(o.get("lowPrice"))
+        if p is None:
+            continue
+        lows.append(p)
+        highs.append(money(o.get("highPrice")) or p)
+    if not lows:
+        return ""
+    lo, hi = min(lows), max(highs)
+    if lo == 0:
+        return "free" if not hi else f"free–${hi:g}"
+    return f"${lo:.2f}".replace(".00", "")
+
+
 def event_from_jsonld(node: dict, source: str, fallback_url: str = "") -> Optional[Event]:
     title = clean(node.get("name"))
     start = to_local(node.get("startDate"))
@@ -298,19 +319,7 @@ def event_from_jsonld(node: dict, source: str, fallback_url: str = "") -> Option
     if isinstance(loc, list):
         loc = loc[0] if loc else {}
     venue, address, city = place_of(loc)
-    offers = node.get("offers") or {}
-    if isinstance(offers, list):
-        offers = offers[0] if offers else {}
-    price = ""
-    if isinstance(offers, dict):
-        p = money(offers.get("price")) if offers.get("price") not in (None, "") else money(offers.get("lowPrice"))
-        high = money(offers.get("highPrice"))
-        if p == 0 and not high:
-            price = "free"
-        elif p == 0:
-            price = f"free–${high:g}"             # free RSVP with paid tiers
-        elif p:
-            price = f"${p:.2f}".replace(".00", "")
+    price = offer_price(node.get("offers"))
     image = node.get("image")
     if isinstance(image, list):
         image = image[0] if image else None

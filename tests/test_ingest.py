@@ -711,3 +711,35 @@ class AddedSources(unittest.TestCase):
         self.assertEqual((e.title, e.venue, e.source_url), ("Noon Piano, Bach", "Presidio Chapel", "https://x.example/e/1"))
         self.assertEqual(e.start, "2026-10-14T12:00-07:00")
         self.assertEqual(e.description, "A long line")
+
+
+class PastEvents(unittest.TestCase):
+    def test_last_month_is_kept_greyed(self):
+        from ingest.__main__ import past_events
+        start = dt.datetime(2026, 10, 12, tzinfo=TZ)
+        prev = {"events": [
+            {"id": "a", "start": "2026-10-10T19:00:00-07:00", "end": "2026-10-10T21:00:00-07:00", "description": "x" * 900},
+            {"id": "b", "start": "2026-08-01T19:00:00-07:00"},                                              # too long ago
+            {"id": "c", "start": "2026-10-01T10:00:00-07:00", "end": "2026-10-31T17:00:00-07:00"},          # still running
+            {"id": "d", "start": "2026-10-11T19:00:00-07:00"},                                              # listed again today
+        ]}
+        got = past_events(prev, start, {"d"})
+        self.assertEqual([e["id"] for e in got], ["a"])
+        self.assertTrue(got[0]["past"])
+        self.assertEqual(len(got[0]["description"]), 300)
+
+
+class Prices(unittest.TestCase):
+    def test_cheapest_offer_wins(self):
+        from ingest.core import offer_price
+        self.assertEqual(offer_price([{"price": "60"}, {"price": "32.00"}]), "$32")
+        self.assertEqual(offer_price({"@type": "AggregateOffer", "lowPrice": 0, "highPrice": 40}), "free–$40")
+        self.assertEqual(offer_price({"price": 0}), "free")
+        self.assertEqual(offer_price({}), "")
+
+    def test_prices_in_words(self):
+        from ingest.heuristics import price_in_text
+        self.assertEqual(price_in_text("7:00 PM Doors 8:00 PM Music $22 ADV / $27 DOOR"), "$22")
+        self.assertEqual(price_in_text("Tai Chi. Free and open to all ages."), "free")
+        self.assertEqual(price_in_text("$5 beers and $10 off with code"), "")
+        self.assertEqual(price_in_text("RSVP for $30 entry; $35 at the door"), "$30")

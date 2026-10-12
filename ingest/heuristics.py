@@ -257,3 +257,22 @@ def listing_page(f, url, source, is_event_url, city="", ref=None, default_hour=N
         if city and not e.city:
             e.city = city
     return events, soup
+
+
+# a price the listing only gives in words: "Tickets are $25", "$15 advance / $20 door",
+# "Free and open to the public". Only amounts tied to getting in count, so "$5 beers" don't.
+_AMT = r"\$\s?(\d{1,3}(?:\.\d\d)?)"
+_IN = r"(?:tickets?|tix|admission|entry|entrance|cover(?: charge)?|cost|prices?|general admission|ga|advance|adv|presale|at the door|door|per person|pp|suggested donation|donation|registration|fee)"
+_BEFORE = re.compile(_IN + r"\W{0,3}(?:are|is|:|from|start(?:s|ing)? at|range from|just|only|\s)*" + _AMT, re.I)
+_AFTER = re.compile(_AMT + r"(?:\s?(?:-|–|to|/)\s?\$?\d{1,3}(?:\.\d\d)?)?\s*(?:\w+\s){0,2}?" + _IN + r"\b", re.I)
+_FREE = re.compile(r"\b(free (?:admission|entry|event|show|concert|screening|and open to (?:the )?(?:public|all)|to attend|of charge|for all|community event)|"
+                   r"admission is free|(?:this|the) event is free|it'?s free|no cover|free with rsvp|no charge|free!)", re.I)
+
+
+def price_in_text(text: str) -> str:
+    text = re.sub(r"\$\s?\d+(?:\.\d\d)?\s*off\b", "", text or "", flags=re.I)
+    amounts = [float(m.group(1)) for rx in (_BEFORE, _AFTER) for m in rx.finditer(text)]
+    amounts = [a for a in amounts if 0 < a <= 500]
+    if amounts:
+        return f"${min(amounts):.2f}".replace(".00", "")
+    return "free" if _FREE.search(text) else ""
