@@ -13,7 +13,7 @@ from .core import CACHE_DIR, BudgetExceeded, geo_of, jsonld_events, place_of
 
 CACHE = CACHE_DIR / "places.json"
 RETRY_DAYS = 7          # a page with no location is tried again after this
-SKIP_HOSTS = ("secretsanfrancisco.com", "substack.com")
+SKIP_HOSTS = ("secretsanfrancisco.com", "substack.com", "ma.to")   # Mato: its adapter already read the page
 STREET = re.compile(r"^\d+\s+\w")
 
 

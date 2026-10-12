@@ -639,3 +639,75 @@ class MatoSource(unittest.TestCase):
         node.update(name="9 to 5 + Peaches Christ", description="A drag tribute.")
         soup = BeautifulSoup(f'<script type="application/ld+json">{json.dumps(node)}</script>', "lxml")
         self.assertEqual(mato.from_page(soup, "https://ma.to/event/x").price, "")    # $0 means unknown
+
+    def test_listing_city_is_not_the_address(self):
+        from ingest.adapters import mato
+        node = {"@type": "Event", "name": "Petaluma Oktoberfest", "startDate": "2026-10-11T12:00:00-07:00",
+                "location": {"@type": "Place", "name": "Brewsters Beer Garden",
+                             "address": {"streetAddress": "229 Water St., Petaluma", "addressLocality": "San Francisco"}}}
+        soup = BeautifulSoup(f'<script type="application/ld+json">{json.dumps(node)}</script>', "lxml")
+        e = mato.from_page(soup, "https://ma.to/event/x")
+        self.assertEqual((e.address, e.city), ("229 Water St., Petaluma", "Petaluma"))
+        node["location"]["address"] = {"streetAddress": "37th Ave and Pacheco, San Francisco, CA", "addressLocality": "San Francisco"}
+        soup = BeautifulSoup(f'<script type="application/ld+json">{json.dumps(node)}</script>', "lxml")
+        self.assertEqual(mato.from_page(soup, "https://ma.to/event/x").city, "San Francisco")
+
+
+class MapSpots(unittest.TestCase):
+    def test_queries_find_the_street_and_town(self):
+        from ingest import geocode
+        q = lambda **kw: geocode.queries({"venue": "", "address": "", "city": "", "title": "", **kw})
+        self.assertEqual(q(venue="San Francisco State University Observatory",
+                           address="Thornton Hall, 10th Floor San Francisco State University 1600 Holloway Avenue San Francisco, CA 94132")[0],
+                         "1600 Holloway Avenue, San Francisco")
+        self.assertEqual(q(venue="The Gardens at Lake Merritt", address="666 Bellevue Ave. Oakland, CA 94610")[0], "666 Bellevue Ave, Oakland")
+        self.assertEqual(q(venue="Secret Location", address="San Francisco, CA"), [])
+        self.assertEqual(q(venue="Brewsters Beer Garden", address="229 Water St., Petaluma", city="Petaluma")[0], "229 Water St, Petaluma")
+
+    def test_town_middle_only_outside_sf(self):
+        from ingest import geocode
+        self.assertEqual(geocode.town_query({"city": "Petaluma", "venue": "Brewsters"}), "Petaluma, California")
+        self.assertEqual(geocode.town_query({"city": "San Francisco", "venue": "Bar Shiru"}), "")
+        self.assertEqual(geocode.town_query({"city": "", "address": "4235 Spring Hill Rd."}), "")
+
+    def test_photon_guesses_need_a_shared_word(self):
+        from ingest.geocode import photon_ok
+        self.assertFalse(photon_ok("Roxie Theater, San Francisco", {"name": "Great Star Theater", "street": "Jackson Street"}))
+        self.assertFalse(photon_ok("Bar Shiru, San Francisco", {"name": "Tonga Room & Hurricane Bar"}))
+        self.assertTrue(photon_ok("Black Bird Bookstore, San Francisco", {"name": "Black Bird Book Store"}))
+
+    def test_refused_lookups_are_not_remembered_as_misses(self):
+        from ingest import geocode
+        self.assertFalse(geocode.fresh({"miss": 9e12}))           # an old-style miss gets asked again
+        self.assertTrue(geocode.fresh(geocode.miss()))
+        self.assertTrue(geocode.fresh([37.7, -122.4]))
+
+
+class AddedSources(unittest.TestCase):
+    ISSUES = [
+        {"number": 30, "title": "Add source: bandcamp.com", "author_association": "OWNER", "state": "open",
+         "body": "Link: https://www.example-venue.org/calendar/\n\nNote: lunchtime concerts\n\n(Sent from About Town)"},
+        {"number": 31, "title": "Add source: spam", "author_association": "NONE", "state": "open", "body": "https://spam.example/"},
+        {"number": 32, "title": "Add source: instagram", "author_association": "OWNER", "state": "open", "body": "https://instagram.com/x"},
+        {"number": 33, "title": "Fix the logo", "author_association": "OWNER", "state": "open", "body": "https://x.example/"},
+    ]
+
+    def test_only_the_repo_owners_requests_count(self):
+        from ingest import added
+        reqs = added.requests_from(self.ISSUES)
+        self.assertEqual([(r["host"], r["issue"]) for r in reqs], [("example-venue.org", 30)])
+        self.assertEqual(reqs[0]["url"], "https://www.example-venue.org/calendar/")
+
+    def test_ical_feed(self):
+        from ingest import added
+        text = ("BEGIN:VCALENDAR\r\nBEGIN:VEVENT\r\nUID:abc@x\r\nSUMMARY:Noon Piano\\, Bach\r\n"
+                "DTSTART;TZID=America/Los_Angeles:20261014T120000\r\nDTEND;TZID=America/Los_Angeles:20261014T130000\r\n"
+                "LOCATION:Presidio Chapel\\, 130 Fisher Loop\\, San Francisco\r\nURL:https://x.example/e/1\r\n"
+                "DESCRIPTION:A long\r\n  line\r\nEND:VEVENT\r\nBEGIN:VEVENT\r\nUID:old\r\nSUMMARY:Gone\r\nDTSTART:20200101T100000Z\r\nEND:VEVENT\r\nEND:VCALENDAR\r\n")
+        start = dt.datetime(2026, 10, 11, tzinfo=TZ)
+        evs = added.ics_events(text, "added-x", "https://x.example/", start, start + dt.timedelta(days=60))
+        self.assertEqual(len(evs), 1)
+        e = evs[0]
+        self.assertEqual((e.title, e.venue, e.source_url), ("Noon Piano, Bach", "Presidio Chapel", "https://x.example/e/1"))
+        self.assertEqual(e.start, "2026-10-14T12:00-07:00")
+        self.assertEqual(e.description, "A long line")

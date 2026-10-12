@@ -12,6 +12,7 @@ import time
 
 import requests
 
+from . import area
 from .core import CACHE_DIR, clean
 
 URL = "https://nominatim.openstreetmap.org/search"
@@ -51,7 +52,7 @@ def corner_of(addr: str):
     if m:
         return tuple(SUFFIX.sub("", clean(x)) for x in m.groups())
     first = text.split(",")[0].strip(" .")
-    m = re.match(r"^([A-Za-z][A-Za-z0-9 .'-]{1,30}?)\s+(?:&|and|at|@|/)\s+([A-Za-z0-9][A-Za-z0-9 .'-]{1,30})$", first, re.I)
+    m = re.match(r"^([A-Za-z0-9][A-Za-z0-9 .'-]{1,30}?)\s+(?:&|and|at|@|/)\s+([A-Za-z0-9][A-Za-z0-9 .'-]{1,30})$", first, re.I)
     if not m or re.match(r"^\d+\s", first):
         return None
     return tuple(SUFFIX.sub("", clean(x)) for x in m.groups())
@@ -70,19 +71,50 @@ def corner_spot(session, a: str, b: str, city: str):
     return [round(nodes[0]["lat"], 5), round(nodes[0]["lon"], 5)] if nodes else None
 
 
-def queries(ev: dict) -> list[str]:
+TOWNS = sorted(area.IN_AREA | set(area.OUT_OF_AREA), key=len, reverse=True)
+TOWN_RE = re.compile(r"\b(" + "|".join(re.escape(t) for t in TOWNS if len(t) > 3 and t != "pacheco") + r")\b", re.I)
+STREET_RE = re.compile(r"\b(\d{1,5}[A-Za-z]?\s+(?:[NSEW]\.?\s+)?[A-Za-z0-9.'-]+(?:\s+[A-Za-z0-9.'-]+){0,3}?\s+"
+                       r"(?:St|Street|Ave|Avenue|Blvd|Boulevard|Rd|Road|Dr|Drive|Way|Pl|Place|Ln|Lane|Ter|Terrace|"
+                       r"Ct|Court|Hwy|Highway|Loop|Sq|Square|Plaza|Pkwy|Parkway|Alameda|Circle|Cir)\b\.?(?:\s+[NSEW]\b)?)", re.I)
+NOT_A_PLACE = re.compile(r"secret location|multiple venues|all over|online|tba\b|^every |^first |^sf$", re.I)
+
+
+def town_in(*texts) -> str:
+    """The last Bay Area town a text names ("229 Water St., Petaluma" gives Petaluma;
+    "37th Ave and Pacheco, San Francisco" gives San Francisco)."""
+    for text in texts:
+        hits = TOWN_RE.findall(html.unescape(text or ""))
+        if hits:
+            return hits[-1].title()
+    return ""
+
+
+def town_of_event(ev: dict) -> str:
     city = ev.get("city") or ""
-    if not city or city.lower() in ("sf", "online"):
+    if city.lower() in ("sf", "san franciaco"):
         city = "San Francisco"
-    venue = re.sub(r"\(.*?\)", "", ev.get("venue") or "").strip(" ,-")
-    addr = html.unescape(ev.get("address") or "")
+    return town_in(ev.get("address"), ev.get("venue")) or (city if TOWN_RE.fullmatch(city) else "") or \
+        town_in(ev.get("title")) or city
+
+
+def queries(ev: dict) -> list[str]:
+    town = town_of_event(ev)
+    city = town if town and town.lower() != "online" else "San Francisco"
+    venue = re.sub(r"\(.*?\)", "", html.unescape(ev.get("venue") or "")).strip(" ,-")
+    addr = re.sub(r"\(.*?\)", "", html.unescape(ev.get("address") or ""))
     out = []
+    # a street number anywhere: "Thornton Hall, 10th Floor ... 1600 Holloway Avenue San Francisco, CA"
+    for text in (addr, venue):
+        m = STREET_RE.search(text)
+        if m:
+            out.append(f"{clean(m.group(1)).rstrip('.')}, {city}")
+            break
     street = street_of(addr)
     if street and re.search(r"\b(CA|California)\s+9\d{4}\b", street, re.I):
         out.append(street)                             # "628 2nd Avenue Crockett California 94525"
     elif street:                                       # "3201 Ulloa St", "1191 Pine Street"
         out.append(f"{street}, {town_of(addr) or city}")
-    if venue and len(venue) > 3:
+    if venue and len(venue) > 3 and not NOT_A_PLACE.search(venue):
         out.append(f"{venue}, {city}")
         first = venue.split(",")[0].strip()          # "SFPL Main Library, 4th floor"
         if first != venue and len(first) > 3:
@@ -91,14 +123,74 @@ def queries(ev: dict) -> list[str]:
     for hint in re.findall(r"\(([A-Z][A-Za-z.' -]{3,40})\)", ev.get("title") or ""):
         if not re.search(r"\d|\bw/|\bends\b|\bonly\b|\bfree\b|summer|winter|spring|fall|friday|sunday|saturday", hint, re.I):
             out.append(f"{hint}, {city}")
-    return [clean(q) for q in out]
+    seen, uniq = set(), []
+    for q in (clean(q) for q in out):
+        if q.lower() not in seen:
+            seen.add(q.lower())
+            uniq.append(q)
+    return uniq
+
+
+def town_query(ev: dict) -> str:
+    """When nothing closer is found: the middle of the town, for towns outside SF
+    (a few miles off doesn't matter at Petaluma's distance; inside SF it would)."""
+    town = town_of_event(ev)
+    if not town or town.lower() in ("san francisco", "online") or not TOWN_RE.fullmatch(town):
+        return ""
+    return f"{town}, California"
 
 
 def fresh(hit) -> bool:
-    """A cached answer we trust: a spot, or a miss from the last two weeks."""
+    """A cached answer we trust: a spot, or a real no-match from the last two weeks.
+    Older misses didn't tell a refused request from no match, so they're asked again."""
     if isinstance(hit, list):
         return True
-    return isinstance(hit, dict) and time.time() - hit.get("miss", 0) < 14 * 86400
+    return isinstance(hit, dict) and hit.get("v") == 2 and time.time() - hit.get("miss", 0) < 14 * 86400
+
+
+def miss():
+    return {"miss": int(time.time()), "v": 2}
+
+
+class Refused(Exception):
+    pass
+
+
+def nominatim(session, q):
+    r = session.get(URL, params={"q": q, "format": "json", "limit": 1, "viewbox": VIEWBOX,
+                                 "bounded": 1, "countrycodes": "us"}, timeout=20)
+    if r.status_code != 200:
+        raise Refused(r.status_code)
+    hits = r.json()
+    return [round(float(hits[0]["lat"]), 5), round(float(hits[0]["lon"]), 5)] if hits else None
+
+
+PHOTON = "https://photon.komoot.io/api/"
+GENERIC = set("the a an and at of in on sf san francisco ca california bar theater theatre cafe restaurant club hall house "
+              "room center centre gallery studio park street st avenue ave road rd way market shop store new old".split())
+
+
+def words(text):
+    return {w for w in re.findall(r"[a-z0-9]+", (text or "").lower()) if w not in GENERIC and len(w) > 2}
+
+
+def photon_ok(q: str, props: dict) -> bool:
+    """Photon matches loosely ("Roxie Theater" came back as the Great Star Theater),
+    so keep its answer only if it shares a real word with what was asked."""
+    asked = words(q.split(",")[0])
+    named = words(" ".join(str(props.get(k) or "") for k in ("name", "street")))
+    return bool(asked & named) or bool(asked & {w + "s" for w in named}) or bool({w + "s" for w in asked} & named)
+
+
+def photon(session, q):
+    r = session.get(PHOTON, params={"q": q.replace(",", " "), "limit": 1, "bbox": "-123.2,36.8,-121.3,38.6"}, timeout=20)
+    if r.status_code != 200:
+        raise Refused(r.status_code)
+    feats = r.json().get("features") or []
+    if not feats or not photon_ok(q, feats[0].get("properties") or {}):
+        return None
+    lng, lat = feats[0]["geometry"]["coordinates"][:2]
+    return [round(float(lat), 5), round(float(lng), 5)]
 
 
 def fill(events: list[dict], max_lookups: int = 350) -> dict:
@@ -108,7 +200,7 @@ def fill(events: list[dict], max_lookups: int = 350) -> dict:
         cache = {}
     session = requests.Session()
     session.headers["User-Agent"] = UA
-    looked = found = corners = 0
+    looked = found = corners = towns = refused = 0
     for ev in events:
         if ev.get("lat") is not None or ev.get("city") == "Online":
             continue
@@ -119,34 +211,43 @@ def fill(events: list[dict], max_lookups: int = 350) -> dict:
             if not fresh(cache.get(key)) and looked < max_lookups:
                 looked += 1
                 try:
-                    cache[key] = corner_spot(session, *corner, city) or {"miss": int(time.time())}
+                    cache[key] = corner_spot(session, *corner, city) or miss()
                 except (requests.RequestException, ValueError, KeyError):
-                    cache[key] = {"miss": int(time.time())}
+                    pass                                   # asked again next run
                 time.sleep(1.1)
             if isinstance(cache.get(key), list):
                 ev["lat"], ev["lng"] = cache[key]
                 found += 1
                 corners += 1
                 continue
-        for q in queries(ev):
-            key = q.lower()
+        town = town_query(ev)
+        qs = queries(ev)
+        # Nominatim wants the map's exact name ("Castro Theatre", not "The Castro Theatre");
+        # Photon forgives spelling ("Black Bird Bookstore") but guesses, so its answer has to share a real word
+        tries = [("n", q) for q in qs] + [("n", q[4:]) for q in qs if q.lower().startswith("the ")] + \
+                [("p", q) for q in qs[:2]] + ([("n", town)] if town else [])
+        for kind, q in tries:
+            key = q.lower() if kind == "n" else "photon:" + q.lower()
             if not fresh(cache.get(key)):
-                if looked >= max_lookups:
+                if looked >= max_lookups or refused >= 5:
                     continue
                 looked += 1
                 try:
-                    r = session.get(URL, params={"q": q, "format": "json", "limit": 1, "viewbox": VIEWBOX,
-                                                 "bounded": 1, "countrycodes": "us"}, timeout=20)
-                    hits = r.json() if r.ok else []
-                    cache[key] = [round(float(hits[0]["lat"]), 5), round(float(hits[0]["lon"]), 5)] if hits else {"miss": int(time.time())}
-                except (requests.RequestException, ValueError, KeyError, IndexError):
-                    cache[key] = {"miss": int(time.time())}
+                    got = nominatim(session, q) if kind == "n" else photon(session, q)
+                    cache[key] = got or miss()
+                except Refused:
+                    refused += 1                       # turned away, not "no such place": ask again next run
+                except (requests.RequestException, ValueError, KeyError, IndexError, TypeError):
+                    refused += 1
                 time.sleep(1.1)
             if isinstance(cache.get(key), list):
                 ev["lat"], ev["lng"] = cache[key]
+                if kind == "n" and q == town:
+                    ev["near_town"] = True             # the app says "~31 mi"
+                    towns += 1
                 found += 1
                 break
     CACHE.parent.mkdir(exist_ok=True)
     CACHE.write_text(json.dumps(cache, indent=0))
     have = sum(1 for e in events if e.get("lat") is not None)
-    return {"lookups": looked, "matched_now": found, "corners": corners, "with_spot": have, "total": len(events)}
+    return {"lookups": looked, "refused": refused, "matched_now": found, "corners": corners, "town_only": towns, "with_spot": have, "total": len(events)}

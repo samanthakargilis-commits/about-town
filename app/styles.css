@@ -101,10 +101,15 @@ main { overflow-x: clip; }
 }
 .ev.nope::after { background: var(--cherry); color: #fff; }
 .ev .side { flex: none; width: 54px; display: flex; flex-direction: column; align-items: center; gap: 5px; }
-.ev .mi { font-size: 11px; font-weight: 700; color: var(--cocoa); text-align: center; line-height: 1.15; }
-.ev .mi.walk { color: var(--sage-ink); }
+.ev .mi { font-size: 11px; font-weight: 700; text-align: center; line-height: 1.15; border-radius: 8px; padding: 3px 4px; width: 100%; box-sizing: border-box; }
+/* close (a walk), medium (a short ride), far (a trip) */
+.mi.close, .dist.close { background: var(--sage); color: var(--sage-ink); }
+.mi.medium, .dist.medium { background: var(--butter); color: var(--butter-ink); }
+.mi.far, .dist.far { background: var(--rose); color: var(--rose-ink); }
+.dist { border-radius: 6px; padding: 0 5px; white-space: nowrap; }
 .ev .chip { flex: none; width: 54px; border-radius: 12px; padding: 8px 0; text-align: center; font-weight: 700; font-size: 13.5px; line-height: 1.15; align-self: flex-start; }
 .ev .chip small { display: block; font-weight: 600; font-size: 10.5px; opacity: .75; letter-spacing: .3px; }
+.ev .chip .to { display: block; font-size: 10.5px; font-weight: 600; margin-top: 4px; padding-top: 4px; border-top: 1px solid currentColor; border-top-color: color-mix(in srgb, currentColor 25%, transparent); white-space: nowrap; }
 .ev .body { flex: 1; min-width: 0; }
 .ev .day { font-size: 12px; font-weight: 700; color: var(--cherry); text-transform: uppercase; letter-spacing: .5px; margin-bottom: 2px; }
 .ev h3 { font-family: var(--serif); font-variation-settings: "SOFT" 100; font-size: 17.5px; font-weight: 600; line-height: 1.2; margin: 0; }
@@ -239,3 +244,26 @@ html.locked, html.locked body { overflow: hidden; }
 @keyframes pop { 50% { transform: scale(1.15); } }
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
 button, a, .d, .ev { touch-action: manipulation; }
+
+/* first-time hint: the top row nudges left to show what's under it */
+.ev.peek { animation: peek 1.6s ease-in-out; }
+.ev.peek::after { animation: peek-under 1.6s ease-in-out; }
+@keyframes peek { 0%, 100% { transform: none; } 30%, 65% { transform: translateX(-78px); } }
+@keyframes peek-under { 0%, 100% { opacity: 0; } 30%, 65% { opacity: 1; } }
+.swipe-tip { position: relative; margin: 0 6px 8px auto; width: max-content; background: var(--cocoa); color: var(--paper); font-size: 12.5px; font-weight: 700;
+  padding: 6px 11px; border-radius: 12px; animation: tip-in .3s ease-out; transition: opacity .4s, transform .4s; }
+.swipe-tip::before { content: "← "; }
+.swipe-tip::after { content: ""; position: absolute; right: 22px; bottom: -5px; width: 10px; height: 10px; background: inherit; transform: rotate(45deg); border-radius: 2px; }
+.swipe-tip.gone { opacity: 0; transform: translateY(-4px); }
+@keyframes tip-in { from { opacity: 0; transform: translateY(4px); } }
+@media (prefers-reduced-motion: reduce) { .ev.peek, .ev.peek::after { animation: none; } }
+.field.col { flex-direction: column; }
+.field.col .btn { align-self: flex-end; }
+.src .wait { color: var(--sub); }
+.src span:first-child { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.x-btn { border: 0; background: none; color: var(--sub); font-size: 13px; padding: 0 0 0 10px; }
+.field.col input { flex: none; }
+.slots { display: flex; gap: 6px; margin: 0 0 12px; overflow-x: auto; scrollbar-width: none; }
+.slots::-webkit-scrollbar { display: none; }
+.slot { flex: none; height: 32px; padding: 0 13px; border-radius: 99px; border: 1.5px solid var(--line); background: var(--paper); color: var(--cocoa); font: inherit; font-size: 13.5px; font-weight: 600; }
+.slot.on { background: var(--cocoa); border-color: var(--cocoa); color: var(--paper); }
