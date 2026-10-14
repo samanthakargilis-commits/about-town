@@ -779,7 +779,7 @@ class CalendarFeed(unittest.TestCase):
         back = added.ics_events(text, "t", "https://x.example/", start, start + dt.timedelta(days=30))
         self.assertEqual(back[0].title, "⭐ Gus Heagerty")
         self.assertEqual(back[0].start, "2026-10-20T19:30-07:00")
-        self.assertEqual(back[0].source_url, "https://x.github.io/a/ics/abc.ics")   # tap → Add to Calendar
+        self.assertEqual(back[0].source_url, "https://sf.funcheap.com/x/")   # the event's own page, not the site
 
 
 class YourWeek(unittest.TestCase):

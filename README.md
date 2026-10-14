@@ -20,8 +20,9 @@ then Share → Add to Home Screen.
   backup/restore, and which sources worked on the last run.
 
 - **In Apple Calendar**: the You tab has two Subscribe buttons. "One a day" adds
-  the single best idea for each day, at its own time; tap it, then its link, and
-  iPhone offers "Add to Calendar". "Every idea" shows all the day's ideas at their
+  the single best idea for each day, at its own time. Its notes give the blurb,
+  tickets, then why it's picked, the price and miles from home; its link opens
+  the event's own page. "Every idea" shows all the day's ideas at their
   times. Both are calendars you tick on or off and never block time.
   "Update my calendars" sends your taste (a "Calendar taste" GitHub issue) so the
   feeds learn too. The daily job writes them as `calendar.ics` and
