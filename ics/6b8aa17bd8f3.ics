@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6b8aa17bd8f3@bay-events
+DTSTAMP:20261014T022008Z
+DTSTART;TZID=America/Los_Angeles:20261031T170000
+DTEND;TZID=America/Los_Angeles:20261031T210000
+SUMMARY:Free Halloween Night at the Museum + Flashlight Ghost Hunt (Palo A
+ lto)
+LOCATION:Museum of American Heritage\, 351 Homer Avenue\, Palo Alto\, CA\,
+  Palo Alto
+URL:https://sf.funcheap.com/free-halloween-night-museum-flashlight-ghost-h
+ unt-palo-alto/
+DESCRIPTION:Camp & Halloween + Museum exhibits · A yearly tradition · Pa
+ lo Alto\nhttps://sf.funcheap.com/free-halloween-night-museum-flashlight-g
+ host-hunt-palo-alto/\n\nThe ghosts are out at MOAH this Halloween! Grab y
+ our costumes for a night of eerie vibes and spine-tingling fun. Come enjo
+ y Halloween candy\, a flashlight ghost hunt\, weird history & artifacts\,
+  a mad scientist demo\, tarot readings\, & more! RSVP here: https://docs.
+ google.com/forms/d/e/1FAIpQLSc_JsO_JaxkzQJKe5lZIDWiCR-XxpNJMvsxx6QYdbhPFS
+ XB8Q/viewform?usp=header
+END:VEVENT
+END:VCALENDAR

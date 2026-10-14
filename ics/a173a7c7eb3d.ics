@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a173a7c7eb3d@bay-events
+DTSTAMP:20261014T022010Z
+DTSTART;TZID=America/Los_Angeles:20261018T140000
+DTEND;TZID=America/Los_Angeles:20261018T150000
+SUMMARY:Reduce Plastic Waste Through Creative Reuse
+LOCATION:San Francisco Public Library Main Library\, 4th floor\, 100 Larki
+ n St\, San Francisco\, CA 94102\, San Francisco
+URL:https://sf.funcheap.com/reduce-plastic-waste-creative-reuse-sf-main-li
+ brary/
+DESCRIPTION:Reading\nhttps://sf.funcheap.com/reduce-plastic-waste-creative
+ -reuse-sf-main-library/\n\nTransform everyday film plastics into durable\
+ , leather-like sheets using heat and pressure. Learn how to fuse material
+ s such as newspaper delivery bags and soft plastic packaging into reusabl
+ e textiles that can be cut\, sewn\, and shaped like fabric. Tara de la Ga
+ rza of Inventurous demonstrates ...
+END:VEVENT
+END:VCALENDAR

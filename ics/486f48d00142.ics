@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:486f48d00142@bay-events
+DTSTAMP:20261014T022011Z
+DTSTART;TZID=America/Los_Angeles:20261016T183000
+DTEND;TZID=America/Los_Angeles:20261016T203000
+SUMMARY:MainStage 1: Beethoven’s Eroica\, A Hero’s Journey
+LOCATION:San Francisco Conservatory of Music\, 50 Oak St\, San Francisco\,
+  CA\, San Francisco
+URL:https://sf.funcheap.com/mainstage-1-beethovens-eroica-heros-journey-sf
+ /
+DESCRIPTION:Concerts\nhttps://sf.funcheap.com/mainstage-1-beethovens-eroic
+ a-heros-journey-sf/\n\nBetrayed by Napoleon’s thirst for power\, Beetho
+ ven furiously tore apart his 3rd Symphony’s dedication\, and in doing s
+ o created a work that captured\, like no other\, the defiant and life-aff
+ irming heroic spirit. With its massive size and emotional power\, the Ero
+ ica Symphony would change the ...
+END:VEVENT
+END:VCALENDAR

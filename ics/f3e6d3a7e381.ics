@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f3e6d3a7e381@bay-events
+DTSTAMP:20261014T022011Z
+DTSTART;TZID=America/Los_Angeles:20261031T160000
+DTEND;TZID=America/Los_Angeles:20261031T180000
+SUMMARY:Alameda Landing Shopping Center: 2026 Free Halloween Spooktacular 
+ Event
+LOCATION:Alameda Landing Shopping Center\, 2700 Fifth Street\, Alameda\, C
+ A 94501\, Alameda
+URL:https://sf.funcheap.com/alameda-landing-shopping-center-2026-free-hall
+ oween-spooktacular-event/
+DESCRIPTION:Camp & Halloween · Alameda\nhttps://sf.funcheap.com/alameda-l
+ anding-shopping-center-2026-free-halloween-spooktacular-event/\n\nGet rea
+ dy for thrills\, treats\, and a whole lot of fun! Alameda Landing Shoppin
+ g Center is excited to announce its highly anticipated Annual Halloween S
+ pooktacular\, a free community celebration that promises festive fun for 
+ families\, kids\, and Halloween enthusiasts of all ages. What: An afterno
+ on filled ...
+END:VEVENT
+END:VCALENDAR

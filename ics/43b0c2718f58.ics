@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:43b0c2718f58@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;TZID=America/Los_Angeles:20261101T140000
+DTEND;TZID=America/Los_Angeles:20261101T160000
+SUMMARY:SF’s Free “Sundays at the Beach” Chair Yoga Day (Great Highw
+ ay)
+LOCATION:The Great Highway\, Irving and Great Highway\, San Francisco\, CA
+ \, San Francisco
+URL:https://sf.funcheap.com/sfs-free-sundays-at-the-beach-chair-yoga-day-g
+ reat-highway-38/
+DESCRIPTION:Meditation + Concerts\nhttps://sf.funcheap.com/sfs-free-sunday
+ s-at-the-beach-chair-yoga-day-great-highway-38/\n\nWelcome to Sundays at 
+ the Beach! With help from @avenuegreenlight and our friends across the ne
+ ighborhood\, we’re excited to bring free community events to Great High
+ way Park every weekend for the next year. 1st Sunday: Chair Yoga\, 2pm @ 
+ Irving 2nd Sunday: Live Music\, 1-3 ...
+END:VEVENT
+END:VCALENDAR

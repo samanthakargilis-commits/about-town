@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:64b7b33b343f@bay-events
+DTSTAMP:20261014T022011Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:Falsettos and Sunsets – Flop Fest
+LOCATION:Church of Clown\, 2400 Bayshore Blvd San Francisco\, CA 94134
+URL:https://sf.funcheap.com/falsettos-sunsets-flop-fest/
+DESCRIPTION:Comedy + Weird & unusual\nhttps://sf.funcheap.com/falsettos-su
+ nsets-flop-fest/\n\nFalsettos and Sunsets as part of Flop Fest Falsettos 
+ and Sunsets is the story of Richard Begaldix and George Lamps\, a pair of
+  cartoony cool guys who fall in love and stumble through the world of pol
+ yamory with outrageous physical comedy\, startling emotional honesty\, an
+ d slapstick ...
+END:VEVENT
+END:VCALENDAR

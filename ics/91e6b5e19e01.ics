@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:91e6b5e19e01@bay-events
+DTSTAMP:20261014T022010Z
+DTSTART;TZID=America/Los_Angeles:20261025T160000
+DTEND;TZID=America/Los_Angeles:20261025T180000
+SUMMARY:Eric Idle In Conversation w/ Dave Eggers (San Rafael)
+LOCATION:Angelico Hall\, 20 Olive Ave\, San Rafael\, CA 94901\, San Rafael
+URL:https://sf.funcheap.com/eric-idle-conversation-dave-eggers-san-rafael/
+DESCRIPTION:Reading + Discourse · San Rafael\nhttps://sf.funcheap.com/eri
+ c-idle-conversation-dave-eggers-san-rafael/\n\nWe invite you to spend an 
+ evening with Eric Idle for a hilarious\, candid\, and unforgettable event
+  on his new book\, Idle in Provence: A Brief History of Thyme. Equal part
+ s memoir\, travelogue\, and comedy masterclass\, the book is filled with 
+ laugh-out-loud moments\, tender reflections\, and the kind of ...
+END:VEVENT
+END:VCALENDAR

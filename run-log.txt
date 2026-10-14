@@ -1,0 +1,12 @@
+  funcheap guides: 20 read, 156 events, featuring ['fleet week', 'tall ship', 'terror vault', 'treasure hunt', 'zoolights']
+  funcheap: 79 day pages read
+SF Funcheap               726 events   81 requests  OK
+in window and area: 687 of 726 (0 sold out)
+after merging duplicates: 623
+places: {'pages_read': 0, 'placed': 604}
+in area once placed: 613
+detail pages read: 160
+map spots: {'lookups': 0, 'refused': 0, 'matched_now': 558, 'corners': 39, 'town_only': 8, 'with_spot': 558, 'total': 590}
+site icons: 1 of 1 sites (0 fetched)
+wrote 590 events to /home/runner/work/bay-events/bay-events/app/events.json
+weather: 16 days (2026-10-13 to 2026-10-28)

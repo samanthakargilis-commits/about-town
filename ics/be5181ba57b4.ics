@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:be5181ba57b4@bay-events
+DTSTAMP:20261014T022011Z
+DTSTART;TZID=America/Los_Angeles:20261024T193000
+DTEND;TZID=America/Los_Angeles:20261024T213000
+SUMMARY:Free October “Movie Nights in the Park” 2026: The Sandlot (Hal
+ f Moon Bay)
+LOCATION:John L. Carter Park\, 10 Stone Pine Rd\, Half Moon Bay\, CA 94019
+ \, Half Moon Bay
+URL:https://sf.funcheap.com/free-october-movie-nights-in-the-park-2026-the
+ -sandlot-half-moon-bay/
+DESCRIPTION:Half Moon Bay\nhttps://sf.funcheap.com/free-october-movie-nigh
+ ts-in-the-park-2026-the-sandlot-half-moon-bay/\n\nJohn L. Carter Park hos
+ ts three free outdoor movie nights in October: The Princess Bride on Octo
+ ber 3\, Grow on October 10\, and The Sandlot on October 24. Screenings be
+ gin at 7:30 PM\, 6:00 PM\, and 7:30 PM respectively. Attendees are encour
+ aged to bring a ...
+END:VEVENT
+END:VCALENDAR

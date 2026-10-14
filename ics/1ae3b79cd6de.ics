@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1ae3b79cd6de@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:Bay Area Science Festival 2026
+LOCATION:UCSF\, Mission Bay\, San Francisco
+URL:https://www.bayareasciencefestival.org/
+DESCRIPTION:Fairs & festivals · Featured on Funcheap\nhttps://www.bayarea
+ sciencefestival.org/\n\nSaturday\, October 17\, 2026 – SF (UCSF\, Missi
+ on Bay) – FREE – Massive\, one-day-only celebration of all things sci
+ ence with 125+ hands-on experiences for all ages\, taking place outdoors 
+ at Koret Quad’s expansive lawns\, pine groves & surrounding research fa
+ cilities. BASF Future Scientists Credit GammaNinePhotographyAutumn Lights
+  Festival
+END:VEVENT
+END:VCALENDAR

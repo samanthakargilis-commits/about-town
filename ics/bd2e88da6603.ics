@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bd2e88da6603@bay-events
+DTSTAMP:20261014T022010Z
+DTSTART;TZID=America/Los_Angeles:20261024T110000
+DTEND;TZID=America/Los_Angeles:20261024T153000
+SUMMARY:SF’s 44th Annual Sandcastle Classic Contest at Ocean Beach (2026
+ )
+LOCATION:Ocean Beach\, 1000 Great Highway\, San Francisco\, CA\, San Franc
+ isco
+URL:https://sf.funcheap.com/leap-arts-annual-sandcastle-classic/
+DESCRIPTION:Weird & unusual · A yearly tradition\nhttps://sf.funcheap.com
+ /leap-arts-annual-sandcastle-classic/\n\nOn Saturday\, October 24\, 2026\
+ , Leap Arts in Education will take over Ocean Beach for its 44th annual S
+ andcastle Classic\, Northern California’s largest sandcastle competitio
+ n. Teams of local students\, architects\, engineers\, designers\, contrac
+ tors\, and corporate teams will work together to transform the beach into
+  a ...
+END:VEVENT
+END:VCALENDAR

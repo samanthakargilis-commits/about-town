@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ca9625a33c5c@bay-events
+DTSTAMP:20261014T022011Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:“Healthy Parks Healthy People”: Monthly Nature Walks
+LOCATION:Bay Area
+URL:https://sf.funcheap.com/healthy-parks-healthy-people-monthly-nature-wa
+ lks-bay-area-118/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/healthy-parks-health
+ y-people-monthly-nature-walks-bay-area-118/\n\nEnjoy a free\, monthly out
+ door walk on the first Saturday of every month as part of the “Healthy 
+ Parks\, Healthy People” program. First Saturday Programs are introducto
+ ry walking/physical activity programs that occur on the first Saturday of
+  each month throughout the Bay Area. Please note that ...
+END:VEVENT
+END:VCALENDAR

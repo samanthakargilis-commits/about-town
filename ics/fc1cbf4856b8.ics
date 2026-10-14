@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fc1cbf4856b8@bay-events
+DTSTAMP:20261014T022010Z
+DTSTART;TZID=America/Los_Angeles:20261018T140000
+DTEND;TZID=America/Los_Angeles:20261018T180000
+SUMMARY:“Sun Dial” Punk Art Market w/ Live Music + Tattoos (Oakland)
+LOCATION:Vetiver\, 3841 MacArthur Blvd\, Oakland\, CA\, Oakland
+URL:https://sf.funcheap.com/sun-dial-punk-art-market-live-music-tattoos-oa
+ kland/
+DESCRIPTION:Concerts + Art · Oakland\nhttps://sf.funcheap.com/sun-dial-pu
+ nk-art-market-live-music-tattoos-oakland/\n\nSun Dial: Punk Art Market ta
+ kes place at Vetiver in Oakland with clothing\, jewelry\, tattoos\, and a
+ rt vendors. The all-ages event has no cover and includes live music by Ja
+ guar Ride at 5 PM. Original Event Description: _No AI flyer art needed fo
+ r @vetiveroakland’s upcoming SUN DIAL: ...
+END:VEVENT
+END:VCALENDAR

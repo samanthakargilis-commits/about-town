@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2c6d25b3ae72@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;TZID=America/Los_Angeles:20261025T170000
+DTEND;TZID=America/Los_Angeles:20261025T190000
+SUMMARY:Free Halloween “Trunk Or Treat” Party w/ Bounce Houses
+LOCATION:New North Church Parking Lot\, 777 Brotherhood Way\, San Francisc
+ o\, CA 94132\, San Francisco
+URL:https://sf.funcheap.com/free-halloween-trunk-treat-party-bounce-houses
+ -sf/
+DESCRIPTION:Camp & Halloween + Weird & unusual · A yearly tradition\nhttp
+ s://sf.funcheap.com/free-halloween-trunk-treat-party-bounce-houses-sf/\n\
+ nFree Halloween Fun for the Whole Family! Join us for a family friendly T
+ runk or Treat in San Francisco! Come dressed in your favorite costume and
+  enjoy an evening of candy\, decorated car trunks\, bounce houses\, games
+ \, food\, and plenty of Halloween fun. Bring your family\, invite ...
+END:VEVENT
+END:VCALENDAR

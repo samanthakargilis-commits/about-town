@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:82b7d10596fe@bay-events
+DTSTAMP:20261014T022008Z
+DTSTART;TZID=America/Los_Angeles:20261031T213000
+DTEND;TZID=America/Los_Angeles:20261031T233000
+SUMMARY:Secret SF Halloween: Roast Comedy Battles\, Lucha Libre + DJs (202
+ 6)
+LOCATION:Secret Location\, San Francisco\, CA
+URL:https://sf.funcheap.com/secret-sf-halloween-roast-comedy-battles-lucha
+ -libre-djs-2026/
+DESCRIPTION:Comedy + Camp & Halloween\nhttps://sf.funcheap.com/secret-sf-h
+ alloween-roast-comedy-battles-lucha-libre-djs-2026/\n\nDead Rabbits prese
+ nts an immersive 21+ Halloween event at a secret outdoor San Francisco lo
+ cation featuring occult rituals\, roast battles\, lucha libre wrestling\,
+  burlesque contortionist acts\, live DJ\, and a full bar. Audience member
+ s influence the competition’s outcome and may be chosen for psychic rea
+ dings ...
+END:VEVENT
+END:VCALENDAR

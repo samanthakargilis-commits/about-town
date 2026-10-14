@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fbceeba13490@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:Now That’s What I Call Italo-Disco
+LOCATION:Paris 75\, 515 Broadway\, San Francisco\, San Francisco
+URL:https://sf.funcheap.com/call-italodisco/
+DESCRIPTION:Dance nights + Camp & Halloween\nhttps://sf.funcheap.com/call-
+ italodisco/\n\nThe 25th volume of the Italo Disco series featuring a fami
+ ly affair lineup! Now That’s What I Call Italo-Disco is a local Bay-Are
+ a party created by DJ PlayStation out of his love for Italo-Disco\; a pla
+ yful side of the 80’s Although short lived\, Italo-Disco played a ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9f4ff26530a5@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:2026 Bearrison Street Fair
+LOCATION:SoMa\, San Francisco
+URL:https://www.bearrison.org/gallery-2?itemId=gpnaj8acd8vb5hhg4xgjnwv08cz
+ jq1
+DESCRIPTION:Fairs & festivals + Gay / queer · Featured on Funcheap\nhttps
+ ://www.bearrison.org/gallery-2?itemId=gpnaj8acd8vb5hhg4xgjnwv08czjq1\n\nS
+ aturday\, October 17\, 2026 – SF (SoMa) – FREE – Enjoy burly entert
+ ainment \, including Full Queer Wrestling\, the Barbells\, Bears & Butts 
+ Deadlift Contest\, XL Art Gallery \, DJs\, and more at this lively SoMa s
+ treet fair celebrating the city’s bear and queer communities. Gareth Go
+ och courtesy of Bearrison Street Fair
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2b9d728e8493@bay-events
+DTSTAMP:20261014T022011Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:Legendary Autumn Night Vietnamese Show
+LOCATION:Graton Resort & Casino\, 288 Golf Course Dr W\, Rohnert Park\, CA
+ \, Rohnert Park
+URL:https://sf.funcheap.com/legendary-autumn-night-vietnamese-show/
+DESCRIPTION:Concerts · Rohnert Park\nhttps://sf.funcheap.com/legendary-au
+ tumn-night-vietnamese-show/\n\nStarting at $49 plus applicable fees The L
+ egendary Autumn Night – Vietnamese Show Live in The Event Doors Open at
+  7:00PM. Reserved Seating Only. Exclusive Bars Available Inside Concert V
+ enue. Tickets On Sale Now! Open to All Ages
+END:VEVENT
+END:VCALENDAR

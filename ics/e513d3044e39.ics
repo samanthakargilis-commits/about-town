@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e513d3044e39@bay-events
+DTSTAMP:20261014T022011Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Hike & Sip
+LOCATION:Chabot Space & Science Center\, 10000 Skyline Blvd. Oakland\, CA
+URL:https://sf.funcheap.com/hike-sip-3/
+DESCRIPTION:Camp & Halloween + Theatre\nhttps://sf.funcheap.com/hike-sip-3
+ /\n\nHalloween Hike! Adults 21+\, $40\, Members receive $15 off Immersive
+  Trek As the sun dips below the horizon and shadows stretch through the f
+ orest\, the Halloween Hike begins! Join us for a moderate\, 75–90 minut
+ e spine-tingling adventure through the darkened trails of the majestic Oa
+ kland Redwood forest\, where ...
+END:VEVENT
+END:VCALENDAR

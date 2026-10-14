@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d492bdc0ada1@bay-events
+DTSTAMP:20261014T022010Z
+DTSTART;TZID=America/Los_Angeles:20261017T170000
+DTEND;TZID=America/Los_Angeles:20261017T183000
+SUMMARY:Twilight Nature Walk at the Baylands (Palo Alto)
+LOCATION:Environmental Volunteers EcoCenter\, 2560 Embarcadero Rd.\, Palo 
+ Alto\, CA\, Palo Alto
+URL:https://sf.funcheap.com/twilight-nature-walk-baylands-palo-alto/
+DESCRIPTION:Camp & Halloween · Palo Alto\nhttps://sf.funcheap.com/twiligh
+ t-nature-walk-baylands-palo-alto/\n\nBats\, birds\, and other spooky crit
+ ters! A twilight exploration of this unique habitat is not to be missed! 
+ What’s happening Nature enthusiasts of all ages are invited to join our
+  Twilight Nature Walk led by one of our friendly and knowledgable docents
+ . An expert naturalist will lead ...
+END:VEVENT
+END:VCALENDAR

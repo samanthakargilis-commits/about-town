@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d0e505b6ec31@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;TZID=America/Los_Angeles:20261017T213000
+DTEND;TZID=America/Los_Angeles:20261017T233000
+SUMMARY:Forbidden Forest: A Harry Potter Party
+LOCATION:Mayes Oyster House\, 1233 Polk St. San Francisco\, CA 94154
+URL:https://sf.funcheap.com/forbidden-forest-harry-potter-party-mayes-oyst
+ er-house/
+DESCRIPTION:Camp & Halloween · A yearly tradition\nhttps://sf.funcheap.co
+ m/forbidden-forest-harry-potter-party-mayes-oyster-house/\n\n⚡️🪄 E
+ xpelliarmus\, witches! 🪄⚡️ Put on the sorting hat \, grab your wan
+ ds 🪄\, and get ready for a night of mischief We’re throwing a huge H
+ arry Potter themed party in SF 🧙‍♂️ Yer an alcoholic\, Harry 
+ 🥃 Come get Siriusly turnt 🤪 and go Dumb(ledore) on ...
+END:VEVENT
+END:VCALENDAR

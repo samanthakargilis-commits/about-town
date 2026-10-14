@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:857556b6c1c6@bay-events
+DTSTAMP:20261014T022010Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Oakland Critical Mass
+LOCATION:First Friday\, 14th Street and Broadway\, Oakland\, CA\, Oakland
+URL:https://sf.funcheap.com/oakland-critical-mass-first-friday-145/
+DESCRIPTION:Musical theatre + Art · Oakland\nhttps://sf.funcheap.com/oakl
+ and-critical-mass-first-friday-145/\n\nOakland Critical Mass is a monthly
+  group bike ride that takes place every first Friday of the month\, which
+  starts at 8 pm at the BikeLink bike lockers at 14th and Broadway\, and e
+ nds at 23rd and Telegraph where Oakland Art Murmur is underway. Critical 
+ Mass is argued ...
+END:VEVENT
+END:VCALENDAR

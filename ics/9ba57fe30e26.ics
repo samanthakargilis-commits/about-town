@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9ba57fe30e26@bay-events
+DTSTAMP:20261014T022010Z
+DTSTART;TZID=America/Los_Angeles:20261024T150000
+DTEND;TZID=America/Los_Angeles:20261024T170000
+SUMMARY:Free Giant Sand Painting: Community Art on the Beach (Ocean Beach)
+LOCATION:Kelly's Cove\, Ocean Beach\, below the Cliff House\, 1090 Point L
+ obos Ave\, San Francisco\, San Francisco
+URL:https://sf.funcheap.com/free-giant-sand-painting-community-art-beach-o
+ cean-beach/
+DESCRIPTION:Art\nhttps://sf.funcheap.com/free-giant-sand-painting-communit
+ y-art-beach-ocean-beach/\n\nJoin us for a free\, drop-in community art ev
+ ent on the beach! Once a month\, weather and tides permitting\, we come t
+ ogether to create an enormous\, temporary sand painting. No experience ne
+ cessary\, just bring your enthusiasm. I’ll provide the tools and you br
+ ing the creativity. ...
+END:VEVENT
+END:VCALENDAR

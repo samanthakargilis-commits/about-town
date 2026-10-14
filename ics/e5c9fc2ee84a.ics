@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e5c9fc2ee84a@bay-events
+DTSTAMP:20261014T022010Z
+DTSTART;TZID=America/Los_Angeles:20261029T173000
+DTEND;TZID=America/Los_Angeles:20261029T200000
+SUMMARY:District 11 Excelsior Family Summit
+LOCATION:4840 Mission St\, 4840 Mission Street\, San Francisco\, CA 94112\
+ , San Francisco
+URL:https://sf.funcheap.com/district-11-excelsior-family-summit/
+DESCRIPTION:Thursday evening\nhttps://sf.funcheap.com/district-11-excelsio
+ r-family-summit/\n\nThis is Your City. This is Your Voice. This is Your F
+ uture. Share your story about growing up and raising your family in San F
+ rancisco. Every family has a story. Every voice matters. Please share you
+ rs. Join us for the District 11 Excelsior Family Summit! The This Is ...
+END:VEVENT
+END:VCALENDAR

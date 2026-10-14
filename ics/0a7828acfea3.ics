@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0a7828acfea3@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;TZID=America/Los_Angeles:20261113T160000
+DTEND;TZID=America/Los_Angeles:20261113T210000
+SUMMARY:SF’s “Bhangra & Beats” Diwali Night Market 2026
+LOCATION:Yerba Buena Gardens\, Mission St. & 3rd St.\, San Francisco\, CA\
+ , San Francisco
+URL:https://sf.funcheap.com/sfs-bhangra-beats-diwali-night-market-2026/
+DESCRIPTION:Fairs & festivals + Cultural festivals\nhttps://sf.funcheap.co
+ m/sfs-bhangra-beats-diwali-night-market-2026/\n\nSan Francisco’s belove
+ d Bhangra & Beats Night Market returns in 2026 for two massive celebratio
+ ns\, including a special Diwali edition this fall. For the first time eve
+ r\, the city’s biggest South Asian cultural celebration takes over Yerb
+ a Buena Gardens\, bringing its signature mix of Punjabi ...
+END:VEVENT
+END:VCALENDAR

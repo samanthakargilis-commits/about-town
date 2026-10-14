@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cb0a68cee3cf@bay-events
+DTSTAMP:20261014T022011Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:French Movie Night: “Making Of” w/ English Subtitles
+LOCATION:Alliance Française de San Francisco\, 1345 Bush Street\, San Fra
+ ncisco\, CA 94109\, San Francisco
+URL:https://sf.funcheap.com/french-movie-night-making-english-subtitles-sf
+ /
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/french-movie-night-m
+ aking-english-subtitles-sf/\n\nHave a good time enjoying a thrilling movi
+ e\, while improving your French! All movies will be screened in French wi
+ th English subtitles. Synopsis: Simon\, a seasoned director\, begins film
+ ing a movie about a group of workers fighting to save their factory. But 
+ between his producer’s shady dealings\, ...
+END:VEVENT
+END:VCALENDAR

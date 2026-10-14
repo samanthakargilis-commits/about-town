@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:39975a96500e@bay-events
+DTSTAMP:20261014T022008Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:“Lit Laugh Lyric” Haunted Spoken Word + Eerie Comedy (North Be
+ ach)
+LOCATION:Mabuhay Gardens\, 443 Broadway\, San Francisco\, CA 94133\, San F
+ rancisco
+URL:https://sf.funcheap.com/lit-laugh-lyric-haunted-spoken-word-eerie-come
+ dy-north-beach/
+DESCRIPTION:Comedy + Weird & unusual\nhttps://sf.funcheap.com/lit-laugh-ly
+ ric-haunted-spoken-word-eerie-comedy-north-beach/\n\nThis autumn’s Lit 
+ Laugh Lyric comes to Mabuhay Gardens for a night of haunting spoken words
+ \, eerie comedy and frightening melodies. Lit Laugh Lyric is a quarterly 
+ variety show that brings together three art forms in one night bringing y
+ ou groundbreaking emerging Bay Area artists in ...
+END:VEVENT
+END:VCALENDAR

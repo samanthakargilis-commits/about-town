@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9a7bac1bd73e@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;TZID=America/Los_Angeles:20261024T160000
+DTEND;TZID=America/Los_Angeles:20261024T200000
+SUMMARY:Mare Island Halloween Block Party 2026 (Vallejo)
+LOCATION:Officer's Row - Walnut Ave\, 1015 Walnut Ave\, Vallejo CA 94592\,
+  Vallejo
+URL:https://sf.funcheap.com/mare-island-halloween-block-party-2026-vallejo
+ /
+DESCRIPTION:Fairs & festivals + Camp & Halloween · A yearly tradition · 
+ Vallejo\nhttps://sf.funcheap.com/mare-island-halloween-block-party-2026-v
+ allejo/\n\nGet ready for a frightfully fun adventure along the ghostly ch
+ arm of Walnut Avenue and Officers Row\, with entrances near the mysteriou
+ s Vino Godfather Mansion and Alden Park — now home to some spooky zombi
+ e fun! This Halloween celebration has thrills and chills for every ...
+END:VEVENT
+END:VCALENDAR

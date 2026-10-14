@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6cc22a6b4991@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;TZID=America/Los_Angeles:20261017T170000
+DTEND;TZID=America/Los_Angeles:20261017T190000
+SUMMARY:Sip + Stitch: Free “Embroider a Luggage Tag” Crafty Event (Sal
+ uhall)
+LOCATION:Saluhall\, 945 Market Street\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/sip-stitch-free-embroider-luggage-tag-crafty-e
+ vent-saluhall/
+DESCRIPTION:Craft + Fairs & festivals\nhttps://sf.funcheap.com/sip-stitch-
+ free-embroider-luggage-tag-crafty-event-saluhall/\n\nFree beginner embroi
+ dery workshop at Saluhall where participants can learn basic techniques a
+ nd monogram a luggage tag to take home. Artist Neha of NehaXStitch provid
+ es materials\, inspiration\, and instruction\; no experience is needed. T
+ he workshop is part of the Market Street Arts & Theater Festival\, ...
+END:VEVENT
+END:VCALENDAR

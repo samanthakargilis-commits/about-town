@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0d4d50a12344@bay-events
+DTSTAMP:20261014T022010Z
+DTSTART;TZID=America/Los_Angeles:20261017T130000
+DTEND;TZID=America/Los_Angeles:20261017T153000
+SUMMARY:District 8 Castro Family Summit
+LOCATION:Eureka Valley Recreation Center\, 100 Collingwood Street\, San Fr
+ ancisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/district-8-castro-family-summit/
+DESCRIPTION:Gay / queer\nhttps://sf.funcheap.com/district-8-castro-family-
+ summit/\n\nThis is Your City. This is Your Voice. This is Your Future. Sh
+ are your story about growing up and raising your family in San Francisco.
+  Every family has a story. Every voice matters. Please share yours. Join 
+ us for the District 8 Castro Family Summit! The This Is ...
+END:VEVENT
+END:VCALENDAR

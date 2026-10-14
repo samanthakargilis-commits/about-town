@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:29510f41e1b0@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;TZID=America/Los_Angeles:20261024T160000
+DTEND;TZID=America/Los_Angeles:20261024T220000
+SUMMARY:SF’s “Golden Hour” Filipino Night Market is Back for 2026 (S
+ oMa)
+LOCATION:Victory Hall\, 360 Ritch St\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/sfs-golden-hour-filipino-night-market-2026-som
+ a/
+DESCRIPTION:Fairs & festivals + Gay / queer\nhttps://sf.funcheap.com/sfs-g
+ olden-hour-filipino-night-market-2026-soma/\n\n​✦ UNDISCOVERED SF San
+  Francisco’s First Night Market Is Back ​Ten years ago\, Undiscovered
+  started the trend of night markets. Now\, we return during golden hour. 
+ RSVP – FREE ​This year marks a special milestone — join us as we ce
+ lebrate 10 seasons of community\, creativity\, and cultural pride! ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4e1a52b017a9@bay-events
+DTSTAMP:20261014T022010Z
+DTSTART;TZID=America/Los_Angeles:20261016T200000
+DTEND;TZID=America/Los_Angeles:20261016T220000
+SUMMARY:San Jose Bike Party
+LOCATION:Secret San Jose Location\, San Jose\, CA
+URL:https://sf.funcheap.com/san-jose-bike-party-164/
+DESCRIPTION:Weird & unusual\nhttps://sf.funcheap.com/san-jose-bike-party-1
+ 64/\n\nSan Jose Bike Party San Jose Bike Party San Jose Bike Party is a p
+ lace to ride bikes\, make friends\, and have a good time every third Frid
+ ay of each month at 8 pm. San Jose is the largest city in Northern Califo
+ rnia\, but they are hidden in the suburban sprawl. It’s time to enjoy t
+ he South Bay\, ride the streets\, and make this place the active and exci
+ ting city you want it to be. One of the most uniq
+END:VEVENT
+END:VCALENDAR

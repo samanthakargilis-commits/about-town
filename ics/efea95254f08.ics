@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:efea95254f08@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;TZID=America/Los_Angeles:20261025T120000
+DTEND;TZID=America/Los_Angeles:20261025T160000
+SUMMARY:“Wiggle Fest” Fall 2026: Free BBQ & Grilled Cheese Block Party
+LOCATION:Wiggle Plaza\, Steiner & Hermann\, San Francisco\, CA\, San Franc
+ isco
+URL:https://sf.funcheap.com/wiggle-fest-fall-2026-free-bbq-grilled-cheese-
+ block-party-sf/
+DESCRIPTION:Fairs & festivals + Art\nhttps://sf.funcheap.com/wiggle-fest-f
+ all-2026-free-bbq-grilled-cheese-block-party-sf/\n\nWiggle Fest Fall 2026
+  is a family-friendly neighborhood gathering at Wiggle Plaza featuring fr
+ ee BBQ\, potluck and grilled cheese\, live local music and dancing\, game
+ s\, arts and crafts\, live portrait drawing\, face painting\, and a bounc
+ y house. The event also offers an opportunity to meet ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a15d03929710@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:Free Palestinian Folk Dance + Mutual Aid Workshop
+LOCATION:The Lab\, 2948 16th St.\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/free-palestinian-folk-dance-mutual-aid-worksho
+ p-sf/
+DESCRIPTION:Gay / queer + Camp & Halloween\nhttps://sf.funcheap.com/free-p
+ alestinian-folk-dance-mutual-aid-workshop-sf/\n\nSticking Together and Fi
+ ghting Back: A Workshop with Dean Spade Co-hosted by Mama Ganuush & King 
+ LOTUS BOY | Performances by ZAK\, Shams w/ Dabka Drag and Drums SAN FRANC
+ ISCO\, CA – Organizer and author Dean Spade as a guest at Salon HALA wi
+ ll lead “Sticking Together ...
+END:VEVENT
+END:VCALENDAR

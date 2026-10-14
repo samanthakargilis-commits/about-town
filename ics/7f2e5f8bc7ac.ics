@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7f2e5f8bc7ac@bay-events
+DTSTAMP:20261014T022011Z
+DTSTART;TZID=America/Los_Angeles:20261024T150000
+DTEND;TZID=America/Los_Angeles:20261024T170000
+SUMMARY:Ocean Beach Giant Sand Art-Making Experience
+LOCATION:Ocean Beach\, 1000 Great Highway\, San Francisco\, CA\, San Franc
+ isco
+URL:https://sf.funcheap.com/epic-beach-sand-art-workshop-ocean-beach-andre
+ s-amador-sf-2/
+DESCRIPTION:Art\nhttps://sf.funcheap.com/epic-beach-sand-art-workshop-ocea
+ n-beach-andres-amador-sf-2/\n\nLet’s create an enormous\, temporary art
+ work together at the beach. A fun afternoon of creativity and art on the 
+ beach as we create a beautiful artwork on the sand! No experience necessa
+ ry – just bring your enthusiasm and creativity. I will provide the tool
+ s you need to ...
+END:VEVENT
+END:VCALENDAR

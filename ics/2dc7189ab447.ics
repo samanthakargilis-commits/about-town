@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2dc7189ab447@bay-events
+DTSTAMP:20261014T022011Z
+DTSTART;TZID=America/Los_Angeles:20261017T113000
+DTEND;TZID=America/Los_Angeles:20261017T133000
+SUMMARY:$30 All-Day Pass: SF’s “International Vampire Film Fest” at 
+ Balboa Theater (2026)
+LOCATION:The Balboa\, 3630 Balboa Street\, San Francisco\, CA 94121\, San 
+ Francisco
+URL:https://sf.funcheap.com/30-allday-pass-sfs-international-vampire-film-
+ fest-balboa-theater-2026/
+DESCRIPTION:Camp & Halloween\nhttps://sf.funcheap.com/30-allday-pass-sfs-i
+ nternational-vampire-film-fest-balboa-theater-2026/\n\nThe International 
+ Vampire Film Fest at The Balboa presents seven vampire films from Mexico\
+ , Sweden\, Iran\, France\, England\, Italy\, and Japan\, running from El 
+ Vampiro (1957) through Lake of Dracula (1971). Single-show tickets and fu
+ ll-day passes are available. The event also includes vintage Halloween\, 
+ kitsch\, ...
+END:VEVENT
+END:VCALENDAR

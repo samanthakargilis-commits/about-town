@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:955e5606fb94@bay-events
+DTSTAMP:20261014T022011Z
+DTSTART;TZID=America/Los_Angeles:20261017T140000
+DTEND;TZID=America/Los_Angeles:20261017T170000
+SUMMARY:Free “Crafternoon in the Park” at Aquatic Park (Berkeley)
+LOCATION:Aquatic Park\, Bolivar Dr. and Bancroft Way\, 88 Bolivar Drive\, 
+ Berkeley\, CA\, Berkeley
+URL:https://sf.funcheap.com/free-crafternoon-park-aquatic-park-berkeley/
+DESCRIPTION:Craft + Art · Berkeley\nhttps://sf.funcheap.com/free-craftern
+ oon-park-aquatic-park-berkeley/\n\nEvery third Sunday Waveform is out at 
+ the Aquatic Park with FREE crafting! Meet us at the picnic tables on Boli
+ var and Bancroft (right by the bike shop before the Aquatic Park entrance
+ ). Dog-friendly + kid-friendly! Decorate tote bags (printing\, painting a
+ nd stamping) Relax with some coloring Propagate ...
+END:VEVENT
+END:VCALENDAR

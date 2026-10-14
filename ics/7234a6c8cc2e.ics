@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7234a6c8cc2e@bay-events
+DTSTAMP:20261014T022011Z
+DTSTART;TZID=America/Los_Angeles:20261017T100000
+DTEND;TZID=America/Los_Angeles:20261017T120000
+SUMMARY:T-Pain w/ Ari Lennox Outdoor Concert (Golden Gate Park)
+LOCATION:Robin Williams Meadow\, 320 Bowling Green Drive\, San Francisco\,
+  CA\, San Francisco
+URL:https://sf.funcheap.com/tpain-ari-lennox-outdoor-concert-golden-gate-p
+ ark/
+DESCRIPTION:Concerts + Art\nhttps://sf.funcheap.com/tpain-ari-lennox-outdo
+ or-concert-golden-gate-park/\n\nGrammy Award-winning artist T-Pain headli
+ nes an all-ages outdoor concert at Robin Williams Meadow in Golden Gate P
+ ark. R&B singer-songwriter Ari Lennox opens\, with DJs Lady Ryan\, Shellh
+ eart and BBCAROLZ also on the lineup. The concert is presented in partner
+ ship with R&B and Ribs\, NPU Live ...
+END:VEVENT
+END:VCALENDAR

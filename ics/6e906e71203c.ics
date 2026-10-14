@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6e906e71203c@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;TZID=America/Los_Angeles:20261017T120000
+DTEND;TZID=America/Los_Angeles:20261017T170000
+SUMMARY:2nd Annual “Broke-Ass Stuart” Day + SF’s Clement Street Art 
+ Fair (2026)
+LOCATION:Clement Street between 6th and 8th Avene\, Clement Street between
+  6th and 8th Avene\, San Francisco\, San Francisco
+URL:https://sf.funcheap.com/2nd-annual-brokeass-stuart-day-sfs-clement-str
+ eet-art-fair-2026/
+DESCRIPTION:Fairs & festivals + Art\nhttps://sf.funcheap.com/2nd-annual-br
+ okeass-stuart-day-sfs-clement-street-art-fair-2026/\n\nBroke-Ass Stuart i
+ s joining forces with The Clement Street Merchants Association and Worksh
+ opSF for the 2nd Annual Broke-Ass Stuart Day and the 3rd annual Clement S
+ treet Art Fair. Clement Street – from 6th to 8th Avenues – will close
+  to traffic to provide a fun-filled day ...
+END:VEVENT
+END:VCALENDAR

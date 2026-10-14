@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:964816f271d9@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;TZID=America/Los_Angeles:20261025T140000
+DTEND;TZID=America/Los_Angeles:20261025T150000
+SUMMARY:Howl-O-Ween Costumed Pet Parade at City Center Bishop Ranch (San R
+ amon)
+LOCATION:City Center Bishop Ranch\, 6000 Bollinger Canyon Rd\, San Ramon\,
+  CA 94583\, San Ramon
+URL:https://sf.funcheap.com/howloween-costumed-pet-parade-city-center-bish
+ op-ranch-san-ramon/
+DESCRIPTION:Fairs & festivals + Weird & unusual · A yearly tradition · S
+ an Ramon\nhttps://sf.funcheap.com/howloween-costumed-pet-parade-city-cent
+ er-bishop-ranch-san-ramon/\n\nThe spirit of Halloween arrives at City Cen
+ ter Bishop Ranch\, San Ramon’s premier open-air dining\, shopping and e
+ ntertainment destination\, with the return of its free Howl-O-Ween costum
+ ed pet parade on Sunday\, Oct. 25\, bringing an afternoon of festive fun 
+ for pups and their owners. Your prized ...
+END:VEVENT
+END:VCALENDAR

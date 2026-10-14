@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:05d59a4cde91@bay-events
+DTSTAMP:20261014T022011Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:Aussie DJ Mega-Star “Dom Dolla” Takes Over Cow Palace (Daly Ci
+ ty)
+LOCATION:Cow Palace\, 2600 Geneva Ave\, Daly City\, CA\, Daly City
+URL:https://sf.funcheap.com/aussie-dj-megastar-dom-dolla-takes-cow-palace-
+ daly-city/
+DESCRIPTION:Theatre · Daly City\nhttps://sf.funcheap.com/aussie-dj-megast
+ ar-dom-dolla-takes-cow-palace-daly-city/\n\nDom Dolla is the stage name o
+ f Dominic Louis Matheson\, a Grammy-nominated Australian tech house produ
+ cer\, DJ\, and songwriter. He has performed in festivals such as Coachell
+ a 2022 and Lollapalooza 2023. Dom has sold out such venues as Red Rocks A
+ mphitheatre in Denver\, Colorado. THIS EVENT ...
+END:VEVENT
+END:VCALENDAR

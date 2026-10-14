@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a880c4f851f8@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;TZID=America/Los_Angeles:20261018T121500
+DTEND;TZID=America/Los_Angeles:20261018T170000
+SUMMARY:Filipino American Int’l Book Festival 2026 at SF Main Library
+LOCATION:San Francisco Main Public Library\, 100 Larkin St\, San Francisco
+ \, CA 94102\, San Francisco
+URL:https://sf.funcheap.com/filipino-american-intl-book-festival-2026-at-s
+ f-main-library-oct-17-18/
+DESCRIPTION:Reading + Fairs & festivals · A yearly tradition\nhttps://sf.
+ funcheap.com/filipino-american-intl-book-festival-2026-at-sf-main-library
+ -oct-17-18/\n\nFilipino American Int’l Book Festival 2026 at SF Main Li
+ brary (Oct. 17-18) N/A The Filipino American International Book Festival 
+ (FilBookFest)\, presented in partnership with San Francisco Public Librar
+ y\, returns SFPL’s Main Library for its 8th iteration\, continuing its 
+ legacy as the largest Filipino American literary festival in the U.S. Thi
+ s year’s theme\, “SANGGALAN: Stories that propel us\, stori
+END:VEVENT
+END:VCALENDAR

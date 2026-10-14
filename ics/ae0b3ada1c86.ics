@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ae0b3ada1c86@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;TZID=America/Los_Angeles:20261017T140000
+DTEND;TZID=America/Los_Angeles:20261017T190000
+SUMMARY:Jack O’ London Square’s 2026 “Pup Crawl”: Halloween Bar Cr
+ awl (Oakland)
+LOCATION:Jack London District\, 333 Broadway\, Oakland\, CA\, Oakland
+URL:https://sf.funcheap.com/jack-london-squares-2026-pup-crawl-halloween-b
+ ar-crawl-oakland/
+DESCRIPTION:Camp & Halloween + Animals · Oakland\nhttps://sf.funcheap.com
+ /jack-london-squares-2026-pup-crawl-halloween-bar-crawl-oakland/\n\nThe J
+ ack O’ London Pup Crawl is a Halloween-themed\, dog-friendly bar and re
+ staurant crawl in Oakland’s Jack London District. The free RSVP event i
+ ncludes Halloween decorations\, food and drink specials\, participating d
+ og-friendly businesses\, and costumes for people and pets\; donations to 
+ Oakland Animal Services are ...
+END:VEVENT
+END:VCALENDAR

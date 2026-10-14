@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9f5aaee80ea0@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;TZID=America/Los_Angeles:20261024T140000
+DTEND;TZID=America/Los_Angeles:20261024T160000
+SUMMARY:Good Samaritan Hospital’s Annual Trunk or Treat Event (San Jose)
+LOCATION:Good Samaritan Hospital Main Parking Lot\, 2425 Samaritan Drive\,
+  San Jose\, CA 95124\, San Jose
+URL:https://sf.funcheap.com/good-samaritan-hospitals-annual-trunk-treat-ev
+ ent-san-jose/
+DESCRIPTION:Camp & Halloween + Weird & unusual · A yearly tradition · Sa
+ n Jose\nhttps://sf.funcheap.com/good-samaritan-hospitals-annual-trunk-tre
+ at-event-san-jose/\n\nJoin Good Samaritan Hospital for a free\, family-fr
+ iendly Trunk or Treat event! Enjoy trick-or-treating\, a jumpy house\, fa
+ ce painting\, bubbles\, robots\, spooky snacks\, and more\, plus special 
+ appearances from a fire truck\, ambulance and helicopter. Come in costume
+  and trunk or treat to music by ...
+END:VEVENT
+END:VCALENDAR

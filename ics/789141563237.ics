@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:789141563237@bay-events
+DTSTAMP:20261014T022011Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:Plate by Plate San Francisco 2026: Tasting Benefit for AAPI Commun
+ ities
+LOCATION:San Francisco Design Center\, 101 Henry Adams St\, San Francisco\
+ , CA\, San Francisco
+URL:https://sf.funcheap.com/plate-plate-san-francisco-2026-tasting-benefit
+ -aapi-communities/
+DESCRIPTION:Concerts · A yearly tradition\nhttps://sf.funcheap.com/plate-
+ plate-san-francisco-2026-tasting-benefit-aapi-communities/\n\n​Looking 
+ for a night out in San Francisco that beats dinner and a movie? ​Taste 
+ your way through 40+ acclaimed Bay Area restaurants and beverage partners
+ \, enjoy live music\, and dress up for a good cause. ​Join us October 1
+ 7\, 2026 at the San Francisco Design Center Galleria for Plate by Plate\,
+  ...
+END:VEVENT
+END:VCALENDAR

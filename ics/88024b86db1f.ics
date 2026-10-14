@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:88024b86db1f@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:“Safe Words” Comedy & Hot Dogs
+LOCATION:SF\, 398 12th St\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/safe-words-comedy-hot-dogs-sf-124/
+DESCRIPTION:Comedy + Theatre\nhttps://sf.funcheap.com/safe-words-comedy-ho
+ t-dogs-sf-124/\n\nSafe Words is a comedy show at a leather bar that featu
+ res the talent of nationally touring comics\, to local favorites. Faces f
+ rom Comedy Central\, Conan\, Reddit & Vice have graced the stage. Even Ma
+ rgaret Cho (HBO\, 30 Rock) has stopped by. Every first Wednesday\, ...
+END:VEVENT
+END:VCALENDAR

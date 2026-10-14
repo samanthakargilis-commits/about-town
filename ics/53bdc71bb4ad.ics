@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:53bdc71bb4ad@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:“Sanctuary” Exhibition Opening
+LOCATION:CK Contemporary\, 246 Powell St\, San Francisco\, San Francisco
+URL:https://sf.funcheap.com/sanctuary-exhibition-opening/
+DESCRIPTION:Museum exhibits + Art\nhttps://sf.funcheap.com/sanctuary-exhib
+ ition-opening/\n\n“Sanctuary” brings together the large-scale landsca
+ pe paintings of William Nichols and the emotionally charged pencil drawin
+ gs of Sara Gallagher in an exhibition exploring nature as a site of refug
+ e\, restoration\, and human connection. The exhibition opens with a recep
+ tion on Saturday\, October 17th from 5-8 PM. ...
+END:VEVENT
+END:VCALENDAR

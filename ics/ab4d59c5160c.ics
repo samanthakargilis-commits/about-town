@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ab4d59c5160c@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;TZID=America/Los_Angeles:20261031T160000
+DTEND;TZID=America/Los_Angeles:20261031T180000
+SUMMARY:Nob Hill Halloween In The Park + Dog Costume Contest 2026
+LOCATION:Huntington Park\, California St & Taylor St\, San Francisco\, CA
+URL:https://sf.funcheap.com/nob-hill-halloween-park-dog-costume-contest-20
+ 26-sf/
+DESCRIPTION:Camp & Halloween + Weird & unusual\nhttps://sf.funcheap.com/no
+ b-hill-halloween-park-dog-costume-contest-2026-sf/\n\nThe Nob Hill Associ
+ ation hosts Halloween in the Park at Huntington Park\, with free candy fo
+ r trick-or-treaters and a dog costume contest at 5:00 PM. Dogs may partic
+ ipate without advance registration\, and pet prizes will be awarded to co
+ ntest winners. Original Event Description: Calling all little ghosts\, ..
+ .
+END:VEVENT
+END:VCALENDAR

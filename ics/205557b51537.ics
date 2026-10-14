@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:205557b51537@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:16th & Mission Open Mic (w/out a mic)
+LOCATION:16th & Mission BART (southwest streetcorner)\, San Francisco
+URL:https://sf.funcheap.com/16th-mission-open-mic-w-out-a-mic-262/
+DESCRIPTION:Singing + Comedy\nhttps://sf.funcheap.com/16th-mission-open-mi
+ c-w-out-a-mic-262/\n\nTime: 9pm to 12am\, Every Thursday Celebrating 20 y
+ ears in May 2023 (currently 19 years strong). Instagram: @16thmission. Fo
+ r 18 years\, this outdoor “open mic-without-a-mic” has welcomed poets
+ \, musicians\, emcees\, comedy\, and everything in between. In the best o
+ f San Francisco tradition\, everyone is welcome\, ...
+END:VEVENT
+END:VCALENDAR

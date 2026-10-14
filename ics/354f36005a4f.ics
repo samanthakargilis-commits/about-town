@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:354f36005a4f@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;TZID=America/Los_Angeles:20261017T110000
+DTEND;TZID=America/Los_Angeles:20261017T170000
+SUMMARY:San Francisco Photobook Fair w/ 40+ Publishers
+LOCATION:Harvey Milk Photo Center\, 50 Scott St\, San Francisco\, CA\, San
+  Francisco
+URL:https://sf.funcheap.com/san-francisco-photobook-fair-40-publishers-oct
+ -1718/
+DESCRIPTION:Fairs & festivals + Art\nhttps://sf.funcheap.com/san-francisco
+ -photobook-fair-40-publishers-oct-1718/\n\nSan Francisco Photobook Fair b
+ rings together more than 40 publishers\, artists\, presses and collective
+ s at Harvey Milk Photo Center. The two-day event features participants fr
+ om Chile\, the UK\, China\, Bangladesh\, Venezuela and across the United 
+ States\, with photobooks\, zines\, artist books and independent publishin
+ g represented. ...
+END:VEVENT
+END:VCALENDAR

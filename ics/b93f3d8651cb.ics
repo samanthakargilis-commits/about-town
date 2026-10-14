@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b93f3d8651cb@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;TZID=America/Los_Angeles:20261024T170000
+DTEND;TZID=America/Los_Angeles:20261024T210000
+SUMMARY:Lit Crawl 2026: Epic 4-Hour Roaming Literature Fest w/ 250+ Author
+ s in the Mission
+LOCATION:All Over San Francisco\, San Francisco\, CA
+URL:https://sf.funcheap.com/lit-crawl-sf-epic-4hour-roaming-literature-fes
+ tival-mission/
+DESCRIPTION:Writing + Big Bay Area traditions\nhttps://sf.funcheap.com/lit
+ -crawl-sf-epic-4hour-roaming-literature-festival-mission/\n\nOne of the m
+ ost anticipated literary nights of the year\, San Francisco’s Lit Crawl
+  is a massive\, one-night literary pub crawl through San Francisco’s Mi
+ ssion District that caps off our annual Litquake Festival. Lit Crawl SF b
+ rings together 250+ authors\, 50+ events and close to ...
+END:VEVENT
+END:VCALENDAR

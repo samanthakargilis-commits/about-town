@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a735fb56f721@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;TZID=America/Los_Angeles:20261031T183000
+DTEND;TZID=America/Los_Angeles:20261031T210000
+SUMMARY:“Sqream” Oasis’ Wild + Immersive ’90s Drag Horror Musical 
+ (Halloween 2026)
+LOCATION:Oasis\, 298 11th St\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/sqream-oasis-wild-immersive-90s-drag-horror-mu
+ sical-halloween-2026/
+DESCRIPTION:Musical theatre + Gay / queer\nhttps://sf.funcheap.com/sqream-
+ oasis-wild-immersive-90s-drag-horror-musical-halloween-2026/\n\nDo you li
+ ke scary movie drag parodies??? Get ready for the RETURN of the ’90s sl
+ asher sing-along of your teenage dreams! From the production team that br
+ ings you the immersive The Rocky Horror Show experience comes SQREAM\, a 
+ drag horror parody set to all your ...
+END:VEVENT
+END:VCALENDAR

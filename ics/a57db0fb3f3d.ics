@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a57db0fb3f3d@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;TZID=America/Los_Angeles:20261017T160000
+DTEND;TZID=America/Los_Angeles:20261017T210000
+SUMMARY:Mission Bay Harvest Festival (Spark Social SF)
+LOCATION:SPARK Social SF\, 601 Mission Bay Blvd\, San Francisco\, CA\, San
+  Francisco
+URL:https://sf.funcheap.com/mission-bay-harvest-festival-spark-social-sf/
+DESCRIPTION:Big Bay Area traditions + Camp & Halloween · A yearly traditi
+ on\nhttps://sf.funcheap.com/mission-bay-harvest-festival-spark-social-sf/
+ \n\nMission Bay Harvest Festival Returns! Saturday\, October 17\, 2026 | 
+ 4PM–7PM Outdoor Movie Begins at 7PM SPARK Social SF | 601 Mission Bay B
+ lvd North\, San Francisco\, CA Free Admission | Everyone Welcome Calling 
+ all Mission Bay residents! The Mission Bay Harvest Festival is back at SP
+ ARK Social for an ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:10464ed2b7c7@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:Brava Block Party: Celebrating 40 Years
+LOCATION:Brava Theater\, 2781 24th St\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/brava-block-party-celebrating-40-years/
+DESCRIPTION:Fairs & festivals + Theatre\nhttps://sf.funcheap.com/brava-blo
+ ck-party-celebrating-40-years/\n\nBrava! Block Party Saturday\, October 1
+ 7\, 2026 @11AM-5PM 40 Years of Brava!\, 30 Years of Community Ownership a
+ nd 100 Years of the Historic Theater 24th Street • Between Bryant and H
+ ampshire A free\, family-friendly celebration of art\, community\, and 40
+  years of Brava! Live performances • Film Screenings • Art ...
+END:VEVENT
+END:VCALENDAR

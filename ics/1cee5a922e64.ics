@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1cee5a922e64@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;TZID=America/Los_Angeles:20261017T150000
+DTEND;TZID=America/Los_Angeles:20261017T210000
+SUMMARY:Hayward’s Halloween-Themed 2026 Night Market
+LOCATION:St. Rose Hospital\, 27200 Calaroga Avenue\, Hayward\, CA 94545\, 
+ Hayward
+URL:https://sf.funcheap.com/haywards-halloweenthemed-2026-night-market/
+DESCRIPTION:Fairs & festivals + Camp & Halloween · Hayward\nhttps://sf.fu
+ ncheap.com/haywards-halloweenthemed-2026-night-market/\n\nThe Hayward Nig
+ ht Market returns to St. Rose Hospital for a free Halloween-themed market
+  featuring food and goods from local vendors\, live music\, giveaways\, a
+ nd family activities. Original Event Description: _The Hayward Night Mark
+ et is back this year for another Halloween-themed event! This year’s ma
+ rket is taking ...
+END:VEVENT
+END:VCALENDAR

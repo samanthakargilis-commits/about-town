@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7563b73b4291@bay-events
+DTSTAMP:20261014T022010Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Eco SF School Farm Volunteer Work Day
+LOCATION:SF\, 555 Portola Drive\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/eco-sf-school-farm-volunteer-work-day-sf-164/
+DESCRIPTION:Comedy\nhttps://sf.funcheap.com/eco-sf-school-farm-volunteer-w
+ ork-day-sf-164/\n\nCome join a volunteer work party at The School Farm ev
+ ery second Saturday from noon to 4 pm to lend a hand and learn about farm
+  work. All skill levels and abilities are welcome\, even for moral suppor
+ t and comic relief. They will provide some ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4cfeb921f510@bay-events
+DTSTAMP:20261014T022011Z
+DTSTART;TZID=America/Los_Angeles:20261105T180000
+DTEND;TZID=America/Los_Angeles:20261105T211500
+SUMMARY:30th Arab Film Festival at SF’s AMC Kabuki
+LOCATION:AMC Kabuki Cinemas\, 1881 Post St\, San Francisco\, CA\, San Fran
+ cisco
+URL:https://sf.funcheap.com/30th-arab-film-festival-sfs-amc-kabuki-nov-514
+ /
+DESCRIPTION:A yearly tradition · Thursday evening\nhttps://sf.funcheap.co
+ m/30th-arab-film-festival-sfs-amc-kabuki-nov-514/\n\nThe 30th anniversary
+  edition of the Arab Film Festival (AFF30)\, runs November 5–14\, 2026 
+ with more than 30 events across San Francisco\, Oakland\, and the South B
+ ay\, including film screenings\, filmmaker conversations\, panels\, speci
+ al presentations and community events\, with select programming available
+  virtually. General admission to ...
+END:VEVENT
+END:VCALENDAR

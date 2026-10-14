@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:28110d4e2166@bay-events
+DTSTAMP:20261014T022011Z
+DTSTART;TZID=America/Los_Angeles:20261018T123000
+DTEND;TZID=America/Los_Angeles:20261018T153000
+SUMMARY:SF’s “Make a Friend” Picnic: Bring-Your-Own-Blanket (Potrero
+  del Sol Park)
+LOCATION:Potrero del Sol Park (La Raza)\, Potrero Avenue and 25th Street\,
+  San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/sfs-friend-picnic-bringyourownblanket-potrero-
+ del-sol-park/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/sfs-friend-picnic-br
+ ingyourownblanket-potrero-del-sol-park/\n\nMake a Friend Picnic is a casu
+ al outdoor social meetup at Potrero del Sol Park for people looking to me
+ et new people in San Francisco. Attendees are asked to bring their own bl
+ anket\, drinks\, snacks\, and other picnic supplies. The host plans infor
+ mal activities to ...
+END:VEVENT
+END:VCALENDAR

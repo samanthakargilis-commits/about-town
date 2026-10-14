@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0b865e1cba25@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;TZID=America/Los_Angeles:20261017T110000
+DTEND;TZID=America/Los_Angeles:20261017T160000
+SUMMARY:14th Annual “Bayview In Motion” Health Fest
+LOCATION:Southeast Community Center\, 1550 Evans Ave
+URL:https://sf.funcheap.com/14th-annual-bayview-motion-health-fest-sf/
+DESCRIPTION:Gay / queer + Fairs & festivals · A yearly tradition\nhttps:/
+ /sf.funcheap.com/14th-annual-bayview-motion-health-fest-sf/\n\nThe Southe
+ ast Community Center Presents: The 14th Annual District 10 Health Fest: B
+ ayview in Motion! Saturday\, October 17\, 11AM – 4PM. This dynamic\, co
+ mmunity-centered wellness celebration merges movement\, prevention\, sust
+ ainability and neighborhood pride into one exciting festival at the SECC 
+ featuring health screenings and education\, entertainment ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:aca90899cf2c@bay-events
+DTSTAMP:20261014T022011Z
+DTSTART;TZID=America/Los_Angeles:20261017T120000
+DTEND;TZID=America/Los_Angeles:20261017T200000
+SUMMARY:47th Annual “Palestine Day” Festival in Redwood City (2026)
+LOCATION:Redwood City\, 2200 Broadway\, Redwood City\, CA\, Redwood City
+URL:https://sf.funcheap.com/47th-annual-palestine-day-festival-redwood-cit
+ y-2026/
+DESCRIPTION:Fairs & festivals · Redwood City\nhttps://sf.funcheap.com/47t
+ h-annual-palestine-day-festival-redwood-city-2026/\n\nThe 47th annual Pal
+ estine Day Festival takes place in Redwood City with traditional Palestin
+ ian cuisine\, music and dancing\, and an artisan market. The event also s
+ hares information about PAC’s cultural-preservation work and support fo
+ r the Palestine Children’s Relief Fund. Original Event Description: Pal
+ estine Day Festival SYywo1DaroagVULxmBNVg Saturday\, Oct 17\, ...
+END:VEVENT
+END:VCALENDAR

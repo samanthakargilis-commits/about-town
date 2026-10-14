@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1b4ce15acda0@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;TZID=America/Los_Angeles:20261017T120000
+DTEND;TZID=America/Los_Angeles:20261017T140000
+SUMMARY:SF’s Free Salvadoran Culture Festival Bike Tour (The Mission)
+LOCATION:Chan Kaaial Park\, 17th & Folsom St\, San Francisco\, CA\, San Fr
+ ancisco
+URL:https://sf.funcheap.com/sfs-free-salvadoran-culture-festival-bike-tour
+ -the-mission/
+DESCRIPTION:Fairs & festivals + Cultural festivals\nhttps://sf.funcheap.co
+ m/sfs-free-salvadoran-culture-festival-bike-tour-the-mission/\n\nSalvi So
+ ul Encuentro is a four-date celebration of Salvadoran heritage in San Fra
+ ncisco’s Excelsior and Mission Districts. The program includes Salvador
+ an storytelling at Casa De Apoyo\, a poetry and vinyl record showcase\, a
+  bike tour tracing the legacy of Los Siete de la Raza\, and ...
+END:VEVENT
+END:VCALENDAR

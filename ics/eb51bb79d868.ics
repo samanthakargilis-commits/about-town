@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:eb51bb79d868@bay-events
+DTSTAMP:20261014T022011Z
+DTSTART;TZID=America/Los_Angeles:20261021T170000
+DTEND;TZID=America/Los_Angeles:20261021T194500
+SUMMARY:Rocky Horror Picture Show with a Full Shadow Cast
+LOCATION:Koret Auditorium\, 100 Larkin St\, San Francisco\, CA 94102\, San
+  Francisco
+URL:https://sf.funcheap.com/rocky-horror-picture-show-full-shadow-cast-sf-
+ main-library-2/
+DESCRIPTION:Camp & Halloween + Singing\nhttps://sf.funcheap.com/rocky-horr
+ or-picture-show-full-shadow-cast-sf-main-library-2/\n\nThe Bawdy Caste pe
+ rforms a full shadow cast of The Rocky Horror Picture Show\, acting out t
+ he movie in front of the screen while it plays with audience participatio
+ n. Expect singing\, dancing\, costumes\, callbacks and a room full of peo
+ ple ready to celebrate. Callbacks are ...
+END:VEVENT
+END:VCALENDAR

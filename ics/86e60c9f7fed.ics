@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:86e60c9f7fed@bay-events
+DTSTAMP:20261014T022011Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:Thematic Entertainment X Proper Tings Present: Dr. Ushūu & Two Sw
+ ords
+LOCATION:Monarch\, 101 6th St.\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/thematic-entertainment-proper-tings-present-dr
+ -ushu-swords/
+DESCRIPTION:Weird & unusual + Art\nhttps://sf.funcheap.com/thematic-entert
+ ainment-proper-tings-present-dr-ushu-swords/\n\nTHEMATIC ENTERTAINMENT x 
+ PROPER TINGS PRESENT: DR. USHŪU & TWO SWORDS Two worlds of bass music co
+ llide in San Francisco this October as Thematic Entertainment and Propert
+ ings join forces for a heavyweight night with two artists who have been p
+ ushing the boundaries of underground electronic music ...
+END:VEVENT
+END:VCALENDAR

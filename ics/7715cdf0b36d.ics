@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7715cdf0b36d@bay-events
+DTSTAMP:20261014T022011Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Rhythms of Resilience III
+LOCATION:Club Fugazi\, 678 Green Street North Beach
+URL:https://sf.funcheap.com/rhythms-resilience-iii/
+DESCRIPTION:Theatre + Weird & unusual · A yearly tradition\nhttps://sf.fu
+ ncheap.com/rhythms-resilience-iii/\n\nRhythms of Resilience is Conard Hou
+ se’s signature live fundraising experience. It is an evening of music\,
+  performance\, and community that turns a night out into meaningful impac
+ t. This year’s event is designed as an immersive dinner and show experi
+ ence with live music\, dining\, dancing\, and ...
+END:VEVENT
+END:VCALENDAR

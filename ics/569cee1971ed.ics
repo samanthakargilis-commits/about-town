@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:569cee1971ed@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;VALUE=DATE:20261018
+DTEND;VALUE=DATE:20261019
+SUMMARY:Because I Have To: Bay Area Creatives in Conversation (Oakland)
+LOCATION:Local Economy\, 6028 College Ave\, Oakland\, CA\, Oakland
+URL:https://sf.funcheap.com/bay-area-creatives-conversation-oakland/
+DESCRIPTION:Reading + Discourse · Oakland\nhttps://sf.funcheap.com/bay-ar
+ ea-creatives-conversation-oakland/\n\nBECAUSE I HAVE TO is a discussion s
+ eries featuring Bay Area artists\, writers\, musicians\, chefs\, and crea
+ tors who work across multiple artistic and creative mediums\, against the
+  grain of their professional lives\, alongside it\, or within it. Hosted 
+ by Jeff Wright\, these conversations will delve ...
+END:VEVENT
+END:VCALENDAR

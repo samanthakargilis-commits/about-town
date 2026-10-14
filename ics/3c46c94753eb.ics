@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3c46c94753eb@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;TZID=America/Los_Angeles:20261031T210000
+DTEND;TZID=America/Los_Angeles:20261101T020000
+SUMMARY:Emporium’s 8th Annual Halloween Costume Contest Party
+LOCATION:Emporium SF\, 616 Divisadero St San Francisco\, CA
+URL:https://sf.funcheap.com/emporiums-8th-annual-halloween-costume-contest
+ -party-sf/
+DESCRIPTION:Camp & Halloween + Weird & unusual · A yearly tradition\nhttp
+ s://sf.funcheap.com/emporiums-8th-annual-halloween-costume-contest-party-
+ sf/\n\nThe best Halloween party in the entire Bay Area is back! Fully dec
+ orated massive haunted theater with loads of spooky surprises! Both the p
+ arty and costume contest are free to enter with cash money prizes- $500 f
+ or 1st place\, $250 for 2nd place\, $150 for ...
+END:VEVENT
+END:VCALENDAR

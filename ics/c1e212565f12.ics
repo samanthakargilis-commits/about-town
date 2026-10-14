@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c1e212565f12@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;TZID=America/Los_Angeles:20261024T140000
+DTEND;TZID=America/Los_Angeles:20261024T153000
+SUMMARY:Weekend Sessions w/ Afro-Filipino Jazz Project (Yerba Buena Garden
+ s Festival 2026)
+LOCATION:Great Lawn\, Yerba Buena Gardens\, Mission St. between 3rd & 4th 
+ Sts. San Francisco\, CA
+URL:https://sf.funcheap.com/weekend-sessions-w-afro-filipino-jazz-project-
+ yerba-buena-gardens-festival-2026/
+DESCRIPTION:Fairs & festivals + Theatre\nhttps://sf.funcheap.com/weekend-s
+ essions-w-afro-filipino-jazz-project-yerba-buena-gardens-festival-2026/\n
+ \nThe 2026 Yerba Buena Gardens Festival hosts a full lineup of free outdo
+ or music\, theater\, circus\, dance\, poetry\, and children’s programs.
+  The Festival opens on Saturday\, May 9\, 2026 with Hermán Olivera y Orq
+ uesta Taíno to kick off its 26th season. The Festival features over 100 
+ free ...
+END:VEVENT
+END:VCALENDAR

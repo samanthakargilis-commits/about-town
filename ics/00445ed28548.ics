@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:00445ed28548@bay-events
+DTSTAMP:20261014T022011Z
+DTSTART;TZID=America/Los_Angeles:20261016T200000
+DTEND;TZID=America/Los_Angeles:20261016T212000
+SUMMARY:Terrifying Immigrant Takes the Form of a Soft Chubby Bear
+LOCATION:Theatre Rhinoceros\, 4229 18th Street\, San Francisco\, CA 94114\
+ , San Francisco
+URL:https://sf.funcheap.com/terrifying-immigrant-takes-form-soft-chubby-be
+ ar/
+DESCRIPTION:Theatre\nhttps://sf.funcheap.com/terrifying-immigrant-takes-fo
+ rm-soft-chubby-bear/\n\nEpic Party Theatre Presents the world premiere of
+  Terrifying Immigrant Takes the Form of a Soft Chubby Bear Written & Perf
+ ormed by Baruch Porras Hernandez Directed & Produced by Richard A. Mosque
+ da Baruch Porras Hernandez is ready to bring the house down with his new 
+ solo tour-de-force\, Terrifying Immigrant ...
+END:VEVENT
+END:VCALENDAR

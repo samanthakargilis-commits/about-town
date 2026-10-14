@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:585baefd8968@bay-events
+DTSTAMP:20261014T022010Z
+DTSTART;TZID=America/Los_Angeles:20261017T190000
+DTEND;TZID=America/Los_Angeles:20261017T230000
+SUMMARY:“Step Into Wonder” UV Glowing Art After Dark Party
+LOCATION:Mare Island Art\, 110 Pintado St Valejo
+URL:https://sf.funcheap.com/step-uv-glowing-art-dark-party-mare-island/
+DESCRIPTION:Museum exhibits + Art\nhttps://sf.funcheap.com/step-uv-glowing
+ -art-dark-party-mare-island/\n\ntep Into Wonder comes alive after dark fo
+ r an immersive\, adults-only night of glowing art\, music\, movement\, cr
+ eativity and connection at Mare Island Art Studios. Wander through galler
+ ies transformed by UV light\, illuminated sculptures and fantastical hand
+ made installations. Make art\, interact with the evolving environment\, m
+ ove ...
+END:VEVENT
+END:VCALENDAR

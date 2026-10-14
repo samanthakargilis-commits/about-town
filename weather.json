@@ -1,0 +1,517 @@
+{
+"source": "Open-Meteo",
+"days": {
+"2026-10-13": {
+"sf": {
+"sun": 0.9,
+"hi": 69,
+"rain": 0,
+"code": 3
+},
+"marin": {
+"sun": 0.94,
+"hi": 79,
+"rain": 0,
+"code": 45
+},
+"peninsula": {
+"sun": 0.94,
+"hi": 76,
+"rain": 0,
+"code": 3
+},
+"eastbay": {
+"sun": 0.86,
+"hi": 75,
+"rain": 0,
+"code": 3
+},
+"sonoma": {
+"sun": 0.94,
+"hi": 80,
+"rain": 0,
+"code": 45
+}
+},
+"2026-10-14": {
+"sf": {
+"sun": 0.94,
+"hi": 67,
+"rain": 2,
+"code": 2
+},
+"marin": {
+"sun": 0.94,
+"hi": 76,
+"rain": 1,
+"code": 3
+},
+"peninsula": {
+"sun": 0.95,
+"hi": 77,
+"rain": 0,
+"code": 1
+},
+"eastbay": {
+"sun": 0.94,
+"hi": 72,
+"rain": 0,
+"code": 3
+},
+"sonoma": {
+"sun": 0.94,
+"hi": 80,
+"rain": 0,
+"code": 3
+}
+},
+"2026-10-15": {
+"sf": {
+"sun": 0.97,
+"hi": 80,
+"rain": 0,
+"code": 3
+},
+"marin": {
+"sun": 0.98,
+"hi": 83,
+"rain": 0,
+"code": 0
+},
+"peninsula": {
+"sun": 0.97,
+"hi": 84,
+"rain": 0,
+"code": 0
+},
+"eastbay": {
+"sun": 0.95,
+"hi": 88,
+"rain": 0,
+"code": 2
+},
+"sonoma": {
+"sun": 0.97,
+"hi": 93,
+"rain": 0,
+"code": 0
+}
+},
+"2026-10-16": {
+"sf": {
+"sun": 0.97,
+"hi": 82,
+"rain": 0,
+"code": 0
+},
+"marin": {
+"sun": 0.97,
+"hi": 86,
+"rain": 0,
+"code": 0
+},
+"peninsula": {
+"sun": 0.97,
+"hi": 87,
+"rain": 0,
+"code": 0
+},
+"eastbay": {
+"sun": 0.97,
+"hi": 91,
+"rain": 0,
+"code": 0
+},
+"sonoma": {
+"sun": 0.97,
+"hi": 91,
+"rain": 0,
+"code": 0
+}
+},
+"2026-10-17": {
+"sf": {
+"sun": 0.96,
+"hi": 72,
+"rain": 0,
+"code": 3
+},
+"marin": {
+"sun": 0.97,
+"hi": 81,
+"rain": 0,
+"code": 3
+},
+"peninsula": {
+"sun": 0.97,
+"hi": 86,
+"rain": 0,
+"code": 2
+},
+"eastbay": {
+"sun": 0.96,
+"hi": 83,
+"rain": 0,
+"code": 3
+},
+"sonoma": {
+"sun": 0.96,
+"hi": 88,
+"rain": 0,
+"code": 3
+}
+},
+"2026-10-18": {
+"sf": {
+"sun": 0.95,
+"hi": 62,
+"rain": 0,
+"code": 3
+},
+"marin": {
+"sun": 0.96,
+"hi": 67,
+"rain": 0,
+"code": 3
+},
+"peninsula": {
+"sun": 0.97,
+"hi": 76,
+"rain": 0,
+"code": 2
+},
+"eastbay": {
+"sun": 0.96,
+"hi": 68,
+"rain": 0,
+"code": 2
+},
+"sonoma": {
+"sun": 0.95,
+"hi": 77,
+"rain": 0,
+"code": 2
+}
+},
+"2026-10-19": {
+"sf": {
+"sun": 0.96,
+"hi": 61,
+"rain": 16,
+"code": 3
+},
+"marin": {
+"sun": 0.95,
+"hi": 67,
+"rain": 15,
+"code": 3
+},
+"peninsula": {
+"sun": 0.96,
+"hi": 71,
+"rain": 17,
+"code": 3
+},
+"eastbay": {
+"sun": 0.95,
+"hi": 66,
+"rain": 11,
+"code": 3
+},
+"sonoma": {
+"sun": 0.95,
+"hi": 74,
+"rain": 14,
+"code": 3
+}
+},
+"2026-10-20": {
+"sf": {
+"sun": 0.96,
+"hi": 67,
+"rain": 24,
+"code": 3
+},
+"marin": {
+"sun": 0.95,
+"hi": 73,
+"rain": 22,
+"code": 3
+},
+"peninsula": {
+"sun": 0.95,
+"hi": 73,
+"rain": 24,
+"code": 3
+},
+"eastbay": {
+"sun": 0.96,
+"hi": 75,
+"rain": 22,
+"code": 3
+},
+"sonoma": {
+"sun": 0.96,
+"hi": 79,
+"rain": 21,
+"code": 3
+}
+},
+"2026-10-21": {
+"sf": {
+"sun": 0.91,
+"hi": 72,
+"rain": 21,
+"code": 3
+},
+"marin": {
+"sun": 0.92,
+"hi": 78,
+"rain": 17,
+"code": 3
+},
+"peninsula": {
+"sun": 0.93,
+"hi": 80,
+"rain": 20,
+"code": 3
+},
+"eastbay": {
+"sun": 0.92,
+"hi": 80,
+"rain": 19,
+"code": 3
+},
+"sonoma": {
+"sun": 0.94,
+"hi": 84,
+"rain": 15,
+"code": 3
+}
+},
+"2026-10-22": {
+"sf": {
+"sun": 0.87,
+"hi": 65,
+"rain": 8,
+"code": 51
+},
+"marin": {
+"sun": 0.93,
+"hi": 64,
+"rain": 7,
+"code": 3
+},
+"peninsula": {
+"sun": 0.69,
+"hi": 75,
+"rain": 7,
+"code": 53
+},
+"eastbay": {
+"sun": 0.79,
+"hi": 74,
+"rain": 7,
+"code": 51
+},
+"sonoma": {
+"sun": 0.9,
+"hi": 73,
+"rain": 8,
+"code": 3
+}
+},
+"2026-10-23": {
+"sf": {
+"sun": 0.95,
+"hi": 65,
+"rain": 10,
+"code": 3
+},
+"marin": {
+"sun": 0.94,
+"hi": 69,
+"rain": 9,
+"code": 3
+},
+"peninsula": {
+"sun": 0.69,
+"hi": 71,
+"rain": 11,
+"code": 51
+},
+"eastbay": {
+"sun": 0.95,
+"hi": 72,
+"rain": 9,
+"code": 3
+},
+"sonoma": {
+"sun": 0.94,
+"hi": 76,
+"rain": 10,
+"code": 3
+}
+},
+"2026-10-24": {
+"sf": {
+"sun": 0.95,
+"hi": 66,
+"rain": 7,
+"code": 1
+},
+"marin": {
+"sun": 0.94,
+"hi": 66,
+"rain": 5,
+"code": 2
+},
+"peninsula": {
+"sun": 0.96,
+"hi": 73,
+"rain": 9,
+"code": 1
+},
+"eastbay": {
+"sun": 0.96,
+"hi": 72,
+"rain": 7,
+"code": 1
+},
+"sonoma": {
+"sun": 0.95,
+"hi": 74,
+"rain": 5,
+"code": 2
+}
+},
+"2026-10-25": {
+"sf": {
+"sun": 0.95,
+"hi": 66,
+"rain": 3,
+"code": 0
+},
+"marin": {
+"sun": 0.96,
+"hi": 73,
+"rain": 3,
+"code": 0
+},
+"peninsula": {
+"sun": 0.96,
+"hi": 73,
+"rain": 0,
+"code": 0
+},
+"eastbay": {
+"sun": 0.95,
+"hi": 78,
+"rain": 3,
+"code": 0
+},
+"sonoma": {
+"sun": 0.96,
+"hi": 80,
+"rain": 3,
+"code": 0
+}
+},
+"2026-10-26": {
+"sf": {
+"sun": 0.95,
+"hi": 64,
+"rain": 10,
+"code": 0
+},
+"marin": {
+"sun": 0.95,
+"hi": 74,
+"rain": 10,
+"code": 0
+},
+"peninsula": {
+"sun": 0.96,
+"hi": 72,
+"rain": 10,
+"code": 0
+},
+"eastbay": {
+"sun": 0.96,
+"hi": 77,
+"rain": 10,
+"code": 0
+},
+"sonoma": {
+"sun": 0.95,
+"hi": 81,
+"rain": 10,
+"code": 1
+}
+},
+"2026-10-27": {
+"sf": {
+"sun": 0.88,
+"hi": 62,
+"rain": 3,
+"code": 3
+},
+"marin": {
+"sun": 0.93,
+"hi": 68,
+"rain": 3,
+"code": 3
+},
+"peninsula": {
+"sun": 0.87,
+"hi": 70,
+"rain": 5,
+"code": 3
+},
+"eastbay": {
+"sun": 0.94,
+"hi": 68,
+"rain": 3,
+"code": 3
+},
+"sonoma": {
+"sun": 0.95,
+"hi": 73,
+"rain": 3,
+"code": 3
+}
+},
+"2026-10-28": {
+"sf": {
+"sun": 0.95,
+"hi": 66,
+"rain": 3,
+"code": 3
+},
+"marin": {
+"sun": 0.95,
+"hi": 71,
+"rain": 3,
+"code": 3
+},
+"peninsula": {
+"sun": 0.96,
+"hi": 71,
+"rain": 0,
+"code": 3
+},
+"eastbay": {
+"sun": 0.95,
+"hi": 75,
+"rain": 3,
+"code": 3
+},
+"sonoma": {
+"sun": 0.95,
+"hi": 79,
+"rain": 3,
+"code": 2
+}
+}
+}
+}

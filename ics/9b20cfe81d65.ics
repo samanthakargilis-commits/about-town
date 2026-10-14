@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9b20cfe81d65@bay-events
+DTSTAMP:20261014T022011Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+SUMMARY:Cat’s Corner w/ Sean Krazit’s Juniper Jazz Band
+LOCATION:On Broadway at Mabuhay Gardens\, 435 Broadway\, San Francisco\, C
+ A 94133\, San Francisco
+URL:https://sf.funcheap.com/cats-corner-sean-krazits-juniper-jazz-band/
+DESCRIPTION:Musical theatre + Concerts\nhttps://sf.funcheap.com/cats-corne
+ r-sean-krazits-juniper-jazz-band/\n\nWeekly Wednesday swing dance night a
+ t On Broadway at Mabuhay Gardens. Intermediate Lindy Hop class 7-8 PM\, b
+ eginner Lindy Hop 8-9 PM\, live music party 9-11:30 PM featuring Sean Kra
+ zit’s Juniper Jazz Band. Beginner swing drop-in lesson 9-9:30 PM includ
+ ed with general admission. 15 general ...
+END:VEVENT
+END:VCALENDAR

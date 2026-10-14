@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7f4beb76d93b@bay-events
+DTSTAMP:20261014T022009Z
+DTSTART;TZID=America/Los_Angeles:20261015T180000
+DTEND;TZID=America/Los_Angeles:20261015T210000
+SUMMARY:“Lights On” SF’s Historic Broadway Sign Relighting + Sidewal
+ k Party (North Beach)
+LOCATION:435 Broadway\, 435 Broadway\, San Francisco\, CA 94133\, San Fran
+ cisco
+URL:https://sf.funcheap.com/lights-sfs-historic-broadway-sign-relighting-s
+ idewalk-party-north-beach/
+DESCRIPTION:Musical theatre · Thursday evening\nhttps://sf.funcheap.com/l
+ ights-sfs-historic-broadway-sign-relighting-sidewalk-party-north-beach/\n
+ \nLights ON! marks the return of the restored BROADWAY sign at the former
+  Mabuhay Gardens building in North Beach. The free sidewalk program inclu
+ des remarks\, a dusk countdown and sign lighting\, plus samples from Fran
+ cesca’s Cafe. Ticketed upstairs programming at On Broadway / Broadway S
+ tudios ...
+END:VEVENT
+END:VCALENDAR
