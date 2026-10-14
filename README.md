@@ -19,6 +19,12 @@ then Share → Add to Home Screen.
   import your Instagram export), Goodreads CSV import, what it has learned,
   backup/restore, and which sources worked on the last run.
 
+- **In Apple Calendar**: the You tab has two Subscribe buttons. "About Town" (about
+  7 top picks a week) and "About Town · More" (a few more options a day) appear as
+  their own calendars you tick on or off; they never block time, and each event's
+  notes link back to the app for Add / Maybe / Not for me. The daily job writes
+  them as `calendar.ics` and `calendar-more.ics` next to `events.json`.
+
 Choices and learned taste stay on the phone (localStorage). Export a backup now and then.
 
 ## How it's built
@@ -27,6 +33,7 @@ Choices and learned taste stay on the phone (localStorage). Export a backup now 
 ingest/adapters/*.py   one adapter per source; a broken one never stops the rest
 ingest/heuristics.py   fallback parsing for pages without feeds
 ingest/score.py        interest + time boosts, follow-list badge, one-line why
+ingest/feed.py         the two subscribed Apple Calendar feeds
 ingest/ai.py           optional: AI tagging and article extraction (needs ANTHROPIC_API_KEY)
 ingest/__main__.py     run all → window → area filter → merge → enrich → score → events.json + .ics
 app/                   the PWA (no build step)

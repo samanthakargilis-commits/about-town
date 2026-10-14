@@ -711,3 +711,34 @@ class AddedSources(unittest.TestCase):
         self.assertEqual((e.title, e.venue, e.source_url), ("Noon Piano, Bach", "Presidio Chapel", "https://x.example/e/1"))
         self.assertEqual(e.start, "2026-10-14T12:00-07:00")
         self.assertEqual(e.description, "A long line")
+
+
+class CalendarFeed(unittest.TestCase):
+    profile = {"home": {"lat": 37.7886, "lng": -122.4467}, "events_per_week": 2, "weekend_earliest_hour": 9}
+    today = dt.date(2026, 10, 14)
+
+    def test_picks_more_and_duplicates(self):
+        from ingest import feed
+        evs = [ev("Queer Craft Night", "2026-10-15T19:00-07:00", score=9, why="Craft · Thursday evening"),
+               ev("2026 Half Moon Bay Art & Pumpkin Festival", "2026-10-17T00:00-07:00", all_day=True, score=12),
+               ev("54th Annual Half Moon Bay Art & Pumpkin Festival", "2026-10-18T00:00-07:00", all_day=True, score=11),
+               ev("Sunday 7am Bootcamp", "2026-10-18T07:00-07:00", score=10),          # too early on a weekend
+               ev("Okay Trivia", "2026-10-16T19:00-07:00", score=4),
+               ev("Last week's show", "2026-10-10T19:00-07:00", score=12)]
+        picks, more = feed.choose(evs, self.profile, self.today)
+        self.assertEqual([e["title"] for e in picks], ["Queer Craft Night", "2026 Half Moon Bay Art & Pumpkin Festival"])
+        self.assertEqual([e["title"] for e in more], ["Okay Trivia"])
+
+    def test_feed_reads_back_as_a_calendar(self):
+        from ingest import added, feed
+        e = ev("Queer Craft Night, with glue", "2026-10-15T19:00-07:00", score=9, why="Craft · Thursday evening",
+               venue="Manny's", city="San Francisco", price="free", lat=37.76, lng=-122.42, followed="Pat Regan")
+        text = feed.calendar([e], "About Town", "Picks", "#E9874B", "https://x.github.io/bay-events/", self.today)
+        self.assertIn("X-WR-CALNAME:About Town", text)
+        self.assertIn("TRANSP:TRANSPARENT", text)
+        start = dt.datetime(2026, 10, 14, tzinfo=TZ)
+        back = added.ics_events(text, "t", "https://x.example/", start, start + dt.timedelta(days=30))
+        self.assertEqual(len(back), 1)
+        self.assertEqual(back[0].title, "⭐ Queer Craft Night, with glue")
+        self.assertEqual(back[0].start, "2026-10-15T19:00-07:00")
+        self.assertIn("#e=x%3AQueer%20Craft", text.replace("\r\n ", ""))

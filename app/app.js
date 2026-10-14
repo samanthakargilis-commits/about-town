@@ -1028,6 +1028,9 @@ function sendSourceAsk(url, note) {
   window.open(`https://github.com/${REPO}/issues/new?title=${encodeURIComponent(`Add source: ${hostOf(url)}`)}&body=${encodeURIComponent(body)}`, '_blank');
 }
 
+// webcal:// makes iPhone offer "Subscribe" instead of downloading a one-off file
+const webcal = (file) => new URL(file, location.href).href.replace(/^https?:/, 'webcal:');
+
 function renderMe(v) {
   const ints = profile ? Object.entries(profile.interests) : [];
   const lv = (k) => (S.interests[k] === undefined ? 1 : S.interests[k]);
@@ -1065,6 +1068,11 @@ function renderMe(v) {
     <div class="chips">${learned.slice(0, 14).map(([t, w]) => `<span class="pchip">${w > 0 ? '▲' : '▼'} ${esc(t.startsWith('t:') ? t.slice(2).replace('-', ' ') : profile?.interests?.[t]?.label || t)}</span>`).join('')}</div>
     ${S.hiddenTags.length ? `<p class="small" style="margin-top:10px">Hidden: ${S.hiddenTags.map((t) => `<a href="#" data-unhide="${esc(t)}">${esc(profile?.interests?.[t]?.label || t)} ✕</a>`).join(', ')}</p>` : ''}
   </div>` : ''}
+  <div class="section"><h2>In Apple Calendar</h2>
+    <p class="sub">Subscribe and About Town shows up as its own calendars, updated every day. Tick them on or off in Calendars whenever you're looking for something to do. They never block time.</p>
+    <div class="row-btns"><a class="btn primary" href="${esc(webcal('calendar.ics'))}">Top picks</a><a class="btn" href="${esc(webcal('calendar-more.ics'))}">More options</a></div>
+    <p class="small">Each event's notes have a link back here for Add, Maybe or Not for me.</p>
+  </div>
   <div class="section"><h2>Backup</h2><p class="sub">Your choices live on this phone. Save a backup now and then.</p>
     <div class="row-btns"><button class="btn primary" data-export>Export backup</button><label class="btn file-btn">Restore<input type="file" accept=".json" id="restoreFile"></label></div>
   </div>
@@ -1314,6 +1322,15 @@ async function getJSON(url) {
   return r.json();
 }
 
+// a link from a calendar feed (…/#e=<id>) opens that event, ready for Add / Maybe / Not for me
+function openFromLink() {
+  const m = location.hash.match(/^#e=(.+)$/);
+  if (!m) return;
+  history.replaceState(null, '', location.pathname + location.search);
+  const ev = byId(decodeURIComponent(m[1]));
+  if (ev) openSheet(ev); else toast("That event has passed or isn't listed any more");
+}
+
 async function start() {
   bind();
   try {
@@ -1324,6 +1341,8 @@ async function start() {
   }
   buildFollowIndex();
   render();
+  openFromLink();
+  window.addEventListener('hashchange', openFromLink);
   // as the day goes on, what's over drops off (the app can sit open for hours)
   const refresh = () => { if (tab !== 'me' && $('#sheetWrap').hidden && document.visibilityState === 'visible') render(); };
   setInterval(refresh, 5 * 60e3);

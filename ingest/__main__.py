@@ -19,7 +19,7 @@ from urllib.parse import urlparse
 
 import requests
 
-from . import added, ai, geocode, icons, place, weather
+from . import added, ai, feed, geocode, icons, place, weather
 from .area import keep
 from .core import (CACHE_DIR, ROOT, BudgetExceeded, Fetcher, clean, html_to_text, iso, jsonld_events,
                    now, og, short_hash, to_local)
@@ -360,6 +360,9 @@ def main(argv=None):
     for name in ("profile.json", "follow.json"):   # the app reads these too
         shutil.copy(ROOT / "data" / name, OUT / name)
     print(f"wrote {len(out)} events to {args.out}")
+    # the app's own address, for "open in About Town" links in the calendar feeds
+    app_url = args.previous.rsplit("/", 1)[0] + "/" if (args.previous or "").startswith("http") else ""
+    print(feed.write(out, profile, OUT, app_url))
     print(weather.write(OUT / "weather.json"))
     broken = [h["label"] for h in health if not h["ok"]]
     if broken:
