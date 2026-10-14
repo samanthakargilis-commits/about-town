@@ -1071,9 +1071,8 @@ function renderMe(v) {
     ${S.hiddenTags.length ? `<p class="small" style="margin-top:10px">Hidden: ${S.hiddenTags.map((t) => `<a href="#" data-unhide="${esc(t)}">${esc(profile?.interests?.[t]?.label || t)} ✕</a>`).join(', ')}</p>` : ''}
   </div>` : ''}
   <div class="section"><h2>In Apple Calendar</h2>
-    <p class="sub">Subscribe and About Town adds one line a day at the top of Apple Calendar, above your own events. Tap it for that day's ideas. Tick it on or off in Calendars. It never blocks time.</p>
-    <div class="row-btns"><a class="btn primary" href="${esc(webcal('calendar.ics'))}">Daily ideas</a><a class="btn" href="${esc(webcal('calendar-more.ics'))}">At their times</a></div>
-    <p class="small">Tap a day's line, then its link: that day opens here, and + adds an idea to your own calendar. "At their times" puts every idea in its time slot instead, if you'd rather see them there.</p>
+    <p class="sub">Subscribe and About Town adds its one best idea for each day to Apple Calendar, at its own time. Tap an idea, then its link, to add it to your own calendar. Tick it on or off in Calendars. It never blocks time.</p>
+    <div class="row-btns"><a class="btn primary" href="${esc(webcal('calendar.ics'))}">One a day</a><a class="btn" href="${esc(webcal('calendar-more.ics'))}">Every idea</a></div>
     <p class="sub" style="margin-top:14px">The calendars learn from your Add, Maybe and Not for me taps once you send them. ${S.tasteSent ? `Last sent ${esc(fmt(new Date(S.tasteSent), { month: 'short', day: 'numeric' }))}.` : 'Not sent yet.'}</p>
     <div class="row-btns"><button class="btn" data-sendtaste>Update my calendars</button></div>
   </div>

@@ -741,7 +741,7 @@ class CalendarFeed(unittest.TestCase):
         self.assertEqual(len(back), 1)
         self.assertEqual(back[0].title, "⭐ Queer Craft Night, with glue")
         self.assertEqual(back[0].start, "2026-10-15T19:00-07:00")
-        self.assertIn("#e=x%3AQueer%20Craft", text.replace("\r\n ", ""))
+        self.assertIn("Tickets / RSVP: https://sf.funcheap.com/x/", text.replace("\r\n ", ""))
 
     def test_taste_sent_from_the_app(self):
         from ingest import feed
@@ -764,19 +764,19 @@ class CalendarFeed(unittest.TestCase):
         picks, more = feed.choose(evs, self.profile, self.today, taste)
         self.assertEqual([e["title"] for e in picks + more], ["Comedy Open Mic"])   # added is in your calendar now
         text = feed.calendar(picks, "About Town", "", "#E9874B", "https://x.github.io/b/", self.today)
-        self.assertIn("URL:https://x.github.io/b/#e=x%3AComedy%20Open%20Mic", text)
+        self.assertIn("URL:https://sf.funcheap.com/x/", text)   # no .ics written for it: link to the event page
 
-    def test_daily_line_sits_above_your_events(self):
+    def test_one_idea_a_day_with_a_one_tap_add(self):
         from ingest import added, feed
-        picks = [ev("Gus Heagerty", "2026-10-20T19:30-07:00", followed="Gus Heagerty", venue="Cobb's")]
-        more = [ev("Shut Up & Write in the Richmond (Meetup)", "2026-10-20T10:00-07:00")]
-        text = feed.daily(picks, more, "About Town", "", "#E9874B", "https://x.github.io/a/", self.today)
+        evs = [ev("Gus Heagerty", "2026-10-20T19:30-07:00", score=9, followed="Gus Heagerty", ics="ics/abc.ics"),
+               ev("Karaoke Tuesday", "2026-10-20T21:00-07:00", score=5, ics="ics/def.ics"),
+               ev("Okay Trivia", "2026-10-21T19:00-07:00", score=3, ics="ics/ghi.ics")]
+        picks, more = feed.choose(evs, self.profile, self.today)
+        one = feed.one_a_day(picks, more, self.profile["home"], {}, self.today)
+        self.assertEqual([e["title"] for e in one], ["Gus Heagerty", "Okay Trivia"])   # one per day
+        text = feed.calendar(one, "About Town", "", "#8E8E93", "https://x.github.io/a/", self.today)
         start = dt.datetime(2026, 10, 14, tzinfo=TZ)
         back = added.ics_events(text, "t", "https://x.example/", start, start + dt.timedelta(days=30))
-        self.assertEqual(len(back), 1)                        # one short line for the day
-        self.assertTrue(back[0].all_day)
-        self.assertEqual(back[0].title, "✨ 2 ideas · ⭐ Gus Heagerty")
-        self.assertEqual(back[0].source_url, "https://x.github.io/a/#d=2026-10-20")   # the link row opens the day
-        self.assertIn("⭐ Gus Heagerty — 7:30pm, Cobb's", back[0].description)
-        self.assertIn("Shut Up & Write in the Richmond — 10am", back[0].description)
-        self.assertNotIn("http", back[0].description)          # no long links in the notes
+        self.assertEqual(back[0].title, "⭐ Gus Heagerty")
+        self.assertEqual(back[0].start, "2026-10-20T19:30-07:00")
+        self.assertEqual(back[0].source_url, "https://x.github.io/a/ics/abc.ics")   # tap → Add to Calendar
