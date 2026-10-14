@@ -1,8 +1,8 @@
 """Subscribed calendars: About Town as calendars you switch on and off in Apple Calendar.
 
 Two feeds, each its own calendar with its own checkbox:
-  calendar.ics       "About Town": the one best idea for each day, at its own time, in gray; its
-                     link row is the event's .ics, so one tap offers "Add to Calendar"
+  calendar.ics       "About Town": the one best idea for each day, at its own time, in gray; notes
+                     run blurb, tickets, then why it's picked, price and miles from home
   calendar-more.ics  "About Town · At their times": the same ideas as separate events at their times
 
 Ranking here mirrors the app's day view before your phone's learned taste: the job's
@@ -200,7 +200,17 @@ def price_text(ev):
     return str(p)
 
 
-def vevent(ev, stamp, app_url, today):
+def blurb(text, limit=500):
+    """The description, cut at a sentence (or word) instead of mid-word."""
+    text = re.sub(r"\s+", " ", text or "").strip()
+    if len(text) <= limit:
+        return text
+    cut = text[:limit]
+    end = max(cut.rfind(". "), cut.rfind("! "), cut.rfind("? "))
+    return cut[:end + 1] if end > limit // 2 else cut.rsplit(" ", 1)[0] + "…"
+
+
+def vevent(ev, stamp, app_url, today, home=None):
     start, end = to_local(ev["start"]), to_local(ev.get("end"))
     title = ("⭐ " if ev.get("followed") else "") + ev["title"]
     run = run_days(ev) > 1.5
@@ -219,18 +229,16 @@ def vevent(ev, stamp, app_url, today):
     where = ", ".join(x for x in [ev.get("venue"),
                                  ev.get("address") if ev.get("address") != ev.get("venue") else "",
                                  ev.get("city")] if x)
-    notes = [ev.get("why") or ""]
-    facts = " · ".join(x for x in [price_text(ev), ev.get("venue")] if x)
+    # what it is first, then where to get in, then why it's picked for you
+    notes = [blurb(ev.get("description")), ""] if ev.get("description") else []
+    notes.append(f"Tickets / RSVP: {link}")
+    away = f"{miles(home, ev):.1f} mi from home" if home and ev.get("lat") is not None and ev.get("lng") is not None else ""
+    facts = " · ".join(x for x in [ev.get("why"), price_text(ev), away] if x)
     if facts:
-        notes.append(facts)
-    notes += ["", f"Tickets / RSVP: {link}"]
-    if ev.get("description"):
-        notes += ["", ev["description"][:300]]
-    # the link row is the event's own .ics: one tap and iPhone offers "Add to Calendar",
-    # with nothing in between (subscribed events can't be copied in Calendar itself)
-    open_url = app_url + ev["ics"] if app_url and ev.get("ics") else link
+        notes += ["", facts]
+    # no URL row: iPhone lists it under Location, so Location shows just the venue
     lines = ["BEGIN:VEVENT", f"UID:{short_hash(ev['id'])}@about-town", f"DTSTAMP:{stamp}", *when,
-             f"SUMMARY:{esc(title)}", f"LOCATION:{esc(where)}", f"URL:{open_url}",
+             f"SUMMARY:{esc(title)}", f"LOCATION:{esc(where)}",
              f"DESCRIPTION:{esc(chr(10).join(notes))}", "TRANSP:TRANSPARENT"]
     if ev.get("lat") is not None and ev.get("lng") is not None and where:
         # lets Apple Calendar show the map and travel time
@@ -247,12 +255,12 @@ def header(name, about, color):
             "REFRESH-INTERVAL;VALUE=DURATION:PT6H", "X-PUBLISHED-TTL:PT6H"] + VTIMEZONE
 
 
-def calendar(events, name, about, color, app_url="", today=None):
+def calendar(events, name, about, color, app_url="", today=None, home=None):
     today = today or dt.datetime.now(TZ).date()
     stamp = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     lines = header(name, about, color)
     for ev in events:
-        lines += vevent(ev, stamp, app_url, today)
+        lines += vevent(ev, stamp, app_url, today, home)
     lines.append("END:VCALENDAR")
     return "\r\n".join(fold(line) for line in lines) + "\r\n"
 
@@ -286,9 +294,9 @@ def write(events, profile, folder, app_url="", today=None, taste=None, plan=None
     # calendar.ics: one idea a day, at its own time; calendar-more.ics: every idea at its own time
     (folder / "calendar.ics").write_text(
         calendar(one_a_day(picks, more, profile.get("home"), taste, today, plan, rest), "About Town",
-                 "One idea a day, picked for you", "#8E8E93", app_url, today), encoding="utf-8")
+                 "One idea a day, picked for you", "#8E8E93", app_url, today, profile.get("home")), encoding="utf-8")
     (folder / "calendar-more.ics").write_text(
         calendar(picks + more, "About Town · At their times", "Every idea at its own time", "#A8C48C", app_url,
-                 today), encoding="utf-8")
+                 today, profile.get("home")), encoding="utf-8")
     note = f" (your taste from {taste['sent']})" if taste.get("sent") else " (no taste sent from the app yet)"
     return f"calendar feeds: {len(picks)} top picks, {len(more)} more{note}"

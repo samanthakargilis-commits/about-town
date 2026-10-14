@@ -764,7 +764,8 @@ class CalendarFeed(unittest.TestCase):
         picks, more = feed.choose(evs, self.profile, self.today, taste)
         self.assertEqual([e["title"] for e in picks + more], ["Comedy Open Mic"])   # added is in your calendar now
         text = feed.calendar(picks, "About Town", "", "#E9874B", "https://x.github.io/b/", self.today)
-        self.assertIn("URL:https://sf.funcheap.com/x/", text)   # no .ics written for it: link to the event page
+        self.assertNotIn("URL:", text)   # Location shows just the venue
+        self.assertIn("Tickets / RSVP: https://sf.funcheap.com/x/", text.replace("\r\n ", ""))
 
     def test_one_idea_a_day_with_a_one_tap_add(self):
         from ingest import added, feed
@@ -779,7 +780,7 @@ class CalendarFeed(unittest.TestCase):
         back = added.ics_events(text, "t", "https://x.example/", start, start + dt.timedelta(days=30))
         self.assertEqual(back[0].title, "⭐ Gus Heagerty")
         self.assertEqual(back[0].start, "2026-10-20T19:30-07:00")
-        self.assertEqual(back[0].source_url, "https://x.github.io/a/ics/abc.ics")   # tap → Add to Calendar
+        self.assertNotIn("URL:", text)
 
 
 class YourWeek(unittest.TestCase):
