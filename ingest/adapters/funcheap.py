@@ -1,6 +1,7 @@
 """SF Funcheap. The site's RSS feed only carries the 10 newest posts with no
 event details, so this reads the day pages (sf.funcheap.com/YYYY/MM/DD/, and
-their page 2, 3... on a busy day: a Saturday runs to three pages), plus
+their page 2, 3... on a busy day: a Saturday runs to three pages; every day
+links a next page, so paging stops at the first page with nothing new), plus
 the city guides on its home page and guide index: the big ones (Fleet Week, Terror
 Vault, October street fairs) live there, with a section per event."""
 import datetime as dt
@@ -212,7 +213,7 @@ def fetch(f, start: dt.datetime, end: dt.datetime):
     last = min(end.date(), day + dt.timedelta(days=DAYS_AHEAD))
     pages = 0
     while day <= last:
-        url = f"{BASE}/{day:%Y/%m/%d}/"
+        url, seen = f"{BASE}/{day:%Y/%m/%d}/", set()
         for _ in range(PAGES_PER_DAY):
             try:
                 soup = f.soup(url)
@@ -220,13 +221,15 @@ def fetch(f, start: dt.datetime, end: dt.datetime):
                 print(f"  funcheap: request budget spent at {url}")
                 return out
             pages += 1
-            for ev in parse_day(soup, day):
+            fresh = [ev for ev in parse_day(soup, day) if ev.source_id not in seen]
+            seen |= {ev.source_id for ev in fresh}
+            for ev in fresh:
                 # a day post about a featured guide's event (a Terror Vault night) is featured too
                 if any(sub in ev.title.lower() for sub in subjects):
                     ev.tags = sorted(set(ev.tags) | {"featured"})
                 out.append(ev)
             url = next_page(soup)
-            if not url:
+            if not url or not fresh:
                 break
         day += dt.timedelta(days=1)
     print(f"  funcheap: {pages} day pages read")
