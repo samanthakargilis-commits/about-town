@@ -584,6 +584,7 @@ function evRow(ev, { showDay = false } = {}) {
       ${sunEscape(ev) ? `<div class="sun">${esc(sunLine(ev))}</div>` : ''}
       ${labels.length ? `<div class="tags">${labels.join('')}</div>` : ''}
     </div>
+    ${/^https?:/.test(ev.image_url || '') ? `<img class="thumb" src="${esc(ev.image_url)}" alt="" decoding="async" referrerpolicy="no-referrer" data-open onload="if (this.naturalWidth < 200) this.remove(); else this.classList.add('on')" onerror="this.remove()">` : ''}
     <button class="plus ${st === 'added' ? 'on' : st === 'maybe' ? 'maybe' : ''}" data-act="added" aria-label="${st === 'added' ? 'In your plan' : 'Add to plan'}">${st === 'added' ? '✓' : st === 'maybe' ? '?' : '+'}</button>
   </article>`;
 }
@@ -602,6 +603,7 @@ function onEventClick(e) {
     if (act === 'block') { const f = followInfo(ev); if (f) { S.blockedPeople.push(f.name); save(); buildFollowIndex(); toast(`Okay, ${f.name} isn't who you follow`); } closeSheet(); return render(); }
     const prev = decide(ev, act);
     const now = S.status[ev.id];
+    if (now === 'added' && fromCalendar && ev.ics) { render(); location.href = ev.ics; return; }   // came from Apple Calendar: straight to its Add sheet
     if (now === 'added') toast('In your plan · open it for your calendar');
     if (now === 'not') toast("Hidden. We'll show fewer like this", () => { decide(ev, prev || 'not'); render(); });
     if (btn.closest('.sheet')) closeSheet();
@@ -1072,7 +1074,7 @@ function renderMe(v) {
   <div class="section"><h2>In Apple Calendar</h2>
     <p class="sub">Subscribe and About Town adds one line a day at the top of Apple Calendar, above your own events. Tap it for that day's ideas. Tick it on or off in Calendars. It never blocks time.</p>
     <div class="row-btns"><a class="btn primary" href="${esc(webcal('calendar.ics'))}">Daily ideas</a><a class="btn" href="${esc(webcal('calendar-more.ics'))}">At their times</a></div>
-    <p class="small">"Add to my calendar" under each idea copies it into your own calendar in two taps. "At their times" puts every idea in its time slot instead, if you'd rather see them there.</p>
+    <p class="small">Tap a day's line, then its link: that day opens here, and + adds an idea to your own calendar. "At their times" puts every idea in its time slot instead, if you'd rather see them there.</p>
     <p class="sub" style="margin-top:14px">The calendars learn from your Add, Maybe and Not for me taps once you send them. ${S.tasteSent ? `Last sent ${esc(fmt(new Date(S.tasteSent), { month: 'short', day: 'numeric' }))}.` : 'Not sent yet.'}</p>
     <div class="row-btns"><button class="btn" data-sendtaste>Update my calendars</button></div>
   </div>
@@ -1227,7 +1229,7 @@ function bind() {
     const t = e.target.closest('[data-tab]');
     if (!t) return;
     if (tab === 'new' && t.dataset.tab !== 'new') newQueue.lastShown = false;
-    tab = t.dataset.tab; render(); window.scrollTo({ top: 0 });
+    tab = t.dataset.tab; fromCalendar = false; render(); window.scrollTo({ top: 0 });
   };
   $('#arrows').onclick = (e) => {
     const b = e.target.closest('[data-month]');
@@ -1326,12 +1328,24 @@ async function getJSON(url) {
   return r.json();
 }
 
-// links from the Apple Calendar feeds: …/#add=<id> counts a yes and opens the event's
-// .ics (iPhone's "Add to Calendar"); …/#e=<id> opens the event for Maybe / Not for me
+// links from the Apple Calendar feeds: …/#d=<day> opens that day, where + also opens the
+// event's .ics (iPhone's "Add to Calendar"); …/#e=<id> opens one event; …/#add=<id> is from
+// older feeds: it counts a yes and opens the .ics
+let fromCalendar = false;
 function openFromLink() {
-  const m = location.hash.match(/^#(e|add)=(.+)$/);
+  const m = location.hash.match(/^#(e|add|d)=(.+)$/);
   if (!m) return;
   history.replaceState(null, '', location.pathname + location.search);
+  if (m[1] === 'd') {
+    const k = m[2];
+    const now = parts(new Date());
+    monthOffset = Math.max(0, Math.min(1, (Number(k.slice(0, 4)) - Number(now.year)) * 12 + Number(k.slice(5, 7)) - Number(now.month)));
+    selDay = k; tab = 'cal'; fromCalendar = true;
+    render();
+    const head = document.querySelector('.dayhead');
+    if (head) head.scrollIntoView({ block: 'start' });
+    return toast('Tap + to add one to your calendar');
+  }
   const ev = byId(decodeURIComponent(m[2]));
   if (!ev) return toast("That event has passed or isn't listed any more");
   if (m[1] === 'e') return openSheet(ev);
