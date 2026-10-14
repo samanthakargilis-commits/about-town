@@ -149,14 +149,11 @@ def day_of(ev, today):
     return max(to_local(ev["start"]).date(), today)
 
 
-def choose(events, profile, today=None, taste=None):
-    """Split upcoming events into (picks, more), each a list of events."""
-    today = today or dt.datetime.now(TZ).date()
-    taste = taste or {}
+def upcoming(events, profile, today, taste):
+    """(rank, event) for every event still ahead that you haven't added, passed on or hidden, best first."""
     skipped = set(taste.get("added") or []) | set(taste.get("not") or [])
     hidden = set(taste.get("hiddenTags") or [])
     home = profile.get("home")
-    per_week = profile.get("events_per_week", 7)
     live = []
     for ev in events:
         s, e = to_local(ev["start"]), to_local(ev.get("end"))
@@ -166,6 +163,15 @@ def choose(events, profile, today=None, taste=None):
             continue
         live.append((rank(ev, home, taste), ev))
     live.sort(key=lambda x: -x[0])
+    return live
+
+
+def choose(events, profile, today=None, taste=None):
+    """Split upcoming events into (picks, more), each a list of events."""
+    today = today or dt.datetime.now(TZ).date()
+    taste = taste or {}
+    per_week = profile.get("events_per_week", 7)
+    live = upcoming(events, profile, today, taste)
 
     picks, more = [], []
     week_n, day_n, more_n = {}, {}, {}
@@ -251,25 +257,35 @@ def calendar(events, name, about, color, app_url="", today=None):
     return "\r\n".join(fold(line) for line in lines) + "\r\n"
 
 
-def one_a_day(picks, more, home, taste, today):
-    """The single best idea for each day: a pick when the day has one, else its best other option."""
+def one_a_day(picks, more, home, taste, today, plan=None, rest=()):
+    """The single best idea for each day: a pick when the day has one, else its best other option.
+    With a plan (your routine and calendars), ideas that clash with something fixed are left out,
+    days you're away stay empty, distance counts from where you'll be, and a day whose picks
+    all clash falls back to the best other idea that fits."""
     best = {}
-    for tier, evs in ((1, picks), (0, more)):
+    for tier, evs in ((2, picks), (1, more), (0, rest)):
         for ev in evs:
             d = day_of(ev, today)
-            key = (tier, rank(ev, home, taste))
+            if plan and (plan.is_away(d) or plan.clashes(ev)):
+                continue
+            r = rank(ev, plan.base(ev) if plan else home, taste)
+            if tier == 0 and (d in best or r < MORE_MIN):
+                continue
+            key = (tier, r)
             if d not in best or key > best[d][0]:
                 best[d] = (key, ev)
     return [best[d][1] for d in sorted(best)]
 
 
-def write(events, profile, folder, app_url="", today=None, taste=None):
+def write(events, profile, folder, app_url="", today=None, taste=None, plan=None):
     taste = taste or {}
     today = today or dt.datetime.now(TZ).date()
     picks, more = choose(events, profile, today, taste)
+    chosen = {id(ev) for ev in picks + more}
+    rest = [ev for _, ev in upcoming(events, profile, today, taste) if id(ev) not in chosen] if plan else []
     # calendar.ics: one idea a day, at its own time; calendar-more.ics: every idea at its own time
     (folder / "calendar.ics").write_text(
-        calendar(one_a_day(picks, more, profile.get("home"), taste, today), "About Town",
+        calendar(one_a_day(picks, more, profile.get("home"), taste, today, plan, rest), "About Town",
                  "One idea a day, picked for you", "#8E8E93", app_url, today), encoding="utf-8")
     (folder / "calendar-more.ics").write_text(
         calendar(picks + more, "About Town · At their times", "Every idea at its own time", "#A8C48C", app_url,

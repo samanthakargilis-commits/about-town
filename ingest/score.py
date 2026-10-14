@@ -151,6 +151,19 @@ class Scorer:
                 return ft[key]["weight"]
         return 0.0
 
+    def lunch_spots(self, rule, start):
+        """With a weekly routine, only that day's spot: the office on office days, home otherwise."""
+        week = self.profile.get("week") or {}
+        days = week.get("days") or []
+        if start.weekday() >= len(days):
+            return rule["near"]
+        where = days[start.weekday()].get("day")
+        place = (week.get("places") or {}).get(where)
+        if place:
+            return [{"lat": place["lat"], "lng": place["lng"], "miles": 0.6, "why": "Near work for lunch"}]
+        home = self.profile.get("home") or {}
+        return [{"lat": home["lat"], "lng": home["lng"], "miles": 0.8, "why": "Near home for lunch"}] if home else rule["near"]
+
     def weekday_daytime(self, ev, start, reasons, interests) -> float:
         """A weekday daytime event only works on a lunch break: near work, or
         near home on a work-from-home day. Anywhere else it's a no, unless it's
@@ -165,7 +178,7 @@ class Scorer:
             return 0.0                       # an all-day fair or a long run can wait for the evening
         lat, lng = ev.get("lat"), ev.get("lng")
         if lat is not None and lng is not None:
-            for spot in rule["near"]:
+            for spot in self.lunch_spots(rule, start):
                 if miles(lat, lng, spot["lat"], spot["lng"]) <= spot["miles"]:
                     reasons.insert(0, spot["why"])
                     return rule["near_boost"]
