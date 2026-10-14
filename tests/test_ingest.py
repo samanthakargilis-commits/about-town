@@ -765,3 +765,15 @@ class CalendarFeed(unittest.TestCase):
         self.assertEqual([e["title"] for e in picks + more], ["Comedy Open Mic"])   # added is in your calendar now
         text = feed.calendar(picks, "About Town", "", "#E9874B", "https://x.github.io/b/", self.today)
         self.assertIn("URL:https://x.github.io/b/#add=x%3AComedy%20Open%20Mic", text)
+
+    def test_daily_line_sits_above_your_events(self):
+        from ingest import added, feed
+        picks = [ev("Gus Heagerty", "2026-10-20T19:30-07:00", followed="Gus Heagerty", why="⭐ Gus Heagerty · Comedy")]
+        more = [ev("Shut Up & Write in the Richmond (Meetup)", "2026-10-20T10:00-07:00")]
+        text = feed.daily(picks, more, "About Town", "", "#E9874B", "https://x.github.io/a/", self.today)
+        start = dt.datetime(2026, 10, 14, tzinfo=TZ)
+        back = added.ics_events(text, "t", "https://x.example/", start, start + dt.timedelta(days=30))
+        self.assertEqual(len(back), 1)                        # one line for the day
+        self.assertTrue(back[0].all_day)
+        self.assertEqual(back[0].title, "⭐ Gus Heagerty 7:30pm · +1 more")
+        self.assertIn("#add=x%3AShut%20Up", text.replace("\r\n ", ""))

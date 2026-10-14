@@ -19,10 +19,11 @@ then Share → Add to Home Screen.
   import your Instagram export), Goodreads CSV import, what it has learned,
   backup/restore, and which sources worked on the last run.
 
-- **In Apple Calendar**: the You tab has two Subscribe buttons. "About Town" (about
-  7 top picks a week) and "About Town · More" (a few more options a day) appear as
-  their own calendars you tick on or off; they never block time. Each event's
-  notes start with "Add to my calendar", which copies it into your own calendar.
+- **In Apple Calendar**: the You tab has two Subscribe buttons. "Daily ideas" adds
+  one all-day line per day, above your own events; tap it for the day's picks
+  (about 7 a week) and a few more options. "At their times" puts the same ideas in
+  their time slots. Both are calendars you tick on or off and never block time.
+  Each idea has "Add to my calendar", which copies it into your own calendar.
   "Update my calendars" sends your taste (a "Calendar taste" GitHub issue) so the
   feeds learn too. The daily job writes them as `calendar.ics` and
   `calendar-more.ics` next to `events.json`.

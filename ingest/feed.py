@@ -1,8 +1,10 @@
 """Subscribed calendars: About Town as calendars you switch on and off in Apple Calendar.
 
 Two feeds, each its own calendar with its own checkbox:
-  calendar.ics       "About Town": the week's best (profile events_per_week, ~30 a month)
-  calendar-more.ics  "About Town · More": the next few good options each day
+  calendar.ics       "About Town": one all-day line per day, so it sits above your own events
+                     instead of between them; tap it for the day's picks (profile events_per_week,
+                     ~30 a month) and a few more options, each with Add to my calendar
+  calendar-more.ics  "About Town · At their times": the same ideas as separate events at their times
 
 Ranking here mirrors the app's day view before your phone's learned taste: the job's
 score, distance by day from home, long runs yield to one-offs, no early weekend mornings.
@@ -235,14 +237,75 @@ def vevent(ev, stamp, app_url, today):
     return lines
 
 
+def clock(ev):
+    if ev.get("all_day") or run_days(ev) > 1.5:
+        return "all day"
+    t = to_local(ev["start"])
+    return f"{t.hour % 12 or 12}" + (f":{t:%M}" if t.minute else "") + ("pm" if t.hour >= 12 else "am")
+
+
+def digest(day, picks, more, stamp, app_url):
+    """One all-day line per day: it sits in the strip above your own events, never between them.
+    Tap it for the day's ideas, each with its own Add to my calendar link."""
+    first = picks[0] if picks else more[0]
+    rest = len(picks) + len(more) - 1
+    name = re.sub(r"\s*\([^)]*\)\s*$", "", first["title"])      # "(Golden Gate Park)" can wait for the notes
+    name = name if len(name) <= 38 else name[:36].rstrip(" ,:-–") + "…"
+    title = ("⭐ " if first.get("followed") else "✨ ") + f"{name} {clock(first)}"
+    if rest:
+        title += f" · +{rest} more"
+
+    def item(ev, full):
+        line = [("⭐ " if ev.get("followed") else "") + ev["title"],
+                " · ".join(x for x in [clock(ev), ev.get("venue"), price_text(ev)] if x)]
+        if full and ev.get("why"):
+            line.append(ev["why"])
+        if app_url:
+            line.append(f"➕ Add to my calendar: {app_url}#add={quote(ev['id'], safe='')}")
+        if full:
+            line.append(f"Tickets / RSVP: {ev.get('ticket_url') or ev['source_url']}")
+        return line
+
+    notes = []
+    for ev in picks:
+        notes += item(ev, True) + [""]
+    if more:
+        notes += ["More options", ""]
+        for ev in more:
+            notes += item(ev, False) + [""]
+    if app_url:
+        notes.append(f"Not for me, or everything else that day: {app_url}")
+    return ["BEGIN:VEVENT", f"UID:day-{day:%Y%m%d}@about-town", f"DTSTAMP:{stamp}",
+            f"DTSTART;VALUE=DATE:{day:%Y%m%d}", f"DTEND;VALUE=DATE:{day + dt.timedelta(days=1):%Y%m%d}",
+            f"SUMMARY:{esc(title)}", f"DESCRIPTION:{esc(chr(10).join(notes))}", "TRANSP:TRANSPARENT",
+            "END:VEVENT"]
+
+
+def header(name, about, color):
+    return ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//About Town//Feed//EN", "CALSCALE:GREGORIAN",
+            "METHOD:PUBLISH", f"X-WR-CALNAME:{esc(name)}", f"X-WR-CALDESC:{esc(about)}",
+            "X-WR-TIMEZONE:America/Los_Angeles", f"X-APPLE-CALENDAR-COLOR:{color}",
+            "REFRESH-INTERVAL;VALUE=DURATION:PT6H", "X-PUBLISHED-TTL:PT6H"] + VTIMEZONE
+
+
+def daily(picks, more, name, about, color, app_url="", today=None):
+    today = today or dt.datetime.now(TZ).date()
+    stamp = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+    days = {}
+    for kind, evs in ((0, picks), (1, more)):
+        for ev in evs:
+            days.setdefault(day_of(ev, today), ([], []))[kind].append(ev)
+    lines = header(name, about, color)
+    for day in sorted(days):
+        lines += digest(day, *days[day], stamp, app_url)
+    lines.append("END:VCALENDAR")
+    return "\r\n".join(fold(line) for line in lines) + "\r\n"
+
+
 def calendar(events, name, about, color, app_url="", today=None):
     today = today or dt.datetime.now(TZ).date()
     stamp = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    lines = ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//About Town//Feed//EN", "CALSCALE:GREGORIAN",
-             "METHOD:PUBLISH", f"X-WR-CALNAME:{esc(name)}", f"X-WR-CALDESC:{esc(about)}",
-             "X-WR-TIMEZONE:America/Los_Angeles", f"X-APPLE-CALENDAR-COLOR:{color}",
-             "REFRESH-INTERVAL;VALUE=DURATION:PT6H", "X-PUBLISHED-TTL:PT6H"]
-    lines += VTIMEZONE
+    lines = header(name, about, color)
     for ev in events:
         lines += vevent(ev, stamp, app_url, today)
     lines.append("END:VCALENDAR")
@@ -252,11 +315,12 @@ def calendar(events, name, about, color, app_url="", today=None):
 def write(events, profile, folder, app_url="", today=None, taste=None):
     taste = taste or {}
     picks, more = choose(events, profile, today, taste)
+    # calendar.ics: one line a day above your own events; calendar-more.ics: every idea at its own time
     (folder / "calendar.ics").write_text(
-        calendar(picks, "About Town", "The best things to do this week, picked for you", "#E9874B", app_url, today),
+        daily(picks, more, "About Town", "Ideas for each day, picked for you", "#E9874B", app_url, today),
         encoding="utf-8")
     (folder / "calendar-more.ics").write_text(
-        calendar(more, "About Town · More", "More good options, a few a day", "#A8C48C", app_url, today),
-        encoding="utf-8")
+        calendar(picks + more, "About Town · At their times", "Every idea at its own time", "#A8C48C", app_url,
+                 today), encoding="utf-8")
     note = f" (your taste from {taste['sent']})" if taste.get("sent") else " (no taste sent from the app yet)"
     return f"calendar feeds: {len(picks)} top picks, {len(more)} more{note}"
