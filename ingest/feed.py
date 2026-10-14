@@ -1,10 +1,8 @@
 """Subscribed calendars: About Town as calendars you switch on and off in Apple Calendar.
 
 Two feeds, each its own calendar with its own checkbox:
-  calendar.ics       "About Town": one short all-day line per day ("✨ 4 ideas"), so it sits above
-                     your own events instead of between them; tap it for the day's picks (profile
-                     events_per_week, ~30 a month) and a few more, and its link to open that day
-                     in the app, where + adds one to your own calendar
+  calendar.ics       "About Town": the one best idea for each day, at its own time, in gray; its
+                     link row is the event's .ics, so one tap offers "Add to Calendar"
   calendar-more.ics  "About Town · At their times": the same ideas as separate events at their times
 
 Ranking here mirrors the app's day view before your phone's learned taste: the job's
@@ -219,10 +217,12 @@ def vevent(ev, stamp, app_url, today):
     facts = " · ".join(x for x in [price_text(ev), ev.get("venue")] if x)
     if facts:
         notes.append(facts)
+    notes += ["", f"Tickets / RSVP: {link}"]
     if ev.get("description"):
-        notes += ["", ev["description"][:400]]
-    # the link row opens it in About Town, where + adds it to your own calendar
-    open_url = f"{app_url}#e={quote(ev['id'], safe='')}" if app_url else link
+        notes += ["", ev["description"][:300]]
+    # the link row is the event's own .ics: one tap and iPhone offers "Add to Calendar",
+    # with nothing in between (subscribed events can't be copied in Calendar itself)
+    open_url = app_url + ev["ics"] if app_url and ev.get("ics") else link
     lines = ["BEGIN:VEVENT", f"UID:{short_hash(ev['id'])}@about-town", f"DTSTAMP:{stamp}", *when,
              f"SUMMARY:{esc(title)}", f"LOCATION:{esc(where)}", f"URL:{open_url}",
              f"DESCRIPTION:{esc(chr(10).join(notes))}", "TRANSP:TRANSPARENT"]
@@ -234,58 +234,11 @@ def vevent(ev, stamp, app_url, today):
     return lines
 
 
-def clock(ev):
-    if ev.get("all_day") or run_days(ev) > 1.5:
-        return "all day"
-    t = to_local(ev["start"])
-    return f"{t.hour % 12 or 12}" + (f":{t:%M}" if t.minute else "") + ("pm" if t.hour >= 12 else "am")
-
-
-def digest(day, picks, more, stamp, app_url):
-    """One short all-day line per day ("✨ 4 ideas"): it sits in the strip above your own events,
-    never between them. Tap it for a clean list; its link opens that day in About Town, where
-    + adds an idea to your own calendar."""
-    n = len(picks) + len(more)
-    star = next((ev for ev in picks + more if ev.get("followed")), None)
-    title = f"✨ {n} idea{'s' if n > 1 else ''}" + (f" · ⭐ {star['followed']}" if star else "")
-
-    def item(ev):
-        name = re.sub(r"\s*\([^)]*\)\s*$", "", ev["title"])     # "(Golden Gate Park)" is noise here
-        bits = ", ".join(x for x in [clock(ev), ev.get("venue")] if x)
-        return ("⭐ " if ev.get("followed") else "• ") + name + (f" — {bits}" if bits else "")
-
-    notes = [item(ev) for ev in picks]
-    if picks and more:
-        notes += ["", "Also:"]
-    notes += [item(ev) for ev in more]
-    lines = ["BEGIN:VEVENT", f"UID:day-{day:%Y%m%d}@about-town", f"DTSTAMP:{stamp}",
-             f"DTSTART;VALUE=DATE:{day:%Y%m%d}", f"DTEND;VALUE=DATE:{day + dt.timedelta(days=1):%Y%m%d}",
-             f"SUMMARY:{esc(title)}", f"DESCRIPTION:{esc(chr(10).join(notes))}", "TRANSP:TRANSPARENT"]
-    if app_url:
-        # the event's own link row, not a long line in the notes: opens this day in the app
-        lines.append(f"URL:{app_url}#d={day:%Y-%m-%d}")
-    return lines + ["END:VEVENT"]
-
-
 def header(name, about, color):
     return ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//About Town//Feed//EN", "CALSCALE:GREGORIAN",
             "METHOD:PUBLISH", f"X-WR-CALNAME:{esc(name)}", f"X-WR-CALDESC:{esc(about)}",
             "X-WR-TIMEZONE:America/Los_Angeles", f"X-APPLE-CALENDAR-COLOR:{color}",
             "REFRESH-INTERVAL;VALUE=DURATION:PT6H", "X-PUBLISHED-TTL:PT6H"] + VTIMEZONE
-
-
-def daily(picks, more, name, about, color, app_url="", today=None):
-    today = today or dt.datetime.now(TZ).date()
-    stamp = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    days = {}
-    for kind, evs in ((0, picks), (1, more)):
-        for ev in evs:
-            days.setdefault(day_of(ev, today), ([], []))[kind].append(ev)
-    lines = header(name, about, color)
-    for day in sorted(days):
-        lines += digest(day, *days[day], stamp, app_url)
-    lines.append("END:VCALENDAR")
-    return "\r\n".join(fold(line) for line in lines) + "\r\n"
 
 
 def calendar(events, name, about, color, app_url="", today=None):
@@ -298,13 +251,26 @@ def calendar(events, name, about, color, app_url="", today=None):
     return "\r\n".join(fold(line) for line in lines) + "\r\n"
 
 
+def one_a_day(picks, more, home, taste, today):
+    """The single best idea for each day: a pick when the day has one, else its best other option."""
+    best = {}
+    for tier, evs in ((1, picks), (0, more)):
+        for ev in evs:
+            d = day_of(ev, today)
+            key = (tier, rank(ev, home, taste))
+            if d not in best or key > best[d][0]:
+                best[d] = (key, ev)
+    return [best[d][1] for d in sorted(best)]
+
+
 def write(events, profile, folder, app_url="", today=None, taste=None):
     taste = taste or {}
+    today = today or dt.datetime.now(TZ).date()
     picks, more = choose(events, profile, today, taste)
-    # calendar.ics: one line a day above your own events; calendar-more.ics: every idea at its own time
+    # calendar.ics: one idea a day, at its own time; calendar-more.ics: every idea at its own time
     (folder / "calendar.ics").write_text(
-        daily(picks, more, "About Town", "Ideas for each day, picked for you", "#E9874B", app_url, today),
-        encoding="utf-8")
+        calendar(one_a_day(picks, more, profile.get("home"), taste, today), "About Town",
+                 "One idea a day, picked for you", "#8E8E93", app_url, today), encoding="utf-8")
     (folder / "calendar-more.ics").write_text(
         calendar(picks + more, "About Town · At their times", "Every idea at its own time", "#A8C48C", app_url,
                  today), encoding="utf-8")
