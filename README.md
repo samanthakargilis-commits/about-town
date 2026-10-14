@@ -21,7 +21,7 @@ then Share → Add to Home Screen.
 
 - **In Apple Calendar**: the You tab has two Subscribe buttons. "Daily ideas" adds
   one short all-day line per day ("✨ 4 ideas"), above your own events. Tap it for
-  a clean list; its link opens that day in the app (with photos), where + adds an
+  a clean list; its link opens that day in the app, where + adds an
   idea straight to your own calendar. "At their times" puts the same ideas in their
   time slots. Both are calendars you tick on or off and never block time.
   "Update my calendars" sends your taste (a "Calendar taste" GitHub issue) so the

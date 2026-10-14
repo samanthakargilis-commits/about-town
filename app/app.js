@@ -584,7 +584,6 @@ function evRow(ev, { showDay = false } = {}) {
       ${sunEscape(ev) ? `<div class="sun">${esc(sunLine(ev))}</div>` : ''}
       ${labels.length ? `<div class="tags">${labels.join('')}</div>` : ''}
     </div>
-    ${/^https?:/.test(ev.image_url || '') ? `<img class="thumb" src="${esc(ev.image_url)}" alt="" decoding="async" referrerpolicy="no-referrer" data-open onload="if (this.naturalWidth < 200) this.remove(); else this.classList.add('on')" onerror="this.remove()">` : ''}
     <button class="plus ${st === 'added' ? 'on' : st === 'maybe' ? 'maybe' : ''}" data-act="added" aria-label="${st === 'added' ? 'In your plan' : 'Add to plan'}">${st === 'added' ? '✓' : st === 'maybe' ? '?' : '+'}</button>
   </article>`;
 }
