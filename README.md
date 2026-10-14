@@ -20,10 +20,10 @@ then Share → Add to Home Screen.
   backup/restore, and which sources worked on the last run.
 
 - **In Apple Calendar**: the You tab has two Subscribe buttons. "Daily ideas" adds
-  one all-day line per day, above your own events; tap it for the day's picks
-  (about 7 a week) and a few more options. "At their times" puts the same ideas in
-  their time slots. Both are calendars you tick on or off and never block time.
-  Each idea has "Add to my calendar", which copies it into your own calendar.
+  one short all-day line per day ("✨ 4 ideas"), above your own events. Tap it for
+  a clean list; its link opens that day in the app, where + adds an
+  idea straight to your own calendar. "At their times" puts the same ideas in their
+  time slots. Both are calendars you tick on or off and never block time.
   "Update my calendars" sends your taste (a "Calendar taste" GitHub issue) so the
   feeds learn too. The daily job writes them as `calendar.ics` and
   `calendar-more.ics` next to `events.json`.

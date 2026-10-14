@@ -1,9 +1,10 @@
 """Subscribed calendars: About Town as calendars you switch on and off in Apple Calendar.
 
 Two feeds, each its own calendar with its own checkbox:
-  calendar.ics       "About Town": one all-day line per day, so it sits above your own events
-                     instead of between them; tap it for the day's picks (profile events_per_week,
-                     ~30 a month) and a few more options, each with Add to my calendar
+  calendar.ics       "About Town": one short all-day line per day ("✨ 4 ideas"), so it sits above
+                     your own events instead of between them; tap it for the day's picks (profile
+                     events_per_week, ~30 a month) and a few more, and its link to open that day
+                     in the app, where + adds one to your own calendar
   calendar-more.ics  "About Town · At their times": the same ideas as separate events at their times
 
 Ranking here mirrors the app's day view before your phone's learned taste: the job's
@@ -214,20 +215,16 @@ def vevent(ev, stamp, app_url, today):
     where = ", ".join(x for x in [ev.get("venue"),
                                  ev.get("address") if ev.get("address") != ev.get("venue") else "",
                                  ev.get("city")] if x)
-    # one tap copies it into your own calendar: the app notes the yes, then opens its .ics
-    add = f"{app_url}#add={quote(ev['id'], safe='')}" if app_url else ""
-    notes = [f"➕ Add to my calendar: {add}", ""] if add else []
-    notes.append(ev.get("why") or "")
+    notes = [ev.get("why") or ""]
     facts = " · ".join(x for x in [price_text(ev), ev.get("venue")] if x)
     if facts:
         notes.append(facts)
-    notes += ["", f"Tickets / RSVP: {link}"]
-    if app_url:
-        notes.append(f"Maybe or Not for me: {app_url}#e={quote(ev['id'], safe='')}")
     if ev.get("description"):
         notes += ["", ev["description"][:400]]
+    # the link row opens it in About Town, where + adds it to your own calendar
+    open_url = f"{app_url}#e={quote(ev['id'], safe='')}" if app_url else link
     lines = ["BEGIN:VEVENT", f"UID:{short_hash(ev['id'])}@about-town", f"DTSTAMP:{stamp}", *when,
-             f"SUMMARY:{esc(title)}", f"LOCATION:{esc(where)}", f"URL:{add or link}",
+             f"SUMMARY:{esc(title)}", f"LOCATION:{esc(where)}", f"URL:{open_url}",
              f"DESCRIPTION:{esc(chr(10).join(notes))}", "TRANSP:TRANSPARENT"]
     if ev.get("lat") is not None and ev.get("lng") is not None and where:
         # lets Apple Calendar show the map and travel time
@@ -245,40 +242,29 @@ def clock(ev):
 
 
 def digest(day, picks, more, stamp, app_url):
-    """One all-day line per day: it sits in the strip above your own events, never between them.
-    Tap it for the day's ideas, each with its own Add to my calendar link."""
-    first = picks[0] if picks else more[0]
-    rest = len(picks) + len(more) - 1
-    name = re.sub(r"\s*\([^)]*\)\s*$", "", first["title"])      # "(Golden Gate Park)" can wait for the notes
-    name = name if len(name) <= 38 else name[:36].rstrip(" ,:-–") + "…"
-    title = ("⭐ " if first.get("followed") else "✨ ") + f"{name} {clock(first)}"
-    if rest:
-        title += f" · +{rest} more"
+    """One short all-day line per day ("✨ 4 ideas"): it sits in the strip above your own events,
+    never between them. Tap it for a clean list; its link opens that day in About Town, where
+    + adds an idea to your own calendar."""
+    n = len(picks) + len(more)
+    star = next((ev for ev in picks + more if ev.get("followed")), None)
+    title = f"✨ {n} idea{'s' if n > 1 else ''}" + (f" · ⭐ {star['followed']}" if star else "")
 
-    def item(ev, full):
-        line = [("⭐ " if ev.get("followed") else "") + ev["title"],
-                " · ".join(x for x in [clock(ev), ev.get("venue"), price_text(ev)] if x)]
-        if full and ev.get("why"):
-            line.append(ev["why"])
-        if app_url:
-            line.append(f"➕ Add to my calendar: {app_url}#add={quote(ev['id'], safe='')}")
-        if full:
-            line.append(f"Tickets / RSVP: {ev.get('ticket_url') or ev['source_url']}")
-        return line
+    def item(ev):
+        name = re.sub(r"\s*\([^)]*\)\s*$", "", ev["title"])     # "(Golden Gate Park)" is noise here
+        bits = ", ".join(x for x in [clock(ev), ev.get("venue")] if x)
+        return ("⭐ " if ev.get("followed") else "• ") + name + (f" — {bits}" if bits else "")
 
-    notes = []
-    for ev in picks:
-        notes += item(ev, True) + [""]
-    if more:
-        notes += ["More options", ""]
-        for ev in more:
-            notes += item(ev, False) + [""]
+    notes = [item(ev) for ev in picks]
+    if picks and more:
+        notes += ["", "Also:"]
+    notes += [item(ev) for ev in more]
+    lines = ["BEGIN:VEVENT", f"UID:day-{day:%Y%m%d}@about-town", f"DTSTAMP:{stamp}",
+             f"DTSTART;VALUE=DATE:{day:%Y%m%d}", f"DTEND;VALUE=DATE:{day + dt.timedelta(days=1):%Y%m%d}",
+             f"SUMMARY:{esc(title)}", f"DESCRIPTION:{esc(chr(10).join(notes))}", "TRANSP:TRANSPARENT"]
     if app_url:
-        notes.append(f"Not for me, or everything else that day: {app_url}")
-    return ["BEGIN:VEVENT", f"UID:day-{day:%Y%m%d}@about-town", f"DTSTAMP:{stamp}",
-            f"DTSTART;VALUE=DATE:{day:%Y%m%d}", f"DTEND;VALUE=DATE:{day + dt.timedelta(days=1):%Y%m%d}",
-            f"SUMMARY:{esc(title)}", f"DESCRIPTION:{esc(chr(10).join(notes))}", "TRANSP:TRANSPARENT",
-            "END:VEVENT"]
+        # the event's own link row, not a long line in the notes: opens this day in the app
+        lines.append(f"URL:{app_url}#d={day:%Y-%m-%d}")
+    return lines + ["END:VEVENT"]
 
 
 def header(name, about, color):
