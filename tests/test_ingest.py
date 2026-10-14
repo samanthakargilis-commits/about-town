@@ -344,6 +344,13 @@ class NewSources(unittest.TestCase):
         html = r'x\"title\":\"Oh, Mary!\",\"dates\":\"Tue, Oct 13 - Sun, Nov 1, 2026\",\"infoBarText\"'
         self.assertEqual(broadwaysf.runs(html), {"oh, mary!": (dt.date(2026, 10, 13), dt.date(2026, 11, 1))})
 
+    def test_funcheap_follows_a_busy_days_next_page(self):
+        page = lambda head: BeautifulSoup(f"<html><head>{head}</head><body></body></html>", "lxml")
+        nxt = '<link rel="next" href="https://sf.funcheap.com/2026/10/17/page/2/" />'
+        self.assertEqual(funcheap.next_page(page(nxt)), "https://sf.funcheap.com/2026/10/17/page/2/")
+        self.assertIsNone(funcheap.next_page(page("")))
+        self.assertIsNone(funcheap.next_page(page('<link rel="next" href="https://elsewhere.com/x/" />')))
+
     def test_partiful_offer(self):
         from ingest.adapters import partiful
         page = lambda avail, price=20: BeautifulSoup('<script type="application/ld+json">{"@type":"Event","name":"x","startDate":"2026-10-11T21:00:00.000Z",'

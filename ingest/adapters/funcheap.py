@@ -1,5 +1,6 @@
 """SF Funcheap. The site's RSS feed only carries the 10 newest posts with no
-event details, so this reads the day pages (sf.funcheap.com/YYYY/MM/DD/), plus
+event details, so this reads the day pages (sf.funcheap.com/YYYY/MM/DD/, and
+their page 2, 3... on a busy day: a Saturday runs to three pages), plus
 the city guides on its home page and guide index: the big ones (Fleet Week, Terror
 Vault, October street fairs) live there, with a section per event."""
 import datetime as dt
@@ -8,13 +9,15 @@ import json
 import re
 from urllib.parse import urlparse
 
-from ..core import Event, clean, find_dates, iso, short_hash
+from ..core import BudgetExceeded, Event, clean, find_dates, iso, short_hash
 from ..heuristics import article_events, at_time, end_time, link_blocks, price_from
 
 NAME, LABEL = "funcheap", "SF Funcheap"
 BASE = "https://sf.funcheap.com"
 SKIP = re.compile(r"^/(category|tag|author|page|\d{4}|wp-|feed|submit|about|contact|newsletter|search|region|city-guide)", re.I)
 DAYS_AHEAD = 35
+PAGES_PER_DAY = 5
+MAX_REQUESTS = 260     # 36 days, their extra pages, and the guides
 MAX_GUIDES = 25        # read at most twice a day (cached 12 hours)
 GUIDE = re.compile(r"^https://sf\.funcheap\.com/city-guide/[^/]+/$")
 # a guide's housekeeping sections, not events of their own
@@ -196,17 +199,35 @@ def guides(f, ref: dt.date) -> tuple[list, set]:
     return out, subjects
 
 
+def next_page(html_soup):
+    link = html_soup.find("link", rel="next")
+    href = link.get("href", "") if link else ""
+    return href if re.match(r"^https://sf\.funcheap\.com/\d{4}/\d{2}/\d{2}/page/\d+/$", href) else None
+
+
 def fetch(f, start: dt.datetime, end: dt.datetime):
     featured, subjects = guides(f, start.date())
     out = [e for e in featured if e.start <= end.isoformat() and (e.end or e.start) >= start.isoformat()]
     day = start.date()
     last = min(end.date(), day + dt.timedelta(days=DAYS_AHEAD))
+    pages = 0
     while day <= last:
-        soup = f.soup(f"{BASE}/{day:%Y/%m/%d}/")
-        for ev in parse_day(soup, day):
-            # a day post about a featured guide's event (a Terror Vault night) is featured too
-            if any(sub in ev.title.lower() for sub in subjects):
-                ev.tags = sorted(set(ev.tags) | {"featured"})
-            out.append(ev)
+        url = f"{BASE}/{day:%Y/%m/%d}/"
+        for _ in range(PAGES_PER_DAY):
+            try:
+                soup = f.soup(url)
+            except BudgetExceeded:
+                print(f"  funcheap: request budget spent at {url}")
+                return out
+            pages += 1
+            for ev in parse_day(soup, day):
+                # a day post about a featured guide's event (a Terror Vault night) is featured too
+                if any(sub in ev.title.lower() for sub in subjects):
+                    ev.tags = sorted(set(ev.tags) | {"featured"})
+                out.append(ev)
+            url = next_page(soup)
+            if not url:
+                break
         day += dt.timedelta(days=1)
+    print(f"  funcheap: {pages} day pages read")
     return out
