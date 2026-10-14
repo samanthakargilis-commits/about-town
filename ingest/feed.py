@@ -236,10 +236,9 @@ def vevent(ev, stamp, app_url, today, home=None):
     facts = " · ".join(x for x in [ev.get("why"), price_text(ev), away] if x)
     if facts:
         notes += ["", facts]
-    # the link row is the event's own page (the About Town site stays out of your calendar)
-    open_url = link
+    # no URL row: iPhone lists it under Location, so Location shows just the venue
     lines = ["BEGIN:VEVENT", f"UID:{short_hash(ev['id'])}@about-town", f"DTSTAMP:{stamp}", *when,
-             f"SUMMARY:{esc(title)}", f"LOCATION:{esc(where)}", f"URL:{open_url}",
+             f"SUMMARY:{esc(title)}", f"LOCATION:{esc(where)}",
              f"DESCRIPTION:{esc(chr(10).join(notes))}", "TRANSP:TRANSPARENT"]
     if ev.get("lat") is not None and ev.get("lng") is not None and where:
         # lets Apple Calendar show the map and travel time
