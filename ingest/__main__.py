@@ -215,7 +215,7 @@ def main(argv=None):
     ap.add_argument("--out", default=str(OUT / "events.json"))
     ap.add_argument("--geocode", type=int, default=350, help="max new venue lookups per run")
     ap.add_argument("--no-geocode", action="store_true")
-    ap.add_argument("--requests", default="requests.json", help="the repo's open issues (sources added in the app)")
+    ap.add_argument("--requests", default="requests.json", help="the repo's open issues (sources added and calendar taste sent from the app)")
     ap.add_argument("--locate", type=int, default=400, help="max event pages to read for an address per run")
     args = ap.parse_args(argv)
 
@@ -362,7 +362,7 @@ def main(argv=None):
     print(f"wrote {len(out)} events to {args.out}")
     # the app's own address, for "open in About Town" links in the calendar feeds
     app_url = args.previous.rsplit("/", 1)[0] + "/" if (args.previous or "").startswith("http") else ""
-    print(feed.write(out, profile, OUT, app_url))
+    print(feed.write(out, profile, OUT, app_url, taste=feed.load_taste(args.requests)))
     print(weather.write(OUT / "weather.json"))
     broken = [h["label"] for h in health if not h["ok"]]
     if broken:

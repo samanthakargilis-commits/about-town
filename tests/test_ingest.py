@@ -742,3 +742,26 @@ class CalendarFeed(unittest.TestCase):
         self.assertEqual(back[0].title, "⭐ Queer Craft Night, with glue")
         self.assertEqual(back[0].start, "2026-10-15T19:00-07:00")
         self.assertIn("#e=x%3AQueer%20Craft", text.replace("\r\n ", ""))
+
+    def test_taste_sent_from_the_app(self):
+        from ingest import feed
+        body = lambda t: "Your taste\n\n```json\n" + json.dumps(t) + "\n```"
+        issues = [
+            {"number": 30, "title": "Calendar taste", "author_association": "OWNER",
+             "body": body({"sent": "2026-10-10", "tagW": {"comedy": -3}, "added": ["x:Okay Trivia"]})},
+            {"number": 31, "title": "Calendar taste", "author_association": "OWNER",
+             "body": body({"sent": "2026-10-13", "tagW": {"comedy": 2}, "not": ["x:Queer Craft Night"],
+                           "interests": {"craft": 0}})},
+            {"number": 32, "title": "Calendar taste", "author_association": "NONE",     # a stranger
+             "body": body({"tagW": {"comedy": -9}, "not": ["x:Comedy Open Mic"]})},
+        ]
+        taste = feed.taste_from(issues)
+        self.assertEqual((taste["sent"], taste["tagW"]), ("2026-10-13", {"comedy": 2}))
+        self.assertEqual((taste["added"], taste["not"]), (["x:Okay Trivia"], ["x:Queer Craft Night"]))
+        evs = [ev("Queer Craft Night", "2026-10-15T19:00-07:00", score=9),
+               ev("Comedy Open Mic", "2026-10-15T20:00-07:00", score=6, tags=["comedy"]),
+               ev("Okay Trivia", "2026-10-16T19:00-07:00", score=1)]
+        picks, more = feed.choose(evs, self.profile, self.today, taste)
+        self.assertEqual([e["title"] for e in picks + more], ["Comedy Open Mic"])   # added is in your calendar now
+        text = feed.calendar(picks, "About Town", "", "#E9874B", "https://x.github.io/b/", self.today)
+        self.assertIn("URL:https://x.github.io/b/#add=x%3AComedy%20Open%20Mic", text)

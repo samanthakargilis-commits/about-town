@@ -106,6 +106,7 @@ V1 is a phone-installable PWA that aggregates fourteen sources, ranks events by 
 - [ ] Preference profile I set once, plus learning from every choice, with a one-line why on each card; "⭐ Someone you follow" badge for people on my follow list; best-matching sub-event highlighted for fairs and festivals
 - [ ] One-tap Add to calendar for any event, plus an option to add all my picks at once
 - [ ] One-tap Share to iMessage or text via the phone's share sheet, plus Copy link
+- [ ] About Town inside Apple Calendar: two subscribed calendars, "About Town" (about 7 top picks a week) and "About Town · More" (a few more options a day), that I tick on or off; each event has a one-tap "Add to my calendar" that copies it into my own calendar
 - [ ] Installable on my phone home screen as a PWA
 - [ ] Every event links back to its original page for RSVP or tickets
 
@@ -162,7 +163,7 @@ Proposed V1 architecture: a scheduled job gathers events into one file, and a st
                                                My calendar ┄┄ V2: read Google Calendar ┄┄► PWA
 ```
 
-The dashed line is V2: reading Google Calendar so event cards can flag conflicts.
+The dashed line is V2: reading Google Calendar so event cards can flag conflicts. The same job also writes two subscribed calendar feeds that Apple Calendar shows as switchable calendars (see Calendar overlay below).
 
 **Why fetching can't happen in the PWA itself:** browsers block a web page from reading other sites' content (CORS). Fetching from Partiful, Luma and the others has to happen in a separate scheduled job.
 
@@ -173,6 +174,8 @@ The dashed line is V2: reading Google Calendar so event cards can flag conflicts
 - **App:** a PWA with a manifest (name, icon, full-screen) and a service worker (offline cache), installed via Add to Home Screen.
 - **Preferences and history:** stored on my phone in V1 (browser storage). Note: this can be wiped if browser data is cleared, so add an export / backup option.
 - **Calendar output:** generate standard `.ics` calendar files, which Apple Calendar and Google Calendar both accept.
+- **Calendar overlay:** the daily job also publishes two subscribed calendar feeds (`calendar.ics`, `calendar-more.ics`) next to `events.json`. Apple Calendar shows them as their own calendars to switch on and off; events are marked free so they never block time. Each event's notes lead with "Add to my calendar" (opens the app, which counts the yes and opens that event's `.ics`), then the why line, price, the original event link, and a Maybe / Not for me link.
+- **Taste for the feeds:** the feeds are built by the job, but choices live on the phone, so the app's "Update my calendars" button opens a GitHub issue titled "Calendar taste" holding my interests, learned weights and choices (the same pattern as Add a source). The job reads only issues from the repo's own people. Added and Not for me events leave the feeds. The repo is public, so these choices are visible there.
 
 **Source adapters:** each source gets its own small adapter that outputs the shared event format below. When one source breaks, only its adapter needs fixing, and the others keep working. Two kinds of adapter: listing sites (Partiful, Luma, Eventbrite, Dice…) give structured events, while articles and newsletters (Secret San Francisco, Substack roundups) need an AI step to pull out the event details, and items with no clear date are dropped.
 

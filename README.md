@@ -21,9 +21,11 @@ then Share → Add to Home Screen.
 
 - **In Apple Calendar**: the You tab has two Subscribe buttons. "About Town" (about
   7 top picks a week) and "About Town · More" (a few more options a day) appear as
-  their own calendars you tick on or off; they never block time, and each event's
-  notes link back to the app for Add / Maybe / Not for me. The daily job writes
-  them as `calendar.ics` and `calendar-more.ics` next to `events.json`.
+  their own calendars you tick on or off; they never block time. Each event's
+  notes start with "Add to my calendar", which copies it into your own calendar.
+  "Update my calendars" sends your taste (a "Calendar taste" GitHub issue) so the
+  feeds learn too. The daily job writes them as `calendar.ics` and
+  `calendar-more.ics` next to `events.json`.
 
 Choices and learned taste stay on the phone (localStorage). Export a backup now and then.
 

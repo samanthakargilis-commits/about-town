@@ -7,8 +7,14 @@ Two feeds, each its own calendar with its own checkbox:
 Ranking here mirrors the app's day view before your phone's learned taste: the job's
 score, distance by day from home, long runs yield to one-offs, no early weekend mornings.
 Every event is marked free (TRANSP) so it never blocks time in your real calendar.
+
+Your phone's taste reaches the feeds through "Update my calendars" in the app: it opens a
+GitHub issue titled "Calendar taste" holding your interests, learned tag weights, hidden
+tags and choices; only the repo's own people count. Added and Not for me events both leave
+the feeds: one is already in your own calendar, the other you passed on.
 """
 import datetime as dt
+import json
 import math
 import re
 from urllib.parse import quote
@@ -65,9 +71,64 @@ def too_early(ev, first):
     return h + long <= first + 2
 
 
-def rank(ev, home):
+TRUSTED = {"OWNER", "MEMBER", "COLLABORATOR"}   # anyone can open an issue on a public repo
+INTEREST_LEVELS = {2: 1.5, 1: 0, 0: -1.5}       # love / like / not into, as in app.js
+
+
+def taste_from(issues):
+    """Your taste from the "Calendar taste" issues, or {}."""
+    sent = []
+    for it in issues or []:
+        if it.get("pull_request") or it.get("author_association") not in TRUSTED:
+            continue
+        if not re.match(r"\s*calendar taste", it.get("title") or "", re.I):
+            continue
+        m = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", it.get("body") or "", re.S)
+        if not m:
+            continue
+        try:
+            taste = json.loads(m.group(1))
+        except ValueError:
+            continue
+        sent.append((it.get("number", 0), taste))
+    if not sent:
+        return {}
+    # the newest send sets your interests and weights; yeses and noes add up across sends
+    # (Safari and the home-screen app keep separate copies of your choices)
+    sent.sort(key=lambda x: x[0])
+    out = dict(sent[-1][1])
+    for key in ("added", "not"):
+        out[key] = sorted({i for _, t in sent for i in t.get(key) or []})
+    return out
+
+
+def load_taste(path):
+    try:
+        return taste_from(json.loads(open(path).read()))
+    except (OSError, ValueError):
+        return {}
+
+
+def learn_tags(ev):
+    """Same keys as learnTags in app.js: tags, weekday + time of day, source."""
+    out = list(ev.get("tags") or [])
+    if not ev.get("all_day"):
+        s = to_local(ev["start"])
+        slot = "evening" if s.hour >= 17 else "afternoon" if s.hour >= 12 else "morning"
+        out.append(f"t:{s.strftime('%a').lower()}-{slot}")
+    return out + [f"src:{ev.get('source')}"]
+
+
+def taste_boost(ev, taste):
+    weights, interests = taste.get("tagW") or {}, taste.get("interests") or {}
+    s = sum(max(-3, min(3, weights.get(t, 0))) for t in learn_tags(ev))
+    return s + sum(INTEREST_LEVELS.get(interests[t], 0) for t in ev.get("tags") or [] if t in interests)
+
+
+def rank(ev, home, taste=None):
     long_run = run_days(ev) > LONG_RUN_DAYS and not ev.get("followed")
-    return (ev.get("score") or 0) + dist_penalty(ev, home) - (LONG_RUN_PENALTY if long_run else 0)
+    return ((ev.get("score") or 0) + dist_penalty(ev, home) - (LONG_RUN_PENALTY if long_run else 0)
+            + taste_boost(ev, taste or {}))
 
 
 def words(title):
@@ -87,17 +148,22 @@ def day_of(ev, today):
     return max(to_local(ev["start"]).date(), today)
 
 
-def choose(events, profile, today=None):
+def choose(events, profile, today=None, taste=None):
     """Split upcoming events into (picks, more), each a list of events."""
     today = today or dt.datetime.now(TZ).date()
+    taste = taste or {}
+    skipped = set(taste.get("added") or []) | set(taste.get("not") or [])
+    hidden = set(taste.get("hiddenTags") or [])
     home = profile.get("home")
     per_week = profile.get("events_per_week", 7)
     live = []
     for ev in events:
         s, e = to_local(ev["start"]), to_local(ev.get("end"))
-        if (e or s).date() < today or too_early(ev, profile.get("weekend_earliest_hour")):
+        if (e or s).date() < today or ev["id"] in skipped or hidden & set(ev.get("tags") or []):
             continue
-        live.append((rank(ev, home), ev))
+        if too_early(ev, profile.get("weekend_earliest_hour")):
+            continue
+        live.append((rank(ev, home, taste), ev))
     live.sort(key=lambda x: -x[0])
 
     picks, more = [], []
@@ -146,17 +212,20 @@ def vevent(ev, stamp, app_url, today):
     where = ", ".join(x for x in [ev.get("venue"),
                                  ev.get("address") if ev.get("address") != ev.get("venue") else "",
                                  ev.get("city")] if x)
-    notes = [ev.get("why") or ""]
+    # one tap copies it into your own calendar: the app notes the yes, then opens its .ics
+    add = f"{app_url}#add={quote(ev['id'], safe='')}" if app_url else ""
+    notes = [f"➕ Add to my calendar: {add}", ""] if add else []
+    notes.append(ev.get("why") or "")
     facts = " · ".join(x for x in [price_text(ev), ev.get("venue")] if x)
     if facts:
         notes.append(facts)
     notes += ["", f"Tickets / RSVP: {link}"]
     if app_url:
-        notes.append(f"Add, Maybe or Not for me: {app_url}#e={quote(ev['id'], safe='')}")
+        notes.append(f"Maybe or Not for me: {app_url}#e={quote(ev['id'], safe='')}")
     if ev.get("description"):
         notes += ["", ev["description"][:400]]
     lines = ["BEGIN:VEVENT", f"UID:{short_hash(ev['id'])}@about-town", f"DTSTAMP:{stamp}", *when,
-             f"SUMMARY:{esc(title)}", f"LOCATION:{esc(where)}", f"URL:{link}",
+             f"SUMMARY:{esc(title)}", f"LOCATION:{esc(where)}", f"URL:{add or link}",
              f"DESCRIPTION:{esc(chr(10).join(notes))}", "TRANSP:TRANSPARENT"]
     if ev.get("lat") is not None and ev.get("lng") is not None and where:
         # lets Apple Calendar show the map and travel time
@@ -180,12 +249,14 @@ def calendar(events, name, about, color, app_url="", today=None):
     return "\r\n".join(fold(line) for line in lines) + "\r\n"
 
 
-def write(events, profile, folder, app_url="", today=None):
-    picks, more = choose(events, profile, today)
+def write(events, profile, folder, app_url="", today=None, taste=None):
+    taste = taste or {}
+    picks, more = choose(events, profile, today, taste)
     (folder / "calendar.ics").write_text(
         calendar(picks, "About Town", "The best things to do this week, picked for you", "#E9874B", app_url, today),
         encoding="utf-8")
     (folder / "calendar-more.ics").write_text(
         calendar(more, "About Town · More", "More good options, a few a day", "#A8C48C", app_url, today),
         encoding="utf-8")
-    return f"calendar feeds: {len(picks)} top picks, {len(more)} more"
+    note = f" (your taste from {taste['sent']})" if taste.get("sent") else " (no taste sent from the app yet)"
+    return f"calendar feeds: {len(picks)} top picks, {len(more)} more{note}"
