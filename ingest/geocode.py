@@ -17,7 +17,7 @@ from .core import CACHE_DIR, clean
 
 URL = "https://nominatim.openstreetmap.org/search"
 OVERPASS = "https://overpass-api.de/api/interpreter"     # free; for street corners, which Nominatim can't find
-UA = "bay-events/1.0 (personal event planner; github.com/samanthakargilis-commits/bay-events)"
+UA = "about-town/1.0 (personal event planner; github.com/samanthakargilis-commits/about-town)"
 VIEWBOX = "-123.2,38.6,-121.3,36.8"   # Bay Area out to Sonoma and Santa Cruz, west,north,east,south
 CACHE = CACHE_DIR / "geo.json"
 

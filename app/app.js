@@ -1015,7 +1015,7 @@ function renderPicks(v) {
     ${maybe.length ? `<div class="dayhead"><h2>Maybe</h2><small>${maybe.length}</small></div>${maybe.map((ev) => evRow(ev, { showDay: true })).join('')}` : ''}`;
 }
 
-const REPO = 'samanthakargilis-commits/bay-events';
+const REPO = 'samanthakargilis-commits/about-town';
 const hostOf = (u) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return u; } };
 // a site asked for here: waiting for the next update, reading fine, or not readable
 function askStatus(a) {
@@ -1070,9 +1070,9 @@ function renderMe(v) {
     ${S.hiddenTags.length ? `<p class="small" style="margin-top:10px">Hidden: ${S.hiddenTags.map((t) => `<a href="#" data-unhide="${esc(t)}">${esc(profile?.interests?.[t]?.label || t)} ✕</a>`).join(', ')}</p>` : ''}
   </div>` : ''}
   <div class="section"><h2>In Apple Calendar</h2>
-    <p class="sub">Subscribe and About Town shows up as its own calendars, updated every day. Tick them on or off in Calendars whenever you're looking for something to do. They never block time.</p>
-    <div class="row-btns"><a class="btn primary" href="${esc(webcal('calendar.ics'))}">Top picks</a><a class="btn" href="${esc(webcal('calendar-more.ics'))}">More options</a></div>
-    <p class="small">In each event, "Add to my calendar" copies it into your own calendar in two taps.</p>
+    <p class="sub">Subscribe and About Town adds one line a day at the top of Apple Calendar, above your own events. Tap it for that day's ideas. Tick it on or off in Calendars. It never blocks time.</p>
+    <div class="row-btns"><a class="btn primary" href="${esc(webcal('calendar.ics'))}">Daily ideas</a><a class="btn" href="${esc(webcal('calendar-more.ics'))}">At their times</a></div>
+    <p class="small">"Add to my calendar" under each idea copies it into your own calendar in two taps. "At their times" puts every idea in its time slot instead, if you'd rather see them there.</p>
     <p class="sub" style="margin-top:14px">The calendars learn from your Add, Maybe and Not for me taps once you send them. ${S.tasteSent ? `Last sent ${esc(fmt(new Date(S.tasteSent), { month: 'short', day: 'numeric' }))}.` : 'Not sent yet.'}</p>
     <div class="row-btns"><button class="btn" data-sendtaste>Update my calendars</button></div>
   </div>
@@ -1154,7 +1154,7 @@ async function importGoodreads(file) {
 
 function exportBackup() {
   const blob = new Blob([JSON.stringify(S, null, 1)], { type: 'application/json' });
-  const a = Object.assign(document.createElement('a'), { href: URL.createObjectURL(blob), download: `bay-events-backup-${dayKey(new Date())}.json` });
+  const a = Object.assign(document.createElement('a'), { href: URL.createObjectURL(blob), download: `about-town-backup-${dayKey(new Date())}.json` });
   document.body.append(a); a.click(); a.remove();
 }
 

@@ -106,7 +106,7 @@ V1 is a phone-installable PWA that aggregates fourteen sources, ranks events by 
 - [ ] Preference profile I set once, plus learning from every choice, with a one-line why on each card; "⭐ Someone you follow" badge for people on my follow list; best-matching sub-event highlighted for fairs and festivals
 - [ ] One-tap Add to calendar for any event, plus an option to add all my picks at once
 - [ ] One-tap Share to iMessage or text via the phone's share sheet, plus Copy link
-- [ ] About Town inside Apple Calendar: two subscribed calendars, "About Town" (about 7 top picks a week) and "About Town · More" (a few more options a day), that I tick on or off; each event has a one-tap "Add to my calendar" that copies it into my own calendar
+- [ ] About Town inside Apple Calendar: a subscribed calendar I tick on or off that adds one all-day line per day, above my own events (tap it for the day's picks, about 7 a week, plus a few more options), and an optional second calendar with the same ideas at their times; each idea has a one-tap "Add to my calendar" that copies it into my own calendar
 - [ ] Installable on my phone home screen as a PWA
 - [ ] Every event links back to its original page for RSVP or tickets
 
