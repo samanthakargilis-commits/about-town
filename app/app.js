@@ -1015,7 +1015,7 @@ function renderPicks(v) {
     ${maybe.length ? `<div class="dayhead"><h2>Maybe</h2><small>${maybe.length}</small></div>${maybe.map((ev) => evRow(ev, { showDay: true })).join('')}` : ''}`;
 }
 
-const REPO = 'samanthakargilis-commits/bay-events';
+const REPO = 'samanthakargilis-commits/about-town';
 const hostOf = (u) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return u; } };
 // a site asked for here: waiting for the next update, reading fine, or not readable
 function askStatus(a) {
@@ -1154,7 +1154,7 @@ async function importGoodreads(file) {
 
 function exportBackup() {
   const blob = new Blob([JSON.stringify(S, null, 1)], { type: 'application/json' });
-  const a = Object.assign(document.createElement('a'), { href: URL.createObjectURL(blob), download: `bay-events-backup-${dayKey(new Date())}.json` });
+  const a = Object.assign(document.createElement('a'), { href: URL.createObjectURL(blob), download: `about-town-backup-${dayKey(new Date())}.json` });
   document.body.append(a); a.click(); a.remove();
 }
 
