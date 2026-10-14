@@ -76,7 +76,7 @@ The app learns my taste in three layers: a profile I set once, every choice I ma
 
 ## V1 scope
 
-V1 is a phone-installable PWA that aggregates fourteen sources, ranks events by my taste, and makes adding to my calendar and texting a friend one tap each. It does not read my calendar.
+V1 is a phone-installable PWA that aggregates fourteen sources, ranks events by my taste, and makes adding to my calendar and texting a friend one tap each. The app itself does not read my calendar; the daily job reads it only to fit the one-a-day Apple Calendar feed around my week (pulled forward from V2 on 2026-10-14).
 
 **Sources:**
 
@@ -107,17 +107,17 @@ V1 is a phone-installable PWA that aggregates fourteen sources, ranks events by 
 - [ ] One-tap Add to calendar for any event, plus an option to add all my picks at once
 - [ ] One-tap Share to iMessage or text via the phone's share sheet, plus Copy link
 - [ ] About Town inside Apple Calendar: a subscribed calendar I tick on or off that shows the one best idea for each day at its own time; tapping its link offers "Add to Calendar" for my own calendar in one step; an optional second calendar shows every idea
+- [ ] The one-a-day idea fits my week: my weekly routine (which office each weekday, when I head home) plus my own calendars, read from private calendar links. It skips ideas that clash with fixed plans, may sit over casual ones, and judges distance from where I'll be
 - [ ] Installable on my phone home screen as a PWA
 - [ ] Every event links back to its original page for RSVP or tickets
 
 ## Out of scope for V1, and V2
 
-V2's main addition is reading Google Calendar so the app can flag conflicts automatically. Everything below stays out of V1 to keep it small.
+V2's main addition is flagging conflicts on the app's own cards. (Calendar reading for the one-a-day feed moved into V1.) Everything below stays out of V1 to keep it small.
 
 **Not in V1:**
 
-- Reading my calendar. A web app can't read Apple Calendar directly.
-- Automatic conflict detection, which depends on calendar reading
+- Reading my calendar in the app itself, or conflict flags on its cards. A web app can't read Apple Calendar directly; only the daily job reads it, for the one-a-day feed
 - A native iOS or Android app
 - Private Partiful invites, which aren't publicly visible
 - Reddit (r/SFbitcheswithtaste): needs Reddit API access and yields few events; revisit later. Reading Instagram directly is also out: apps can't read posts from accounts I follow, so V1 matches my follow list against event listings instead
@@ -127,8 +127,7 @@ V2's main addition is reading Google Calendar so the app can flag conflicts auto
 
 **V2 plan:**
 
-- Connect Google Calendar (read access) to see existing commitments.
-- Flag conflicts on event cards instead of hiding them (see Product principles).
+- Flag conflicts on the app's event cards instead of hiding them (see Product principles), using the same calendar reading the feed does.
 - Optional Gmail source for newsletters with no public feed: a Gmail filter labels event newsletters, and the app reads only that label, read-only.
 - Revisit more sources and smarter preference learning once V1 has a few months of my choices.
 
@@ -160,10 +159,10 @@ Proposed V1 architecture: a scheduled job gathers events into one file, and a st
                                                           - learns my preferences
                                                              │            │
                                                add (.ics) ◄──┘            └──► share (iMessage/text + link)
-                                               My calendar ┄┄ V2: read Google Calendar ┄┄► PWA
+                                               My calendar ┄┄ private links (secret) ┄┄► job
 ```
 
-The dashed line is V2: reading Google Calendar so event cards can flag conflicts. The same job also writes two subscribed calendar feeds that Apple Calendar shows as switchable calendars (see Calendar overlay below).
+The dashed line is the job reading my own calendars through private links, only to fit the one-a-day feed around my week. The same job also writes two subscribed calendar feeds that Apple Calendar shows as switchable calendars (see Calendar overlay below).
 
 **Why fetching can't happen in the PWA itself:** browsers block a web page from reading other sites' content (CORS). Fetching from Partiful, Luma and the others has to happen in a separate scheduled job.
 
@@ -176,6 +175,7 @@ The dashed line is V2: reading Google Calendar so event cards can flag conflicts
 - **Calendar output:** generate standard `.ics` calendar files, which Apple Calendar and Google Calendar both accept.
 - **Calendar overlay:** the daily job also publishes two subscribed calendar feeds (`calendar.ics`, `calendar-more.ics`) next to `events.json`. Apple Calendar shows them as their own calendars to switch on and off; events are marked free so they never block time. Apple Calendar can't show photos, buttons or expandable lists in a subscribed calendar, and its events can't be copied, so each event's link is its own `.ics` file: one tap and iPhone offers "Add to Calendar".
 - **Taste for the feeds:** the feeds are built by the job, but choices live on the phone, so the app's "Update my calendars" button opens a GitHub issue titled "Calendar taste" holding my interests, learned weights and choices (the same pattern as Add a source). The job reads only issues from the repo's own people. Added and Not for me events leave the feeds. The repo is public, so these choices are visible there.
+- **Fitting my week:** `data/profile.json` holds my weekly routine. My own calendars come in as private calendar links (iCloud's Public Calendar link, or Outlook's and Google's secret iCal address) saved in the repo secret `CALENDAR_LINKS`, one per line, with `work ` in front of a calendar whose events are all fixed. The job reads them each run and never prints, saves or publishes anything from them; the only trace is which idea a day gets. Fixed-looking events (others invited, a place, a meeting link, appointment-type words) block their time plus 30 minutes of travel; casual ones (gym, errands, holds, tentative) don't. Events longer than 3 hours only need 90 free minutes. An all-day event more than 40 miles from home empties those days. Anyone holding a calendar link can read that calendar, so the links stay in the secret only.
 
 **Source adapters:** each source gets its own small adapter that outputs the shared event format below. When one source breaks, only its adapter needs fixing, and the others keep working. Two kinds of adapter: listing sites (Partiful, Luma, Eventbrite, Dice…) give structured events, while articles and newsletters (Secret San Francisco, Substack roundups) need an AI step to pull out the event details, and items with no clear date are dropped.
 
@@ -211,7 +211,7 @@ The biggest risk is data access: most sources have no official API, so adapters 
 | The same event appears on two sites | Merge using `dedupe_key` |
 | Recommendations feel generic early on | Start with a few explicit preferences, then learn from every yes / no |
 | Preferences stored on the phone get wiped | Export / backup option; move to a synced store later if needed |
-| No conflict checking in V1 | Accepted for V1; V2 adds Google Calendar reading |
+| No conflict checking in the app | The one-a-day feed avoids clashes from my linked calendars; V2 flags them on the app's cards |
 | Fairs and festivals publish schedules late or not at all | Fall back to the parent event; re-check the schedule page on each daily run |
 
 ## Validation plan and success criteria
@@ -236,7 +236,7 @@ V1 succeeds if it replaces my manual monthly scan for three months in a row.
 
 - [ ] Name for the app
 - [ ] Exact area: which cities count between SF and Palo Alto? A distance limit from home or work?
-- [ ] V1 conflicts: let me mark busy dates by hand, or skip conflicts entirely until V2?
+- [x] V1 conflicts: decided 2026-10-14. The one-a-day feed reads my calendars through private links and fits around my weekly routine
 - [ ] Rest of the starting profile: budget and travel distance
 - [ ] How many "You'll love this" highlights per week before they stop feeling special?
 - [ ] Default wording of the share message

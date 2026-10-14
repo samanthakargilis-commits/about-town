@@ -780,3 +780,76 @@ class CalendarFeed(unittest.TestCase):
         self.assertEqual(back[0].title, "⭐ Gus Heagerty")
         self.assertEqual(back[0].start, "2026-10-20T19:30-07:00")
         self.assertEqual(back[0].source_url, "https://x.github.io/a/ics/abc.ics")   # tap → Add to Calendar
+
+
+class YourWeek(unittest.TestCase):
+    """The one-a-day calendar fits around your routine and your own calendars."""
+    profile = {"home": {"lat": 37.7886, "lng": -122.4467}, "weekday_daytime": {"from_hour": 10.5, "to_hour": 15},
+               "week": {"work_from": 9, "work_until": 17.5,
+                        "places": {"office": {"lat": 37.7939, "lng": -122.3947, "match": ["one market"]}},
+                        "days": [{"day": "office", "evening": "office"},
+                                 {"day": "office", "evening": "home", "work_until": 17},
+                                 {"day": "office", "evening": "home", "work_until": 17},
+                                 {"day": "home", "evening": "home"}, {"day": "home", "evening": "home"},
+                                 {"work": False}, {"work": False}]}}
+    today = dt.date(2026, 10, 14)
+    ICS = "\r\n".join([
+        "BEGIN:VCALENDAR", "VERSION:2.0",
+        "BEGIN:VEVENT", "UID:1", "DTSTART;TZID=America/Los_Angeles:20261015T190000",
+        "DTEND;TZID=America/Los_Angeles:20261015T210000", "SUMMARY:Dinner with Sam", "END:VEVENT",
+        "BEGIN:VEVENT", "UID:2", "DTSTART;TZID=America/Los_Angeles:20261016T180000",
+        "DTEND;TZID=America/Los_Angeles:20261016T190000", "SUMMARY:Gym", "RRULE:FREQ=WEEKLY;COUNT=4", "END:VEVENT",
+        "BEGIN:VEVENT", "UID:3", "DTSTART;VALUE=DATE:20261024", "DTEND;VALUE=DATE:20261026",
+        "SUMMARY:Tahoe weekend", "LOCATION:South Lake Tahoe", "END:VEVENT",
+        "END:VCALENDAR"]) + "\r\n"
+
+    class FakeGeo:
+        def spot(self, text):
+            return {"lat": 38.94, "lng": -119.98} if "Tahoe" in text else None
+
+    def plan(self):
+        from ingest import busy
+        blocks, all_day = busy.read(self.ICS, False, self.FakeGeo(), self.today, self.today + dt.timedelta(days=40))
+        return busy.Plan(self.profile, blocks, all_day)
+
+    def test_fixed_and_casual(self):
+        from ingest import busy
+        self.assertTrue(busy.is_firm("Dinner with Sam", "", 0, False, False))
+        self.assertTrue(busy.is_firm("Sync", "", 2, False, False))              # other people invited
+        self.assertTrue(busy.is_firm("Thing", "https://zoom.us/j/1", 0, False, False))
+        self.assertFalse(busy.is_firm("Gym", "", 0, False, False))
+        self.assertFalse(busy.is_firm("Errands?", "", 0, False, False))
+        self.assertTrue(busy.is_firm("Gym", "", 0, False, True))                # a work calendar is all fixed
+
+    def test_links(self):
+        from ingest import busy
+        self.assertEqual(busy.links("webcal://p1.icloud.com/x\nwork https://outlook.office365.com/y.ics\n\n"),
+                         [("https://p1.icloud.com/x", False), ("https://outlook.office365.com/y.ics", True)])
+
+    def test_clashes(self):
+        p = self.plan()
+        self.assertTrue(p.clashes(ev("Show", "2026-10-15T18:00-07:00", end="2026-10-15T19:45-07:00")))   # dinner, with travel
+        self.assertFalse(p.clashes(ev("Late show", "2026-10-15T21:45-07:00")))
+        self.assertFalse(p.clashes(ev("Over gym", "2026-10-23T18:00-07:00")))                              # casual, repeats
+        self.assertTrue(p.clashes(ev("Mid-afternoon talk", "2026-10-19T15:30-07:00")))                    # work hours
+        self.assertFalse(p.clashes(ev("Lunch concert", "2026-10-19T12:00-07:00", end="2026-10-19T13:00-07:00")))
+        self.assertFalse(p.clashes(ev("Tue 5:15pm", "2026-10-20T17:15-07:00")))                           # home early Tuesdays
+        self.assertTrue(p.clashes(ev("Mon 5:15pm", "2026-10-19T17:15-07:00")))
+        self.assertTrue(p.is_away(dt.date(2026, 10, 24)) and p.is_away(dt.date(2026, 10, 25)))
+        self.assertFalse(p.is_away(dt.date(2026, 10, 26)))
+
+    def test_where_you_start_from(self):
+        p = self.plan()
+        office, home = self.profile["week"]["places"]["office"], self.profile["home"]
+        self.assertIs(p.base(ev("Mon evening", "2026-10-19T19:00-07:00")), office)
+        self.assertIs(p.base(ev("Tue evening", "2026-10-20T19:00-07:00")), home)
+        self.assertIs(p.base(ev("Thu lunch", "2026-10-22T12:00-07:00")), home)
+        self.assertIs(p.base(ev("Mon lunch", "2026-10-19T12:00-07:00")), office)
+
+    def test_one_a_day_skips_clashes_and_falls_back(self):
+        from ingest import feed
+        clash = ev("Big show", "2026-10-15T19:00-07:00", score=12)
+        fits = ev("Late karaoke", "2026-10-15T21:45-07:00", score=5)
+        away = ev("Tahoe-day craft fair", "2026-10-24T11:00-07:00", score=12)
+        one = feed.one_a_day([clash, away], [], self.profile["home"], {}, self.today, self.plan(), rest=[fits])
+        self.assertEqual([e["title"] for e in one], ["Late karaoke"])

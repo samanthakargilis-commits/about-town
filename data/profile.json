@@ -792,6 +792,70 @@
     "lng": -122.4467,
     "_note": "neighborhood center only; the exact address is set on the phone"
   },
+  "week": {
+    "_note": "Your usual week: where you work each weekday and where the evening starts. The one-a-day calendar keeps ideas out of work hours (outside the lunch window) and measures distance from where you'll be. Monday evening starting from the office is a guess; change 'evening' to 'home' if you head straight home.",
+    "work_from": 9,
+    "work_until": 17.5,
+    "places": {
+      "one_market": {
+        "label": "One Market Plaza",
+        "lat": 37.7939,
+        "lng": -122.3947,
+        "match": [
+          "one market"
+        ]
+      },
+      "fremont": {
+        "label": "215 Fremont",
+        "lat": 37.7889,
+        "lng": -122.3938,
+        "match": [
+          "215 fremont"
+        ]
+      }
+    },
+    "days": [
+      {
+        "label": "Monday",
+        "day": "one_market",
+        "evening": "one_market"
+      },
+      {
+        "label": "Tuesday",
+        "day": "fremont",
+        "evening": "home",
+        "work_until": 17
+      },
+      {
+        "label": "Wednesday",
+        "day": "fremont",
+        "evening": "home",
+        "work_until": 17
+      },
+      {
+        "label": "Thursday",
+        "day": "home",
+        "evening": "home"
+      },
+      {
+        "label": "Friday",
+        "day": "home",
+        "evening": "home"
+      },
+      {
+        "label": "Saturday",
+        "work": false,
+        "day": "home",
+        "evening": "home"
+      },
+      {
+        "label": "Sunday",
+        "work": false,
+        "day": "home",
+        "evening": "home"
+      }
+    ]
+  },
   "weekend_earliest_hour": 9,
   "no_kids_events": true,
   "no_tech_events": true,

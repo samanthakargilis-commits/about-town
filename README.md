@@ -26,6 +26,11 @@ then Share → Add to Home Screen.
   "Update my calendars" sends your taste (a "Calendar taste" GitHub issue) so the
   feeds learn too. The daily job writes them as `calendar.ics` and
   `calendar-more.ics` next to `events.json`.
+- **Fits your week**: the one-a-day calendar skips ideas during work hours and
+  ones that clash with fixed plans in your own calendars, and measures distance
+  from where you'll be (your routine is `week` in `data/profile.json`). To link
+  calendars, save their private links in the repo secret `CALENDAR_LINKS`, one
+  per line (`work ` in front of a calendar whose events are all fixed).
 
 Choices and learned taste stay on the phone (localStorage). Export a backup now and then.
 
@@ -36,6 +41,7 @@ ingest/adapters/*.py   one adapter per source; a broken one never stops the rest
 ingest/heuristics.py   fallback parsing for pages without feeds
 ingest/score.py        interest + time boosts, follow-list badge, one-line why
 ingest/feed.py         the two subscribed Apple Calendar feeds
+ingest/busy.py         your routine and calendars: what clashes, where you'll be
 ingest/ai.py           optional: AI tagging and article extraction (needs ANTHROPIC_API_KEY)
 ingest/__main__.py     run all → window → area filter → merge → enrich → score → events.json + .ics
 app/                   the PWA (no build step)

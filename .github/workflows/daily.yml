@@ -63,6 +63,7 @@ jobs:
       - name: Gather events
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          CALENDAR_LINKS: ${{ secrets.CALENDAR_LINKS }}   # your private calendar links; never printed
         run: |
           OWNER="${GITHUB_REPOSITORY%%/*}"; NAME="${GITHUB_REPOSITORY#*/}"
           ARGS="--previous https://${OWNER,,}.github.io/${NAME}/events.json"

@@ -3,3 +3,5 @@ beautifulsoup4>=4.12
 lxml>=5.0
 python-dateutil>=2.9
 anthropic>=0.60
+icalendar>=6.0
+recurring-ical-events>=3.0
