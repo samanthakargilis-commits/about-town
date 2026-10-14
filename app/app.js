@@ -67,6 +67,7 @@ const blank = () => ({
   swipePeeks: 0,         // times the first row has shown how to swipe it away
   swipeTipOff: false,
   sourceAsks: [],      // { url, note, at } sites asked for on the You tab
+  tasteSent: null,     // when "Update my calendars" last sent your taste
 });
 let S = load();
 
@@ -1028,6 +1029,9 @@ function sendSourceAsk(url, note) {
   window.open(`https://github.com/${REPO}/issues/new?title=${encodeURIComponent(`Add source: ${hostOf(url)}`)}&body=${encodeURIComponent(body)}`, '_blank');
 }
 
+// webcal:// makes iPhone offer "Subscribe" instead of downloading a one-off file
+const webcal = (file) => new URL(file, location.href).href.replace(/^https?:/, 'webcal:');
+
 function renderMe(v) {
   const ints = profile ? Object.entries(profile.interests) : [];
   const lv = (k) => (S.interests[k] === undefined ? 1 : S.interests[k]);
@@ -1065,6 +1069,13 @@ function renderMe(v) {
     <div class="chips">${learned.slice(0, 14).map(([t, w]) => `<span class="pchip">${w > 0 ? '▲' : '▼'} ${esc(t.startsWith('t:') ? t.slice(2).replace('-', ' ') : profile?.interests?.[t]?.label || t)}</span>`).join('')}</div>
     ${S.hiddenTags.length ? `<p class="small" style="margin-top:10px">Hidden: ${S.hiddenTags.map((t) => `<a href="#" data-unhide="${esc(t)}">${esc(profile?.interests?.[t]?.label || t)} ✕</a>`).join(', ')}</p>` : ''}
   </div>` : ''}
+  <div class="section"><h2>In Apple Calendar</h2>
+    <p class="sub">Subscribe and About Town shows up as its own calendars, updated every day. Tick them on or off in Calendars whenever you're looking for something to do. They never block time.</p>
+    <div class="row-btns"><a class="btn primary" href="${esc(webcal('calendar.ics'))}">Top picks</a><a class="btn" href="${esc(webcal('calendar-more.ics'))}">More options</a></div>
+    <p class="small">In each event, "Add to my calendar" copies it into your own calendar in two taps.</p>
+    <p class="sub" style="margin-top:14px">The calendars learn from your Add, Maybe and Not for me taps once you send them. ${S.tasteSent ? `Last sent ${esc(fmt(new Date(S.tasteSent), { month: 'short', day: 'numeric' }))}.` : 'Not sent yet.'}</p>
+    <div class="row-btns"><button class="btn" data-sendtaste>Update my calendars</button></div>
+  </div>
   <div class="section"><h2>Backup</h2><p class="sub">Your choices live on this phone. Save a backup now and then.</p>
     <div class="row-btns"><button class="btn primary" data-export>Export backup</button><label class="btn file-btn">Restore<input type="file" accept=".json" id="restoreFile"></label></div>
   </div>
@@ -1271,6 +1282,7 @@ function bind() {
     const sl = e.target.closest('[data-slot]'); if (sl) { e.preventDefault(); slot = sl.dataset.slot; return render(); }
     const ra = e.target.closest('[data-rmask]'); if (ra) { S.sourceAsks.splice(Number(ra.dataset.rmask), 1); save(); return render(); }
     if (e.target.closest('[data-export]')) return exportBackup();
+    if (e.target.closest('[data-sendtaste]')) { sendTaste(); return render(); }
     onEventClick(e);
   });
   v.addEventListener('submit', async (e) => {
@@ -1314,6 +1326,37 @@ async function getJSON(url) {
   return r.json();
 }
 
+// links from the Apple Calendar feeds: …/#add=<id> counts a yes and opens the event's
+// .ics (iPhone's "Add to Calendar"); …/#e=<id> opens the event for Maybe / Not for me
+function openFromLink() {
+  const m = location.hash.match(/^#(e|add)=(.+)$/);
+  if (!m) return;
+  history.replaceState(null, '', location.pathname + location.search);
+  const ev = byId(decodeURIComponent(m[2]));
+  if (!ev) return toast("That event has passed or isn't listed any more");
+  if (m[1] === 'e') return openSheet(ev);
+  if (S.status[ev.id] !== 'added') { decide(ev, 'added'); render(); }
+  location.href = ev.ics;
+}
+
+// the calendar feeds are built by the daily job, so your taste goes to it as a short
+// GitHub note (like Add a source); the next update ranks the feeds with it
+function sendTaste() {
+  const soon = new Set(upcomingAll().map((e) => e.id).concat(data.events.filter((e) => S.status[e.id]).map((e) => e.id)));
+  const ids = (st) => Object.keys(S.status).filter((id) => S.status[id] === st && soon.has(id));
+  const weights = Object.entries(S.tagW).filter(([, w]) => Math.abs(w) >= 0.2).sort((a, b) => Math.abs(b[1]) - Math.abs(a[1]));
+  const url = (n) => {
+    const taste = { sent: new Date().toISOString().slice(0, 10), interests: S.interests, hiddenTags: S.hiddenTags,
+      tagW: Object.fromEntries(weights.slice(0, n).map(([t, w]) => [t, Math.round(w * 100) / 100])), added: ids('added'), not: ids('not') };
+    const body = `Your taste for the About Town calendars in Apple Calendar. Send it as is; the next update uses it.\n\n\`\`\`json\n${JSON.stringify(taste)}\n\`\`\``;
+    return `https://github.com/${REPO}/issues/new?title=${encodeURIComponent('Calendar taste')}&body=${encodeURIComponent(body)}`;
+  };
+  let n = weights.length;
+  while (n > 0 && url(n).length > 7500) n = Math.floor(n * 0.8);   // GitHub's link length limit
+  S.tasteSent = Date.now(); save();
+  window.open(url(n), '_blank');
+}
+
 async function start() {
   bind();
   try {
@@ -1324,6 +1367,8 @@ async function start() {
   }
   buildFollowIndex();
   render();
+  openFromLink();
+  window.addEventListener('hashchange', openFromLink);
   // as the day goes on, what's over drops off (the app can sit open for hours)
   const refresh = () => { if (tab !== 'me' && $('#sheetWrap').hidden && document.visibilityState === 'visible') render(); };
   setInterval(refresh, 5 * 60e3);

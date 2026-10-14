@@ -7,3 +7,5 @@ app/follow.json
 app/weather.json
 # raw Goodreads export stays on your computer (it has your reviews); data/follow.json is built from it
 data/goodreads_library_export.csv
+app/calendar.ics
+app/calendar-more.ics

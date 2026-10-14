@@ -14,7 +14,7 @@ on:
   push:
     branches: [main, "v1-*", "v2-*"]
   issues:
-    types: [opened, closed, reopened]   # a source added (or dropped) in the app shows up without waiting a day
+    types: [opened, closed, reopened]   # a source added (or dropped), or taste sent for the calendars, shows up without waiting a day
 
 permissions:
   contents: write
@@ -29,7 +29,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: ${{ github.event_name != 'issues' || startsWith(github.event.issue.title, 'Add source') }}
+    if: ${{ github.event_name != 'issues' || (startsWith(github.event.issue.title, 'Add source') || startsWith(github.event.issue.title, 'Calendar taste')) }}
     timeout-minutes: 45
     steps:
       - uses: actions/checkout@v4
@@ -55,7 +55,7 @@ jobs:
         if: ${{ github.event.inputs.inspect || hashFiles('tools/inspect-urls.txt') != '' }}
         run: python tools/inspect_page.py ${{ github.event.inputs.inspect }} $(cat tools/inspect-urls.txt 2>/dev/null) | tee app/inspect.txt
 
-      - name: Sources added in the app
+      - name: Sources added and calendar taste sent in the app
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh api "repos/$GITHUB_REPOSITORY/issues?state=open&per_page=100" > requests.json || echo "[]" > requests.json
