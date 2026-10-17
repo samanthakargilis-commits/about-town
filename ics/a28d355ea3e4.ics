@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a28d355ea3e4@bay-events
+DTSTAMP:20261017T164514Z
+DTSTART;TZID=America/Los_Angeles:20261018T100000
+DTEND;TZID=America/Los_Angeles:20261018T120000
+SUMMARY:Just a Random: Sunday Brunch
+LOCATION:The Brixton\, 2140 Union St San Francisco\, San Francisco
+URL:https://partiful.com/e/Vqew2FTGHGVIHxdY45JU
+DESCRIPTION:New in your area\nhttps://partiful.com/e/Vqew2FTGHGVIHxdY45JU\
+ n\n​Hey! I'm Grace\, a Kiwi spending time in SF. Brunch is one of my fa
+ vourite ways to meet people\, so I'm hosting a small one this Sunday. I'm
+  27\, so straddling the Gen Z / Millennial divide. Register in accordance
+  \;) ​Where: The Brixton\, Union St. Table for up to 6 of us booked und
+ er Grace. ​Cost: Pay for your own food and drinks. ​Look forward to m
+ eeting you!
+END:VEVENT
+END:VCALENDAR

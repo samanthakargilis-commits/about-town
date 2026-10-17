@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d10cc6f30906@bay-events
+DTSTAMP:20261017T164514Z
+DTSTART;TZID=America/Los_Angeles:20261107T130000
+DTEND;TZID=America/Los_Angeles:20261107T150000
+SUMMARY:Lucid Dreaming
+LOCATION:2929 24th Street\, 2929 24th St\, San Francisco\, CA 94110\, USA\
+ , San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/san-francisco-mindfulness-meetup/events/3169675
+ 35/
+DESCRIPTION:Spirituality + Art\nhttps://www.meetup.com/san-francisco-mindf
+ ulness-meetup/events/316967535/\n\n## The Gateway to Lucid Living **with 
+ Norma J. Burton & Nisha Burton** Lucid dreaming is not reserved for the s
+ pecial few - it is a trainable skill\, and a doorway into the deeper art 
+ of psychonavigationTM: learning to move through your own psyche with clar
+ ity\, intention\, and skill. In this workshop\, mother-daughter teaching 
+ team Norma Burton and Nisha Burton guide participants through the foundat
+ i
+END:VEVENT
+END:VCALENDAR

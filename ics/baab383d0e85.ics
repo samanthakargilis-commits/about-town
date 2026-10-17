@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:baab383d0e85@bay-events
+DTSTAMP:20261017T164513Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:Oakland’s “Autumn Lights Festival” 2026
+LOCATION:The Gardens at Lake Merritt\, Oakland
+URL:https://sf.funcheap.com/city-guide/october-street-fairs-festivals/
+DESCRIPTION:Fairs & festivals + Art · Featured on Funcheap · Oakland\nht
+ tps://sf.funcheap.com/city-guide/october-street-fairs-festivals/\n\nThurs
+ day to Saturday\, October 15-17\, 2026 – Oakland (The Gardens at Lake M
+ erritt) – $28.52 – Annual 3-day light art festival with 75+ artists t
+ aking over the 8-acre lakefront gardens w/giant inflatables\, fire art\, 
+ interactive LED artworks\, illuminated fairy circles and more. Photo: Joh
+ n Kirkmire via Autumn Lights Festival
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3f02bd3c1a0d@bay-events
+DTSTAMP:20261017T164514Z
+DTSTART;TZID=America/Los_Angeles:20261017T160000
+DTEND;TZID=America/Los_Angeles:20261017T190000
+SUMMARY:Roving Weaving Workshop
+LOCATION:Love Fest HQ\, San Francisco
+URL:https://ma.to/event/roving-weaving-workshop-17-oct-2026
+DESCRIPTION:Craft\nhttps://ma.to/event/roving-weaving-workshop-17-oct-2026
+ \n\nMeghan Shimek shares her techniques for working with a rainbow of rov
+ ing to create a one-of-a-kind wall hanging. Create your own large-scale p
+ iece using unspun wool in this late afternoon workshop session. Admission
+  includes snacks\, drinks\, and 10% off in-store purchases. Spots are lim
+ ited\, check the profile to grab yours.
+END:VEVENT
+END:VCALENDAR

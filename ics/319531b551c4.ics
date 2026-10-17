@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:319531b551c4@bay-events
+DTSTAMP:20261017T164512Z
+DTSTART;TZID=America/Los_Angeles:20261017T100000
+DTEND;TZID=America/Los_Angeles:20261017T120000
+SUMMARY:International Vampire Film Fest
+LOCATION:Balboa Theater\, Balboa Street at 38th Ave.\, San Francisco
+URL:https://ma.to/event/international-vampire-film-fest-17-oct-2026
+DESCRIPTION:Reading + Fairs & festivals\nhttps://ma.to/event/international
+ -vampire-film-fest-17-oct-2026\n\nSuper Shangri-La Show presents the Inte
+ rnational Vampire Film Festival at the historic Balboa Theater in San Fra
+ ncisco. Enjoy a full day of vampire cinema madness. In addition to screen
+ ings\, the event features spooky prints and vintage collectibles for sale
+ \, with popcorn available for purchase. Co-presented by Green Apple Books
+  and sponsored by Rainbow Grocery.
+END:VEVENT
+END:VCALENDAR

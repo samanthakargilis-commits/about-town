@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f349c0c5b4c0@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T110000
+DTEND;TZID=America/Los_Angeles:20261017T220000
+SUMMARY:SF Restaurant Week
+LOCATION:Tacolicious (Marina & Mission)\, 450 Hayes Street\, San Francisco
+ \, CA 94117\, San Francisco
+URL:https://ma.to/event/sf-restaurant-week-2026-10-17
+DESCRIPTION:New in your area\nhttps://ma.to/event/sf-restaurant-week-2026-
+ 10-17\n\nSan Francisco Restaurant Week runs at Wildseed from October 16 t
+ o 25. The 100% plant-based restaurant offers another reason to eat your v
+ egetables during the citywide dining week\, with indoor and outdoor seati
+ ng and tables that can be booked in advance.
+END:VEVENT
+END:VCALENDAR

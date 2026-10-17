@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d49941611a03@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T110000
+DTEND;TZID=America/Los_Angeles:20261017T163000
+SUMMARY:The R&B Brunch
+LOCATION:Lil Sista’s Goody’s Soul Food\, San Francisco
+URL:https://ma.to/event/the-rnb-brunch-napa-17-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/the-rnb-brunch-napa-17-o
+ ct-2026\n\nThe R&B Brunch returns to Napa for an afternoon of soul food a
+ nd R&B soundtracks provided by DJ Heartbreak. The event features two seat
+ ings throughout the afternoon at Lil Sista’s Goody’s Soul Food. Ticke
+ ts are available on the profile.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e57098f30f22@bay-events
+DTSTAMP:20261017T164514Z
+DTSTART;TZID=America/Los_Angeles:20261018T120000
+DTEND;TZID=America/Los_Angeles:20261018T140000
+SUMMARY:GOLDEN GATE PAVILION GOODBYE TO SUMMER JAM -- IN-PERSON EVENT
+LOCATION:Golden Gate Pavilion at Stow Lake\, 7684 CA-1\, San Francisco\, C
+ A San Francisco\, San Francisco
+URL:https://www.meetup.com/san-francisco-ukulele-meetup/events/316850171/
+DESCRIPTION:Camp & Halloween + Theatre\nhttps://www.meetup.com/san-francis
+ co-ukulele-meetup/events/316850171/\n\nWith Halloween fast approaching an
+ d with the nice weather San Francisco gets in October (fingers crossed!) 
+ let's meet at the the Golden Gate Pavilion at Blue Heron (formerly Stow) 
+ Lake to play music that celebrates Halloween\, the end of summer\, and th
+ e onset of autumn. Please note the earlier start time so we can wrap up b
+ efore it gets cold! We'll play music from the Daily Ukulele (Yellow) and 
+ Dai
+END:VEVENT
+END:VCALENDAR

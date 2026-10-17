@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:296c5c8e95e3@bay-events
+DTSTAMP:20261017T164511Z
+DTSTART;TZID=America/Los_Angeles:20261017T120000
+DTEND;TZID=America/Los_Angeles:20261017T170000
+SUMMARY:Clement Street Art Fair
+LOCATION:Clement Street\, Clement St (between 6th & 8th Ave)\, San Francis
+ co\, CA\, San Francisco
+URL:https://ma.to/event/clement-street-art-fair-17-oct-2026
+DESCRIPTION:Fairs & festivals + Art\nhttps://ma.to/event/clement-street-ar
+ t-fair-17-oct-2026\n\nThe third annual Clement Street Art Fair returns to
+  celebrate Broke-Ass Stuart Day. Hosted by the Clement Street Merchants A
+ ssociation\, the event features a wide range of local makers\, artists\, 
+ and interactive art activations along Clement Street between 6th and 8th 
+ Avenue. Enjoy live music at The Rig mobile venue\, organized in collabora
+ tion with Workshop SF and Broke-Ass Stuart. Includes a commun
+END:VEVENT
+END:VCALENDAR

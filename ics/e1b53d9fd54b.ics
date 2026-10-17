@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e1b53d9fd54b@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T190000
+DTEND;TZID=America/Los_Angeles:20261017T210000
+SUMMARY:Mathis Picard at Meyhouse San Ramon
+LOCATION:Meyhouse San Ramon\, San Ramon
+URL:https://ma.to/event/mathis-picard-meyhouse-san-ramon-2026-10-17
+DESCRIPTION:Comedy · San Ramon\nhttps://ma.to/event/mathis-picard-meyhous
+ e-san-ramon-2026-10-17\n\nMathis Picard performs live jazz at Meyhouse Sa
+ n Ramon as part of the October Meyhouse Jazz programme\, which brings jaz
+ z\, classical music and comedy to the Palo Alto and San Ramon locations t
+ hroughout the month. The intimate room is set up to keep guests close to 
+ the performance\, with food\, wine and cocktails served through the eveni
+ ng. Tickets for the October performances are available.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6f0b73897985@bay-events
+DTSTAMP:20261017T164512Z
+DTSTART;TZID=America/Los_Angeles:20261017T110000
+DTEND;TZID=America/Los_Angeles:20261017T180000
+SUMMARY:Campbell's Oktoberfest
+LOCATION:Downtown Campbell\, Campbell
+URL:https://ma.to/event/campbells-oktoberfest-2026-10-17
+DESCRIPTION:Cultural festivals + Fairs & festivals · Campbell\nhttps://ma
+ .to/event/campbells-oktoberfest-2026-10-17\n\nCampbell's Oktoberfest fill
+ s the streets of downtown Campbell for two days\, on October 17 and 18. T
+ he festival features more than 100 arts and crafts booths\, a variety of 
+ sweet and savory dishes to sample\, wine and beer\, and live music by loc
+ al bands.
+END:VEVENT
+END:VCALENDAR

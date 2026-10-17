@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1e7c657a6761@bay-events
+DTSTAMP:20261017T164514Z
+DTSTART;TZID=America/Los_Angeles:20261017T161000
+DTEND;TZID=America/Los_Angeles:20261017T181000
+SUMMARY:The Match Factory Girl
+LOCATION:The Roxie Theater\, San Francisco
+URL:https://ma.to/event/the-match-factory-girl-2026-10-17
+DESCRIPTION:Theatre + Weird & unusual\nhttps://ma.to/event/the-match-facto
+ ry-girl-2026-10-17\n\nAki Kaurismäki's deadpan tale of factory drudgery\
+ , loneliness and revenge is the factory entry in the Roxie Theater's Octo
+ ber series Her Work Is Never Done\, four films examining the labor expect
+ ed of women in exhausting\, absurd and occasionally horrifying forms. The
+  screening runs as part of that series programme. Tickets are available t
+ hrough the Roxie Theater.
+END:VEVENT
+END:VCALENDAR

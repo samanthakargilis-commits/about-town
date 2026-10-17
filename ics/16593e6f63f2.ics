@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:16593e6f63f2@bay-events
+DTSTAMP:20261017T164513Z
+DTSTART;TZID=America/Los_Angeles:20261017T101500
+DTEND;TZID=America/Los_Angeles:20261017T111500
+SUMMARY:ASL Sign Language Stories & Songs
+LOCATION:Civic Center Library\, 1188 S. Livermore Ave.\, Livermore\, Liver
+ more
+URL:https://ma.to/event/asl-sign-language-stories-17-oct-2026
+DESCRIPTION:Craft + Reading · Livermore\nhttps://ma.to/event/asl-sign-lan
+ guage-stories-17-oct-2026\n\nA bilingual ASL storytelling and music sessi
+ on at the Civic Center Library. The program features stories shared in AS
+ L with English voicing provided\, creating an inclusive experience for bo
+ th Deaf and hearing families. After the performance\, enjoy a book-inspir
+ ed craft activity. Led by Ms. Kei-Che with English voicing by Chris. No p
+ revious signing experience is necessary\; all ages and levels are w
+END:VEVENT
+END:VCALENDAR

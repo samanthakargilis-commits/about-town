@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f6f706129473@bay-events
+DTSTAMP:20261017T164516Z
+DTSTART;TZID=America/Los_Angeles:20261021T190000
+DTEND;TZID=America/Los_Angeles:20261021T203000
+SUMMARY:No Easy Answers: An Evening with Haviv Rettig Gur
+LOCATION:Congregation Emanu-El\, 2 Lake Street\, San Francisco\, CA 94118 
+ San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/no-easy-answers-an-evening-with-haviv-ret
+ tig-gur-tickets-1999279289173
+DESCRIPTION:Spirituality\nhttps://www.eventbrite.com/e/no-easy-answers-an-
+ evening-with-haviv-rettig-gur-tickets-1999279289173\n\nCongregation Emanu
+ -El welcomes Haviv Rettig Gur\, host of the podcast Ask Haviv Anything.
+END:VEVENT
+END:VCALENDAR

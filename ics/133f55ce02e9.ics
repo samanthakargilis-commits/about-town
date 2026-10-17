@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:133f55ce02e9@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T120000
+DTEND;TZID=America/Los_Angeles:20261017T220000
+SUMMARY:Day Trip Festival NorCal Day 1
+LOCATION:Discovery Meadow\, Discovery Meadow\, San Jose\, CA\, San Jose
+URL:https://ma.to/event/day-trip-festival-norcal-17-oct-2026
+DESCRIPTION:Fairs & festivals · San Jose\nhttps://ma.to/event/day-trip-fe
+ stival-norcal-17-oct-2026\n\nDay Trip brings the house vibes to San Jose 
+ for a weekend at Discovery Meadow. Saturday features a heavy lineup inclu
+ ding a B2B set from Gordo and Vintage Culture\, plus a sunset set from El
+ i Brown. Wax Motif\, Script\, J Little\, and Lefty round out the day. Sin
+ gle day tickets are available on the profile.
+END:VEVENT
+END:VCALENDAR

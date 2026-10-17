@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fc1321213bc0@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T103000
+DTEND;TZID=America/Los_Angeles:20261017T123000
+SUMMARY:Mental Health First Aid Training
+LOCATION:Downtown Library\, 270 Forest Ave\, Palo Alto
+URL:https://paloalto.bibliocommons.com/events/6a696680a0b1bdf860d8ad1a
+DESCRIPTION:Reading · Palo Alto\nhttps://paloalto.bibliocommons.com/event
+ s/6a696680a0b1bdf860d8ad1a\n\nA two-part Mental Health First Aid certific
+ ation training for adults\, covering how to recognize and respond to ment
+ al health and substance use challenges.
+END:VEVENT
+END:VCALENDAR

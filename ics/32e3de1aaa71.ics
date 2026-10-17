@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:32e3de1aaa71@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T190000
+DTEND;TZID=America/Los_Angeles:20261017T223000
+SUMMARY:Daniel Sloss: Bitter
+LOCATION:The Masonic\, San Francisco
+URL:https://ma.to/event/daniel-sloss-bitter-18-oct-2026
+DESCRIPTION:Comedy\nhttps://ma.to/event/daniel-sloss-bitter-18-oct-2026\n\
+ nScottish comedian Daniel Sloss\, creator of Netflix specials DARK and Ji
+ gsaw\, brings his brand new tour BITTER to The Masonic. Due to high deman
+ d\, both an early show and a late show are scheduled for this date. Check
+  the link in the post for ticket availability.
+END:VEVENT
+END:VCALENDAR

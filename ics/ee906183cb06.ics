@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ee906183cb06@bay-events
+DTSTAMP:20261017T164512Z
+DTSTART;TZID=America/Los_Angeles:20261107T130000
+DTEND;TZID=America/Los_Angeles:20261107T170000
+SUMMARY:Harvest on Fourth
+LOCATION:Fourth St Makers Row\, 1919 Fourth St Berkeley\, Berkeley
+URL:https://partiful.com/e/1NJuUot6sYdqmRSlnS5m
+DESCRIPTION:Craft + Concerts · Berkeley\nhttps://partiful.com/e/1NJuUot6s
+ YdqmRSlnS5m\n\n🍂 HARVEST ON FOURTH Spend a fall afternoon on Fourth St
+ reet with local makers\, seasonal activities\, good food\, and plenty to 
+ explore. Shop small\, discover unique finds\, and enjoy a day designed fo
+ r the whole family. ✨ Local makers + small businesses 🎨 Fall crafts 
+ + activities 🎶 Live music 📸 Fall photo moments 🍂 Family-friendly
+  fun 🐾 Pet-friendly 📅 Saturday\, November 7 ⏰ 1 p.m. - 5 p.m. 
+ 📍 Fourth St
+END:VEVENT
+END:VCALENDAR

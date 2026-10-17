@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2169a584749d@bay-events
+DTSTAMP:20261017T164511Z
+DTSTART;TZID=America/Los_Angeles:20261025T110000
+DTEND;TZID=America/Los_Angeles:20261025T130000
+SUMMARY:SF’s World of Dumplings Food Festival
+LOCATION:7th West Oakland – 1255 7th St\, Oakland Celebrate Filipino Ame
+ rican History Month with Bab
+URL:https://www.eventbrite.com/e/world-of-dumplings-2026-tickets-199777348
+ 2264
+DESCRIPTION:Fairs & festivals + Big Bay Area traditions · Featured on Fun
+ cheap\nhttps://www.eventbrite.com/e/world-of-dumplings-2026-tickets-19977
+ 73482264\n\nSunday\, October 25\, 2026 – SF (Ferry Building) – FREE 
+ – Eat your way around the world with 25+ restaurants serving dumplings 
+ from across the globe \, plus live music\, performances\, cooking demos\,
+  eating contests\, trivia\, family activities and more. Asians Are Strong
+  Saturday\, October 17 2026 Bay Area Science Festival w/ 125+ Free Hands-
+ on Experiences (UCSF) Saturday\, October 17 – 11:00 am - Ends at
+END:VEVENT
+END:VCALENDAR

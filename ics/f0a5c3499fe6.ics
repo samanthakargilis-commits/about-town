@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f0a5c3499fe6@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T090000
+DTEND;TZID=America/Los_Angeles:20261017T170000
+SUMMARY:NERT Fall Citywide Drill
+LOCATION:2310 Folsom St\, 2310 Folsom St\, San Francisco\, CA\, San Franci
+ sco
+URL:https://ma.to/event/nert-fall-citywide-drill-17-oct-2026
+DESCRIPTION:Gay / queer\nhttps://ma.to/event/nert-fall-citywide-drill-17-o
+ ct-2026\n\nThe NERT Fall Citywide Drill is back. Head to the Mission to w
+ ork alongside neighbors and sharpen response skills in this coordinated t
+ raining exercise. Registration is organized by Battalion time slots throu
+ ghout the day: Battalions 2 & 8 (9:00-11:00)\, 1 & 9 (10:30-12:30)\, 3 & 
+ 6 (12:00-14:00)\, 4 & 7 (13:30-15:30)\, and 5 & 10 (15:00-17:00). Sign up
+  for your Battalion’s specific time slot via the N
+END:VEVENT
+END:VCALENDAR

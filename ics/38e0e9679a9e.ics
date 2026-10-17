@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:38e0e9679a9e@bay-events
+DTSTAMP:20261017T164511Z
+DTSTART;TZID=America/Los_Angeles:20261020T180000
+DTEND;TZID=America/Los_Angeles:20261020T210000
+SUMMARY:826 Valencia Fundraiser: Writer's Block Party
+LOCATION:Southern Pacific Brewing\, 620 Treat Ave San Francisco\, San Fran
+ cisco
+URL:https://partiful.com/e/RtsrC4hlskjt17wXWV3O
+DESCRIPTION:Fairs & festivals + Writing\nhttps://partiful.com/e/RtsrC4hlsk
+ jt17wXWV3O\n\nThe 826 Valencia Associate Board is back with our annual fu
+ ndraiser supporting 826 Valencia—San Francisco’s longtime K-12 readin
+ g and writing nonprofit! We’ve poured months into planning an unforgett
+ able evening. Here is what to expect: - Fun Creative Activities: includin
+ g Write an ode to Karl the Fog\, craft DIY nature bookmarks\, and stitch 
+ your own custom felt fortune cookie. - All-You-Can-Grab B
+END:VEVENT
+END:VCALENDAR

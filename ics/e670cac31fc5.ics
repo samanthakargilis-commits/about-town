@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e670cac31fc5@bay-events
+DTSTAMP:20261017T164513Z
+DTSTART;TZID=America/Los_Angeles:20261017T103000
+DTEND;TZID=America/Los_Angeles:20261017T123000
+SUMMARY:HOWL-O-WEEN SF 🎃 Pup Crawl! 🐶
+LOCATION:Dolores Park Cafe (Stop #1)\, 501 Dolores St San Francisco\, San 
+ Francisco
+URL:https://partiful.com/e/vL4RHWwdW0xT7PATsrVp
+DESCRIPTION:Camp & Halloween\nhttps://partiful.com/e/vL4RHWwdW0xT7PATsrVp\
+ n\n🎃🐶 HOWL-O-WEEN SF: THE PUP CRAWL! 👻 Coffee\, Croissants\, Cos
+ tumed Pups\, Park ☕🥐 Your dog has Halloween plans. You do now too! 
+ 🐾 Join @runzoey + friends for a ridiculously cute Halloween adventure 
+ through San Francisco -Mission ! Think coffee\, pastries\, costumed pups\
+ , new friends & plenty of wagging tails in the park🎃 🐾 Join us for 
+ the whole adventure or just part of it! Whether you’re an early bird
+END:VEVENT
+END:VCALENDAR

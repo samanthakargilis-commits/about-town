@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a95209e11be9@bay-events
+DTSTAMP:20261017T164512Z
+DTSTART;TZID=America/Los_Angeles:20261017T190000
+DTEND;TZID=America/Los_Angeles:20261017T223000
+SUMMARY:“Crazy Funny Asians” Free Comedy Showcase
+LOCATION:The Function\, 1414 Market Street\, San Francisco\, CA\, San Fran
+ cisco
+URL:https://sf.funcheap.com/crazy-funny-asians-free-comedy-showcase-sf-100
+ /
+DESCRIPTION:Comedy + Big Bay Area traditions\nhttps://sf.funcheap.com/craz
+ y-funny-asians-free-comedy-showcase-sf-100/\n\n“Crazy Funny Asians” F
+ ree Comedy Showcase (SF) HellaFunny Inspired by the blockbuster movie\, s
+ ee some of the Bay Area’s top comedians at San Francisco’s Crazy Funn
+ y Asians comedy showcase\, presented by Funcheap and HellaFunny. Let’s 
+ celebrate the Bay’s Asian-American culture and heritage with laughs at 
+ SF’s brand new comedy club on Market St – The Function. Free tickets 
+ for the first 100 people to
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ed08daeb5a39@bay-events
+DTSTAMP:20261017T164516Z
+DTSTART;TZID=America/Los_Angeles:20261101T103000
+DTEND;TZID=America/Los_Angeles:20261101T120000
+SUMMARY:Hands-on Matcha Workshop by ochamode
+LOCATION:Local Economy\, Local Economy\, 6028 College Ave\, Oakland\, CA 9
+ 4618\, USA\, Oakland
+URL:https://luma.com/i6dxuh1k
+DESCRIPTION:Spirituality · Oakland\nhttps://luma.com/i6dxuh1k\n\nExperien
+ ce an authentic Japanese tea ceremony in a welcoming\, hands-on workshop 
+ led by a Japanese tea ceremony instructor. Harue Imaizumi practices and t
+ eaches the Omotesenke way of tea in Berkeley. She has studied tea in both
+  Japan and the United States and is a certified instructor of the Omotese
+ nke school. Through her practice and teaching\, she is dedicated to shari
+ ng wa no kokoro—the spirit of
+END:VEVENT
+END:VCALENDAR

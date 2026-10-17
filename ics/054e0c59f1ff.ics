@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:054e0c59f1ff@bay-events
+DTSTAMP:20261017T164516Z
+DTSTART;TZID=America/Los_Angeles:20261109T150000
+DTEND;TZID=America/Los_Angeles:20261109T153000
+SUMMARY:Park Ranger Campfire Talks
+LOCATION:Presidio Tunnel Tops\, 210 Lincoln Blvd\, San Francisco
+URL:https://presidio.gov/explore/events/park-ranger-campfire-talks-2/2026-
+ 11-09/
+DESCRIPTION:New in your area\nhttps://presidio.gov/explore/events/park-ran
+ ger-campfire-talks-2/2026-11-09/\n\nDiscover the Presidio's rich history 
+ at free talks by National Park Service rangers. Daily at 3 p.m.\, uncover
+  the past with stunning Golden Gate Bridge views.
+END:VEVENT
+END:VCALENDAR

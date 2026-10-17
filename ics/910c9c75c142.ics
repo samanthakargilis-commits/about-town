@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:910c9c75c142@bay-events
+DTSTAMP:20261017T164516Z
+DTSTART;TZID=America/Los_Angeles:20261020T183000
+DTEND;TZID=America/Los_Angeles:20261020T210000
+SUMMARY:Book Bedazzling at Books Inc. Palo Alto
+LOCATION:Books Inc.\, 855 El Camino Real\, #74\, Palo Alto\, CA 94301 Palo
+  Alto\, Palo Alto
+URL:https://www.eventbrite.com/e/book-bedazzling-at-books-inc-palo-alto-ti
+ ckets-1999046277228
+DESCRIPTION:Reading · Palo Alto\nhttps://www.eventbrite.com/e/book-bedazz
+ ling-at-books-inc-palo-alto-tickets-1999046277228\n\nPut down your phone 
+ and come bedazzle a book at your favorite local bookstore!
+END:VEVENT
+END:VCALENDAR

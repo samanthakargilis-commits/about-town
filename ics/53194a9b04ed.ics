@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:53194a9b04ed@bay-events
+DTSTAMP:20261017T164511Z
+DTSTART;TZID=America/Los_Angeles:20261017T150000
+DTEND;TZID=America/Los_Angeles:20261017T170000
+SUMMARY:Crafternoon
+LOCATION:Temescal Library\, 5205 Telegraph Avenue\, Oakland\, CA Oakland\,
+  Oakland
+URL:https://www.meetup.com/activist-crafters-creators-and-artist-collabora
+ tive/events/316823464/
+DESCRIPTION:Craft + Reading · Oakland\nhttps://www.meetup.com/activist-cr
+ afters-creators-and-artist-collaborative/events/316823464/\n\nHalloween c
+ rafternoon hang! We'll have sharing materials for crafting and junk journ
+ aling and a few Halloween themed items. We'll also have items for trinket
+  making: key chains\, beads\, charms\, ribbons and other bits to play wit
+ h. Bring your craft\, art or journal supplies or we'll have a share pile:
+  stickers\, paper and other scraps. We'll also have a trinket making shar
+ e pile: magnets\, hair clips\, 
+END:VEVENT
+END:VCALENDAR

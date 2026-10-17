@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cf0efbc77747@bay-events
+DTSTAMP:20261017T164511Z
+DTSTART;TZID=America/Los_Angeles:20261017T103000
+DTEND;TZID=America/Los_Angeles:20261017T171500
+SUMMARY:Filipino American Book Festival
+LOCATION:San Francisco Main Library\, 100 Larkin Street\, San Francisco\, 
+ San Francisco
+URL:https://ma.to/event/filipino-american-book-festival-17-oct-2026
+DESCRIPTION:Reading + Fairs & festivals · Your reading tastes\nhttps://ma
+ .to/event/filipino-american-book-festival-17-oct-2026\n\nThe 8th Filipino
+  American International Book Festival returns to the San Francisco Public
+  Library's Main branch on October 17. The event features a keynote by Ran
+ dy Ribay at 10:30 AM in the Koret Auditorium\, followed by a full schedul
+ e of panels\, readings\, children's storytime\, and a marketplace in the 
+ Latino Room running from 11 AM to 5:15 PM. Programming includes sessions 
+ on romance fiction\, Fil
+END:VEVENT
+END:VCALENDAR

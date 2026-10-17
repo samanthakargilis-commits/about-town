@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9008dcc7fa8d@bay-events
+DTSTAMP:20261017T164514Z
+DTSTART;TZID=America/Los_Angeles:20261021T150000
+DTEND;TZID=America/Los_Angeles:20261021T163000
+SUMMARY:-1 to Anduril with Trae Stephens
+LOCATION:San Francisco\, California\, San Francisco
+URL:https://luma.com/trae-stephens-spc
+DESCRIPTION:Art\nhttps://luma.com/trae-stephens-spc\n\nSouth Park Commons 
+ is delighted to host Trae Stephens as part of our -1 to Now series. Event
+  Details 3:00pm: Doors Open + Mingling 3:30-4:30pm: Fireside Chat Trae is
+  a General Partner at Founders Fund. He is also Co-founder and Executive 
+ Chairman of Anduril Industries\, a defense technology company focused on 
+ autonomous systems. Previously\, Trae was an early employee at Palantir T
+ echnologies\, where
+END:VEVENT
+END:VCALENDAR

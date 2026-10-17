@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:28522fe5f705@bay-events
+DTSTAMP:20261017T164511Z
+DTSTART;TZID=America/Los_Angeles:20261002T190000
+DTEND;TZID=America/Los_Angeles:20261002T210000
+SUMMARY:G&M Farms Corn Maze & Pumpkin Patch 2026
+LOCATION:487 East Airway Blvd\, Livermore\, CA (East Bay) G&M Farms offers
+  a huge pumpkin patch with farm animals\, a free straw bale maze\, and a 
+ corn box \, which is like a giant sandbox f
+URL:https://sf.funcheap.com/city-guide/craziest-corn-mazes-bay/
+DESCRIPTION:Fairs & festivals + U-pick farms · Featured on Funcheap · Li
+ vermore\, CA (East Bay) G&M Farms offers a huge pumpkin patch with farm a
+ nimals\, a free straw bale maze\, and a corn box \, which is like a giant
+  sandbox f\nhttps://sf.funcheap.com/city-guide/craziest-corn-mazes-bay/\n
+ \nOct. 2-31\, 2026 | Wed.-Fri.: 3-7 pm\; Sat.: 10 am-7 pm (pumpkin patch)
+ \, 10 am-9 pm (corn maze)\; Sun.: 10 am-6 pm G&M Farms | 487 East Airway 
+ Blvd\, Livermore\, CA (East Bay) G&M Farms offers a huge pumpkin patch wi
+ th farm animals\, a free straw bale maze\, and a corn box \, which is lik
+ e a giant sandbox filled with corn kernels. Plus\, don’t miss their epi
+ c six-acre corn maze . It twists\, turns\, and dead
+END:VEVENT
+END:VCALENDAR

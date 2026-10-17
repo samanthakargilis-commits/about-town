@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1679bdb4bd9f@bay-events
+DTSTAMP:20261017T164510Z
+DTSTART;TZID=America/Los_Angeles:20261018T090000
+DTEND;TZID=America/Los_Angeles:20261018T170000
+SUMMARY:54th Annual Half Moon Bay Art & Pumpkin Festival
+LOCATION:Downtown Half Moon Bay\, Main St.\, Half Moon Bay\, CA\, Half Moo
+ n Bay
+URL:https://sf.funcheap.com/54th-annual-half-moon-bay-art-pumpkin-festival
+ -oct-17-18/
+DESCRIPTION:Big Bay Area traditions + Fairs & festivals · A yearly tradit
+ ion · Half Moon Bay\nhttps://sf.funcheap.com/54th-annual-half-moon-bay-a
+ rt-pumpkin-festival-oct-17-18/\n\nThe Half Moon Bay Art & Pumpkin Festiva
+ l is a beloved fall tradition held on Main Street. Experience the festiva
+ l featuring giant gourds\, a parade\, costumes\, local food\, and craft v
+ endors. The event also showcases hand-blown glass pumpkin artists\, with 
+ glass pumpkins created at over 2\,000°F in a variety of colors and desig
+ ns.
+END:VEVENT
+END:VCALENDAR

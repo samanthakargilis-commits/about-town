@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0ccef029e539@bay-events
+DTSTAMP:20261017T164516Z
+DTSTART;TZID=America/Los_Angeles:20261027T083000
+DTEND;TZID=America/Los_Angeles:20261027T180000
+SUMMARY:SEV0 - The reliability conference (SF)
+LOCATION:SFJAZZ\, SFJAZZ\, 201 Franklin St\, San Francisco\, CA 94102\, US
+ A\, San Francisco
+URL:https://luma.com/wuoe9ul2
+DESCRIPTION:New in your area\nhttps://luma.com/wuoe9ul2\n\nSEV0 is inciden
+ t.io's annual conference for technical leaders in incident management and
+  reliability. This is a one-day event bringing together SREs\, engineerin
+ g leaders\, and CTOs from some of the world's best companies. Think world
+ -class speakers\, real talks about reliability\, and a room full of peopl
+ e who actually get it. incident.io customer? You're on us. Reach out to y
+ our Account Manager for 
+END:VEVENT
+END:VCALENDAR

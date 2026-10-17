@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:da087c8e9d67@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T100000
+DTEND;TZID=America/Los_Angeles:20261017T220000
+SUMMARY:BPP 60th Anniversary
+LOCATION:Oakland\, Oakland
+URL:https://ma.to/event/bpp-60th-anniversary-oakland-17-oct-2026
+DESCRIPTION:Oakland\nhttps://ma.to/event/bpp-60th-anniversary-oakland-17-o
+ ct-2026\n\nThe weekend portion of the 60th Anniversary of the Black Panth
+ er Party in Oakland. Continuing the city-wide celebration of the party's 
+ legacy with community gatherings and historical reflections. Programming 
+ details on the profile.
+END:VEVENT
+END:VCALENDAR

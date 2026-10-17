@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9eb1f158b1c2@bay-events
+DTSTAMP:20261017T164512Z
+DTSTART;TZID=America/Los_Angeles:20261017T140000
+DTEND;TZID=America/Los_Angeles:20261017T150000
+SUMMARY:Elders of Time
+LOCATION:4-Star Theater\, 2200 Clement St\, SF\, San Francisco
+URL:https://ma.to/event/elders-of-time-oct-17-2026
+DESCRIPTION:Fairs & festivals + Theatre\nhttps://ma.to/event/elders-of-tim
+ e-oct-17-2026\n\nA screening of "Elders of Time\," a short documentary th
+ at asks what time would look like if measured by millennia-old trees. The
+  film follows the creation of Bristlecone Time through artist Jonathon Ke
+ ats\, dendrochronologists\, and The Long Now Foundation. Filmmaker and su
+ bject expected to attend. Part of the Green Film Festival at the 4-Star T
+ heater\, 2200 Clement St\, San Francisco. Saturday\, Oct 1
+END:VEVENT
+END:VCALENDAR

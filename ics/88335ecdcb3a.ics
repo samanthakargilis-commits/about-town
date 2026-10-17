@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:88335ecdcb3a@bay-events
+DTSTAMP:20261017T164512Z
+DTSTART;TZID=America/Los_Angeles:20261020T180000
+DTEND;TZID=America/Los_Angeles:20261020T200000
+SUMMARY:Belmont Improv Tuesday Evenings
+LOCATION:Twin Pines Park\, 1 Twin Pines Lane\, Belmont\, CA Belmont\, Belm
+ ont
+URL:https://www.meetup.com/belmont-improv-tuesday-evenings/events/31527285
+ 6/
+DESCRIPTION:Comedy + Theatre · Belmont\nhttps://www.meetup.com/belmont-im
+ prov-tuesday-evenings/events/315272856/\n\n**Belmont Improv Tuesday Eveni
+ ngs is excited to be holding improv at the Twin Pines Park Art Center/Man
+ or House where I am the new Community Arts Curator. The Manor House offer
+ s a spacious\, warm environment with ample convenient parking!** **Note: 
+ I will be bringing some snacks and water to share and I encourage you to 
+ also bring along a shareable treat as there is nothing for sale at this l
+ ocatio
+END:VEVENT
+END:VCALENDAR

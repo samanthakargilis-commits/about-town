@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ee22bbdfbb7f@bay-events
+DTSTAMP:20261017T164511Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Progressive Art Studio Models: A Lecture By Cléa Massiani
+LOCATION:Yerba Buena Center for the Arts\, 701 Mission St\, San Francisco\
+ , CA\, San Francisco
+URL:https://sf.funcheap.com/progressive-art-studio-models-lecture-cla-mass
+ iani/
+DESCRIPTION:Art + Discourse\nhttps://sf.funcheap.com/progressive-art-studi
+ o-models-lecture-cla-massiani/\n\nJoin us for a lecture from Cléa Massia
+ ni on Progress Art Studios (PAS)\; radical spaces that support artists wi
+ th intellectual and developmental disabilities. Learn more about PAS with
+ in a lineage of artist-led\, independent spaces that resisted dominant in
+ stitutional models of production and exhibition.
+END:VEVENT
+END:VCALENDAR

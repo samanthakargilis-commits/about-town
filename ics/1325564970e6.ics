@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1325564970e6@bay-events
+DTSTAMP:20261017T164512Z
+DTSTART;TZID=America/Los_Angeles:20261017T110000
+DTEND;TZID=America/Los_Angeles:20261017T140000
+SUMMARY:Family Art Making
+LOCATION:de Young Museum\, San Francisco
+URL:https://ma.to/event/family-art-making-treasures-of-the-pharaohs-2026-1
+ 0-17
+DESCRIPTION:Art + Camp & Halloween\nhttps://ma.to/event/family-art-making-
+ treasures-of-the-pharaohs-2026-10-17\n\nFamily Art Making: Treasures of t
+ he Pharaohs is a family art-making session at the de Young Museum on Oct 
+ 17\, part of the museum's October programme. The month's de Young events 
+ also include Sketching in the Galleries on Oct 10\, 24 and 31\, and Late 
+ Night Editions: Halloween Eve on Oct 30.
+END:VEVENT
+END:VCALENDAR

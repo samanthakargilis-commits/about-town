@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a65da444884a@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T120000
+DTEND;TZID=America/Los_Angeles:20261017T170000
+SUMMARY:Into the Sun: BTS Celebration
+LOCATION:Birdhaus Beer Garden\, 3821 Smith St\, Union City\, CA\, Union Ci
+ ty
+URL:https://ma.to/event/into-the-sun-17-oct-2026
+DESCRIPTION:Union City\nhttps://ma.to/event/into-the-sun-17-oct-2026\n\nJo
+ in NorCal Noonas for Into the Sun at Birdhaus Beer Garden to celebrate BT
+ S and their 2026 Arirang World Tour. This family-friendly event features 
+ DJ Theo Tabora spinning live\, along with various local retail and food v
+ endors. All ages are welcome.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1c4039915e34@bay-events
+DTSTAMP:20261017T164513Z
+DTSTART;TZID=America/Los_Angeles:20261108T220000
+DTEND;TZID=America/Los_Angeles:20261109T050000
+SUMMARY:2026 North Taurids Meteor Shower Peaks
+LOCATION:San Francisco Bay Area
+URL:https://sf.funcheap.com/north-taurids-meteor-shower/
+DESCRIPTION:A yearly tradition\nhttps://sf.funcheap.com/north-taurids-mete
+ or-shower/\n\nEvery year from September to November\, the Earth passes th
+ rough a broad stream of debris associated with Comet Encke. The dust and 
+ debris hit Earth’s atmosphere at about 65\,000 mph and burn up\, creati
+ ng the Taurid meteor shower. Most years the shower is weak\, and ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c93847a03b9b@bay-events
+DTSTAMP:20261017T164511Z
+DTSTART;TZID=America/Los_Angeles:20261017T160000
+DTEND;TZID=America/Los_Angeles:20261017T170000
+SUMMARY:Organ Concerts
+LOCATION:Legion of Honor\, San Francisco
+URL:https://ma.to/event/organ-concerts-2026-10-17
+DESCRIPTION:Concerts + Craft\nhttps://ma.to/event/organ-concerts-2026-10-1
+ 7\n\nOrgan Concerts are part of the Legion of Honor's October programme\,
+  with concerts on Oct 10\, 17\, 24 and 31\; this listing covers Oct 17. T
+ he Legion's October line-up also includes A Closer Look: June Wayne\, Cor
+ ita Kent\, and a New Age for Printmaking on Oct 10 and Virginians and The
+ ir Dishes: Ceramic Highlights from Williamsburg on Oct 11.
+END:VEVENT
+END:VCALENDAR

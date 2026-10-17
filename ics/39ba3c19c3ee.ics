@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:39ba3c19c3ee@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T170000
+DTEND;TZID=America/Los_Angeles:20261018T020000
+SUMMARY:Trainer’s Lounge Pop-Up
+LOCATION:Thriller Social Club\, 508 4th St.\, San Francisco\, CA\, San Fra
+ ncisco
+URL:https://ma.to/event/trainers-lounge-2026-10-17
+DESCRIPTION:New in your area\nhttps://ma.to/event/trainers-lounge-2026-10-
+ 17\n\nTrainer’s Lounge\, a Pokémon-themed pop-up at Thriller Social Cl
+ ub\, runs through October 31 and follows the venue's regular hours. Venue
+  hours on Saturday are 5 PM to 2 AM. It closes on days the venue is shut 
+ and during the venue's private-event windows\; closure times may change a
+ nd are posted on the venue's page. Reservations are available on OpenTabl
+ e\, and walk-ins are welcome. Thriller Social Cl
+END:VEVENT
+END:VCALENDAR

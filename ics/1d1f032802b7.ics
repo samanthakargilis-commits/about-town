@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1d1f032802b7@bay-events
+DTSTAMP:20261017T164512Z
+DTSTART;TZID=America/Los_Angeles:20261017T153000
+DTEND;TZID=America/Los_Angeles:20261017T170000
+SUMMARY:Niu Lai screening at TIAT
+LOCATION:tiat\, 151 Powell St San Francisco\, San Francisco
+URL:https://partiful.com/e/Cxb6MgbqPZYCUboveDrT
+DESCRIPTION:Animals + Writing\nhttps://partiful.com/e/Cxb6MgbqPZYCUboveDrT
+ \n\n​Lets watch Niu Lai together <3 ​Niu Lai (Chinese: 牛来\; pinyi
+ n: Niú Lái\; literally "Here Comes the Cow" or "The Bull is Coming") is
+  a viral 2026 Chinese animated indie film that became a massive "so bad\,
+  it's good" box office sleeper hit. ​If we still have popcorn\, we'll p
+ rovide it ~ (we're doing a Sinofuturism screening earlier in the day too)
+  ​​⭑.ᐟ More on Niu Lai ​Niu Lai is an 86-minute abstrac
+END:VEVENT
+END:VCALENDAR

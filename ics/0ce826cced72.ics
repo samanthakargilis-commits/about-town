@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0ce826cced72@bay-events
+DTSTAMP:20261017T164516Z
+DTSTART;TZID=America/Los_Angeles:20261111T200000
+DTEND;TZID=America/Los_Angeles:20261112T000000
+SUMMARY:lowercase ~ Shearling ~ Wife
+LOCATION:Bottom Of The Hill\, 1233 17th Street\, San Francisco\, Californi
+ a 94107\, United States San Francisco\, San Francisco
+URL:https://dice.fm/event/6a8e0c44c2a75900014d1c6d
+DESCRIPTION:Craft\nhttps://dice.fm/event/6a8e0c44c2a75900014d1c6d\n\nMoody
+  lyrics blend with despondent guitar riffs when lowercase shares their 90
+ 's feelings and talents. Come for the Amen and stay for the Hallelujah wh
+ en Shearling supports and Wife tears an opening in the sky with their DIY
+  jitter and howl. The Bottom of the Hill does not use QR codes for entry.
+  You must present a valid photo ID that matches the name on your DICE tic
+ ket to enter. All ticket trans
+END:VEVENT
+END:VCALENDAR

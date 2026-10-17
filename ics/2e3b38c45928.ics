@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2e3b38c45928@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T180000
+DTEND;TZID=America/Los_Angeles:20261017T220000
+SUMMARY:CAIR-SFBA 32nd Anniversary Gala
+LOCATION:CAIR-SFBA\, Palo Alto
+URL:https://ma.to/event/cair-sfba-32nd-anniversary-gala-17-oct-2026
+DESCRIPTION:Palo Alto\nhttps://ma.to/event/cair-sfba-32nd-anniversary-gala
+ -17-oct-2026\n\nCAIR-SFBA hosts its 32nd Anniversary Gala in Santa Clara.
+  This year’s program\, Upholding Liberty and Justice for All\, brings t
+ ogether emcee Linda Sarsour\, keynote speaker Ilyasah Shabazz\, and motiv
+ ational speaker Altaf Husain. Tickets available on the profile.
+END:VEVENT
+END:VCALENDAR

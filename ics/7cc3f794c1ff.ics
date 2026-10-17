@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7cc3f794c1ff@bay-events
+DTSTAMP:20261017T164513Z
+DTSTART;TZID=America/Los_Angeles:20261017T093000
+DTEND;TZID=America/Los_Angeles:20261017T113000
+SUMMARY:Treasure Hunt: 2026 Event Details
+LOCATION:San Francisco Opera Scene Shop\, 826 Burlway Road\, Burlingame\, 
+ CA 94010 Dates: Saturday–Sun
+URL:https://www.sfopera.com/costume-sale
+DESCRIPTION:Weird & unusual + Concerts · Featured on Funcheap\nhttps://ww
+ w.sfopera.com/costume-sale\n\nEvent: San Francisco Opera Costume Sale Loc
+ ation: San Francisco Opera Scene Shop\, 826 Burlway Road\, Burlingame\, C
+ A 94010 Dates: Saturday–Sunday\, October 17-18\, 2026 Hours: 9:30 am-6:
+ 30 pm both days (last entry at 4:30 pm) Shopping time: Each ticket includ
+ es two hours of shopping Costume prices: Most items range from $5-$525\, 
+ with some premium pieces priced higher Tickets: Reserve your timed entry 
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:82525103ee4c@bay-events
+DTSTAMP:20261017T164512Z
+DTSTART;TZID=America/Los_Angeles:20261018T140000
+DTEND;TZID=America/Los_Angeles:20261018T163000
+SUMMARY:Book Talk: May-Lee Chai
+LOCATION:On Waverly\, 162 Waverly Place\, San Francisco\, San Francisco
+URL:https://ma.to/event/book-talk-may-lee-chai-18-oct-2026
+DESCRIPTION:Discourse + Reading · Your reading tastes\nhttps://ma.to/even
+ t/book-talk-may-lee-chai-18-oct-2026\n\nJoin On Waverly for a book talk w
+ ith award-winning author May-lee Chai. In conversation with writer and ph
+ otographer Grace Hwang Lynch\, Chai discusses her collection of essays an
+ d incantations\, My Hungry Ghosts\, exploring personal hauntings\, histor
+ y\, and family. This event is part of October on Waverly at 162 Waverly P
+ lace\, San Francisco Chinatown.
+END:VEVENT
+END:VCALENDAR

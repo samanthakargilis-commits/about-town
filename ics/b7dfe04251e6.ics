@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b7dfe04251e6@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T110000
+DTEND;TZID=America/Los_Angeles:20261017T140000
+SUMMARY:Louïe Club x Splash Brunch
+LOCATION:Thrive City\, San Francisco
+URL:https://ma.to/event/louie-club-x-splash-brunch-17-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/louie-club-x-splash-brun
+ ch-17-oct-2026\n\nA historic brunch day party hosted by Louïe Club x Spl
+ ash at Thrive City\, powered by Aperol. Saturday\, October 17\, 11am–2p
+ m. Ticket includes tray-passed brunch bites\, one complimentary Aperol Sp
+ ritz\, free swag\, and polaroid souvenirs. Featuring sounds by Louïe Clu
+ b on the Veranda Lounge with auxcord and lowwkeyj. 21+ event. Please brin
+ g valid photo ID. Seating is limited and not guaranteed. Ticket
+END:VEVENT
+END:VCALENDAR

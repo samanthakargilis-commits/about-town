@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fcf0831fc4ee@bay-events
+DTSTAMP:20261017T164513Z
+DTSTART;TZID=America/Los_Angeles:20261118T190000
+DTEND;TZID=America/Los_Angeles:20261118T210000
+SUMMARY:’80s NYC Underground: Free “Mondo New York” Film (Live Worms
+  Gallery)
+LOCATION:Live Worms Gallery\, 1345 Grant Ave\, San Francisco\, CA 94133\, 
+ San Francisco
+URL:https://sf.funcheap.com/80s-nyc-underground-free-mondo-york-film-live-
+ worms-gallery/
+DESCRIPTION:Weird & unusual\nhttps://sf.funcheap.com/80s-nyc-underground-f
+ ree-mondo-york-film-live-worms-gallery/\n\nCatch a free screening of Mond
+ o New York in North Beach. This cult film offers a dreamlike look at New 
+ York’s late-’80s underground scene\, moving through clubs\, strange e
+ ncounters\, performance art\, and an unforgettable cast of downtown chara
+ cters. Atmospheric\, messy\, stylish\, and deeply of its moment\, ...
+END:VEVENT
+END:VCALENDAR

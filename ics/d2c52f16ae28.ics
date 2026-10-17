@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d2c52f16ae28@bay-events
+DTSTAMP:20261017T164513Z
+DTSTART;TZID=America/Los_Angeles:20261017T100000
+DTEND;TZID=America/Los_Angeles:20261017T120000
+SUMMARY:Bay Area Community Run 🏃
+LOCATION:Ocean Beach Parking\, null null San Francisco\, San Francisco
+URL:https://partiful.com/e/QKx41MGvbxcaQkpRPfKs
+DESCRIPTION:Concerts\nhttps://partiful.com/e/QKx41MGvbxcaQkpRPfKs\n\nHey B
+ ay Area friends! Let’s kickoff the season with a morning run by the bea
+ utiful ocean beach! 🌊 This will be a fun filled collab event held by H
+ umble Strides\, Stack Run Club\, Hella Bae\, Pulse Run Club\, and Friends
+  Club! 5 Bay Area based communities coming together to promote health and
+  fitness! 🌱 We are excited to be partnering with GU Energy Labs\, to b
+ ring you a special sampling experience! GU 
+END:VEVENT
+END:VCALENDAR

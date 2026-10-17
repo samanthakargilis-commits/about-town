@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8fefa2110b43@bay-events
+DTSTAMP:20261017T164514Z
+DTSTART;TZID=America/Los_Angeles:20261026T180000
+DTEND;TZID=America/Los_Angeles:20261026T210000
+SUMMARY:Are We Running Too Many Agents?
+LOCATION:Sentry\, Sentry\, 45 Fremont St\, San Francisco\, CA 94105\, USA\
+ , San Francisco
+URL:https://luma.com/0qr6bxcw
+DESCRIPTION:Discourse\nhttps://luma.com/0qr6bxcw\n\nHave you read ETOOMANY
+ THINGS? Run Fewer Agents\, the recent blog post by exe co-founder Josh? E
+ veryone seems to be building software factories these days. More agents\,
+  more tasks running in parallel\, more dashboards to keep track of everyt
+ hing. But is more actually better? The post sparked a fun discussion onli
+ ne\, and we thought it would be even more fun to continue the conversatio
+ n in person. Spea
+END:VEVENT
+END:VCALENDAR

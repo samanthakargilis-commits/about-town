@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:60b4659f885a@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T090000
+DTEND;TZID=America/Los_Angeles:20261017T120000
+SUMMARY:Rain Barrel Pickup: San Mateo
+LOCATION:City of San Mateo\, San Mateo
+URL:https://ma.to/event/rain-barrel-pickup-san-mateo-17-oct-2026
+DESCRIPTION:San Mateo\nhttps://ma.to/event/rain-barrel-pickup-san-mateo-17
+ -oct-2026\n\nSecure a discounted 50-gallon rain barrel to prep for the ra
+ iny season. These high-quality barrels help capture rainwater for your ga
+ rden and reduce stormwater runoff. Heads up: you must purchase yours onli
+ ne by Oct 4. No barrels will be sold on-site at the pickup.
+END:VEVENT
+END:VCALENDAR

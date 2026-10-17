@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:de96ce70cafd@bay-events
+DTSTAMP:20261017T164512Z
+DTSTART;TZID=America/Los_Angeles:20261017T120000
+DTEND;TZID=America/Los_Angeles:20261017T200000
+SUMMARY:She Shreds Women’s Music Festival
+LOCATION:Webster Park West\, San Francisco
+URL:https://ma.to/event/she-shreds-fest-17-oct-2026
+DESCRIPTION:Fairs & festivals + Gay / queer\nhttps://ma.to/event/she-shred
+ s-fest-17-oct-2026\n\nThe She Shreds Women’s Music Festival returns to 
+ Alameda for a gathering focused on amazing music and community. Featuring
+  a lineup of women in music\, including Oakland queer riot grrrl rock out
+ fit The Wonderland Rejects. This is an all-ages event with free admission
+ .
+END:VEVENT
+END:VCALENDAR

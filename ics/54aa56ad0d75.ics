@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:54aa56ad0d75@bay-events
+DTSTAMP:20261017T164512Z
+DTSTART;TZID=America/Los_Angeles:20261017T123000
+DTEND;TZID=America/Los_Angeles:20261017T153000
+SUMMARY:ZYZZYVA Movie Matinee: Amarcord
+LOCATION:Roxie Theater\, 3117 16th St.\, SF\, San Francisco
+URL:https://ma.to/event/zyzzyva-movie-matinee-amarcord-17-oct-2026
+DESCRIPTION:Big Bay Area traditions + Reading\nhttps://ma.to/event/zyzzyva
+ -movie-matinee-amarcord-17-oct-2026\n\nLitquake and ZYZZYVA present a mat
+ inee screening of Federico Fellini’s Amarcord\, selected by author Andr
+ ew Sean Greer. The film is followed by an on-stage discussion and Q&A wit
+ h Greer and Ingrid Rojas Contreras. A book signing and a pop-up shop with
+  Greer’s recommended reading list (Italy of the Heart / L'Italia del Cu
+ ore)\, courtesy of Dog Eared Books\, will be available before and after t
+ he show.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:173cd7fb5b98@bay-events
+DTSTAMP:20261017T164514Z
+DTSTART;TZID=America/Los_Angeles:20261018T110000
+DTEND;TZID=America/Los_Angeles:20261018T130000
+SUMMARY:Community dye day - Fall colors
+LOCATION:4425 Linden St\, 4425 Linden St Oakland\, Oakland
+URL:https://partiful.com/e/P12vwPiqVVAecPsdyMGn
+DESCRIPTION:Oakland\nhttps://partiful.com/e/P12vwPiqVVAecPsdyMGn\n\nOctobe
+ r’s community dye day will explore local fall colors - rich tannins fro
+ m walnut\, eucalyptus and oak halls\, and bright oranges from late season
+  marigolds. We provide small pre-mordanted* fabric for experimenting with
+ \, and folks are also welcome to bring small\, pre-mordanted pieces (smal
+ ler than a pillow case) of any natural fibers (cotton/silk/linen/wool) as
+  well. Community day days are an ac
+END:VEVENT
+END:VCALENDAR

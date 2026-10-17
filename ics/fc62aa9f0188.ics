@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fc62aa9f0188@bay-events
+DTSTAMP:20261017T164512Z
+DTSTART;TZID=America/Los_Angeles:20261019T161500
+DTEND;TZID=America/Los_Angeles:20261019T181500
+SUMMARY:Monday Yoga
+LOCATION:SF Dharma Collective\, 2929 24th St\, San Francisco\, CA San Fran
+ cisco\, San Francisco
+URL:https://www.meetup.com/san-francisco-mindfulness-meetup/events/3169677
+ 38/
+DESCRIPTION:Meditation + Theatre\nhttps://www.meetup.com/san-francisco-min
+ dfulness-meetup/events/316967738/\n\n**The Flow & Stillness Ritual: Breat
+ h-Synchronized Movement & Deep Rest** Begin your week with a deliberate s
+ hift in energy. This class blends dynamic\, breath-synchronized movement 
+ flows with restorative mindfulness to reset your body and nervous system.
+  The first half of class challenges and opens the physical body through a
+ n intentional\, fluid sequence. The practice concludes with an extended\,
+  i
+END:VEVENT
+END:VCALENDAR

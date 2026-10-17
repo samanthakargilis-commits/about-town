@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f5809b81d9d5@bay-events
+DTSTAMP:20261017T164516Z
+DTSTART;TZID=America/Los_Angeles:20261017T170000
+DTEND;TZID=America/Los_Angeles:20261017T220000
+SUMMARY:SCREAMOWEEN
+LOCATION:Stay Gold Deli\, San Francisco
+URL:https://ma.to/event/screamoween-benefit-stay-gold-deli-17-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/screamoween-benefit-stay
+ -gold-deli-17-oct-2026\n\nA benefit show for the Alameda County Immigrati
+ on Legal Education Partnership (ACILEP). The lineup features Carmen Sixte
+ en\, Cutting up the Elephant\, Sasparilla\, Los Dogs\, Everything Falls I
+ nto Place\, and Viola Swamp. Along with the music\, the event serves as a
+  resource hub for direct action\, offering free clothes\, tents\, first a
+ id\, and food. Take what you need and give what you can to support the 
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a90cd7ed35b4@bay-events
+DTSTAMP:20261017T164516Z
+DTSTART;TZID=America/Los_Angeles:20261104T190000
+DTEND;TZID=America/Los_Angeles:20261104T230000
+SUMMARY:LANDROID\, Fake Your Own Death and Misandrist
+LOCATION:Kilowatt\, 3160 16th Street\, San Francisco\, California 94103\, 
+ United States San Francisco\, San Francisco
+URL:https://dice.fm/event/6a9b122dc16a9e00018073b4
+DESCRIPTION:Theatre + Art\nhttps://dice.fm/event/6a9b122dc16a9e00018073b4\
+ n\nHailing from Landers\, California\, in the Mojave Desert\, LANDROID cr
+ eates cinematic synthpop that blends shoegaze\, dreamwave\, and noir-soak
+ ed psychedelia. Led by Cooper Gillespie and Greg Gordon\, with Nigel Roma
+ n recently joining the lineup\, the band has been described by Rival Maga
+ zine as “channeling the vibes of a neo-noir crime drama set to testimon
+ ials from Art Bell’s Coast to Coast AM.” Drawin
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6181ee1028ee@bay-events
+DTSTAMP:20261017T164511Z
+DTSTART;TZID=America/Los_Angeles:20261022T180000
+DTEND;TZID=America/Los_Angeles:20261022T203000
+SUMMARY:Craft at Speed: Linear × Granola × Figma
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/granola-sf-linear
+DESCRIPTION:Craft + Discourse · Thursday evening\nhttps://luma.com/granol
+ a-sf-linear\n\nCraft at Speed is for engineers who want to talk about shi
+ pping polished software without slowing down. How do small teams ship sof
+ tware people love\, fast\, without a QA department or a design handoff st
+ ep? We'll hear from Brendan from Linear and Maria from Figma on how they 
+ approach it. Brendan Carney\, Engineering Lead\, Linear Brendan will walk
+  through why Linear has no separate QA function\, why t
+END:VEVENT
+END:VCALENDAR

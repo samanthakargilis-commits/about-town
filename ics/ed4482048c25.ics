@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ed4482048c25@bay-events
+DTSTAMP:20261017T164516Z
+DTSTART;TZID=America/Los_Angeles:20261030T110000
+DTEND;TZID=America/Los_Angeles:20261030T170000
+SUMMARY:“Pay-What-You-Can” Taco Day at SF’s Tato
+LOCATION:Tato\, 4608 3rd St.\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/pay-what-you-can-taco-day-at-sfs-tato-every-fr
+ iday-303/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/pay-what-you-can-tac
+ o-day-at-sfs-tato-every-friday-303/\n\nWhile many restaurants are struggl
+ ing\, San Francisco Mexican restaurant TATO wants to give back. They’re
+  bringing back their “Taco Love” special which features a two taco pl
+ ate with sides\, and pay-what-you-can pricing. Pay-What-You-Can Taco Day 
+ Tato 4608 3rd St. (@ McKinnon) San Francisco (Bayview) Every ...
+END:VEVENT
+END:VCALENDAR

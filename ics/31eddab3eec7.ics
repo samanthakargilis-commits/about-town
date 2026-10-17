@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:31eddab3eec7@bay-events
+DTSTAMP:20261017T164516Z
+DTSTART;TZID=America/Los_Angeles:20261017T173000
+DTEND;TZID=America/Los_Angeles:20261017T203000
+SUMMARY:Adult Perler Bead Workshop: Custom Pixel Art & Keychains
+LOCATION:3686 Integration Cmn\, 3686 Integration Common\, Fremont\, CA 945
+ 38 Fremont\, Fremont
+URL:https://www.eventbrite.com/e/adult-perler-bead-workshop-custom-pixel-a
+ rt-keychains-tickets-1998386926091
+DESCRIPTION:Art · Fremont\nhttps://www.eventbrite.com/e/adult-perler-bead
+ -workshop-custom-pixel-art-keychains-tickets-1998386926091\n\nJoin a begi
+ nner-friendly adult fuse bead and pixel art workshop in Fremont to create
+  your custom keychain or magnet. No experience needed.
+END:VEVENT
+END:VCALENDAR

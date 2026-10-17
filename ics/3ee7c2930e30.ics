@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3ee7c2930e30@bay-events
+DTSTAMP:20261017T164514Z
+DTSTART;TZID=America/Los_Angeles:20261021T180000
+DTEND;TZID=America/Los_Angeles:20261021T203000
+SUMMARY:A World Model for Biology: An Evening with Bioptimus CEO Jean-Phil
+ ippe Vert
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/mupawovc
+DESCRIPTION:Theatre + Discourse\nhttps://luma.com/mupawovc\n\nBits in Bio 
+ SF and MBC BioLabs are proud to present A World Model for Biology: An Eve
+ ning with Bioptimus CEO Jean-Philippe Vert. Bioptimus is a Paris-based te
+ am building foundation models for biology. They are bringing their world 
+ model\, M-Optimus\, to San Francisco after showing it in London. Come lea
+ rn what they are building and talk about foundation models\, world models
+ \, and the future of simula
+END:VEVENT
+END:VCALENDAR

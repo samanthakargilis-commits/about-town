@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cbd7c15635aa@bay-events
+DTSTAMP:20261017T164511Z
+DTSTART;TZID=America/Los_Angeles:20261017T160000
+DTEND;TZID=America/Los_Angeles:20261017T190000
+SUMMARY:Mission Bay Harvest Festival
+LOCATION:Fulton Plaza\, Fulton Plaza\, San Francisco\, CA\, San Francisco
+URL:https://ma.to/event/mission-bay-harvest-festival-spark-social-17-oct-2
+ 026
+DESCRIPTION:Big Bay Area traditions + Fairs & festivals\nhttps://ma.to/eve
+ nt/mission-bay-harvest-festival-spark-social-17-oct-2026\n\nAn autumn cel
+ ebration held at Fulton Plaza between the Main Library and Asian Art Muse
+ um. Expect carnival games\, food vendors\, face painting\, pumpkin decora
+ ting\, and a visit from Petalz the Flower Truck.
+END:VEVENT
+END:VCALENDAR

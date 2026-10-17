@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:17a2748e3623@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T110000
+DTEND;TZID=America/Los_Angeles:20261017T210000
+SUMMARY:Vibe Curators Pool Party
+LOCATION:The River Electric\, San Francisco
+URL:https://ma.to/event/vibe-curators-pool-party-17-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/vibe-curators-pool-party
+ -17-oct-2026\n\nJoin VIBE CURATORS for an all-day pool party at The River
+  Electric on October 17th. This is the first edition of the Stallion Outs
+ ide series in the North Bay. Enjoy both pools\, the bar\, restrooms\, and
+  showers. Day passes allow you to come and go. This is a 21+ event. A bus
+  will depart from Oakland in the morning and return after the party. Tick
+ ets are available through the venue link.
+END:VEVENT
+END:VCALENDAR

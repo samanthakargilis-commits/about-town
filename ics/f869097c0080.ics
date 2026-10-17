@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f869097c0080@bay-events
+DTSTAMP:20261017T164512Z
+DTSTART;TZID=America/Los_Angeles:20261016T181500
+DTEND;TZID=America/Los_Angeles:20261016T201500
+SUMMARY:“Beyond the Veil” Macabre Tours
+LOCATION:Ghosts at Meek Mansion\, exploring ghost stories and spirit commu
+ nication\, and Death in the
+URL:https://sf.funcheap.com/city-guide/bay-area-haunted-houses/
+DESCRIPTION:Camp & Halloween + Museum exhibits · Featured on Funcheap\nht
+ tps://sf.funcheap.com/city-guide/bay-area-haunted-houses/\n\nHayward | Me
+ ek Mansion\, Cherryland\, and McConaghy House\, Hayward | Oct. 16 – 17 
+ (Meek Mansion)\, Oct. 23 – 24 (McConaghy House) | $25 general admission
+ \; $15 for members Explore ghost stories\, folklore\, spiritual encounter
+ s and Victorian-era death traditions during Beyond the Veil \, a guided t
+ our through two historic East Bay homes after dark . The 2026 tours featu
+ re different themes at each locatio
+END:VEVENT
+END:VCALENDAR

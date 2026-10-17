@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:da77d71fb097@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261016T213000
+DTEND;TZID=America/Los_Angeles:20261016T233000
+SUMMARY:Ardenwood’s Haunted Train Ride
+LOCATION:34600 Ardenwood Blvd.
+URL:https://www.eventbrite.com/e/haunted-train-tickets-715737779967?
+DESCRIPTION:Weird & unusual + Camp & Halloween · Featured on Funcheap\nht
+ tps://www.eventbrite.com/e/haunted-train-tickets-715737779967?\n\nOct. 16
+ -18 & 23-25\, 2026 | Fridays & Saturdays\, 7-9:30pm\; Sundays\, 7-9pm Fre
+ mont | 34600 Ardenwood Blvd. | $19.50 (ages 3+\, includes fees\; ages 2 a
+ nd under FREE) Climb aboard the Haunted Train for a spooky-not-scary ride
+  through the decorated Eucalyptus Woods at Ardenwood Historic Farm. Desig
+ ned especially for families with children under 12\, this nighttime adven
+ ture features live actors\, glowing 
+END:VEVENT
+END:VCALENDAR

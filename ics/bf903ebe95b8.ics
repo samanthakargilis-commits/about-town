@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bf903ebe95b8@bay-events
+DTSTAMP:20261017T164516Z
+DTSTART;TZID=America/Los_Angeles:20261111T193000
+DTEND;TZID=America/Los_Angeles:20261111T213000
+SUMMARY:Boltcutter/ Misery Whip/ Forced To Suffer/ Iron Front
+LOCATION:Neck of the Woods\, 406 Clement St\, San Francisco
+URL:https://www.ticketweb.com/event/boltcutter-misery-whip-forced-to-neck-
+ of-the-woods-tickets/14305054?theme=nwoods&REFID=clientsitewp
+DESCRIPTION:New in your area\nhttps://www.ticketweb.com/event/boltcutter-m
+ isery-whip-forced-to-neck-of-the-woods-tickets/14305054?theme=nwoods&REFI
+ D=clientsitewp\n\n
+END:VEVENT
+END:VCALENDAR

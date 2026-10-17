@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4cb9a61589de@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261027T193000
+DTEND;TZID=America/Los_Angeles:20261027T213000
+SUMMARY:MUSIC JAM SF
+LOCATION:Cobaltix\, LLC\, 1095 Folsom St\, San Francisco\, CA San Francisc
+ o\, San Francisco
+URL:https://www.meetup.com/meetup-group-dvhbxtfg/events/316919711/
+DESCRIPTION:Theatre\nhttps://www.meetup.com/meetup-group-dvhbxtfg/events/3
+ 16919711/\n\n**EVENT DESCRIPTION:** Hello Everyone! Excited to keep these
+  events coming your way! October is here and so it is time to play some m
+ usic together. Here are the details of the event. **1) BRING YOUR OWN INS
+ TRUMENT/AMP:** \\- If you do not have an instrument\\\, there will be a p
+ lace for you to sing\\! Or\\\, to switch with someone for a short bit on 
+ an instrument\\. \\- If you play electric guitar make su
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:023d378f05c3@bay-events
+DTSTAMP:20261017T164516Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:“Midnight at the Masquerade” Murder Mystery Dinner (Westin St.
+  Francis)
+LOCATION:The Westin St. Francis\, 335 Powell Street San Francisco\, CA 941
+ 02
+URL:https://sf.funcheap.com/midnight-masquerade-murder-mystery-dinner-west
+ in-st-francis/
+DESCRIPTION:Camp & Halloween\nhttps://sf.funcheap.com/midnight-masquerade-
+ murder-mystery-dinner-westin-st-francis/\n\nFor one night only\, The West
+ in St. Francis will host an interactive Murder Mystery Dinner for up to 8
+ 0 people in the opulent St. Francis Suite. The evening unfolds as a thril
+ ling “whodunit” complete with suspects\, motives\, and unexpected twi
+ sts\, paired with a decadent three-course ...
+END:VEVENT
+END:VCALENDAR

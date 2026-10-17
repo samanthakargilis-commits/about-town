@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:60c3997e34f6@bay-events
+DTSTAMP:20261017T164513Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:Dia de Los Muertos
+LOCATION:Filoli\, 86 Cañada Rd Woodside\, CA\, Woodside
+URL:https://filoli.org/whats-on/events/dia-de-los-muertos/
+DESCRIPTION:Cultural festivals + Spirituality · Woodside\nhttps://filoli.
+ org/whats-on/events/dia-de-los-muertos/\n\nJoin our partners in celebrati
+ ng Dia de Los Muertos with interactive displays\, family activities and p
+ erformances!
+END:VEVENT
+END:VCALENDAR

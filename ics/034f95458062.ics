@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:034f95458062@bay-events
+DTSTAMP:20261017T164514Z
+DTSTART;TZID=America/Los_Angeles:20261112T190000
+DTEND;TZID=America/Los_Angeles:20261112T220000
+SUMMARY:We Make Noise x MONO Opening Party and Fundraiser!
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/v77l4llj
+DESCRIPTION:Thursday evening\nhttps://luma.com/v77l4llj\n\nYou're invited 
+ to the official Opening Party of MONO Music Conference! We're bringing to
+ gether three communities: MONO\, an important music and technology confer
+ ence in San Francisco\; We Make Noise\, a community of emerging and estab
+ lished industry professionals supporting gender equity in the music indus
+ try\; and EMPIRE\, one of the most important independent labels in the in
+ dustry. San Francisco Mus
+END:VEVENT
+END:VCALENDAR

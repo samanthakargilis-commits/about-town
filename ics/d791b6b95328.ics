@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d791b6b95328@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T090000
+DTEND;TZID=America/Los_Angeles:20261017T110000
+SUMMARY:Restore & Explore: Trail Cleanup
+LOCATION:Arena Green West\, N Autumn St\, San Jose\, CA 95113\, San Jose
+URL:https://ma.to/event/restore-explore-trail-cleanup-2026-10-17
+DESCRIPTION:Animals · San Jose\nhttps://ma.to/event/restore-explore-trail
+ -cleanup-2026-10-17\n\nGuadalupe River Park Conservancy leads a morning o
+ f river restoration at Arena Green West in San Jose. Volunteers take part
+  in a 1.5-hour trail cleanup from 9:00 AM to 10:20 AM\, followed by a 30-
+ minute guided tour of the Guadalupe River Trail led by the Conservancy's 
+ Education Guad Guides from 10:30 AM to 11:00 AM\, covering the area's pla
+ nts\, wildlife and natural features. The family-friendly prog
+END:VEVENT
+END:VCALENDAR

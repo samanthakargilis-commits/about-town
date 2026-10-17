@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8a70725692fd@bay-events
+DTSTAMP:20261017T164513Z
+DTSTART;TZID=America/Los_Angeles:20261017T200000
+DTEND;TZID=America/Los_Angeles:20261017T213000
+SUMMARY:Alicia Dattner: Small Batch
+LOCATION:The Marsh Berkeley\, 2120 Allston Way\, Berkeley\, CA 94704\, Ber
+ keley
+URL:https://ma.to/event/alicia-dattner-small-batch-18-oct-2026
+DESCRIPTION:Comedy + Theatre · Berkeley\nhttps://ma.to/event/alicia-dattn
+ er-small-batch-18-oct-2026\n\nAlicia Dattner brings her show to the stage
+ \, featuring a mix of stand-up\, storytelling\, and absurdity. Touching o
+ n topics from Balinese scooters and Brazilian waxes to planetary death do
+ ulas and ego dissolution\, this is artisanal comedy for the spiritually a
+ dventurous and existentially exhausted. Use code BATW2026 or Standup for 
+ a $10 discount. Tickets are available via the link in the profile.
+END:VEVENT
+END:VCALENDAR

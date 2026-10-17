@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:494d5ba43425@bay-events
+DTSTAMP:20261017T164512Z
+DTSTART;TZID=America/Los_Angeles:20261017T110000
+DTEND;TZID=America/Los_Angeles:20261017T170000
+SUMMARY:SF Open Studios: Weekend 4
+LOCATION:Hunters Point\, San Francisco
+URL:https://ma.to/event/sf-open-studios-weekend-4-17-oct-2026
+DESCRIPTION:Big Bay Area traditions + Art\nhttps://ma.to/event/sf-open-stu
+ dios-weekend-4-17-oct-2026\n\nSF Open Studios Weekend 4. Explore artists'
+  open studios in Hunters Point. Part of the 52nd Annual SF Open Studios. 
+ This city-wide event lets you visit local artists in their studios\, see 
+ their process\, and buy work directly.
+END:VEVENT
+END:VCALENDAR

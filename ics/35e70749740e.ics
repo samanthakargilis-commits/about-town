@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:35e70749740e@bay-events
+DTSTAMP:20261017T164511Z
+DTSTART;TZID=America/Los_Angeles:20261017T170000
+DTEND;TZID=America/Los_Angeles:20261018T010000
+SUMMARY:10th Street Bohemian Lounge
+LOCATION:The Market\, San Francisco
+URL:https://ma.to/event/10th-street-bohemian-lounge-2026-10-17
+DESCRIPTION:Fairs & festivals + Theatre\nhttps://ma.to/event/10th-street-b
+ ohemian-lounge-2026-10-17\n\nThe 10th Street Bohemian Lounge takes over T
+ he Market in the former Twitter building for one night only\, part of the
+  Market Street Arts & Theater Festival on October 17. Empress SF DJs Elz\
+ , Storia and Kanela kick the lounge off at 5pm\, followed by DJ Meowgo\; 
+ Mark Farina headlines with a two-hour set starting at 8pm. Live art runs 
+ all night. Admission is free as one of the festival's 50+ free exper
+END:VEVENT
+END:VCALENDAR

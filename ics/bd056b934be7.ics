@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bd056b934be7@bay-events
+DTSTAMP:20261017T164511Z
+DTSTART;TZID=America/Los_Angeles:20261017T190000
+DTEND;TZID=America/Los_Angeles:20261017T203000
+SUMMARY:Jean-Baptiste Phou: Coming Out
+LOCATION:Telegraph Hill Books\, 1501 Grant Avenue\, San Francisco\, San Fr
+ ancisco
+URL:https://ma.to/event/jean-baptiste-phou-coming-out-18-oct-2026
+DESCRIPTION:Big Bay Area traditions + Reading\nhttps://ma.to/event/jean-ba
+ ptiste-phou-coming-out-18-oct-2026\n\nAs part of the Litquake festival an
+ d the Words Around the World series\, artist-in-residence Jean-Baptiste P
+ hou joins a reading and conversation of his memoir 'Coming Out of My Skin
+ ' with César Cadabes at Telegraph Hill Books. The session covers his res
+ earch on the Cambodian diaspora and the work of Anthony Veasna So. Co-pre
+ sented with Villa Albertine and sponsored by the Center for the Art of Tr
+ an
+END:VEVENT
+END:VCALENDAR

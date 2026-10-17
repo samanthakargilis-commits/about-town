@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0f528ca61388@bay-events
+DTSTAMP:20261017T164511Z
+DTSTART;TZID=America/Los_Angeles:20261114T110000
+DTEND;TZID=America/Los_Angeles:20261114T170000
+SUMMARY:SF’s Renegade Craft Holiday 2026 Fair w/ 250+ Makers at Fort Mas
+ on
+LOCATION:Fort Mason Center Festival Pavilion\, 2 Marina Blvd.\, San Franci
+ sco\, CA 94123\, San Francisco
+URL:https://sf.funcheap.com/sfs-renegade-craft-holiday-2026-fair-250-maker
+ s-fort-mason-nov-1415/
+DESCRIPTION:Craft + Fairs & festivals\nhttps://sf.funcheap.com/sfs-renegad
+ e-craft-holiday-2026-fair-250-makers-fort-mason-nov-1415/\n\nRenegade Cra
+ ft’s Winter 2026 fair brings more than 250 curated small creative busin
+ esses to the Fort Mason Center Festival Pavilion for a weekend of holiday
+  shopping. Vendors will offer goods including ceramics\, outerwear\, snac
+ ks\, and knit hats. The fair is indoors with outdoor food trucks ...
+END:VEVENT
+END:VCALENDAR

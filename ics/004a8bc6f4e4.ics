@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:004a8bc6f4e4@bay-events
+DTSTAMP:20261017T164513Z
+DTSTART;TZID=America/Los_Angeles:20261017T120000
+DTEND;TZID=America/Los_Angeles:20261017T170000
+SUMMARY:Chinamaxxing Exhibition
+LOCATION:TIAT\, 151 Powell St\, San Francisco\, San Francisco
+URL:https://ma.to/event/chinamaxxing-exhibition-17-oct-2026
+DESCRIPTION:Museum exhibits + Art\nhttps://ma.to/event/chinamaxxing-exhibi
+ tion-17-oct-2026\n\nChinamaxxing is a group exhibition at TIAT in San Fra
+ ncisco on how contemporary China — its technology\, infrastructure\, fo
+ od\, fashion\, and everyday life — is embraced elsewhere. Across sculpt
+ ure\, moving image\, poetry\, performance\, and interactive systems\, the
+  artists follow objects\, technologies\, and rituals as they travel acros
+ s borders\, exploring what gets translated\, imitated\, misunderstood\, o
+ r
+END:VEVENT
+END:VCALENDAR

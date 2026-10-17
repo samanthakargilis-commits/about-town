@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2eaf9fab964a@bay-events
+DTSTAMP:20261017T164512Z
+DTSTART;TZID=America/Los_Angeles:20261017T130000
+DTEND;TZID=America/Los_Angeles:20261017T140000
+SUMMARY:enok! tiny desk style concert
+LOCATION:Tokyo Futon & Tea\, 924 Valencia St San Francisco\, San Francisco
+URL:https://partiful.com/e/ghyyMop20El4gaA8M9Bh
+DESCRIPTION:Concerts + Art\nhttps://partiful.com/e/ghyyMop20El4gaA8M9Bh\n\
+ nFREE music this Saturday (October 17th) from 1pm to 2pm! We're playing s
+ ome video game\, jpop\, and kpop music arranged and performed in tiny des
+ k style. We'll be in the very cozy Tokyo Futon + Tea on Valencia. We’ll
+  be pro recording audio and video\, so we want a big crowd! Come support 
+ one of our favorite stores as they're closing down:// Art by the very tal
+ ented: @kikuuu777
+END:VEVENT
+END:VCALENDAR

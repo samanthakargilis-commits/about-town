@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:49b5523e45c2@bay-events
+DTSTAMP:20261017T164514Z
+DTSTART;VALUE=DATE:20260919
+DTEND;VALUE=DATE:20260920
+SUMMARY:Tricks & Treats at Six Flags
+LOCATION:1001 Fairgrounds Drive
+URL:https://www.sixflags.com/discoverykingdom/events/tricks-and-treats
+DESCRIPTION:Camp & Halloween + Weird & unusual · Featured on Funcheap\nht
+ tps://www.sixflags.com/discoverykingdom/events/tricks-and-treats\n\nValle
+ jo | 1001 Fairgrounds Drive | Sept. 19 – Nov. 1\, 2026 | Park admission
+  from $39 Fright Fest at Six Flags Discovery Kingdom is canceled for 2026
+  \, but the park is still hosting its family-friendly Halloween event\, T
+ ricks and Treats . Running weekends from Sept. 19 to Nov. 1\, this daytim
+ e celebration features a Trick-or-Treat Trail\, hay maze\, costume contes
+ ts\, mask-making activities\, live shows
+END:VEVENT
+END:VCALENDAR

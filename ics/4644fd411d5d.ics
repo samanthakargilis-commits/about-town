@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4644fd411d5d@bay-events
+DTSTAMP:20261017T164514Z
+DTSTART;TZID=America/Los_Angeles:20261028T190000
+DTEND;TZID=America/Los_Angeles:20261028T210000
+SUMMARY:Queer Crush @ Movement San Francisco
+LOCATION:Movement San Francisco\, 924 Mason St\, San Francisco\, CA San Fr
+ ancisco\, San Francisco
+URL:https://www.meetup.com/queer-crush-norcal/events/316766874/
+DESCRIPTION:Gay / queer\nhttps://www.meetup.com/queer-crush-norcal/events/
+ 316766874/\n\n🎟️ free for Movement gym members! 🎫 $16 discounted 
+ day pass for non-members (half off regular ay pass!) 🧗🏻‍♂️ren
+ tals are $5-8 for QC attendees 🎉this is an all levels meet up\, so no 
+ matter your experience\, you’re welcome to join us! ⏰come early so th
+ at you make it to our intro circle and you get to make community with oth
+ er members [RSVP](https://portal.movementgyms.com/san-francisco/programs/
+ queer
+END:VEVENT
+END:VCALENDAR

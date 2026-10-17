@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3c27e4fb6066@bay-events
+DTSTAMP:20261017T164512Z
+DTSTART;TZID=America/Los_Angeles:20261017T193000
+DTEND;TZID=America/Los_Angeles:20261018T010000
+SUMMARY:AFTER DARK Fashion Show
+LOCATION:The Bank at Amador\, San Francisco
+URL:https://ma.to/event/after-dark-fashion-show-17-oct-2026
+DESCRIPTION:Museum exhibits + Theatre\nhttps://ma.to/event/after-dark-fash
+ ion-show-17-oct-2026\n\nThe Haus VIII presents AFTER DARK\, a high-concep
+ t fall fashion showcase at The Bank at Amador in San Francisco. Experienc
+ e a runway presentation featuring ready-to-wear designs from New York\, L
+ A\, London\, and San Francisco. Designers include BLOC44\, By Andra G\, L
+ a Musa (Ukrainian-inspired corsets)\, and custom work from Josh’s Tailo
+ ring. Jewelry by Laminar Jewelry. The collection\, built in leather\, 
+END:VEVENT
+END:VCALENDAR

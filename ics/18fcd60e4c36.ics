@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:18fcd60e4c36@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T100000
+DTEND;TZID=America/Los_Angeles:20261017T130000
+SUMMARY:Calle Limpia\, Corazón Contento
+LOCATION:La Placita\, 1 Lilac St.\, San Francisco\, CA\, San Francisco
+URL:https://ma.to/event/calle-limpia-corazon-contento-17-oct-2026
+DESCRIPTION:Concerts\nhttps://ma.to/event/calle-limpia-corazon-contento-17
+ -oct-2026\n\nJoin the community in the Latino Cultural District for a mor
+ ning of street cleaning followed by music\, snacks\, and live cultural sh
+ aring. This quarterly event brings together neighbors\, small businesses\
+ , and volunteers to care for our streets. Everyone is welcome to join\, w
+ ork together\, and enjoy the local vibe. Includes live music\, local bles
+ sings\, and snacks.
+END:VEVENT
+END:VCALENDAR

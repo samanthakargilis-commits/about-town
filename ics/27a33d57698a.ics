@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:27a33d57698a@bay-events
+DTSTAMP:20261017T164514Z
+DTSTART;TZID=America/Los_Angeles:20261017T103000
+DTEND;TZID=America/Los_Angeles:20261017T173000
+SUMMARY:New Collector Event
+LOCATION:Lost Art Salon\, San Francisco
+URL:https://ma.to/event/new-collector-event-17-oct-2026
+DESCRIPTION:Museum exhibits + Art\nhttps://ma.to/event/new-collector-event
+ -17-oct-2026\n\nTwice-yearly New Collector Event featuring a curated sele
+ ction of original 20th-century art\, beautifully framed to museum standar
+ ds and priced to make starting or growing your collection easy ($450–$9
+ 95). Featured works include pieces by historic artists such as French-Ame
+ rican painter Georgette London Owens. Join us in person at Lost Art Salon
+ . Comment “Collector” on the original Instagram post t
+END:VEVENT
+END:VCALENDAR

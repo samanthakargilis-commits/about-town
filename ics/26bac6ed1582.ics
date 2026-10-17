@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:26bac6ed1582@bay-events
+DTSTAMP:20261017T164511Z
+DTSTART;TZID=America/Los_Angeles:20261025T110000
+DTEND;TZID=America/Los_Angeles:20261025T170000
+SUMMARY:SF’s Free “World of Dumplings” Festival at the Ferry Buildin
+ g
+LOCATION:Ferry Building\, The Embarcadero and Ferry Plaza\, San Francisco\
+ , CA\, San Francisco
+URL:https://sf.funcheap.com/sfs-free-world-dumplings-festival-ferry-buildi
+ ng/
+DESCRIPTION:Fairs & festivals · A yearly tradition\nhttps://sf.funcheap.c
+ om/sfs-free-world-dumplings-festival-ferry-building/\n\nThe Bay Area’s 
+ biggest dumpling party is back. 🥟 San Francisco’s World of Dumplings
+  returns to the Ferry Building on Sunday\, October 25 for a free\, all-da
+ y celebration of dumplings\, food\, culture and community. More than 16\,
+ 000 people attended last year\, with 45+ local restaurants and businesses
+  ...
+END:VEVENT
+END:VCALENDAR

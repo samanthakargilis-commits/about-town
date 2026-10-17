@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cb90ea0bbf9c@bay-events
+DTSTAMP:20261017T164514Z
+DTSTART;TZID=America/Los_Angeles:20261017T120000
+DTEND;TZID=America/Los_Angeles:20261017T140000
+SUMMARY:HopeTHRIFT Annual Halloween Party
+LOCATION:HopeTHRIFT Watsonville\, 1062 S Green Valley Rd.\, Watsonville\, 
+ Palo Alto
+URL:https://ma.to/event/hopethrift-annual-halloween-party-2026-10-17
+DESCRIPTION:Camp & Halloween + Weird & unusual · Palo Alto\nhttps://ma.to
+ /event/hopethrift-annual-halloween-party-2026-10-17\n\nHopeTHRIFT Watsonv
+ ille holds its Annual Halloween Party\, an afternoon of candy\, costumes\
+ , photo ops and Halloween fun with activities for all ages. The programme
+  includes a costume contest\, a pumpkin decorating contest\, a coloring c
+ ontest and a scavenger hunt. Costume contest categories are Babies (0-12 
+ months)\, Infants (13-24 months)\, Toddlers (3-5 years)\, Kids (6-8 years
+ )\, Pre-teens (9-12 years)
+END:VEVENT
+END:VCALENDAR

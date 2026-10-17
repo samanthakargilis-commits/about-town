@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:aa84a524cc46@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261018T190000
+DTEND;TZID=America/Los_Angeles:20261018T213000
+SUMMARY:Roy's World + My Last Martini
+LOCATION:The Roxie Theater\, San Francisco
+URL:https://ma.to/event/roys-world-plus-my-last-martini-oct-18-roxie
+DESCRIPTION:Theatre\nhttps://ma.to/event/roys-world-plus-my-last-martini-o
+ ct-18-roxie\n\nPart of the Barry Gifford 80th birthday film series. Roy's
+  World: Barry Gifford's Chicago draws from Gifford's autobiographical Roy
+  stories and his memories of Chicago\, accompanied by My Last Martini\, a
+  short film based on a Gifford story starring Twin Peaks' Wendy Robie.
+END:VEVENT
+END:VCALENDAR

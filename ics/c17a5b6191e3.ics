@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c17a5b6191e3@bay-events
+DTSTAMP:20261017T164511Z
+DTSTART;TZID=America/Los_Angeles:20261105T170000
+DTEND;TZID=America/Los_Angeles:20261105T220000
+SUMMARY:Downtown First Thursdays with Big Freedia | Nov. 5\, 2026
+LOCATION:Natoma Cabana\, 90 Natoma Street\, San Francisco\, CA 94105 San F
+ rancisco\, San Francisco
+URL:https://www.eventbrite.com/e/downtown-first-thursdays-with-big-freedia
+ -nov-5-2026-tickets-1980043217565
+DESCRIPTION:Gay / queer + Camp & Halloween · Thursday evening\nhttps://ww
+ w.eventbrite.com/e/downtown-first-thursdays-with-big-freedia-nov-5-2026-t
+ ickets-1980043217565\n\nDowntown SF's FREE massive monthly street party! 
+ DJs\, dancing\, drag\, and all ages fun every first Thursday of the month
+ .
+END:VEVENT
+END:VCALENDAR

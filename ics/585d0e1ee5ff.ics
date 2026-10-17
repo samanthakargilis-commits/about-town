@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:585d0e1ee5ff@bay-events
+DTSTAMP:20261017T164514Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:Breakfast with Stephen Gomes — Kinship Earth
+LOCATION:Mabuhay Gardens\, 443 Broadway\, San Francisco\, CA\, San Francis
+ co
+URL:https://sf.funcheap.com/breakfast-stephen-gomes-kinship-earth/
+DESCRIPTION:Fairs & festivals\nhttps://sf.funcheap.com/breakfast-stephen-g
+ omes-kinship-earth/\n\nA relaxed\, conversational pre-festival breakfast 
+ with Stephen Gomes — co-founder of Kinship Earth and Gaia’s Inc.\, fo
+ rmer Bechtel Global Project Manager. Meet builders\, organizers\, funders
+ \, and regeneration-minded people over coffee and breakfast (available fo
+ r purchase). Details: https://luma.com/ohzvlgk8
+END:VEVENT
+END:VCALENDAR

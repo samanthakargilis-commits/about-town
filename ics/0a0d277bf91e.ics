@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0a0d277bf91e@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261025T110000
+DTEND;TZID=America/Los_Angeles:20261025T170000
+SUMMARY:Oakland Bicycle Scavenger Hunt + Scaredy Cat Race (Snow Park)
+LOCATION:Snow Park\, Harrison St & Lakeside Dr\, Oakland\, CA\, Oakland
+URL:https://sf.funcheap.com/oakland-bicycle-scavenger-hunt-scaredy-cat-rac
+ e-snow-park-2/
+DESCRIPTION:Camp & Halloween · A yearly tradition · Oakland\nhttps://sf.
+ funcheap.com/oakland-bicycle-scavenger-hunt-scaredy-cat-race-snow-park-2/
+ \n\nCome join us at Snow Park for the Scaredy Cat Race. Get your list of 
+ clues and be ready to figure out the locations you’ll be traveling to a
+ round Oakland in order to solve some puzzle\, roll around the town and te
+ st yourself on our ...
+END:VEVENT
+END:VCALENDAR

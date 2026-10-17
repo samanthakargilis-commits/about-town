@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a6f7d468f6d9@bay-events
+DTSTAMP:20261017T164514Z
+DTSTART;TZID=America/Los_Angeles:20261017T113000
+DTEND;TZID=America/Los_Angeles:20261017T133000
+SUMMARY:Sterling & Jao Book Signing
+LOCATION:On Waverly\, 162 Waverly Place\, SF Chinatown\, San Francisco
+URL:https://ma.to/event/sterling-jao-book-signing-17-oct-2026
+DESCRIPTION:Reading\nhttps://ma.to/event/sterling-jao-book-signing-17-oct-
+ 2026\n\nOn Waverly hosts a picture book signing with Michelle Sterling an
+ d Carren Jao as part of Filipino American History Month. Michelle Sterlin
+ g\, author of 'When Lola Visits'\, 'A Sweet New Year for Ren'\, 'Maribel'
+ s Year'\, and 'Riding Through Rice Fields'\, will be signing copies along
+ side Carren Jao\, author of the New Voices Award-winning 'The Shape of Lo
+ ve'. Join us to celebrate family\, heritage\, and f
+END:VEVENT
+END:VCALENDAR

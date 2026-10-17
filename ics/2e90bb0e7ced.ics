@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2e90bb0e7ced@bay-events
+DTSTAMP:20261017T164513Z
+DTSTART;TZID=America/Los_Angeles:20261017T110000
+DTEND;TZID=America/Los_Angeles:20261017T130000
+SUMMARY:Fiber Arts Circle
+LOCATION:Almaden Library\, 6445 Camden Ave.\, San Jose\, CA\, San Jose
+URL:https://ma.to/event/fiber-arts-circle-2026-10-17
+DESCRIPTION:Craft + Reading · San Jose\nhttps://ma.to/event/fiber-arts-ci
+ rcle-2026-10-17\n\nFiber Arts Circle is a relaxed afternoon of crafting\,
+  chatting and sharing ideas for people who crochet\, knit\, embroider\, t
+ at or work in other hand needle crafts. Attendees bring a current project
+ \, and the session is a chance to refine skills\, take inspiration from o
+ ther makers' work and spend creative time with fellow crafters. The gathe
+ ring is held weekly on Saturday\, 11:00 AM to 1:00 PM\, at Alm
+END:VEVENT
+END:VCALENDAR

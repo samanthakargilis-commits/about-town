@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e19d79fac310@bay-events
+DTSTAMP:20261017T164513Z
+DTSTART;TZID=America/Los_Angeles:20261019T190000
+DTEND;TZID=America/Los_Angeles:20261019T220000
+SUMMARY:SWITCH/BOARD: Improv Screenplays
+LOCATION:Stookey's Club Moderne\, Bush at Taylor\, SF\, San Francisco
+URL:https://ma.to/event/switch-board-improv-20-oct-2026
+DESCRIPTION:Comedy + Theatre\nhttps://ma.to/event/switch-board-improv-20-o
+ ct-2026\n\nSWITCH/BOARD returns for an improvised radio screenplay perfor
+ med before a live studio audience. Each session explores a different genr
+ e with improvisational work from Nicole Odell and Sean Owens\, with spont
+ aneous accompaniment by composer Brendan Getzell. Five thematic cocktails
+  are designed for the show by Stookey's resident mixologists Kelly Blong 
+ and MK Veniegas. Performance is followed by a g
+END:VEVENT
+END:VCALENDAR

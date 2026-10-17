@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4dc221df9acb@bay-events
+DTSTAMP:20261017T164511Z
+DTSTART;TZID=America/Los_Angeles:20261031T203000
+DTEND;TZID=America/Los_Angeles:20261031T223000
+SUMMARY:Immersive Halloween House: “ Star Wars: The Mandalorian ” at T
+ he Alberston House
+LOCATION:Ghosts at Meek Mansion\, exploring ghost stories and spirit commu
+ nication\, and Death in the
+URL:https://www.albertzone.com/halloween/2026/08/25th-anniversary-albertso
+ n-halloween-house-theme-the-mandalorian/
+DESCRIPTION:Camp & Halloween + Theatre · Featured on Funcheap\nhttps://ww
+ w.albertzone.com/halloween/2026/08/25th-anniversary-albertson-halloween-h
+ ouse-theme-the-mandalorian/\n\nSan Jose | 497 N. 16th St. | Oct. 31 | FRE
+ E The Albertson family and their neighbors transform their San Jose home 
+ into an elaborate\, immersive Halloween experience with a brand-new theme
+  every year . Now celebrating its 25th year\, this beloved neighborhood t
+ radition welcomes 800-1\,500 trick-or-treaters and their parents annually
+ . The 2026 theme is Star Wars: The Mandalorian \, bringing the galaxy 
+END:VEVENT
+END:VCALENDAR

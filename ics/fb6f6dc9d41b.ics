@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fb6f6dc9d41b@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261019T190000
+DTEND;TZID=America/Los_Angeles:20261019T203000
+SUMMARY:Chelsea Peretti Live: Back to Work (In Progress)
+LOCATION:Punch Line Comedy Club\, 444 Battery Street\, San Francisco
+URL:https://www.ticketmaster.com/chelsea-peretti-live-back-to-work-san-fra
+ ncisco-california-10-19-2026/event/1C006549B723BC3E
+DESCRIPTION:Comedy\nhttps://www.ticketmaster.com/chelsea-peretti-live-back
+ -to-work-san-francisco-california-10-19-2026/event/1C006549B723BC3E\n\nCh
+ elsea Peretti performs a work-in-progress live comedy set at Punch Line S
+ an Francisco on October 19\, starting at 7:00 PM. The show is billed as B
+ ack to Work (In Progress)\, featuring material still being developed. Adv
+ ance tickets are on sale.
+END:VEVENT
+END:VCALENDAR

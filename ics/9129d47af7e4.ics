@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9129d47af7e4@bay-events
+DTSTAMP:20261017T164510Z
+DTSTART;TZID=America/Los_Angeles:20261031T140000
+DTEND;TZID=America/Los_Angeles:20261031T160000
+SUMMARY:SF Craft & Learn at the Museum of the Eye: Ojo de Dios
+LOCATION:Truhlsen-Marmor Museum of the Eye\, 645 Beach St\, San Francisco\
+ , CA 94109\, San Francisco
+URL:https://sf.funcheap.com/sf-craft-learn-at-the-museum-of-the-eye-ojo-de
+ -dios-oct-24-31/
+DESCRIPTION:Craft + Museum exhibits · A yearly tradition\nhttps://sf.func
+ heap.com/sf-craft-learn-at-the-museum-of-the-eye-ojo-de-dios-oct-24-31/\n
+ \nGet into the spirit of the season at the Museum of the Eye. With Hallow
+ een and Día de los Muertos around the corner\, our popular Craft & Learn
+ : Ojo de Dios workshop returns with two opportunities to join the fun. Vi
+ sit us Saturday\, Oct. 24\, or ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ab49603410e2@bay-events
+DTSTAMP:20261017T164516Z
+DTSTART;TZID=America/Los_Angeles:20261107T090000
+DTEND;TZID=America/Los_Angeles:20261107T153000
+SUMMARY:Notes from the Field: Towards Liberation and Freedom.
+LOCATION:California Institute of Integral Studies\, 1453 Mission Street\, 
+ San Francisco\, CA 94103 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/notes-from-the-field-towards-liberation-a
+ nd-freedom-tickets-1998793894344
+DESCRIPTION:New in your area\nhttps://www.eventbrite.com/e/notes-from-the-
+ field-towards-liberation-and-freedom-tickets-1998793894344\n\nCIIS’ Cli
+ nical Psychology Department presents their 4th annual one-day conference 
+ reimagining clinical work centering freedom and liberation
+END:VEVENT
+END:VCALENDAR

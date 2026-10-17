@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d2451e42dd78@bay-events
+DTSTAMP:20261017T164516Z
+DTSTART;TZID=America/Los_Angeles:20261018T090000
+DTEND;TZID=America/Los_Angeles:20261018T100000
+SUMMARY:Adult Foundations
+LOCATION:Bernal Beast\, San Francisco
+URL:https://ma.to/event/adult-foundations-18-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/adult-foundations-18-oct
+ -2026\n\nAdult Foundations is part of the Beast Mode Dog Training October
+  class schedule at Bernal Beast in Bernal Heights\, San Francisco. The cl
+ ass takes place on October 18 at 9:00am. Certified trainers Steph\, Erika
+ \, and Llyr lead the session. Enrollment is available online through the 
+ link in bio. New rescues receive 20% off their first class with code RESC
+ UEDOG20.
+END:VEVENT
+END:VCALENDAR

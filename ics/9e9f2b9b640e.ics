@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9e9f2b9b640e@bay-events
+DTSTAMP:20261017T164516Z
+DTSTART;TZID=America/Los_Angeles:20261017T100000
+DTEND;TZID=America/Los_Angeles:20261017T140000
+SUMMARY:Slow Street Party
+LOCATION:20th St & Shotwell St\, 20th St & Shotwell St\, San Francisco\, C
+ A\, San Francisco
+URL:https://ma.to/event/slow-street-party-20th-shotwell-17-oct-2026
+DESCRIPTION:Art\nhttps://ma.to/event/slow-street-party-20th-shotwell-17-oc
+ t-2026\n\nA community gathering on the Mission's slow streets. Head to 20
+ th and Shotwell for interactive art\, kids' games\, music\, and free food
+  and coffee.
+END:VEVENT
+END:VCALENDAR

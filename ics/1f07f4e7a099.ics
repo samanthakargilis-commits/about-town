@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1f07f4e7a099@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261128T110000
+DTEND;TZID=America/Los_Angeles:20261128T130000
+SUMMARY:Let in the Wow: Luxurious Walking in Delight Zen Mindfulness
+LOCATION:Berkeley\, Berkeley
+URL:https://www.meetup.com/sanfranciscobay/events/316589270/
+DESCRIPTION:Meditation · Berkeley\nhttps://www.meetup.com/sanfranciscobay
+ /events/316589270/\n\nFind Meetup events so you can do more of what matte
+ rs to you. Or create your own group and meet people near you who share yo
+ ur interests.
+END:VEVENT
+END:VCALENDAR

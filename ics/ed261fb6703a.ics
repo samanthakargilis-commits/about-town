@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ed261fb6703a@bay-events
+DTSTAMP:20261017T164514Z
+DTSTART;TZID=America/Los_Angeles:20261104T183000
+DTEND;TZID=America/Los_Angeles:20261104T223000
+SUMMARY:“South Side Beer Ride” Free Monthly Brewery Shuttle
+LOCATION:Triple Voodoo Brewery\, 2245 3rd St San Francisco\, CA
+URL:https://sf.funcheap.com/south-side-beer-ride-free-monthly-brewery-shut
+ tle-sf-82/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/south-side-beer-ride
+ -free-monthly-brewery-shuttle-sf-82/\n\nFree hop on/hop off brewery shutt
+ le. Start at any of the eight participating breweries\, then hop on any o
+ ne of three vans running approximately every 30 minutes. First Wednesdays
+  Free Beer Shuttle Every 1st Wednesday | 6:30 pm to 10:30 pm Speakeasy Br
+ ewery\, 1195 Evans ...
+END:VEVENT
+END:VCALENDAR

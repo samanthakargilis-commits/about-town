@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a9b1aae13cb7@bay-events
+DTSTAMP:20261017T164512Z
+DTSTART;TZID=America/Los_Angeles:20261018T133000
+DTEND;TZID=America/Los_Angeles:20261018T153000
+SUMMARY:Improv Jam in Person
+LOCATION:Montclair Presbyterian\, 5701 Thornhill Drive\, Oakland\, CA Oakl
+ and\, Oakland
+URL:https://www.meetup.com/oaktownimprov/events/316755877/
+DESCRIPTION:Comedy + Theatre · Oakland\nhttps://www.meetup.com/oaktownimp
+ rov/events/316755877/\n\nWe warm up with improv games\, then do improvise
+ d scenes with various partners. This is a fun and supportive environment 
+ open to all. This jam takes place at Montclair Presbyterian. The church p
+ arking lot is at Grisborne Ave (Western end) and Thornhill Dr. There is s
+ treet parking closer to the church entrance. There is no public transport
+ ation to Montclair on Sunday. Message the host to arrange a r
+END:VEVENT
+END:VCALENDAR

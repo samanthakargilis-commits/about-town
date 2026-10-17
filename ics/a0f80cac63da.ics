@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a0f80cac63da@bay-events
+DTSTAMP:20261017T164516Z
+DTSTART;TZID=America/Los_Angeles:20261024T123000
+DTEND;TZID=America/Los_Angeles:20261024T143000
+SUMMARY:House
+LOCATION:4 Star Theater\, 2200 Clement St\, San Francisco
+URL:https://ticketing.uswest.veezi.com/purchase/20012?siteToken=d2atbcege5
+ knqsavntt91g1250
+DESCRIPTION:New in your area\nhttps://ticketing.uswest.veezi.com/purchase/
+ 20012?siteToken=d2atbcege5knqsavntt91g1250\n\nAlso at 5:15 PM. Rated R. H
+ oping to find a sense of connection to her late mother\, Gorgeous takes a
+  trip to the country to visit her aunt at their ancestral house. She invi
+ tes her six friends\, Prof\, Melody\, Mac\, Fantasy\, Kung Fu\, and Sweet
+ \, to join her. The girls soon discover that there is more to the old hou
+ se than meets the eye.
+END:VEVENT
+END:VCALENDAR

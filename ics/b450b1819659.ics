@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b450b1819659@bay-events
+DTSTAMP:20261017T164513Z
+DTSTART;TZID=America/Los_Angeles:20261019T180000
+DTEND;TZID=America/Los_Angeles:20261019T200000
+SUMMARY:Outside the Lines Book Club
+LOCATION:Queer Arts Featured\, 575 Castro St.\, San Francisco
+URL:https://ma.to/event/outside-the-lines-book-club-19-oct-2026
+DESCRIPTION:Reading + Gay / queer\nhttps://ma.to/event/outside-the-lines-b
+ ook-club-19-oct-2026\n\nA monthly trans-led book and coloring club for tr
+ ans people and allies. The October selection is Margaret and the Mystery 
+ of the Missing Body by Megan Milks. Masks are required.
+END:VEVENT
+END:VCALENDAR

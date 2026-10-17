@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:92a0e736090b@bay-events
+DTSTAMP:20261017T164511Z
+DTSTART;TZID=America/Los_Angeles:20261024T200000
+DTEND;TZID=America/Los_Angeles:20261024T220000
+SUMMARY:Win Tix: Sofi Tukker “Animal Talk” Live at SF’s Cow Palace (
+ 18+)
+LOCATION:Cow Palace\, 2600 Geneva Ave\, Daly City\, CA\, Daly City
+URL:https://sf.funcheap.com/sofi-tukker-sf-cow-palace/
+DESCRIPTION:Animals + Discourse · Daly City\nhttps://sf.funcheap.com/sofi
+ -tukker-sf-cow-palace/\n\nEnter to win a pair of tickets to see SOFI TUKK
+ ER live at the Cow Palace. It’s time to let your animal talk! Best frie
+ nds Sophie Hawley-Weld and Tucker Halpern\, better known as SOFI TUKKER\,
+  have turned their eclectic blend of dance\, house\, and global influence
+ s ...
+END:VEVENT
+END:VCALENDAR

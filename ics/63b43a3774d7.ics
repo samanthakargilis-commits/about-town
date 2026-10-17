@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:63b43a3774d7@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T090000
+DTEND;TZID=America/Los_Angeles:20261017T110000
+SUMMARY:Volunteer Program Showcase: French Broom Removal and Interpretive 
+ Hike!
+LOCATION:Los Altos
+URL:http://www.openspace.org/events/volunteer-projects/volunteer-program-s
+ howcase-french-broom-removal-and-interpretive-hike
+DESCRIPTION:Los Altos\nhttp://www.openspace.org/events/volunteer-projects/
+ volunteer-program-showcase-french-broom-removal-and-interpretive-hike\n\n
+ A volunteer program showcase combining French broom removal with an inter
+ pretive hike.
+END:VEVENT
+END:VCALENDAR

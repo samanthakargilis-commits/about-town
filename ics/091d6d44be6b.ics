@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:091d6d44be6b@bay-events
+DTSTAMP:20261017T164513Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Vallejo Art Walk
+LOCATION:Second Fridays\, Marin St. and Virginia St.\, Vallejo\, CA\, Vall
+ ejo
+URL:https://sf.funcheap.com/vallejo-art-walk-second-fridays-145/
+DESCRIPTION:Art · Vallejo\nhttps://sf.funcheap.com/vallejo-art-walk-secon
+ d-fridays-145/\n\nThe monthly Vallejo Art Walk showcases a variety of nat
+ ionally accomplished and upcoming local creatives in the historic downtow
+ n Vallejo arts district from 5-10 pm on the second Friday of every month\
+ , on Georgia\, Marin\, and Virginia streets. Explore over 25 participatin
+ g galleries and shops\, and ...
+END:VEVENT
+END:VCALENDAR

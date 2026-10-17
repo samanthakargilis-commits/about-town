@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:65c2bf7c4541@bay-events
+DTSTAMP:20261017T164513Z
+DTSTART;TZID=America/Los_Angeles:20261017T120000
+DTEND;TZID=America/Los_Angeles:20261017T140000
+SUMMARY:Knitting with Friends
+LOCATION:Sana’a Cafe\, 4770 Telegraph Ave\, Oakland\, CA 94609\, USA\, O
+ akland\, CA Oakland\, Oakland
+URL:https://www.meetup.com/east-bay-knitters-unite/events/316930692/
+DESCRIPTION:Craft + Discourse · Oakland\nhttps://www.meetup.com/east-bay-
+ knitters-unite/events/316930692/\n\nHi yarn enthusiasts! Next Saturday co
+ me to Sana’a in Temescal for good coffee and fun conversation. Bring yo
+ ur knitting or yarny project. We have the back little room reserved for u
+ s. I won’t be able to join but I suspect there will be lots of OG membe
+ rs to welcome any newbies. Have fun! Laurel
+END:VEVENT
+END:VCALENDAR

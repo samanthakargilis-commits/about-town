@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c5e42fb74ce0@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T100000
+DTEND;TZID=America/Los_Angeles:20261017T140000
+SUMMARY:Gently Used Coach Drop San Jose
+LOCATION:Plato’s Closet San Jose\, San Jose
+URL:https://ma.to/event/gently-used-coach-drop-san-jose-2026-10-17
+DESCRIPTION:San Jose\nhttps://ma.to/event/gently-used-coach-drop-san-jose-
+ 2026-10-17\n\nPlato’s Closet San Jose hosts a gently used Coach Drop\, 
+ part of the store's returning series of pre-loved Coach bag drops. Bags a
+ re authenticated and in gently used pre-loved condition\, mixing vintage 
+ and modern styles. The drop starts at 10am\, and the first person to pay 
+ secures the bag. Once the first wave has passed\, remaining items are off
+ ered as paid holds on the store's Instagram story. Paid
+END:VEVENT
+END:VCALENDAR

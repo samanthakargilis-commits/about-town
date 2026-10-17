@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1458c3a923f9@bay-events
+DTSTAMP:20261017T164513Z
+DTSTART;TZID=America/Los_Angeles:20261017T090000
+DTEND;TZID=America/Los_Angeles:20261017T130000
+SUMMARY:Pleasanton Free Tree Giveaway
+LOCATION:Pleasanton Farmers' Market\, Pleasanton
+URL:https://ma.to/event/pleasanton-free-tree-giveaway-2026-10-17
+DESCRIPTION:Animals · Pleasanton\nhttps://ma.to/event/pleasanton-free-tre
+ e-giveaway-2026-10-17\n\nCity of Pleasanton is giving away approximately 
+ 50 free trees to Pleasanton residents this fall. Residents can request a 
+ free 5-gallon tree to plant at home and help grow the community's urban f
+ orest\; planting in neighborhoods provides shade\, enhances streetscapes 
+ and supports long-term environmental benefits across the city. Four speci
+ es are available: Tupelo (Nyssa sylvatica)\, with attractive ye
+END:VEVENT
+END:VCALENDAR

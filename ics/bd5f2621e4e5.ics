@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bd5f2621e4e5@bay-events
+DTSTAMP:20261017T164514Z
+DTSTART;TZID=America/Los_Angeles:20261107T100000
+DTEND;TZID=America/Los_Angeles:20261107T120000
+SUMMARY:Just in Time 5K
+LOCATION:GGP Polo Field - Track Loop East Side\, John F. Kennedy Drive and
+  Middle Drive W San Francisco\, San Francisco
+URL:https://partiful.com/e/nmrPM0EWIqE8mO3swdRb
+DESCRIPTION:Weird & unusual\nhttps://partiful.com/e/nmrPM0EWIqE8mO3swdRb\n
+ \nMeet here\, route later! A 5K race in Golden Gate Park\, the distance a
+ nd meetup are public\; the exact route stays secret until race time! MEET
+ : East end of Golden Gate Park’s Polo Field Track Loop DISTANCE: 5K / 3
+ .1 miles Arrive 15 minutes early so we can gather\, explain the format\, 
+ and reveal the route before the start. No registration fees\, no course p
+ acers\, maybe a prize??
+END:VEVENT
+END:VCALENDAR

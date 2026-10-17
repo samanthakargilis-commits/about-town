@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2eb4bf8ab51a@bay-events
+DTSTAMP:20261017T164513Z
+DTSTART;TZID=America/Los_Angeles:20261017T140000
+DTEND;TZID=America/Los_Angeles:20261017T160000
+SUMMARY:Acky Bright Signing: SF
+LOCATION:Kinokuniya San Francisco\, San Francisco
+URL:https://ma.to/event/acky-bright-signing-sf-17-oct-2026
+DESCRIPTION:Reading + Art\nhttps://ma.to/event/acky-bright-signing-sf-17-o
+ ct-2026\n\nMeet artist Acky Bright\, the creator of GalaXic Baseball Leag
+ ue\, for a signing event at Kinokuniya San Francisco. The sci-fi sports m
+ anga features MLB stars including Shohei Ohtani\, Aaron Judge\, and Paul 
+ Skenes. To attend\, pre-purchase a copy of GalaXic Baseball League\, Vol.
+  1 at the store to receive a ticket (available while supplies last\; onli
+ ne/in-store pickup orders do not qualify). Each atten
+END:VEVENT
+END:VCALENDAR

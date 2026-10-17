@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c58fde563ddc@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:SF’s Prince vs. Michael Jackson DJ Party (NoPa)
+LOCATION:Madrone Art Bar\, 500 Divisadero Street\, San Francisco\, CA 9411
+ 7\, San Francisco
+URL:https://sf.funcheap.com/sfs-prince-vs-michael-jackson-dj-party-nopa-60
+ /
+DESCRIPTION:Art\nhttps://sf.funcheap.com/sfs-prince-vs-michael-jackson-dj-
+ party-nopa-60/\n\nPay tribute to both the King of Pop and the Purple One 
+ every first Saturday of the month at the Madrone Art Bar’s “The Princ
+ e and Michael Experience\,” which celebrates their work with a healthy 
+ dose of competition as fans go head-to-head on the dance ...
+END:VEVENT
+END:VCALENDAR

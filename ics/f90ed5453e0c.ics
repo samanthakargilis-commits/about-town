@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f90ed5453e0c@bay-events
+DTSTAMP:20261017T164514Z
+DTSTART;TZID=America/Los_Angeles:20261103T193000
+DTEND;TZID=America/Los_Angeles:20261103T210000
+SUMMARY:November Non-Fiction Book Club: The Demon of Unrest
+LOCATION:ONLINE only\, Menlo Park
+URL:https://www.keplers.org/upcoming-events-internal/non-fiction-nov-2026
+DESCRIPTION:Reading · Menlo Park\nhttps://www.keplers.org/upcoming-events
+ -internal/non-fiction-nov-2026\n\nJoin us to discuss The Demon of Unrest:
+  A Saga of Hubris\, Heartbreak\, and Heroism at the Dawn of the Civil War
+  by Erik Larson.
+END:VEVENT
+END:VCALENDAR

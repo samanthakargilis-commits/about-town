@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6794844e0295@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T120000
+DTEND;TZID=America/Los_Angeles:20261017T160000
+SUMMARY:Ducks vs. Nebraska Watch Party
+LOCATION:Underdogs Cantina\, San Francisco
+URL:https://ma.to/event/ducks-vs-nebraska-watch-party-17-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/ducks-vs-nebraska-watch-
+ party-17-oct-2026\n\nOregon vs. Nebraska watch party at Underdogs Cantina
+ . Join the UO Bay Area Ducks for food\, drinks\, and football season vibe
+ s across from Oracle Park. Details about the venue can be found on the pr
+ ofile.
+END:VEVENT
+END:VCALENDAR

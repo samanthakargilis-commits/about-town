@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ea3715e6fb91@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T120000
+DTEND;TZID=America/Los_Angeles:20261017T170000
+SUMMARY:Xavier’s Celestial Reverie
+LOCATION:A Sack of Potatoes\, 929 Story Rd #2024\, San Jose\, CA 95122\, S
+ an Jose
+URL:https://ma.to/event/xaviers-celestial-reverie-17-oct-2026
+DESCRIPTION:San Jose\nhttps://ma.to/event/xaviers-celestial-reverie-17-oct
+ -2026\n\nMulti-fandom team Astral Companions hosts a cupsleeve event to c
+ elebrate Xavier’s birthday from Love and Deepspace. Part of a worldwide
+  collab with Orbiting Deepspace\, the afternoon features a photo wall\, m
+ essage board\, drink menus\, and local vendors at A Sack of Potatoes.
+END:VEVENT
+END:VCALENDAR

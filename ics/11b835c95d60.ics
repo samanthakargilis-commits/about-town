@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:11b835c95d60@bay-events
+DTSTAMP:20261017T164513Z
+DTSTART;TZID=America/Los_Angeles:20261017T120000
+DTEND;TZID=America/Los_Angeles:20261017T170000
+SUMMARY:Morgan Booth 'Venerate' Exhibition
+LOCATION:Modern Eden Gallery\, 1100 Sutter Street\, San Francisco\, CA 941
+ 09\, San Francisco
+URL:https://ma.to/event/morgan-booth-venerate-2026-10-17
+DESCRIPTION:Museum exhibits + Art\nhttps://ma.to/event/morgan-booth-venera
+ te-2026-10-17\n\nMorgan Booth's solo exhibition 'Venerate' is on view at 
+ Modern Eden Gallery from October 1 to October 24\, 2026. The gallery is o
+ pen Wednesday to Saturday\, 12–5 pm\, and private artwork viewing appoi
+ ntments are available. General information: info@moderneden.com or (415) 
+ 956-3303.
+END:VEVENT
+END:VCALENDAR

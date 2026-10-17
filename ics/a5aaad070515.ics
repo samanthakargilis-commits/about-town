@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a5aaad070515@bay-events
+DTSTAMP:20261017T164511Z
+DTSTART;TZID=America/Los_Angeles:20261023T163000
+DTEND;TZID=America/Los_Angeles:20261023T203000
+SUMMARY:From The E: Fall Festival Night Market (Excelsior)
+LOCATION:Ocean Ave & Mission St.\, Ocean Ave & Mission St.\, San Francisco
+ \, CA 94112\, USA\, San Francisco
+URL:https://sf.funcheap.com/fall-festival-night-market-excelsior/
+DESCRIPTION:Fairs & festivals + Camp & Halloween\nhttps://sf.funcheap.com/
+ fall-festival-night-market-excelsior/\n\nFree Community Fun! Come join us
+  at the monthly Excelsior Night Market for a night of food\, fun\, and co
+ mmunity vibes! This is the place to be for unique crafts\, entertainment 
+ and live music. Explore the diverse offerings from local vendors and conn
+ ect with your ...
+END:VEVENT
+END:VCALENDAR

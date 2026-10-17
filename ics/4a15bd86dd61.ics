@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4a15bd86dd61@bay-events
+DTSTAMP:20261017T164512Z
+DTSTART;TZID=America/Los_Angeles:20261030T190000
+DTEND;TZID=America/Los_Angeles:20261030T220000
+SUMMARY:“Rush Hour Comedy Night” w/ SFs Best Black & Asian Comedians (
+ The Function)
+LOCATION:The Function\, 1414 Market Street\, San Francisco\, CA\, San Fran
+ cisco
+URL:https://sf.funcheap.com/rush-hour-comedy-night-w-sfs-best-black-asian-
+ comedians-the-function-140/
+DESCRIPTION:Comedy + Craft\nhttps://sf.funcheap.com/rush-hour-comedy-night
+ -w-sfs-best-black-asian-comedians-the-function-140/\n\nWelcome to ‘Rush
+  Hour Comedy Night’ where laughter knows no bounds and cultural collisi
+ ons are the name of the game. Join our dynamic duo of black and Asian com
+ edians as they embark on a whirlwind adventure through the streets of hum
+ or\, weaving together their diverse backgrounds and ...
+END:VEVENT
+END:VCALENDAR

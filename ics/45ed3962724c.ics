@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:45ed3962724c@bay-events
+DTSTAMP:20261017T164516Z
+DTSTART;TZID=America/Los_Angeles:20261017T170000
+DTEND;TZID=America/Los_Angeles:20261017T210000
+SUMMARY:Alcoholocaust Lives
+LOCATION:The Knockout\, 3223 Mission Street\, San Francisco\, California\,
+  San Francisco
+URL:https://ma.to/event/alcoholocaust-lives-18-oct-2026
+DESCRIPTION:Comedy + Art\nhttps://ma.to/event/alcoholocaust-lives-18-oct-2
+ 026\n\nAimee CrucipHix presents a memorial roast and birthday party in me
+ mory of Scott\, a pillar of the music community and an all-around legend.
+  The bill features Croissant\, Murder Murder\, The Gallery\, Butt Problem
+ s\, DJ Little Hiss Muffet and @andymcfood. Doors open at 4pm and the show
+  runs from 5pm to 9pm. Admission is $10\, 21 and over.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4f5a44af4b2b@bay-events
+DTSTAMP:20261017T164513Z
+DTSTART;TZID=America/Los_Angeles:20261017T130000
+DTEND;TZID=America/Los_Angeles:20261017T170000
+SUMMARY:Goblin Faire
+LOCATION:Syzygy\, 395 South Van Ness\, San Francisco
+URL:https://ma.to/event/goblin-faire-17-oct-2026
+DESCRIPTION:Fairs & festivals + Art\nhttps://ma.to/event/goblin-faire-17-o
+ ct-2026\n\nSyzygy hosts a dark fantasy themed market and art show. The Go
+ blin Horde invites you to browse arts\, trinkets\, and shinies\, visit sp
+ ell casting stations\, or catch bardic tunes and lore. Artist and perform
+ er submissions are open through October 1 via the link on the profile.
+END:VEVENT
+END:VCALENDAR

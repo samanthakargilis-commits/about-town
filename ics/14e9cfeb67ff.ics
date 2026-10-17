@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:14e9cfeb67ff@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T160000
+DTEND;TZID=America/Los_Angeles:20261017T230000
+SUMMARY:Stanford vs. Elon Viewing Party
+LOCATION:President's Terrace\, 488 University Ave\, Palo Alto\, Palo Alto
+URL:https://ma.to/event/stanford-vs-elon-viewing-party-2026-10-17
+DESCRIPTION:Palo Alto\nhttps://ma.to/event/stanford-vs-elon-viewing-party-
+ 2026-10-17\n\nWatch Stanford vs. Elon on October 17th from President's Te
+ rrace rooftop bar. Enjoy cocktails and bites with Palo Alto views.
+END:VEVENT
+END:VCALENDAR

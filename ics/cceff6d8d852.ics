@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cceff6d8d852@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261025T160000
+DTEND;TZID=America/Los_Angeles:20261025T180000
+SUMMARY:Silly Billy Anonymous
+LOCATION:Noisebridge\, 272 Capp St\, San Francisco\, CA 94110\, USA\, San 
+ Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/noisebridge/events/317006394/
+DESCRIPTION:Discourse\nhttps://www.meetup.com/noisebridge/events/317006394
+ /\n\nDo you have trouble not squeezing your rubber chicken or bringing it
+  work? Are you always looking for the next joke? Do you like to make fart
+  noises in public or in private? If you answered any of the questions you
+  might be a silly billy. If you have a pulse or think you have a pulse th
+ en this meetup is for you. Please make sure you have a pulse before comin
+ g to the meetup. All land mammals are en
+END:VEVENT
+END:VCALENDAR

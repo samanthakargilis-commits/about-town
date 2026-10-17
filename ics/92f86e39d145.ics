@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:92f86e39d145@bay-events
+DTSTAMP:20261017T164511Z
+DTSTART;TZID=America/Los_Angeles:20261017T110000
+DTEND;TZID=America/Los_Angeles:20261017T160000
+SUMMARY:Bay Area Science Festival
+LOCATION:UCSF Mission Bay\, Koret Quad @ UCSF Mission Bay Campus\, San Fra
+ ncisco
+URL:https://ma.to/event/bay-area-science-festival-17-oct-2026
+DESCRIPTION:Fairs & festivals + Animals\nhttps://ma.to/event/bay-area-scie
+ nce-festival-17-oct-2026\n\nThe 13th edition of the Bay Area Science Fest
+ ival brings over 125 hands-on STEM experiences to Koret Quad. Activities 
+ include behind-the-scenes lab tours\, stage performances\, a mobile exhib
+ it from Aquarium of the Bay\, live leopard sharks\, robots\, and brain ga
+ mes. Free and open to all ages. As part of the programming\, the Black Fa
+ milies in Nature series will also host nature exploration activities.
+END:VEVENT
+END:VCALENDAR

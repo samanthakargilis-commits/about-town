@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dae2837db7f9@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:Mirthquake: Monday Live Comedy in the Richmond w/ $5 Drinks
+LOCATION:Abbey Tavern\, 4100 Geary Blvd\, San Francisco\, CA\, San Francis
+ co
+URL:https://sf.funcheap.com/mirthquake-monday-live-comedy-in-the-richmond-
+ w-5-drinks-sf-182/
+DESCRIPTION:Comedy\nhttps://sf.funcheap.com/mirthquake-monday-live-comedy-
+ in-the-richmond-w-5-drinks-sf-182/\n\nLooking for a great way to kick off
+  your week? Look no further than Mirthquake: Monday Live Comedy in the Ri
+ chmond! This live stand-up comedy show\, held every Monday at the Abbey T
+ avern\, is the perfect way to start your week off with a bang. Featuring 
+ a ...
+END:VEVENT
+END:VCALENDAR

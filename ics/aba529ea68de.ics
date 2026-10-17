@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:aba529ea68de@bay-events
+DTSTAMP:20261017T164511Z
+DTSTART;TZID=America/Los_Angeles:20260925T100000
+DTEND;TZID=America/Los_Angeles:20260925T120000
+SUMMARY:Petaluma Pumpkin Patch
+LOCATION:450 Stony Point Road
+URL:https://sf.funcheap.com/city-guide/bay-areas-pumpkin-patches-2/
+DESCRIPTION:Fairs & festivals + U-pick farms · Featured on Funcheap\nhttp
+ s://sf.funcheap.com/city-guide/bay-areas-pumpkin-patches-2/\n\nPetaluma |
+  450 Stony Point Road | Sept. 25-Nov. 1\, 2026 | Sun.-Thu.: 10am-7pm\; Fr
+ i. & Sat.: 10am-10pm The Petaluma Pumpkin Patch & Amazing Corn Maze has o
+ ver 5 acres of sustainably grown pumpkins \, with more than 50 varieties 
+ of pumpkins\, squash and gourds \, ranging from tiny pumpkins to giant 12
+ 5-pounders. Plus\, check out the 4-acre corn maze featuring 10-foot-tall 
+ corn stalks\, with only one way 
+END:VEVENT
+END:VCALENDAR

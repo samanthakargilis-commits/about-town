@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9ad4fba5ce3c@bay-events
+DTSTAMP:20261017T164514Z
+DTSTART;TZID=America/Los_Angeles:20261025T110000
+DTEND;TZID=America/Los_Angeles:20261025T170000
+SUMMARY:The Bay Area’s biggest dumpling party is back. 🥟
+LOCATION:Ferry Building\, 1 Ferry Building\, San Francisco\, CA 94105\, US
+ A\, San Francisco
+URL:https://luma.com/39w64tqs
+DESCRIPTION:Fairs & festivals\nhttps://luma.com/39w64tqs\n\nSan Francisco
+ ’s World of Dumplings returns to the Ferry Building on Sunday\, October
+  25 for a free\, all-day celebration of dumplings\, food\, culture and co
+ mmunity. More than a food festival\, World of Dumplings brings communitie
+ s together through food and shared stories to build belonging and connect
+ ion. More than 13\,000 people attended last year\, with 45+ local restaur
+ ants and businesses taking part
+END:VEVENT
+END:VCALENDAR

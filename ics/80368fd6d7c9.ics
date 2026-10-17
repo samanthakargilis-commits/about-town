@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:80368fd6d7c9@bay-events
+DTSTAMP:20261017T164516Z
+DTSTART;TZID=America/Los_Angeles:20261031T150000
+DTEND;TZID=America/Los_Angeles:20261031T210000
+SUMMARY:Recess - Day Party - A Break From The Norm - Halloween Edition
+LOCATION:620 Jones\, 620 Jones Street\, San Francisco\, CA 94102 San Franc
+ isco\, San Francisco
+URL:https://www.eventbrite.com/e/recess-day-party-a-break-from-the-norm-ha
+ lloween-edition-tickets-1984345395495
+DESCRIPTION:Camp & Halloween\nhttps://www.eventbrite.com/e/recess-day-part
+ y-a-break-from-the-norm-halloween-edition-tickets-1984345395495\n\n21+ Ev
+ ent. Food\, drinks and the largest outdoor patio bar in San Francisco! En
+ joy music from some of the Bay's best DJ's!
+END:VEVENT
+END:VCALENDAR

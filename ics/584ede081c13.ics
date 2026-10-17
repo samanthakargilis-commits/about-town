@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:584ede081c13@bay-events
+DTSTAMP:20261017T164512Z
+DTSTART;TZID=America/Los_Angeles:20261017T130000
+DTEND;TZID=America/Los_Angeles:20261017T161500
+SUMMARY:Freedom Comes When One Walks
+LOCATION:Ortega Branch Library\, 3223 Ortega Street\, San Francisco\, CA 9
+ 4122\, San Francisco
+URL:https://ma.to/event/freedom-comes-when-one-walks-17-oct-2026
+DESCRIPTION:Reading + Art\nhttps://ma.to/event/freedom-comes-when-one-walk
+ s-17-oct-2026\n\nThis installment of the public art project connects the 
+ Ortega Branch Library with the narratives of incarcerated women. Choreogr
+ aphed by Jo Kreiter\, the performance features vertical dance on an aeria
+ l tripod to uplift struggles for commutation and legislative justice. The
+  program includes two shows at 1:00 PM and 3:15 PM\, separated by a 2:00 
+ PM justice circle hosted alongside Empowerment Avenue 
+END:VEVENT
+END:VCALENDAR

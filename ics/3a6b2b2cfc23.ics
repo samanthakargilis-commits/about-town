@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3a6b2b2cfc23@bay-events
+DTSTAMP:20261017T164512Z
+DTSTART;TZID=America/Los_Angeles:20261017T190000
+DTEND;TZID=America/Los_Angeles:20261017T223000
+SUMMARY:“Golden Gate Comedy Night” SF’s Most Intimate Comedy Club
+LOCATION:The Function\, 1414 Market Street\, San Francisco\, CA\, San Fran
+ cisco
+URL:https://sf.funcheap.com/golden-gate-comedy-night-sfs-most-intimate-com
+ edy-club-65/
+DESCRIPTION:Comedy + Craft\nhttps://sf.funcheap.com/golden-gate-comedy-nig
+ ht-sfs-most-intimate-comedy-club-65/\n\n“Golden Gate Comedy Night” SF
+ ’s Most Intimate Comedy Club HellaFunny See top comics you’d normally
+  see at Punch Line\, Cobbs and SF Sketchfest up close at intimate comedy 
+ club in the heart of downtown SF. Looking for a real San Francisco comedy
+  experience? Golden Gate Comedy Night is your go-to show – a sharp\, fa
+ st-moving showcase of the Bay Area’s funniest comics\, all in one intim
+ ate room. Friday 
+END:VEVENT
+END:VCALENDAR

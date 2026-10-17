@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ed4330fc14f3@bay-events
+DTSTAMP:20261017T164513Z
+DTSTART;TZID=America/Los_Angeles:20261017T100000
+DTEND;TZID=America/Los_Angeles:20261017T200000
+SUMMARY:Bay Area Games Day
+LOCATION:Los Altos Library\, 13 South San Antonio Road\, Los Altos
+URL:https://sccl.bibliocommons.com/v2/events?series=6961562d8b29ea2800c880
+ 9b
+DESCRIPTION:Reading · Los Altos\nhttps://sccl.bibliocommons.com/v2/events
+ ?series=6961562d8b29ea2800c8809b\n\nA day of open board gaming at the lib
+ rary. Bring your favorite games or learn new ones in a convention-style s
+ etting. Free and open to all.
+END:VEVENT
+END:VCALENDAR

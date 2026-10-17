@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3ee189ec02be@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T110000
+DTEND;TZID=America/Los_Angeles:20261017T160000
+SUMMARY:Off the Grid: Treasure Island
+LOCATION:Cityside Park\, Cityside Park\, Treasure Island\, Treasure Island
+URL:https://ma.to/event/off-the-grid-treasure-island-17-oct-2026
+DESCRIPTION:Concerts · Treasure Island\nhttps://ma.to/event/off-the-grid-
+ treasure-island-17-oct-2026\n\nOff the Grid returns to Treasure Island's 
+ Cityside Park every Saturday. Enjoy 15+ food vendors serving a global mix
+  including Vietnamese\, Korean\, Japanese\, Mexican\, Italian\, and BBQ. 
+ The event features live music\, kite flying\, and stunning 180-degree vie
+ ws of the Bay Bridge and Golden Gate. The park is dog-friendly and featur
+ es a 6-acre shoreline. Admission is free. RSVP via the host's profile for
+END:VEVENT
+END:VCALENDAR

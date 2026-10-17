@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:68c1ca83bde2@bay-events
+DTSTAMP:20261017T164513Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:Shared Origins\, Bright Mutual Future
+LOCATION:Mabuhay Gardens\, 443 Broadway\, San Francisco\, CA\, San Francis
+ co
+URL:https://sf.funcheap.com/shared-origins-bright-mutual-future/
+DESCRIPTION:Fairs & festivals\nhttps://sf.funcheap.com/shared-origins-brig
+ ht-mutual-future/\n\nAn ancient-future solarpunk gathering in the San Fra
+ ncisco Bay bioregion. Co-convened by CrowdDoing and Solarpunkification\, 
+ hosted at Mabuhay Gardens\, supported by Kinship Earth — a registered p
+ ublic satellite event of the ORIGIN Global Festival (Cradle of Humankind\
+ , South Africa). Talks\, a Warm Data Lab\, festival ...
+END:VEVENT
+END:VCALENDAR

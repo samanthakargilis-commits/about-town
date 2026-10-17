@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:977ac2ba808f@bay-events
+DTSTAMP:20261017T164516Z
+DTSTART;TZID=America/Los_Angeles:20261031T180000
+DTEND;TZID=America/Los_Angeles:20261031T210000
+SUMMARY:Harry Potter Trivia Night in San Jose
+LOCATION:Hapa’s Brewing Company\, 59 Barack Obama Boulevard\, San Jose\,
+  CA 95110 San Jose\, San Jose
+URL:https://www.eventbrite.com/e/harry-potter-trivia-night-in-san-jose-tic
+ kets-1999517017224
+DESCRIPTION:San Jose\nhttps://www.eventbrite.com/e/harry-potter-trivia-nig
+ ht-in-san-jose-tickets-1999517017224\n\nTest your knowledge of the Harry 
+ Potter books and movies for fun and prizes!
+END:VEVENT
+END:VCALENDAR

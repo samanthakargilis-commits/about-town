@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a7edc22a3ead@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T110000
+DTEND;TZID=America/Los_Angeles:20261017T190000
+SUMMARY:Milkywav Tattoo Guest Spot
+LOCATION:UNDRGRND\, 3191 Mission St\, San Francisco\, San Francisco
+URL:https://ma.to/event/milkywav-tattoo-guest-spot-17-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/milkywav-tattoo-guest-sp
+ ot-17-oct-2026\n\nMilkywav hits UNDRGRND for a short guest residency. Kno
+ wn for sharp manga aesthetics and fantasy-inspired characters\, they're t
+ aking bookings for both flash and custom work. Check the booking form on 
+ the profile to grab a slot.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cc4f2d07a8ae@bay-events
+DTSTAMP:20261017T164514Z
+DTSTART;TZID=America/Los_Angeles:20261103T100000
+DTEND;TZID=America/Los_Angeles:20261103T163000
+SUMMARY:SF’s Conservatory of Flowers Free First Tuesdays (Golden Gate Pa
+ rk)
+LOCATION:Conservatory of Flowers\, 100 John F Kennedy Dr\, San Francisco\,
+  CA\, San Francisco
+URL:https://sf.funcheap.com/sfs-conservatory-of-flowers-free-first-tuesday
+ s-golden-gate-park-72/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/sfs-conservatory-of-
+ flowers-free-first-tuesdays-golden-gate-park-72/\n\nWhether you’re a na
+ tive San Franciscan\, a visitor from the other side of the world\, or a b
+ udding botanist\, the Conservatory of Flowers\, located in Golden Gate Pa
+ rk\, offers an intimate\, up-close experience with nearly 2\,000 species 
+ of rare\, exotic\, and endangered plants from more ...
+END:VEVENT
+END:VCALENDAR

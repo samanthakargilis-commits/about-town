@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c5dbd38dfd49@bay-events
+DTSTAMP:20261017T164513Z
+DTSTART;TZID=America/Los_Angeles:20261017T180000
+DTEND;TZID=America/Los_Angeles:20261017T210000
+SUMMARY:Reunion 2026 Annual Gala
+LOCATION:The Westin St. Francis\, San Francisco
+URL:https://ma.to/event/reunion-2026-gala-18-oct-2026
+DESCRIPTION:Craft + Gay / queer\nhttps://ma.to/event/reunion-2026-gala-18-
+ oct-2026\n\nThe GLBT Historical Society's annual Reunion gala honors 2026
+  History Makers Marvin K. White and San Francisco Dykes on Bikes. Celebra
+ ting Dykes on Bikes' 50th anniversary and Marvin K. White's contributions
+  as Minister of Celebration and poet\, the evening brings together the co
+ mmunity to celebrate LGBTQ+ history and culture. Join us at The Westin St
+ . Francis for a night of cocktails\, dinner\, and 
+END:VEVENT
+END:VCALENDAR

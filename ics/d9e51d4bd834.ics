@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d9e51d4bd834@bay-events
+DTSTAMP:20261017T164511Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:Gregangelo Museum’s “ Haunted Doll House: Paranormal Play Date
+ ”
+LOCATION:225 San Leandro Way
+URL:https://www.gregangelomuseum.com/
+DESCRIPTION:Theatre + Weird & unusual · Featured on Funcheap\nhttps://www
+ .gregangelomuseum.com/\n\nSan Francisco | 225 San Leandro Way | Oct. 17 
+ – Nov. 1\, 2026 (weekends) | $115 Step inside the whimsical Gregangelo 
+ Museum for an intimate\, immersive paranormal adventure limited to just e
+ ight guests per show. Armed with a flashlight and accompanied by a doll\,
+  you’ll explore the Haunted Doll House \, follow hidden clues \, and en
+ counter quirky characters before reaching the grand finale: a spooky te
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a3ee5ad99105@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T190000
+DTEND;TZID=America/Los_Angeles:20261017T213000
+SUMMARY:Amarcord: Andrew Sean Greer
+LOCATION:The Roxie Theater\, 3117 16th St\, San Francisco\, CA 94103\, San
+  Francisco
+URL:https://ma.to/event/amarcord-andrew-sean-greer-17-oct-2026
+DESCRIPTION:Theatre\nhttps://ma.to/event/amarcord-andrew-sean-greer-17-oct
+ -2026\n\nPulitzer Prize winner Andrew Sean Greer shares his cinema inspir
+ ation with a special screening of Federico Fellini’s masterpiece\, Amar
+ cord. Part of Litquake's film series at the historic Roxie. Tickets are a
+ vailable on the profile.
+END:VEVENT
+END:VCALENDAR

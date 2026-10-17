@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:876ebc218f14@bay-events
+DTSTAMP:20261017T164511Z
+DTSTART;TZID=America/Los_Angeles:20261017T160000
+DTEND;TZID=America/Los_Angeles:20261017T220000
+SUMMARY:Market St Arts & Theater Fest
+LOCATION:Market St (5th to Van Ness)\, San Francisco
+URL:https://ma.to/event/market-st-arts-theater-fest-17-oct-2026
+DESCRIPTION:Theatre + Musical theatre\nhttps://ma.to/event/market-st-arts-
+ theater-fest-17-oct-2026\n\nThe inaugural Market Street Arts & Theater Fe
+ stival takes over Mid-Market for one night\, turning the district into an
+  open-air stage across six blocks and three plazas. Features 100+ partner
+ s\, 50+ creative experiences\, and 35+ locations. Highlights include vert
+ ical dancers on building facades\, drag karaoke on a cable car\, and Broa
+ dway sing-alongs. Registration is free\; the first 500 RSVPs receive 
+END:VEVENT
+END:VCALENDAR

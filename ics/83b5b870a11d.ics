@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:83b5b870a11d@bay-events
+DTSTAMP:20261017T164510Z
+DTSTART;TZID=America/Los_Angeles:20261022T180000
+DTEND;TZID=America/Los_Angeles:20261022T193000
+SUMMARY:Free Panel: Bay Area Protest Photojournalists + Pop-Up Exhibit
+LOCATION:San Francisco Main Public Library\, 100 Larkin St\, San Francisco
+ \, CA 94102\, San Francisco
+URL:https://sf.funcheap.com/free-panel-bay-area-protest-photojournalists-p
+ opup-exhibit-sf-main-library/
+DESCRIPTION:Museum exhibits + Art · Thursday evening\nhttps://sf.funcheap
+ .com/free-panel-bay-area-protest-photojournalists-popup-exhibit-sf-main-l
+ ibrary/\n\nPhotojournalists on the Front Lines of Protest: A panel discus
+ sion hosted by Indivisible San Francisco and Pro Bono Photo. Indivisible 
+ SF presents a panel of local photojournalists from Pro Bono Photo and oth
+ er news organizations who will share selections from their portfolios and
+  discuss the role ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:42c2e5d288fb@bay-events
+DTSTAMP:20261017T164514Z
+DTSTART;TZID=America/Los_Angeles:20261017T150000
+DTEND;TZID=America/Los_Angeles:20261017T210000
+SUMMARY:T-Pain & Ari Lennox
+LOCATION:Robin Williams Meadow\, 320 Bowling Green Drive\, San Francisco
+URL:https://ma.to/event/t-pain-ari-lennox-17-oct-2026
+DESCRIPTION:Concerts + Art\nhttps://ma.to/event/t-pain-ari-lennox-17-oct-2
+ 026\n\nGrammy Award-winning artist T-Pain headlines an all-ages outdoor c
+ oncert at Robin Williams Meadow in Golden Gate Park. R&B singer-songwrite
+ r Ari Lennox opens\, with DJs Lady Ryan\, Shellheart\, and BBCAROLZ round
+ ing out the lineup. The concert is a partnership between R&B and Ribs\, N
+ PU\, and Rec & Park. More info available on the profile.
+END:VEVENT
+END:VCALENDAR

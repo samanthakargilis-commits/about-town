@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0bc87205453f@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T190000
+DTEND;TZID=America/Los_Angeles:20261017T213000
+SUMMARY:SJ Earthquakes vs Nashville SC
+LOCATION:PayPal Park\, Palo Alto
+URL:https://ma.to/event/sj-earthquakes-vs-nashville-sc-18-oct-2026
+DESCRIPTION:Palo Alto\nhttps://ma.to/event/sj-earthquakes-vs-nashville-sc-
+ 18-oct-2026\n\nSan Jose Earthquakes take on Nashville SC at PayPal Park. 
+ The first 10\,000 fans will receive a Flavortown bandana presented by Val
+ ley Health Plan. Guy Fieri will be hosting First Responders Night. Ticket
+ s are available via TIXR.
+END:VEVENT
+END:VCALENDAR

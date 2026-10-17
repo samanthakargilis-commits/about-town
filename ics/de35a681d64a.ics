@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:de35a681d64a@bay-events
+DTSTAMP:20261017T164515Z
+DTSTART;TZID=America/Los_Angeles:20261017T083000
+DTEND;TZID=America/Los_Angeles:20261017T123000
+SUMMARY:Claremont Canyon to Grizzly Peak
+LOCATION:Stonewall-Panoramic Trail\, 97 Stonewall Rd\, Berkeley\, CA 94705
+ \, Berkeley
+URL:https://ma.to/event/claremont-canyon-hike-17-oct-2026
+DESCRIPTION:Berkeley\nhttps://ma.to/event/claremont-canyon-hike-17-oct-202
+ 6\n\nTrailheadgays hosts a challenging hike starting at the base of Clare
+ mont Canyon Regional Preserve. This is an intense uphill workout climbing
+  approximately 1\,505 ft over a 6-mile loop to Grizzly Peak. Expect steep
+  sections\, uneven terrain\, and loose gravel. After the summit break\, t
+ he group will head down via the fire road. Dogs are welcome. The session 
+ wraps up with an optional post-hike lunch at
+END:VEVENT
+END:VCALENDAR

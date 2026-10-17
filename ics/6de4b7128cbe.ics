@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6de4b7128cbe@bay-events
+DTSTAMP:20261017T164511Z
+DTSTART;VALUE=DATE:20261017
+DTEND;VALUE=DATE:20261018
+SUMMARY:The Wardrobe Project Flea
+LOCATION:Rockridge BART\, 5660 College Ave\, Oakland\, CA 94618\, Oakland
+URL:https://sf.funcheap.com/wardrobe-project-flea-3/
+DESCRIPTION:Craft + Fairs & festivals · Oakland\nhttps://sf.funcheap.com/
+ wardrobe-project-flea-3/\n\nA monthly vintage & makers market hosted by O
+ akland vintage shop The Wardrobe Project (located 1.5 blocks down college
+  ave). Every 3rd Saturday explore an incredible array of vintage clothing
+ \, accessories\, furniture\, home decor\, jewelry\, records and more as w
+ ell as creations & handmade goods ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a0f7a1e0f9a5@bay-events
+DTSTAMP:20261017T164514Z
+DTSTART;TZID=America/Los_Angeles:20261017T190000
+DTEND;TZID=America/Los_Angeles:20261017T220000
+SUMMARY:The Crypt-O Keepers
+LOCATION:Eclectic Box SF\, 446 Valencia St\, San Francisco\, CA\, San Fran
+ cisco
+URL:https://ma.to/event/the-crypt-o-keepers-18-oct-2026
+DESCRIPTION:Comedy + Theatre\nhttps://ma.to/event/the-crypt-o-keepers-18-o
+ ct-2026\n\nAwesome Theatre presents The Crypt-O Keepers\, a new original 
+ stage show written by Alanna McFall and directed by Neil Higgins. Perform
+ ed at Eclectic Box SF on October 2\, 3\, 8\, 9\, 10\, 15\, 16\, and 17. T
+ he comedy follows the cast of The Crypt\, a year-round horror attraction\
+ , as a fear-fueled private equity buyout threatens to leave the ensemble 
+ merged with their immortal souls forever. Doors/show at 
+END:VEVENT
+END:VCALENDAR

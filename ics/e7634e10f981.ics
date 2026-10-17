@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e7634e10f981@bay-events
+DTSTAMP:20261017T164513Z
+DTSTART;TZID=America/Los_Angeles:20261017T190000
+DTEND;TZID=America/Los_Angeles:20261017T210000
+SUMMARY:2nd Live Comedy Special
+LOCATION:Bal Theatre\, Palo Alto
+URL:https://ma.to/event/2nd-live-comedy-special-2026-10-17
+DESCRIPTION:Comedy + Theatre · Palo Alto\nhttps://ma.to/event/2nd-live-co
+ medy-special-2026-10-17\n\nComedian @hannibalthompson tapes his second li
+ ve comedy special at Bal Theatre in San Leandro\, CA. Early tickets avail
+ able for $10. Follow @disclaimerpodcast for updates.
+END:VEVENT
+END:VCALENDAR

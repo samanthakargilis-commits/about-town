@@ -1,0 +1,46 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:db578065ee3d@bay-events
+DTSTAMP:20261017T164511Z
+DTSTART;TZID=America/Los_Angeles:20260919T090000
+DTEND;TZID=America/Los_Angeles:20260919T110000
+SUMMARY:Cool Patch Pumpkins “World Record Corn Maze” 2026
+LOCATION:6150 Dixon Ave. West\, Dixon\, CA (Road Trip – Central Valley) 
+ Nearly halfway between Vacaville and Davis\, Cool Patch Pumpkins is home 
+ to a massive corn maze that previously held the Guinness World Record for
+  the w
+URL:https://sf.funcheap.com/city-guide/craziest-corn-mazes-bay/
+DESCRIPTION:U-pick farms + Weird & unusual · Featured on Funcheap · Dixo
+ n\, CA (Road Trip – Central Valley) Nearly halfway between Vacaville an
+ d Davis\, Cool Patch Pumpkins is home to a massive corn maze that previou
+ sly held the Guinness World Record for the w\nhttps://sf.funcheap.com/cit
+ y-guide/craziest-corn-mazes-bay/\n\nOpen Sept. 19-Oct. 31\, 2026 Daily\, 
+ 9 am-8 pm (weather permitting) Cool Patch Pumpkins | 6150 Dixon Ave. West
+ \, Dixon\, CA (Road Trip – Central Valley) Nearly halfway between Vacav
+ ille and Davis\, Cool Patch Pumpkins is home to a massive corn maze that 
+ previously held the Guinness World Record for the world’s largest. Rede
+ signed every year\, the maze features miles of winding paths and takes an
+  estimat
+END:VEVENT
+END:VCALENDAR

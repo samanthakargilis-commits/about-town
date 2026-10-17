@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7703d12c1e81@bay-events
+DTSTAMP:20261017T164514Z
+DTSTART;TZID=America/Los_Angeles:20261021T173000
+DTEND;TZID=America/Los_Angeles:20261021T203000
+SUMMARY:America 250: A Foreign Admirer's View of a Republic in Crisis
+LOCATION:San Francisco War Memorial & Performing Arts Center\, San Francis
+ co War Memorial & Performing Arts Center\, 401 Van Ness Ave #110\, San Fr
+ ancisco\, CA 94102\, USA\, San Francisco
+URL:https://luma.com/9w7acrdc
+DESCRIPTION:Discourse\nhttps://luma.com/9w7acrdc\n\nJoin us at the SF War 
+ Memorial's Green Room for a lecture from Os Guinness. Os Guinness is an a
+ uthor\, social critic\, and great-great-great grandson of Arthur Guinness
+ \, the Dublin brewer. Os has written or edited more than 40 books that of
+ fer valuable insight into the cultural\, political\, and social contexts 
+ in which we all live. He completed his undergraduate degree at the Univer
+ sity of London and
+END:VEVENT
+END:VCALENDAR

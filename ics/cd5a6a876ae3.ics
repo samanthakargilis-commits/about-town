@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cd5a6a876ae3@bay-events
+DTSTAMP:20261017T164511Z
+DTSTART;TZID=America/Los_Angeles:20261022T180000
+DTEND;TZID=America/Los_Angeles:20261022T193000
+SUMMARY:“Macabre Marvels in the Stack” Inspiration From SF Library’s
+  Hidden Books
+LOCATION:San Francisco Main Public Library\, 100 Larkin St\, San Francisco
+ \, CA 94102\, San Francisco
+URL:https://sf.funcheap.com/macabre-marvels-stack-inspiration-sf-librarys-
+ hidden-books/
+DESCRIPTION:Comedy + Reading · Thursday evening\nhttps://sf.funcheap.com/
+ macabre-marvels-stack-inspiration-sf-librarys-hidden-books/\n\nFor one ni
+ ght in October\, the Library opens its vaults. Explore rarely accessible\
+ , reference-only books containing masks\, costumes and creepy images\, wh
+ ere you’ll find inspiration for your Halloween costume\, art\, or daily
+  aesthetic. Collections to Explore Masks Costumes Gargoyles/monsters Frig
+ htening landscapes ... and more! Flip through books\, photograph\, copy o
+ r sketch your ...
+END:VEVENT
+END:VCALENDAR

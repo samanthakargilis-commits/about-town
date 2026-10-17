@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2ad985844448@bay-events
+DTSTAMP:20261017T164516Z
+DTSTART;TZID=America/Los_Angeles:20261017T210000
+DTEND;TZID=America/Los_Angeles:20261018T020000
+SUMMARY:Sleight of Sound: Yheti & Toadface
+LOCATION:The Midway\, 900 Marin St\, Marin
+URL:https://ma.to/event/sleight-of-sound-yheti-toadface-17-oct-2026
+DESCRIPTION:Weird & unusual · Marin\nhttps://ma.to/event/sleight-of-sound
+ -yheti-toadface-17-oct-2026\n\nYheti b2b Toadface bring the Sleight of So
+ und tour to The Midway's Gods & Monsters room. Direct support from Crawda
+ d Sniper with more acts to be announced. Expect a night of weird and wonk
+ y bass music. Tickets available on the profile.
+END:VEVENT
+END:VCALENDAR

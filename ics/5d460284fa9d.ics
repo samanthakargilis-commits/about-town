@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5d460284fa9d@bay-events
+DTSTAMP:20261017T164514Z
+DTSTART;TZID=America/Los_Angeles:20261017T140000
+DTEND;TZID=America/Los_Angeles:20261017T163000
+SUMMARY:Read in the Park × SF Book Besties 📚 Lafayette Park
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/ritpxsfbookbesties
+DESCRIPTION:Reading + Discourse\nhttps://luma.com/ritpxsfbookbesties\n\nBr
+ ing your book and read with us! 📚 For this edition of Read in the Park
+ \, we’re teaming up with SF Book Besties for an afternoon of silent rea
+ ding\, book conversations\, and meeting fellow readers in San Francisco. 
+ Read in the Park is a community of readers who meet twice a month to read
+  together\, talk about books\, and meet other readers. For this event\, w
+ e’re trying a new park and meeting at Lafaye
+END:VEVENT
+END:VCALENDAR
