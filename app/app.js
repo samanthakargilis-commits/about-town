@@ -619,6 +619,14 @@ function onEventClick(e) {
   if (e.target.closest('[data-open]')) openSheet(ev);
 }
 
+// on a big screen the event opens in a panel on the right and the page stays usable beside it
+const WIDE = matchMedia('(min-width: 1280px)');
+let openId = null;
+function markOpen() {
+  document.querySelectorAll('.ev.open').forEach((r) => r.classList.remove('open'));
+  if (openId) document.querySelector(`#view .ev[data-id="${CSS.escape(openId)}"]`)?.classList.add('open');
+}
+
 function openSheet(ev) {
   const st = S.status[ev.id];
   const img = ev.image_url ? '<div class="img" hidden></div>' : '';   // shown only once a real photo loads
@@ -663,7 +671,8 @@ function openSheet(ev) {
     im.src = ev.image_url;
   }
   $('#sheetWrap').hidden = false;
-  document.documentElement.classList.add('locked');
+  document.documentElement.classList.add(WIDE.matches ? 'panel-open' : 'locked');
+  openId = ev.id; markOpen();
   $('#sheet [data-copy]').onclick = (e) => { e.preventDefault(); copyLink(ev); };
   $('#sheet').onclick = (e) => { if (e.target.closest('[data-act],[data-cal]')) { if (e.target.closest('[data-act="block"]')) e.preventDefault(); onEventClick(e); } };
 }
@@ -672,7 +681,8 @@ function closeSheet() {
   if (wrap.hidden || wrap.classList.contains('closing')) return;
   wrap.classList.add('closing');
   $('#sheet').style.transform = '';
-  setTimeout(() => { wrap.hidden = true; wrap.classList.remove('closing'); document.documentElement.classList.remove('locked'); }, 220);
+  openId = null; markOpen();
+  setTimeout(() => { wrap.hidden = true; wrap.classList.remove('closing'); document.documentElement.classList.remove('locked', 'panel-open'); }, 220);
 }
 
 // drag the sheet down to put it away (from the grab bar, or anywhere once it's scrolled to the top)
@@ -1195,6 +1205,7 @@ function render() {
   const v = $('#view');
   ({ cal: renderCal, tonight: renderTonight, new: renderNew, picks: renderPicks, me: renderMe })[tab](v);
   document.querySelectorAll('.tab').forEach((t) => t.classList.toggle('on', t.dataset.tab === tab));
+  markOpen();
   swipePeek(v);
 }
 
