@@ -827,10 +827,10 @@ function renderCal(v) {
   const list = all.filter(inSlot);
   const sd = atNoon(selDay);
   v.innerHTML = `<div class="cal"><div class="dow">${['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((x) => `<span>${x}</span>`).join('')}</div><div class="grid">${grid}</div></div>
-    <div class="dayhead"><h2>${esc(fmt(sd, { weekday: 'long' }))}, <em>${esc(fmt(sd, { month: 'short', day: 'numeric' }))}</em></h2><small>${list.length ? `${list.length} option${list.length > 1 ? 's' : ''}` : ''}</small></div>
+    <div class="daypane"><div class="dayhead"><h2>${esc(fmt(sd, { weekday: 'long' }))}, <em>${esc(fmt(sd, { month: 'short', day: 'numeric' }))}</em></h2><small>${list.length ? `${list.length} option${list.length > 1 ? 's' : ''}` : ''}</small></div>
     ${nudgeHTML() || tipHTML(list.length)}
     ${all.length ? slotChips() : ''}
-    ${list.length ? dayList(list, selDay) : all.length ? `<p class="hint">Nothing in the ${slot} that day. <a href="#" data-slot="any">Show any time</a></p>` : `<p class="hint">Nothing near ${S.where === 'near' ? 'you' : 'home'} yet. Lots of events are posted 1 to 2 weeks out, so check back.</p>`}`;
+    ${list.length ? dayList(list, selDay) : all.length ? `<p class="hint">Nothing in the ${slot} that day. <a href="#" data-slot="any">Show any time</a></p>` : `<p class="hint">Nothing near ${S.where === 'near' ? 'you' : 'home'} yet. Lots of events are posted 1 to 2 weeks out, so check back.</p>`}</div>`;
 }
 
 function renderTonight(v) {
