@@ -267,3 +267,52 @@ button, a, .d, .ev { touch-action: manipulation; }
 .slots::-webkit-scrollbar { display: none; }
 .slot { flex: none; height: 32px; padding: 0 13px; border-radius: 99px; border: 1.5px solid var(--line); background: var(--paper); color: var(--cocoa); font: inherit; font-size: 13.5px; font-weight: 600; }
 .slot.on { background: var(--cocoa); border-color: var(--cocoa); color: var(--paper); }
+
+/* ---------- computer screens: the page fills the window, the month stays on the left and the
+   chosen day is beside it. Phones never reach these widths, so everything above is untouched. */
+@media (min-width: 960px) {
+  #app { max-width: none; }
+  .top { padding: 30px 40px 30px; }
+  h1 { font-size: 46px; }
+  main { padding: 10px 32px 0; }
+  main:not(:has(> .cal)) > * { max-width: 760px; margin-left: auto; margin-right: auto; }
+  main:has(> .cal) { display: grid; grid-template-columns: minmax(360px, 30%) minmax(0, 1fr); gap: 36px; align-items: start; }
+  main > .cal { position: sticky; top: 20px; padding: 16px 10px 12px; }
+  .cal .d { height: 58px; }
+  .daypane .dayhead { padding-top: 14px; }
+  .d:not(:disabled, .sel, .picked):hover .n::before { content: ""; position: absolute; inset: 0; border-radius: 50%; background: var(--line); z-index: -1; }
+  .ev { cursor: pointer; }
+  .ev:hover { box-shadow: 0 1px 0 var(--line), 0 6px 18px -12px rgba(61, 43, 38, .35); }
+  .ev.open { box-shadow: 0 0 0 2px var(--cocoa); }
+  .deck { height: 460px; max-width: 440px; margin-left: auto; margin-right: auto; }
+  /* the event opens as a card in the middle of the screen */
+  .sheet {
+    top: 50%; bottom: auto; left: 50%; right: auto; width: min(580px, calc(100vw - 48px)); max-height: 86vh;
+    translate: -50% -50%; border-radius: 26px; padding: 18px 24px 24px; animation: rise .22s ease-out;
+  }
+  .sheet .grab { display: none; }
+  .sheet-wrap.closing .sheet { transform: none !important; opacity: 0; transition: opacity .2s; }
+  .tabs { max-width: 560px; }
+}
+
+/* big screens: a third column on the right holds the event you clicked */
+@media (min-width: 1280px) {
+  :root { --panel: min(460px, 32vw); }
+  #app { margin-right: var(--panel); }
+  main:has(> .cal) { grid-template-columns: minmax(340px, 38%) minmax(0, 1fr); gap: 28px; }
+  .tabs { right: calc(var(--panel) + 12px); }
+  .toast { left: calc((100vw - var(--panel)) / 2); }
+  body::after {
+    content: "Click an event to see it here"; box-sizing: border-box; position: fixed; top: 0; right: 0; bottom: 0; width: var(--panel);
+    display: grid; place-items: center; padding: 24px; text-align: center; color: var(--sub); font-weight: 600;
+    background: var(--paper); border-left: 1px solid var(--line);
+  }
+  .sheet-wrap { left: auto; width: var(--panel); z-index: 15; }
+  .sheet-bg { display: none; }
+  .sheet {
+    top: 0; bottom: 0; left: 0; right: 0; width: auto; max-width: none; max-height: none; translate: none;
+    border-radius: 0; border-left: 1px solid var(--line); background: var(--paper); padding: 22px 26px 40px; animation: fade .18s;
+  }
+  .sheet-wrap.closing .sheet { opacity: 0; }
+}
+@keyframes rise { from { opacity: 0; transform: translateY(16px) scale(.98); } }

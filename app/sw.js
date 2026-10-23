@@ -1,7 +1,7 @@
 // The app's own files come from the network first, so a new version shows up
 // on the next open; the cached copy is only for when the phone is offline or
 // the network is slow. events.json and calendar files work the same way.
-const VERSION = 'v23';
+const VERSION = 'v24';
 const SHELL = ['./', 'index.html', 'styles.css', 'app.js', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/apple-touch-icon.png'];
 const SLOW_MS = 2500;
 
