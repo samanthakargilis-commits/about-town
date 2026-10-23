@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8564071354ec@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;VALUE=DATE:20260905
+DTEND;VALUE=DATE:20260906
+SUMMARY:Lemos Farm
+LOCATION:12320 San Mateo Rd
+URL:https://sf.funcheap.com/city-guide/bay-area-haunted-houses/
+DESCRIPTION:Animals + Fairs & festivals · Featured on Funcheap\nhttps://s
+ f.funcheap.com/city-guide/bay-area-haunted-houses/\n\nHalf Moon Bay | 123
+ 20 San Mateo Rd | Admission Passes start at $18 (attractions vary based o
+ n ticket) Haunted houses aren’t just for Halloween at Lemos Farm\, wher
+ e the haunted house is open year-round with both scary and non-scary vers
+ ions for different ages. The farm also offers a mini amusement park exper
+ ience with pony rides\, train rides\, hayrides\, a farm slide\, bounce ho
+ uses\, a car barn ride\, 
+END:VEVENT
+END:VCALENDAR

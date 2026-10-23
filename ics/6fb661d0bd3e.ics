@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6fb661d0bd3e@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;TZID=America/Los_Angeles:20261029T180000
+DTEND;TZID=America/Los_Angeles:20261029T213000
+SUMMARY:“Practical Magic 2” Halloween-Themed Outdoor Movie Night at Or
+ acle Park
+LOCATION:Oracle Park\, 24 Willie Mays Plaza\, San Francisco\, CA\, San Fra
+ ncisco
+URL:https://sf.funcheap.com/practical-magic-movie-oracle-park/
+DESCRIPTION:Camp & Halloween · Your kind of movie · Thursday evening\nht
+ tps://sf.funcheap.com/practical-magic-movie-oracle-park/\n\nGiants Enterp
+ rises is bringing Movie Night back to Oracle Park with a special screenin
+ g of Warner Bros. Pictures’ Practical Magic 2 on Thursday\, October 29\
+ , 2026. This will be the fourth annual collaboration between Giants Enter
+ prises & Warner Bros.\, closely following the success of last year’s Su
+ perman Movie ...
+END:VEVENT
+END:VCALENDAR

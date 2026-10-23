@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8074855a4abe@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261023T200000
+DTEND;TZID=America/Los_Angeles:20261023T220000
+SUMMARY:Heels Challenge – Fri Oct 23
+LOCATION:Danzhaus\, San Francisco
+URL:https://ma.to/event/heels-challenge-fri-oct-23-2026
+DESCRIPTION:Camp & Halloween + Theatre\nhttps://ma.to/event/heels-challeng
+ e-fri-oct-23-2026\n\nJoin Monique from The Reno Empire for a 2-day Hallow
+ een Heels Performance Challenge. This Friday session runs 8–10 PM at Da
+ nzhaus. The challenge includes rehearsal and a stage performance at the I
+ nessence 14th Anniversary Halloween Social on Saturday. $80 presale\, $90
+  at door if available. Sign up via @inessencedanceco or inessencedance.co
+ m.
+END:VEVENT
+END:VCALENDAR

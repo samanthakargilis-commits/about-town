@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7bba94ddd567@bay-events
+DTSTAMP:20261023T175956Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:Gary Numan
+LOCATION:The Regency Ballroom\, 1300 Van Ness Avenue\, San Francisco\, CA\
+ , San Francisco
+URL:https://sf.funcheap.com/gary-numan/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/gary-numan/\n\nGolde
+ nvoice PresentsNorth American Fall Tour GARY NUMAN MON\, 23 NOV 2026 at 0
+ 8:00PM PSTAges: All AgesDoors Open: 07:00PM OnSale: Fri\, 1 May 2026 at 1
+ 0:00AM PDTAnnouncement: Tue\, 28 Apr 2026 at 07:00AM PDT If tickets in th
+ e accessible section are unavailable\, please reach out to the venue for 
+ accommodations. ...
+END:VEVENT
+END:VCALENDAR

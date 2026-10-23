@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:49ca0683fe12@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261030T210000
+DTEND;TZID=America/Los_Angeles:20261031T040000
+SUMMARY:Set SF Halloween: Sébastien Léger & Roy Rosenfeld aka Lost Mirac
+ le & Satori
+LOCATION:Public Works SF\, 161 Erie St\, san francisco\, CA 94103 san fran
+ cisco\, san francisco
+URL:https://www.eventbrite.com/e/set-sf-halloween-sebastien-leger-roy-rose
+ nfeld-aka-lost-miracle-satori-tickets-1999066707335
+DESCRIPTION:Camp & Halloween\nhttps://www.eventbrite.com/e/set-sf-hallowee
+ n-sebastien-leger-roy-rosenfeld-aka-lost-miracle-satori-tickets-199906670
+ 7335\n\nLost Miracle plays a 3-hour set for Halloween in San Francisco\, 
+ special guest Satori. Public Works\, Friday\, October 30. 21+.
+END:VEVENT
+END:VCALENDAR

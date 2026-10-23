@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a5b3d0028756@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261031T110000
+DTEND;TZID=America/Los_Angeles:20261031T130000
+SUMMARY:Hype Con: Cards\, Collectibles\, Pokemon & KPOP
+LOCATION:Santa Clara Convention Center\, 5001 Great America Parkway\, Sant
+ a Clara\, CA 95054 Santa Clara\, Santa Clara
+URL:https://www.eventbrite.com/e/hype-con-cards-collectibles-pokemon-kpop-
+ tickets-2002112596672
+DESCRIPTION:Santa Clara\nhttps://www.eventbrite.com/e/hype-con-cards-colle
+ ctibles-pokemon-kpop-tickets-2002112596672\n\nHype Con is an event dedica
+ ted to the hottest items on the market under one roof! We aren't just any
+  old convention\, we are an experience!
+END:VEVENT
+END:VCALENDAR

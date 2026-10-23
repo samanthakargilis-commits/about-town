@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:07b2959094ee@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261023T210000
+DTEND;TZID=America/Los_Angeles:20261024T013000
+SUMMARY:soulfunky & fusion
+LOCATION:Phonobar\, San Francisco
+URL:https://ma.to/event/soulfunky-fusion-2026-10-23
+DESCRIPTION:New in your area\nhttps://ma.to/event/soulfunky-fusion-2026-10
+ -23\n\nsoulfunky & fusion take the booth for the night as part of Phonoba
+ r's October 2026 lineup. The venue's residents anchor the sound every wee
+ k\, with guest selectors joining them throughout the month.
+END:VEVENT
+END:VCALENDAR

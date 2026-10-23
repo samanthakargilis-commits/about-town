@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b37b4e2a3298@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261023T200000
+DTEND;TZID=America/Los_Angeles:20261023T220000
+SUMMARY:Jontavious Willis
+LOCATION:Bing Concert Hall\, 327 Lasuen St\, Stanford\, CA 94305\, Stanfor
+ d
+URL:https://ma.to/event/jontavious-willis-the-studio-23-oct-2026
+DESCRIPTION:Concerts · Stanford\nhttps://ma.to/event/jontavious-willis-th
+ e-studio-23-oct-2026\n\nJontavious Willis kicks off the 2026-2027 Guitar 
+ Celebration season. The West Georgia bluesman explores the history and We
+ st African origins of the genre as part of the Six Strings\, Infinite Sto
+ ries series. Tickets available on the profile.
+END:VEVENT
+END:VCALENDAR

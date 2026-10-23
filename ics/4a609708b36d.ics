@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4a609708b36d@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;TZID=America/Los_Angeles:20261114T110000
+DTEND;TZID=America/Los_Angeles:20261114T170000
+SUMMARY:MoAD: Museum of the African Diaspora Free Museum Day
+LOCATION:Museum of the African Diaspora\, 685 Mission St\, San Francisco\,
+  CA\, San Francisco
+URL:https://sf.funcheap.com/moad-museum-of-the-african-diaspora-free-museu
+ m-day-sf-45/
+DESCRIPTION:Museum exhibits + Art\nhttps://sf.funcheap.com/moad-museum-of-
+ the-african-diaspora-free-museum-day-sf-45/\n\nMoAD\, a contemporary art 
+ museum\, celebrates Black cultures\, ignites challenging conversations\, 
+ and inspires learning through the global lens of the African Diaspora. Mo
+ nthly Free Day MoAD hosts a ‘‍THRIVE @ MoAD Community Day’ every se
+ cond Saturday with free admission to all of its exhibitions. Check ...
+END:VEVENT
+END:VCALENDAR

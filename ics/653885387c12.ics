@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:653885387c12@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;TZID=America/Los_Angeles:20261024T160000
+DTEND;TZID=America/Los_Angeles:20261024T180000
+SUMMARY:Filipino Night Market
+LOCATION:Ritch St\, Ritch St San Francisco\, San Francisco
+URL:https://partiful.com/e/LGEDoCgYuvdf91u5EChI
+DESCRIPTION:Fairs & festivals + Craft\nhttps://partiful.com/e/LGEDoCgYuvdf
+ 91u5EChI\n\nUNDSCVRD closes out its tenth anniversary season with a Filip
+ ino night market in SoMa's Ritch Street Alley\, full of food\, music\, an
+ d local makers Browse Filipino-owned food and retail vendors\, catch live
+  performances\, and soak up the alley-party atmosphere. It's free and all
+  ages\, though an RSVP is requested This event is not hosted by Partiful.
+  It is an event we recommend\, hosted by UNDSCVRD. Fin
+END:VEVENT
+END:VCALENDAR

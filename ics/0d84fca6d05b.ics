@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0d84fca6d05b@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;TZID=America/Los_Angeles:20261024T120000
+DTEND;TZID=America/Los_Angeles:20261024T150000
+SUMMARY:Oakland Halloween + Día de los Muertos: Tricks\, Treats & Traditi
+ ons in the Laurel (2026)
+LOCATION:Golondrino's Mexican Grill\, 4171 MacArthur Blvd\, Oakland\, CA\,
+  Oakland
+URL:https://sf.funcheap.com/oakland-halloween-da-de-los-muertos-tricks-tre
+ ats-traditions-laurel-2026/
+DESCRIPTION:Camp & Halloween + Cultural festivals · A yearly tradition ·
+  Oakland\nhttps://sf.funcheap.com/oakland-halloween-da-de-los-muertos-tri
+ cks-treats-traditions-laurel-2026/\n\nJoin in free community Dia De Los M
+ uertos activities and Trick-or-Treating for the kiddos in The Laurel Dist
+ rict! Families are invited to celebrate Día de los Muertos and Halloween
+  in Oakland’s Laurel District on Saturday\, October 24\, 2026\, from no
+ on to 3 p.m. Hosted by the Laurel ...
+END:VEVENT
+END:VCALENDAR

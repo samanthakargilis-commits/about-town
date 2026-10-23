@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c31394b1c09c@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261101T110000
+DTEND;TZID=America/Los_Angeles:20261101T130000
+SUMMARY:✨Crafts\, Chats and Chicas: A Craft Corner Event🧶🎨🧵
+LOCATION:Kinfolx\, 1951 Telegraph Street\, Oakland\, CA Oakland\, Oakland
+URL:https://www.meetup.com/glow-girl-social-club/events/316749997/
+DESCRIPTION:Craft · Oakland\nhttps://www.meetup.com/glow-girl-social-club
+ /events/316749997/\n\nCalling all crafty chicas! 🗣️ Pick up your mat
+ erials\, take a seat and let’s yap. If you ever felt like there wasn’
+ t enough time to do your craft and make new friends\, this is your sign! 
+ Let’s slow down\, enjoy creating with our hands and enjoy an amazing cu
+ p of coffee while we’re at it. Come alone\, leave with a crafty crew 
+ ✨
+END:VEVENT
+END:VCALENDAR

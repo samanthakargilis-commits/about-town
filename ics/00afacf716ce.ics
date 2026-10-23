@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:00afacf716ce@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261023T140000
+DTEND;TZID=America/Los_Angeles:20261023T170000
+SUMMARY:Casa Guadalupe Legacy Celebration
+LOCATION:Casa Guadalupe Supermarket\, 2999 Mission St\, San Francisco\, Sa
+ n Francisco
+URL:https://ma.to/event/casa-guadalupe-legacy-celebration-2026-10-23
+DESCRIPTION:New in your area\nhttps://ma.to/event/casa-guadalupe-legacy-ce
+ lebration-2026-10-23\n\nCasa Guadalupe Supermarket marks its recognition 
+ as a San Francisco Legacy Business with a community celebration. The gath
+ ering brings together family\, neighbors and the wider Mission District c
+ ommunity for tacos\, mariachi and a DJ\, honoring the store's history and
+  its contributions to the community.
+END:VEVENT
+END:VCALENDAR

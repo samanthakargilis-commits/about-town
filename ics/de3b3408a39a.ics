@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:de3b3408a39a@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261117T190000
+DTEND;TZID=America/Los_Angeles:20261117T210000
+SUMMARY:ChinaTalk & Unbound Present: Everyday Movement (Monthly China Read
+ s\, #2)
+LOCATION:Unbound Books and Coffee 格外书店\, Unbound Books and Coffee 
+ 格外书店\, 38 Waverly Pl\, San Francisco\, CA 94108\, USA\, San Franc
+ isco
+URL:https://luma.com/sguni0ck
+DESCRIPTION:Reading\nhttps://luma.com/sguni0ck\n\nChinaTalk Book Club — 
+ we're doing it again! Per overwhelming requests\, we will be reading Gigi
+  Leung Lee-chi’s Everyday Movement 日常運動\, translated into Engli
+ sh by Jennifer Feeley. On a weekend morning\, college roommates Ah Lei an
+ d Panda wake up in the same apartment. The night before\, they were chase
+ d and tear-gassed in the streets of Hong Kong\, after joining tens of tho
+ usands of others to protest 
+END:VEVENT
+END:VCALENDAR

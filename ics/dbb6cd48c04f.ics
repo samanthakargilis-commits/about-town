@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dbb6cd48c04f@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;TZID=America/Los_Angeles:20261024T170000
+DTEND;TZID=America/Los_Angeles:20261024T180000
+SUMMARY:826 Valencia Quarterly Release
+LOCATION:826 Valencia Mission Center\, 826 Valencia St\, San Francisco
+URL:https://ma.to/event/826-valencia-quarterly-release-24-oct-2026
+DESCRIPTION:Big Bay Area traditions + Writing\nhttps://ma.to/event/826-val
+ encia-quarterly-release-24-oct-2026\n\nStudent-led celebration for the re
+ lease of The 826 Valencia Quarterly\, volume 34. Catch live performances 
+ from young writers at the Mission Center. This launch is happening in col
+ laboration with Lit Crawl and Litquake. Entry is free\, RSVP on the profi
+ le.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9e767e34b4d8@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261023T130000
+DTEND;TZID=America/Los_Angeles:20261023T180000
+SUMMARY:Nyquil Oasis
+LOCATION:Moth Belly Gallery\, San Francisco
+URL:https://ma.to/event/nyquil-oasis-2026-10-23
+DESCRIPTION:Museum exhibits + Art\nhttps://ma.to/event/nyquil-oasis-2026-1
+ 0-23\n\nYerrie Choo's solo exhibition 'Nyquil Oasis' is on view at Moth B
+ elly Gallery. Open for viewing during regular hours: Fridays and Saturday
+ s 1–6pm. Also available by chance or appointment. The show is up until 
+ Saturday\, November 28th.
+END:VEVENT
+END:VCALENDAR

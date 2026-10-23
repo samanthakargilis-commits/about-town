@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:eea0a7cb6d3c@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261103T190000
+DTEND;TZID=America/Los_Angeles:20261103T210000
+SUMMARY:Full Band Worship/Concert and Prayers Night For All Bay Area Chris
+ tians!
+LOCATION:2850 19th Ave\, 2850 19th Ave\, San Francisco\, Ca San Francisco\
+ , San Francisco
+URL:https://www.meetup.com/meetup-group-djkaiebw/events/316990446/
+DESCRIPTION:Concerts + Singing\nhttps://www.meetup.com/meetup-group-djkaie
+ bw/events/316990446/\n\nFree time on Tuesday evening and seeking to worsh
+ ip King Jesus and prayers together as Bay Area Christian brothers/sisters
+  in the Bay Area Body of Christ? As well as making new Christian friends.
+ .. All Bay Area Christians of all denominations are welcome. One hour of 
+ singing\, worshipping God and prayers together. No sermon!
+END:VEVENT
+END:VCALENDAR

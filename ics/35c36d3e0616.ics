@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:35c36d3e0616@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;TZID=America/Los_Angeles:20261106T183000
+DTEND;TZID=America/Los_Angeles:20261106T203000
+SUMMARY:Improv(e) Your Dating Life - Bay Area Workshops for Singles
+LOCATION:2 Marina Blvd\, 2 Marina Blvd\, San Francisco\, CA 94123\, USA\, 
+ San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/improv-e-your-dating-life-bay-area-workshops-fo
+ r-singles/events/317104457/
+DESCRIPTION:Comedy + Theatre\nhttps://www.meetup.com/improv-e-your-dating-
+ life-bay-area-workshops-for-singles/events/317104457/\n\n[Grab ticket on 
+ Eventbrite to secure spot.](https://www.eventbrite.com/e/improve-your-dat
+ ing-life-tickets-1997921912222?aff=oddtdtcreator) Explore your dating ten
+ dencies\, expand your dating pool\, and live in the moment in this improv
+ -based dating course. This is a single day\, 2-hour workshop. Choose from
+  any of the dates below. **Dates:** Sunday Sep 13\, 2-4pm Sunday Oct 11\,
+  2-4pm Friday Nov 6\, 6:3
+END:VEVENT
+END:VCALENDAR

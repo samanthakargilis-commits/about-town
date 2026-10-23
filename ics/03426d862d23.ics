@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:03426d862d23@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261024T113000
+DTEND;TZID=America/Los_Angeles:20261024T133000
+SUMMARY:October Conscious Women's Walk: Crissy Field
+LOCATION:Gallery View\, RH23+R59\, San Francisco\, CA 94123\, USA\, San Fr
+ ancisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/sf-conscious-womens-hiking-group/events/3170283
+ 42/
+DESCRIPTION:Meditation + Spirituality\nhttps://www.meetup.com/sf-conscious
+ -womens-hiking-group/events/317028342/\n\nLet’s celebrate Fall with a l
+ ight walk\, beautiful views of the Golden Gate Bridge and mindful connect
+ ion. We'll gather for an intentional\, soul-nourishing afternoon of movem
+ ent\, mindfulness\, and meaningful connection as we gather for a **Consci
+ ous Women’s Hike** along Crissy Field in San Francisco. This unique exp
+ erience is designed for women walking the path of self-awareness who are 
+ seeking deep
+END:VEVENT
+END:VCALENDAR

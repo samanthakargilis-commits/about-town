@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:28a667508b75@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Janet Thornburg’s Cognitive Divine
+LOCATION:The Marsh San Francisco Studio\, 1062 Valencia Street\, San Franc
+ isco\, CA 94110\, San Francisco
+URL:https://sf.funcheap.com/janet-thornburgs-cognitive-divine-2/
+DESCRIPTION:Fairs & festivals + Theatre\nhttps://sf.funcheap.com/janet-tho
+ rnburgs-cognitive-divine-2/\n\nWritten & Performed by Janet Thornburg Dir
+ ected & Developed by David Ford Coached by Tina D’Elia 7:30pm Fridays\,
+  November 6 – December 11\, 2026 Fresh off a sold-out\, award-winning f
+ irst look at The Marsh’s In Front of Your Eyes Performance Festival\, P
+ laywright and Performer Janet Thornburg‘s Cognitive Divine will ...
+END:VEVENT
+END:VCALENDAR

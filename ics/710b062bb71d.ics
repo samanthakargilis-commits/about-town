@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:710b062bb71d@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261029T190000
+DTEND;TZID=America/Los_Angeles:20261029T210000
+SUMMARY:Inference as Instrument
+LOCATION:Gray Area / Grand Theater\, Gray Area / Grand Theater\, 2665 Miss
+ ion St\, San Francisco\, CA 94110\, USA\, San Francisco
+URL:https://luma.com/modal-48ev
+DESCRIPTION:Theatre + Museum exhibits · Thursday evening\nhttps://luma.co
+ m/modal-48ev\n\nInference as Instrument is a panel exploring how inferenc
+ e-powered tools are becoming instruments in their own right: reshaping ho
+ w artists\, musicians\, filmmakers\, and designers create. The panel brin
+ gs together builders and practitioners at the intersection of generative 
+ AI and creative work to discuss what it means to build (and use) inferenc
+ e as a medium for expression. Iana Chugunova\, Digital 
+END:VEVENT
+END:VCALENDAR

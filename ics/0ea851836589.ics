@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0ea851836589@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261024T100000
+DTEND;TZID=America/Los_Angeles:20261024T160000
+SUMMARY:2nd Annual Plant Sale
+LOCATION:Yerba Buena Gardens\, Pedestrian bridge over Howard\, San Francis
+ co\, CA 94103\, San Francisco
+URL:https://ma.to/event/2nd-annual-plant-sale-24-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/2nd-annual-plant-sale-24
+ -oct-2026\n\nThe 2nd annual plant sale takes over the pedestrian bridge o
+ ver Howard Street. This pay-what-you-can event offers a great opportunity
+  to stock up on greenery and support the gardens. Grab some plant babies 
+ to keep you company during the rainy winter months.
+END:VEVENT
+END:VCALENDAR

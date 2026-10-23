@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5ef7b7c8fa6a@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261024T123000
+DTEND;TZID=America/Los_Angeles:20261024T143000
+SUMMARY:Murals & Monuments Tour
+LOCATION:Yerba Buena Center for the Arts\, San Francisco
+URL:https://ma.to/event/murals-monuments-tour-24-oct-2026
+DESCRIPTION:Museum exhibits + Art\nhttps://ma.to/event/murals-monuments-to
+ ur-24-oct-2026\n\nArt historian and skateboarder Ted Barrow leads a walki
+ ng tour exploring murals and monuments in the city that were shaped by co
+ llective action and social movements.
+END:VEVENT
+END:VCALENDAR

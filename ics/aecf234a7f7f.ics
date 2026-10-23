@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:aecf234a7f7f@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;TZID=America/Los_Angeles:20261029T150000
+DTEND;TZID=America/Los_Angeles:20261029T190000
+SUMMARY:Día de los Muertos + Halloween at Mission Community Market
+LOCATION:Mission Community Market\, Bartlett and 22nd Street\, San Francis
+ co\, CA\, San Francisco
+URL:https://sf.funcheap.com/da-de-los-muertos-halloween-mission-community-
+ market-sf-5/
+DESCRIPTION:Camp & Halloween + Cultural festivals · A yearly tradition\nh
+ ttps://sf.funcheap.com/da-de-los-muertos-halloween-mission-community-mark
+ et-sf-5/\n\nCelebrate Día de los Muertos and Halloween at Mission Commun
+ ity Market on Thursday\, October 29. Stock up on fall produce\, support l
+ ocal farms and food businesses\, and join us in celebrating our Mission c
+ ommunity. The market will be extra festive with family activities\, live 
+ music\, ...
+END:VEVENT
+END:VCALENDAR

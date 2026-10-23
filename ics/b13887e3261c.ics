@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b13887e3261c@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261023T190000
+DTEND;TZID=America/Los_Angeles:20261023T201500
+SUMMARY:Troy Roberts' Nu-Jive: 7 PM Set
+LOCATION:Joe Henderson Lab\, SFJAZZ Center\, San Francisco
+URL:https://ma.to/event/troy-roberts-nu-jive-2026-10-23-7pm
+DESCRIPTION:New in your area\nhttps://ma.to/event/troy-roberts-nu-jive-202
+ 6-10-23-7pm\n\nAustralian-born saxophonist and composer Troy Roberts retu
+ rns to San Francisco with Nu-Jive\, his ensemble that bridges contemporar
+ y jazz\, funk\, soul and world rhythms\, in the Joe Henderson Lab at the 
+ SFJAZZ Center. Nu-Jive plays two sets on Friday\, October 23\, 2026\; thi
+ s listing covers the 7:00 PM set\, with a second set at 8:30 PM. Roberts 
+ has collaborated with Joey DeFrancesco\, Van Morrison and t
+END:VEVENT
+END:VCALENDAR

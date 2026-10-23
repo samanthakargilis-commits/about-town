@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e2d195ffe875@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261028T183000
+DTEND;TZID=America/Los_Angeles:20261028T203000
+SUMMARY:Ancillary Justice @ Barebottle Brewing
+LOCATION:Barebottle Brewing Company\, 1525 Cortland Ave\, San Francisco\, 
+ CA San Francisco\, San Francisco
+URL:https://www.meetup.com/san-francisco-fantasy-book-club/events/31594108
+ 6/
+DESCRIPTION:New in your area\nhttps://www.meetup.com/san-francisco-fantasy
+ -book-club/events/315941086/\n\nCome enjoy a drink at Barebottle Brewing 
+ and discuss our October read! Our book for October is Ancillary Justice b
+ y Ann Leckie. Hope to see you there!
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,45 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6687c7ff34fe@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;TZID=America/Los_Angeles:20261029T220000
+DTEND;TZID=America/Los_Angeles:20261030T000000
+SUMMARY:Fright NightLife
+LOCATION:
+URL:https://www.calacademy.org/nightlife/fright-nightlife?_gl=1*191qncd*_u
+ p*MQ..*_gs*MQ..&gclid=Cj0KCQjwlsfWBhD4ARIsACL7p1GCMIXE8B1bSLBs5RP-N1VtwKk
+ q3B0_nE4V5UhmLLQDmrYS7fBgm-8aAvtYEALw_wcB&gbraid=0AAAAADq_O41noJuqg-vU6lN
+ j3zLZUv9ZO
+DESCRIPTION:Museum exhibits + Camp & Halloween · Thursday evening\nhttps:
+ //www.calacademy.org/nightlife/fright-nightlife?_gl=1*191qncd*_up*MQ..*_g
+ s*MQ..&gclid=Cj0KCQjwlsfWBhD4ARIsACL7p1GCMIXE8B1bSLBs5RP-N1VtwKkq3B0_nE4V
+ 5UhmLLQDmrYS7fBgm-8aAvtYEALw_wcB&gbraid=0AAAAADq_O41noJuqg-vU6lNj3zLZUv9Z
+ O\n\nPhoto courtesy of the California Academy of Sciences On Thursday eve
+ nings\, the science museum stays open late to host 21+ parties with cockt
+ ails and special programming. This year\, you can start your Halloween ce
+ lebrations a little early with the museum’s Halloween party on October 
+ 29. Partygoers can expect live performances from Peaches Christ and The G
+ houls of Terror Vault on the main stage\, whi
+END:VEVENT
+END:VCALENDAR

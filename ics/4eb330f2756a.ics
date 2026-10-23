@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4eb330f2756a@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;TZID=America/Los_Angeles:20261025T103000
+DTEND;TZID=America/Los_Angeles:20261025T140000
+SUMMARY:“Bharat Baseball” Inaugural Game of Rising Indian/South Asian 
+ Players (Oakland)
+LOCATION:Raimondi Park\, Oakland Ballers Stadium\, 1800 Wood St\, Oakland\
+ , CA 94607\, Oakland
+URL:https://sf.funcheap.com/bharat-baseball-inaugural-game-rising-indianso
+ uth-asian-players-oakland/
+DESCRIPTION:Theatre + Museum exhibits · Oakland\nhttps://sf.funcheap.com/
+ bharat-baseball-inaugural-game-rising-indiansouth-asian-players-oakland/\
+ n\nBharat Baseball hosts its inaugural free exhibition game at Raimondi P
+ ark\, home of the Oakland Ballers. The event features Indian-heritage and
+  rising South Asian baseball players and focuses on building representati
+ on for Indian baseball on the international stage. Doors open at 10:30 AM
+ \, with first ...
+END:VEVENT
+END:VCALENDAR

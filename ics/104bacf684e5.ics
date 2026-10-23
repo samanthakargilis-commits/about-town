@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:104bacf684e5@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;TZID=America/Los_Angeles:20261114T160000
+DTEND;TZID=America/Los_Angeles:20261114T200000
+SUMMARY:“The Bay Made Me” Art Show w/ Rappin 4-Tay + Tattoo Specials (
+ Hayward)
+LOCATION:Simms Ink Tattoo Shop\, 21129 Foothill Blvd\, Hayward\, CA\, Hayw
+ ard
+URL:https://sf.funcheap.com/bay-art-show-rappin-4tay-tattoo-specials-haywa
+ rd/
+DESCRIPTION:Art + Dance nights · Hayward\nhttps://sf.funcheap.com/bay-art
+ -show-rappin-4tay-tattoo-specials-hayward/\n\nThe Bay Made Me: Playaz Clu
+ b Edition is a one-night art show at Simms Ink Tattoo Shop in Hayward fea
+ turing artwork by Rappin 4-Tay\, Big Lou\, and 4-Tay’s wife. The event 
+ includes a DJ set by Ground Up Production Cast\, food trucks\, vendors\, 
+ tattoo specials\, ...
+END:VEVENT
+END:VCALENDAR

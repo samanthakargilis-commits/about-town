@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3d3509f5d133@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261126T190000
+DTEND;TZID=America/Los_Angeles:20261126T210000
+SUMMARY:Clement St Comedy
+LOCATION:Neck of the Woods\, 406 Clement St\, San Francisco
+URL:https://www.ticketweb.com/event/clement-st-comedy-neck-of-the-woods-ti
+ ckets/15011263?theme=nwoods&REFID=clientsitewp
+DESCRIPTION:Comedy · Thursday evening\nhttps://www.ticketweb.com/event/cl
+ ement-st-comedy-neck-of-the-woods-tickets/15011263?theme=nwoods&REFID=cli
+ entsitewp\n\nClement St Comedy Every Thursday downstairs @ Neck of the Wo
+ ods 406 Clement St San Francisco\, CA 94118 Doors at 6:45pm\, show at 7pm
+  sharp Read More
+END:VEVENT
+END:VCALENDAR

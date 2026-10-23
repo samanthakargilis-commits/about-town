@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:47344d9d68f7@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261023T200000
+DTEND;TZID=America/Los_Angeles:20261024T020000
+SUMMARY:Substance Fest: TR/ST DJ Set
+LOCATION:Great American Music Hall\, 859 O'Farrell St\, San Francisco\, CA
+ \, San Francisco
+URL:https://ma.to/event/substance-fest-tr-st-dj-set-24-oct-2026
+DESCRIPTION:Dance nights + Weird & unusual\nhttps://ma.to/event/substance-
+ fest-tr-st-dj-set-24-oct-2026\n\nTR/ST performs a special DJ set at Great
+  American Music Hall\, taking the audience on an electronic adventure thr
+ ough dance roots\, original music\, and industrial experiments. The night
+  features a heavy-hitting lineup with live performances from Buzz Kull\, 
+ Kontravoid\, Zanias\, Ghost Cop\, and Aux Animaux\, plus DJ Omar. Part of
+  the Substance Fest series and co-presented by Popscene. Tickets availabl
+ e a
+END:VEVENT
+END:VCALENDAR

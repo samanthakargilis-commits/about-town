@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1c62e0294f50@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261024T140000
+DTEND;TZID=America/Los_Angeles:20261024T180000
+SUMMARY:Figure & Form Class
+LOCATION:A Loft of One’s Own\, 5757 Horton St Emeryville\, Emeryville
+URL:https://partiful.com/e/zHl6y4WjF7Zpj6SPVFPP
+DESCRIPTION:Art · Emeryville\nhttps://partiful.com/e/zHl6y4WjF7Zpj6SPVFPP
+ \n\nTogether\, Hold Me Tender and artist Rena Monet invite you to an afte
+ rnoon of live figure drawing that explores form and figure with intention
+ . Hold Me Tender is built on portraiture\, on the practice of looking clo
+ sely with care. This class turns that practice over to you. Rena will gui
+ de guests through four foundations of the figure drawing: 🌸 Gesture: t
+ he first quick marks\, catching movement befo
+END:VEVENT
+END:VCALENDAR

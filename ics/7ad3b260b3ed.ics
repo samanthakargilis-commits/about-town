@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7ad3b260b3ed@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;TZID=America/Los_Angeles:20261113T180000
+DTEND;TZID=America/Los_Angeles:20261113T220000
+SUMMARY:SF’s Free Filipino Cultural District Mural Reveal + Mini Block P
+ arty (SoMa)
+LOCATION:Jessie West at 5th and Mission\, Jessie West at 5th and Mission\,
+  San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/free-mahallove-mural-unveiling-fashion-show-mi
+ ni-block-party-sf/
+DESCRIPTION:Fairs & festivals + Art\nhttps://sf.funcheap.com/free-mahallov
+ e-mural-unveiling-fashion-show-mini-block-party-sf/\n\nJoin us on Jessie 
+ West Alley for the unveiling of two monumental Mahal/Love murals\, bold n
+ ew works shaped by visions of love and belonging from artists Venazir Mar
+ tinez and Andre Sibayan. Stay for a free mini block party with art activi
+ ties\, a fashion show\, and ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:94c9a115dd05@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;TZID=America/Los_Angeles:20261023T190000
+DTEND;TZID=America/Los_Angeles:20261023T220000
+SUMMARY:Oktoberfest After Dark Rock Night
+LOCATION:Isla Filipino Restaurant\, Pleasant Hill\, San Francisco
+URL:https://ma.to/event/oktoberfest-after-dark-rock-night-2026-10-23
+DESCRIPTION:Cultural festivals + Museum exhibits\nhttps://ma.to/event/okto
+ berfest-after-dark-rock-night-2026-10-23\n\nIsla Filipino Restaurant in P
+ leasant Hill hosts Oktoberfest: After Dark Rock Night on Friday\, October
+  23\, 2026\, starting at 7pm. Cover band BAYLIGHTS\, whose profile names 
+ this night as its next billed date\, performs. Rockstar outfits are encou
+ raged and prizes are offered\, and table reservations are available.
+END:VEVENT
+END:VCALENDAR

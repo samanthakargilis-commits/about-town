@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4f98d0639f31@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261024T103000
+DTEND;TZID=America/Los_Angeles:20261024T173000
+SUMMARY:New Collector Event
+LOCATION:Lost Art Salon\, San Francisco
+URL:https://ma.to/event/new-collector-event-24-oct-2026
+DESCRIPTION:Museum exhibits + Art\nhttps://ma.to/event/new-collector-event
+ -24-oct-2026\n\nLost Art Salon's twice-yearly New Collector Event returns
+  to its San Francisco gallery on Saturday\, October 17 and Saturday\, Oct
+ ober 24. Original 20th-century art is on view\, beautifully framed to mus
+ eum standards and priced with new collectors in mind at $450–$995. Atte
+ ndance is in person from 10:30 to 17:30. It does not have to be a first-e
+ ver purchase or visit. Kids and dogs are welcome. A $50 
+END:VEVENT
+END:VCALENDAR

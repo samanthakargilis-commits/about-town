@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3555c46864d5@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;TZID=America/Los_Angeles:20261107T173000
+DTEND;TZID=America/Los_Angeles:20261107T193000
+SUMMARY:only book club w afters 🫪😝
+LOCATION:Mr. Mahjong's\, 260 Kearny St San Francisco\, San Francisco
+URL:https://partiful.com/e/g4G9hmv08js5YIMrqegy
+DESCRIPTION:⭐ Josh Silver · Reading\nhttps://partiful.com/e/g4G9hmv08js
+ 5YIMrqegy\n\nIG: @aftersbookclubsf read some/however much of fruit fly by
+  Josh silver🌟 + come celebrate the start of winter ❄️!!️🤶🏽
+  expect waitlist movement closer to
+END:VEVENT
+END:VCALENDAR

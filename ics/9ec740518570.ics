@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9ec740518570@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;TZID=America/Los_Angeles:20261106T100000
+DTEND;TZID=America/Los_Angeles:20261106T170000
+SUMMARY:Marin Arts & Crafts Show (San Rafael)
+LOCATION:Marin Center Fairgrounds\, 10 Avenue of the Flags\, San Rafael\, 
+ CA\, San Rafael
+URL:https://sf.funcheap.com/marin-arts-crafts-show-san-rafael/
+DESCRIPTION:Craft + Museum exhibits · A yearly tradition · San Rafael\nh
+ ttps://sf.funcheap.com/marin-arts-crafts-show-san-rafael/\n\nMarin Arts &
+  Crafts Show returns to the Marin Center Exhibit Hall November 6–8\, fi
+ lling the hall with more than 200 exhibits of fine craft\, art and artisa
+ n goods. Arriving just as the holiday season gets underway\, the three-da
+ y market brings together an exciting mix ...
+END:VEVENT
+END:VCALENDAR

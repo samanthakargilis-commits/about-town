@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4982bdad6f26@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Second Fridays Art Walk
+LOCATION:San Rafael\, Fourth Street\, San Rafael\, CA\, San Rafael
+URL:https://sf.funcheap.com/second-fridays-art-walk-san-rafael-157/
+DESCRIPTION:Art · San Rafael\nhttps://sf.funcheap.com/second-fridays-art-
+ walk-san-rafael-157/\n\nDiscover art\, wine\, entertainment\, and more ev
+ ery second Friday of the month on Fourth Street in downtown San Rafael. F
+ rom 5-8 pm (with some venues open later)\, the Second Fridays Art Walk co
+ nnects dozens of venues in downtown San Rafael with the public\, who can 
+ enjoy different ...
+END:VEVENT
+END:VCALENDAR

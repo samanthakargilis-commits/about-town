@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d3f4c8d1a6c2@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;VALUE=DATE:20261108
+DTEND;VALUE=DATE:20261109
+SUMMARY:Contra Costa Vintage Market Sunday (Lafayette)
+LOCATION:Vintage Vida\, 3581 Mount Diablo Blvd Lafayette
+URL:https://sf.funcheap.com/contra-costa-vintage-market-sunday-lafayette-2
+ /
+DESCRIPTION:Estate & sample sales + Concerts\nhttps://sf.funcheap.com/cont
+ ra-costa-vintage-market-sunday-lafayette-2/\n\nFind unique gifts and vint
+ age treasures at the Contra Costa Vintage Market’s holiday edition on N
+ ovember 8th in downtown Lafayette. Browse antiques\, collectibles\, cloth
+ ing\, records\, furniture\, and home decor while enjoying live music and 
+ a vintage photo booth experience. Admission is free\, with free street pa
+ rking. ...
+END:VEVENT
+END:VCALENDAR

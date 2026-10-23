@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:92d5a97c7d24@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261023T180000
+DTEND;TZID=America/Los_Angeles:20261023T200000
+SUMMARY:The Beach: Pumpkin Carve-Off
+LOCATION:782 Columbus Ave\, 782 Columbus Ave San Francisco\, San Francisco
+URL:https://partiful.com/e/YF6tGnUIEjj7NXQBI5mE
+DESCRIPTION:Weird & unusual\nhttps://partiful.com/e/YF6tGnUIEjj7NXQBI5mE\n
+ \n*voting closes OCT 31* *winner chosen Nov 1* Pumpkins\, knives\, braggi
+ ng rights. Come carve at The Beach on Friday\, Oct 23. First 15 RSVPs get
+  a free pumpkin from us. After that\, bring your own. Every pumpkin gets 
+ posted on @thebeachsf\, and Instagram picks the winners: 1st place: $100 
+ gift card to The Beach 2nd place: Free Beach hat 3rd place: Free Beach sh
+ irt Voting closes a week after the contest
+END:VEVENT
+END:VCALENDAR

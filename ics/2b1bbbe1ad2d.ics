@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2b1bbbe1ad2d@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261023T183000
+DTEND;TZID=America/Los_Angeles:20261023T233000
+SUMMARY:Cutting Up The Elephant Last Show
+LOCATION:The Natural\, 358 Brannan St. San Francisco\, CA\, San Francisco
+URL:https://ma.to/event/cutting-up-the-elephant-last-show-23-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/cutting-up-the-elephant-
+ last-show-23-oct-2026\n\nCutting Up The Elephant’s final performance fe
+ atures a stacked 7-band lineup including Checkpoint Charlie\, Sounds Like
+  Sunday (Bay Area debut)\, Any Last Words\, Dance Dave\, Carmen Sixteen\,
+  and Paper Cranes. The night includes special appearances and live screen
+  printing of limited last show merch. All ages welcome.
+END:VEVENT
+END:VCALENDAR

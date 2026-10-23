@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cf3787f8f52f@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261025T070000
+DTEND;TZID=America/Los_Angeles:20261025T090000
+SUMMARY:Lunch\, Tea\, and Chan Meditation
+LOCATION:Universal Chan: International Zen Buddhist Center\, 445 Colusa Av
+ e\, Kensington\, CA Kensington\, Kensington
+URL:https://www.meetup.com/universalchan/events/317083524/
+DESCRIPTION:Meditation + Spirituality · Kensington\nhttps://www.meetup.co
+ m/universalchan/events/317083524/\n\n**Lunch\, Tea\, and Chan Meditation*
+ * Join us for Chan meditation\, gongfu teas\, and a simple lunch at Unive
+ rsal Chan Center. Everyone is welcome. **Time:** 7am–12pm (Please arriv
+ e by 7am and do ***not*** be late!) **Place:** Universal Chan Center (Add
+ ress: 445 Colusa Ave.\, Kensington\, CA 94707) **Teacher:** Chan Monk Dax
+ ing **Registration:** $10 (helps cover the cost of tea and food). Donatio
+ ns are 
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dc3a776cf55e@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;TZID=America/Los_Angeles:20261029T190000
+DTEND;TZID=America/Los_Angeles:20261029T210000
+SUMMARY:Fresh Start Mixer for Divorced & Separated
+LOCATION:111 Minna Gallery and Event Space\, 111 Minna St\, San Francisco\
+ , CA 94105\, USA\, San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/iwanttodothatsf/events/316785620/
+DESCRIPTION:Craft + Art · Thursday evening\nhttps://www.meetup.com/iwantt
+ odothatsf/events/316785620/\n\nMeet new friends who are Divorced or Separ
+ ated at this fun party! Divorce doesn’t have to be the end of romance o
+ r your social life\, but rather can be a new beginning. Adults of all age
+ s welcome. Dress to impress. Hosted by Rich Gosse\, co-author of *The Div
+ orce Book*. **[DISCOUNT TICKETS](https://www.eventbrite.com/e/fresh-start
+ -social-for-divorced-or-separated-tickets-2002479534192?aff=oddtdtcrea
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ed7dc2c810cb@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261023T190000
+DTEND;TZID=America/Los_Angeles:20261023T210000
+SUMMARY:FJORD
+LOCATION:Alamo Drafthouse New Mission\, 2550 Mission St\, San Francisco\, 
+ CA 94110\, San Francisco
+URL:https://ma.to/event/fjord-2026-10-23-3
+DESCRIPTION:New in your area\nhttps://ma.to/event/fjord-2026-10-23-3\n\nRe
+ nate Reinsve and Sebastian Stan star in the Palme d'Or-winning film FJORD
+ \, exploring abuse\, faith\, and family. Playing at Alamo Drafthouse New 
+ Mission on its opening day\, October 23. Tickets are on sale now.
+END:VEVENT
+END:VCALENDAR

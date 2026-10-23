@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4d565031a204@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;TZID=America/Los_Angeles:20261023T180000
+DTEND;TZID=America/Los_Angeles:20261023T210000
+SUMMARY:The City as Mother: Opening
+LOCATION:934 Brannan Street\, 934 Brannan Street\, San Francisco\, San Fra
+ ncisco
+URL:https://ma.to/event/the-city-as-mother-opening-oct-23-2026
+DESCRIPTION:Cultural festivals + Spirituality\nhttps://ma.to/event/the-cit
+ y-as-mother-opening-oct-23-2026\n\nOpening reception for 'The City as Mot
+ her'\, an interactive street altar installation by Ancestral Dreams Co. a
+ s part of the SOMArts Día de los Muertos show. 6-9pm at 934 Brannan Stre
+ et\, San Francisco.
+END:VEVENT
+END:VCALENDAR

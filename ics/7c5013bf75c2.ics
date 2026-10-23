@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7c5013bf75c2@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261117T181500
+DTEND;TZID=America/Los_Angeles:20261117T201500
+SUMMARY:November Read - Monsters: A Fan's Dilemma by Claire Dederer
+LOCATION:Barnes & Noble\, 11 W Hillsdale Blvd\, San Mateo\, CA San Mateo\,
+  San Mateo
+URL:https://www.meetup.com/meetup-group-ebzcslow/events/317079823/
+DESCRIPTION:Art · San Mateo\nhttps://www.meetup.com/meetup-group-ebzcslow
+ /events/317079823/\n\nJoin us to discuss our November 2026 book\, ***Mons
+ ters: A Fan's Dilemma* by Claire Dederer**. Please note the group attenda
+ nce policy: 1. If you mark yourself as "Going\," show up. Repeated no-sho
+ ws or dropping out at the last minute fills up slots for others. 2. Do no
+ t just show up. You must have a confirmed "Going" status to attend our ev
+ ents. About the book: A NEW YORK TIMES NOTABLE BOOK *Can we
+END:VEVENT
+END:VCALENDAR

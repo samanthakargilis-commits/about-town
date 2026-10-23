@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6a39002688cd@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;TZID=America/Los_Angeles:20260926T110000
+DTEND;TZID=America/Los_Angeles:20260926T130000
+SUMMARY:Sonoma County’s Largest Corn Maze 2026
+LOCATION:5157 Stony Point Rd.\, Santa Rosa\, CA (North Bay) Santa Rosa Pum
+ pkin Patch is a family farm pack
+URL:https://sf.funcheap.com/city-guide/craziest-corn-mazes-bay/
+DESCRIPTION:U-pick farms + Weird & unusual · Featured on Funcheap · Sant
+ a Rosa\, CA (North Bay) Santa Rosa Pumpkin Patch is a family farm pack\nh
+ ttps://sf.funcheap.com/city-guide/craziest-corn-mazes-bay/\n\nSept. 26-Oc
+ t. 31\, 2026 | Mon.-Thurs.: 11 am-7 pm\; Fri.: 11 am-9 pm\; Sat.: 9 am-9 
+ pm\; Sun.: 9 am-8 pm. Halloween closes at 6 pm. The corn maze closes 45 m
+ inutes before the patch. Santa Rosa Pumpkin Patch | 5157 Stony Point Rd.\
+ , Santa Rosa\, CA (North Bay) Santa Rosa Pumpkin Patch is a family farm p
+ acked with fall fun\, including Sonoma County’s largest corn maze \, wi
+ th short and long routes for diffe
+END:VEVENT
+END:VCALENDAR

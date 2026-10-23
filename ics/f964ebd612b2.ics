@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f964ebd612b2@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261110T183000
+DTEND;TZID=America/Los_Angeles:20261110T203000
+SUMMARY:Peninsula Touch Grass Club
+LOCATION:Little Green A Plant Bar\, 1101 Main St Redwood City\, Redwood Ci
+ ty
+URL:https://partiful.com/e/9qKPeNVUJH7MwrMLIiuC
+DESCRIPTION:Redwood City\nhttps://partiful.com/e/9qKPeNVUJH7MwrMLIiuC\n\nW
+ ho needs a bar when you have plants\, trivia\, and people who are just a 
+ little too confident about their random knowledge? Join Peninsula Touch G
+ rass Club and Little Green a Plant Bar for a night of trivia\, friendly c
+ ompetition and questionable facts. We're bringing people together without
+  the bar scene. No overpriced cocktails\, no shouting over bar music\, an
+ d absolutely no pressure to know the ca
+END:VEVENT
+END:VCALENDAR

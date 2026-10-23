@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8aa049f5e55a@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:Handel’s The Power of Music (Stanford)
+LOCATION:Bing Concert Hall\, 327 Lasuen Street\, Stanford\, CA\, Stanford
+URL:https://sf.funcheap.com/handels-power-music-stanford/
+DESCRIPTION:Concerts · Stanford\nhttps://sf.funcheap.com/handels-power-mu
+ sic-stanford/\n\nCan Music Change the Course of History? Three centuries 
+ ago\, George Frideric Handel explored a bold idea: that music can change 
+ how people think\, feel\, and act. Music Director Peter Whelan and Philha
+ rmonia Baroque Orchestra & Chorale open the 2026/27 season with Handel’
+ s The Power of Music\, ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1796e672f4e9@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261119T183000
+DTEND;TZID=America/Los_Angeles:20261119T203000
+SUMMARY:Book Club: "The Nightingale" by Kristin Hannah
+LOCATION:Burlingame\, Burlingame
+URL:https://www.meetup.com/burlingame-san-mateo-20s-30s-40s/events/3169546
+ 40/
+DESCRIPTION:Reading · Thursday evening · Burlingame\nhttps://www.meetup.
+ com/burlingame-san-mateo-20s-30s-40s/events/316954640/\n\n"The Nightingal
+ e" is being adapted into a movie starring Dakota Fanning and Elle Fanning
+  - let's read and discuss the historical fiction novel by Kristin Hannah 
+ before the movie comes out! There are several copies available at the lib
+ rary so it should be easy to get. The location is TBD but will be in the 
+ Burlingame/San Mateo/Foster City area. We'll decide after the October mee
+ ting! Everyone will 
+END:VEVENT
+END:VCALENDAR

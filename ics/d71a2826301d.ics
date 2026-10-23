@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d71a2826301d@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261028T190000
+DTEND;TZID=America/Los_Angeles:20261028T210000
+SUMMARY:Astronomy on Tap San Francisco
+LOCATION:Public Works\, 161 Erie St.\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/astronomy-tap-san-francisco-3/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/astronomy-tap-san-fr
+ ancisco-3/\n\nLocal astronomers talking about stars\, planets\, and the u
+ niverse at your neighborhood bar. No PhD required. NOTE: We are at Public
+  Works this month\, with more space for everyone! The event is still free
+ \, but the venue will ask you to fulfill the 1 drink minimum ...
+END:VEVENT
+END:VCALENDAR

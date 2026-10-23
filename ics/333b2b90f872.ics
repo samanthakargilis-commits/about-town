@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:333b2b90f872@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261023T190000
+DTEND;TZID=America/Los_Angeles:20261023T220000
+SUMMARY:Redwood Room After Dark Jazz Night
+LOCATION:Redwood Room at The Clift Royal Sonesta\, San Francisco
+URL:https://ma.to/event/redwood-room-after-dark-jazz-2026-10-23
+DESCRIPTION:Museum exhibits\nhttps://ma.to/event/redwood-room-after-dark-j
+ azz-2026-10-23\n\nA Redwood Room After Dark Jazz Series night at the Redw
+ ood Room in The Clift Royal Sonesta\, San Francisco. No performer is list
+ ed for this date\, and the series continues through October with live jaz
+ z and handcrafted cocktails on selected Thursday and Friday evenings. Tab
+ le reservations are available.
+END:VEVENT
+END:VCALENDAR

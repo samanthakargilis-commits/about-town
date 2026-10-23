@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c60ddababa9c@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261025T110000
+DTEND;TZID=America/Los_Angeles:20261025T170000
+SUMMARY:World of Dumplings
+LOCATION:Ferry Plaza\, 1 Ferry Building\, San Francisco\, CA 94111\, San F
+ rancisco
+URL:https://ma.to/event/world-of-dumplings-25-oct-2026
+DESCRIPTION:Fairs & festivals\nhttps://ma.to/event/world-of-dumplings-25-o
+ ct-2026\n\nWorld of Dumplings is a celebration of culture and diversity t
+ hrough food. The festival features a global selection including wontons f
+ rom China\, gyozas from Japan\, momos from Nepal\, manti from Turkey\, ra
+ violis from Italy\, and empanadas from Spain. The day includes restaurant
+  vendors\, cooking demos\, cultural performances\, and family activities.
+  Entry is free\, with registration available on the pro
+END:VEVENT
+END:VCALENDAR

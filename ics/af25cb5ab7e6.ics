@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:af25cb5ab7e6@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261028T170000
+DTEND;TZID=America/Los_Angeles:20261028T183000
+SUMMARY:SF’s “Henry Street” Fall Neighborhood Mini-Porch Party in Du
+ boce Triangle (2026)
+LOCATION:Porch-side\, 166 Henry Street\, 166 Henry Street\, San Francisco\
+ , CA\, San Francisco
+URL:https://sf.funcheap.com/sfs-henry-street-fall-neighborhood-miniporch-p
+ arty-duboce-triangle-2026/
+DESCRIPTION:Discourse\nhttps://sf.funcheap.com/sfs-henry-street-fall-neigh
+ borhood-miniporch-party-duboce-triangle-2026/\n\nFall Porch Party is a ne
+ ighborhood sidewalk gathering at 166 Henry Street in San Francisco. Hoste
+ d by Mike and April\, the event invites neighbors to share fall drinks\, 
+ treats\, neighborhood lore\, and conversation. Children\, friends\, neigh
+ bors\, and pets are welcome\, and attendees may bring a ...
+END:VEVENT
+END:VCALENDAR

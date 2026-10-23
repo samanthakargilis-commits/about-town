@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:110da18f07ea@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:Terror Vault’s “Slashed: Return to Hellville” in SF’s Old 
+ 1874 Mint
+LOCATION:88 Fifth St.
+URL:https://www.terrorvault.com/
+DESCRIPTION:Camp & Halloween + Theatre · Featured on Funcheap\nhttps://ww
+ w.terrorvault.com/\n\nSan Francisco | 88 Fifth St. | Oct. 1 – Nov. 1\, 
+ 2026 | Tickets start at $60 Exclusive Funcheap Discount – $10 off with 
+ w/ exclusive secret promo code FUNCHEAP San Francisco’s premiere haunte
+ d attraction returns to the historic 1874 San Francisco Mint with “SLAS
+ HED: Return to Hellville\,” an immersive horror experience from Peaches
+  Christ that drops you into a living 1980s slasher movie. Explore thr
+END:VEVENT
+END:VCALENDAR

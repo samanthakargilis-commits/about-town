@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:60c4c0e67db2@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;TZID=America/Los_Angeles:20261023T100000
+DTEND;TZID=America/Los_Angeles:20261023T180000
+SUMMARY:Flannel & Foliage
+LOCATION:Downtown Danville\, Danville
+URL:https://ma.to/event/flannel-foliage-gilmore-girls-festival-23-oct-2026
+DESCRIPTION:Big Bay Area traditions + Fairs & festivals · Danville\nhttps
+ ://ma.to/event/flannel-foliage-gilmore-girls-festival-23-oct-2026\n\nFlan
+ nel & Foliage is an unofficial Gilmore Girls fan festival taking over dow
+ ntown Danville. The event features appearances from seven cast members in
+ cluding Scott Patterson (Luke)\, Kelly Bishop (Emily)\, Sean Gunn (Kirk)\
+ , and Emily Kuroda (Mrs. Kim). Expect a weekend of cast Q&As\, photo and 
+ autograph opportunities\, trivia\, screenings\, live music\, and an autum
+ n-themed artisan market. While free gen
+END:VEVENT
+END:VCALENDAR

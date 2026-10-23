@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1378d547cebe@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261106T180000
+DTEND;TZID=America/Los_Angeles:20261106T210000
+SUMMARY:Visioning the Future: A Climate Action Collage Soirée
+LOCATION:The Faight Collective\, The Faight Collective\, 473A Haight St\, 
+ San Francisco\, CA 94117\, USA\, San Francisco
+URL:https://luma.com/u9l1w54q
+DESCRIPTION:Craft + Art\nhttps://luma.com/u9l1w54q\n\nVisioning the Future
+ : A Climate Action Collage Party to make friends\, eat dinner\, and reima
+ gine San Francisco It’s 2050\, and San Francisco is thriving. Our energ
+ y is abundant\, reliable\, and clean. Our green spaces are protected. We
+ ’ve built affordable housing and increased our transit density to accom
+ modate our growing city. Writers\, activists\, and working class San Fran
+ ciscans are filling thousan
+END:VEVENT
+END:VCALENDAR

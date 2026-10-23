@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d35295d64192@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:Gregangelo Museum’s “House of Weird” at 1886 Victorian Haas-
+ Lilienthal
+LOCATION:San Francisco
+URL:https://sf.funcheap.com/city-guide/bay-area-haunted-houses/
+DESCRIPTION:Weird & unusual + Camp & Halloween · Featured on Funcheap\nht
+ tps://sf.funcheap.com/city-guide/bay-area-haunted-houses/\n\nSan Francisc
+ o | Haas-Lilienthal House\, 2007 Franklin St. | Oct. 16 – 31\, 2026 (se
+ lect dates) | Tickets start at $66 The Gregangelo Museum and SF Heritage 
+ transform a historic Victorian mansion into an immersive Halloween experi
+ ence filled with eerie rooms\, strange characters\, hidden chambers\, and
+  supernatural encounters. Begin with magical elixirs in the ballroom befo
+ re exploring the mansion’s won
+END:VEVENT
+END:VCALENDAR

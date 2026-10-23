@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:503e22905507@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;TZID=America/Los_Angeles:20261025T100000
+DTEND;TZID=America/Los_Angeles:20261025T170000
+SUMMARY:Downtown Burlingam’s Free “Fall Fest” Block Party (2026)
+LOCATION:Downtown Burlingame\, Lorton Ave and Howard Ave.\, Burlingame\, C
+ A\, Burlingame
+URL:https://sf.funcheap.com/downtown-burlingams-free-fall-fest-block-party
+ -2026/
+DESCRIPTION:Fairs & festivals + Camp & Halloween · Burlingame\nhttps://sf
+ .funcheap.com/downtown-burlingams-free-fall-fest-block-party-2026/\n\nDow
+ ntown Burlingame’s Fall Fest takes place on Howard Avenue with family a
+ ctivities\, a Kids Zone\, a costume contest\, and a community-stage sched
+ ule. Performances include Pied Piper Players\, Jack Paradise\, a Burlinga
+ me High School preview of “Little Shop of Horrors\,” Indian dance and
+  music\, hula and ...
+END:VEVENT
+END:VCALENDAR

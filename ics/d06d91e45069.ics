@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d06d91e45069@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;TZID=America/Los_Angeles:20261106T170000
+DTEND;TZID=America/Los_Angeles:20261106T200000
+SUMMARY:Free “Ocean Beach” Photo Exhibit: 24 Bay Area Photographers
+LOCATION:Harvey Milk Photography Center\, 50 Scott Street\, San Francisco\
+ , CA\, San Francisco
+URL:https://sf.funcheap.com/free-ocean-beach-photo-exhibit-24-bay-area-pho
+ tographers-sf/
+DESCRIPTION:Museum exhibits + Art\nhttps://sf.funcheap.com/free-ocean-beac
+ h-photo-exhibit-24-bay-area-photographers-sf/\n\nHeavy Water Collective P
+ resents: Ocean Beach brings together 24 photographers who turn their lens
+ es toward the Pacific\, finding pockets of magic amidst a vast liquid fie
+ ld of chaos. Some of these works play with the juxtaposition of ocean wil
+ derness and concrete cityscapes\, framing surfers speeding down ...
+END:VEVENT
+END:VCALENDAR

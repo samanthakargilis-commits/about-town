@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:398e7b16c2fd@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Sausalito Art & Harbor Days
+LOCATION:Ferry Landing\, 1 Tracy Way Sausalito\, CA 94965
+URL:https://sf.funcheap.com/sausalito-art-harbor-days-7/
+DESCRIPTION:Art + Camp & Halloween\nhttps://sf.funcheap.com/sausalito-art-
+ harbor-days-7/\n\nSausalito Art & Harbor Days Our October edition lands a
+  week before Halloween\, so the music has a spooky streak this month. Jug
+ glers wander the waterfront\, ferries pull in from the city\, and more th
+ an 60 vendors set up along the Ferry Landing. From noon to 3\, ...
+END:VEVENT
+END:VCALENDAR

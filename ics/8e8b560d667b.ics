@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8e8b560d667b@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261027T190000
+DTEND;TZID=America/Los_Angeles:20261027T213000
+SUMMARY:Bay Area Biosecurity Lightning Talks 03
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/s1ltny2j
+DESCRIPTION:Discourse\nhttps://luma.com/s1ltny2j\n\nWe're hosting a meetup
+  for people working on biosecurity in the Bay Area. Think: pandemic preve
+ ntion technology\, evaluating AI for biorisks\, better KYC for synthetic 
+ DNA. Schedule: 7:00 - 7:30 Meet and mingle 7:30 - 8:30 Lightning talks + 
+ Q&A 8:30 - 9:30 Snacks and discussions Featured lightning talks: Avery No
+ onan\, MTS @ Radical Numerics Jonas Sandbrink\, CEO @ BioTrust Far-UVC: w
+ hat it is and why
+END:VEVENT
+END:VCALENDAR

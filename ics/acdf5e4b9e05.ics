@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:acdf5e4b9e05@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261121T110000
+DTEND;TZID=America/Los_Angeles:20261121T150000
+SUMMARY:Photos with Santa
+LOCATION:The Presidio\, San Francisco
+URL:https://presidio.gov/explore/events/photos-with-santa/
+DESCRIPTION:New in your area\nhttps://presidio.gov/explore/events/photos-w
+ ith-santa/\n\nGolden Gate Lab Rescue will be hosting Santa Photos. The ph
+ otos will be taken by Mark Rodgers. $35 donation for 3 high-resolution ph
+ otos.
+END:VEVENT
+END:VCALENDAR

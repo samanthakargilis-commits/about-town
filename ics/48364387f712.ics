@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:48364387f712@bay-events
+DTSTAMP:20261023T175956Z
+DTSTART;TZID=America/Los_Angeles:20261110T193000
+DTEND;TZID=America/Los_Angeles:20261110T213000
+SUMMARY:The Tallest Man on Earth:: Palace of Fine Arts:: San Francisco:: 1
+ 1/10
+LOCATION:Palace of Fine Arts\, 3301 Lyon Street\, San Francisco\, CA 94123
+  San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/the-tallest-man-on-earth-palace-of-fine-a
+ rts-san-francisco-1110-tickets-1990367516822
+DESCRIPTION:New in your area\nhttps://www.eventbrite.com/e/the-tallest-man
+ -on-earth-palace-of-fine-arts-san-francisco-1110-tickets-1990367516822\n\
+ nThe Tallest Man on Earth comes to the historic Palace of Fine Arts in Sa
+ n Francisco.
+END:VEVENT
+END:VCALENDAR

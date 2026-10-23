@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ae181c4e88ed@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;TZID=America/Los_Angeles:20261025T100000
+DTEND;TZID=America/Los_Angeles:20261025T170000
+SUMMARY:SFMOMA’s “Free Family Day” Free Museum Day (2026)
+LOCATION:SFMOMA\, 151 Third Street\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/sfmomas-free-family-museum-day/
+DESCRIPTION:Museum exhibits + Art · A yearly tradition\nhttps://sf.funche
+ ap.com/sfmomas-free-family-museum-day/\n\nThe San Francisco Museum of Mod
+ ern Art (SFMOMA) welcomes families and inter-generational audiences to th
+ e museum for its Free Family Day on October 25\, 2026. Enjoy a day of art
+  and family fun at SFMOMA! These special days include art-making activiti
+ es for the whole family in our ...
+END:VEVENT
+END:VCALENDAR

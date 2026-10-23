@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5f49f3aa85b5@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261024T080000
+DTEND;TZID=America/Los_Angeles:20261024T150000
+SUMMARY:Women’s Recruitment Workshop
+LOCATION:SFPD Recruitment Unit\, San Francisco
+URL:https://ma.to/event/womens-recruitment-workshop-24-oct-2026
+DESCRIPTION:Discourse\nhttps://ma.to/event/womens-recruitment-workshop-24-
+ oct-2026\n\nInterested in a career with SFPD? This workshop is designed t
+ o help you navigate the hiring process. Expect a Q&A with women officers 
+ across various ranks\, hands-on practice for the Physical Ability Test (P
+ AT)\, and prep for the oral interview. If you still need the PELLETB writ
+ ten test\, you can complete it here. Open to all applicants. Registration
+  information on the profile.
+END:VEVENT
+END:VCALENDAR

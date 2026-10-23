@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e87e2467435d@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261112T150000
+DTEND;TZID=America/Los_Angeles:20261112T163000
+SUMMARY:Fireside Chat with Tanay Kothari\, Wispr Flow
+LOCATION:San Francisco\, California\, San Francisco
+URL:https://luma.com/tanay-kothari-spc
+DESCRIPTION:Theatre\nhttps://luma.com/tanay-kothari-spc\n\nSouth Park Comm
+ ons is excited to host Tanay Kothari\, co-founder & CEO of Wispr (and SPC
+  alum) for a fireside chat. Event Details 3:00pm: Doors Open 3:30-4:30pm:
+  Fireside Chat Tanay Kothari is the co-founder and CEO of Wispr\, the AI-
+ powered voice productivity tool. A four-time founder\, he launched Feathe
+ rX\, an AI personalization startup for online stores\, while still in col
+ lege. After it was acquir
+END:VEVENT
+END:VCALENDAR

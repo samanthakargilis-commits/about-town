@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:60d2487dd18d@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;TZID=America/Los_Angeles:20261024T200000
+DTEND;TZID=America/Los_Angeles:20261025T010000
+SUMMARY:Hazbin Hell-Tel
+LOCATION:DNA Lounge\, 375 11th St\, San Francisco
+URL:https://ma.to/event/hazbin-hell-tel-24-oct-2026
+DESCRIPTION:Gay / queer + Camp & Halloween\nhttps://ma.to/event/hazbin-hel
+ l-tel-24-oct-2026\n\nSinners rejoice at this Hazbin Hotel and Helluva Bos
+ s themed variety experience. Inspired by the creations of Vivienne Medran
+ o\, the night features a mix of cosplay\, burlesque\, and drag performanc
+ es. Part of the proceeds will go to the Lilith Fund\, providing financial
+  assistance and emotional support while building community spaces for peo
+ ple who need abortions.
+END:VEVENT
+END:VCALENDAR

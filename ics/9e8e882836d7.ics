@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9e8e882836d7@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261024T110000
+DTEND;TZID=America/Los_Angeles:20261024T140000
+SUMMARY:Diaspora Spice Co. Cookbook Picnic
+LOCATION:Marx Event Meadow\, 906 John F Kennedy Drive\, San Francisco\, CA
+  94121 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/diaspora-spice-co-cookbook-picnic-tickets
+ -2002420008148
+DESCRIPTION:New in your area\nhttps://www.eventbrite.com/e/diaspora-spice-
+ co-cookbook-picnic-tickets-2002420008148\n\nThis October\, we’re gather
+ ing at Marx Meadows for a dreamy little feast inspired by The Diaspora Sp
+ ice Co. Cookbook ️!
+END:VEVENT
+END:VCALENDAR

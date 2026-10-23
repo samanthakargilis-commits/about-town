@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f736a86fb910@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261024T160000
+DTEND;TZID=America/Los_Angeles:20261024T180000
+SUMMARY:United Nations Day Ranger Tour
+LOCATION:Muir Woods\, San Francisco
+URL:https://ma.to/event/united-nations-day-ranger-tour-2026-10-24
+DESCRIPTION:Meditation\nhttps://ma.to/event/united-nations-day-ranger-tour
+ -2026-10-24\n\nRangers lead a contemplative walk through Muir Woods on Un
+ ited Nations Day\, gathering at the Entry Archway. The walk reflects on e
+ fforts to add a designated quiet area to the woods\, bringing peace and q
+ uiet to Cathedral Grove\, on the history shared by Muir Woods and the Uni
+ ted Nations — the forest hosted an early gathering of the UN at its fou
+ nding — and on the power of peace in everyday lives. Un
+END:VEVENT
+END:VCALENDAR

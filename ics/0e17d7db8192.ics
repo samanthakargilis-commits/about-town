@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0e17d7db8192@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261024T200000
+DTEND;TZID=America/Los_Angeles:20261025T020000
+SUMMARY:IE Halloween Mega Social
+LOCATION:550 Barneveld Ave\, 550 Barneveld Avenue\, San Francisco\, CA 941
+ 24 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/ie-halloween-mega-social-tickets-19943320
+ 70910
+DESCRIPTION:Camp & Halloween\nhttps://www.eventbrite.com/e/ie-halloween-me
+ ga-social-tickets-1994332070910\n\nJoin Inessence Dance Co. as we celebra
+ te 14 amazing years with a MEGA Halloween Social you won't want to miss!
+END:VEVENT
+END:VCALENDAR

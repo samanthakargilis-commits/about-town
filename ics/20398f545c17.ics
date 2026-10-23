@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:20398f545c17@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:“Jisoo : Click” Official SF Merch Pop-Up at Serramonte (Daly C
+ ity)
+LOCATION:JAGALCHI at Serramonte Center\, 63 Serramonte Center\, Daly City\
+ , CA 94015\, Daly City
+URL:https://sf.funcheap.com/jisoo-click-official-sf-merch-popup-serramonte
+ -daly-city/
+DESCRIPTION:Daly City\nhttps://sf.funcheap.com/jisoo-click-official-sf-mer
+ ch-popup-serramonte-daly-city/\n\nJISOO : CLICK is coming to the San Fran
+ cisco Bay Area with a limited-time pop-up store at JAGALCHI in Daly City.
+  Running from October 24 through November 1\, the pop-up will feature off
+ icial JISOO : CLICK merchandise\, special purchase benefits and on-site f
+ an activities for Bay ...
+END:VEVENT
+END:VCALENDAR

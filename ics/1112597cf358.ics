@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1112597cf358@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261028T190000
+DTEND;TZID=America/Los_Angeles:20261028T200000
+SUMMARY:ANN LIANG: TO DREAM IN DARKNESS at Books Inc. Mountain View
+LOCATION:Books Inc.\, 317 Castro Street\, Mountain View\, CA 94041 Mountai
+ n View\, Mountain View
+URL:https://www.eventbrite.com/e/ann-liang-to-dream-in-darkness-at-books-i
+ nc-mountain-view-tickets-1998918332542
+DESCRIPTION:Reading · Your reading tastes · Mountain View\nhttps://www.e
+ ventbrite.com/e/ann-liang-to-dream-in-darkness-at-books-inc-mountain-view
+ -tickets-1998918332542\n\nJoin bestselling author Ann Liang at Books Inc.
+  Mountain View for the launch party of her new exhilarating romantasy To 
+ Dream in Darkness!
+END:VEVENT
+END:VCALENDAR

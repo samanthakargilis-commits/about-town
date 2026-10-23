@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0f1bb2d117bd@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;TZID=America/Los_Angeles:20261114T180000
+DTEND;TZID=America/Los_Angeles:20261114T210000
+SUMMARY:Free 2026 Art Week Opening: Kinetic Sculpture Show “Abiogenesis
+ ” at SF’s Heron Arts
+LOCATION:Heron Arts\, 7 Heron St\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/free-2026-art-week-opening-kinetic-sculpture-s
+ how-abiogenesis-sfs-heron-arts/
+DESCRIPTION:Art + Musical theatre\nhttps://sf.funcheap.com/free-2026-art-w
+ eek-opening-kinetic-sculpture-show-abiogenesis-sfs-heron-arts/\n\nHeron A
+ rts is pleased to announce Abiogenesis\, a duo exhibition featuring Phili
+ p Beesley and Casey Curran. The opening reception for Abiogenesis is Satu
+ rday\, November 14th\, 2026 from 6-9pm. It is free and open to the public
+  and will be part of San Francisco Art Week. ...
+END:VEVENT
+END:VCALENDAR

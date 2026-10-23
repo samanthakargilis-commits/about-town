@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f49e83123107@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261023T110000
+DTEND;TZID=America/Los_Angeles:20261023T180000
+SUMMARY:TAPE UP: The Members Show
+LOCATION:SF Camerawork\, Fort Mason\, San Francisco
+URL:https://ma.to/event/tape-up-the-members-show-2026-10-23
+DESCRIPTION:Museum exhibits + Art\nhttps://ma.to/event/tape-up-the-members
+ -show-2026-10-23\n\nTAPE UP: The Members Show is a group exhibition of ph
+ otography by SF Camerawork members\, on view at SF Camerawork at Fort Mas
+ on Wednesday through Sunday\, 11 AM to 6 PM\, through October 25. The exh
+ ibition spotlights artists Adam Thorman\, Shane Hallinan\, Beatrice Thorn
+ ton\, QT Luong and Kyle Smith\, whose original idea inspired TAPE UP. Ins
+ tallation photographs by Alex Ramos.
+END:VEVENT
+END:VCALENDAR

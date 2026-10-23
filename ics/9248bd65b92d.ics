@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9248bd65b92d@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:Mutt Strut 2026
+LOCATION:Masonic Homes\, 34400 Mission Blvd\, Union City\, Union City
+URL:https://sf.funcheap.com/mutt-strut-2026/
+DESCRIPTION:A yearly tradition · Union City\nhttps://sf.funcheap.com/mutt
+ -strut-2026/\n\nWalk. Wag. Support Local Students. Join the New Haven Sch
+ ools Foundation for the annual Mutt Strut on Saturday\, October 24\, 2026
+  at the Masonic Home in Union City — a fun-filled community event for d
+ og lovers\, families\, students\, and supporters of education. Bring your
+  four-legged friends and ...
+END:VEVENT
+END:VCALENDAR

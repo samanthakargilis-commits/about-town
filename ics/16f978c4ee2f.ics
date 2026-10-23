@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:16f978c4ee2f@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;TZID=America/Los_Angeles:20261025T100000
+DTEND;TZID=America/Los_Angeles:20261025T210000
+SUMMARY:“The Great Elephant Migration” 27 Elephant Sculptures Take Ove
+ r Livermore
+LOCATION:Stockmen’s Park\, N. Livermore Avenue and Railroad Avenue\, Liv
+ ermore\, Livermore
+URL:https://sf.funcheap.com/the-great-elephant-migration-27-elephant-sculp
+ tures-take-over-livermor-oct-10-dec-6/
+DESCRIPTION:Spirituality + Art · Livermore\nhttps://sf.funcheap.com/the-g
+ reat-elephant-migration-27-elephant-sculptures-take-over-livermor-oct-10-
+ dec-6/\n\nThe Great Elephant Migration: A Family Gathering opens in Downt
+ own Livermore with a welcome and blessing ceremony at Stockmen’s Park\,
+  including a cultural dance performance and custom textile artwork. The i
+ nstallation features 30 life-size handcrafted elephant sculptures by Indi
+ genous artisans at Bankhead Plaza and Stockmen’s ...
+END:VEVENT
+END:VCALENDAR

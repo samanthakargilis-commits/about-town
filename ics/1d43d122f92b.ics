@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1d43d122f92b@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;VALUE=DATE:20261024
+DTEND;VALUE=DATE:20261025
+SUMMARY:5th Annual Kelly Brush Ride: Bay Area
+LOCATION:Depot Plaza\, Mill Valley Ca\, Mill Valley
+URL:https://sf.funcheap.com/5th-annual-kelly-brush-ride-bay-area/
+DESCRIPTION:A yearly tradition\nhttps://sf.funcheap.com/5th-annual-kelly-b
+ rush-ride-bay-area/\n\noin us for a fun day cycling the picturesque Marin
+  County on Saturday\, October 24! The 5th Annual Kelly Brush Ride: Bay Ar
+ ea is an incredible fundraising event that supports the Kelly Brush Found
+ ation’s mission to inspire and empower people with spinal cord injuries
+  to ...
+END:VEVENT
+END:VCALENDAR

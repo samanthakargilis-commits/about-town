@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4526b6212892@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261023T203000
+DTEND;TZID=America/Los_Angeles:20261023T223000
+SUMMARY:Playlist Storytellers at Litquake
+LOCATION:The Lost Church SF\, San Francisco
+URL:https://ma.to/event/playlist-storytellers-24-oct-2026
+DESCRIPTION:Big Bay Area traditions\nhttps://ma.to/event/playlist-storytel
+ lers-24-oct-2026\n\nPlaylist Storytellers comes to San Francisco for the 
+ first time as part of Litquake. Four local authors — Presto Vangani\, T
+ omas Moniz\, Laleh Khadivi\, and Courtney Desiree Morris — each tell a 
+ personal story tied to a song\, and after each story the audience listens
+  to the song together. The songs are kept a surprise\, the stories are cu
+ rated\, and phones are put away during the performance. Doors ope
+END:VEVENT
+END:VCALENDAR

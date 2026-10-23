@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3b55a6d8e551@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;TZID=America/Los_Angeles:20261023T090000
+DTEND;TZID=America/Los_Angeles:20261023T160000
+SUMMARY:Harvest Festival: Original Art + Craft Show (Pleasanton)
+LOCATION:Alameda County Fairgrounds\, Building A\, 4501 Pleasanton Ave.\, 
+ Pleasanton\, CA 94566\, Pleasanton
+URL:https://sf.funcheap.com/harvest-festival-original-art-craft-show-pleas
+ anton/
+DESCRIPTION:Big Bay Area traditions + Craft · A yearly tradition · Pleas
+ anton\nhttps://sf.funcheap.com/harvest-festival-original-art-craft-show-p
+ leasanton/\n\nSHOP. DISCOVER. EXPERIENCE HARVEST! The Harvest Festival® 
+ Original Art & Craft Show is celebrating 54 years of bringing incredible 
+ artists\, makers and shoppers together! Shop an exciting collection of ta
+ lented artists and makers and discover an amazing variety of handcrafted 
+ treasures you simply can’t find anywhere else! ...
+END:VEVENT
+END:VCALENDAR

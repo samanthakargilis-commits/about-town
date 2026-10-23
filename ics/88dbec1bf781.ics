@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:88dbec1bf781@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:Death By Aria: Haunted Halloween Concert w/ Aerial Spectacle (Grac
+ e Cathedral)
+LOCATION:Grace Cathedral\, 1100 California Street. San Francisco\, CA
+URL:https://sf.funcheap.com/death-aria-haunted-halloween-concert-aerial-sp
+ ectacle-grace-cathedral/
+DESCRIPTION:Camp & Halloween + Weird & unusual\nhttps://sf.funcheap.com/de
+ ath-aria-haunted-halloween-concert-aerial-spectacle-grace-cathedral/\n\nT
+ his spooky season\, we are thrilled to invite you to DEATH BY ARIA\, San 
+ Francisco’s legendary Halloween concert\, taking over Grace Cathedral f
+ or the first time! Presented by Taste of Talent\, Red Curtain Addict\, an
+ d Grace Cathedral\, our Halloween tradition returns with extraordinary vo
+ ices\, Aerial spectacle\, ...
+END:VEVENT
+END:VCALENDAR

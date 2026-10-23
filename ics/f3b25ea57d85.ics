@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f3b25ea57d85@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261024T170000
+DTEND;TZID=America/Los_Angeles:20261024T190000
+SUMMARY:Queer ASL Social NOW 4th Sat
+LOCATION:Epicurean Trader\, 2240 Market St\, SAN FRANCISCO\, CA SAN FRANCI
+ SCO\, SAN FRANCISCO
+URL:https://www.meetup.com/queerdeafnightout/events/315682489/
+DESCRIPTION:Gay / queer + Reading\nhttps://www.meetup.com/queerdeafnightou
+ t/events/315682489/\n\nNow 4th Saturdays 5-7pm... SF Deaf LGBTiQ2s+ Socia
+ l... 2 events Deaf hosted - read below. Queer ASL SOCIAL & later Queer DN
+ O @DETOUR 5-7pm ASL Q-Meetup Queer folk & Allied in ASL. all ages\; kid f
+ riendly STUDENTS OF ALL LEVELS WELCOME (later time has restrictions-read 
+ below) NEW LOCATION @Epicurean Trader Coffee shop\, 2240 Market St\, SF C
+ A 94114 in Castro 7-8pm or later?? Q-DNO Deaf hosted. Deaf an
+END:VEVENT
+END:VCALENDAR

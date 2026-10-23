@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4500317fc94f@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261025T160000
+DTEND;TZID=America/Los_Angeles:20261025T180000
+SUMMARY:Sensory Meditation
+LOCATION:SF Dharma Collective\, 2929 24th St\, San Francisco\, CA San Fran
+ cisco\, San Francisco
+URL:https://www.meetup.com/san-francisco-mindfulness-meetup/events/3168612
+ 80/
+DESCRIPTION:Meditation + Singing\nhttps://www.meetup.com/san-francisco-min
+ dfulness-meetup/events/316861280/\n\nIn this group we will be using plant
+ s to invoke our senses of sight\, smell\, touch\, and even taste. Join us
+  for a short but deep mediation practice of connecting with nature throug
+ h this experience! Each week Johnny will bring in different non-toxic pla
+ nts\, such as lavender\, mint\, and wooly lambs ear. Johnny will be perfo
+ rming guided meditations or playing singing bowls while each participant 
+ uses 
+END:VEVENT
+END:VCALENDAR

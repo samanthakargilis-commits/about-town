@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e5d6a1dba9a5@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261023T210000
+DTEND;TZID=America/Los_Angeles:20261024T030000
+SUMMARY:Goldcap: 4-Hour Extended Set
+LOCATION:MadaRae\, 46 Minna St\, San Francisco\, San Francisco
+URL:https://ma.to/event/goldcap-madarae-2026-10-23
+DESCRIPTION:Weird & unusual\nhttps://ma.to/event/goldcap-madarae-2026-10-2
+ 3\n\nGoldcap performs a four-hour extended set of melodic house at MadaRa
+ e\, joined by Milado on hybrid live violin. The extended format is built 
+ as a full arc\, moving from the opening build through the peak hours and 
+ back down. The music runs 9PM to 3AM. The event is 21+\, and table reserv
+ ations are available at (415) 244-4222. Tickets are available through the
+  organiser's link in bio. Presented by SET 
+END:VEVENT
+END:VCALENDAR

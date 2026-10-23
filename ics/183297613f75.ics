@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:183297613f75@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;VALUE=DATE:20261104
+DTEND;VALUE=DATE:20261105
+SUMMARY:SFDanceworks Season 9 Performance
+LOCATION:Z Space Theater\, 450 Florida St.\, San Francisco\, CA\, San Fran
+ cisco
+URL:https://sf.funcheap.com/sfdanceworks-season-9-performance/
+DESCRIPTION:Theatre\nhttps://sf.funcheap.com/sfdanceworks-season-9-perform
+ ance/\n\nSFDanceworks returns to Z Space for Season 9 with a dynamic prog
+ ram celebrating the legacy of modern dance and bold contemporary voices. 
+ Featuring three solos by Merce Cunningham\, world premieres by Jermaine M
+ aurice Spivey and longtime collaborator Brett Conway\, and the return of 
+ Yin’s A ...
+END:VEVENT
+END:VCALENDAR

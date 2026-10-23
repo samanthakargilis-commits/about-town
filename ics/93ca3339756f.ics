@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:93ca3339756f@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:Coit Comedy: Stand Up Comedy & Free Golden Boy Pizza
+LOCATION:SF\, 562 Green Street\, San Francisco\, CA 94133\, San Francisco
+URL:https://sf.funcheap.com/coit-comedy-stand-up-comedy-free-golden-boy-pi
+ zza-sf-86/
+DESCRIPTION:Comedy\nhttps://sf.funcheap.com/coit-comedy-stand-up-comedy-fr
+ ee-golden-boy-pizza-sf-86/\n\nCoit Comedy is a stand-up comedy show every
+  last Thursday of every month in the basement of historic bar Columbus Ca
+ fe in North Beach featuring the best comedians in the bay and free Golden
+  Boy Pizza. Many of the comics you can expect to see ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dd4cc64fd2d1@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261023T190000
+DTEND;TZID=America/Los_Angeles:20261023T210000
+SUMMARY:Terrie Odabi at Meyhouse San Ramon
+LOCATION:Meyhouse San Ramon\, San Ramon
+URL:https://ma.to/event/terrie-odabi-meyhouse-san-ramon-2026-10-23
+DESCRIPTION:Comedy · San Ramon\nhttps://ma.to/event/terrie-odabi-meyhouse
+ -san-ramon-2026-10-23\n\nTerrie Odabi performs live jazz at Meyhouse San 
+ Ramon as part of the October Meyhouse Jazz programme\, which brings jazz\
+ , classical music and comedy to the Palo Alto and San Ramon locations thr
+ oughout the month. The intimate room is set up to keep guests close to th
+ e performance\, with food\, wine and cocktails served through the evening
+ . Tickets for the October performances are available.
+END:VEVENT
+END:VCALENDAR

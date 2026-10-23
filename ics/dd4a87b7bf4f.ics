@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dd4a87b7bf4f@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261023T200000
+DTEND;TZID=America/Los_Angeles:20261023T220000
+SUMMARY:Acsapphire at Sweetwater Music Hall
+LOCATION:Sweetwater Music Hall\, Mill Valley\, Mill Valley
+URL:https://ma.to/event/acsapphire-sweetwater-music-hall-2026-10-23
+DESCRIPTION:Mill Valley\nhttps://ma.to/event/acsapphire-sweetwater-music-h
+ all-2026-10-23\n\nAcsapphire performs an opening set for the Coffis Broth
+ ers at Sweetwater Music Hall in Mill Valley\, California\, on October 23\
+ , 2026.
+END:VEVENT
+END:VCALENDAR

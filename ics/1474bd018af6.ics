@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1474bd018af6@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261111T193000
+DTEND;TZID=America/Los_Angeles:20261111T213000
+SUMMARY:LGBTQ+ Singles Escape Room
+LOCATION:150 Kearny Street\, 150 Kearny St\, San Francisco\, CA 94104\, US
+ A\, San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/together-date-and-friends/events/317069007/
+DESCRIPTION:Gay / queer\nhttps://www.meetup.com/together-date-and-friends/
+ events/317069007/\n\n## Escape Room Adventure in San Francisco!! I am hos
+ ting this exciting **Escape Room** event at The Escape Game San Francisco
+  (Downtown)! Challenge your problem-solving skills and teamwork in this t
+ hrilling in-person experience. I will be doing this escape room in the ev
+ ening. Hopefully people will be able to make it! I know some people have 
+ always wanted to do an Escape Room. There are limited sp
+END:VEVENT
+END:VCALENDAR

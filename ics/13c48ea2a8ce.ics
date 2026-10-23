@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:13c48ea2a8ce@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261024T100000
+DTEND;TZID=America/Los_Angeles:20261024T140000
+SUMMARY:Pumpkin Giveaway & Carving
+LOCATION:Yerba Buena Gardens\, Corner of 4th and Howard St\, San Francisco
+ \, CA 94103\, San Francisco
+URL:https://ma.to/event/pumpkin-giveaway-carving-24-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/pumpkin-giveaway-carving
+ -24-oct-2026\n\nJoin us for our annual pumpkin giveaway at the corner of 
+ 4th and Howard. We're handing out free pumpkins to kids under 12 while su
+ pplies last\, followed by pumpkin carving. Bonus: enjoy free carousel rid
+ es from 10am to 11am. The event is free to attend\, though donations are 
+ suggested.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4a0d372321a2@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261023T200000
+DTEND;TZID=America/Los_Angeles:20261023T220000
+SUMMARY:FlipABeatClub Presents: WAV Forum 4th Fridays at Neck of the Woods
+  SF
+LOCATION:Neck of the Woods\, 406 Clement St\, San Francisco
+URL:https://www.ticketweb.com/event/flipabeatclub-presents-wav-forum-4th-n
+ eck-of-the-woods-tickets/14375924?theme=nwoods&REFID=clientsitewp
+DESCRIPTION:Discourse\nhttps://www.ticketweb.com/event/flipabeatclub-prese
+ nts-wav-forum-4th-neck-of-the-woods-tickets/14375924?theme=nwoods&REFID=c
+ lientsitewp\n\nFlipABeatClub Presents: WAV Forum 4th Fridays at Neck of t
+ he Woods SF This month features: Dibia$e Big Daddy Chop FLXRES Zhana Frid
+ ay August 28th 2026 Read More
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a30de02ee80e@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261024T190000
+DTEND;TZID=America/Los_Angeles:20261024T203000
+SUMMARY:Making Marie Antoinette
+LOCATION:The Roxie Theater\, San Francisco
+URL:https://ma.to/event/making-marie-antoinette-2026-10-24
+DESCRIPTION:Theatre\nhttps://ma.to/event/making-marie-antoinette-2026-10-2
+ 4\n\nEleanor Coppola's posthumous documentary Making Marie Antoinette off
+ ers a never-before-seen look behind the making of Sofia Coppola's Marie A
+ ntoinette. It screens as part of the Roxie's celebration of the film's tw
+ entieth anniversary and its new 4K restoration\, which also screens in th
+ e same programme. Tickets are available from the cinema.
+END:VEVENT
+END:VCALENDAR

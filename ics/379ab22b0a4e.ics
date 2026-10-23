@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:379ab22b0a4e@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;TZID=America/Los_Angeles:20261023T190000
+DTEND;TZID=America/Los_Angeles:20261023T210000
+SUMMARY:Ace Maker Social
+LOCATION:Ace makerspace\, 6050 Lowell St.\, Ste. 214\, Oakland\, CA Oaklan
+ d\, Oakland
+URL:https://www.meetup.com/ace-makerspace/events/316784962/
+DESCRIPTION:Craft + Discourse · Oakland\nhttps://www.meetup.com/ace-maker
+ space/events/316784962/\n\nConnect with other makers in the community at 
+ this ***FREE*** **Monthly Ace Maker Social.** This event is open to the p
+ ublic. **Everyone is invited!** There will be open ended conversation\, k
+ nowledge sharing\, light refreshments and more. These maker socials will 
+ occur monthly and feature special guest presentations\, demos\, or activi
+ ties to foster community engagement and collaboration cross the va
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6344af1485a7@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;TZID=America/Los_Angeles:20261023T213000
+DTEND;TZID=America/Los_Angeles:20261023T233000
+SUMMARY:HAUNTED (WARE)HOUSE 2: 2 Haunted 2 Warehouse
+LOCATION:Paname SF\, 523 Broadway San Francisco\, San Francisco
+URL:https://partiful.com/e/uz8mkoaqR1PRDWK6YARG
+DESCRIPTION:Weird & unusual + Camp & Halloween\nhttps://partiful.com/e/uz8
+ mkoaqR1PRDWK6YARG\n\nHALLOWEEKEND WARMUP (costumes encouraged) In the spo
+ oky\, sweaty\, hallowed halls of Ibiza\, two club rats were born. Forged 
+ in the rugged terrain of North Beach\, they evolved into something more\;
+  warehouse party loving\, dance-till-sunrise\, house music fiends. The af
+ orementioned fiends (Sid and Matt) are inviting you to shake ass at the c
+ lub. House\, remixes\, reggaeton\, baile funk\, garage. We’ll have 
+END:VEVENT
+END:VCALENDAR

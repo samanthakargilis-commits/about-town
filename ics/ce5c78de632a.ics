@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ce5c78de632a@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;TZID=America/Los_Angeles:20261027T190000
+DTEND;TZID=America/Los_Angeles:20261027T203000
+SUMMARY:Learn About SF’s Iconic Tiled Stairways (Glen Park)
+LOCATION:Bird & Beckett Books & Records\, 653 Chenery St\, San Francisco\,
+  CA\, San Francisco
+URL:https://sf.funcheap.com/learn-sfs-iconic-tiled-stairways-glen-park/
+DESCRIPTION:Art + Discourse\nhttps://sf.funcheap.com/learn-sfs-iconic-tile
+ d-stairways-glen-park/\n\nBird & Beckett Books & Records hosts the grand 
+ finale of SF Stairway Month\, a seated discussion about San Francisco’s
+  stairways. Authors Mary Burk and Alexandra Kenin will speak alongside ti
+ le artist Aileen Barr\, who with Colette Crutcher created many of the cit
+ y’s tiled stairways. Original ...
+END:VEVENT
+END:VCALENDAR

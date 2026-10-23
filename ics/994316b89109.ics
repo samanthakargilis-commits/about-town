@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:994316b89109@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261023T110000
+DTEND;TZID=America/Los_Angeles:20261023T190000
+SUMMARY:Friends of Mine
+LOCATION:Rare Device\, San Francisco
+URL:https://ma.to/event/friends-of-mine-2026-10-23
+DESCRIPTION:Museum exhibits + Art\nhttps://ma.to/event/friends-of-mine-202
+ 6-10-23\n\nFriends of Mine is an exhibition of soft sculptures by @risa_i
+ wasaki_culbertson depicting lips\, eyes and a nose. The pieces remain on 
+ view in the gallery at Rare Device through November 8. The gallery is ope
+ n Monday to Saturday from 11am to 7pm and Sunday from 11am to 6pm.
+END:VEVENT
+END:VCALENDAR

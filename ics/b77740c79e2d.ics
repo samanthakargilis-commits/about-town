@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b77740c79e2d@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;TZID=America/Los_Angeles:20261030T140000
+DTEND;TZID=America/Los_Angeles:20261030T220000
+SUMMARY:SF’s “Nightmare on Front Street” Halloween Block Party 202 6
+LOCATION:Front St\, San Francisco
+URL:https://downtownsf.org/do/nightmare-on-front-street
+DESCRIPTION:Fairs & festivals + Camp & Halloween · A yearly tradition\nht
+ tps://downtownsf.org/do/nightmare-on-front-street\n\nFriday\, October 30\
+ , 2026 – SF (Front St) – FREE – Take over downtown for Nightmare on
+  Front Street\, a free Halloween block party with live DJs\, themed cockt
+ ails\, spooky activities \, costume-filled crowds and food from three pop
+ ular bars: Schroeder’s\, Harrington’s and Royal Exchange. 2026 Downto
+ wn San Francisco Partnership
+END:VEVENT
+END:VCALENDAR

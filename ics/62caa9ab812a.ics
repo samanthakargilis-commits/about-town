@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:62caa9ab812a@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;TZID=America/Los_Angeles:20261024T170000
+DTEND;TZID=America/Los_Angeles:20261024T230000
+SUMMARY:Lit Crawl San Francisco
+LOCATION:Multiple venues\, Mission District\, San Francisco\, CA\, San Fra
+ ncisco
+URL:https://www.litquake.org/2026-festival
+DESCRIPTION:Writing + Reading\nhttps://www.litquake.org/2026-festival\n\nO
+ n Saturday\, October 24\, the Mission District will host the annual Lit C
+ rawl\, a literary bar crawl with talks\, readings\, and more fun events. 
+ The bar crawl starts at 5 pm and runs until 9 pm\, and will take place pr
+ imarily on Valencia and Mission streets. Some of the venues hosting event
+ s include Dog Eared Books\, Curios\, Ritual Coffee Roasters\, Teeth Bar\,
+  and many more. Some events attendees can lo
+END:VEVENT
+END:VCALENDAR

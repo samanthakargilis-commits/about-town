@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b95a3742f612@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261127T170000
+DTEND;TZID=America/Los_Angeles:20261127T210000
+SUMMARY:Free “Holiday Light Spectacular” 2026 at Marin County Fairgrou
+ nds
+LOCATION:Marin County Fairgrounds\, 10 Avenue of the Flags\, San Rafael CA
+  94903\, San Rafael
+URL:https://sf.funcheap.com/free-holiday-light-spectacular-2026-marin-coun
+ ty-fairgrounds-nov-27jan-3/
+DESCRIPTION:San Rafael\nhttps://sf.funcheap.com/free-holiday-light-spectac
+ ular-2026-marin-county-fairgrounds-nov-27jan-3/\n\nCome one come all and 
+ experience the Holiday Light Spectacular! People of all ages are welcome 
+ to experience enchanting evenings of magical light displays\, dazzling pa
+ thways\, festive photo ops\, and so much more. As you make your way throu
+ gh the lights\, you’ll make unforgettable holiday ...
+END:VEVENT
+END:VCALENDAR

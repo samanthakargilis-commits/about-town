@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d8ab86c91001@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;TZID=America/Los_Angeles:20261024T110000
+DTEND;TZID=America/Los_Angeles:20261024T180000
+SUMMARY:SF Open Studios: Weekend 5
+LOCATION:Multiple venues\, San Francisco
+URL:https://ma.to/event/sf-open-studios-weekend-5-24-oct-2026
+DESCRIPTION:Big Bay Area traditions + Art\nhttps://ma.to/event/sf-open-stu
+ dios-weekend-5-24-oct-2026\n\nSF Open Studios Weekend 5. Explore artists'
+  open studios in Chinatown\, Civic Center\, Cole Valley\, Downtown\, Dubo
+ ce Triangle\, Haight-Ashbury\, Hayes Valley\, Inner Sunset\, Laurel Heigh
+ ts / Presidio Heights\, Marina\, Nob Hill\, Nopa / Divisadero\, North Bea
+ ch\, Pacific Heights\, Richmond\, Russian Hill\, Sunset\, Twin Peaks\, an
+ d West Portal. Part of the 52nd Annual SF Open Studios. Check the map on 
+ the ArtSpa
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cb5b524f8cbb@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261027T173000
+DTEND;TZID=America/Los_Angeles:20261027T210000
+SUMMARY:Remathau: People of the Ocean. Documentary film screening
+LOCATION:Mackenzie Room\, Mackenzie Room\, Jen-Hsun Huang Engineering Cent
+ er Room 300\, 475 Via Ortega 3rd Floor\, Stanford\, CA 94305\, USA\, Stan
+ ford
+URL:https://luma.com/hzzpp5cn
+DESCRIPTION:Discourse · Stanford\nhttps://luma.com/hzzpp5cn\n\nRemathau: 
+ People of the Ocean 70-minute documentary follows the extraordinary journ
+ ey of Dr. Nicole Yamase — the first Micronesian to earn a PhD in Marine
+  Biology and the first Micronesian to reach the bottom of the Mariana Tre
+ nch. Through this historic dive and a deeper exploration of identity\, cu
+ lture\, and belonging\, Nicole reconnects with the resilience of her peop
+ le and the wisdom of generatio
+END:VEVENT
+END:VCALENDAR

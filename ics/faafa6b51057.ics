@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:faafa6b51057@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;TZID=America/Los_Angeles:20261009T203000
+DTEND;TZID=America/Los_Angeles:20261009T223000
+SUMMARY:Grimm’s Hollow: Grimm Manor 2026
+LOCATION:San Jose
+URL:https://sf.funcheap.com/city-guide/bay-area-haunted-houses/
+DESCRIPTION:Fairs & festivals + Camp & Halloween · Featured on Funcheap\n
+ https://sf.funcheap.com/city-guide/bay-area-haunted-houses/\n\nSan Jose |
+  Easterbrook Discovery School\, 4835 Doyle Rd. | Select dates Oct. 9 – 
+ 31 | FREE carnival\, games and movie nights\; $15 for the Haunted Trail G
+ rimm’s Hollow returns for 2026 with Grimm Manor \, an immersive Hallowe
+ en adventure that invites visitors to explore a foreboding manor and its 
+ haunted gardens\, solve clues and complete tasks to escape the dark force
+ s lurking inside. The family-frien
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6bdc332c212d@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261025T150000
+DTEND;TZID=America/Los_Angeles:20261025T170000
+SUMMARY:Activity: Horrified: Dungeons & Dragons
+LOCATION:Presidio Branch Library\, 3150 Sacramento St\, San Francisco
+URL:https://sfpl.org/events/2026/10/25/activity-horrified-dungeons-dragons
+DESCRIPTION:Reading + Theatre\nhttps://sfpl.org/events/2026/10/25/activity
+ -horrified-dungeons-dragons\n\nLearn how to play the cooperative board ga
+ me Horrified: Dungeons & Dragons and make new friends. Activity: Horrifie
+ d: Dungeons & Dragons Sunday\, 10/25/2026 3:00 - 5:00 Add to My Calendar 
+ Suitable for: Adults Presidio Meeting Room Presidio Address 3150 Sacramen
+ to Street San Francisco \, CA 94115 United States Contact Telephone 415-3
+ 55-2880 premgr@sfpl.org Learn how to play the cooperative board game
+END:VEVENT
+END:VCALENDAR

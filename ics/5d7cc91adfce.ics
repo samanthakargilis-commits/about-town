@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5d7cc91adfce@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;TZID=America/Los_Angeles:20261025T200000
+DTEND;TZID=America/Los_Angeles:20261025T220000
+SUMMARY:SF’s Wild “Big Gay Halloween” at Great Star Theater
+LOCATION:Great Star Theater\, 636 Jackson St. San Francisco\, CA
+URL:https://sf.funcheap.com/sfs-wild-big-gay-halloween-at-great-star-theat
+ er-october-11-25/
+DESCRIPTION:Gay / queer + Camp & Halloween\nhttps://sf.funcheap.com/sfs-wi
+ ld-big-gay-halloween-at-great-star-theater-october-11-25/\n\nStep right u
+ p\, if you dare\, for an evening of wildly wicked entertainment. We’ve 
+ summoned an elite cast of acrobats\, ghouls\, drag royalty\, and deadly d
+ ancers who are ready to serve nothing but tricks and treats. Normally $30
+ -$45\, you can get complimentary tickets to Big ...
+END:VEVENT
+END:VCALENDAR

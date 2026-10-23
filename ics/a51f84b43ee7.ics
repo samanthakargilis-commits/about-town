@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a51f84b43ee7@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261023T180000
+DTEND;TZID=America/Los_Angeles:20261023T200000
+SUMMARY:Paint & Sip Night
+LOCATION:Underdogs Cantina\, San Francisco
+URL:https://ma.to/event/paint-and-sip-night-2026-10-23
+DESCRIPTION:Art\nhttps://ma.to/event/paint-and-sip-night-2026-10-23\n\nUnd
+ erdogs Cantina hosts a beginner paint and sip night on October 23\, 2026 
+ from 6:00 PM to 8:00 PM\, presented with Painting & Vino. The session inc
+ ludes step-by-step instruction\, all painting supplies and a 16 x 20 canv
+ as\, with a Golden Gate Bridge sunset scene as the subject. Tickets are $
+ 50 per person and are available by scanning the QR code in the artwork. N
+ o experience is needed and all ages 
+END:VEVENT
+END:VCALENDAR

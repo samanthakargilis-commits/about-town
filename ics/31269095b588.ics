@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:31269095b588@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261024T080000
+DTEND;TZID=America/Los_Angeles:20261024T130000
+SUMMARY:Kiwanis Farmers Market
+LOCATION:Kiwanis Farmers Market\, 500 Block Arguello St\, Redwood City\, C
+ A\, Redwood City
+URL:https://ma.to/event/kiwanis-farmers-market-2026-10-24
+DESCRIPTION:Redwood City\nhttps://ma.to/event/kiwanis-farmers-market-2026-
+ 10-24\n\nKiwanis Farmers Market takes place every Saturday from 8:00 AM t
+ o 1:00 PM on the 500 Block of Arguello Street in Redwood City\, CA. Vendo
+ rs sell fresh produce and artisan goods\, and stalls include a fresh cold
+ -pressed juice stand.
+END:VEVENT
+END:VCALENDAR

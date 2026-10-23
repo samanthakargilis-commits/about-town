@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b8ea75abd17e@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;TZID=America/Los_Angeles:20261031T140000
+DTEND;TZID=America/Los_Angeles:20261031T160000
+SUMMARY:Halloween at the Bandshell
+LOCATION:
+URL:https://illuminate.org/events/
+DESCRIPTION:Camp & Halloween + Museum exhibits\nhttps://illuminate.org/eve
+ nts/\n\nOn October 31 \, the Bandshell will host Charity and the JAMband\
+ , a family-friendly group performing from 12 to 2 p.m. The show will have
+  sing-alongs and a variety of songs perfect for families. Costumes are we
+ lcome at the free concert\, and you can also explore the educational Cali
+ fornia Academy of Sciences after the show. The free Halloween concer t is
+  just one of many in the coming weeks\, with re
+END:VEVENT
+END:VCALENDAR

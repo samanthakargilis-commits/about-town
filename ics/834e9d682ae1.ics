@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:834e9d682ae1@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20260926
+SUMMARY:Fear Overload Scream Park
+LOCATION:Newark
+URL:https://sf.funcheap.com/city-guide/bay-area-haunted-houses/
+DESCRIPTION:Theatre + Weird & unusual · Featured on Funcheap\nhttps://sf.
+ funcheap.com/city-guide/bay-area-haunted-houses/\n\nNewark | NewPark Mall
+ \, 2086 Newpark Mall Rd. | Sept. 25 – Nov. 7\, 2026 | Tickets start at 
+ $25 One of the Bay Area’s best-known haunted attractions\, Fear Overloa
+ d returns with two immersive haunted houses: “Fear Overload: Final Desc
+ ent” and “Greyhaven Hospital: After Visiting Hours.” Expect elabora
+ te sets\, live scare actors\, and plenty of jump scares. One ticket gets 
+ you into both haunts\, and fast-
+END:VEVENT
+END:VCALENDAR

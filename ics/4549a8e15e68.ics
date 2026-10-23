@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4549a8e15e68@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:Halloween Family Costume Party
+LOCATION:Palo Alto Magical Bridge Playground\, 3700 Middlefield Rd\, Palo 
+ Alto\, CA 94306\, Palo Alto
+URL:https://sf.funcheap.com/halloween-family-costume-party/
+DESCRIPTION:Camp & Halloween + Weird & unusual · Palo Alto\nhttps://sf.fu
+ ncheap.com/halloween-family-costume-party/\n\nJoin Palo Alto Magical Brid
+ ge in your favorite Halloween costume for our inclusive Halloween Costume
+  Party! Enjoy trick-or-treat bag-making\, music from Tank! Jazz Band\, se
+ nsory-friendly science with Bright Sparks Play Lab\, and a costume dance 
+ party! All ages and abilities are welcome!
+END:VEVENT
+END:VCALENDAR

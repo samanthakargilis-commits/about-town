@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b839c719564e@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261024T090000
+DTEND;TZID=America/Los_Angeles:20261024T140000
+SUMMARY:OBour Samples at Farmers Markets
+LOCATION:Farmers markets around the Bay Area and LA\, San Francisco
+URL:https://ma.to/event/obour-samples-at-farmers-markets-2026-10-24
+DESCRIPTION:New in your area\nhttps://ma.to/event/obour-samples-at-farmers
+ -markets-2026-10-24\n\nOBour Dips & Pita Chips sets up its market stall a
+ t farmers markets around the Bay Area and LA on Saturdays and Sundays\, w
+ ith free samples of every flavor of its dips and pita chips. The lineup i
+ ncludes hummus varieties such as Hot Curry and Zhoug\, plus toum and toas
+ ted tahini\, all made fresh in San Francisco. Coolers are packed on Frida
+ ys ahead of the weekend markets. Market locations vary from w
+END:VEVENT
+END:VCALENDAR

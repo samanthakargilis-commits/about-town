@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7f3aa9a963ca@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Baukunst First Fridays: Art\, Music + Food (Bernal Heights)
+LOCATION:Baukunst\, 433 Cortland Ave\, San Francisco\, CA 94110\, San Fran
+ cisco
+URL:https://sf.funcheap.com/baukunst-first-fridays-art-music-food-bernal-h
+ eights-12/
+DESCRIPTION:Art\nhttps://sf.funcheap.com/baukunst-first-fridays-art-music-
+ food-bernal-heights-12/\n\nJoin us for Baukunst First Fridays\, our brand
+ -new monthly celebration blending art\, music\, and food! Every month\, e
+ xperience a vibrant evening of creativity\, delicious bites\, and fantast
+ ic tunes. Mark your calendars and bring your friends — let’s make eve
+ ry first Friday unforgettable! Baukunst First Fridays ...
+END:VEVENT
+END:VCALENDAR

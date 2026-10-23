@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c513a9ed341a@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;TZID=America/Los_Angeles:20261120T180000
+DTEND;TZID=America/Los_Angeles:20261120T190000
+SUMMARY:2026 City Center’s Tree Lighting Celebration (San Ramon)
+LOCATION:City Center Bishop Ranch\, 6000 Bollinger Canyon Rd\, San Ramon\,
+  CA 94583\, San Ramon
+URL:https://sf.funcheap.com/city-centers-tree-lighting-celebration-san-ram
+ on/
+DESCRIPTION:Spirituality · A yearly tradition · San Ramon\nhttps://sf.fu
+ ncheap.com/city-centers-tree-lighting-celebration-san-ramon/\n\nHoliday T
+ ree Lighting Ceremony Nov 20\, 2026 6:00pm–7:00pm Join us at City Cente
+ r Bishop Ranch on Friday\, November 20 from 6 PM to 7 PM for our Holiday 
+ Tree Lighting Ceremony. Delight in the sounds of the season with performa
+ nces by the Monte Vista Band and a group ...
+END:VEVENT
+END:VCALENDAR

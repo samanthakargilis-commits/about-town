@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9e9412dcd7fe@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;TZID=America/Los_Angeles:20261107T120000
+DTEND;TZID=America/Los_Angeles:20261107T140000
+SUMMARY:Sip Shop Eat: Holiday in the Bay
+LOCATION:833 Market Street\, San Francisco\, CA
+URL:https://partiful.com/e/aobGMC05cxaY1aICZP6I
+DESCRIPTION:Craft + Spirituality\nhttps://partiful.com/e/aobGMC05cxaY1aICZ
+ P6I\n\nSip Shop Eat's Holiday in the Bay pop-up is back. Shop 50+ small b
+ rands\, sip curated fall cocktails and mocktails\, and snap photos at fes
+ tive holiday photo ops. There are also tarot readings\, food\, cafés and
+  dessert stands\, DIY experiences and a vibey playlist all day. Public tr
+ ansit is encouraged\, and there are paid lots nearby To officially RSVP o
+ r purchase tickets\, use the link above. This even
+END:VEVENT
+END:VCALENDAR

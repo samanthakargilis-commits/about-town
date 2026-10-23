@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:74717077596b@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;TZID=America/Los_Angeles:20261028T190000
+DTEND;TZID=America/Los_Angeles:20261028T210000
+SUMMARY:Tokyo Kanpai Boys: Comedy Show
+LOCATION:Balboa Theater\, San Francisco
+URL:https://ma.to/event/tokyo-kanpai-boys-comedy-show-2026-10-28
+DESCRIPTION:Comedy + Theatre\nhttps://ma.to/event/tokyo-kanpai-boys-comedy
+ -show-2026-10-28\n\nThe Tokyo Kanpai Boys 2026 US Fall Tour brings an int
+ ernational stand-up comedy night to the Balboa Theater in San Francisco o
+ n Wednesday\, October 28. The show is performed in English and features K
+ ansei Yasuda\, originally from Tokyo and now based in Toronto\; Daniel Wi
+ lson\, a Japanese-American comedian based in Tokyo\; Shota Saimu\, who pe
+ rforms in both English and Japanese\; and Daisuke Muramoto\, fo
+END:VEVENT
+END:VCALENDAR

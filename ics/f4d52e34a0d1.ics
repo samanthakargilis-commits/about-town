@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f4d52e34a0d1@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;TZID=America/Los_Angeles:20261029T183000
+DTEND;TZID=America/Los_Angeles:20261029T213000
+SUMMARY:Designers & Machines October 2026
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/u0l7j6iz
+DESCRIPTION:Spirituality · Thursday evening\nhttps://luma.com/u0l7j6iz\n\
+ n5 x 5 min demos. No slides. The most interesting designers sharing their
+  latest experiments. A ritual gathering\, once a month\, to open up our m
+ inds about the future of designing machines\, alongside machines. Please 
+ note that space is limited to 50 designers. So please share your coolest 
+ project links when you request to join! We have 500+ requests every month
+ . This time\, the demo dinner will be ho
+END:VEVENT
+END:VCALENDAR

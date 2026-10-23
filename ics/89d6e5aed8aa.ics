@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:89d6e5aed8aa@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;TZID=America/Los_Angeles:20261023T170000
+DTEND;TZID=America/Los_Angeles:20261023T213000
+SUMMARY:Free Halloween Game Night + Marina Candy Crawl (East Bay)
+LOCATION:The Waterfront Rodeo\, 13 Pacific Avenue\, Rodeo\, CA\, Rodeo
+URL:https://sf.funcheap.com/free-halloween-game-night-marina-candy-crawl-e
+ ast-bay/
+DESCRIPTION:Camp & Halloween · Rodeo\nhttps://sf.funcheap.com/free-hallow
+ een-game-night-marina-candy-crawl-east-bay/\n\nJoin us for a spooky night
+  of games and candy fun at the Waterfront Halloween Game Night & Marina C
+ andy Crawl! Waterfront Halloween Game Night Join us in person for a spook
+ tacular evening at the Waterfront Halloween Game Night featuring the Mari
+ na Candy Crawl! Get ready for ...
+END:VEVENT
+END:VCALENDAR

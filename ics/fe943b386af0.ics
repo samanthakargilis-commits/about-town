@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fe943b386af0@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261030T183000
+DTEND;TZID=America/Los_Angeles:20261030T230000
+SUMMARY:Cafe Compute: The Night Before RSI
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/spacexai-734u
+DESCRIPTION:Camp & Halloween + Weird & unusual\nhttps://luma.com/spacexai-
+ 734u\n\nOctober 30. 11:59 PM. The training run is almost done. Tomorrow t
+ he model starts improving itself. Recursive self-improvement: RSI. Takeof
+ f. Tonight is the last night humans are in charge\, and something in the 
+ lab is already awake. Cursor\, SpaceXAI\, and Cerebras invite you to The 
+ Night Before RSI\, a Halloween costume party. What it is A bot-themed cos
+ tume party. About 150 guests: the teams at Curs
+END:VEVENT
+END:VCALENDAR

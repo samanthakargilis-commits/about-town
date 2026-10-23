@@ -1,0 +1,49 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ea06c62b7e9f@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;TZID=America/Los_Angeles:20261024T210000
+DTEND;TZID=America/Los_Angeles:20261024T230000
+SUMMARY:SuperNatural Halloween at the California Academy of Sciences
+LOCATION:
+URL:https://www.calacademy.org/supernatural?utm_source=google&utm_medium=c
+ pc&utm_campaign=campaignname&utm_content=adgroupname&utm_term=california%
+ 20academy%20of%20sciences%20supernatural&gad_source=1&gad_campaignid=2366
+ 8558958&gbraid=0AAAAADq_O408W1WL34MuStvGeSZDudooL&gclid=CjwKCAjwrbfWBhAeE
+ iwAc2e6Pkr5FQYpcsx07eAFQJNP4A-FNd_6OFRmkpJ5N_VUcqiMn7zQThn29hoCAvkQAvD_Bw
+ E
+DESCRIPTION:Camp & Halloween + Museum exhibits\nhttps://www.calacademy.org
+ /supernatural?utm_source=google&utm_medium=cpc&utm_campaign=campaignname&
+ utm_content=adgroupname&utm_term=california%20academy%20of%20sciences%20s
+ upernatural&gad_source=1&gad_campaignid=23668558958&gbraid=0AAAAADq_O408W
+ 1WL34MuStvGeSZDudooL&gclid=CjwKCAjwrbfWBhAeEiwAc2e6Pkr5FQYpcsx07eAFQJNP4A
+ -FNd_6OFRmkpJ5N_VUcqiMn7zQThn29hoCAvkQAvD_BwE\n\nOn Saturday\, October 24
+ \, the California Academy of Sciences is hosting a festive Halloween part
+ y for families. The event\, named SuperNatural\, will run from 6:30 to 9 
+ pm and feature plenty of festive\, family-friendly activities throughout 
+ the science museum. The Halloween party will feature multiple fun activat
+ ions throughout the museum. The Steinhart Aquarium will host a silent dis
+ co\, while kids c
+END:VEVENT
+END:VCALENDAR

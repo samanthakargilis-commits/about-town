@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:80922b5aa740@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261027T150000
+DTEND;TZID=America/Los_Angeles:20261027T190000
+SUMMARY:25th Ave Certified Farmers Market
+LOCATION:25th Avenue Certified Farmers' Market\, San Francisco
+URL:https://ma.to/event/25th-avenue-certified-farmers-market-2026-10-27
+DESCRIPTION:New in your area\nhttps://ma.to/event/25th-avenue-certified-fa
+ rmers-market-2026-10-27\n\nThis certified farmers market on 25th Avenue i
+ n San Mateo runs Tuesdays from 3:00 PM to 7:00 PM through late October. S
+ hop for seasonal produce and local goods.
+END:VEVENT
+END:VCALENDAR

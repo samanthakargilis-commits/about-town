@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1a791238efab@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261024T100000
+DTEND;TZID=America/Los_Angeles:20261024T123000
+SUMMARY:One Breath\, One Brushstroke
+LOCATION:Center for Creative Explor\, San Francisco
+URL:https://ma.to/event/one-breath-one-brushstroke-24-oct-2026-1
+DESCRIPTION:Art\nhttps://ma.to/event/one-breath-one-brushstroke-24-oct-202
+ 6-1\n\nAn off-site class at The Center for Creative Exploration’s Intui
+ tive Painting Studio. The practice invites you to be mindful as you paint
+ \, prioritizing the experience and mystery of the process over the final 
+ result. Led by Maria Freebairn-Smith\, Claudia Erzinger\, and So-on Eli B
+ rown-Stevenson. Registration is available on the profile.
+END:VEVENT
+END:VCALENDAR

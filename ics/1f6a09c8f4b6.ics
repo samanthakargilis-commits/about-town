@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1f6a09c8f4b6@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261025T110000
+DTEND;TZID=America/Los_Angeles:20261025T130000
+SUMMARY:Weekend Chess in the Park! - SF Chess Club
+LOCATION:Dolores Park\, 566 Dolores St San Francisco\, San Francisco
+URL:https://partiful.com/e/irvC2I6mAyhfY6nC0R4B
+DESCRIPTION:New in your area\nhttps://partiful.com/e/irvC2I6mAyhfY6nC0R4B\
+ n\nSF Chess Club Touches Grass! Bring your friends and enjoy some chess a
+ nd a chill hang out at the park 🧺 BYOB: Bring a picnic blanket\, your 
+ favorite snacks and drinks\, and good vibes! All Levels Welcome! Check ou
+ t our social media! Follow our Partiful - sfchess.club Instagram - @chess
+ clubSF As always please be kind / supportive to our hosts
+END:VEVENT
+END:VCALENDAR

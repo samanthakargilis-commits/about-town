@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:733d3ef86833@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261031T200000
+DTEND;TZID=America/Los_Angeles:20261031T220000
+SUMMARY:SF Halloween Party moved to Mill Valley
+LOCATION:Lighthouse Bar & Grill\, 475 E Strawberry Dr\, Mill Valley\, CA 9
+ 4941\, USA\, Mill Valley\, CA Mill Valley\, Mill Valley
+URL:https://www.meetup.com/iwanttodothatsf/events/316844152/
+DESCRIPTION:Camp & Halloween · Mill Valley\nhttps://www.meetup.com/iwantt
+ odothatsf/events/316844152/\n\nThis fun party has been moved to Mill Vall
+ ey. Halloween always boasts the year’s best party! Everyone is so much 
+ less-inhibited. This year we celebrate at a lovely restaurant right on th
+ e water at Harbor Point Tennis Club\, where the world’s top tennis play
+ ers compete each year! Meet new friends and compete for prizes for the be
+ st costumes (optional). Dance to your favorite hits with Top [DJ Darryl
+END:VEVENT
+END:VCALENDAR

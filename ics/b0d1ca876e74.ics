@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b0d1ca876e74@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261107T173000
+DTEND;TZID=America/Los_Angeles:20261107T200000
+SUMMARY:Adventist Speed Fellowshipping: A Faith-Based Journey Together Exp
+ erience
+LOCATION:Mountain View Central Seventh-day Adventist Church\, 1425 Springe
+ r Road\, Mountain View\, CA 94040 Mountain View\, Mountain View
+URL:https://www.eventbrite.com/e/adventist-speed-fellowshipping-a-faith-ba
+ sed-journey-together-experience-tickets-2002988059204
+DESCRIPTION:Mountain View\nhttps://www.eventbrite.com/e/adventist-speed-fe
+ llowshipping-a-faith-based-journey-together-experience-tickets-2002988059
+ 204\n\nA faith-centered afternoon for Adventist singles to meet face to f
+ ace. Intentional\, low-pressure\, and no swiping. Ages 25–55.
+END:VEVENT
+END:VCALENDAR

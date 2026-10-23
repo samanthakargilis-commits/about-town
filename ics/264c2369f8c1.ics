@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:264c2369f8c1@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261024T210000
+DTEND;TZID=America/Los_Angeles:20261025T020000
+SUMMARY:Out & Abt SF: Halloween Dance Party @ Monarch/200 Channels
+LOCATION:Monarch\, 101 6th St\, San Francisco\, CA 94103 San Francisco\, S
+ an Francisco
+URL:https://www.eventbrite.com/e/out-abt-sf-halloween-dance-party-monarch2
+ 00-channels-tickets-2001243353743
+DESCRIPTION:Camp & Halloween + Dance nights\nhttps://www.eventbrite.com/e/
+ out-abt-sf-halloween-dance-party-monarch200-channels-tickets-200124335374
+ 3\n\nGet ready for a spooky night of dancing\, costumes\, and music at Mo
+ narch’s Halloween Dance Party with Out & Abt SF.
+END:VEVENT
+END:VCALENDAR

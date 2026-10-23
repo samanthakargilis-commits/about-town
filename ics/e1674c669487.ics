@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e1674c669487@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;TZID=America/Los_Angeles:20261023T180000
+DTEND;TZID=America/Los_Angeles:20261024T020000
+SUMMARY:Last Ritual: The Relic
+LOCATION:Last Rites\, San Francisco
+URL:https://ma.to/event/last-ritual-the-relic-2026-10-23
+DESCRIPTION:Spirituality + Theatre\nhttps://ma.to/event/last-ritual-the-re
+ lic-2026-10-23\n\nLast Rites Presents Last Ritual: The Relic\, an immersi
+ ve cocktail experience inside the bar running October 13 through November
+  1. Guests enter a sinister mystery centred on archaeologist Marcus Rowe\
+ , who receives a cryptic message from a missing colleague naming Morrow I
+ sland\, then follows artifacts\, ancient symbols and disappearances towar
+ d a legendary object known as The Relic. A clue-studded m
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9ea48e1a01a5@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261107T100000
+DTEND;TZID=America/Los_Angeles:20261107T120000
+SUMMARY:USA TAIWAN Global EXPO - Bay Area\, CA
+LOCATION:San Mateo County Event Center - EXPO Hall\, 1346 Saratoga Dr\, Sa
+ n Mateo\, CA 94403 San Mateo\, San Mateo
+URL:https://www.eventbrite.com/e/usa-taiwan-global-expo-bay-area-ca-ticket
+ s-2002767458381
+DESCRIPTION:San Mateo\nhttps://www.eventbrite.com/e/usa-taiwan-global-expo
+ -bay-area-ca-tickets-2002767458381\n\nUSA Taiwan Global Expo brings the f
+ lavors\, products\, creativity\, and energy of Taiwan to the Bay Area for
+  a one-of-a-kind weekend experience
+END:VEVENT
+END:VCALENDAR

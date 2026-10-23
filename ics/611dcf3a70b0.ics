@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:611dcf3a70b0@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;TZID=America/Los_Angeles:20261023T170000
+DTEND;TZID=America/Los_Angeles:20261023T210000
+SUMMARY:2026 Halloween Market w/ Tarot Readings + Humane Society Fundraise
+ r (Berkeley)
+LOCATION:Donkey & Goat Winery\, 1340 5th St.\, Berkeley\, CA\, Berkeley
+URL:https://sf.funcheap.com/halloween-market-berkeley/
+DESCRIPTION:Animals + Camp & Halloween · Berkeley\nhttps://sf.funcheap.co
+ m/halloween-market-berkeley/\n\nThe Halloween Market at Donkey & Goat Win
+ ery in Berkeley is a free\, all-ages community event and fundraiser for B
+ erkeley Humane Society. The market features local artists\, makers\, taro
+ t readings\, live music by Lillian Frances\, food vendors\, and a table t
+ o learn about animal fostering. ...
+END:VEVENT
+END:VCALENDAR

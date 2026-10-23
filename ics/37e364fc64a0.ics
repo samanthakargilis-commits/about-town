@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:37e364fc64a0@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;TZID=America/Los_Angeles:20261029T170000
+DTEND;TZID=America/Los_Angeles:20261029T200000
+SUMMARY:Text-to-Screech: Haunted TTS Launch Event
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/assemb-42oc
+DESCRIPTION:Weird & unusual + Camp & Halloween · Thursday evening\nhttps:
+ //luma.com/assemb-42oc\n\nSomething’s talking in the dark... 🎃 Join 
+ AssemblyAI to celebrate the launch of our new text-to-speech model with a
+  haunted house happy hour. Trick-or-treat your way through life-size anim
+ atronics\, each one brought to life with real-time TTS. There’s candy a
+ t every station and spooky decorations throughout\, plus drinks\, bites\,
+  and networking with fellow Voice AI enthusiasts. 🏆 Bring your best Ha
+ ll
+END:VEVENT
+END:VCALENDAR

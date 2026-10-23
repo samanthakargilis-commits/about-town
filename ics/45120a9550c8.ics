@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:45120a9550c8@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261023T100000
+DTEND;TZID=America/Los_Angeles:20261023T120000
+SUMMARY:Turkish Mosaic Lamp Making Workshop at San Francisco
+LOCATION:575 Sutter St suit 202\, 575 Sutter Street\, #suit 202\, San Fran
+ cisco\, CA 94102 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/turkish-mosaic-lamp-making-workshop-at-sa
+ n-francisco-tickets-1990260553893
+DESCRIPTION:New in your area\nhttps://www.eventbrite.com/e/turkish-mosaic-
+ lamp-making-workshop-at-san-francisco-tickets-1990260553893\n\nCreate you
+ r own Turkish mosaic lamp in San Jose! No experience needed \, design wit
+ h colorful glass & beads in this fun workshop.
+END:VEVENT
+END:VCALENDAR

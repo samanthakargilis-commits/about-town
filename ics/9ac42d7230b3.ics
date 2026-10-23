@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9ac42d7230b3@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261116T173000
+DTEND;TZID=America/Los_Angeles:20261116T200000
+SUMMARY:Kepler’s Annual Benefit: An Evening with Abraham Verghese and Fr
+ iends
+LOCATION:Kepler's Books\, 1010 El Camino Real Menlo Park\, CA\, 94025\, Me
+ nlo Park
+URL:https://www.keplers.org/upcoming-events-internal/verghese-benefit
+DESCRIPTION:Reading + Writing · Menlo Park\nhttps://www.keplers.org/upcom
+ ing-events-internal/verghese-benefit\n\nPlease join us for our annual fun
+ draising event celebrating over 70 years of storytelling . This year we a
+ re celebrating bestselling author and beloved community member\, Abraham 
+ Verghese.
+END:VEVENT
+END:VCALENDAR

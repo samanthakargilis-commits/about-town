@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:66a904e677a3@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:SF Arcade Bar “Emporium” 8 Free Game Tokens for “Industry Ni
+ ght”
+LOCATION:Emporium SF\, 616 Divisadero St San Francisco\, CA
+URL:https://sf.funcheap.com/sf-arcade-bar-emporium-8-free-game-tokens-for-
+ industry-night-every-monday-169/
+DESCRIPTION:Museum exhibits\nhttps://sf.funcheap.com/sf-arcade-bar-emporiu
+ m-8-free-game-tokens-for-industry-night-every-monday-169/\n\nEmporium Arc
+ ade Bar San Francisco\, the dynamic venue known for its classic arcade ga
+ mes\, colorful\, fun-loving atmosphere\, and renowned drink menu\, now of
+ fers 8 free game tokens for anyone in “the industry” – so we’re a
+ ssuming barstaff\, restaurant staff\, nightlife staff. Monday Nights are 
+ for ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:669d8bd7a7a4@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;TZID=America/Los_Angeles:20261113T170000
+DTEND;TZID=America/Los_Angeles:20261113T200000
+SUMMARY:Free Holiday Show Under 1200+ LED Lights w/ SF Opera & SF Ballet (
+ Civic Center)
+LOCATION:Fulton Plaza\, Civic Center\, San Francisco\, 147 Fulton St.\, Sa
+ n Francisco\, CA 94012\, San Francisco
+URL:https://sf.funcheap.com/holiday-performing-arts-showcase-sf-opera-civi
+ c-center/
+DESCRIPTION:Concerts + Theatre\nhttps://sf.funcheap.com/holiday-performing
+ -arts-showcase-sf-opera-civic-center/\n\nFulton Plaza hosts a free holida
+ y-season performing arts showcase beneath the SPECTRA lights\, featuring 
+ short live works from the San Francisco Opera\, San Francisco Ballet\, Af
+ rican American Shakespeare Company\, RAWdance\, and additional downtown a
+ rts organizations. The event includes a post-show reception with opportun
+ ities to meet ...
+END:VEVENT
+END:VCALENDAR

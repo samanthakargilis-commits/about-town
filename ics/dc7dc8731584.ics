@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dc7dc8731584@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261101T160000
+DTEND;TZID=America/Los_Angeles:20261101T173000
+SUMMARY:Vani Suresh: Ananta Margam - The Infinite Pursuit
+LOCATION:Theater | Cañada College\, 4200 Farm Hill Boulevard\, Redwood Ci
+ ty\, CA 94061 Redwood City\, Redwood City
+URL:https://www.eventbrite.com/e/vani-suresh-ananta-margam-the-infinite-pu
+ rsuit-tickets-2003272079717
+DESCRIPTION:Theatre + Art · Redwood City\nhttps://www.eventbrite.com/e/va
+ ni-suresh-ananta-margam-the-infinite-pursuit-tickets-2003272079717\n\nA c
+ lassical dance performance and fundraiser exploring the artist's never-en
+ ding journey as a student of Bharatanatyam.
+END:VEVENT
+END:VCALENDAR

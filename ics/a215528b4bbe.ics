@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a215528b4bbe@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:Art Guild of Pacifica Members Show & Awards Exhibition (2026)
+LOCATION:Sanchez Art Center\, 1220 Linda Mar Blvd\, Pacifica\, CA\, Pacifi
+ ca
+URL:https://sf.funcheap.com/art-guild-pacifica-members-show-awards-exhibit
+ ion-2026/
+DESCRIPTION:Museum exhibits + Art · A yearly tradition · Pacifica\nhttps
+ ://sf.funcheap.com/art-guild-pacifica-members-show-awards-exhibition-2026
+ /\n\nArt\, Inspiration & Community: Art Guild of Pacifica’s Annual Memb
+ ers Show and Awards Exhibition Return The Art Guild of Pacifica invites t
+ he public to celebrate and engage with local artists on Friday Oct 23\, a
+ t an evening reception from 7 to 9 pm\, when the 68th ...
+END:VEVENT
+END:VCALENDAR

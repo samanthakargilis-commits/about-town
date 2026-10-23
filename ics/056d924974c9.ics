@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:056d924974c9@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;TZID=America/Los_Angeles:20261030T180000
+DTEND;TZID=America/Los_Angeles:20261030T230000
+SUMMARY:Pickleball City: Dinks & Spooks
+LOCATION:Pickleball City\, 39161 Farwell Dr Fremont\, Fremont
+URL:https://partiful.com/e/O55Bwz6D0V0lUmbYMHYG
+DESCRIPTION:Camp & Halloween + Theatre · Fremont\nhttps://partiful.com/e/
+ O55Bwz6D0V0lUmbYMHYG\n\n🎃 Dinks & Spooks is coming to Pickleball City!
+  👻 Join us Friday\, Oct 30\, from 6 to 11 PM for a night of treats\, m
+ usic\, drinks\, and spooky vibes. Come play\, come in costume\, and bring
+  your costumed pet too! 🍹 Alcohol will be served (21+ with valid ID) 
+ 💀 $20 Day Pass 🦇 $10 Come in costume 🐶 $5 Come in costume AND wi
+ th a costumed pet! MEMBERS - FREE ACCESS
+END:VEVENT
+END:VCALENDAR

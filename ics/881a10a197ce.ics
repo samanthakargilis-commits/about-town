@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:881a10a197ce@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;TZID=America/Los_Angeles:20261028T180000
+DTEND;TZID=America/Los_Angeles:20261028T200000
+SUMMARY:Made In This Place: Bay Area Artists In Their Own Words Closing Pa
+ rty at KALW
+LOCATION:KALW\, 220 Montgomery Street\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/place-bay-area-artists-words-closing-party-kal
+ w-sf/
+DESCRIPTION:Art + Museum exhibits\nhttps://sf.funcheap.com/place-bay-area-
+ artists-words-closing-party-kalw-sf/\n\nCelebrate the closing of the mult
+ imedia exhibition from KALW\, Art Is Awesome & Ingleside Gallery celebrat
+ ing Bay Area artists. Made in this Place: Bay Area Artists In Their Own W
+ ords is a new exhibition from Art is Awesome and KALW Public Media\, in p
+ artnership with Ingleside ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bb988a8faec9@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261103T160000
+DTEND;TZID=America/Los_Angeles:20261103T235900
+SUMMARY:SF’s Free Arcade Game Night at The Detour (First Tuesdays)
+LOCATION:The Detour SF\, 2200 Market St #A San Francisco\, CA
+URL:https://sf.funcheap.com/sfs-free-arcade-game-night-at-the-detour-first
+ -tuesdays-61/
+DESCRIPTION:Theatre\nhttps://sf.funcheap.com/sfs-free-arcade-game-night-at
+ -the-detour-first-tuesdays-61/\n\nPaid rent in SF? Hella Broke? Then firs
+ t Tuesdays are the night for you. The Detour hosts “Free Play Tuesday
+ ” with all arcade games on free play with purchase from the bar. Come e
+ njoy all the video game glory from today and yesteryear while enjoying ..
+ .
+END:VEVENT
+END:VCALENDAR

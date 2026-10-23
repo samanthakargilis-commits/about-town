@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:819ce79a332e@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261026T180000
+DTEND;TZID=America/Los_Angeles:20261026T200000
+SUMMARY:Pitch -A- Friend & SF Solidarity
+LOCATION:Golden Eye Social\, 311 3rd St San Francisco\, San Francisco
+URL:https://partiful.com/e/r2eySPuNCEfBOrOfOP8d
+DESCRIPTION:Discourse\nhttps://partiful.com/e/r2eySPuNCEfBOrOfOP8d\n\n💘
+  SINGLE. CIVIC-CURIOUS. READY TO MINGLE? Good questions. Better company. 
+ Great connections. Join SF Solidarity Club for a singles mixer where loca
+ l politics meets a little flirting. Whether you’re passionate about the
+  issues\, undecided on the propositions\, or just figuring out where to s
+ tart\, there’s a seat for you. 🗳️ Love it\, hate it\, or still dec
+ iding? Explore ballot propositions\, ask question
+END:VEVENT
+END:VCALENDAR

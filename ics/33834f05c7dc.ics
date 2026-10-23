@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:33834f05c7dc@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261108T090000
+DTEND;TZID=America/Los_Angeles:20261108T110000
+SUMMARY:SF Crosstown Trail
+LOCATION:Candlestick Park\, 602 Jamestown Ave San Francisco\, San Francisc
+ o
+URL:https://partiful.com/e/hwqb5U9qLA3lwpsVho5q
+DESCRIPTION:New in your area\nhttps://partiful.com/e/hwqb5U9qLA3lwpsVho5q\
+ n\nhiiiii friends im starting to feel like I never appreciate SF enough\,
+  and sometimes\, feel like a stranger in the city I live in! I would love
+  to do the SF crosstown trail with my friends (https://crosstowntrail.org
+ ) <3 let's checkout different coffee shops\, food\, stores\, etc on our w
+ ay from candlestick park to land's end! bring your camera\, your walking 
+ shoes\, and some water! feel free to invite o
+END:VEVENT
+END:VCALENDAR

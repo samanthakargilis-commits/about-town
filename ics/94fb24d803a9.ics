@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:94fb24d803a9@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261023T113000
+DTEND;TZID=America/Los_Angeles:20261023T220000
+SUMMARY:SF Restaurant Week at Doppio Zero
+LOCATION:Doppio Zero San Francisco\, San Francisco
+URL:https://ma.to/event/sf-restaurant-week-doppio-zero-2026-10-23
+DESCRIPTION:New in your area\nhttps://ma.to/event/sf-restaurant-week-doppi
+ o-zero-2026-10-23\n\nDoppio Zero's San Francisco location serves a chef-c
+ urated prix fixe during SF Restaurant Week\, October 16–25. The $35 two
+ -course lunch menu opens with potato croquettes — homemade potato croqu
+ ettes with Gruyère\, Parmigiano Reggiano\, leeks\, parsley and truffle f
+ ondue — followed by fagottini radicchio & gorgonzola\, pear and cheese-
+ filled ravioli in a gorgonzola cream sauce with sautéed radicchio. T
+END:VEVENT
+END:VCALENDAR

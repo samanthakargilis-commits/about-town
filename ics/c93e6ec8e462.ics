@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c93e6ec8e462@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;TZID=America/Los_Angeles:20261122T110000
+DTEND;TZID=America/Los_Angeles:20261122T163000
+SUMMARY:San Francisco Fall Holiday Chocolate Salon and Festival (2026)
+LOCATION:San Francisco County Fair Building\, 9th and Lincoln Street\, San
+  Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/san-francisco-chocolate-salon-golden-gate-park
+ -fall-2026/
+DESCRIPTION:Fairs & festivals + Discourse · A yearly tradition\nhttps://s
+ f.funcheap.com/san-francisco-chocolate-salon-golden-gate-park-fall-2026/\
+ n\nDO YOU LOVE CHOCOLATE? Discover\, taste and savor the finest in artisa
+ n\, gourmet and premium chocolates & confections for the Season and the H
+ olidays at the FALL HOLIDAY CHOCOLATE SALON & FESTIVAL San Francisco Fall
+  Holiday Chocolate Salon and Festival Sunday\, November 22\, 2026 | 11am-
+ 4:30pm San Francisco ...
+END:VEVENT
+END:VCALENDAR

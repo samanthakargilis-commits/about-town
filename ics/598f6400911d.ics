@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:598f6400911d@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;TZID=America/Los_Angeles:20261030T140000
+DTEND;TZID=America/Los_Angeles:20261030T230000
+SUMMARY:City Creatures: Pest Art Pop-Up
+LOCATION:Terra Gallery\, 511 Harrison Street\, San Francisco\, CA\, San Fr
+ ancisco
+URL:https://sf.funcheap.com/city-creatures-pest-art-popup-sf/
+DESCRIPTION:Art + Animals\nhttps://sf.funcheap.com/city-creatures-pest-art
+ -popup-sf/\n\n​Art. Urban wildlife. Guest speakers. Food. Drinks. Music
+ . And a gallery full of strange things to explore. City Creatures is a on
+ e-day exhibition at Terra Gallery exploring the hidden ecology of city li
+ fe through art\, science\, and the perspective of people who work closely
+  with urban ...
+END:VEVENT
+END:VCALENDAR

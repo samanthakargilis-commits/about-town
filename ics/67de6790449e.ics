@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:67de6790449e@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;TZID=America/Los_Angeles:20261107T110000
+DTEND;TZID=America/Los_Angeles:20261107T150000
+SUMMARY:“Fig Leaf Gardens” Fall Craft Fair: Shop Local Handmade Goods 
+ (Oakland)
+LOCATION:Fig Leaf Gardens\, 4046 39th Ave\, Oakland\, CA\, Oakland
+URL:https://sf.funcheap.com/fig-leaf-gardens-fall-craft-fair-shop-local-ha
+ ndmade-goods-oakland/
+DESCRIPTION:Craft + Fairs & festivals · Oakland\nhttps://sf.funcheap.com/
+ fig-leaf-gardens-fall-craft-fair-shop-local-handmade-goods-oakland/\n\nFi
+ g Leaf Gardens hosts a free fall craft fair featuring Bay Area artists se
+ lling one-of-a-kind handmade goods. Attendees can browse local art\, enjo
+ y snacks and refreshments\, and spend time in the garden. No RSVP is requ
+ ired. Original Event Description: _🍁 Join us for our Fall Craft Fair!
+ 🍁 We’ll ...
+END:VEVENT
+END:VCALENDAR

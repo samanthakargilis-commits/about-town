@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6d06f8433e62@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;TZID=America/Los_Angeles:20261023T190000
+DTEND;TZID=America/Los_Angeles:20261023T203000
+SUMMARY:Carolina Pihelgas: The Cut Line
+LOCATION:Telegraph Hill Books\, 1501 Grant Avenue\, San Francisco\, San Fr
+ ancisco
+URL:https://ma.to/event/carolina-pihelgas-the-cut-line-2026-10-23
+DESCRIPTION:Big Bay Area traditions + Fairs & festivals\nhttps://ma.to/eve
+ nt/carolina-pihelgas-the-cut-line-2026-10-23\n\nPart of the Words Around 
+ the World series presented within San Francisco's annual Litquake festiva
+ l. Carolina Pihelgas reads from The Cut Line with Sasha Vasilyuk at Teleg
+ raph Hill Books\, 1501 Grant Avenue\, San Francisco\, from 7:00 to 8:30 p
+ m\, sponsored by the Center for the Art of Translation.
+END:VEVENT
+END:VCALENDAR

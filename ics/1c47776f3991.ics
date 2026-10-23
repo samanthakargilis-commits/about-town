@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1c47776f3991@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;TZID=America/Los_Angeles:20261105T180000
+DTEND;TZID=America/Los_Angeles:20261105T203000
+SUMMARY:Braintrust CEO Ankur and Greylock Partner Corinne on how agents ar
+ e changing evals
+LOCATION:560 Davis St suite 250\, 560 Davis St suite 250\, San Francisco\,
+  CA 94111\, USA\, San Francisco
+URL:https://luma.com/baseten-g3n4
+DESCRIPTION:Discourse · Thursday evening\nhttps://luma.com/baseten-g3n4\n
+ \nBaseten is proud to present Heavyweights\, a series of talks where AI f
+ ounders learn from the greats. Today\, agents generate huge amounts of da
+ ta\, run their own queries\, and take multi-step actions in production. S
+ o what does that mean for evals and observability? Ankur Goyal\, Co-found
+ er and CEO of Braintrust\, sits down with Corinne Riley\, Partner at Grey
+ lock to discuss topics like: Why the focus i
+END:VEVENT
+END:VCALENDAR

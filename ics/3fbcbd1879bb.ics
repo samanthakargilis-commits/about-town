@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3fbcbd1879bb@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261023T190000
+DTEND;TZID=America/Los_Angeles:20261023T220000
+SUMMARY:Cosplay n' Draw Fear Me Out: 18+ Figure Drawing
+LOCATION:Guildhouse\, 420 First Street\, San Jose\, CA 95113 San Jose\, Sa
+ n Jose
+URL:https://www.eventbrite.com/e/cosplay-n-draw-fear-me-out-18-figure-draw
+ ing-tickets-2002405073478
+DESCRIPTION:Art · San Jose\nhttps://www.eventbrite.com/e/cosplay-n-draw-f
+ ear-me-out-18-figure-drawing-tickets-2002405073478\n\nPractice drawing li
+ ve Costumed Models at our 18+ Fan Service themed figure drawing session! 
+ Draw with fellow artists\, nerds\, and cosplayers!
+END:VEVENT
+END:VCALENDAR

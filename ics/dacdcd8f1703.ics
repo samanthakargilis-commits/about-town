@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dacdcd8f1703@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261024T110000
+DTEND;TZID=America/Los_Angeles:20261024T150000
+SUMMARY:Stop\, Drop & Roll Car & Comedy
+LOCATION:Tommy T’s Comedy Club\, 5104 Hopyard Rd\, Pleasanton\, Pleasant
+ on
+URL:https://ma.to/event/stop-drop-and-roll-car-comedy-24-oct-2026
+DESCRIPTION:Comedy + Musical theatre · Pleasanton\nhttps://ma.to/event/st
+ op-drop-and-roll-car-comedy-24-oct-2026\n\nThe Alameda County Firefighter
+ s present their 10th annual fundraiser at Tommy T’s Comedy Club in Plea
+ santon. The night features a comedy set by Kelly Kellz and a live musical
+  performance by Adrian Marcel. Proceeds benefit local youth programs and 
+ scholarships. A buy-one-get-one-free ticket deal is available using the p
+ romo code 'Adrian' on Tommyts.com. Car show registration details are avai
+ lable o
+END:VEVENT
+END:VCALENDAR

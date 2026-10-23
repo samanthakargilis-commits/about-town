@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:42f88891affa@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;TZID=America/Los_Angeles:20260925T100000
+DTEND;TZID=America/Los_Angeles:20260925T120000
+SUMMARY:Webb Ranch Pumpkin Patch 2026
+LOCATION:
+URL:https://sf.funcheap.com/city-guide/craziest-corn-mazes-bay/
+DESCRIPTION:Fairs & festivals + U-pick farms · Featured on Funcheap\nhttp
+ s://sf.funcheap.com/city-guide/craziest-corn-mazes-bay/\n\n> Please note\
+ , Webb Ranch Pumpkin Patch is open for 2026\, but its current website no 
+ longer mentions a corn maze or hay maze . We couldn’t confirm either at
+ traction is returning\, but keeping it on our radar in case details are u
+ pdated. Sept. 25-Oct. 31\, 2026 | Daily: 10 am-6 pm\; activities close at
+  5 pm Webb Ranch Family Farm | 2718 Alpine Road\, Portola Valley\, CA (Pe
+ ninsula) This family farm grow
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c734a69c6e74@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261107T130000
+DTEND;TZID=America/Los_Angeles:20261107T150000
+SUMMARY:Dog Carnival (Alameda)
+LOCATION:The Yard at Saltbreaker Restaurant\, 2350 Saratoga St\, Suite K11
+ \, Alameda\, CA 94501\, Alameda
+URL:https://sf.funcheap.com/dog-carnival-alameda/
+DESCRIPTION:Theatre · Alameda\nhttps://sf.funcheap.com/dog-carnival-alame
+ da/\n\nStep Right Up\, Little Dogs! The Pee-Wee Paws Carnival is coming t
+ o town! Get ready for an afternoon of GAMES\, PRIZES & FUN! Carnival game
+ s & activities Games to play & prizes to win Photo opportunities 🦴 Tre
+ ats Playtime & doggy socializing Bring your little baby and come play\, w
+ in\, snack\, and ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:79a3820d305c@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;TZID=America/Los_Angeles:20261101T090000
+DTEND;TZID=America/Los_Angeles:20261101T140000
+SUMMARY:5th Annual Día de los Muertos + Market in the Sunset
+LOCATION:Sunset Mercantile (Outer Sunset)\, 37th Avenue between Ortega & P
+ acheco St.\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/annual-da-de-los-muertos-sunset-sf/
+DESCRIPTION:Cultural festivals + Spirituality · A yearly tradition\nhttps
+ ://sf.funcheap.com/annual-da-de-los-muertos-sunset-sf/\n\nSunset Mercanti
+ le and the Outer Sunset Farmers Market’s fifth annual Día de los Muert
+ os: A day full of food\, music\, dance\, and culture. We honor our belove
+ d dead and celebrate their spirits in this fifth annual celebration. Shop
+  traditional artisan goods\, savor delicious Latin treats\, plus ...
+END:VEVENT
+END:VCALENDAR

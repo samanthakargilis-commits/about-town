@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ce75889a4d93@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;TZID=America/Los_Angeles:20261101T110000
+DTEND;TZID=America/Los_Angeles:20261101T170000
+SUMMARY:Oakland Museum of California’s Free First Sundays (OMCA)
+LOCATION:OMCA (Oakland Museum of California)\, 1000 Oak Street Oakland\, C
+ A 94607
+URL:https://sf.funcheap.com/oakland-museum-of-californias-free-first-sunda
+ ys-omca-61/
+DESCRIPTION:Museum exhibits + Art\nhttps://sf.funcheap.com/oakland-museum-
+ of-californias-free-first-sundays-omca-61/\n\nThe Oakland Museum of Calif
+ ornia (OMCA) brings together collections of art\, history\, and natural s
+ cience under one roof to tell the extraordinary stories of California and
+  its people. First Sundays at OMCA Every first Sunday of the month\, Gene
+ ral Admission to OMCA’s Galleries of California ...
+END:VEVENT
+END:VCALENDAR

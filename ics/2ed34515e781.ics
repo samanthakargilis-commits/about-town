@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2ed34515e781@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261023T193000
+DTEND;TZID=America/Los_Angeles:20261023T213000
+SUMMARY:Edward Simon: Femeninas
+LOCATION:Miner Auditorium\, SFJAZZ Center\, San Francisco
+URL:https://ma.to/event/edward-simon-femeninas-2026-10-23
+DESCRIPTION:New in your area\nhttps://ma.to/event/edward-simon-femeninas-2
+ 026-10-23\n\nSFJAZZ Collective pianist and Guggenheim Fellow Edward Simon
+  brings Femeninas to Miner Auditorium\, a tribute to the female composers
+  who shaped the Latin American songbook. Simon is joined by Mexican vocal
+ ist Magos Herrera and a world-class ensemble for lush jazz arrangements o
+ f works by Chabuca Granda (Peru)\, Violeta Parra (Chile)\, Consuelo Velá
+ zquez (Mexico) and others\, bridging folk traditions\,
+END:VEVENT
+END:VCALENDAR

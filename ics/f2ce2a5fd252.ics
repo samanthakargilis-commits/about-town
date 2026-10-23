@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f2ce2a5fd252@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261108T110000
+DTEND;TZID=America/Los_Angeles:20261108T140000
+SUMMARY:Hike One of the Bay’s Newest Trails w/ Peninsula & Pacific Ocean
+  Views (Redwood City)
+LOCATION:Skyline Watershed Ridge Trail Parking Area\, 4351 Skyline Blvd\, 
+ Redwood City\, CA 94062\, Redwood City
+URL:https://sf.funcheap.com/free-watershed-hike-peninsula-pacific-ocean-vi
+ ews-redwood-city/
+DESCRIPTION:Redwood City\nhttps://sf.funcheap.com/free-watershed-hike-peni
+ nsula-pacific-ocean-views-redwood-city/\n\nLatino Outdoors SF Bay Area le
+ ads a free moderate-to-hard hike on the Skyline Watershed Ridge Trail in 
+ the Peninsula Watershed. The group will hike out for about an hour\, stop
+  for a snack or lunch\, and hike back along a mostly gravel ridgeline tra
+ il with ...
+END:VEVENT
+END:VCALENDAR

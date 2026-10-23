@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:00eef508d084@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261023T150000
+DTEND;TZID=America/Los_Angeles:20261023T170000
+SUMMARY:Join us on the Fourth Friday for the Marin Uke Rebellion
+LOCATION:Belvedere-Tiburon Library\, 1501 Tiburon Boulevard\, Belvedere Ti
+ buron\, CA Belvedere Tiburon\, Belvedere Tiburon
+URL:https://www.meetup.com/san-francisco-ukulele-meetup/events/317056752/
+DESCRIPTION:Reading · Belvedere Tiburon\nhttps://www.meetup.com/san-franc
+ isco-ukulele-meetup/events/317056752/\n\nJoin us for the Marin Uke Rebell
+ ion! meetup held at Belvedere-Tiburon Library on the Friday We are joinin
+ g forces with Marin Ukes and great ukulele players from around the Bay Ar
+ ea. The Belvedere Tiburon Library is easy to get to by car\, bus or ferry
+  (and a short walk) from San Francisco. It has plenty of parking and even
+  has loaner ukes for library patrons. We will be using selection from the
+  Dai
+END:VEVENT
+END:VCALENDAR

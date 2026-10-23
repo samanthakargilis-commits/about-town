@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dce401611a71@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261028T183000
+DTEND;TZID=America/Los_Angeles:20261028T210000
+SUMMARY:What Poetry Can Teach Us About Being Human
+LOCATION:Double Black\, Double Black\, 925 Cole St\, San Francisco\, CA 94
+ 117\, USA\, San Francisco
+URL:https://luma.com/1ieibldt
+DESCRIPTION:Writing + Discourse\nhttps://luma.com/1ieibldt\n\nWe’re so e
+ xcited to bring one of our favorite recent lectures to one of our favorit
+ e new cafés in the city\, Double Black! Join us for a night of connectio
+ n\, tasty drinks\, big cookies\, poetry\, and reflection. ♥️ 📖 Wha
+ t can poems teach us about living through wreckage and wonder? We spend o
+ ur lives shuttling between mundane duties and the biggest questions of ex
+ istence: how to love\, how to grieve\, h
+END:VEVENT
+END:VCALENDAR

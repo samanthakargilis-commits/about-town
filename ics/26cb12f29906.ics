@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:26cb12f29906@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;TZID=America/Los_Angeles:20261031T100000
+DTEND;TZID=America/Los_Angeles:20261031T180000
+SUMMARY:“Cute Ridge” Halloween Market: Free Candy + Y2K Finds (San Jos
+ e)
+LOCATION:Eastridge Mall\, 2200 Eastridge Loop\, San Jose\, CA\, San Jose
+URL:https://sf.funcheap.com/cute-ridge-halloween-market-2026-free-candy-y2
+ k-finds-san-jose/
+DESCRIPTION:Camp & Halloween + Craft · San Jose\nhttps://sf.funcheap.com/
+ cute-ridge-halloween-market-2026-free-candy-y2k-finds-san-jose/\n\nCute
+ 🎃ridge Halloween Edition is a free Halloween market at Eastridge Mall 
+ featuring Y2K fashion\, vintage finds\, local makers\, sweet treats\, cos
+ tumes\, and trick-or-treating. Free candy will be distributed throughout 
+ the event\, and families are invited to attend in costume. Original Event
+  Description: _🎃💕 BOO! CUTE🎃RIDGE IS BACK! ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:171d5af909d5@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261023T200000
+DTEND;TZID=America/Los_Angeles:20261024T000000
+SUMMARY:Harley White Jr. Orchestra
+LOCATION:Midtown Stomp\, San Francisco
+URL:https://ma.to/event/harley-white-jr-orchestra-23-oct-2026
+DESCRIPTION:Concerts + Theatre\nhttps://ma.to/event/harley-white-jr-orches
+ tra-23-oct-2026\n\nThe Harley White Jr. Orchestra takes over the stage to
+  keep the swing dancing going all night. A beginner lesson is held before
+  the main event every Friday\, making it easy for anyone to learn a few s
+ teps and stick around for the live band.
+END:VEVENT
+END:VCALENDAR

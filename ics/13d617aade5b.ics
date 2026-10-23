@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:13d617aade5b@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;TZID=America/Los_Angeles:20261029T183000
+DTEND;TZID=America/Los_Angeles:20261029T203000
+SUMMARY:Bi-weekly Knit & Sip @Together Wine Lounge
+LOCATION:Together Wine Lounge\, 2490 3rd St\, San Francisco\, CA 94107\, S
+ an Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/knitters-in-the-wild/events/316679969/
+DESCRIPTION:Craft + Gay / queer · Thursday evening\nhttps://www.meetup.co
+ m/knitters-in-the-wild/events/316679969/\n\nCome join us for a relaxed ev
+ ening of crafting and connection at our cozy spot in Dogpatch! Whether yo
+ u knit\, crochet\, embroider—or just want to be around creative energy
+ —you’re welcome here. We’ll be sipping wine\, stitching away\, and 
+ chatting about everything from yarn to life. This is a casual\, come-as-y
+ ou-are space for all levels—whether you’re a total beginner or deep i
+ n your third sweater of 
+END:VEVENT
+END:VCALENDAR

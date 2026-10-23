@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:09e22ee046a3@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;TZID=America/Los_Angeles:20261024T100000
+DTEND;TZID=America/Los_Angeles:20261024T110000
+SUMMARY:SF’s “Great Pumpkin Giveaway” + Free Historic Carousel Rides
+  (SoMa)
+LOCATION:Corner of 4th St and Howard\, 701 Howard St\, San Francisco\, CA 
+ 94103\, San Francisco
+URL:https://sf.funcheap.com/sfs-great-pumpkin-giveaway-free-historic-carou
+ sel-rides-soma/
+DESCRIPTION:Camp & Halloween · A yearly tradition\nhttps://sf.funcheap.co
+ m/sfs-great-pumpkin-giveaway-free-historic-carousel-rides-soma/\n\nWe’r
+ e giving away free pumpkins! Come to the corner of 4th and Howard by the 
+ historic LeRoy King Carousel. Some restrictions apply. Also enjoy free ca
+ rousel rides from 10am to 11am.
+END:VEVENT
+END:VCALENDAR

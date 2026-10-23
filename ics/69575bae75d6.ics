@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:69575bae75d6@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261023T110000
+DTEND;TZID=America/Los_Angeles:20261023T220000
+SUMMARY:SF Restaurant Week
+LOCATION:Tacolicious (Marina & Mission)\, 450 Hayes Street\, San Francisco
+ \, CA 94117\, San Francisco
+URL:https://ma.to/event/sf-restaurant-week-2026-10-23
+DESCRIPTION:New in your area\nhttps://ma.to/event/sf-restaurant-week-2026-
+ 10-23\n\nSF Restaurant Week runs from October 16 to 25\, 2026\, presented
+  by the Golden Gate Restaurant Association (GGRA) for fall 2026. Approxim
+ ately 200 restaurants across the city take part\, offering special lunch 
+ and dinner menus that range from fast-casual spots to five-star dining ro
+ oms. Reservations can be made through the SF Restaurant Week website. Paz
+ zia is among the participating restaurants and 
+END:VEVENT
+END:VCALENDAR

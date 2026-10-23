@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:beeead5890af@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261023T120000
+DTEND;TZID=America/Los_Angeles:20261023T180000
+SUMMARY:Lowrider Council 45th Anniversary
+LOCATION:Mission Cultural Center\, 2868 Mission Street\, San Francisco\, C
+ A\, San Francisco
+URL:https://ma.to/event/lowrider-council-45th-anniversary-exhibition-2026-
+ 10-23
+DESCRIPTION:Museum exhibits + Art\nhttps://ma.to/event/lowrider-council-45
+ th-anniversary-exhibition-2026-10-23\n\nThe San Francisco Lowrider Counci
+ l marks its 45th anniversary with an exhibition at the Mission Cultural C
+ enter\, 2868 Mission Street\, San Francisco. The exhibition can be visite
+ d Tuesday through Saturday from 12 PM to 6 PM.
+END:VEVENT
+END:VCALENDAR

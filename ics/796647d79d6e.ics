@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:796647d79d6e@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261023T120000
+DTEND;TZID=America/Los_Angeles:20261023T200000
+SUMMARY:Free Tubi “Emochine” Mood Quiz + Watchlist Pop-Up in Oakland
+LOCATION:Oakland’s Prescott Market\, 1620 18th St\, Oakland\, CA 94607\,
+  Oakland
+URL:https://sf.funcheap.com/free-tubi-emochine-mood-quiz-watchlist-popup-o
+ akland-oct-2324/
+DESCRIPTION:Oakland\nhttps://sf.funcheap.com/free-tubi-emochine-mood-quiz-
+ watchlist-popup-oakland-oct-2324/\n\nOn October 23 – 24\, Tubi is bring
+ ing Emochine\, a “mood machine\,” to Prescott Market for a two-day in
+ teractive experience designed to get Oaklanders in touch with their feeli
+ ngs. Take the quiz\, find your mood\, and Emochine will serve up a person
+ alized list of what to ...
+END:VEVENT
+END:VCALENDAR

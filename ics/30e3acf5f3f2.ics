@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:30e3acf5f3f2@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;TZID=America/Los_Angeles:20261024T100000
+DTEND;TZID=America/Los_Angeles:20261024T160000
+SUMMARY:Live Youth Art Contest
+LOCATION:International Art Museum of America\, San Francisco
+URL:https://ma.to/event/live-youth-art-contest-24-oct-2026
+DESCRIPTION:Weird & unusual + Art\nhttps://ma.to/event/live-youth-art-cont
+ est-24-oct-2026\n\nThe second annual Live Youth Art Contest invites artis
+ ts aged 10-18 to create original artwork in-person at the museum. Partici
+ pants compete alongside peers to respond to a theme announced on the day\
+ , with completed works reviewed by a panel of judges. Applications are op
+ en for three age groups: 10-12\, 13-15\, and 16-18. Participants must app
+ ly by October 4 on the profile.
+END:VEVENT
+END:VCALENDAR

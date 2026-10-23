@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0d7cdf8246c8@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261106T210000
+DTEND;TZID=America/Los_Angeles:20261106T230000
+SUMMARY:ZooLights
+LOCATION:
+URL:https://sf.funcheap.com/city-guide/sfs-zoolights-frozen-forest-time-8-
+ years/
+DESCRIPTION:Animals · Featured on Funcheap\nhttps://sf.funcheap.com/city-
+ guide/sfs-zoolights-frozen-forest-time-8-years/\n\nopens to the public on
+  Friday\, November 6 and runs through Sunday\, January 3\, 2027 operating
+  from 5:30 to 9 p.m. each night and is a separate ticket from daytime Zoo
+  admission. ZooLights will be closed on Mondays and Tuesdays until Decemb
+ er 16\, when the event will be open daily.
+END:VEVENT
+END:VCALENDAR

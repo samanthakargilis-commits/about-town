@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:565b448609a4@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;TZID=America/Los_Angeles:20261029T170000
+DTEND;TZID=America/Los_Angeles:20261029T190000
+SUMMARY:Redwood Materials Open House
+LOCATION:100 Hooper\, 100 Hooper St\, San Francisco\, CA 94107\, USA\, San
+  Francisco
+URL:https://luma.com/b3u04qyl
+DESCRIPTION:Thursday evening\nhttps://luma.com/b3u04qyl\n\nEnergy demand i
+ s scaling faster than the grid can keep up\, and the race is on to build 
+ the technology and infrastructure to generate and deliver that power. Joi
+ n the Redwood team for an evening to learn how Redwood is building that t
+ echnology to power the future. Visit Redwood at our San Francisco locatio
+ n for drinks & snacks and a tour of our lab and a chance to connect with 
+ our leadership team t
+END:VEVENT
+END:VCALENDAR

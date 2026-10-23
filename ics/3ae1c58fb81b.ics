@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3ae1c58fb81b@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261111
+SUMMARY:Conundrum Chronicles StorySlam
+LOCATION:The Marsh Theater\, 1062 Valencia Street\, San Francisco\, San Fr
+ ancisco
+URL:https://sf.funcheap.com/conundrum-chronicles-storyslam-9/
+DESCRIPTION:Theatre + Writing\nhttps://sf.funcheap.com/conundrum-chronicle
+ s-storyslam-9/\n\nYou don’t want to miss the November 10 Conundrum Chro
+ nicles StorySlam! (The Marsh Theater– 1062 Valencia Street\, SF) Put yo
+ ur name in the hat for a chance to tell a true five-minute story\; be the
+  judge\; or kick back and enjoy magic of live storytelling! THEME: TURNIN
+ G ...
+END:VEVENT
+END:VCALENDAR

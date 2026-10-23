@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f45a2c53b98f@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;TZID=America/Los_Angeles:20261024T110000
+DTEND;TZID=America/Los_Angeles:20261024T150000
+SUMMARY:Alemany Farm Harvest Festival
+LOCATION:Alemany Farmers Market\, 100 Alemany Blvd San Francisco\, San Fra
+ ncisco
+URL:https://partiful.com/e/c6zTmmXFgCDlr2y4PDP8
+DESCRIPTION:Big Bay Area traditions + Fairs & festivals\nhttps://partiful.
+ com/e/c6zTmmXFgCDlr2y4PDP8\n\nSpend a fall afternoon at one of the city's
+  working farms\, where the Friends of Alemany Farm throw their annual har
+ vest celebration in the Alemany neighborhood Expect a free community barb
+ ecue\, live music\, eco activities\, games\, face painting\, and guided f
+ arm tours. Everything is free\, so just bring an appetite and a tote for 
+ anything you pick up This event is not hosted by Partiful. It is an even
+END:VEVENT
+END:VCALENDAR

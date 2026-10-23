@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f1e973489b10@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;TZID=America/Los_Angeles:20261002T190000
+DTEND;TZID=America/Los_Angeles:20261002T210000
+SUMMARY:Dell’Osso Family Farm 2026
+LOCATION:501 Manthey Rd.\, Lathrop\, CA Founded in the 1920s\, Dell’Osso
+  Family Farm turns into a fall playground every October\, featuring a one
+ -of-a-kind or
+URL:https://www.pumpkinmaze.com/corn-maze
+DESCRIPTION:Animals + Camp & Halloween · Featured on Funcheap · Lathrop\
+ , CA Founded in the 1920s\, Dell’Osso Family Farm turns into a fall pla
+ yground every October\, featuring a one-of-a-kind or\nhttps://www.pumpkin
+ maze.com/corn-maze\n\nOct. 2-31\, 2026 | Mon.-Fri.: Noon-7 pm\; Sat.-Sun.
+ : 10 am-7 pm (last entry 7 pm daily). Halloween: 10 am-5 pm (last entry 3
+ :30 pm). Dell’Osso Family Farm | 501 Manthey Rd.\, Lathrop\, CA Founded
+  in the 1920s\, Dell’Osso Family Farm turns into a fall playground ever
+ y October\, featuring a one-of-a-kind original corn maze \, Haunted House
+ \, Dell’Osso Express Train\, hayrides\, Pumpkin Treehouse\, Slide Hill\
+ , 
+END:VEVENT
+END:VCALENDAR

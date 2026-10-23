@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f94921480ab2@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261024T170000
+DTEND;TZID=America/Los_Angeles:20261024T210000
+SUMMARY:AURORA WINE CLOSEOUT: DAY 3
+LOCATION:Studio Aurora\, 302 Valencia St San Francisco\, San Francisco
+URL:https://partiful.com/e/dQqTHKUYFRwPKJQbRxvs
+DESCRIPTION:Reading\nhttps://partiful.com/e/dQqTHKUYFRwPKJQbRxvs\n\nHoly T
+ essier. Super special for us to host Kristie and her crew at Studio. Tess
+ ier library wines and BTG all evening and we are baking Roman pinsas. Thi
+ s is our FINAL WINE CLOSEOUT PARTY 30% OFF all our wines and 40% OFF case
+ s (mix and match) — Mosse\, Villemade\, Jerome Lambert\, Calek\, Mazel\
+ , Sabots D’Helene\, Barret and many other deep cuts. Oh\, sake and cham
+ pagne too. 🍇 🦶 DEAL OF THE YEAR 🍷 🍶 30% 
+END:VEVENT
+END:VCALENDAR

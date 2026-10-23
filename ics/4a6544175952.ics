@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4a6544175952@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261024T100000
+DTEND;TZID=America/Los_Angeles:20261024T130000
+SUMMARY:Paint Kanbar Violet: A Valkyries Family Watch Party
+LOCATION:JCCSF\, 3200 California Street\, San Francisco
+URL:https://www.jccsf.org/event/paint-kanbar-violet-a-valkyries-family-wat
+ ch-party/
+DESCRIPTION:Gay / queer\nhttps://www.jccsf.org/event/paint-kanbar-violet-a
+ -valkyries-family-watch-party/\n\nBallhalla meets Kanbar Hall. Rally with
+  fellow Valkyries fans for an electrifying championship watch party fille
+ d with big-game energy\, Bay Area pride\, and unforgettable community spi
+ rit!
+END:VEVENT
+END:VCALENDAR

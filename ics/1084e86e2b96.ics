@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1084e86e2b96@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261113T180000
+DTEND;TZID=America/Los_Angeles:20261113T200000
+SUMMARY:Ancient Games
+LOCATION:2300 Valdez St\, 2300 Valdez St\, Oakland\, CA 94612\, USA\, Oakl
+ and\, CA Oakland\, Oakland
+URL:https://www.meetup.com/queer-fun-fridays/events/316908109/
+DESCRIPTION:Theatre · Oakland\nhttps://www.meetup.com/queer-fun-fridays/e
+ vents/316908109/\n\nWe will meet up at The Game Parlour and play Manancal
+ a\, Senet\, Bao\, and other simple-to-learn\, but engaging to play ancien
+ t games. Cost covers admission to The Game Parlour and table reservation 
+ fee. Food and drink are available for purchase at location.
+END:VEVENT
+END:VCALENDAR

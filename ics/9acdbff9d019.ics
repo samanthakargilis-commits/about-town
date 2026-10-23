@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9acdbff9d019@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261024T100000
+DTEND;TZID=America/Los_Angeles:20261024T180000
+SUMMARY:52nd World Fantasy Convention
+LOCATION:Oakland Convention Center\, Oakland
+URL:https://ma.to/event/52nd-world-fantasy-convention-2026-10-24
+DESCRIPTION:Art + Writing · Oakland\nhttps://ma.to/event/52nd-world-fanta
+ sy-convention-2026-10-24\n\nThe 52nd World Fantasy Convention takes place
+  at the Oakland Convention Center from October 22 to 25\, 2026. Writers a
+ nd artists from around the world gather for panels\, books and art that c
+ elebrate fantasy. Audrey T. Williams is co-chair of the convention.
+END:VEVENT
+END:VCALENDAR

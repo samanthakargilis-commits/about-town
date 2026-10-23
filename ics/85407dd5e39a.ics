@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:85407dd5e39a@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:Substance Fest San Francisco 2026 Day 4
+LOCATION:Great American Music Hall\, 859 O'Farrell St.\, San Francisco\, C
+ A\, San Francisco
+URL:https://sf.funcheap.com/substance-fest-san-francisco-2026-day-4/
+DESCRIPTION:Fairs & festivals + Dance nights\nhttps://sf.funcheap.com/subs
+ tance-fest-san-francisco-2026-day-4/\n\nSubstance Festival SF 2026 brings
+  four nights of body music\, post-punk\, and synth-pop to the Great Ameri
+ can Music Hall (Oct 22–23 & 29–30). Headliners include Cold Cave (per
+ forming the Cremations set)\, Desire\, TR/ST (DJ set)\, A Split Second\, 
+ and Crash Course in Science\, plus supporting ...
+END:VEVENT
+END:VCALENDAR

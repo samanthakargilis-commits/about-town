@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cc4970a24fbe@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:Black Hammer’s Free “Hopped Up” Trivia Night
+LOCATION:Black Hammer Brewing\, 544 Bryant St.\, San Francisco\, CA\, San 
+ Francisco
+URL:https://sf.funcheap.com/black-hammers-free-hopped-up-trivia-night-ever
+ y-wednesday-143/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/black-hammers-free-h
+ opped-up-trivia-night-every-wednesday-143/\n\nNo pens\, no paper. Join us
+  for three rounds of fast-paced gameshow-style pub trivia in our taproom 
+ every Wednesday at 7PM. Free admission\, with bonus points for fastest an
+ swer and a live scoreboard. Hopped Up Trivia Every Wednesday at 7pm Black
+  Hammer Brewing\, 544 Bryant ...
+END:VEVENT
+END:VCALENDAR

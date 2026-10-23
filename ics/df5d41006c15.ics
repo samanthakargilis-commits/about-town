@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:df5d41006c15@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261023T140000
+DTEND;TZID=America/Los_Angeles:20261023T170000
+SUMMARY:Launch Party for CHUMI
+LOCATION:Mission District\, undefined undefined San Francisco\, San Franci
+ sco
+URL:https://partiful.com/e/zs7sG61no26W7Mz9cyFx
+DESCRIPTION:New in your area\nhttps://partiful.com/e/zs7sG61no26W7Mz9cyFx\
+ n\nCHUMI key words: protein mochi\, fiber/prebiotics\, keto-friendly\, su
+ gar-free\, no artificial ingredients! This event is for you if you’re e
+ ager to try CHUMI before everyone else who shops at Erewhon. This party i
+ s sponsored by Assembly SF: private founders group membership based.
+END:VEVENT
+END:VCALENDAR

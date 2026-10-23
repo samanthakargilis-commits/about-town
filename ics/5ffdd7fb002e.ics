@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5ffdd7fb002e@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;TZID=America/Los_Angeles:20261024T100000
+DTEND;TZID=America/Los_Angeles:20261024T180000
+SUMMARY:Ann Krasner: The Gravity of Joy
+LOCATION:Lightspace Gallery at IAMA\, San Francisco
+URL:https://ma.to/event/ann-krasner-the-gravity-of-joy-24-oct-2026
+DESCRIPTION:Craft + Museum exhibits\nhttps://ma.to/event/ann-krasner-the-g
+ ravity-of-joy-24-oct-2026\n\nThe Gravity of Joy presents paintings and sc
+ ulptures by interdisciplinary artist Ann Krasner in Lightspace Gallery at
+  IAMA\, with works of all sizes covering the space from floor to ceiling.
+  Krasner has created more than 7\,000 original works\, among them oil pai
+ ntings\, sculptures\, bronzes\, ceramics and mixed-media pieces\, forming
+  a world with its own space\, language and sense of joy. The exhibition 
+END:VEVENT
+END:VCALENDAR

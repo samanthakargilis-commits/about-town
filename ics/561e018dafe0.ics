@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:561e018dafe0@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261023T140000
+DTEND;TZID=America/Los_Angeles:20261023T170000
+SUMMARY:Sweet & Spooky: A Recchiuti Chocolate Experience (Hayes Valley)
+LOCATION:Hayes Valley\, Hayes St. and Laguna St.\, San Francisco\, CA\, Sa
+ n Francisco
+URL:https://sf.funcheap.com/sweet-spooky-recchiuti-chocolate-experience-ha
+ yes-valley/
+DESCRIPTION:Camp & Halloween\nhttps://sf.funcheap.com/sweet-spooky-recchiu
+ ti-chocolate-experience-hayes-valley/\n\nSweet & Spooky: A Recchiuti Choc
+ olate Experience ️ Savor handcrafted Recchiuti chocolates with a spooky
+  twist! Enjoy sweet treats\, festive flavors\, and Halloween fun at the F
+ erry Building!!! Hayes Valley – 465 Hayes St. Sunday\, October 23rd ⏰
+  2:00 PM – 5:00 PM Get ready for a spooktacular afternoon of ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a11248d82aee@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;TZID=America/Los_Angeles:20261024T100000
+DTEND;TZID=America/Los_Angeles:20261024T120000
+SUMMARY:Sketching in the Galleries
+LOCATION:de Young Museum\, San Francisco
+URL:https://ma.to/event/sketching-in-the-galleries-2026-10-24
+DESCRIPTION:Camp & Halloween + Museum exhibits\nhttps://ma.to/event/sketch
+ ing-in-the-galleries-2026-10-24\n\nSketching in the Galleries takes place
+  in the de Young Museum's galleries as part of the museum's October progr
+ amme. Sessions are scheduled for Oct 10\, 24 and 31\; this listing covers
+  Oct 24. Other de Young events in October include Family Art Making: Trea
+ sures of the Pharaohs on Oct 17 and Late Night Editions: Halloween Eve on
+  Oct 30.
+END:VEVENT
+END:VCALENDAR

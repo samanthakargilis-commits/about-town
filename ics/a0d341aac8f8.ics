@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a0d341aac8f8@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261023T190000
+DTEND;TZID=America/Los_Angeles:20261023T210000
+SUMMARY:Hurling Coaching Clinic
+LOCATION:Beach Chalet\, San Francisco
+URL:https://ma.to/event/hurling-coaching-clinic-beach-chalet-23-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/hurling-coaching-clinic-
+ beach-chalet-23-oct-2026\n\nThe U20 Munster & All-Ireland champions are c
+ oming to San Francisco. Join senior stars like Ryan Taylor on the field f
+ or a coaching clinic at Beach Chalet. It's a rare opportunity to learn wh
+ at it takes to win at the top level of the world's oldest and most skillf
+ ul game.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0ef186e23ae2@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261023T190000
+DTEND;TZID=America/Los_Angeles:20261024T020000
+SUMMARY:UHUL SF
+LOCATION:Jolene's Bar\, San Francisco
+URL:https://ma.to/event/uhul-sf-24-oct-2026
+DESCRIPTION:Gay / queer\nhttps://ma.to/event/uhul-sf-24-oct-2026\n\nSan Fr
+ ancisco’s party for sapphics and friends\, welcoming trans\, non-binary
+ \, and questioning guests. Happy hour from 7pm-9pm\, followed by the part
+ y from 10pm-2am. Features DJs CHINA G and JAE COCA\, plus rotating queer 
+ go-go dancers. The first 50 people who arrive without an existing account
+  get a free week Gold subscription and swag. Tag a wing woman before 6pm 
+ on 10/23 for free entry\, otherwise $
+END:VEVENT
+END:VCALENDAR

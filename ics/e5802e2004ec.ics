@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e5802e2004ec@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261023T183000
+DTEND;TZID=America/Los_Angeles:20261023T220000
+SUMMARY:Pumpkins After Dark
+LOCATION:Alameda County Fairgrounds\, 2005 Valley Ave\, Pleasanton\, Pleas
+ anton
+URL:https://ma.to/event/pumpkins-after-dark-2026-10-23-1
+DESCRIPTION:Museum exhibits + Camp & Halloween · Pleasanton\nhttps://ma.t
+ o/event/pumpkins-after-dark-2026-10-23-1\n\nPumpkins After Dark is a walk
+ -through Halloween glow trail for families at the Alameda County Fairgrou
+ nds\, where 10\,000+ hand-carved pumpkins light the route. Glowing pumpki
+ n sculptures line every turn\, friendly characters roam the trail and say
+  hi rather than scare\, live pumpkin carving demonstrations show the face
+ s appearing\, and there is a maze\, themed photo spots and an open food c
+ ourt with se
+END:VEVENT
+END:VCALENDAR

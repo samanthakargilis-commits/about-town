@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:15c1dd640cb6@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261023T190000
+DTEND;TZID=America/Los_Angeles:20261023T233000
+SUMMARY:NO(w) Beauty at Black Cat
+LOCATION:Black Cat\, San Francisco
+URL:https://ma.to/event/now-beauty-24-oct-2026
+DESCRIPTION:Concerts\nhttps://ma.to/event/now-beauty-24-oct-2026\n\nThe Fr
+ ench-American quartet NO(w) Beauty brings their residency to Black Cat. F
+ eaturing Enzo Carniel on piano\, Hermon Mehari on trumpet\, Damien Varail
+ lon on double bass\, and Stéphane Adsuar on drums\, the group performs a
+  cinematic sound where acoustic lyricism meets electronic texture and hip
+ -hop influence. Music from their debut and new album (un)Seen. Tickets av
+ ailable on the profile.
+END:VEVENT
+END:VCALENDAR

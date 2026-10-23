@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:441bfcf56f2e@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;TZID=America/Los_Angeles:20261029T190000
+DTEND;TZID=America/Los_Angeles:20261029T210000
+SUMMARY:SF Men's Massage Exchange
+LOCATION:San Francisco\, \, San Francisco\, CA San Francisco\, San Francis
+ co
+URL:https://www.meetup.com/learn-and-practice-massage-for-gay-bi-men/event
+ s/316699653/
+DESCRIPTION:Gay / queer + Spirituality · Thursday evening\nhttps://www.me
+ etup.com/learn-and-practice-massage-for-gay-bi-men/events/316699653/\n\nJ
+ oin us for three hours of giving and receiving delicious touch and sharin
+ g intimacy with other men. Find out more here [at our website](https://ww
+ w.fleshandspirit.org/calendar/open-to-queer-men/msgx-oct-29-2026) "Thanks
+  for opening sacred space to the intimacy and intentional massage..it was
+  awesome. I [could] connect with my brother's energy and feelings. Again\
+ , it was an amazing experience." --
+END:VEVENT
+END:VCALENDAR

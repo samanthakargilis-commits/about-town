@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f7f963105440@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:The Night the Witches Were Invited In
+LOCATION:Pelican Inn\, 10 Pacific Way
+URL:https://sf.funcheap.com/night-witches-invited/
+DESCRIPTION:Camp & Halloween\nhttps://sf.funcheap.com/night-witches-invite
+ d/\n\nFriday\, October 23 | Pelican Inn Since opening\, the Pelican Inn h
+ as had its ways of keeping witches out\, from glass worked into the firep
+ lace mortar to a horse’s head buried beneath the hearth. But on this ni
+ ght\, we’re turning tradition on its head and inviting ...
+END:VEVENT
+END:VCALENDAR

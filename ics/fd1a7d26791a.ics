@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fd1a7d26791a@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261101T140000
+DTEND;TZID=America/Los_Angeles:20261101T160000
+SUMMARY:Día De Los Muertos Community Run
+LOCATION:North Lake Public Plaza\, 2270 Broadway Oakland\, Oakland
+URL:https://partiful.com/e/VOzqovm8oMarOydzHLZH
+DESCRIPTION:Cultural festivals + Spirituality · Oakland\nhttps://partiful
+ .com/e/VOzqovm8oMarOydzHLZH\n\nCelebrate Oakland’s Latino community wit
+ h a day of movement\, music\, food\, and connection at the Día de los Mu
+ ertos Run! We’ll kick things off with a DJ and dancing\, with local ven
+ dors\, food\, and cocktails to enjoy. Then we’ll head out for a communi
+ ty run or walk. Afterward\, come back\, hang out\, dance some more\, and 
+ spend time with the community. Come for the run\, the dancing\, the vendo
+ rs—or all of
+END:VEVENT
+END:VCALENDAR

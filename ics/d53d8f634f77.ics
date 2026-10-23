@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d53d8f634f77@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;VALUE=DATE:20261101
+DTEND;VALUE=DATE:20261102
+SUMMARY:Cuban Rumba Jam: Play\, Sing\, Dance & Enjoy
+LOCATION:Berkeley\, 3105 Shattuck Ave\, Berkeley\, CA\, Berkeley
+URL:https://sf.funcheap.com/cuban-rumba-jam-play-sing-dance-enjoy-berkeley
+ -114/
+DESCRIPTION:Theatre · Berkeley\nhttps://sf.funcheap.com/cuban-rumba-jam-p
+ lay-sing-dance-enjoy-berkeley-114/\n\nThis free\, participatory event has
+  been a staple at La Peña Cultural Center for 12 years due to its incred
+ ible fun\, and recurs every 1st and 3rd Sunday of each month. Come enjoy 
+ the Afro-Cuban folkloric drums\, dances\, and songs of rumba. Rumba is th
+ e ...
+END:VEVENT
+END:VCALENDAR

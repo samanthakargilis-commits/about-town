@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:57ead341f51f@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261107T100000
+DTEND;TZID=America/Los_Angeles:20261107T120000
+SUMMARY:Pilates & Coffee at the park
+LOCATION:East Avenue Park\, 3221 East Ave Hayward\, Hayward
+URL:https://partiful.com/e/CvTkyto9r5mijTakQg5F
+DESCRIPTION:Meditation · Hayward\nhttps://partiful.com/e/CvTkyto9r5mijTak
+ Qg5F\n\nJoin Araam for a women-only Pilates session at San Felipe Communi
+ ty Park! 🤍 We’ll be doing a 1-hour Pilates class\, followed by a Bas
+ cota Cafe pop-up cart so you can grab your included drink and hang out af
+ ter the session. ☕️🧘🏼‍♀️ Please bring your own Pilates/yo
+ ga mat. 🎟 $25 per person 🧘‍♀️ 1-hour Pilates session ☕ 1 fr
+ ee drink from Bascota Cafe included 🌿 Location: East Avenue Park\, Hay
+ ward 👭 Wom
+END:VEVENT
+END:VCALENDAR

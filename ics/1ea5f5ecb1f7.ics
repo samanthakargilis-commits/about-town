@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1ea5f5ecb1f7@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;TZID=America/Los_Angeles:20261023T190000
+DTEND;TZID=America/Los_Angeles:20261023T220000
+SUMMARY:Sapphic Singles Halloween Party
+LOCATION:Jolene's Bar\, San Francisco
+URL:https://ma.to/event/sapphic-singles-halloween-24-oct-2026
+DESCRIPTION:Gay / queer + Camp & Halloween\nhttps://ma.to/event/sapphic-si
+ ngles-halloween-24-oct-2026\n\nA one-night Halloween party exclusively fo
+ r lesbian and queer singles at Jolene's Bar. Halloween costumes are manda
+ tory\, and a costume contest awards an epic prize to the winner. The nigh
+ t features a DJ\, spooky icebreaker games\, drink specials\, and a confes
+ sional booth. 21+.
+END:VEVENT
+END:VCALENDAR

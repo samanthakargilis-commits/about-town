@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:79d9b125435d@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:Birdhouse Comedy Night
+LOCATION:Birdhouse Gallery\, 2548 Judah Street
+URL:https://sf.funcheap.com/birdhouse-comedy-night-2/
+DESCRIPTION:Comedy + Art\nhttps://sf.funcheap.com/birdhouse-comedy-night-2
+ /\n\nBirdhouse Comedy Night is a monthly stand-up show in SF’s Sunset D
+ istrict. It happens on a Thursday at the illustrious Birdhouse gallery an
+ d features a selection of the Bay Area’s best stand up comics\, with th
+ e added bonus of the gallery’s ever-rotating display of fantastic ...
+END:VEVENT
+END:VCALENDAR

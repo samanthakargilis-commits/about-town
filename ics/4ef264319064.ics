@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4ef264319064@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261028T170000
+DTEND;TZID=America/Los_Angeles:20261028T190000
+SUMMARY:Free NeuroNight SF: Brain Games + Mini Keynotes (Chinatown)
+LOCATION:CCSF Chinatown/North Beach\, 808 Kearny St.\, San Francisco\, CA\
+ , San Francisco
+URL:https://sf.funcheap.com/free-neuronight-sf-brain-games-mini-keynotes-c
+ hinatown/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/free-neuronight-sf-b
+ rain-games-mini-keynotes-chinatown/\n\nNeuroNight SF is an event for anyo
+ ne 18+ interested in the brain and neuroscience. We’re bringing togethe
+ r students from community colleges and universities\, public and private\
+ , alongside career-changers and working professionals for one relaxed eve
+ ning of brain games\, real conversations\, Mini Keynotes and a raffle. Co
+ me curious. ...
+END:VEVENT
+END:VCALENDAR

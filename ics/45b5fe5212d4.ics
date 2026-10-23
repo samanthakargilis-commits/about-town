@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:45b5fe5212d4@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;TZID=America/Los_Angeles:20261107T103000
+DTEND;TZID=America/Los_Angeles:20261107T150000
+SUMMARY:confucius says 子曰:have another cup
+LOCATION:a tea studio in the mission\, 2151 Harrison St San Francisco\, Sa
+ n Francisco
+URL:https://partiful.com/e/zgCgP8ZtPdWFxxQbi6MJ
+DESCRIPTION:Craft\nhttps://partiful.com/e/zgCgP8ZtPdWFxxQbi6MJ\n\n子曰:
+ 「有朋自遠方來\,不亦樂乎?」 「is it not a joy when friends c
+ ome from afar? 」☕🍵 we're taking over a tea lounge in the mission f
+ or one day. four crafted drinks\, four sayings\, plus cheesecake made for
+  the occasion. limited quantities available for purchase\, and we'll clos
+ e when we sell out! ✨ on the menu: 🍵 tea & 1 一茶一會: jasmine t
+ ea hybrid in one slow drip 🍊 citrus espresso milk wash 柚見清澄: r
+ uby grapefruit and y
+END:VEVENT
+END:VCALENDAR

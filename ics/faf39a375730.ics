@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:faf39a375730@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261024T140000
+DTEND;TZID=America/Los_Angeles:20261024T210000
+SUMMARY:SIDEPIECE Day Party at Gold Bar Distillery SF
+LOCATION:Gold Bar Whiskey Distillery Tasting Room\, 1 Avenue of the Palms\
+ , #167\, San Francisco\, CA 94130 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/sidepiece-day-party-at-gold-bar-distiller
+ y-sf-tickets-1992942958036
+DESCRIPTION:New in your area\nhttps://www.eventbrite.com/e/sidepiece-day-p
+ arty-at-gold-bar-distillery-sf-tickets-1992942958036\n\nBAY AREA!!! SIDEP
+ IECE headlines their biggest show to date at the iconic Gold Bar Distille
+ ry on Treasure Island on 10/24
+END:VEVENT
+END:VCALENDAR

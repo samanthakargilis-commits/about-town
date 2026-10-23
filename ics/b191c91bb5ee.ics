@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b191c91bb5ee@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261023T183000
+DTEND;TZID=America/Los_Angeles:20261023T220000
+SUMMARY:Art Club Ed.03: Vinyl Night
+LOCATION:A Loft of One’s Own\, 5757 Horton St Emeryville\, Emeryville
+URL:https://partiful.com/e/M6t84diAVMDF9n27XuxE
+DESCRIPTION:Art + Museum exhibits · Emeryville\nhttps://partiful.com/e/M6
+ t84diAVMDF9n27XuxE\n\nNARRATVES invites you to spend a Friday evening ins
+ ide Hold Me Tender for the third edition of Art Club: an all vinyl night 
+ of tender sounds\, surrounded by art and moving images. Music carries mem
+ ory the way photographs and films do. For one night\, DJ AMAL pulls from 
+ her crates to soundtrack the themes of the show\, from diaspora and belon
+ ging to softness\, love\, and everything in between\, while a m
+END:VEVENT
+END:VCALENDAR

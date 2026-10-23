@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0f04fd289843@bay-events
+DTSTAMP:20261023T175951Z
+DTSTART;TZID=America/Los_Angeles:20261025T120000
+DTEND;TZID=America/Los_Angeles:20261025T160000
+SUMMARY:Cozy Craft Sunday @ GHBA: Spooky Edition Feat. Bichi Mao
+LOCATION:Gamers Heaven Bay Area\, 1171 Homestead Rd #190\, Santa Clara\, C
+ A 95050 Santa Clara\, Santa Clara
+URL:https://www.eventbrite.com/e/cozy-craft-sunday-ghba-spooky-edition-fea
+ t-bichi-mao-tickets-2003247855261
+DESCRIPTION:Craft + Camp & Halloween · Santa Clara\nhttps://www.eventbrit
+ e.com/e/cozy-craft-sunday-ghba-spooky-edition-feat-bichi-mao-tickets-2003
+ 247855261\n\nJoin us for a day of crafts with a pumpkin painting craft wo
+ rkshop sessions from 1-4p!
+END:VEVENT
+END:VCALENDAR

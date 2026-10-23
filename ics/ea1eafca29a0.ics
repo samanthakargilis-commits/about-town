@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ea1eafca29a0@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261030T193000
+DTEND;TZID=America/Los_Angeles:20261031T013000
+SUMMARY:ANNUAL MRC HALLOWEEN PARTY
+LOCATION:Novela\, Novela\, 662 Mission St\, San Francisco\, CA 94105\, USA
+ \, San Francisco
+URL:https://luma.com/pdgi6lzs
+DESCRIPTION:Camp & Halloween + Craft\nhttps://luma.com/pdgi6lzs\n\nMRC ANN
+ UAL HALLOWEEN PARTY This is one of our biggest MRC annual events - get yo
+ ur ticket asap 👻 Tickets include a craft cocktail 🥂 DJ line-up at a
+  great venue. The best company. You never know who you'll meet 👻 Drink
+ s\, dj lineup\, costume competition\, and giveaways 👻 DJ Lineup: FOXI 
+ SUN More coming soon Costume awards: Best running costume Best group cost
+ ume Best overall costume Prizes donated by 
+END:VEVENT
+END:VCALENDAR

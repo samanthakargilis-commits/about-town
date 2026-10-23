@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ceec943151b7@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Touki Bouki
+LOCATION:Yerba Buena Center for the Arts\, 701 Mission St\, San Francisco\
+ , CA\, San Francisco
+URL:https://sf.funcheap.com/touki-bouki/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/touki-bouki/\n\nJoin
+  us for Djibril Diop Mambéty’s stunning film that mixes the surreal an
+ d the naturalistic to paint a vivid\, fractured portrait of Senegal in th
+ e early 1970s. Enjoy the film and free snacks\, hand-picked by the series
+  curator. Come early or stay late to visit our ...
+END:VEVENT
+END:VCALENDAR

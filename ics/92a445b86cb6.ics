@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:92a445b86cb6@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261118T180000
+DTEND;TZID=America/Los_Angeles:20261118T203000
+SUMMARY:Best Move Club: Chess Community Event Series
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/uq9xqfaf
+DESCRIPTION:Reading + Theatre\nhttps://luma.com/uq9xqfaf\n\nBest Move Club
+  by OpenRouter♟️ An evening of chess\, conversation\, and thoughtful 
+ decision-making. Every great company is built on a series of decisions. E
+ very move - whether on a chessboard or while building a company - equires
+  navigating multiple possible paths\, imperfect information\, and tradeof
+ fs between speed\, quality\, and risk. Join founders\, engineers\, produc
+ t leaders and AI researchers for 
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:035746935882@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261024T090000
+DTEND;TZID=America/Los_Angeles:20261024T120000
+SUMMARY:Rain Barrel Pickup: Half Moon Bay
+LOCATION:City of Half Moon Bay\, Half Moon Bay
+URL:https://ma.to/event/rain-barrel-pickup-half-moon-bay-24-oct-2026
+DESCRIPTION:Half Moon Bay\nhttps://ma.to/event/rain-barrel-pickup-half-moo
+ n-bay-24-oct-2026\n\nGrab a discounted 50-gallon rain barrel through the 
+ San Mateo Countywide program. It's a solid way to bank rainwater for your
+  plants and keep runoff in check. Make sure to order online by Oct 11 to 
+ grab it at this location. No on-site sales available.
+END:VEVENT
+END:VCALENDAR

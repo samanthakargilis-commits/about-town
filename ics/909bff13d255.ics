@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:909bff13d255@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261028T183000
+DTEND;TZID=America/Los_Angeles:20261028T203000
+SUMMARY:Drinks Around The Fire: Cartesia x Lorikeet x Speak
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/bz8x2v1s
+DESCRIPTION:Discourse\nhttps://luma.com/bz8x2v1s\n\nPull up a chair. Carte
+ sia\, Lorikeet\, and Speak are coming together for an evening of great co
+ nversation and delicious drinks/food. We're bringing together some of the
+  minds building the next generation of voice AI to talk shop\, share less
+ ons from the field\, and explore what's next for conversational AI. From 
+ emerging technologies to the challenges of building voice agents people a
+ ctually want to t
+END:VEVENT
+END:VCALENDAR

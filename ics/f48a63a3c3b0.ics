@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f48a63a3c3b0@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;TZID=America/Los_Angeles:20261105T173000
+DTEND;TZID=America/Los_Angeles:20261105T210000
+SUMMARY:🍜 Ramen pop-up // PlanetScale x Depot
+LOCATION:PlanetScale\, PlanetScale\, 108 Natoma St\, San Francisco\, CA 94
+ 105\, USA\, San Francisco
+URL:https://luma.com/jvrl5pcb
+DESCRIPTION:Thursday evening\nhttps://luma.com/jvrl5pcb\n\n🍜 Ramen pop-
+ up // PlanetScale x Depot Join PlanetScale and Depot for ramen and drinks
+  on November 5. The Depot team is in SF\, and we’re teaming up to turn 
+ the PlanetScale office into a ramen pop-up for the night. 🍜 Build your
+  own bowl Kawashima’s Kitchen is serving ramen with tonkotsu and vegeta
+ rian shoyu broths\, chashu pork\, karaage chicken\, and tofu. Add soft-bo
+ iled eggs\, black garlic oil\, and w
+END:VEVENT
+END:VCALENDAR

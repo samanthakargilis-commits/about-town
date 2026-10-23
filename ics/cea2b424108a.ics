@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cea2b424108a@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261129T120000
+DTEND;TZID=America/Los_Angeles:20261129T140000
+SUMMARY:November 2026 Book Discussion: TBD (vote now)
+LOCATION:Park Station\, 1200 Park St\, Alameda\, CA 94501\, USA\, Alameda\
+ , CA Alameda\, Alameda
+URL:https://www.meetup.com/books-brew-oakland/events/317059924/
+DESCRIPTION:Discourse · Alameda\nhttps://www.meetup.com/books-brew-oaklan
+ d/events/317059924/\n\n**The November Books & Brew poll is officially ope
+ n!** 📚🍻 It's time to choose our next read! The book with the most v
+ otes will become our November Books & Brew selection. **Voting closes Sat
+ urday\, October 24 at 5:00 PM**\, so make sure your favorite gets some lo
+ ve! **This month's nominees:** 🔮 *The Invocations* — Krystal Sutherl
+ and 💕 *How to End a Love Story* — Yulin Kuang 📖 *Man's Search for
+  Meani
+END:VEVENT
+END:VCALENDAR

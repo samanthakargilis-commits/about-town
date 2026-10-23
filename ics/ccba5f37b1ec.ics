@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ccba5f37b1ec@bay-events
+DTSTAMP:20261023T175955Z
+DTSTART;TZID=America/Los_Angeles:20261023T190000
+DTEND;TZID=America/Los_Angeles:20261023T230000
+SUMMARY:The Friday Roller Disco - 7:00 PM to 11:00 P.M.
+LOCATION:Church Of 8 Wheels\, 554 Fillmore Street\, San Francisco\, CA 941
+ 17 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/the-friday-roller-disco-700-pm-to-1100-pm
+ -tickets-1978867159945
+DESCRIPTION:Dance nights\nhttps://www.eventbrite.com/e/the-friday-roller-d
+ isco-700-pm-to-1100-pm-tickets-1978867159945\n\nWe're extending the sessi
+ on time\, not the price\, giving you more funky good times for the money!
+ !!
+END:VEVENT
+END:VCALENDAR

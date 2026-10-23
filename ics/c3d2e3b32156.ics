@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c3d2e3b32156@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;TZID=America/Los_Angeles:20261108T120000
+DTEND;TZID=America/Los_Angeles:20261108T160000
+SUMMARY:“Autumn In Willow Glen” 2026: Free Makers Market (San Jose)
+LOCATION:Historic Garden Theater\, 1165 Lincoln Ave\, San Jose\, CA 95125\
+ , San Jose
+URL:https://sf.funcheap.com/autumn-willow-glen-2026-free-makers-market-san
+ -jose/
+DESCRIPTION:Craft + Fairs & festivals · San Jose\nhttps://sf.funcheap.com
+ /autumn-willow-glen-2026-free-makers-market-san-jose/\n\nAutumn in Willow
+  Glen is a free fall makers market at the Historic Garden Theater featuri
+ ng handmade candles\, jewelry\, art\, trinkets\, and goods from local sma
+ ll businesses. The family-friendly and pet-friendly event takes place in 
+ downtown Willow Glen. Original Event Description: _Join us for *Autumn in
+  Willow ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:21e1027a92b9@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261023T200000
+DTEND;TZID=America/Los_Angeles:20261024T010000
+SUMMARY:Ladies of Freestyle: Freaky Jamz
+LOCATION:St Mary's Pub\, 3845 Mission St\, San Francisco\, San Francisco
+URL:https://ma.to/event/ladies-of-freestyle-freaky-jamz-2026-10-23
+DESCRIPTION:Camp & Halloween\nhttps://ma.to/event/ladies-of-freestyle-frea
+ ky-jamz-2026-10-23\n\nLadies of Freestyle: Freaky Jamz is a pre-Halloween
+  party at St Mary's Pub on Friday 23 October 2026\, running from 8pm unti
+ l late. Women vinyl DJs @la_gitana_747\, @dm_510\, @m.i.s.s_c.h.e.l.a_ an
+ d @gnica07 take the decks\, playing freestyle\, funk and 80s throwbacks. 
+ @la_gitana_747 hosts. The flyer\, headed "Ladies of Freestyle" Freaky Jam
+ z with Halloween artwork\, lists the DJs as La Gitana\, Lil Treas
+END:VEVENT
+END:VCALENDAR

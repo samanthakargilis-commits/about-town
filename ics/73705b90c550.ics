@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:73705b90c550@bay-events
+DTSTAMP:20261023T175953Z
+DTSTART;TZID=America/Los_Angeles:20261024T183000
+DTEND;TZID=America/Los_Angeles:20261024T203000
+SUMMARY:“Blue Beetle” Free Outdoor Movie Night: SF Latino Film Festiva
+ l (Spark Social)
+LOCATION:SPARK Social SF\, 601 Mission Bay Blvd\, San Francisco\, CA\, San
+  Francisco
+URL:https://sf.funcheap.com/blue-beetle-free-outdoor-movie-night-sf-latino
+ -film-festival-spark-social/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/blue-beetle-free-out
+ door-movie-night-sf-latino-film-festival-spark-social/\n\nFree outdoor sc
+ reening of Blue Beetle at SPARK Social SF\, in partnership with Cine+Mas 
+ San Francisco Latino Film Festival! Cine+Más: Blue Beetle Movie Night 
+ – A Celebration of Latino Cinema and Community! Join us for a special o
+ utdoor movie night presented by SPARK Social SF and Cine+Más ...
+END:VEVENT
+END:VCALENDAR

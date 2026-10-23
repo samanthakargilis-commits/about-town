@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9eee1f3c2271@bay-events
+DTSTAMP:20261023T175956Z
+DTSTART;TZID=America/Los_Angeles:20261024T110000
+DTEND;TZID=America/Los_Angeles:20261024T130000
+SUMMARY:Urban Sketching Workshop
+LOCATION:Duboce Park\, San Francisco
+URL:https://ma.to/event/urban-sketching-workshop-24-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/urban-sketching-workshop
+ -24-oct-2026\n\nNatalie Quek and the Transbay Coalition host an urban ske
+ tching workshop and fundraiser in support of public transit. Meet at Dubo
+ ce Park to create quick sketches of nature\, people\, architecture\, and 
+ transit. All experience levels are welcome and materials are provided. A 
+ portion of each ticket supports transit advocacy work. RSVP on the profil
+ e.
+END:VEVENT
+END:VCALENDAR

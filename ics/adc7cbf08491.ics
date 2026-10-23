@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:adc7cbf08491@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;TZID=America/Los_Angeles:20261025T140000
+DTEND;TZID=America/Los_Angeles:20261025T170000
+SUMMARY:Artist Meetup II
+LOCATION:Decentered Arts Studio\, Decentered Arts Studio\, 1175 Folsom St\
+ , San Francisco\, CA 94103\, USA\, San Francisco
+URL:https://luma.com/b02act2z
+DESCRIPTION:Art + Craft\nhttps://luma.com/b02act2z\n\nAll artists of any m
+ edium or level of experience are welcome to this meetup for Bay Area arts
+  people. We're gathering to connect with each other\, share resources\, a
+ nd co-design a connected and caring vision for the Bay Area arts communit
+ y. Come connect\, play\, rest\, and build a Bay Area Renaissance with us!
+  The gathering will be semi-structured\, allowing time for both collectiv
+ e conversation and un
+END:VEVENT
+END:VCALENDAR

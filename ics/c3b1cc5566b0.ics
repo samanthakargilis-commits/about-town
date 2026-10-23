@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c3b1cc5566b0@bay-events
+DTSTAMP:20261023T175952Z
+DTSTART;TZID=America/Los_Angeles:20261024T120000
+DTEND;TZID=America/Los_Angeles:20261024T140000
+SUMMARY:Clam Chowder Festival
+LOCATION:Fisherman's Wharf\, undefined undefined San Francisco\, San Franc
+ isco
+URL:https://partiful.com/e/Ihmg3c5yKeAxB7yhDY35
+DESCRIPTION:Fairs & festivals\nhttps://partiful.com/e/Ihmg3c5yKeAxB7yhDY35
+ \n\nSome of the Wharf's best kitchens go head to head on the waterfront\,
+  competing for the title of San Francisco's best clam chowder Watch the c
+ ompetition\, browse the marketplace\, and catch live entertainment and de
+ mos. Admission is free\, but tastings are ticketed\, so budget a few doll
+ ars if you want to sample the entries This event is not hosted by Partifu
+ l. It is an event we recommend\, hosted by Fi
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:805915686fae@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261023T193000
+DTEND;TZID=America/Los_Angeles:20261023T220000
+SUMMARY:One Battle After Another
+LOCATION:PROXY Outdoor Theater\, San Francisco
+URL:https://ma.to/event/one-battle-after-another-proxy-23-oct-2026
+DESCRIPTION:Theatre\nhttps://ma.to/event/one-battle-after-another-proxy-23
+ -oct-2026\n\nThe PROXY Fall Film Fest concludes with a screening of One B
+ attle After Another by Paul Thomas Anderson. The final night features a p
+ re-show raffle by Aether Apparel. Enjoy local wine\, sake\, and beer whil
+ e watching films under the stars. More information on the profile.
+END:VEVENT
+END:VCALENDAR

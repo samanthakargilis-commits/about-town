@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8192d4d4e6e4@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261023T080000
+DTEND;TZID=America/Los_Angeles:20261023T170000
+SUMMARY:Woodside International II
+LOCATION:The Horse Park at Woodside\, Woodside
+URL:https://ma.to/event/woodside-international-ii-2026-10-23
+DESCRIPTION:Animals · Woodside\nhttps://ma.to/event/woodside-internationa
+ l-ii-2026-10-23\n\nWoodside International II is a five-day equestrian com
+ petition at The Horse Park at Woodside with feature classes in show jumpi
+ ng\, hunters\, and equitation. Jumpers include a $25\,000 Grand Prix\, a 
+ $20\,000 1.30m Open Jumper (Northern Series Final)\, a $15\,000 1.10m Jun
+ ior/Amateur Classic (Northern Series Final) and a $10\,000 1.00m Junior/A
+ mateur Classic (Northern Series Final). The USHJA Young Jumper
+END:VEVENT
+END:VCALENDAR

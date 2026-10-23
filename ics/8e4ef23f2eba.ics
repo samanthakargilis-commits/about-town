@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8e4ef23f2eba@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261024T150000
+DTEND;TZID=America/Los_Angeles:20261024T170000
+SUMMARY:Bonds of Belonging Shorts Program
+LOCATION:Artists' Television Access\, 992 Valencia St\, San Francisco\, Sa
+ n Francisco
+URL:https://ma.to/event/bonds-of-belonging-shorts-program-oct-24-2026
+DESCRIPTION:Art\nhttps://ma.to/event/bonds-of-belonging-shorts-program-oct
+ -24-2026\n\nA program of six short films: Azul\, Enséñame Como Morir\, 
+ Hangtown\, Prick\, Quince Candles\, and The Shave. Directed by Santos Arr
+ ué\, Gerry Maravilla\, and others. Screening at Artists' Television Acce
+ ss on Saturday\, Oct 24\, 2026 at 3:00 PM PDT. Tickets via link in bio.
+END:VEVENT
+END:VCALENDAR

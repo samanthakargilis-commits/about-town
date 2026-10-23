@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e05432fde24a@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Lady Bushra’s Queer Comedy Night in a Romance Bookstore
+LOCATION:The Love Potion Library\, 284 Noe St\, San Francisco\, CA 94114\,
+  San Francisco
+URL:https://sf.funcheap.com/lady-bushras-queer-comedy-night-romance-bookst
+ ore-sf/
+DESCRIPTION:Comedy + Reading · Your reading tastes\nhttps://sf.funcheap.c
+ om/lady-bushras-queer-comedy-night-romance-bookstore-sf/\n\nThe Love Poti
+ on Library is a cozy romance bookstore in the Castro\, and what better lo
+ cation for a (mostly) queer comedy show?​ ​See mostly queer BBC and N
+ Ytimes featured-comics without leaving the Gayborhood 🥰! ​ HEADLINER
+  LADY BUSHRA ​Lady Bushra is the fabulous British-Pakistani drag comedi
+ an known for ...
+END:VEVENT
+END:VCALENDAR

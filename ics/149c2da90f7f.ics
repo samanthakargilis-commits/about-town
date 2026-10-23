@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:149c2da90f7f@bay-events
+DTSTAMP:20261023T175950Z
+DTSTART;VALUE=DATE:20261025
+DTEND;VALUE=DATE:20261026
+SUMMARY:Halloween Fun in Montclair Village
+LOCATION:Montclair Village\, Mountain Blvd. & La Salle Ave.\, Oakland\, CA
+ \, Oakland
+URL:https://sf.funcheap.com/halloween-fun-montclair-village/
+DESCRIPTION:Camp & Halloween + Concerts · Oakland\nhttps://sf.funcheap.co
+ m/halloween-fun-montclair-village/\n\nHalloween Fun in Montclair Village 
+ Sunday\, October 25 (10am-2pm) Join us for a bounty of treats for all age
+ s to enjoy! The Montclair Village Association invites families for trick-
+ or-treating the spooky Farmers’ Market and Village shops and to enjoy l
+ ive music and entertainment\, crafts stations\, face painting ...
+END:VEVENT
+END:VCALENDAR

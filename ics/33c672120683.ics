@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:33c672120683@bay-events
+DTSTAMP:20261023T175954Z
+DTSTART;TZID=America/Los_Angeles:20261114T170000
+DTEND;TZID=America/Los_Angeles:20261114T230000
+SUMMARY:Fort Point Beer Co Presents: Manzanita Night
+LOCATION:Fort Point Valencia\, 742 Valencia Street San Francisco
+URL:https://sf.funcheap.com/fort-point-beer-presents-manzanita-night-sf/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/fort-point-beer-pres
+ ents-manzanita-night-sf/\n\nA one-night celebration at Fort Point Valenci
+ a to honor our favorite fall tradition: the release of our Manzanita Smok
+ ed Altbier. Join us as we kick off Manzanita season with a night we hope 
+ becomes an annual tradition. The cask taps at 5:30pm. Be there for the ..
+ .
+END:VEVENT
+END:VCALENDAR

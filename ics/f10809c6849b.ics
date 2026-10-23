@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f10809c6849b@bay-events
+DTSTAMP:20261023T175956Z
+DTSTART;TZID=America/Los_Angeles:20261124T113000
+DTEND;TZID=America/Los_Angeles:20261124T130000
+SUMMARY:60+ Thanksgiving Luncheon: Serving Gratitude
+LOCATION:JCCSF\, 3200 California Street\, San Francisco
+URL:https://www.jccsf.org/event/60-thanksgiving-luncheon-serving-gratitude
+ -4/
+DESCRIPTION:New in your area\nhttps://www.jccsf.org/event/60-thanksgiving-
+ luncheon-serving-gratitude-4/\n\nCelebrate with a traditional holiday mea
+ l and a meaningful service in fellowship with members of our warm and wel
+ coming community.
+END:VEVENT
+END:VCALENDAR
