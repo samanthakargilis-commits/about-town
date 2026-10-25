@@ -1,4 +1,4 @@
-# Authors left off the follow lists (they still shape taste)
+# People left off the follow lists (they still shape taste; musicians' tribute shows are boosted by music_tastes)
 Nora Ephron
 Roald Dahl
 Joan Didion
@@ -43,3 +43,29 @@ John Milton
 Paul Gallico
 Paul Kalanithi
 Scott O'Dell
+Elvis Presley
+Nat King Cole
+Chet Baker
+Stan Getz
+Frank Sinatra
+Claude Debussy
+Natalie Cole
+Ella Fitzgerald
+Peggy Lee
+Whitney Houston
+Astrud Gilberto
+Nancy Wilson
+Blossom Dearie
+Beegie Adair
+Oliver Wallace
+Ilene Woods
+Carpenters
+The Doors
+Amy Winehouse
+Patsy Cline
+Aretha Franklin
+Tina Turner
+Aaliyah
+Aaron Carter
+Michael Jackson
+Prince
