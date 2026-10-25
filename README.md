@@ -47,7 +47,8 @@ ingest/ai.py           optional: AI tagging and article extraction (needs ANTHRO
 ingest/__main__.py     run all → window → area filter → merge → enrich → score → events.json + .ics
 app/                   the PWA (no build step)
 data/profile.json      starting profile (edit freely)
-data/follow.json       people you follow; authors rebuilt from Goodreads by tools/build_follow_list.py
+data/follow.json       people you follow; authors rebuilt from Goodreads by tools/build_follow_list.py,
+                       musicians and podcast comedians from Spotify by tools/build_music_list.py
 data/newsletters.json  newsletter RSS feeds (add more here)
 ```
 
@@ -56,6 +57,8 @@ Tests: `python -m unittest discover -s tests`.
 
 Rebuild authors from a new Goodreads export:
 `python tools/build_follow_list.py path/to/goodreads_library_export.csv`.
+Rebuild musicians from a new Spotify export (the zip stays on your computer):
+`python tools/build_music_list.py path/to/my_spotify_data.zip`.
 
 ### Sources
 

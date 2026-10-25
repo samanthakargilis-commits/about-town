@@ -126,6 +126,20 @@ class Scoring(unittest.TestCase):
         self.assertTrue(SOLD_OUT.search("Comedy Night (SOLD OUT)"))
         self.assertFalse(SOLD_OUT.search("After a sold-out run, Wicked returns"))
 
+    def test_spotify_artists_and_tastes(self):
+        show = self.s.score(ev("Pink Martini: A Holiday Spectacular", price="$65", venue="Paramount Theatre"))
+        self.assertEqual(show["followed"], "Pink Martini")
+        self.assertTrue(show["why"].startswith("⭐ Pink Martini"))
+        self.assertEqual(self.s.score(ev("Kate Berlant: Live"))["followed"], "Kate Berlant")
+        # an everyday word that's also a band, and a singer who's gone, never badge
+        self.assertIsNone(self.s.score(ev("Chicago Deep Dish Pizza Night"))["followed"])
+        elvis = self.s.score(ev("Elvis Tribute Night"))
+        self.assertIsNone(elvis["followed"])
+        self.assertIn("A tribute to a singer you love", elvis["why"])
+        plain = self.s.score(ev("Live music at the brewery"))
+        bossa = self.s.score(ev("Live music at the brewery", description="a bossa nova trio"))
+        self.assertGreater(bossa["score"], plain["score"])
+
     def test_interests_boost_and_thursday(self):
         thu = self.s.score(ev("Drag show-tune sing-along"))
         sat = self.s.score(ev("Drag show-tune sing-along", start="2026-10-17T20:00-07:00"))

@@ -264,6 +264,7 @@ function buildFollowIndex() {
     for (const n of follow.authors_favorite || []) add(n, 'author');
     for (const n of follow.authors_new_books || []) add(n, 'author');
     for (const n of follow.performers || []) add(n, 'performer');
+    for (const n of [...(follow.musicians || []), ...(follow.podcast_hosts || [])]) add(n, 'performer');
   }
   for (const n of S.people) add(n, 'you');
   for (const n of S.authorsExtra) add(n, 'author');

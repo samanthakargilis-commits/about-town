@@ -87,7 +87,8 @@ class Scorer:
         self.profile = profile
         self.people = {}  # normalized name -> (display, kind)
         for kind, key in (("favorite author", "authors_favorite"), ("new book", "authors_new_books"),
-                          ("performer", "performers")):
+                          ("performer", "performers"), ("performer", "musicians"),
+                          ("performer", "podcast_hosts")):
             for name in follow.get(key, []):
                 n = norm(name)
                 if len(n) >= 5 and " " in n or (kind == "performer" and len(n) >= 4):
@@ -257,6 +258,14 @@ class Scorer:
         if rt and "reading" in interests and matches(rt["keywords"], full):
             points += rt["weight"]
             reasons.append(rt["label"])
+
+        mt = self.profile.get("music_tastes")
+        if mt:
+            for group in mt["groups"]:
+                if matches(group["keywords"], full):
+                    points += mt["weight"]
+                    reasons.append(group["label"])
+                    break
 
         people = self.followed_in(full)
         kids = bool(KIDS.search(full)) or bool(ai_tags and ai_tags.get("kids_only"))
