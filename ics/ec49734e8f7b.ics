@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ec49734e8f7b@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:RedBrick Ceramic Studio: Artist Talk & Pop-Up with Tasha Colby
+LOCATION:RedBrick Ceramic Studio\, 2111 Mission St\, San Francisco\, CA 94
+ 110
+URL:https://sf.funcheap.com/redbrick-ceramic-studio-artist-talk-popup-tash
+ a-colby/
+DESCRIPTION:Art + Discourse\nhttps://sf.funcheap.com/redbrick-ceramic-stud
+ io-artist-talk-popup-tasha-colby/\n\nArtist Talk & Pop-Up: “What the Ea
+ rth Remembers” Join RedBrick Ceramic Studio on Sunday\, November 22 for
+  a free artist talk and ceramic demonstration with artist Tasha Colby. Th
+ rough her experience as a self-taught ceramicist\, Tasha reflects on lear
+ ning through curiosity\, necessity\, experimentation\, and community. Her
+  talk ...
+END:VEVENT
+END:VCALENDAR

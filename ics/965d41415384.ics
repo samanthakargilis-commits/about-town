@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:965d41415384@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261030T180000
+DTEND;TZID=America/Los_Angeles:20261030T200000
+SUMMARY:Civic Joy Fucks Benefit Show
+LOCATION:El Rio\, 3158 Mission St\, San Francisco\, CA\, San Francisco
+URL:https://ma.to/event/civic-joy-fucks-benefit-show-30-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/civic-joy-fucks-benefit-
+ show-30-oct-2026\n\nA free punk benefit show at El Rio on Friday\, Octobe
+ r 30\, 2026\, running from 6pm to 8pm. The lineup features Civic Joy Fuck
+ s\, Strange Men\, and George Jr. & the 911s. This show serves as a second
+  chance to catch the debut of Civic Joy Fucks following their initial per
+ formance. 21+.
+END:VEVENT
+END:VCALENDAR

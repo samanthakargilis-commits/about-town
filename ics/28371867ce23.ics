@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:28371867ce23@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261115T130000
+DTEND;TZID=America/Los_Angeles:20261115T150000
+SUMMARY:Outdoor Social Meetup (Berkeley)
+LOCATION:Crescent Lawn | UC Berkeley\, Center St\, Berkeley\, CA Berkeley\
+ , Berkeley
+URL:https://www.meetup.com/acesofsf/events/312839496/
+DESCRIPTION:Craft + Concerts · Berkeley\nhttps://www.meetup.com/acesofsf/
+ events/312839496/\n\nDrop-in social meetups usually occur around the thir
+ d weekend of the month from 1-3 pm and rotate between San Francisco\, Sou
+ th Bay\, and East Bay. Aces and allies are all welcome to attend\, for go
+ od conversation\, snacks\, and occasional games. Masks are optional since
+  this is an outdoor event. It may be chilly\, however\, so dress warmly a
+ nd check the weather report. We will be meeting at the west cre
+END:VEVENT
+END:VCALENDAR

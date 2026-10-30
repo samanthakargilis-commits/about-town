@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:46d33b20ca13@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261119T180000
+DTEND;TZID=America/Los_Angeles:20261119T200000
+SUMMARY:Date My Friend®: The Millennial Era
+LOCATION:ROGER Bar & Restaurant\, 800 Moffett Blvd\, Mountain View
+URL:https://partiful.com/e/LcbSYpufRNRhB4xsh4er
+DESCRIPTION:Thursday evening · Mountain View\nhttps://partiful.com/e/LcbS
+ YpufRNRhB4xsh4er\n\nRemember when you met people at parties? Date My Frie
+ nd (DMF) is the singles party where you bring a friend\, single or taken\
+ , to be your wingperson\, hype squad\, and built-in exit strategy. There 
+ are no pitch decks and no name tags. Singles get a green wristband\, so n
+ obody has to ask\, "So... are you here for the thing?" This time\, DMF en
+ ters its Millennial Era: a night for singles in their 30s and 
+END:VEVENT
+END:VCALENDAR

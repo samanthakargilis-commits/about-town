@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b80b840e5a7c@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261113T190000
+DTEND;TZID=America/Los_Angeles:20261113T210000
+SUMMARY:Grand Theft Auto: Bar Crawl
+LOCATION:Nickie's\, 466 Haight St San Francisco\, San Francisco
+URL:https://partiful.com/e/gg0NojvDfUfyKTzh87bY
+DESCRIPTION:New in your area\nhttps://partiful.com/e/gg0NojvDfUfyKTzh87bY\
+ n\nWANTED: You. Friday Nov 13. Lower Haight. The heist is on. We're runni
+ ng a 5-stop crime spree down Haight Street\, and by the end of the night 
+ your wanted level will be five stars and your liver will be filing a poli
+ ce report. Pace yourself. Respawns are not guaranteed. 📍 THE MISSION: 
+ • 7:00 – 7:50 PM: Nickie's (load up on food\, you'll need the health 
+ bar) • 7:55 – 8:35 PM: tornado • 8:40 – 9:20 PM
+END:VEVENT
+END:VCALENDAR

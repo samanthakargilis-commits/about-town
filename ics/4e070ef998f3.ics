@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4e070ef998f3@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261108T130000
+DTEND;TZID=America/Los_Angeles:20261108T160000
+SUMMARY:Mahjong and Bites: Inspired by Hong Kong-Style Cafe Vol. 2
+LOCATION:On Waverly Clubhouse\, 160 Waverly Pl San Francisco\, San Francis
+ co
+URL:https://partiful.com/e/fzgP1z4TEXjL4X7y51hr
+DESCRIPTION:New in your area\nhttps://partiful.com/e/fzgP1z4TEXjL4X7y51hr\
+ n\nJoin Mo Pai Mahjong Club for an afternoon of mahjong and nostalgic cha
+  chaan teng-inspired bites in The Clubhouse while we listen to a curated 
+ playlist\, snack\, sip\, and shuffle tiles. This event is back by popular
+  demand with an updated menu. We are partnering with LauLauMeow of Péng 
+ Yǒu for a modern twist on Hong Kong-style cafe classics. Details: 🀄
+ ️ Admission includes a dedicated playing seat fo
+END:VEVENT
+END:VCALENDAR

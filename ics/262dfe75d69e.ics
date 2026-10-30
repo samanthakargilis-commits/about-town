@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:262dfe75d69e@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261030T200000
+DTEND;TZID=America/Los_Angeles:20261031T010000
+SUMMARY:Salsa & Bachata Dance Night
+LOCATION:Cigar Bar & Grill\, 850 Montgomery St.\, San Francisco\, San Fran
+ cisco
+URL:https://ma.to/event/salsa-bachata-dance-night-31-oct-2026
+DESCRIPTION:Dance nights + Craft\nhttps://ma.to/event/salsa-bachata-dance-
+ night-31-oct-2026\n\nRecurring dance night at Cigar Bar & Grill in San Fr
+ ancisco's Jackson Square. The weekly Tuesday–Sunday programme features 
+ salsa lessons\, line dancing\, live salsa\, bachata and more\, alongside 
+ craft cocktails and Pan-Latin cuisine. Special salsa classes with Ava & R
+ odolfo are held every Friday and Saturday at 7:30 PM\, followed by live m
+ usic at 9:30 PM. Dancing takes place downstairs at 850 Montgome
+END:VEVENT
+END:VCALENDAR

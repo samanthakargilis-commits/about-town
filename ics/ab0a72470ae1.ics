@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ab0a72470ae1@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261031T080000
+DTEND;TZID=America/Los_Angeles:20261031T140000
+SUMMARY:Fall Fruit Celebration
+LOCATION:Ferry Plaza Farmers Market\, San Francisco
+URL:https://ma.to/event/fall-fruit-celebration-31-oct-2026
+DESCRIPTION:Discourse\nhttps://ma.to/event/fall-fruit-celebration-31-oct-2
+ 026\n\nJoin Foodwise at the Ferry Plaza Farmers Market for our Fall Fruit
+  Celebration on October 31. Enjoy seasonal apples\, pears\, and other aut
+ umn fruit at their peak. Visit the orange Seasonal Spotlight tent for rec
+ ipes and samples. At 11:00 AM\, the Foodwise Classroom (green tent in fro
+ nt of the Ferry Building) hosts a free cooking demo with Sofía Jiménez 
+ of Tutuli\, featuring Sonora-style coyotas with 
+END:VEVENT
+END:VCALENDAR

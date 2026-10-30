@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7568b101e53c@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261030T100000
+DTEND;TZID=America/Los_Angeles:20261030T200000
+SUMMARY:Senryoya Oyster Bentos at Mitsuwa
+LOCATION:Mitsuwa San Jose\, San Jose
+URL:https://ma.to/event/senryoya-oyster-bentos-mitsuwa-2026-10-30
+DESCRIPTION:San Jose\nhttps://ma.to/event/senryoya-oyster-bentos-mitsuwa-2
+ 026-10-30\n\nMitsuwa San Jose hosts a limited run of oyster specialties f
+ rom Senryoya. The offering includes bento boxes built around Japanese oys
+ ters\, along with pasta dishes and other seafood-focused items. It runs O
+ ctober 23–November 2\, 2026. Quantities are limited and items are subje
+ ct to change without notice.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4ca7a5f1d4bf@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261102T180000
+DTEND;TZID=America/Los_Angeles:20261102T210000
+SUMMARY:2026 Dia de los Muertos: 45th Annual Procession in The Mission
+LOCATION:The Mission\, San Francisco
+URL:https://sf.funcheap.com/city-guide/november-street-fairs-festivals/
+DESCRIPTION:Cultural festivals + Spirituality · A yearly tradition\nhttps
+ ://sf.funcheap.com/city-guide/november-street-fairs-festivals/\n\nNovembe
+ r 2\, 2026 – SF (The Mission) – FREE – Thousands gather for this co
+ lorful Día de los Muertos procession along 24th Street\, featuring live 
+ music\, Aztec dancers\, lowriders\, dance troupes\, and colorful ofrendas
+  honoring loved ones who have passed. ralphleon via Flickr / CC BY-NC-ND 
+ 2.0
+END:VEVENT
+END:VCALENDAR

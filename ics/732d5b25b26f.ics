@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:732d5b25b26f@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261002T090000
+DTEND;TZID=America/Los_Angeles:20261002T110000
+SUMMARY:Clancy’s Pumpkin Patch & Mini Hay Maze
+LOCATION:1620 7th Ave.
+URL:https://www.clancystrees.com/gallery
+DESCRIPTION:Fairs & festivals + U-pick farms · Featured on Funcheap\nhttp
+ s://www.clancystrees.com/gallery\n\nOct. 2-31\, 2026 | Daily: 9 am-9 pm C
+ lancy’s Pumpkin Patch | 1620 7th Ave. (at Lawton)\, San Francisco Clanc
+ y’s brings fall fun to San Francisco with a wide variety of pumpkins\, 
+ gourds\, corn stalks\, and Indian corn. During October\, come see the gho
+ sts in the trees\, scarecrows in the patch\, and live turkeys\, and run t
+ hrough the fun corn maze . You can even take a hayride in the middle of S
+ an Francisc
+END:VEVENT
+END:VCALENDAR

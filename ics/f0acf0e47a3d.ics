@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f0acf0e47a3d@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Opening Reception for Technicolor: Currents\, Concrete & Canopies
+LOCATION:Point Richmond Gallery\, 145 W Richmond Ave.\, Richmond\, CA\, Ri
+ chmond
+URL:https://sf.funcheap.com/opening-reception-technicolor-currents-concret
+ e-canopies/
+DESCRIPTION:Museum exhibits + Art · Richmond\nhttps://sf.funcheap.com/ope
+ ning-reception-technicolor-currents-concrete-canopies/\n\nJoin us for the
+  Opening Reception for Technicolor: Currents\, Concrete & Canopies. This 
+ beautiful\, vibrant retrospective of esteemed photographer Kelly Nicolais
+ en showcases her unique view of the world with all its shapes\, sizes\, c
+ olors\, and more. Throughout her career\, Kelly has also had the opportun
+ ity to ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7da57f9fb4b6@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261030T190000
+DTEND;TZID=America/Los_Angeles:20261030T220000
+SUMMARY:Rebel Yell Haunted House
+LOCATION:Rebel Yell Haunted House\, 1577 Rebel Way\, San Jose\, San Jose
+URL:https://ma.to/event/rebel-yell-haunted-house-2026-10-30
+DESCRIPTION:Camp & Halloween + Weird & unusual · San Jose\nhttps://ma.to/
+ event/rebel-yell-haunted-house-2026-10-30\n\nThe Rebel Yell is a free wal
+ k-through home haunted house with live actors\, featured on FEARnet as on
+ e of America’s Scariest Home Haunts and seen in the film “The Woods o
+ f Purgatory.” It is also the birthplace of Ted Bunny\, the character fr
+ om the feature film “Ted Bunny.” Regular hours (7-10pm) are the full-
+ scare experience\; parental discretion is advised. There is also a "No Sc
+ are Hour" on select 
+END:VEVENT
+END:VCALENDAR

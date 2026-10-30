@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:720d716890de@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261031T130000
+DTEND;TZID=America/Los_Angeles:20261031T150000
+SUMMARY:Bag Charm Workshop w/Nour Co
+LOCATION:Moka & Co\, 40667 Fremont Blvd Fremont\, Fremont
+URL:https://partiful.com/e/Wtcox6jBkeBSJaONPIcX
+DESCRIPTION:Fremont\nhttps://partiful.com/e/Wtcox6jBkeBSJaONPIcX\n\nGirls 
+ only event Your bag deserves a little personality 🎀 Join us for a cozy
+ \, creative afternoon of making your very own bag charm! Pick your favori
+ te charms\, mix and match\, and create something that's uniquely yours. N
+ o experience needed — just bring yourself and a little creativity! What
+ 's included: 1 charm base\, 3 charms of your choice\, a ribbon of your ch
+ oice\, all tools and hands-on guidance. 
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6002ed385aec@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261030T100000
+DTEND;TZID=America/Los_Angeles:20261030T170000
+SUMMARY:IAMA Youth Art Contest Exhibition
+LOCATION:International Art Museum of America\, San Francisco
+URL:https://ma.to/event/iama-youth-art-contest-exhibition-2026-10-30
+DESCRIPTION:Museum exhibits + Weird & unusual\nhttps://ma.to/event/iama-yo
+ uth-art-contest-exhibition-2026-10-30\n\nThe International Art Museum of 
+ America presents its second annual Live Youth Art Contest Exhibition. It 
+ features original works by artists ages 10-18 created during the in-perso
+ n competition inside the museum. The exhibition is on view through Novemb
+ er 11\, 2026. The museum is closed Mondays and Tuesdays.
+END:VEVENT
+END:VCALENDAR

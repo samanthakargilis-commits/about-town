@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:64bb7d925330@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261114T120000
+DTEND;TZID=America/Los_Angeles:20261114T130000
+SUMMARY:Presidio Chapel Concert Series – RusLan Biryukov Cello Recital
+LOCATION:Presidio Chapel\, 130 Fisher Loop\, San Francisco
+URL:https://presidio.gov/explore/events/presidio-chapel-concert-series-rus
+ lan-biryukov-cello-recital/
+DESCRIPTION:A walk from home + Concerts\nhttps://presidio.gov/explore/even
+ ts/presidio-chapel-concert-series-ruslan-biryukov-cello-recital/\n\nSatur
+ day\, November 14\, 2026 at 12:00 pm Presidio Chapel 130 Fisher Loop\, Sa
+ n Francisco\, CA 94129 Please RSVP for in-person attendance at presidioin
+ terfaith@gmail.com The concert will be recorded and posted on our YouTube
+  channel at youtube.com/@interfaithcenteratthepresi3372 FREE admission Me
+ tered parking ~ Donations appreciated To make a donation please visit: ht
+ tps://www.interfaithpresidio.org/d
+END:VEVENT
+END:VCALENDAR

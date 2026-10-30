@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a2914e3e2481@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261127T183000
+DTEND;TZID=America/Los_Angeles:20261127T203000
+SUMMARY:2026 Ghirardelli Square’s Holiday Lighting Ceremo ny
+LOCATION:SPARK Social SF\, 601 Mission Bay Blvd
+URL:https://www.ghirardellisq.com/events/2021/11/26/holiday-marketplace-an
+ d-christmas-tree-stroll-jww4r
+DESCRIPTION:Singing + Camp & Halloween · Featured on Funcheap\nhttps://ww
+ w.ghirardellisq.com/events/2021/11/26/holiday-marketplace-and-christmas-t
+ ree-stroll-jww4r\n\nNovember 27\, 2026 – SF (Ghirardelli Square) – FR
+ EE – Kick off the holiday season with a 46-foot Christmas tree lighting
+  \, a special performance by the San Francisco Boys Chorus \, a festive s
+ ing-along \, and visits with Santa and his elf\, plus letters to Santa an
+ d candy giveaways. Ghirardelli Square 2026 Date TBA Thrive City “Winter
+  Wonderland” Lighting Ceremony Unconfirmed for 2026 – SF (Thrive Cit
+END:VEVENT
+END:VCALENDAR

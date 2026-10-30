@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:99e2d35fa1f9@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261030T090000
+DTEND;TZID=America/Los_Angeles:20261030T170000
+SUMMARY:Canned Food Drive at The Russell
+LOCATION:The Russell Leasing Office\, 3098 Kyne Street West\, San Mateo\, 
+ CA 94403\, San Mateo
+URL:https://ma.to/event/canned-food-drive-the-russell-2026-10-30
+DESCRIPTION:San Mateo\nhttps://ma.to/event/canned-food-drive-the-russell-2
+ 026-10-30\n\nThe canned food drive collects new\, unopened canned goods a
+ t The Russell Leasing Office for the San Francisco Marin Food Bank\, help
+ ing local neighbors facing food insecurity. The drive is part of Team Boz
+ zuto's holiday hunger effort with The Apartment Collection at Bay Meadows
+  and Rise by Bozzuto. The collection continues through Friday\, November 
+ 13. The contact number is 650-855-8768 and the emai
+END:VEVENT
+END:VCALENDAR

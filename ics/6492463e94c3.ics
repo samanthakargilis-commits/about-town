@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6492463e94c3@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261030T113000
+DTEND;TZID=America/Los_Angeles:20261030T143000
+SUMMARY:Fall Restaurant Week Bento
+LOCATION:Ozumo San Francisco\, San Francisco
+URL:https://ma.to/event/fall-restaurant-week-bento-2026-10-30
+DESCRIPTION:New in your area\nhttps://ma.to/event/fall-restaurant-week-ben
+ to-2026-10-30\n\nThe Fall Restaurant Week Bento brings some of Ozumo’s 
+ favorites together in a $45 lunch. It is served during weekday lunch serv
+ ice from 11:30am to 2:30pm and is available only through Friday\, October
+  30\, 2026. Reservations are available.
+END:VEVENT
+END:VCALENDAR

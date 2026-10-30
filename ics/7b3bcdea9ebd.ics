@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7b3bcdea9ebd@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261121T100000
+DTEND;TZID=America/Los_Angeles:20261121T120000
+SUMMARY:42nd Annual Great Dickens Christmas Fair 2026
+LOCATION:Cow Palace
+URL:https://dickensfair.com/experiences/
+DESCRIPTION:Fairs & festivals + Theatre · A yearly tradition\nhttps://dic
+ kensfair.com/experiences/\n\nNovember 21 – December 20\, 2026 – Daly 
+ City (Cow Palace) – Tickets start at $35 – The Great Dickens Christma
+ s Fair is a one-of-a-kind immersive adventure into Victorian London. Dres
+ s up for an elaborate holiday party with hundreds of costumed performers 
+ bringing Dickensian characters to life across 140\,000 square feet of the
+ atrical streets\, music halls\, pubs\, dance floors\, and festive shops. 
+ The G
+END:VEVENT
+END:VCALENDAR

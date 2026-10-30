@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:256ad4723325@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261108T100000
+DTEND;TZID=America/Los_Angeles:20261108T163000
+SUMMARY:San Francisco Coffee Festival 2026: 10th Annual Celebration (Fort 
+ Mason)
+LOCATION:Fort Mason Center Festival Pavilion\, 2 Marina Boulevard\, San Fr
+ ancisco\, CA 94109\, San Francisco
+URL:https://sf.funcheap.com/san-francisco-coffee-festival-2026-10th-annual
+ -celebration-fort-mason-2/
+DESCRIPTION:Fairs & festivals\nhttps://sf.funcheap.com/san-francisco-coffe
+ e-festival-2026-10th-annual-celebration-fort-mason-2/\n\nThe 10th Annual 
+ San Francisco Coffee Festival returns to Fort Mason Center Festival Pavil
+ ion for two days of curated coffee tastings\, featuring top roasters and 
+ exhibitors. Attendees can sample unique beans\, explore diverse flavor pr
+ ofiles\, and enjoy live entertainment in a lively setting. November 7-8\,
+  ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:506f0489a558@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261031T183000
+DTEND;TZID=America/Los_Angeles:20261031T203000
+SUMMARY:osi.d | Palm House (Oct 31st)
+LOCATION:Palm House\, 2032 Union St San Francisco\, San Francisco
+URL:https://partiful.com/e/ueQB44NwIL9brxbIQCPu
+DESCRIPTION:Camp & Halloween + Theatre\nhttps://partiful.com/e/ueQB44NwIL9
+ brxbIQCPu\n\nHey Party people\, we are putting it down in Palm House on H
+ alloween. Tell your friends. Expect tunes that will make you Booo-gie (ge
+ t it?) No AI was used in generating this intelligent play on words.
+END:VEVENT
+END:VCALENDAR

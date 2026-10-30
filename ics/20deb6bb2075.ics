@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:20deb6bb2075@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261030T180000
+DTEND;TZID=America/Los_Angeles:20261031T020000
+SUMMARY:SCARY-OKE Halloween Bar Crawl
+LOCATION:Silver Cloud SF\, 1994 Lombard Street\, San Francisco\, CA 94123\
+ , San Francisco
+URL:https://ma.to/event/scary-oke-halloween-bar-crawl-2026-10-30
+DESCRIPTION:Camp & Halloween + Singing\nhttps://ma.to/event/scary-oke-hall
+ oween-bar-crawl-2026-10-30\n\nSCARY-OKE is the karaoke component of a Hal
+ loween bar crawl night at Silver Cloud SF. Costumes are encouraged\, and 
+ karaoke and bar crawl festivities continue through the night. No wristban
+ d is required to enter.
+END:VEVENT
+END:VCALENDAR

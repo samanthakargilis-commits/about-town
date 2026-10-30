@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ff3f53b2d905@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261106T180000
+DTEND;TZID=America/Los_Angeles:20261106T200000
+SUMMARY:Happy Hour at Danny Murry’s Irish Pub
+LOCATION:Danny Murry's Irish Pub\, 1680 Washington Ave\, San Leandro\, CA 
+ San Leandro\, San Leandro
+URL:https://www.meetup.com/san-leandro-gay-and-lesbian-happy-hour-meetup/e
+ vents/317125066/
+DESCRIPTION:San Leandro\nhttps://www.meetup.com/san-leandro-gay-and-lesbia
+ n-happy-hour-meetup/events/317125066/\n\nCome join us at Danny Murry’s 
+ Irish pub! This comfortable local bar has good drinks and a great dog fri
+ endly outdoor patio. Come join your happy hour family and unwind after a 
+ long week! FYI: This location does not serve food\, but it does allow out
+ side food to be consumed inside. There are a lot of eateries nearby\, suc
+ h as Los Pericos\, The Habit\, and Indian Grill. https://yelp.to/zQVK8uNI
+ Pk
+END:VEVENT
+END:VCALENDAR

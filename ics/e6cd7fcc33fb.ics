@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e6cd7fcc33fb@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261030T200000
+DTEND;TZID=America/Los_Angeles:20261030T210000
+SUMMARY:Solidarity Cinema: Queer Monstrosities
+LOCATION:220 Montgomery St\, 220 Montgomery Street\, San Francisco\, CA 94
+ 104 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/solidarity-cinema-queer-monstrosities-tic
+ kets-2002476351673
+DESCRIPTION:Gay / queer + Camp & Halloween\nhttps://www.eventbrite.com/e/s
+ olidarity-cinema-queer-monstrosities-tickets-2002476351673\n\nCelebrate H
+ alloween at this screening & fundraiser supporting mutual aid for trans p
+ eople and local public media
+END:VEVENT
+END:VCALENDAR

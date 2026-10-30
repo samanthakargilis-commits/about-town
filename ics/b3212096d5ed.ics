@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b3212096d5ed@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261107T093000
+DTEND;TZID=America/Los_Angeles:20261107T163000
+SUMMARY:SF Coffee Festival 2026: Coffee Tastings + Live Music
+LOCATION:Fort Mason (Festival Pavilion)\, 2 Marina Blvd.\, San Francisco\,
+  CA\, San Francisco
+URL:https://sf.funcheap.com/sf-coffee-festival-2026-coffee-tastings-live-m
+ usic-nov-7-8/
+DESCRIPTION:Fairs & festivals + Concerts\nhttps://sf.funcheap.com/sf-coffe
+ e-festival-2026-coffee-tastings-live-music-nov-7-8/\n\nCoffee lovers\, yo
+ ur weekend plans are brewing. The 10th annual San Francisco Coffee Festiv
+ al returns to Fort Mason for two days of specialty coffee\, tea\, food\, 
+ and live music. Sample your way through a curated lineup of Bay Area coff
+ ee roasters and exhibitors\, discover new ...
+END:VEVENT
+END:VCALENDAR

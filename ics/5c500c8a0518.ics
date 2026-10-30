@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5c500c8a0518@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261031T120000
+DTEND;TZID=America/Los_Angeles:20261031T160000
+SUMMARY:Ducks vs. Northwestern Watch Party
+LOCATION:Underdogs Cantina\, San Francisco
+URL:https://ma.to/event/ducks-vs-northwestern-watch-party-31-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/ducks-vs-northwestern-wa
+ tch-party-31-oct-2026\n\nSpend your Saturday watching the Ducks take on N
+ orthwestern at Underdogs Cantina. Connect with the local Oregon fan commu
+ nity right in the city. Details about the venue can be found on the profi
+ le.
+END:VEVENT
+END:VCALENDAR

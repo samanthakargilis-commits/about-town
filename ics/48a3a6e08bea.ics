@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:48a3a6e08bea@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261105T160000
+DTEND;TZID=America/Los_Angeles:20261105T190000
+SUMMARY:Vintage After Dark
+LOCATION:Martuni's\, 4 Valencia St San Francisco\, San Francisco
+URL:https://partiful.com/e/VPhGLMDdaqUFbd1qRlna
+DESCRIPTION:Museum exhibits + Singing\nhttps://partiful.com/e/VPhGLMDdaqUF
+ bd1qRlna\n\nVintage After Dark ✦ A Pop-Up Vintage Sale at Martuni's Ord
+ er a cocktail at the bar and shop the glamour. For one evening only\, we'
+ re taking over the legendary back room at Martuni's Piano Bar and turning
+  it into a vintage boutique\, filled with pieces made for the holiday sea
+ son. What you'll find: ✦ Real fur coats\, jackets & stoles ✦ Beaded a
+ nd sequined evening wear ✦ Costume jewelry ✦ Vintage bar
+END:VEVENT
+END:VCALENDAR

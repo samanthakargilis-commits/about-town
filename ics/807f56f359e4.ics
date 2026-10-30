@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:807f56f359e4@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261101T120000
+DTEND;TZID=America/Los_Angeles:20261101T140000
+SUMMARY:SF Halloween Park Crawl
+LOCATION:Dolores Park\, 566 Dolores St San Francisco\, San Francisco
+URL:https://partiful.com/e/KOKULe1CGNTEYQK1Cw9r
+DESCRIPTION:Camp & Halloween + Discourse\nhttps://partiful.com/e/KOKULe1CG
+ NTEYQK1Cw9r\n\nHalloween bar crawl happens every year. This time\, let's 
+ do halloween SF style and hit up some parks. Only 3 rules: 1. Bring somet
+ hing to eat/drink 2. Bring a friend (or multiple!) 3. DO NOT TALK ABOUT A
+ I\, or you will be politely escorted Plan is to hit up Dolo\, then Alamo 
+ park\, and then Golden Gate See y'all soon! (Costumes are optional)
+END:VEVENT
+END:VCALENDAR

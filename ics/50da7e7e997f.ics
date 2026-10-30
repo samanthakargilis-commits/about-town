@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:50da7e7e997f@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261107T130000
+DTEND;TZID=America/Los_Angeles:20261107T163000
+SUMMARY:Free Filipino “Manilatown” Film Double Feature + Q&As at SFMOM
+ A
+LOCATION:San Francisco Museum of Modern Art (SFMOMA)\, 151 Third Street\, 
+ San Francisco\, CA 94103\, San Francisco
+URL:https://sf.funcheap.com/free-filipino-manilatown-film-double-feature-q
+ as-sfmoma/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/free-filipino-manila
+ town-film-double-feature-qas-sfmoma/\n\n“Two Films. One Manilatown Lega
+ cy.” brings two generations of San Francisco’s Manilatown and Interna
+ tional Hotel history to the big screen at SFMOMA for a special FREE doubl
+ e-feature presentation. At 1 PM\, experience the San Francisco premiere o
+ f the newly enhanced and restored edition of Curtis Choy’s ...
+END:VEVENT
+END:VCALENDAR

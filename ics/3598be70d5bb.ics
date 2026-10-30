@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3598be70d5bb@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261030T223000
+DTEND;TZID=America/Los_Angeles:20261031T020000
+SUMMARY:FREE Hallowen “No Scrubs” ’90s Hip-Hop + R&B Dance Party
+LOCATION:The Function\, 1414 Market Street\, San Francisco\, CA\, San Fran
+ cisco
+URL:https://sf.funcheap.com/free-hallowen-scrubs-90s-hiphop-rb-dance-party
+ -oct-3031/
+DESCRIPTION:Dance nights + Camp & Halloween\nhttps://sf.funcheap.com/free-
+ hallowen-scrubs-90s-hiphop-rb-dance-party-oct-3031/\n\nFREE Hallowen “N
+ o Scrubs” ’90s Hip-Hop + R&B Dance Party (Oct. 30-31) Funcheap Two ni
+ ghts of throwback jams and spooky cocktails\, plus a Halloween night cost
+ ume contest + free Candy. Free before 11pm with RSVP. The Function is hos
+ ting one of the most poppin’ dance parties in San Francisco with the re
+ turn of No Scrubs epic Halloween ’90s hip hop and R&B dance party. FREE
+  with RSVP (before 11p)\, 21+
+END:VEVENT
+END:VCALENDAR

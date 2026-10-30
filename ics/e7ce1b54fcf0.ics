@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e7ce1b54fcf0@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261030T200000
+DTEND;TZID=America/Los_Angeles:20261030T220000
+SUMMARY:An Unkindness: Theatrical Circus
+LOCATION:Great Star Theater\, San Francisco
+URL:https://ma.to/event/an-unkindness-theatrical-circus-31-oct-2026
+DESCRIPTION:Weird & unusual + Comedy\nhttps://ma.to/event/an-unkindness-th
+ eatrical-circus-31-oct-2026\n\nCircus of the Moon presents 'An Unkindness
+ '\, a dark comedy theatrical circus featuring aerial performance\, acroba
+ tics\, physical theatre\, and haunted storytelling. The show narrative fo
+ llows an injured stranger who escapes into a cemetery inhabited by the re
+ stless dead\, proving that some things are buried for a reason. Runs Octo
+ ber 29-31 at the Great Star Theater in San Francisco. Tickets are avail
+END:VEVENT
+END:VCALENDAR

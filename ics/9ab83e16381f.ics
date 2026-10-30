@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9ab83e16381f@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261030T120000
+DTEND;TZID=America/Los_Angeles:20261030T230000
+SUMMARY:Beetlejuice Pizza Halloween Weekend
+LOCATION:Tony's Pizza Napoletana\, San Francisco
+URL:https://ma.to/event/beetlejuice-pizza-halloween-weekend-2026-10-30
+DESCRIPTION:Camp & Halloween\nhttps://ma.to/event/beetlejuice-pizza-hallow
+ een-weekend-2026-10-30\n\nThe Beetlejuice Pizza is a 20-inch New York-sty
+ le pie topped with black garlic\, agave pesto\, purple potatoes\, feta\, 
+ Old Smokehouse bacon and mozzarella. It is available on October 30\, 2026
+  as part of its Halloween weekend run. Dine-in at Tony's Pizza Napoletana
+  is whole pie only. Pickup and slices next door at Slice House are availa
+ ble by phone order or walk-in only\, with slices for take-away. No 
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:22a9bc536224@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261031T110000
+DTEND;TZID=America/Los_Angeles:20261031T130000
+SUMMARY:ARANCINI WINE BAR POP UP
+LOCATION:Flying Figs Wine Bar\, 1870 Fillmore St San Francisco\, San Franc
+ isco
+URL:https://partiful.com/e/tmrFMEl13sVSbYMDHyJd
+DESCRIPTION:Camp & Halloween\nhttps://partiful.com/e/tmrFMEl13sVSbYMDHyJd\
+ n\nMAMOUNETTE ARANCINI IS POPPING UP AT FLYING FIGS WINE BAR ON HALLOWEEN
+  Come by for some crispy lunch time arancini and a discounted glass of wi
+ ne on Filmore St before party hopping the night away 🪩 Current Menu It
+ ems: 🍷 Bourguignon - Traditional French beef braise 🍆 Ratatouille -
+  French vegetable stew\, no frills 🧀 Cacio e Pepe - Ultimate Italian c
+ omfort dish 🦆 Duck Confit Pistachio - French 🤝 Ital
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:61d5ff3efafe@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261030T110000
+DTEND;TZID=America/Los_Angeles:20261030T120000
+SUMMARY:Morning Coffee Cleanup (Mission) w/ Free Coffee For Volunteers
+LOCATION:Cinderella Bakery & Cafe\, 2937 24th St\, San Francisco\, San Fra
+ ncisco
+URL:https://sf.funcheap.com/morning-coffee-cleanup-mission-free-coffee-vol
+ unteers/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/morning-coffee-clean
+ up-mission-free-coffee-volunteers/\n\nMeet at Cinderella Bakery & Cafe (2
+ 937 24th St) to grab our supplies\, then cleaning will occur from 11:00am
+  to 12:00pm around the neighborhood. Stay afterwards for FREE coffee and 
+ to meet fellow volunteers. Stay afterwards for a free coffee and to meet 
+ fellow volunteers. ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:223212318ed4@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20260926T190000
+DTEND;TZID=America/Los_Angeles:20260926T210000
+SUMMARY:Fantozzi Farms Corn Maze & Pumpkin Patch 2026
+LOCATION:2665 Sperry Ave.\, Patterson\, CA (Road Trip – Central Valley) 
+ Fantozzi Farms’ corn mazes offer more than five miles of paths and 12 h
+ idden checkpoints to find. Younger visitors can tackle
+URL:https://sf.funcheap.com/city-guide/craziest-corn-mazes-bay/
+DESCRIPTION:Fairs & festivals + U-pick farms · Featured on Funcheap · Pa
+ tterson\, CA (Road Trip – Central Valley) Fantozzi Farms’ corn mazes 
+ offer more than five miles of paths and 12 hidden checkpoints to find. Yo
+ unger visitors can tackle\nhttps://sf.funcheap.com/city-guide/craziest-co
+ rn-mazes-bay/\n\nSept. 26-Nov. 1\, 2026 | Mon.-Thurs.: 4-7 pm\; Fri.: 4-1
+ 0 pm\; Sat.: 10 am-10 pm\; Sun.: 10 am-8 pm Fantozzi Farms | 2665 Sperry 
+ Ave.\, Patterson\, CA (Road Trip – Central Valley) Fantozzi Farms’ co
+ rn mazes offer more than five miles of paths and 12 hidden checkpoints to
+  find. Younger visitors can tackle a kid-sized maze\, while older maze-go
+ ers can solve a farm-themed mystery by finding clues hidden alo
+END:VEVENT
+END:VCALENDAR

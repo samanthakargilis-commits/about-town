@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dc426cfd3f89@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261127T163000
+DTEND;TZID=America/Los_Angeles:20261127T200000
+SUMMARY:Ghirardelli Square’s 46-Ft Tree Lighting: Santa\, Candy & Sing-A
+ long (2026)
+LOCATION:Ghirardelli Square
+URL:https://sf.funcheap.com/ghirardelli-squares-holiday-lighting-ceremony/
+DESCRIPTION:Singing + Musical theatre · A yearly tradition\nhttps://sf.fu
+ ncheap.com/ghirardelli-squares-holiday-lighting-ceremony/\n\nJoin us Frid
+ ay\, November 27 at 4:45 PM for our grand 46’ Christmas tree lighting c
+ eremony featuring Santa\, Elf\, and a special musical performance by the 
+ San Francisco Boys Chorus. Follow Santa and his elf for a festive sing-a-
+ long plus Santa visits\, letters to Santa ...
+END:VEVENT
+END:VCALENDAR

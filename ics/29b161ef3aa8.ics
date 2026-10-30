@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:29b161ef3aa8@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261031T080000
+DTEND;TZID=America/Los_Angeles:20261031T140000
+SUMMARY:Seasonal Spotlight: Alemany
+LOCATION:Alemany Farmers Market\, San Francisco
+URL:https://ma.to/event/seasonal-spotlight-alemany-farmers-market-2026-10-
+ 31
+DESCRIPTION:New in your area\nhttps://ma.to/event/seasonal-spotlight-alema
+ ny-farmers-market-2026-10-31\n\nThe orange Seasonal Spotlight tent is at 
+ Foodwise farmers markets through October\, with recipes\, cooking tips an
+ d free samples for the autumn fruit harvest. The programme focuses on the
+  dozens of varieties of apples\, pears and other fall fruit that replace 
+ summer's stone fruit\, berries and melons\, many of which are only at the
+ ir seasonal peak when tree-ripened and freshly harvested from California
+END:VEVENT
+END:VCALENDAR

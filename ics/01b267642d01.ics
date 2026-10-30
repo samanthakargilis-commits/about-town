@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:01b267642d01@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261107T190000
+DTEND;TZID=America/Los_Angeles:20261107T230000
+SUMMARY:VOON 54: A Studio 54 Harvest Party with VOON Wines
+LOCATION:W San Francisco\, 181 3rd Street\, San Francisco\, CA 94103 San F
+ rancisco\, San Francisco
+URL:https://www.eventbrite.com/e/voon-54-a-studio-54-harvest-party-with-vo
+ on-wines-tickets-2000671836319
+DESCRIPTION:Dance nights\nhttps://www.eventbrite.com/e/voon-54-a-studio-54
+ -harvest-party-with-voon-wines-tickets-2000671836319\n\nDisco never left.
+  Neither did great wine. VOON 54: Studio 54 glamour meets harvest season\
+ , one unforgettable night at W San Francisco.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:356c15e386d9@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261107T110000
+DTEND;TZID=America/Los_Angeles:20261107T150000
+SUMMARY:El Chato: Fall Clothing Sale
+LOCATION:El Chato\, 2301 Bryant St San Francisco\, San Francisco
+URL:https://partiful.com/e/oDxYHK7zLoBcZXg67oY2
+DESCRIPTION:New in your area\nhttps://partiful.com/e/oDxYHK7zLoBcZXg67oY2\
+ n\nThe best finds and wines of the season are here! Come get your shop on
+ \, buy some records\, and spend your weekend with good vibes and people! 
+ Drop into fall with unique pieces that will keep your friends asking you\
+ , “Where did you get that?” Holiday party coming up\, and don’t kno
+ w what to wear? We got you! Shop one-of-a-kind vintage and designer\, and
+  turn some heads! Vintage and designer clothing f
+END:VEVENT
+END:VCALENDAR

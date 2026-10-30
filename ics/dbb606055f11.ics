@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dbb606055f11@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261115T110000
+DTEND;TZID=America/Los_Angeles:20261115T170000
+SUMMARY:SF’s Winter “Renegade Craft Fair” at Fort Mason
+LOCATION:Fort Mason Center
+URL:https://sf.funcheap.com/sfs-winter-renegade-craft-fair-at-fort-mason-n
+ ov-14-15-2/
+DESCRIPTION:Craft + Fairs & festivals · A yearly tradition\nhttps://sf.fu
+ ncheap.com/sfs-winter-renegade-craft-fair-at-fort-mason-nov-14-15-2/\n\nR
+ enegade San Francisco Winter Craft Fair 2026 returns to Fort Mason Center
+  Festival Pavilion on November 14 + 15\, 2026\, for a weekend of holiday 
+ shopping featuring 250+ curated artists and independent small businesses.
+  Browse handmade gifts and creative finds\, including ceramics\, apparel\
+ , jewelry\, home ...
+END:VEVENT
+END:VCALENDAR

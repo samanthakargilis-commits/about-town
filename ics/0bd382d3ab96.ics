@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0bd382d3ab96@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261114T130000
+DTEND;TZID=America/Los_Angeles:20261114T150000
+SUMMARY:SF Board Gaymers Meetup (in Dogpatch)
+LOCATION:Dogpatch Games\, 1095 Tennessee St\, San Francisco\, CA San Franc
+ isco\, San Francisco
+URL:https://www.meetup.com/sf-board-gaymers/events/316941913/
+DESCRIPTION:Reading + Theatre\nhttps://www.meetup.com/sf-board-gaymers/eve
+ nts/316941913/\n\n\\*\\*\\* We are returning to our regular 2nd Saturday 
+ schedule \\*\\*\\* All genders and sexualities are welcome at our meetup\
+ ; we are an inclusive community. As we have been for a while lately\, we 
+ will be meeting in San Francisco at Dogpatch Games in - surprise surprise
+  - Dogpatch. Dogpatch Games is very close to a MUNI stop. They have a lar
+ ge game library we can use but feel free to bring a game if t
+END:VEVENT
+END:VCALENDAR

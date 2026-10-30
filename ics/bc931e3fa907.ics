@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bc931e3fa907@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261101T190000
+DTEND;TZID=America/Los_Angeles:20261101T210000
+SUMMARY:Secret Guest List: Cobb’s Free Comedy Nights (Cobb’s Comedy Sh
+ owcase)
+LOCATION:Cobb's Comedy Club\, 915 Columbus Ave\, San Francisco\, CA 94133\
+ , San Francisco
+URL:https://sf.funcheap.com/secret-guest-list-cobbs-free-comedy-nights-cob
+ bs-comedy-showcase-4/
+DESCRIPTION:Comedy + Weird & unusual\nhttps://sf.funcheap.com/secret-guest
+ -list-cobbs-free-comedy-nights-cobbs-comedy-showcase-4/\n\nCobb’s Free 
+ 2026 Comedy Nights (Secret Guest List) Cobbs Comedy Club Cobb’s Comedy 
+ Club has a secret guestlist for a handpicked group of shows at SF’s big
+ gest comedy club. Every month they handpick some of SF’s top local come
+ dians to showcase for you – often with credits like SF Sketchfest\, NBC
+ \, Comedy Central and more. Secret Guest List: Cobb’s Free Comedy Night
+ s Cobb’s Comedy Club\, 915 Columbus 
+END:VEVENT
+END:VCALENDAR

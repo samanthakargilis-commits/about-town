@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ba9542fc44da@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261030T080000
+DTEND;TZID=America/Los_Angeles:20261030T100000
+SUMMARY:Fading Tales by Yernur Bashpay
+LOCATION:Video Arts Gallery\, Mayor Edwin M. Lee International Terminal\, 
+ San Francisco
+URL:https://ma.to/event/fading-tales-yernur-bashpay-2026-10-30
+DESCRIPTION:Art\nhttps://ma.to/event/fading-tales-yernur-bashpay-2026-10-3
+ 0\n\nFading Tales by Yernur Bashpay is a film exploring nomadic life in C
+ entral Asia through dreams\, memory\, and the connection between generati
+ ons. It is shown in the Video Arts Gallery\, located pre-security in the 
+ Mayor Edwin M. Lee International Terminal Departures Hall. The gallery is
+  open daily from 8:00am to 10:00pm.
+END:VEVENT
+END:VCALENDAR

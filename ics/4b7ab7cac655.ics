@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4b7ab7cac655@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Baracus Rugby Club at Westwood
+LOCATION:Westwood\, 2036 Lombard Street\, San Francisco\, CA\, San Francis
+ co
+URL:https://sf.funcheap.com/baracus-rugby-club-westwood-sf/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/baracus-rugby-club-w
+ estwood-sf/\n\nWe’re running it back! The B.A. Baracus Rugby Club is ta
+ king over the bar at Westwood. Swap your rugby boots for cowboy boots and
+  ride the bull for a good cause — all food and drink sales and bull rid
+ es from 6 to 9 go ...
+END:VEVENT
+END:VCALENDAR

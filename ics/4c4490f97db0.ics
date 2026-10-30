@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4c4490f97db0@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261031T190000
+DTEND;TZID=America/Los_Angeles:20261031T223000
+SUMMARY:7th Annual FREE Halloween Comedy Fright Fest + Free Candy
+LOCATION:The Function\, 1414 Market Street\, San Francisco\, CA\, San Fran
+ cisco
+URL:https://sf.funcheap.com/7th-annual-free-halloween-comedy-fright-fest-f
+ ree-candy-sf/
+DESCRIPTION:Comedy + Camp & Halloween\nhttps://sf.funcheap.com/7th-annual-
+ free-halloween-comedy-fright-fest-free-candy-sf/\n\nTwo nights of Hallowe
+ en comedy shows with secret lineups\, spooky drinks specials in San Franc
+ isco Get ready for SF’s 7th Annual HellaFunny Halloween Weekend Comedy 
+ Fest – taking over The Function in downtown San Francisco.- SF’s newe
+ st comedy club. Free with RSVP – 21+ JUST ...
+END:VEVENT
+END:VCALENDAR

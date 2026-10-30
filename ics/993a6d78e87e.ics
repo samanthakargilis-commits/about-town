@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:993a6d78e87e@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261030T090000
+DTEND;TZID=America/Los_Angeles:20261030T180000
+SUMMARY:Mission Fairway Cup 2026
+LOCATION:Coyote Creek Golf Club\, San Francisco
+URL:https://ma.to/event/mission-fairway-cup-30-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/mission-fairway-cup-30-o
+ ct-2026\n\nThe Mission Fairway Cup 2026 is a charity golf tournament pres
+ ented by Technical Builders at Coyote Creek Golf Club. Check-in is at 7:3
+ 0 am and the shotgun start is at 9:00 am. The $185 entry fee includes ran
+ ge balls\, breakfast\, lunch\, three beers\, a banquet\, contests\, raffl
+ es\, and networking. Prizes are awarded for CTP\, Call Your Shot\, and Lo
+ ngest Drive\, with a grand prize for the winning team. P
+END:VEVENT
+END:VCALENDAR

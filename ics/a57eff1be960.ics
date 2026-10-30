@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a57eff1be960@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261108T150000
+DTEND;TZID=America/Los_Angeles:20261108T170000
+SUMMARY:Pre-SKI Season Mixer @ Sportsbasement
+LOCATION:Sports Basement Berkeley\, 2727 Milvia St Berkeley\, Berkeley
+URL:https://partiful.com/e/FzyVYiKc5wJ4mCdtuC9v
+DESCRIPTION:Berkeley\nhttps://partiful.com/e/FzyVYiKc5wJ4mCdtuC9v\n\nWe’
+ re kicking off the season with an in person Cold Pursuit and SO I C Day c
+ ommunity meetup at Sports Basement Berkeley. Sunday November 8 3 PM to 5 
+ PM Sports Basement Berkeley Community mezzanine Come meet your winter com
+ munity\, connect with other skiers and snowboarders\, and get ready for t
+ he upcoming snow season. Bring your skis or snowboard and get them waxed 
+ and ready for winter. We’ll also h
+END:VEVENT
+END:VCALENDAR

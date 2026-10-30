@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:472f18b428d2@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261030T180000
+DTEND;TZID=America/Los_Angeles:20261030T220000
+SUMMARY:Steel Magnolias Dolly Tribute
+LOCATION:Mechanics' Institute\, 57 Post Street\, San Francisco\, San Franc
+ isco
+URL:https://ma.to/event/steel-magnolias-dolly-tribute-31-oct-2026
+DESCRIPTION:⭐ Dolly Parton · Singing + Weird & unusual\nhttps://ma.to/e
+ vent/steel-magnolias-dolly-tribute-31-oct-2026\n\nMovies at Mechanics’ 
+ pays tribute to the immortal Dolly Parton with a screening of Steel Magno
+ lias. Hosted by film historian Lara Gabrielle\, the evening features a pr
+ e-show sing-along\, trivia\, and a Dolly-themed costume contest. Bring ti
+ ssues for the film and warm up your vocal cords for the hits. Tickets ava
+ ilable via link in bio.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:494802580f63@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261030T060000
+DTEND;TZID=America/Los_Angeles:20261030T080000
+SUMMARY:LuxFit Mission Rock Class Giveaway
+LOCATION:LuxFit Mission Rock\, San Francisco
+URL:https://ma.to/event/luxfit-mission-rock-class-giveaway-2026-10-30
+DESCRIPTION:New in your area\nhttps://ma.to/event/luxfit-mission-rock-clas
+ s-giveaway-2026-10-30\n\nAttending any class at LuxFit Mission Rock on Oc
+ tober 30\, 2026 offers a chance to win two tickets to The Ballpark Back 9
+  at Oracle Park\, presented by ZOOX. The entry window runs October 26–N
+ ovember 1\, 2026. Class booking is available.
+END:VEVENT
+END:VCALENDAR

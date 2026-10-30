@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1ab7cdda7a2c@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261030T100000
+DTEND;TZID=America/Los_Angeles:20261030T200000
+SUMMARY:Spooktacular Candy Guess
+LOCATION:Tokyo Central\, Palo Alto
+URL:https://ma.to/event/spooktacular-candy-guess-30-oct-2026
+DESCRIPTION:Camp & Halloween + Weird & unusual · Palo Alto\nhttps://ma.to
+ /event/spooktacular-candy-guess-30-oct-2026\n\nThe Halloween candy guess 
+ contest at Tokyo Central runs from 10/16 through 10/30. Guests guess exac
+ tly how many candies are in the jar. The exact-guess winner receives a 50
+ % off coupon and the closest-guess winner a 30% off coupon. Both coupons 
+ expire 11/30/2026\, are not applicable to holiday season products (party 
+ trays\, Osechi\, Christmas cakes)\, and are valid only until the expirati
+ on date. Entr
+END:VEVENT
+END:VCALENDAR

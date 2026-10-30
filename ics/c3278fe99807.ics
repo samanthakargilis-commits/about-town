@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c3278fe99807@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261030T100000
+DTEND;TZID=America/Los_Angeles:20261030T200000
+SUMMARY:Calbee Fair at Mitsuwa
+LOCATION:Mitsuwa Marketplace (all locations)\, Palo Alto
+URL:https://ma.to/event/calbee-fair-mitsuwa-2026-10-30
+DESCRIPTION:Fairs & festivals · Palo Alto\nhttps://ma.to/event/calbee-fai
+ r-mitsuwa-2026-10-30\n\nCalbee Fair brings a lineup of Japanese snacks fr
+ om Calbee to Mitsuwa Marketplace at special prices. Featured items includ
+ e Roasted Miso & Garlic Potato Chips\, Asian Chips Spicy BBQ\, Jagabee\, 
+ and JagaRico. The fair runs October 23 through November 5 at all Mitsuwa 
+ locations except Hawaii Waikiki.
+END:VEVENT
+END:VCALENDAR

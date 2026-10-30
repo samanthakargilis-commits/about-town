@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3eaf79025541@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261105T183000
+DTEND;TZID=America/Los_Angeles:20261105T213000
+SUMMARY:139th SF Hardware Meetup @ Vizcom | Manufacturing and Design
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/2u9iuenk
+DESCRIPTION:Singing + Discourse · Thursday evening\nhttps://luma.com/2u9i
+ uenk\n\nJoin us for the 139th SF Hardware Meetup at Vizcom. Our theme for
+  the night: Manufacturing and Design! We'll have food and drink and there
+  will be a chance for an open mic. 🤖 Bring demos for the community ope
+ n mic. Speakers TBA Agenda 6:30-7:00 - Arrival\, mingle\, grab refreshmen
+ ts 7:00-7:05 - Welcome and introduction 7:05-8:00 - Guest talks and audie
+ nce Q+A 8:00-8:30p - Community open mic Anyone w
+END:VEVENT
+END:VCALENDAR

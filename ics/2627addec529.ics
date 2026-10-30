@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2627addec529@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261030T183000
+DTEND;TZID=America/Los_Angeles:20261030T203000
+SUMMARY:Josh Gelfand
+LOCATION:Madrone Art Bar\, San Francisco
+URL:https://ma.to/event/josh-gelfand-2026-10-30
+DESCRIPTION:Art\nhttps://ma.to/event/josh-gelfand-2026-10-30\n\nOct 31 · 
+ Madrone Art Bar\, San Francisco. Josh Gelfand performs at 6:30 PM at Madr
+ one Art Bar. When Friday\, 30 October 6:30 PM Add to Calendar Add to Cale
+ ndar About Josh Gelfand performs at 6:30 PM at Madrone Art Bar. Organiser
+ s and Promoters Madrone Art Bar Where Madrone Art Bar Open in Google Maps
+END:VEVENT
+END:VCALENDAR

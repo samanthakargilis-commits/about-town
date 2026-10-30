@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8d353a8d2e31@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261101T170000
+DTEND;TZID=America/Los_Angeles:20261101T200000
+SUMMARY:RS26: Fall Edition at the Palace of Fine Arts
+LOCATION:Palace of Fine Arts\, 3301 Lyon Street\, San Francisco\, CA 94123
+  San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/rs26-fall-edition-at-the-palace-of-fine-a
+ rts-tickets-1999120655696
+DESCRIPTION:New in your area\nhttps://www.eventbrite.com/e/rs26-fall-editi
+ on-at-the-palace-of-fine-arts-tickets-1999120655696\n\nJoin us for an ins
+ piring night of dance at the Palace this November!
+END:VEVENT
+END:VCALENDAR

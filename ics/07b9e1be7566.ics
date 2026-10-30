@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:07b9e1be7566@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261030T110000
+DTEND;TZID=America/Los_Angeles:20261030T190000
+SUMMARY:BYME Color Room Photo Session
+LOCATION:BYME STUDIO\, 255 N. Market St\, San Jose\, CA 95110\, San Jose
+URL:https://ma.to/event/byme-color-room-photo-session-2026-10-30
+DESCRIPTION:San Jose\nhttps://ma.to/event/byme-color-room-photo-session-20
+ 26-10-30\n\nThe BYME Color Room is in its final 10 days before being chan
+ ged for a festive theme. Each 45-minute session allows 30 minutes for unl
+ imited photos and 15 minutes to select and print favorites. The first two
+  people are included\; up to four people can attend\, and each additional
+  person costs $25. Two XL strip prints (8 × 24 in) and all digital files
+  are included\, with half-body\, landscape-style pho
+END:VEVENT
+END:VCALENDAR

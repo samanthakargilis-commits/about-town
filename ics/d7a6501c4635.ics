@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d7a6501c4635@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:The San Francisco Fall Cider Fest 2026
+LOCATION:SPARK Social SF\, San Francisco
+URL:https://www.eventbrite.com/e/the-san-francisco-fall-cider-fest-tickets
+ -1998827487823
+DESCRIPTION:Craft + Weird & unusual · Featured on Funcheap\nhttps://www.e
+ ventbrite.com/e/the-san-francisco-fall-cider-fest-tickets-1998827487823\n
+ \nNovember 7\, 2026 – SF (SPARK Social SF) – $45 – Sample unlimited
+  pours of 30+ craft ciders\, enjoy eats from 15+ food trucks\, warm up by
+  the fire pits with s’mores\, and catch live music. This year’s CAMP 
+ SPARK edition also features camp games\, competitions\, photo ops\, and a
+  pumpkin pie eating contest. Spark Social SF
+END:VEVENT
+END:VCALENDAR

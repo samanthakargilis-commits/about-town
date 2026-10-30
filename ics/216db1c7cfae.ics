@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:216db1c7cfae@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261030T193000
+DTEND;TZID=America/Los_Angeles:20261030T213000
+SUMMARY:Minions & Monsters Screening
+LOCATION:PROXY\, San Francisco
+URL:https://ma.to/event/minions-monsters-screening-31-oct-2026
+DESCRIPTION:Camp & Halloween\nhttps://ma.to/event/minions-monsters-screeni
+ ng-31-oct-2026\n\nA free outdoor screening of Minions & Monsters\, direct
+ ed by Pierre Coffin (2026\, 1h 30m). The film follows the Minions as they
+  become Hollywood movie stars\, lose everything\, unleash monsters on the
+  world\, and try to save the planet from the mayhem they created. Present
+ ed by the Hayes Valley Merchants Council as part of Halloween on Hayes. O
+ pen to all\; seating\, blankets\, and warm layers are recomme
+END:VEVENT
+END:VCALENDAR

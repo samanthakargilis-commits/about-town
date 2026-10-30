@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4411afce3bc6@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261129T200000
+DTEND;TZID=America/Los_Angeles:20261129T220000
+SUMMARY:Begotten
+LOCATION:4 Star Theater\, 2200 Clement St\, San Francisco
+URL:https://ticketing.uswest.veezi.com/purchase/20283?siteToken=d2atbcege5
+ knqsavntt91g1250
+DESCRIPTION:New in your area\nhttps://ticketing.uswest.veezi.com/purchase/
+ 20283?siteToken=d2atbcege5knqsavntt91g1250\n\nBegotten is the creation my
+ th brought to life\, the story of no less than the violent death of God a
+ nd the (re)birth of nature on a barren earth.
+END:VEVENT
+END:VCALENDAR

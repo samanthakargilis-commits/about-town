@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d82a2cbe48fd@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261101T140000
+DTEND;TZID=America/Los_Angeles:20261101T160000
+SUMMARY:San Francisco State University - Day of The Dead Concierto & Fiest
+ a!
+LOCATION:McKenna Theatre\, 1600 Holloway Ave\, San Francisco\, CA 94132\, 
+ USA\, San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/ccccc-sf/events/316606716/
+DESCRIPTION:Cultural festivals + Singing\nhttps://www.meetup.com/ccccc-sf/
+ events/316606716/\n\nCelebrate Día de los Muertos with Music\, Memory\, 
+ and Fiesta Join the Golden Gate Symphony Orchestra & Chorus for an hour o
+ f moving music under Music Director Urs Leonhardt Steiner — then let th
+ e party begin! Stay for a full-on fiesta: with music\, dancing\, delicaci
+ es\, and a community altar honoring loved ones. Dress up in color and cel
+ ebrate life and your loved ones with the Golden Gate Symphony! B
+END:VEVENT
+END:VCALENDAR

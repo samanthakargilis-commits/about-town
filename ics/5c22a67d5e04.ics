@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5c22a67d5e04@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261030T110000
+DTEND;TZID=America/Los_Angeles:20261030T220000
+SUMMARY:Halloween Free Dessert Special
+LOCATION:Khob Khun\, 3809 Geary Blvd\, San Francisco\, CA 94118\, San Fran
+ cisco
+URL:https://ma.to/event/halloween-free-dessert-special-2026-10-30
+DESCRIPTION:Camp & Halloween + Weird & unusual\nhttps://ma.to/event/hallow
+ een-free-dessert-special-2026-10-30\n\nVisit Khob Khun on October 30 wear
+ ing a Halloween costume. Dine in and receive a free dessert with a minimu
+ m $20 purchase. Part of the Halloween special on October 30-31.
+END:VEVENT
+END:VCALENDAR

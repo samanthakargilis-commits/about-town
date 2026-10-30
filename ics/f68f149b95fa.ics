@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f68f149b95fa@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261121T193000
+DTEND;TZID=America/Los_Angeles:20261121T213000
+SUMMARY:Basement presents: IT on VHS (with Director Q&A)
+LOCATION:4 Star Theater\, 2200 Clement St\, San Francisco
+URL:https://ticketing.uswest.veezi.com/purchase/20263?siteToken=d2atbcege5
+ knqsavntt91g1250
+DESCRIPTION:Weird & unusual\nhttps://ticketing.uswest.veezi.com/purchase/2
+ 0263?siteToken=d2atbcege5knqsavntt91g1250\n\nRated R for violence/horror\
+ , bloody images\, and for language.. Basement VHS Presents... In 1960\, s
+ even preteen outcasts fight an evil demon that poses as a child-killing c
+ lown. Thirty years later\, they reunite to stop the demon once and for al
+ l when it returns to their hometown. The two-part TV miniseries comes to 
+ the big screen courtesy of Basement VHS. In-person Q&A with Director Tomm
+ y Lee Walla
+END:VEVENT
+END:VCALENDAR

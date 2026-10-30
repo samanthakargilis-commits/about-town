@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1a4e00287f9d@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261031T110000
+DTEND;TZID=America/Los_Angeles:20261031T160000
+SUMMARY:MCCLA Rummage Sale
+LOCATION:MCCLA\, 2868 Mission St.\, San Francisco
+URL:https://ma.to/event/mccla-rummage-sale-2026-10-31
+DESCRIPTION:Estate & sample sales + Art\nhttps://ma.to/event/mccla-rummage
+ -sale-2026-10-31\n\nMCCLA Rummage Sale offers kitchen items\, office equi
+ pment and more. Every purchase supports MCCLA’s art archiving\, storage
+ \, and efforts to reopen its doors to the community. MCCLA is the Mission
+  Cultural Center for Latino Arts.
+END:VEVENT
+END:VCALENDAR

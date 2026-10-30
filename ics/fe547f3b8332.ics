@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fe547f3b8332@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261030T190000
+DTEND;TZID=America/Los_Angeles:20261030T203000
+SUMMARY:The Historical Case for the Resurrection of Christ
+LOCATION:Star of the Sea Church\, Star of the Sea Church\, 4420 Geary Blvd
+ \, San Francisco\, CA 94118\, USA\, San Francisco
+URL:https://luma.com/ypqyjp8w
+DESCRIPTION:Discourse\nhttps://luma.com/ypqyjp8w\n\nDid Jesus Christ actua
+ lly rise from the dead? To most of us in the modern world\, the question 
+ is almost so ridiculous that it's not even worth asking. Sure\, Jesus may
+  have had a few insightful moral teachings. It may even be the case that 
+ some find comfort and guidance from faith in Jesus. But to say that a 33 
+ year old man from the backwaters of Galilee in the first century AD liter
+ ally died\, was 
+END:VEVENT
+END:VCALENDAR

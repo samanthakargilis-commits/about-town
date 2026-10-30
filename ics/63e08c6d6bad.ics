@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:63e08c6d6bad@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261031T110000
+DTEND;TZID=America/Los_Angeles:20261031T150000
+SUMMARY:12th Annual Chinatown Halloween Festival
+LOCATION:Waverly Place\, Waverly Place\, San Francisco\, CA\, San Francisc
+ o
+URL:https://sf.funcheap.com/12th-annual-chinatown-halloween-festival-sf/
+DESCRIPTION:Fairs & festivals + Camp & Halloween · A yearly tradition\nht
+ tps://sf.funcheap.com/12th-annual-chinatown-halloween-festival-sf/\n\nJoi
+ n us for CYC 12th Annual Chinatown Halloween Festival on Saturday\, Octob
+ er 31 from 11am–3pm on Waverly Place (between Sacramento and Washington
+  Street). Celebrate Halloween in the heart of Chinatown with a pumpkin pa
+ tch\, arts and crafts\, games\, and more family-friendly activities throu
+ ghout the afternoon. Thank ...
+END:VEVENT
+END:VCALENDAR

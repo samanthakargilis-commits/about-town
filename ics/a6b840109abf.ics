@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a6b840109abf@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261101T140000
+DTEND;TZID=America/Los_Angeles:20261101T200000
+SUMMARY:Tenderloin Street Fair “Dia de Muertos” Celebration 2026 + Blo
+ ck Party
+LOCATION:150 Golden Gate Ave\, 150 Golden Gate Avenue\, San Francisco\, CA
+ \, San Francisco
+URL:https://sf.funcheap.com/tenderloin-street-fair-dia-de-muertos-celebrat
+ ion-2026-block-party-sf/
+DESCRIPTION:Fairs & festivals\nhttps://sf.funcheap.com/tenderloin-street-f
+ air-dia-de-muertos-celebration-2026-block-party-sf/\n\nA free Día de Mue
+ rtos street fair bringing tradition and block party energy to the heart o
+ f San Francisco’s Tenderloin. Día de Muertos comes to the Tenderloin S
+ treet Fair! Join us Sunday\, November 1 from 2–8 PM for a street fair t
+ akeover in the heart of the ...
+END:VEVENT
+END:VCALENDAR

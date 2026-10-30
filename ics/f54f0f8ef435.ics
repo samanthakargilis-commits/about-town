@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f54f0f8ef435@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261031T090000
+DTEND;TZID=America/Los_Angeles:20261031T170000
+SUMMARY:EarthSpoke Pumpkin Wonderland
+LOCATION:EarthSpoke Farms\, Mendocino\, San Francisco
+URL:https://ma.to/event/earthspoke-pumpkin-wonderland-2026-10-31
+DESCRIPTION:U-pick farms\nhttps://ma.to/event/earthspoke-pumpkin-wonderlan
+ d-2026-10-31\n\nEarthSpoke Farms' Pumpkin Wonderland is available through
+ out October at the family-owned and operated flower farm in Mendocino. Pu
+ mpkins are displayed at the farm\, alongside u-pick flowers and rolling a
+ cres of dahlias. Specific U-Pick event dates are announced separately by 
+ EarthSpoke Farms.
+END:VEVENT
+END:VCALENDAR

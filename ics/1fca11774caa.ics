@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1fca11774caa@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261030T120000
+DTEND;TZID=America/Los_Angeles:20261030T130000
+SUMMARY:Filipino American Mural Unveiling
+LOCATION:SJSU campus\, San Francisco
+URL:https://ma.to/event/filipino-american-mural-unveiling-2026-10-30
+DESCRIPTION:Art\nhttps://ma.to/event/filipino-american-mural-unveiling-202
+ 6-10-30\n\nSJSU unveils a Filipino American history mural on campus on Fr
+ iday\, October 30. The project began as a student idea three years ago\, 
+ when students noticed something missing in their history. The stories of 
+ Filipino Americans are now a permanent part of SJSU history.
+END:VEVENT
+END:VCALENDAR

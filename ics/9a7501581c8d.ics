@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9a7501581c8d@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261115T150000
+DTEND;TZID=America/Los_Angeles:20261115T170000
+SUMMARY:Annual Fort Mason Craft Friends Social
+LOCATION:San Francisco San Francisco\, CA\, San Francisco San Francisco\, 
+ CA\, San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/gist-irl/events/316640627/
+DESCRIPTION:Craft + Fairs & festivals\nhttps://www.meetup.com/gist-irl/eve
+ nts/316640627/\n\n**RSVP via:** https://app.gistirl.com/event-details/w9f
+ jjqcpWDl2rf44fDWa **Early Bird Discounts | More $ Later** Hello New Frien
+ ds\, This event is like no other - you'll meet at least 10 new friends he
+ re with our rotating 1-1 conversations! Come spend the afternoon surround
+ ed by beautiful handmade goods\, discovering independent makers alongside
+  people who share your eye for art at the Renegade Craf
+END:VEVENT
+END:VCALENDAR

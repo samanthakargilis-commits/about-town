@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1fe95c25fedc@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261031T213000
+DTEND;TZID=America/Los_Angeles:20261101T020000
+SUMMARY:Halloween Party @ Carbon Lounge SF • FREE GUEST LIST
+LOCATION:Carbon Lounge\, 383 Bay St\, san francisco\, CA 94133 san francis
+ co\, san francisco
+URL:https://www.eventbrite.com/e/halloween-party-carbon-lounge-sf-free-gue
+ st-list-tickets-2003437058172
+DESCRIPTION:Camp & Halloween\nhttps://www.eventbrite.com/e/halloween-party
+ -carbon-lounge-sf-free-guest-list-tickets-2003437058172\n\nThis Saturday 
+ • Halloween Party • Get ready for the ultimate Halloween event Expect
+  the usual: Great Music\, Awesome people and lots of Fun
+END:VEVENT
+END:VCALENDAR

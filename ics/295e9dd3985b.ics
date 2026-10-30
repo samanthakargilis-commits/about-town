@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:295e9dd3985b@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261031T183000
+DTEND;TZID=America/Los_Angeles:20261031T200000
+SUMMARY:SF Halloween Night BOOs Cruise: 90-Minute Bay Cruise with Blue & G
+ old Fleet
+LOCATION:Blue & Gold Fleet\, Blue & Gold Fleet\, Pier 39\, San Francisco\,
+  CA\, San Francisco
+URL:https://sf.funcheap.com/sf-halloween-night-boos-cruise-90-minute-bay-c
+ ruise-with-blue-gold-fleet-oct-30-31/
+DESCRIPTION:Camp & Halloween\nhttps://sf.funcheap.com/sf-halloween-night-b
+ oos-cruise-90-minute-bay-cruise-with-blue-gold-fleet-oct-30-31/\n\nGet re
+ ady for a Halloween night on the Bay with Blue & Gold Fleet’s BOOs Crui
+ se! Set sail on a spooktacular Halloween-themed cruise featuring spectacu
+ lar nighttime views of the San Francisco skyline\, a trip beneath the Gol
+ den Gate Bridge\, and a cruise around the mysterious ...
+END:VEVENT
+END:VCALENDAR

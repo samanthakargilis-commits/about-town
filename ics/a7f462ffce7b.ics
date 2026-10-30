@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a7f462ffce7b@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261108T110000
+DTEND;TZID=America/Los_Angeles:20261108T170000
+SUMMARY:National STEM Day at The Tech Interactive: Free Admission (San Jos
+ e)
+LOCATION:The Tech Interactive\, 201 S. Market St. San Jose\, CA 95113
+URL:https://sf.funcheap.com/national-stem-day-tech-interactive-free-admiss
+ ion-san-jose/
+DESCRIPTION:Theatre + Weird & unusual\nhttps://sf.funcheap.com/national-st
+ em-day-tech-interactive-free-admission-san-jose/\n\nBig ideas. Hands-on f
+ un. Free admission! Celebrate National STEM Day at The Tech Interactive w
+ ith a full day of curiosity\, creativity\, and discovery! On Sunday\, Nov
+ . 8\, explore the wonders of science\, technology\, engineering\, and mat
+ h with exciting activities\, special community partners\, and immersive I
+ MAX® films. ...
+END:VEVENT
+END:VCALENDAR

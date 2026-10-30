@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:792ad22d64d9@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261031T170000
+DTEND;TZID=America/Los_Angeles:20261031T210000
+SUMMARY:Ta'leef: A Legacy of Love
+LOCATION:Majlis Banquet Hall\, 32140 Alvarado Boulevard\, Union City\, CA 
+ 94587 Union City\, Union City
+URL:https://www.eventbrite.com/e/taleef-a-legacy-of-love-tickets-200260141
+ 5743
+DESCRIPTION:Union City\nhttps://www.eventbrite.com/e/taleef-a-legacy-of-lo
+ ve-tickets-2002601415743\n\nBay Area! Come join the Ta'leef Board of Dire
+ ctors\, Guest Speakers\, Ta'leef staff and volunteers for our Benefit Din
+ ner on October 31st.
+END:VEVENT
+END:VCALENDAR

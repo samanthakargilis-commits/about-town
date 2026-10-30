@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b86a810b6349@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261126T103000
+DTEND;TZID=America/Los_Angeles:20261126T123000
+SUMMARY:Volunteer for Thanksgiving Day 2026: Deliver Meals + In-Home Visit
+ s
+LOCATION:Little Brothers - Friends of the Elderly San Francisco Bay Area
+URL:https://sf.funcheap.com/volunteer-thanksgiving-day-2026-deliver-meals-
+ inhome-visits-sf/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/volunteer-thanksgivi
+ ng-day-2026-deliver-meals-inhome-visits-sf/\n\nJoin us this Thanksgiving 
+ as we bring warmth\, joy\, and holiday meals to older adults in our commu
+ nity! There are two ways you can volunteer: Option 1: In-Person Visit & M
+ eal Delivery Pick up your Thanksgiving meal(s) in downtown San Francisco 
+ on Thursday\, November 26th between 10:00 ...
+END:VEVENT
+END:VCALENDAR

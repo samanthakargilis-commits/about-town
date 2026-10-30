@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f2eeb236034c@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261115T100000
+DTEND;TZID=America/Los_Angeles:20261115T120000
+SUMMARY:cole valley closet sale
+LOCATION:The stoop next to the bike shop\, 840 Cole St San Francisco\, San
+  Francisco
+URL:https://partiful.com/e/SoxBjzqvybNAK1yJoYQa
+DESCRIPTION:Art\nhttps://partiful.com/e/SoxBjzqvybNAK1yJoYQa\n\nwe’re ba
+ ck for one more before it starts raining! swing by the stoop to the left 
+ of SF Wheels for a fun collection of closet items in a variety of styles 
+ & sizes at very reasonable prices 👚👗👢👜 🧩 EXCITING UPDATE: 
+ we will also have a collection of photography prints (peep @lenstoworld_)
+  & some crafts for you to peruse!!! + head over to Wooden for a coffee (o
+ r Woods for an early beer) after! no bette
+END:VEVENT
+END:VCALENDAR

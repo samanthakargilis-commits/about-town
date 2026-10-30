@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:415ce868ad82@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261030T140000
+DTEND;TZID=America/Los_Angeles:20261030T220000
+SUMMARY:Nightmare on Front Street
+LOCATION:Front Street\, San Francisco
+URL:https://ma.to/event/nightmare-on-front-street-30-oct-2026
+DESCRIPTION:Big Bay Area traditions + Fairs & festivals\nhttps://ma.to/eve
+ nt/nightmare-on-front-street-30-oct-2026\n\nA previous Friday’s party o
+ n Front Street. Photo by Collin Love\, courtesy of Downtown SF Partnershi
+ p⁠ On Friday\, October 30\, the Front Street Entertainment Zone will ho
+ st a free Halloween party from 4 p.m. to 10 p.m. The free party is the pe
+ rfect way to start Halloween weekend\, and attendees are encouraged to we
+ ar their best costumes. You can expect themed cocktails and activities\, 
+ along with live
+END:VEVENT
+END:VCALENDAR

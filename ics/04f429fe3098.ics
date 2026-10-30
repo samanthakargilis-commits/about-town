@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:04f429fe3098@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261030T180000
+DTEND;TZID=America/Los_Angeles:20261030T230000
+SUMMARY:SF’s Epic Halloween Pub Crawl “Crawloween 2026”
+LOCATION:Mayes Oyster House\, 1233 Polk St. San Francisco\, CA 94154
+URL:https://sf.funcheap.com/sfs-epic-halloween-pub-crawl-crawloween-2026-o
+ ct-24-nov-1-2/
+DESCRIPTION:Camp & Halloween + Big Bay Area traditions · A yearly traditi
+ on\nhttps://sf.funcheap.com/sfs-epic-halloween-pub-crawl-crawloween-2026-
+ oct-24-nov-1-2/\n\nSF’s Epic Halloween Pub Crawl “Crawloween 2026” 
+ (Oct. 24-Nov. 1) CrawlSF The San Francisco Halloween Pub Crawl 2026: Craw
+ loween Returns! This year\, it’s expected to be even bigger\, with new 
+ bars\, new surprises and four nights of non-stop Halloween excitement. Oc
+ tober in San Francisco brings Fleet Week\, amazing weather and the San Fr
+ ancisco Halloween Pub Crawl\, better known as Crawloween. Produced 
+END:VEVENT
+END:VCALENDAR

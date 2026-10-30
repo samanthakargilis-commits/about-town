@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5ad247a7285e@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261030T133000
+DTEND;TZID=America/Los_Angeles:20261030T153000
+SUMMARY:Living Better Book Club
+LOCATION:Espresso Roma\, 1549 Hopkins St\, Berkeley\, CA Berkeley\, Berkel
+ ey
+URL:https://www.meetup.com/meetup-group-sgxmfvvk/events/316755561/
+DESCRIPTION:Reading · Berkeley\nhttps://www.meetup.com/meetup-group-sgxmf
+ vvk/events/316755561/\n\nNEW Start Time: 1:30 pm. Mark your calendar! Usu
+ ally about seven or eight people show up FYI—even if they don't all sig
+ n up here. :) We will be reading and discussing **"A Keeper"** by Graham 
+ Norton. When Elizabeth Keane returns to Ireland after her mother’s deat
+ h\, she’s focused only on saying goodbye to that dark and dismal part o
+ f her life. Her childhood home is packed solid with useless junk\, h
+END:VEVENT
+END:VCALENDAR

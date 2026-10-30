@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6a76db616b94@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261030T090000
+DTEND;TZID=America/Los_Angeles:20261030T170000
+SUMMARY:In-Person Voting
+LOCATION:Burlingame Community Center\, 850 Burlingame Avenue\, Burlingame\
+ , CA\, Burlingame
+URL:https://ma.to/event/vote-center-community-center-2026-10-30
+DESCRIPTION:Burlingame\nhttps://ma.to/event/vote-center-community-center-2
+ 026-10-30\n\nIn-person voting at the Burlingame Community Center\, 850 Bu
+ rlingame Avenue. The center is open for voting daily from 9:00 a.m. to 5:
+ 00 p.m. between October 24 and November 3. On Election Day\, November 3\,
+  the center is open from 7:00 a.m. to 8:00 p.m. A 24/7 ballot drop box is
+  also available on site.
+END:VEVENT
+END:VCALENDAR

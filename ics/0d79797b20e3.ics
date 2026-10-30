@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0d79797b20e3@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261122T130000
+DTEND;TZID=America/Los_Angeles:20261122T170000
+SUMMARY:‘Zine Launch Party
+LOCATION:507 55th St\, Oakland
+URL:https://partiful.com/e/CadopercUBxV2GzL62l9
+DESCRIPTION:Craft + Writing · Oakland\nhttps://partiful.com/e/CadopercUBx
+ V2GzL62l9\n\nHello\, lovelies! 💫 It's finally happening! Some of you m
+ ay already know how we’ve spent this past year working on a literary 
+ ‘zine\, writing\, illustrating\, photographing\, and designing. And now
+ \, after many months of frantic work (and many lulls)\, Kaash\, will be c
+ omplete! We’re so proud of what this community of artists has explored\
+ , and we’d love to share it with you all! Come celebrate the launch 
+END:VEVENT
+END:VCALENDAR

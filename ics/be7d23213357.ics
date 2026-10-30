@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:be7d23213357@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261109T190000
+DTEND;TZID=America/Los_Angeles:20261109T210000
+SUMMARY:SF Men's Massage Exchange
+LOCATION:San Francisco\, \, San Francisco\, CA San Francisco\, San Francis
+ co
+URL:https://www.meetup.com/learn-and-practice-massage-for-gay-bi-men/event
+ s/316715303/
+DESCRIPTION:Gay / queer + Spirituality\nhttps://www.meetup.com/learn-and-p
+ ractice-massage-for-gay-bi-men/events/316715303/\n\nJoin us for three hou
+ rs of giving and receiving delicious touch and sharing intimacy with othe
+ r men. "Thanks for opening sacred space to the intimacy and intentional m
+ assage..it was awesome. I [could] connect with my brother's energy and fe
+ elings. Again\, it was an amazing experience." --Julio-- Sheet & Towel in
+ cluded in your registration fee You are welcome to be part of this growin
+ g massage commu
+END:VEVENT
+END:VCALENDAR

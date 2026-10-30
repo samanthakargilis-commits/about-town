@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9941bdf39bf6@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261107T150000
+DTEND;TZID=America/Los_Angeles:20261107T170000
+SUMMARY:Surfrider Foundation Dune Revegetation
+LOCATION:Judah St\, Judah St San Francisco\, San Francisco
+URL:https://partiful.com/e/dQEZTFSC8xncNWmjw9Zy
+DESCRIPTION:New in your area\nhttps://partiful.com/e/dQEZTFSC8xncNWmjw9Zy\
+ n\nSurfrider Foundation San Francisco hosts a hands-on dune restoration m
+ orning at Ocean Beach\, planting native vegetation to strengthen the coas
+ tline. It is a satisfying way to spend a Saturday giving back to the coas
+ t Expect digging\, squatting\, and carrying on uneven sandy terrain\, wit
+ h tools and gloves provided. It is free to volunteer for ages 15 and up\,
+  but sign-up is required through the link i
+END:VEVENT
+END:VCALENDAR

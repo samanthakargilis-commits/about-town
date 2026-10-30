@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:816dd665e1ea@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261127T190000
+DTEND;TZID=America/Los_Angeles:20261127T210000
+SUMMARY:Flashback Fridays
+LOCATION:
+URL:https://sf.funcheap.com/city-guide/san-francisco-holiday-ice-skating-r
+ ink-union-square/
+DESCRIPTION:Art · Featured on Funcheap\nhttps://sf.funcheap.com/city-guid
+ e/san-francisco-holiday-ice-skating-rink-union-square/\n\nNovember 27\, D
+ ecember 18\, 2026\, and January 15\, 2027 | 7 p.m. and 8:30 p.m. sessions
+  Skate to 1980s hits with music from Greatest Hits 103.7. Expect throwbac
+ k tracks from artists like Madonna\, Michael Jackson\, Queen\, Prince and
+  Pat Benatar.
+END:VEVENT
+END:VCALENDAR

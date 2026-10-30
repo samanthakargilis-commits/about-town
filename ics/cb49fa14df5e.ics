@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cb49fa14df5e@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:“Haunted Tunnel of Terror” Car Wash
+LOCATION:655 W. San Carlos St.
+URL:https://sf.funcheap.com/city-guide/bay-area-haunted-houses/
+DESCRIPTION:Weird & unusual + Camp & Halloween · Featured on Funcheap\nht
+ tps://sf.funcheap.com/city-guide/bay-area-haunted-houses/\n\nSan Jose | 6
+ 55 W. San Carlos St. | Oct. 28-31 | $20 per vehicle (includes $5 donation
+  to St. Jude’s Children’s Hospital) Sadly\, we don’t believe the Ha
+ unted Car Wash “Tunnel of Terror” has returned for 2026. Extreme Expr
+ ess Car Wash previously transformed its car wash tunnel into a Halloween 
+ attraction\, complete with creepy characters and spooky red soap. The eve
+ nt raised money for St. Jude Childr
+END:VEVENT
+END:VCALENDAR

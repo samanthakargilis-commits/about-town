@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7722513aec80@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261030T090000
+DTEND;TZID=America/Los_Angeles:20261030T154500
+SUMMARY:Free COVID & Flu Vaccines
+LOCATION:La Placita\, 1 Lilac St.\, SF 94110\, San Francisco
+URL:https://ma.to/event/free-covid-flu-vaccines-2026-10-30
+DESCRIPTION:New in your area\nhttps://ma.to/event/free-covid-flu-vaccines-
+ 2026-10-30\n\nFree COVID and flu vaccines are offered at La Placita by Ca
+ lle 24 Latino Cultural District with HealthRIGHT 360\, the Latino Task Fo
+ rce and Unidos en Salud. COVID vaccines are free for people 12 and older\
+ , and flu shots are free for the whole family from 6 months of age. The f
+ ree mobile clinic is a weekly Friday service at La Placita. Alongside the
+  vaccines\, free health services include COVID\, diab
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ae114d83190f@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261107T140000
+DTEND;TZID=America/Los_Angeles:20261107T170000
+SUMMARY:Level Up Your Personal Website
+LOCATION:San Mateo\, CA\, San Mateo
+URL:https://luma.com/1upb4xld
+DESCRIPTION:Discourse · San Mateo\nhttps://luma.com/1upb4xld\n\nCome buil
+ d or rebuild your personal website! You’ve been meaning to redo your si
+ te for ages. Today’s the day. Forget boring templates. We’ll show you
+  the coolest personal sites out there\, and you can make or remake your s
+ ite\, alongside other wonderful people. No coding or design experience ne
+ eded. Really. We actually prefer beginners. We provide the tool and the c
+ redits. Just bring your laptop. Yo
+END:VEVENT
+END:VCALENDAR

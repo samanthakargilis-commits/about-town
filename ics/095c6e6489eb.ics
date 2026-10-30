@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:095c6e6489eb@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261119T180000
+DTEND;TZID=America/Los_Angeles:20261119T200000
+SUMMARY:Rambler Readers November Meeting
+LOCATION:Bay Area\, None\, Bay Area\, CA Bay Area\, Bay Area
+URL:https://www.meetup.com/south-bay-women-readers/events/316757184/
+DESCRIPTION:Thursday evening · Bay Area\nhttps://www.meetup.com/south-bay
+ -women-readers/events/316757184/\n\nLocation: Natalie's house in Menlo Pa
+ rk. Attendees will receive an email with the address several days prior t
+ o the meeting. Potluck\, Natalie will provide a main dish\, we provide ev
+ erything else. This month's book selection: Whistler by Ann Patchett Abou
+ t the book: Whistler is a story about two adults looking back over the ch
+ oices they made\, and the choices that were made for them. It’s a story
+  ab
+END:VEVENT
+END:VCALENDAR

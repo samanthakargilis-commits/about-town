@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c4075d3afc48@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261030T200000
+DTEND;TZID=America/Los_Angeles:20261031T020000
+SUMMARY:Halloween Runway Party
+LOCATION:165 Page St\, 165 Page St San Francisco\, San Francisco
+URL:https://partiful.com/e/P96EJnfcvI8WiiCOxGWw
+DESCRIPTION:Camp & Halloween + Weird & unusual\nhttps://partiful.com/e/P96
+ EJnfcvI8WiiCOxGWw\n\nOne catwalk. Wild costumes. Zero chill. Forget your 
+ usual SF networking event. We're swapping pitch decks for a runway\, busi
+ ness casual for outrageous costumes\, and awkward small talk for spooky c
+ ocktails. Expect Halloween-themed bites\, boozy drinks\, wild costumes\, 
+ great people\, and a dance floor that goes till 2 AM. Come for the party.
+  Stay for the chaos. Maybe leave with a crown. 👑 📅 Friday\, Oct
+END:VEVENT
+END:VCALENDAR

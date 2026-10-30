@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:67c596560c37@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261102T100000
+DTEND;TZID=America/Los_Angeles:20261102T210000
+SUMMARY:SF’s 2026 Dia de los Muertos Festival of Altars
+LOCATION:Potrero Del Sol Park\, San Francisco
+URL:http://www.renegadecraft.com/fairs/sanfrancisco-2016-holiday
+DESCRIPTION:Fairs & festivals + Cultural festivals · A yearly tradition\n
+ http://www.renegadecraft.com/fairs/sanfrancisco-2016-holiday\n\nNovember 
+ 2\, 2026 – SF (Potrero Del Sol Park) – FREE – Every November 2\, th
+ e Marigold Project hosts its Día de los Muertos Festival of Altars\, inv
+ iting the community to honor ancestors and remember loved ones through ar
+ t\, ofrendas\, and cultural traditions. This year’s theme is “Familia
+ : Entre raíces y el Cielo” (Family: Between Roots and Heaven)\, with a
+ ltar creation beginning at 10am\, a sunset cere
+END:VEVENT
+END:VCALENDAR

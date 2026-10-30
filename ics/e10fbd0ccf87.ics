@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e10fbd0ccf87@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261105T180000
+DTEND;TZID=America/Los_Angeles:20261105T200000
+SUMMARY:Art Walk @ Art Space Lower Polk
+LOCATION:Trendyloin\, 1170 Sutter St San Francisco\, San Francisco
+URL:https://partiful.com/e/wbeGTEwg2CuykLiafm7a
+DESCRIPTION:Art + Craft · Thursday evening\nhttps://partiful.com/e/wbeGTE
+ wg2CuykLiafm7a\n\nThe Lower Polk art walk opens up Art Space at Lower Pol
+ k for an evening of local art and neighborhood wandering. I Love Lower Po
+ lk hosts the gallery stop as part of the citywide SF First Thursdays Art 
+ Walk Expect to browse work by local artists\, meet makers\, and wander to
+  other neighborhood happenings This event is not hosted by Partiful. It i
+ s an event we recommend\, hosted by I Love Lower Polk. F
+END:VEVENT
+END:VCALENDAR

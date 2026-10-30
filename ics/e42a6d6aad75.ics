@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e42a6d6aad75@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261115T133000
+DTEND;TZID=America/Los_Angeles:20261115T153000
+SUMMARY:Community Book Swap!
+LOCATION:Mission Dolores Park\, 566 Dolores St\, San Francisco
+URL:https://partiful.com/e/6613DPSgOHzTDv0JSHZz
+DESCRIPTION:Reading + Theatre\nhttps://partiful.com/e/6613DPSgOHzTDv0JSHZz
+ \n\nDo you love talking books but hate being told what to read by a book 
+ club? Do you have books on your shelf that you think more people should r
+ ead? Do you want to meet other book-minded individuals? Come to this book
+  swap! Come to Mission Dolores (exact location tbd) with 1-2 books you li
+ ked that you're willing to lend / give away. We'll each spend 1 - 2 minut
+ es describing our books (no spoilers!) 
+END:VEVENT
+END:VCALENDAR

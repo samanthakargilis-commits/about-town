@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6c4af4c01cc6@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261101T180000
+DTEND;TZID=America/Los_Angeles:20261101T193000
+SUMMARY:Sunday Night Roller Disco - All Ages - 6 P.M. to 7:30 PM
+LOCATION:Church Of 8 Wheels\, 554 Fillmore Street\, San Francisco\, CA 941
+ 17 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/sunday-night-roller-disco-all-ages-6-pm-t
+ o-730-pm-tickets-1978869409674
+DESCRIPTION:Dance nights\nhttps://www.eventbrite.com/e/sunday-night-roller
+ -disco-all-ages-6-pm-to-730-pm-tickets-1978869409674\n\nGet your skate gr
+ oove on with some sweet soul music on a Sunday night!!!
+END:VEVENT
+END:VCALENDAR

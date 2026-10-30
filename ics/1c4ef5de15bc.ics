@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1c4ef5de15bc@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261103T183000
+DTEND;TZID=America/Los_Angeles:20261103T203000
+SUMMARY:Open Air Club | San Francisco Community Walk
+LOCATION:Waterbar Restaurant\, 399 The Embarcadero\, San Francisco\, CA 94
+ 105\, USA\, San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/san-francisco-walking-biking-camping-meetup-gro
+ up/events/317059658/
+DESCRIPTION:New in your area\nhttps://www.meetup.com/san-francisco-walking
+ -biking-camping-meetup-group/events/317059658/\n\nWELCOME TO OPEN AIR CLU
+ B \\| SAN FRANCISCO\\! Get Outside. Find Your People. Join us for an even
+ ing of fresh air\, movement\, and meaningful connections along San Franci
+ sco’s beautiful waterfront! Open Air Club is a free outdoor community b
+ ringing people together through shared experiences\, new friendships\, an
+ d an active lifestyle. Before we begin our community walk\, stop by our w
+ elcome table to meet 
+END:VEVENT
+END:VCALENDAR

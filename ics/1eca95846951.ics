@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1eca95846951@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261106T180000
+DTEND;TZID=America/Los_Angeles:20261106T200000
+SUMMARY:Mini Masterpieces Holiday Gifts Show 2026
+LOCATION:Rhythmix Cultural Works\, 2513 Blanding Ave.\, Alameda\, CA 94501
+ \, Alameda
+URL:https://sf.funcheap.com/mini-masterpieces-holiday-gifts-show-2026/
+DESCRIPTION:Art · Alameda\nhttps://sf.funcheap.com/mini-masterpieces-holi
+ day-gifts-show-2026/\n\nSmall & Affordable Art by Local Artists Are you l
+ ooking for that one-of-a-kind\, handmade gift for your loved one this hol
+ iday season? Or just want a fun\, small\, quirky piece of local art for y
+ ourself? Then get ready for the annual Mini Masterpieces Holiday Gifts Sh
+ ow — ...
+END:VEVENT
+END:VCALENDAR

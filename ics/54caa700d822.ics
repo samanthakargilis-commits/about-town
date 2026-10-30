@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:54caa700d822@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261030T090000
+DTEND;TZID=America/Los_Angeles:20261030T180000
+SUMMARY:USA Padel National Tournament
+LOCATION:Bay Padel Treasure Island\, Treasure Island
+URL:https://ma.to/event/usa-padel-national-tournament-2026-10-30
+DESCRIPTION:Theatre · Treasure Island\nhttps://ma.to/event/usa-padel-nati
+ onal-tournament-2026-10-30\n\nUSA Padel 500 national-level competition at
+  Bay Padel Treasure Island\, with prizes\, USA Padel ranking points and o
+ n-site recovery. Play runs across Men's and Women's D1\, D2 and D3 divisi
+ ons over two days of high-intensity matches. The caption dates October 30
+  and 31\, while the artwork shows October 31 and November 1\, 2026\; Octo
+ ber 30 and 31 are used here as apparently intended\, and confirming with
+END:VEVENT
+END:VCALENDAR

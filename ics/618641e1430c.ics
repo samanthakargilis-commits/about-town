@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:618641e1430c@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261030T193000
+DTEND;TZID=America/Los_Angeles:20261030T220000
+SUMMARY:The Witching Hour: After Dark
+LOCATION:Golden Eye Social\, 311 3rd St.\, San Francisco\, San Francisco
+URL:https://ma.to/event/the-witching-hour-31-oct-2026
+DESCRIPTION:Museum exhibits + Camp & Halloween\nhttps://ma.to/event/the-wi
+ tching-hour-31-oct-2026\n\nJoin SF Social Club for a Halloween party at G
+ olden Eye Social. The night features a costume contest (starts at 8:30 PM
+  with prizes from Philz Coffee\, YOLO\, Let's Partea\, and more)\, a DJ s
+ tarting at 9 PM\, tarot readings by Tulip Magic\, free darts with Volo Ba
+ y Area\, photobooth by Elevé Moments\, giveaways from TO.AM\, candy bar 
+ from Cheeky Bits Sweets\, and themed cocktails. Attendees are encouraged 
+END:VEVENT
+END:VCALENDAR

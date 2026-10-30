@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ed41b99f8366@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261101T090000
+DTEND;TZID=America/Los_Angeles:20261101T140000
+SUMMARY:2026 Día de los Muertos in the Sunset
+LOCATION:Outer Sunset\, San Francisco
+URL:https://sunsetmercantilesf.com/dia-de-los-muertos-outer-sunset-2024/
+DESCRIPTION:Cultural festivals + Spirituality · Featured on Funcheap\nhtt
+ ps://sunsetmercantilesf.com/dia-de-los-muertos-outer-sunset-2024/\n\nThe 
+ Día de los Muertos celebration at the Outer Sunset Farmers Market & Merc
+ antile runs from 9am to 2pm with face painting\, festive decorations\, li
+ ve music and dance\, and all-ages crafts at the Artship: candy skull pape
+ r masks\, tissue-paper marigold headbands with monarch butterflies\, and 
+ pipe-cleaner skeletons. Grupo Colibrí Rojo is among the live performers.
+  Food and drink vendors include Kuali 
+END:VEVENT
+END:VCALENDAR

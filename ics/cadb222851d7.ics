@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cadb222851d7@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261031T210000
+DTEND;TZID=America/Los_Angeles:20261101T020000
+SUMMARY:KALAN.FrFr Live in San Francisco. The BIGGEST HALLOWEEN Event of t
+ he Year.
+LOCATION:440 Jessie St\, 440 Jessie Street\, San Francisco\, CA 94103 San 
+ Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/kalanfrfr-live-in-san-francisco-the-bigge
+ st-halloween-event-of-the-year-tickets-1997509733384
+DESCRIPTION:Camp & Halloween + Musical theatre\nhttps://www.eventbrite.com
+ /e/kalanfrfr-live-in-san-francisco-the-biggest-halloween-event-of-the-yea
+ r-tickets-1997509733384\n\nSin Francisco Halloween Night. Kalan.FrFr. A w
+ icked night for the bay\, FREE with RSVP. (Limited) Costumes and temptati
+ on.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3bcbaa053603@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261107T120000
+DTEND;TZID=America/Los_Angeles:20261107T160000
+SUMMARY:Free “San José Roots” Cultural Fest + Historic Home Tours
+LOCATION:San Pedro Square Market\, 87 North San Pedro Street\, San Jose\, 
+ CA\, San Jose
+URL:https://sf.funcheap.com/free-san-jos-roots-cultural-fest-historic-home
+ -tours/
+DESCRIPTION:A yearly tradition · San Jose\nhttps://sf.funcheap.com/free-s
+ an-jos-roots-cultural-fest-historic-home-tours/\n\nHistory San José is h
+ onoring the cultural diversity of the region on November 7th at the San P
+ edro Square Market. San José Roots celebrates San José’s history\, st
+ arting with its earliest periods to its present innovative spirit. The fr
+ ee program aims to provide a platform for ...
+END:VEVENT
+END:VCALENDAR

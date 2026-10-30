@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e4ebb91bfa5e@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261030T180000
+DTEND;TZID=America/Los_Angeles:20261030T200000
+SUMMARY:The Ballot Social
+LOCATION:Hella Bees\, 2340 Harrison St Oakland\, Oakland
+URL:https://partiful.com/e/13sNaqccr8KLRCwUvO5a
+DESCRIPTION:Theatre · Oakland\nhttps://partiful.com/e/13sNaqccr8KLRCwUvO5
+ a\n\nYour vote matters\, and so does your network! 🗳️🥂 Join Trapx
+ art\, The Black Neighborhood\, LiveFreeCA & Oakland Don’t Play for The 
+ Ballot Social\, a pre-election happy hour bringing together community\, c
+ ulture\, and civic engagement! We’re mixing good vibes with meaningful 
+ conversations as we connect\, network\, and encourage our community to ma
+ ke their voices heard ahead of Election Day on November 3rd.
+END:VEVENT
+END:VCALENDAR

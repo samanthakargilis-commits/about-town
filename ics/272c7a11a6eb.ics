@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:272c7a11a6eb@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261114T090000
+DTEND;TZID=America/Los_Angeles:20261114T160000
+SUMMARY:Greptile Outpost at SŌHN
+LOCATION:SOHN\, SOHN\, 2535 3rd St\, San Francisco\, CA 94107\, USA\, San 
+ Francisco
+URL:https://luma.com/greptile-tgrv
+DESCRIPTION:New in your area\nhttps://luma.com/greptile-tgrv\n\nGreptile a
+ t Sohn Cafe. Join us in Dogpatch on Saturday\, November 14th\, for coffee
+ \, matcha\, co-working\, and hanging out with the Greptile team. We’re 
+ taking over the cafe with a custom Greptile matcha on the menu and free W
+ ar on Bugs tees. Bring your laptop and settle in for a few hours of build
+ ing alongside other developers\, or just swing by for a matcha and some m
+ erch. The Greptile team will be a
+END:VEVENT
+END:VCALENDAR

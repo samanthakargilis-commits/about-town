@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1bdf5cac9d6f@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261030T120000
+DTEND;TZID=America/Los_Angeles:20261030T160000
+SUMMARY:November Hot Seats Ticket Drop
+LOCATION:SFJAZZ Center Box Office\, 201 Franklin St\, San Francisco
+URL:https://ma.to/event/hot-seats-ticket-drop-2026-10-30
+DESCRIPTION:New in your area\nhttps://ma.to/event/hot-seats-ticket-drop-20
+ 26-10-30\n\nThe November Hot Seats drop releases $10 tickets for live jaz
+ z from the Left Terrace in Miner Auditorium. Tickets are sold in person a
+ t the SFJAZZ Center Box Office\, 201 Franklin St\, on Friday\, October 30
+ \, starting at 12 PM. $10 tickets are released monthly on the last Friday
+  of the month\, in person only. Students\, educators\, and Bay Area nonpr
+ ofit industry members are eligible\, with a limit of up
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e468d6575efe@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261101T100000
+DTEND;TZID=America/Los_Angeles:20261101T180000
+SUMMARY:Sabai’s San Francisco Furniture Pop Up
+LOCATION:A New Pop-Up Space by John McNeil Studio\, 333 Linden Street\, Ha
+ yes Valley\, San Francisco\, 94102
+URL:https://sf.funcheap.com/sabais-san-francisco-furniture-pop-nov-130/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/sabais-san-francisco
+ -furniture-pop-nov-130/\n\nSabai’s first San Francisco pop up opens in 
+ Hayes Valley on November 1st. After opening their very first pop up in Tr
+ ibeca\, NYC this fall\, Sabai wanted to bring that same in person experie
+ nce to the West Coast. The space at 333 Linden Street will ...
+END:VEVENT
+END:VCALENDAR

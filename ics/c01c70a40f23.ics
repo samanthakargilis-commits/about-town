@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c01c70a40f23@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261031T090000
+DTEND;TZID=America/Los_Angeles:20261031T180000
+SUMMARY:Big Art Loop - Portside North Walk
+LOCATION:Pier 27 to Pier 14\, San Francisco\, San Francisco
+URL:https://ma.to/event/big-art-loop-portside-north-walk-2026-10-31
+DESCRIPTION:Art\nhttps://ma.to/event/big-art-loop-portside-north-walk-2026
+ -10-31\n\nA Week 2 section of the Walktober Challenge with @crosstowntrai
+ l: a 1-mile walk along the Portside North waterfront in San Francisco\, o
+ ne of four 1–2 mile sections of the Big Art Loop featured this month. T
+ he route starts at Pulse Portal by @dicrodavis at Pier 27 and finishes at
+  Corpus at Pier 14\, passing Got Framed by @leaveittonino at Pier 7\, Cor
+ alee by @danaalbany at Pier 1/2 and Echoes — five 
+END:VEVENT
+END:VCALENDAR

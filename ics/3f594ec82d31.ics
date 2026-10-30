@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3f594ec82d31@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261124T170000
+DTEND;TZID=America/Los_Angeles:20261124T200000
+SUMMARY:SF’s Noe Valley Night Market 2026
+LOCATION:Noe Valley Town Square
+URL:https://sf.funcheap.com/sfs-noe-valley-night-market-2026-7/
+DESCRIPTION:Fairs & festivals + Concerts\nhttps://sf.funcheap.com/sfs-noe-
+ valley-night-market-2026-7/\n\nCome out for the Noe Valley Night Market f
+ rom 5–8pm at the Noe Valley Town Square for a cozy evening of live musi
+ c\, local retail and food vendors\, and family-friendly fun. Gather with 
+ neighbors\, support small businesses\, and enjoy a music-filled evening o
+ ut with the ...
+END:VEVENT
+END:VCALENDAR

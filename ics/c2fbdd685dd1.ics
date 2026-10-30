@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c2fbdd685dd1@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261030T130000
+DTEND;TZID=America/Los_Angeles:20261030T153000
+SUMMARY:LTF Halloween at La Placita
+LOCATION:La Placita (parking lot)\, San Francisco
+URL:https://ma.to/event/ltf-halloween-at-la-placita-2026-10-30
+DESCRIPTION:Camp & Halloween\nhttps://ma.to/event/ltf-halloween-at-la-plac
+ ita-2026-10-30\n\nLTF's Halloween community event at La Placita takes pla
+ ce in the parking lot with an afternoon of activities. It runs Friday\, O
+ ctober 30\, 2026\, from 1:00 PM to 3:30 PM. Friends\, family\, neighbors 
+ and costumes are welcome.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:30f1be4a2e87@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261030T100000
+DTEND;TZID=America/Los_Angeles:20261030T190000
+SUMMARY:TokTok Beauty Halloween Discount
+LOCATION:TokTok Beauty Milpitas\, 396 Barber Ln\, Milpitas\, CA 95035\, Un
+ ited States\, Milpitas
+URL:https://ma.to/event/toktok-beauty-milpitas-2026-10-30
+DESCRIPTION:Camp & Halloween + Weird & unusual · Milpitas\nhttps://ma.to/
+ event/toktok-beauty-milpitas-2026-10-30\n\nTokTok Beauty's Mountain View 
+ shop offers 10% off when the customer or their pet is in costume on Octob
+ er 30.
+END:VEVENT
+END:VCALENDAR

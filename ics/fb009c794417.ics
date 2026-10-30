@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fb009c794417@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261118T083000
+DTEND;TZID=America/Los_Angeles:20261118T110000
+SUMMARY:Advanced Cardiac Life Support (ACLS)
+LOCATION:Zuckerberg San Francisco General Hospital - DET (Learning Center)
+ \, 1001 Potrero Avenue\, Building 30 - Second Floor-\, San Francisco\, CA
+  94110 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/advanced-cardiac-life-support-acls-ticket
+ s-1993860992903
+DESCRIPTION:New in your area\nhttps://www.eventbrite.com/e/advanced-cardia
+ c-life-support-acls-tickets-1993860992903\n\nACLS renewal provided for SF
+  Department of Public Health personnel and providers
+END:VEVENT
+END:VCALENDAR

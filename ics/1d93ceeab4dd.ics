@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1d93ceeab4dd@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261030T183000
+DTEND;TZID=America/Los_Angeles:20261030T203000
+SUMMARY:The Shadow Stream Book Launch
+LOCATION:The Dairy\, Sports Basement\, 610 Old Mason St\, San Francisco\, 
+ San Francisco
+URL:https://ma.to/event/the-shadow-stream-book-launch-31-oct-2026
+DESCRIPTION:Reading + Concerts\nhttps://ma.to/event/the-shadow-stream-book
+ -launch-31-oct-2026\n\nCelebrate the release of Kirk Lombard's new novel\
+ , The Shadow Stream\, at The Dairy\, Sports Basement Presidio. The evenin
+ g includes live music by The Fishwives\, grog\, birthday cake\, an exclus
+ ive author interview between the author and Tara Duggan\, a short reading
+ \, and a live book signing session. Presented by Green Apple Books. Free 
+ to attend\, RSVP requested at kirklombard.com/#events.
+END:VEVENT
+END:VCALENDAR

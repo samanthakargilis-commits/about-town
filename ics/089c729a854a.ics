@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:089c729a854a@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:“Science@Cal”: Renowned Scientist Lecture
+LOCATION:UC Berkeley
+URL:https://sf.funcheap.com/sciencecal-renowned-scientist-lecture-uc-berke
+ ley-112/
+DESCRIPTION:Discourse\nhttps://sf.funcheap.com/sciencecal-renowned-scienti
+ st-lecture-uc-berkeley-112/\n\nScience@Cal is proud to present a series o
+ f free public science lectures on the third Saturday of every month. Thes
+ e talks are given by renowned UC Berkeley scientists and aimed at general
+  audiences. Talks take place on the UC Berkeley campus at 11 am. Doors ..
+ .
+END:VEVENT
+END:VCALENDAR

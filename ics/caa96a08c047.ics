@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:caa96a08c047@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261107T130000
+DTEND;TZID=America/Los_Angeles:20261107T150000
+SUMMARY:nathan fielder/elizabeth holmes look alike contest
+LOCATION:Lafayette Park\, null null San Francisco\, San Francisco
+URL:https://partiful.com/e/KcblVBhm8Hvb5VhrUnDy
+DESCRIPTION:Weird & unusual\nhttps://partiful.com/e/KcblVBhm8Hvb5VhrUnDy\n
+ \nnathan fielder is diva\, elizabeth holmes is THE girl boss\, and sf des
+ erves both so come if that’s you* ** @ lafayette. be ready to perform a
+ uthenticity and confuse people on your character. spectators welcome (enc
+ ouraged!) winner gets to wear the crown we’re making and all the braggi
+ ng rights in the world *must be very fun\, relaxed\, and easy going **bon
+ us points for graduating from one of canada’s
+END:VEVENT
+END:VCALENDAR

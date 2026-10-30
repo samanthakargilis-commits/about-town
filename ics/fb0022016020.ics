@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fb0022016020@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261030T160000
+DTEND;TZID=America/Los_Angeles:20261030T180000
+SUMMARY:Five and Dime Happy Hour
+LOCATION:Victory Hall\, San Francisco
+URL:https://ma.to/event/five-and-dime-happy-hour-30-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/five-and-dime-happy-hour
+ -30-oct-2026\n\nVictory Hall in SOMA\, San Francisco hosts the Five and D
+ ime Happy Hour every weekday from 4 to 6 PM. Enjoy $5 bites and $10 drink
+ s\, including the signature Aloe-ha! gin & tonic made with aloe liqueur a
+ nd a fresh garnish.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:699f4e8bc0ee@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261031T190000
+DTEND;TZID=America/Los_Angeles:20261031T210000
+SUMMARY:Reset Your Saturday: Chan Meditation & Tea in San Francisco
+LOCATION:Dharma Treasury Temple\, 3201 Ulloa St\, San Francisco\, CA 94116
+ \, USA\, San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/bay-area-meditation-group/events/317208180/
+DESCRIPTION:Meditation\nhttps://www.meetup.com/bay-area-meditation-group/e
+ vents/317208180/\n\nWork\, commutes\, constant notifications. Most of us 
+ carry the week into the weekend without noticing. Join us at Dharma Treas
+ ury Temple for a Saturday morning of Chan meditation and tea\, hosted by 
+ Master XianXin\, abbess of the temple. We practice silent meditation toge
+ ther\, share a cup of tea\, and leave with a steadier mind. **Why come** 
+ * Release stress and cultivate clarity * Build patience and r
+END:VEVENT
+END:VCALENDAR

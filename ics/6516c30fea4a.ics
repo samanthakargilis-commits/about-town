@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6516c30fea4a@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261030T110000
+DTEND;TZID=America/Los_Angeles:20261030T220000
+SUMMARY:Costumed Halloween Treats – Mission
+LOCATION:Tacolicious Mission\, San Francisco
+URL:https://ma.to/event/tacolicious-halloween-treats-mission-2026-10-30
+DESCRIPTION:Camp & Halloween\nhttps://ma.to/event/tacolicious-halloween-tr
+ eats-mission-2026-10-30\n\nTacolicious Mission offers Halloween-weekend t
+ reats for costumed dine-in guests. Little ones receive a sweet churrito\,
+  adults 21 and over receive a chupito on the house\, and pups can receive
+  a Halloween goodie bag. The offer is available October 30 through Novemb
+ er 1 for dine-in guests only\, while supplies last.
+END:VEVENT
+END:VCALENDAR

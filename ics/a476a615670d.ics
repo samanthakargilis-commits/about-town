@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a476a615670d@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261031T090000
+DTEND;TZID=America/Los_Angeles:20261031T110000
+SUMMARY:Clancy’s Pumpkin Patch & Mini Hay Maze
+LOCATION:San Francisco
+URL:https://sf.funcheap.com/city-guide/bay-area-fall-guide/
+DESCRIPTION:Fairs & festivals + U-pick farms · Featured on Funcheap\nhttp
+ s://sf.funcheap.com/city-guide/bay-area-fall-guide/\n\nSan Francisco | Ke
+ ep it local at this San Francisco pumpkin patch\, a neighborhood staple f
+ or more than 70 years. Find pumpkins of all shapes and sizes\, plus gourd
+ s\, corn stalks\, and Indian corn. October visitors can also spot ghosts 
+ in the trees\, scarecrows\, and live turkeys. Clancy’s website mentions
+  a corn maze and hayride\, too\, though we couldn’t confirm whether bot
+ h attractions are operating f
+END:VEVENT
+END:VCALENDAR

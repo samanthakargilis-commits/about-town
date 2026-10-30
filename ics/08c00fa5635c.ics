@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:08c00fa5635c@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261114T160000
+DTEND;TZID=America/Los_Angeles:20261114T220000
+SUMMARY:San Francisco Jewish Film Festival Encore – Nov 14
+LOCATION:JCCSF\, 3200 California Street\, San Francisco
+URL:https://www.jccsf.org/event/san-francisco-jewish-film-festival-46-enco
+ re-nov-14/
+DESCRIPTION:Fairs & festivals\nhttps://www.jccsf.org/event/san-francisco-j
+ ewish-film-festival-46-encore-nov-14/\n\nExperience imaginative shorts\, 
+ celebrate Bay Area filmmakers\, enjoy a live performance and connect with
+  fellow film lovers.
+END:VEVENT
+END:VCALENDAR

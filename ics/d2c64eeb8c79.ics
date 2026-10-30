@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d2c64eeb8c79@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261101T100000
+DTEND;TZID=America/Los_Angeles:20261101T160000
+SUMMARY:San Francisco Best Dressed 2026
+LOCATION:Ferry Building Marketplace\, San Francisco
+URL:https://ma.to/event/san-francisco-best-dressed-2026-11-01
+DESCRIPTION:New in your area\nhttps://ma.to/event/san-francisco-best-dress
+ ed-2026-11-01\n\nThe final stop of the season for the San Francisco Best 
+ Dressed 2026 Edition takes place at Ferry Building Marketplace. The event
+  highlights vintage finds and standout outfits\, with a best-dressed focu
+ s and outfit preparation as part of the occasion.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:462e44a2b06c@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261031T160000
+DTEND;TZID=America/Los_Angeles:20261031T183000
+SUMMARY:Dogpatch Boulders Halloween
+LOCATION:Dogpatch Boulders\, San Francisco
+URL:https://ma.to/event/dogpatch-boulders-halloween-2026-10-31
+DESCRIPTION:Camp & Halloween + Art\nhttps://ma.to/event/dogpatch-boulders-
+ halloween-2026-10-31\n\nDogpatch Boulders hosts a Halloween celebration w
+ ith vendors\, music\, art\, spooky climbs and more. Costumed attendees ca
+ n win a prize\, and guests 21 and older can receive special gifts. The ce
+ lebration runs from 4 to 6:30 PM.
+END:VEVENT
+END:VCALENDAR

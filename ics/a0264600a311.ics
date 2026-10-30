@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a0264600a311@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261112T193000
+DTEND;TZID=America/Los_Angeles:20261112T210000
+SUMMARY:Free “Arab Film Festival” Outdoor Movie Night at The Proxy (Ha
+ yes Valley)
+LOCATION:Proxy SF\, 432 Octavia St San Francisco\, CA 94102
+URL:https://sf.funcheap.com/free-arab-film-festival-outdoor-movie-night-pr
+ oxy-hayes-valley/
+DESCRIPTION:Thursday evening\nhttps://sf.funcheap.com/free-arab-film-festi
+ val-outdoor-movie-night-proxy-hayes-valley/\n\nAn Evening of Love and Lau
+ ghter: Arab Cinema Under the Stars A FREE Outdoor Screening at The PROXY\
+ , Hayes Valley Neighborhood\, San Francisco For the first time ever\, the
+  Arab Film Festival celebrates its 30 year anniversary by taking cinema o
+ utdoors! Join us under the stars for ...
+END:VEVENT
+END:VCALENDAR

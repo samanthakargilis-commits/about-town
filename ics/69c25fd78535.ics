@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:69c25fd78535@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261030T193000
+DTEND;TZID=America/Los_Angeles:20261030T223000
+SUMMARY:Manon at SF Opera
+LOCATION:War Memorial Opera House\, San Francisco
+URL:https://ma.to/event/manon-at-sf-opera-31-oct-2026
+DESCRIPTION:Concerts + Theatre\nhttps://ma.to/event/manon-at-sf-opera-31-o
+ ct-2026\n\nJules Massenet’s Manon returns to the stage. A story of obse
+ ssion\, first tastes of love\, and high-stakes gambles. Part of the SF Op
+ era season with performances on October 15\, 18\, 21\, 24\, 27\, 30\, and
+  November 1 at the War Memorial Opera House.
+END:VEVENT
+END:VCALENDAR

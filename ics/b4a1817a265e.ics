@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b4a1817a265e@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261030T190000
+DTEND;TZID=America/Los_Angeles:20261030T230000
+SUMMARY:Directions in Stereo: Devil's Night
+LOCATION:540 Bar\, 540 Clement St\, SF\, CA\, San Francisco
+URL:https://ma.to/event/directions-in-stereo-devils-night-31-oct-2026
+DESCRIPTION:Musical theatre + Camp & Halloween\nhttps://ma.to/event/direct
+ ions-in-stereo-devils-night-31-oct-2026\n\nDirections in Stereo is a mont
+ hly all-vinyl residency at 540 Bar in San Francisco. Resident DJ Circuit7
+ 3 curates a mix of funk\, soul\, jazz\, rock\, and more. This special Hal
+ loween edition\, 'Devil's Night'\, features guest DJ Booker D. The musica
+ l theme will explore the dark sounds of the season. 21+ event\, no cover 
+ charge.
+END:VEVENT
+END:VCALENDAR

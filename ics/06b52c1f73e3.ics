@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:06b52c1f73e3@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261031T190000
+DTEND;TZID=America/Los_Angeles:20261031T210000
+SUMMARY:Halloween Costume Party & Dance for adults of all ages
+LOCATION:Lighthouse Bar & Grill\, 475 E Strawberry Dr\, Mill Valley\, CA 9
+ 4941\, USA\, Mill Valley\, CA Mill Valley\, Mill Valley
+URL:https://www.meetup.com/iwanttodothatsf/events/316818651/
+DESCRIPTION:Camp & Halloween + Weird & unusual · Mill Valley\nhttps://www
+ .meetup.com/iwanttodothatsf/events/316818651/\n\nHalloween always boasts 
+ the year’s best party! Everyone is so much less-inhibited. This year we
+  celebrate at a lovely restaurant right on the water at Harbor Point Tenn
+ is Club\, where the world’s top tennis players compete each year! Meet 
+ new friends and compete for prizes for the best costumes (optional). Danc
+ e to your favorite hits with Top [DJ Darryl K](http://www.djdarrylk.com/)
+ ! Adults of all 
+END:VEVENT
+END:VCALENDAR

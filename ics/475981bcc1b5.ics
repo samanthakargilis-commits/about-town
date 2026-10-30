@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:475981bcc1b5@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261107T100000
+DTEND;TZID=America/Los_Angeles:20261107T170000
+SUMMARY:Discover Taiwan Expo 2026 in San Mateo
+LOCATION:San Mateo County Event Center - EXPO Hall\, 1346 Saratoga Dr\, Sa
+ n Mateo\, CA 94403\, San Mateo
+URL:https://sf.funcheap.com/discover-taiwan-expo-2026-san-mateo-nov-78/
+DESCRIPTION:San Mateo\nhttps://sf.funcheap.com/discover-taiwan-expo-2026-s
+ an-mateo-nov-78/\n\nUSA Taiwan Global Expo is a two-day showcase of Taiwa
+ nese food\, brands\, lifestyle\, wellness\, culture\, travel\, technology
+ \, and consumer products at the San Mateo County Event Center. The expo i
+ ncludes Taiwanese food vendors\, product sampling\, interactive experienc
+ es\, exhibitors\, and opportunities to meet brands entering the ...
+END:VEVENT
+END:VCALENDAR

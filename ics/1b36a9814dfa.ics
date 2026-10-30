@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1b36a9814dfa@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261031T170000
+DTEND;TZID=America/Los_Angeles:20261031T190000
+SUMMARY:Halloween Block Party
+LOCATION:239 Kearny St\, 239 Kearny St San Francisco\, San Francisco
+URL:https://castronightmarket.com/
+DESCRIPTION:Fairs & festivals + Camp & Halloween\nhttps://castronightmarke
+ t.com/\n\nA previous Castro Night Market. Courtesy of Civic Joy Fund This
+  weekend\, the Castro Night Market is returning for a special Halloween c
+ elebration with music\, local vendors\, and fun performances. The free Ha
+ lloween block party will take place on Saturday\, October 31\, between 5 
+ and 10 pm. The neighborhood will also host family-friendly trick-or-treat
+ ing earlier in the evening from 5 to 7 pm. The nig
+END:VEVENT
+END:VCALENDAR

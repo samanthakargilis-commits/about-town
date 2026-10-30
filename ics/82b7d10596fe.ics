@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:82b7d10596fe@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261031T220000
+DTEND;TZID=America/Los_Angeles:20261031T233000
+SUMMARY:SF’s 1st Ever Free “Halloween Forest” Secret Comedy & Lucha 
+ Libre Crawl
+LOCATION:Secret Location\, San Francisco\, CA
+URL:https://sf.funcheap.com/secret-sf-halloween-roast-comedy-battles-lucha
+ -libre-djs-2026/
+DESCRIPTION:Comedy + Camp & Halloween\nhttps://sf.funcheap.com/secret-sf-h
+ alloween-roast-comedy-battles-lucha-libre-djs-2026/\n\nTired of the same 
+ old Halloween? Your journey begins as you join the TRIBE under the cover 
+ of night at the first SECRET FOREST LOCATION\, then your QUEST begins! Tr
+ avel from one location to another witnessing and voting for the best figh
+ ters and jesters in the ...
+END:VEVENT
+END:VCALENDAR

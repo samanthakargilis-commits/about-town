@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2628b9a1e87f@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261030T110000
+DTEND;TZID=America/Los_Angeles:20261030T210000
+SUMMARY:Dine & Donate at House of Falafel
+LOCATION:House of Falafel\, 375 Saratoga Ave\, Suite D\, San Jose\, CA 951
+ 29\, San Jose
+URL:https://ma.to/event/dine-donate-house-of-falafel-2026-10-30
+DESCRIPTION:San Jose\nhttps://ma.to/event/dine-donate-house-of-falafel-202
+ 6-10-30\n\nHouse of Falafel is the restaurant kicking off WVMA's Dine & D
+ onate series. From October 16 through 31\, diners who mention WVMA at the
+  counter have 15% of their total bill donated to the West Valley Muslim A
+ ssociation. Both in-store dining and take-out orders count. The restauran
+ t is at 375 Saratoga Ave\, Suite D\, San Jose\, CA 95129\, and visitors w
+ ho enjoy their meal can leave a kind review for the
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b2f578aa07ac@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261030T200000
+DTEND;TZID=America/Los_Angeles:20261030T220000
+SUMMARY:Dr. Jekyll and Mr. Hyde at Grace Cathedral
+LOCATION:
+URL:https://gracecathedral.org/calendar-events/sfjazz-presents-dr-jekyll-m
+ r-hyde-with-organist-dorothy-papadakos/
+DESCRIPTION:Camp & Halloween + Theatre\nhttps://gracecathedral.org/calenda
+ r-events/sfjazz-presents-dr-jekyll-mr-hyde-with-organist-dorothy-papadako
+ s/\n\nOn Friday\, October 30 \, the historic cathedral will open its door
+ s for a screening of the 1920 silent film adaptation of the famed novella
+ \, Strange Case of Dr. Jekyll and Mr. Hyde. Professional organist and com
+ poser Dorothy Papadakos will play a score to accompany the film on the ca
+ thedral’s incredible pipe organ. The organ concert and movie screening 
+ will start at 8 p.m. on Friday and run until 9
+END:VEVENT
+END:VCALENDAR

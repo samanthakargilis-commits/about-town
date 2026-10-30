@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:de33eb349307@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261030T170000
+DTEND;TZID=America/Los_Angeles:20261030T190000
+SUMMARY:Whiskerwood Watercolor Painting
+LOCATION:Whiskerwood Haven\, 3000 Geary Blvd\, San Francisco\, CA\, San Fr
+ ancisco
+URL:https://ma.to/event/whiskerwood-watercolor-painting-31-oct-2026
+DESCRIPTION:Art\nhttps://ma.to/event/whiskerwood-watercolor-painting-31-oc
+ t-2026\n\nJoin us for a beginner-friendly watercolor painting session at 
+ Whiskerwood Haven in San Francisco. Paint with 20 adoptable cats\, all su
+ pplies are provided\, and you may even go home with a new painting and a 
+ potential furry friend. The session runs from 5pm to 7pm.
+END:VEVENT
+END:VCALENDAR

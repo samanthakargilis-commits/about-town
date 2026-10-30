@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:53efa83e9367@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261031T120000
+DTEND;TZID=America/Los_Angeles:20261031T140000
+SUMMARY:Queer Halloween
+LOCATION:6607 Telegraph Avenue\, 6607 Telegraph Ave\, Oakland\, CA 94609\,
+  USA\, Oakland\, CA Oakland\, Oakland
+URL:https://www.meetup.com/pride-petals-sapphic-romance-book-club/events/3
+ 17191132/
+DESCRIPTION:Gay / queer + Camp & Halloween · Oakland\nhttps://www.meetup.
+ com/pride-petals-sapphic-romance-book-club/events/317191132/\n\nCome and 
+ celebrate the spooky season with us - shopping\, block printing\, tarot. 
+ ![🔮](https://fonts.gstatic.com/s/e/notoemoji/17.0/1f52e/72.png) Spooky
+  season is upon us\, and the coven is gathering at Pride & Petals!⁣ Joi
+ n us Saturday\, October 31 for a witchy afternoon of magic\, mischief\, a
+ nd a little sweetness.⁣ ![🌈](https://fonts.gstatic.com/s/e/notoemoji
+ /17.0/1f308/72.png) All ages\, all identiti
+END:VEVENT
+END:VCALENDAR

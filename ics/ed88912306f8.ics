@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ed88912306f8@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20260923T090000
+DTEND;TZID=America/Los_Angeles:20260923T110000
+SUMMARY:Minotaur’s Labyrinth Hay Maze 2026
+LOCATION:185 Verde Rd.\, Half Moon Bay\, CA (Peninsula) Venture onto the w
+ ild side with the Minotaur’s Labyrinth Hay Maze at Arata’s Pumpki
+URL:https://sf.funcheap.com/city-guide/craziest-corn-mazes-bay/
+DESCRIPTION:Weird & unusual + Animals · Featured on Funcheap · Half Moon
+  Bay\, CA (Peninsula) Venture onto the wild side with the Minotaur’s La
+ byrinth Hay Maze at Arata’s Pumpki\nhttps://sf.funcheap.com/city-guide/
+ craziest-corn-mazes-bay/\n\nSept. 23-Oct. 31\, 2026 Day Maze: Sun.-Thurs.
+ \, 9 am-6:30 pm\; Fri.-Sat.\, 9 am-10:30 pm. Night Maze: Friday and Satur
+ day nights in October\, 6 pm-close. Arata’s Pumpkin Farm | 185 Verde Rd
+ .\, Half Moon Bay\, CA (Peninsula) Venture onto the wild side with the Mi
+ notaur’s Labyrinth Hay Maze at Arata’s Pumpkin Farm. The maze covers 
+ two acres and is constructed entirely out of 7- to 8-foot-tall hay bales 
+ \, w
+END:VEVENT
+END:VCALENDAR

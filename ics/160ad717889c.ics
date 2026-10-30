@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:160ad717889c@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261113T193000
+DTEND;TZID=America/Los_Angeles:20261113T213000
+SUMMARY:Handel’s The Power of Music
+LOCATION:Herbst Theatre\, 401 Van Ness Avenue\, San Francisco\, CA\, San F
+ rancisco
+URL:https://sf.funcheap.com/handels-the-power-of-music-sf/
+DESCRIPTION:Theatre + Concerts\nhttps://sf.funcheap.com/handels-the-power-
+ of-music-sf/\n\nCan Music Change the Course of History? Three centuries a
+ go\, George Frideric Handel explored a bold idea: that music can change h
+ ow people think\, feel\, and act. Music Director Peter Whelan and Philhar
+ monia Baroque Orchestra & Chorale open the 2026/27 season with Handel’s
+  The Power ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7f4a2268c147@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261101T103000
+DTEND;TZID=America/Los_Angeles:20261101T130000
+SUMMARY:Ballots & Beats
+LOCATION:18Seventy Brewing Co.\, 911 J St Modesto\, Modesto
+URL:https://partiful.com/e/1sUnNLUIRHavAnqNHXQo
+DESCRIPTION:Modesto\nhttps://partiful.com/e/1sUnNLUIRHavAnqNHXQo\n\nWe're 
+ excited to close out the campaign for Juan Telles! Join us for our final 
+ event of the season: a light brunch for you\, your friends\, & family to 
+ close out the campaign in community\, while also having time & space to c
+ omplete our ballots (and drop them at the secure box downtown!). Bring yo
+ ur ballot\, candidate/proposition questions\, and enjoy some brunch bites
+  while kicking it to the tunes of 
+END:VEVENT
+END:VCALENDAR

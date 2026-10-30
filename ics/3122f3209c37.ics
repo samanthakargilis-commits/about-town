@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3122f3209c37@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261030T180000
+DTEND;TZID=America/Los_Angeles:20261030T230000
+SUMMARY:House of Weird
+LOCATION:Haas-Lilienthal House\, 2007 Franklin St\, SF\, San Francisco
+URL:https://ma.to/event/house-of-weird-31-oct-2026
+DESCRIPTION:Weird & unusual + Camp & Halloween\nhttps://ma.to/event/house-
+ of-weird-31-oct-2026\n\nHouse of Weird is an immersive Halloween experien
+ ce inside the historic Haas-Lilienthal House\, a landmark 1886 Victorian 
+ mansion in San Francisco's Pacific Heights. Presented by the Gregangelo M
+ useum and SF Heritage\, the tour features dark\, hidden corridors\, magic
+ al elixirs\, tarot readings\, and creative artistic encounters. The exper
+ ience runs on Thursdays\, Fridays\, and Saturdays from October 16 t
+END:VEVENT
+END:VCALENDAR

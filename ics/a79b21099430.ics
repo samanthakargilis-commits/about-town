@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a79b21099430@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261030T170000
+DTEND;TZID=America/Los_Angeles:20261030T220000
+SUMMARY:City Creatures: Evening Ticket
+LOCATION:Terra Gallery & Event Venue\, Terra Gallery & Event Venue\, 511 H
+ arrison St\, San Francisco\, CA 94105\, USA\, San Francisco
+URL:https://luma.com/4zcbs4yk
+DESCRIPTION:Animals + Museum exhibits\nhttps://luma.com/4zcbs4yk\n\nCITY C
+ REATURES Pest-Art Pop-Up What happens when a pest control company takes o
+ ver an art gallery? Come find out October 30 at Terra Gallery. Art. Urban
+  wildlife. Guest speakers. Food. Drinks. Music. And a gallery full of str
+ ange things to explore. DAY | 2–5 PM | FREE Explore the exhibition\, ta
+ lks\, food\, and experiences throughout the gallery. NIGHT | 5–11 PM | 
+ $15 DJ\, cocktails\, art\, and a fundra
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8fded795c09c@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261106T170000
+DTEND;TZID=America/Los_Angeles:20261106T190000
+SUMMARY:LinoCut Printing with Rayos Magos
+LOCATION:255 W Julian St\, 255 West Julian Street\, San Jose\, CA 95110 Sa
+ n Jose\, San Jose
+URL:https://www.eventbrite.com/e/linocut-printing-with-rayos-magos-tickets
+ -2003226181434
+DESCRIPTION:Craft + Art · San Jose\nhttps://www.eventbrite.com/e/linocut-
+ printing-with-rayos-magos-tickets-2003226181434\n\nLearn the art of block
+  printing alongside legendary artist Rayos Magos as he guides you through
+  sketching\, carving\, and pulling Lino Prints
+END:VEVENT
+END:VCALENDAR

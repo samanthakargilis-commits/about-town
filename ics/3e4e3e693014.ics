@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3e4e3e693014@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261102T183000
+DTEND;TZID=America/Los_Angeles:20261102T233000
+SUMMARY:Salsa Classes November 2026 5 Week Progressive Salsa Dance Lessons
+  SF
+LOCATION:SalsaCrazy Mondays\, Neck of the Woods\, 406 Clement Street\, San
+  Francisco\, California 94118 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/salsa-classes-november-2026-5-week-progre
+ ssive-salsa-dance-lessons-sf-tickets-1998439482288
+DESCRIPTION:Dance nights\nhttps://www.eventbrite.com/e/salsa-classes-novem
+ ber-2026-5-week-progressive-salsa-dance-lessons-sf-tickets-1998439482288\
+ n\nLearn to salsa this November in SF — a step-by-step 5-week Monday se
+ ries. No partner or experience needed\, plus a dance party every week.
+END:VEVENT
+END:VCALENDAR

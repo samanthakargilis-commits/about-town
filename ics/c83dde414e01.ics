@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c83dde414e01@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261030T170000
+DTEND;TZID=America/Los_Angeles:20261030T220000
+SUMMARY:Soft Tuff Closing Party
+LOCATION:SWIM Gallery\, 509 Ellis St\, San Francisco\, San Francisco
+URL:https://ma.to/event/soft-tuff-closing-party-31-oct-2026
+DESCRIPTION:Camp & Halloween + Museum exhibits\nhttps://ma.to/event/soft-t
+ uff-closing-party-31-oct-2026\n\nClosing party for 'Soft Tuff'\, Artemisi
+ a Farris's first solo exhibition at SWIM Gallery. The exhibition showcase
+ s a wall-to-wall gallery experience. Join the artist and the gallery for 
+ a pre-Halloween celebration to mark the end of the show.
+END:VEVENT
+END:VCALENDAR

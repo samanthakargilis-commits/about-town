@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:064e03913c24@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261030T150000
+DTEND;TZID=America/Los_Angeles:20261030T170000
+SUMMARY:Bon Délire Happy Hour
+LOCATION:Bon Délire\, Pier 3\, the Embarcadero\, San Francisco\, San Fran
+ cisco
+URL:https://ma.to/event/bon-delire-happy-hour-2026-10-30
+DESCRIPTION:New in your area\nhttps://ma.to/event/bon-delire-happy-hour-20
+ 26-10-30\n\nBon Délire's weekday happy hour runs Monday through Friday f
+ rom 3 to 5pm. Guests can bring a friend\, grab a drink\, and stay awhile.
+  The restaurant and bar is at Pier 3 on the Embarcadero in San Francisco.
+END:VEVENT
+END:VCALENDAR

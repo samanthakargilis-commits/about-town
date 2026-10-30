@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1f2237057f62@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261030T080000
+DTEND;TZID=America/Los_Angeles:20261030T190000
+SUMMARY:Howl-O-Ween Dog Day Dinner
+LOCATION:Poppy & Claro\, 50 West San Fernando St\, San Jose\, California\,
+  San Jose
+URL:https://ma.to/event/howl-o-ween-dog-day-dinner-2026-10-30
+DESCRIPTION:Weird & unusual · San Jose\nhttps://ma.to/event/howl-o-ween-d
+ og-day-dinner-2026-10-30\n\nThe Howl-O-Ween Contest Edition is Poppy & Cl
+ aro's final Dog Day Dinner of the season\, held October 30\, 2026\, from 
+ 8am to 7pm. Dogs can enter the costume contest anytime before 7pm\, with 
+ votes gathered on Instagram. The winner is crowned on October 31.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9bf7c429409e@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261117T193000
+DTEND;TZID=America/Los_Angeles:20261117T210000
+SUMMARY:Free SF “Hayes Valley Comedy Night” at The Function
+LOCATION:The Function
+URL:https://sf.funcheap.com/free-sf-hayes-valley-comedy-night-at-the-funct
+ ion-every-tuesday-21/
+DESCRIPTION:Comedy\nhttps://sf.funcheap.com/free-sf-hayes-valley-comedy-ni
+ ght-at-the-function-every-tuesday-21/\n\nWelcome to the heart of laughter
+  right on the edge of SF’s vibrant Hayes Valley district! Step into a w
+ orld of hilarity and at the newest addition to the city’s comedy scene 
+ – a chic\, upscale comedy club boasting avant-garde decor\, an upstairs
+  lounge and a roster of top-notch comedians. ...
+END:VEVENT
+END:VCALENDAR

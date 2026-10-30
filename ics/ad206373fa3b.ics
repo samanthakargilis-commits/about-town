@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ad206373fa3b@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261031T130000
+DTEND;TZID=America/Los_Angeles:20261031T150000
+SUMMARY:Fish or Treat
+LOCATION:Aquarium of the Bay\, PIER 39\, San Francisco\, San Francisco
+URL:https://ma.to/event/fish-or-treat-at-pier-39-2026-10-31
+DESCRIPTION:Animals + Camp & Halloween\nhttps://ma.to/event/fish-or-treat-
+ at-pier-39-2026-10-31\n\nFish or Treat is the Aquarium of the Bay's famil
+ y-friendly Halloween celebration held on October 31 and November 1. Event
+  features include Underwater Pumpkin Carving (1–2 PM)\, Otter Pumpkin E
+ nrichment (2 PM)\, and an Arts & Crafts Table available throughout the da
+ y. On October 31 only\, visitors can enjoy a Trick-or-Treat Candy Station
+ . Kids 12 and under wearing a costume receive free general admiss
+END:VEVENT
+END:VCALENDAR

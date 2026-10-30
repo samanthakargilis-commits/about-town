@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:506b61b3767c@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261127T193000
+DTEND;TZID=America/Los_Angeles:20261127T213000
+SUMMARY:MC5: A True Testimonial
+LOCATION:4 Star Theater\, 2200 Clement St\, San Francisco
+URL:https://ticketing.uswest.veezi.com/purchase/20294?siteToken=d2atbcege5
+ knqsavntt91g1250
+DESCRIPTION:New in your area\nhttps://ticketing.uswest.veezi.com/purchase/
+ 20294?siteToken=d2atbcege5knqsavntt91g1250\n\nThis documentary\, made ove
+ r a period of eight years\, tells the remarkable story of an extremely in
+ fluential rock’n’roll band. Starting from their mid-60’s garage ban
+ d roots (sounding amazingly like the Sonics)\, the Motor City 5 deveoped 
+ into an icon for a brand of loud\, crushing music reflecting their indust
+ rial roots. Even if you don’t care for their music (and you’re bound 
+ to like even a few of 
+END:VEVENT
+END:VCALENDAR

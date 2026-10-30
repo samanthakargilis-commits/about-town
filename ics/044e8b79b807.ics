@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:044e8b79b807@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261030T100000
+DTEND;TZID=America/Los_Angeles:20261030T140000
+SUMMARY:@mariachimexicanisimo_oficial
+LOCATION:Harvey Milk Terminal 1\, San Francisco International Airport\, Sa
+ n Francisco
+URL:https://ma.to/event/mariachimexicanisimo-oficial-dia-de-muertos-2026-1
+ 0-30
+DESCRIPTION:Cultural festivals + Spirituality\nhttps://ma.to/event/mariach
+ imexicanisimo-oficial-dia-de-muertos-2026-10-30\n\n@mariachimexicanisimo_
+ oficial performs in the Harvey Milk Terminal 1 programme of SFO Celebrate
+ s Día de los Muertos\, the airport's tribute to those who have passed an
+ d to Latino\, Latinx and Hispanic heritage\, with music\, dancing and art
+ . The performance is scheduled for Friday\, October 30 within the celebra
+ tion's 10:00 am – 2:00 pm performance window. The wider celebration run
+ s across Harvey Milk 
+END:VEVENT
+END:VCALENDAR

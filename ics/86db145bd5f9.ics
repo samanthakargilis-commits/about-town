@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:86db145bd5f9@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261030T170000
+DTEND;TZID=America/Los_Angeles:20261031T020000
+SUMMARY:Samhain Week: Friday Music & DJs
+LOCATION:Casements\, 2351 Mission St\, San Francisco\, CA 94110\, San Fran
+ cisco
+URL:https://ma.to/event/samhain-week-friday-31-oct-2026
+DESCRIPTION:Concerts\nhttps://ma.to/event/samhain-week-friday-31-oct-2026\
+ n\nCasements' Samhain week continues with an evening of live music\, pati
+ o DJs\, and late-night dancing. Magic Nostalgia performs live at 5pm\, DJ
+  Dig Wave plays on the patio at 7pm\, and Local 500 DJs (featuring AGROPO
+ L\, MEZABOY\, SERENE IRENE\, and PANDERER) take over at 10pm. Samhain dri
+ nk specials are available through November 1. No cover charge.
+END:VEVENT
+END:VCALENDAR

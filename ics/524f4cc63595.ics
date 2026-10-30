@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:524f4cc63595@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261101T170000
+DTEND;TZID=America/Los_Angeles:20261101T190000
+SUMMARY:Free Classical Music - Johann Sebastian Bach
+LOCATION:St. Mary Magdalen Church\, 2005 Berryman Street\, Berkeley\, CA B
+ erkeley\, Berkeley
+URL:https://www.meetup.com/east-bay-adventures-for-friendly-people-over-40
+ /events/317079335/
+DESCRIPTION:Berkeley\nhttps://www.meetup.com/east-bay-adventures-for-frien
+ dly-people-over-40/events/317079335/\n\nPlease come join me as the Cantat
+ a Collective\, San Francisco's only professional Ensamble dedicated solel
+ y to the Cantatas of Johann Sebastian Bach\, performs two of his music pi
+ eces. They will be performing the following pieces from Johann Sebastian 
+ Bach: Die Himmel erzählen die Ehre Gottes\, BWV 76 (The heavens are tell
+ ing of God the glory or The heavens declare (or tell) the glory of God) M
+ ein li
+END:VEVENT
+END:VCALENDAR

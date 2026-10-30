@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f77c83bcc98f@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261103T190000
+DTEND;TZID=America/Los_Angeles:20261103T210000
+SUMMARY:Booked: Dating Night for Readers
+LOCATION:The Love Potion Library - Books\, Tea\, Wine\, The Love Potion Li
+ brary - Books\, Tea\, Wine\, 284 Noe St\, San Francisco\, CA 94114\, USA\
+ , San Francisco
+URL:https://luma.com/l7xbwkb3
+DESCRIPTION:Reading + Gay / queer\nhttps://luma.com/l7xbwkb3\n\nSome of th
+ e best conversations you'll ever have start with "wait\, you love that bo
+ ok too?" Booked is a dating mixer for people who read. Everyone walks in 
+ holding a book that means something to them\, and that book becomes the w
+ hole night: the reason to cross the room\, and the thing that tells a str
+ anger who you are faster than any bio ever could. Here's how it works. We
+  start as a full group\, loos
+END:VEVENT
+END:VCALENDAR

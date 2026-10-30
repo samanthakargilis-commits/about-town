@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8865b2e4fc9a@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261030T170000
+DTEND;TZID=America/Los_Angeles:20261030T230000
+SUMMARY:$1 Drink Fridays: “Battle of the Decades” DJ Party (North Beac
+ h)
+LOCATION:Monroe\, 473 Broadway Street\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/1-drink-fridays-battle-of-the-decades-dj-party
+ -north-beach-261/
+DESCRIPTION:Musical theatre\nhttps://sf.funcheap.com/1-drink-fridays-battl
+ e-of-the-decades-dj-party-north-beach-261/\n\n$1 Drink Fridays: “Battle
+  of the Decades” DJ Party (North Beach) Battle Of the Decades Fridays a
+ re now a little bit more awesome. Did someone say $1 drinks? Monroe in No
+ rth Beach hosts “Battle of the Decades” DJ party and happy hour every
+  Friday with a DJ spinning progressive tunes. Every hour is a different d
+ ecade – with drink prices to match – $1 drinks during ’60s hour\, $
+ 2 drinks during ’70s ho
+END:VEVENT
+END:VCALENDAR

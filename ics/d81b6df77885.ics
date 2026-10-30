@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d81b6df77885@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261114T170000
+DTEND;TZID=America/Los_Angeles:20261114T190000
+SUMMARY:Within the Frame 2026 Animation Screening | San Francisco CA
+LOCATION:Madrone Art Bar\, 500 Divisadero Street\, San Francisco\, CA 9411
+ 7 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/within-the-frame-2026-animation-screening
+ -san-francisco-ca-tickets-2002772606780
+DESCRIPTION:Art\nhttps://www.eventbrite.com/e/within-the-frame-2026-animat
+ ion-screening-san-francisco-ca-tickets-2002772606780\n\nA multi-genre sho
+ wcase of independent animated shorts! Each made in a week with varying me
+ diums\, based on the prompt "forget me not."
+END:VEVENT
+END:VCALENDAR

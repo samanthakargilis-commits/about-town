@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:04f6774ad458@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261030T170000
+DTEND;TZID=America/Los_Angeles:20261030T180000
+SUMMARY:Another Lamp Show Members Preview
+LOCATION:500 Capp Street\, 500 Capp Street\, San Francisco\, San Francisco
+URL:https://ma.to/event/another-lamp-show-members-preview-30-oct-2026
+DESCRIPTION:Art\nhttps://ma.to/event/another-lamp-show-members-preview-30-
+ oct-2026\n\nMembers-only preview of 'Another Lamp Show' from 5-6 pm. Over
+  120 artists have created one-of-a-kind functioning lamps for sale to sup
+ port the future of the David Ireland House. Co-organized with artist Rico
+  Duenas. Membership sign-up is available for access. Featured artists inc
+ lude Adrian Clutario\, Chelsea Ryoko Wong\, Leah Rosenberg\, Abby Banks\,
+  Hur-Ali Rizvi\, Craig Calderwood\, Spenser Atlas\, Ra
+END:VEVENT
+END:VCALENDAR

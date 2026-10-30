@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e43782a9e392@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261109T173000
+DTEND;TZID=America/Los_Angeles:20261109T203000
+SUMMARY:Build Day: OpenRouter x Meta
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/openro-lu9g
+DESCRIPTION:Discourse\nhttps://luma.com/openro-lu9g\n\nBuild Day: OpenRout
+ er × Meta Something we've never done before... On November 9\, OpenRoute
+ r x Meta Superintelligence Labs are teaming up for our first-ever Build D
+ ay in San Francisco. One evening. A room full of builders. And 60 minutes
+  to turn an idea into something real. The debut of Muse Spark on OpenRout
+ er this summer sparked curiosity across the developer community. Since th
+ en\, Meta Superinte
+END:VEVENT
+END:VCALENDAR

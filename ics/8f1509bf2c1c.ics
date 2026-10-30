@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8f1509bf2c1c@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261031T090000
+DTEND;TZID=America/Los_Angeles:20261031T203000
+SUMMARY:College Football Watch Party
+LOCATION:Underdogs Cantina\, 128 King Street\, San Francisco
+URL:https://ma.to/event/college-football-watch-party-31-oct-2026
+DESCRIPTION:Weird & unusual\nhttps://ma.to/event/college-football-watch-pa
+ rty-31-oct-2026\n\nUnderdogs Cantina hosts a full day of college football
+ . The schedule includes Iowa vs. Wisconsin (9:00 AM)\, Michigan vs. Rutge
+ rs (9:30 AM)\, Auburn vs. Ole Miss (9:45 AM)\, Oregon vs. Northwestern (1
+ 2:30 PM)\, and USC vs. Ohio State (4:30 PM). The USC vs. Ohio State game 
+ features a costume contest with prizes in three categories: most USC-rela
+ ted items used\, most original Trojan Spirit costume\, and m
+END:VEVENT
+END:VCALENDAR

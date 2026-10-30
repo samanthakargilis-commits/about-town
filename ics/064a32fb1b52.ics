@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:064a32fb1b52@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261115T160000
+DTEND;TZID=America/Los_Angeles:20261115T190000
+SUMMARY:Queer Soup Night ~ Oakland
+LOCATION:Alkali Rye\, 3256 Grand Ave\, Oakland
+URL:https://partiful.com/e/BptDI69l8euoHn4HnxkD
+DESCRIPTION:Gay / queer · Oakland\nhttps://partiful.com/e/BptDI69l8euoHn4
+ HnxkD\n\nQueer Soup Night is an event that honors and celebrates queer fo
+ od community and culture in the Bay\, prioritizing Queer and Trans People
+  of Color. Come early for the soup\, stay late for the love! This month\,
+  we're raising funds to uplift the work of West Oakland Punks With Lunch\
+ , a volunteer-run organization that provides life-saving services and har
+ m reduction resources to underserved and margina
+END:VEVENT
+END:VCALENDAR

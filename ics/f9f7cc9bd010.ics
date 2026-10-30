@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f9f7cc9bd010@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;VALUE=DATE:20261124
+DTEND;VALUE=DATE:20261125
+SUMMARY:SF History Night
+LOCATION:Pacific Heights
+URL:https://sf.funcheap.com/sf-history-night-pacific-heights-100/
+DESCRIPTION:Discourse\nhttps://sf.funcheap.com/sf-history-night-pacific-he
+ ights-100/\n\nThe San Francisco History Association hosts monthly talks w
+ hich explore our city’s enchanting history in depth. Each month\, a loc
+ al history expert hosts a themed talk usually accompanied by a slide show
+  with light refreshments. Monthly presentations cover a dizzyingly divers
+ e variety of SF history ...
+END:VEVENT
+END:VCALENDAR

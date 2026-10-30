@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:25eeb0bbbb33@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261116T200000
+DTEND;TZID=America/Los_Angeles:20261116T220000
+SUMMARY:“Motown On Mondays” DJ Night (Madrone Art Bar)
+LOCATION:Madrone Art Bar\, 500 Divisadero Street\, San Francisco\, CA 9411
+ 7
+URL:https://sf.funcheap.com/motown-on-mondays-dj-night-madrone-art-bar-288
+ /
+DESCRIPTION:Art\nhttps://sf.funcheap.com/motown-on-mondays-dj-night-madron
+ e-art-bar-288/\n\nEvery Monday at Madrone\, dance the night away with hos
+ ts DJ Gordo Cabeza and guest DJS spinning originals\, exclusive remixes\,
+  and close relatives of your favorite Motown songs during M.O.M. Motown o
+ n Mondays. Motown on Mondays Every Monday | 7 pm to 2 am Madrone ...
+END:VEVENT
+END:VCALENDAR

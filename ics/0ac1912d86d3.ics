@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0ac1912d86d3@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261113T170000
+DTEND;TZID=America/Los_Angeles:20261113T200000
+SUMMARY:SF’s Free Holiday “Performing Arts Showcase” Under 1200+ LED
+  Lights (Civic Center)
+LOCATION:Fulton Plaza\, Fulton and Larkin\, San Francisco\, CA\, San Franc
+ isco
+URL:https://sf.funcheap.com/sfs-free-holiday-performing-arts-showcase-1200
+ -led-lights-civic-center/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/sfs-free-holiday-per
+ forming-arts-showcase-1200-led-lights-civic-center/\n\nOn Friday\, Novemb
+ er 13\, from 5–8 pm\, Fulton Plaza will come alive beneath the dazzling
+  SPECTRA lights for the holiday season’s Performing Arts Showcase\, a c
+ elebration bringing together some of downtown’s most exciting performin
+ g arts organizations for one unforgettable evening. Guests will be treate
+ d to a ...
+END:VEVENT
+END:VCALENDAR

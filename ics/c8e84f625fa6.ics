@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c8e84f625fa6@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261102T183000
+DTEND;TZID=America/Los_Angeles:20261102T200000
+SUMMARY:Make Your Own Perfume
+LOCATION:The Love Potion Library - Books\, Tea\, Wine\, The Love Potion Li
+ brary - Books\, Tea\, Wine\, 284 Noe St\, San Francisco\, CA 94114\, USA\
+ , San Francisco
+URL:https://luma.com/dm9hcg5q
+DESCRIPTION:Reading + Weird & unusual\nhttps://luma.com/dm9hcg5q\n\nThank 
+ you for your interest! Follow Eau Yeah! for updates on future events. We
+ ’d love to see you at the next one! What makes a perfume smell expensiv
+ e? Why do some scents disappear in minutes while others linger all day? A
+ nd what happens when you mix something floral\, woody\, smoky\, or sweet?
+  Join us for an hands-on perfume making workshop where we’ll explore th
+ e art and science of scent\, then expe
+END:VEVENT
+END:VCALENDAR

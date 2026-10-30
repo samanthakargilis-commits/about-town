@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:89ae64a71712@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261030T100000
+DTEND;TZID=America/Los_Angeles:20261030T160000
+SUMMARY:Echo Shop Anniversary Sale
+LOCATION:The Echo Shop\, Saratoga\, Saratoga
+URL:https://ma.to/event/echo-shop-anniversary-sale-2026-10-30
+DESCRIPTION:Estate & sample sales · Saratoga\nhttps://ma.to/event/echo-sh
+ op-anniversary-sale-2026-10-30\n\nThe Echo Shop in Saratoga\, California\
+ , marks 65 years of outreach to the community with special anniversary sa
+ les throughout the week. Friday's sale is part of the milestone programme
+  at the thrift shop. Regular Friday hours are 10am to 4pm.
+END:VEVENT
+END:VCALENDAR

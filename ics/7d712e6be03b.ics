@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7d712e6be03b@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261030T150000
+DTEND;TZID=America/Los_Angeles:20261030T163000
+SUMMARY:Christopher Martin Artist Talk
+LOCATION:dreamfarmcommons\, 349 15th St\, Oakland\, Oakland
+URL:https://ma.to/event/christopher-martin-artist-talk-2026-10-30
+DESCRIPTION:Art + Discourse · Oakland\nhttps://ma.to/event/christopher-ma
+ rtin-artist-talk-2026-10-30\n\nChristopher Martin gives an artist talk on
+  There’s no place like ‘om at dreamfarmcommons\, 349 15th St\, Oaklan
+ d\, starting at 3 PM.
+END:VEVENT
+END:VCALENDAR

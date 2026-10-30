@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2e785ca449d6@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261031T210000
+DTEND;TZID=America/Los_Angeles:20261031T230000
+SUMMARY:2000s Halloween Party (21+)
+LOCATION:XeX\, 1131 Polk St San Francisco\, San Francisco
+URL:https://partiful.com/e/7qYK5I8HyHAVOHKyQLGo
+DESCRIPTION:Camp & Halloween + Singing\nhttps://partiful.com/e/7qYK5I8HyHA
+ VOHKyQLGo\n\nLooking for the HALLOWEEN PARTY of the weekend? Join us SATU
+ RDAY\, October 31st for 2000s BY NIGHT as we take over the entire undergr
+ ound level! 📍 XEX 2 levels. cocktail lounge. karaoke. underground-leve
+ l dance floor This Halloween\, we’re throwing it back to the era of low
+ -rise jeans\, graphic tees\, and questionable fashion choices because\, h
+ onestly\, it was a scary time. 👻 🎶 2000s THROWBACKS and TEC
+END:VEVENT
+END:VCALENDAR

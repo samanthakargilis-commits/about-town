@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8309e60331aa@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261031T100000
+DTEND;TZID=America/Los_Angeles:20261031T120000
+SUMMARY:Free Labyrinth (1986) Screening at SF’s 4 Star Theater
+LOCATION:The 4 Star Theater\, 2200 Clement Street\, San Francisco\, CA 941
+ 21\, San Francisco
+URL:https://sf.funcheap.com/free-labyrinth-1986-screening-sfs-4-star-theat
+ er/
+DESCRIPTION:Camp & Halloween\nhttps://sf.funcheap.com/free-labyrinth-1986-
+ screening-sfs-4-star-theater/\n\nJim Henson’s Labyrinth (1986)\, starri
+ ng David Bowie\, plays the 4 Star Theater on Halloween weekend\, with fre
+ e 10 AM screenings in the Popcorn Palace on Saturday 10/31 and Sunday 11/
+ 1. Evening shows are also scheduled.
+END:VEVENT
+END:VCALENDAR

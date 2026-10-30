@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ee85fe6c43c8@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261120T163000
+DTEND;TZID=America/Los_Angeles:20261120T173000
+SUMMARY:Workshop: Winter Wick & Wonder Candle Making
+LOCATION:Presidio Branch Library\, 3150 Sacramento St\, San Francisco
+URL:https://sfpl.org/events/2026/11/20/workshop-winter-wick-wonder-candle-
+ making
+DESCRIPTION:Craft + Reading\nhttps://sfpl.org/events/2026/11/20/workshop-w
+ inter-wick-wonder-candle-making\n\nPlease note the time for this program 
+ has changed from 4-5pm to 4:30-5:30pm.Participants will be guided in maki
+ ng a mini soy wax candle featuring Soul Gifts USA’s signature seasonal 
+ scent. Each candle will be decorated with natural dried petals and finish
+ ed with a festive sticker on the lid\, perfect as a gift or as home déco
+ r during the holiday season. Every participant will create and take home 
+ t
+END:VEVENT
+END:VCALENDAR

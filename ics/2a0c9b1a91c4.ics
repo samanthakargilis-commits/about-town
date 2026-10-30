@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2a0c9b1a91c4@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261030T210500
+DTEND;TZID=America/Los_Angeles:20261030T231500
+SUMMARY:ALIEN (1979)
+LOCATION:The Roxie Theater\, San Francisco
+URL:https://ma.to/event/alien-1979-31-oct-2026
+DESCRIPTION:Theatre + Weird & unusual\nhttps://ma.to/event/alien-1979-31-o
+ ct-2026\n\nRidley Scott's ALIEN (1979) screens at the Roxie as part of th
+ e HER WORK IS NEVER DONE series. Sigourney Weaver leads the ensemble in t
+ he sci-fi horror film about a deep-space crew whose industrial haul goes 
+ from bad to chest-burstingly worse. This screening is part of a series ex
+ amining the labor expected of women in exhausting\, absurd and occasional
+ ly horrifying forms. Tickets available at roxie
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e6afd22c358c@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261108T183000
+DTEND;TZID=America/Los_Angeles:20261108T213000
+SUMMARY:Free “Diwali on the Square” Celebration at St. Marks
+LOCATION:St. Marks Church Square\, 1031 Franklin Street Suite: 107
+URL:https://sf.funcheap.com/free-diwali-square-celebration-st-marks-sf/
+DESCRIPTION:Cultural festivals + Fairs & festivals · A yearly tradition\n
+ https://sf.funcheap.com/free-diwali-square-celebration-st-marks-sf/\n\nJo
+ in Parivar Bay Area and St. Mark’s Square for a joyful\, FREE community
+  Diwali celebration on Sunday\, November 8\, from 6:30–9:30 PM at St. M
+ ark’s Urban Life Center\, 1031 Franklin Street\, San Francisco. Celebra
+ te the Festival of Lights with music\, dance\, delicious food\, local ven
+ dors\, ...
+END:VEVENT
+END:VCALENDAR

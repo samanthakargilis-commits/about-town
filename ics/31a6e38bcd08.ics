@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:31a6e38bcd08@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261030T193000
+DTEND;TZID=America/Los_Angeles:20261030T210000
+SUMMARY:Magic Patio: Evening Show (Ages 16+)
+LOCATION:The Magic Patio\, 3264 Mission Street\, San Francisco\, CA 94110 
+ San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/magic-patio-evening-show-ages-16-tickets-
+ 2001272717571
+DESCRIPTION:New in your area\nhttps://www.eventbrite.com/e/magic-patio-eve
+ ning-show-ages-16-tickets-2001272717571\n\nJoin Andrew Evans\, the creato
+ r of The Magic Patio\, for an inexplicable evening of magic and mentalism
+ .
+END:VEVENT
+END:VCALENDAR

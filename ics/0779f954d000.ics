@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0779f954d000@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261107T150000
+DTEND;TZID=America/Los_Angeles:20261107T190000
+SUMMARY:Fagatha Christie's Book Club | A Drag Show
+LOCATION:The Stud\, 1123 Folsom Street\, San Francisco\, CA 94103 San Fran
+ cisco\, San Francisco
+URL:https://www.eventbrite.com/e/fagatha-christies-book-club-a-drag-show-t
+ ickets-2000206179527
+DESCRIPTION:Reading + Gay / queer\nhttps://www.eventbrite.com/e/fagatha-ch
+ risties-book-club-a-drag-show-tickets-2000206179527\n\nWhere book smart m
+ eets stage stupid. Join Fagatha Christie and friends for a literary theme
+ d drag show that ends before dinner.
+END:VEVENT
+END:VCALENDAR

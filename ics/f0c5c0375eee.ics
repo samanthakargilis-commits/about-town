@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f0c5c0375eee@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261115T110000
+DTEND;TZID=America/Los_Angeles:20261115T140000
+SUMMARY:DIWALI PASTRY POP-UP
+LOCATION:Le Mil's\, 1330 Polk St San Francisco\, San Francisco
+URL:https://partiful.com/e/RhDR2aIFaDpakAhe6JmQ
+DESCRIPTION:Cultural festivals + Fairs & festivals\nhttps://partiful.com/e
+ /RhDR2aIFaDpakAhe6JmQ\n\nGLACIAIRE PRESENTS: A DIWALI PASTRY POP-UP AT LE
+  MIL'S COFFEE 🪔✨ We are back with another themed pop-up! This one is
+  extra special because we're celebrating Diwali with a menu inspired by t
+ he incredible flavors of South Asia. And we have the privilege of hosting
+  this at Le Mil's Coffee\, SF's first specialty Indian coffee shop! We're
+  putting our own spin on some beloved classics. Think gajar halwa\,
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c80dc5cbe521@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261107T160000
+DTEND;TZID=America/Los_Angeles:20261107T180000
+SUMMARY:Monthly Game Night @ Madrone Art Bar
+LOCATION:Madrone Art Bar\, 500 Divisadero St\, San Francisco\, CA 94117\, 
+ USA\, San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/the-geek-collective-of-gamescape-sf/events/3168
+ 58576/
+DESCRIPTION:Art\nhttps://www.meetup.com/the-geek-collective-of-gamescape-s
+ f/events/316858576/\n\nCome solo or bring friends and choose from a mix o
+ f party games\, strategy games\, chess\, puzzles\, and more. The Gamescap
+ e crew will be on hand to help you find a game and get started. Every 1st
+  Saturday of the month! Free\, 21+\, and outside food is welcome! 1st Sat
+ urdays of the month // 4–7 PM at Madrone Art Bar
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:af53087ddec1@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261031T090000
+DTEND;TZID=America/Los_Angeles:20261031T180000
+SUMMARY:Big Art Loop - Portside South
+LOCATION:Big Art Loop - Portside South\, San Francisco
+URL:https://ma.to/event/big-art-loop-portside-south-2026-10-31
+DESCRIPTION:Art\nhttps://ma.to/event/big-art-loop-portside-south-2026-10-3
+ 1\n\nPart of the final week of the Crosstowntrail Walktober Challenge\, t
+ his self-guided 1.5-mile walk in Portside South features four Big Art Loo
+ p artworks and views of the bay. The stops are @atabeystreasure by @leave
+ ittonino at Brannan Street Wharf\, LIPS by @fnnch at South Beach Marina\,
+  Louis by @dewittgodfreystudio at Bayfront Park\, and Dr. Fisherian's Run
+ away Machine by @chris_wollard at Crane Cove
+END:VEVENT
+END:VCALENDAR

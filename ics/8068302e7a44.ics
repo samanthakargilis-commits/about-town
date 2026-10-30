@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8068302e7a44@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261031T130000
+DTEND;TZID=America/Los_Angeles:20261031T150000
+SUMMARY:SF’s Wickedly Fun Halloween Circus “Circus of the Moon” (202
+ 6)
+LOCATION:Great Star Theater\, 636 Jackson St. San Francisco\, CA
+URL:https://sf.funcheap.com/sfs-wickedly-fun-halloween-circus-circus-of-th
+ e-moon-2026/
+DESCRIPTION:Camp & Halloween + Weird & unusual\nhttps://sf.funcheap.com/sf
+ s-wickedly-fun-halloween-circus-circus-of-the-moon-2026/\n\nStep inside A
+ n Unkindness\, a Wickedly Whimsical Halloween Circus Experience where Res
+ tless Spirits\, Dark Legends\, and Extraordinary Performers Bring a Haunt
+ ed Graveyard to Life at San Francisco’s Historic Great Star Theater. No
+ rmally $30-$40\, You Can Get Complimentary Tickets to Circus of The Moon 
+ for October 29-31 if ...
+END:VEVENT
+END:VCALENDAR

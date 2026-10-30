@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4861ebabf043@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261031T190000
+DTEND;TZID=America/Los_Angeles:20261031T210000
+SUMMARY:The Thing Halloween Screening
+LOCATION:Live Worms Gallery / The Church of Mother Gong\, 1345 Grant Ave\,
+  San Francisco\, San Francisco
+URL:https://ma.to/event/the-thing-halloween-screening-2026-10-31
+DESCRIPTION:Camp & Halloween + Art\nhttps://ma.to/event/the-thing-hallowee
+ n-screening-2026-10-31\n\nA Halloween screening of The Thing\, followed b
+ y a discussion. Admission is free\; RSVP is requested because space is li
+ mited.
+END:VEVENT
+END:VCALENDAR

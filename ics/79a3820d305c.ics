@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:79a3820d305c@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261101T090000
+DTEND;TZID=America/Los_Angeles:20261101T140000
+SUMMARY:5th Annual Día de los Muertos + Market in the Sunset
+LOCATION:Sunset Mercantile (Outer Sunset)\, 37th Avenue between Ortega & P
+ acheco St.\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/annual-da-de-los-muertos-sunset-sf/
+DESCRIPTION:Cultural festivals + Spirituality · A yearly tradition\nhttps
+ ://sf.funcheap.com/annual-da-de-los-muertos-sunset-sf/\n\nJoin the Outer 
+ Sunset Farmers Market & Mercantile for a special Dia de los Muertos celeb
+ ration. The event features fresh produce\, local makers\, food trucks\, a
+ nd live music across two stages. Activities include all-ages crafts at th
+ e Artship container like candy skull paper masks\, marigold headbands\, a
+ nd pipe cleaner skeletons. Cultural performances at the Pacheco intersect
+ ion start at 10am featuri
+END:VEVENT
+END:VCALENDAR

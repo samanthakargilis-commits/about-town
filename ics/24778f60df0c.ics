@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:24778f60df0c@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261114T110000
+DTEND;TZID=America/Los_Angeles:20261114T130000
+SUMMARY:The Walking Club (for girls who don’t run)
+LOCATION:Golden Gate Park\, undefined undefined San Francisco\, San Franci
+ sco
+URL:https://partiful.com/e/IQqfpnUVe3esVkwFvxvg
+DESCRIPTION:New in your area\nhttps://partiful.com/e/IQqfpnUVe3esVkwFvxvg\
+ n\nThe walking club for girls who don’t run Rise and shine\, San Franci
+ scans. Fall is officially here\, and you know what that means. It's time 
+ for a little autumn stroll through Golden Gate Park. Think beautiful fall
+  scenery\, good chats\, and new friendships along the way. ☕ 11:00 — 
+ Meet & mingle 🚶‍♀️ 11:20— Scenic walk (flat route\, no running
+ ) 🥐 12:15 — Post-walk social\, details to come 🎟 Free · invit
+END:VEVENT
+END:VCALENDAR

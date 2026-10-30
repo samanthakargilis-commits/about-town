@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2f0b7ce625f8@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:Dead Time Dreams: The Veil
+LOCATION:San Jose
+URL:https://sf.funcheap.com/city-guide/bay-area-haunted-houses/
+DESCRIPTION:Camp & Halloween + Theatre · Featured on Funcheap\nhttps://sf
+ .funcheap.com/city-guide/bay-area-haunted-houses/\n\nSan Jose | Eastridge
+  Mall parking lot\, 322 Eastridge Loop | Oct. 2 – Nov. 1\, 2026 | Ticke
+ ts start at $25 Dead Time Dreams returns to San Jose with The Veil \, an 
+ immersive haunted attraction packed with sinister creatures and supernatu
+ ral scares. Before or after entering the darkness\, explore the Midway of
+  Terror\, featuring creepy characters\, live entertainment\, and nightly 
+ shows. Free parking is a
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cd7d7736465b@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261107T140000
+DTEND;TZID=America/Los_Angeles:20261107T160000
+SUMMARY:Witchy Art Gathering
+LOCATION:Dolores Park\, 566 Dolores St San Francisco\, San Francisco
+URL:https://partiful.com/e/WnaDG5yoxax2IuRUTUau
+DESCRIPTION:Art + Spirituality\nhttps://partiful.com/e/WnaDG5yoxax2IuRUTUa
+ u\n\nCome make art\, get tarot card readings and hang out with fellow art
+ sy friends at Dolores Park! I definitely want this event to be witchy the
+ me so go all out.🖤🖤🖤🖤
+END:VEVENT
+END:VCALENDAR

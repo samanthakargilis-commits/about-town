@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dbabfbda9c35@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261107T140000
+DTEND;TZID=America/Los_Angeles:20261107T160000
+SUMMARY:Free “Wood Street” Film Screening on Oakland’s Unhoused + Q&
+ A
+LOCATION:San Francisco Public Library\, 100 Larkin St. San Francisco CA
+URL:https://sf.funcheap.com/free-wood-street-documentary-screening-communi
+ ty-qa-sf-main-library/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/free-wood-street-doc
+ umentary-screening-community-qa-sf-main-library/\n\nWOOD STREET follows a
+  year in the life of Oakland’s largest unhoused encampment as its resid
+ ents face an imminent eviction that threatens to dismantle their communit
+ y. As notices appear and police move in\, residents organize — building
+  barricades\, filing lawsuits\, and protesting at City Hall ...
+END:VEVENT
+END:VCALENDAR

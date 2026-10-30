@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:982449f60770@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261101T120000
+DTEND;TZID=America/Los_Angeles:20261101T160000
+SUMMARY:Camp Scrap: an upcycling day camp
+LOCATION:Cassa Jam\, 37729 Niles Blvd Fremont\, Fremont
+URL:https://partiful.com/e/qKVZxNvAczDPzyGwW0HA
+DESCRIPTION:Craft · Fremont\nhttps://partiful.com/e/qKVZxNvAczDPzyGwW0HA\
+ n\nCAMP SCRAP EVERY FIRST SUNDAY! check @campscrap on ig for updates WHAT
+  IS CAMP SCRAP? Camp Scrap is an experimental space for everyone to work 
+ with reclaimed materials ranging from paper to fabric and more. Each mate
+ rial has been processed carefully by @alyss.art_ to make upcycling as app
+ roachable and accessible as possible. Rather than being handed books\, ma
+ gazines\, or old clothes\, campers are pr
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b7743bd65c03@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261030T190000
+DTEND;TZID=America/Los_Angeles:20261031T003000
+SUMMARY:Substance Festival: Night 4
+LOCATION:Great American Music Hall\, 859 O'Farrell St\, San Francisco\, CA
+ \, San Francisco
+URL:https://ma.to/event/substance-festival-30-oct-2026
+DESCRIPTION:Fairs & festivals\nhttps://ma.to/event/substance-festival-30-o
+ ct-2026\n\nSubstance Festival San Francisco 2026 Night 4 at the Great Ame
+ rican Music Hall. Cold Cave performs their debut album 'Cremations' in fu
+ ll. Lineup: A.COLD.ERA 7:00 PM\, False Figure 8:05 PM\, Houses of Heaven 
+ 9:10 PM\, SRSQ 10:15 PM\, and Cold Cave 11:20 PM. DJ sets by Pink Stilett
+ o and Hot Goth GF. Doors open at 6:00 PM. Presented by Restless Nites\, G
+ reat American Music Hall\, and FACT. Tickets availab
+END:VEVENT
+END:VCALENDAR

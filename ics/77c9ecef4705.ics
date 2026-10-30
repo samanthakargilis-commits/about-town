@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:77c9ecef4705@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261030T180000
+DTEND;TZID=America/Los_Angeles:20261030T230000
+SUMMARY:Coven of the Secret Stem
+LOCATION:Chartreuse by Roje\, 2095 Market St.\, SF\, San Francisco
+URL:https://ma.to/event/coven-of-the-secret-stem-30-oct-2026
+DESCRIPTION:Weird & unusual + Gay / queer\nhttps://ma.to/event/coven-of-th
+ e-secret-stem-30-oct-2026\n\nChartreuse by Roje presents its 2nd Annual H
+ alloween Soirée\, Coven of the Secret Stem: The Velvet Ritual\, on Frida
+ y\, October 30\, 2026. Join 50 guests for an intimate evening of dark bot
+ anical romance\, celestial glamour\, and queer company. DJ McHale provide
+ s the soundtrack while guests enjoy hosted cocktails throughout the night
+ . Dress code: velvet\, veils\, or costume—gender is no constraint. Tick
+ et
+END:VEVENT
+END:VCALENDAR

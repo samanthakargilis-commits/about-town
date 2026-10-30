@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ba4caf3b5df3@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261031T210000
+DTEND;TZID=America/Los_Angeles:20261101T000000
+SUMMARY:Halloween After Dark - A Party at The Mint SF | Oct 31
+LOCATION:The San Francisco Mint\, 88 5th Street\, San Francisco\, CA 94103
+  San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/halloween-after-dark-a-party-at-the-mint-
+ sf-oct-31-tickets-2002104584708
+DESCRIPTION:Camp & Halloween + Museum exhibits\nhttps://www.eventbrite.com
+ /e/halloween-after-dark-a-party-at-the-mint-sf-oct-31-tickets-20021045847
+ 08\n\nThe Historic Mint turns into a haunted nightclub! 4 themed rooms\, 
+ global beats and the city's most unforgettable Halloween Party !
+END:VEVENT
+END:VCALENDAR

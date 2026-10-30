@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2511c76d7f8d@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261030T120000
+DTEND;TZID=America/Los_Angeles:20261030T180000
+SUMMARY:Robert Saltonstall: Woodwork
+LOCATION:The Perish Trust\, 728 Divisadero St\, San Francisco\, CA 94117\,
+  San Francisco
+URL:https://ma.to/event/robert-saltonstall-woodwork-2026-10-30
+DESCRIPTION:Craft + Art\nhttps://ma.to/event/robert-saltonstall-woodwork-2
+ 026-10-30\n\nWork by Oakland-based woodworker Robert Saltonstall is on vi
+ ew at The Perish Trust. His practice brings together craft\, sculpture\, 
+ and a deep appreciation for the natural character of wood. Woodturning is
+  an intimate exchange between hand and material\, guided by the curves an
+ d character of the wood itself\, and he looks for the human figure in the
+  shapes he creates\, each with its own distinct perso
+END:VEVENT
+END:VCALENDAR

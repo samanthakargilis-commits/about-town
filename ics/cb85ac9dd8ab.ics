@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cb85ac9dd8ab@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261030T190000
+DTEND;TZID=America/Los_Angeles:20261030T220000
+SUMMARY:Costumes + Crushes Speed Dating
+LOCATION:Aloft Dublin-Pleasanton\, Pleasanton
+URL:https://ma.to/event/costumes-and-crushes-speed-dating-mixer-2026-10-30
+DESCRIPTION:Weird & unusual · Pleasanton\nhttps://ma.to/event/costumes-an
+ d-crushes-speed-dating-mixer-2026-10-30\n\nCostumes + Crushes is a single
+ s speed dating and mixer for ages 25-55 at Aloft Dublin-Pleasanton on Fri
+ day\, October 30. Speed dating runs 7pm-9pm\, followed by a mixer from 9p
+ m-10pm\, and attendees are invited to dress up in a costume while they mi
+ ngle. A raffle offers a one-night stay. Spots are booked through Eventbri
+ te.
+END:VEVENT
+END:VCALENDAR

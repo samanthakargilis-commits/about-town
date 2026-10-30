@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b9fd83318e1b@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261031T110000
+DTEND;TZID=America/Los_Angeles:20261031T150000
+SUMMARY:Wags & Wheels on the Wharf
+LOCATION:Fisherman's Wharf\, 2860 Taylor Street\, San Francisco\, San Fran
+ cisco
+URL:https://ma.to/event/wags-and-wheels-on-the-wharf-31-oct-2026
+DESCRIPTION:Animals + Camp & Halloween\nhttps://ma.to/event/wags-and-wheel
+ s-on-the-wharf-31-oct-2026\n\nWags & Wheels on the Wharf is a Halloween-t
+ hemed afternoon at Fisherman's Wharf benefiting the SF SPCA. The programm
+ e features a classic car trunk-or-treat\, Hot Wheels races\, a doggy disc
+ o\, lawn games\, costume contests with prizes\, photo ops—including the
+  Giant Corgi Butt—live music\, and face painting. Additionally\, a mark
+ etplace showcases local vendors like CANOS\, HUNKY HOUSE\, LA PAWCINA\, L
+ OLITA'
+END:VEVENT
+END:VCALENDAR

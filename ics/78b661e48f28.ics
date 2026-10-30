@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:78b661e48f28@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:San Francisco Coffee Festival 2026
+LOCATION:Fort Mason\, San Francisco
+URL:https://sf.funcheap.com/city-guide/november-street-fairs-festivals/
+DESCRIPTION:Fairs & festivals + Theatre · Featured on Funcheap\nhttps://s
+ f.funcheap.com/city-guide/november-street-fairs-festivals/\n\nNovember 7-
+ 8\, 2026 – SF (Fort Mason) – $29 – An immersive two-day coffee show
+ case featuring specialty roasters and exhibitors serving up unique beans 
+ and flavor profiles\, plus coffee tastings and live entertainment. San Fr
+ ancisco Coffee Festival
+END:VEVENT
+END:VCALENDAR

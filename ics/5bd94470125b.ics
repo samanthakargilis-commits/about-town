@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5bd94470125b@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261121T100000
+DTEND;TZID=America/Los_Angeles:20261121T160000
+SUMMARY:Second Saturdays
+LOCATION:37th Ave & Ortega St\, San Francisco
+URL:https://partiful.com/e/nEvPGBuYBd1MWBE8BQkr
+DESCRIPTION:Craft + Concerts\nhttps://partiful.com/e/nEvPGBuYBd1MWBE8BQkr\
+ n\nhttps://www.instagram.com/p/DUo7VL4EfJW/?hl=en A curated\, stylish and
+  modern version of your traditional flea market with over 60 vintage vend
+ ors\, makers and artists. Enjoy live music from local musicians\, food tr
+ ucks\, workshops and rotating family-friendly activities for all ages to 
+ enjoy\, every third Saturday from April- November. UPCOMING MARKETS: NOVE
+ MBER 21ST – SEASON FINALE! Record Swap with
+END:VEVENT
+END:VCALENDAR

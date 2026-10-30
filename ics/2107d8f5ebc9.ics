@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2107d8f5ebc9@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261108T130000
+DTEND;TZID=America/Los_Angeles:20261108T150000
+SUMMARY:ZEST FILM FEST
+LOCATION:The New Parkway Theater\, 474 24th St Oakland\, Oakland
+URL:https://partiful.com/e/zvjZ9e66z95ZAXpDMi0g
+DESCRIPTION:Theatre · Oakland\nhttps://partiful.com/e/zvjZ9e66z95ZAXpDMi0
+ g\n\nSunday\, November 8th\, join us for the 3rd edition of ZEST FILM FES
+ T\, presenting the incredible work of filmmakers who are BIPOC!!! @ The N
+ ew Parkway Theater. Showcasing films by... Zar Meza\, Desmond O’shea\, 
+ Angela Zamora\, Ryann Castanon-Hill\, Dominic Wong\, Romeo Yotat\, Ana Ch
+ en ————————— TICKET DETAILS: Partiful is taking its fee
+ s! Feel free to reach out about purchasing your ticket(s) directly us
+END:VEVENT
+END:VCALENDAR

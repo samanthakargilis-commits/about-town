@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b9d9c1ea6120@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261031T100000
+DTEND;TZID=America/Los_Angeles:20261031T120000
+SUMMARY:Bay Area Group Sk8 Class
+LOCATION:Brooklyn Basin\, Oakland\, Oakland
+URL:https://ma.to/event/bay-area-group-sk8-class-2026-10-31
+DESCRIPTION:Oakland\nhttps://ma.to/event/bay-area-group-sk8-class-2026-10-
+ 31\n\nThe Bay Area Group Sk8 Class is a roller-skating session with BowTi
+ e. Sessions run Saturdays from 10am to 12pm\, and the charge is $25 per p
+ erson. The group meets at Brooklyn Basin in Oakland when weather permits\
+ ; an indoor location is being arranged. All levels are welcome. Bring wat
+ er\, towels and chairs.
+END:VEVENT
+END:VCALENDAR

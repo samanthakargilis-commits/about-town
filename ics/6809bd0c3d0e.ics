@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6809bd0c3d0e@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261112T183000
+DTEND;TZID=America/Los_Angeles:20261112T203000
+SUMMARY:FICTION: Woodworking\, by Emily St. James
+LOCATION:Lost Cat Bar & Bites\, 587 Post St\,\, San Francisco\, CA San Fra
+ ncisco\, San Francisco
+URL:https://www.meetup.com/bayarea-womens-book-club-30s-40s/events/3170646
+ 01/
+DESCRIPTION:Reading · Thursday evening\nhttps://www.meetup.com/bayarea-wo
+ mens-book-club-30s-40s/events/317064601/\n\n**For our final pick of 2026\
+ , I've chosen Woodworking by Emily St. James.** This one has been on my t
+ o-read list since it first came out last year! https://www.goodreads.com/
+ book/show/217311813-woodworking "*Detransition Baby* meets *Fleishman is 
+ in Trouble* in this remarkable debut novel from an incisive contemporary 
+ voice. A story about the awkwardness of growing up and the greatest love 
+ story o
+END:VEVENT
+END:VCALENDAR

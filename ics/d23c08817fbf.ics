@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d23c08817fbf@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261030T180000
+DTEND;TZID=America/Los_Angeles:20261030T210000
+SUMMARY:CARTILAGE\, Burning Down\, iinarcs
+LOCATION:Up The Creek Records\, 2042 Mt. Diablo Blvd\, San Francisco
+URL:https://ma.to/event/cartilage-burning-down-iinarcs-2026-10-30
+DESCRIPTION:Spirituality\nhttps://ma.to/event/cartilage-burning-down-iinar
+ cs-2026-10-30\n\nCARTILAGE plays gore-soaked death grind from San Francis
+ co\, with the new album Operating Altar out now. Burning Down\, from Berk
+ eley\, calls its music NecroFolk: a progressive blend of doom metal\, tec
+ hnical guitar riffs\, folk fiddle and dissonant\, ornamented vocals\, exp
+ loring folklore and society’s darkest corners. iinarcs is the Bay Area 
+ collaboration of Marco Gallerin on drums and guitar and Sean 
+END:VEVENT
+END:VCALENDAR

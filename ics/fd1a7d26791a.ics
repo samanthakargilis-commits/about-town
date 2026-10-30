@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fd1a7d26791a@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261101T140000
+DTEND;TZID=America/Los_Angeles:20261101T140000
+SUMMARY:Día De Los Muertos Community Run
+LOCATION:North Lake Public Plaza\, 2270 Broadway Oakland\, Oakland
+URL:https://partiful.com/e/VOzqovm8oMarOydzHLZH
+DESCRIPTION:Cultural festivals + Spirituality · Oakland\nhttps://partiful
+ .com/e/VOzqovm8oMarOydzHLZH\n\nhttps://www.instagram.com/p/DesF1JrSqf6/?h
+ l=en https://sunsetmercantilesf.com/ddlm/' Sunset Mercantile’s fifth an
+ nual Día de los Muertos: A day full of food\, music\, dance\, and cultur
+ e. We honor our beloved dead and celebrate their spirits in this fifth an
+ nual celebration. Shop traditional artisan goods\, savor delicious Latin 
+ treats\, plus enjoy live music\, Bay Area food favorites\, art activities
+ \, a
+END:VEVENT
+END:VCALENDAR

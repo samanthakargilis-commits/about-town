@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:081d19da52ee@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261030T110000
+DTEND;TZID=America/Los_Angeles:20261030T190000
+SUMMARY:Gamescape Halloween Costume Contest
+LOCATION:Gamescape SF\, San Francisco
+URL:https://ma.to/event/gamescape-halloween-costume-contest-2026-10-30
+DESCRIPTION:Camp & Halloween + Weird & unusual\nhttps://ma.to/event/gamesc
+ ape-halloween-costume-contest-2026-10-30\n\nThe Gamescape Halloween Costu
+ me Contest accepts entries from October 15 through October 31. A photo ta
+ ken in costume with Gamescape's Halloween frames in the store or at home 
+ can be entered by tagging @gamescapesf and using #gamescapecostumecontest
+ . Categories are Best Pokémon\, Scariest\, Best Duo\, and Most Unique. G
+ amescape staff review the photos and choose a winner in each category. Wi
+ nners are 
+END:VEVENT
+END:VCALENDAR

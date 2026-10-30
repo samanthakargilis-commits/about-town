@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6b1484ec4042@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261030T174500
+DTEND;TZID=America/Los_Angeles:20261030T204500
+SUMMARY:Sejiki Ceremony & Halloween Dinner
+LOCATION:SF Zen Center City Center\, San Francisco
+URL:https://ma.to/event/sejiki-ceremony-halloween-dinner-31-oct-2026
+DESCRIPTION:Camp & Halloween + Spirituality\nhttps://ma.to/event/sejiki-ce
+ remony-halloween-dinner-31-oct-2026\n\nThe Annual Sejiki Ceremony is a tr
+ aditional Buddhist ritual that honors and satiates hungry ghosts\, restle
+ ss and struggling spirits that cannot find nourishment. The ceremony incl
+ udes a reading of the names of close friends and family members who have 
+ died. Costumes are appreciated but not required. A celebratory dinner fol
+ lows the ceremony. Children are welcome\; please note that the ceremony i
+ ncl
+END:VEVENT
+END:VCALENDAR

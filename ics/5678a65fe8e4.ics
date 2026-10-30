@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5678a65fe8e4@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261101T130000
+DTEND;TZID=America/Los_Angeles:20261101T150000
+SUMMARY:Le Mil's Specialty Indian Coffee (Cafe Art Circle)
+LOCATION:Le Mil's Coffee\, 1330 Polk St\, San Francisco\, CA San Francisco
+ \, San Francisco
+URL:https://www.meetup.com/sf-sketchers/events/316236819/
+DESCRIPTION:Art + Comedy\nhttps://www.meetup.com/sf-sketchers/events/31623
+ 6819/\n\nCafe sketching at the brand new Le Mil's Coffee in SF Nob Hill. 
+ 📍 **1:00pm meet inside.** Look for us with sketchbooks. 🎨 Bring you
+ r own art supplies. Roam freely. Sketch what you see. ☕ Pull up a chair
+  anytime to draw with us and talk art. 📓 2:45pm. We wrap things up wit
+ h a show & tell throwdown. Le Mil’s Coffee is San Francisco's first spe
+ cialty Indian coffee shop that recently held its grand op
+END:VEVENT
+END:VCALENDAR

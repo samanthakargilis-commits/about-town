@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2ebdf531d7aa@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261031T190000
+DTEND;TZID=America/Los_Angeles:20261031T210000
+SUMMARY:Halloween: Kirtan\, Party\, Feast!
+LOCATION:Bhakti SF\, 3250 17th St\, San Francisco\, CA 94110\, USA\, San F
+ rancisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/san-francisco-kirtan-connection/events/31705463
+ 4/
+DESCRIPTION:Camp & Halloween + Spirituality\nhttps://www.meetup.com/san-fr
+ ancisco-kirtan-connection/events/317054634/\n\nHalloween: Kirtan\, Party\
+ , Feast! $20·with Bhakti SF [Book](https://bhaktisf.setmore.com/class-se
+ ssion/95b2d4a1-7bc4-4b5c-8163-5585cd128b1c?step=user-details&products=53e
+ 47cb3-e481-4d67-b6f6-14ae6aa230da&type=class&staff=ba725204-00a8-49fc-b5d
+ 4-67c0cd9726e1&slot=1793498400000&sessionId=95b2d4a1-7bc4-4b5c-8163-5585c
+ d128b1c&staffSelected=true&customer=) 🎃 Halloween at Bhakti SF: Party\
+ , Feast & Kirtan
+END:VEVENT
+END:VCALENDAR

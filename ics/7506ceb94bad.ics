@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7506ceb94bad@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261030T193000
+DTEND;TZID=America/Los_Angeles:20261030T213000
+SUMMARY:SOULSONG
+LOCATION:SF Dharma Collective\, 2929 24th St\, San Francisco\, CA San Fran
+ cisco\, San Francisco
+URL:https://www.meetup.com/san-francisco-mindfulness-meetup/events/3164880
+ 52/
+DESCRIPTION:Singing + Meditation\nhttps://www.meetup.com/san-francisco-min
+ dfulness-meetup/events/316488052/\n\n### Spirit · Singing · Ceremony wi
+ th Kid Beyond *In-person only* **SOULSONG** is a new kind of spiritual co
+ mmunity — where meditation and dharma meet singing and ceremony. Dharma
+  teacher / songleader Kid Beyond will offer a soul-nurturing alchemy of m
+ editation\, reflection\, and group singing — with songs of love and joy
+ ... tenderness and connection... gratitude and inspiration. Together\, in
+  loving 
+END:VEVENT
+END:VCALENDAR

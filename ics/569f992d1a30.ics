@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:569f992d1a30@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261114T130000
+DTEND;TZID=America/Los_Angeles:20261114T143000
+SUMMARY:Alviso Adobe Saturday Tours
+LOCATION:2087 Alviso Adobe Ct\, 2087 Alviso Adobe Court\, Milpitas\, CA 95
+ 035 Milpitas\, Milpitas
+URL:https://www.eventbrite.com/e/alviso-adobe-saturday-tours-tickets-19784
+ 32482814
+DESCRIPTION:Milpitas\nhttps://www.eventbrite.com/e/alviso-adobe-saturday-t
+ ours-tickets-1978432482814\n\nMilpitas' historic Alviso Adobe is open sec
+ ond Saturday of each month for tours and (weather-permitting) family frie
+ ndly outdoor activities.
+END:VEVENT
+END:VCALENDAR

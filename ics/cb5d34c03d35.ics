@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cb5d34c03d35@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261108T100000
+DTEND;TZID=America/Los_Angeles:20261108T160000
+SUMMARY:Inner Sunset Flea Market
+LOCATION:Irving St\, Irving St San Francisco\, San Francisco
+URL:https://partiful.com/e/CsW92ttMV2zoEtiIorRR
+DESCRIPTION:Estate & sample sales + Craft\nhttps://partiful.com/e/CsW92ttM
+ V2zoEtiIorRR\n\nhttps://www.instagram.com/p/DesA6NIBID_/ "November 8th is
+  “The Big Lunch and Annual Pie Baking Contest” as we invite the commu
+ nity to share meals\, recipes\, and treats together at our communal table
+ s. Shop amazing local vendors\, find secondhand treasures\, and get uniqu
+ e\, handmade items while saying goodbye to the flea market until next spr
+ ing. You won’t want to miss this send-off\, as a vendor or a 
+END:VEVENT
+END:VCALENDAR

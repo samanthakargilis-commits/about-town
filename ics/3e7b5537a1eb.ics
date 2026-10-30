@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3e7b5537a1eb@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261030T140000
+DTEND;TZID=America/Los_Angeles:20261030T170000
+SUMMARY:Randal “Randy” Guddal Visitation
+LOCATION:Callaghan Mortuary\, 3833 East Ave\, Livermore\, CA 94550\, Liver
+ more
+URL:https://ma.to/event/randal-randy-guddal-visitation-2026-10-30
+DESCRIPTION:Livermore\nhttps://ma.to/event/randal-randy-guddal-visitation-
+ 2026-10-30\n\nVisitation and viewing honoring the life of Randal “Randy
+ ” Guddal (1974–2026)\, held at Callaghan Mortuary in Livermore from 2
+ pm to 5pm on October 30. A Celebration of Life follows the same day at 7p
+ m at Altamont Bible Church. Attendees are asked to wear black\, red\, or 
+ a favorite band t-shirt.
+END:VEVENT
+END:VCALENDAR

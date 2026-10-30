@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:537dd47ee139@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261030T190000
+DTEND;TZID=America/Los_Angeles:20261030T230000
+SUMMARY:SF’s Wickedly Fun Halloween Circus “Circus of the Moon”
+LOCATION:Great Star Theater\, 636 Jackson St. San Francisco\, CA
+URL:https://sf.funcheap.com/sfs-wickedly-fun-halloween-circus-circus-of-th
+ e-moon-october-29-31-2/
+DESCRIPTION:Camp & Halloween + Weird & unusual\nhttps://sf.funcheap.com/sf
+ s-wickedly-fun-halloween-circus-circus-of-the-moon-october-29-31-2/\n\nSF
+ ’s Wickedly Fun Halloween Circus “Circus of the Moon” (October 29-3
+ 1) Ticketful / Circus of the Moon Step inside An Unkindness\, a Wickedly 
+ Whimsical Halloween Circus Experience where Restless Spirits\, Dark Legen
+ ds\, and Extraordinary Performers Bring a Haunted Graveyard to Life at Sa
+ n Francisco’s Historic Great Star Theater. Normally $30-$40\, You Can G
+ et Complimentary Tickets to Circus of The Moo
+END:VEVENT
+END:VCALENDAR

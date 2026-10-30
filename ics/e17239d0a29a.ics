@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e17239d0a29a@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261101T100000
+DTEND;TZID=America/Los_Angeles:20261101T120000
+SUMMARY:Bay Area Life Science Hikers- November Edition
+LOCATION:Edgewood park Main parking lot\, Edgewood park Main parking lot\,
+  Unnamed Road\, Emerald Hills\, CA 94062\, USA\, Emerald Hills
+URL:https://luma.com/w9ccwwxh
+DESCRIPTION:Theatre · Emerald Hills\nhttps://luma.com/w9ccwwxh\n\n🌾
+ 🥾 Life Science Hikers – November South Bay Edition 🥾🌾 For our 
+ November 1st meetup\, we're heading back to Edgewood for a ~4 mile loop t
+ hrough oak woodland and open serpentine grassland. It's one of the more g
+ eologically interesting spots on the Peninsula\, and one of the easier on
+ es to get to off 280. Quick PSA: daylight saving ends that morning\, so y
+ ou get an extra hour of sleep. Please use it to 
+END:VEVENT
+END:VCALENDAR

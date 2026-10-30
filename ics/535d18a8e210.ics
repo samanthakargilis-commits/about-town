@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:535d18a8e210@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261101T120000
+DTEND;TZID=America/Los_Angeles:20261101T210000
+SUMMARY:Día De Muertos Fiesta 2026 w/ Cumbia DJs (Oakland)
+LOCATION:Temescal Brewing\, 4115 Telegraph Avenue\, Oakland\, CA\, Oakland
+URL:https://sf.funcheap.com/da-de-muertos-fiesta-2026-cumbia-djs-oakland/
+DESCRIPTION:Cultural festivals + Spirituality · Oakland\nhttps://sf.funch
+ eap.com/da-de-muertos-fiesta-2026-cumbia-djs-oakland/\n\nTemescal Brewing
+  hosts a free\, all-ages Día de los Muertos celebration and release part
+ y for its Mictlán Lager. The event includes live DJs spinning cumbia\, o
+ frendas from La Familia Quíroz\, and Mexican-inspired food from Cassave 
+ on the Grill\, Chido’s Pizza\, and De La Creamery. The ...
+END:VEVENT
+END:VCALENDAR

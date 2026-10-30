@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0918163b436f@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261031T160000
+DTEND;TZID=America/Los_Angeles:20261031T180000
+SUMMARY:OrganiCann Comedy Open Mic
+LOCATION:OrganiCann\, Santa Rosa\, Santa Rosa
+URL:https://ma.to/event/organicann-comedy-open-mic-2026-10-31
+DESCRIPTION:Comedy + Singing · Santa Rosa\nhttps://ma.to/event/organicann
+ -comedy-open-mic-2026-10-31\n\nOrganiCann in Santa Rosa hosts this comedy
+  open mic on the last Saturday of each month from 4pm to 6pm\, presented 
+ by the OK Good Comedy production crew and hosted by Dylan James & Finn Mo
+ rgan.
+END:VEVENT
+END:VCALENDAR

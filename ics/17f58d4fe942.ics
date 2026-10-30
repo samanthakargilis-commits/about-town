@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:17f58d4fe942@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261116T220000
+DTEND;TZID=America/Los_Angeles:20261117T000000
+SUMMARY:2026 Leonids Meteor Shower
+LOCATION:San Francisco Bay Area
+URL:https://sf.funcheap.com/annual-leonids-meteor-shower/
+DESCRIPTION:A yearly tradition\nhttps://sf.funcheap.com/annual-leonids-met
+ eor-shower/\n\nIn 2026\, the Leonids will be active from November 6 to No
+ vember 30\, 2026. This year\, the peak is expected around November 17\, 2
+ 026\, with the best viewing after midnight through dawn. Leonids Active P
+ eriod: November 6 – November 30\, 2026 Peak: Around November 17\, 2026 
+ Best Viewing: After ...
+END:VEVENT
+END:VCALENDAR

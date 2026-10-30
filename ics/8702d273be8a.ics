@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8702d273be8a@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261031T110000
+DTEND;TZID=America/Los_Angeles:20261031T150000
+SUMMARY:Spooky Book Swap
+LOCATION:51andTel\, San Francisco
+URL:https://ma.to/event/spooky-book-swap-2026-10-31
+DESCRIPTION:Camp & Halloween\nhttps://ma.to/event/spooky-book-swap-2026-10
+ -31\n\nOct 31 · 51andTel\, San Francisco. A daytime Spooky Book Swap at 
+ 51andTel in Oakland. When Saturday\, 31 October Add to Calendar Add to Ca
+ lendar About A daytime Spooky Book Swap at 51andTel in Oakland. Organiser
+ s and Promoters Temescal District ~ Oakland\, CA Where 51andTel Open in G
+ oogle Maps
+END:VEVENT
+END:VCALENDAR

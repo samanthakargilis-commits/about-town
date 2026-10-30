@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6c2eb84bdce6@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;VALUE=DATE:20261031
+DTEND;VALUE=DATE:20261101
+SUMMARY:G&M Farms Corn Maze & Pumpkin Patch
+LOCATION:Livermore
+URL:https://www.marinmommies.com/marin-and-sonoma-pumpkin-patches
+DESCRIPTION:Fairs & festivals + U-pick farms · Featured on Funcheap\nhttp
+ s://www.marinmommies.com/marin-and-sonoma-pumpkin-patches\n\nRoad Trip: H
+ ollister | Worth the drive\, Swank Farms has a 9-acre corn maze where you
+  solve riddles to find your way out. The Fall Festival also features a pu
+ mpkin patch\, sunflower field\, farm animals\, jumping pillow\, cow train
+ \, corn box\, games\, and photo ops\, with live music on weekends. For ex
+ tra Halloween thrills\, the Trail of Lights & Terror in the Corn combines
+  a lighted trail with a haunted c
+END:VEVENT
+END:VCALENDAR

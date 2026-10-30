@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4ab36de3584f@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261031T120000
+DTEND;TZID=America/Los_Angeles:20261031T220000
+SUMMARY:The Patio's Last Day
+LOCATION:The Patio\, San Francisco
+URL:https://ma.to/event/the-patios-last-day-2026-10-31
+DESCRIPTION:Camp & Halloween\nhttps://ma.to/event/the-patios-last-day-2026
+ -10-31\n\nThe Patio's last day is on Halloween\, marking the venue's eigh
+ th anniversary. Over its eight-year run\, the space was the setting for p
+ roposals\, engagements\, weddings\, baby showers\, birthdays\, graduation
+ s\, retirement gatherings and corporate parties.
+END:VEVENT
+END:VCALENDAR

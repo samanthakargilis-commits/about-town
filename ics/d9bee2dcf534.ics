@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d9bee2dcf534@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261031T100000
+DTEND;TZID=America/Los_Angeles:20261031T140000
+SUMMARY:Crafternoon in the Courtyard
+LOCATION:Swan's Market\, 510 9th St\, Oakland\, CA 94607\, Oakland
+URL:https://ma.to/event/crafternoon-in-the-courtyard-2026-10-31
+DESCRIPTION:Oakland\nhttps://ma.to/event/crafternoon-in-the-courtyard-2026
+ -10-31\n\nCrafternoon in the Courtyard runs at Swan's Market on Saturday\
+ , October 31\, from 10am to 2pm\, with free entry. Sip.Paint.Eat and Chap
+ ter 510 co-host the afternoon.
+END:VEVENT
+END:VCALENDAR

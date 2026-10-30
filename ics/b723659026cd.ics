@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b723659026cd@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261119T180000
+DTEND;TZID=America/Los_Angeles:20261119T200000
+SUMMARY:🕹️ 🎱 Emporium Arcade - Childfree by Choice
+LOCATION:Emporium SF\, 616 Divisadero St\, San Francisco\, ca San Francisc
+ o\, San Francisco
+URL:https://www.meetup.com/childfree-by-choice-san-francisco/events/317055
+ 349/
+DESCRIPTION:Thursday evening\nhttps://www.meetup.com/childfree-by-choice-s
+ an-francisco/events/317055349/\n\nIf you’re childfree-by-choice and loo
+ king to meet others in our community while having a good time — join us
+  at Emporium SF! ***Note***: childfree-by-choice means you don’t have a
+ nd won’t have children. Enjoy pool\, classic and new arcade games\, and
+  a bar if you drink 🎱 👾🕹️ ✅ RSVP on their site to get free t
+ okens at the door 🚎 Accessible by public transportation 🍕 Food opti
+ ons nearby for dinner (yo
+END:VEVENT
+END:VCALENDAR

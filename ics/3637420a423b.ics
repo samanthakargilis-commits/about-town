@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3637420a423b@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261108T183000
+DTEND;TZID=America/Los_Angeles:20261108T203000
+SUMMARY:👢Free Line Dancing🪩♥️
+LOCATION:Scott St & Page St\, null Scott St San Francisco\, San Francisco
+URL:https://partiful.com/e/uVuAnSYpOZkcH6Ilzf5R
+DESCRIPTION:New in your area\nhttps://partiful.com/e/uVuAnSYpOZkcH6Ilzf5R\
+ n\nPartiful WILL NOT BE USED to communicate due to the app’s glitches. 
+ ONLY DISCORD will be used to communicate. If the Discord link doesn’t w
+ ork\, check the SF Supper Club bio for the working link. IF YOU NEED SOME
+ THING\, ASK IN THE DISCORD! Check your learned helplessness. SF Supper Cl
+ ub Link: https://discord.gg/56xwsTeGAX Come join us for another night of 
+ line dancing with Lower Haight Line Dancing!
+END:VEVENT
+END:VCALENDAR

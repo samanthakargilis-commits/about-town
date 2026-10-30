@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b6d4d4b4b823@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261031T100000
+DTEND;TZID=America/Los_Angeles:20261031T140000
+SUMMARY:Downtown Berkeley Farmers' Market
+LOCATION:Downtown Berkeley Farmers' Market\, Berkeley
+URL:https://ma.to/event/downtown-berkeley-farmers-market-2026-10-31
+DESCRIPTION:Craft · Berkeley\nhttps://ma.to/event/downtown-berkeley-farme
+ rs-market-2026-10-31\n\nDowntown Berkeley Farmers' Market takes place 10a
+ m–2pm on Saturday\, October 31\, with produce\, prepared food and goods
+  from area growers and makers.
+END:VEVENT
+END:VCALENDAR

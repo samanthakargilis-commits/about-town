@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a0b929629096@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261106T220000
+DTEND;TZID=America/Los_Angeles:20261107T013000
+SUMMARY:LIT DIWALI - BOLLYWOOD PARTY | SILVER KEY PARTY @ MYTH - NOV 6
+LOCATION:Myth Lounge\, 152 Post Street\, San Jose\, CA 95113 San Jose\, Sa
+ n Jose
+URL:https://www.eventbrite.com/e/lit-diwali-bollywood-party-silver-key-par
+ ty-myth-nov-6-tickets-2003666701040
+DESCRIPTION:Cultural festivals + Writing · San Jose\nhttps://www.eventbri
+ te.com/e/lit-diwali-bollywood-party-silver-key-party-myth-nov-6-tickets-2
+ 003666701040\n\n✨ Light up the night at LIT-DIWALI Bollywood Night with
+  DJ ACID — dress in gold\, bring the sparkle\, and get ready to party!
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:17885c37aa04@bay-events
+DTSTAMP:20261030T191807Z
+DTSTART;TZID=America/Los_Angeles:20261030T190000
+DTEND;TZID=America/Los_Angeles:20261030T210000
+SUMMARY:Muir Woods Night Tour
+LOCATION:Golden Gate National Rec. Area\, San Francisco
+URL:https://ma.to/event/muir-woods-night-tour-30-oct-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/muir-woods-night-tour-30
+ -oct-2026\n\nMuir Woods rangers are leading night tours on the last Frida
+ y of every month. It’s a two-mile walk through the redwoods to see the 
+ park after hours and learn about the nocturnal ecosystem. Free to join\, 
+ but registration is required.
+END:VEVENT
+END:VCALENDAR

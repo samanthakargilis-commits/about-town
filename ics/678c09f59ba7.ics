@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:678c09f59ba7@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:San Francisco Tea Festival 2026
+LOCATION:Ferry Bldg\, San Francisco
+URL:https://sf.funcheap.com/city-guide/november-street-fairs-festivals/
+DESCRIPTION:Fairs & festivals · Featured on Funcheap\nhttps://sf.funcheap
+ .com/city-guide/november-street-fairs-festivals/\n\nNovember 14-15\, 2026
+  – SF (Ferry Bldg) – $19+ – Sip your way through hundreds of teas f
+ rom 30+ tea vendors at this two-day festival featuring unlimited tastings
+ \, tea expert presentations\, and a souvenir porcelain tasting cup. Use c
+ ode FUNCHEAP for $5 off tickets while the exclusive discount lasts.
+END:VEVENT
+END:VCALENDAR

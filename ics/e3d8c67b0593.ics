@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e3d8c67b0593@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261031T080000
+DTEND;TZID=America/Los_Angeles:20261031T120000
+SUMMARY:Coffee & House 5K
+LOCATION:87 N San Pedro St\, 87 N San Pedro St\, San Jose\, San Jose
+URL:https://ma.to/event/coffee-house-5k-2026-10-31
+DESCRIPTION:Weird & unusual · San Jose\nhttps://ma.to/event/coffee-house-
+ 5k-2026-10-31\n\nPlayback Coffee presents Coffee & House 5K\, a 5K run wi
+ th an after-party. XJEEZY runs the 5K and spins the after-party\; the eve
+ nt also features Brews & Bounce Crew. The music blends amapiano\, afrobea
+ ts\, dancehall and reggae with ’90s and 2000s influences. A costume con
+ test offers $500 in prizes. The event begins at 8:00 AM on Saturday\, Oct
+ ober 31 at 87 N San Pedro St in San Jose. RSVP is available
+END:VEVENT
+END:VCALENDAR

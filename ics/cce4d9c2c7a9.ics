@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cce4d9c2c7a9@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261030T140000
+DTEND;TZID=America/Los_Angeles:20261030T220000
+SUMMARY:“Nightmare on Front Street” 2026: Free Halloween Block Party (
+ Downtown SF)
+LOCATION:240 Front St\, 240 Front Street\, San Francisco\, CA 94111\, San 
+ Francisco
+URL:https://sf.funcheap.com/nightmare-front-street-free-halloween-block-pa
+ rty-downtown-sf/
+DESCRIPTION:Fairs & festivals + Camp & Halloween · A yearly tradition\nht
+ tps://sf.funcheap.com/nightmare-front-street-free-halloween-block-party-d
+ owntown-sf/\n\n🎃 FREE HALLOWEEN BLOCK PARTY: Nightmare on Front Street
+  🎃 ​Join the BIGGEST Halloween party in town in collaboration with t
+ he city of San Francisco! We are taking over the whole entertainment zone
+  on California and Front Street! ​We want to welcome our special guest 
+ DJ Clayton ...
+END:VEVENT
+END:VCALENDAR

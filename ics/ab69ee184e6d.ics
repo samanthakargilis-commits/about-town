@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ab69ee184e6d@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Shadelands FallFest: Free Sports\, Food Trucks\, Family Activities
+  (Walnut Creek)
+LOCATION:Shadelands SportsMall\, 2640 Shadelands Drive\, Walnut Creek\, CA
+ \, Walnut Creek
+URL:https://sf.funcheap.com/shadelands-fallfest-free-sports-food-trucks-fa
+ mily-activities-walnut-creek/
+DESCRIPTION:A yearly tradition · Walnut Creek\nhttps://sf.funcheap.com/sh
+ adelands-fallfest-free-sports-food-trucks-family-activities-walnut-creek/
+ \n\nEnjoy a day with family and friends at Shadelands FallFest\, Sunday\,
+  November 15\, 11am–2pm\, hosted by Shadelands Walnut Creek and held on
+  the grounds of the Shadelands SportsMall\, 2640 Shadelands Drive\, Walnu
+ t Creek. Free and family-friendly\, the popular\, all-community Shadeland
+ s FallFest features non-stop DJ music\, food ...
+END:VEVENT
+END:VCALENDAR

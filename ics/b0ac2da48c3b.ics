@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b0ac2da48c3b@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261030T100000
+DTEND;TZID=America/Los_Angeles:20261030T220000
+SUMMARY:The Apothecary Diaries x Round1
+LOCATION:Round1 Bowling & Arcade\, Palo Alto
+URL:https://ma.to/event/the-apothecary-diaries-x-round1-2026-10-30
+DESCRIPTION:Art · Palo Alto\nhttps://ma.to/event/the-apothecary-diaries-x
+ -round1-2026-10-30\n\nThe Apothecary Diaries x Round1 collaboration offic
+ ially begins on October 30 at 10 AM and runs for a limited time. A new Cl
+ ub Card featuring Maomao can be added to a collection for $7\, covering a
+  $2 activation fee and a $5 annual fee. Product images are for illustrati
+ on purposes only.
+END:VEVENT
+END:VCALENDAR

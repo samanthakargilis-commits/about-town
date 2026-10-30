@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:28ef5a02d798@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261107T100000
+DTEND;TZID=America/Los_Angeles:20261107T120000
+SUMMARY:Oakland’s Free “Daffodil Days”: Get Up to 200 Bulbs for Spri
+ ng Blooms (2026)
+LOCATION:Redwood Heights Recreation Center\, 3883 Aliso Ave\, Oakland\, CA
+  94619\, Oakland
+URL:https://sf.funcheap.com/oaklands-free-daffodil-days-200-bulbs-spring-b
+ looms-2026/
+DESCRIPTION:Oakland\nhttps://sf.funcheap.com/oaklands-free-daffodil-days-2
+ 00-bulbs-spring-blooms-2026/\n\nOakland residents and groups can apply to
+  receive up to 200 free bulbs for spring planting. Bulbs will be availabl
+ e for pickup on November 7\, with priority given to projects on public pr
+ operty or publicly facing private property. Applications are due November
+  6\, and distribution ...
+END:VEVENT
+END:VCALENDAR

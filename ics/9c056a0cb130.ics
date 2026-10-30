@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9c056a0cb130@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261030T190000
+DTEND;TZID=America/Los_Angeles:20261030T230000
+SUMMARY:Frightmare Home Haunt
+LOCATION:Frightmare Home Haunt\, 697 Sonoma Ave\, Livermore\, Livermore
+URL:https://ma.to/event/frightmare-home-haunt-31-oct-2026
+DESCRIPTION:Camp & Halloween · Livermore\nhttps://ma.to/event/frightmare-
+ home-haunt-31-oct-2026\n\nFrightmare Home Haunt is a free residential wal
+ kthrough at 697 Sonoma Ave in Livermore. Features a hidden lab and Reaper
+ s theme\, plus a new spider hunt around Sonoma Ave and Court. Schedule: O
+ ct 23-24 (7-10pm)\, Oct 25 Blackout Night (7-9pm)\, Oct 27-29 Lights-On T
+ ours (4-6pm)\, Oct 30 (7-11pm)\, and Halloween Night: Lights-On (1-3pm) a
+ nd Scares (7-11pm). Donations welcome. Park respectfully and walk 
+END:VEVENT
+END:VCALENDAR

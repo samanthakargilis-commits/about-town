@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:905afa729172@bay-events
+DTSTAMP:20261030T191805Z
+DTSTART;TZID=America/Los_Angeles:20261104T173000
+DTEND;TZID=America/Los_Angeles:20261104T193000
+SUMMARY:SF’s Holiday Ice Skating Rink: 2026 Opening Day w/ Free Ice Skat
+ ing
+LOCATION:Union Square\, San Francisco
+URL:https://unionsquareicerink.com/
+DESCRIPTION:Spirituality · A yearly tradition\nhttps://unionsquareicerink
+ .com/\n\nNovember 4\, 2026 – SF (Union Square) – $22 General Admissio
+ n (includes skate rental) – One of San Francisco’s favorite holiday t
+ raditions returns for the 2026-27 season\, with outdoor ice skating in Un
+ ion Square through January 18\, 2027 . Opening Day kicks off with a festi
+ ve ceremony featuring on-ice performances and special guests. The first 1
+ 00 guests can skate for free during the 5:30pm and 7pm 
+END:VEVENT
+END:VCALENDAR

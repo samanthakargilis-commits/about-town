@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5af0ab60222f@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261030T220000
+DTEND;TZID=America/Los_Angeles:20261031T000000
+SUMMARY:Halloween Block Parties
+LOCATION:
+URL:https://secretsanfrancisco.com/sf-halloween-parties-nightlife-2026/
+DESCRIPTION:Camp & Halloween + Gay / queer\nhttps://secretsanfrancisco.com
+ /sf-halloween-parties-nightlife-2026/\n\n10/30: Nightmare on Front Stree 
+ t – The Front Street entertainment zone will host a free block party wi
+ th live music on Friday\, October 30\, from 4 to 10 p.m. You can expect d
+ rinks\, costumes\, food\, and more. 10/30: Castro Halloween – The Castr
+ o Night Market is returning for a free block party this Friday\, October 
+ 30\, from 5 to 10 p.m. The community celebration will take over 4 blocks 
+ and feature th
+END:VEVENT
+END:VCALENDAR

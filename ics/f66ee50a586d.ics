@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f66ee50a586d@bay-events
+DTSTAMP:20261030T191804Z
+DTSTART;TZID=America/Los_Angeles:20261030T110000
+DTEND;TZID=America/Los_Angeles:20261030T190000
+SUMMARY:Halloween Craft Week
+LOCATION:Tutugether\, Palo Alto
+URL:https://ma.to/event/halloween-craft-week-2026-10-30
+DESCRIPTION:Craft + Camp & Halloween · Palo Alto\nhttps://ma.to/event/hal
+ loween-craft-week-2026-10-30\n\nHalloween Craft Week brings spooky-themed
+  crafting to Tutugether\, with 25% off Halloween design rugs and 15% off 
+ pouring arts and decoden arts from October 27 through October 31. Guests 
+ can tuft a Halloween design rug\, pour and decorate their own bear\, or m
+ ake a cute-and-creepy piece\, choosing from the studio's Halloween design
+ s. Reservations can be made online.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:38531929ac9f@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261101T110000
+DTEND;TZID=America/Los_Angeles:20261101T160000
+SUMMARY:SF’s “Head West” Marketplace at the Ferry Building
+LOCATION:San Francisco Ferry Building\, 1 Ferry Bldg.\, San Francisco\, CA
+ \, San Francisco
+URL:https://sf.funcheap.com/sfs-head-west-marketplace-at-the-ferry-buildin
+ g-every-1st-sunday-8/
+DESCRIPTION:Craft\nhttps://sf.funcheap.com/sfs-head-west-marketplace-at-th
+ e-ferry-building-every-1st-sunday-8/\n\nSF’s “Head West” Marketplac
+ e at the Ferry Building (Every 1st Sunday) Kait Nicole/HW Photographer Co
+ me for the Marketplace\, stay for the experience! HEAD WEST is a marketpl
+ ace for emerging + established local brands and small businesses. From ha
+ nd-made ceramics to locally sourced vintage\, there are always new catego
+ ries of goods available to explore. Marketplaces becomes a destination to
+  not only 
+END:VEVENT
+END:VCALENDAR

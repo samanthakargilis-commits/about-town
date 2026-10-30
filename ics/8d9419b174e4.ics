@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8d9419b174e4@bay-events
+DTSTAMP:20261030T191806Z
+DTSTART;TZID=America/Los_Angeles:20261112T193000
+DTEND;TZID=America/Los_Angeles:20261112T233000
+SUMMARY:Maus Haus ~ Battlehooch ~ Otoliths
+LOCATION:Bottom Of The Hill\, 1233 17th Street\, San Francisco\, Californi
+ a 94107\, United States San Francisco\, San Francisco
+URL:https://dice.fm/event/6a98b95b2e0be90001bdaae2
+DESCRIPTION:Thursday evening\nhttps://dice.fm/event/6a98b95b2e0be90001bdaa
+ e2\n\nCatch co-headliners Maus Haus and Battlehooch stirring up a fever d
+ ream just for your psychedelic pop pleasure. Sense gravity and linear mov
+ ement with Oakland's Otoliths starting the show! The Bottom of the Hill d
+ oes not use QR codes for entry. You must present a valid photo ID that ma
+ tches the name on your DICE ticket to enter. All ticket transfers must be
+  completed through the DICE app before th
+END:VEVENT
+END:VCALENDAR
