@@ -455,6 +455,15 @@ function icsFor(evs) {
   return lines.join('\r\n');
 }
 
+// + puts the event straight into your calendar: Apple Calendar's Add sheet on an iPhone,
+// iPad or Mac (the event's .ics), Google Calendar everywhere else
+const APPLE = /iPhone|iPad|iPod|Macintosh/.test(navigator.userAgent);
+function addToCalendar(ev) {
+  if (S.status[ev.id] !== 'added') decide(ev, 'added');   // still counts as a yes for learning
+  if (APPLE && ev.ics) location.href = ev.ics;
+  else window.open(googleCal(ev), '_blank', 'noopener');
+}
+
 async function addAllToCalendar() {
   const evs = picks().filter((e) => S.status[e.id] === 'added' && new Date(e.start) >= today0());
   if (!evs.length) return toast('No picks to add yet');
@@ -584,7 +593,7 @@ function evRow(ev, { showDay = false } = {}) {
       ${sunEscape(ev) ? `<div class="sun">${esc(sunLine(ev))}</div>` : ''}
       ${labels.length ? `<div class="tags">${labels.join('')}</div>` : ''}
     </div>
-    <button class="plus ${st === 'added' ? 'on' : st === 'maybe' ? 'maybe' : ''}" data-act="added" aria-label="${st === 'added' ? 'In your plan' : 'Add to plan'}">${st === 'added' ? '✓' : st === 'maybe' ? '?' : '+'}</button>
+    <button class="plus ${st === 'added' ? 'on' : st === 'maybe' ? 'maybe' : ''}" data-act="cal" aria-label="${st === 'added' ? 'Added to your calendar' : 'Add to calendar'}">${st === 'added' ? '✓' : st === 'maybe' ? '?' : '+'}</button>
   </article>`;
 }
 
@@ -599,11 +608,10 @@ function onEventClick(e) {
   if (btn) {
     const act = btn.dataset.act;
     if (act === 'share') return share(ev);
+    if (act === 'cal') { addToCalendar(ev); if (btn.closest('.sheet')) closeSheet(); render(); document.querySelector(`.ev[data-id="${CSS.escape(ev.id)}"] .plus`)?.classList.add('pop'); return; }
     if (act === 'block') { const f = followInfo(ev); if (f) { S.blockedPeople.push(f.name); save(); buildFollowIndex(); toast(`Okay, ${f.name} isn't who you follow`); } closeSheet(); return render(); }
     const prev = decide(ev, act);
     const now = S.status[ev.id];
-    if (now === 'added' && fromCalendar && ev.ics) { render(); location.href = ev.ics; return; }   // came from Apple Calendar: straight to its Add sheet
-    if (now === 'added') toast('In your plan · open it for your calendar');
     if (now === 'not') toast("Hidden. We'll show fewer like this", () => { decide(ev, prev || 'not'); render(); });
     if (btn.closest('.sheet')) closeSheet();
     render();
@@ -636,7 +644,6 @@ function openSheet(ev) {
     ev.parent_event ? `<a href="${esc(ev.parent_event.url)}" target="_blank" rel="noopener">Part of ${esc(ev.parent_event.title)} ↗</a>` : '',
     ...(ev.also_on || []).map((a) => `<a href="${esc(a.url)}" target="_blank" rel="noopener">Also on ${esc(sourceLabel(a.source))} ↗</a>`),
     ev.lat != null ? `<a href="https://maps.apple.com/?daddr=${ev.lat},${ev.lng}&q=${encodeURIComponent(ev.venue || ev.title)}" target="_blank" rel="noopener">Directions ↗</a>` : '',
-    `<a href="${esc(googleCal(ev))}" target="_blank" rel="noopener">Add to Google Calendar ↗</a>`,
     '<a href="#" data-copy>Copy link</a>',
   ].join('');
   const star = starLine(ev);
@@ -649,10 +656,10 @@ function openSheet(ev) {
       ${star ? `<div class="star">${star}<a href="#" data-act="block">Not this person</a></div>` : ''}
       ${sunEscape(ev) ? `<div class="sun">${esc(sunLine(ev))}</div>` : ''}
       <div class="acts">
-        <button class="btn ${st === 'added' ? 'on' : 'cherry'}" data-act="added">${st === 'added' ? '✓ In your plan' : '＋ Add to plan'}</button>
+        <button class="btn ${st === 'added' ? 'on' : 'cherry'}" data-act="cal">${st === 'added' ? '✓ Add again' : '＋ Add to calendar'}</button>
         <button class="btn maybe ${st === 'maybe' ? 'on' : ''}" data-act="maybe">Maybe</button>
         <button class="btn" data-act="not">Not for me</button>
-        <a class="btn" href="${esc(ev.ics)}" data-cal>📅 Calendar</a>
+        ${APPLE ? `<a class="btn" href="${esc(googleCal(ev))}" target="_blank" rel="noopener" data-cal>Google Calendar</a>` : `<a class="btn" href="${esc(ev.ics)}" data-cal>Apple / .ics</a>`}
         <button class="btn" data-act="share">Share</button>
       </div>
       ${ev.people && ev.people.length ? `<div class="small">With ${esc(ev.people.slice(0, 6).join(', '))}</div>` : ''}
@@ -999,7 +1006,7 @@ function fling(status) {
   const out = { added: 'translate(140%, -10%) rotate(20deg)', not: 'translate(-140%, -10%) rotate(-20deg)', maybe: 'translate(0, -140%)' }[status];
   top.style.transform = out; top.style.opacity = 0;
   decide(ev, status);
-  if (status === 'added') toast('In your plan');
+  if (status === 'added') toast('Saved to Picks · tap + to add it to your calendar');
   setTimeout(() => {
     if (!newQueue().length) { S.lastReview = Date.now(); save(); }
     render();
@@ -1238,7 +1245,7 @@ function bind() {
     const t = e.target.closest('[data-tab]');
     if (!t) return;
     if (tab === 'new' && t.dataset.tab !== 'new') newQueue.lastShown = false;
-    tab = t.dataset.tab; fromCalendar = false; render(); window.scrollTo({ top: 0 });
+    tab = t.dataset.tab; render(); window.scrollTo({ top: 0 });
   };
   $('#arrows').onclick = (e) => {
     const b = e.target.closest('[data-month]');
@@ -1340,7 +1347,6 @@ async function getJSON(url) {
 // links from the Apple Calendar feeds: …/#d=<day> opens that day, where + also opens the
 // event's .ics (iPhone's "Add to Calendar"); …/#e=<id> opens one event; …/#add=<id> is from
 // older feeds: it counts a yes and opens the .ics
-let fromCalendar = false;
 function openFromLink() {
   const m = location.hash.match(/^#(e|add|d)=(.+)$/);
   if (!m) return;
@@ -1349,7 +1355,7 @@ function openFromLink() {
     const k = m[2];
     const now = parts(new Date());
     monthOffset = Math.max(0, Math.min(1, (Number(k.slice(0, 4)) - Number(now.year)) * 12 + Number(k.slice(5, 7)) - Number(now.month)));
-    selDay = k; tab = 'cal'; fromCalendar = true;
+    selDay = k; tab = 'cal';
     render();
     const head = document.querySelector('.dayhead');
     if (head) head.scrollIntoView({ block: 'start' });

@@ -11,8 +11,10 @@ Open `https://<your-github-name>.github.io/<repo>/` in Safari on your iPhone,
 then Share → Add to Home Screen.
 
 - **Plan**: this month and next, week by week. "You'll love this" cards lead each
-  week. Tap ＋ Add / Maybe / Not for me; 📅 opens the calendar sheet; ↗︎ opens the
-  share sheet (Copy link is in the event's details).
+  week. Tap ＋ to put the event straight into your calendar: Apple Calendar's Add
+  sheet on an iPhone, iPad or Mac, Google Calendar anywhere else. The event's
+  details offer the other calendar too, plus Maybe / Not for me and Share (Copy
+  link is there as well).
 - **New**: swipe cards for events first seen since your last review.
 - **Picks**: everything you added, plus "Add all to my calendar".
 - **You**: interests (love / like / not into), people you follow (type names or
