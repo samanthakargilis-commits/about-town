@@ -13,10 +13,11 @@ then Share → Add to Home Screen.
 - **Plan**: this month and next, week by week. "You'll love this" cards lead each
   week. Tap ＋ to put the event straight into your calendar: Apple Calendar's Add
   sheet on an iPhone, iPad or Mac, Google Calendar anywhere else. The event's
-  details offer the other calendar too, plus Maybe / Not for me and Share (Copy
-  link is there as well).
+  details offer the other calendar too, plus Not for me and Share (Copy link is
+  there as well). Tap ☆ for "Interested" when you're not ready to commit.
 - **New**: swipe cards for events first seen since your last review.
-- **Picks**: everything you added, plus "Add all to my calendar".
+- **Picks**: ☆ Interested first, the list to go through later (＋ moves one to
+  your calendar, ★ lets it go), then what's already on your calendar.
 - **You**: interests (love / like / not into), people you follow (type names or
   import your Instagram export), Goodreads CSV import, what it has learned,
   backup/restore, and which sources worked on the last run.

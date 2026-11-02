@@ -618,7 +618,10 @@ function evRow(ev, { showDay = false } = {}) {
       ${sunEscape(ev) ? `<div class="sun">${esc(sunLine(ev))}</div>` : ''}
       ${labels.length ? `<div class="tags">${labels.join('')}</div>` : ''}
     </div>
-    <button class="plus ${st === 'added' ? 'on' : st === 'maybe' ? 'maybe' : ''}" data-act="cal" aria-label="${st === 'added' ? 'Added to your calendar' : 'Add to calendar'}">${st === 'added' ? '✓' : st === 'maybe' ? '?' : '+'}</button>
+    <div class="acts-col">
+      <button class="plus ${st === 'added' ? 'on' : ''}" data-act="cal" aria-label="${st === 'added' ? 'Added to your calendar' : 'Add to calendar'}">${st === 'added' ? '✓' : '+'}</button>
+      ${st === 'added' ? '' : `<button class="starb ${st === 'maybe' ? 'on' : ''}" data-act="maybe" aria-label="${st === 'maybe' ? 'Interested (tap to unstar)' : 'Interested'}">${st === 'maybe' ? '★' : '☆'}</button>`}
+    </div>
   </article>`;
 }
 
@@ -637,11 +640,14 @@ function onEventClick(e) {
     if (act === 'block') { const f = followInfo(ev); if (f) { S.blockedPeople.push(f.name); save(); buildFollowIndex(); toast(`Okay, ${f.name} isn't who you follow`); } closeSheet(); return render(); }
     const prev = decide(ev, act);
     const now = S.status[ev.id];
+    if (now === 'maybe') toast('Starred · it waits under Picks › Interested');
     if (now === 'not') toast("Hidden. We'll show fewer like this", () => { decide(ev, prev || 'not'); render(); });
     if (btn.closest('.sheet')) closeSheet();
     render();
     const el = document.querySelector(`.ev[data-id="${CSS.escape(ev.id)}"] .plus`);
     if (el && now === 'added') el.classList.add('pop');
+    const sb = document.querySelector(`.ev[data-id="${CSS.escape(ev.id)}"] .starb`);
+    if (sb && now === 'maybe') sb.classList.add('pop');
     return;
   }
   if (e.target.closest('[data-cal]')) {
@@ -682,7 +688,7 @@ function openSheet(ev) {
       ${sunEscape(ev) ? `<div class="sun">${esc(sunLine(ev))}</div>` : ''}
       <div class="acts">
         <button class="btn ${st === 'added' ? 'on' : 'cherry'}" data-act="cal">${st === 'added' ? '✓ Add again' : '＋ Add to calendar'}</button>
-        <button class="btn maybe ${st === 'maybe' ? 'on' : ''}" data-act="maybe">Maybe</button>
+        <button class="btn maybe ${st === 'maybe' ? 'on' : ''}" data-act="maybe">${st === 'maybe' ? '★ Interested' : '☆ Interested'}</button>
         <button class="btn" data-act="not">Not for me</button>
         ${APPLE ? `<a class="btn" href="${esc(googleCal(ev))}" target="_blank" rel="noopener" data-cal>Google Calendar</a>` : `<a class="btn" href="${esc(ev.ics)}" data-cal>Apple / .ics</a>`}
         <button class="btn" data-act="share">Share</button>
@@ -935,7 +941,7 @@ function renderNew(v) {
     <div class="deck" id="deck">${q.slice(0, 2).reverse().map((ev, i, arr) => swipeHTML(ev, i < arr.length - 1)).join('')}</div>
     <div class="deck-btns">
       <button class="round no" data-swipe="not" aria-label="Not for me">✕</button>
-      <button class="round sm" data-swipe="maybe" aria-label="Maybe">?</button>
+      <button class="round sm" data-swipe="maybe" aria-label="Interested">☆</button>
       <button class="round yes" data-swipe="added" aria-label="Add">♥</button>
     </div>
     <p class="small" style="text-align:center;margin-top:14px"><a href="#" data-skipall>Mark all as seen</a></p>`;
@@ -1038,6 +1044,7 @@ function fling(status) {
   top.style.transform = out; top.style.opacity = 0;
   decide(ev, status);
   if (status === 'added') toast('Saved to Picks · tap + to add it to your calendar');
+  if (status === 'maybe') toast('Starred · it waits under Picks › Interested');
   setTimeout(() => {
     if (!newQueue().length) { S.lastReview = Date.now(); save(); }
     render();
@@ -1054,14 +1061,15 @@ function renderPicks(v) {
   const list = picks().filter((ev) => displayDate(ev) >= t || (ev.end && new Date(ev.end) >= t));
   const added = list.filter((ev) => S.status[ev.id] === 'added');
   const maybe = list.filter((ev) => S.status[ev.id] === 'maybe');
-  $('#subline').innerHTML = added.length ? `<b>${added.length} going</b>${maybe.length ? ` · ${maybe.length} maybe` : ''}` : '';
+  $('#subline').innerHTML = [maybe.length ? `<b>${maybe.length} interested</b>` : '', added.length ? `${added.length} on your calendar` : ''].filter(Boolean).join(' · ');
   if (!list.length) {
-    v.innerHTML = `<div class="empty"><div class="big">🧁</div><h2>No picks yet</h2><p>Tap + on anything that sounds fun.</p><button class="btn primary" data-goto="cal">Browse my month</button></div>`;
+    v.innerHTML = `<div class="empty"><div class="big">🧁</div><h2>No picks yet</h2><p>Tap ☆ on anything that sounds interesting, or + to put it straight in your calendar.</p><button class="btn primary" data-goto="cal">Browse my month</button></div>`;
     return;
   }
-  v.innerHTML = `${added.length ? `<button class="btn cherry block" data-addall>📅 Add all ${added.length} to my calendar</button>` : ''}
-    ${added.length ? `<div class="dayhead"><h2>Going</h2><small>${added.length}</small></div>${added.map((ev) => evRow(ev, { showDay: true })).join('')}` : ''}
-    ${maybe.length ? `<div class="dayhead"><h2>Maybe</h2><small>${maybe.length}</small></div>${maybe.map((ev) => evRow(ev, { showDay: true })).join('')}` : ''}`;
+  // starred ones first: that's the list to go through. + moves one to your calendar, ☆ again lets it go
+  v.innerHTML = `${maybe.length ? `<div class="dayhead"><h2>☆ Interested</h2><small>${maybe.length}</small></div><p class="hint picks-hint">Tap + to put one in your calendar, or ★ to let it go.</p>${maybe.map((ev) => evRow(ev, { showDay: true })).join('')}` : ''}
+    ${added.length ? `<div class="dayhead"><h2>On my calendar</h2><small>${added.length}</small></div>${added.map((ev) => evRow(ev, { showDay: true })).join('')}` : ''}
+    ${added.length ? `<button class="btn block" data-addall>📅 Add all ${added.length} to my calendar again</button>` : ''}`;
 }
 
 const REPO = 'samanthakargilis-commits/about-town';
@@ -1114,14 +1122,14 @@ function renderMe(v) {
     <div class="chips">${ints.map(([k, s]) => `<button class="pchip lv${lv(k)}" data-int="${k}">${lv(k) === 2 ? '♥ ' : ''}${esc(s.label)}</button>`).join('')}</div>
     <p class="small" style="margin:12px 0 0">Favorite time: ${esc((profile?.favorite_times || []).map((t) => t.label).join(', ') || 'none')}</p>
   </div>
-  ${learned.length ? `<div class="section"><h2>What it's learned</h2><p class="sub">From your Add, Maybe and Not for me taps.</p>
+  ${learned.length ? `<div class="section"><h2>What it's learned</h2><p class="sub">From your Add, Interested and Not for me taps.</p>
     <div class="chips">${learned.slice(0, 14).map(([t, w]) => `<span class="pchip">${w > 0 ? '▲' : '▼'} ${esc(t.startsWith('t:') ? t.slice(2).replace('-', ' ') : profile?.interests?.[t]?.label || t)}</span>`).join('')}</div>
     ${S.hiddenTags.length ? `<p class="small" style="margin-top:10px">Hidden: ${S.hiddenTags.map((t) => `<a href="#" data-unhide="${esc(t)}">${esc(profile?.interests?.[t]?.label || t)} ✕</a>`).join(', ')}</p>` : ''}
   </div>` : ''}
   <div class="section"><h2>In Apple Calendar</h2>
     <p class="sub">Subscribe and About Town adds its one best idea for each day to Apple Calendar, at its own time. Tap an idea, then its link, to add it to your own calendar. Tick it on or off in Calendars. It never blocks time.</p>
     <div class="row-btns"><a class="btn primary" href="${esc(webcal('calendar.ics'))}">One a day</a><a class="btn" href="${esc(webcal('calendar-more.ics'))}">Every idea</a></div>
-    <p class="sub" style="margin-top:14px">The calendars learn from your Add, Maybe and Not for me taps once you send them. ${S.tasteSent ? `Last sent ${esc(fmt(new Date(S.tasteSent), { month: 'short', day: 'numeric' }))}.` : 'Not sent yet.'}</p>
+    <p class="sub" style="margin-top:14px">The calendars learn from your Add, Interested and Not for me taps once you send them. ${S.tasteSent ? `Last sent ${esc(fmt(new Date(S.tasteSent), { month: 'short', day: 'numeric' }))}.` : 'Not sent yet.'}</p>
     <div class="row-btns"><button class="btn" data-sendtaste>Update my calendars</button></div>
   </div>
   <div class="section"><h2>Backup</h2><p class="sub">Your choices live on this phone. Save a backup now and then.</p>
