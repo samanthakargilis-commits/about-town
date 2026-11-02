@@ -868,6 +868,15 @@
     "drink_minimum_dollars": 10,
     "paid_art_penalty": 2.0
   },
+  "drink_minimum_venues": {
+    "_note": "venues with a drink minimum you rarely want to pay for. Their shows count the drinks as part of the price (even 'free' ones) and drop by an extra penalty, unless the show names someone you follow or squarely fits your interests (title matches worth strong_match interest points or more, e.g. Queer + Comedy, 4.6; a bare 'Secret Guest List' comedy night is Weird + Comedy, 4.4, and doesn't count). The why says so.",
+    "venues": {
+      "cobb's comedy club": 2,
+      "915 columbus": 2
+    },
+    "penalty": 3.0,
+    "strong_match": 4.5
+  },
   "tag_boosts": {
     "_note": "a source's own marks: Funcheap's annual events are the city's big yearly traditions, and its home-page city guides are what it features most",
     "annual": {
