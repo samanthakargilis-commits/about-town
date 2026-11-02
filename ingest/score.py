@@ -99,6 +99,7 @@ class Scorer:
         hosted = profile.get("never_paid_hosted") or {}
         self.hosted_sources = set(hosted.get("sources", []))
         self.hosted_kw = [norm(x) for x in hosted.get("keywords", [])]
+        self.dm_venues = (profile.get("drink_minimum_venues") or {})
 
     def followed_in(self, text_norm):
         hits = []
@@ -114,16 +115,23 @@ class Scorer:
             return False
         return any(kw_regex(n).search(title_n) for n in self.hosted_kw)
 
-    def price_points(self, ev: dict, full: str, followed: bool, points: float) -> float:
+    def venue_drink_minimum(self, ev: dict) -> int:
+        """Drinks a known drink-minimum venue asks for (Cobb's: 2), even when
+        the listing doesn't say so."""
+        place = norm(" ".join([ev.get("venue") or "", ev.get("address") or "", ev.get("title") or ""]))
+        return max([n for v, n in (self.dm_venues.get("venues") or {}).items() if kw_regex(v).search(place)], default=0)
+
+    def price_points(self, ev: dict, full: str, followed: bool, points: float, minimum: int = 0) -> float:
         """Free is a plus; paying has to be worth it. A ticket costs points by
         the dollar, less for someone you follow or a strong match, and a paid
         drinks-and-mingling party costs the most."""
         p = self.profile.get("price") or {}
         price = (ev.get("price") or "").lower()
         dollars = [float(x) for x in re.findall(r"\$\s?(\d+(?:\.\d\d)?)", price)]
-        minimum = drink_minimum(ev)
-        if minimum and not dollars:
-            dollars = [minimum * p.get("drink_minimum_dollars", 10)]
+        minimum = max(minimum, drink_minimum(ev))
+        drinks = minimum * p.get("drink_minimum_dollars", 10)
+        if minimum:
+            dollars = [d + drinks for d in dollars] or [drinks]      # the drinks come on top of a ticket
         elif price == "free":
             return p.get("free_boost", 0.3)
         if not dollars or not p:
@@ -220,6 +228,7 @@ class Scorer:
             return None
 
         points, reasons, hits = 0.0, [], []
+        title_points = 0.0      # what the show itself is about, not a long listing's other dates
         ft = self.profile.get("film_tastes")
         film = bool(ft and ft["tag"] in (ev.get("tags") or []))
         # a cinema isn't theatre, and a novel's film isn't a reading
@@ -233,6 +242,7 @@ class Scorer:
             if in_title or in_body:
                 factor = 1.0 if in_title else 0.6
                 points += spec["weight"] * factor
+                title_points += spec["weight"] if in_title else 0.0
                 hits.append((spec["weight"] * factor, key))
         # strongest match first, so the why leads with what the title is about
         interests = [k for _, k in sorted(hits, key=lambda h: -h[0])]
@@ -292,7 +302,13 @@ class Scorer:
         if kids:
             tags.append("kids")
             points -= 1.5
-        points += self.price_points(ev, full, bool(badge), points)
+        venue_min = self.venue_drink_minimum(ev)
+        if venue_min:
+            # Cobb's: only for someone you follow or a show squarely in your interests
+            reasons.insert(0, f"{venue_min}-drink minimum")
+            if not badge and title_points < self.dm_venues.get("strong_match", 4.5):
+                points -= self.dm_venues.get("penalty", 3.0)
+        points += self.price_points(ev, full, bool(badge), points, venue_min)
         points -= self.paid_concert_penalty(ev, interests, bool(badge))
         if ev.get("sponsored"):
             points -= 0.5

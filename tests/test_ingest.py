@@ -298,6 +298,21 @@ class BigEvents(unittest.TestCase):
                                      description="There is a two-drink minimum to help support our local bar scene."))
         self.assertGreater(plain["score"] - minimum["score"], 2)
 
+    def test_cobbs_drink_minimum_ranks_low(self):
+        cobbs = dict(venue="Cobb's Comedy Club", address="915 Columbus Ave, San Francisco, CA 94133")
+        elsewhere = Scoring.s.score(ev("Kyle Kinane", start="2026-12-04T20:00-08:00", venue="The Lost Church", tags=["comedy"]))
+        plain = Scoring.s.score(ev("Kyle Kinane", start="2026-12-04T20:00-08:00", tags=["comedy"], **cobbs))
+        self.assertGreater(elsewhere["score"] - plain["score"], 4)
+        self.assertIn("2-drink minimum", plain["why"])
+        free = Scoring.s.score(ev("Secret Guest List: Cobb’s Free Comedy Nights", price="free", tags=["comedy"], **cobbs))
+        self.assertLess(free["score"], 1)                           # "free" with two drinks isn't free
+        fan = Scoring.s.score(ev("Gus Heagerty", start="2026-12-04T20:00-08:00", **cobbs))
+        self.assertGreater(fan["score"], 4)                         # someone you follow is still worth it
+        self.assertTrue(fan["why"].startswith("⭐ Gus Heagerty"))
+        queer = Scoring.s.score(ev("Queer Comedy Night: Drag & Stand-Up", start="2026-12-04T20:00-08:00", **cobbs))
+        straight = Scoring.s.score(ev("Stand-Up Night", start="2026-12-04T20:00-08:00", **cobbs))
+        self.assertGreater(queer["score"] - straight["score"], 5)    # a strong fit skips the extra penalty
+
     def test_guide_run_folds_into_official_days(self):
         def item(src, start, end, tags):
             return dict(ev("Fleet Week Air Show" if src == "fleetweek" else "Fleet Week: Air Show", start=start, end=end, tags=tags),
