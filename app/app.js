@@ -193,7 +193,8 @@ function toast(msg, undo) {
 // ------------------------------------------------------------------ where
 
 const homePos = () => S.home || profile?.home || { label: 'San Francisco', lat: 37.7749, lng: -122.4194 };
-const origin = () => (S.where === 'near' && nearPos ? nearPos : homePos());
+// a walking-distance filter measures from where you are, so its minutes match what it keeps
+const origin = () => ((S.where === 'near' || walk) && nearPos ? nearPos : homePos());
 
 function miles(a, b) {
   const R = 3958.8, rad = Math.PI / 180;
@@ -213,7 +214,7 @@ const CLOSE_MILES = 1, MEDIUM_MILES = 5;
 const distBand = (mi) => (mi <= CLOSE_MILES ? 'close' : mi <= MEDIUM_MILES ? 'medium' : 'far');
 // only the town is known (a Petaluma beer garden Nominatim can't find): the miles are to the middle of town
 const about = (ev) => (ev.near_town ? '~' : '');
-const fromWhere = () => (S.where === 'near' && nearPos ? 'from you' : 'from home');
+const fromWhere = () => ((S.where === 'near' || walk) && nearPos ? 'from you' : 'from home');
 const TRIP_MILES = 90;   // Friday evening and weekend day trips (Sonoma, the East Bay), and shows by people you follow
 const slotMemo = new Map();
 function weekendSlot(ev) {
@@ -564,6 +565,30 @@ function inSlot(ev) {
   const len = endsSameDay(ev) ? (new Date(ev.end) - s) / 3600e3 : 2;
   return h < b && h + len > a;
 }
+// Walking distance, under the time chips: only places within a ½ mile or 1 mile walk of you.
+// Uses this phone's location; if that's off, it walks from home. Events with no exact spot
+// (no map pin, or only the middle of their town) can't be walked to, so they drop out.
+let walk = 0;   // 0 = any distance, else miles
+let walkAsked = false;
+const WALKS = [[0, 'Any distance'], [0.5, 'Walk ½ mi'], [1, 'Walk 1 mi']];
+const walkLabel = (w) => (w === 0.5 ? 'a ½ mile' : `a ${w} mile`);
+function inWalk(ev) {
+  if (!walk) return true;
+  if (ev.lat == null || ev.lng == null || ev.near_town) return false;
+  return distOf(ev) <= walk;
+}
+function walkFrom() {
+  if (nearPos || walkAsked) return;
+  walkAsked = true;
+  if (!navigator.geolocation) { toast('No location here, so walks are from home'); return; }
+  navigator.geolocation.getCurrentPosition(
+    (p) => { nearPos = { label: 'you', lat: p.coords.latitude, lng: p.coords.longitude }; render(); },
+    () => toast('Location is off, so walks are from home'),
+    { enableHighAccuracy: true, timeout: 10000, maximumAge: 300000 },
+  );
+}
+const walkChips = () => `<div class="slots walks">${WALKS
+  .map(([k, label]) => `<button class="slot ${walk === k ? 'on' : ''}" data-walk="${k}">${label}</button>`).join('')}</div>`;
 const slotChips = () => `<div class="slots">${[['any', 'Any time'], ['morning', 'Morning'], ['afternoon', 'Afternoon'], ['evening', 'Evening']]
   .map(([k, label]) => `<button class="slot ${slot === k ? 'on' : ''}" data-slot="${k}">${label}</button>`).join('')}</div>`;
 
@@ -841,13 +866,19 @@ function renderCal(v) {
   }
   $('#subline').innerHTML = planned ? `<b>${planned} plan${planned > 1 ? 's' : ''}</b> on your calendar this month` : 'Tap a day to see what’s good';
   const all = days.get(selDay) || [];
-  const list = all.filter(inSlot);
+  const list = all.filter((ev) => inSlot(ev) && inWalk(ev));
   const sd = atNoon(selDay);
   v.innerHTML = `<div class="cal"><div class="dow">${['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((x) => `<span>${x}</span>`).join('')}</div><div class="grid">${grid}</div></div>
     <div class="daypane"><div class="dayhead"><h2>${esc(fmt(sd, { weekday: 'long' }))}, <em>${esc(fmt(sd, { month: 'short', day: 'numeric' }))}</em></h2><small>${list.length ? `${list.length} option${list.length > 1 ? 's' : ''}` : ''}</small></div>
     ${nudgeHTML() || tipHTML(list.length)}
-    ${all.length ? slotChips() : ''}
-    ${list.length ? dayList(list, selDay) : all.length ? `<p class="hint">Nothing in the ${slot} that day. <a href="#" data-slot="any">Show any time</a></p>` : `<p class="hint">Nothing near ${S.where === 'near' ? 'you' : 'home'} yet. Lots of events are posted 1 to 2 weeks out, so check back.</p>`}</div>`;
+    ${all.length ? slotChips() + walkChips() : ''}
+    ${list.length ? dayList(list, selDay) : all.length ? emptyFilterHint() : `<p class="hint">Nothing near ${S.where === 'near' ? 'you' : 'home'} yet. Lots of events are posted 1 to 2 weeks out, so check back.</p>`}</div>`;
+}
+
+function emptyFilterHint() {
+  const what = [walk && `within ${walkLabel(walk)} walk ${fromWhere()}`, slot !== 'any' && `in the ${slot}`].filter(Boolean).join(' ');
+  const undo = [walk && '<a href="#" data-walk="0">Any distance</a>', slot !== 'any' && '<a href="#" data-slot="any">Any time</a>'].filter(Boolean).join(' · ');
+  return `<p class="hint">Nothing ${what} that day. ${undo}</p>`;
 }
 
 function renderTonight(v) {
@@ -1298,6 +1329,7 @@ function bind() {
     const ub = e.target.closest('[data-unblock]'); if (ub) { e.preventDefault(); S.blockedPeople = S.blockedPeople.filter((p) => p !== ub.dataset.unblock); save(); buildFollowIndex(); return render(); }
     const uh = e.target.closest('[data-unhide]'); if (uh) { e.preventDefault(); S.hiddenTags = S.hiddenTags.filter((t) => t !== uh.dataset.unhide); save(); return render(); }
     const sl = e.target.closest('[data-slot]'); if (sl) { e.preventDefault(); slot = sl.dataset.slot; return render(); }
+    const wk = e.target.closest('[data-walk]'); if (wk) { e.preventDefault(); walk = Number(wk.dataset.walk); if (walk) walkFrom(); return render(); }
     const ra = e.target.closest('[data-rmask]'); if (ra) { S.sourceAsks.splice(Number(ra.dataset.rmask), 1); save(); return render(); }
     if (e.target.closest('[data-export]')) return exportBackup();
     if (e.target.closest('[data-sendtaste]')) { sendTaste(); return render(); }

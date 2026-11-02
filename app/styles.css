@@ -265,6 +265,7 @@ button, a, .d, .ev { touch-action: manipulation; }
 .field.col input { flex: none; }
 .slots { display: flex; gap: 6px; margin: 0 0 12px; overflow-x: auto; scrollbar-width: none; }
 .slots::-webkit-scrollbar { display: none; }
+.slots.walks { margin-top: -4px; }
 .slot { flex: none; height: 32px; padding: 0 13px; border-radius: 99px; border: 1.5px solid var(--line); background: var(--paper); color: var(--cocoa); font: inherit; font-size: 13.5px; font-weight: 600; }
 .slot.on { background: var(--cocoa); border-color: var(--cocoa); color: var(--paper); }
 
