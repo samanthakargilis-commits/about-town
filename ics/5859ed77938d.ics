@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5859ed77938d@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;TZID=America/Los_Angeles:20261210T180000
+DTEND;TZID=America/Los_Angeles:20261210T191500
+SUMMARY:Performance: Kim Shuck’s Poem Celebrates November Dance Shirt
+LOCATION:San Francisco Public Library\, Main Library\, Latino Room (lower 
+ level)\, 100 Larkin Street\, San Francisco\, San Francisco
+URL:https://sf.funcheap.com/performance-kim-shucks-poem-celebrates-novembe
+ r-dance-shirt/
+DESCRIPTION:Writing + Reading · Thursday evening\nhttps://sf.funcheap.com
+ /performance-kim-shucks-poem-celebrates-november-dance-shirt/\n\nSan Fran
+ cisco Poet Laureate emerita Kim Shuck\, poet Lauren Ito and special guest
+ s celebrate Shuck’s new collection November Dance Shirt at SFPL’s Mon
+ thly poetry reading. Kim Shuck was San Francisco’s seventh Poet Laureat
+ e. Her poetry draws on her multiethnic background which includes Polish a
+ nd Cherokee heritage\, and ...
+END:VEVENT
+END:VCALENDAR

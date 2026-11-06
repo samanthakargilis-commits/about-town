@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dc1e41eec4fa@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;TZID=America/Los_Angeles:20261114T193000
+DTEND;TZID=America/Los_Angeles:20261114T213000
+SUMMARY:Kirtan with Anthony
+LOCATION:SF Dharma Collective\, 2929 24th St\, San Francisco\, CA San Fran
+ cisco\, San Francisco
+URL:https://www.meetup.com/san-francisco-mindfulness-meetup/events/3148634
+ 25/
+DESCRIPTION:Spirituality + Singing\nhttps://www.meetup.com/san-francisco-m
+ indfulness-meetup/events/314863425/\n\nJoin us for a guided community eve
+ nt to explore the other kinds of meditation and the devotional aspects of
+  Yogi/Buddhist lineages. Meditation (dhyāna) is a practice to cultivate 
+ inner awareness through meditation and breath work. We’ll start with an
+  introduction to accessible techniques and a guided meditation. Chanting 
+ & singing (Kirtan) is a practice of communal\, devotional music. New and 
+ exper
+END:VEVENT
+END:VCALENDAR

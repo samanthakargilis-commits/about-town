@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e723e1b6d780@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261206T130000
+DTEND;TZID=America/Los_Angeles:20261206T160000
+SUMMARY:Mahjong and Bites: Malaysian Nyonya Tea Time Kuih-Muih
+LOCATION:On Waverly Clubhouse\, 160 Waverly Pl San Francisco\, San Francis
+ co
+URL:https://partiful.com/e/qhp1OIq0OXzEab6Oueng
+DESCRIPTION:New in your area\nhttps://partiful.com/e/qhp1OIq0OXzEab6Oueng\
+ n\nJoin Mo Pai Mahjong Club for an afternoon of mahjong and Straits Chine
+ se flavors\, intricate pastries\, and sweet treats. We are partnering wit
+ h Chef Linda Tay Esposito of Flavor Explosions for a Malaysian adventure.
+  Shuffle tiles in The Clubhouse while we listen to a curated playlist and
+  snack on bold\, punchy\, aromatic and complex Nyonya food. Details: 🀄
+ ️ Admission includes a dedicated playing seat
+END:VEVENT
+END:VCALENDAR

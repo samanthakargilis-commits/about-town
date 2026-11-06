@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fcdf72d600bc@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:Santa Skivvies 2026: Holiday Underwear Run Through the Castro
+LOCATION:Castro\, San Francisco
+URL:https://sf.funcheap.com/city-guide/december-street-fairs-festivals/
+DESCRIPTION:Gay / queer · Featured on Funcheap\nhttps://sf.funcheap.com/c
+ ity-guide/december-street-fairs-festivals/\n\nDecember 13\, 2026 – SF (
+ Castro) – FREE to watch\; Donate to run – The Santa Skivvies Run is a
+  festive romp through the Castro benefiting the San Francisco AIDS Founda
+ tion. Watch hundreds of bods drop trou\, don Santa hats and reindeer antl
+ ers to help raise funds to support the free and local services of the San
+  Francisco AIDS Foundation.
+END:VEVENT
+END:VCALENDAR

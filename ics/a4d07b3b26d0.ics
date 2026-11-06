@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a4d07b3b26d0@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261107T100000
+DTEND;TZID=America/Los_Angeles:20261107T163000
+SUMMARY:RoboRoots 2.0: Civic Tech Summit
+LOCATION:African American Art & Culture\, 762 Fulton St\, San Francisco\, 
+ CA 94102\, San Francisco
+URL:https://ma.to/event/roboroots-20-civic-tech-summit-07-nov-2026-1
+DESCRIPTION:Art\nhttps://ma.to/event/roboroots-20-civic-tech-summit-07-nov
+ -2026-1\n\nRoboRoots 2.0: Civic Tech Summit explores robotics\, physical 
+ AI\, data centers and related civic technology. The program includes the 
+ Builder Track\, with hands-on robotics\, simulation and quadruped agility
+ \; the Civic Track\, covering AI ethics\, community data rights and workf
+ orce pathways\; and an Interactive Showcase with live tech demonstrations
+  for students and families. The summit is designed for
+END:VEVENT
+END:VCALENDAR

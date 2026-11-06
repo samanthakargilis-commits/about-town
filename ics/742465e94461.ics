@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:742465e94461@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261106T130000
+DTEND;TZID=America/Los_Angeles:20261106T180000
+SUMMARY:Nyquil Oasis: Yerrie Choo
+LOCATION:Moth Belly Gallery\, San Francisco
+URL:https://ma.to/event/nyquil-oasis-2026-11-06
+DESCRIPTION:Theatre + Museum exhibits\nhttps://ma.to/event/nyquil-oasis-20
+ 26-11-06\n\nNyquil Oasis is Yerrie Choo's solo show featuring illustratio
+ ns\, fused glass pieces\, and mural installations\, including a papier-ma
+ che toilet centerpiece. The exhibition is on view through November 28\, 2
+ 026. Gallery hours are Fridays and Saturdays 1–6pm\, or by chance/appoi
+ ntment. A closing reception and artist talk will be held on November 28th
+ .
+END:VEVENT
+END:VCALENDAR

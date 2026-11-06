@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7cdd7cc0212e@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261106T170000
+DTEND;TZID=America/Los_Angeles:20261106T190000
+SUMMARY:CSL Match 8 — Indianapolis
+LOCATION:Indianapolis\, IN\, Palo Alto
+URL:https://ma.to/event/csl-match-8-indianapolis-2026-11-06
+DESCRIPTION:Palo Alto\nhttps://ma.to/event/csl-match-8-indianapolis-2026-1
+ 1-06\n\nMatch 8 of the CSL season takes place in Indianapolis\, IN\, on N
+ ovember 6\, 2026. Tickets are on sale now\, and this match is selling fas
+ t. The CSL season continues after Stanford's win in the final race of its
+  home meet.
+END:VEVENT
+END:VCALENDAR

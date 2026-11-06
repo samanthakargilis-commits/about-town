@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3637420a423b@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261108T183000
+DTEND;TZID=America/Los_Angeles:20261108T203000
+SUMMARY:👢Free Line Dancing🪩♥️
+LOCATION:Scott St & Page St\, null Scott St San Francisco\, San Francisco
+URL:https://partiful.com/e/uVuAnSYpOZkcH6Ilzf5R
+DESCRIPTION:New in your area\nhttps://partiful.com/e/uVuAnSYpOZkcH6Ilzf5R\
+ n\nCome join us for another night of line dancing with Lower Haight Line 
+ Dancing! They’re super kind teachers who run these classes weekly for 
+ 🤩free💃 from their home\, and they teach you the line dances before 
+ doing them! They don’t require an RSVP! Let’s make new connections an
+ d have some fun line dancing (not alone)! Here’s to new friends! 🥳
+ 🥳🥳 *LD goes 6-10 PM\, dances get harder as the night goes on
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:89c199b86fc5@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261109T183000
+DTEND;TZID=America/Los_Angeles:20261109T200000
+SUMMARY:Music Hardware Is a Fashion Accessory: A Design Workshop
+LOCATION:tiat\, tiat\, 151 Powell St\, San Francisco\, CA 94102\, USA\, Sa
+ n Francisco
+URL:https://luma.com/tlbsclk1
+DESCRIPTION:Comedy + Art\nhttps://luma.com/tlbsclk1\n\nWhat if your favori
+ te album by your favorite artist was something you could wear? Nick Susi 
+ and VÉRITÉ will trace the history of music hardware as a fashion access
+ ory\, from the Walkman to AirPods\, and share an archive of design refere
+ nces for inspiration on how artists can make their sonic worlds tangible 
+ through hardware. Then it's your turn — sketch a wearable device inspir
+ ed by the music you lo
+END:VEVENT
+END:VCALENDAR

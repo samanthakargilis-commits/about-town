@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1fda6fedb32e@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:West Indies: The Fugitive Slaves of Liberty
+LOCATION:Yerba Buena Center for the Arts\, 701 Mission St\, San Francisco\
+ , CA\, San Francisco
+URL:https://sf.funcheap.com/west-indies-fugitive-slaves-liberty/
+DESCRIPTION:Your kind of movie\nhttps://sf.funcheap.com/west-indies-fugiti
+ ve-slaves-liberty/\n\nSee director Med Hondo’s cinematic reimagining of
+  an entire people’s history of resistance and struggle that investigate
+ s more than three centuries of imperialist oppression in this musical dra
+ ma. Enjoy the film and free snacks\, hand-picked by the series curator. C
+ ome early or stay late to visit ...
+END:VEVENT
+END:VCALENDAR

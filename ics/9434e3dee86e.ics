@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9434e3dee86e@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261106T190000
+DTEND;TZID=America/Los_Angeles:20261106T210000
+SUMMARY:Knights of Molino Album Release
+LOCATION:Mabuhay Gardens\, 443 Broadway\, San Francisco\, CA\, San Francis
+ co
+URL:https://ma.to/event/knights-of-molino-album-release-07-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/knights-of-molino-album-
+ release-07-nov-2026\n\nKnights of Molino celebrate the release of their d
+ ebut album\, 'First Album'\, at Mabuhay Gardens. This all-ages show featu
+ res a lineup including Hellflowers\, Loud Graves\, Peaboo and the Catz\, 
+ and special guest Jane Wiedlin. Schedule: Peaboo and the Catz (7:00-7:20 
+ PM)\, Loud Graves (7:35-8:05 PM)\, Hellflowers (8:20-8:50 PM)\, and Knigh
+ ts of Molino with Jane Wiedlin (9:05-10:00 PM). Doors open at 6:00
+END:VEVENT
+END:VCALENDAR

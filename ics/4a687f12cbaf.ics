@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4a687f12cbaf@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261106T190000
+DTEND;TZID=America/Los_Angeles:20261106T210000
+SUMMARY:The Devils (1971) Screening
+LOCATION:The Roxie Theater\, San Francisco
+URL:https://ma.to/event/the-devils-1971-screening-06-nov-2026
+DESCRIPTION:Theatre\nhttps://ma.to/event/the-devils-1971-screening-06-nov-
+ 2026\n\nKen Russell’s The Devils (1971) screens at The Roxie Theater in
+  a newly restored\, uncut and uncensored version\, opening Friday\, Novem
+ ber 6. Tickets are available from the Roxie.
+END:VEVENT
+END:VCALENDAR

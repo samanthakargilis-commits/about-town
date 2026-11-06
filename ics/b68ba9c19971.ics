@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b68ba9c19971@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261107T090000
+DTEND;TZID=America/Los_Angeles:20261107T130000
+SUMMARY:The Golden Gate Half-Dozen
+LOCATION:Lands End Lookout\, Lands End Lookout\, 680 Point Lobos Ave\, San
+  Francisco\, CA 94121\, USA\, San Francisco
+URL:https://luma.com/ijitpbtb
+DESCRIPTION:New in your area\nhttps://luma.com/ijitpbtb\n\nJoin Crosstown 
+ Trails founder Bob Siegel on a 6-mile walk from Lands End to Presidio Tun
+ nel Tops. Our route follows Section 5 of the new Roundabout as well as a 
+ stretch of the new Golden Gate Dozen Trail. At Land’s End\, we’ll tak
+ e in the views and imagine what life might have been like long ago – in
+  the early 20th century when the Sutro Baths were in their heyday\, or ev
+ en farther back\, when Yelamu
+END:VEVENT
+END:VCALENDAR

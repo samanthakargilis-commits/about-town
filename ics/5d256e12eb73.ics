@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5d256e12eb73@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261114T163000
+DTEND;TZID=America/Los_Angeles:20261114T203000
+SUMMARY:FVR WLD FEST feat. Mugger\, Monk\, Ingrata and Scam Likely
+LOCATION:Kilowatt\, 3160 16th Street\, San Francisco\, California 94103\, 
+ United States San Francisco\, San Francisco
+URL:https://dice.fm/event/6a628ff7bda14200018de075
+DESCRIPTION:Fairs & festivals + Weird & unusual\nhttps://dice.fm/event/6a6
+ 28ff7bda14200018de075\n\n**Forever Wildland Fest makes its San Francisco 
+ debut.** Built by current and former wildland firefighters\, Forever Wild
+ land is an independent festival dedicated to punk\, hardcore\, alternativ
+ e\, and underground music. We believe the best festivals are built from t
+ he ground up—with stacked lineups\, packed rooms\, and a community that
+  shows up for each other. Every ticket helps support Grassroots Wild
+END:VEVENT
+END:VCALENDAR

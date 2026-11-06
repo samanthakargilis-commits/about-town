@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:103b6666d085@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261213T140000
+DTEND;TZID=America/Los_Angeles:20261213T170000
+SUMMARY:Kepler’s Annual Holiday Party
+LOCATION:Kepler's\, 1010 El Camino Real #100 Menlo Park\, Menlo Park
+URL:https://www.keplers.org/upcoming-events-internal/holiday-party-2026
+DESCRIPTION:Reading · Menlo Park\nhttps://www.keplers.org/upcoming-events
+ -internal/holiday-party-2026\n\nEnjoy cookies and a cocktail at our annua
+ l holiday party! Literary Circle members receive 10% off all purchases.
+END:VEVENT
+END:VCALENDAR

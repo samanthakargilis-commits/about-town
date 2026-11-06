@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6824a4fbb1bf@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261118T180000
+DTEND;TZID=America/Los_Angeles:20261118T200000
+SUMMARY:Chuang Tzu on Knowledge\, Skill\, and Letting Go
+LOCATION:The Fold\, 3359 26th St\, San Francisco\, CA 94110\, USA\, San Fr
+ ancisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/sf-philosophy-reading-group/events/317240004/
+DESCRIPTION:Animals + Reading\nhttps://www.meetup.com/sf-philosophy-readin
+ g-group/events/317240004/\n\nFor this session we’ll read chapters 2\, 3
+ \, 6\, 18\, and 19 of Burton Watson’s translation of *The Complete Work
+ s of Chuang Tzu* (also known as the *Zhuangzi*). Together\, they ask what
+  it means to live well when our judgments about what is right\, useful\, 
+ or worth pursuing may be less secure than we think. Chapter 2 questions w
+ hether any one perspective can settle a disagreement and ends with Chuang
+  T
+END:VEVENT
+END:VCALENDAR

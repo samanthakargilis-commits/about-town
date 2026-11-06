@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ddf2c0550678@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261106T180000
+DTEND;TZID=America/Los_Angeles:20261106T200000
+SUMMARY:A Diwali Table: Six-Course Dinner
+LOCATION:Besharam\, Dogpatch\, San Francisco
+URL:https://ma.to/event/a-diwali-table-six-course-dinner-2026-11-06
+DESCRIPTION:Cultural festivals\nhttps://ma.to/event/a-diwali-table-six-cou
+ rse-dinner-2026-11-06\n\nA six-course Diwali dinner from Besharam and Bre
+ adbelly\, held in the Besharam kitchen in Dogpatch\, San Francisco. The m
+ enu includes a welcome bite\, dishes from Chef Heena's kitchen\, Diwali B
+ readbelly creations\, and a small gift from the chefs to take home. The c
+ ollaboration runs November 6–8. Admission is $129.06 per guest\, and re
+ servations are available on Resy.
+END:VEVENT
+END:VCALENDAR

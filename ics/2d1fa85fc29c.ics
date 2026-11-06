@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2d1fa85fc29c@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261106T150000
+DTEND;TZID=America/Los_Angeles:20261106T190000
+SUMMARY:The Utah Happy Hour
+LOCATION:The Hotel Utah Saloon\, San Francisco
+URL:https://ma.to/event/the-utah-happy-hour-06-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/the-utah-happy-hour-06-n
+ ov-2026\n\nThe Utah Happy Hour is a recurring drink and food special at T
+ he Hotel Utah Saloon. It runs Monday through Friday from 3–7pm and Satu
+ rday and Sunday from 12–4pm. Drink specials include well shots or cockt
+ ails for $5\, all wine for $6\, all draft for $7\, select premium liquor 
+ for $8\, and select draft beer with a well shot for $10. Food specials in
+ clude Utah Bar Nuts for $3\, Potato Skins for $8\, Popco
+END:VEVENT
+END:VCALENDAR

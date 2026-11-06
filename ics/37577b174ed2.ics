@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:37577b174ed2@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;TZID=America/Los_Angeles:20261203T160000
+DTEND;TZID=America/Los_Angeles:20261203T210000
+SUMMARY:Dark Matter Salon Sip & Shop + Opening Party
+LOCATION:Dark Matter Salon\, 660 Market St\, Ste 205 San Francisco\, San F
+ rancisco
+URL:https://partiful.com/e/4uaYV0Ze1tUNjlT0TK8k
+DESCRIPTION:Discourse + Art\nhttps://partiful.com/e/4uaYV0Ze1tUNjlT0TK8k\n
+ \nWow! What an incredible first 3 months of being open. We are feeling so
+  blessed\, so supported\, and so loved\; especially rolling into the Holi
+ day Seasons! Join us to celebrate the opening of Dark Matter Salon on Thu
+ rsday\, December 3rd 4pm to 9pm. Stop by at your leisure\, enjoy nibbles\
+ , bubbly sips\, and mingling with the community that has made magic all p
+ ossible! We will also have our Black Friday 
+END:VEVENT
+END:VCALENDAR

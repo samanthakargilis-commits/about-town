@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2888182b6c18@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261107T183000
+DTEND;TZID=America/Los_Angeles:20261107T200000
+SUMMARY:Wendy Clarke: The Prison Tapes
+LOCATION:The Lab\, 2948 16th Street\, San Francisco\, California 94103\, U
+ nited States San Francisco\, San Francisco
+URL:https://dice.fm/event/6ad7010ba42bf50001feb477
+DESCRIPTION:Museum exhibits + Art\nhttps://dice.fm/event/6ad7010ba42bf5000
+ 1feb477\n\nA screening and conversation with **Wendy Clarke** and **Nigel
+  Poor**\, presented in collaboration with **Cushion Works** and **Ear Hus
+ tle** on the occasion of the exhibition **Wendy Clarke: The Prison Tapes*
+ * on view through Nov. 14\, 2026. **Wendy Clarke** is a video pioneer who
+ se practice spans more than five decades. The daughter of avant-garde fil
+ mmaker Shirley Clarke\, she has spent her career 
+END:VEVENT
+END:VCALENDAR

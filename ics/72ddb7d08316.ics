@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:72ddb7d08316@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;TZID=America/Los_Angeles:20261106T163000
+DTEND;TZID=America/Los_Angeles:20261106T200000
+SUMMARY:Día de los Muertos First Friday
+LOCATION:CuriOdyssey\, Palo Alto
+URL:https://ma.to/event/dia-de-los-muertos-first-friday-06-nov-2026
+DESCRIPTION:Cultural festivals + Spirituality · Palo Alto\nhttps://ma.to/
+ event/dia-de-los-muertos-first-friday-06-nov-2026\n\nFirst Friday Nights 
+ presents a Día de los Muertos evening of science\, wildlife\, food truck
+ s\, and hands-on activities. Tales from the Ofrenda features an ofrenda h
+ onoring animals who have called CuriOdyssey home\, including Gunner and D
+ ylan\, with their stories from the Director of Wildlife. Casa Círculo Cu
+ ltural offers an Alebrijes-inspired coloring activity\, and Fernando Esca
+ rtiz’s Alebrije sculptu
+END:VEVENT
+END:VCALENDAR

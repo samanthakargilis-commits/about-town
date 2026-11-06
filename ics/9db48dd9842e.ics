@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9db48dd9842e@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261107T140000
+DTEND;TZID=America/Los_Angeles:20261107T160000
+SUMMARY:How Do You Jew? Staged Reading
+LOCATION:The Marsh\, San Francisco
+URL:https://ma.to/event/how-do-you-jew-staged-reading-07-nov-2026
+DESCRIPTION:Reading + Theatre\nhttps://ma.to/event/how-do-you-jew-staged-r
+ eading-07-nov-2026\n\nA staged reading of the new play How Do You Jew? fe
+ atures a cast of 12 exploring Jewish identity\, connection to Israel and 
+ the impact of Oct. 7. Tickets cost $10 and are going fast.
+END:VEVENT
+END:VCALENDAR

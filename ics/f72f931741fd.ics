@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f72f931741fd@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261116T193000
+DTEND;TZID=America/Los_Angeles:20261116T223000
+SUMMARY:Stanford Vintage Ball
+LOCATION:Roble 113\, 375 Santa Teresa St Stanford\, Stanford
+URL:https://partiful.com/e/LXrNxuxVMOFfXJcglz72
+DESCRIPTION:Stanford\nhttps://partiful.com/e/LXrNxuxVMOFfXJcglz72\n\nSocia
+ l dance event with 1920s-1960s music\, plus live vinyl records and a perf
+ ormance by Cardinal Tap Dance! Hosted in collaboration with Dancbreak and
+  Stanford Tango. Dress in your finest vintage or vintage-inspired getup! 
+ Dance cards will be provided for the 10-song set from 9-9:30 ✨
+END:VEVENT
+END:VCALENDAR

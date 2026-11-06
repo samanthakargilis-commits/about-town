@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8451d3a90cee@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261106T210000
+DTEND;TZID=America/Los_Angeles:20261106T230000
+SUMMARY:A Family Affair: 90s-00s Party
+LOCATION:El Rio\, San Francisco
+URL:https://ma.to/event/a-family-affair-90s-00s-party-2026-11-06
+DESCRIPTION:Gay / queer + Camp & Halloween\nhttps://ma.to/event/a-family-a
+ ffair-90s-00s-party-2026-11-06\n\nA Family Affair is a queer 90s and 00s 
+ throwbacks-only party at El Rio. DJs Andre the Junior and DJ Nico are on 
+ the decks\, with drag performances by Mz Love O\, Xanni Phantum\, Nitrix 
+ Oxide and Miss Monstrosity. Admission is $10. Party runs from 9pm to clos
+ e in the Stage Room.
+END:VEVENT
+END:VCALENDAR

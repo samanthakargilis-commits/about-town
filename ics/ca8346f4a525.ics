@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ca8346f4a525@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;TZID=America/Los_Angeles:20261107T173000
+DTEND;TZID=America/Los_Angeles:20261107T193000
+SUMMARY:On Waverly Open Mic Night
+LOCATION:On Waverly\, 162 Waverly Pl\, San Francisco\, San Francisco
+URL:https://ma.to/event/on-waverly-open-mic-night-2026-11-07
+DESCRIPTION:Singing\nhttps://ma.to/event/on-waverly-open-mic-night-2026-11
+ -07\n\nOn Waverly hosts its first ever Open Mic Night\, hosted by Ava and
+  Natasha\, with short\, intimate performances in a welcoming space for cr
+ eativity\, connection\, and community. Signup is 4–5pm\; performances a
+ re 5:30–7:30pm. There are a limited number of 15–20 performance slots
+ \, available first-come\, first-served\, and each performer has 5–7 min
+ utes per set. Free entry. Questions can be sent to ava@onwa
+END:VEVENT
+END:VCALENDAR

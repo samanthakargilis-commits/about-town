@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4728e9f758c6@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;TZID=America/Los_Angeles:20261108T150000
+DTEND;TZID=America/Los_Angeles:20261108T203000
+SUMMARY:Free Día De Los Muertos Festival w/ Altars at Courthouse Square (
+ Redwood City)
+LOCATION:Courthouse Square\, 2200 Broadway\, Redwood City\, CA\, Redwood C
+ ity
+URL:https://sf.funcheap.com/free-da-de-los-muertos-festival-altars-courtho
+ use-square-redwood-city/
+DESCRIPTION:Fairs & festivals + Cultural festivals · A yearly tradition 
+ · Redwood City\nhttps://sf.funcheap.com/free-da-de-los-muertos-festival-
+ altars-courthouse-square-redwood-city/\n\nRedwood City’s beloved Día d
+ e los Muertos celebration returns to downtown on Sunday\, November 8\, 20
+ 26\, bringing the community together at Courthouse Square for a vibrant c
+ elebration of remembrance\, heritage\, and culture. Hosted by Casa Círcu
+ lo Cultural and the San Mateo County History Museum\, in collaboration wi
+ th the Redwood City Parks ...
+END:VEVENT
+END:VCALENDAR

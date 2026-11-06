@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:75d66f5e532d@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261220T150000
+DTEND;TZID=America/Los_Angeles:20261220T170000
+SUMMARY:peppermint pages
+LOCATION:Bow N Arrow Clothing\, 2200 Petaluma Blvd N Petaluma\, Petaluma
+URL:https://partiful.com/e/glWMXAtqrUzWHjugH2Ge
+DESCRIPTION:Art · Petaluma\nhttps://partiful.com/e/glWMXAtqrUzWHjugH2Ge\n
+ \n⋆𐙚❅*°⋆❆.ೃ࿔*: join us for our last journaling event of t
+ he year! what’s included in your ticket: ★ themed scrap pack\, full o
+ f original art and a postcard sized print of our poster artwork ★ limit
+ ed edition holiday themed sticker sheet! ★ photobooth with themed frame
+ s by developed photo! ★ hot chocolate bar with whipped cream\, marshmal
+ low toppings\, and more! (dairy and nondairy options) ★ snacks ★ e
+END:VEVENT
+END:VCALENDAR

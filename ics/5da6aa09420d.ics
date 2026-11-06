@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5da6aa09420d@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;TZID=America/Los_Angeles:20261115T180000
+DTEND;TZID=America/Los_Angeles:20261115T210000
+SUMMARY:Black Girls in Art Spaces
+LOCATION:A Loft of One’s Own\, 5757 Horton St Emeryville\, Emeryville
+URL:https://partiful.com/e/NakRwQwg4jFJBUjxM6V6
+DESCRIPTION:Art + Museum exhibits · Emeryville\nhttps://partiful.com/e/Na
+ kRwQwg4jFJBUjxM6V6\n\nJoin us for an evening with Black Girls in Art Spac
+ es at A Loft Of One’s Own to gather\, sip\, and find each other. While 
+ records spin through the night\, Hold Me Tender artists Sheilby and Simra
+ h will walk guests through an exclusive tour around the Loft. Come solo o
+ r bring your girls. Wander the exhibition\, meet other creative women fro
+ m across the Bay\, support the Merch store and settle in for an 
+END:VEVENT
+END:VCALENDAR

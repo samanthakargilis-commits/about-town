@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1b32bdd2004c@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261128T220000
+DTEND;TZID=America/Los_Angeles:20261129T040000
+SUMMARY:MANDRAGORA
+LOCATION:Halcyon SF\, 314 11th St\, San Francisco\, CA 94103\, USA San Fra
+ ncisco\, San Francisco
+URL:https://dice.fm/event/6a3d51115f58a600011f89f0
+DESCRIPTION:Art\nhttps://dice.fm/event/6a3d51115f58a600011f89f0\n\nMANDRAG
+ ORA from the desert town of Chihuahua in northern Mexico is one of the mo
+ st influential artists in the psychedelic scene. Blending Goa trance with
+  raw minimal sound design\, he has pioneered the futureprog genre\, now t
+ he signature sound of countless artists—quickly making a name for himse
+ lf with a distinctive style that fuses Latin American influences with psy
+ chedelic grooves. This fusion re
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:14f414b124a7@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Fort Mason Night Market November 2026
+LOCATION:
+URL:https://secretsanfrancisco.com/fort-mason-night-market-november/
+DESCRIPTION:Fairs & festivals + Craft\nhttps://secretsanfrancisco.com/fort
+ -mason-night-market-november/\n\nA previous night market at Fort Mason Ce
+ nter. Courtesy of West Coast Craft West Coast Craft\, Off the Grid Food T
+ rucks\, and Stern Grove Festival have all teamed up with Fort Mason Cente
+ r to host the popular night markets on select Friday evenings. The Novemb
+ er night market is this Friday\, November 6\, from 5 to 10 pm. Attendees 
+ can expect a selection of craft vendors curated by popular craft fair We
+END:VEVENT
+END:VCALENDAR

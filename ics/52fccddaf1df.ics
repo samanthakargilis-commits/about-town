@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:52fccddaf1df@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Haiku in the Garden – Autumn
+LOCATION:Marin Art and Garden Center\, 30 Sir Francis Drake\, Ross\, CA 94
+ 957\, Ross
+URL:https://sf.funcheap.com/haiku-garden-autumn/
+DESCRIPTION:Art + Writing · Ross\nhttps://sf.funcheap.com/haiku-garden-au
+ tumn/\n\nJoin us to savor the poetry of the season\, in this free gatheri
+ ng hosted by Jayne McPherson. Gardens have an essential and ubiquitous pl
+ ace in lyric poetry. The great poet Kahlil Gibran called friendship a gar
+ den\, one where planted seeds are sown “with love and reap ...
+END:VEVENT
+END:VCALENDAR

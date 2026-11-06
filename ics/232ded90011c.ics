@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:232ded90011c@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261106T170000
+DTEND;TZID=America/Los_Angeles:20261106T220000
+SUMMARY:Dirtybird Night Market
+LOCATION:Thrive City\, San Francisco
+URL:https://ma.to/event/dirtybird-night-market-2026-11-06
+DESCRIPTION:Fairs & festivals\nhttps://ma.to/event/dirtybird-night-market-
+ 2026-11-06\n\nDirtybird Night Market brings an evening of DJ sets from Bl
+ ack V Neck\, Joanna Magik and Matsu to Thrive City\, alongside local vend
+ ors\, food and drinks\, cocktails\, and games in the plaza. The event run
+ s Friday\, November 6\, from 5pm to 10pm.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cded8fdab5a8@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261114T120000
+DTEND;TZID=America/Los_Angeles:20261114T133000
+SUMMARY:NEORT: Cities as Nodes
+LOCATION:NODE\, NODE\, 180 University Ave\, Palo Alto\, CA 94301\, USA\, P
+ alo Alto
+URL:https://luma.com/node-neort
+DESCRIPTION:Museum exhibits + Art · Palo Alto\nhttps://luma.com/node-neor
+ t\n\nJoining us from Tokyo\, Noriaki Nakata\, Director of NEORT\, will de
+ liver a keynote bridging Tokyo and Palo Alto communities and what becomes
+  possible when places connect. He will share insights from his curatorial
+  practice and discuss his work bringing digital art into public spaces. A
+ longside the keynote\, Nakata will present a curated selection of digital
+  artists introducing their work to Palo Alto
+END:VEVENT
+END:VCALENDAR

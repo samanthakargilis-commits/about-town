@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4f4c16300ddc@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261107T100000
+DTEND;TZID=America/Los_Angeles:20261107T120000
+SUMMARY:Arte en español
+LOCATION:Legion of Honor\, San Francisco
+URL:https://ma.to/event/arte-en-espanol-07-nov-2026
+DESCRIPTION:Museum exhibits + Art\nhttps://ma.to/event/arte-en-espanol-07-
+ nov-2026\n\nNov 7 · San Francisco. Arte en español at the Legion of Hon
+ or is an art programme in Spanish. When Saturday\, 7 November Add to Cale
+ ndar Add to Calendar About Arte en español at the Legion of Honor is an 
+ art programme in Spanish. Organised by Legion of Honor Museum Where Legio
+ n of Honor \, San Francisco Open in Google Maps
+END:VEVENT
+END:VCALENDAR

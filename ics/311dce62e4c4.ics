@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:311dce62e4c4@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261106T193000
+DTEND;TZID=America/Los_Angeles:20261106T213000
+SUMMARY:Every Saturday Night
+LOCATION:Strand Theater\, San Francisco
+URL:https://ma.to/event/every-saturday-night-07-nov-2026
+DESCRIPTION:Musical theatre + Theatre\nhttps://ma.to/event/every-saturday-
+ night-07-nov-2026\n\nA musical written by Mr. Danny Duncan about the 1950
+ s Fillmore\, known as the Harlem of the West\, centered on the home where
+  his mother ran an after-hours club. SFBATCO stages this production at th
+ e Strand Theater with a parallel storyline set in today’s Fillmore. Par
+ t of A.C.T.’s ACTivate incubator series. Performances run through Novem
+ ber 7. Tickets available at sfbatco.org.
+END:VEVENT
+END:VCALENDAR

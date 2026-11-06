@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6647483542c7@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261205T130000
+DTEND;TZID=America/Los_Angeles:20261205T180000
+SUMMARY:City of San Rafael’s Winter Wonderland: 45th Anniversary
+LOCATION:Downtown San Rafael\, Fourth Street\, San Rafael\, CA\, San Rafae
+ l
+URL:https://sf.funcheap.com/city-san-rafaels-winter-wonderland-45th-annive
+ rsary/
+DESCRIPTION:San Rafael\nhttps://sf.funcheap.com/city-san-rafaels-winter-wo
+ nderland-45th-anniversary/\n\nA beloved San Rafael holiday tradition retu
+ rns with a new date this year for the 45th anniversary of Winter Wonderla
+ nd on Saturday\, December 5\, 2026\, from 1:00 pm to 6:00 pm in Downtown 
+ San Rafael. This free\, family-friendly celebration will feature winter-t
+ hemed activities\, entertainment\, and holiday ...
+END:VEVENT
+END:VCALENDAR

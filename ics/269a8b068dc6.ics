@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:269a8b068dc6@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261107T200000
+DTEND;TZID=America/Los_Angeles:20261107T220000
+SUMMARY:Chelsea Handler
+LOCATION:The Masonic\, San Francisco
+URL:https://ma.to/event/chelsea-handler-the-masonic-07-nov-2026
+DESCRIPTION:Comedy\nhttps://ma.to/event/chelsea-handler-the-masonic-07-nov
+ -2026\n\nChelsea Handler is taking over The Masonic for a stop on her Hig
+ h and Mighty Tour. Known for her unapologetic style and sharp-tongued hum
+ or\, the comedian returns to SF for a one-night stand in the heart of the
+  city.
+END:VEVENT
+END:VCALENDAR

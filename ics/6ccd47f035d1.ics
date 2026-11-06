@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6ccd47f035d1@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261106T213000
+DTEND;TZID=America/Los_Angeles:20261106T233000
+SUMMARY:Off With Their Pumps
+LOCATION:The STUD\, 1123 Folsom\, San Francisco
+URL:https://ma.to/event/off-with-their-pumps-2026-11-06
+DESCRIPTION:Animals + Gay / queer\nhttps://ma.to/event/off-with-their-pump
+ s-2026-11-06\n\nOff With Their Pumps is a revolutionary drag show staged 
+ just in time for Election Day\, paying tribute to the French Revolution a
+ nd other upheavals. The evening opens with the 9:30 PM Kittenheels Pre-Sh
+ ow\, followed by Pumps at 10:30 PM and 11:30 PM. Laundra Tyme hosts\, and
+  Xochitl\, Kai Kai Bee Michaels\, Pony Bambino\, Meatflap and Kafka X sta
+ r\, with music from DJ Mama Celeste and lighting by Guido 
+END:VEVENT
+END:VCALENDAR

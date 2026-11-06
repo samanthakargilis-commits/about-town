@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e541d3afc908@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261106T180000
+DTEND;TZID=America/Los_Angeles:20261106T200000
+SUMMARY:@fewandfarwomen 15th Preview Night
+LOCATION:@111minnagallery\, San Francisco
+URL:https://ma.to/event/fewandfarwomen-15th-preview-night-06-nov-2026
+DESCRIPTION:Art\nhttps://ma.to/event/fewandfarwomen-15th-preview-night-06-
+ nov-2026\n\n@fewandfarwomen\, an international network of women street ar
+ tists and skaters founded by graffiti artist and skateboarder @memersweet
+ s\, marks its 15-year milestone at @111minnagallery. The Friday preview n
+ ight precedes the weekend anniversary event.
+END:VEVENT
+END:VCALENDAR

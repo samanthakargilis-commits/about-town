@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:64eae3e6c3cf@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261205T130000
+DTEND;TZID=America/Los_Angeles:20261205T150000
+SUMMARY:GUINNESS TOUR 2026
+LOCATION:North Beach\, null null San Francisco\, San Francisco
+URL:https://partiful.com/e/uPrNgFbFET5186gbGWlH
+DESCRIPTION:New in your area\nhttps://partiful.com/e/uPrNgFbFET5186gbGWlH\
+ n\nYes\, it's true. The iconic Guinness Tour has once again secured fundi
+ ng for the third year in a row\, officially delegating this as a historic
+ ally protected San Francisco event. Please join us in North Beach where w
+ e'll be embarking on a journey around to some of the best Guinness spots 
+ in the area. Along the way\, we'll be ranking each of them and will crown
+  Best Guinness by the end of the day. We 
+END:VEVENT
+END:VCALENDAR

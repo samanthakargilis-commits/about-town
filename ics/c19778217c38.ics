@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c19778217c38@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261107T120000
+DTEND;TZID=America/Los_Angeles:20261107T130000
+SUMMARY:Election Hangover Cure
+LOCATION:Keys Jazz Bistro\, 498 Broadway\, San Francisco\, San Francisco
+URL:https://ma.to/event/election-hangover-cure-07-nov-2026
+DESCRIPTION:Art + Discourse\nhttps://ma.to/event/election-hangover-cure-07
+ -nov-2026\n\nPart of Keys Jazz Bistro's ongoing Conversation Corner\, the
+  Election Hangover Cure is a two-way community conversation with Peter Sw
+ ords Stevens (Working Families Party\, Build Affordable Faster\, Presiden
+ t of Telegraph Hill Dwellers) and Romalyn Schmaltz (founder of North Beac
+ h Now\, host of Keys Jazz Bistro). The discussion covers what the midterm
+  election results mean for the neighborhood\, city\, a
+END:VEVENT
+END:VCALENDAR

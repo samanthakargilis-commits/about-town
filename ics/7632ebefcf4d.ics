@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7632ebefcf4d@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261204T170000
+DTEND;TZID=America/Los_Angeles:20261204T200000
+SUMMARY:Hayes Valley’s 36th Annual Holiday Stroll (2026)
+LOCATION:Hayes Valley\, Hayes St. and Laguna St.\, San Francisco\, CA\, Sa
+ n Francisco
+URL:https://sf.funcheap.com/hayes-valleys-annual-holiday-stroll/
+DESCRIPTION:A yearly tradition\nhttps://sf.funcheap.com/hayes-valleys-annu
+ al-holiday-stroll/\n\nJoin your neighbors for the Hayes Valley Holiday St
+ roll! Hosted by the Hayes Valley Merchants Council and the Hayes Valley N
+ eighborhood Association\, the event takes place Friday\, December 4\, 202
+ 6\, from 5-8pm. Discover festive in-store events\, special promotions\, a
+ nd plenty of holiday cheer with music\, shopping\, ...
+END:VEVENT
+END:VCALENDAR

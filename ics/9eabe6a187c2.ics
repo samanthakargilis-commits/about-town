@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9eabe6a187c2@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261114T180000
+DTEND;TZID=America/Los_Angeles:20261114T220000
+SUMMARY:🔥 Hard Tech Bonfire Night @ OG Tesla HQ
+LOCATION:1056 Commercial St\, 1056 Commercial St\, San Carlos\, CA 94070\,
+  USA\, San Carlos
+URL:https://luma.com/ak5cch9g
+DESCRIPTION:Discourse · San Carlos\nhttps://luma.com/ak5cch9g\n\nJoin us 
+ for beers\, bonfires\, and good company at the original Tesla HQ in the B
+ ay Area. We’re bringing El Segundo hard-tech energy north\, gathering f
+ ounders\, engineers\, VCs\, policymakers\, and press who are building the
+  future of American industry. Come meet fellow patriots pushing the bound
+ aries of defense\, robotics\, aerospace\, energy\, and hardware. No panel
+ s... just great people\, cold beers\, and 
+END:VEVENT
+END:VCALENDAR

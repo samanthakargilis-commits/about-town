@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c34c1d46805d@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;TZID=America/Los_Angeles:20261106T193000
+DTEND;TZID=America/Los_Angeles:20261106T213000
+SUMMARY:Where To? (Juror Night)
+LOCATION:4-Star Theater\, 2200 Clement St\, San Francisco\, CA 94121\, San
+  Francisco
+URL:https://ma.to/event/where-to-juror-night-2026-11-06
+DESCRIPTION:Comedy + Fairs & festivals\nhttps://ma.to/event/where-to-juror
+ -night-2026-11-06\n\nPart of the Studio 8 Film Festival 2026\, this juror
+  night features work by the festival's jurors. The programme includes Nin
+ e Years Behind the Wheel (Ed Jones\, 1986)\, a diary shot from the driver
+ 's seat of a night-shift cab through 1980s San Francisco\; Lullaby To My 
+ Father + Redux (Michael LaRocco\, 2019)\, in which a filmmaker revisits h
+ is father's absence after discovering his father had a second 
+END:VEVENT
+END:VCALENDAR

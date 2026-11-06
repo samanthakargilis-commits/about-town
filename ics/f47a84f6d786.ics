@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f47a84f6d786@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;TZID=America/Los_Angeles:20261206T130000
+DTEND;TZID=America/Los_Angeles:20261206T140000
+SUMMARY:Presentation: Eugene O’Neill: 51 Plays in 51 Minutes
+LOCATION:San Francisco Public Library\, Main Library\, Latino Room (lower 
+ level)\, 100 Larkin Street\, San Francisco\, San Francisco
+URL:https://sf.funcheap.com/presentation-eugene-oneill-51-plays-51-minutes
+ /
+DESCRIPTION:Reading + Theatre\nhttps://sf.funcheap.com/presentation-eugene
+ -oneill-51-plays-51-minutes/\n\nEric Fraisher Hayes gives a lively\, fast
+ -paced introduction to playwright Eugene O’Neill\, his plays and the lo
+ cal treasure that is Tao House. Using images\, anecdotes and audience par
+ ticipation\, Eric will cover the playwright’s life and work in less tha
+ n an hour! Eric Fraisher Hayes is the ...
+END:VEVENT
+END:VCALENDAR

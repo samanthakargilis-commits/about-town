@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dbd6eb3e7386@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261107T110000
+DTEND;TZID=America/Los_Angeles:20261107T160000
+SUMMARY:Mirror Frame Making Workshop
+LOCATION:Uncle Paul's Ceramics North Beach\, 493 Broadway\, North Beach\, 
+ San Francisco\, San Francisco
+URL:https://ma.to/event/chloe-kobernuss-mirror-frame-workshop-2026-11-07
+DESCRIPTION:Craft + Art\nhttps://ma.to/event/chloe-kobernuss-mirror-frame-
+ workshop-2026-11-07\n\nPart of Uncle Paul's Ceramics' Featured Artist Ser
+ ies\, this mirror frame making workshop is led by Chloe Kobernuss. It run
+ s from 11am to 4pm at the North Beach studio\, and the mirror is included
+ . Sign-up is available.
+END:VEVENT
+END:VCALENDAR

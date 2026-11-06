@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4f052561ede8@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261110T163000
+DTEND;TZID=America/Los_Angeles:20261110T180000
+SUMMARY:Design Chat with Alex Cornell\, Meta
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/alex-cornell-spc
+DESCRIPTION:Theatre\nhttps://luma.com/alex-cornell-spc\n\nSouth Park Commo
+ ns is delighted to host Alex Cornell for our Design Chat series with Sole
+ io. Event Details 4:30pm: Doors Open 5pm-6pm: Design Chat Alex Cornell is
+  a Design Director at Meta Superintelligence Labs (MSL)\, where he leads 
+ the design for Muse\, Meta's consumer AI agent. Previously\, he created t
+ he standalone Meta AI app and has been working in product design since 20
+ 07. His prior experien
+END:VEVENT
+END:VCALENDAR

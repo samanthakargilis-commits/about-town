@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:499a2a9c435d@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261106T160000
+DTEND;TZID=America/Los_Angeles:20261106T180000
+SUMMARY:Elder Shabbaton
+LOCATION:Tilden Park & Chochmat Halev\, Berkeley\, California\, Berkeley
+URL:https://ma.to/event/elder-shabbaton-06-nov-2026
+DESCRIPTION:Theatre + Weird & unusual · Berkeley\nhttps://ma.to/event/eld
+ er-shabbaton-06-nov-2026\n\nAn immersive Shabbat experience for Jewish ad
+ ults 55+ exploring the journey from aging to elderhood. The program runs 
+ November 6–7\, 2026\, at Tilden Park and Chochmat Halev in Berkeley\, C
+ alifornia. Activities include Jewish wisdom\, spiritual practice\, nature
+  connection\, music\, reflection\, shared meals\, and community conversat
+ ion. Attendance for both days is on a sliding scale of $225–$295. Regis
+ tra
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:289c6e239b53@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261107T100000
+DTEND;TZID=America/Los_Angeles:20261107T110000
+SUMMARY:Le Café Tchat de l'Alliance
+LOCATION:Alliance Française Silicon Valley\, Los Gatos\, Los Gatos
+URL:https://ma.to/event/le-cafe-tchat-de-lalliance-2026-11-07
+DESCRIPTION:Discourse · Los Gatos\nhttps://ma.to/event/le-cafe-tchat-de-l
+ alliance-2026-11-07\n\nCafé Tchat brings French conversation\, coffee\, 
+ and croissants to Alliance Française Silicon Valley. Learners and fluent
+  speakers can practice French and meet others in a relaxed setting. The s
+ ession runs Saturday\, November 7\, from 10:00 to 11:00 AM in Los Gatos. 
+ Advance registration is available online.
+END:VEVENT
+END:VCALENDAR

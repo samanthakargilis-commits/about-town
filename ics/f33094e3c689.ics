@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f33094e3c689@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;TZID=America/Los_Angeles:20261107T190000
+DTEND;TZID=America/Los_Angeles:20261107T210000
+SUMMARY:Paranda Party 3: Jeeti Raho
+LOCATION:Queer Arts Featured\, San Francisco
+URL:https://ma.to/event/paranda-party-07-nov-2026
+DESCRIPTION:Craft + Gay / queer\nhttps://ma.to/event/paranda-party-07-nov-
+ 2026\n\nFancypants Productions presents the third edition of Paranda Part
+ y: Jeeti Raho. This nomadic gathering centers on the theme of 'stay livin
+ g\,' reclaiming traditional blessings like Jeeti Raho\, Khush Raho\, and 
+ Abad Raho as a response to learned anxiety over queer bodies. The event f
+ eatures a live lineup of poetry\, storytelling\, and music\, an arts mark
+ et for queer and South Asian makers\, and a focus 
+END:VEVENT
+END:VCALENDAR

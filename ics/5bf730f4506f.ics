@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5bf730f4506f@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;TZID=America/Los_Angeles:20261211T170000
+DTEND;TZID=America/Los_Angeles:20261211T200000
+SUMMARY:Berkeley Art Club: Winter Wonder Market
+LOCATION:Gilman Brewing Company\, 912 Gilman St Berkeley\, Berkeley
+URL:https://partiful.com/e/XYFxoTo0Hn46mjQ8YQ1r
+DESCRIPTION:Art + Craft · Berkeley\nhttps://partiful.com/e/XYFxoTo0Hn46mj
+ Q8YQ1r\n\nJoin us for Berkeley Art Club’s Winter Wonder Market at Gilma
+ n! Enjoy whimsical live music\, food and locally brewed beers while shopp
+ ing from 20+ local artists and makers. This event is also a fundraiser fo
+ r Centro Legal de La Raza! 50% of vendor fees are being donated to suppor
+ ting legal aid for immigrant communities\, low income tenants\, and worke
+ rs in the Bay Area. All vendors will also be donat
+END:VEVENT
+END:VCALENDAR

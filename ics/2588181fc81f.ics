@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2588181fc81f@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261203T203000
+DTEND;TZID=America/Los_Angeles:20261203T230000
+SUMMARY:Jeremiah Chiu + r beny
+LOCATION:The Lab\, 2948 16th Street\, San Francisco\, California 94103\, U
+ nited States San Francisco\, San Francisco
+URL:https://dice.fm/event/6aa8514473bfbc00012f3a9d
+DESCRIPTION:Musical theatre + Art · Thursday evening\nhttps://dice.fm/eve
+ nt/6aa8514473bfbc00012f3a9d\n\n**Jeremiah Chiu** is a synthesist in the b
+ roadest sense of the word—a craftsperson of the modular synth and other
+  musical instruments and tools\, as well as an artist\, designer\, and ed
+ ucator whose work continually brings disparate forms of knowledge into ne
+ w relationships. While widely recognized for his versatile electronic mus
+ ic as a solo artist\, textured recordings in a duo with violist Marta So
+END:VEVENT
+END:VCALENDAR

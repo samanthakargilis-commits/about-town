@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dc9c99228202@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261106T210000
+DTEND;TZID=America/Los_Angeles:20261107T030000
+SUMMARY:Ultraviolet Tour: Skyler
+LOCATION:F8 Nightclub & Bar\, 1192 Folsom St\, San Francisco
+URL:https://ma.to/event/ultraviolet-tour-skyler-06-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/ultraviolet-tour-skyler-
+ 06-nov-2026\n\nRise Collective presents SKYLER’s ULTRAVIOLET TOUR at F8
+ . The Main Room features trap\, bass\, and techno sets from Skyler\, Cami
+ llionaire\, Burner.bby\, Devyn B2B Yanebun\, Sardonix\, and Xilenyia unti
+ l 3am. The lounge hosts a takeover by The Bae DJs\, featuring an open for
+ mat mix of global dance and house from Amayita\, DJ Cait\, DJ Ell\, Hooch
+ i\, Jae Coca\, and Snoflakez. Tickets are $10.
+END:VEVENT
+END:VCALENDAR

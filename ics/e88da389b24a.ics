@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e88da389b24a@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261114T210000
+DTEND;TZID=America/Los_Angeles:20261114T230000
+SUMMARY:NONAMI presents...
+LOCATION:200 Channels\, 111 6th St San Francisco\, San Francisco
+URL:https://partiful.com/e/8RvCaTLtOoLW4hWbONs3
+DESCRIPTION:Camp & Halloween\nhttps://partiful.com/e/8RvCaTLtOoLW4hWbONs3\
+ n\nNONAMI presents... ENCHANTED FORREST Somewhere between Halloween and T
+ hanksgiving there lies a forrest. A sexy\, enchanted forrest. For one nig
+ ht\, that forrest will be our dance floor—with special guest Whitlock (
+ @whitlockofficial) and your NONAMI residents leading us deeper into the w
+ oods. Come get lost with us. Forest attire encouraged. Come to dance. A f
+ ew surprises... Music // Whitlock (@whitlo
+END:VEVENT
+END:VCALENDAR

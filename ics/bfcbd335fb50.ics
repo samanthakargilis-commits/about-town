@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bfcbd335fb50@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261106T180000
+DTEND;TZID=America/Los_Angeles:20261106T210000
+SUMMARY:Silent Auction Closing Event
+LOCATION:David Pace Gallery\, 560 S 1st St\, San José\, Palo Alto
+URL:https://ma.to/event/silent-auction-closing-event-07-nov-2026
+DESCRIPTION:Art · Palo Alto\nhttps://ma.to/event/silent-auction-closing-e
+ vent-07-nov-2026\n\nJoin ICA San José on Friday\, November 6 from 6–9p
+ m for the Silent Auction Closing Event. All artwork from this year's Bene
+ fit and Art Auction will be on display and available for bidding in the D
+ avid Pace Gallery. Enjoy snacks\, drinks\, and music while the silent auc
+ tion lots close. This event is free and open to all. Part of South FIRST 
+ Friday\, where galleries and museums in the neighborhood stay 
+END:VEVENT
+END:VCALENDAR

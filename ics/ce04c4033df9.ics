@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ce04c4033df9@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261110T150000
+DTEND;TZID=America/Los_Angeles:20261110T180000
+SUMMARY:Cecilie Bahnsen PF26 & FW26 Preview
+LOCATION:MAC: Modern Appealing Clothing\, 387 Grove Street\, San Francisco
+ \, CA 94102\, San Francisco
+URL:https://ma.to/event/cecilie-bahnsen-pf26-fw26-preview-10-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/cecilie-bahnsen-pf26-fw2
+ 6-preview-10-nov-2026\n\nAn in-store preview at MAC of the Cecilie Bahnse
+ n PF26 and FW26 collections. Cate from the Cecilie Bahnsen team joins for
+  a glass of wine as visitors discover the collections. During the event\,
+  MAC donates 50% of all purchases to the San Francisco Arts Education Pro
+ ject\, an organization founded on the belief that all students deserve ac
+ cess to a robust immersion in the visual and performing arts.
+END:VEVENT
+END:VCALENDAR

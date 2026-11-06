@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2a34faa6924f@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261107T140000
+DTEND;TZID=America/Los_Angeles:20261107T210000
+SUMMARY:CHAI RAVE SF: DIWALI ON THE BAY @ ERIA ON NOV 7TH! (WATERFRONT EXP
+ ERIENCE)
+LOCATION:ERIA SAUSALITO\, 562 Bridgeway\, Sausalito\, CA 94965 Sausalito\,
+  Sausalito
+URL:https://www.eventbrite.com/e/chai-rave-sf-diwali-on-the-bay-eria-on-no
+ v-7th-waterfront-experience-tickets-2001611643307
+DESCRIPTION:Cultural festivals · Sausalito\nhttps://www.eventbrite.com/e/
+ chai-rave-sf-diwali-on-the-bay-eria-on-nov-7th-waterfront-experience-tick
+ ets-2001611643307\n\nA destination Diwali experience on the waterfront. B
+ reathtaking Bay views\, sunset hour and that Chai Rave energy.
+END:VEVENT
+END:VCALENDAR

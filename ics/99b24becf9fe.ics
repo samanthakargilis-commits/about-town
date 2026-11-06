@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:99b24becf9fe@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261212T150000
+DTEND;TZID=America/Los_Angeles:20261212T160000
+SUMMARY:Activity: Scrapbook Holiday Cards
+LOCATION:Presidio Branch Library\, 3150 Sacramento St\, San Francisco
+URL:https://sfpl.org/events/2026/12/12/activity-scrapbook-holiday-cards
+DESCRIPTION:Craft + Reading\nhttps://sfpl.org/events/2026/12/12/activity-s
+ crapbook-holiday-cards\n\nCelebrate the season with a holiday card craft 
+ using scrapbooking materials. Children ages 10 and younger are welcome wi
+ th the help of an adult. All materials are provided\, just bring your cre
+ ativity and holiday cheer.
+END:VEVENT
+END:VCALENDAR

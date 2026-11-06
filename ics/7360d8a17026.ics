@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7360d8a17026@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261121T130000
+DTEND;TZID=America/Los_Angeles:20261121T173000
+SUMMARY:Cuddle Party at HeartLab! Sat November 21st
+LOCATION:The HeartLab\, 3095 21st St\, San Francisco\, CA 94110 San Franci
+ sco\, San Francisco
+URL:https://www.eventbrite.com/e/cuddle-party-at-heartlab-sat-november-21s
+ t-tickets-2001433976902
+DESCRIPTION:New in your area\nhttps://www.eventbrite.com/e/cuddle-party-at
+ -heartlab-sat-november-21st-tickets-2001433976902\n\nCome join a Cuddle P
+ arty! A non-sexual\, consent focused\, touch event - at HeartLab in SF. C
+ OVID 19: Must be vaccinated & boosted.
+END:VEVENT
+END:VCALENDAR

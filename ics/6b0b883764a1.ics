@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6b0b883764a1@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;TZID=America/Los_Angeles:20261106T170000
+DTEND;TZID=America/Los_Angeles:20261106T210000
+SUMMARY:An Exclusive Burning Man Film Screening & Conversation with Award-
+ Winning social entrepreneur Sophia Swire
+LOCATION:Shack15\, Shack15\, 1\, Ferry Building\, Ste 201\, San Francisco\
+ , CA 94111\, USA\, San Francisco
+URL:https://luma.com/l2hrr2zd
+DESCRIPTION:Discourse + Art\nhttps://luma.com/l2hrr2zd\n\nBurning Man: Art
+  on Fire Join us at SHACK15 for a special screening of Burning Man: Art o
+ n Fire\, a captivating documentary celebrating the extraordinary artists\
+ , creativity\, and iconic installations behind Burning Man. Following the
+  film\, enjoy an intimate conversation with producer Sophia Swire and art
+ ist Andrew Johnstone\, the creative force behind the spectacular 2018 Bur
+ ning Man burn and a clos
+END:VEVENT
+END:VCALENDAR

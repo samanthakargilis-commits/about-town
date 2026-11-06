@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cfe02cf412f6@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261106T190000
+DTEND;TZID=America/Los_Angeles:20261106T210000
+SUMMARY:Mary Lynn Rajskub: Hysterical
+LOCATION:Stanford Live\, Stanford
+URL:https://ma.to/event/hysterical-mary-lynn-rajskub-06-nov-2026
+DESCRIPTION:Comedy · Stanford\nhttps://ma.to/event/hysterical-mary-lynn-r
+ ajskub-06-nov-2026\n\nStanford Live presents comedian Mary Lynn Rajskub i
+ n her show Hysterical. This listing covers the 7:00 PM performance\, the 
+ first of two sets that evening. Stanford Live offers an intimate performa
+ nce space with pre-show drinks available. Tickets are required.
+END:VEVENT
+END:VCALENDAR

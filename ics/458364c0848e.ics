@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:458364c0848e@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:SF’s Drag Queens on Ice 2026
+LOCATION:Union Square\, San Francisco
+URL:https://sf.funcheap.com/city-guide/december-street-fairs-festivals/
+DESCRIPTION:Gay / queer + Camp & Halloween · Featured on Funcheap\nhttps:
+ //sf.funcheap.com/city-guide/december-street-fairs-festivals/\n\nDecember
+  3\, 2026 – SF (Union Square) – FREE to watch\; $35 to skate (with sk
+ ate rental) – Lace up your skates and twirl alongside the Queens and Ki
+ ngs or grab a prime spot rinkside to watch the fiercest drag personalitie
+ s in the San Francisco Bay Area deliver holiday performances that’ll sl
+ eigh your heart away .
+END:VEVENT
+END:VCALENDAR

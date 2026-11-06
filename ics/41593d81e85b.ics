@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:41593d81e85b@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Studio 8 Film Festival
+LOCATION:4-Star Theater\, 2200 Clement St\, San Francisco\, San Francisco
+URL:https://sf.funcheap.com/studio-8-film-festival/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/studio-8-film-festiv
+ al/\n\nThe 3rd Annual Studio 8 Film Festival celebrates the filmmaking of
+  San Francisco Art Institute (SFAI) alumni\, faculty\, and staff. Friday\
+ , November 6\, 7:30pm &Saturday\, November 7\, 2pm\, 4-Star Theater Juror
+  Films & Open Call Screening Sunday\, November 8\, 12:30pm\, Roxie Theate
+ r Legacy Award Honoree: Babeth Mondini VanLoo
+END:VEVENT
+END:VCALENDAR

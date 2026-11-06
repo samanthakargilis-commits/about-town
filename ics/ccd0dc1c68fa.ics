@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ccd0dc1c68fa@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261106T204000
+DTEND;TZID=America/Los_Angeles:20261106T224000
+SUMMARY:Nausicaä of the Valley of the Wind
+LOCATION:New People Cinema\, San Francisco
+URL:https://ma.to/event/nausicaa-of-the-valley-of-the-wind-06-nov-2026
+DESCRIPTION:Theatre\nhttps://ma.to/event/nausicaa-of-the-valley-of-the-win
+ d-06-nov-2026\n\nHayao Miyazaki’s 1984 post-apocalyptic warrior-princes
+ s eco-parable Nausicaä of the Valley of the Wind screens at New People C
+ inema on Friday\, November 6 at 8:40 PM. It is widely considered the film
+  that paved the way for Studio Ghibli and is sometimes described as “an
+ ime’s answer to Dune.” Tickets are available through The Roxie Theate
+ r.
+END:VEVENT
+END:VCALENDAR

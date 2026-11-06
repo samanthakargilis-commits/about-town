@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4d402e91b661@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;TZID=America/Los_Angeles:20261205T180000
+DTEND;TZID=America/Los_Angeles:20261205T200000
+SUMMARY:Free “Last Supper” Party: Poetry + Music at Cocina Mayah
+LOCATION:Cocina Mayah\, 2909 16th St\, SF\, CA 94103\, SF
+URL:https://sf.funcheap.com/free-supper-party-poetry-music-cocina-mayah-sf
+ /
+DESCRIPTION:Writing + Art\nhttps://sf.funcheap.com/free-supper-party-poetr
+ y-music-cocina-mayah-sf/\n\nAn Evening of Poetry and Music with Avotcja\,
+  Andreína Maldonado and Esperanza Cabrales curated by Kimi Sugioka and p
+ resented in collaboration with Cocina Mayah. We invite our audience to sh
+ are ideas and bread and find inspiration in the thoughts and words of art
+ ists and writers whose ...
+END:VEVENT
+END:VCALENDAR

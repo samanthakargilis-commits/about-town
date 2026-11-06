@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:951b0c0cc0b9@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;TZID=America/Los_Angeles:20261108T110000
+DTEND;TZID=America/Los_Angeles:20261108T160000
+SUMMARY:Gill Tract Harvest Festival
+LOCATION:Gill Tract Community Farm\, 1050 San Pablo Ave\, Albany\, Albany
+URL:https://ma.to/event/gill-tract-harvest-festival-2026-11-08
+DESCRIPTION:Big Bay Area traditions + Fairs & festivals · Albany\nhttps:/
+ /ma.to/event/gill-tract-harvest-festival-2026-11-08\n\nGill Tract Communi
+ ty Farm holds its Harvest Festival\, an all-ages day bringing together li
+ ve music\, farmstand produce\, crafts\, food and community\, with volunte
+ er opportunities on site. Screen printing is part of the craft programme\
+ , and attendees who want to print bring their own T-shirt. To keep the ev
+ ent sustainable\, visitors bring their own bowl\, spoon and cup. Parking 
+ is limited\, so carpooling
+END:VEVENT
+END:VCALENDAR

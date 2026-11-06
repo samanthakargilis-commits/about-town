@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ddf0a8aa35d5@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261121T180000
+DTEND;TZID=America/Los_Angeles:20261121T200000
+SUMMARY:Backyard Ball
+LOCATION:1767 12th St\, 1767 12th St Oakland\, Oakland
+URL:https://partiful.com/e/q2X1bUuMXAx5L3DyvieK
+DESCRIPTION:Concerts · Oakland\nhttps://partiful.com/e/q2X1bUuMXAx5L3Dyvi
+ eK\n\nHowdy Gals & Emmett Reed are teaming up again to throw the fanciest
+  ball a backyard can have ✨ we can’t wait to gather to enjoy the best
+  tunes\, crispest champagne and the loveliest company $15 to support the 
+ bands + space and each ticket comes with a free drink 🥂 Music by ⭐
+ ️ lace - new on the scene but her music is already blowing up\, enjoy t
+ he beautiful airy & angelic vibes ft a full band ⭐️ I Am
+END:VEVENT
+END:VCALENDAR

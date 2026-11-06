@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:51f68bf279d7@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261106T120000
+DTEND;TZID=America/Los_Angeles:20261106T170000
+SUMMARY:MondoChromatic
+LOCATION:Wessling Contemporary\, 39 Grant Avenue\, San Francisco\, San Fra
+ ncisco
+URL:https://ma.to/event/mondochromatic-06-nov-2026
+DESCRIPTION:Museum exhibits + Art\nhttps://ma.to/event/mondochromatic-06-n
+ ov-2026\n\nMondoChromatic | New West Coast Colorways is a group exhibitio
+ n featuring works by @robertszot\, @nora_vandenberg\, @donhershman\, @leo
+ nphillipsart\, @rgenotti\, @whitneymothernature and @juliabadham. The sho
+ w is in its final days and closes Sat 07 Nov. The exhibition is open 12
+ –5 pm on Fri 06 Nov.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:980d5ec28247@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;TZID=America/Los_Angeles:20261113T100000
+DTEND;TZID=America/Los_Angeles:20261113T170000
+SUMMARY:Asian Art Museum Holiday Artisan Market
+LOCATION:Asian Art Museum\, 200 Larkin St San Francisco\, San Francisco
+URL:https://partiful.com/e/3JzBPOIreI6ItnjhvsA9
+DESCRIPTION:Museum exhibits + Art\nhttps://partiful.com/e/3JzBPOIreI6Itnjh
+ vsA9\n\nThe museum turns its courtyard into a holiday market for three da
+ ys\, with local makers selling fashion\, jewelry\, home goods\, gourmet s
+ nacks\, stationery\, and kids' gifts! Shoppers are entered into a daily d
+ rawing for a $100 Boutique gift certificate while they shop This event is
+  not hosted by Partiful. It is an event we recommend\, hosted by the Asia
+ n Art Museum. Find more details at the link above
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ac3620244154@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261107T103000
+DTEND;TZID=America/Los_Angeles:20261107T123000
+SUMMARY:Helwig-Coghlan Memorial Singing
+LOCATION:Good Shepherd Episcopal Church\, 1823 Ninth St\, Berkeley\, CA Be
+ rkeley\, Berkeley
+URL:https://www.meetup.com/bay-area-sacred-harp/events/317281854/
+DESCRIPTION:Singing · Berkeley\nhttps://www.meetup.com/bay-area-sacred-ha
+ rp/events/317281854/\n\nCome join us for a full day of singing. Admission
+  is free. 2025 loaner books are available. All are welcome. Registration 
+ opens at 10:30am. Singing from 10:45-3:30ish with dinner on the grounds a
+ t 12:30ish. Please bring a dish or two to share. See more details here ht
+ tps://bayareasacredharp.org/sally-coghlan-memorial-singing/
+END:VEVENT
+END:VCALENDAR

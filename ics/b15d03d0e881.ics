@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b15d03d0e881@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261106T133000
+DTEND;TZID=America/Los_Angeles:20261106T150000
+SUMMARY:Intro to the Archive Tour
+LOCATION:Letterform Archive\, San Francisco
+URL:https://ma.to/event/intro-to-the-archive-tour-2026-11-06
+DESCRIPTION:Art\nhttps://ma.to/event/intro-to-the-archive-tour-2026-11-06\
+ n\nA guided collections tour of a curated selection of books\, periodical
+ s\, posters\, sketches\, original art and related ephemera chronicling th
+ e history of written communications\, from the invention of writing and m
+ edieval manuscripts to print and digital type. Graphic designer Melissa L
+ ee\, who focuses on the needs of nonprofits and educational institutions 
+ and is particularly interested in improving 
+END:VEVENT
+END:VCALENDAR

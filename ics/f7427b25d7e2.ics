@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f7427b25d7e2@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261106T153000
+DTEND;TZID=America/Los_Angeles:20261106T173000
+SUMMARY:Postcard Writing at Rikki’s
+LOCATION:Rikki’s Bar\, 2223 Market Street\, San Francisco\, 94114\, San 
+ Francisco
+URL:https://ma.to/event/postcard-writing-at-rikkis-2026-11-06
+DESCRIPTION:Gay / queer\nhttps://ma.to/event/postcard-writing-at-rikkis-20
+ 26-11-06\n\nAt Rikki’s Bar on November 6\, 2026\, visitors can write po
+ stcards about why sports matter as part of an effort to save sports for a
+ ll in Washington. Postcards and writing supplies are provided\, and the s
+ tation carries messages about keeping Title IX strong and supporting tran
+ s kids in sports. A free drink or bite and a free poster are offered.
+END:VEVENT
+END:VCALENDAR

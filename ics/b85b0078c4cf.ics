@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b85b0078c4cf@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261106T090000
+DTEND;TZID=America/Los_Angeles:20261106T110000
+SUMMARY:Worlds of Flavor 2026: Day 3
+LOCATION:The Culinary Institute of America at Copia\, San Francisco
+URL:https://ma.to/event/worlds-of-flavor-2026-day-3-06-nov-2026
+DESCRIPTION:Fairs & festivals\nhttps://ma.to/event/worlds-of-flavor-2026-d
+ ay-3-06-nov-2026\n\nDay 3 of the 28th Annual Worlds of Flavor Internation
+ al Conference + Festival at The Culinary Institute of America at Copia in
+  Napa Valley. The 2026 theme is “Asia on Our Menus: East by Southeast.
+ ” Emily Lim represents Dabao Singapore at the conference\, with Otak Ot
+ ak\, Laksa and Kueh Bingka from Dabao Singapore part of the event. The co
+ nference runs November 4–6\, 2026.
+END:VEVENT
+END:VCALENDAR

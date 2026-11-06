@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:523e333c9e71@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261106T110000
+DTEND;TZID=America/Los_Angeles:20261106T170000
+SUMMARY:The Main Gallery Presents Our Holiday Show
+LOCATION:The Main Gallery\, 883 Santa Cruz Ave.\, Suite 1\, Menlo Park
+URL:https://www.themaingallery.org/
+DESCRIPTION:Art + Craft · Menlo Park\nhttps://www.themaingallery.org/\n\n
+ Fourteen gallery artists fill the space with original paintings\, ceramic
+ s\, sculpture\, jewelry\, and photography\, including smaller pieces size
+ d for holiday gifting. A browse-friendly stop for local
+END:VEVENT
+END:VCALENDAR

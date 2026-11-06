@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d86e356829c4@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261107T120000
+DTEND;TZID=America/Los_Angeles:20261107T140000
+SUMMARY:Cranes\, Conversations & Golden Hour Walk: World Tree of Hope\, Gr
+ ace Cathedral
+LOCATION:Grace Cathedral\, 1100 California St\, San Francisco\, CA 94108\,
+  USA\, San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/bay-area-active-social-20s-30s/events/317222329
+ /
+DESCRIPTION:Craft\nhttps://www.meetup.com/bay-area-active-social-20s-30s/e
+ vents/317222329/\n\n**WhatsApp:** **https://chat.whatsapp.com/HhpnP72DzEB
+ 9XHdA7sOGjF** **🕊️ Cranes\, Conversations & Golden Hour Walk on Nob 
+ Hill: the World Tree of Hope\, at Grace Cathedral** *TownFlame November S
+ aturday Series · Sat\, Nov 7\, 11:45 AM–evening* We have a long tradit
+ ion of decorating the World Tree of Hope\, with Grace Cathedral\, during 
+ the pre-holiday season. One year old actually :)\, so we are coming ba
+END:VEVENT
+END:VCALENDAR

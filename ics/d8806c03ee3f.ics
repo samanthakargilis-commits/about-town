@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d8806c03ee3f@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261109T190000
+DTEND;TZID=America/Los_Angeles:20261109T210000
+SUMMARY:SF Chess Club - World Freedom Day!
+LOCATION:Anina\, 482 Hayes St San Francisco\, San Francisco
+URL:https://partiful.com/e/szYrSPRhNmddBgrq3Hth
+DESCRIPTION:New in your area\nhttps://partiful.com/e/szYrSPRhNmddBgrq3Hth\
+ n\nAnina is 21+ BRING YOUR ID - outside food is allowed! World Freedom Da
+ y! Bring extra boards if you have one! make sure you get a drink - our ho
+ sts at Anina are very supportive! All Levels Welcome - Every Monday Night
+  Chess with San Francisco Chess Club! (7 - 9:30 PM~) @ Anina Want to supp
+ ort? Venmo @connorsullivan1998 with "SF Chess Club" in the note - everyth
+ ing goes to support the club with new 
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:889083b3e8c6@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261119T180000
+DTEND;TZID=America/Los_Angeles:20261119T220000
+SUMMARY:Grant Yun: Sections
+LOCATION:NODE\, NODE\, 180 University Ave\, Palo Alto\, CA 94301\, USA\, P
+ alo Alto
+URL:https://luma.com/grant-yun
+DESCRIPTION:Thursday evening · Palo Alto\nhttps://luma.com/grant-yun\n\nD
+ eveloped over the past year with Fellowship\, Sections expands Grant Yun'
+ s distinctive visual language into fully three-dimensional\, generative l
+ andscapes informed by government planning documents and the systems that 
+ shape our built environment. Rather than depicting existing places\, Yun 
+ has created a generative system capable of imagining landscapes that have
+  never existed\, yet feel strangely fa
+END:VEVENT
+END:VCALENDAR

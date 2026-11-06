@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c736e1bbf74a@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261106T170000
+DTEND;TZID=America/Los_Angeles:20261106T210000
+SUMMARY:Ladies of Freestyle Happy Hour
+LOCATION:El Rio\, 3158 Mission St\, San Francisco\, San Francisco
+URL:https://ma.to/event/ladies-of-freestyle-happy-hour-2026-11-06
+DESCRIPTION:New in your area\nhttps://ma.to/event/ladies-of-freestyle-happ
+ y-hour-2026-11-06\n\nLadies of Freestyle Happy Hour features an all-vinyl
+  soundtrack of funk\, freestyle throwbacks\, Latin house and more at El R
+ io. Hosted by La Gitana 747\, with Little Treasure among the vinyl select
+ ors. The event takes place in the Front Room. Entry is free.
+END:VEVENT
+END:VCALENDAR

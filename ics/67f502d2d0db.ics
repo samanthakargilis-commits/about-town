@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:67f502d2d0db@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261113T100000
+DTEND;TZID=America/Los_Angeles:20261113T120000
+SUMMARY:Diem Attire Pop up
+LOCATION:Kindred Studio\, 1910 Bryant St San Francisco\, San Francisco
+URL:https://partiful.com/e/j1iOLCIhaeY5C204IFwO
+DESCRIPTION:New in your area\nhttps://partiful.com/e/j1iOLCIhaeY5C204IFwO\
+ n\nhttps://www.instagram.com/p/DfQRnq_K-w7/ "We're coming to San Francisc
+ o! join us at Kindred Studio and shop our curated collection\, including 
+ first access to new arrivals hands-on workshops will be taking place\, av
+ ailable for sign up at kindredstudiosf.com 1910 Bryant St\, San Francisco
+ \, CA 94110 Friday 11.13 10AM - 6PM Saturday 11.14 10AM - 7PM Sunday 11.1
+ 5 10AM - 7PM hope to see you there! 🤍"
+END:VEVENT
+END:VCALENDAR

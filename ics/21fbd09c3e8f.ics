@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:21fbd09c3e8f@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261106T170000
+DTEND;TZID=America/Los_Angeles:20261106T200000
+SUMMARY:Ocean Beach Photo Show
+LOCATION:Harvey Milk Photo Center\, 50 Scott St\, San Francisco
+URL:https://ma.to/event/ocean-beach-opening-reception-07-nov-2026
+DESCRIPTION:Museum exhibits + Concerts\nhttps://ma.to/event/ocean-beach-op
+ ening-reception-07-nov-2026\n\nHeavy Water Collective presents Ocean Beac
+ h\, a group surf photography exhibition at Harvey Milk Photo Center featu
+ ring work by 24 photographers: Adam Warmington\, Alex Kleeman\, Brock Boz
+ zani\, Christopher Gardiner\, Cub Schoenborn\, Devin Moren\, Fiona Duerr\
+ , Gillian Stargensky\, Hayden Childs\, Iris Robert\, Jack Bober\, James B
+ artolozzi\, JJ Harris\, Lawrence Rickford\, Liam O’Donnell\, Mia Bolton
+ \, Miles Jac
+END:VEVENT
+END:VCALENDAR

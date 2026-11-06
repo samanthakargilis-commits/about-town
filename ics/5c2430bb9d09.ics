@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5c2430bb9d09@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261217T183000
+DTEND;TZID=America/Los_Angeles:20261217T203000
+SUMMARY:Book Club: "Bad Blood" by John Carreyrou
+LOCATION:Burlingame\, Burlingame
+URL:https://www.meetup.com/burlingame-san-mateo-20s-30s-40s/events/3171088
+ 38/
+DESCRIPTION:Reading · Thursday evening · Burlingame\nhttps://www.meetup.
+ com/burlingame-san-mateo-20s-30s-40s/events/317108838/\n\nIt's been a whi
+ le since we read nonfiction! With the documentary "You Can See Everything
+ " being so popular\, let's read and discuss "Bad Blood: Secrets and Lies 
+ in a Silicon Valley Startup" by John Carreyrou. There are several copies 
+ available at the library so it should be easy to get. The location is TBD
+  but will be in the Burlingame/San Mateo/Foster City area. We'll decide a
+ fter the November mee
+END:VEVENT
+END:VCALENDAR

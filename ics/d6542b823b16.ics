@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d6542b823b16@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;TZID=America/Los_Angeles:20261106T170000
+DTEND;TZID=America/Los_Angeles:20261106T220000
+SUMMARY:Fort Mason Night Market
+LOCATION:Fort Mason Center\, undefined undefined San Francisco\, San Franc
+ isco
+URL:https://partiful.com/e/dcRhLZ0qrAAt2kkl3GBu
+DESCRIPTION:Fairs & festivals + Concerts\nhttps://partiful.com/e/dcRhLZ0qr
+ AAt2kkl3GBu\n\nhttps://www.instagram.com/p/DfQE6day3Yc/ "In honor of the 
+ @valkyries winning the @wnba championship\, we are hosting a @fortmasonce
+ nter night market this Friday! (Okay\, we already had the night market pl
+ anned but we’re still celebrating!!) 𓆃 Friday\, November 6\, 5–10p
+ m 𓆃 70+ artist and designer craftspeople 𓆃 Food and drinks from 25+
+  @offthegridsf vendors 𓆃 Live music by @anna.hillburg and DJ @coleo
+END:VEVENT
+END:VCALENDAR

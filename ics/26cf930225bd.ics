@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:26cf930225bd@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;TZID=America/Los_Angeles:20261108T130000
+DTEND;TZID=America/Los_Angeles:20261108T170000
+SUMMARY:San Francisco Diwali Festival at Yerba Buena Gardens 2026
+LOCATION:San Francisco (Yerba Buena Gardens)
+URL:https://sf.funcheap.com/city-guide/diwali-2026-festival-lights-celebra
+ tions-bay-area/
+DESCRIPTION:Fairs & festivals + Cultural festivals · Featured on Funcheap
+ \nhttps://sf.funcheap.com/city-guide/diwali-2026-festival-lights-celebrat
+ ions-bay-area/\n\nNovember 8\, 2026 | San Francisco (Yerba Buena Gardens)
+  | FREE Celebrate Diwali in the heart of downtown San Francisco with an a
+ fternoon of traditional and contemporary South Asian music and dance. The
+  free outdoor festival also features local artisans\, food vendors and li
+ ve performances\, including Alam Khan\, Raaga School of Music and Rang De
+  Bollywood Dance Company.
+END:VEVENT
+END:VCALENDAR

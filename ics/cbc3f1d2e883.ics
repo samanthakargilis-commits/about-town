@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cbc3f1d2e883@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261106T200000
+DTEND;TZID=America/Los_Angeles:20261106T220000
+SUMMARY:SF Leonard Cohen Festival
+LOCATION:Swedish American Hall (Upstairs)\, San Francisco
+URL:https://ma.to/event/sf-leonard-cohen-festival-06-nov-2026
+DESCRIPTION:Fairs & festivals + Writing\nhttps://ma.to/event/sf-leonard-co
+ hen-festival-06-nov-2026\n\nBay Area poets and singer/songwriters honor a
+ nd explore the words and music of the late Leonard Cohen in the Poetry & 
+ Song programme. The event is upstairs at Swedish American Hall. Admission
+  is 21+\, with photo ID required. Tickets are available.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:087158a420e9@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;TZID=America/Los_Angeles:20261108T100000
+DTEND;TZID=America/Los_Angeles:20261108T140000
+SUMMARY:Free Community Safety Fair Block Party (Oakland Chinatown)
+LOCATION:Oakland Chinatown\, Harrison Street and 11th Street\, Oakland\, C
+ A\, Oakland
+URL:https://sf.funcheap.com/free-community-safety-fair-block-party-oakland
+ -chinatown/
+DESCRIPTION:Fairs & festivals · A yearly tradition · Oakland\nhttps://sf
+ .funcheap.com/free-community-safety-fair-block-party-oakland-chinatown/\n
+ \nCome get familiar with local government agencies\, community nonprofits
+ \, educational organizations\, healthcare providers\, safety organization
+ \, and community service providers! This event is in partnership with Asi
+ an Advisory Committee on Crime and Oakland Police Department with support
+  from Asian Youth Services Committee.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0ab2ce42252d@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Taste the Sparkle: Chandon Spritz
+LOCATION:San Francisco Ferry Building\, 1 Ferry Bldg.\, San Francisco\, CA
+ \, San Francisco
+URL:https://sf.funcheap.com/taste-sparkle-chandon-spritz/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/taste-sparkle-chando
+ n-spritz/\n\nDiscover the sparkle of Chandon Spritz! Join us for a tastin
+ g and enjoy its refreshing citrus notes\, vibrant bubbles\, and lively fl
+ avors. Taste the Sparkle: Chandon Spritz Join us at the iconic Ferry Buil
+ ding for an unforgettable experience celebrating the delightful Chandon S
+ pritz. This in-person event invites ...
+END:VEVENT
+END:VCALENDAR

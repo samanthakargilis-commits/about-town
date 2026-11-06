@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:21d921a62082@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;TZID=America/Los_Angeles:20261106T193000
+DTEND;TZID=America/Los_Angeles:20261106T213000
+SUMMARY:In/Decision: Theatrical Circus
+LOCATION:Great Star Theater\, San Francisco
+URL:https://ma.to/event/indecision-theatrical-circus-06-nov-2026
+DESCRIPTION:Weird & unusual + Reading\nhttps://ma.to/event/indecision-thea
+ trical-circus-06-nov-2026\n\nIn/Decision is a theatrical circus from the 
+ creators of Memoir\, combining aerial work\, acrobatics and storytelling 
+ in a full stage production at Great Star Theater. Tickets are available o
+ nline.
+END:VEVENT
+END:VCALENDAR

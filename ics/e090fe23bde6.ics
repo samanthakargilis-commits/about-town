@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e090fe23bde6@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261106T183000
+DTEND;TZID=America/Los_Angeles:20261106T203000
+SUMMARY:Life in Perspective by Tiago Forte: Book Launch & Guided Reflectio
+ n
+LOCATION:Best Bookstore in Union Square\, 226 Powell St\, San Francisco\, 
+ CA 94102 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/life-in-perspective-by-tiago-forte-book-l
+ aunch-guided-reflection-tickets-2003171372499
+DESCRIPTION:Reading + Art\nhttps://www.eventbrite.com/e/life-in-perspectiv
+ e-by-tiago-forte-book-launch-guided-reflection-tickets-2003171372499\n\nB
+ ook signing\, guided reflection\, and live Q&A to launch Tiago’s new bo
+ ok Life in Perspective: The Art and Power of the Annual Life Review
+END:VEVENT
+END:VCALENDAR

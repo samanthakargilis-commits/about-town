@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:576426a0f494@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261107T103000
+DTEND;TZID=America/Los_Angeles:20261107T123000
+SUMMARY:Puppy Foundations
+LOCATION:Bernal Beast\, San Francisco
+URL:https://ma.to/event/puppy-foundations-2026-11-07
+DESCRIPTION:Animals\nhttps://ma.to/event/puppy-foundations-2026-11-07\n\nP
+ uppy Foundations begins Saturday\, November 7 at 10:30 AM at Bernal Beast
+  in Bernal Heights\, San Francisco. This class covers foundational skills
+ \, first cues\, and early socialization for puppies under 18 weeks to ens
+ ure a confident start. Enrollment is available online through Bernal Beas
+ t. New rescues receive 20% off their first class with code RESCUEDOG20.
+END:VEVENT
+END:VCALENDAR

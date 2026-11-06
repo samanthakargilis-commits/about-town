@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dc82a99625fd@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;TZID=America/Los_Angeles:20261106T170000
+DTEND;TZID=America/Los_Angeles:20261106T210000
+SUMMARY:South First Friday Market
+LOCATION:SoFA Pocket Park\, 540 S 1st St\, San Jose\, San Jose
+URL:https://ma.to/event/south-first-friday-market-2026-11-06
+DESCRIPTION:Craft + Museum exhibits · San Jose\nhttps://ma.to/event/south
+ -first-friday-market-2026-11-06\n\nSouth First Friday market at SoFA Pock
+ et Park\, presented by @westartgardens\, with vendors alongside an art su
+ pply swap. Tables are set up for collaging\, junk journaling\, scrapbooki
+ ng and general crafting\, and visitors can make a gratitude cornucopia. V
+ eggielution helped make the market possible. The park sits at 540 S 1st S
+ t in San Jose\, next to the Quilt and Textile Museum.
+END:VEVENT
+END:VCALENDAR

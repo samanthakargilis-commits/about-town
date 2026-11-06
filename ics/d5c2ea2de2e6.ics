@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d5c2ea2de2e6@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261108T190000
+DTEND;TZID=America/Los_Angeles:20261108T230000
+SUMMARY:Comfort Club\, Big Sierra and Danielle Judith
+LOCATION:Kilowatt\, 3160 16th Street\, San Francisco\, California 94103\, 
+ United States San Francisco\, San Francisco
+URL:https://dice.fm/event/6aa8692bfcb1030001d513eb
+DESCRIPTION:New in your area\nhttps://dice.fm/event/6aa8692bfcb1030001d513
+ eb\n\n**Comfort Club:** https://www.instagram.com/comfortclub **Big Sierr
+ a:** https://www.instagram.com/big.sierra/ **Danielle Judith:** https://w
+ ww.instagram.com/daniellejudith_/
+END:VEVENT
+END:VCALENDAR

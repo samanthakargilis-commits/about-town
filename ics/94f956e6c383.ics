@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:94f956e6c383@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261106T120000
+DTEND;TZID=America/Los_Angeles:20261106T140000
+SUMMARY:Drop-In Pottery Workshop
+LOCATION:Artillery AG\, Mission District\, San Francisco\, San Francisco
+URL:https://ma.to/event/drop-in-pottery-workshop-06-nov-2026
+DESCRIPTION:Craft\nhttps://ma.to/event/drop-in-pottery-workshop-06-nov-202
+ 6\n\nArtillery AG runs in-person\, one-time drop-in pottery workshops on 
+ Thursdays through Sundays during the season. Each workshop is a single se
+ ssion for working with clay by hand and creating something meaningful. Th
+ e studio’s clay practice emphasizes intention\, gratitude\, and connect
+ ion to the natural world\, with water and the other elements part of the 
+ process. Guidance is provided. Sign-up is avai
+END:VEVENT
+END:VCALENDAR

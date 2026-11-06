@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e908d4508595@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261106T180000
+DTEND;TZID=America/Los_Angeles:20261106T210000
+SUMMARY:Salsa & Bachata Singles Dance
+LOCATION:Billy Roy's Burger Co\, Fremont\, 550 Barneveld Ave\, San Francis
+ co\, CA 94124\, Fremont
+URL:https://ma.to/event/salsa-bachata-singles-dance-2026-11-06
+DESCRIPTION:Fremont\nhttps://ma.to/event/salsa-bachata-singles-dance-2026-
+ 11-06\n\nDance Fridays is a salsa and bachata party at Space 550\, with l
+ essons before the DJ programme. Ricardo teaches beginners bachata at 8pm 
+ and beginners salsa at 9pm\, and Kristin teaches intermediate bachata at 
+ 9pm. In the salsa room\, DJ Goodsho plays 9:45–11pm and 12–1:30am\, a
+ nd DJ Thiencito plays 11pm–12am. In the bachata room\, DJ Thiencito pla
+ ys 9:45–11pm and 12–12:45am\; special guest DJ Whoman pl
+END:VEVENT
+END:VCALENDAR

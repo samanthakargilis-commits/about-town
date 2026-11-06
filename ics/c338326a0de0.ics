@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c338326a0de0@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261107T120000
+DTEND;TZID=America/Los_Angeles:20261107T190000
+SUMMARY:Yori Mori Midori Pop up
+LOCATION:2266 Chestnut St\, 2266 Chestnut St San Francisco\, San Francisco
+URL:https://partiful.com/e/llAtL2rhnY7o3WtQ3bvi
+DESCRIPTION:New in your area\nhttps://partiful.com/e/llAtL2rhnY7o3WtQ3bvi\
+ n\nhttps://www.instagram.com/p/DfDkbFbNbk9/ ʚĭɞೃ ͙͘͡★ SAVE THE 
+ DATE ★ 11.07 A little piece of Japan is coming to INDIGO SF! ⋆。𖦹
+ °⭒ ̊。⋆ for our YORI DORI MIDORI PT.2 ✧ Designer vintage bags fr
+ om Japan ✧ Designer & J-FASHION clothing ✧ Bag charms & cute trinkets
+  ✧ FREE matcha while supplies last ✧ Photo booth ✧ Monchhichi givea
+ ways! ⋆。𖦹°⭒ ̊。⋆ ONE DAY ONLY ⋆。𖦹°⭒ ̊。⋆ Satu
+ rday\, November 7 | 12–7 PM 2266 Ch
+END:VEVENT
+END:VCALENDAR

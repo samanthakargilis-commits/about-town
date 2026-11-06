@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:43ea220e5ef9@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;TZID=America/Los_Angeles:20261113T180000
+DTEND;TZID=America/Los_Angeles:20261113T220000
+SUMMARY:Mahal Mural Block Party + Fashion Show + Karaoke
+LOCATION:Jessie West Street\, Jessie West Street\, Jessie West St\, San Fr
+ ancisco\, CA 94103\, USA\, San Francisco
+URL:https://luma.com/uvfqed21
+DESCRIPTION:Singing + Fairs & festivals\nhttps://luma.com/uvfqed21\n\nUNDS
+ CVRD 10: Made with Mahal — Mahal Mural Block Party + Fashion Show + Kar
+ aoke Ten years of showing up for Filipino culture. Let’s celebrate with
+  love. 💜 Join us for Hub 3 of UNDSCVRD’s 10th anniversary celebratio
+ n\, as we bring Jessie West alive with new murals\, Filipino fashion\, ar
+ t making\, and a whole alley singing its heart out. MAHAL MURAL PANEL DIS
+ CUSSION Celebrate new public art by Venazir 
+END:VEVENT
+END:VCALENDAR

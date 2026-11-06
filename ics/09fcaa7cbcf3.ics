@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:09fcaa7cbcf3@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261116T090000
+DTEND;TZID=America/Los_Angeles:20261116T110000
+SUMMARY:Japanese Tea Garden Free Admission Hour
+LOCATION:75 Hagiwara Tea Garden Dr\, 75 Hagiwara Tea Garden Dr San Francis
+ co\, San Francisco
+URL:https://partiful.com/e/GPxnHH5I1pRMqD0KorLS
+DESCRIPTION:New in your area\nhttps://partiful.com/e/GPxnHH5I1pRMqD0KorLS\
+ n\nThe Tea Garden opens its gates free for the first hour on weekday morn
+ ings\, a calm window before the day's crowds arrive. It is a lovely\, unh
+ urried way to start a Monday among the lanterns\, bridges\, and maples! T
+ his event is not hosted by Partiful. It is an event we recommend\, hosted
+  by Gardens of Golden Gate Park. Find more details at the link above
+END:VEVENT
+END:VCALENDAR

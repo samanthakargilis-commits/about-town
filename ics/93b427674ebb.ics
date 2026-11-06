@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:93b427674ebb@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;TZID=America/Los_Angeles:20261113T160000
+DTEND;TZID=America/Los_Angeles:20261113T210000
+SUMMARY:SF’s “Bhangra & Beats” Diwali Night Market 2026
+LOCATION:San Francisco (Yerba Buena Gardens)
+URL:https://sf.funcheap.com/city-guide/diwali-2026-festival-lights-celebra
+ tions-bay-area/
+DESCRIPTION:Fairs & festivals + Cultural festivals · Featured on Funcheap
+ \nhttps://sf.funcheap.com/city-guide/diwali-2026-festival-lights-celebrat
+ ions-bay-area/\n\nNovember 13\, 2026 | San Francisco (Yerba Buena Gardens
+ ) | FREE San Francisco’s beloved Bhangra & Beats Night Market returns f
+ or a special Diwali edition\, bringing Punjabi beats and Bay Area nightli
+ fe energy to downtown. Expect live drummers\, DJs\, Bhangra dance lessons
+ \, Indian street food\, local vendors\, henna\, cultural activities and p
+ lenty of room to dance. It’s a high-energy way to keep the Diwa
+END:VEVENT
+END:VCALENDAR

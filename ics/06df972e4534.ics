@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:06df972e4534@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;TZID=America/Los_Angeles:20261203T170000
+DTEND;TZID=America/Los_Angeles:20261203T210000
+SUMMARY:PIER 39’s 60-Foot Christmas Tree Lighting + “Snow” Fall
+LOCATION:Pier 39\, Pier 39\, The Embarcadero\, San Francisco CA\, San Fran
+ cisco
+URL:https://sf.funcheap.com/pier-39s-60foot-christmas-tree-lighting-snow-f
+ all-sf/
+DESCRIPTION:A yearly tradition · Thursday evening\nhttps://sf.funcheap.co
+ m/pier-39s-60foot-christmas-tree-lighting-snow-fall-sf/\n\nKick Off the H
+ olidays at PIER 39’s Annual Tree Lighting Celebration! The holiday seas
+ on is officially here\, and PIER 39 is kicking things off with a festive 
+ celebration you won’t want to miss! Join us on Thursday\, December 3\, 
+ from 5–9 PM\, for the annual lighting ...
+END:VEVENT
+END:VCALENDAR

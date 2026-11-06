@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:74ccb5db28e1@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;TZID=America/Los_Angeles:20261119T170000
+DTEND;TZID=America/Los_Angeles:20261119T200000
+SUMMARY:Free Waterfront Walkabout: The Holiday Season Finale
+LOCATION:The Embarcadero (btwn Pier 14 & the Exploratorium)\, The Embarcad
+ ero and Ferry Plaza\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/free-waterfront-walkabout-the-holiday-season-f
+ inale-sf/
+DESCRIPTION:Museum exhibits + Concerts · Thursday evening\nhttps://sf.fun
+ cheap.com/free-waterfront-walkabout-the-holiday-season-finale-sf/\n\nWate
+ rfront Walkabout returns for a night of captivating artist vignettes\, li
+ ve music\, holiday drinks\, & seasonal memory-making. San Francisco\, thi
+ s is our holiday love letter to you! After a joyous autumn of community a
+ nd creativity\, Waterfront Walkabout returns for its season finale on Thu
+ rsday\, November 19. Bundle ...
+END:VEVENT
+END:VCALENDAR

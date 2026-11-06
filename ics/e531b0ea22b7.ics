@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e531b0ea22b7@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261106T000000
+DTEND;TZID=America/Los_Angeles:20261106T020000
+SUMMARY:Godzilla Minus Zero Opening
+LOCATION:Alamo Drafthouse New Mission\, 2550 Mission St\, San Francisco\, 
+ CA 94110\, San Francisco
+URL:https://ma.to/event/godzilla-minus-zero-opening-2026-11-06
+DESCRIPTION:New in your area\nhttps://ma.to/event/godzilla-minus-zero-open
+ ing-2026-11-06\n\nTakashi Yamazaki writes\, directs\, and oversees visual
+  effects for GODZILLA MINUS ZERO\, the sequel to his Oscar-winning GODZIL
+ LA MINUS ONE. Opening November 6 at Alamo Drafthouse New Mission. Tickets
+  are on sale now at drafthouse.com.
+END:VEVENT
+END:VCALENDAR

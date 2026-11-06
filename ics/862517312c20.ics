@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:862517312c20@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261111T190000
+DTEND;TZID=America/Los_Angeles:20261111T230000
+SUMMARY:Holy Wave and Queen Serene
+LOCATION:Kilowatt\, 3160 16th Street\, San Francisco\, California 94103\, 
+ United States San Francisco\, San Francisco
+URL:https://dice.fm/event/6a15f5f327a1a300015f3788
+DESCRIPTION:Spirituality\nhttps://dice.fm/event/6a15f5f327a1a300015f3788\n
+ \nIn Ensenada\, Mexico\, where the Pacific horizon cuts a clean\, unwaver
+ ing line\, **Holy Wave** recorded their latest full length\, i’m DADA\,
+  a record that feels both expansive and newly concentrated for the subter
+ ranean pop four-piece. Stepping outside the United States was less a retr
+ eat than a shift in perspective\, creating distance to recognize a new so
+ und that had been slowly taking shape among th
+END:VEVENT
+END:VCALENDAR

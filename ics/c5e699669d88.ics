@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c5e699669d88@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261229T200000
+DTEND;TZID=America/Los_Angeles:20261230T000000
+SUMMARY:Man or Astro-man? ~ The Subsonics ~ DJ Sid Presley
+LOCATION:Bottom Of The Hill\, 1233 17th Street\, San Francisco\, Californi
+ a 94107\, United States San Francisco\, San Francisco
+URL:https://dice.fm/event/6ad572799639f100017cdba3
+DESCRIPTION:New in your area\nhttps://dice.fm/event/6ad572799639f100017cdb
+ a3\n\nThe surf revival and gutter glam will follow you home and keep your
+  buzz going for dayz! DJ Sid Presley pumps up the 60s hits and then hands
+  it over to The Subsonics and Man or Astro-man? for an astonishing finish
+ ! The Bottom of the Hill does not use QR codes for entry. You must presen
+ t a valid photo ID that matches the name on your DICE ticket to enter. Al
+ l ticket transfers must be completed thro
+END:VEVENT
+END:VCALENDAR

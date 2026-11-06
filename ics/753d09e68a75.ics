@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:753d09e68a75@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Harvest Festival Original Art & Craft Show
+LOCATION:Sonoma County Event Center at the Fairgrounds\, Grace Pavilion\, 
+ 1350 Bennett Valley Rd\, Santa Rosa\, CA 95404\, Santa Rosa
+URL:https://sf.funcheap.com/harvest-festival-original-art-craft-show/
+DESCRIPTION:Big Bay Area traditions + Craft · A yearly tradition · Santa
+  Rosa\nhttps://sf.funcheap.com/harvest-festival-original-art-craft-show/\
+ n\nSHOP. DISCOVER. EXPERIENCE HARVEST! The Harvest Festival® Original Ar
+ t & Craft Show is celebrating 54 years of bringing incredible artists\, m
+ akers and shoppers together! Shop an exciting collection of talented arti
+ sts and makers and discover an amazing variety of handcrafted treasures y
+ ou simply can’t find anywhere else! ...
+END:VEVENT
+END:VCALENDAR

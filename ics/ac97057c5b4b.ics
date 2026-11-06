@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ac97057c5b4b@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;TZID=America/Los_Angeles:20261108T190000
+DTEND;TZID=America/Los_Angeles:20261108T210000
+SUMMARY:Murray Hill: Showbiz! The Tour
+LOCATION:Bimbo's 365 Club\, 1025 Columbus Ave\, San Francisco\, San Franci
+ sco
+URL:https://ma.to/event/murray-hill-showbiz-tour-08-nov-2026
+DESCRIPTION:Musical theatre + Comedy\nhttps://ma.to/event/murray-hill-show
+ biz-tour-08-nov-2026\n\nComedian Murray Hill brings Showbiz! The Tour to 
+ Bimbo's 365 Club to celebrate his debut memoir. The show features a mix o
+ f cabaret and stand-up comedy with his band and special guest Mudd the Tw
+ o Spirit. Tickets are available now via the link in bio.
+END:VEVENT
+END:VCALENDAR

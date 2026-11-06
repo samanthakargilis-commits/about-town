@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d3d08089a139@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;TZID=America/Los_Angeles:20261113T160000
+DTEND;TZID=America/Los_Angeles:20261113T180000
+SUMMARY:Bhangra & Beats Night Market
+LOCATION:Yerba Buena Gardens\, 750 Howard St San Francisco\, San Francisco
+URL:https://partiful.com/e/to4Oj8XcD7gl0byTkWK7
+DESCRIPTION:Fairs & festivals + Cultural festivals · Featured on Funcheap
+ \nhttps://partiful.com/e/to4Oj8XcD7gl0byTkWK7\n\nBhangra & Beats closes o
+ ut its year with San Francisco's official Diwali celebration at Yerba Bue
+ na Gardens. Presented by Into The Streets and Non Stop Bhangra\, it is th
+ e city's biggest South Asian celebration of the season Expect live Bhangr
+ a performances\, interactive dance lessons\, DJs\, night market shopping\
+ , food vendors\, and family activities This event is not hosted by Partif
+ ul. It is an even
+END:VEVENT
+END:VCALENDAR

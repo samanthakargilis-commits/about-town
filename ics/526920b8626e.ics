@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:526920b8626e@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261106T210000
+DTEND;TZID=America/Los_Angeles:20261107T030000
+SUMMARY:Bounce SF: Ueberrest\, Flash Gea
+LOCATION:Public Works\, 161 Erie St\, San Francisco\, San Francisco
+URL:https://ma.to/event/bounce-sf-ueberrest-07-nov-2026
+DESCRIPTION:Art\nhttps://ma.to/event/bounce-sf-ueberrest-07-nov-2026\n\nBo
+ unce SF returns to Public Works with an all-star artist lineup featuring 
+ Ueberrest\, Flash Gea\, dj try\, and Bounce SF resident DJ Lil Laurie. Ex
+ pect a high-pressure night exploring the intersection of hard bounce\, tr
+ ance\, and high-energy club music. Ueberrest (SUI) leads with industrial 
+ aggression and melodic drives\, alongside NYC’s Flash Gea (blending Lat
+ in percussion and acid) and Trey Frye’s p
+END:VEVENT
+END:VCALENDAR

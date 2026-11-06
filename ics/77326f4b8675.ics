@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:77326f4b8675@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261120T183000
+DTEND;TZID=America/Los_Angeles:20261120T220000
+SUMMARY:SINGLES NIGHT HIKE 🥾 🔦 ❤️
+LOCATION:Livermore\, CA\, Livermore
+URL:https://luma.com/llb8i04b
+DESCRIPTION:Livermore\nhttps://luma.com/llb8i04b\n\n🌙❤️ SINGLES NIG
+ HT HIKE Friday\, Nov. 20th | 6:30–10:00 PM Tired of dating apps? So are
+  we. Put the phone down. Lace the boots up! Let’s bring back REAL conne
+ ction\, outdoors. Think Friday night energy\, singles mixer vibes\, and a
+  little flirting... except instead of a crowded bar\, we’re taking it t
+ o Arroyo Staging Area of Lake Del Valle. 🌙🥾❤️ No swiping. No aw
+ kward profiles. No trying to figure out i
+END:VEVENT
+END:VCALENDAR

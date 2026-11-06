@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1a93c96f8755@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261107T100000
+DTEND;TZID=America/Los_Angeles:20261107T150000
+SUMMARY:Paseo Masaya: Raíces del Mestizaje
+LOCATION:Studio Aura\, 2141 Mission St\, Suite #202\, San Francisco\, CA\,
+  San Francisco
+URL:https://ma.to/event/paseo-masaya-folkloric-walk-07-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/paseo-masaya-folkloric-w
+ alk-07-nov-2026\n\nPaseo Masaya: Raíces del Mestizaje is a Nicaraguan cu
+ ltural route through 24th Street in San Francisco\, celebrating roots\, m
+ estizaje\, memory and traditions through dance\, traditional dress and ma
+ rimba. The route begins at 10:00 a.m. at Studio Aura\, 2141 Mission St\, 
+ San Francisco\, CA\, Suite #202. The event features the Baile de Negras d
+ e Masaya tradition\, honoring the faith of San Jerónimo and the 
+END:VEVENT
+END:VCALENDAR

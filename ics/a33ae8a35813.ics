@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a33ae8a35813@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;TZID=America/Los_Angeles:20261106T193000
+DTEND;TZID=America/Los_Angeles:20261106T213000
+SUMMARY:Sandow Birk Double Feature + Q&A
+LOCATION:Balboa Theater\, 3630 Balboa St\, SF\, San Francisco
+URL:https://ma.to/event/sandow-birk-double-feature-06-nov-2026
+DESCRIPTION:Discourse + Theatre\nhttps://ma.to/event/sandow-birk-double-fe
+ ature-06-nov-2026\n\nBalboa Theater hosts a double feature of Dante’s I
+ nferno (2007) and In Smog and Thunder: The Great War of the Californias (
+ 2003)\, two collaborations directed by Sean Meredith and written with Pau
+ l Zaloom. The evening begins with Dante’s Inferno at 7:30 PM\, followed
+  by an in-person Q&A with Sandow Birk at 9:15 PM and In Smog and Thunder 
+ at 9:30 PM. The screening takes place during the closing weeke
+END:VEVENT
+END:VCALENDAR

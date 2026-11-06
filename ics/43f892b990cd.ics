@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:43f892b990cd@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261212T160000
+DTEND;TZID=America/Los_Angeles:20261212T180000
+SUMMARY:Xmas Book-Swap White Elephant!
+LOCATION:Northgate Mall\, 5800 Northgate Dr\, San Rafael\, CA 94903\, USA\
+ , San Rafael\, CA San Rafael\, San Rafael
+URL:https://www.meetup.com/marin-county-millenials/events/316955528/
+DESCRIPTION:Craft · San Rafael\nhttps://www.meetup.com/marin-county-mille
+ nials/events/316955528/\n\nLet us celebrate the holidays by giving and re
+ ceiving a GOOD book from someone. Wrap up ONE book you've read that you l
+ iked or you think other people will like. It can be used or bought new. I
+ f it's used\, keep in mind that this is a GIFT\, so please make sure it i
+ s in excellent condition. The motivation for this is to read a book\, a g
+ ood one\, that I normally would not have picked out for myself. He
+END:VEVENT
+END:VCALENDAR

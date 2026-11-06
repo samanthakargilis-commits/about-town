@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fd544673f823@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261118T190000
+DTEND;TZID=America/Los_Angeles:20261118T210000
+SUMMARY:Date My Friend x Madrone (30+)
+LOCATION:Madrone Art Bar\, 500 Divisadero St San Francisco\, San Francisco
+URL:https://partiful.com/e/MZWRifHp6GvyGJcs3n5v
+DESCRIPTION:Art\nhttps://partiful.com/e/MZWRifHp6GvyGJcs3n5v\n\nThis isn
+ ’t your typical Date My Friend night! We’re ditching the presentation
+ s and getting right to the mix and mingle! Come join us from 7-9pm at Mad
+ rones on Nov 18th to meet some SF singles 🤩 This mixer is for our 30+ 
+ year old crowd! Submit a slide to our rolling deck for the mingle crowd t
+ o spot you: https://forms.gle/QsbUNte6FH8NFgTa7 Check out our Instagram f
+ or more information! Tickets $15 i
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:383f88f36bca@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;TZID=America/Los_Angeles:20261202T173000
+DTEND;TZID=America/Los_Angeles:20261202T193000
+SUMMARY:The Ritz-Carlton SF’s Annual Tree Lighting Ceremony 2026
+LOCATION:Nob Hill\, San Francisco
+URL:https://sf.funcheap.com/city-guide/december-street-fairs-festivals/
+DESCRIPTION:Spirituality · A yearly tradition\nhttps://sf.funcheap.com/ci
+ ty-guide/december-street-fairs-festivals/\n\nJoin us at our annual Tree L
+ ighting Ceremony\, hosted by Betty Yu (KTVU-TV Fox 2) and Liam Mayclem (K
+ CBS Radio) and a Make-A-Wish® Greater Bay Area child. The complimentary-
+ to-the-public event will feature live entertainment with Dickens-era caro
+ lers and trumpeters\, the legendary tree lighting at the ...
+END:VEVENT
+END:VCALENDAR

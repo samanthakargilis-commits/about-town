@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2e072ee1c842@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;VALUE=DATE:20261107
+DTEND;VALUE=DATE:20261108
+SUMMARY:Oakland Diwali 2026 Festival of Lights
+LOCATION:Oakland (BLOC15)
+URL:https://sf.funcheap.com/city-guide/diwali-2026-festival-lights-celebra
+ tions-bay-area/
+DESCRIPTION:Fairs & festivals + Cultural festivals · Featured on Funcheap
+ \nhttps://sf.funcheap.com/city-guide/diwali-2026-festival-lights-celebrat
+ ions-bay-area/\n\nNovember 7\, 2026 | Oakland (BLOC15) | FREE One of the 
+ East Bay’s biggest Diwali celebrations brings together hundreds of peop
+ le of all ages for an evening of South Asian culture\, music\, dancing an
+ d community. Expect dynamic live performances\, delicious South Asian foo
+ d\, a festive bazaar and plenty of community spirit at this free\, family
+ -friendly celebration in downtown Oakland.
+END:VEVENT
+END:VCALENDAR

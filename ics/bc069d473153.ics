@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bc069d473153@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;TZID=America/Los_Angeles:20261114T110000
+DTEND;TZID=America/Los_Angeles:20261114T170000
+SUMMARY:“The Big Open” 100+ Sausalito Artists Open Studios
+LOCATION:ICB (Industrial Center Building)\, 480 Gate 5 Road\, Sausaltio\, 
+ CA\, Sausaltio
+URL:https://sf.funcheap.com/big-open-100-sausalito-artists-open-studios-no
+ v-1315/
+DESCRIPTION:Big Bay Area traditions + Art · A yearly tradition · Sausalt
+ io\nhttps://sf.funcheap.com/big-open-100-sausalito-artists-open-studios-n
+ ov-1315/\n\nThis November\, ICB ART will open the doors to its iconic Sau
+ salito art studios for The Big Open\, its largest open studio event of th
+ e year. A once-a-year celebration that has become a destination for art l
+ overs and collectors\, The Big Open draws visitors from ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f4d256238190@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261113T203000
+DTEND;TZID=America/Los_Angeles:20261114T010000
+SUMMARY:BOX HOMOCOMING
+LOCATION:The Royale\, The Royale\, 800 Post St\, San Francisco\, CA 94109\
+ , USA\, San Francisco
+URL:https://luma.com/ixmd374a
+DESCRIPTION:Gay / queer\nhttps://luma.com/ixmd374a\n\nBox is a sapphic par
+ ty for lesbians & those who date them <3 tix $22 online / $25 doors ITS H
+ OMOCOMING. need we say more??? It's time live the gay ass homecoming we d
+ idn't get to experience (or re-live it for those of us who were lucky eno
+ ugh to figure things out ~earlier in life~) we expect proposals. corsages
+  (I think I spelled that right). a beautiful clement st farmers market bo
+ uquet for your 
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bb42ebfb1e75@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261108T150000
+DTEND;TZID=America/Los_Angeles:20261108T200000
+SUMMARY:UNWRAPPED: Tattoo Fundraiser
+LOCATION:El Rio\, San Francisco
+URL:https://ma.to/event/unwrapped-queer-tattoo-fundraiser-08-nov-2026
+DESCRIPTION:Gay / queer + Concerts\nhttps://ma.to/event/unwrapped-queer-ta
+ ttoo-fundraiser-08-nov-2026\n\nQueer Tattoo Alliance presents UNWRAPPED\,
+  a fundraiser for the Queer Tattoo Convention. Join LGBTQ+ Bay Area tatto
+ oers for a punk show\, dancing\, holiday art mart\, and raffle. Featuring
+  live music by Black Gold Sun\, Croissant\, Gusset\, and Tiffany\, with D
+ J sets by Datdjnico. Admission: $15–$25 sliding scale.
+END:VEVENT
+END:VCALENDAR

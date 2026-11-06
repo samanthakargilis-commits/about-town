@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d4d99eee1991@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261106T170000
+DTEND;TZID=America/Los_Angeles:20261106T200000
+SUMMARY:Qualcomm UNO Q Hack Night #3
+LOCATION:Qualcomm\, Qualcomm\, 3165 Kifer Rd\, Santa Clara\, CA 95051\, US
+ A\, Santa Clara
+URL:https://luma.com/unu-q-3-nov-6-26
+DESCRIPTION:Craft + Discourse · Santa Clara\nhttps://luma.com/unu-q-3-nov
+ -6-26\n\nBuild Local AI on Arduino UNO Q with Qualcomm Join Qualcomm and 
+ HackerSquad for an evening of hands-on building with Arduino UNO Q\, a pl
+ atform that combines real-time microcontroller control\, Linux-class comp
+ uting\, and edge AI capabilities in a single board. Whether you're contin
+ uing from the last workshop or starting fresh\, this session is focused o
+ n taking the first steps into the world of AI on
+END:VEVENT
+END:VCALENDAR

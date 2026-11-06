@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:be733612ca45@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261107T220000
+DTEND;TZID=America/Los_Angeles:20261108T040000
+SUMMARY:FOVOS
+LOCATION:Halcyon SF\, 314 11th St\, San Francisco\, CA 94103\, USA San Fra
+ ncisco\, San Francisco
+URL:https://dice.fm/event/6aac988d20b3f20001be8a55
+DESCRIPTION:Weird & unusual\nhttps://dice.fm/event/6aac988d20b3f20001be8a5
+ 5\n\nFOVOS the New Zealand-based electronic music duo known for blurring 
+ the lines between techno\, hard techno\, and tech-house with their future
+ -thinking underground sound make their return! DEREK VO + HK support the 
+ rising stars on deck!
+END:VEVENT
+END:VCALENDAR

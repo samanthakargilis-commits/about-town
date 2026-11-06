@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:87824f16cdb5@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;TZID=America/Los_Angeles:20261107T140000
+DTEND;TZID=America/Los_Angeles:20261107T160000
+SUMMARY:SF’s Unique New Theatrical Circus “In/Decision”
+LOCATION:Great Star Theater\, 636 Jackson St. San Francisco\, CA
+URL:https://sf.funcheap.com/sfs-unique-new-theatrical-circus-in-decision-n
+ ov-6-7-2/
+DESCRIPTION:Weird & unusual + Craft\nhttps://sf.funcheap.com/sfs-unique-ne
+ w-theatrical-circus-in-decision-nov-6-7-2/\n\nFrom the producers of Memoi
+ r comes a unique new theatrical circus experience. In/Decision is an expl
+ oration of the moments that define us\, the leaps we take\, the risks we 
+ avoid\, the paths we choose without knowing where they lead. Through a se
+ amless weaving of breathtaking ...
+END:VEVENT
+END:VCALENDAR

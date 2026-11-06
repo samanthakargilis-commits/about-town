@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:774173e5c874@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;TZID=America/Los_Angeles:20261210T190000
+DTEND;TZID=America/Los_Angeles:20261210T213000
+SUMMARY:“Silent Skate” 2026: Silent Disco on Ice at Union Square Holid
+ ay Rink
+LOCATION:Union Square Park\, Geary and Powell\, San Francisco\, CA\, San F
+ rancisco
+URL:https://sf.funcheap.com/union-square-silent-disco-on-ice/
+DESCRIPTION:Weird & unusual + Dance nights · A yearly tradition · Thursd
+ ay evening\nhttps://sf.funcheap.com/union-square-silent-disco-on-ice/\n\n
+ One of San Francisco’s favorite holiday traditions returns for its 19th
+  season. The Safeway Holiday Ice Rink in Union Square opens November 4\, 
+ 2026\, bringing outdoor ice skating to the heart of downtown San Francisc
+ o through January 18\, 2027. Skate beneath the holiday lights in ...
+END:VEVENT
+END:VCALENDAR

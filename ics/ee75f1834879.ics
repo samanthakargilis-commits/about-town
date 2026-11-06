@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ee75f1834879@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261110T193000
+DTEND;TZID=America/Los_Angeles:20261110T233000
+SUMMARY:Hit The Lights ~ Forever Came Calling ~ Fox Royale
+LOCATION:Bottom Of The Hill\, 1233 17th Street\, San Francisco\, Californi
+ a 94107\, United States San Francisco\, San Francisco
+URL:https://dice.fm/event/6a6799eef7354c0001e26fc8
+DESCRIPTION:New in your area\nhttps://dice.fm/event/6a6799eef7354c0001e26f
+ c8\n\nA stellar night of pop punk anthems and heart rending emo collide w
+ hen Fox Royale opens\, Forever Came Calling supports and headliners Hit T
+ he Lights bring their unruly talent to the club! The Bottom of the Hill d
+ oes not use QR codes for entry. You must present a valid photo ID that ma
+ tches the name on your DICE ticket to enter. All ticket transfers must be
+  completed through the DICE app before the
+END:VEVENT
+END:VCALENDAR

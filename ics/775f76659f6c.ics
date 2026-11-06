@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:775f76659f6c@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;TZID=America/Los_Angeles:20261107T160000
+DTEND;TZID=America/Los_Angeles:20261107T180000
+SUMMARY:Jason Francisco Book Talk & Signing
+LOCATION:SF Camerawork\, 2 Marina Boulevard\, San Francisco\, San Francisc
+ o
+URL:https://ma.to/event/jason-francisco-book-talk-signing-2026-11-07
+DESCRIPTION:Reading + Discourse\nhttps://ma.to/event/jason-francisco-book-
+ talk-signing-2026-11-07\n\nArtist and writer Jason Francisco discusses hi
+ s book Autobiography of an Unknown American\, published by Fall Line Pres
+ s\, at SF Camerawork. The book brings together large-format photographs m
+ ade across the United States between 2014 and 2022 with poems by Alexande
+ r Nemerov\, considering traces of history embedded in the American landsc
+ ape and the lives that shape it. The afternoon begins with a conv
+END:VEVENT
+END:VCALENDAR

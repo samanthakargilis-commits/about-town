@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ae86091a1c19@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261107T170000
+DTEND;TZID=America/Los_Angeles:20261107T210000
+SUMMARY:✩+°.⋆ 15 Years of Playable Culture ⋆++✧
+LOCATION:Museum of Art and Digital Entertainment - (MADE)\, Museum of Art 
+ and Digital Entertainment - (MADE)\, 921 Washington St\, Oakland\, CA 946
+ 07\, USA\, Oakland
+URL:https://luma.com/omw4z7vi
+DESCRIPTION:Theatre + Museum exhibits · Oakland\nhttps://luma.com/omw4z7v
+ i\n\n15 years of the MADE! Come celebrate with us. Join us for a night of
+  games\, art\, food\, drinks\, and community as we celebrate building pla
+ yable culture here in Oakland. We'll have experimental games and alternat
+ ive controllers like Scrapeboard and Octopad\; and some very special piec
+ es of computing history\, including the NeXTstation and SGI O2. There'll 
+ be rare one-night-only exhibits\, and at 8 PM\, 
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7de75828abb6@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261107T120000
+DTEND;TZID=America/Los_Angeles:20261107T190000
+SUMMARY:Grok Bot Build Day SF: Real-World Agents
+LOCATION:1050 Sansome St\, 1050 Sansome St\, San Francisco\, CA 94111\, US
+ A\, San Francisco
+URL:https://luma.com/ba9sivsv
+DESCRIPTION:Discourse\nhttps://luma.com/ba9sivsv\n\nGrok Bot Build Day SF:
+  Real-World Agents $30 for every builder + $4\,500 in prize credits Every
+  builder receives $30 in credits to build with. 1st place: $2\,000 in cre
+ dits 2nd place: $1\,500 in credits 3rd place: $1\,000 in credits All priz
+ es are awarded as credits\, not cash. Bring that “I should build this
+ ” idea. Give it a Saturday. A workflow you’re tired of doing by hand.
+  A side project sitting in
+END:VEVENT
+END:VCALENDAR

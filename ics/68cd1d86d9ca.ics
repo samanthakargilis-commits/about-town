@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:68cd1d86d9ca@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261106T120000
+DTEND;TZID=America/Los_Angeles:20261106T150000
+SUMMARY:Jam Session with Creativity Explored
+LOCATION:Yerba Buena Center for the Arts\, 701 Mission Street\, San Franci
+ sco
+URL:https://sf.funcheap.com/jam-session-creativity-explored/
+DESCRIPTION:Museum exhibits + Art\nhttps://sf.funcheap.com/jam-session-cre
+ ativity-explored/\n\nJoin Creativity Explored and their artists for a wel
+ coming afternoon jam session as part of their residency at YBCA. Musician
+ s of all kinds are invited to make some noise. Grab an instrument\, bring
+  your own\, or explore the instruments handmade by Creativity Explored ar
+ tists. Listeners are welcome to drop by and enjoy the sounds. Takes place
+  at 701 Mission Street\, San Francisco.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5bad96692c07@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;TZID=America/Los_Angeles:20261108T120000
+DTEND;TZID=America/Los_Angeles:20261108T193000
+SUMMARY:“LoveFest SF” Free 7-Hour Reggae Festival in Golden Gate Park 
+ + Food Drive
+LOCATION:Spreckels Temple of Music (Golden Gate Park Bandshell)\, Music Co
+ ncourse Dr\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/lovefest-sf-free-7hour-reggae-festival-golden-
+ gate-park-food-drive-sf/
+DESCRIPTION:Fairs & festivals\nhttps://sf.funcheap.com/lovefest-sf-free-7h
+ our-reggae-festival-golden-gate-park-food-drive-sf/\n\nLOVEFEST SF TURNS 
+ MUSIC INTO MEANING WITH COMMUNITY FOOD DRIVE IN GOLDEN GATE PARK Organize
+ d by Value Culture\, founded by Adam Swig\, the free\, all-ages celebrati
+ on brings together San Francisco’s music and creative communities for a
+  day of live performances\, ecstatic dance and giving back ahead ...
+END:VEVENT
+END:VCALENDAR

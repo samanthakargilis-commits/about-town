@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fefd392a7b50@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261204T100000
+DTEND;TZID=America/Los_Angeles:20261204T120000
+SUMMARY:Hanukkah Fitness Fun
+LOCATION:JCCSF\, 3200 California Street\, San Francisco
+URL:https://www.jccsf.org/event/hanukkah-fitness/
+DESCRIPTION:Meditation\nhttps://www.jccsf.org/event/hanukkah-fitness/\n\nG
+ et into the holiday spirit with Hanukkah-inspired workouts. From PI-LATKE
+ S Mat to candlelight Yoga\, to joyful rides\, we’ll keep you glowing al
+ l season long.
+END:VEVENT
+END:VCALENDAR

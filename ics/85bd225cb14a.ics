@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:85bd225cb14a@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;TZID=America/Los_Angeles:20261106T153000
+DTEND;TZID=America/Los_Angeles:20261106T173000
+SUMMARY:Collage Capsules: Build a Mini Museum
+LOCATION:Downtown Library\, 270 Forest Ave.\, Palo Alto\, CA
+URL:https://sf.funcheap.com/collage-capsules-build-mini-museum/
+DESCRIPTION:Craft + Museum exhibits\nhttps://sf.funcheap.com/collage-capsu
+ les-build-mini-museum/\n\nParticipants transform an ordinary Altoid tin i
+ nto a miniature museum exhibit or tiny library bookshelf using vintage-in
+ spired collage materials\, tiny treasures and unique ephemera. No art exp
+ erience is needed\, and each attendee leaves with a one-of-a-kind mini cr
+ eation. The workshop runs Friday\, November 6\, 3:30–5:30 PM at Downtow
+ n Library\, 270 Forest Ave.\, Palo Alto. Admission is free.
+END:VEVENT
+END:VCALENDAR

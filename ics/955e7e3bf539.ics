@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:955e7e3bf539@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261106T190000
+DTEND;TZID=America/Los_Angeles:20261106T233000
+SUMMARY:707PUNK VOL. 7
+LOCATION:Carnalitos Customs\, 905 Tennessee\, Vallejo\, Vallejo
+URL:https://ma.to/event/707punk-vol-7-06-nov-2026
+DESCRIPTION:Musical theatre · Vallejo\nhttps://ma.to/event/707punk-vol-7-
+ 06-nov-2026\n\n707PUNK VOL. 7 presents a four-band all-ages punk show at 
+ Carnalitos Customs in Vallejo. The lineup features The Hellas\, Something
+  Wicked\, Hell Bound Pound\, and Pinfall. Doors open at 6:30 PM and music
+  starts at 7:00 PM. Admission is $15 online at 707Punk.com or at the door
+ . No violence permitted.
+END:VEVENT
+END:VCALENDAR

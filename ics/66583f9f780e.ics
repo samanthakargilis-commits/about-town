@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:66583f9f780e@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261106T190000
+DTEND;TZID=America/Los_Angeles:20261106T210000
+SUMMARY:200 Channels: Brujeria
+LOCATION:200 Channels\, 101 6th\, San Francisco\, San Francisco
+URL:https://ma.to/event/200-channels-brujeria-07-nov-2026
+DESCRIPTION:Musical theatre + Weird & unusual\nhttps://ma.to/event/200-cha
+ nnels-brujeria-07-nov-2026\n\n200 Channels transforms into a haunted fore
+ st under a blood-red moon for Brujeria. The night features sultry neo-bur
+ lesque\, nocturnal cabaret\, and ghostly aerial artistry as a coven seeks
+  to summon the Supreme One. The show runs Fridays and Saturdays at 7pm an
+ d 9:30pm through November 7. Bewitching attire is highly encouraged. Tick
+ ets available via the link in the bio.
+END:VEVENT
+END:VCALENDAR

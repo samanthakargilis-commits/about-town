@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f7b137153c3e@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261107T100000
+DTEND;TZID=America/Los_Angeles:20261107T120000
+SUMMARY:ACFD Recruit Open House
+LOCATION:Station 17\, 6200 Madigan Rd\, Dublin\, CA 94568\, Dublin
+URL:https://ma.to/event/acfd-recruit-open-house-07-nov-2026
+DESCRIPTION:Dublin\nhttps://ma.to/event/acfd-recruit-open-house-07-nov-202
+ 6\n\nThe Alameda County Fire Department hosts an open house at Station 17
+  for those interested in a career as a Firefighter Recruit\, EMT\, or Par
+ amedic. Attendees can meet department personnel\, ask questions\, learn a
+ bout the hiring process\, and gain insights into the academy\, training\,
+  and skills needed to succeed. Applications are currently being accepted\
+ ; the portal closes November 13 at 5 PM.
+END:VEVENT
+END:VCALENDAR

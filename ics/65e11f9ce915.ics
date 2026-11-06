@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:65e11f9ce915@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261106T210000
+DTEND;TZID=America/Los_Angeles:20261107T030000
+SUMMARY:Fieldtest 03: DJ Koolt & Naone
+LOCATION:Public Works\, San Francisco
+URL:https://ma.to/event/fieldtest-03-public-works-06-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/fieldtest-03-public-work
+ s-06-nov-2026\n\nfieldtest 03 brings Naone\, DJ Koolt\, and Milli Meng to
+  the Public Works Loft. Limited tickets are available for $15 before 11pm
+  on the profile. Bounce presents Ueberrest\, Flash Gea and dj try in the 
+ Main Room the same night as a separate event.
+END:VEVENT
+END:VCALENDAR

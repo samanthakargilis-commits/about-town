@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5adbc19adce0@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261201T110000
+DTEND;TZID=America/Los_Angeles:20261201T190000
+SUMMARY:555 California Holiday Tree Lighting and Mercantile
+LOCATION:555 California\, 555 California\, San Francisco\, CA
+URL:https://sf.funcheap.com/555-california-holiday-tree-lighting-mercantil
+ e-sf/
+DESCRIPTION:Fairs & festivals\nhttps://sf.funcheap.com/555-california-holi
+ day-tree-lighting-mercantile-sf/\n\nThis year\, Sunset Mercantile is team
+ ing up with the Annual 555 California Holiday Tree Lighting to bring a fe
+ stive holiday market to the heart of the Financial District. The event wi
+ ll take place on Tuesday\, December 1st\, from 11am to 7pm in the iconic 
+ A.P. Giannini Plaza. Join us for a full day ...
+END:VEVENT
+END:VCALENDAR

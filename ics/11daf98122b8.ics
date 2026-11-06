@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:11daf98122b8@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;TZID=America/Los_Angeles:20261107T180000
+DTEND;TZID=America/Los_Angeles:20261107T200000
+SUMMARY:The Last Supper Party
+LOCATION:The Sycamore\, 2140 Mission St.\, SF\, San Francisco
+URL:https://ma.to/event/the-last-supper-party-2026-11-07
+DESCRIPTION:Singing + Concerts\nhttps://ma.to/event/the-last-supper-party-
+ 2026-11-07\n\nThe Last Supper Party brings an evening of poetry\, live mu
+ sic and conversation to The Sycamore. Colleen Shoshana McKee\, Olga Zilbe
+ rbourg and Timothy Goodspeed (The Soapbox Salute) perform\, with curation
+  by Alameda Poet Laureate Kimi Sugioka. An open mic follows the featured 
+ performances. Entry is free\; reservations are required and donations are
+  welcome.
+END:VEVENT
+END:VCALENDAR

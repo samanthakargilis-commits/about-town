@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:128563cf2f31@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261107T100000
+DTEND;TZID=America/Los_Angeles:20261107T120000
+SUMMARY:Transforming the Cube Workshop
+LOCATION:Clayroom San Mateo\, San Mateo
+URL:https://ma.to/event/transforming-the-cube-workshop-2026-11-07
+DESCRIPTION:Craft + Museum exhibits · San Mateo\nhttps://ma.to/event/tran
+ sforming-the-cube-workshop-2026-11-07\n\nTransforming the Cube is a two-d
+ ay ceramics workshop with Bill Abright at Clayroom San Mateo\, running No
+ vember 7 and 8. Students learn to make a variety of sculptural box forms 
+ from the common beginning of a 4-inch cube\, and all levels are welcome. 
+ Using a homemade tile cutter to cut six equal sides from a pre-prepared s
+ lab\, participants assemble the sides into cubes with scratch and slip jo
+ inery\,
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:64dcaadb6d69@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261115T100000
+DTEND;TZID=America/Los_Angeles:20261115T120000
+SUMMARY:Coffee\, Pups & New Friends
+LOCATION:Motivat Coffee Roasters\, 1528 Webster St\, Oakland\, CA Oakland\
+ , Oakland
+URL:https://www.meetup.com/glow-girl-social-club/events/317257847/
+DESCRIPTION:Oakland\nhttps://www.meetup.com/glow-girl-social-club/events/3
+ 17257847/\n\nHey loves! Join us for Coffee\, Pups & New Friends around La
+ ke Merritt. Dogs are the easiest icebreakers in the world\, so we're maki
+ ng them the theme. Bring your pup (or borrow the excuse to meet everyone 
+ else's) and leave with a new friend. No dog? No problem\, you're complete
+ ly welcome. We meet at 10 AM at Motivat Coffee Roasters (formerly Slojoy)
+ \, 1528 Webster St\, near 19th St Oakland BART. Grab 
+END:VEVENT
+END:VCALENDAR

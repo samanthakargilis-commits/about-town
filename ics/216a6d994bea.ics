@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:216a6d994bea@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261108T130000
+DTEND;TZID=America/Los_Angeles:20261108T150000
+SUMMARY:Quietly Queer Coffee + Hang
+LOCATION:Proyecto Diaz Coffee\, 1416 20th St\, Oakland\, CA 94607\, USA\, 
+ Oakland\, CA Oakland\, Oakland
+URL:https://www.meetup.com/quietly-queer-meetup-for-lgbtq-introverts-and-a
+ llies/events/317021488/
+DESCRIPTION:Gay / queer + Discourse · Oakland\nhttps://www.meetup.com/qui
+ etly-queer-meetup-for-lgbtq-introverts-and-allies/events/317021488/\n\nJo
+ in Quietly Queer for our recurring coffee meetup! This time\, we're headi
+ ng to **Proyecto Diaz Coffee in West Oakland**\, a Latino-owned coffee bu
+ siness with roots in Oaxaca\, Mexico. We're looking forward to checking o
+ ut the space\, enjoying some coffee\, and spending a relaxed afternoon to
+ gether while supporting a locally owned business. **Haven't joined us bef
+ ore? This is a great opportunity to ch
+END:VEVENT
+END:VCALENDAR

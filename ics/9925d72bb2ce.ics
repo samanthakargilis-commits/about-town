@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9925d72bb2ce@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;TZID=America/Los_Angeles:20261119T183000
+DTEND;TZID=America/Los_Angeles:20261119T200000
+SUMMARY:Jane Austen Reader's Theatre
+LOCATION:The Love Potion Library - Books\, Tea\, Wine\, The Love Potion Li
+ brary - Books\, Tea\, Wine\, 284 Noe St\, San Francisco\, CA 94114\, USA\
+ , San Francisco
+URL:https://luma.com/m6nt9s43
+DESCRIPTION:Theatre + Reading · Your reading tastes · Thursday evening\n
+ https://luma.com/m6nt9s43\n\nStep into an evening of sharp wit\, sparklin
+ g dialogue\, and deliciously petty social maneuvering at Jane Austen Read
+ er's Theatre. This lively reading brings Austen off the page and into the
+  room the way her fans know she shines best\, through her unforgettable n
+ arration as well as the characters themselves. Local actors will read sel
+ ections aloud\, giving full voice to the humor\, irony\, and keen obse
+END:VEVENT
+END:VCALENDAR

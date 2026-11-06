@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:16b6c3b7b27e@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261106T170000
+DTEND;TZID=America/Los_Angeles:20261106T190000
+SUMMARY:CrafTea Meetup
+LOCATION:Teance Fine Teas\, 1036 Grayson St\, Berkeley\, CA Berkeley\, Ber
+ keley
+URL:https://www.meetup.com/craftea-meetup/events/317228044/
+DESCRIPTION:Craft + Art · Berkeley\nhttps://www.meetup.com/craftea-meetup
+ /events/317228044/\n\n**1st & 3rd Fridays \\| 5:00–7:00 PM \\| Teance F
+ ine Teas** Unwind at the end of your week with a cozy evening of tea\, cr
+ eativity\, and community. Bring your latest craft project and settle in w
+ ith fellow makers and tea lovers for a relaxed\, welcoming gathering. Whe
+ ther you enjoy knitting\, crocheting\, beading\, drawing\, sketching\, ca
+ lligraphy or another creative endeavor — any *portable* project is we
+END:VEVENT
+END:VCALENDAR

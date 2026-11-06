@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d808d09c3442@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;TZID=America/Los_Angeles:20261121T180000
+DTEND;TZID=America/Los_Angeles:20261121T200000
+SUMMARY:A WEBSITE IS A ZINE: Intro to Internet Art for Artists
+LOCATION:The Art Bloc\, 200 Gate Five Rd Sausalito\, Sausalito
+URL:https://partiful.com/e/SXE2sNQG07Rf3OvMZbJ9
+DESCRIPTION:Craft + Art · Sausalito\nhttps://partiful.com/e/SXE2sNQG07Rf3
+ OvMZbJ9\n\nIn this 3 hour class targeting artists with no background in c
+ oding\, students will learn how to build and host their own fully custom 
+ website online\, for free. In addition to learning fundamental web develo
+ pment\, we will also explore web development as a creative medium in and 
+ of itself. Instead of viewing websites as simply containers for art\, por
+ tfolios\, and personal shops\, we will develop an un
+END:VEVENT
+END:VCALENDAR

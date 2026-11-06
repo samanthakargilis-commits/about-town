@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b603d84c1f0a@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261107T180000
+DTEND;TZID=America/Los_Angeles:20261107T210000
+SUMMARY:Red Dot Film Series: Bill Basquin
+LOCATION:Winslow House Project\, Vallejo\, Vallejo
+URL:https://ma.to/event/red-dot-film-series-bill-basquin-07-nov-2026
+DESCRIPTION:Vallejo\nhttps://ma.to/event/red-dot-film-series-bill-basquin-
+ 07-nov-2026\n\nScreenings in the Red Dot Film Series featuring Bill Basqu
+ in at Winslow House Project in Vallejo\, from 6 to 9 PM. RSVP is required
+  for the address.
+END:VEVENT
+END:VCALENDAR

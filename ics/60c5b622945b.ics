@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:60c5b622945b@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261115T140000
+DTEND;TZID=America/Los_Angeles:20261115T170000
+SUMMARY:new interfaces 008 [sf edition]
+LOCATION:tiat\, tiat\, 151 Powell St\, San Francisco\, CA 94102\, USA\, Sa
+ n Francisco
+URL:https://luma.com/zrounpzl
+DESCRIPTION:Art\nhttps://luma.com/zrounpzl\n\nnew interfaces is an intimat
+ e afternoon where we celebrate experiments in creative technology this is
+  our debut event in san francisco! 🥳 welcoming designers\, engineers\,
+  artists\, and anyone in between wanna demo? we're looking for: - radical
+  remixes and reimaginations of technology - experiments with design\, art
+ \, code\, hardware\, photography\, video\, and more - side projects that 
+ make you wonder and
+END:VEVENT
+END:VCALENDAR

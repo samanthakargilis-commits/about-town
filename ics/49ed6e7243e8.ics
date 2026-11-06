@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:49ed6e7243e8@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261204T190000
+DTEND;TZID=America/Los_Angeles:20261204T210000
+SUMMARY:2ND ANNUAL FRIENDS FILM FEST & PREMIERE SCREENING OF HOME FOR THE 
+ LAST TIME
+LOCATION:Sunset Village Music Hall\, 4114 Judah St San Francisco\, San Fra
+ ncisco
+URL:https://partiful.com/e/xwCzkXM98JiwQbRGnKBo
+DESCRIPTION:New in your area\nhttps://partiful.com/e/xwCzkXM98JiwQbRGnKBo\
+ n\nWE’RE BACK with The 2nd Annual Friends Film Fest We're looking to do
+ uble the 15 films we had last year! Plus\, A Special Premiere: Home for t
+ he Last Time\, a 12-minute short from local filmmakers Callum Gilchrist\,
+  Mattie Naythons\, and Freddie Whitman (and many other talented contribut
+ ors) 🎬 WHEN: Friday\, December 4th at Sunset Village Doors around 7pm 
+ 🎬 WHAT: We’re watching a bunch of short films\, d
+END:VEVENT
+END:VCALENDAR

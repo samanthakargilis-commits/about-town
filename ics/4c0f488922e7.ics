@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4c0f488922e7@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261212T143000
+DTEND;TZID=America/Los_Angeles:20261212T163000
+SUMMARY:Dazed and Confused
+LOCATION:4 Star Theater\, 2200 Clement St\, San Francisco
+URL:https://ticketing.uswest.veezi.com/purchase/20215?siteToken=d2atbcege5
+ knqsavntt91g1250
+DESCRIPTION:New in your area\nhttps://ticketing.uswest.veezi.com/purchase/
+ 20215?siteToken=d2atbcege5knqsavntt91g1250\n\nRated R for pervasive\, con
+ tinuous teen drug and alcohol use and very strong language. Dazed and Con
+ fused\, 1993 Directed by Richard Linklater SEE IT WITH A BUD. The adventu
+ res of a group of Texas teens on their last day of school in 1976\, cente
+ ring on student Randall Floyd\, who moves easily among stoners\, jocks an
+ d geeks. Floyd is a star athlete\, but he also likes smoking weed\, which
+  presents a con
+END:VEVENT
+END:VCALENDAR

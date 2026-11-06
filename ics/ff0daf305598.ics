@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ff0daf305598@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261106T190000
+DTEND;TZID=America/Los_Angeles:20261106T210000
+SUMMARY:The Music of Steven Universe
+LOCATION:Grace Cathedral\, San Francisco
+URL:https://ma.to/event/the-music-of-steven-universe-2026-11-06
+DESCRIPTION:Concerts\nhttps://ma.to/event/the-music-of-steven-universe-202
+ 6-11-06\n\nSixth Station Trio performs The Music of Steven Universe with 
+ composers Aivi & Surasshu. The full program features songs from the telev
+ ision series arranged for violin\, cello\, two pianos and chiptune\, mark
+ ing the first collaboration between the trio and the composers. Tickets a
+ re available.
+END:VEVENT
+END:VCALENDAR

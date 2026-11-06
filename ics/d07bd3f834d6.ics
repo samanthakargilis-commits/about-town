@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d07bd3f834d6@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261107T170000
+DTEND;TZID=America/Los_Angeles:20261107T190000
+SUMMARY:Owl Prowl at Muir Woods
+LOCATION:Golden Gate National Rec. Area\, San Francisco
+URL:https://ma.to/event/owl-prowl-muir-woods-07-nov-2026
+DESCRIPTION:Animals\nhttps://ma.to/event/owl-prowl-muir-woods-07-nov-2026\
+ n\nStrenuous 3-mile dusk hike through Muir Woods. You'll be looking and l
+ istening for the Northern Spotted Owl while getting the rundown on their 
+ history\, ecology\, and the latest research. No guarantees on sightings\,
+  but walking Redwood Creek at night is the real draw.
+END:VEVENT
+END:VCALENDAR

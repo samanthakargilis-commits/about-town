@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:723af1b02536@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261107T160000
+DTEND;TZID=America/Los_Angeles:20261107T190000
+SUMMARY:Gamescape: Monthly Game Night
+LOCATION:Madrone Art Bar\, 500 Divisadero St\, San Francisco
+URL:https://ma.to/event/game-night-x-game-store-day-07-nov-2026
+DESCRIPTION:Art\nhttps://ma.to/event/game-night-x-game-store-day-07-nov-20
+ 26\n\nMadrone Art Bar and Gamescape host a monthly Game Night celebrating
+  Game Store Day 2026. Join us for an afternoon of board games\, strategy 
+ games\, chess\, puzzles\, and more\, with the Gamescape crew on hand to h
+ elp you get started. The event features tabletop game demos and giveaways
+ . Come solo or bring friends. Drinks available\; outside food welcome. 21
+ +.
+END:VEVENT
+END:VCALENDAR

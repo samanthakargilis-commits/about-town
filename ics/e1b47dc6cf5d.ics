@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e1b47dc6cf5d@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261107T160000
+DTEND;TZID=America/Los_Angeles:20261107T200000
+SUMMARY:Chuck Sperry: Archetypes
+LOCATION:@harmanprojects\, 1275 Minnesota Street\, San Francisco\, San Fra
+ ncisco
+URL:https://ma.to/event/chuck-sperry-archetypes-07-nov-2026
+DESCRIPTION:Art + Discourse\nhttps://ma.to/event/chuck-sperry-archetypes-0
+ 7-nov-2026\n\nChuck Sperry: Archetypes includes an artist talk from 4 to 
+ 4:30 PM and an opening reception from 4:30 to 8 PM at @harmanprojects\, 1
+ 275 Minnesota Street\, San Francisco.
+END:VEVENT
+END:VCALENDAR

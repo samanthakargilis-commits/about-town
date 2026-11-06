@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cb409641ec41@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;TZID=America/Los_Angeles:20261106T180000
+DTEND;TZID=America/Los_Angeles:20261106T210000
+SUMMARY:After-School Ritual Reception
+LOCATION:Woods Outbound\, 4045 Judah St\, San Francisco
+URL:https://ma.to/event/after-school-ritual-reception-2026-11-06
+DESCRIPTION:Spirituality + Museum exhibits\nhttps://ma.to/event/after-scho
+ ol-ritual-reception-2026-11-06\n\nRuby Schneider’s solo exhibition Afte
+ r-School Ritual opens with a reception at Woods Outbound. The paintings d
+ raw from transition scenes in Hannah Montana\, depicting long-exposure li
+ ght trails over Los Angeles landscapes rendered in oil and acrylic. The r
+ eception runs Friday\, November 6\, 6–9pm at 4045 Judah St. The exhibit
+ ion remains on view until January 8\, 2027.
+END:VEVENT
+END:VCALENDAR

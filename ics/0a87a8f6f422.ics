@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0a87a8f6f422@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261107T093000
+DTEND;TZID=America/Los_Angeles:20261107T113000
+SUMMARY:Girls Beginner/Intermediate Surf Meetup !
+LOCATION:Soul Grind Coffee Roasters\, 5300 Coast Hwy Pacifica\, Pacifica
+URL:https://partiful.com/e/nSJ6kVzcmSLClZwD2rum
+DESCRIPTION:Pacifica\nhttps://partiful.com/e/nSJ6kVzcmSLClZwD2rum\n\nCasua
+ l beginner-intermediate weekly surf club in Pacifica! Or coffee and craft
+ s if the waves are too big/bad conditions✍🏼🎨 Hi everyone! I’m j
+ ust a girl who lives in north beach looking for some more friends to surf
+  with! ig: @graceclendenin Kinda like a run club but for surfing!🏄🏼
+ ‍♀️ Let’s meet at Soul Grind in Pacifica at 9:30. Everyone welcom
+ e!
+END:VEVENT
+END:VCALENDAR

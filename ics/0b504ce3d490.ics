@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0b504ce3d490@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;TZID=America/Los_Angeles:20261107T150000
+DTEND;TZID=America/Los_Angeles:20261107T200000
+SUMMARY:ALAMEDUH Zine Issue 2 Launch
+LOCATION:Faction Brewing\, 2501 Monarch Street\, Alameda\, California\, Al
+ ameda
+URL:https://ma.to/event/alameduh-zine-2-release-party-2026-11-07
+DESCRIPTION:Craft + Writing · Alameda\nhttps://ma.to/event/alameduh-zine-
+ 2-release-party-2026-11-07\n\nALAMEDUH marks the release of Issue 2 with 
+ a free\, all-ages party. The new print zine is available alongside live m
+ usic and a DJ/record-store set from Gold Digger Records\, hyperlocal food
+  from Calafia Taqueria\, Smash Island Burger\, and Suga N Spice Cookies\,
+  a 100% Alameda pop-up market\, a community art project\, and an ALAMEDUH
+  merch drop. Market participants include Amy Liu\, Big Softie Studio\, Co
+ v
+END:VEVENT
+END:VCALENDAR

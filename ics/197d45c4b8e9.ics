@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:197d45c4b8e9@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;TZID=America/Los_Angeles:20261108T143000
+DTEND;TZID=America/Los_Angeles:20261108T163000
+SUMMARY:design x storytelling
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/703bbpl8
+DESCRIPTION:Writing\nhttps://luma.com/703bbpl8\n\njoin us for a sunday aft
+ ernoon of lightning talks on design\, narrative\, and world-building with
+  creatives who've spent time sharing their work online from shaping launc
+ h films\, creative technology projects\, viral substack essays and more! 
+ hosted by our design friends at design eng club at osmo studios\, sponsor
+ ed by trajectory!
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:41f497362f6b@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261110T150000
+DTEND;TZID=America/Los_Angeles:20261110T183000
+SUMMARY:Notion 101 for Small Businesses SF
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/notion101-sf-nov
+DESCRIPTION:New in your area\nhttps://luma.com/notion101-sf-nov\n\nPart wo
+ rkshop\, part co-build\, all practical. Notion 101 for Small Businesses i
+ s a hands-on session for operators who want one place to run the business
+ . You'll learn the fundamentals\, see workflows built for businesses like
+  yours\, then build your own Business OS in the room with a Notion expert
+  at your table. You leave with something you can actually use tomorrow. N
+ ot a blank page with good intent
+END:VEVENT
+END:VCALENDAR

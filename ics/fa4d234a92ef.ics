@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fa4d234a92ef@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261106T120000
+DTEND;TZID=America/Los_Angeles:20261106T140000
+SUMMARY:Sherry Week Bingo at Savoy Tivoli
+LOCATION:Savoy Tivoli\, San Francisco
+URL:https://ma.to/event/sherry-week-bingo-at-savoy-tivoli-06-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/sherry-week-bingo-at-sav
+ oy-tivoli-06-nov-2026\n\nSan Francisco Sherry Week Bingo runs November 2
+ –8\, 2026. Participants complete the activities in the bingo squares du
+ ring #sherryweek\, post proof in an Instagram story or feed post tagging 
+ the place where they did it and @elloposf\, and fill any five squares in 
+ a straight or diagonal line to win prizes. The take is split between anyo
+ ne who gets five in a row. The promotion ends Sunday\, November 8. 
+END:VEVENT
+END:VCALENDAR

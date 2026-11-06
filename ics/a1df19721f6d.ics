@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a1df19721f6d@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261106T170000
+DTEND;TZID=America/Los_Angeles:20261106T190000
+SUMMARY:ICA San Jose Auction Party
+LOCATION:ICA San Jose\, San Jose
+URL:https://ma.to/event/ica-san-jose-auction-party-2026-11-06
+DESCRIPTION:Art · San Jose\nhttps://ma.to/event/ica-san-jose-auction-part
+ y-2026-11-06\n\nFree party at ICA San Jose on the night the annual benefi
+ t auction closes. The silent auction ends Friday\, November 6\, 5-7pm\, w
+ ith bidding handled online\, so attending is not required to purchase ori
+ ginal artwork by local artists. Victoria Mara Heilweil's photograph "Day 
+ 31" from her series #dailybeautyintheageofcoronavirus is among the donate
+ d works\, and the artist plans to be at the gallery part
+END:VEVENT
+END:VCALENDAR

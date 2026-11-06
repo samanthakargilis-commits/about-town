@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:eaab64aeee01@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261107T093000
+DTEND;TZID=America/Los_Angeles:20261107T113000
+SUMMARY:loaf.sf live jazz pop-up cafe
+LOCATION:425 Broderick St\, 425 Broderick St San Francisco\, San Francisco
+URL:https://partiful.com/e/UhTaCuyX4oATy9Ibchfr
+DESCRIPTION:New in your area\nhttps://partiful.com/e/UhTaCuyX4oATy9Ibchfr\
+ n\nPOPUP.LIVEJAZZ.COFFEE.PASTRY NOPA! CAFE POP-UP ON SATURDAY 🗓️ Sat
+ urday\, 11/7. 930am – sellout 🏡 425 broderick st · NOPA 🎷 PSTrio
+  with the delectable jazz ☕ coffee by @bluehousecoffeesf 🍞 kimchi mu
+ shroom buns\, cinnamon apple brie buns\, honey gochujang cheddar biscuits
+  by @loaf.sf 🍪 sweet & savory pastries by @holdmystarter @bananabayco 
+ 👖vintage by @uncommon.sf 💍 artisanal bling by @lemmontreebychel
+END:VEVENT
+END:VCALENDAR

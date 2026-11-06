@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a64f42e98670@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261106T160000
+DTEND;TZID=America/Los_Angeles:20261106T180000
+SUMMARY:& Rice Food Menu at ANINA
+LOCATION:ANINA\, 482 Hayes Street SF\, San Francisco
+URL:https://ma.to/event/rice-food-menu-at-anina-06-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/rice-food-menu-at-anina-
+ 06-nov-2026\n\n& Rice returns to ANINA on Friday\, November 6\, with a fo
+ od menu served from 4:00pm until it sells out. The menu includes Jammy Eg
+ g (5) with herb oil\, garlic-caper crumble and Meyer lemon\; Fig Leaf Ric
+ otta Toast (14) with toasted fig leaf ricotta\, kumquat puree\, candied s
+ piced pecans and sage\; Caesar Salad (16) with oyster caesar\, crispy ham
+ \, French bread croutons and Cajun cured egg yolk\; Crudo (1
+END:VEVENT
+END:VCALENDAR

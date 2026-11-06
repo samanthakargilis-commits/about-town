@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:69e901d6e870@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261121T193000
+DTEND;TZID=America/Los_Angeles:20261121T213000
+SUMMARY:The Residents - ESKIMO LIVE:: Palace of Fine Arts:: San Francisco:
+ : 11/21
+LOCATION:Palace of Fine Arts\, 3301 Lyon Street\, San Francisco\, CA 94123
+  San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/the-residents-eskimo-live-palace-of-fine-
+ arts-san-francisco-1121-tickets-1993875694877
+DESCRIPTION:New in your area\nhttps://www.eventbrite.com/e/the-residents-e
+ skimo-live-palace-of-fine-arts-san-francisco-1121-tickets-1993875694877\n
+ \nThe Residents perform at the historic Palace of Fine Arts in San Franci
+ sco
+END:VEVENT
+END:VCALENDAR

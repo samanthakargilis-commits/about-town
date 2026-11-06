@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:aa203a1ba3b2@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;TZID=America/Los_Angeles:20261110T130000
+DTEND;TZID=America/Los_Angeles:20261110T200000
+SUMMARY:Unwrapped by Queer Tattoo Alliance
+LOCATION:El Rio\, 3158 Mission St San Francisco\, San Francisco
+URL:https://partiful.com/e/iyNVbMdyS9e6IhYgnIM0
+DESCRIPTION:Gay / queer + Art\nhttps://partiful.com/e/iyNVbMdyS9e6IhYgnIM0
+ \n\nhttps://www.instagram.com/p/DeJIpw1Ku1m/ "UNWRAPPED: help us at @quee
+ rcation_tattoo raise money for our QUEER TAT CONVENTION with a punk show\
+ , dancing & holiday art mart!!! @elriosf Nov 8th 1pm-8pm featuring bands 
+ @blackgoldsun1 @croissantravejam @gusset_band and DJ @datdjnico Flyer by 
+ @whotattooedyou ✨💝"
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1378d547cebe@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261106T180000
+DTEND;TZID=America/Los_Angeles:20261106T210000
+SUMMARY:Visioning the Future: A Climate Action Collage Soirée
+LOCATION:The Faight Collective\, The Faight Collective\, 473A Haight St\, 
+ San Francisco\, CA 94117\, USA\, San Francisco
+URL:https://luma.com/u9l1w54q
+DESCRIPTION:Craft + Discourse\nhttps://luma.com/u9l1w54q\n\nVisioning the 
+ Future: A Climate Action Collage Soiree with Soapbox San Francisco at The
+  Faight Collective\, 6–9pm. The night brings dinner\, collaging\, discu
+ ssion and community together.
+END:VEVENT
+END:VCALENDAR

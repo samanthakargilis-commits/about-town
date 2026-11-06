@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b9945db62ba0@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;TZID=America/Los_Angeles:20261108T140000
+DTEND;TZID=America/Los_Angeles:20261108T200000
+SUMMARY:Alternative Lives: Art Show + Dance Party
+LOCATION:The Faight Collective\, 475 Haight St San Francisco\, San Francis
+ co
+URL:https://partiful.com/e/Y9RsznevhwVZlG4gPm2m
+DESCRIPTION:Art + Dance nights\nhttps://partiful.com/e/Y9RsznevhwVZlG4gPm2
+ m\n\nAlternative Lives Art Show: It’s the Artist’s Way at The Faight!
+  Sunday\, Nov 8\, 2 to 8pm The Faight\, 475 Haight St What if your real l
+ ife was the one you made up? For the past 12 weeks\, a new group of artis
+ ts has been working through Julia Cameron’s The Artist’s Way. Morning
+  pages\, artist dates\, the whole unraveling. Now we’re turning the ups
+ tairs into a living gallery of what happens when all tha
+END:VEVENT
+END:VCALENDAR

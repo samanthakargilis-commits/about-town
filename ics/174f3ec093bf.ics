@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:174f3ec093bf@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261117T190000
+DTEND;TZID=America/Los_Angeles:20261117T203000
+SUMMARY:Philosophy Talk Live: Franz Kafka and the World Without a Path
+LOCATION:220 Montgomery St\, 220 Montgomery Street\, San Francisco\, CA 94
+ 104 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/philosophy-talk-live-franz-kafka-and-the-
+ world-without-a-path-tickets-2002896450199
+DESCRIPTION:Discourse\nhttps://www.eventbrite.com/e/philosophy-talk-live-f
+ ranz-kafka-and-the-world-without-a-path-tickets-2002896450199\n\nJoin KAL
+ W & Philosophy Talk with guest Karen Zumhagen-Yekplé\, for a deep dive i
+ nto Kafka's world\, and what it has to say about ours.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:de707294d4dc@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;TZID=America/Los_Angeles:20261114T173000
+DTEND;TZID=America/Los_Angeles:20261114T193000
+SUMMARY:Diwali Celebration: Time of Transformation
+LOCATION:Brahma Kumaris Meditation Center\, 401 Baker St\, San Francisco\,
+  CA 94117\, USA\, San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/sf-meditation/events/316721965/
+DESCRIPTION:Cultural festivals + Meditation\nhttps://www.meetup.com/sf-med
+ itation/events/316721965/\n\nStep into a vibrant evening of reflection\, 
+ togetherness\, and cultural harmony. Diwali marks the triumph of light ov
+ er darkness and wisdom over ignorance. In today’s changing world\, "Tim
+ e of Transformation" invites us to awaken our inner light and foster peac
+ e across all communities and traditions. **Event Highlights:** * Inspirin
+ g reflections and interfaith prayers * **Special Guest: BK Gayatri Na
+END:VEVENT
+END:VCALENDAR

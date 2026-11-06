@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:135241731db2@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261128T143000
+DTEND;TZID=America/Los_Angeles:20261128T163000
+SUMMARY:“Hook” Live in Concert with SF Symphony
+LOCATION:Davies Symphony Hall\, 201 Van Ness Ave\, San Francisco\, CA 9410
+ 2\, San Francisco
+URL:https://sf.funcheap.com/hook-live-in-concert-with-sf-symphony-nov-27-2
+ 8/
+DESCRIPTION:Concerts\nhttps://sf.funcheap.com/hook-live-in-concert-with-sf
+ -symphony-nov-27-28/\n\nLights\, Camera\, Music!: Watch Steven Spielberg
+ ’s Hook on the big screen at Davies Symphony Hall as John Williams’s 
+ score is performed live by the SF Symphony. Kids’ Tickets Half Off! Hoo
+ k Friday November 27\, 2026 | 7:30p Saturday\, November 28\, 2026 | 2p Da
+ vies Symphony ...
+END:VEVENT
+END:VCALENDAR

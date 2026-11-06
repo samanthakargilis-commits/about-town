@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9792c79aa66a@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261113T000000
+DTEND;TZID=America/Los_Angeles:20261113T020000
+SUMMARY:California Dirt Holiday Popup
+LOCATION:1288 15th Ave\, 1288 15th Ave San Francisco\, San Francisco
+URL:https://partiful.com/e/nLksIVkigrqzKgylRWrA
+DESCRIPTION:Craft\nhttps://partiful.com/e/nLksIVkigrqzKgylRWrA\n\nhttps://
+ www.instagram.com/p/De7Pb0tGHTj/?img_index=1 "San Francisco\, we’re com
+ ing back up your way for our annual holiday pop-up 🐋 Come by on Friday
+  for opening night and wine by @broccellars We’ll be open all day Satur
+ day and Sunday for jewelry\, one-of-one ceramics\, and Cali Dirt flash ta
+ ttoos inked by @pretty_heavy_ Hosted by the very best @problemlibrary Can
+ ’t wait to see you all again 🤎"
+END:VEVENT
+END:VCALENDAR

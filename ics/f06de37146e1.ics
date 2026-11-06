@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f06de37146e1@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Chair Yoga With Kayko
+LOCATION:Sunset Branch Library\, 1305 18th Avenue\, San Francisco\, CA\, S
+ an Francisco
+URL:https://sf.funcheap.com/chair-yoga-kayko-3/
+DESCRIPTION:Meditation + Reading\nhttps://sf.funcheap.com/chair-yoga-kayko
+ -3/\n\nPractice chair yoga\, a gentle\, seated practice\, perfect for tho
+ se seeking low-impact exercise. Chair yoga improves your well-being. Kayk
+ o is a certified yoga therapist and instructor. She has years of experien
+ ce teaching older adults the joy of yoga in a chair! Space limited. Seats
+  available first come\, ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cd7c5a81805b@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261115T130000
+DTEND;TZID=America/Los_Angeles:20261115T150000
+SUMMARY:Muñeca by Cynthia Gómez
+LOCATION:Dolores Park\, 19th St & Dolores Street\, San Francisco\, CA San 
+ Francisco\, San Francisco
+URL:https://www.meetup.com/queer-sapphic-book-club-sf-30-s-40-s/events/317
+ 041933/
+DESCRIPTION:Reading + Discourse\nhttps://www.meetup.com/queer-sapphic-book
+ -club-sf-30-s-40-s/events/317041933/\n\n**📚This month we will be readi
+ ng Muñeca by Cynthia Gómez** **📆 Date: Sunday November 15th** **⏰ 
+ Time: 1:00PM - 2:30PM** **📍We’ll meet as usual in Dolores Park. Spec
+ ific location in the park will be shared on the day of with pictures and 
+ a map on our Instagram page.** **🎒BYO blanket\, chair\, snacks\, bever
+ ages\, sunscreen\, etc.** **💚Our bookclub prioritizes community\, conv
+ ersation\, and connection over
+END:VEVENT
+END:VCALENDAR

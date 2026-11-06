@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9064d81e4cab@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;TZID=America/Los_Angeles:20261107T140000
+DTEND;TZID=America/Los_Angeles:20261107T160000
+SUMMARY:Personal Visions Juried Screening
+LOCATION:4 Star Theater\, 2200 Clement St\, San Francisco\, CA 94121\, San
+  Francisco
+URL:https://ma.to/event/personal-visions-juried-screening-2026-11-07
+DESCRIPTION:Animals + Fairs & festivals\nhttps://ma.to/event/personal-visi
+ ons-juried-screening-2026-11-07\n\nPersonal Visions\, the juried show of 
+ the Studio 8 Film Festival 2026\, screens on the big screen at the 4 Star
+  Theater. This first of five preview parts presents four films: “Metall
+ ic Dreams” by Ryan Wicks\, “Parallel Owls” by Lanford Weingrod\, 
+ “Mounds Along the Waves” by Kavena Hambira and “bookshelf (study)
+ ” by Denah Johnston. The screening starts at 2 PM.
+END:VEVENT
+END:VCALENDAR

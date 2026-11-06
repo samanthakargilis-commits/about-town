@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bafca72227c8@bay-events
+DTSTAMP:20261106T201232Z
+DTSTART;TZID=America/Los_Angeles:20261108T160000
+DTEND;TZID=America/Los_Angeles:20261108T170000
+SUMMARY:Iced Coffee Latte Candle Workshop
+LOCATION:Jiaren Cafe\, 1171 Homestead Road\, #140b\, Santa Clara\, CA 9505
+ 0 Santa Clara\, Santa Clara
+URL:https://www.eventbrite.com/e/iced-coffee-latte-candle-workshop-tickets
+ -1986757042797
+DESCRIPTION:Santa Clara\nhttps://www.eventbrite.com/e/iced-coffee-latte-ca
+ ndle-workshop-tickets-1986757042797\n\nCreate Your Own Cozy\, Eco-Friendl
+ y Candle in Our Hands-On Workshop! A Drink-Inspired Creative Experience b
+ y LumiLatte.
+END:VEVENT
+END:VCALENDAR

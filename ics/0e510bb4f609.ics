@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0e510bb4f609@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261107T100000
+DTEND;TZID=America/Los_Angeles:20261107T120000
+SUMMARY:Open Air Drawing Club
+LOCATION:CfM art room\, San Francisco
+URL:https://ma.to/event/open-air-drawing-club-2026-11-07-1
+DESCRIPTION:Art\nhttps://ma.to/event/open-air-drawing-club-2026-11-07-1\n\
+ nThe Open Air Drawing Club is an in-person workshop for all skill levels.
+  It begins in the CfM art room with around 15 minutes of introductions\, 
+ then heads to Golden Gate Park or Ocean Beach\, depending on the weather\
+ , for about an hour of sketching and color studies. The group returns to 
+ the studio to spread out and add finishing touches.
+END:VEVENT
+END:VCALENDAR

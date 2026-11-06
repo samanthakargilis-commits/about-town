@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e6306252b35b@bay-events
+DTSTAMP:20261106T201231Z
+DTSTART;TZID=America/Los_Angeles:20261121T074500
+DTEND;TZID=America/Los_Angeles:20261121T110000
+SUMMARY:Butter to Butter
+LOCATION:Arsicault\, 87 McAllister St San Francisco\, San Francisco
+URL:https://partiful.com/e/FoboaQ3SvNrWRdK2H4HC
+DESCRIPTION:New in your area\nhttps://partiful.com/e/FoboaQ3SvNrWRdK2H4HC\
+ n\nHi Friends! It’s getting colder outside and layers are a must\; only
+  this time we’re layering Butter-to-Butter with pastries and bread galo
+ re. We will be waking up early and hopping to four bakeries around the ci
+ ty. Meet at 7:45 am #1 Ariscault on McCallister #2 Juniper cafe #3 b. pat
+ isserie #4 Parachute Bakery Let’s stay warm this winter!
+END:VEVENT
+END:VCALENDAR

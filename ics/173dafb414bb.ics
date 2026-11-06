@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:173dafb414bb@bay-events
+DTSTAMP:20261106T201230Z
+DTSTART;TZID=America/Los_Angeles:20261122T100000
+DTEND;TZID=America/Los_Angeles:20261122T120000
+SUMMARY:Sunday Coffee & Crafting
+LOCATION:Café Etoile\, 1930 Martin Luther King Jr Way\, Berkeley\, CA Ber
+ keley\, Berkeley
+URL:https://www.meetup.com/east-bay-fiber-arts/events/317062713/
+DESCRIPTION:Craft + Gay / queer · Berkeley\nhttps://www.meetup.com/east-b
+ ay-fiber-arts/events/317062713/\n\nCome join us for our bi-weekly Coffee 
+ & Crafting to enjoy some company and cafe fare while making progress on y
+ our current WIP! As always\, crafters of all kind are welcome to join\, e
+ ven if your preferred medium only loosely fits the definition of "fiber" 
+ craft. \\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-
+ \\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\-\\- *About the Location* Cafe Etoile 
+ is a lively brunch stop specializi
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7186632ec50d@bay-events
+DTSTAMP:20261106T201228Z
+DTSTART;TZID=America/Los_Angeles:20261106T170000
+DTEND;TZID=America/Los_Angeles:20261106T200000
+SUMMARY:Castro Art Walk
+LOCATION:The Castro\, San Francisco
+URL:https://ma.to/event/castro-art-walk-07-nov-2026
+DESCRIPTION:Gay / queer + Art\nhttps://ma.to/event/castro-art-walk-07-nov-
+ 2026\n\nThe Castro Art Walk takes place on Friday\, November 6\, 2026\, f
+ rom 5:00 to 8:00 pm. Nineteen art galleries and local merchants stay open
+  late for art exhibits. Guided tours begin at 5:00 pm at Chartreuse by Ro
+ je (2095 Market St.). Participating stops include @chartreusebyroje\, @bl
+ ackbirdbarsf\, @the_academy_sf\, @thephotoboothmuseum\, @starbellysf\, @h
+ arveymilkphoto\, @floredispensary\, @theartistsgaller
+END:VEVENT
+END:VCALENDAR

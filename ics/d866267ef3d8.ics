@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d866267ef3d8@bay-events
+DTSTAMP:20261106T201229Z
+DTSTART;TZID=America/Los_Angeles:20261205T110000
+DTEND;TZID=America/Los_Angeles:20261205T170000
+SUMMARY:Downtown Petaluma Holiday Shopping Stroll
+LOCATION:Historic Downtown Petaluma\, 210 Lakeville Street\, Petaluma\, CA
+ \, Petaluma
+URL:https://sf.funcheap.com/downtown-petaluma-holiday-shopping-stroll/
+DESCRIPTION:Concerts · A yearly tradition · Petaluma\nhttps://sf.funchea
+ p.com/downtown-petaluma-holiday-shopping-stroll/\n\nCelebrate the season 
+ in Downtown Petaluma! Wander through festively decorated streets\, discov
+ er one-of-a-kind gifts in local shops\, and enjoy holiday treats\, cheerf
+ ul libations\, live music\, and extended store hours. All activities will
+  take place inside participating businesses. Whether you’re hunting hen
+ s\, shopping for loved ones\, or simply soaking in the holiday spirit\, .
+ ..
+END:VEVENT
+END:VCALENDAR
