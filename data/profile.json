@@ -700,6 +700,118 @@
       "dragon"
     ]
   },
+  "music_tastes": {
+    "_note": "from the Spotify export (tools/build_music_list.py): vocal jazz and standards, bossa nova and French chanson, 2000s pop, Christmas music, film scores, plus tributes to the classic singers he plays most. Boosts only, once per event.",
+    "weight": 1.2,
+    "groups": [
+      {
+        "label": "Your vocal jazz",
+        "keywords": [
+          "vocal jazz",
+          "jazz vocalist",
+          "jazz singer",
+          "jazz standards",
+          "great american songbook",
+          "american songbook",
+          "crooner",
+          "crooners",
+          "big band",
+          "swing band",
+          "torch song",
+          "torch songs",
+          "supper club",
+          "jazz brunch",
+          "jazz night",
+          "jazz trio"
+        ]
+      },
+      {
+        "label": "Your bossa nova & chanson",
+        "keywords": [
+          "bossa nova",
+          "bossa",
+          "brazilian jazz",
+          "samba",
+          "chanson",
+          "french jazz",
+          "gypsy jazz",
+          "jazz manouche"
+        ]
+      },
+      {
+        "label": "A tribute to a singer you love",
+        "keywords": [
+          "elvis",
+          "sinatra",
+          "nat king cole",
+          "chet baker",
+          "stan getz",
+          "ella fitzgerald",
+          "peggy lee",
+          "whitney houston",
+          "astrud gilberto",
+          "the carpenters",
+          "carpenters tribute",
+          "amy winehouse",
+          "patsy cline",
+          "aretha",
+          "the doors tribute",
+          "rat pack"
+        ]
+      },
+      {
+        "label": "Your 2000s pop",
+        "keywords": [
+          "2000s",
+          "y2k",
+          "00s",
+          "early 2000s",
+          "throwback pop",
+          "pop punk",
+          "emo night",
+          "boy band",
+          "boyband",
+          "swiftie",
+          "taylor swift night",
+          "eras party",
+          "britney night",
+          "pop diva"
+        ]
+      },
+      {
+        "label": "Your Christmas music",
+        "keywords": [
+          "christmas concert",
+          "holiday concert",
+          "christmas carols",
+          "carols",
+          "caroling",
+          "carolers",
+          "sing-along messiah",
+          "messiah sing",
+          "jazzy christmas",
+          "charlie brown christmas",
+          "holiday sing-along",
+          "christmas sing-along",
+          "christmas cabaret",
+          "holiday cabaret"
+        ]
+      },
+      {
+        "label": "Your film scores",
+        "keywords": [
+          "film score",
+          "film scores",
+          "movie music",
+          "in concert with orchestra",
+          "live to film",
+          "film in concert",
+          "disney in concert",
+          "score live"
+        ]
+      }
+    ]
+  },
   "never": [
     "kids only",
     "toddler",

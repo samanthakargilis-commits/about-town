@@ -9,3 +9,6 @@ app/weather.json
 data/goodreads_library_export.csv
 app/calendar.ics
 app/calendar-more.ics
+# raw Spotify export stays on your computer; data/follow.json's musicians are built from it
+my_spotify_data*
+Spotify Account Data/
