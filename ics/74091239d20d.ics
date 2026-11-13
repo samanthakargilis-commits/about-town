@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:74091239d20d@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261113T200000
+DTEND;TZID=America/Los_Angeles:20261113T220000
+SUMMARY:Angels in America\, Part 1
+LOCATION:Theatre Rhinoceros\, San Francisco
+URL:https://ma.to/event/angels-in-america-part-1-2026-11-13
+DESCRIPTION:Gay / queer + Camp & Halloween\nhttps://ma.to/event/angels-in-
+ america-part-1-2026-11-13\n\nTheatre Rhinoceros presents the first part o
+ f Tony Kushner's Pulitzer Prize-winning play\, set in 1980s New York. A g
+ ay man is abandoned by his lover when he contracts AIDS\; a closeted Morm
+ on lawyer's marriage unravels\; and Roy Cohn\, Ethel Rosenberg\, a drag q
+ ueen nurse\, and an angel appear. Directed by John Fisher. Tickets at lin
+ k in bio.
+END:VEVENT
+END:VCALENDAR

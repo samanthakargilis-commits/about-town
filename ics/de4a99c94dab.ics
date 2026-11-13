@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:de4a99c94dab@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261114T193000
+DTEND;TZID=America/Los_Angeles:20261114T213000
+SUMMARY:“Mortified Live” Embarrassing Teen Diary Storytelling (Berkele
+ y)
+LOCATION:Ashkenaz\, 1317 San Pablo Ave.\, Berkeley CA\, Berkeley
+URL:https://sf.funcheap.com/mortified-live-embarrassing-teen-diary-storyte
+ lling-berkeley-7/
+DESCRIPTION:Writing + Comedy · Berkeley\nhttps://sf.funcheap.com/mortifie
+ d-live-embarrassing-teen-diary-storytelling-berkeley-7/\n\nAs heard on Th
+ e Mortified Podcast\, & seen on Netflix’s Mortified Nation\, check out 
+ Mortified – the national comedy/storytelling sensation live! Hear adult
+ s share their actual\, embarrassing\, & hilarious teen diaries live in fr
+ ont of total strangers. Check out the hilarious comedy/storytelling pheno
+ menon that’s been ...
+END:VEVENT
+END:VCALENDAR

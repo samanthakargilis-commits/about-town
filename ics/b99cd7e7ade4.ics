@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b99cd7e7ade4@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:Circus Bella holiday performances
+LOCATION:
+URL:https://www.circusbella.org/bigtop
+DESCRIPTION:Weird & unusual\nhttps://www.circusbella.org/bigtop\n\nBy Aaro
+ n Weinstock Courtesy of Circus Bella Starting on December 11\, a classic 
+ big-top circus tent will pop up in Downtown San Francisco for a special h
+ oliday circus. Circus Bella\, a one-ring circus based out of the Bay Area
+ \, is returning to Downtown SF for their annual holiday show\, complete w
+ ith a live band\, acrobats\, trapeze\, and more. This year’s show is ti
+ tled BRAVURA \, and is an all new show
+END:VEVENT
+END:VCALENDAR

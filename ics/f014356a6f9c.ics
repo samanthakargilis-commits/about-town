@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f014356a6f9c@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261113T100000
+DTEND;TZID=America/Los_Angeles:20261113T120000
+SUMMARY:Wang Li-ou Calligraphy & Seals
+LOCATION:International Art Museum of America\, San Francisco
+URL:https://ma.to/event/wang-li-ou-calligraphy-seals-13-nov-2026
+DESCRIPTION:Museum exhibits + Art\nhttps://ma.to/event/wang-li-ou-calligra
+ phy-seals-13-nov-2026\n\nWang Li-ou's calligraphy and seal-carving exhibi
+ tion presents work from her decades-long artistic practice. Her seal engr
+ aving draws on Qin and Han dynasty traditions\, with confident knife work
+  and an individual style. Wang Li-ou graduated from the Suzhou Arts and C
+ rafts School in 1982. The exhibition runs November 6-20\, 2026.
+END:VEVENT
+END:VCALENDAR

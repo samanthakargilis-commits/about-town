@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1e259bfd4227@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261116T183000
+DTEND;TZID=America/Los_Angeles:20261116T210000
+SUMMARY:You're Doing Great\, Sweetie
+LOCATION:826 Valencia St\, 826 Valencia St San Francisco\, San Francisco
+URL:https://partiful.com/e/dd1PY9E2kHNpeRiYHelA
+DESCRIPTION:Discourse\nhttps://partiful.com/e/dd1PY9E2kHNpeRiYHelA\n\nAn e
+ vening for creatives in tech about knowing your value\, becoming known fo
+ r it\, and finding your people. You're cordially invited to You're Doing 
+ Great\, Sweetie ! Hosted by Kindasorta Studio and Olivia White Lopez. Bei
+ ng good at what you do and knowing how to talk about it are two very diff
+ erent skills. Whether you're trying to land your next opportunity\, navig
+ ate a career pivot\, or simply figur
+END:VEVENT
+END:VCALENDAR

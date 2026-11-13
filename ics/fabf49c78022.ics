@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fabf49c78022@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T170000
+DTEND;TZID=America/Los_Angeles:20261113T180000
+SUMMARY:Happy Hour at Keys Jazz Bistro
+LOCATION:Keys Jazz Bistro\, 498 Broadway\, San Francisco\, San Francisco
+URL:https://ma.to/event/happy-hour-at-keys-jazz-bistro-13-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/happy-hour-at-keys-jazz-
+ bistro-13-nov-2026\n\nKeys Jazz Bistro hosts its Wednesday–Saturday hap
+ py hour in the bar and lounge from 5 to 6pm. The bar and lounge have no c
+ over.
+END:VEVENT
+END:VCALENDAR

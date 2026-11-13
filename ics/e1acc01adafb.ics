@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e1acc01adafb@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261119T120000
+DTEND;TZID=America/Los_Angeles:20261119T220000
+SUMMARY:Free Grant Yun Interactive 3D Landscape Art Experience (Palo Alto)
+LOCATION:180 University Ave\, Palo Alto\, CA 94301\, Palo Alto
+URL:https://sf.funcheap.com/free-grant-yun-interactive-3d-landscape-art-ex
+ perience-palo-alto/
+DESCRIPTION:Art · Palo Alto\nhttps://sf.funcheap.com/free-grant-yun-inter
+ active-3d-landscape-art-experience-palo-alto/\n\nDeveloped over the past 
+ year with fellowship sections\, expands Grant Yuen’s distinctive visual
+  language into fully three-dimensional generative landscape informed by g
+ overnment planning documents and the system is actually built environment
+ . Grante Yun will join us to experience a project firsthand and discover 
+ the many ways ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:851746d9a140@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261114T190000
+DTEND;TZID=America/Los_Angeles:20261114T201500
+SUMMARY:San Francisco Come to Brasil - Screening + Q&A
+LOCATION:Artists' Television Access\, 992 Valencia St San Francisco\, San 
+ Francisco
+URL:https://partiful.com/e/H5Dmlrn521QdmuvROsjH
+DESCRIPTION:Discourse + Art\nhttps://partiful.com/e/H5Dmlrn521QdmuvROsjH\n
+ \nCelebrate the San Francisco premiere of Come to Brasil\, a short docume
+ ntary directed by Lina Abascal at nonprofit arts space ATA. Ticket sales 
+ are going towards the venue. Following the screening\, Lina will chat wit
+ h culture writer Meg Zukin (Variety\, Vulture\, Time). Doors at 7 Screeni
+ ng promptly 7:15 Q&A at 7:40 Out by 8 or so! So what's the doc about?? Lo
+ ok in the online comment section of any c
+END:VEVENT
+END:VCALENDAR

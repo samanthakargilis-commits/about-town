@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:409511127b0f@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261113T200000
+DTEND;TZID=America/Los_Angeles:20261113T220000
+SUMMARY:Trio Francisco Forró Party
+LOCATION:Fica Oakland\, 2513 Magnolia St\, Oakland\, Oakland
+URL:https://ma.to/event/trio-francisco-forro-party-13-nov-2026
+DESCRIPTION:Concerts + Dance nights · Oakland\nhttps://ma.to/event/trio-f
+ rancisco-forro-party-13-nov-2026\n\nTrio Francisco brings live forró mus
+ ic to this all-white-attire community dance party in Oakland. The night f
+ eatures a mix of Brazilian rhythms\, dancer performances\, and live music
+ . The event is free and open to the community\, with donations encouraged
+ \, and all ages are welcome.
+END:VEVENT
+END:VCALENDAR

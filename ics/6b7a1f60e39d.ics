@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6b7a1f60e39d@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:John Rybak + Friends at Serendipity Cellars
+LOCATION:Serendipity Cellars\, 1600 Chestnut St\, Brentwood\, Brentwood
+URL:https://sf.funcheap.com/john-rybak-friends-serendipity-cellars/
+DESCRIPTION:Singing · Brentwood\nhttps://sf.funcheap.com/john-rybak-frien
+ ds-serendipity-cellars/\n\nHi Friends! Come hang with us on my Birthday\,
+  this Fri. 11/13 4 – 7pm @ Serendipity Cellars in Brentwood. It’ll be
+  myself on guitar\, dobro\, harmonica\, vocals\, Perry Spinali on fiddle 
+ and vocal harmonies + John Hosking on upright bass+ vocal harmonies. It
+ ’s my birthday\, ...
+END:VEVENT
+END:VCALENDAR

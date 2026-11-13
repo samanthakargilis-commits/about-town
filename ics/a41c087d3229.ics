@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a41c087d3229@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261122T110000
+DTEND;TZID=America/Los_Angeles:20261122T130000
+SUMMARY:shlums kapé matcha + mahjong part II
+LOCATION:3819 Crofton Way\, 3819 Crofton Way South San Francisco\, South S
+ an Francisco
+URL:https://partiful.com/e/s3NyuIxpyhHiJf3zJrtG
+DESCRIPTION:South San Francisco\nhttps://partiful.com/e/s3NyuIxpyhHiJf3zJr
+ tG\n\nmatcha + mahjong pop-up - round ii after the love for our first pop
+ -up\, we’re back! join us for a matcha cafe experience inspired by Fili
+ pino + Chinese flavors\, with homemade pastries\, good music\, and mahjon
+ g with good people\, all in the comfort of a Bay Area home : ) *no mahjon
+ g experience needed\, we’ll teach you! *drinks & pastries available for
+  purchase. mahjong is played just for fun (no betti
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:40c26c822665@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261114T170000
+DTEND;TZID=America/Los_Angeles:20261114T190000
+SUMMARY:Within the Frame 2026 Premiere
+LOCATION:Madrone Art Bar\, 500 Divisadero St\, San Francisco
+URL:https://ma.to/event/within-the-frame-2026-premiere-2026-11-14
+DESCRIPTION:Art\nhttps://ma.to/event/within-the-frame-2026-premiere-2026-1
+ 1-14\n\nWithin the Frame is an annual anthology in which artists are task
+ ed with creating a film in seven days based on a prompt. The San Francisc
+ o edition presents an evening of over 40 silly\, whimsical and perhaps ev
+ en peculiar short films made by independent artists around the world. The
+  programme runs 5–7 PM on 14 November at Madrone Art Bar\, 500 Divisade
+ ro St. Tickets are pay what you like\, and capac
+END:VEVENT
+END:VCALENDAR

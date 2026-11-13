@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6f4ef8d5f5c6@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261220T170000
+DTEND;TZID=America/Los_Angeles:20261220T190000
+SUMMARY:Downtown First Thursdays 2026
+LOCATION:
+URL:https://sf.funcheap.com/city-guide/night-market-san-francisco-bay-area
+ /
+DESCRIPTION:Gay / queer + Camp & Halloween · Featured on Funcheap\nhttps:
+ //sf.funcheap.com/city-guide/night-market-san-francisco-bay-area/\n\nFirs
+ t Thursdays: (currently scheduled January through December 2026) Second S
+ treet\, Downtown San Francisco\, CA Free | All Ages DFT (Downtown First T
+ hursdays) is a free\, all-ages monthly street party hosted in Downtown Sa
+ n Francisco\, taking place on every first Thursday of the month from 5pm 
+ to 10pm. Get ready for disco in the streets\, DJs\, live music\, drag\, f
+ ashion\, street performances\, and more.
+END:VEVENT
+END:VCALENDAR

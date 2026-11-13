@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fedfa9c5d26b@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261205T170000
+DTEND;TZID=America/Los_Angeles:20261205T210000
+SUMMARY:6th Annual Inner Sunset Holiday Stroll
+LOCATION:Inner Sunset\, 9th Avenue and Irving Street\, San Francisco\, CA\
+ , San Francisco
+URL:https://sf.funcheap.com/6th-annual-sunset-holiday-stroll-sf/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/6th-annual-sunset-ho
+ liday-stroll-sf/\n\nJoin Sunset Mercantile and the businesses of the Inne
+ r Sunset for the 6th annual Inner Sunset Holiday Stroll! Following the Ho
+ liday Mercantile on Saturday\, December 5th\, the 6th annual Inner Sunset
+  Holiday Stroll will take place through the Inner Sunset Merchants Corrid
+ or from 5-9pm. Celebrate this unique ...
+END:VEVENT
+END:VCALENDAR

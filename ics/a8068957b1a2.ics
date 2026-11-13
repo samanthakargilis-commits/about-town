@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a8068957b1a2@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T140000
+DTEND;TZID=America/Los_Angeles:20261113T180000
+SUMMARY:Every Thing Computer
+LOCATION:tiat\, 151 Powell Street\, San Francisco\, San Francisco
+URL:https://ma.to/event/every-thing-computer-13-nov-2026-1
+DESCRIPTION:Museum exhibits + Art\nhttps://ma.to/event/every-thing-compute
+ r-13-nov-2026-1\n\nEvery Thing Computer is a group exhibition of 50 works
+  exploring what else a computer could be: tactile\, playful\, strange\, s
+ ocial\, and alive to their surroundings. It is supported by @eraworlds. F
+ eatured artists: @70mg\, @aesthetic.computer\, @aiddeeennnnn\, @akok0nut\
+ , @albert_data\, @alessandramercedesb\, @allin19991224\, @andthesunco\, @
+ anna.zhang\, @carolineeehana\, @chlomo.co\, @computah\, @dehonghao\, @d
+END:VEVENT
+END:VCALENDAR

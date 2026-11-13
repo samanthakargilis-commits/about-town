@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a0f3f82a54b5@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261116T183000
+DTEND;TZID=America/Los_Angeles:20261116T193000
+SUMMARY:Meditation Made Easy
+LOCATION:Kadampa Meditation Center SF\, 3324 17th Street\, San Francisco\,
+  CA 94110 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/meditation-made-easy-tickets-198105528067
+ 3
+DESCRIPTION:Meditation + Spirituality\nhttps://www.eventbrite.com/e/medita
+ tion-made-easy-tickets-1981055280673\n\nThis weekly class presents easy-t
+ o-learn meditations and helpful teachings that we can immediately use to 
+ improve our work and relationships\, cultivate inner peace and increase o
+ ur enjoyment of daily life. With 30 minutes of this one hour class spent 
+ in two or three guided meditations\, Meditation Made Easy is a great prac
+ ticum to gain real experience meditating within a supportive group framew
+ ork.
+END:VEVENT
+END:VCALENDAR

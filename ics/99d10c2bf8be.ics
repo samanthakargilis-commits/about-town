@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:99d10c2bf8be@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:DragonForce: Inhuman Rampage 20th Anniversary
+LOCATION:UC Theatre\, 2036 University Ave\, Berkeley\, Berkeley
+URL:https://sf.funcheap.com/dragonforce-inhuman-rampage-20th-anniversary/
+DESCRIPTION:Theatre · Berkeley\nhttps://sf.funcheap.com/dragonforce-inhum
+ an-rampage-20th-anniversary/\n\nDragonForce is a genre-defining force in 
+ power metal. RIAA platinum-selling\, Grammy-nominated\, and globally cele
+ brated as the world’s fastest band. Founded in London in 1999 by guitar
+ ists Herman Li and Sam Totman\, the band has spent over two decades rewri
+ ting the rules of heavy metal with ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8c09dae6b78a@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261113T193000
+DTEND;TZID=America/Los_Angeles:20261113T213000
+SUMMARY:NCTC Improv Fundraiser
+LOCATION:NCTC\, San Francisco
+URL:https://ma.to/event/nctc-education-improv-fundraiser-2026-11-13
+DESCRIPTION:Comedy + Theatre\nhttps://ma.to/event/nctc-education-improv-fu
+ ndraiser-2026-11-13\n\nFundraiser improv show with Forever Improv\, No Wo
+ rries\, Adult Improv and friendsimprov\, raising funds for NCTC Education
+  and free drama classes in San Francisco schools. Also featuring Haight t
+ o Laugh regulars\, Appropriately Aged Friends\, Improv All-Stars\, If Not
+ \, Spicy Boyzzz and Women & Children First. Tickets available online\; us
+ e promo code FOREVER to save $5.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8cc7d323f840@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261113T170000
+DTEND;TZID=America/Los_Angeles:20261113T210000
+SUMMARY:Mahjong in the Clubhouse
+LOCATION:The Clubhouse\, 160 Waverly Place\, San Francisco\, San Francisco
+URL:https://ma.to/event/mahjong-in-the-clubhouse-13-nov-2026
+DESCRIPTION:Theatre\nhttps://ma.to/event/mahjong-in-the-clubhouse-13-nov-2
+ 026\n\nMahjong in the Clubhouse brings mixed-level players together for a
+  cozy evening of play. Participants learn from one another\, with no inst
+ ructors provided. Guests can bring their own beverages and food. Admissio
+ n is $88 per table\, and tables are limited. Reservations are available t
+ hrough the organizer's online link.
+END:VEVENT
+END:VCALENDAR

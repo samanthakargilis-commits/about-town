@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:eb416b25812d@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:La Caravana: Music Video Premiere & Community Celebration
+LOCATION:Dance Mission Theater\, 3316 24th St.\, San Francisco\, CA 94110\
+ , San Francisco
+URL:https://sf.funcheap.com/la-caravana-music-video-premiere-community-cel
+ ebration/
+DESCRIPTION:Theatre\nhttps://sf.funcheap.com/la-caravana-music-video-premi
+ ere-community-celebration/\n\nCelebrate the premiere of La Caravana\, a m
+ usic video featuring 25 immigrant domestic workers and day laborers telli
+ ng a story of migration\, solidarity\, and hope. The evening features liv
+ e performances by Coro Nueva Era\, Del Barrio Teatro\, and Teatro Nuevo S
+ ol\, followed by the video premiere\, ...
+END:VEVENT
+END:VCALENDAR

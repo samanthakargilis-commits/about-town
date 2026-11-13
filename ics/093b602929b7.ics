@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:093b602929b7@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Free Winter Market w/ Local Makers + Wine (Healdsburg)
+LOCATION:Merriam Vineyards\, 11650 Los Amigos Rd\, Healdsburg\, CA 95448\,
+  Healdsburg
+URL:https://sf.funcheap.com/free-winter-market-local-makers-wine-healdsbur
+ g/
+DESCRIPTION:Craft · Healdsburg\nhttps://sf.funcheap.com/free-winter-marke
+ t-local-makers-wine-healdsburg/\n\nThe Merriam Vineyards Winter Market br
+ ings holiday cheer to the winery with an afternoon of seasonal shopping\,
+  local vendors\, and wine by the glass. Visitors can browse unique gifts 
+ from local makers\, including handmade Christmas ornaments\, candles\, ar
+ tisanal honey\, skincare products\, terrariums\, and more. Pizzasanto ...
+END:VEVENT
+END:VCALENDAR

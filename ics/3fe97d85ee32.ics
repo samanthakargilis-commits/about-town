@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3fe97d85ee32@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T200000
+DTEND;TZID=America/Los_Angeles:20261113T220000
+SUMMARY:Hooked Comedy Showcase
+LOCATION:F.I.S.H\, 350 Harbor Drive\, Sausalito\, CA\, Sausalito
+URL:https://ma.to/event/hooked-comedy-showcase-14-nov-2026
+DESCRIPTION:Comedy · Sausalito\nhttps://ma.to/event/hooked-comedy-showcas
+ e-14-nov-2026\n\nHooked is a monthly stand-up comedy showcase presented b
+ y OK Good Comedy Productions at F.I.S.H\, a waterfront seafood restaurant
+  in Sausalito. The show features a rotating lineup of comics. This editio
+ n features headliner Alvin Duke\, with Doug Cordell\, Chantavy Tornado\, 
+ Abe Rabinowitz\, and Dylan James\, hosted by Donovan Robertson. Showtime 
+ is 8 PM. 18+ with a 2-drink minimum. Admission is $15.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dd2e2aebc7d3@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261117T190000
+DTEND;TZID=America/Los_Angeles:20261117T210000
+SUMMARY:Practice with the Precepts
+LOCATION:SF Dharma Collective\, 2929 24th St\, San Francisco\, CA San Fran
+ cisco\, San Francisco
+URL:https://www.meetup.com/san-francisco-mindfulness-meetup/events/3156427
+ 54/
+DESCRIPTION:Meditation + Spirituality\nhttps://www.meetup.com/san-francisc
+ o-mindfulness-meetup/events/315642754/\n\nSpiritual Friends Sangha invite
+ s you to our monthly recitation of the Buddhist Precepts for Ethical Livi
+ ng\, aka the [Five Mindfulness Trainings](https://plumvillage.org/mindful
+ ness/the-5-mindfulness-trainings). After a period of settling in\, we wil
+ l cultivate awareness together in silence for 20 to 30 minutes - sitting\
+ , walking\, standing\, reclining\, rolling meditation all welcome. This w
+ ill be fol
+END:VEVENT
+END:VCALENDAR

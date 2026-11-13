@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f342e22abb77@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261113T160000
+DTEND;TZID=America/Los_Angeles:20261113T170000
+SUMMARY:Clement Street Happy Hour Cleanup w/ Free Drink and Meal For Volun
+ teers
+LOCATION:Richmond Republic Draught House\, 642 Clement St\, San Francisco\
+ , CA\, San Francisco
+URL:https://sf.funcheap.com/clement-street-happy-hour-cleanup-free-drink-m
+ eal-volunteers-3/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/clement-street-happy
+ -hour-cleanup-free-drink-meal-volunteers-3/\n\nMeet at Richmond Republic 
+ Draught House (642 Clement St). Then\, cleaning will occur from 4:00pm to
+  5:00pm around the neighborhood. Stay afterwards for free food & drinks a
+ nd to meet fellow volunteers. Sign up on this Civic Joy Fund Mobilize pag
+ e\, or email info@refuserefusesf.org with ...
+END:VEVENT
+END:VCALENDAR

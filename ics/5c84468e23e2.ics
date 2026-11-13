@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5c84468e23e2@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261210T190000
+DTEND;TZID=America/Los_Angeles:20261210T210000
+SUMMARY:Flaming Creatures: The Films of Jack Smith
+LOCATION:The Lab\, 2948 16th Street\, San Francisco\, California 94103\, U
+ nited States San Francisco\, San Francisco
+URL:https://dice.fm/event/6ad70359fa2b1b00012b1323
+DESCRIPTION:Theatre + Weird & unusual · Thursday evening\nhttps://dice.fm
+ /event/6ad70359fa2b1b00012b1323\n\nJack Smith was an underground visionar
+ y in every sense of the word. Jack poured glitter into everything he made
+ : pasty creatures\, plastic fantasias and moldy monsters. He was a perfor
+ mance artist\, filmmaker\, playwright\, photographer\, socialist\, aesthe
+ te\, installation artist\, scene-stealer\, writer\, interventionist. He b
+ uilt a theater and movie-studio in his rickety loft out of street debris\
+ ; an int
+END:VEVENT
+END:VCALENDAR

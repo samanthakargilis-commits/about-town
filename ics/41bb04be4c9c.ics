@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:41bb04be4c9c@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T190000
+DTEND;TZID=America/Los_Angeles:20261113T230000
+SUMMARY:Strawberry Fuzz\, Slumped and Diesel Dudes
+LOCATION:Kilowatt\, 3160 16th Street\, San Francisco\, California 94103\, 
+ United States San Francisco\, San Francisco
+URL:https://dice.fm/event/6a8ddc830829bc00012324d0
+DESCRIPTION:Animals + Art\nhttps://dice.fm/event/6a8ddc830829bc00012324d0\
+ n\nCarrying on a lineage that stretches from The Doors to FIDLAR\, indie 
+ punk band Strawberry Fuzz document the wildlife in and around their Venic
+ e Beach turf. Channeling stories of parties\, junkies\, sex\, violence an
+ d camaraderie through a keenly observant lens\, they meticulously capture
+  the smell\, sound\, taste and feel of life on the streets\, in the bars\
+ , bedrooms and basements of the bleary side of 
+END:VEVENT
+END:VCALENDAR

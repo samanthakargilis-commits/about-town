@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:179bd1ba733c@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261121T103000
+DTEND;TZID=America/Los_Angeles:20261121T120000
+SUMMARY:Card Making Workshop
+LOCATION:Jiaren Cafe\, 1171 Homestead Road\, #140b\, Santa Clara\, CA 9505
+ 0 Santa Clara\, Santa Clara
+URL:https://www.eventbrite.com/e/card-making-workshop-tickets-200290784327
+ 6
+DESCRIPTION:Santa Clara\nhttps://www.eventbrite.com/e/card-making-workshop
+ -tickets-2002907843276\n\nSheila’s Stampin’ Up! Card Making Workshop.
+  Create 3–4 handmade cards in this fun\, beginner-friendly\, in-person 
+ workshop.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c08573dd2373@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261206T110000
+DTEND;TZID=America/Los_Angeles:20261206T170000
+SUMMARY:Shipyard Holiday Art Show: 60+ Open Artist Studios + Glühwein (Hu
+ nters Point)
+LOCATION:Hunters Point Shipyard\, Horn Ave\, Building 101\, San Francisco\
+ , CA\, San Francisco
+URL:https://sf.funcheap.com/shipyard-holiday-art-show-60-open-artist-studi
+ os-glhwein-hunters-point/
+DESCRIPTION:Art · A yearly tradition\nhttps://sf.funcheap.com/shipyard-ho
+ liday-art-show-60-open-artist-studios-glhwein-hunters-point/\n\nCelebrate
+  the season with Shipyard Artists: an afternoon of art\, handmade gifts a
+ nd hot Glühwein at Hunters Point Shipyard. More than 60 artists open the
+ ir studios in Building 101\, and the Shipyard Gallery hosts artists from 
+ across the Shipyard and Islais Creek Studios. Wander the halls\, ...
+END:VEVENT
+END:VCALENDAR

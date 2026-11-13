@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:08f7a5567c87@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261211T160000
+DTEND;TZID=America/Los_Angeles:20261211T200000
+SUMMARY:Studio.Lenz Holiday Sale
+LOCATION:Studio Fourth Street\, 1569 Fourth St San Rafael\, San Rafael
+URL:https://partiful.com/e/qOjh093piKPFCWpglCCt
+DESCRIPTION:San Rafael\nhttps://partiful.com/e/qOjh093piKPFCWpglCCt\n\nI
+ ’m hosting my annual holiday pop up show featuring a collection of hand
+ made ceramic work\, including functional pieces like mugs\, bowls\, vases
+ \, and more. There will be something for everyone\, whether you’re look
+ ing for a new piece for your home or a unique gift for the holidays. Come
+  by\, enjoy some drinks\, check out the work\, and do a little holiday sh
+ opping. Hope to see you there!
+END:VEVENT
+END:VCALENDAR

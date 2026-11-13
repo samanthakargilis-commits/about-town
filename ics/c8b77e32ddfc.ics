@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c8b77e32ddfc@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Techs on Decks
+LOCATION:USS Hornet Sea\, Air & Space Museum\, 707 W. Hornet Avenue\, Alam
+ eda\, Ca\, Ca
+URL:https://sf.funcheap.com/techs-decks/
+DESCRIPTION:Museum exhibits · Ca\nhttps://sf.funcheap.com/techs-decks/\n\
+ nTechs on Decks celebrates Innovation. We celebrate the anniversary of th
+ e Apollo 12 Moon mission since the USS Hornet (CV 12) was the recovery sh
+ ip for that mission and innovation from then and now! Exhibitors will be 
+ on hand to share exciting new technology and ...
+END:VEVENT
+END:VCALENDAR

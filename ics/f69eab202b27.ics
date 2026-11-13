@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f69eab202b27@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261117T190000
+DTEND;TZID=America/Los_Angeles:20261117T204500
+SUMMARY:A Slice of Community - a Cake Tasting Fundraiser on Tues. Nov. 17
+LOCATION:Chan Zuckerberg Community Space\, 801 Jefferson Avenue\, #Suite 1
+ 00\, Redwood City\, CA 94063 Redwood City\, Redwood City
+URL:https://www.eventbrite.com/e/a-slice-of-community-a-cake-tasting-fundr
+ aiser-on-tues-nov-17-tickets-2003220878573
+DESCRIPTION:Museum exhibits + Weird & unusual · Redwood City\nhttps://www
+ .eventbrite.com/e/a-slice-of-community-a-cake-tasting-fundraiser-on-tues-
+ nov-17-tickets-2003220878573\n\nHear about exciting new exhibits at the S
+ MC History Museum\, taste amazing cakes from local bakers\, and vote in o
+ ur cake decorating contest!
+END:VEVENT
+END:VCALENDAR

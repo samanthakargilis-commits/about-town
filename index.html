@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>About Town</title>
+  <meta name="description" content="Your month of Bay Area events, picked for you.">
+  <meta name="theme-color" content="#E9874B" id="themeColor">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="About Town">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..700,100;1,9..144,400..700,100&family=DM+Sans:opsz,wght@9..40,400..700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <header class="top" id="top">
+      <div class="top-row">
+        <span class="kick" id="eyebrow">About Town</span>
+        <div class="seg" id="where" role="tablist" aria-label="Distance from">
+          <button data-where="home" class="on">Home</button><button data-where="near">Near me</button>
+        </div>
+      </div>
+      <div class="title-row">
+        <h1 id="title">About Town</h1>
+        <div class="arrows" id="arrows"><button data-month="-1" aria-label="Previous month">‹</button><button data-month="1" aria-label="Next month">›</button></div>
+      </div>
+      <div class="subline" id="subline"></div>
+    </header>
+
+    <main id="view" tabindex="-1"></main>
+
+    <nav class="tabs" role="tablist">
+      <button data-tab="cal" class="tab on" role="tab">Calendar</button>
+      <button data-tab="tonight" class="tab" role="tab">Tonight</button>
+      <button data-tab="new" class="tab" role="tab">New<b class="badge" id="newBadge" hidden></b></button>
+      <button data-tab="picks" class="tab" role="tab">Picks</button>
+      <button data-tab="me" class="tab" role="tab">You</button>
+    </nav>
+  </div>
+
+  <div class="sheet-wrap" id="sheetWrap" hidden>
+    <div class="sheet-bg" data-close></div>
+    <section class="sheet" id="sheet" role="dialog" aria-modal="true"></section>
+  </div>
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>

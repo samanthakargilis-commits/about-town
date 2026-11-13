@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dcef50d48108@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261212T110000
+DTEND;TZID=America/Los_Angeles:20261212T170000
+SUMMARY:Free Mission Craft Holiday Market w/ 30+ Local Artists
+LOCATION:Ground Floor San Francisco\, 455 Valencia St.\, San Francisco\, C
+ A\, San Francisco
+URL:https://sf.funcheap.com/free-mission-craft-holiday-market-30-local-art
+ ists-sf/
+DESCRIPTION:Craft + Fairs & festivals · A yearly tradition\nhttps://sf.fu
+ ncheap.com/free-mission-craft-holiday-market-30-local-artists-sf/\n\n✨ 
+ The Mission Craft Holiday Market is back for our 3rd holiday season! ✨ 
+ Saturday\, Dec 12 · 11 a.m.–5 p.m. Shop your favorite Bay Area artists
+  and discover 30+ new ones\, all under one roof in San Francisco. Our cur
+ ated lineup includes 30+ ceramicists\, candle and soap ...
+END:VEVENT
+END:VCALENDAR

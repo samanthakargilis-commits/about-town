@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:895f2a523cdc@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:Free Heydoh Tasting Pop-Up at the Ferry Building
+LOCATION:1 Ferry Plaza\, 1 Ferry Plaza\, San Francisco\, 94105\, US\, US
+URL:https://sf.funcheap.com/free-heydoh-tasting-popup-ferry-building-sf/
+DESCRIPTION:US\nhttps://sf.funcheap.com/free-heydoh-tasting-popup-ferry-bu
+ ilding-sf/\n\n� Heydoh! Let the Tasting Begin! Stop by for a fun-filled
+  Heydoh tasting and discover delicious flavors\, tasty surprises\, and fe
+ el-good moments to share with friends today! Join us at the iconic Ferry 
+ Building on November 22\, 2026 at 1:00 PM (Pacific Time) for an unforgett
+ able in-person ...
+END:VEVENT
+END:VCALENDAR

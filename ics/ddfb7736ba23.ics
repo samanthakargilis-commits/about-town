@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ddfb7736ba23@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261212T100000
+DTEND;TZID=America/Los_Angeles:20261212T170000
+SUMMARY:San Francisco SantaCon Bar Crawl 2026
+LOCATION:Comet Club\, 3111 Fillmore Street\, San Francisco\, CA 94123 San 
+ Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/san-francisco-santacon-bar-crawl-2026-tic
+ kets-1988122288283
+DESCRIPTION:New in your area\nhttps://www.eventbrite.com/e/san-francisco-s
+ antacon-bar-crawl-2026-tickets-1988122288283\n\nSF SantaCon Bar Crawl 202
+ 6: Sat Dec 12\, 10 AM–5 PM in the Marina. Check in at Comet Club\, Rick
+  & Roxy’s or Blue Light. After party 6 PM. 21+
+END:VEVENT
+END:VCALENDAR

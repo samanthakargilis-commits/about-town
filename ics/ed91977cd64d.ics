@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ed91977cd64d@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261127T110000
+DTEND;TZID=America/Los_Angeles:20261127T180000
+SUMMARY:SJ Made Holiday Craft Fair 2026 w/350+ Makers in Santa Clara
+LOCATION:Santa Clara Convention Center\, 5001 Great America Pkwy\, Santa C
+ lara\, CA 95054\, Santa Clara
+URL:https://sf.funcheap.com/sj-holiday-craft-fair-2026-w350-makers-santa-c
+ lara-nov-2728/
+DESCRIPTION:Craft + Fairs & festivals · Santa Clara\nhttps://sf.funcheap.
+ com/sj-holiday-craft-fair-2026-w350-makers-santa-clara-nov-2728/\n\nSJMAD
+ E Holiday Fair returns to the Santa Clara Convention Center for Black Fri
+ day and Small Business Saturday with more than 350 makers\, artists\, des
+ igners\, illustrators\, artisans\, bakers\, crafters\, and creative small
+  businesses. The free indoor holiday shopping fair includes free parking\
+ , an event-exclusive grocery bag ...
+END:VEVENT
+END:VCALENDAR

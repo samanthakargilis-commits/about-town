@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:aa0f3af80ff2@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261114T180000
+DTEND;TZID=America/Los_Angeles:20261114T200000
+SUMMARY:THEYFRIEND 2026 (Nov 14)
+LOCATION:San Francisco\, San Francisco
+URL:https://ma.to/event/theyfriend-festival-2026-11-14
+DESCRIPTION:Singing + Gay / queer\nhttps://ma.to/event/theyfriend-festival
+ -2026-11-14\n\nTHEYFRIEND 2026 is a nonbinary performance festival runnin
+ g November 11–14\, presented in San Francisco and online. The programme
+  includes karaoke\, open mics\, performances and dancing\, a Save SF D&D 
+ adventure\, and Nonbinary Prom. Figgy Baby headlines the Prom stage with 
+ a lineup of nonbinary artists presenting drag\, music and acrobatics\, an
+ d a Prom Quing is crowned. Event details\, tickets and acces
+END:VEVENT
+END:VCALENDAR

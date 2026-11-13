@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:744c7325085d@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T120000
+DTEND;TZID=America/Los_Angeles:20261113T140000
+SUMMARY:Alexa Allen: Hammer Show
+LOCATION:The Perish Trust\, 728 Divisadero St\, San Francisco\, CA 94117\,
+  San Francisco
+URL:https://ma.to/event/alexa-allen-hammer-show-13-nov-2026
+DESCRIPTION:Theatre + Museum exhibits\nhttps://ma.to/event/alexa-allen-ham
+ mer-show-13-nov-2026\n\nAn exhibition of four distinct leather works by A
+ lexa Allen\, an artist and designer based in Boulder\, Colorado. Her back
+ ground in woodworking and furniture design informs a sculptural approach 
+ to leather\, using texture\, repetition\, form and material play. Combini
+ ng traditional leatherworking techniques with methods developed in her st
+ udio\, she transforms leather into works exploring the hammer mot
+END:VEVENT
+END:VCALENDAR

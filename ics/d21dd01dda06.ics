@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d21dd01dda06@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T190000
+DTEND;TZID=America/Los_Angeles:20261113T210000
+SUMMARY:Jamie Davis: Steppin’ Out
+LOCATION:Keys Jazz Bistro\, 498 Broadway\, San Francisco\, San Francisco
+URL:https://ma.to/event/jamie-davis-steppin-out-13-nov-2026-2
+DESCRIPTION:Theatre + Concerts\nhttps://ma.to/event/jamie-davis-steppin-ou
+ t-13-nov-2026-2\n\nGrammy-winning vocalist Jamie Davis celebrates the rel
+ ease of his new album\, Steppin' Out\, with a performance at Keys Jazz Bi
+ stro. A star of Basie Swings the Blues with the Count Basie Orchestra\, D
+ avis brings his deep baritone to the Keys stage. Seating is first come\, 
+ first served\; arrive one hour early to secure a spot in line. Will-call 
+ check-in uses the guest's last name. Tickets are available 
+END:VEVENT
+END:VCALENDAR

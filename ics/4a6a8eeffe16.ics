@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4a6a8eeffe16@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261202T160000
+DTEND;TZID=America/Los_Angeles:20261202T190000
+SUMMARY:Free Civic Center Tree Lighting: 50-Foot Fir + Santa
+LOCATION:Civic Center Plaza\, 335 McAllister St.\, San Francisco\, CA 9410
+ 2\, San Francisco
+URL:https://sf.funcheap.com/free-civic-center-tree-lighting-50foot-fir-san
+ ta-sf/
+DESCRIPTION:A yearly tradition\nhttps://sf.funcheap.com/free-civic-center-
+ tree-lighting-50foot-fir-santa-sf/\n\nGet ready to kick off the holiday s
+ eason at San Francisco’s Civic Center Plaza Holiday Tree Lighting 2026!
+  For over 100 years an illuminated tree has stood in San Francisco’s Ci
+ vic Center Plaza during the holidays. This year be a part of the traditio
+ n at the ...
+END:VEVENT
+END:VCALENDAR

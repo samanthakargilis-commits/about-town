@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4c58ab36d6a8@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261211T210000
+DTEND;TZID=America/Los_Angeles:20261212T020000
+SUMMARY:A CLUB CALLED RHONDA w/ DRAMA ( DJ Set) - More TBA
+LOCATION:The Great Northern\, 119 Utah St\, San Francisco\, CA 94103 San F
+ rancisco\, San Francisco
+URL:https://www.eventbrite.com/e/a-club-called-rhonda-w-drama-dj-set-more-
+ tba-tickets-2004400076586
+DESCRIPTION:Theatre + Dance nights\nhttps://www.eventbrite.com/e/a-club-ca
+ lled-rhonda-w-drama-dj-set-more-tba-tickets-2004400076586\n\nA Club Calle
+ d Rhonda takes over The Great Northern with DRAMA (DJ set) and more TBA. 
+ Dress up\, come through\, and get into it.
+END:VEVENT
+END:VCALENDAR

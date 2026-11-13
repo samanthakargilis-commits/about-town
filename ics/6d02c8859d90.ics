@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6d02c8859d90@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261201T110000
+DTEND;TZID=America/Los_Angeles:20261201T190000
+SUMMARY:555 California Holiday Tree Lighting and Mercantile
+LOCATION:555 California\, 450 Kearny St San Francisco\, San Francisco
+URL:https://partiful.com/e/q9aEai9bF6wmcpjLFIPm
+DESCRIPTION:Craft + Fairs & festivals\nhttps://partiful.com/e/q9aEai9bF6wm
+ cpjLFIPm\n\nSunset Mercantile brings local makers\, artists\, and merchan
+ ts together with the annual lighting of the plaza's towering tree. Expect
+  a holiday market with festive music\, dance performances\, activities\, 
+ and food from local restaurants - an easy lunchtime or after-work stop. F
+ ree admission\; Rain or shine\; vendors and entertainment move indoors if
+  it rains. This is a recommendation\, not hosted by Par
+END:VEVENT
+END:VCALENDAR

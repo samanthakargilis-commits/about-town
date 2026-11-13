@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:74605a1732d3@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T190000
+DTEND;TZID=America/Los_Angeles:20261113T210000
+SUMMARY:Not Gala November: Band Practice
+LOCATION:Eclectic Box\, 446 Valencia\, SF\, San Francisco
+URL:https://ma.to/event/not-gala-november-band-practice-13-nov-2026
+DESCRIPTION:Theatre\nhttps://ma.to/event/not-gala-november-band-practice-1
+ 3-nov-2026\n\nTeam Awesome presents Not Gala November: Band Practice\, a 
+ fundraiser supporting its 2027 show schedule. The independent San Francis
+ co theatre company describes itself as the garage band of nonprofit theat
+ re. The evening is hosted by Tikumari Jothi and Ben Vivini. Doors open at
+  7:00 PM at Eclectic Box\, 446 Valencia\, SF.
+END:VEVENT
+END:VCALENDAR

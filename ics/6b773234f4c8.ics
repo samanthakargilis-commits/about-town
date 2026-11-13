@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6b773234f4c8@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T135000
+DTEND;TZID=America/Los_Angeles:20261113T145000
+SUMMARY:From Open Models to Live\, Interactive Storytelling - MiniMax x SG
+ Lang Summit
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/mnwpth1d
+DESCRIPTION:Writing\nhttps://luma.com/mnwpth1d\n\nWhat happens when the au
+ dience can change a story as it unfolds? 🎬What happens when the audien
+ ce can change a story as it unfolds? 🎬 Join MiniMax\, fal\, SGLang\, a
+ nd Pickford for a behind-the-scenes look at how open models power live\, 
+ audience-driven storytelling—and help shape an interactive mystery your
+ self. Using Pickford’s procedural murder investigation as a shared case
+  study\, we’ll follow an a
+END:VEVENT
+END:VCALENDAR

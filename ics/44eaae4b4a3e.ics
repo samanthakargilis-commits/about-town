@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:44eaae4b4a3e@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261113T080000
+DTEND;TZID=America/Los_Angeles:20261113T130000
+SUMMARY:Bhangra and Beats: Diwali
+LOCATION:Yerba Buena Gardens\, Jessie Square & Yerba Buena Lane\, San Fran
+ cisco\, San Francisco
+URL:https://ma.to/event/bhangra-and-beats-diwali-13-nov-2026
+DESCRIPTION:Cultural festivals + Fairs & festivals\nhttps://ma.to/event/bh
+ angra-and-beats-diwali-13-nov-2026\n\nBhangra and Beats returns for the o
+ fficial San Francisco Diwali celebration. Yerba Buena Gardens\, Jessie Sq
+ uare\, and Yerba Buena Lane come alive with an evening of lights\, music\
+ , and dance featuring Non Stop Bhangra as they celebrate 22 years. The ev
+ ening features food\, local vendors\, community culture\, and the energy 
+ of the final Night Market of the year. Vibrant Indian-inspired attire is 
+ encoura
+END:VEVENT
+END:VCALENDAR

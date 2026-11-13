@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e01ebb688520@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261114T090000
+DTEND;TZID=America/Los_Angeles:20261114T120000
+SUMMARY:San Francisco Habitat Restoration
+LOCATION:Presidio\, San Francisco
+URL:https://ma.to/event/help-nature-thrive-in-the-presidio-14-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/help-nature-thrive-in-th
+ e-presidio-14-nov-2026\n\nJoin a morning of hands-on habitat restoration 
+ in San Francisco's coastal dunes. This activity is part of a lineup of fa
+ mily-friendly nature events around San Francisco.
+END:VEVENT
+END:VCALENDAR

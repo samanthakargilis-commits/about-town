@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1cf39c2d4228@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261120T180000
+DTEND;TZID=America/Los_Angeles:20261120T220000
+SUMMARY:Love Without Borders: Refugee Art Show
+LOCATION:Basil House / Decentered Studio\, 1175 Folsom St San Francisco\, 
+ San Francisco
+URL:https://partiful.com/e/8SVpZTT3lNBdoPdDXvoo
+DESCRIPTION:Art + Craft\nhttps://partiful.com/e/8SVpZTT3lNBdoPdDXvoo\n\nCo
+ me peruse original paintings by artists of all ages\, who are currently r
+ efugees in Greece\, fleeing war-torn countries throughout the Middle East
+  and Africa. Learn more about the refugee crisis with an 8pm talk from Fo
+ unding Director\, Kayra Martinez. Enjoy live music by cellist Jaír Griff
+ in plus drinks and refreshments while viewing the art and reading the art
+ ists’ stories. About the musician: Ja
+END:VEVENT
+END:VCALENDAR

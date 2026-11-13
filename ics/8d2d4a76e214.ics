@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8d2d4a76e214@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261122T140000
+DTEND;TZID=America/Los_Angeles:20261122T160000
+SUMMARY:Noor: A Gathering in Light
+LOCATION:69 Pinehurst Way\, 69 Pinehurst Way\, San Francisco\, CA 94127\, 
+ USA\, San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/san-francisco-indian-music-meetup/events/317132
+ 244/
+DESCRIPTION:Musical theatre + Spirituality\nhttps://www.meetup.com/san-fra
+ ncisco-indian-music-meetup/events/317132244/\n\n**Noor: A Gathering in Li
+ ght** **A Musical Mehfil** This Fall\, we’d love to bring our community
+  of musicians and singers together for an intimate gathering to celebrate
+  the light that music brings into our lives. We'll gather to share our so
+ ngs of light: the light within us\, the light we find in one another\, an
+ d the light that guides us through music\, poetry\, and spirit. Let’s g
+ ather with our voic
+END:VEVENT
+END:VCALENDAR

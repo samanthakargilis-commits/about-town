@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4417456d5485@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261202T110000
+DTEND;TZID=America/Los_Angeles:20261202T183000
+SUMMARY:Free 2026 Holiday Market w/ Women-Owned Vendors at 111 Minna
+LOCATION:111 Minna Gallery\, 111 Minna St.\, San Francisco\, CA\, San Fran
+ cisco
+URL:https://sf.funcheap.com/free-2026-holiday-market-womenowned-vendors-11
+ 1-minna-sf/
+DESCRIPTION:Fairs & festivals + Art · A yearly tradition\nhttps://sf.func
+ heap.com/free-2026-holiday-market-womenowned-vendors-111-minna-sf/\n\nSho
+ p Local. Support Women. Celebrate the Season! Get ready to sip\, shop\, a
+ nd celebrate the holidays—all while supporting incredible local women-o
+ wned businesses! ✨ Join NAWBO-SFBA and our community partners for a fes
+ tive FREE Holiday Market at our exciting new location\, Minna Gallery in 
+ the heart of San ...
+END:VEVENT
+END:VCALENDAR

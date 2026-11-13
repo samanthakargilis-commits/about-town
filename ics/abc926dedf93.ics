@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:abc926dedf93@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261114T123000
+DTEND;TZID=America/Los_Angeles:20261114T143000
+SUMMARY:Mission Branch Library Reopening
+LOCATION:Mission Branch Library\, San Francisco
+URL:https://ma.to/event/mission-branch-library-reopening-14-nov-2026
+DESCRIPTION:Reading + Discourse\nhttps://ma.to/event/mission-branch-librar
+ y-reopening-14-nov-2026\n\nThe Mission Branch Library officially reopens 
+ on Saturday\, November 14 with a festive community celebration. The progr
+ amme includes a ribbon-cutting and a blessing by Danza Azteca Xitlalli-Xo
+ lotl\, entertainment featuring @luchalibro_\, @reneyfamilia and @locobloc
+ osf. Join for a project talk and 3 p.m. tour with architect Andy of San F
+ rancisco Public Works to learn about the restoration of this hist
+END:VEVENT
+END:VCALENDAR

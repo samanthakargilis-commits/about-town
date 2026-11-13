@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8e0f124b717d@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T210000
+DTEND;TZID=America/Los_Angeles:20261114T030000
+SUMMARY:Maceo Plex - The Great Northern
+LOCATION:The Great Northern\, 119 Utah St.\, San Francisco\, CA 94103 San 
+ Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/maceo-plex-the-great-northern-tickets-200
+ 0304888769
+DESCRIPTION:New in your area\nhttps://www.eventbrite.com/e/maceo-plex-the-
+ great-northern-tickets-2000304888769\n\nMaceo Plex at The Great Northern.
+  House warmth\, techno weight and an electro edge. Friday\, November 13 i
+ n San Francisco.
+END:VEVENT
+END:VCALENDAR

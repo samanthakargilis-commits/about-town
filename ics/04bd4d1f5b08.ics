@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:04bd4d1f5b08@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261113T170000
+DTEND;TZID=America/Los_Angeles:20261113T210000
+SUMMARY:TroyBoi: HEAR2MOVE Tour
+LOCATION:1015 Folsom\, San Francisco
+URL:https://ma.to/event/troyboi-hear2move-tour-13-nov-2026
+DESCRIPTION:Gay / queer + Theatre\nhttps://ma.to/event/troyboi-hear2move-t
+ our-13-nov-2026\n\nThe HEAR2MOVE Tour moves to 1015 Folsom in San Francis
+ co after extreme inclement weather forced the show from The Napa Valley R
+ uins. The special HEAR2MOVE event in the round brings the same tour produ
+ ction and supporting artists. Set times are doors and IIBARRA at 5 PM\, N
+ o Signal at 6:15 PM\, and TroyBoi at 7:45 PM\; the event runs from 5 PM t
+ o 9 PM. After the venue change and reduced capacity\, the 
+END:VEVENT
+END:VCALENDAR

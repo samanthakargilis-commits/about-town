@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a78cf715de69@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261202T180000
+DTEND;TZID=America/Los_Angeles:20261202T203000
+SUMMARY:Batter Up San Francisco!
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/fczznfvg
+DESCRIPTION:Discourse\nhttps://luma.com/fczznfvg\n\nLet's hang! As a found
+ er\, going through the fundraising process can be incredibly frustrating.
+  It takes an amazing amount of time and effort to convince an investor to
+  agree to talk to you. And then\, once you pitch your company\, sometimes
+  the investor never gets back to you. Or if they do get back to you\, oft
+ entimes their rejection doesn't explain WHY they're not interested. All t
+ his can leave an 
+END:VEVENT
+END:VCALENDAR

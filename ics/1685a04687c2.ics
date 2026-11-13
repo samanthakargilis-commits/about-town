@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1685a04687c2@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261113T200000
+DTEND;TZID=America/Los_Angeles:20261113T220000
+SUMMARY:Whitmer Thomas: Comedy Night
+LOCATION:The Independent\, San Francisco
+URL:https://ma.to/event/whitmer-thomas-comedy-night-the-independent-13-nov
+ -2026
+DESCRIPTION:Comedy + Craft\nhttps://ma.to/event/whitmer-thomas-comedy-nigh
+ t-the-independent-13-nov-2026\n\nComedian and musician Whitmer Thomas per
+ forms his Terminal Crew of Dudes show live at The Independent in San Fran
+ cisco. Featuring special guest Clay Tatum and buddanthonydiaz. This show 
+ is a stop on their North American tour.
+END:VEVENT
+END:VCALENDAR

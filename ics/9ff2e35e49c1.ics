@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9ff2e35e49c1@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261114T100000
+DTEND;TZID=America/Los_Angeles:20261114T170000
+SUMMARY:French Holiday Market
+LOCATION:12850 Saratoga Ave\, 12850 Saratoga Ave\, Saratoga\, CA 95070\, S
+ aratoga
+URL:https://ma.to/event/french-holiday-market-2026-11-14
+DESCRIPTION:Fairs & festivals · Saratoga\nhttps://ma.to/event/french-holi
+ day-market-2026-11-14\n\nThe French Holiday Market is a festive fall holi
+ day French market held for one day in a family friendly atmosphere\, with
+  food and wine\, vendors\, kids activities and arts n' crafts. The market
+  runs on 14 November 2026 from 10 AM to 5 PM at 12850 Saratoga Ave in Sar
+ atoga\, California. Alliance Française Silicon Valley is featured in the
+  vendor spotlight. Questions can be sent to info@frenchmarketcarn
+END:VEVENT
+END:VCALENDAR

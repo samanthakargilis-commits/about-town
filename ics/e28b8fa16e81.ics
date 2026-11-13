@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e28b8fa16e81@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261120T170000
+DTEND;TZID=America/Los_Angeles:20261120T190000
+SUMMARY:SF SPCA + Macy's 40th Annual Holiday Windows
+LOCATION:Macy’s Union Square\, 170 O'Farrell St San Francisco\, San Fran
+ cisco
+URL:https://partiful.com/e/EHT33GKOEHkjLZrjuTy7
+DESCRIPTION:Animals\nhttps://partiful.com/e/EHT33GKOEHkjLZrjuTy7\n\nAdorab
+ le\, adoptable puppies and kittens are coming to the heart of the city fo
+ r another iconic San Francisco tradition\, all dreaming of finding their 
+ forever homes. When & Where: Unveiling: Friday\, November 20 at 5 p.m. Lo
+ cation: Macy's Union Square at the corner of Stockton and O'Farrell Stree
+ ts The SF SPCA will have Name Your Price adoptions for all animals over 5
+  months old throughout the entir
+END:VEVENT
+END:VCALENDAR

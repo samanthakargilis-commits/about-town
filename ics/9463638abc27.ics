@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9463638abc27@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Feast & Trade Night: Pokémon & Collectibles Show – Antioch / Ba
+ y Area
+LOCATION:Contra Costa Fair & Event Park\, 1201 West 10th Street Antioch\, 
+ CA 94509
+URL:https://sf.funcheap.com/feast-trade-night-pokmon-collectibles-show-ant
+ ioch-bay-area/
+DESCRIPTION:Fairs & festivals\nhttps://sf.funcheap.com/feast-trade-night-p
+ okmon-collectibles-show-antioch-bay-area/\n\nTrade Pokémon cards and col
+ lectibles\, meet fellow fans\, and enjoy a fun night out in Antioch! Feas
+ t & Trade is heading to the Contra Costa County Fairgrounds\, and we’re
+  bringing in a new partner... drumroll please! 🥁🥁🥁 SIP & GAME! W
+ e’re teaming up to bring the card community ...
+END:VEVENT
+END:VCALENDAR

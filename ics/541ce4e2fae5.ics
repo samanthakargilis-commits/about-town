@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:541ce4e2fae5@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261231T160000
+DTEND;TZID=America/Los_Angeles:20261231T180000
+SUMMARY:San Francisco New Year’s Eve Fireworks at Midnight
+LOCATION:El Camino High School\, 1320 Mission Rd\, South San Francisco\, C
+ A 94080 Get Your Tickets Now
+URL:https://sf.funcheap.com/city-guide/december-street-fairs-festivals/
+DESCRIPTION:Big Bay Area traditions + Craft · Featured on Funcheap\nhttps
+ ://sf.funcheap.com/city-guide/december-street-fairs-festivals/\n\nDecembe
+ r 31\, 2026 – SF (Embarcadero) – FREE – Ring in 2026 with San Franc
+ isco’s free waterfront fireworks show\, a midnight burst of color over 
+ the Bay that draws thousands to the Embarcadero for the city’s biggest 
+ New Year’s Eve tradition . David Yu Friday\, November 13 POSTPONED: Bha
+ ngra & Beats Night Market (Yerba Buena Gardens Festival 2026) Friday\, No
+ vember 13 – 4:00 pm - Ends at 9:00 pm | Cost
+END:VEVENT
+END:VCALENDAR

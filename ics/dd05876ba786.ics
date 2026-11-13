@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dd05876ba786@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T190000
+DTEND;TZID=America/Los_Angeles:20261113T210000
+SUMMARY:@drinkthicc x @townbeef Yelp Mixer
+LOCATION:Oakland\, Oakland
+URL:https://ma.to/event/drinkthicc-x-townbeef-yelp-mixer-13-nov-2026
+DESCRIPTION:Oakland\nhttps://ma.to/event/drinkthicc-x-townbeef-yelp-mixer-
+ 13-nov-2026\n\nYelp Community Experience with @drinkthicc and @townbeef. 
+ The 21+ after-hours gathering offers a chance to mix\, mingle and sample 
+ one of Oakland's new food collaborations. An RSVP is required for a chanc
+ e to attend\; a Yelp profile with a name and photo is needed. Co-hosted b
+ y Yelp Community Intern Brigette V.
+END:VEVENT
+END:VCALENDAR

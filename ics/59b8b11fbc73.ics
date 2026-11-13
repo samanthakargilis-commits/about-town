@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:59b8b11fbc73@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261205T110000
+DTEND;TZID=America/Los_Angeles:20261205T120000
+SUMMARY:Presentation: Pan American Companion Plant Stories with Alicia Ret
+ es
+LOCATION:Presidio Branch Library\, 3150 Sacramento St\, San Francisco
+URL:https://sfpl.org/events/2026/12/05/presentation-pan-american-companion
+ -plant-stories-alicia-retes
+DESCRIPTION:Reading\nhttps://sfpl.org/events/2026/12/05/presentation-pan-a
+ merican-companion-plant-stories-alicia-retes\n\nFamilies · Performance 
+ · Native American and Indigenous Heritage Interest · Spotlight
+END:VEVENT
+END:VCALENDAR

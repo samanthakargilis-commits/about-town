@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:687ece57bf51@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261113T193000
+DTEND;TZID=America/Los_Angeles:20261113T213000
+SUMMARY:Prokofiev’s “Romeo & Juliet” w/ the SF Symphony
+LOCATION:Davies Symphony Hall\, 201 Van Ness Ave\, San Francisco\, CA 9410
+ 2\, San Francisco
+URL:https://sf.funcheap.com/prokofievs-romeo-juliet-w-the-sf-symphony-nov-
+ 13-15/
+DESCRIPTION:Concerts + Comedy\nhttps://sf.funcheap.com/prokofievs-romeo-ju
+ liet-w-the-sf-symphony-nov-13-15/\n\nProkofiev’s ballet music for Romeo
+  and Juliet is every bit as singular as the Shakespeare tragedy that insp
+ ired it: Savage and sensual\, tragic and comic\, it conveys all the passi
+ on of the play and loses none of its ambiguity. Debuting French conductor
+  Marie Jacquot leads ...
+END:VEVENT
+END:VCALENDAR

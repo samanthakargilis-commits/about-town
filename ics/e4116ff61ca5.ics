@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e4116ff61ca5@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261119T170000
+DTEND;TZID=America/Los_Angeles:20261119T200000
+SUMMARY:Big Art Loop: Waterfront Walkabout
+LOCATION:The event stretches from Pier 14 to the Exploratorium\, undefined
+  undefined San Francisco\, San Francisco
+URL:https://partiful.com/e/IJ9ZZohYSziYFTlmGPLR
+DESCRIPTION:Art + Museum exhibits · Thursday evening\nhttps://partiful.co
+ m/e/IJ9ZZohYSziYFTlmGPLR\n\nOnce a month the Embarcadero turns into a roa
+ ming art night\, with big public artworks\, live music\, and free profess
+ ional portraits along the waterfront! The Ferry Building plaza is the nat
+ ural starting point\, and the walk runs toward the Exploratorium This eve
+ nt is not hosted by Partiful. It is an event we recommend\, hosted by the
+  Port of San Francisco and Big Art Loop. Find more details at the li
+END:VEVENT
+END:VCALENDAR

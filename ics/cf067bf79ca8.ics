@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cf067bf79ca8@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261113T183000
+DTEND;TZID=America/Los_Angeles:20261113T203000
+SUMMARY:Hardwired - A happy hour for people building physical things\, fro
+ m prototype to manufacturing
+LOCATION:tiat\, tiat\, 151 Powell St\, San Francisco\, CA 94102\, USA\, Sa
+ n Francisco
+URL:https://luma.com/hardwarehappy
+DESCRIPTION:Craft + Gay / queer\nhttps://luma.com/hardwarehappy\n\n꩜ Bui
+ lding physical things? Come meet your people! ꩜ Hardwired is for anyone
+  bringing hardware to life\, at any point in the supply chain - from desi
+ gning and prototyping to sourcing parts\, manufacturing\, and assembly. I
+ f you working in... Robots Consumer electronics / AI devices DIY hardware
+  creations (ex: cyberdecks) Weird side projects Manufacturing - processes
+ \, machines\, factories\, etc Supply C
+END:VEVENT
+END:VCALENDAR

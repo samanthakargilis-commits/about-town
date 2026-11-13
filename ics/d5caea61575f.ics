@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d5caea61575f@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261114T110000
+DTEND;TZID=America/Los_Angeles:20261114T130000
+SUMMARY:Bacon & Leggs Drag Brunch 11 AM
+LOCATION:Starbelly\, 3583 16th St\, San Francisco\, CA\, San Francisco
+URL:https://ma.to/event/bacon-and-leggs-drag-brunch-2026-11-14-11am
+DESCRIPTION:Gay / queer + Camp & Halloween\nhttps://ma.to/event/bacon-and-
+ leggs-drag-brunch-2026-11-14-11am\n\nStarbelly presents the Bacon & Leggs
+  Drag Brunch on Saturday\, November 14\, at the 11 AM seating. Bobby Frid
+ ay returns to host\, with Mudd the Two Spirit and Bebe Sweetbriar providi
+ ng the entertainment while the kitchen handles the brunch and drinks. Boo
+ king is through the link in Starbelly's Instagram bio.
+END:VEVENT
+END:VCALENDAR

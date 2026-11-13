@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8670be0599ff@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261114T130000
+DTEND;TZID=America/Los_Angeles:20261114T160000
+SUMMARY:El Niño Community Education Event
+LOCATION:Ferry Terminal Plaza\, San Francisco\, CA\, San Francisco
+URL:https://ma.to/event/el-nino-community-education-event-14-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/el-nino-community-educat
+ ion-event-14-nov-2026\n\nThe El Niño Community Education Event explores 
+ what to expect during this season's high tides and how El Niño affects s
+ ea levels. It covers the science behind tides\, El Niño and sea level ri
+ se\, along with adaptation and sustainability projects across San Francis
+ co and the region. Science activities and short talks offer practical way
+ s to take climate action and help build a healthier\, more resilie
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0e46b09d107d@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;VALUE=DATE:20261119
+DTEND;VALUE=DATE:20261120
+SUMMARY:Transcendence: Free Choral Music + Poetry Readings
+LOCATION:St. Matthew’s Lutheran\, 3281 16th St. San Francisco\, CA
+URL:https://sf.funcheap.com/transcendence-free-choral-music-poetry-reading
+ s-sf/
+DESCRIPTION:Writing\nhttps://sf.funcheap.com/transcendence-free-choral-mus
+ ic-poetry-readings-sf/\n\nFrom lament to light\, Tactus SF traces a journ
+ ey of redemption in choral music spanning three centuries and two contine
+ nts. From the waters of Babylon\, music of exile and grief\, the program 
+ turns slowly toward hope and ends in radiance. Songs by Guillaume Dufay\,
+  Tomás ...
+END:VEVENT
+END:VCALENDAR

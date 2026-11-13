@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4ac6597b965a@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261208T170000
+DTEND;TZID=America/Los_Angeles:20261208T190000
+SUMMARY:HIGH GROUND screening at Marina Theatre
+LOCATION:Marina Theatre\, 2149 Chestnut Street\, San Francisco\, CA 94123 
+ San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/high-ground-screening-at-marina-theatre-t
+ ickets-2003568350872
+DESCRIPTION:Theatre\nhttps://www.eventbrite.com/e/high-ground-screening-at
+ -marina-theatre-tickets-2003568350872\n\nHIGH GROUND: Yosemite climbers\,
+  a frozen lake\, and 3 tons of crashed-plane weed. A wild\, thoughtful do
+ c on how legends get made.
+END:VEVENT
+END:VCALENDAR

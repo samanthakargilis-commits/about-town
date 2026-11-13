@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ccd1e275a954@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261113T120000
+DTEND;TZID=America/Los_Angeles:20261113T190000
+SUMMARY:SFMade Store Opening Weekend
+LOCATION:The SFMade Store\, 373 Geary Street\, San Francisco\, San Francis
+ co
+URL:https://sf.funcheap.com/sfmade-store-opening-weekend/
+DESCRIPTION:Craft\nhttps://sf.funcheap.com/sfmade-store-opening-weekend/\n
+ \nSFMade Store Opening Weekend: Shop Bay Area-Made in Union Square! Disco
+ ver the best of Bay Area-made goods\, just steps from Union Square! The S
+ FMade Store is opening its doors at 373 Geary Street\, bringing together 
+ locally made products from independent makers and manufacturers across th
+ e Bay Area\, ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:13a8d26f43f7@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261114T183000
+DTEND;TZID=America/Los_Angeles:20261114T203000
+SUMMARY:Free Bar Bingo at The Scarlet Fox
+LOCATION:The Scarlet Fox\, 1690 Hayes St\, between Central and Lyon\, San 
+ Francisco
+URL:https://ma.to/event/free-bar-bingo-at-the-scarlet-fox-14-nov-2026
+DESCRIPTION:Theatre\nhttps://ma.to/event/free-bar-bingo-at-the-scarlet-fox
+ -14-nov-2026\n\nSaturday bar bingo runs 6:30–8:30 p.m. at The Scarlet F
+ ox in NoPA. Play is free\, and prizes are awarded every round. The venue 
+ is at 1690 Hayes St\, between Central and Lyon.
+END:VEVENT
+END:VCALENDAR

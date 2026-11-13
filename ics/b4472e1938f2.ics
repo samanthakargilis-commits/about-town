@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b4472e1938f2@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261114T100000
+DTEND;TZID=America/Los_Angeles:20261114T120000
+SUMMARY:Charge Up: Saturday Chan Meditation & Tea in San Francisco
+LOCATION:Dharma Treasury Temple\, 3201 Ulloa St\, San Francisco\, CA 94116
+ \, USA\, San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/bay-area-meditation-group/events/317344245/
+DESCRIPTION:Meditation\nhttps://www.meetup.com/bay-area-meditation-group/e
+ vents/317344245/\n\nYou wouldn’t drive an electric car at 3% and hope f
+ or the best. Most of us run our own battery that way all week: work\, com
+ mutes\, constant notifications\, and no time to plug in. Join us at Dharm
+ a Treasury Temple for a Saturday morning of Chan meditation and tea\, hos
+ ted by Master XianXin\, abbess of the temple. We sit in silence together\
+ , share a cup of tea\, and leave with a fuller charge. Even an e
+END:VEVENT
+END:VCALENDAR

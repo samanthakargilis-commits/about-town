@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6e9db640df0e@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261114T110000
+DTEND;TZID=America/Los_Angeles:20261114T130000
+SUMMARY:☕ Coffee & Walk — Meet New People in the Bay! 🌳
+LOCATION:Peet's Coffee Rivermark\, 3932 Rivermark Plaza\, Santa Clara\, CA
+  Santa Clara\, Santa Clara
+URL:https://www.meetup.com/twenties-thirties-social-club/events/317268803/
+DESCRIPTION:Discourse · Santa Clara\nhttps://www.meetup.com/twenties-thir
+ ties-social-club/events/317268803/\n\n**The plan:** ☕ 30–60 minutes o
+ f coffee + introductions 👋 Quick group icebreaker 🌳 Casual walk at 
+ a nearby park 💬 Conversation cards during the walk 🔄 Meet and talk 
+ with different people 📸 Optional group photo at the end 🍴 Optional 
+ food afterward if people want to keep hanging out Whether you’re new to
+  Sunnyvale or the Bay Area\, looking to expand your social circle\, or ju
+ st want something fun and 
+END:VEVENT
+END:VCALENDAR

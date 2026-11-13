@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2ff883ca7641@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261206T090000
+DTEND;TZID=America/Los_Angeles:20261206T114500
+SUMMARY:Block Clean Up
+LOCATION:26th Ave & Cabrillo St\, null 26th Ave San Francisco\, San Franci
+ sco
+URL:https://partiful.com/e/lmqFIxmMnxs72QxkbaBj
+DESCRIPTION:New in your area\nhttps://partiful.com/e/lmqFIxmMnxs72QxkbaBj\
+ n\nPick up some trash! Meet some neighbors! Have some coffee! Start your 
+ Sunday off well! 💖 Join us to help pick up trash in the neighborhood a
+ nd for stoop coffee afterwards. All neighbors are welcome to join us for 
+ coffee at 10am\, even if you are not able to help with the clean up. Also
+ \, no problem if you show up a little late- someone will be here to help 
+ you get started. We’ll be meeting in the 70
+END:VEVENT
+END:VCALENDAR

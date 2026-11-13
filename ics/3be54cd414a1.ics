@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3be54cd414a1@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261113T160000
+DTEND;TZID=America/Los_Angeles:20261113T173000
+SUMMARY:NewClear Neural Unveiling
+LOCATION:Bayview Gateway\, 2048 Cargo Way\, San Francisco\, CA\, San Franc
+ isco
+URL:https://ma.to/event/light-it-up-bayview-unveiling-13-nov-2026
+DESCRIPTION:Art + Discourse\nhttps://ma.to/event/light-it-up-bayview-unvei
+ ling-13-nov-2026\n\nJoin the unveiling of NewClear Neural\, an 18-foot il
+ luminated sculpture by Gazelle Dasti. The event features an artist talk\,
+  family art activities\, art kit giveaways\, and a countdown to the light
+ s coming on at sunset. Bayview artist Malik Seneferu will speak about the
+  history of the India Basin shoreline and the women who fought for it. Pr
+ esented by Big Art Loop\, the sculpture explores human perce
+END:VEVENT
+END:VCALENDAR

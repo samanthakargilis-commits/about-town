@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:51e6a56754b1@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261231T220000
+DTEND;TZID=America/Los_Angeles:20270101T040000
+SUMMARY:SARAH DE WARREN NYE
+LOCATION:Halcyon SF\, 314 11th St\, San Francisco\, CA 94103\, USA San Fra
+ ncisco\, San Francisco
+URL:https://dice.fm/event/6adbdc6079b93500018375e3
+DESCRIPTION:Musical theatre + Concerts · Thursday evening\nhttps://dice.f
+ m/event/6adbdc6079b93500018375e3\n\nOn NEW YEARS EVE God gave us SARAH DE
+  WARREN! The UK singer/songwriter and producer continues to deliver chart
+ -toppers\, pushing musical boundaries with her evocative vocals and floor
+ -filling productions! Ring in the New Year with the TECHNO MOMMY and loca
+ l faves TARA + ELVIN LOVE on support!
+END:VEVENT
+END:VCALENDAR

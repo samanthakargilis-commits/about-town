@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:01d98ed3019e@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261209T130000
+DTEND;TZID=America/Los_Angeles:20261209T140000
+SUMMARY:Azzedine Alaïa: Sculpting Fashion
+LOCATION:JCCSF\, 3200 California Street\, San Francisco
+URL:https://www.jccsf.org/event/azzedine-alaia-sculpting-fashion/
+DESCRIPTION:Museum exhibits + Discourse\nhttps://www.jccsf.org/event/azzed
+ ine-alaia-sculpting-fashion/\n\nIn this lecture at the JCCSF\, learn abou
+ t the first major U.S. retrospective of one of fashion’s most celebrate
+ d couturiers. A must for fashionistas.
+END:VEVENT
+END:VCALENDAR

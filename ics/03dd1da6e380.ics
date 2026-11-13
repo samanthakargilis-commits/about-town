@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:03dd1da6e380@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261113T173000
+DTEND;TZID=America/Los_Angeles:20261113T193000
+SUMMARY:Deborah Butterfield: New Work
+LOCATION:Haines Gallery\, 2 Marina Boulevard\, San Francisco\, San Francis
+ co
+URL:https://ma.to/event/deborah-butterfield-new-work-13-nov-2026
+DESCRIPTION:Animals + Meditation\nhttps://ma.to/event/deborah-butterfield-
+ new-work-13-nov-2026\n\nThe opening reception for Deborah Butterfield: Ne
+ w Work is Friday\, November 13\, 5:30–7:30 pm. The exhibition is on vie
+ w November 13\, 2026–January 9\, 2027. It presents a new body of Butter
+ field’s signature equine sculptures\, including the life-sized Kákini 
+ (2026) and Makenna (2026). The works are assembled from driftwood\, branc
+ hes\, and twigs—including California manzanita—before being cast in b
+ ronz
+END:VEVENT
+END:VCALENDAR

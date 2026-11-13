@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9ecf381250b4@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261130T173000
+DTEND;TZID=America/Los_Angeles:20261130T193000
+SUMMARY:2026 Nob Hill Tree Lighting Ceremony
+LOCATION:Nob Hill\, San Francisco
+URL:https://gracecathedral.org/calendar-events/nob-hill-tree-lighting-cere
+ mony-2/
+DESCRIPTION:Spirituality · A yearly tradition\nhttps://gracecathedral.org
+ /calendar-events/nob-hill-tree-lighting-ceremony-2/\n\n🎄 Join Us for a
+  Magical Evening! ✨The Nob Hill Association is delighted to invite you 
+ to our annual Holiday Lighting Celebration at Huntington Park! This cheri
+ shed tradition is free and open to the entire community. Come enjoy an un
+ forgettable evening filled with holiday spirit and ...
+END:VEVENT
+END:VCALENDAR

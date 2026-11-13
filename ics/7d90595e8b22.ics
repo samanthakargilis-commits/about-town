@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7d90595e8b22@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261114T100000
+DTEND;TZID=America/Los_Angeles:20261114T120000
+SUMMARY:MONO Music Conference
+LOCATION:The Midway\, San Francisco
+URL:https://ma.to/event/mono-music-conference-14-nov-2026-1
+DESCRIPTION:Animals + Art\nhttps://ma.to/event/mono-music-conference-14-no
+ v-2026-1\n\nMONO is a two-day music conference at The Midway in San Franc
+ isco\, running November 13–14\, 2026. Presented by MONO and Focusrite G
+ roup\, featuring partners like Sound on Sound\, Novation\, and ADAM Audio
+ . The event includes a full schedule of speakers\, exhibits\, networking 
+ opportunities\, and a dedicated speed-dating session on Saturday\, Novemb
+ er 14th from 2:20–3:05 PM for one-on-one introductions to 
+END:VEVENT
+END:VCALENDAR

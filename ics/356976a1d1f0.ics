@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:356976a1d1f0@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261115T123000
+DTEND;TZID=America/Los_Angeles:20261115T150000
+SUMMARY:Fairway Social at Baylands: Beginner + Intermediate Golf Clinic & 
+ Social 🍂
+LOCATION:Baylands Golf Links\, Baylands Golf Links\, 1875 Embarcadero Rd\,
+  Palo Alto\, CA 94303\, USA\, Palo Alto
+URL:https://luma.com/o3misl6z
+DESCRIPTION:Palo Alto\nhttps://luma.com/o3misl6z\n\nGolf\, girls\, and goo
+ d vibes. We're heading to Baylands. 💗 You asked for more Fairway Socia
+ l golf clinics\, and we're delivering. Join The Fairway Social Club for a
+  women's Beginner + Intermediate Golf Clinic at Baylands Golf Links in Pa
+ lo Alto on Sunday\, November 15. Whether you've never held a club or you'
+ re working on a more consistent swing\, this clinic is for you. We'll spl
+ it into groups by lev
+END:VEVENT
+END:VCALENDAR

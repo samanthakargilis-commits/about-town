@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9f5f76c20fa9@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261114T090000
+DTEND;TZID=America/Los_Angeles:20261114T110000
+SUMMARY:Three Babes Pies at Ferry Plaza
+LOCATION:Ferry Plaza Farmers Market\, San Francisco
+URL:https://ma.to/event/three-babes-pies-at-ferry-plaza-14-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/three-babes-pies-at-ferr
+ y-plaza-14-nov-2026\n\nThree Babes Bakeshop offers handmade pies at the F
+ erry Plaza Farmers Market on Saturdays\, including Thanksgiving pies. The
+  pies are made with local\, seasonal and organic ingredients.
+END:VEVENT
+END:VCALENDAR

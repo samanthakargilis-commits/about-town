@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ad0809f07229@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261121T110000
+DTEND;TZID=America/Los_Angeles:20261121T130000
+SUMMARY:Community Reiki Day: Healing for Everyone
+LOCATION:363 Vintage Park Drive\, 363 Vintage Park Drive\, Foster City\, C
+ A 94404\, Foster City\, CA Foster City\, Foster City
+URL:https://www.meetup.com/bay-area-metaphysics/events/317272852/
+DESCRIPTION:Spirituality + Meditation · Foster City\nhttps://www.meetup.c
+ om/bay-area-metaphysics/events/317272852/\n\nHosted by the Limitless Poss
+ ibilities Community I started Limitless Possibilities because I feel call
+ ed to share the powerful practices that transformed my life with my commu
+ nity. I know that the communities who need healing the most are often dis
+ proportionately restricted from seeking the support they need due to fina
+ ncial or time constraints\, and that's why I'm opening my doors for a Com
+ munity R
+END:VEVENT
+END:VCALENDAR

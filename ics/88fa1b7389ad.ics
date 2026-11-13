@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:88fa1b7389ad@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261124T183000
+DTEND;TZID=America/Los_Angeles:20261124T213000
+SUMMARY:Gobble Gobble Wine Bar Crawl
+LOCATION:San Francisco\, CA\, undefined undefined San Francisco\, San Fran
+ cisco
+URL:https://partiful.com/e/rWcXfThcUqmEN68zUpGn
+DESCRIPTION:New in your area\nhttps://partiful.com/e/rWcXfThcUqmEN68zUpGn\
+ n\nWe're thankful for wine! 🍷🦃 Staying in San Francisco or visiting
+  for Thanksgiving week? Come join Wine Club SF for a night of good wine\,
+  new friends\, and exploring the city one wine bar at a time! We’ll vis
+ it two local wine bars\, with a glass of wine included at each stop. Come
+  solo\, bring a friend\, meet someone new\, and discover a few spots wort
+ h coming back to. 📍 The exact route will be announce
+END:VEVENT
+END:VCALENDAR

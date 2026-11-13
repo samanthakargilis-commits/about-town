@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:40173f317abf@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261122T140000
+DTEND;TZID=America/Los_Angeles:20261122T160000
+SUMMARY:Motion Dept x Pizzeria
+LOCATION:387 S First St\, 387 S First St San Jose\, San Jose
+URL:https://partiful.com/e/a86la98BhKVFHL86uKIu
+DESCRIPTION:San Jose\nhttps://partiful.com/e/a86la98BhKVFHL86uKIu\n\n🏃
+ ‍♂️ MOTION DEPARTMENT RUN CLUB — SAVE THE DATE! We’re hitting t
+ he streets on November 22 for a solid 2-3 mile run or 1 mile walk with go
+ od vibes\, and even better food! We’re partnering with Pizzeria Rosa Ma
+ ria to bring everyone together for a morning of movement\, community\, an
+ d great eats. Whether you’re a seasoned runner or just coming for the v
+ ibes\, everyone’s welcome! Come move with us\, fuel u
+END:VEVENT
+END:VCALENDAR

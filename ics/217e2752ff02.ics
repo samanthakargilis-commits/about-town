@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:217e2752ff02@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261203T170000
+DTEND;TZID=America/Los_Angeles:20261203T220000
+SUMMARY:Downtown First Thursdays with Tycho DJ Set | Dec. 3\, 2026
+LOCATION:Natoma Cabana\, 90 Natoma Street\, San Francisco\, CA 94105 San F
+ rancisco\, San Francisco
+URL:https://www.eventbrite.com/e/downtown-first-thursdays-with-tycho-dj-se
+ t-dec-3-2026-tickets-1980043255679
+DESCRIPTION:Dance nights + Gay / queer · Thursday evening\nhttps://www.ev
+ entbrite.com/e/downtown-first-thursdays-with-tycho-dj-set-dec-3-2026-tick
+ ets-1980043255679\n\nDowntown SF's FREE massive monthly street party! DJs
+ \, dancing\, drag\, and all ages fun every first Thursday of the month.
+END:VEVENT
+END:VCALENDAR

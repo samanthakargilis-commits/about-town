@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a5627acdb261@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261121T110000
+DTEND;TZID=America/Los_Angeles:20261121T160000
+SUMMARY:Sábado Gigante: Free Native Arts + Culture Fest at 16th St. BART 
+ Plaza
+LOCATION:16th Street BART Plaza\, 2000 Mission St\, San Francisco\, CA 941
+ 10\, San Francisco
+URL:https://sf.funcheap.com/sbado-gigante-free-native-arts-culture-fest-16
+ th-st-bart-plaza-sf/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/sbado-gigante-free-n
+ ative-arts-culture-fest-16th-st-bart-plaza-sf/\n\nJoin Mission Lotería f
+ or an exciting edition of Sábado Gigante as we celebrate Native American
+  Heritage Month! Join Mission Lotería for another exciting edition of S
+ ábado Gigante as we celebrate Native American Heritage Month with a day 
+ full of culture\, community\, music\, and family fun! We’re bringing ..
+ .
+END:VEVENT
+END:VCALENDAR

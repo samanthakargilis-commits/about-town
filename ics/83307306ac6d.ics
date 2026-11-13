@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:83307306ac6d@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261206T140000
+DTEND;TZID=America/Los_Angeles:20261206T153000
+SUMMARY:Popovich Comedy Pet Theater | 30+ Rescued Stars | 2PM & 5PM SHOW
+LOCATION:Great Star Theater\, 636 Jackson Street\, San Francisco\, CA 9413
+ 3 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/popovich-comedy-pet-theater-30-rescued-st
+ ars-2pm-5pm-show-tickets-1986601545701
+DESCRIPTION:Comedy + Theatre\nhttps://www.eventbrite.com/e/popovich-comedy
+ -pet-theater-30-rescued-stars-2pm-5pm-show-tickets-1986601545701\n\nOver 
+ 30 rescued animals star in this hilarious\, heartwarming family show—20
+ + years on the Las Vegas Strip.
+END:VEVENT
+END:VCALENDAR

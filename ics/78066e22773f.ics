@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:78066e22773f@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261120T190000
+DTEND;TZID=America/Los_Angeles:20261120T230000
+SUMMARY:Trash Prom Walk of Shame: Runway as Performance Art
+LOCATION:Monument\, 140 9th St\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/trash-prom-walk-shame-runway-performance-art-s
+ f/
+DESCRIPTION:Art + Gay / queer\nhttps://sf.funcheap.com/trash-prom-walk-sha
+ me-runway-performance-art-sf/\n\nJordan Joel presents the debut of their 
+ newest collection Trash Prom Walk of Shame Trash Prom turns shame into sp
+ ectacle: alchemy\, excess and reclamation\, built from what the world thr
+ ows away. The Walk of Shame becomes a walk of pride\, a celebration of pe
+ rsonal survival in scraps ...
+END:VEVENT
+END:VCALENDAR

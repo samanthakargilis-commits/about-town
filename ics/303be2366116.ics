@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:303be2366116@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261115T140000
+DTEND;TZID=America/Los_Angeles:20261115T153000
+SUMMARY:Debug Your Body II: Yoga for Longevity | Posture Clinic
+LOCATION:1605 Church St\, 1605 Church St San Francisco\, San Francisco
+URL:https://partiful.com/e/vP3pBOtFWCbU5XCPBQ56
+DESCRIPTION:Meditation + Discourse\nhttps://partiful.com/e/vP3pBOtFWCbU5XC
+ PBQ56\n\nEmbodied Intelligence Workshop\, Part 3. Part I of Debug Your Bo
+ dy at Equinox was the talk. Part II is hands-on\, in a curated\, intimate
+  room. Hours at a desk\, eyes on a screen\, shoulders creeping toward you
+ r ears. Tech neck isn’t a bad day. It’s a pattern your body has learn
+ ed\, and patterns can be rewritten. We close out 2026 with the area that 
+ shapes your posture most: cervical spine\, scapula\, sho
+END:VEVENT
+END:VCALENDAR

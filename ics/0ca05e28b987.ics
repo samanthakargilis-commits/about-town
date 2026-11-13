@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0ca05e28b987@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261119T173000
+DTEND;TZID=America/Los_Angeles:20261119T193000
+SUMMARY:Third Thursday at Beaux
+LOCATION:Beaux\, 2344 Market Street\, San Francisco\, CA San Francisco\, S
+ an Francisco
+URL:https://www.meetup.com/maxsanfrancisco/events/317214307/
+DESCRIPTION:Musical theatre + Gay / queer · Thursday evening\nhttps://www
+ .meetup.com/maxsanfrancisco/events/317214307/\n\nJoin MAX SF at Beaux Bar
+  each "Third Thursday" of the month from 5:30pm to 7:30pm. Join a great c
+ rowd of gay men and their friends for libations\, conversation\, and spec
+ tacular performances at the nearby piano. There is no cover charge and a 
+ no-host bar. Enjoy superb cocktails at happy hour prices! **Although MAX 
+ is on Meetup\, realize that being a member of MAX on Meetup is not the sa
+ me as being a 
+END:VEVENT
+END:VCALENDAR

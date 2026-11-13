@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:06ca16ce6cb3@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261114T093000
+DTEND;TZID=America/Los_Angeles:20261114T120000
+SUMMARY:Russian Hill Neighbors Cleanup
+LOCATION:Hyde St & Filbert St\, Hyde St & Filbert St San Francisco\, San F
+ rancisco
+URL:https://partiful.com/e/GJ3zR5bABEscnz1to2au
+DESCRIPTION:New in your area\nhttps://partiful.com/e/GJ3zR5bABEscnz1to2au\
+ n\nMeet at the NW corner of Hyde St and Filbert St. We will grab our supp
+ lies and form our crews at 9:30am\, then clean from 10:00am to 12:00pm ar
+ ound the neighborhood. Volunteers will receive coffee at the beginning an
+ d a treat following the cleanup. Sign up on Partiful\, this Civic Joy Fun
+ d Mobilize page (https://www.mobilize.us/civicjoyfund/event/757464/) or e
+ mail info@refuserefusesf.org with event 
+END:VEVENT
+END:VCALENDAR

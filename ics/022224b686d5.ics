@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:022224b686d5@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T180000
+DTEND;TZID=America/Los_Angeles:20261113T190000
+SUMMARY:Fillmore Corridor Banner Meeting
+LOCATION:African American Art & Culture\, 762 Fulton Street\, San Francisc
+ o\, CA 94102\, San Francisco
+URL:https://ma.to/event/fillmore-corridor-banner-meeting-13-nov-2026-1
+DESCRIPTION:Art\nhttps://ma.to/event/fillmore-corridor-banner-meeting-13-n
+ ov-2026-1\n\nThe Fillmore Corridor Banner Project community meeting is ho
+ sted by the San Francisco Housing Development Corporation (SFHDC) in part
+ nership with the African American Art & Culture Complex (AAACC)\, with fu
+ nding from Avenue Greenlight. This session provides community members\, r
+ esidents\, and businesses an opportunity to share their vision for the re
+ designed banners\, learn about the project process a
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:25b240b73c07@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261114T170000
+DTEND;TZID=America/Los_Angeles:20261114T190000
+SUMMARY:New Works 2026 Opening Reception
+LOCATION:Root Division\, 1131 Mission St San Francisco\, San Francisco
+URL:https://partiful.com/e/PbqioeHEEQdBikMUugNa
+DESCRIPTION:Museum exhibits + Art\nhttps://partiful.com/e/PbqioeHEEQdBikMU
+ ugNa\n\nRoot Division presents New Works 2026\, our biennial survey exhib
+ ition. Join us in celebrating the creative vitality and artistic diversit
+ y of our Studio's Program. Bringing together new and recent work by artis
+ ts in the program\, the exhibition spans drawing\, painting\, sculpture\,
+  photography\, and multimedia approaches. The exhibition highlights the b
+ readth of artistic inquiry emerging from a cohort
+END:VEVENT
+END:VCALENDAR

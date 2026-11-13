@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:670c5a7d62a3@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261205T120000
+DTEND;TZID=America/Los_Angeles:20261205T190000
+SUMMARY:SF’s Small Press Book Bazaar 2026: 50 Bay Area Vendors
+LOCATION:The Lab\, 2948 16th St.\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/sfs-small-press-book-bazaar-2026-50-bay-area-v
+ endors/
+DESCRIPTION:Art\nhttps://sf.funcheap.com/sfs-small-press-book-bazaar-2026-
+ 50-bay-area-vendors/\n\nThe Small Press Book Bazaar is a free one-day gat
+ hering at The Lab featuring 50 Bay Area artists\, designers\, and booksel
+ lers. The bazaar focuses on local art publishing and print culture\, with
+  books\, prints\, posters\, stickers\, t-shirts\, and other artist-made g
+ oods available. Food will be ...
+END:VEVENT
+END:VCALENDAR

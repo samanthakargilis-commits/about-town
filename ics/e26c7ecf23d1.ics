@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e26c7ecf23d1@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261121T163000
+DTEND;TZID=America/Los_Angeles:20261121T193000
+SUMMARY:Open Intelligence: A documentary premiere
+LOCATION:Gray Area / Grand Theater\, Gray Area / Grand Theater\, 2665 Miss
+ ion St\, San Francisco\, CA 94110\, USA\, San Francisco
+URL:https://luma.com/modal-hklc
+DESCRIPTION:Theatre + Discourse\nhttps://luma.com/modal-hklc\n\nWhat does 
+ "actually open AI" look like? This short documentary traces the inference
+  layer of AI: the infrastructure that determines whether AI can run affor
+ dably and at scale. It follows the parallel evolution of two open-source 
+ projects\, SGLang and vLLM\, and asks whether open\, accessible intellige
+ nce is truly achievable or still gated by who can afford to run it. We're
+  asking whether open\, access
+END:VEVENT
+END:VCALENDAR

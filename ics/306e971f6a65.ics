@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:306e971f6a65@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261114T120000
+DTEND;TZID=America/Los_Angeles:20261114T140000
+SUMMARY:Knitting with Friends
+LOCATION:Public Market Emeryville\, 5959 Shellmound St\, Emeryville\, CA 9
+ 4608\, USA\, Emeryville\, CA Emeryville\, Emeryville
+URL:https://www.meetup.com/east-bay-knitters-unite/events/317359846/
+DESCRIPTION:Craft · Emeryville\nhttps://www.meetup.com/east-bay-knitters-
+ unite/events/317359846/\n\nHello yarn lovers! This Saturdays meet up will
+  be at Public Market in Emeryville. Bring your yarn project and your appe
+ tites. I will not be there again\, but Becky will be there to welcome eve
+ ryone. Since it’s a big space\, check the Meet Up message board for thi
+ s event\, Becky will post her location. Have a fun time\, I hope to be ba
+ ck for the following meeting!
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dd544a921a62@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261119T140000
+DTEND;TZID=America/Los_Angeles:20261119T170000
+SUMMARY:Notion Build Bar SF
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/buildbar-sf-nov
+DESCRIPTION:New in your area\nhttps://luma.com/buildbar-sf-nov\n\nPart ope
+ n office\, part co-work\, part 1:1 expert help. Bring a question\, your w
+ orkspace\, or just your laptop. At Build Bar\, you can book a dedicated 3
+ 0-minute\, 1:1 session with a Notion expert — then stick around\, co-wo
+ rk\, and build alongside other Notion users. How it works Apply below. Te
+ ll us what you're working on or stuck on\, and pick a 30-min time slot th
+ at works for you. If you just want to 
+END:VEVENT
+END:VCALENDAR

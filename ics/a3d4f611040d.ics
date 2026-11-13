@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a3d4f611040d@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261114T103000
+DTEND;TZID=America/Los_Angeles:20261114T120000
+SUMMARY:Sausalito Secret History Walking Tour
+LOCATION:Sausalito Historical Society Museum\, 780 Bridgeway\, Sausalito\,
+  CA 94965 Sausalito\, Sausalito
+URL:https://www.eventbrite.com/e/sausalito-secret-history-walking-tour-tic
+ kets-1984326824950
+DESCRIPTION:Weird & unusual + Museum exhibits · Sausalito\nhttps://www.ev
+ entbrite.com/e/sausalito-secret-history-walking-tour-tickets-198432682495
+ 0\n\nGet ready to step back in time and discover the hidden stories of Sa
+ usalito on this historical walking tour!
+END:VEVENT
+END:VCALENDAR

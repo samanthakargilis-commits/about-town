@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1cca3830b68e@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261204T190000
+DTEND;TZID=America/Los_Angeles:20261204T210000
+SUMMARY:FF in SF: A Celebration of 50 Years of Free Expression with Frankl
+ in Furnace
+LOCATION:The Lab\, 2948 16th Street\, San Francisco\, California 94103\, U
+ nited States San Francisco\, San Francisco
+URL:https://dice.fm/event/6ac54788094e770001968505
+DESCRIPTION:Reading + Museum exhibits\nhttps://dice.fm/event/6ac54788094e7
+ 70001968505\n\nYou and yours are invited to celebrate legendary NYC alter
+ native space Franklin Furnace's 50th Anniversary\, and the publication of
+  Martha Wilson's Back to the Present: 50 Years of Free Expression with Fr
+ anklin Furnace (PA Press\, 2026). The Lab presents an evening honoring ou
+ r East Coast sister organization\, replete with a book talk and signing b
+ y Martha Wilson\, David Senior (SFMOMA Director of Lib
+END:VEVENT
+END:VCALENDAR

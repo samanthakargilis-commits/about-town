@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fa82c6be6920@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261114T180000
+DTEND;TZID=America/Los_Angeles:20261114T200000
+SUMMARY:Friendsgiving at 620
+LOCATION:Southern Pacific Brewing\, 620 Treat Ave\, San Francisco\, San Fr
+ ancisco
+URL:https://ma.to/event/friendsgiving-at-620-14-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/friendsgiving-at-620-14-
+ nov-2026\n\nFriendsgiving at 620 takes place on Saturday\, November 14\, 
+ from 6pm until late at 620 Treat Ave in San Francisco. Southern Pacific B
+ rewing hosts the gathering\, with specials and more to be announced.
+END:VEVENT
+END:VCALENDAR

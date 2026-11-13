@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:41387fd18c0b@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261114T100000
+DTEND;TZID=America/Los_Angeles:20261114T130000
+SUMMARY:Coffee with Koah & Forerunner
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/qwsgf9bq
+DESCRIPTION:Discourse\nhttps://luma.com/qwsgf9bq\n\nA morning of coffee\, 
+ bites\, and conversation with consumer founders in SF\, hosted by Koah\, 
+ Forerunner\, and Rho. Catch up with familiar faces. Meet a few new ones. 
+ Hear what everyone’s building. Coffee and pastries on us. Come hang ☕
+END:VEVENT
+END:VCALENDAR

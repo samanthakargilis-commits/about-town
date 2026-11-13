@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0b90d66c9ca6@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261211T190000
+DTEND;TZID=America/Los_Angeles:20261211T230000
+SUMMARY:Taco Tuesday in SAN FRANCISCO- Stevie Mackey & Friends
+LOCATION:Broadway studios\, 435 Broadway\, San Francisco\, CA 94133 San Fr
+ ancisco\, San Francisco
+URL:https://www.eventbrite.com/e/taco-tuesday-in-san-francisco-stevie-mack
+ ey-friends-tickets-1998288864787
+DESCRIPTION:Musical theatre\nhttps://www.eventbrite.com/e/taco-tuesday-in-
+ san-francisco-stevie-mackey-friends-tickets-1998288864787\n\nJoin Stevie 
+ Mackey & Friends for a fun Taco Tuesday with great vibes.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d9d239bc968e@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261121T120000
+DTEND;TZID=America/Los_Angeles:20261121T170000
+SUMMARY:“Sun Down Bass Up” Free DJ Pop-Up in Crissy Field
+LOCATION:Crissy Field\, 1199 E Beach\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/sun-bass-free-dj-popup-crissy-field-sf/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/sun-bass-free-dj-pop
+ up-crissy-field-sf/\n\nSun Down Bass Up is a free outdoor DJ pop-up at Cr
+ issy Field’s Airstrip Overlook Trail featuring music by SahrFaiyah and 
+ Meechie\, with additional DJs possible. RSVP is requested before the even
+ t. Original Event Description: _Sun Down Bass up! FREE DJ POP UP! Saturda
+ y\, Nov 21 12:00pm ...
+END:VEVENT
+END:VCALENDAR

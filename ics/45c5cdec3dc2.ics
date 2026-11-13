@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:45c5cdec3dc2@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261120T170000
+DTEND;TZID=America/Los_Angeles:20261120T200000
+SUMMARY:Colma’s Asian Night Market & Parol Lantern Workshop
+LOCATION:Colma Community Center Parking Lot\, 1520 Hillside Blvd\, Colma\,
+  CA\, Colma
+URL:https://sf.funcheap.com/colmas-asian-night-market-parol-lantern-worksh
+ op/
+DESCRIPTION:Fairs & festivals · Colma\nhttps://sf.funcheap.com/colmas-asi
+ an-night-market-parol-lantern-workshop/\n\nThe Town of Colma and Lemon Ne
+ rds are teaming up for a free Night Market featuring a taste of Asia. Sto
+ p by for food vendors\, music\, and a hands-on Parol Lantern Workshop. En
+ joy an evening of food\, culture\, and community at the Colma Community C
+ enter. Friday\, ...
+END:VEVENT
+END:VCALENDAR

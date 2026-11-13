@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6d735cd6e06c@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261113T200000
+DTEND;TZID=America/Los_Angeles:20261114T000000
+SUMMARY:Mahjong After Dark
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/mahjongafterdark
+DESCRIPTION:Museum exhibits + Singing\nhttps://luma.com/mahjongafterdark\n
+ \nMahjong After Dark (MAD) is a mahjong night for people who want to play
+ \, make new friends\, and have a good time. we’re taking over the downs
+ tairs of a hong kong-themed karaoke lounge for a night of mahjong\, live 
+ DJs\, and drink specials! 🎟️ a note on tickets planning ahead helps 
+ us plan too open play $15 advance · $20 week-of · $25 day-of (if availa
+ ble) beginner lesson + open play $25 advance · $30
+END:VEVENT
+END:VCALENDAR

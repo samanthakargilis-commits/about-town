@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e7a14fd9a104@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261119T180000
+DTEND;TZID=America/Los_Angeles:20261119T220000
+SUMMARY:Paraform Poker Night
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/epibogqc
+DESCRIPTION:Theatre · Thursday evening\nhttps://luma.com/epibogqc\n\nPoke
+ r Night is back. Back in April\, we packed our Levi’s Plaza office with
+  some of SF’s best engineers for a night of cards\, pizza and an open b
+ ar. It was such a good time that we had to run it back. Round two is Thur
+ sday\, Nov. 19. Free to play Drinks all night Plenty of food Beginners we
+ lcome Come meet our team\, compete for prizes\, and play a few hands agai
+ nst some of the best engineers in SF. Sp
+END:VEVENT
+END:VCALENDAR

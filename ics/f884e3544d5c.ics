@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f884e3544d5c@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:Dom We Now Our Gay Apparel
+LOCATION:Oasis\, 298 11th St\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/dom-gay-apparel/
+DESCRIPTION:Gay / queer\nhttps://sf.funcheap.com/dom-gay-apparel/\n\nDomin
+ ick Pupa\, nightclub sensation and cohost of the hit podcast FixingFamous
+ People\, returns to San Francisco and Oasis with Dom We Now Our Gay Appar
+ el\, his acclaimed annual skewering of the year that was. It’s a pop cu
+ lture roasting with holiday music parodies that will ruin ...
+END:VEVENT
+END:VCALENDAR

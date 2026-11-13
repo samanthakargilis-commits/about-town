@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:383f88f36bca@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261202T173000
+DTEND;TZID=America/Los_Angeles:20261202T193000
+SUMMARY:The Ritz-Carlton SF’s Annual Tree Lighting Ceremony 2026
+LOCATION:Nob Hill\, San Francisco
+URL:https://www.ritzcarlton.com/en/hotels/sforz-the-ritz-carlton-san-franc
+ isco/overview/festive/
+DESCRIPTION:Spirituality · A yearly tradition\nhttps://www.ritzcarlton.co
+ m/en/hotels/sforz-the-ritz-carlton-san-francisco/overview/festive/\n\nJoi
+ n us at our annual Tree Lighting Ceremony\, hosted by Betty Yu (KTVU-TV F
+ ox 2) and Liam Mayclem (KCBS Radio) and a Make-A-Wish® Greater Bay Area 
+ child. The complimentary-to-the-public event will feature live entertainm
+ ent with Dickens-era carolers and trumpeters\, the legendary tree lightin
+ g at the ...
+END:VEVENT
+END:VCALENDAR

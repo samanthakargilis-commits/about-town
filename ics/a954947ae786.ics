@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a954947ae786@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:$10 Daytime Rock Show w/ The Afflicted + Jackson Saints (Mission)
+LOCATION:The Kilowatt Bar\, 3160 16th St\, San Francisco\, San Francisco
+URL:https://sf.funcheap.com/10-daytime-rock-show-afflicted-jackson-saints-
+ mission/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/10-daytime-rock-show
+ -afflicted-jackson-saints-mission/\n\nAll are welcome to celebrate singer
+  Dan Rancid’s birthday at the Kilowatt with special reunions of beloved
+  local bands The Afflicted and Jackson Saints. Local rockers Fast Friends
+  open. Tickets at the door are only $10. Doors at 1pm\, music goes till 5
+ pm.
+END:VEVENT
+END:VCALENDAR

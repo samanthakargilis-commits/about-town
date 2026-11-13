@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9e86d0d5c72c@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261113T200000
+DTEND;TZID=America/Los_Angeles:20261113T220000
+SUMMARY:The Kelly Mantle Show Live
+LOCATION:Oasis\, San Francisco
+URL:https://ma.to/event/the-kelly-mantle-show-live-13-nov-2026
+DESCRIPTION:Gay / queer + Camp & Halloween\nhttps://ma.to/event/the-kelly-
+ mantle-show-live-13-nov-2026\n\nThe Kelly Mantle Show Live comes to Oasis
+  with a drag performance by Kelly Mantle and special guest Nicki Jizz. On
+ ly a few tickets remain for this date.
+END:VEVENT
+END:VCALENDAR

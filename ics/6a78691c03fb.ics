@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6a78691c03fb@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:Fillmore’s Friday Night Market 2024 – ENDED DEC. 2024
+LOCATION:
+URL:https://sf.funcheap.com/city-guide/night-market-san-francisco-bay-area
+ /
+DESCRIPTION:Fairs & festivals + Art · Featured on Funcheap\nhttps://sf.fu
+ ncheap.com/city-guide/night-market-san-francisco-bay-area/\n\n2024 dates 
+ have yet to be announced Every Friday from 4 to 9 pm September 29 – Dec
+ ember 8\, 2023* (Please note that 2024 dates aren’t yet scheduled \, bu
+ t hopefully this night market will be back for 2024) O’Farrell Street B
+ etween Fillmore St and Steiner St\, SF FREE This community-driven weekly 
+ market\, operating since August 2023\, offers soul food \, showcases loca
+ l businesses\, and supports artists i
+END:VEVENT
+END:VCALENDAR

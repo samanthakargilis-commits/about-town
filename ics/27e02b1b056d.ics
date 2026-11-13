@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:27e02b1b056d@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T173000
+DTEND;TZID=America/Los_Angeles:20261113T193000
+SUMMARY:White Truffle Dinner Series
+LOCATION:Quince\, San Francisco
+URL:https://ma.to/event/white-truffle-dinner-2026-11-13
+DESCRIPTION:New in your area\nhttps://ma.to/event/white-truffle-dinner-202
+ 6-11-13\n\nQuince serves a dedicated six-course dinner honoring white tru
+ ffles from Alba\, Piedmont\, a tradition the restaurant has marked for tw
+ enty-three years. The menu is offered while the truffle season permits as
+  part of the November 10–14\, 2026 run. Reservations are required.
+END:VEVENT
+END:VCALENDAR

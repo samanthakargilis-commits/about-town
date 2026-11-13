@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d3d08089a139@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261113T160000
+DTEND;TZID=America/Los_Angeles:20261113T130000
+SUMMARY:Bhangra & Beats Night Market
+LOCATION:Yerba Buena Gardens\, 750 Howard St\, San Francisco\, CA
+URL:https://partiful.com/e/to4Oj8XcD7gl0byTkWK7
+DESCRIPTION:Fairs & festivals + Craft · Featured on Funcheap\nhttps://par
+ tiful.com/e/to4Oj8XcD7gl0byTkWK7\n\nThe 3rd Annual San Francisco Diwali c
+ elebration presented by Bhangra & Beats Night Market and the City of SF. 
+ Features live music\, dancing\, Indian and South Asian food\, and a maker
+ s bazaar. Lineup includes an interactive drum circle with DRUMMM\, henna 
+ art\, a closing Non Stop Bhangra dance party\, and a Bollywood sing-along
+  jam session with SF Indian Music Project. Performances by Dholrhythms\, 
+ DJ co
+END:VEVENT
+END:VCALENDAR

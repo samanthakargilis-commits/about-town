@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d01a30f6136a@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261118T180000
+DTEND;TZID=America/Los_Angeles:20261118T210000
+SUMMARY:SF Permaculture Guild: The Revival Gathering 🌱
+LOCATION:Trellis Coworking & Events\, Trellis Coworking & Events\, 981 Mis
+ sion St\, San Francisco\, CA 94103\, USA\, San Francisco
+URL:https://luma.com/yi4v2hgw
+DESCRIPTION:Discourse\nhttps://luma.com/yi4v2hgw\n\nPermi-curious? Interes
+ ted in regenerative design\, urban farming\, zero-waste living\, or build
+ ing strong community? After a hiatus\, the SF Permaculture Guild is back
+ —and energy is rising! Join us for a special test gathering to reconnec
+ t\, share ideas\, and help shape the next era of permaculture in San Fran
+ cisco. Whether you’re a seasoned "permie" or brand new to the concept\,
+  there is a seat in the c
+END:VEVENT
+END:VCALENDAR

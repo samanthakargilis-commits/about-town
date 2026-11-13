@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9d9be877be44@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261114T100000
+DTEND;TZID=America/Los_Angeles:20261114T140000
+SUMMARY:Funky Brunch: 2026 Season Finale
+LOCATION:Nosh Box\, 1116 Folsom St\, San Francisco
+URL:https://ma.to/event/funky-brunch-2026-season-finale-14-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/funky-brunch-2026-season
+ -finale-14-nov-2026\n\nThe last Funky Brunch of the 2026 season features 
+ DJs Omnibot and Ben Fonik on decks with funk\, soul and hip hop. Food and
+  drink specials include passionfruit beverages\, apple fritter focaccia\,
+  passion fruit mimosas and chestnut frangipane sticky buns. The event run
+ s 10am–2pm and is supported by a grant from SF New Deal.
+END:VEVENT
+END:VCALENDAR

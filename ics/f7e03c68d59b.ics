@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f7e03c68d59b@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261120T190000
+DTEND;TZID=America/Los_Angeles:20261120T210000
+SUMMARY:Open Mic Night
+LOCATION:1924 Cedar St\, 1924 Cedar St\, Berkeley\, CA Berkeley\, Berkeley
+URL:https://www.meetup.com/music-at-berkeley-fellowship-uu/events/31727678
+ 7/
+DESCRIPTION:Singing + Spirituality · Berkeley\nhttps://www.meetup.com/mus
+ ic-at-berkeley-fellowship-uu/events/317276787/\n\n*Musicians\, Poets\, Ma
+ gicians\, Comedians\, Storytellers\, etc.* **Host: Evelie Delfino Såles 
+ Posch (she/her/siyá)** is a sacred song singer/writer\; recording artist
+ \; drummer\; dancer\; Tibetan and Kundalini yogini\; Pranic healer\, Cert
+ ified Sound Therapist\; choral director\; storyteller\; actress\; music e
+ ducator\; independent scholar\; and magical activist. She performs with a
+ nd directs Mahal\, a kosmikethni
+END:VEVENT
+END:VCALENDAR

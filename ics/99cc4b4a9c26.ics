@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:99cc4b4a9c26@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Ann M. Evans & Georgeanne Brennan – Market Memories Cookbook (Fo
+ odwise)
+LOCATION:Ferry Building\, The Embarcadero and Ferry Plaza\, San Francisco\
+ , CA\, San Francisco
+URL:https://sf.funcheap.com/ann-evans-georgeanne-brennan-market-memories-c
+ ookbook-foodwise/
+DESCRIPTION:Reading\nhttps://sf.funcheap.com/ann-evans-georgeanne-brennan-
+ market-memories-cookbook-foodwise/\n\nMeet & Greet Book Signing Only • 
+ SF Ferry Plaza Market 11:00 AM PT Food Demo // 11:30 AM PT Book Signing P
+ lease join us for a special meet-and-greet signing event with Ann M. Evan
+ s & Georgeanne Brennan\, following their Foodwise demo at the Ferry Plaza
+  Farmers Market. Ann M. ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1c88c80ae570@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:All-Ages Drag Brunch w/ Kings Queens at “Beeryland” (Oakland)
+LOCATION:Beeryland\, 2318 Telegraph Ave\, Oakland\, CA 94612\, Oakland
+URL:https://sf.funcheap.com/5-allages-drag-brunch-kings-queens-beeryland-o
+ akland/
+DESCRIPTION:Gay / queer + Camp & Halloween · Oakland\nhttps://sf.funcheap
+ .com/5-allages-drag-brunch-kings-queens-beeryland-oakland/\n\nAll Ages Dr
+ ag brunch with an exclusive breakfast menu at Beerlyland! Oakland’s New
+  Drag Brunch at Beeryland! $20 General Admission\, $30 Premium with drink
+  tickets and swag bag. Code “beery” gets $5 off! Join Us for your Hol
+ iday/birthday/anniversary/divorce celebration on November 22nd at an 12pm
+  with a special brunch menu ...
+END:VEVENT
+END:VCALENDAR

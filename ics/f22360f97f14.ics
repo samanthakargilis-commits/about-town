@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f22360f97f14@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261212T100000
+DTEND;TZID=America/Los_Angeles:20261212T120000
+SUMMARY:Japanese Vintage Holiday Mini Pop-up Market
+LOCATION:San Francisco Japantown\, 1840 Sutter Street\, San Francisco\, CA
+  94115\, San Francisco
+URL:https://sf.funcheap.com/japanese-vintage-holiday-mini-popup-market-sf/
+DESCRIPTION:Craft\nhttps://sf.funcheap.com/japanese-vintage-holiday-mini-p
+ opup-market-sf/\n\nPlease join us for this special holiday sale. Every fe
+ atured item was donated to us by our community: vintage and antique Japan
+ ese ceramics\, tea sets\, lacquerware\, kitchenware\, books\, clothing\, 
+ vases\, as well as hand dyed indigo products. There will also be FREE Jap
+ anese skincare samples from Otsuka ...
+END:VEVENT
+END:VCALENDAR

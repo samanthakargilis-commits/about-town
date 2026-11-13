@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e6f0c267f037@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261114T090000
+DTEND;TZID=America/Los_Angeles:20261114T120000
+SUMMARY:Dune Revegetation at Ocean Beach
+LOCATION:Ocean Beach\, San Francisco
+URL:https://ma.to/event/dune-revegetation-ocean-beach-2026-11-14
+DESCRIPTION:New in your area\nhttps://ma.to/event/dune-revegetation-ocean-
+ beach-2026-11-14\n\nVolunteer dune revegetation at Ocean Beach\, organise
+ d by Surfrider San Francisco\, to bring the dunes back to life\, strength
+ en the coastline against rising seas and build a healthier coastal ecosys
+ tem. No experience is needed\; tools\, supplies and guidance are provided
+  on site. The meeting point is Judah and Ocean Beach\, and sign-up is ava
+ ilable through the organiser's posted link. This is one of se
+END:VEVENT
+END:VCALENDAR

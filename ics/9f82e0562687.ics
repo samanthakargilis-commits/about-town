@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9f82e0562687@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261113T170000
+DTEND;TZID=America/Los_Angeles:20261113T190000
+SUMMARY:Cocktails for Community
+LOCATION:El Rio\, 3158 Mission St\, San Francisco\, San Francisco
+URL:https://ma.to/event/cocktails-for-community-13-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/cocktails-for-community-
+ 13-nov-2026\n\nCocktails for Community is a benefit for the Alliance for 
+ Social & Economic Justice (ASEJ) at El Rio. A portion of drink sales supp
+ orts ASEJ's work\, and attendees can get a drink and learn how organizati
+ ons can get involved. ASEJ is a consortium of organizations\, community o
+ rganizers\, and cultural workers advocating for low-wage workers\, immigr
+ ant workers\, and unwaged caregivers. Its members inclu
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c7a1bd6bf8b0@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261210T210000
+DTEND;TZID=America/Los_Angeles:20261210T230000
+SUMMARY:Sonamó + DJ Nino MSK
+LOCATION:Madrone Art Bar\, 500 Divisadero St San Francisco\, San Francisco
+URL:https://partiful.com/e/G93XJKC9nfd1RGnOOyr4
+DESCRIPTION:Fairs & festivals + Art · Thursday evening\nhttps://partiful.
+ com/e/G93XJKC9nfd1RGnOOyr4\n\nSan Francisco’s funkiest “little room /
+  big show” night is back. Sonamó turns Madrone into a full-throttle\, 
+ late-night dance floor—the kind of night where the band plays like it
+ ’s a 1\,000-person festival... even if you’re close enough to feel th
+ e bass in your ribs. Sonamó Live brings Italian backbone + global groove
+ s + Bay Area funk energy\, then we hand the room to our partner in crime 
+ DJ Nino MSK
+END:VEVENT
+END:VCALENDAR

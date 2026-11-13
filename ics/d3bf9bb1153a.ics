@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d3bf9bb1153a@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T110000
+DTEND;TZID=America/Los_Angeles:20261113T130000
+SUMMARY:Creative Growth Tattoo Flash
+LOCATION:Berkeley\, Oakland\, and San Francisco\, San Francisco
+URL:https://ma.to/event/creative-growth-tattoo-flash-2026-11-13
+DESCRIPTION:Art\nhttps://ma.to/event/creative-growth-tattoo-flash-2026-11-
+ 13\n\nCreative Growth Tattoo Flash is a fundraiser on November 13-14 with
+  local tattoo artists in Berkeley\, Oakland\, and San Francisco offering 
+ original Creative Growth body art. Proceeds from each tattoo are donated 
+ back to Creative Growth. Artists and shops offering the CG Tattoo Flash i
+ nclude @wyattschuster\, @squidxbones\, and @dollhouse.tattoo. Each artist
+  has an individual booking process\; availabil
+END:VEVENT
+END:VCALENDAR

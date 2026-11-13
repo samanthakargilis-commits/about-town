@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e0e680524a8b@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261113T190000
+DTEND;TZID=America/Los_Angeles:20261113T230000
+SUMMARY:Zenefit 2026
+LOCATION:Great American Music Hall\, 859 O'Farrell\, SF\, San Francisco
+URL:https://ma.to/event/zenefit-2026-13-nov-2026
+DESCRIPTION:Meditation + Art\nhttps://ma.to/event/zenefit-2026-13-nov-2026
+ \n\nSan Francisco Zen Center marks 60 years of Tassajara with Zenefit 202
+ 6\, a night of connection\, music\, art\, and practice to support Tassaja
+ ra’s fire recovery. Featuring a collision of sound\, poetry\, improvisa
+ tion\, and contemplative practice\, including a guest appearance from Pet
+ er Coyote\, a DJ session from Devendra Banhart\, born i\, and a liquid li
+ ght show. Doors open at 6:00 pm\, event 7:00 pm – 11:
+END:VEVENT
+END:VCALENDAR

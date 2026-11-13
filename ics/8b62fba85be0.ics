@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8b62fba85be0@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T200000
+DTEND;TZID=America/Los_Angeles:20261113T233000
+SUMMARY:Get It On! Bang a Gong!
+LOCATION:Dr. Funk: Rum House + Kitchen\, San Jose\, San Jose
+URL:https://ma.to/event/get-it-on-bang-a-gong-13-nov-2026
+DESCRIPTION:San Jose\nhttps://ma.to/event/get-it-on-bang-a-gong-13-nov-202
+ 6\n\nGary Day (Morrissey / Alain White Band / The Gazmen) and Speakeasy R
+ ay (Hope Chest / Tiki Tuesdays) spin vinyl 45s\, spanning R&B\, exotica\,
+  rock & roll\, jazz\, ska\, popcorn\, rumba and hip-shakers. The Friday\,
+  November 13 session runs 8:00–11:30 PM at Dr. Funk: Rum House + Kitche
+ n in San Jose.
+END:VEVENT
+END:VCALENDAR

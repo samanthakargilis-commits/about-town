@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c5deafc14d60@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261115T150000
+DTEND;TZID=America/Los_Angeles:20261115T170000
+SUMMARY:Field Trip: Verasphere at WEAD Artist Salon
+LOCATION:Wescafe\, 1518 Webster Street\, Alameda\, CA Alameda\, Alameda
+URL:https://www.meetup.com/upcycle/events/317379262/
+DESCRIPTION:Art + Discourse · Alameda\nhttps://www.meetup.com/upcycle/eve
+ nts/317379262/\n\n**Some of you have probably heard Eve and Logan talk ab
+ out marching in the SF Pride parade with Verasphere. Maybe you have even 
+ seen their photos of the amazing\, colorful costumes. Well\, now is your 
+ chance to meet the artists behind Verasphere: David Faulk (aka Mrs. Vera)
+  and Michael Johnstone!** **This event will combine an artist talk with a
+  community discussion and a chance to do some crafting.
+END:VEVENT
+END:VCALENDAR

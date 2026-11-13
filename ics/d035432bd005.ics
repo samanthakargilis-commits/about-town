@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d035432bd005@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:The Hard Bop Collective At Mr. Tipple’s Jazz Club
+LOCATION:Mr. Tipple's Jazz Club\, 39 Fell St San Francisco\, CA
+URL:https://sf.funcheap.com/hard-bop-collective-tipples-jazz-club/
+DESCRIPTION:Art\nhttps://sf.funcheap.com/hard-bop-collective-tipples-jazz-
+ club/\n\nThe Hard Bop Collective @ Mr. Tipple's Recording Studio ARTISTS 
+ Daniel Casares - tenor sax Matt Clark - piano Tomoko Funaki - bass Austin
+  Harris - drums The Hard Bop Collective was formed in 2011 to make energe
+ tic\, swinging music with a strong sense of tradition accessible and fun 
+ for the ...
+END:VEVENT
+END:VCALENDAR

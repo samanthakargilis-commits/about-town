@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b8c89d348d8e@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261114T100000
+DTEND;TZID=America/Los_Angeles:20261114T120000
+SUMMARY:Harvest Still Life Workshop
+LOCATION:ARCH Art Supplies\, San Francisco
+URL:https://ma.to/event/harvest-still-life-workshop-2026-11-14
+DESCRIPTION:Art\nhttps://ma.to/event/harvest-still-life-workshop-2026-11-1
+ 4\n\nJoin ARCH Art Supplies for a harvest still life workshop. Participan
+ ts will paint from a beautifully arranged setup featuring brilliant autum
+ n gourds\, vibrant flowers\, branches\, and festive accents. Learn how to
+  build luminous base tones with fluid watercolor washes\, then layer on d
+ etail and texture using richly hued colored pencils. Designed for beginni
+ ng and intermediate artists\, this class focu
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ef883ab076aa@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261119T190000
+DTEND;TZID=America/Los_Angeles:20261119T230000
+SUMMARY:Breaking Sound SF at O'Reilly's Pub 11/19
+LOCATION:O'Reilly's Pub\, 1840 Haight Street\, San Francisco\, California 
+ 94117\, United States San Francisco\, San Francisco
+URL:https://dice.fm/event/6ae097dc3edf7a000181a904
+DESCRIPTION:Theatre + Art · Thursday evening\nhttps://dice.fm/event/6ae09
+ 7dc3edf7a000181a904\n\nThe hottest emerging artists & bands in premium lo
+ cations around the city. FEAT. - CALIGO\, April Day\, Xuvé\, ELENA VICTO
+ RIA & MORE! GET TO KNOW THE ARTISTS: Featuring **CALIGO**\, hailing all t
+ he way from Sacramento California! If you like sweet music\, rad looking 
+ dudes\, and the number 3\, then you’re in for a hoot. Get ready for CAL
+ IGO to rock your world\; **April Day**\, an indie rock artist based in
+END:VEVENT
+END:VCALENDAR

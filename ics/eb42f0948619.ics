@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:eb42f0948619@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:2026 Union Square’s Chanukah Festival
+LOCATION:Union Square\, San Francisco
+URL:http://www.visitunionsquaresf.com/blog/top-10-holiday-activities-union
+ -square-sf
+DESCRIPTION:Fairs & festivals + Weird & unusual · Featured on Funcheap\nh
+ ttp://www.visitunionsquaresf.com/blog/top-10-holiday-activities-union-squ
+ are-sf\n\nDecember 4-11\, 2026 – SF (Union Square) – FREE – San Fra
+ ncisco celebrates the 51st anniversary of the iconic 25-foot-tall giant m
+ enorah in Union Square with an eight-night festival featuring nightly lig
+ htings\, live music\, and community celebrations\, capped off with a fest
+ ive menorah car parade rolling out from Union Square. Union Square San Fr
+ ancisco
+END:VEVENT
+END:VCALENDAR

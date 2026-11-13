@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9282f2965835@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261213T130000
+DTEND;TZID=America/Los_Angeles:20261213T150000
+SUMMARY:Lunch in the Castro District: The Sausage Factory
+LOCATION:The Sausage Factory\, 517 Castro Street\, San Francisco\, CA San 
+ Francisco\, San Francisco
+URL:https://www.meetup.com/sacramento-lgbtq-meetup-group/events/317389857/
+DESCRIPTION:Gay / queer\nhttps://www.meetup.com/sacramento-lgbtq-meetup-gr
+ oup/events/317389857/\n\nOur fellow PrimeTimers in [San Francisco](https:
+ //chapters.theprimetimersww.com/sanfrancisco/) invite the Sacramento Prim
+ eTimers to lunch every 2nd Sunday at 1pm in the Castro District at [The S
+ ausage Factory](https://thesausagefactorysf.com/). I'm told that the park
+ ing app [SpotHero](https://spothero.com/get-spothero-app) works well in S
+ F. The Sausage Factory: 517 Castro Street\, San Francisco\, CA
+END:VEVENT
+END:VCALENDAR

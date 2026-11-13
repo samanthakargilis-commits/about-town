@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:580a7583513b@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261114T120000
+DTEND;TZID=America/Los_Angeles:20261114T140000
+SUMMARY:Devendra Banhart Book Signing
+LOCATION:Book Passage Ferry Building\, San Francisco
+URL:https://ma.to/event/devendra-banhart-book-signing-2026-11-14
+DESCRIPTION:Reading + Concerts\nhttps://ma.to/event/devendra-banhart-book-
+ signing-2026-11-14\n\nDevendra Banhart\, the Venezuelan-American singer-s
+ ongwriter and visual artist\, appears at the Book Passage store at the Fe
+ rry Building on November 14 at 12:00 PM to celebrate his new book of poet
+ ry\, Four Nose Jobs A Day. He will be available for a meet-and-greet\, a 
+ signing and a photo op. The book can be bought through the store's websit
+ e or at the store on the day of the event. Admission is free\,
+END:VEVENT
+END:VCALENDAR

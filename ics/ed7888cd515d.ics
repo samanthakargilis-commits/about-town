@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ed7888cd515d@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261129T100000
+DTEND;TZID=America/Los_Angeles:20261129T180000
+SUMMARY:SF’s 42nd Annual Great Dickens Christmas Fair
+LOCATION:Cow Palace\, 2600 Geneva Ave\, Daly City\, CA\, Daly City
+URL:https://sf.funcheap.com/sfs-42nd-annual-great-dickens-christmas-fair-n
+ ov-21-dec-20-4/
+DESCRIPTION:Fairs & festivals + Weird & unusual · A yearly tradition · D
+ aly City\nhttps://sf.funcheap.com/sfs-42nd-annual-great-dickens-christmas
+ -fair-nov-21-dec-20-4/\n\nThe Great Dickens Christmas Fair is a one-of-a-
+ kind trip to Victorian London\, where Christmas Eve never ends. More than
+  140\,000 square feet of the Cow Palace transforms into a maze of lamplit
+  streets\, music halls\, pubs\, dance floors\, and shops filled with hand
+ made gifts. Hundreds ...
+END:VEVENT
+END:VCALENDAR

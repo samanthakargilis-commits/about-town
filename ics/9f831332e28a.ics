@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9f831332e28a@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Free Author Talk: Nicole Nelson on “Family Language” (Corte Ma
+ dera)
+LOCATION:Book Passage (Corte Madera)\, 51 Tamal Vista Blvd. Corte Madera\,
+  CA
+URL:https://sf.funcheap.com/free-author-talk-nicole-nelson-family-language
+ -corte-madera/
+DESCRIPTION:Reading + Discourse\nhttps://sf.funcheap.com/free-author-talk-
+ nicole-nelson-family-language-corte-madera/\n\nIn this striking debut\, a
+ n ambitious academic faces difficult choices when confronted with overnig
+ ht motherhood. Family Language explores the misogyny behind the question 
+ of whether women can “have it all” as Mona balances her career with n
+ ew responsibilities. Nicole will be joined in conversation by Rebecca ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:71d4bbff7437@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261213T160000
+DTEND;TZID=America/Los_Angeles:20261213T220000
+SUMMARY:Holidaze Market & Light Up the Night Party!
+LOCATION:The Box Shop\, The Box Shop\, 951 Hudson Ave\, San Francisco\, CA
+  94124\, USA\, San Francisco
+URL:https://luma.com/kygbsxgx
+DESCRIPTION:Craft + Art\nhttps://luma.com/kygbsxgx\n\nIt's your last chanc
+ e to party at The Box Shop in 2026 -- and get some holiday shopping done 
+ with our artists and builders! Expect music\, festive lights from Entwine
+ d\, a poofing Fire Garden\, exploring\, dancing and celebrating another b
+ ig year with our community. This event is FREE with RSVP - invite your fr
+ iends! End of year 501(c)3 donations gratefully accepted :) Interested in
+  vending? Apply Her
+END:VEVENT
+END:VCALENDAR

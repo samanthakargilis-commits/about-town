@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:aa8ce333c503@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261122T140000
+DTEND;TZID=America/Los_Angeles:20261122T160000
+SUMMARY:Sunday Show Suave Patria
+LOCATION:Mexican Heritage Plaza Theater\, 1700 Alum Rock Avenue\, San Jose
+ \, CA 95116 San Jose\, San Jose
+URL:https://www.eventbrite.com/e/sunday-show-suave-patria-tickets-20026754
+ 90302
+DESCRIPTION:Theatre · San Jose\nhttps://www.eventbrite.com/e/sunday-show-
+ suave-patria-tickets-2002675490302\n\nExperience Mexico’s beauty\, resi
+ lience\, and traditions through dance and music in SUAVE PATRIA with Los 
+ Lupeños de San José.
+END:VEVENT
+END:VCALENDAR

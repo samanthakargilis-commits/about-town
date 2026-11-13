@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b6e64dc08196@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261113T200000
+DTEND;TZID=America/Los_Angeles:20261113T220000
+SUMMARY:Mahjong Mayhem
+LOCATION:Noe Valley Farm\, San Francisco
+URL:https://ma.to/event/mahjong-mayhem-13-nov-2026
+DESCRIPTION:Comedy + Theatre\nhttps://ma.to/event/mahjong-mayhem-13-nov-20
+ 26\n\nMahjong Mayhem is a comedy game show pairing Bernice Ye with Mister
+  Mahjong. The show features stand-up comedy\, mahjong games\, and audienc
+ e participation on stage. No mahjong knowledge is required\, and newcomer
+ s are welcome alongside experienced players. The event runs from 8 PM to 
+ 10 PM at Noe Valley Farm.
+END:VEVENT
+END:VCALENDAR

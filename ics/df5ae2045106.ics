@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:df5ae2045106@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261209T110000
+DTEND;TZID=America/Los_Angeles:20261209T130000
+SUMMARY:Patchwork Show @ Winter Walk
+LOCATION:Stockton St\, Stockton St San Francisco\, San Francisco
+URL:https://partiful.com/e/sT50nZdpqQvZvo5pBhSl
+DESCRIPTION:Craft + Fairs & festivals\nhttps://partiful.com/e/sT50nZdpqQvZ
+ vo5pBhSl\n\nPatchwork Show is turning Maiden Lane into a European-style h
+ oliday market for three weeks as part of Union Square’s Winter Walk. Sh
+ op independent makers and artists\, grab food and drinks\, and try DIY cr
+ afts and other activities! Vendors rotate throughout the run\, so each we
+ ek brings a new mix of makers to discover This event is not hosted by Par
+ tiful. It is an event we recommend\, hosted by Patchw
+END:VEVENT
+END:VCALENDAR

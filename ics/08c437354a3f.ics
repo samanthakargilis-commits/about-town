@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:08c437354a3f@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261128T163000
+DTEND;TZID=America/Los_Angeles:20261128T190000
+SUMMARY:3rd Annual Holiday Tree Lighting\, Carousel Lighting + Free Ice Sk
+ ating (Yerba Buena Gardens)
+LOCATION:Yerba Buena Gardens\, Mission St. & 3rd St.\, San Francisco\, CA\
+ , San Francisco
+URL:https://sf.funcheap.com/3rd-annual-holiday-tree-lighting-carousel-ligh
+ ting-free-ice-skating-yerba-buena-gardens/
+DESCRIPTION:A yearly tradition\nhttps://sf.funcheap.com/3rd-annual-holiday
+ -tree-lighting-carousel-lighting-free-ice-skating-yerba-buena-gardens/\n\
+ nCome kick off the holiday season with us at Yerba Buena Gardens with a t
+ ree lighting\, hot cocoa\, and more! With cheer and good spirits\, we inv
+ ite you to celebrate the holiday season at Yerba Buena Gardens. Enjoy hot
+  cocoa\, a tree lighting\, free carousel rides\, ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e3f269c1078d@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261114T100000
+DTEND;TZID=America/Los_Angeles:20261114T150000
+SUMMARY:Garden for the Environment Workday
+LOCATION:Garden for the Environment\, San Francisco
+URL:https://ma.to/event/garden-for-the-environment-workday-14-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/garden-for-the-environme
+ nt-workday-14-nov-2026\n\nA community workday at Garden for the Environme
+ nt\, running from 10:00 AM to 3:00 PM. The activity is part of a lineup o
+ f family-friendly nature events around San Francisco.
+END:VEVENT
+END:VCALENDAR

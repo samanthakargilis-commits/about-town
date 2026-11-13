@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f3eab70552f7@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261212T200000
+DTEND;TZID=America/Los_Angeles:20261213T000000
+SUMMARY:Hot Lunch ~ Drunk Horse ~ Hightower
+LOCATION:Bottom Of The Hill\, 1233 17th Street\, San Francisco\, Californi
+ a 94107\, United States San Francisco\, San Francisco
+URL:https://dice.fm/event/6a7279a4f385db0001063c0c
+DESCRIPTION:New in your area\nhttps://dice.fm/event/6a7279a4f385db0001063c
+ 0c\n\nKALX presents: Hightower opening the bill with impressive licks and
+  Oakland's Drunk Horse keeps it up with hip moving grooves. Headliners Ho
+ t Lunch brings wizardry to skate punk for the thrash finale. The Bottom o
+ f the Hill does not use QR codes for entry. You must present a valid phot
+ o ID that matches the name on your DICE ticket to enter. All ticket trans
+ fers must be completed through the DICE a
+END:VEVENT
+END:VCALENDAR

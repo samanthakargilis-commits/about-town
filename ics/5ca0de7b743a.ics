@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5ca0de7b743a@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261115T120000
+DTEND;TZID=America/Los_Angeles:20261115T140000
+SUMMARY:Lattes & Lore: Final Meet & Greet + Dominion
+LOCATION:Cafe Rumi\, 4799 Heyer Ave\, Castro Valley\, CA Castro Valley\, C
+ astro Valley
+URL:https://www.meetup.com/lattes-and-lore-a-romantasy-book-club/events/31
+ 7298853/
+DESCRIPTION:Castro Valley\nhttps://www.meetup.com/lattes-and-lore-a-romant
+ asy-book-club/events/317298853/\n\n**For this next Lattes & Lore meetup\,
+  we’re doing one final meet & greet for anyone new who couldn’t make 
+ the first one 🤗** **Bring your copy of Dominion by Jean Kwok - whether
+  you’ve just started\, are halfway through\, or haven’t gotten very f
+ ar yet. No pressure to be finished! I’ll also have a few new games and 
+ prompts planned to help everyone mingle and get to know each other a litt
+ le better. We
+END:VEVENT
+END:VCALENDAR

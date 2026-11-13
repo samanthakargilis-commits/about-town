@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8a8a4786bd63@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261114T100000
+DTEND;TZID=America/Los_Angeles:20261114T120000
+SUMMARY:Beginner Fishing Workshop
+LOCATION:San Francisco\, San Francisco
+URL:https://ma.to/event/beginner-fishing-workshop-14-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/beginner-fishing-worksho
+ p-14-nov-2026\n\nA beginner fishing workshop with hands-on instruction in
+  fishing basics\, running from 10:00 AM to 12:00 PM. The session is part 
+ of a lineup of family-friendly nature events around San Francisco.
+END:VEVENT
+END:VCALENDAR

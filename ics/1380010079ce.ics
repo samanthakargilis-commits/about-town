@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1380010079ce@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;VALUE=DATE:20261116
+DTEND;VALUE=DATE:20261117
+SUMMARY:Queer Bowling Night w/ Free Welcome Drink
+LOCATION:Mission Bowling Club\, 3176 17th St.\, San Francisco\, CA\, San F
+ rancisco
+URL:https://sf.funcheap.com/queer-bowling-mbc/
+DESCRIPTION:Gay / queer\nhttps://sf.funcheap.com/queer-bowling-mbc/\n\nOve
+ rview Queer Bowling MBC Pride may only be once a year\, but Queer Bowling
+  is at MBC every month! Join us on the third Monday of each month to supp
+ ort our community and raise awareness of local non-profits fighting the g
+ ood fight. Complimentary bowling is sponsored by ...
+END:VEVENT
+END:VCALENDAR

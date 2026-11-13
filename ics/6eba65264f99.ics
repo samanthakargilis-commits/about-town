@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6eba65264f99@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Devon Halliday with Daniel Gumbiner – To Stay\, To Stay\, To Sta
+ y
+LOCATION:Book Passage (Corte Madera)\, 51 Tamal Vista Blvd. Corte Madera\,
+  CA
+URL:https://sf.funcheap.com/devon-halliday-daniel-gumbiner-stay-stay-stay/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/devon-halliday-danie
+ l-gumbiner-stay-stay-stay/\n\n“To Stay\, To Stay\, To Stay is about the
+  great contradiction of love\, that it brings both great bafflement and g
+ reat clarity\, and somehow\, ultimately\, isn’t a contradiction. So muc
+ h hard-earned daily wisdom here. I needed this book. You probably do too.
+ ”—Peter Orner\, author of The Gossip ...
+END:VEVENT
+END:VCALENDAR

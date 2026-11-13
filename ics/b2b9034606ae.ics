@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b2b9034606ae@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261206T130000
+DTEND;TZID=America/Los_Angeles:20261206T160000
+SUMMARY:Celebrate 2 years of Crafternoon Club
+LOCATION:Society of Thumbs\, 1398 Valencia St San Francisco\, San Francisc
+ o
+URL:https://partiful.com/e/injpzE5oreoPOwO0WVuf
+DESCRIPTION:New in your area\nhttps://partiful.com/e/injpzE5oreoPOwO0WVuf\
+ n\nCrafternoon Club is turning 2 and we want you to celebrate with you! W
+ e will have vendors\, drop-in crafts\, and even some fun birthday surpris
+ es. Hope to see you there! This event is free to the public\, but there w
+ ill be items for sale.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:22f38a4daa61@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:Free Spanish-Language Tour of Cantor Arts Center (Stanford)
+LOCATION:Cantor Arts Center\, Lomita Dr at Museum Way\, Stanford CA\, 9430
+ 5\, Stanford
+URL:https://sf.funcheap.com/free-spanishlanguage-tour-cantor-arts-center-s
+ tanford/
+DESCRIPTION:Museum exhibits · Stanford\nhttps://sf.funcheap.com/free-span
+ ishlanguage-tour-cantor-arts-center-stanford/\n\nExperiencias guiadas por
+  la galería en español ¡Ven a conocer el museo Cantor! Explora las col
+ ecciones del Cantor con un guía que te guiará a través de una selecci
+ ón de obras de diferentes culturas y épocas. Los participantes están m
+ uy bienvenidos a participar en la conversación y ...
+END:VEVENT
+END:VCALENDAR

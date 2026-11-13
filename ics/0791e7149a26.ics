@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0791e7149a26@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261114T110000
+DTEND;TZID=America/Los_Angeles:20261114T170000
+SUMMARY:SF Vegan Fest
+LOCATION:1111 Gough St\, 1111 Gough St\, SF\, San Francisco
+URL:https://ma.to/event/sf-vegan-fest-14-nov-2026-1
+DESCRIPTION:New in your area\nhttps://ma.to/event/sf-vegan-fest-14-nov-202
+ 6-1\n\nSF Vegan Fest features dozens of plant-based food and drink brands
+  at 1111 Gough St on November 14\, 11am–5pm. Reculture Foods hosts a bo
+ oth with tempeh tastings and cooking demos led by guest chef Alan Ramdani
+  throughout the day\, alongside its newly released Oseng Glaze. @drinknus
+ a is among the vendors. Tickets are available via the link in the host's 
+ bio.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3922094def9d@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261114T193000
+DTEND;TZID=America/Los_Angeles:20261114T213000
+SUMMARY:Mesa y Sofreh Friendsgiving
+LOCATION:Movida\, 555 2nd St\, San Francisco\, San Francisco
+URL:https://ma.to/event/mesa-y-sofreh-friendsgiving-14-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/mesa-y-sofreh-friendsgiv
+ ing-14-nov-2026\n\nMesa y Sofreh: A Movida Friendsgiving brings the San F
+ rancisco community together for a night of Persian-Mexican flavors\, shar
+ ed moments and beats by DJ Afrooz. The evening is part of the November pr
+ ogramme at Movida\, located at 555 2nd St in San Francisco. Reservations 
+ are available through the link in bio.
+END:VEVENT
+END:VCALENDAR

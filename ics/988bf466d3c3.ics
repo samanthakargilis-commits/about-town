@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:988bf466d3c3@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T120000
+DTEND;TZID=America/Los_Angeles:20261113T170000
+SUMMARY:Another Lamp Show
+LOCATION:David Ireland House\, 500 Capp Street\, San Francisco\, CA\, San 
+ Francisco
+URL:https://ma.to/event/another-lamp-show-13-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/another-lamp-show-13-nov
+ -2026\n\nAnother Lamp Show presents over a hundred one-of-a-kind lamp wor
+ ks at the David Ireland House. The run is October 30–November 28\, with
+  open hours Fridays and Saturdays from noon to 5pm. Lamps are available f
+ or purchase in person and online until November 28\; all lamps support th
+ e future of the David Ireland House.
+END:VEVENT
+END:VCALENDAR

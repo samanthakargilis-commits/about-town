@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:39d10d516c5f@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T213000
+DTEND;TZID=America/Los_Angeles:20261113T233000
+SUMMARY:The MF Function
+LOCATION:Cobb's Comedy Club\, 915 Columbus Avenue\, San Francisco
+URL:https://www.ticketmaster.com/the-mf-function-san-francisco-california-
+ 11-13-2026/event/1C00652F187F9ACC
+DESCRIPTION:Comedy + Discourse · 2-drink minimum\nhttps://www.ticketmaste
+ r.com/the-mf-function-san-francisco-california-11-13-2026/event/1C00652F1
+ 87F9ACC\n\nThe MF Function with @georgebrettolson is a night of stand-up 
+ comedy followed by a cultural town hall. A multicultural delegation of co
+ mics performs\, then the mics stay hot for an audience-driven negotiation
+  to decide what cultural rules stay\, what goes and what should be brough
+ t back. Tickets are available.
+END:VEVENT
+END:VCALENDAR

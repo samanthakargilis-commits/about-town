@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d7b10ce835b3@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261122T120000
+DTEND;TZID=America/Los_Angeles:20261122T170000
+SUMMARY:Hawaiian Arts Fest with Kumu Kawika Alfiche and Hālau o Keikiali`
+ i (Oakland)
+LOCATION:Oakland Asian Cultural Center\, 388 9th Street\, Oakland\, CA\, O
+ akland
+URL:https://sf.funcheap.com/hawaiian-arts-fest-kumu-kawika-alfiche-hlau-ke
+ ikialii-oakland/
+DESCRIPTION:Oakland\nhttps://sf.funcheap.com/hawaiian-arts-fest-kumu-kawik
+ a-alfiche-hlau-keikialii-oakland/\n\nJoin us for a rich celebration of Ha
+ waiian songs and dances\, both ancient and modern\, with the Kaululehua H
+ awaiian Cultural Center. Learn about Hawaiian culture through performance
+ s\, demonstrations\, and a vendor marketplace. Featured performers will i
+ nclude Kumu Kawika Alfiche and Hālau o Keikiali`i. This family-friendly 
+ ...
+END:VEVENT
+END:VCALENDAR

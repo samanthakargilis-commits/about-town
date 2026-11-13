@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:32e6e802395e@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261114T120000
+DTEND;TZID=America/Los_Angeles:20261114T140000
+SUMMARY:HOY! Drag Brunch: 12PM Seating
+LOCATION:FOB Kitchen — Temescal\, 5179 Telegraph Ave.\, Temescal
+URL:https://ma.to/event/hoy-drag-brunch-12pm-seating-2026-11-14
+DESCRIPTION:Gay / queer + Camp & Halloween · Temescal\nhttps://ma.to/even
+ t/hoy-drag-brunch-12pm-seating-2026-11-14\n\nThe 12 PM seating of HOY! Dr
+ ag Brunch at MICHELIN Bib award-winning FOB Kitchen — Temescal celebrat
+ es eight years of the Temescal location with drag performances\, party ga
+ mes with special prizes\, and Filipino dishes inspired by childhood parti
+ es. Doors open at 11:30 AM and the show begins at 12 PM. All ages are wel
+ come\, though some content may not be suitable for all audiences. Admissi
+ on is $15 pe
+END:VEVENT
+END:VCALENDAR

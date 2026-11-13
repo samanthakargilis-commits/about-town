@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5926b2e9c691@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261121T180000
+DTEND;TZID=America/Los_Angeles:20261121T200000
+SUMMARY:Quietly Queer Friendsgiving
+LOCATION:Parkside\, Parkside\, San Francisco\, CA\, USA\, San Francisco\, 
+ CA San Francisco\, San Francisco
+URL:https://www.meetup.com/quietly-queer-meetup-for-lgbtq-introverts-and-a
+ llies/events/317280753/
+DESCRIPTION:Gay / queer + Discourse\nhttps://www.meetup.com/quietly-queer-
+ meetup-for-lgbtq-introverts-and-allies/events/317280753/\n\nJoin Quietly 
+ Queer for a Friendsgiving gathering on **Saturday\, November 21 from 6PM 
+ in the Sunset District of San Francisco** (two blocks from the L train)! 
+ We're getting together for a few hours of food\, conversation\, and commu
+ nity on Saturday evening. **This gathering is being graciously hosted by 
+ our dear friend and QQ member Drew**\, whom some of you may already know\
+ , and I'll be there as your
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:579c0b25e47f@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:Temaki Night
+LOCATION:koho co\, 1675 Post St\, East Mall\, 2nd Floor.\, San Francisco\,
+  CA 94115\, San Francisco
+URL:https://sf.funcheap.com/temaki-night/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/temaki-night/\n\nOve
+ rview Roll your own temaki sushi\, enjoy Japanese food\, and make new fri
+ ends in SF. Come solo or bring a friend\; everyone’s welcome! Temaki Ni
+ ght: Roll\, Eat\, Connect Making friends in San Francisco isn’t always 
+ easy\, especially when every gathering starts to feel like networking. Te
+ maki Night is something ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:320a563a25f0@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T113000
+DTEND;TZID=America/Los_Angeles:20261113T133000
+SUMMARY:Hed Very Thai Japantown Opening
+LOCATION:hed Very Thai Japantown\, 1800 Sutter Street\, San Francisco\, Sa
+ n Francisco
+URL:https://ma.to/event/hed-very-thai-japantown-opening-13-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/hed-very-thai-japantown-
+ opening-13-nov-2026\n\nThe new San Francisco location of Hed Very Thai op
+ ens in Japantown on Friday\, November 13\, 2026\, taking over the former 
+ HED 11 space at 1800 Sutter St. The kitchen serves the Thai bento set\, f
+ eaturing beloved local Thai dishes presented as a set menu with Japanese 
+ influences. Bookings are available via Resy.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:015c4eb37e14@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261121T170000
+DTEND;TZID=America/Los_Angeles:20261121T190000
+SUMMARY:Our Monthly Concert
+LOCATION:St Alban's Episcopal Church\, 1501 Washington Ave\, Albany\, CA 9
+ 4706\, USA\, Albany\, CA Albany\, Albany
+URL:https://www.meetup.com/bay-area-music-circle/events/315221302/
+DESCRIPTION:Concerts · Albany\nhttps://www.meetup.com/bay-area-music-circ
+ le/events/315221302/\n\nThis event consists of * A concert with 6-8 perfo
+ rmers\, followed by * A potluck supper and classical "jam session"\, held
+  at a member's home. If you want to perform for the concert please sign u
+ p here\, preferably well in advance of the event: https://goo.gl/HgfXBz I
+ f you haven't performed one of our events before\, you must attend at lea
+ st one BAMC concert as a listener prior to performing. Speak wi
+END:VEVENT
+END:VCALENDAR

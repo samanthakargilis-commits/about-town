@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1a02bce859b2@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261115T130000
+DTEND;TZID=America/Los_Angeles:20261115T173000
+SUMMARY:The SF Tea-Rave
+LOCATION:The Foundry SF\, The Foundry SF\, 1425 Folsom St\, San Francisco\
+ , CA 94103\, USA\, San Francisco
+URL:https://luma.com/sftearave
+DESCRIPTION:Weird & unusual + Art\nhttps://luma.com/sftearave\n\nArielle Z
+ uckerberg (AZ) and Mike Wang (ZM) dreamed this up to bring a little Sunda
+ y magic to San Francisco. A few weeks ago\, the “secret” got out: AZ 
+ is a DJ. A seriously good one. So we figured\, why not throw a pop-up bui
+ lt around great music and festive drinks? On the decks: AZ Arielle has be
+ en DJing since 2018\, playing clubs\, small festivals\, Burning Man\, and
+  40th birthdays. It’s her side quest
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fbdc9eb45f34@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261212T110000
+DTEND;TZID=America/Los_Angeles:20261212T170000
+SUMMARY:SF’s Dogpatch Holiday Market 2026: Art\, Gifts\, Food & Holiday 
+ Activities
+LOCATION:Dogpatch\, 3rd St. & 22nd St.\, San Francisco\, CA\, San Francisc
+ o
+URL:https://sf.funcheap.com/sfs-dogpatch-holiday-market-2026-shopping-live
+ -music/
+DESCRIPTION:Fairs & festivals + Art · A yearly tradition\nhttps://sf.func
+ heap.com/sfs-dogpatch-holiday-market-2026-shopping-live-music/\n\nJoin us
+  for the Dogpatch Holiday Market on Saturday\, December 12\, from 11:00 A
+ M to 5:00 PM on 22nd Street between Illinois and Indiana Streets. Get int
+ o the holiday spirit as you browse unique gifts\, art\, and handcrafted g
+ oods from local makers\, artists\, and businesses\, ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bfe3cbc39440@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261205T110000
+DTEND;TZID=America/Los_Angeles:20261205T170000
+SUMMARY:East Bay Open Studios 2026
+LOCATION:All Over East Bay
+URL:https://sf.funcheap.com/east-bay-open-studios-2026-dec-513/
+DESCRIPTION:Big Bay Area traditions + Art\nhttps://sf.funcheap.com/east-ba
+ y-open-studios-2026-dec-513/\n\nEast Bay Open Studios returns for two fre
+ e weekends with over 200 artists opening their studios to the public. Thi
+ s free\, self-guided event invites you to wander into local studios\, gal
+ leries\, and community hubs in Oakland\, Berkeley\, and beyond. Come curi
+ ous — meet the creative ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:56696ebcf962@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261212T120000
+DTEND;TZID=America/Los_Angeles:20261212T190000
+SUMMARY:San Francisco SantaCon 2026: City-Wide Santa Pub Crawl
+LOCATION:Union Square\, San Francisco
+URL:https://sf.funcheap.com/city-guide/december-street-fairs-festivals/
+DESCRIPTION:Comedy · A yearly tradition\nhttps://sf.funcheap.com/city-gui
+ de/december-street-fairs-festivals/\n\n“SantaCon” is San Francisco’
+ s annual city-wide Santas-only pub crawl happening on Saturday\, December
+  12\, 2026*. SantaCon Comedy Show! Funcheap is hosting our second ever Sa
+ ntaCon Comedy Crawl at The Function 1414 Market St. @ Polk opening at 6p 
+ with winter cocktail\, and a Santa + Elves comedy ...
+END:VEVENT
+END:VCALENDAR

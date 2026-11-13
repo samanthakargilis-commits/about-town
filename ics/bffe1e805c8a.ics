@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bffe1e805c8a@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261206T130000
+DTEND;TZID=America/Los_Angeles:20261206T153000
+SUMMARY:PAAM’s Holiday Spectacular - Sunday\, December 6th
+LOCATION:Palace of Fine Arts Theatre\, 3301 Lyon Street\, San Francisco\, 
+ CA 94123 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/paams-holiday-spectacular-sunday-december
+ -6th-tickets-2002751931941
+DESCRIPTION:Theatre\nhttps://www.eventbrite.com/e/paams-holiday-spectacula
+ r-sunday-december-6th-tickets-2002751931941\n\nCelebrate the holidays wit
+ h the Performing Arts Academy of Marin!
+END:VEVENT
+END:VCALENDAR

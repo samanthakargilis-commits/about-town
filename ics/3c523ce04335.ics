@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3c523ce04335@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261113T200000
+DTEND;TZID=America/Los_Angeles:20261114T000000
+SUMMARY:Heaven Knows: Night of R&B
+LOCATION:Craft & Cork\, 700 Main St.\, Suite 110\, Suisun City\, CA\, San 
+ Francisco
+URL:https://ma.to/event/heaven-knows-13-nov-2026
+DESCRIPTION:Craft\nhttps://ma.to/event/heaven-knows-13-nov-2026\n\nHeaven 
+ Knows brings DJ Heartbreak to Craft & Cork for a night of R&B from across
+  the decades\, including slow jams\, deeper cuts\, and throwbacks. Enjoy 
+ the music along with wine\, craft beer\, house cocktails\, and food by Cr
+ eole Caviar. The event runs from 8 PM to midnight. The first Suisun City 
+ edition sold out\, so early arrival is recommended. Tickets available at 
+ DJHEARTBREAK.COM.
+END:VEVENT
+END:VCALENDAR

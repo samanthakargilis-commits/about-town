@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cdc776d3e3ce@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261114T120000
+DTEND;TZID=America/Los_Angeles:20261114T170000
+SUMMARY:The MORE Room: Bloom\, Sip\, Shop
+LOCATION:In The Black\, 1567 Fillmore Street\, San Francisco\, CA 94115\, 
+ San Francisco
+URL:https://ma.to/event/the-more-room-bloom-sip-shop-14-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/the-more-room-bloom-sip-
+ shop-14-nov-2026\n\nThe MORE RoomTM Experience: Bloom\, Sip\, Shop is an 
+ afternoon of blooming into more\, connecting with women\, and shopping wi
+ th intention. Hosted at In The Black\, the event features real conversati
+ ons\, meaningful connections\, and a reminder to shop with purpose. Atten
+ dees can also participate in a bloom bar where they choose focal flowers\
+ , accents\, and greenery to create a bouquet. Runs from 1pm to 5
+END:VEVENT
+END:VCALENDAR

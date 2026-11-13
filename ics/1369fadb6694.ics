@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1369fadb6694@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261124T170000
+DTEND;TZID=America/Los_Angeles:20261124T181500
+SUMMARY:Primal Breathwork - An Intimate Group Session with Priya
+LOCATION:The Mind Heart Center\, San Francisco\, 1690 Union Street\, San F
+ rancisco\, CA 94123 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/primal-breathwork-an-intimate-group-sessi
+ on-with-priya-tickets-1997091581681
+DESCRIPTION:Meditation\nhttps://www.eventbrite.com/e/primal-breathwork-an-
+ intimate-group-session-with-priya-tickets-1997091581681\n\nGo deeper. Bre
+ athe beyond the ordinary. Primal Breathwork with Priya invites you to fee
+ l higher\, more open\, connected & alive in your body
+END:VEVENT
+END:VCALENDAR

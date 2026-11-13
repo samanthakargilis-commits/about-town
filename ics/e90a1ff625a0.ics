@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e90a1ff625a0@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:Free Holiday Makers Market + Santa Meet-and-Greet (Berkeley)
+LOCATION:Fourth Street Makers Row\, 1919 Fourth Street\, Berkeley\, CA 947
+ 10\, Berkeley
+URL:https://sf.funcheap.com/free-holiday-makers-market-santa-meetandgreet-
+ berkeley/
+DESCRIPTION:Craft + Fairs & festivals · Berkeley\nhttps://sf.funcheap.com
+ /free-holiday-makers-market-santa-meetandgreet-berkeley/\n\nFourth Street
+  in Berkeley is getting festive. Merry on Fourth is a free holiday celebr
+ ation at Fourth Street Makers Row with a makers market full of handmade g
+ ifts\, a Santa and Mrs. Claus meet and greet\, free snow globe making\, h
+ oliday music and seasonal treats. Highlights: – ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f7ebe4de892e@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261113T180000
+DTEND;TZID=America/Los_Angeles:20261113T220000
+SUMMARY:John Paul Amaral Opening Reception
+LOCATION:Fox Tale Fermentation Project\, 30 E. Santa Clara St\, Ste 120\, 
+ San Jose\, CA 95113\, San Jose
+URL:https://ma.to/event/john-paul-amaral-opening-reception-13-nov-2026
+DESCRIPTION:Museum exhibits + Art · San Jose\nhttps://ma.to/event/john-pa
+ ul-amaral-opening-reception-13-nov-2026\n\nAn opening reception for John 
+ Paul Amaral's beadwork exhibition\, held in celebration of National Nativ
+ e American Heritage Month. The intricate pieces each tell stories through
+  fine craftsmanship. The exhibition is on view November 11 through Decemb
+ er 6.
+END:VEVENT
+END:VCALENDAR

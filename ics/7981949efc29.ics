@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7981949efc29@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T190000
+DTEND;TZID=America/Los_Angeles:20261113T210000
+SUMMARY:Nirvanna the Band the Show the Fest
+LOCATION:Balboa Theatre\, San Francisco
+URL:https://ma.to/event/nirvanna-the-band-the-show-the-fest-13-nov-2026
+DESCRIPTION:Theatre\nhttps://ma.to/event/nirvanna-the-band-the-show-the-fe
+ st-13-nov-2026\n\nNirvanna the Band the Show the Fest is a weekend-long B
+ ay Area celebration at the Balboa Theatre\, Nov. 13–15. The programme i
+ ncludes theatrical screenings of Seasons One and Two of Nirvanna the Band
+  the Show\, Nirvanna the Band the Show the Movie\, and Back to the Future
+  on 35mm. It is co-presented by @amoebasf. A NEON prize pack includes the
+  new box set for the entirety of Nirvanna the Band the Sho
+END:VEVENT
+END:VCALENDAR

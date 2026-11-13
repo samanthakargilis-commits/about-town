@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8a7d93bb8004@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T180000
+DTEND;TZID=America/Los_Angeles:20261113T210000
+SUMMARY:Irving Norman: Fight for Life
+LOCATION:@sanjosemuseumofart\, 110 South Market Street\, San Jose\, San Jo
+ se
+URL:https://ma.to/event/irving-norman-fight-for-life-13-nov-2026
+DESCRIPTION:San Jose\nhttps://ma.to/event/irving-norman-fight-for-life-13-
+ nov-2026\n\nNov 14 · @sanjosemuseumofart\, San Francisco. An opening cel
+ ebration for Irving Norman: Fight for Life\, running 6-9 PM. When Friday\
+ , 13 November 18:00–21:00 Add to Calendar Add to Calendar About An open
+ ing celebration for Irving Norman: Fight for Life\, running 6-9 PM. Organ
+ ised by artbae.info Where @sanjosemuseumofart \, San Francisco 110 South 
+ Market Street\, San Jose Open in Google Maps
+END:VEVENT
+END:VCALENDAR

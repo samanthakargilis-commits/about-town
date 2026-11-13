@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6bae36894a94@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261207T080000
+DTEND;TZID=America/Los_Angeles:20261207T170000
+SUMMARY:2026 Neurotrauma Symposium
+LOCATION:Mission Bay Conference Center\, Robertson Auditorium\, 1675 Owens
+  Street\, San Francisco\, CA 94158 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/2026-neurotrauma-symposium-tickets-199502
+ 5433777
+DESCRIPTION:Discourse\nhttps://www.eventbrite.com/e/2026-neurotrauma-sympo
+ sium-tickets-1995025433777\n\nJoin us at the 2025 Neurotrauma Symposium f
+ or cutting-edge research and discussions on brain injuries and treatments
+ !
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a06e259ed1cb@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:Fort Mason’s Giant Holiday Night Market
+LOCATION:Fort Mason\, San Francisco
+URL:http://www.offthegrid.com
+DESCRIPTION:Fairs & festivals + Craft · Featured on Funcheap\nhttp://www.
+ offthegrid.com\n\nDecember 18\, 2026 – SF (Fort Mason) – FREE – Off
+  the Grid returns to Fort Mason for a special holiday night market featur
+ ing 25+ food trucks\, 50+ craft vendors\, live music and DJs\, hands-on f
+ amily art workshops\, strolling Dickens performers \, seasonal drinks and
+  bites\, public art\, and festive waterfront views. Off the Grid
+END:VEVENT
+END:VCALENDAR

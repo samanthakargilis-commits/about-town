@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3f065e552e84@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261204T150000
+DTEND;TZID=America/Los_Angeles:20261204T200000
+SUMMARY:Local Maker Holiday Bazaar (Berkeley)
+LOCATION:Jessica Lasky Catering\, 1209 Sixth Street\, Berkeley\, CA\, Berk
+ eley
+URL:https://sf.funcheap.com/local-maker-holiday-bazaar-berkeley/
+DESCRIPTION:Craft · Berkeley\nhttps://sf.funcheap.com/local-maker-holiday
+ -bazaar-berkeley/\n\nJessica Lasky Catering hosts a free Holiday Bazaar i
+ n Berkeley featuring local makers\, food\, drinks\, and music. The event 
+ takes place Friday\, December 4\, from 3 to 8 PM. Original Event Descript
+ ion: ✨ The holidays are on the way! Add this festive new Holiday Bazaar
+  to your calendar cuz ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8cf9da6be2c0@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T213000
+DTEND;TZID=America/Los_Angeles:20261113T233000
+SUMMARY:DJ Night with Glen Coco
+LOCATION:Five Points Cocktail Bar\, 169 W. Santa Clara St.\, Santa Clara
+URL:https://ma.to/event/dj-night-with-glen-coco-13-nov-2026
+DESCRIPTION:Dance nights · Santa Clara\nhttps://ma.to/event/dj-night-with
+ -glen-coco-13-nov-2026\n\nGlen Coco spins a DJ set at Five Points Cocktai
+ l Bar on Friday\, November 13\, 2026\, from 9:30 pm until last call. The 
+ night is part of a four-date DJ lineup at the bar\, November 12 to 15.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7f1f73cbe579@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Free Monthly Singer-Songwriter Open Mic w/ Khalia
+LOCATION:Clarion Performing Arts Center\, 2 Waverly Pl\, San Francisco\, C
+ A\, San Francisco
+URL:https://sf.funcheap.com/free-monthly-singersongwriter-open-mic-khalia-
+ sf/
+DESCRIPTION:Singing + Concerts\nhttps://sf.funcheap.com/free-monthly-singe
+ rsongwriter-open-mic-khalia-sf/\n\nPLEASE READ BEFORE YOU SIGN UP TO PERF
+ ORM: 1) Clarion’s Music Open Mic and Talent Show entertains a specific 
+ audience that enjoys pop and classical songs and music\, a little humor\,
+  and dances like hula and jazz. While we welcome artists of other genres\
+ , the host ...
+END:VEVENT
+END:VCALENDAR

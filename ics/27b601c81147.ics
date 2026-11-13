@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:27b601c81147@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Christmas Craft Fair
+LOCATION:Bell Manor Apartments (Community Room)\, 8790 Bell Road\, Windsor
+ \, CA 95492\, Windsor
+URL:https://sf.funcheap.com/christmas-craft-fair/
+DESCRIPTION:Craft + Fairs & festivals · Windsor\nhttps://sf.funcheap.com/
+ christmas-craft-fair/\n\nEnjoy homemade and handmade crafts\, a festive a
+ tmosphere and a delightful selection of artists and creations. Treats to 
+ eat and a fun raffle too! Entrance is free. ALL ITEMS ARE UP TO $25\, to 
+ help you shop for all the people on your holiday list. We’ll be ...
+END:VEVENT
+END:VCALENDAR

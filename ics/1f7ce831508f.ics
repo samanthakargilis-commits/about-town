@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1f7ce831508f@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261204T170000
+DTEND;TZID=America/Los_Angeles:20261204T210000
+SUMMARY:San Leandro’s 29th Annual Tree Lighting\, Holiday Market\, Train
+  Rides & Performances
+LOCATION:Estudillo Plaza\, 1301 E. 14th St.\, San Leandro\, CA\, San Leand
+ ro
+URL:https://sf.funcheap.com/san-leandros-annual-tree-lighting-holiday-mark
+ et-train-rides-performances-2/
+DESCRIPTION:Fairs & festivals · A yearly tradition · San Leandro\nhttps:
+ //sf.funcheap.com/san-leandros-annual-tree-lighting-holiday-market-train-
+ rides-performances-2/\n\nDowntown San Leandro invites you to the 29th Ann
+ ual “It’s a Wonderful Night” holiday celebration! Ring in the holid
+ ays with the annual tree lighting\, holiday performances\, free photos wi
+ th Santa\, holiday train rides\, kids zone\, holiday market\, holiday dri
+ nks\, and more! This family-friendly event will ...
+END:VEVENT
+END:VCALENDAR

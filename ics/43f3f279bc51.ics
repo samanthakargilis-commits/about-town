@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:43f3f279bc51@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261205T110000
+DTEND;TZID=America/Los_Angeles:20261205T130000
+SUMMARY:sf clothing swap
+LOCATION:TBD
+URL:https://partiful.com/e/ebMOF4yMUZl9MjSb7p2x
+DESCRIPTION:Estate & sample sales\nhttps://partiful.com/e/ebMOF4yMUZl9MjSb
+ 7p2x\n\nfeeling uninspired by your closet? get the rush of new clothes wi
+ thout spending money 🛍️ HOW IT WORKS bring up to 5 pieces you love O
+ N HANGERS but never wear\, like: - super cute but doesn't fit right - use
+ d to love\, never reach for anymore - wore once for an event you leave wi
+ th the same number of items you bring (this will be ENFORCED). this is a 
+ community event\, so bring clothes you actually lov
+END:VEVENT
+END:VCALENDAR

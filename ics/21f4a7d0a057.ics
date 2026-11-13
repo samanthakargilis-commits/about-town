@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:21f4a7d0a057@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261113T193000
+DTEND;TZID=America/Los_Angeles:20261113T213000
+SUMMARY:Mercury Soul at Grace Cathedral
+LOCATION:Grace Cathedral\, San Francisco
+URL:https://ma.to/event/mercury-soul-at-grace-cathedral-13-nov-2026-1
+DESCRIPTION:Theatre + Weird & unusual\nhttps://ma.to/event/mercury-soul-at
+ -grace-cathedral-13-nov-2026-1\n\nMercury Soul brings live musicians and 
+ DJs together for a programme that pairs sweeping classical music with ele
+ ctronic beats\, immersive projections and unexpected collaborations. The 
+ evening includes a cathedral-sized dance party inside Grace Cathedral. Ti
+ ckets are available.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f8b5a28e69da@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T140000
+DTEND;TZID=America/Los_Angeles:20261113T153000
+SUMMARY:Clay & Connection: Handbuilding Workshop with Chubby Hands Ceramic
+ s
+LOCATION:Jiaren Cafe\, 1171 Homestead Road\, #140b\, Santa Clara\, CA 9505
+ 0 Santa Clara\, Santa Clara
+URL:https://www.eventbrite.com/e/clay-connection-handbuilding-workshop-wit
+ h-chubby-hands-ceramics-tickets-2004397759656
+DESCRIPTION:Craft + Art · Santa Clara\nhttps://www.eventbrite.com/e/clay-
+ connection-handbuilding-workshop-with-chubby-hands-ceramics-tickets-20043
+ 97759656\n\nEmbark on a creative adventure by delving into the art of wor
+ king with clay!
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4694ed5ed6d7@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261210T190000
+DTEND;TZID=America/Los_Angeles:20261210T230000
+SUMMARY:Mother Soki with Baileyrp
+LOCATION:Kilowatt\, 3160 16th Street\, San Francisco\, California 94103\, 
+ United States San Francisco\, San Francisco
+URL:https://dice.fm/event/6abfdf36a7ef550001c506ad
+DESCRIPTION:Art · Thursday evening\nhttps://dice.fm/event/6abfdf36a7ef550
+ 001c506ad\n\nMother Soki is among a generation of new artists forging the
+ ir paths and creating music that attracts fans seeking a soul connection.
+  That creativity led her to sign with independent label Mom+Pop early in 
+ 2025. A bit farther back in her trajectory\, Mother Soki wasn't even clea
+ r about how to pursue music. Carving her way through adolescence with a f
+ ierce artistic drive\, though\, the Minneapolis-bas
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ac70062257b2@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261201T170000
+DTEND;TZID=America/Los_Angeles:20261201T190000
+SUMMARY:World AIDS Day: Free Kitchen Tours + Bites (Project Open Hand)
+LOCATION:Project Open Hand\, 730 Polk Street\, San Francisco\, San Francis
+ co
+URL:https://sf.funcheap.com/world-aids-day-free-kitchen-tours-bites-projec
+ t-open-hand/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/world-aids-day-free-
+ kitchen-tours-bites-project-open-hand/\n\nProject Open Hand’s World AID
+ S Day Open House Tuesday\, December 1 730 Polk Street\, San Francisco 5 
+ – 7 PM Join Project Open Hand and other HIV/AIDS agencies as we commemo
+ rate World AIDS Day\, connect with our neighbors\, and share resources an
+ d opportunities with the community. Event Highlights: A word from ...
+END:VEVENT
+END:VCALENDAR

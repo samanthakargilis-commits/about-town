@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:db4efd69c449@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261114T103000
+DTEND;TZID=America/Los_Angeles:20261114T120000
+SUMMARY:Upper Noe Cleanup w/ Free Coffee For Volunteers
+LOCATION:Upper Noe Recreation Center\, 295 Day St\, San Francisco\, San Fr
+ ancisco
+URL:https://sf.funcheap.com/upper-noe-cleanup-free-coffee-volunteers/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/upper-noe-cleanup-fr
+ ee-coffee-volunteers/\n\nMeet at Upper Noe Recreation Center (295 Day St)
+  to grab our supplies and form our crew. Then\, cleaning will occur from 
+ 10:30am to 12:00pm around the neighborhood. Stay afterwards for a free co
+ ffee and bagel from Martha & Bros. Coffee Co. (1551 Church St). ...
+END:VEVENT
+END:VCALENDAR

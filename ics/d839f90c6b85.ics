@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d839f90c6b85@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261113T190000
+DTEND;TZID=America/Los_Angeles:20261113T210000
+SUMMARY:La Bola Negra Opening Day
+LOCATION:The Roxie Theater\, San Francisco
+URL:https://ma.to/event/la-bola-negra-opening-day-2026-11-13
+DESCRIPTION:Gay / queer + Theatre\nhttps://ma.to/event/la-bola-negra-openi
+ ng-day-2026-11-13\n\nLA BOLA NEGRA opens at The Roxie Theater on November
+  13. Directing duo Los Javis deliver a maximalist queer epic tracing love
+ \, desire and resilience across three generations in Spain. Tickets are a
+ vailable through the Roxie Theater.
+END:VEVENT
+END:VCALENDAR

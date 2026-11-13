@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2351c71a83f0@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261219T200000
+DTEND;TZID=America/Los_Angeles:20261219T220000
+SUMMARY:The Richie Cunning & DJBADDJ Holiday Special Year 2
+LOCATION:Neck of the Woods\, 406 Clement St\, San Francisco
+URL:https://www.ticketweb.com/event/the-richie-cunning-djbaddj-neck-of-the
+ -woods-tickets/14402234?theme=nwoods&REFID=clientsitewp
+DESCRIPTION:New in your area\nhttps://www.ticketweb.com/event/the-richie-c
+ unning-djbaddj-neck-of-the-woods-tickets/14402234?theme=nwoods&REFID=clie
+ ntsitewp\n\n
+END:VEVENT
+END:VCALENDAR

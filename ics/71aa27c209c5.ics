@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:71aa27c209c5@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261114T100000
+DTEND;TZID=America/Los_Angeles:20261114T120000
+SUMMARY:NOB HILL RUN CLUB
+LOCATION:Equator Coffee\, 2 Marina Blvd San Francisco\, San Francisco
+URL:https://partiful.com/e/XFpeELjke0PHlCU55ukM
+DESCRIPTION:New in your area\nhttps://partiful.com/e/XFpeELjke0PHlCU55ukM\
+ n\nHELLLOOOO NOB HILL RUN CLUB!! Come run with us this Saturday!! As per 
+ usual\, we are running 3 miles this week!! This week’s run will be led 
+ by Akshay 😄 We’ll meet at Equator Coffee by Fort Mason\, do a lil st
+ retch sesh\, & then run down for a bit and end our run at Equator for usu
+ al yap sesh!! ☕️ ☀️ Note to all - we’ll be going at a beginner-
+ friendly conversational pace! As always\, there will be a w
+END:VEVENT
+END:VCALENDAR

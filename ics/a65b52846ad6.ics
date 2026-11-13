@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a65b52846ad6@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261113T210000
+DTEND;TZID=America/Los_Angeles:20261113T230000
+SUMMARY:SFTFF 2026: Program 4 - Grab Bag
+LOCATION:Roxie Theater\, San Francisco
+URL:https://ma.to/event/sftff-2026-program-4-grab-bag-13-nov-2026
+DESCRIPTION:Gay / queer + Fairs & festivals\nhttps://ma.to/event/sftff-202
+ 6-program-4-grab-bag-13-nov-2026\n\nProgram 4: Grab Bag is part of the 20
+ 26 SF Trans Film Fest and screens in person at the Roxie Theater. The pro
+ gramme features BESO CELESTIAL (dir. Hector Jaime)\, COWBOY (dir. Ryan Th
+ ompson)\, MEMORIES OF REDWOODS (dir. Eliza Zhang)\, NOT EXACTLY STRANGERS
+  (dir. Ryan Rox)\, PETER (dir. David Anderson)\, SUNKISSED SAPPHICS (dir.
+  Jennifer Marie Cella)\, SWOLETARIAN (dir. Kim Bince Villagante)\, THE DO
+ OR IS
+END:VEVENT
+END:VCALENDAR

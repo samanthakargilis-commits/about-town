@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bf6127a47b36@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261205T100000
+DTEND;TZID=America/Los_Angeles:20261205T150000
+SUMMARY:Madrone Holiday Market
+LOCATION:Madrone Art Bar\, 500 Divisadero St San Francisco\, San Francisco
+URL:https://partiful.com/e/R3H9ycTqEwr0qzkxFUbc
+DESCRIPTION:Fairs & festivals + Craft\nhttps://partiful.com/e/R3H9ycTqEwr0
+ qzkxFUbc\n\nJoin us on Saturday\, December 5th for our festive Madrone Ho
+ liday Market! We’re packing the space with incredible local makers and 
+ artisans so you can get your holiday shopping done while supporting small
+  businesses. • 🎁 Shop Small: Browse unique handmade gifts both insid
+ e the bar and outside in the parklet. • 🥐 Parklet Pop-up: Fuel up wi
+ th some incredible treats from Half Baked Hapa. • 🥂 At the B
+END:VEVENT
+END:VCALENDAR

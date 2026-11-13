@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:881715fbac24@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261212T110000
+DTEND;TZID=America/Los_Angeles:20261212T170000
+SUMMARY:Patchwork Show Oakland
+LOCATION:Jack London Square\, 472 Water St Oakland\, Oakland
+URL:https://partiful.com/e/NpCgTq5tOGbErL2ljFDC
+DESCRIPTION:Craft + Fairs & festivals · Oakland\nhttps://partiful.com/e/N
+ pCgTq5tOGbErL2ljFDC\n\nThe original alternative creative market in Southe
+ rn California *and beyond. Est. 2007 Since 2007\, Patchwork Show has been
+  where creativity\, community\, and small business come together. What be
+ gan as Orange County’s first alternative craft fair—a scrappy market 
+ in a Santa Ana parking lot—has grown into a multi-city festival celebra
+ ting local makers\, food\, music\, and hands-on crafting. Patchwork Sh
+END:VEVENT
+END:VCALENDAR

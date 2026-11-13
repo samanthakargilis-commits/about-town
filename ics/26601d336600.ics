@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:26601d336600@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261203T190000
+DTEND;TZID=America/Los_Angeles:20261203T203000
+SUMMARY:Reb Zalman’s Fragments of a Future Scroll: Hasidism for the Aqua
+ rian Age
+LOCATION:JCCSF\, 3200 California Street\, San Francisco
+URL:https://www.jccsf.org/event/reb-zalmans-fragments-of-a-future-scroll-h
+ asidism-for-the-aquarian-age/
+DESCRIPTION:Thursday evening\nhttps://www.jccsf.org/event/reb-zalmans-frag
+ ments-of-a-future-scroll-hasidism-for-the-aquarian-age/\n\nCelebrate 50 y
+ ears of Reb Zalman’s groundbreaking work with Rabbi Tirzah Firestone\, 
+ Rabbi Dan Goldblatt & Sam Shonkoff.
+END:VEVENT
+END:VCALENDAR

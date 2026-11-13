@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6c79f745c932@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261114T100000
+DTEND;TZID=America/Los_Angeles:20261114T160000
+SUMMARY:Scroll in Codex Binding Workshop
+LOCATION:San Francisco Center for the Book\, San Francisco
+URL:https://ma.to/event/scroll-in-codex-binding-14-nov-2026
+DESCRIPTION:Craft\nhttps://ma.to/event/scroll-in-codex-binding-14-nov-2026
+ \n\nPeter Thomas leads this session on the mechanics and structures of pl
+ acing scrolls inside codex bindings. You'll build two 3x6 inch scrolling 
+ books using paper scrolls\, wooden dowels\, and wooden frameworks\, finis
+ hed with a paper case binding. Basic paper is provided\, but bring your o
+ wn decorative papers\, paints\, pens\, or collage items to illustrate the
+  scroll. Come prepared with a short quote to i
+END:VEVENT
+END:VCALENDAR

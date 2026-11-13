@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f6f397c4345d@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261211T210000
+DTEND;TZID=America/Los_Angeles:20261212T020000
+SUMMARY:Yala Papa San Francisco: The Gay Latin x Middle Eastern Night
+LOCATION:The Stud\, 1123 Folsom Street\, San Francisco\, CA 94103 San Fran
+ cisco\, San Francisco
+URL:https://www.eventbrite.com/e/yala-papa-san-francisco-the-gay-latin-x-m
+ iddle-eastern-night-tickets-2003241860330
+DESCRIPTION:Gay / queer\nhttps://www.eventbrite.com/e/yala-papa-san-franci
+ sco-the-gay-latin-x-middle-eastern-night-tickets-2003241860330\n\nHabibi\
+ , we're doing it again. Reggaeton\, Arabic beats\, belly dancing & popup 
+ performances. One very queer night at The Stud SF.
+END:VEVENT
+END:VCALENDAR

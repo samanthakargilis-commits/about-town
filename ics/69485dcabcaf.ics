@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:69485dcabcaf@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Film: Defiant to the Last- Resistance at the Tule Lake Jail
+LOCATION:Revolution Books\, 2444 Durant Avenue Berkeley\, CA 94704
+URL:https://sf.funcheap.com/film-defiant-resistance-tule-lake-jail/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/film-defiant-resista
+ nce-tule-lake-jail/\n\nFilm Screening & Discussion of Defiant to the Last
+ \, Resistance at the Tule Lake Jail with Filmmaker Emiko Omori and Satsuk
+ i Ina\, author of The Poet and the Silk Girl About the Film from the Defi
+ ant to the Last website: “Based on lies and wartime propaganda\, during
+  ...
+END:VEVENT
+END:VCALENDAR

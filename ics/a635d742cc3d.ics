@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a635d742cc3d@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261114T120000
+DTEND;TZID=America/Los_Angeles:20261114T140000
+SUMMARY:Picnic Party at Dolores Park
+LOCATION:Dolores Park\, San Francisco
+URL:https://ma.to/event/picnic-party-at-dolores-park-14-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/picnic-party-at-dolores-
+ park-14-nov-2026\n\nA picnic party at Dolores Park celebrates the Bay Are
+ a public transit victory. The gathering recognizes allies\, partners and 
+ everyone who helped spread the word about Measure RTM across five countie
+ s and Measure H in San Francisco.
+END:VEVENT
+END:VCALENDAR

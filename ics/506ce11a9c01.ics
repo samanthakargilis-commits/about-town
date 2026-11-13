@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:506ce11a9c01@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261206T110000
+DTEND;TZID=America/Los_Angeles:20261206T143000
+SUMMARY:Atomic Workshop Holiday Market
+LOCATION:The Progress\, 1525 Fillmore St San Francisco\, San Francisco
+URL:https://partiful.com/e/qpwyhMHlHFo63BlPDegH
+DESCRIPTION:Fairs & festivals\nhttps://partiful.com/e/qpwyhMHlHFo63BlPDegH
+ \n\nhttps://www.instagram.com/p/DfSWoASpFjh/ "Our 11th annual holiday mar
+ ket is back on Sunday\, December 6th with a major update: we will be taki
+ ng over @theprogress_sf AND @statebirdprovisions for one of our favorite 
+ events of the year! Two restaurants\, one huge holiday market!!! As alway
+ s\, admission is free. Stay tuned for our final lineup of artisans along 
+ with the brunch menu for the day!! PS ther
+END:VEVENT
+END:VCALENDAR

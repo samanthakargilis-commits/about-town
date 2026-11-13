@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:352ed373905c@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T143000
+DTEND;TZID=America/Los_Angeles:20261113T163000
+SUMMARY:Community Coffee with Danny Sauter
+LOCATION:Nob Hill\, San Francisco
+URL:https://ma.to/event/community-coffee-with-danny-sauter-13-nov-2026
+DESCRIPTION:Discourse\nhttps://ma.to/event/community-coffee-with-danny-sau
+ ter-13-nov-2026\n\nCommunity Coffee with District 3 Supervisor Danny Saut
+ er offers 15-minute one-on-one conversations to share ideas\, feedback\, 
+ and concerns. It runs Friday\, November 13\, from 2:30 to 4:30 PM in Nob 
+ Hill. A few spots remain\, and advance RSVP is available online.
+END:VEVENT
+END:VCALENDAR

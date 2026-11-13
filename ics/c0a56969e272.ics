@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c0a56969e272@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T153000
+DTEND;TZID=America/Los_Angeles:20261113T170000
+SUMMARY:Guadalupe Gardens Workday
+LOCATION:Guadalupe Gardens\, 438 Coleman Ave. San Jose\, CA 95110\, San Jo
+ se
+URL:https://ma.to/event/guadalupe-gardens-workday-13-nov-2026
+DESCRIPTION:San Jose\nhttps://ma.to/event/guadalupe-gardens-workday-13-nov
+ -2026\n\nThe second-Friday session of the Guadalupe Gardens Workday is an
+  afternoon of gardening\, learning and community. Participants work in th
+ e soil alongside a UC Master Gardener–certified horticulturist\, with g
+ uidance for both experienced gardeners and beginners. The workday runs ev
+ ery second and fourth Friday from 3:30 PM to 5:00 PM. Questions can be di
+ rected to volunteer@grpg.org.
+END:VEVENT
+END:VCALENDAR

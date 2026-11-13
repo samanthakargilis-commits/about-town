@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:215246683839@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261204T143000
+DTEND;TZID=America/Los_Angeles:20261204T163000
+SUMMARY:Union Square’s 2026 Chanukah Festival: 25-Foot-Tall Menorah
+LOCATION:Union Square Park\, Geary and Powell\, San Francisco\, CA\, San F
+ rancisco
+URL:https://sf.funcheap.com/union-squares-chanukah-festival/
+DESCRIPTION:Fairs & festivals · A yearly tradition\nhttps://sf.funcheap.c
+ om/union-squares-chanukah-festival/\n\nLighting it up since 1975\, San Fr
+ ancisco celebrates the 51st anniversary of the first giant public menorah
+  outside Israel\, a landmark Bill Graham project that inspired thousands 
+ of menorahs around the world. This year’s eight-night celebration bring
+ s music\, community gatherings\, and nightly ceremonies honoring leaders 
+ ...
+END:VEVENT
+END:VCALENDAR

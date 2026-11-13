@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f19f37bc09f1@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261204T170000
+DTEND;TZID=America/Los_Angeles:20261204T200000
+SUMMARY:2026 Hayes Valley’s 36th Annual Holiday Stroll
+LOCATION:Hayes Valley\, San Francisco
+URL:https://www.sfmoma.org/visit-toolkit/
+DESCRIPTION:A yearly tradition\nhttps://www.sfmoma.org/visit-toolkit/\n\nJ
+ oin your neighbors for the Hayes Valley Holiday Stroll! Hosted by the Hay
+ es Valley Merchants Council and the Hayes Valley Neighborhood Association
+ \, the event takes place Friday\, December 4\, 2026\, from 5-8pm. Discove
+ r festive in-store events\, special promotions\, and plenty of holiday ch
+ eer with music\, shopping\, ...
+END:VEVENT
+END:VCALENDAR

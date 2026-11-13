@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4e45c8d53ab8@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261204T220000
+DTEND;TZID=America/Los_Angeles:20261205T000000
+SUMMARY:Let’s Glow SF 2026
+LOCATION:
+URL:https://sf.funcheap.com/city-guide/december-street-fairs-festivals/
+DESCRIPTION:Fairs & festivals + Art · Featured on Funcheap\nhttps://sf.fu
+ ncheap.com/city-guide/december-street-fairs-festivals/\n\nDecember 4-13\,
+  2026 – The nation’s largest holiday projection arts festival \, will
+  return to downtown San Francisco for the 2026 holiday season with whimsi
+ cal\, large-scale pieces of animated art across the facade of eight iconi
+ c SF buildings from 5:30-10 pm nightly . On Opening Night\, the light sho
+ ws begin at 7 pm following the performances plus there’s free hot cocoa
+  . Downtown SF
+END:VEVENT
+END:VCALENDAR

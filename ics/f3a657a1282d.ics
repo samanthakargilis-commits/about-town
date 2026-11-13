@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f3a657a1282d@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:Mud Frontier: Film Screening & Talkback with Rael San Fratello
+LOCATION:Yerba Buena Center for the Arts\, 701 Mission St\, San Francisco\
+ , CA\, San Francisco
+URL:https://sf.funcheap.com/mud-frontier-film-screening-talkback-rael-san-
+ fratello/
+DESCRIPTION:Museum exhibits\nhttps://sf.funcheap.com/mud-frontier-film-scr
+ eening-talkback-rael-san-fratello/\n\nJoin us for a screening of “Mud F
+ rontier: Architecture at the Borderlands\,” a documentary exploring Rae
+ l San Fratello’s innovative fusion of 3D-printing technology and tradit
+ ional adobe architecture. Following the screening\, Andrew Shaken\, U.C. 
+ Berkeley Professor of Architectural History and American Studies\, will m
+ oderate a talkback with ...
+END:VEVENT
+END:VCALENDAR

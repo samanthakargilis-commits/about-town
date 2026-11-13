@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:118469d8c2a5@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261206T190000
+DTEND;TZID=America/Los_Angeles:20261206T230000
+SUMMARY:Trixie Rasputin Presents: Scene Night 2026 (Bottom of the Hill)
+LOCATION:Bottom of the Hill\, 1233 17th Street\, San Francisco\, CA\, San 
+ Francisco
+URL:https://sf.funcheap.com/trixie-rasputin-presents-scene-night-2026-bott
+ om-hill/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/trixie-rasputin-pres
+ ents-scene-night-2026-bottom-hill/\n\nBottom of the Hill: A Final Farewel
+ l to Lynn\, Kathleen\, and Ramona Join us Sunday\, December 6\, for a spe
+ cial night celebrating 35 years of music\, memories\, and community at Bo
+ ttom of the Hill. While Bottom of the Hill isn’t closing for good\, we
+ ’re marking the end ...
+END:VEVENT
+END:VCALENDAR

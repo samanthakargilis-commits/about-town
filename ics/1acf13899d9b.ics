@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1acf13899d9b@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261115T130000
+DTEND;TZID=America/Los_Angeles:20261115T160000
+SUMMARY:Cookie Picnic pt2!!
+LOCATION:Mysterious old bank ✨\, 1469 Webster St San Francisco\, San Fra
+ ncisco
+URL:https://partiful.com/e/S4npXV6YwHIhm6rLE47m
+DESCRIPTION:Theatre\nhttps://partiful.com/e/S4npXV6YwHIhm6rLE47m\n\nMOVING
+  INDOORS DUE TO RAIN ☔️ BUT THE PICNIC LIVES- still bring picnic blan
+ kets\, regular blankets\, pillows/cushions\, PJs/comfy clothes and we wil
+ l make it cozy inside. FREE + Open to anyone! Just bring a batch of cooki
+ es (ideally homemade!)\, an ingredients list (bc allergies!!)\, and a pic
+ nic blanket. Come ready to chow down with new friends! Paper plates and n
+ apkins will be provided. Bonus points 
+END:VEVENT
+END:VCALENDAR

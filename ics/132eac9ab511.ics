@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:132eac9ab511@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261204T150000
+DTEND;TZID=America/Los_Angeles:20261204T170000
+SUMMARY:A South Beach Stroll
+LOCATION:St. Patrick Church\, 756 Mission St\, San Francisco\, CA San Fran
+ cisco\, San Francisco
+URL:https://www.meetup.com/roaming-zen/events/317272725/
+DESCRIPTION:Meditation\nhttps://www.meetup.com/roaming-zen/events/31727272
+ 5/\n\nIt's becoming something of a Roaming Zen tradition to be by the wat
+ erfront around the shortest days of the year - it's my way of making the 
+ most of the daylight. We will start December at South Beach. I have mainl
+ y wanted to see the new tiled stairs on Beale St\, so we will visit those
+  on our way up and over Rincon Hill (which barely scrapes the top 50 on t
+ he list of San Francisco hills)\, as well a
+END:VEVENT
+END:VCALENDAR

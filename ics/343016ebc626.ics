@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:343016ebc626@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261118T140000
+DTEND;TZID=America/Los_Angeles:20261118T160000
+SUMMARY:Free Art Workshop: Velveteen Rabbit Pop-up Book (YBCA)
+LOCATION:Yerba Buena Center for the Arts\, 701 Mission St\, San Francisco\
+ , CA\, San Francisco
+URL:https://sf.funcheap.com/free-art-workshop-velveteen-rabbit-popup-book-
+ ybca-2/
+DESCRIPTION:Museum exhibits + Art · Near work for lunch\nhttps://sf.funch
+ eap.com/free-art-workshop-velveteen-rabbit-popup-book-ybca-2/\n\nCreate a
+ rt inspired by our programming at this drop-in art workshop! All ages wel
+ come\, all materials provided. Design an imaginative pop-up book featurin
+ g characters from the story of “The Velveteen Rabbit.”
+END:VEVENT
+END:VCALENDAR

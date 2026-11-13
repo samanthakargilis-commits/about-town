@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:635ab1825420@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261115T180000
+DTEND;TZID=America/Los_Angeles:20261115T210000
+SUMMARY:Thirst Draft: Write Drunk\, Edit Never
+LOCATION:Madrone Art Bar\, 500 Divisadero St San Francisco\, San Francisco
+URL:https://partiful.com/e/94vpKQFnzoIzNcgzWFJD
+DESCRIPTION:Singing + Theatre\nhttps://partiful.com/e/94vpKQFnzoIzNcgzWFJD
+ \n\nJoin us for our final event before the new year! Thirst Draft is an e
+ vent for writers — and for writing. Everyone gets the same prompt when 
+ they walk in the door. What ends up on the page is up to you! Here’s ho
+ w it works: Write whatever you want — poem\, song\, short story\, joke.
+ .. anything works! Interpret the prompt however you like\, but try to inc
+ orporate it in some way Work alone or collaborate
+END:VEVENT
+END:VCALENDAR

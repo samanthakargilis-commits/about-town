@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5beadc112358@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261228T200000
+DTEND;TZID=America/Los_Angeles:20261229T000000
+SUMMARY:Man or Astro-man? ~ The Subsonics ~ DJ Fuzz
+LOCATION:Bottom Of The Hill\, 1233 17th Street\, San Francisco\, Californi
+ a 94107\, United States San Francisco\, San Francisco
+URL:https://dice.fm/event/6ad57215849ebe00013feab5
+DESCRIPTION:New in your area\nhttps://dice.fm/event/6ad57215849ebe00013fea
+ b5\n\nThe surf revival and gutter glam will follow you home and keep your
+  buzz going for dayz! DJ Fuzz pumps up the hits and then hands it over to
+  The Subsonics and Man or Astro-man? for an astonishing finish! The Botto
+ m of the Hill does not use QR codes for entry. You must present a valid p
+ hoto ID that matches the name on your DICE ticket to enter. All ticket tr
+ ansfers must be completed through the DIC
+END:VEVENT
+END:VCALENDAR

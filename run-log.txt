@@ -1,0 +1,120 @@
+  funcheap guides: 20 read, 200 events, featuring ['terror vault']
+SF Funcheap               547 events   58 requests  OK
+Secret San Francisco        5 events    7 requests  OK
+Luma                       77 events    3 requests  OK
+SF Public Library (Presidio)   64 events    4 requests  OK
+  jccsf prices: 26 pages read, 28 of 29 priced
+JCC San Francisco          29 events    1 requests  OK
+Traceback (most recent call last):
+  File "/home/runner/work/about-town/about-town/ingest/__main__.py", line 237, in main
+    events = mod.fetch(fetcher, start, end)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/about-town/about-town/ingest/adapters/citylights.py", line 10, in fetch
+    events, soup = listing_page(f, URL, NAME, lambda u: bool(re.match(r"https://citylights\.com/events/[^/]+/?$", u)) and u.rstrip("/") != URL.rstrip("/"),
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/about-town/about-town/ingest/heuristics.py", line 238, in listing_page
+    soup = f.soup(url)
+           ^^^^^^^^^^^
+  File "/home/runner/work/about-town/about-town/ingest/core.py", line 229, in soup
+    return BeautifulSoup(self.get(url, **kw), "lxml")
+                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/about-town/about-town/ingest/core.py", line 222, in get
+    resp.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://citylights.com/events/
+City Lights                 0 events    1 requests  FAIL: HTTPError: 403 Client Error: Forbidden for url: https://citylights.com/events/
+Traceback (most recent call last):
+  File "/home/runner/work/about-town/about-town/ingest/__main__.py", line 237, in main
+    events = mod.fetch(fetcher, start, end)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/about-town/about-town/ingest/adapters/greenapple.py", line 20, in fetch
+    events, _ = listing_page(f, page, NAME, lambda u: bool(EVENT.match(u)), city="San Francisco",
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/about-town/about-town/ingest/heuristics.py", line 238, in listing_page
+    soup = f.soup(url)
+           ^^^^^^^^^^^
+  File "/home/runner/work/about-town/about-town/ingest/core.py", line 229, in soup
+    return BeautifulSoup(self.get(url, **kw), "lxml")
+                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/about-town/about-town/ingest/core.py", line 222, in get
+    resp.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://greenapplebooks.com/events
+Green Apple Books           0 events    1 requests  FAIL: HTTPError: 403 Client Error: Forbidden for url: https://greenapplebooks.com/events
+Kepler's Books              9 events    1 requests  OK
+Traceback (most recent call last):
+  File "/home/runner/work/about-town/about-town/ingest/__main__.py", line 237, in main
+    events = mod.fetch(fetcher, start, end)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/about-town/about-town/ingest/adapters/broadwaysf.py", line 27, in fetch
+    events, soup = listing_page(f, URL, NAME,
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/about-town/about-town/ingest/heuristics.py", line 238, in listing_page
+    soup = f.soup(url)
+           ^^^^^^^^^^^
+  File "/home/runner/work/about-town/about-town/ingest/core.py", line 229, in soup
+    return BeautifulSoup(self.get(url, **kw), "lxml")
+                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/about-town/about-town/ingest/core.py", line 222, in get
+    resp.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://us.atgtickets.com/whats-on/san-francisco/
+BroadwaySF                  0 events    1 requests  FAIL: HTTPError: 403 Client Error: Forbidden for url: https://us.atgtickets.com/whats-on/san-francisco/
+Traceback (most recent call last):
+  File "/home/runner/work/about-town/about-town/ingest/__main__.py", line 237, in main
+    events = mod.fetch(fetcher, start, end)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/about-town/about-town/ingest/adapters/dothebay.py", line 17, in fetch
+    events, _ = listing_page(f, url, NAME, lambda u: bool(EVENT.match(u)), ref=day,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/about-town/about-town/ingest/heuristics.py", line 238, in listing_page
+    soup = f.soup(url)
+           ^^^^^^^^^^^
+  File "/home/runner/work/about-town/about-town/ingest/core.py", line 229, in soup
+    return BeautifulSoup(self.get(url, **kw), "lxml")
+                         ^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/about-town/about-town/ingest/core.py", line 222, in get
+    resp.raise_for_status()
+  File "/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/requests/models.py", line 1167, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://dothebay.com/events/2026/11/13
+DoTheBay                    0 events    1 requests  FAIL: HTTPError: 403 Client Error: Forbidden for url: https://dothebay.com/events/2026/11/13
+  eventbrite: 92 listed, 78 event pages read
+Eventbrite                 78 events   48 requests  OK
+Meetup                    148 events    8 requests  OK
+Dice                       30 events    2 requests  OK
+  partiful offers: 90 pages read, 90 priced, 13 sold out, of 91
+Partiful Explore           95 events   91 requests  OK
+Destination Palo Alto       9 events    1 requests  OK
+Filoli                     10 events   13 requests  OK
+Cobb's & Punch Line        48 events    2 requests  OK
+SF Fleet Week               0 events    1 requests  FAIL: returned zero events
+Neck of the Woods          45 events    3 requests  OK
+4 Star Theater             25 events    1 requests  OK
+Presidio Theatre            1 events    1 requests  OK
+The Presidio               81 events    3 requests  OK
+  mato: 191 listed, 191 event pages read
+Mato                      191 events  130 requests  OK
+Traceback (most recent call last):
+  File "/home/runner/work/about-town/about-town/ingest/__main__.py", line 237, in main
+    events = mod.fetch(fetcher, start, end)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/about-town/about-town/ingest/adapters/substack.py", line 24, in fetch
+    raise RuntimeError("needs AI extraction (no ANTHROPIC_API_KEY set)")
+RuntimeError: needs AI extraction (no ANTHROPIC_API_KEY set)
+Newsletters                 0 events    0 requests  FAIL: RuntimeError: needs AI extraction (no ANTHROPIC_API_KEY set)
+in window and area: 1329 of 1492 (19 sold out)
+after merging duplicates: 1189
+places: {'pages_read': 38, 'placed': 568}
+in area once placed: 1180
+detail pages read: 160
+map spots: {'lookups': 116, 'refused': 0, 'matched_now': 998, 'corners': 18, 'town_only': 19, 'with_spot': 1074, 'total': 1129}
+site icons: 18 of 18 sites (0 fetched)
+wrote 1126 events to /home/runner/work/about-town/about-town/app/events.json
+your calendars: none linked (weekly routine only)
+calendar feeds: 50 top picks, 104 more (no taste sent from the app yet)
+weather: 16 days (2026-11-13 to 2026-11-28)
+::warning::Sources with zero events or errors: City Lights, Green Apple Books, BroadwaySF, DoTheBay, SF Fleet Week, Newsletters

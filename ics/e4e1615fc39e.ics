@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e4e1615fc39e@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261114T110000
+DTEND;TZID=America/Los_Angeles:20261114T160000
+SUMMARY:AfroPortals Community Archiving Day
+LOCATION:Black Panther Party Museum\, 1427 Broadway\, Oakland\, Oakland
+URL:https://ma.to/event/afroportals-community-archiving-day-2026-11-14
+DESCRIPTION:Gay / queer + Theatre · Oakland\nhttps://ma.to/event/afroport
+ als-community-archiving-day-2026-11-14\n\nThe fourth AfroPortals Communit
+ y Archiving Day focuses on preserving the histories of Black\, Brown\, an
+ d Indigenous musicians\, dancers\, theatre artists\, cultural workers\, a
+ nd educators in the Bay Area. Attendees can bring materials and memories 
+ documenting their life\, family\, or community for digitization\; the ite
+ ms become part of EastSide Arts Alliance’s Community Archival Resource 
+ Project (CARP) 
+END:VEVENT
+END:VCALENDAR

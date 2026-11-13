@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:eb73e6b88f09@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261114T110000
+DTEND;TZID=America/Los_Angeles:20261114T180000
+SUMMARY:Art + Design Show
+LOCATION:Refined Interiors & Parisa Navidi Studio\, 800 Delaware St Berkel
+ ey\, Berkeley
+URL:https://partiful.com/e/zBnqgcwQki3IevN90dzc
+DESCRIPTION:Art + Museum exhibits · Berkeley\nhttps://partiful.com/e/zBnq
+ gcwQki3IevN90dzc\n\nSATURDAY AND SUNDAY Saturday\, November 14th: 11am - 
+ 6pm Sunday\, November 15th: 11am - 4pm Parisa Navidi Art Exhibit at Refin
+ ed Interiors Featuring two stunning new collections of acrylic abstract p
+ aintings by Parisa Navidi. CLOSE TO HOME + IN ORBIT Join us for a weekend
+  of art\, design\, and conversation!
+END:VEVENT
+END:VCALENDAR

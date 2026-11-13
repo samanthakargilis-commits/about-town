@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:96dee6f9e282@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261115T140000
+DTEND;TZID=America/Los_Angeles:20261115T160000
+SUMMARY:Golden Gate Park East End FREE Walking Tour (SF City Guides)
+LOCATION:Conservatory of Flowers\, 100 John F Kennedy Dr San Francisco\, S
+ an Francisco
+URL:https://partiful.com/e/pl8dMAKg19N7QfsQgiEF
+DESCRIPTION:Reading\nhttps://partiful.com/e/pl8dMAKg19N7QfsQgiEF\n\nCuriou
+ s to learn more about our amazing Golden Gate Park? Fancy a FREE walking 
+ tour? Then join me on November 15th for a 2 hour stroll and learn about t
+ he oldest building in the park\, murderous media moguls\, and one of the 
+ last California grizzlies. To learn more and register for the tour visit:
+  https://www.sfcityguides.org/tour/golden-gate-park-east-end/ This tour i
+ s organized with SF City Guides
+END:VEVENT
+END:VCALENDAR

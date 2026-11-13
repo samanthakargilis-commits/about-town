@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7b2d04334350@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261224T190000
+DTEND;TZID=America/Los_Angeles:20261224T203000
+SUMMARY:Christmas Eve Mass at the Presidio Chapel
+LOCATION:Presidio Chapel\, 130 Fisher Loop\, San Francisco
+URL:https://presidio.gov/explore/events/christmas-eve-mass-at-the-presidio
+ -chapel/
+DESCRIPTION:A walk from home · Thursday evening\nhttps://presidio.gov/exp
+ lore/events/christmas-eve-mass-at-the-presidio-chapel/\n\nPeace be with y
+ ou. All are welcome!! Please join-in to celebrate Christmas Eve on Thursd
+ ay\, December 24\, 2026 at the Presidio Chapel\, 130 Fisher Loop\, San Fr
+ ancisco The White Robed Monks of St. Benedict and The Interfaith Center a
+ t the Presidio ORDO: 7:00 pm PST Christmas Carols 7:30 pm PST Christmas E
+ ve Mass 8:15 pm PST Dessert Pot Luck and Good Cheer Questions: XmasEveMas
+ s@whiterobedmonks.org or
+END:VEVENT
+END:VCALENDAR

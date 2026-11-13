@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5c523eedb7eb@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261122T160000
+DTEND;TZID=America/Los_Angeles:20261122T210000
+SUMMARY:Felton Night Market
+LOCATION:The Covered Bridge\, null Graham Hill Rd Felton\, Felton
+URL:https://partiful.com/e/AVa3j8fcqN1Ye2yKAoRR
+DESCRIPTION:Fairs & festivals + Craft · Felton\nhttps://partiful.com/e/AV
+ a3j8fcqN1Ye2yKAoRR\n\nA Woodland Artisan Market at the historic Felton Co
+ vered bridge. Our goal is simple\, bring the highest quality of local art
+ isan makers together with the finest local musicians in beautiful Felton 
+ above the flowing San Lorenzo. Vendor Application linked below. More info
+ rmation to be announced shortly... Many blessings 🌲🐉🌲
+END:VEVENT
+END:VCALENDAR

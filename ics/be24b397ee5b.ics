@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:be24b397ee5b@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261119T183000
+DTEND;TZID=America/Los_Angeles:20261119T203000
+SUMMARY:Contact Improvisational Dance at Mabuhay Gardens with Juliana Mend
+ onca
+LOCATION:Mabuhay Gardens\, 443 Broadway\, San Francisco\, CA 94133\, USA\,
+  San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/artstechsf/events/317352032/
+DESCRIPTION:Concerts · Thursday evening\nhttps://www.meetup.com/artstechs
+ f/events/317352032/\n\n6:30-8 PM contact improvisational class with Julia
+ na Mendonca 8-11 PM open dancing continues: live musicians' jam and solar
+ punk riffs (words that reflect the future we wish for) Contact Improvisat
+ ional Dance at Mabuhay Gardens is an ongoing series of classes and jams\,
+  led by multiple collaborators of themab.org. Juliana Mendonca opened the
+  series with two Fluid Dance evenings\, and she returns to l
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:16d5ea4a0c89@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261124T160000
+DTEND;TZID=America/Los_Angeles:20261124T200000
+SUMMARY:Full Moon Community Art & Wellness Fest
+LOCATION:India Basin Waterfront Park\, 900 Innes Ave\, San Francisco\, CA 
+ 94124\, San Francisco
+URL:https://sf.funcheap.com/full-moon-community-art-wellness-fest-sf/
+DESCRIPTION:Spirituality + Art\nhttps://sf.funcheap.com/full-moon-communit
+ y-art-wellness-fest-sf/\n\nJoin curator Rhiannon Evans MacFadyen and Sal
+ ōn! for an evening of art\, local makers\, sound healing\, meditation\, 
+ and community connection at India Basin Waterfront Park. Join us for a fu
+ ll moon ceremony\, libation circle\, and waterfront offering\, with food\
+ , tea\, and hot chocolate for all ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c334d839710f@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261211T180000
+DTEND;TZID=America/Los_Angeles:20261211T220000
+SUMMARY:Twas the Night: Fairyland’s 21+ Musical Night Market (Oakland)
+LOCATION:Children's Fairyland\, 699 Bellevue Ave\, Oakland\, CA\, Oakland
+URL:https://sf.funcheap.com/twas-night-fairylands-21-musical-night-market-
+ oakland/
+DESCRIPTION:Musical theatre + Fairs & festivals · A yearly tradition · O
+ akland\nhttps://sf.funcheap.com/twas-night-fairylands-21-musical-night-ma
+ rket-oakland/\n\nTwas the Night: a musical\, magical night market! Twas t
+ he Night is the now-famous grownups only (21+) evening when the Park tran
+ sforms into a festive holiday party\, a concert\, and an open-air night m
+ arket! Shop for unique holiday gifts made by local artisans\, dance under
+  the stars\, sip ...
+END:VEVENT
+END:VCALENDAR

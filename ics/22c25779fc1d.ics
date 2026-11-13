@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:22c25779fc1d@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261114T103000
+DTEND;TZID=America/Los_Angeles:20261114T123000
+SUMMARY:The Compass Salon @ Manny's
+LOCATION:Manny's\, 3092 16th Street\, San Francisco\, CA 94103 San Francis
+ co\, San Francisco
+URL:https://www.eventbrite.com/e/the-compass-salon-mannys-tickets-19765260
+ 84726
+DESCRIPTION:Discourse + Spirituality\nhttps://www.eventbrite.com/e/the-com
+ pass-salon-mannys-tickets-1976526084726\n\nLife\, examined together throu
+ gh philosophy\, culture\, science\, and personal experience\, in a suppor
+ tive and welcoming environment.
+END:VEVENT
+END:VCALENDAR

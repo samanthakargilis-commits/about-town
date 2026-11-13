@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4e57a30ec06d@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Opening Reception: Me\, Nature\, As One
+LOCATION:Qualia Contemporary Art\, 229 Hamilton Ave\, Palo Alto\, CA 94301
+ \, Palo Alto
+URL:https://sf.funcheap.com/opening-reception-nature/
+DESCRIPTION:Museum exhibits + Art · Palo Alto\nhttps://sf.funcheap.com/op
+ ening-reception-nature/\n\nJoin Qualia Contemporary Art on Saturday\, Nov
+ ember 21\, 2026\, for the opening reception of Me\, Nature\, As One. Me\,
+  Nature\, As One is a group exhibition spanning multiple generations whos
+ e work traces the evolution and reimagining of shanshui\, the classical t
+ radition of landscape painting. Across ink\, ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a1b31e61974e@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261202T183000
+DTEND;TZID=America/Los_Angeles:20261202T213000
+SUMMARY:Hardware Fireside Chat @ Flux | Make SF Better with Water\, Energy
+ \, Waste Treatment\, and Infra
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/lx81wh0i
+DESCRIPTION:New in your area\nhttps://luma.com/lx81wh0i\n\nCome join to he
+ ar about ways that electronics\, smart devices\, and different technologi
+ es are helping make SF better. Demos Areeb @ Glacier Robotics builds AI-p
+ owered robotics and vision systems for recycling facilities\, and just la
+ unched DataMap\, which is already recovering nearly 30 minutes of product
+ ive runtime per shift at Recology’s Pier 96. Julia @ Recology\, Directo
+ r of Sustainability & Gover
+END:VEVENT
+END:VCALENDAR

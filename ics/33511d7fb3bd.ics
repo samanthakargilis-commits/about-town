@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:33511d7fb3bd@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T110000
+DTEND;TZID=America/Los_Angeles:20261113T130000
+SUMMARY:Robbie's Favorites Shave Ice
+LOCATION:Ululani's Hawaiian Shave Ice\, 3016 W. Jack London Blvd. #B-4\, L
+ ivermore\, CA 94551\, Livermore
+URL:https://ma.to/event/robbies-picks-shave-ice-trio-13-nov-2026
+DESCRIPTION:Livermore\nhttps://ma.to/event/robbies-picks-shave-ice-trio-13
+ -nov-2026\n\nRobbie's Favorites brings three shave ice desserts to Ululan
+ i's Hawaiian Shave Ice in Livermore during a limited run from November 7
+ –21: Robbie's Pick Me Up (lava flow with haupia cream)\, Robbie's Desse
+ rt (Thai mango shave ice) and Robbie's Favorite (Lappert's vanilla ice cr
+ eam with tiger's blood\, piña colada\, coconut\, haupia and toasted coco
+ nut). The set is $25. This collaboration with San José M
+END:VEVENT
+END:VCALENDAR

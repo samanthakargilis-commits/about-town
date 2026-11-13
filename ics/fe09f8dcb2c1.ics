@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fe09f8dcb2c1@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261113T190000
+DTEND;TZID=America/Los_Angeles:20261113T210000
+SUMMARY:Botanical Watercolor Opening
+LOCATION:Black Bird Bookstore + Cafe\, San Francisco
+URL:https://ma.to/event/botanical-watercolor-opening-party-13-nov-2026
+DESCRIPTION:Reading + Art\nhttps://ma.to/event/botanical-watercolor-openin
+ g-party-13-nov-2026\n\nBotanical watercolor paintings by @sarangbyrneart 
+ bloom on the walls of Black Bird. Come take in the beauty of our latest a
+ rt show with music and refreshments at the opening party.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2e5fd58e7648@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261121T190000
+DTEND;TZID=America/Los_Angeles:20261121T230000
+SUMMARY:Playtesting & Pints @ The Detour in SF!
+LOCATION:The Detour\, The Detour\, 2200A Market St\, San Francisco\, CA 94
+ 114\, USA\, San Francisco
+URL:https://luma.com/ec4nl23c
+DESCRIPTION:Theatre + Art\nhttps://luma.com/ec4nl23c\n\nA selection of ind
+ ependently developed games from our community will be available for play 
+ at designated tables in the venue! Come show your support for your local 
+ indie creators and get a chance to try what could potentially be the "nex
+ t big thing" early! There is also plenty of traditional arcade gaming act
+ ion\, food\, drinks\, and fun to be had at The Detour - so stick around\,
+  have a drink (non-al
+END:VEVENT
+END:VCALENDAR

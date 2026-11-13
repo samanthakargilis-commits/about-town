@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:41595a1a0428@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261114T203000
+DTEND;TZID=America/Los_Angeles:20261114T230000
+SUMMARY:Max Jaffe: You Want That Too! + Burden of Dreams
+LOCATION:The Lab\, 2948 16th Street\, San Francisco\, California 94103\, U
+ nited States San Francisco\, San Francisco
+URL:https://dice.fm/event/6aa836cc05688900010ce8ee
+DESCRIPTION:Concerts + Art\nhttps://dice.fm/event/6aa836cc05688900010ce8ee
+ \n\nIn a trio formation with some of the core rhythm section players from
+  the record\, **Max Jaffe**\, **Gavin Gamboa**\, and **Logan Kane** reima
+ gine the music from Jaffe's 2025 release *You Want That Too!* Max Jaffe i
+ s a drummer\, producer\, composer\, and technologist based in Los Angeles
+ \, CA. His work expands the possibilities of composition and collaboratio
+ n through the drum set. In 2025\, Jaffe release
+END:VEVENT
+END:VCALENDAR

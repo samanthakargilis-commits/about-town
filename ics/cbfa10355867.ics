@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cbfa10355867@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261127T100000
+DTEND;TZID=America/Los_Angeles:20261127T120000
+SUMMARY:Hype Con: Pokemon & Trading Card Show (5 Yr Anniversary)
+LOCATION:Santa Clara Convention Center\, 5001 Great America Parkway\, Sant
+ a Clara\, CA 95054 Santa Clara\, Santa Clara
+URL:https://www.eventbrite.com/e/hype-con-pokemon-trading-card-show-5-yr-a
+ nniversary-tickets-2004471225394
+DESCRIPTION:Santa Clara\nhttps://www.eventbrite.com/e/hype-con-pokemon-tra
+ ding-card-show-5-yr-anniversary-tickets-2004471225394\n\nHype Con is an e
+ vent dedicated to the hottest items on the market under one roof! We aren
+ 't just any old convention\, we are an experience!
+END:VEVENT
+END:VCALENDAR

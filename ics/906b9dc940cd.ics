@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:906b9dc940cd@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261118T183000
+DTEND;TZID=America/Los_Angeles:20261118T203000
+SUMMARY:Automatic Noodle @ Woods Lowside
+LOCATION:Woods Lowside\, 530 Haight St\, San Francisco\, CA San Francisco\
+ , San Francisco
+URL:https://www.meetup.com/san-francisco-fantasy-book-club/events/31632237
+ 9/
+DESCRIPTION:New in your area\nhttps://www.meetup.com/san-francisco-fantasy
+ -book-club/events/316322379/\n\nCome enjoy a drink at Woods Lowside and d
+ iscuss our November read! In November we meet a week earlier than usual\,
+  so we’re officially making November our Novella month. Our Novella for
+  November is Automatic Noodle by Annalee Newitz. Hope to see you there!
+END:VEVENT
+END:VCALENDAR

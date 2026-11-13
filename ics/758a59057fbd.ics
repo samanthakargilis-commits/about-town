@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:758a59057fbd@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Brad Williams: The Tall Tales Comedy Tour at Palace of Fine Arts
+LOCATION:Palace of Fine Arts\, 3301 Lyon Street\, San Francisco\, CA 94123
+ \, San Francisco
+URL:https://sf.funcheap.com/brad-williams-tall-tales-comedy-tour-palace-fi
+ ne-arts-sf/
+DESCRIPTION:Comedy\nhttps://sf.funcheap.com/brad-williams-tall-tales-comed
+ y-tour-palace-fine-arts-sf/\n\nBrad Williams is one of comedy’s most in
+ -demand headliners\, known for his fearless\, high-energy stand-up and so
+ ld-out shows across the globe. A veteran performer since his teens\, he h
+ as appeared on The Tonight Show\, Jimmy Kimmel Live!\, and more\, with ac
+ claimed specials on Showtime and ...
+END:VEVENT
+END:VCALENDAR

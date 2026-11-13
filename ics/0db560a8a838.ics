@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0db560a8a838@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261114T100000
+DTEND;TZID=America/Los_Angeles:20261114T180000
+SUMMARY:Bridge Studio Open Studios
+LOCATION:Bridge Studio Collective\, 333 Bryant St\, San Francisco\, San Fr
+ ancisco
+URL:https://ma.to/event/bridge-studio-open-studios-14-nov-2026
+DESCRIPTION:Big Bay Area traditions + Art\nhttps://ma.to/event/bridge-stud
+ io-open-studios-14-nov-2026\n\nBridge Studio Collective hosts an open stu
+ dios event featuring work by Adam Feibelman\, Alice Koswara\, Chad Hasega
+ wa\, Daniel Chen\, Daryll Peirce\, David Choong Lee\, Eric Broers\, Jen B
+ anzaca\, Jillian Knox\, Jon Stich\, Leon Loucheur and Robert Bowen. Paint
+ ings\, framed artwork\, and studio works will be on view.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e9ad473e0804@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261209T160000
+DTEND;TZID=America/Los_Angeles:20261209T200000
+SUMMARY:Free Holiday Open House at SF Center for the Book
+LOCATION:San Francisco Center for the Book\, 375 Rhode Island St\, San Fra
+ ncisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/free-holiday-open-house-sf-center-book/
+DESCRIPTION:A yearly tradition\nhttps://sf.funcheap.com/free-holiday-open-
+ house-sf-center-book/\n\nMake a little holiday magic at SFCB! Drop by for
+  a cup of cozy mulled cider\, a reindeer-sized nibble of cookies and chee
+ se\, and some hands-on holiday fun. Pull up to the printing press and mak
+ e your own seasonal cards\, browse our expanded Biblioshop\, and let ...
+END:VEVENT
+END:VCALENDAR

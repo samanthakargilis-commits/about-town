@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c13fb455e275@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T190000
+DTEND;TZID=America/Los_Angeles:20261113T210000
+SUMMARY:Ebenezer Film Opening
+LOCATION:Alamo Drafthouse\, 2550 Mission St\, San Francisco
+URL:https://ma.to/event/ebenezer-film-opening-2026-11-13
+DESCRIPTION:New in your area\nhttps://ma.to/event/ebenezer-film-opening-20
+ 26-11-13\n\nEbenezer opens in theaters on November 13\, 2026. Johnny Depp
+  plays Ebenezer in Ti West's holiday film. The cast also includes Rupert 
+ Grint\, Andrea Riseborough\, Sam Claflin\, Daisy Ridley\, Arthur Conti\, 
+ Ellie Bamber\, Henry Lloyd-Hughes\, Charlie Murphy\, Tramell Tillman and 
+ Ian McKellen. Tickets are on sale.
+END:VEVENT
+END:VCALENDAR

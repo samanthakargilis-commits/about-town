@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a3b00233d1c0@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T163000
+DTEND;TZID=America/Los_Angeles:20261113T223000
+SUMMARY:San Jose Holiday Lights 2026 at Discovery Meadow
+LOCATION:Discovery Meadow\, Guadalupe River Park & Gardens\, 330 W San Car
+ los St\, San Jose\, CA 95110\, San Jose
+URL:https://sf.funcheap.com/san-jose-holiday-lights-2026-discovery-meadow-
+ nov-13jan-1/
+DESCRIPTION:A yearly tradition · San Jose\nhttps://sf.funcheap.com/san-jo
+ se-holiday-lights-2026-discovery-meadow-nov-13jan-1/\n\nSan Jose Holiday 
+ Lights returns to Discovery Meadow\, Guadalupe River Park & Gardens\, in 
+ downtown San Jose\, from 13 November 2026 through 1 January 2027\, nightl
+ y from 4:30 to 10:30 p.m. Stroll through a sparkling holiday lights exper
+ ience with festive displays including a rainforest\, a ...
+END:VEVENT
+END:VCALENDAR

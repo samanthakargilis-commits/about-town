@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e6fca9aaf169@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261127T163000
+DTEND;TZID=America/Los_Angeles:20261127T200000
+SUMMARY:Ghirardelli Square Tree Lighting
+LOCATION:Ghirardelli Square\, 900 N Point St San Francisco\, San Francisco
+URL:https://partiful.com/e/BwiPEUdJyrre6Ph1bXWS
+DESCRIPTION:Singing\nhttps://partiful.com/e/BwiPEUdJyrre6Ph1bXWS\n\nSanta 
+ lights the Square at Ghirardelli Square on Friday\, November 27\, the day
+  after Thanksgiving\, with the grand lighting of the 46-foot Christmas tr
+ ee at 4:45pm. The San Francisco Boys Chorus performs\, then Santa and his
+  elf lead a sing-along. It's free and all ages\, so get there before 4:45
+ pm for a good viewing spot Santa and Elf visits also run 4:00-7:00 PM on 
+ Fridays December 4\, 11\, and 18. Fr
+END:VEVENT
+END:VCALENDAR

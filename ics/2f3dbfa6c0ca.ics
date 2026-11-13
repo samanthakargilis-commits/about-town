@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2f3dbfa6c0ca@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261129T132500
+DTEND;TZID=America/Los_Angeles:20261129T152500
+SUMMARY:San Francisco 49ers vs. Seattle Seahawks
+LOCATION:Levi's Stadium\, 4900 Marie P DeBartolo Way\, Santa Clara
+URL:https://www.destinationpaloalto.com/calendar#/details/19443752
+DESCRIPTION:Santa Clara\nhttps://www.destinationpaloalto.com/calendar#/det
+ ails/19443752\n\nAn NFC West showdown as the 49ers host the Seahawks at L
+ evi's Stadium\, a game with division title implications in the late seaso
+ n.
+END:VEVENT
+END:VCALENDAR

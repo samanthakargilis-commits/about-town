@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ff917f30f50a@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261114T093000
+DTEND;TZID=America/Los_Angeles:20261114T133000
+SUMMARY:ANYU Studios Soft Opening
+LOCATION:303 2nd St\, 303 2nd St San Francisco\, San Francisco
+URL:https://partiful.com/e/aUhRGLXomZyl8Sce4fAh
+DESCRIPTION:New in your area\nhttps://partiful.com/e/aUhRGLXomZyl8Sce4fAh\
+ n\nA little first look at ANYU. Join us as we open our doors and welcome 
+ you into our space for a morning of movement\, community\, and a little c
+ elebration before we officially open. Whether you're joining us for a cla
+ ss or simply stopping by to explore the studio\, we'd love to have you th
+ ere! THE MORNING'S LINEUP 9:30 AM & 10:30 AM | Community Classes Experien
+ ce ANYU with two special community classe
+END:VEVENT
+END:VCALENDAR

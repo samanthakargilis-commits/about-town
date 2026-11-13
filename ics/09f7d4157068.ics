@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:09f7d4157068@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261114T093000
+DTEND;TZID=America/Los_Angeles:20261114T110000
+SUMMARY:Parkside Cleanup
+LOCATION:San Francisco Public Library - Parkside Branch\, 1200 Taraval St 
+ San Francisco\, San Francisco
+URL:https://partiful.com/e/NcFTJ4mVRkhkxW70I4qg
+DESCRIPTION:Reading\nhttps://partiful.com/e/NcFTJ4mVRkhkxW70I4qg\n\nMeet a
+ t Parkside Branch Library (1200 Taraval St) at 9:30am where we'll to grab
+  our supplies and form our crew. Then\, cleaning will occur around the ne
+ ighborhood until 11:00am. Stay afterwards for a free coffee for volunteer
+ s! Sign up on Partiful\, this Civic Joy Fund Mobilize page (https://www.m
+ obilize.us/civicjoyfund/event/950785/)\, or email info@refuserefusesf.org
+  with event name.
+END:VEVENT
+END:VCALENDAR

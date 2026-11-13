@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4d62ce58c7b0@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261114T110000
+DTEND;TZID=America/Los_Angeles:20261114T160000
+SUMMARY:F&F Dogpatch 00
+LOCATION:Pier 70\, Pier 70\, 70 Pier\, San Francisco\, CA 94107\, USA\, Sa
+ n Francisco
+URL:https://luma.com/7npv1i5b
+DESCRIPTION:Craft\nhttps://luma.com/7npv1i5b\n\nThe first-ever F&F Flea in
+  SF lands in Dogpatch\, and we're bringing the whole family — friends\,
+  founders\, makers\, and the neighbors who've been building here all alon
+ g. Vintage racks\, ceramics\, small-batch skincare\, prints\, jewelry\, r
+ ecords\, and a few things you'll have to see in person to believe. Come e
+ arly for first pick. Stay late for the food. What to expect 40+ independe
+ nt vendors\, all local
+END:VEVENT
+END:VCALENDAR

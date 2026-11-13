@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f089fbff1b3a@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261206T160000
+DTEND;TZID=America/Los_Angeles:20261206T180000
+SUMMARY:2026 Holidays & Harmonies: A Cappella Showcase
+LOCATION:BATS Improv Theatre\, Landmark Building B\, San Francisco\, CA 94
+ 123 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/2026-holidays-harmonies-a-cappella-showca
+ se-tickets-2000775338898
+DESCRIPTION:Singing + Comedy\nhttps://www.eventbrite.com/e/2026-holidays-h
+ armonies-a-cappella-showcase-tickets-2000775338898\n\nCelebrate the seaso
+ n with an evening of festive a cappella! Seven Bay Area-based groups\, a 
+ good cause\, and plenty of holiday cheer.
+END:VEVENT
+END:VCALENDAR

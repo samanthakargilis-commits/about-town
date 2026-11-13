@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c1a1a6aa2311@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261213T230000
+DTEND;TZID=America/Los_Angeles:20261214T030000
+SUMMARY:Geminids Meteor Shower Watch Party at Chabot (Oakland)
+LOCATION:Chabot Space & Science Center\, 10000 Skyline Blvd. Oakland\, CA
+URL:https://sf.funcheap.com/geminids-meteor-shower-watch-party-chabot-oakl
+ and/
+DESCRIPTION:Art\nhttps://sf.funcheap.com/geminids-meteor-shower-watch-part
+ y-chabot-oakland/\n\nLight Up the Night With Wonder Under the vast winter
+  sky\, the Geminids will dazzle with their brilliant streaks of light\, a
+  celestial gift from asteroid 3200 Phaethon. As Earth sails through trail
+ s of cosmic dust\, these meteoroids burn up in our atmosphere\, painting 
+ the heavens ...
+END:VEVENT
+END:VCALENDAR

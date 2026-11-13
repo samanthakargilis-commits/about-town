@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:07919ee9fb7b@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261121T200000
+DTEND;TZID=America/Los_Angeles:20261122T000000
+SUMMARY:M.D.C. (co-headling) ~ Frightwig ~ Class of '77
+LOCATION:Bottom Of The Hill\, 1233 17th Street\, San Francisco\, Californi
+ a 94107\, United States San Francisco\, San Francisco
+URL:https://dice.fm/event/6a67994abf7b9000011e09d9
+DESCRIPTION:New in your area\nhttps://dice.fm/event/6a67994abf7b9000011e09
+ d9\n\nPunk legends M.D.C. co-headline a night of political fury and rebel
+ lious energy\, with co-headliners & feminist punk pioneers Frightwig and 
+ San Francisco’s beloved Class of ’77. The Bottom of the Hill does not
+  use QR codes for entry. You must present a valid photo ID that matches t
+ he name on your DICE ticket to enter. All ticket transfers must be comple
+ ted through the DICE app before the transfer d
+END:VEVENT
+END:VCALENDAR

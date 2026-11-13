@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:02225a6f086d@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261114T110000
+DTEND;TZID=America/Los_Angeles:20261114T150000
+SUMMARY:Liza Boffi x The Hall Brunch
+LOCATION:THE HALL Bar & Billiards\, 2585 Mission\, San Francisco
+URL:https://ma.to/event/brunch-show-art-exhibition-14-nov-2026
+DESCRIPTION:Craft + Art\nhttps://ma.to/event/brunch-show-art-exhibition-14
+ -nov-2026\n\nA one-day-only brunch and art collaboration between local ar
+ tist Liza Boffi and The Hall. The afternoon combines original art with bi
+ lliards\, craft cocktails\, tandoori chicken\, and Brazilian steak kebabs
+ . Runs 11:00 AM – 3:00 PM.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:54a49adc30e9@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261113T190000
+DTEND;TZID=America/Los_Angeles:20261113T210000
+SUMMARY:Ego Check Comedy Night
+LOCATION:620 Jones Cocktail Bar & Restaurant\, 620 Jones St\, San Francisc
+ o\, CA 94102\, San Francisco
+URL:https://ma.to/event/ego-check-comedy-night-13-nov-2026
+DESCRIPTION:Comedy + Craft\nhttps://ma.to/event/ego-check-comedy-night-13-
+ nov-2026\n\nEgo Check is a Bay Area stand-up comedy showcase hosted by UI
+ U Bay Area at 620 Jones Cocktail Bar & Restaurant. Jide Okonkwo\, Bryant 
+ Hicks and Carla Clay are announced on the mic. Doors open at 7 PM. Ticket
+ s are on sale now\, and UIU Bay Area members can use an exclusive discoun
+ t code.
+END:VEVENT
+END:VCALENDAR

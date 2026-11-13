@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3a3dc87cbe32@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Indigenous Voices: Joey Clift and Terria Smith in conversation
+LOCATION:Telegraph Hill Books\, 1501 grant Avenue\, San Francisco\, CA 941
+ 33\, San Francisco
+URL:https://sf.funcheap.com/indigenous-voices-joey-clift-terria-smith-conv
+ ersation/
+DESCRIPTION:Reading + Discourse\nhttps://sf.funcheap.com/indigenous-voices
+ -joey-clift-terria-smith-conversation/\n\nJoin us as we close out our Nat
+ ive American Heritage Month series\, welcoming Joey Clift and Terria Smit
+ h to share their latest works — We’ve Been Here The Whole Time! and I
+  Love You So Many. Free to attend — RSVP required to reserve your seat.
+  Speakers Joey ...
+END:VEVENT
+END:VCALENDAR

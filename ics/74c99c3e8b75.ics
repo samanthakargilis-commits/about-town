@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:74c99c3e8b75@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261213T183000
+DTEND;TZID=America/Los_Angeles:20261213T203000
+SUMMARY:CAROLING IN PUBLIC 🎄
+LOCATION:Patricia's Green In Hayes Valley\, 499 Octavia St San Francisco\,
+  San Francisco
+URL:https://partiful.com/e/aoZjYGYQ28saJ0xU4q1i
+DESCRIPTION:Singing + Concerts\nhttps://partiful.com/e/aoZjYGYQ28saJ0xU4q1
+ i\n\n🎅 Have you ever wanted to do some good ole fashioned caroling\, m
+ eet some new people\, and bring some holiday cheer to SF? Here's your cha
+ nce! ❄️ We'll start by gathering in the middle of Hayes Valley\, prac
+ tice a few songs\, and then make our way around the neighborhood to carol
+  at a few houses! The more the merrier - invite your friends! 🦌 We'll 
+ be singing the classics - playlist to come! All levels
+END:VEVENT
+END:VCALENDAR

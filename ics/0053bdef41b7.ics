@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0053bdef41b7@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261113T090000
+DTEND;TZID=America/Los_Angeles:20261113T110000
+SUMMARY:MONO Music Conference
+LOCATION:The Midway\, 900 Marin St\, Marin
+URL:https://ma.to/event/mono-2026-music-conference-13-nov-2026
+DESCRIPTION:Singing + Art · Marin\nhttps://ma.to/event/mono-2026-music-co
+ nference-13-nov-2026\n\nMONO 2026 returns to The Midway in San Francisco 
+ for a two-day immersion into the music industry\, November 13–14. The p
+ rogram features 60+ award-winning artists\, producers\, and industry lead
+ ers. Highlights include a fireside chat with Valentino Khan\, a live keyn
+ ote podcast with Toby Gad\, songwriting workshops with Linney\, productio
+ n tips\, and panels on AI rights\, mastering\, and career building. Fe
+END:VEVENT
+END:VCALENDAR

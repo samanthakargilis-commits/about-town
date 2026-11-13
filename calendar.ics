@@ -1,0 +1,834 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//Feed//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:About Town
+X-WR-CALDESC:One idea a day\, picked for you
+X-WR-TIMEZONE:America/Los_Angeles
+X-APPLE-CALENDAR-COLOR:#8E8E93
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ec2ca3d3eec1@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261113T180000
+DTEND;TZID=America/Los_Angeles:20261113T220000
+SUMMARY:Made With Mahal Mural Block Party
+LOCATION:Jessie West\, Mission & 5th St\, San Francisco\, San Francisco
+DESCRIPTION:The Made With Mahal Mural Block Party is the final hub of UNDS
+ CVRD’s 10-year anniversary season. The evening celebrates Filipino cult
+ ure with the unveiling of murals by Venazir Martinez and Andre Sibayan (w
+ ith 1AM Projects). The program features the Nanang Collection runway show
+  presented by Calixta\, a fashion show curated by @jawa.tree showcasing d
+ esigners Calixta Lehman\, Johny Cariño Marquez\, Emordes Studio\, and Ni
+ ana Collection.\n\nTickets / RSVP: https://ma.to/event/made-with-mahal-mu
+ ral-block-party-13-nov-2026\n\nFairs & festivals + Art · free · 2.2 mi 
+ from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Jessie We
+ st":geo:37.78331,-122.40632
+END:VEVENT
+BEGIN:VEVENT
+UID:e74f5066a35f@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;VALUE=DATE:20261114
+DTEND;VALUE=DATE:20261115
+SUMMARY:Bizarre Bazaar
+LOCATION:Nia House Learning Center\, 2234 Ninth St\, Berkeley\, CA 94710\,
+  Berkeley
+DESCRIPTION:Join local makers\, quirky artisans\, and top-tier second-hand
+  treasures at our annual Bizarre Bazaar at Nia House Learning Center – 
+ 2234 Ninth St\, Berkeley\, CA 94710 between Allston and Bancroft. We’ll
+  have local artisans selling their crafts and treasures\, food\, live mus
+ ic\, and hands-on crafting stations ...\n\nTickets / RSVP: https://sf.fun
+ cheap.com/bizarre-bazaar/\n\nWeird & unusual + Craft · A yearly traditio
+ n · Berkeley · free · 9.9 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Nia House
+  Learning Center":geo:37.86465,-122.29351
+END:VEVENT
+BEGIN:VEVENT
+UID:e05432fde24a@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;VALUE=DATE:20261115
+DTEND;VALUE=DATE:20261116
+SUMMARY:Lady Bushra’s Queer Comedy Night in a Romance Bookstore
+LOCATION:The Love Potion Library\, 284 Noe St\, San Francisco\, CA 94114\,
+  San Francisco
+DESCRIPTION:The Love Potion Library is a cozy romance bookstore in the Cas
+ tro\, and what better location for a (mostly) queer comedy show?​ ​Se
+ e mostly queer BBC and NYtimes featured-comics without leaving the Gaybor
+ hood 🥰! ​ HEADLINER LADY BUSHRA ​Lady Bushra is the fabulous Briti
+ sh-Pakistani drag comedian known for ...\n\nTickets / RSVP: https://sf.fu
+ ncheap.com/lady-bushras-queer-comedy-night-romance-bookstore-sf/\n\nComed
+ y + Reading · Your reading tastes · $20 · 1.8 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="The Love 
+ Potion Library":geo:37.76455,-122.4334
+END:VEVENT
+BEGIN:VEVENT
+UID:07925de16d12@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261116T190000
+DTEND;TZID=America/Los_Angeles:20261116T210000
+SUMMARY:Spoken Word Open Mic
+LOCATION:Timebeing Teahouse\, 430 Haight St San Francisco\, San Francisco
+DESCRIPTION:Prepare a poem\, a short story\, or anything that comes from y
+ our heart to share. or just to support and listen <3 This is a very low s
+ takes environment to put out there what's deep inside your mind\, to push
+  you to finally write that thought down\, and to be listened to with no j
+ udgment. $10 entry\, comes with a mug of tea and good vibes.\n\nTickets /
+  RSVP: https://partiful.com/e/shgeHeTD7YG0PBSBbSLb\n\nSinging + Writing 
+ · free · 1.5 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Timebeing
+  Teahouse":geo:37.77235,-122.42942
+END:VEVENT
+BEGIN:VEVENT
+UID:074fc2e36ab4@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261117T170000
+DTEND;TZID=America/Los_Angeles:20261117T190000
+SUMMARY:From the Spoon to the City: Designing Contemporary Life
+LOCATION:Heath Clay Studio\, Heath Clay Studio\, 555 Alabama St Ste A\, Sa
+ n Francisco\, CA 94110\, USA\, San Francisco
+DESCRIPTION:Join Su Wu\, Dung Ngo\, and Catherine Bailey\, in Conversation
+  with Jennifer Dunlop Fletcher Join us at Heath San Francisco for a speci
+ al evening with writer/curator Su Wu and editor/publisher Dung Ngo. Their
+  new books Mesoamerican Modern: Ancient Ideas in Contemporary Mexican Hom
+ es and Knife Fork Spoon: Modernist Cutlery 1900–2025\, respectively\, w
+ ill anchor a conversation on contemporary design—and how it shapes our 
+ daily lives.\n\nTickets / RSVP: https://luma.com/hyak24wm\n\nCraft + Read
+ ing · free · 2.6 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Heath Cla
+ y Studio":geo:37.76218,-122.41189
+END:VEVENT
+BEGIN:VEVENT
+UID:ee22bbdfbb7f@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;VALUE=DATE:20261118
+DTEND;VALUE=DATE:20261119
+SUMMARY:Progressive Art Studio Models: A Lecture By Cléa Massiani
+LOCATION:Yerba Buena Center for the Arts\, 701 Mission St\, San Francisco\
+ , CA\, San Francisco
+DESCRIPTION:Join us for a lecture from Cléa Massiani on Progress Art Stud
+ ios (PAS)\; radical spaces that support artists with intellectual and dev
+ elopmental disabilities. Learn more about PAS within a lineage of artist-
+ led\, independent spaces that resisted dominant institutional models of p
+ roduction and exhibition.\n\nTickets / RSVP: https://sf.funcheap.com/prog
+ ressive-art-studio-models-lecture-cla-massiani/\n\nArt + Discourse · fre
+ e · 2.4 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Yerba Bue
+ na Center for the Arts":geo:37.78623,-122.40219
+END:VEVENT
+BEGIN:VEVENT
+UID:9925d72bb2ce@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261119T183000
+DTEND;TZID=America/Los_Angeles:20261119T200000
+SUMMARY:Jane Austen Reader's Theatre
+LOCATION:The Love Potion Library - Books\, Tea\, Wine\, The Love Potion Li
+ brary - Books\, Tea\, Wine\, 284 Noe St\, San Francisco\, CA 94114\, USA\
+ , San Francisco
+DESCRIPTION:Step into an evening of sharp wit\, sparkling dialogue\, and d
+ eliciously petty social maneuvering at Jane Austen Reader's Theatre. This
+  lively reading brings Austen off the page and into the room the way her 
+ fans know she shines best\, through her unforgettable narration as well a
+ s the characters themselves. Local actors will read selections aloud\, gi
+ ving full voice to the humor\, irony\, and keen observations that make Au
+ sten so endlessly entertaining.\n\nTickets / RSVP: https://luma.com/m6nt9
+ s43\n\nTheatre + Reading · Your reading tastes · Thursday evening · fr
+ ee · 1.8 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="The Love 
+ Potion Library - Books, Tea, Wine":geo:37.76456,-122.43341
+END:VEVENT
+BEGIN:VEVENT
+UID:1cf39c2d4228@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261120T180000
+DTEND;TZID=America/Los_Angeles:20261120T220000
+SUMMARY:Love Without Borders: Refugee Art Show
+LOCATION:Basil House / Decentered Studio\, 1175 Folsom St San Francisco\, 
+ San Francisco
+DESCRIPTION:Come peruse original paintings by artists of all ages\, who ar
+ e currently refugees in Greece\, fleeing war-torn countries throughout th
+ e Middle East and Africa. Learn more about the refugee crisis with an 8pm
+  talk from Founding Director\, Kayra Martinez. Enjoy live music by cellis
+ t Jaír Griffin plus drinks and refreshments while viewing the art and re
+ ading the artists’ stories. About the musician: Jaír Griffin is an art
+ ist native to Atlanta\, Georgia.\n\nTickets / RSVP: https://partiful.com/
+ e/8SVpZTT3lNBdoPdDXvoo\n\nArt + Craft · free · 2.2 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Basil Hou
+ se / Decentered Studio":geo:37.77532,-122.40917
+END:VEVENT
+BEGIN:VEVENT
+UID:b953ad3a00df@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261121T213000
+DTEND;TZID=America/Los_Angeles:20261121T230000
+SUMMARY:“Drunk Theatre” SF’s Wildest Comedy Show
+LOCATION:Eclectic Box\, 446 Valencia Street San Francisco\, CA
+DESCRIPTION:A comedian takes five shots of whiskey in a row and tries to p
+ erform an improvised play with five sober comedians. What could go wrong?
+ ! Drunk Theatre is the entirely improvised\, unpredictable\, and crazy co
+ medy show that’ll kick your weekend into overdrive. See what the SF Chr
+ onicle\, CBS\, LA Times\, ...\n\nTickets / RSVP: https://sf.funcheap.com/
+ drunk-theatre-sf-wildest-comedy-show-nov-21/\n\nComedy + Theatre · free 
+ · 2.1 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Eclectic 
+ Box":geo:37.7657,-122.42214
+END:VEVENT
+BEGIN:VEVENT
+UID:0d79797b20e3@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261122T130000
+DTEND;TZID=America/Los_Angeles:20261122T170000
+SUMMARY:‘Zine Launch Party
+LOCATION:507 55th St\, 507 55th St Oakland\, Oakland
+DESCRIPTION:Hello\, lovelies! 💫 It's finally happening! Some of you may
+  already know how we’ve spent this past year working on a literary ‘z
+ ine\, writing\, illustrating\, photographing\, and designing. And now\, a
+ fter many months of frantic work (and many lulls)\, Kaash\, will be compl
+ ete! We’re so proud of what this community of artists has explored\, an
+ d we’d love to share it with you all! Come celebrate the launch with us
+  at East Bay Community Space\, and take home your own copy of Kaash.\n\nT
+ ickets / RSVP: https://partiful.com/e/CadopercUBxV2GzL62l9\n\nCraft + Wri
+ ting · Oakland · free · 10.7 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="507 55th 
+ St":geo:37.84015,-122.2623
+END:VEVENT
+BEGIN:VEVENT
+UID:3230d889fc8a@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261123T190000
+DTEND;TZID=America/Los_Angeles:20261123T220000
+SUMMARY:Free SF Comedy Show “Hayes Valley Comedy Night” at The Functio
+ n
+LOCATION:The Function\, 1414 Market Street\, San Francisco\, CA\, San Fran
+ cisco
+DESCRIPTION:Welcome to the heart of laughter right on the edge of SF’s v
+ ibrant Hayes Valley district! Step into a world of hilarity and at the ne
+ west addition to the city’s comedy scene – a chic\, upscale comedy cl
+ ub boasting avant-garde decor\, an upstairs lounge and a roster of top-no
+ tch comedians. ...\n\nTickets / RSVP: https://sf.funcheap.com/free-sf-com
+ edy-show-hayes-valley-comedy-night-at-the-function-every-monday-23/\n\nCo
+ medy · free · 1.8 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="The Funct
+ ion":geo:37.77627,-122.4182
+END:VEVENT
+BEGIN:VEVENT
+UID:16d5ea4a0c89@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261124T160000
+DTEND;TZID=America/Los_Angeles:20261124T200000
+SUMMARY:Full Moon Community Art & Wellness Fest
+LOCATION:India Basin Waterfront Park\, 900 Innes Ave\, San Francisco\, CA 
+ 94124\, San Francisco
+DESCRIPTION:Join curator Rhiannon Evans MacFadyen and Salōn! for an eveni
+ ng of art\, local makers\, sound healing\, meditation\, and community con
+ nection at India Basin Waterfront Park. Join us for a full moon ceremony\
+ , libation circle\, and waterfront offering\, with food\, tea\, and hot c
+ hocolate for all ...\n\nTickets / RSVP: https://sf.funcheap.com/full-moon
+ -community-art-wellness-fest-sf/\n\nSpirituality + Art · free · 5.5 mi 
+ from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="India Bas
+ in Waterfront Park":geo:37.7322,-122.37576
+END:VEVENT
+BEGIN:VEVENT
+UID:c7fdd3c81740@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;VALUE=DATE:20261125
+DTEND;VALUE=DATE:20261126
+SUMMARY:Free Admission Day at Yerba Buena Center for the Arts (YBCA)
+LOCATION:Yerba Buena Center for the Arts\, 701 Mission Street San Francisc
+ o\, CA 94103
+DESCRIPTION:Opened to the public in 1993\, YBCA was founded as the cultura
+ l anchor of San Francisco’s Yerba Buena Gardens neighborhood. Our work 
+ spans the realms of contemporary art\, performance\, film\, civic engagem
+ ent\, and public life. Centering artists as essential to social and cultu
+ ral movement\, YBCA ...\n\nTickets / RSVP: https://sf.funcheap.com/free-a
+ dmission-day-at-yerba-buena-center-for-the-arts-ybca-163/\n\nMuseum exhib
+ its + Art · free · 2.4 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Yerba Bue
+ na Center for the Arts":geo:37.78623,-122.40219
+END:VEVENT
+BEGIN:VEVENT
+UID:e3f152e7fc9f@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261126T193000
+DTEND;TZID=America/Los_Angeles:20261126T210000
+SUMMARY:Free HellaFunny Thursday Comedy Night (Downtown SF)
+LOCATION:The Function\, 1414 Market Street\, San Francisco\, CA\, San Fran
+ cisco
+DESCRIPTION:Welcome to the heart of laughter right on the edge of SF’s v
+ ibrant Hayes Valley district! Step into a world of hilarity and at the ne
+ west addition to the city’s comedy scene – a chic\, upscale comedy cl
+ ub boasting avant-garde decor\, an upstairs lounge and a roster of top-no
+ tch comedians. ...\n\nTickets / RSVP: https://sf.funcheap.com/free-hellaf
+ unny-thursday-comedy-night-downtown-sf-23/\n\nComedy · Thursday evening 
+ · free · 1.8 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="The Funct
+ ion":geo:37.77627,-122.4182
+END:VEVENT
+BEGIN:VEVENT
+UID:dc426cfd3f89@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261127T163000
+DTEND;TZID=America/Los_Angeles:20261127T200000
+SUMMARY:Ghirardelli Square’s 46-Ft Tree Lighting: Santa\, Candy & Sing-A
+ long (2026)
+LOCATION:Ghirardelli Square\, 900 North Point St\, San Francisco\, CA 9410
+ 9\, San Francisco
+DESCRIPTION:Join us Friday\, November 27 at 4:45 PM for our grand 46’ Ch
+ ristmas tree lighting ceremony featuring Santa\, Elf\, and a special musi
+ cal performance by the San Francisco Boys Chorus. Follow Santa and his el
+ f for a festive sing-a-long plus Santa visits\, letters to Santa ...\n\nT
+ ickets / RSVP: https://sf.funcheap.com/ghirardelli-squares-holiday-lighti
+ ng-ceremony/\n\nSinging + Musical theatre · A yearly tradition · free 
+ · 1.8 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Ghirardel
+ li Square":geo:37.80579,-122.4231
+END:VEVENT
+BEGIN:VEVENT
+UID:3a3dc87cbe32@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Indigenous Voices: Joey Clift and Terria Smith in conversation
+LOCATION:Telegraph Hill Books\, 1501 grant Avenue\, San Francisco\, CA 941
+ 33\, San Francisco
+DESCRIPTION:Join us as we close out our Native American Heritage Month ser
+ ies\, welcoming Joey Clift and Terria Smith to share their latest works 
+ — We’ve Been Here The Whole Time! and I Love You So Many. Free to att
+ end — RSVP required to reserve your seat. Speakers Joey ...\n\nTickets 
+ / RSVP: https://sf.funcheap.com/indigenous-voices-joey-clift-terria-smith
+ -conversation/\n\nReading + Discourse · free · 2.3 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Telegraph
+  Hill Books":geo:37.80076,-122.40773
+END:VEVENT
+BEGIN:VEVENT
+UID:a4c7c2d95cf1@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261129T190000
+DTEND;TZID=America/Los_Angeles:20261129T210000
+SUMMARY:SF’s Iconic Punchline Comedy Club: Secret Guest List (S.F. Comed
+ y Showcase)
+LOCATION:Punch Line Comedy Club\, 444 Battery Street\, San Francisco\, CA 
+ 94111\, San Francisco
+DESCRIPTION:Get ready for an awesome night of comedy at SF’s iconic Punc
+ hline Comedy Club. And you can get on our secret guest list. Secret Guest
+  List: Punchline Free Comedy Nights Punchline Comedy Club\, 444 Battery.\
+ , SF FREE with RSVP (otherwise tickets are $18/$20). – Must ...\n\nTick
+ ets / RSVP: https://sf.funcheap.com/sfs-iconic-punchline-comedy-club-secr
+ et-guest-list-s-f-comedy-showcase-2/\n\nComedy + Weird & unusual · free 
+ · 2.6 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Punch Lin
+ e Comedy Club":geo:37.79553,-122.40012
+END:VEVENT
+BEGIN:VEVENT
+UID:9ecf381250b4@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261130T173000
+DTEND;TZID=America/Los_Angeles:20261130T193000
+SUMMARY:2026 Nob Hill Tree Lighting Ceremony
+LOCATION:Nob Hill\, San Francisco
+DESCRIPTION:🎄 Join Us for a Magical Evening! ✨The Nob Hill Associatio
+ n is delighted to invite you to our annual Holiday Lighting Celebration a
+ t Huntington Park! This cherished tradition is free and open to the entir
+ e community. Come enjoy an unforgettable evening filled with holiday spir
+ it and ...\n\nTickets / RSVP: https://gracecathedral.org/calendar-events/
+ nob-hill-tree-lighting-ceremony-2/\n\nSpirituality · A yearly tradition 
+ · free · 1.7 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Nob Hill"
+ :geo:37.79448,-122.41559
+END:VEVENT
+BEGIN:VEVENT
+UID:b89468d65d93@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261201T210000
+DTEND;TZID=America/Los_Angeles:20261201T230000
+SUMMARY:Karaoke Tuesday
+LOCATION:Neck of the Woods\, 406 Clement St\, San Francisco
+DESCRIPTION:Karaoke Tuesday returns to Neck of the Woods SF! Every Tuesday
+  night! Neck of the Woods 406 Clement St San Francisco\, CA 94118 8pm FRE
+ E Read More\n\nTickets / RSVP: https://www.ticketweb.com/event/karaoke-tu
+ esday-neck-of-the-woods-tickets/14227584?theme=nwoods&REFID=clientsitewp\
+ n\nSinging · free · 1.0 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Neck of t
+ he Woods":geo:37.78319,-122.46378
+END:VEVENT
+BEGIN:VEVENT
+UID:4417456d5485@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261202T110000
+DTEND;TZID=America/Los_Angeles:20261202T183000
+SUMMARY:Free 2026 Holiday Market w/ Women-Owned Vendors at 111 Minna
+LOCATION:111 Minna Gallery\, 111 Minna St.\, San Francisco\, CA\, San Fran
+ cisco
+DESCRIPTION:Shop Local. Support Women. Celebrate the Season! Get ready to 
+ sip\, shop\, and celebrate the holidays—all while supporting incredible
+  local women-owned businesses! ✨ Join NAWBO-SFBA and our community part
+ ners for a festive FREE Holiday Market at our exciting new location\, Min
+ na Gallery in the heart of San ...\n\nTickets / RSVP: https://sf.funcheap
+ .com/free-2026-holiday-market-womenowned-vendors-111-minna-sf/\n\nFairs &
+  festivals + Art · A yearly tradition · free · 2.6 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="111 Minna
+  Gallery":geo:37.78742,-122.39933
+END:VEVENT
+BEGIN:VEVENT
+UID:a6310b68f4ec@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261203T170000
+DTEND;TZID=America/Los_Angeles:20261203T220000
+SUMMARY:SF’s Free DFT Monthly Block Party: “Downtown First Thursdays
+ ” (2026)
+LOCATION:2nd Street between Market and Howard Streets\, San Francisco
+DESCRIPTION:Downtown First Thursdays is back in 2026 for a full year of st
+ reet parties in 2026\, starting Jan 1\, 2026\, with a New Year’s Day Ed
+ ition and returning every first Thursday with a new downtown block party.
+  DJs – Live Performances – Dancing – Drag ...\n\nTickets / RSVP: ht
+ tps://sf.funcheap.com/sfs-free-dft-monthly-block-party-downtown-first-thu
+ rsdays-2026-11/\n\nFairs & festivals + Gay / queer · Thursday evening ·
+  free
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:bd7cc2294407@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:“Block Fest” Tenderloin Arts Festival & Free Art Making
+LOCATION:SF\, 80 Turk St\, San Francisco\, CA\, San Francisco
+DESCRIPTION:Every first and third Friday of the month\, locally sourced Ar
+ tist Activators offer up free art making. Block Fest animates and celebra
+ tes the unit block of Turk Street with free arts activities\, cultural of
+ ferings\, community information\, and discussion for the local residents\
+ , workers\, and visitors. From ...\n\nTickets / RSVP: https://sf.funcheap
+ .com/block-fest-tenderloin-arts-festival-free-art-making-sf-136/\n\nFairs
+  & festivals + Art · free · 2.0 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="SF":geo:3
+ 7.78337,-122.41041
+END:VEVENT
+BEGIN:VEVENT
+UID:87dbf63130cd@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261205T110000
+DTEND;TZID=America/Los_Angeles:20261205T170000
+SUMMARY:SF’s Sunset Holiday Mercantile 2026: 100+ Makers\, Food Trucks +
+  Live Music
+LOCATION:San Francisco County Fair Building\, 9th and Lincoln Street\, San
+  Francisco\, CA\, San Francisco
+DESCRIPTION:Come Eat\, Drink\, Shop\, Play\, Connect\, and Be Local at the
+  11th Annual Sunset Holiday Mercantile at the County Fair Building in Gol
+ den Gate Park! Sunset Holiday Mercantile in 2026 which features TWO DAYS 
+ of artisan makers and vendors\, plus live music\, food\, activities and .
+ ..\n\nTickets / RSVP: https://sf.funcheap.com/sfs-sunset-holiday-mercanti
+ le-2026-100-makers-food-trucks-live-music-dec-5-6/\n\nCraft + Concerts ·
+  free · 1.9 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="San Franc
+ isco County Fair Building":geo:37.76659,-122.46728
+END:VEVENT
+BEGIN:VEVENT
+UID:1689a4170d2a@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261206T110000
+DTEND;TZID=America/Los_Angeles:20261206T170000
+SUMMARY:“Castro Art Mart” Mini Block Party on Noe St.
+LOCATION:Market & Noe\, Market and Castro\, San Francisco\, CA\, San Franc
+ isco
+DESCRIPTION:The Castro Art Mart Features LGBTQ Artists\, Live Music\, and 
+ Drag Performances every 1st Sunday of the month on Noe St and Market St (
+ Next to the Lookout Bar)\, 11-5pm. Come enjoy this Free\, Family & Friend
+ ly event hosted by Castro Merchants\, while supporting local artists\, ..
+ .\n\nTickets / RSVP: https://sf.funcheap.com/castro-art-mart-mini-block-p
+ arty-on-noe-st-every-first-sunday-53/\n\nGay / queer + Fairs & festivals 
+ · free · 1.8 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Market & 
+ Noe":geo:37.76462,-122.43262
+END:VEVENT
+BEGIN:VEVENT
+UID:6a74dc8a8359@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261207T173000
+DTEND;TZID=America/Los_Angeles:20261207T220000
+SUMMARY:“Let’s Glow SF” 2026: SF’s Huge Holiday Projection Arts Fe
+ stival
+LOCATION:San Francisco's Financial District\, Market at Sutter Street\, Sa
+ n Francisco\, CA\, San Francisco
+DESCRIPTION:Let’s Glow SF\, the nation’s largest free holiday projecti
+ on arts festival\, is lighting up downtown San Francisco once again for i
+ ts sixth and brightest year yet. This all-ages\, family-friendly festival
+  runs for 10 dazzling nights from December 4-13\, 2026. Experience breath
+ taking animated projections illuminating iconic buildings ...\n\nTickets 
+ / RSVP: https://sf.funcheap.com/lets-glow-sf-2026-sfs-huge-holiday-projec
+ tion-arts-festival-dec-4-13-3/\n\nFairs & festivals · A yearly tradition
+  · free · 2.5 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="San Franc
+ isco's Financial District":geo:37.78592,-122.40074
+END:VEVENT
+BEGIN:VEVENT
+UID:e623fd48f11a@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261208T210000
+DTEND;TZID=America/Los_Angeles:20261208T230000
+SUMMARY:Karaoke Tuesday
+LOCATION:Neck of the Woods\, 406 Clement St\, San Francisco
+DESCRIPTION:Karaoke Tuesday returns to Neck of the Woods SF! Every Tuesday
+  night! Neck of the Woods 406 Clement St San Francisco\, CA 94118 8pm FRE
+ E Read More\n\nTickets / RSVP: https://www.ticketweb.com/event/karaoke-tu
+ esday-neck-of-the-woods-tickets/14227394?theme=nwoods&REFID=clientsitewp\
+ n\nSinging · free · 1.0 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Neck of t
+ he Woods":geo:37.78319,-122.46378
+END:VEVENT
+BEGIN:VEVENT
+UID:1ab75e7857c0@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261209T190000
+DTEND;TZID=America/Los_Angeles:20261209T220000
+SUMMARY:Hysteria Comedy Open Mic for Women and Queers
+LOCATION:San Francisco Eagle Bar\, 398 12th Street\, San Francisco\, CA 94
+ 103 San Francisco\, San Francisco
+DESCRIPTION:Get ready to laugh your heart out at the Hysteria Comedy Open 
+ Mic for badass women and fabulous queers. Every 2nd (and occasionally 5th
+ ) Wed\n\nTickets / RSVP: https://www.eventbrite.com/e/hysteria-comedy-ope
+ n-mic-for-women-and-queers-tickets-1995179924864\n\nComedy + Singing · f
+ ree · 2.2 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="San Franc
+ isco Eagle Bar":geo:37.76999,-122.41334
+END:VEVENT
+BEGIN:VEVENT
+UID:eb1422874e4a@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261210T160000
+DTEND;TZID=America/Los_Angeles:20261210T210000
+SUMMARY:Cole Valley Nights: Holiday Nights Street Fair
+LOCATION:Cole & Parnassus\, Cole St. and Parnassus St.\, San Francisco\, C
+ A\, San Francisco
+DESCRIPTION:Cole Valley Nights is back so come check out the neighborhood 
+ while sampling popular eateries and enjoying live music\, special activit
+ ies\, and local businesses. Experience the vibrant blend of art\, culture
+ \, and spirit that Cole Valley has to offer. A Neighborhood Street Fair p
+ resented by the ...\n\nTickets / RSVP: https://sf.funcheap.com/cole-valle
+ y-nights-holiday-nights-street-fair/\n\nFairs & festivals + Concerts · A
+  yearly tradition · free · 1.7 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Cole & Pa
+ rnassus":geo:37.76478,-122.4499
+END:VEVENT
+BEGIN:VEVENT
+UID:b799780615e8@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261211T221500
+DTEND;TZID=America/Los_Angeles:20261211T231500
+SUMMARY:“The Ritual” Comedy Show in The Mission
+LOCATION:Endgames Improv Theater & Bar\, 2965 Mission St (btwn 25th and 26
+ th)\, San Francisco\, CA\, San Francisco
+DESCRIPTION:Once a week\, in the late hours of what used to be “not cons
+ idered late\,” a group of degenerates and misfits gather to perform a s
+ eance unlike anything seen before. So comically evil that you may get sic
+ k to your stomach. The Ritual will be ...\n\nTickets / RSVP: https://sf.f
+ uncheap.com/5-off-the-ritual-comedy-show-in-the-mission-sf-88/\n\nComedy 
+ + Spirituality · $12.16 · 3.1 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Endgames 
+ Improv Theater & Bar":geo:37.74968,-122.41788
+END:VEVENT
+BEGIN:VEVENT
+UID:dcef50d48108@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261212T110000
+DTEND;TZID=America/Los_Angeles:20261212T170000
+SUMMARY:Free Mission Craft Holiday Market w/ 30+ Local Artists
+LOCATION:Ground Floor San Francisco\, 455 Valencia St.\, San Francisco\, C
+ A\, San Francisco
+DESCRIPTION:✨ The Mission Craft Holiday Market is back for our 3rd holid
+ ay season! ✨ Saturday\, Dec 12 · 11 a.m.–5 p.m. Shop your favorite B
+ ay Area artists and discover 30+ new ones\, all under one roof in San Fra
+ ncisco. Our curated lineup includes 30+ ceramicists\, candle and soap ...
+ \n\nTickets / RSVP: https://sf.funcheap.com/free-mission-craft-holiday-ma
+ rket-30-local-artists-sf/\n\nCraft + Fairs & festivals · A yearly tradit
+ ion · free · 2.1 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Ground Fl
+ oor San Francisco":geo:37.76565,-122.42168
+END:VEVENT
+BEGIN:VEVENT
+UID:fcdf72d600bc@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261213T110000
+DTEND;TZID=America/Los_Angeles:20261213T130000
+SUMMARY:Santa Skivvies 2026: Holiday Underwear Run Through the Castro
+LOCATION:Castro\, San Francisco
+DESCRIPTION:December 13\, 2026 – SF (Castro) – FREE to watch\; Donate 
+ to run – The Santa Skivvies Run is a festive romp through the Castro be
+ nefiting the San Francisco AIDS Foundation. Watch hundreds of bods drop t
+ rou\, don Santa hats and reindeer antlers to help raise funds to support 
+ the free and local services of the San Francisco AIDS Foundation.\n\nTick
+ ets / RSVP: https://sf.funcheap.com/city-guide/december-street-fairs-fest
+ ivals/\n\nGay / queer · A yearly tradition · free · 1.9 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Castro":g
+ eo:37.7626,-122.43529
+END:VEVENT
+BEGIN:VEVENT
+UID:2bfc94daf99d@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261214T190000
+DTEND;TZID=America/Los_Angeles:20261214T220000
+SUMMARY:Free SF Comedy Show “Hayes Valley Comedy Night” at The Functio
+ n
+LOCATION:The Function\, 1414 Market Street\, San Francisco\, CA\, San Fran
+ cisco
+DESCRIPTION:Welcome to the heart of laughter right on the edge of SF’s v
+ ibrant Hayes Valley district! Step into a world of hilarity and at the ne
+ west addition to the city’s comedy scene – a chic\, upscale comedy cl
+ ub boasting avant-garde decor\, an upstairs lounge and a roster of top-no
+ tch comedians. ...\n\nTickets / RSVP: https://sf.funcheap.com/free-sf-com
+ edy-show-hayes-valley-comedy-night-at-the-function-every-monday-26/\n\nCo
+ medy · free · 1.8 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="The Funct
+ ion":geo:37.77627,-122.4182
+END:VEVENT
+BEGIN:VEVENT
+UID:af37000e6f81@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261215T210000
+DTEND;TZID=America/Los_Angeles:20261215T230000
+SUMMARY:Karaoke Tuesday
+LOCATION:Neck of the Woods\, 406 Clement St\, San Francisco
+DESCRIPTION:Karaoke Tuesday returns to Neck of the Woods SF! Every Tuesday
+  night! Neck of the Woods 406 Clement St San Francisco\, CA 94118 8pm FRE
+ E Read More\n\nTickets / RSVP: https://www.ticketweb.com/event/karaoke-tu
+ esday-neck-of-the-woods-tickets/14227304?theme=nwoods&REFID=clientsitewp\
+ n\nSinging · free · 1.0 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Neck of t
+ he Woods":geo:37.78319,-122.46378
+END:VEVENT
+BEGIN:VEVENT
+UID:6a0ee1ef64fc@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;VALUE=DATE:20261216
+DTEND;VALUE=DATE:20261217
+SUMMARY:Free Admission Day at Yerba Buena Center for the Arts (YBCA)
+LOCATION:Yerba Buena Center for the Arts\, 701 Mission Street San Francisc
+ o\, CA 94103
+DESCRIPTION:Opened to the public in 1993\, YBCA was founded as the cultura
+ l anchor of San Francisco’s Yerba Buena Gardens neighborhood. Our work 
+ spans the realms of contemporary art\, performance\, film\, civic engagem
+ ent\, and public life. Centering artists as essential to social and cultu
+ ral movement\, YBCA ...\n\nTickets / RSVP: https://sf.funcheap.com/free-a
+ dmission-day-at-yerba-buena-center-for-the-arts-ybca-166/\n\nMuseum exhib
+ its + Art · free · 2.4 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Yerba Bue
+ na Center for the Arts":geo:37.78623,-122.40219
+END:VEVENT
+BEGIN:VEVENT
+UID:510ed9b8739f@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261217T190000
+DTEND;TZID=America/Los_Angeles:20261217T210000
+SUMMARY:Clement St Comedy
+LOCATION:Neck of the Woods\, 406 Clement St\, San Francisco
+DESCRIPTION:Clement St Comedy Every Thursday downstairs @ Neck of the Wood
+ s 406 Clement St San Francisco\, CA 94118 Doors at 6:45pm\, show at 7pm s
+ harp Read More\n\nTickets / RSVP: https://www.ticketweb.com/event/clement
+ -st-comedy-neck-of-the-woods-tickets/15011383?theme=nwoods&REFID=clientsi
+ tewp\n\nComedy · Thursday evening · free · 1.0 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Neck of t
+ he Woods":geo:37.78319,-122.46378
+END:VEVENT
+BEGIN:VEVENT
+UID:a06e259ed1cb@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:Fort Mason’s Giant Holiday Night Market
+LOCATION:Fort Mason\, San Francisco
+DESCRIPTION:December 18\, 2026 – SF (Fort Mason) – FREE – Off the Gr
+ id returns to Fort Mason for a special holiday night market featuring 25+
+  food trucks\, 50+ craft vendors\, live music and DJs\, hands-on family a
+ rt workshops\, strolling Dickens performers \, seasonal drinks and bites\
+ , public art\, and festive waterfront views. Off the Grid\n\nTickets / RS
+ VP: http://www.offthegrid.com\n\nFairs & festivals + Craft · Featured on
+  Funcheap · free · 1.6 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Fort Maso
+ n":geo:37.80628,-122.42899
+END:VEVENT
+BEGIN:VEVENT
+UID:6f4ef8d5f5c6@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261220T170000
+DTEND;TZID=America/Los_Angeles:20261220T190000
+SUMMARY:Downtown First Thursdays 2026
+LOCATION:
+DESCRIPTION:First Thursdays: (currently scheduled January through December
+  2026) Second Street\, Downtown San Francisco\, CA Free | All Ages DFT (D
+ owntown First Thursdays) is a free\, all-ages monthly street party hosted
+  in Downtown San Francisco\, taking place on every first Thursday of the 
+ month from 5pm to 10pm. Get ready for disco in the streets\, DJs\, live m
+ usic\, drag\, fashion\, street performances\, and more.\n\nTickets / RSVP
+ : https://sf.funcheap.com/city-guide/night-market-san-francisco-bay-area/
+ \n\nGay / queer + Camp & Halloween · Featured on Funcheap · free
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:f7c48fd210c2@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261222T210000
+DTEND;TZID=America/Los_Angeles:20261222T230000
+SUMMARY:Karaoke Tuesday
+LOCATION:Neck of the Woods\, 406 Clement St\, San Francisco
+DESCRIPTION:Karaoke Tuesday returns to Neck of the Woods SF! Every Tuesday
+  night! Neck of the Woods 406 Clement St San Francisco\, CA 94118 8pm FRE
+ E Read More\n\nTickets / RSVP: https://www.ticketweb.com/event/karaoke-tu
+ esday-neck-of-the-woods-tickets/14227024?theme=nwoods&REFID=clientsitewp\
+ n\nSinging · free · 1.0 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Neck of t
+ he Woods":geo:37.78319,-122.46378
+END:VEVENT
+BEGIN:VEVENT
+UID:aef807d5cf71@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261223T193000
+DTEND;TZID=America/Los_Angeles:20261223T213000
+SUMMARY:Comedy Allstars
+LOCATION:Punch Line Comedy Club\, 444 Battery Street\, San Francisco
+DESCRIPTION:Tickets / RSVP: https://www.ticketmaster.com/comedy-allstars-s
+ an-francisco-california-12-23-2026/event/1C0065198C228CE3\n\nComedy · 2.
+ 6 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Punch Lin
+ e Comedy Club":geo:37.79553,-122.40012
+END:VEVENT
+BEGIN:VEVENT
+UID:7b2d04334350@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261224T190000
+DTEND;TZID=America/Los_Angeles:20261224T203000
+SUMMARY:Christmas Eve Mass at the Presidio Chapel
+LOCATION:Presidio Chapel\, 130 Fisher Loop\, San Francisco
+DESCRIPTION:Peace be with you. All are welcome!! Please join-in to celebra
+ te Christmas Eve on Thursday\, December 24\, 2026 at the Presidio Chapel\
+ , 130 Fisher Loop\, San Francisco The White Robed Monks of St. Benedict a
+ nd The Interfaith Center at the Presidio ORDO: 7:00 pm PST Christmas Caro
+ ls 7:30 pm PST Christmas Eve Mass 8:15 pm PST Dessert Pot Luck and Good C
+ heer Questions: XmasEveMass@whiterobedmonks.org or presidiointerfaith@gma
+ il.com May many blessings of Peace and Joy Be to you and yours Now and…
+ \n\nTickets / RSVP: https://presidio.gov/explore/events/christmas-eve-mas
+ s-at-the-presidio-chapel/\n\nA walk from home · Thursday evening · free
+  · 1.1 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Presidio 
+ Chapel":geo:37.7993,-122.46187
+END:VEVENT
+BEGIN:VEVENT
+UID:c8af485cb83e@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261228T193000
+DTEND;TZID=America/Los_Angeles:20261228T213000
+SUMMARY:Emily Van Dyke
+LOCATION:Punch Line Comedy Club\, 444 Battery Street\, San Francisco
+DESCRIPTION:Tickets / RSVP: https://www.ticketmaster.com/emily-van-dyke-sa
+ n-francisco-california-12-28-2026/event/1C00652EBC62FC65\n\nGay / queer +
+  Comedy · 2.6 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Punch Lin
+ e Comedy Club":geo:37.79553,-122.40012
+END:VEVENT
+BEGIN:VEVENT
+UID:e735e446f514@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261229T210000
+DTEND;TZID=America/Los_Angeles:20261229T230000
+SUMMARY:Karaoke Tuesday
+LOCATION:Neck of the Woods\, 406 Clement St\, San Francisco
+DESCRIPTION:Karaoke Tuesday returns to Neck of the Woods SF! Every Tuesday
+  night! Neck of the Woods 406 Clement St San Francisco\, CA 94118 8pm FRE
+ E Read More\n\nTickets / RSVP: https://www.ticketweb.com/event/karaoke-tu
+ esday-neck-of-the-woods-tickets/14227664?theme=nwoods&REFID=clientsitewp\
+ n\nSinging · free · 1.0 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Neck of t
+ he Woods":geo:37.78319,-122.46378
+END:VEVENT
+BEGIN:VEVENT
+UID:44213977b264@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261230T183000
+DTEND;TZID=America/Los_Angeles:20261230T203000
+SUMMARY:Greg Proops: Live Album Recording
+LOCATION:Punch Line Comedy Club\, 444 Battery Street\, San Francisco
+DESCRIPTION:Tickets / RSVP: https://www.ticketmaster.com/greg-proops-live-
+ album-recording-san-francisco-california-12-30-2026/event/1C006525DFC04A5
+ 8\n\nComedy · 2.6 mi from home
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Punch Lin
+ e Comedy Club":geo:37.79553,-122.40012
+END:VEVENT
+BEGIN:VEVENT
+UID:51e6a56754b1@about-town
+DTSTAMP:20261113T204931Z
+DTSTART;TZID=America/Los_Angeles:20261231T220000
+DTEND;TZID=America/Los_Angeles:20270101T040000
+SUMMARY:SARAH DE WARREN NYE
+LOCATION:Halcyon SF\, 314 11th St\, San Francisco\, CA 94103\, USA San Fra
+ ncisco\, San Francisco
+DESCRIPTION:On NEW YEARS EVE God gave us SARAH DE WARREN! The UK singer/so
+ ngwriter and producer continues to deliver chart-toppers\, pushing musica
+ l boundaries with her evocative vocals and floor-filling productions! Rin
+ g in the New Year with the TECHNO MOMMY and local faves TARA + ELVIN LOVE
+  on support!\n\nTickets / RSVP: https://dice.fm/event/6adbdc6079b93500018
+ 375e3\n\nMusical theatre + Concerts · Thursday evening · 2.1 mi from ho
+ me
+TRANSP:TRANSPARENT
+X-APPLE-STRUCTURED-LOCATION;VALUE=URI;X-APPLE-RADIUS=70;X-TITLE="Halcyon S
+ F":geo:37.77146,-122.41392
+END:VEVENT
+END:VCALENDAR

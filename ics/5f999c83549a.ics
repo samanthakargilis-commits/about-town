@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5f999c83549a@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261113T170000
+DTEND;TZID=America/Los_Angeles:20261113T190000
+SUMMARY:Making Spirits Rise
+LOCATION:Los Gatos Soda Works\, Los Gatos
+URL:https://ma.to/event/making-spirits-rise-13-nov-2026
+DESCRIPTION:Camp & Halloween · Los Gatos\nhttps://ma.to/event/making-spir
+ its-rise-13-nov-2026\n\nMaking Spirits Rise is a Halloween pop-up at Los 
+ Gatos Soda Works\, extended through November 14. The venue is closed Nove
+ mber 15–19 for its holiday transformation. Reservations are highly reco
+ mmended\, especially on weekends. Entry is limited to guests 21 and over.
+END:VEVENT
+END:VCALENDAR

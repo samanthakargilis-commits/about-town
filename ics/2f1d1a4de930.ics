@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2f1d1a4de930@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261212T110000
+DTEND;TZID=America/Los_Angeles:20261212T130000
+SUMMARY:Holiday Vibe Market @ Pier 27
+LOCATION:27 The Embarcadero\, 27 The Embarcadero San Francisco\, San Franc
+ isco
+URL:https://partiful.com/e/z4D8f5mEk3EsQvgjXd2g
+DESCRIPTION:Craft + Fairs & festivals\nhttps://partiful.com/e/z4D8f5mEk3Es
+ QvgjXd2g\n\nThe Holiday Vibe Market is taking over two floors of Pier 27 
+ for a weekend art fair with 140+ local artisans\, makers\, and creatives\
+ , plus views of the bay. Between holiday shopping stops\, browse an immer
+ sive art gallery\, grab a drink at the cocktail bars or espresso bar\, tr
+ y food from guest chefs\, and catch a local vinyl DJ Admission is free\, 
+ the event is family-friendly\, and it’s fully indoors! T
+END:VEVENT
+END:VCALENDAR

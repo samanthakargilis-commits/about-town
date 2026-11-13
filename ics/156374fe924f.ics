@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:156374fe924f@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261113T183000
+DTEND;TZID=America/Los_Angeles:20261113T203000
+SUMMARY:Battle of the Cans
+LOCATION:48 S 7th St\, 48 S 7th St\, San Jose\, CA\, San Jose
+URL:https://ma.to/event/battle-of-the-cans-2026-11-13
+DESCRIPTION:Concerts · San Jose\nhttps://ma.to/event/battle-of-the-cans-2
+ 026-11-13\n\nThe second annual Battle of The Cans is a charity concert fe
+ aturing Bay Area college radio stations and local musicians. KSFS is repr
+ esented by Cannonmouth\, KSJS by Tabby's Dream\, and KSCU by Christmastre
+ e. Admission is free\, but attendees are encouraged to bring non-perishab
+ le food items (dried pasta\, beans\, granola bars) to serve as votes for 
+ their favorite band. All donations are distributed eq
+END:VEVENT
+END:VCALENDAR

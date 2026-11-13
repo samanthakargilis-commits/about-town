@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c41164812e2b@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261114T080000
+DTEND;TZID=America/Los_Angeles:20261114T090000
+SUMMARY:Learn to Skate
+LOCATION:The Safeway Holiday Ice Rink in Union Square\, San Francisco
+URL:https://ma.to/event/learn-to-skate-2026-11-14
+DESCRIPTION:New in your area\nhttps://ma.to/event/learn-to-skate-2026-11-1
+ 4\n\nLearn to Skate at The Safeway Holiday Ice Rink in Union Square\, pre
+ sented by Kaiser Permanente\, runs Saturdays and Sundays in November\, wi
+ th this session from 8 to 9 a.m. Professional instructors help new skater
+ s build confidence on the ice in a welcoming environment. Lessons are fre
+ e\, including skate rental\, and spots are made available through a lotte
+ ry system\; entries close October 28. Registra
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d6cd224e27f5@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261113T160000
+DTEND;TZID=America/Los_Angeles:20261113T180000
+SUMMARY:Mercadito’s Emo Night Market
+LOCATION:Temescal Brewing\, Oakland\, Oakland
+URL:https://ma.to/event/mercaditos-emo-night-market-13-nov-2026
+DESCRIPTION:Fairs & festivals + Craft · Oakland\nhttps://ma.to/event/merc
+ aditos-emo-night-market-13-nov-2026\n\nMercadito’s “Emo Night” Mark
+ et is a makers market presented by Common Ground Mercadito (@cgmercadito)
+  at the Temescal Brewing taproom.
+END:VEVENT
+END:VCALENDAR

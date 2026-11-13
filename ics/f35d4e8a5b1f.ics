@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f35d4e8a5b1f@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261113T100000
+DTEND;TZID=America/Los_Angeles:20261113T120000
+SUMMARY:Empress in Lavender Painting Party
+LOCATION:Empress in Lavender\, 1759 Alameda Ave\, Berkeley\, Berkeley
+URL:https://ma.to/event/empress-in-lavender-painting-party-13-nov-2026
+DESCRIPTION:Art · Berkeley\nhttps://ma.to/event/empress-in-lavender-paint
+ ing-party-13-nov-2026\n\nA painting party at Empress in Lavender on Frida
+ y\, 13 November 2026\, to beautify the cauldron. Volunteers can take one\
+ , two or all three shifts on the day. Help is also needed in the week lea
+ ding up to the party\, including people with vehicles for pickups and tra
+ nsport. Volunteer details are available through the organiser.
+END:VEVENT
+END:VCALENDAR

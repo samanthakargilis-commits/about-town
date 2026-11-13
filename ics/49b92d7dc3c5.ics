@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:49b92d7dc3c5@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261204T170000
+DTEND;TZID=America/Los_Angeles:20261204T200000
+SUMMARY:Free 2026 Hayes Vally Holiday Stroll w/ Snowfall + Tap Dancing Tre
+ es
+LOCATION:Hayes Valley\, Hayes St. and Laguna St.\, San Francisco\, CA\, Sa
+ n Francisco
+URL:https://sf.funcheap.com/free-2026-hayes-vally-holiday-stroll-snowfall-
+ tap-dancing-trees-sf/
+DESCRIPTION:A yearly tradition\nhttps://sf.funcheap.com/free-2026-hayes-va
+ lly-holiday-stroll-snowfall-tap-dancing-trees-sf/\n\nGet ready to kick of
+ f the most magical season of the year! The Hayes Valley Merchants Council
+  (HVMC) and the Hayes Valley Neighborhood Association (HVNA) are thrilled
+  to invite neighbors\, families\, and visitors from near and far to the a
+ nnual Hayes Valley Holiday Stroll on ...
+END:VEVENT
+END:VCALENDAR

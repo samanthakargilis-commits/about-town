@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e33702984545@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261117T170000
+DTEND;TZID=America/Los_Angeles:20261117T210000
+SUMMARY:The Museum of (Extra)Ordinary Things
+LOCATION:The Loft\, 3108 B Fillmore St San Francisco\, San Francisco
+URL:https://partiful.com/e/juvaCN3TLK2cquyH8LMq
+DESCRIPTION:Museum exhibits\nhttps://partiful.com/e/juvaCN3TLK2cquyH8LMq\n
+ \nJoin us for an evening celebrating the everyday things we notice\, reme
+ mber\, and appreciate at The Museum of (Extra)Ordinary Things. Through a 
+ series of installations\, we invite you to look a little closer\, explore
+  the extraordinary in the ordinary\, and see the everyday through someone
+  else's eyes. Come for a drink\, connect with others\, and enjoy an eveni
+ ng of shared stories. Drop in anytime. Plus 
+END:VEVENT
+END:VCALENDAR

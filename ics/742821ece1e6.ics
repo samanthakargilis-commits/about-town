@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:742821ece1e6@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261129T100000
+DTEND;TZID=America/Los_Angeles:20261129T120000
+SUMMARY:Run-A-Latke (Petaluma)
+LOCATION:At Shollenberger Park\, 1400 Cader Lane\, Petaluma\, CA 94954\, P
+ etaluma
+URL:https://sf.funcheap.com/runalatke-petaluma/
+DESCRIPTION:Petaluma\nhttps://sf.funcheap.com/runalatke-petaluma/\n\nRabbi
+  DovidRUN-A-LATKE At Shollenberger Park • Sunday\, November 29\, 10 am 
+ Disclaimer: Please double check event information with the event organize
+ r as events can be canceled\, details can change after they are added to 
+ our calendar\, and errors do occur.
+END:VEVENT
+END:VCALENDAR

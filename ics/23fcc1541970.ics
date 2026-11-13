@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:23fcc1541970@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261113T190000
+DTEND;TZID=America/Los_Angeles:20261113T230000
+SUMMARY:Ahwa Night
+LOCATION:Grand Coffee “Too”\, 2544 Mission St San Francisco\, San Fran
+ cisco
+URL:https://partiful.com/e/SnDAZl6c57HcIqbCvkTj
+DESCRIPTION:Theatre\nhttps://partiful.com/e/SnDAZl6c57HcIqbCvkTj\n\nwe're 
+ back again for another ahwa night in the mission at grand coffee too! com
+ e hangout\, grab some coffee\, play some board games\, and enjoy the good
+  vibes! this time we have a special video booth that we can’t wait to s
+ hare with you 🌝 ahwa night is growing really fast and we would love to
+  keep hosting them and making them better. if you would like to contribut
+ e\, a $5 ticket helps to support us an
+END:VEVENT
+END:VCALENDAR

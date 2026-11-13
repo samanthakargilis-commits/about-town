@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1e347cedb967@bay-events
+DTSTAMP:20261113T204923Z
+DTSTART;TZID=America/Los_Angeles:20261116T193000
+DTEND;TZID=America/Los_Angeles:20261116T213000
+SUMMARY:Love is a place: Resound Ensemble Fall 2026 Concert (Monday)
+LOCATION:St Mark's Lutheran Church\, 1111 O'Farrell Street\, San Francisco
+ \, CA 94109 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/love-is-a-place-resound-ensemble-fall-202
+ 6-concert-monday-tickets-2003417262964
+DESCRIPTION:Concerts\nhttps://www.eventbrite.com/e/love-is-a-place-resound
+ -ensemble-fall-2026-concert-monday-tickets-2003417262964\n\nResound Ensem
+ ble is proud to announce our fall concerts\, "Love is a place".
+END:VEVENT
+END:VCALENDAR

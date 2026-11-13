@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e1c287a65e5f@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;TZID=America/Los_Angeles:20261206T100000
+DTEND;TZID=America/Los_Angeles:20261206T180000
+SUMMARY:SF’s Free Howard Zinn Book Fair: 40 Panels w/ Authors + Activist
+ s (2026)
+LOCATION:City College of SF (Mission Campus)\, 1125 Valencia St.\, San Fra
+ ncisco\, CA 94110\, San Francisco
+URL:https://sf.funcheap.com/sfs-free-howard-zinn-book-fair-40-panels-autho
+ rs-activists-2026/
+DESCRIPTION:Reading + Fairs & festivals · A yearly tradition\nhttps://sf.
+ funcheap.com/sfs-free-howard-zinn-book-fair-40-panels-authors-activists-2
+ 026/\n\nIf ever there was a time to create our own history rather than le
+ t malevolent people write it for us\, that time is now! Meet the people a
+ nd groups helping build a world that serves everyone at the Howard Zinn B
+ ook Fair\, Sunday\, December 6\, ...
+END:VEVENT
+END:VCALENDAR

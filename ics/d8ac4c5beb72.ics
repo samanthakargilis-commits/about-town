@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d8ac4c5beb72@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261113T170000
+DTEND;TZID=America/Los_Angeles:20261113T200000
+SUMMARY:Performing Arts Showcase
+LOCATION:Fulton Plaza\, San Francisco
+URL:https://ma.to/event/performing-arts-showcase-14-nov-2026
+DESCRIPTION:Musical theatre + Theatre\nhttps://ma.to/event/performing-arts
+ -showcase-14-nov-2026\n\nThe Performing Arts Showcase brings downtown per
+ forming arts organizations together for a free evening at Civic Center’
+ s Fulton Plaza. Enjoy music and performances from SF Ballet musicians\, S
+ F Conservatory of Music\, SF Opera\, RAWdance\, and AA Shakes beneath the
+  dazzling SPECTRA lights. The post-show reception offers a chance to meet
+  the organizations\, along with ticket sales\, raffles from SF Symph
+END:VEVENT
+END:VCALENDAR

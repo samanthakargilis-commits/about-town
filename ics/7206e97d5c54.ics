@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7206e97d5c54@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261114T110000
+DTEND;TZID=America/Los_Angeles:20261114T130000
+SUMMARY:Weekend Crafts at Mission Lotería
+LOCATION:Mission Lotería\, 2884 Mission St.\, San Francisco\, San Francis
+ co
+URL:https://ma.to/event/weekend-crafts-at-mission-loteria-14-nov-2026
+DESCRIPTION:Craft\nhttps://ma.to/event/weekend-crafts-at-mission-loteria-1
+ 4-nov-2026\n\nMission Lotería hosts hands-on arts and crafts workshops e
+ very Saturday and Sunday. The weekend sessions welcome friends\, families
+  and solo makers\, with new workshops offered each weekend. Space is limi
+ ted\; upcoming workshop details and spot reservations are available throu
+ gh the shop's bio link.
+END:VEVENT
+END:VCALENDAR

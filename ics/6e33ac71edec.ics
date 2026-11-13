@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6e33ac71edec@bay-events
+DTSTAMP:20261113T204921Z
+DTSTART;TZID=America/Los_Angeles:20261115T180000
+DTEND;TZID=America/Los_Angeles:20261115T220000
+SUMMARY:Slow Burn Social: A Vinyl Listening Ritual - Destiny Muhammad Trio
+ : Volume 1 + Live Performance
+LOCATION:Berkeley\, CA\, Berkeley
+URL:https://luma.com/l9fw9jp2
+DESCRIPTION:Concerts + Spirituality · Berkeley\nhttps://luma.com/l9fw9jp2
+ \n\nGathering to honor the composer\, harpist\, and Oakland-based legend 
+ Destiny Muhammad\, we will explore her compositions with her band The Des
+ tiny Muhammad Trio as we listen to this record. For the first time ever\,
+  we will have the featured artist in the space and we will hear directly 
+ from Destiny as she shares inspiration behind the project as well as a fe
+ w songs Slow Burn Social: A Vinyl Listening
+END:VEVENT
+END:VCALENDAR

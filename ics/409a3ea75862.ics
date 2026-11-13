@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:409a3ea75862@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261117T170000
+DTEND;TZID=America/Los_Angeles:20261117T200000
+SUMMARY:ElevenCreative After Hours: San Francisco
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/sfafterhours
+DESCRIPTION:Discourse\nhttps://luma.com/sfafterhours\n\nJoin the ElevenCre
+ ative community in San Francisco on November 17 for an evening of drinks 
+ and bites\, good music\, and a room full of fellow creatives. Meet the te
+ am\, swap ideas\, and talk about what you're building with ElevenCreative
+ . You'll also leave with a little something to take home. Join us if you'
+ re a: content creator\, product designer\, social media manager\, podcast
+ er\, creative technologis
+END:VEVENT
+END:VCALENDAR

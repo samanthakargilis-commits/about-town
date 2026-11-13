@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1e6f5001b2dc@bay-events
+DTSTAMP:20261113T204920Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Edna Brewer Holiday Craft Fair (Oakland)
+LOCATION:3748 13th Avenue (enter on Excelsior)\, Oakland\, CA
+URL:https://sf.funcheap.com/edna-brewer-holiday-craft-fair-oakland/
+DESCRIPTION:Craft + Fairs & festivals · A yearly tradition\nhttps://sf.fu
+ ncheap.com/edna-brewer-holiday-craft-fair-oakland/\n\nCome shop 40+ local
+  vendors for handmade gifts this holiday season. Free entry. Soap! Candle
+ s! Cards! Prints! Crochet! Ceramics! Jewelry! Sweet treats! Stocking Stuf
+ fers! And more! 3748 13th Avenue in Oakland (enter on Excelsior Ave.).
+END:VEVENT
+END:VCALENDAR

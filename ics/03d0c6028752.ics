@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:03d0c6028752@bay-events
+DTSTAMP:20261113T204922Z
+DTSTART;TZID=America/Los_Angeles:20261203T193000
+DTEND;TZID=America/Los_Angeles:20261203T213000
+SUMMARY:2th/ A Brief Memoir/ A Mourning In Heaven/ Softsnag/ County Fair
+LOCATION:Neck of the Woods\, 406 Clement St\, San Francisco
+URL:https://www.ticketweb.com/event/2th-a-brief-memoir-a-neck-of-the-woods
+ -tickets/14446854?theme=nwoods&REFID=clientsitewp
+DESCRIPTION:Reading + Fairs & festivals · Thursday evening\nhttps://www.t
+ icketweb.com/event/2th-a-brief-memoir-a-neck-of-the-woods-tickets/1444685
+ 4?theme=nwoods&REFID=clientsitewp\n\nLapse of Memory & Bucky Fanzine Pres
+ ent: 2th A Brief Memoir A Mourning In Heaven Soft Snag County Fair Thursd
+ ay December 3rd 2026 Neck of Read More
+END:VEVENT
+END:VCALENDAR
