@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:25632f8e5081@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261128T200000
+DTEND;TZID=America/Los_Angeles:20261129T000000
+SUMMARY:The Inciters ~ A-100s ~ Txe Fit ~ Dion Garcia
+LOCATION:Bottom Of The Hill\, 1233 17th Street\, San Francisco\, Californi
+ a 94107\, United States San Francisco\, San Francisco
+URL:https://dice.fm/event/6a8b68e5fec4480001928084
+DESCRIPTION:New in your area\nhttps://dice.fm/event/6a8b68e5fec44800019280
+ 84\n\nCome dance your ass off! DJ Dion Garcia gets the night shakin'! Txe
+  Fit keeps the rhythm going with their new album! A-100s rock steady with
+  rude and lovely tunes. The Inciters headline and the backbeat will bring
+  back the weekend! The Bottom of the Hill does not use QR codes for entry
+ . You must present a valid photo ID that matches the name on your DICE ti
+ cket to enter. All ticket transfers must 
+END:VEVENT
+END:VCALENDAR

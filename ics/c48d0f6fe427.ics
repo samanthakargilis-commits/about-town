@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c48d0f6fe427@bay-events
+DTSTAMP:20261120T212544Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:Thanksgiving Dinner Buffet Cruise w/ Skyline Views
+LOCATION:San Francisco City Cruises\, Pier 3\, Hornblower Landing San Fran
+ cisco\, CA 94105\, Hornblower Landing San Francisco
+URL:https://sf.funcheap.com/thanksgiving-dinner-buffet-cruise-skyline-view
+ s-sf-bay/
+DESCRIPTION:Hornblower Landing San Francisco\nhttps://sf.funcheap.com/than
+ ksgiving-dinner-buffet-cruise-skyline-views-sf-bay/\n\nMake this holiday 
+ truly special with a San Francisco Thanksgiving Premier Dinner Cruise. Ci
+ ty Cruises is one of the most unique things to do with the kids or famili
+ es in San Francisco. You and your guests will enjoy a celebratory dinner 
+ buffet with all the ...
+END:VEVENT
+END:VCALENDAR

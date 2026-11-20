@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:73145520b077@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;TZID=America/Los_Angeles:20261201T183000
+DTEND;TZID=America/Los_Angeles:20261201T203000
+SUMMARY:Turning Fragments into Art: Collage Workshop
+LOCATION:Marina District\, null null San Francisco\, San Francisco
+URL:https://partiful.com/e/TheA7Q8RqTuASQ6CCjOT
+DESCRIPTION:Craft + Art\nhttps://partiful.com/e/TheA7Q8RqTuASQ6CCjOT\n\nOu
+ r lives are full of fragments: half-finished thoughts\, lingering memorie
+ s\, loose ends. We carry them around with us\, trying to figure out how t
+ o make them fit into the larger story of our lives. But what if the piece
+ s don’t have to fit in the way we imagined? What if\, instead of trying
+  to figure it all out\, we gave ourselves permission to play with it? To 
+ cut and paste and rearrange the fragment
+END:VEVENT
+END:VCALENDAR

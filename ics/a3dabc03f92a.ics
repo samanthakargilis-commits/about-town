@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a3dabc03f92a@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261121T100000
+DTEND;TZID=America/Los_Angeles:20261121T120000
+SUMMARY:The City Community Walk ❣️
+LOCATION:Philz Coffee Truck\, 500 Marina Blvd San Francisco\, San Francisc
+ o
+URL:https://partiful.com/e/7nZx211Ewg7pLY1hF55v
+DESCRIPTION:New in your area\nhttps://partiful.com/e/7nZx211Ewg7pLY1hF55v\
+ n\nTo my SF girls! As a new resident to the city\, I wanted to create opp
+ ortunity for women to gather together to meet community in person\, as we
+ ll as personally meet so many of you guys in REAL LIFE. If you are in the
+  Bay Area & are longing to meet\, connect\, and be encouraged by other Ch
+ ristian or like-minded women in the city\, let’s meet & go on a walk to
+ gether! We’ll meet at the Philz Coffee truck 
+END:VEVENT
+END:VCALENDAR

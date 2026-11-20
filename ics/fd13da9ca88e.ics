@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fd13da9ca88e@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261211T180000
+DTEND;TZID=America/Los_Angeles:20261211T220000
+SUMMARY:FOLK NIGHT: Davenport Roadhouse
+LOCATION:Davenport Roadhouse Restaurant & Inn\, 1 Davenport Ave Davenport\
+ , Davenport
+URL:https://partiful.com/e/GvcEogCJm9EKpIRh8usA
+DESCRIPTION:Davenport\nhttps://partiful.com/e/GvcEogCJm9EKpIRh8usA\n\nAs t
+ he days grow shorter come get cozy and enjoy an evening of Indie Folk mus
+ ic from Matteo Lovik\, Morgan Mchugh\, and Kat Lane. The fireplace will b
+ e crackling at the Davenport Roadhouse\, so grab a warm drink\, snuggle u
+ p\, and settle in for an evening of intimate music and friends. Doors 6pm
+  $20-30 Tickets at the door
+END:VEVENT
+END:VCALENDAR

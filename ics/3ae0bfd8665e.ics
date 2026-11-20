@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3ae0bfd8665e@bay-events
+DTSTAMP:20261120T212538Z
+DTSTART;TZID=America/Los_Angeles:20261220T170000
+DTEND;TZID=America/Los_Angeles:20261220T180000
+SUMMARY:Healdsburg’s 1st “Unsilent Night” Boombox Xmas Parade (2026)
+LOCATION:Healdsburg Plaza Gazebo\, Healdsburg Plaza\, Healdsburg Avenue an
+ d Matheson Street\, Healdsburg\, CA\, Healdsburg
+URL:https://sf.funcheap.com/unsilent-night-healdsburg/
+DESCRIPTION:Fairs & festivals + Weird & unusual · Healdsburg\nhttps://sf.
+ funcheap.com/unsilent-night-healdsburg/\n\nUnsilent Night is a participat
+ ory sound artwork by composer Phil Kline\, an ethereal\, electronic sound
+ scape played by the audience on boomboxes carried through city streets. E
+ ach participant gets one of four tracks of music in the form of a MP3 or 
+ through the app. All four ...
+END:VEVENT
+END:VCALENDAR

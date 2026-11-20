@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:346bea949c25@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261120T200000
+DTEND;TZID=America/Los_Angeles:20261120T220000
+SUMMARY:Roast Battle Bay Area
+LOCATION:Callback Bar\, San Francisco
+URL:https://ma.to/event/roast-battle-bay-area-20-nov-2026
+DESCRIPTION:Comedy\nhttps://ma.to/event/roast-battle-bay-area-20-nov-2026\
+ n\nRoast Battle Bay Area is a comedy roast battle at Callback Bar on Nove
+ mber 20\, hosted by Josh Means. The card features roast battlers from the
+  Bay Area and across the country. Tickets are available through the organ
+ iser’s bio link.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a1a543d0b563@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261121T190000
+DTEND;TZID=America/Los_Angeles:20261121T210000
+SUMMARY:SF’s First Reading Rave
+LOCATION:Stray Dog\, 2545 24th St San Francisco\, San Francisco
+URL:https://partiful.com/e/dXLcPiUgZxW5LmIWo9dY
+DESCRIPTION:Reading\nhttps://partiful.com/e/dXLcPiUgZxW5LmIWo9dY\n\nyou mi
+ ght’ve seen the viral japanese reading raves on instagram...we’re bri
+ nging it to SF! bring a book\, bring some friends\, and enjoy an evening 
+ of house music and special drinks from stray dog *1 drink required to ent
+ er* (reading themed cocktail menu coming out soon) we will spend 7-8:30 i
+ n deep focus\, then open up the rest of the night for social reading host
+ ed by @eunifiedworld and @yanniiizha
+END:VEVENT
+END:VCALENDAR

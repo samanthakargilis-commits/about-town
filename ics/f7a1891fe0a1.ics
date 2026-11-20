@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f7a1891fe0a1@bay-events
+DTSTAMP:20261120T212540Z
+DTSTART;TZID=America/Los_Angeles:20261121T110000
+DTEND;TZID=America/Los_Angeles:20261121T133000
+SUMMARY:District 8 Noe Valley Summit
+LOCATION:Upper Noe Recreation Center\, 295 Day Street\, San Francisco
+URL:https://ma.to/event/district-8-noe-valley-family-summit-21-nov-2026
+DESCRIPTION:Gay / queer\nhttps://ma.to/event/district-8-noe-valley-family-
+ summit-21-nov-2026\n\nA community summit for families in Noe Valley and t
+ he Castro to discuss what they need to thrive in the city. Feedback helps
+  set future city priorities. Free food\, childcare\, and interpretation a
+ vailable.
+END:VEVENT
+END:VCALENDAR

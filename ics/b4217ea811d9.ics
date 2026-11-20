@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b4217ea811d9@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261210T150000
+DTEND;TZID=America/Los_Angeles:20261210T210000
+SUMMARY:Notion Market
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/notion-market
+DESCRIPTION:Craft + Fairs & festivals\nhttps://luma.com/notion-market\n\nS
+ hop local this holiday season at Notion HQ! A holiday market inside the N
+ otion HQ office on SF\, featuring 10+ small businesses that run on Notion
+ . Browse their goods\, meet the people behind them\, and participate in c
+ raft activities to create customized gifts for the holiday season. How it
+  works Show up and shop. 10+ local vendors set up across our beautiful at
+ rium — gifts\, food\, flowers\, and thin
+END:VEVENT
+END:VCALENDAR

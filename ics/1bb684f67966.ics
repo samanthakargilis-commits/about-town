@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1bb684f67966@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261204T100000
+DTEND;TZID=America/Los_Angeles:20261204T210000
+SUMMARY:Celebrate the Holiday Season at PIER 39 (thru Dec. 31)
+LOCATION:Pier 39\, Pier 39\, The Embarcadero\, San Francisco CA\, San Fran
+ cisco
+URL:https://sf.funcheap.com/festive-fridays-free-santa-photos-holiday-craf
+ ts-pier-39-dec-418/
+DESCRIPTION:A yearly tradition\nhttps://sf.funcheap.com/festive-fridays-fr
+ ee-santa-photos-holiday-crafts-pier-39-dec-418/\n\nCelebrate the Holiday 
+ Season at PIER 39! Get into the holiday spirit at PIER 39\, where festive
+  fun\, waterfront views\, and holiday magic come together! Make PIER 39 t
+ he starting point for your San Francisco holiday adventures\, with dazzli
+ ng holiday décor\, picture-perfect photo opportunities\, and unique ...
+END:VEVENT
+END:VCALENDAR

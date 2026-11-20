@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bf2e5879fc6c@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261122T133000
+DTEND;TZID=America/Los_Angeles:20261122T213000
+SUMMARY:Trivia Night w/ Big Queer Pub Quiz
+LOCATION:St Marys Pub\, 3845 Mission St\, San Francisco
+URL:https://ma.to/event/trivia-night-w-big-queer-pub-quiz-22-nov-2026
+DESCRIPTION:Gay / queer\nhttps://ma.to/event/trivia-night-w-big-queer-pub-
+ quiz-22-nov-2026\n\nBig Queer Pub Quiz hosts Trivia Night at St Marys Pub
+  on Sunday\, November 22\, from 1:30 to 9:30. The pub's Sunday offerings 
+ also include free pool from 12 to 3 and a Bloody Mary menu from 12 to 6.
+END:VEVENT
+END:VCALENDAR

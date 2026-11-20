@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:31010cba70da@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261122T141500
+DTEND;TZID=America/Los_Angeles:20261122T161500
+SUMMARY:Chocolate Panel: Flavor Trends for 2027
+LOCATION:San Francisco County Fair Building\, 1100 9th Avenue\, san franci
+ sco\, CA san francisco\, san francisco
+URL:https://www.meetup.com/incredible-food-wine-experiences/events/3174321
+ 78/
+DESCRIPTION:Discourse + Fairs & festivals\nhttps://www.meetup.com/incredib
+ le-food-wine-experiences/events/317432178/\n\nFALL HOLIDAY CHOCOLATE SALO
+ N & FESTIVAL Panel: ***Chocolate Panel: Flavor Trends for 2027*** Join lo
+ cal award winning chocolatiers as they discuss their outlooks for popular
+  and innovative chocolate and confection flavors to expect in 2027. Enjoy
+  this conversation on identity\, innovation\, and building distinctive ch
+ ocolate brands in the Bay Area. **[www.FallChocolateSalon.com](https://ww
+ w.FallChoc
+END:VEVENT
+END:VCALENDAR

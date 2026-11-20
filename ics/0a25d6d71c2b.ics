@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0a25d6d71c2b@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:2026 Santa Rosa: Winter Lights Skating on the Square
+LOCATION:Old Courthouse Square\, 50 Old Courthouse Square\, Santa Rosa –
+  Cost: 2026 pricing not yet a
+URL:https://sf.funcheap.com/city-guide/ice-skate-bay-area/
+DESCRIPTION:Featured on Funcheap\nhttps://sf.funcheap.com/city-guide/ice-s
+ kate-bay-area/\n\n– Dates: 2026 dates not yet announced – Where: Old 
+ Courthouse Square\, 50 Old Courthouse Square\, Santa Rosa – Cost: 2026 
+ pricing not yet announced (2024 admission was $11\, including skate renta
+ l for a 45-minute session) Skate around Downtown Santa Rosa at the annual
+  Winter Lights synthetic ice rink\, a 35-by-65-foot eco-friendly skating 
+ surface that requires no water or electricity . The accompanyin
+END:VEVENT
+END:VCALENDAR

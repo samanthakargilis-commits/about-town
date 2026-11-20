@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e89d3a12ca02@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261208T180000
+DTEND;TZID=America/Los_Angeles:20261208T200000
+SUMMARY:Golden Gate Park: Nature Hang and Bioblitz
+LOCATION:Elk Glen Picnic Area\, 1017 Martin Luther King Jr Dr San Francisc
+ o\, San Francisco
+URL:https://partiful.com/e/dLe11jBf4LMonbv70r0W
+DESCRIPTION:New in your area\nhttps://partiful.com/e/dLe11jBf4LMonbv70r0W\
+ n\nCome hang out with us in the park! We (Gabby and Mickey) will be setti
+ ng up a black light and a sheet to hopefully attract and document some lo
+ cal moths. Mickey will also be leading folks to the nearby Mallard Lake t
+ o learn about the newly identified endemic Golden Gate Leach 𓆑 𓆑 
+ 𓆑 Feel free to bring a blanket or a chair to sit\, a cup of tea\, and 
+ if you like dressing up\, I (Gabby) encourage you to
+END:VEVENT
+END:VCALENDAR

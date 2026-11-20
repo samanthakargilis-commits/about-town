@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fced9fa4d61c@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261122T093000
+DTEND;TZID=America/Los_Angeles:20261122T133000
+SUMMARY:Fort Mason Sunday Farmers Market
+LOCATION:Fort Mason Center\, San Francisco
+URL:https://ma.to/event/fort-mason-sunday-farmers-market-22-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/fort-mason-sunday-farmer
+ s-market-22-nov-2026\n\nFort Mason Center's Sunday Farmer's Market runs 9
+ :30am–1:30pm on Sunday\, November 22\, with more than 50 family farmers
+  plus gourmet food purveyors\, set along the waterfront.
+END:VEVENT
+END:VCALENDAR

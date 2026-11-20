@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c5cb37e01602@bay-events
+DTSTAMP:20261120T212540Z
+DTSTART;TZID=America/Los_Angeles:20261120T114500
+DTEND;TZID=America/Los_Angeles:20261120T134500
+SUMMARY:SF SPCA Holiday Windows at Macy’s 2026
+LOCATION:
+URL:https://www.idealist.org/en/volunteer-opportunity/929a25634d4c47aca529
+ e87d8eb36e91-sf-spca-holiday-windows-greeter-at-macys-san-francisco-spca-
+ san-francisco
+DESCRIPTION:Animals · Featured on Funcheap\nhttps://www.idealist.org/en/v
+ olunteer-opportunity/929a25634d4c47aca529e87d8eb36e91-sf-spca-holiday-win
+ dows-greeter-at-macys-san-francisco-spca-san-francisco\n\nEvery winter\, 
+ adorable and adoptable puppies and kittens take over the windows of Macy
+ ’s Union Square. Returning for its 40th year\, the SF SPCA Holiday Wind
+ ows run November 20-December 31\, bringing holiday cheer while helping sh
+ elter animals find their forever homes. Volunteers are needed as Holiday 
+ Windows greeters to welcome visitors\, share information about the animal
+ s and encourage adoptions w
+END:VEVENT
+END:VCALENDAR

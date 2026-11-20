@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:be2b804196ce@bay-events
+DTSTAMP:20261120T212540Z
+DTSTART;TZID=America/Los_Angeles:20261121T110000
+DTEND;TZID=America/Los_Angeles:20261121T170000
+SUMMARY:East Side Story Vol. 2 Block Party
+LOCATION:2227 Alum Rock x Jackson Ave\, East Side San Jose\, California\, 
+ San Jose
+URL:https://ma.to/event/east-side-story-vol-2-block-party-21-nov-2026
+DESCRIPTION:Fairs & festivals + Art · San Jose\nhttps://ma.to/event/east-
+ side-story-vol-2-block-party-21-nov-2026\n\nEast Side Story Vol. 2 Walls 
+ & Block Party returns for its second year as a free\, all-ages community 
+ event in East Side San Jose. The day includes more than 30 new murals and
+  more than 40 participating artists\, music from @djvexone & The Crew\, v
+ endors\, food and kids art activities. A special mural is planned for San
+  Jose Fam Peanut Butter Wolf. Presented by @1culture_ and @culturewalls\,
+  the block 
+END:VEVENT
+END:VCALENDAR

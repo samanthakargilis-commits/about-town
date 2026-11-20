@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f3e0b10237a1@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261120T180000
+DTEND;TZID=America/Los_Angeles:20261120T200000
+SUMMARY:Texture Floral Art Workshop
+LOCATION:Jiaren Cafe\, Santa Clara\, Santa Clara
+URL:https://ma.to/event/texture-floral-art-workshop-20-nov-2026
+DESCRIPTION:Art · Santa Clara\nhttps://ma.to/event/texture-floral-art-wor
+ kshop-20-nov-2026\n\nTexture Floral Art Workshop is a guided\, hands-on s
+ ession for making textured floral artwork. It takes place at Jiaren Cafe 
+ in Santa Clara\, with instruction beginning at 6 PM on Friday\, November 
+ 20\, 2026.
+END:VEVENT
+END:VCALENDAR

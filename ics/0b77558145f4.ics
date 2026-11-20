@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0b77558145f4@bay-events
+DTSTAMP:20261120T212538Z
+DTSTART;TZID=America/Los_Angeles:20261121T100000
+DTEND;TZID=America/Los_Angeles:20261121T120000
+SUMMARY:Cut Your Own: Lemos Farm
+LOCATION:Half Moon Bay
+URL:https://www.lemosfarm.com/calendar
+DESCRIPTION:Animals + Fairs & festivals · Featured on Funcheap\nhttps://w
+ ww.lemosfarm.com/calendar\n\nHalf Moon Bay | If you’re looking for a fe
+ stive holiday day out for the family\, Lemos Farm offers not only Christm
+ as trees\, but a mini amusement park experience with pony rides\, train r
+ ides\, a haunted house\, farm slide\, car barn ride\, barn jumpers\, hay 
+ rides\, a Dig Zone\, Tractor Town and a petting zoo. When you’re ready 
+ to pick out your tree\, hop on a hayride to the Christmas tree field\, wh
+ ere you
+END:VEVENT
+END:VCALENDAR

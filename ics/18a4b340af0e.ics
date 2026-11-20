@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:18a4b340af0e@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261126T060000
+DTEND;TZID=America/Los_Angeles:20261126T080000
+SUMMARY:Salvation Army Thanksgiving Meal Deliveries 2026 – San Francisco
+LOCATION:
+URL:https://volunteer.usawest.org/OpportunityDetail.aspx?ID=9517
+DESCRIPTION:Featured on Funcheap\nhttps://volunteer.usawest.org/Opportunit
+ yDetail.aspx?ID=9517\n\nHelp deliver Thanksgiving meals to approximately 
+ 4\,000 homebound seniors and adults with disabilities across San Francisc
+ o. Volunteers are needed for greeter\, check-in\, traffic control\, and l
+ oad-in positions\, as well as meal deliveries. Drivers must provide their
+  own vehicle and bring at least one passenger. Delivery routes include ap
+ proximately 20 or 40 meals. Thursday\, November 26\, 2026 | 6 am t
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7eb3ae6f96f2@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261201T193000
+DTEND;TZID=America/Los_Angeles:20261201T213000
+SUMMARY:San Francisco Creatives Club
+LOCATION:Ocean Ale House\, 1314 Ocean Ave\, San Francisco\, CA 94112\, USA
+ \, San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/meetup-group-twnbextc/events/317443234/
+DESCRIPTION:Art\nhttps://www.meetup.com/meetup-group-twnbextc/events/31744
+ 3234/\n\nJoin us for our first event on December 1st from 7:30pm-9:30pm a
+ t Ocean Ale House! Come hang out\, make new friends\, and meet other crea
+ tives in their 20s. We’ll spend some time chatting\, drawing\, and play
+ ing a few games :) This event is free to join but please purchase a drink
+  (alcoholic or non) or some food to support this local business. Limited 
+ spots available. RSVP required. RSVP here: https:/
+END:VEVENT
+END:VCALENDAR

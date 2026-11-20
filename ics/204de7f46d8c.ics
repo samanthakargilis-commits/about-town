@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:204de7f46d8c@bay-events
+DTSTAMP:20261120T212538Z
+DTSTART;TZID=America/Los_Angeles:20261205T110000
+DTEND;TZID=America/Los_Angeles:20261205T130000
+SUMMARY:Marissa’s Art - Two weekends!
+LOCATION:Frank Bette Center For the Arts\, 1601 Paru St Alameda\, Alameda
+URL:https://partiful.com/e/O7rOn3J9GttfO1d7EpwM
+DESCRIPTION:Art + Big Bay Area traditions · Alameda\nhttps://partiful.com
+ /e/O7rOn3J9GttfO1d7EpwM\n\nMarissa Caputo will be showcasing a new body o
+ f work at East Bay Open Studios this winter\, at Frank Bette Center For T
+ he Arts in Alameda 🎊🙌 This will take place during the first two wee
+ kends in December (Dec 5-6 & Dec 12-13\, 11am-5pm). Explore studios\, mee
+ t the artists\, see behind the scenes\, enjoy new & different perspective
+ s. This is a public FREE EVENT\, open to all! Grab a buddy and go gallery
+ /
+END:VEVENT
+END:VCALENDAR

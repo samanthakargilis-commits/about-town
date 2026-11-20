@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bddd890839e5@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261129T110000
+DTEND;TZID=America/Los_Angeles:20261129T150000
+SUMMARY:Sade and Champagne Brunch
+LOCATION:Victory Hall & Parlor\, 360 Ritch Street\, San Francisco\, CA 941
+ 07 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/sade-and-champagne-brunch-tickets-2004906
+ 802216
+DESCRIPTION:New in your area\nhttps://www.eventbrite.com/e/sade-and-champa
+ gne-brunch-tickets-2004906802216\n\nNo Ordinary Brunch. A champagne-kisse
+ d afternoon of soulful bites and smooth grooves.
+END:VEVENT
+END:VCALENDAR

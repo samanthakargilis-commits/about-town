@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4a49ee98e147@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Free Guided Golden Gate Park Plant Walk
+LOCATION:Blue Heron Lake Boathouse\, 50 Blue Heron Lake Dr\, San Francisco
+ \, CA 94118\, San Francisco
+URL:https://sf.funcheap.com/free-guided-golden-gate-park-plant-walk/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/free-guided-golden-g
+ ate-park-plant-walk/\n\nJoin herbalist Avila Bright and botanist Jujú Eu
+ lensen-Wallace for a guided late-fall walk through Golden Gate Park. Disc
+ over native California plants and their medicinal properties\, and come r
+ eady to touch\, smell\, and explore! ​The walk is under a mile with ple
+ nty of stops along the way. ...
+END:VEVENT
+END:VCALENDAR

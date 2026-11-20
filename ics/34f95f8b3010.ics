@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:34f95f8b3010@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261213T150000
+DTEND;TZID=America/Los_Angeles:20261213T190000
+SUMMARY:Outdoor Colour Collective 2026/27 WINTER SEASON KICKOFF
+LOCATION:Outerknown\, 1009 Larkspur Landing Cir Larkspur\, Larkspur
+URL:https://partiful.com/e/l5kWbYNRoxuIdixy6Z89
+DESCRIPTION:Larkspur\nhttps://partiful.com/e/l5kWbYNRoxuIdixy6Z89\n\nIf yo
+ u have ever wanted to learn to Ski/Snowboard\, this is the space for you!
+  Or if you already do come meet someone new and get stoked for the 2026/2
+ 7 Winter Season with the OCC! About us: Our Mission Our mission is to bri
+ dge the informational gap\, on how to get into skiing and navigating the 
+ outdoors\, by creating a pipeline for community in the outdoor space thro
+ ugh outdoor clinics and workshops
+END:VEVENT
+END:VCALENDAR

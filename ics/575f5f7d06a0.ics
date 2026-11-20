@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:575f5f7d06a0@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;TZID=America/Los_Angeles:20261121T100000
+DTEND;TZID=America/Los_Angeles:20261121T130000
+SUMMARY:“100 People Do Nothing for 3 Hours” Party at Art Gallery
+LOCATION:Heron Arts\, 7 Heron St\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/100-people-3-hours-party-art-gallery-sf/
+DESCRIPTION:Art + Meditation\nhttps://sf.funcheap.com/100-people-3-hours-p
+ arty-art-gallery-sf/\n\nCome and do nothing for 3 hours with 100 people i
+ n San Francisco. No phones\, books or talking. Moving\, sleeping\, water 
+ and toilet breaks are all fine. Bring a pillow\, blanket and a yoga mat i
+ f you have one. Free\, with registration. We plan to ...
+END:VEVENT
+END:VCALENDAR

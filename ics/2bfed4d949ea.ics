@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2bfed4d949ea@bay-events
+DTSTAMP:20261120T212544Z
+DTSTART;TZID=America/Los_Angeles:20261120T120000
+DTEND;TZID=America/Los_Angeles:20261120T150000
+SUMMARY:Half Days SF: Outpost Turns 10
+LOCATION:Terrene Patio at 1 Hotel San Francisco\, 8 Mission Street\, San F
+ rancisco\, San Francisco
+URL:https://ma.to/event/half-days-sf-outpost-10th-2026-11-20
+DESCRIPTION:New in your area\nhttps://ma.to/event/half-days-sf-outpost-10t
+ h-2026-11-20\n\nHalf Days comes to 1 Hotel San Francisco with Outpost for
+  an afternoon gathering of brand leaders\, founders\, and creative voices
+ . The Terrene Patio celebration marks Outpost's 10th anniversary on Frida
+ y\, November 20\, 2026\, from 12 to 3pm. The afternoon includes DJ sets f
+ rom Outpost friends\, sandwiches from terrene.sf\, and a hosted bar with 
+ cocktails featuring Tequila Mi Campo. An RSVP with a sandw
+END:VEVENT
+END:VCALENDAR

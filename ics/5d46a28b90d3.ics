@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5d46a28b90d3@bay-events
+DTSTAMP:20261120T212538Z
+DTSTART;TZID=America/Los_Angeles:20261120T180000
+DTEND;TZID=America/Los_Angeles:20261120T200000
+SUMMARY:Stereo Dynamic Closing Reception
+LOCATION:Creative Growth Art Center\, 355 24th Street\, Oakland\, CA\, 946
+ 12\, Oakland
+URL:https://ma.to/event/stereo-dynamic-closing-reception-20-nov-2026
+DESCRIPTION:Singing + Museum exhibits · Oakland\nhttps://ma.to/event/ster
+ eo-dynamic-closing-reception-20-nov-2026\n\nThe closing reception for Ste
+ reo Dynamic\, a group exhibition with works across painting\, sculpture\,
+  textiles\, and mixed media by Creative Growth artists exploring music's 
+ rhythms and cultural connections. The reception includes a final tour aro
+ und the gallery and a live performance by Suver & The Free Key Choir. Suv
+ er is Creative Growth facilitator Daisy Jaberi's gentle pop/rock band\; t
+ he show fea
+END:VEVENT
+END:VCALENDAR

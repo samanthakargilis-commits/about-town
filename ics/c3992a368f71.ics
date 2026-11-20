@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c3992a368f71@bay-events
+DTSTAMP:20261120T212544Z
+DTSTART;TZID=America/Los_Angeles:20261211T180000
+DTEND;TZID=America/Los_Angeles:20261211T210000
+SUMMARY:Vechornytsi: Nova Ukraine Annual Gala & Holiday Celebration
+LOCATION:San Jose Woman's Club\, 75 South 11th Street\, San Jose\, CA 9511
+ 2 San Jose\, San Jose
+URL:https://www.eventbrite.com/e/vechornytsi-nova-ukraine-annual-gala-holi
+ day-celebration-tickets-1999599154900
+DESCRIPTION:San Jose\nhttps://www.eventbrite.com/e/vechornytsi-nova-ukrain
+ e-annual-gala-holiday-celebration-tickets-1999599154900\n\nVechornytsi br
+ ings centuries of heritage into a modern celebration of Ukrainian culture
+  and community.
+END:VEVENT
+END:VCALENDAR

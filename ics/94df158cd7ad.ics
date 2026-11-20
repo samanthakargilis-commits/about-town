@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:94df158cd7ad@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;TZID=America/Los_Angeles:20261204T190000
+DTEND;TZID=America/Los_Angeles:20261204T210000
+SUMMARY:Vietnam & Cambodia with Angkor Wat~Ancient Kingdoms of Southeast A
+ sia!
+LOCATION:SFO AIRPORT\, San Francisco International Airport 94128\, SAN FRA
+ NCISCO\, CA SAN FRANCISCO\, SAN FRANCISCO
+URL:https://www.meetup.com/iwanttodothatsf/events/313747910/
+DESCRIPTION:Craft + Theatre\nhttps://www.meetup.com/iwanttodothatsf/events
+ /313747910/\n\nA Meetup trip in December . . . what can be a better gift 
+ for the holidays?! Join our travelers group on a captivating 14-day journ
+ ey through the heart of Southeast Asia as we explore the vibrant cultures
+  and breathtaking landscapes of Vietnam & Cambodia (Dec 04-18\, 2026) As 
+ with all our tailor-made Meetup trips\, our expert guides will lead us of
+ f the beaten path to uncover the authentic charm of 
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:850ca44dd324@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261120T220000
+DTEND;TZID=America/Los_Angeles:20261121T020000
+SUMMARY:SHAKE BODY: Lagos Island Nights | Temple SF | Fri Nov 20
+LOCATION:Temple Nightclub San Francisco\, 540 Howard Street\, San Francisc
+ o\, CA 94105 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/shake-body-lagos-island-nights-temple-sf-
+ fri-nov-20-tickets-2004109230658
+DESCRIPTION:New in your area\nhttps://www.eventbrite.com/e/shake-body-lago
+ s-island-nights-temple-sf-fri-nov-20-tickets-2004109230658\n\nLagos comes
+  to SF. Afrobeats\, Amapiano & Dancehall with Flygerian Jeff\, DJ Dennis 
+ & DJ Chrisania. All black & gold. 21+
+END:VEVENT
+END:VCALENDAR

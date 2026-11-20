@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bc264cfc25d6@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261120T200000
+DTEND;TZID=America/Los_Angeles:20261120T220000
+SUMMARY:Salsa Night: Lessons & Live Music
+LOCATION:Cigar Bar & Grill / Bochica\, 850 Montgomery St.\, San Francisco\
+ , San Francisco
+URL:https://ma.to/event/salsa-night-lessons-live-music-20-nov-2026
+DESCRIPTION:Concerts\nhttps://ma.to/event/salsa-night-lessons-live-music-2
+ 0-nov-2026\n\nThe recurring Friday and Saturday salsa night at Cigar Bar 
+ & Grill / Bochica pairs beginner-friendly salsa lessons with live salsa f
+ rom Bay Area orchestras and ensembles. Lessons are led by Ava Apple and R
+ odolfo Guzman\; beginners are welcome and no partner is needed. The event
+  is downstairs\, and the venue offers cocktails\, two full bars\, Pan-Lat
+ in cuisine and a heated open-air courtyard. Reservati
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fd0064c2583f@bay-events
+DTSTAMP:20261120T212538Z
+DTSTART;TZID=America/Los_Angeles:20261121T120000
+DTEND;TZID=America/Los_Angeles:20261121T140000
+SUMMARY:Lips and Lashes Drag Brunch 12PM
+LOCATION:Lookout\, 3600 16th St @ Market\, San Francisco\, San Francisco
+URL:https://ma.to/event/lips-and-lashes-drag-brunch-12pm-21-nov-2026
+DESCRIPTION:Gay / queer + Camp & Halloween\nhttps://ma.to/event/lips-and-l
+ ashes-drag-brunch-12pm-21-nov-2026\n\nLips and Lashes Drag Brunch comes t
+ o Lookout in San Francisco on Saturday\, November 21\, with two shows. Th
+ e 12PM show is hosted by Carnie Asada and features Nicki Jizz\, Lindsay S
+ lowhands and Cleo Hollywood\, with beats by DJ Sergio. The format is a dr
+ ag brunch with performances. Tickets are available now at $8 per person\;
+  the second show begins at 2PM.
+END:VEVENT
+END:VCALENDAR

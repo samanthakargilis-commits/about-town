@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a27541240ce6@bay-events
+DTSTAMP:20261120T212544Z
+DTSTART;TZID=America/Los_Angeles:20261120T190000
+DTEND;TZID=America/Los_Angeles:20261120T210000
+SUMMARY:Paula West
+LOCATION:Keys Jazz Bistro\, 498 Broadway\, San Francisco\, San Francisco
+URL:https://ma.to/event/paula-west-20-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/paula-west-20-nov-2026\n
+ \nPaula West performs 7pm and 9pm sets at Keys Jazz Bistro for their four
+ th birthday celebration. A Bay Area treasure with a rich contralto\, perf
+ orming from the Great American Songbook to Dylan\, Bowie\, and more with 
+ nuance and impeccable phrasing. Tickets are $45. Seating is first come\, 
+ first served with no reservations. Arriving one hour early is recommended
+ \; will-call check-in is by last name. The
+END:VEVENT
+END:VCALENDAR

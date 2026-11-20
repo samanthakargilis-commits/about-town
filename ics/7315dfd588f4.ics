@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7315dfd588f4@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261125T110000
+DTEND;TZID=America/Los_Angeles:20261125T200000
+SUMMARY:“Black Friday” at Buffalo Exchange w/ 75% Off Sale Items
+LOCATION:Buffalo Exchange (Haight)\, 1555 Haight St\, San Francisco\, CA\,
+  San Francisco
+URL:https://sf.funcheap.com/black-friday-buffalo-exchange-75-sale-items-no
+ v-2530/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/black-friday-buffalo
+ -exchange-75-sale-items-nov-2530/\n\nGet your wishlists ready! From Wedne
+ sday\, 11/25 through Monday 11/30\, we’re giving you a head start on ho
+ liday shopping with a sweet Black Friday deal: shop a special selection o
+ f clothes\, shoes and accessories at 75% off at all Buffalo Exchange loca
+ tions\, excluding outlets. Plus\, ...
+END:VEVENT
+END:VCALENDAR

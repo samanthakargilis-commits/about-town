@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7851b92f72fa@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261120T190000
+DTEND;TZID=America/Los_Angeles:20261120T203000
+SUMMARY:Spontaneous Mind Over Matter
+LOCATION:Up The Creek Records\, 2042 Mt. Diablo Blvd\, San Francisco
+URL:https://ma.to/event/spontaneous-mind-over-matter-20-nov-2026
+DESCRIPTION:Comedy + Theatre\nhttps://ma.to/event/spontaneous-mind-over-ma
+ tter-20-nov-2026\n\nSpontaneous Mind Over Matter is a fast-paced\, fully 
+ improvised comedy show featuring the Act II Improv ensemble. Each perform
+ ance is built from audience suggestions through interactive games and sce
+ ne-based performances\, with no scripts and no repeats. All ages are welc
+ ome\, though the material is not always age-appropriate. Entry is by slid
+ ing-scale donation\, around $15 suggested\, with a $15–$25 r
+END:VEVENT
+END:VCALENDAR

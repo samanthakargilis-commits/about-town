@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:28a70e0d575b@bay-events
+DTSTAMP:20261120T212540Z
+DTSTART;TZID=America/Los_Angeles:20261212T090000
+DTEND;TZID=America/Los_Angeles:20261212T140000
+SUMMARY:Pop-Ups on the Plaza: Black Holiday Market (Ferry Plaza)
+LOCATION:Ferry Plaza Farmers Market\, One Ferry Building #50\, 1 Ferry Pla
+ za\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/popups-plaza-black-holiday-market-ferry-plaza/
+DESCRIPTION:Fairs & festivals\nhttps://sf.funcheap.com/popups-plaza-black-
+ holiday-market-ferry-plaza/\n\nCelebrate local Black-owned businesses and
+  get ready for the holiday season with a day of delicious food\, crafts\,
+  and community at the Ferry Plaza Farmers Market. The south arcade of the
+  Ferry Building will be transformed for a special holiday market featurin
+ g 20 Bay Area food ...
+END:VEVENT
+END:VCALENDAR

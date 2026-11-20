@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b8d899d82066@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261213T140000
+DTEND;TZID=America/Los_Angeles:20261213T170000
+SUMMARY:Holiday Cookie Fest
+LOCATION:Little Mission Studio\, 445 Hampshire St San Francisco\, San Fran
+ cisco
+URL:https://partiful.com/e/YkGdt4eLghdCcVM97YhX
+DESCRIPTION:Singing\nhttps://partiful.com/e/YkGdt4eLghdCcVM97YhX\n\nJoin u
+ s for our Holiday Cookie Fest & Fundraiser - cookies\, cocktails\, caroli
+ ng\, & more! We’re baking the usual thousands of cookies\, along with b
+ akes from SF’s best home & professional bakers. You can pre-order our c
+ ustom\, festive tin to fill with all these cookies\, and 100% of proceeds
+  go directly to the Make More Music Foundation!
+END:VEVENT
+END:VCALENDAR

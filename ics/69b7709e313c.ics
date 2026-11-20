@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:69b7709e313c@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261120T140000
+DTEND;TZID=America/Los_Angeles:20261120T160000
+SUMMARY:Marsh Hike at Coyote Point
+LOCATION:Coyote Point Recreation Area\, Palo Alto
+URL:https://ma.to/event/marsh-hike-at-coyote-point-20-nov-2026
+DESCRIPTION:Animals · Palo Alto\nhttps://ma.to/event/marsh-hike-at-coyote
+ -point-20-nov-2026\n\nJoin CuriOdyssey educators for a guided hike throug
+ h the baylands of Coyote Point. Spot native plants and local wildlife whi
+ le observing the seasonal shifts. This is a hands-on nature program for f
+ amilies. RSVP is required on the profile. Kids must be accompanied by an 
+ adult.
+END:VEVENT
+END:VCALENDAR

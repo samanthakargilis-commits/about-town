@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2fbe77b9f867@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261206T190000
+DTEND;TZID=America/Los_Angeles:20261206T230000
+SUMMARY:Breaking Sound SF at O'Reilly's Pub 12/06
+LOCATION:O'Reilly's Pub\, 1840 Haight Street\, San Francisco\, California 
+ 94117\, United States San Francisco\, San Francisco
+URL:https://dice.fm/event/6aee12ebb1ce650001b56673
+DESCRIPTION:Gay / queer + Camp & Halloween\nhttps://dice.fm/event/6aee12eb
+ b1ce650001b56673\n\nThe hottest emerging artists & bands in premium locat
+ ions around the city. FEAT. - sincerely nic\, Ian Kieffer\, bloominous\, 
+ SOLEYA & MORE! GET TO KNOW THE ARTISTS: Featuring **sincerely nic**\, an 
+ interdisciplinary artist and musician. They blend intimate lyricism\, lay
+ ered vocals\, and acoustic textures to explore longing\, grief\, connecti
+ on and other emotional realms that have shaped their life\; **Ia
+END:VEVENT
+END:VCALENDAR

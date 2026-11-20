@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ac15bab772f0@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261120T190000
+DTEND;TZID=America/Los_Angeles:20261120T210000
+SUMMARY:Who Want the Smoke Concert
+LOCATION:SAP Center at San Jose\, San Jose
+URL:https://ma.to/event/who-want-the-smoke-concert-20-nov-2026
+DESCRIPTION:Concerts · San Jose\nhttps://ma.to/event/who-want-the-smoke-c
+ oncert-20-nov-2026\n\nWho Want the Smoke comes to SAP Center at San Jose 
+ on November 20\, 2026\, with Shoreline Mafia x SOB RBE\, Mike Sherm\, 03 
+ Greedo\, Kamaiyah\, BigSad1900\, Lil Kayla\, DBBOUTABAG\, Lou Deezi\, Car
+ olow\, Kai Bandz and NYNY. Sounds by DJ Vision and Cypress Moreno. Ticket
+ s are available through Ticketmaster.
+END:VEVENT
+END:VCALENDAR

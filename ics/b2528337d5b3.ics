@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b2528337d5b3@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261121T170000
+DTEND;TZID=America/Los_Angeles:20261121T190000
+SUMMARY:Jonas Brothers Pre-Show at Splash
+LOCATION:Splash Sports Bar\, San Francisco
+URL:https://ma.to/event/jonas-brothers-pre-show-at-splash-21-nov-2026
+DESCRIPTION:Concerts\nhttps://ma.to/event/jonas-brothers-pre-show-at-splas
+ h-21-nov-2026\n\nSplash Sports Bar is the pre-show setting for Jonas Brot
+ hers concert goers before the Chase Center show on Nov 21. The sports bar
+  has bar seating\, tables and a wall of screens showing live sports\, giv
+ ing the group a place to spend the hours before heading over to the arena
+  for the concert and dancing.
+END:VEVENT
+END:VCALENDAR

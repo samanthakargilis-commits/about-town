@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:98ca2f8f3858@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261121T090000
+DTEND;TZID=America/Los_Angeles:20261121T110000
+SUMMARY:Cut Your Own: Patchen California Christmas Tree Farms
+LOCATION:Los Gatos
+URL:https://patchencalifornia.com/calendar/
+DESCRIPTION:Weird & unusual · Featured on Funcheap\nhttps://patchencalifo
+ rnia.com/calendar/\n\nLos Gatos | Head into the Santa Cruz Mountains to b
+ reathe in the cool mountain air and pick out your own Christmas tree on t
+ he site of a famous ghost town turned Christmas tree ranch . Pack a picni
+ c and enjoy the scenery amongst the pine trees. And while we haven’t be
+ en able to confirm all the details for 2026 yet\, Patchen typically has p
+ lenty of extras to make a day of it\, including hot cider \, c
+END:VEVENT
+END:VCALENDAR

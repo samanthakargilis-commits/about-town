@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:88506037d101@bay-events
+DTSTAMP:20261120T212538Z
+DTSTART;TZID=America/Los_Angeles:20261219T120000
+DTEND;TZID=America/Los_Angeles:20261219T170000
+SUMMARY:West Oakland Prescott Holiday Craft Market: 50+ Vendors & DJs (202
+ 6)
+LOCATION:Prescott Market West Oakland\, 1620 18th Street\, Oakland\, CA 94
+ 607\, Oakland
+URL:https://sf.funcheap.com/west-oakland-prescott-holiday-craft-market-50-
+ vendors-djs-2026/
+DESCRIPTION:Craft + Fairs & festivals · Oakland\nhttps://sf.funcheap.com/
+ west-oakland-prescott-holiday-craft-market-50-vendors-djs-2026/\n\nPresco
+ tt Market in West Oakland hosts a holiday pop-up craft faire on three dat
+ es in 2026\, featuring over 50 rotating local vendors with handmade craft
+ s\, upcycled goods\, rare records\, clothing\, jewelry\, and more. The ev
+ ent includes DJs\, a large stage\, a food court with eight ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b100563cb7ad@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261120T170000
+DTEND;TZID=America/Los_Angeles:20261120T190000
+SUMMARY:Farm:Table Supper Club
+LOCATION:farm:table\, 754 Post Street\, San Francisco\, California 94109\,
+  San Francisco
+URL:https://ma.to/event/farm-table-supper-club-21-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/farm-table-supper-club-2
+ 1-nov-2026\n\nFarm:Table After Hours is a monthly dinner service held eve
+ ry third Friday from 5 to 7 PM\, or until sold out. The $25 dinner includ
+ es a choice of Beef Bourguignon\, chicken and rice\, or veggie lasagna\, 
+ served with a side salad and chocolate mousse. Walk-ins only\, first come
+  first served\; no reservations taken.
+END:VEVENT
+END:VCALENDAR

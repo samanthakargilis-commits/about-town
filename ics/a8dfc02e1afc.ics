@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a8dfc02e1afc@bay-events
+DTSTAMP:20261120T212538Z
+DTSTART;TZID=America/Los_Angeles:20261218T183000
+DTEND;TZID=America/Los_Angeles:20261218T200000
+SUMMARY:24th Annual “Unsilent Night” SF’s Boombox Xmas Parade in The
+  Mission (2026)
+LOCATION:Mission Dolores Park\, Dolores St.\, and 19th St.\, San Francisco
+ \, CA\, San Francisco
+URL:https://sf.funcheap.com/unsilent-night-sf-mission/
+DESCRIPTION:Fairs & festivals + Weird & unusual\nhttps://sf.funcheap.com/u
+ nsilent-night-sf-mission/\n\nUnsilent Night is a participatory sound artw
+ ork by composer Phil Kline\, an ethereal\, electronic soundscape played b
+ y the audience on boomboxes carried through city streets. Each participan
+ t gets one of four tracks of music in the form of a MP3 or through the ap
+ p. All four ...
+END:VEVENT
+END:VCALENDAR

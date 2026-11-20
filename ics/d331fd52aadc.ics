@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d331fd52aadc@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261120T180000
+DTEND;TZID=America/Los_Angeles:20261120T210000
+SUMMARY:BLCKVYNL: All-Vinyl DJ Night
+LOCATION:The Knockout\, 3223 Mission\, San Francisco
+URL:https://ma.to/event/blck-vnyl-with-dusty-deathbeats-20-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/blck-vnyl-with-dusty-dea
+ thbeats-20-nov-2026\n\nBLCKVYNL is an all-vinyl session with DJs Dusty & 
+ Deathbeats playing post-punk\, dark pop\, shoegaze\, darkwave\, synthwave
+  and new wave\, with @ferr_bear behind the bar. The 21+ event runs 6-9pm 
+ at The Knockout.
+END:VEVENT
+END:VCALENDAR

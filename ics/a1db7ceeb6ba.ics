@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a1db7ceeb6ba@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261129T180000
+DTEND;TZID=America/Los_Angeles:20261129T193000
+SUMMARY:Pulitzer Prize-winning artist and illustrator Mona Chalabi on her 
+ new book\, Ten Lives\, and wealth in America
+LOCATION:Local Economy\, Local Economy\, 6028 College Ave\, Oakland\, CA 9
+ 4618\, USA\, Oakland
+URL:https://luma.com/5wpizor6
+DESCRIPTION:Art + Reading · Oakland\nhttps://luma.com/5wpizor6\n\nFor Ten
+  Lives\, her first book\, Pulitzer Prize-winning data journalist Mona Cha
+ labi followed ten people with ten different incomes\, all of them afraid 
+ for their futures. She documents how wealth shaped their feelings\, their
+  choices\, their identities\, and their insecurities. For five years\, sh
+ e researched the data behind their taxes\, groceries\, and inheritances t
+ o understand the systems that keep pe
+END:VEVENT
+END:VCALENDAR

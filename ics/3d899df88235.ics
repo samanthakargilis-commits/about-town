@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3d899df88235@bay-events
+DTSTAMP:20261120T212544Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Friday Night Waltz
+LOCATION:Friday Night Waltz\, 625 Hamilton Avenue\, Palo Alto\, CA\, Palo 
+ Alto
+URL:https://sf.funcheap.com/friday-night-waltz/
+DESCRIPTION:Palo Alto\nhttps://sf.funcheap.com/friday-night-waltz/\n\nFrid
+ ay Night Waltz is a mixed-style social dance venue that is open every Fri
+ day Night in Palo Alto. Open Dance includes a variety of styles\, includi
+ ng waltz\, polka\, swing\, latin\, mixers\, social ballroom\, line dances
+ \, and more. Partners are not needed\, and most folks wear ...
+END:VEVENT
+END:VCALENDAR

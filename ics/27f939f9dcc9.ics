@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:27f939f9dcc9@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261205T093000
+DTEND;TZID=America/Los_Angeles:20261205T113000
+SUMMARY:Sanctuary of the Self: A Guided Silence Day Retreat
+LOCATION:Brahma Kumaris Meditation Center\, 401 Baker St\, San Francisco\,
+  CA San Francisco\, San Francisco
+URL:https://www.meetup.com/sf-meditation/events/317508907/
+DESCRIPTION:Spirituality + Meditation\nhttps://www.meetup.com/sf-meditatio
+ n/events/317508907/\n\n"Welcome the quiet\, rest your spirit in the still
+ ness\, and discover the sun you carried inside all along." ## **Awaken Yo
+ ur Inner Peace & Recharge for the Season** As 2026 winds down\, give your
+ self the gift of total renewal. **Sanctuary of the Self** is a **gentle\,
+  fully guided 1-day retreat** created to help you clear mental chatter\, 
+ restore your energy\, and cultivate lasting inner warmth before 
+END:VEVENT
+END:VCALENDAR

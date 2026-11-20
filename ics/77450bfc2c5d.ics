@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:77450bfc2c5d@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261204T213000
+DTEND;TZID=America/Los_Angeles:20261204T233000
+SUMMARY:Sobremesa: Gilded
+LOCATION:Paname SF\, 523 Broadway San Francisco\, San Francisco
+URL:https://partiful.com/e/MsTIvQVoMgesLSjLqBX3
+DESCRIPTION:Art\nhttps://partiful.com/e/MsTIvQVoMgesLSjLqBX3\n\nA dazzling
+  year-end soirée ✨ One last dance of 2026. For one night\, we’re ste
+ pping into the Golden Age — champagne glamour\, velvet\, satin\, holida
+ y spirit\, and the kind of late-night energy when everyone full-sends the
+  night. Imagine Gatsby glamour after midnight: everyone dressed to the ni
+ nes\, the room glowing\, and the dance floor electric. DEC 4 · 9:30PM–
+ LATE PANAME · SAN FRANCISCO 🎧 MEK · DJ SID
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:320aeda27ebc@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261122T121500
+DTEND;TZID=America/Los_Angeles:20261122T141500
+SUMMARY:Chocolate Salon Talk: Holiday Chocolate Tasting with Birgitte Rasi
+ ne
+LOCATION:San Francisco County Fair Building\, 1100 9th Avenue\, san franci
+ sco\, CA san francisco\, san francisco
+URL:https://www.meetup.com/incredible-food-wine-experiences/events/3175173
+ 89/
+DESCRIPTION:Discourse + Fairs & festivals\nhttps://www.meetup.com/incredib
+ le-food-wine-experiences/events/317517389/\n\nNew Panel at the Fall Holid
+ ay CHOCOLATE SALON & FESTIVAL: Join author and chocolate judge Birgitte R
+ asine for a live tasting of holiday chocolate\, sourced right here from o
+ ur own Fall Holiday Chocolate Salon. Please be on time to enjoy all of th
+ e different bars. **[www.FallChocolateSalon.com](https://www.FallChocolat
+ eSalon.com)** The premier chocolate show on the West Coast brings the Ann
+ ual San F
+END:VEVENT
+END:VCALENDAR

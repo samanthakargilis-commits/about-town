@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0e250c24ce17@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261121T120000
+DTEND;TZID=America/Los_Angeles:20261121T170000
+SUMMARY:Modern Mouse Mousiversary Market
+LOCATION:Modern Mouse\, 2213 South Shore Center\, Alameda\, CA 94501\, Ala
+ meda
+URL:https://ma.to/event/modern-mouse-mousiversary-market-21-nov-2026
+DESCRIPTION:Craft + Art · Alameda\nhttps://ma.to/event/modern-mouse-mousi
+ versary-market-21-nov-2026\n\nModern Mouse celebrates 17 years with its a
+ nnual Mousiversary Market\, bringing local makers together for an afterno
+ on of shopping and celebration. The Alameda gift shop is dedicated to loc
+ al artists.
+END:VEVENT
+END:VCALENDAR

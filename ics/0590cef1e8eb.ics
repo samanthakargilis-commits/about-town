@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0590cef1e8eb@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;TZID=America/Los_Angeles:20261121T140000
+DTEND;TZID=America/Los_Angeles:20261121T160000
+SUMMARY:Baon: Film Premiere & Talk
+LOCATION:SFMOMA\, 151 3rd Street\, San Francisco\, San Francisco
+URL:https://ma.to/event/baon-premiere-screening-21-nov-2026
+DESCRIPTION:Discourse + Museum exhibits\nhttps://ma.to/event/baon-premiere
+ -screening-21-nov-2026\n\nThe premiere of Baon: Stories and Struggles of 
+ Filipino Migrants\, directed by Rachel Bundoc Lucero and produced by Rach
+ el Bundoc Lucero and Kaycie Luna\, screens at SFMOMA. In the film\, host 
+ and activist Rachel Lucero (The Sago Show) goes into the kitchen with mig
+ rant Filipinos in the San Francisco Bay Area to share meals that remind t
+ hem of home\, hearing their experiences of struggling for change—
+END:VEVENT
+END:VCALENDAR

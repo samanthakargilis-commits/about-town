@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:707742669bf4@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261210T120000
+DTEND;TZID=America/Los_Angeles:20261210T130000
+SUMMARY:Nordic Capitalism: Lessons for Silicon Valley and Beyond
+LOCATION:Nordic Innovation House\, Nordic Innovation House\, 470 Ramona St
+ \, Palo Alto\, CA 94301\, USA\, Palo Alto
+URL:https://luma.com/2kl3afj2
+DESCRIPTION:Art + Discourse · Palo Alto\nhttps://luma.com/2kl3afj2\n\nWha
+ t can Silicon Valley and the United States learn from the Nordic countrie
+ s about building an economy that combines innovation\, competitiveness\, 
+ and societal well-being? Join us for a Lunch & Learn with Robert G. Stran
+ d\, author of Nordic Capitalism: Lessons for Realizing Sustainable Capita
+ lism (Cambridge University Press\, 2026)\, for a conversation about Nordi
+ c capitalism\, entrepreneurship\, susta
+END:VEVENT
+END:VCALENDAR

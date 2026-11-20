@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:28c3e7ad2c34@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;TZID=America/Los_Angeles:20261217T200000
+DTEND;TZID=America/Los_Angeles:20261217T220000
+SUMMARY:Champagne Cabaret Holiday Party: A Wild\, Naughty Circus Christmas
+  Show
+LOCATION:Great Star Theater\, 636 Jackson St. San Francisco\, CA
+URL:https://sf.funcheap.com/champagne-cabaret-holiday-party-a-wild-naughty
+ -circus-christmas-show-sf/
+DESCRIPTION:Musical theatre + Weird & unusual · Thursday evening\nhttps:/
+ /sf.funcheap.com/champagne-cabaret-holiday-party-a-wild-naughty-circus-ch
+ ristmas-show-sf/\n\nSee what happens when Santa comes down the wrong chim
+ ney? The wildest holiday adventure filled with circus mischief\, cabaret 
+ glamour\, and world-class performers from across the globe. Leave the kid
+ s at home for this not-safe-for-work party. Bring a date or friends or gi
+ ve tickets for ...
+END:VEVENT
+END:VCALENDAR

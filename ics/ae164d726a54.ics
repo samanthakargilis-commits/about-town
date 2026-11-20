@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ae164d726a54@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261120T190000
+DTEND;TZID=America/Los_Angeles:20261120T210000
+SUMMARY:Brittany Davis: 7 PM Set
+LOCATION:Joe Henderson Lab\, SFJAZZ Center\, San Francisco
+URL:https://ma.to/event/brittany-davis-7-pm-set-2026-11-20
+DESCRIPTION:Spirituality + Writing\nhttps://ma.to/event/brittany-davis-7-p
+ m-set-2026-11-20\n\nSFJAZZ presents Brittany Davis at Joe Henderson Lab\,
+  SFJAZZ Center on November 20\, 2026. Davis is a singer\, keyboardist and
+  composer whose visceral acoustic and electronic sound combines raw soul 
+ vocals\, hypnotic organ grooves\, African rhythms\, spoken-word storytell
+ ing\, hard-grooving funk and spiritual jazz improvisation. Davis performs
+  works from Black Thunder and returns to Northern California a
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8f97f7eca448@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;TZID=America/Los_Angeles:20261206T110000
+DTEND;TZID=America/Los_Angeles:20261206T160000
+SUMMARY:Studio Sumi Holiday Market
+LOCATION:Studio Sumi\, 5031 Geary Blvd San Francisco\, San Francisco
+URL:https://partiful.com/e/Lx5rco0oPjd7AIEVZ2Gg
+DESCRIPTION:Fairs & festivals + Craft\nhttps://partiful.com/e/Lx5rco0oPjd7
+ AIEVZ2Gg\n\nJoin us on Sunday\, December 6th from 11am to 4pm for Studio 
+ Sumi’s Holiday Market! 🎄☃️ Stop by for a chance to meet and supp
+ ort local artists\, and find one-of-a-kind handmade gifts for everyone on
+  your list! 🎁 We’ll have a free Ornament Bar set up where you can ch
+ oose a piece to paint with underglazes\, as well as free tote bags with p
+ urchase\, while supplies last. 🎊 In addition to incredible pieces
+END:VEVENT
+END:VCALENDAR

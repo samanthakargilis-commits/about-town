@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c225b3930ba3@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Napa Valley Wine Train during the holidays
+LOCATION:
+URL:https://www.winetrain.com/
+DESCRIPTION:New in your area\nhttps://www.winetrain.com/\n\nCourtesy of th
+ e Napa Valley Wine Train Just as the name suggests\, the wine train takes
+  you on a scenic journey through Napa \, complete with a tasting of the r
+ egion’s wines. While the train is popular year-round\, its seasonal eve
+ nts are some of the best times to experience the trips. This winter \, th
+ e wine train will offer special holiday trips \, including family-friendl
+ y options. This holiday seas
+END:VEVENT
+END:VCALENDAR

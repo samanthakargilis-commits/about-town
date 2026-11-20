@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:907c03c8ca43@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;TZID=America/Los_Angeles:20261121T150000
+DTEND;TZID=America/Los_Angeles:20261121T170000
+SUMMARY:SWAG Poetry and Film
+LOCATION:Clarion Performing Arts Center\, 2 Waverly Pl\, SF Chinatown\, Sa
+ n Francisco
+URL:https://ma.to/event/3rd-saturday-poetry-in-chinatown-21-nov-2026
+DESCRIPTION:Writing + Singing\nhttps://ma.to/event/3rd-saturday-poetry-in-
+ chinatown-21-nov-2026\n\nSWAG is a poetry event at the Clarion Performing
+  Arts Center. This edition features poet Clara Hsu\, a poetry reading wit
+ h two featured poets\, an open mic\, and film selections. Film submission
+ s are open for the event. The event runs from 3 to 5 pm.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5e04009aeb0e@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261204T180000
+DTEND;TZID=America/Los_Angeles:20261204T210000
+SUMMARY:Book Swap+ Movie Night!
+LOCATION:The Love Potion Library - Books\, Tea\, Wine\, The Love Potion Li
+ brary - Books\, Tea\, Wine\, 284 Noe St\, San Francisco\, CA 94114\, USA\
+ , San Francisco
+URL:https://luma.com/t0cgbdsk
+DESCRIPTION:Reading · Your reading tastes\nhttps://luma.com/t0cgbdsk\n\nW
+ e are hosting a book swap and movie night with the bookish creator Angeli
+ na @letyourwiferead ! Bring New or Lightly Used books to swap out\, have 
+ a drink and get into the holiday spirit with other fellow book lovers. At
+  7pm we will put on a rom-com holiday movie! You can enjoy some cozy trea
+ ts and good laughs! Looking forward to having a night of cheer and fun 
+ ✨ We will have some fun raffle prizes
+END:VEVENT
+END:VCALENDAR

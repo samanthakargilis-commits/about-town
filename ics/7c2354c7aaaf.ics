@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7c2354c7aaaf@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261121T080000
+DTEND;TZID=America/Los_Angeles:20261121T140000
+SUMMARY:Winter Squash Celebration
+LOCATION:Ferry Plaza Farmers Market\, San Francisco
+URL:https://ma.to/event/winter-squash-celebration-21-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/winter-squash-celebratio
+ n-21-nov-2026\n\nThe Ferry Plaza Farmers Market's Saturday session runs 8
+  am to 2 pm as a Winter Squash Celebration\, with a Foodwise Demo featuri
+ ng @georgeannebrennan and @annevans1234 as part of the market's fall sche
+ dule. The market is closed on Thursday\, November 26.
+END:VEVENT
+END:VCALENDAR

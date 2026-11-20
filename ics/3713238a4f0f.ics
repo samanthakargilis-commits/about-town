@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3713238a4f0f@bay-events
+DTSTAMP:20261120T212540Z
+DTSTART;TZID=America/Los_Angeles:20261120T193000
+DTEND;TZID=America/Los_Angeles:20261120T213000
+SUMMARY:Neuroscience for Drummers
+LOCATION:The Guild Theatre\, Menlo Park\, Menlo Park
+URL:https://ma.to/event/neuroscience-for-drummers-20-nov-2026
+DESCRIPTION:Comedy + Theatre · Menlo Park\nhttps://ma.to/event/neuroscien
+ ce-for-drummers-20-nov-2026\n\nSing for Science presents Neuroscience for
+  Drummers: Inside the Drummer's Brain\, a live conversation and demonstra
+ tion at The Guild Theatre in Menlo Park on Friday\, November 20\, 2026. M
+ usician\, comedian and drummer Fred Armisen joins Stanford neuroscientist
+ \, author and professor Dr. David Eagleman to explore rhythm\, prediction
+ \, timing and creativity. Tickets are on sale.
+END:VEVENT
+END:VCALENDAR

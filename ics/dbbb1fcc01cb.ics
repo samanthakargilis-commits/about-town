@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dbbb1fcc01cb@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261120T191500
+DTEND;TZID=America/Los_Angeles:20261120T213000
+SUMMARY:CHARM Craft Club
+LOCATION:Classic Loot\, 570 N. 6th St\, San Jose\, CA 95112\, San Jose
+URL:https://ma.to/event/charm-craft-club-20-nov-2026
+DESCRIPTION:Craft · San Jose\nhttps://ma.to/event/charm-craft-club-20-nov
+ -2026\n\nCHARM Craft Club is a 16+ craft-and-hangout event at Classic Loo
+ t. Attendees can bring their own craft\, start a craft\, learn a craft\, 
+ or simply hang out. Bringing snacks and drinks is welcome. Space is limit
+ ed\; RSVP and purchase of a $5 ticket are required to attend\, and ticket
+ s are available for purchase.
+END:VEVENT
+END:VCALENDAR

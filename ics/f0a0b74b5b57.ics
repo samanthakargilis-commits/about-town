@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f0a0b74b5b57@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261120T180000
+DTEND;TZID=America/Los_Angeles:20261120T200000
+SUMMARY:White Truffle & Barolo Dinners
+LOCATION:Sorrel\, 3228 Sacramento St\, San Francisco\, CA 94115\, San Fran
+ cisco
+URL:https://ma.to/event/sorrel-white-truffle-barolo-dinners-2026-11-20
+DESCRIPTION:New in your area\nhttps://ma.to/event/sorrel-white-truffle-bar
+ olo-dinners-2026-11-20\n\nOn November 20\, Sorrel’s Annual White Truffl
+ e & Barolo Dinners present a special tasting menu in which each course sh
+ owcases fresh Alba white truffles. The chef team’s menu highlights the 
+ truffles’ perfume\, delicate texture and unmistakable flavor\, and an o
+ ptional wine pairing from the beverage director focuses on Piedmontese wi
+ nes\, including Barolo. The dinners are offered for two nights only\, No
+END:VEVENT
+END:VCALENDAR

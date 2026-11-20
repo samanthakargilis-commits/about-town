@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3285c4a15823@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;TZID=America/Los_Angeles:20261121T130000
+DTEND;TZID=America/Los_Angeles:20261121T160000
+SUMMARY:Bay Beats Rap Show
+LOCATION:Koret Auditorium\, SF Main Library\, 100 Larkin St San Francisco\
+ , San Francisco
+URL:https://partiful.com/e/Y19LKz1L13ObhmCGdUee
+DESCRIPTION:Reading + Theatre\nhttps://partiful.com/e/Y19LKz1L13ObhmCGdUee
+ \n\nThe San Francisco Public Library's Bay Beats platform throws its firs
+ t rap showcase in Koret Auditorium\, spotlighting three top local rappers
+  from its streaming collection. LiL MC\, Family Not A Group\, and Philip 
+ Bank$ take the stage with DJ sets by Mcstravick. Free so arrive early for
+  a seat in the auditorium! This is a recommendation\, not hosted by Parti
+ ful - hosted by the San Francisco Public Li
+END:VEVENT
+END:VCALENDAR

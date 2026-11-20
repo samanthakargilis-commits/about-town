@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ebe682bcbcd8@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261120T150000
+DTEND;TZID=America/Los_Angeles:20261120T170000
+SUMMARY:Tip Takes the Town Meet & Greet
+LOCATION:Rush Bowls Oakland\, 350 17th Street\, Oakland\, Oakland
+URL:https://ma.to/event/tip-takes-the-town-meet-greet-20-nov-2026-1
+DESCRIPTION:Oakland\nhttps://ma.to/event/tip-takes-the-town-meet-greet-20-
+ nov-2026-1\n\nTip Takes the Town is a meet and greet with WNBA champion T
+ iffany Hayes of the Valkyries at Rush Bowls Oakland. The event features a
+  photo op\, limited-edition merch\, autographs and Tip's signature bowl\,
+  with sounds by DJ Heartbreak. It celebrates the Valkyries' championship 
+ season and runs 3-5 PM. Tickets are sold out.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5d690b34f925@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261120T170000
+DTEND;TZID=America/Los_Angeles:20261120T190000
+SUMMARY:Making Spirits Bright Opens
+LOCATION:Los Gatos Soda Works\, Los Gatos
+URL:https://ma.to/event/making-spirits-bright-opens-20-nov-2026
+DESCRIPTION:Camp & Halloween · Los Gatos\nhttps://ma.to/event/making-spir
+ its-bright-opens-20-nov-2026\n\nMaking Spirits Bright is the Christmas po
+ p-up opening at Los Gatos Soda Works on November 20\, following the venue
+ 's November 15–19 holiday transformation. It follows the Halloween run 
+ of Making Spirits Rise. Entry is limited to guests 21 and over.
+END:VEVENT
+END:VCALENDAR

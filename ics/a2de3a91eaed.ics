@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a2de3a91eaed@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261130T201000
+DTEND;TZID=America/Los_Angeles:20261130T214000
+SUMMARY:Somatic Breathwork and Deep relaxation: Creating Health and Healin
+ g!
+LOCATION:Yoga Society of San Francisco\, 2872 Folsom Street\, San Francisc
+ o\, CA 94110 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/somatic-breathwork-and-deep-relaxation-cr
+ eating-health-and-healing-tickets-2002668322864
+DESCRIPTION:Meditation\nhttps://www.eventbrite.com/e/somatic-breathwork-an
+ d-deep-relaxation-creating-health-and-healing-tickets-2002668322864\n\nMa
+ naging stress and creating deep peace by proper breathing\, deep relaxati
+ on\, regulating the nervous system\, and feeling the body!
+END:VEVENT
+END:VCALENDAR

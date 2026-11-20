@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1a847f5560a6@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;TZID=America/Los_Angeles:20261122T133000
+DTEND;TZID=America/Los_Angeles:20261122T153000
+SUMMARY:Chocolate Panel: HOW CHOCOLATE BARS AND MADE AND DESIGNED
+LOCATION:San Francisco County Fair Building\, 1100 9th Avenue\, san franci
+ sco\, CA san francisco\, san francisco
+URL:https://www.meetup.com/incredible-food-wine-experiences/events/3174433
+ 02/
+DESCRIPTION:Discourse + Craft\nhttps://www.meetup.com/incredible-food-wine
+ -experiences/events/317443302/\n\nJoin local chocolate bar makers as they
+  discuss their experiences\, strategies\, and tastes when it comes to sou
+ rcing and creating an award level chocolate bar -- from top to bottom. **
+ [www.FallChocolateSalon.com](https://www.FallChocolateSalon.com)** The pr
+ emier chocolate show on the West Coast brings the Annual San Francisco **
+ Fall Holiday CHOCOLATE SALON**. Chocolate aficionados\, fanatics\, buyers
+END:VEVENT
+END:VCALENDAR

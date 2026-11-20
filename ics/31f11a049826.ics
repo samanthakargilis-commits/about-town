@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:31f11a049826@bay-events
+DTSTAMP:20261120T212540Z
+DTSTART;TZID=America/Los_Angeles:20261121T213000
+DTEND;TZID=America/Los_Angeles:20261121T233000
+SUMMARY:THE DELUXE 11/21 Tomboy x Connor Morrison
+LOCATION:The Deluxe\, 1511 Haight St San Francisco\, San Francisco
+URL:https://partiful.com/e/RusQFBG5VfU14UvtI3kz
+DESCRIPTION:Theatre\nhttps://partiful.com/e/RusQFBG5VfU14UvtI3kz\n\n🚨AT
+ TENTION ONE AND ALL🚨 We here at Tomboy have an exciting show for you a
+ ll! The Deluxe is a fantastic locally owned live jazz/blues bar that just
+  recently opened back up again. The night will start with the very talent
+ ed Connor Morrison and his very talented band from 9:30-11:00 and Tomboy 
+ will play 11:00-12:30. Twill be a night of rock and jams so come ready to
+  dance and tip your bartender! Tick
+END:VEVENT
+END:VCALENDAR

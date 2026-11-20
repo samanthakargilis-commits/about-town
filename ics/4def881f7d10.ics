@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4def881f7d10@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261121T120000
+DTEND;TZID=America/Los_Angeles:20261121T140000
+SUMMARY:Swamp Witch Tattoo Guest Spot
+LOCATION:UNDRGRND SF\, 3191 Mission St\, San Francisco\, CA\, San Francisc
+ o
+URL:https://ma.to/event/swamp-witch-tattoo-guest-spot-2026-11-21
+DESCRIPTION:Art\nhttps://ma.to/event/swamp-witch-tattoo-guest-spot-2026-11
+ -21\n\nSwamp Witch (@swamp.witch.tattoos) holds a guest tattoo spot at UN
+ DRGRND SF during a three-day visit from November 20 to 22\, 2026\, the ar
+ tist's first trip to the West Coast. Appointments cover cyber gothic tatt
+ oo work\, with available designs and flash offered alongside custom piece
+ s\, and the artist also tattoos alongside @jo.tattoos_ during the visit. 
+ Booking is arranged by direct message. The sho
+END:VEVENT
+END:VCALENDAR

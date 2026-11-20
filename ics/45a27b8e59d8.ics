@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:45a27b8e59d8@bay-events
+DTSTAMP:20261120T212540Z
+DTSTART;TZID=America/Los_Angeles:20261213T120000
+DTEND;TZID=America/Los_Angeles:20261213T160000
+SUMMARY:Elevate's Holiday Market
+LOCATION:Elevate Salon\, 615 W Orange Ave South San Francisco\, South San 
+ Francisco
+URL:https://partiful.com/e/Tb3NMncAnHXl0dMrApxH
+DESCRIPTION:Fairs & festivals + Discourse · South San Francisco\nhttps://
+ partiful.com/e/Tb3NMncAnHXl0dMrApxH\n\nJoin us Sunday\, December 13th fro
+ m 12 PM – 4 PM at Elevate Salon for an afternoon of holiday shopping\, 
+ beauty\, coffee\, and all things local! 🤍 We have an amazing lineup of
+  vendors joining us: 🛍️ AURA – Boutique shopping 🍵 Cele Matcha 
+ & Coffee Bar 🧃 Con Amor Juices & Acai 🖋️ Jerry Wang – Custom ta
+ ttoos & flash tattoo options 💉 Blu Monarch – Tox 📸 G26 – Photob
+ ooth & Keychains 🕯️ Poured Candle Bar - 
+END:VEVENT
+END:VCALENDAR

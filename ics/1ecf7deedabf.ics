@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1ecf7deedabf@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261120T190000
+DTEND;TZID=America/Los_Angeles:20261120T210000
+SUMMARY:The Fox Den: Music on Vinyl
+LOCATION:Laszlo Bar\, San Francisco
+URL:https://ma.to/event/the-fox-den-music-on-vinyl-20-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/the-fox-den-music-on-vin
+ yl-20-nov-2026\n\nThe Fox Den is a weekly Friday night at Laszlo Bar in S
+ an Francisco. It features music on vinyl\, classic cocktails\, and the fu
+ ll dinner menu from Foreign Cinema in a classy\, upbeat bar and lounge se
+ tting. The event begins at 7 PM.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6325c61259a6@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261121T120000
+DTEND;TZID=America/Los_Angeles:20261121T150000
+SUMMARY:hej hej Hot Dogs: Hammerling
+LOCATION:Hammerling Wines\, Berkeley\, CA\, Berkeley
+URL:https://ma.to/event/hej-hej-hot-dogs-hammerling-2026-11-21
+DESCRIPTION:Berkeley\nhttps://ma.to/event/hej-hej-hot-dogs-hammerling-2026
+ -11-21\n\nThe hej hej November Bay Area pop-up serves Swede-ish hot dogs 
+ at Hammerling Wines in Berkeley\, CA. Food is available from 12 to 3 pm o
+ r until sold out.
+END:VEVENT
+END:VCALENDAR

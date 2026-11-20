@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:718d04a9f909@bay-events
+DTSTAMP:20261120T212540Z
+DTSTART;TZID=America/Los_Angeles:20261120T200000
+DTEND;TZID=America/Los_Angeles:20261120T220000
+SUMMARY:Get Off My Foot: Improvised Duet
+LOCATION:@usfcapasj\, San Francisco
+URL:https://ma.to/event/get-off-my-foot-improvised-duet-20-nov-2026
+DESCRIPTION:Fairs & festivals + Concerts\nhttps://ma.to/event/get-off-my-f
+ oot-improvised-duet-20-nov-2026\n\nMegan Lowe and Brenton Cheng perform 
+ “Get Off My Foot”\, a structured contact improvisation duet. The move
+ ment is improvised within composed constraints\, building on sensibilitie
+ s developed over a decade of dancing together. Music is data.matrix by Ry
+ oji Ikeda. This is part of the USF Dance Ensemble's Shifting Ground Fall 
+ 2026 Concert. Performance dates: Nov 19-21 at 8pm. Earlier performance to
+ ok p
+END:VEVENT
+END:VCALENDAR

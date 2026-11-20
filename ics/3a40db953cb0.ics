@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3a40db953cb0@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261126T080000
+DTEND;TZID=America/Los_Angeles:20261126T100000
+SUMMARY:San Francisco City Impact’s Thanksgiving Day Outreach 2026
+LOCATION:
+URL:https://4fwht8o1.paperform.co/
+DESCRIPTION:Featured on Funcheap\nhttps://4fwht8o1.paperform.co/\n\nSpend 
+ Thanksgiving giving back to the Tenderloin community with San Francisco C
+ ity Impact. Volunteers will gather with local neighbors for a warm\, sit-
+ down Thanksgiving meal featuring turkey and all the fixings. Help prepare
+  and serve meals\, connect with residents\, and remind neighbors they are
+ n’t alone during the holidays. Thursday\, November 26\, 2026 | 8 am to 
+ 2 pm | 144 Taylor Street\, San Franci
+END:VEVENT
+END:VCALENDAR

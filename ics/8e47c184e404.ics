@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8e47c184e404@bay-events
+DTSTAMP:20261120T212540Z
+DTSTART;TZID=America/Los_Angeles:20261205T180000
+DTEND;TZID=America/Los_Angeles:20261206T020000
+SUMMARY:In The Garden
+LOCATION:Mabuhay Gardens\, 443 Broadway San Francisco\, San Francisco
+URL:https://partiful.com/e/BsAgnb7gZraoqjZxEDgz
+DESCRIPTION:Musical theatre + Theatre\nhttps://partiful.com/e/BsAgnb7gZrao
+ qjZxEDgz\n\nWE'RE BACK. THIS TIME\, WE'RE IN THE GARDEN. 🌿 One night. 
+ 20 local artists. 4 stages. The life of a song\, from first take to last 
+ call. We're taking over the historic Mabuhay Gardens to kick off the holi
+ day season. And no\, this isn't your typical SantaCon stop. 😉 WHY THE 
+ MAB: 🌹 Mabuhay Gardens opened in 1976 as a Filipino supper club on Bro
+ adway\, at the edge of Manilatown\, and became the "Fab Mab"\,
+END:VEVENT
+END:VCALENDAR

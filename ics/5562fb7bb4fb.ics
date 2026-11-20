@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5562fb7bb4fb@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;TZID=America/Los_Angeles:20261206T110000
+DTEND;TZID=America/Los_Angeles:20261206T180000
+SUMMARY:Stone Gold Annual Pottery Market
+LOCATION:Stone Gold Pottery\, 1920 Polk St San Francisco\, San Francisco
+URL:https://partiful.com/e/MYuavY0lKhq9EuOpO3gQ
+DESCRIPTION:Craft\nhttps://partiful.com/e/MYuavY0lKhq9EuOpO3gQ\n\nThe memb
+ ers of Stone Gold Pottery Studio on Polk St. are hosting their annual hol
+ iday pottery market! Stop by the studio on Sunday\, December 6 anytime be
+ tween 11 AM and 6 PM. Browse handmade ceramics\, buy gifts for the holida
+ ys\, and enjoy some light refreshments. We hope to see you there!
+END:VEVENT
+END:VCALENDAR

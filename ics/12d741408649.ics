@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:12d741408649@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261201T113000
+DTEND;TZID=America/Los_Angeles:20261201T133000
+SUMMARY:33rd Annual World AIDS Day National Observance (Golden Gate Park)
+LOCATION:National AIDS Memorial Grove\, Nancy Pelosi Drive & Bowling Green
+  Drive\, Golden Gate Park\, San Francisco\, CA 94122\, San Francisco
+URL:https://sf.funcheap.com/world-aids-day-2026-memorial-gathering-golden-
+ gate-park-sf/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/world-aids-day-2026-
+ memorial-gathering-golden-gate-park-sf/\n\nWe gather to remember those lo
+ st to HIV/AIDS and educate younger generations about the leadership and a
+ ctivism associated with this disease World AIDS Day National Observance 2
+ 026! Don’t miss this annual event as we strive towards an HIV/AIDS-free
+  future — one where communities are never again harmed ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1e073e31b1b0@bay-events
+DTSTAMP:20261120T212538Z
+DTSTART;TZID=America/Los_Angeles:20261122T080000
+DTEND;TZID=America/Los_Angeles:20261122T100000
+SUMMARY:Cut Your Own: Castro Valley Christmas Tree Farm
+LOCATION:Castro Valley
+URL:https://www.rsvtrees.com/christmas-tree-farm-pescadero-half-moon-bay
+DESCRIPTION:Gay / queer · Featured on Funcheap\nhttps://www.rsvtrees.com/
+ christmas-tree-farm-pescadero-half-moon-bay\n\nCastro Valley | Located in
+  the beautiful East Bay hills\, just north of Castro Valley\, this family
+ -owned Christmas tree farm has been offering a unique outdoor experience 
+ since 1969 . Here\, you can cut down your own fresh “Choose & Cut” Ch
+ ristmas tree while enjoying nature at its finest. You’ll be provided wi
+ th site maps\, saws and twine upon arrival\, so you have everything you n
+ eed to find and brin
+END:VEVENT
+END:VCALENDAR

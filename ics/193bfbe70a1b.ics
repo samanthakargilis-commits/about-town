@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:193bfbe70a1b@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261121T130000
+DTEND;TZID=America/Los_Angeles:20261121T140000
+SUMMARY:Arion Press Public Tour\, 1pm
+LOCATION:Arion Press at Fort Mason Center\, San Francisco
+URL:https://ma.to/event/arion-press-public-tour-1pm-21-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/arion-press-public-tour-
+ 1pm-21-nov-2026\n\nArion Press Public Tours give an in-depth overview of 
+ the process of making books by hand in Arion Press's historic workshop\, 
+ with a sneak peek at current publishing projects in process. This session
+  runs 3pm–4pm on Saturday\, November 21 at Fort Mason Center\; an earli
+ er session runs 1pm–2pm the same afternoon.
+END:VEVENT
+END:VCALENDAR

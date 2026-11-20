@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:df336298ed21@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:An Evening With Dusty Baker
+LOCATION:San Francisco Elks Lodge #3\, 450 Post St.\, San Francisco\, CA\,
+  San Francisco
+URL:https://sf.funcheap.com/evening-dusty-baker/
+DESCRIPTION:Reading + Discourse\nhttps://sf.funcheap.com/evening-dusty-bak
+ er/\n\nDusty Baker will be in conversation with BaseballMary to discuss h
+ is new memoir\, his extraordinary life in and out of baseball. Each ticke
+ t earns a signed book and bottle of Baker Family Wined. This is also a be
+ nefit for The Kasey Marie Scholarship Fund and ...
+END:VEVENT
+END:VCALENDAR

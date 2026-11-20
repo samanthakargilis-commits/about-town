@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:402c142c4f58@bay-events
+DTSTAMP:20261120T212540Z
+DTSTART;TZID=America/Los_Angeles:20261122T110000
+DTEND;TZID=America/Los_Angeles:20261122T130000
+SUMMARY:Persimmon Picking🍊
+LOCATION:Arya Farm Produce\, 21459 Reeve Rd Tracy\, Tracy
+URL:https://partiful.com/e/DEWoiiCvyGDeQIT53xFD
+DESCRIPTION:U-pick farms · Tracy\nhttps://partiful.com/e/DEWoiiCvyGDeQIT5
+ 3xFD\n\nCome join us for a cozy little morning in the orchard 🍊 We’l
+ l wander the orchard rows\, fill our baskets with organic persimmons\, ta
+ ke cute pics\, and enjoy the crisp morning air together. ✿ Arya Farm in
+  Tracy: a small mom-and-pop Muslim-owned farm with a farmers market where
+  you can buy fresh organic fruits and veggies\, affordable and grown with
+ out pesticides ✿ dress code: fall orchard-core. Think 
+END:VEVENT
+END:VCALENDAR

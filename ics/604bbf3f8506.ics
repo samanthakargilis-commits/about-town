@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:604bbf3f8506@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;TZID=America/Los_Angeles:20261121T100000
+DTEND;TZID=America/Los_Angeles:20261121T120000
+SUMMARY:Matisse’s Menagerie Collage Class
+LOCATION:Case for Making Friends Workshops\, San Francisco
+URL:https://ma.to/event/matisses-menagerie-collage-class-21-nov-2026
+DESCRIPTION:Craft + Animals\nhttps://ma.to/event/matisses-menagerie-collag
+ e-class-21-nov-2026\n\nMatisse’s Menagerie is an in-person collage clas
+ s with @erinmwheeler. Participants work like Matisse with painted paper\,
+  cutting silhouettes and simple shapes drawn from the plant and animal wo
+ rld. The class paints paper with watercolor or gouache and experiments wi
+ th previously painted paper to build layers and explore color combination
+ s. The resulting playful paintings inspire the cut shapes and
+END:VEVENT
+END:VCALENDAR

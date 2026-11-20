@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4815cedb4e2b@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;TZID=America/Los_Angeles:20261205T130000
+DTEND;TZID=America/Los_Angeles:20261205T150000
+SUMMARY:One Day Choir - Song: “Let It Go” ❄️☃️
+LOCATION:Mannakin Theater and Dance\, 1625 Bush St San Francisco\, San Fra
+ ncisco
+URL:https://partiful.com/e/9QjwDMkTab0GbWth5rTu
+DESCRIPTION:Singing + Concerts\nhttps://partiful.com/e/9QjwDMkTab0GbWth5rT
+ u\n\nWhether you're a beginner singer who's curious or a seasoned a cappe
+ lla singer\, drop into our event to meet other music folks in the Bay + l
+ earn and sing an a cappella arrangement!
+END:VEVENT
+END:VCALENDAR

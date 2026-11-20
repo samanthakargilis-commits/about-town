@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f4e277c91cd9@bay-events
+DTSTAMP:20261120T212538Z
+DTSTART;TZID=America/Los_Angeles:20261125T190000
+DTEND;TZID=America/Los_Angeles:20261125T210000
+SUMMARY:Thanksgiving Eve Queer Comedy + Friendsgiving
+LOCATION:SF Eagle\, 398 12th St.\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/thanksgiving-eve-queer-comedy-friendsgiving-sf
+ -eagle/
+DESCRIPTION:Comedy + Gay / queer · A yearly tradition\nhttps://sf.funchea
+ p.com/thanksgiving-eve-queer-comedy-friendsgiving-sf-eagle/\n\nTake a bre
+ ak from family time and make a night of it with your chosen family. Stuff
+ ed Fam is the Thanksgiving Eve edition of Safe Words Queer Comedy Showcas
+ e\, hosted by Wonder Dave at the San Francisco Eagle. Bring the friends y
+ ou call family and make ...
+END:VEVENT
+END:VCALENDAR

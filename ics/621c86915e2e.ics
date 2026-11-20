@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:621c86915e2e@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:West Coast Craft November 2026
+LOCATION:
+URL:https://www.westcoastcraft.com/attendee-calendar/west-coast-craft
+DESCRIPTION:Craft + Fairs & festivals\nhttps://www.westcoastcraft.com/atte
+ ndee-calendar/west-coast-craft\n\nWest Coast Craft is a popular craft mar
+ ket that brings together a wide range of creatives selling jewelry\, art\
+ , ceramics\, homewares\, and more. The market features over 275 vendors \
+ , and you can browse handmade candles\, beautiful mugs\, art prints\, vin
+ tage clothing\, skincare\, and many more items. The two-day market is thi
+ s weekend\, November 21 and 22\, at Fort Mason Center in the Festival Pav
+ ilion. T
+END:VEVENT
+END:VCALENDAR

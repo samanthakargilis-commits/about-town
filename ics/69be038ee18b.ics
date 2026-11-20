@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:69be038ee18b@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261125T203000
+DTEND;TZID=America/Los_Angeles:20261125T213000
+SUMMARY:Friendsgiving Ice Skating Night (Union Square)
+LOCATION:The Safeway Holiday Ice Rink in Union Square presented by Kaiser 
+ Perma\, 333 Post Street\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/friendsgiving-ice-skating-night-union-square/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/friendsgiving-ice-sk
+ ating-night-union-square/\n\nNew this season\, Mid-Week Merriment brings 
+ a different theme to the ice every Wednesday night at 8:30 p.m. The serie
+ s begins November 11 with Onesies Wednesday and continues with The Rhines
+ tone Rink\, a country-glam night on November 18\, Holiday Movie Music Nig
+ ht on December 9\, ...
+END:VEVENT
+END:VCALENDAR

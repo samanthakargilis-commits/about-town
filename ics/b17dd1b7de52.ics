@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b17dd1b7de52@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:San Francisco GLIDE Thanksgiving Meals 2026
+LOCATION:
+URL:https://www.glide.org/volunteer/
+DESCRIPTION:Featured on Funcheap\nhttps://www.glide.org/volunteer/\n\nPut 
+ on your apron and help GLIDE prepare and serve nearly 2\,500 Thanksgiving
+  meals to individuals and families across San Francisco. Volunteers help 
+ with everything from chopping\, dicing and preparing food to serving gues
+ ts at GLIDE’s annual Thanksgiving Day meal. Meals include ham\, turkey\
+ , sides and desserts\, with food served onsite and delivered throughout t
+ he city. Thursday\, November 26\, 2026 |
+END:VEVENT
+END:VCALENDAR

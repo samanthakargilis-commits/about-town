@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:63e50bc80864@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261121T100000
+DTEND;TZID=America/Los_Angeles:20261121T150000
+SUMMARY:Friends With Benedicts Brunch
+LOCATION:570 Green St.\, 570 Green St\, San Francisco\, San Francisco
+URL:https://ma.to/event/friends-with-benedicts-brunch-21-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/friends-with-benedicts-b
+ runch-21-nov-2026\n\nThe Friends With Benedicts Pop Up hosts its themed b
+ runch on Saturdays and Sundays from 10am to 3pm at 570 Green St. in San F
+ rancisco. Reservations are offered.
+END:VEVENT
+END:VCALENDAR

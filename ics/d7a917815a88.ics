@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d7a917815a88@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261120T100000
+DTEND;TZID=America/Los_Angeles:20261120T120000
+SUMMARY:SMU Invite: Nov. 20
+LOCATION:Robson & Lindley Aquatics Center\, Palo Alto
+URL:https://ma.to/event/smu-invite-nov-20-20-nov-2026
+DESCRIPTION:Palo Alto\nhttps://ma.to/event/smu-invite-nov-20-20-nov-2026\n
+ \nThe SMU Invite continues Nov. 20 at Robson & Lindley Aquatics Center in
+  Dallas\, Texas. Stanford Men's Swimming & Diving competes in the four-da
+ y meet (Nov. 18–21)\, which closes out the 2026 portion of its season.
+END:VEVENT
+END:VCALENDAR

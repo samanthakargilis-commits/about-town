@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7113b7c21fca@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Hunger Games: Sunrise on the Reaping in IMAX at The Tech Interacti
+ ve
+LOCATION:The Tech Interactive\, 201 S. Market St. San Jose\, CA 95113
+URL:https://sf.funcheap.com/hunger-games-sunrise-reaping-imax-tech-interac
+ tive/
+DESCRIPTION:⭐ Suzanne Collins\nhttps://sf.funcheap.com/hunger-games-sunr
+ ise-reaping-imax-tech-interactive/\n\nBefore Katniss Everdeen\, there was
+  Haymitch Abernathy. And before the rebellion\, there was a game that cha
+ nged everything. Return to Panem in “The Hunger Games: Sunrise on the R
+ eaping\,” the thrilling new chapter in the blockbuster franchise based 
+ on Suzanne Collins’ bestselling novels. Set 24 years ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:77d934c32ac7@bay-events
+DTSTAMP:20261120T212538Z
+DTSTART;TZID=America/Los_Angeles:20261120T190000
+DTEND;TZID=America/Los_Angeles:20261121T003000
+SUMMARY:“Secret Cinema Society” David Lynch Films + Drag Show
+LOCATION:Discourse SF\, 275 8th Street San Francisco 94103
+URL:https://sf.funcheap.com/secret-cinema-society-david-lynch-films-drag-s
+ how-sf/
+DESCRIPTION:Gay / queer + Camp & Halloween · Your kind of movie\nhttps://
+ sf.funcheap.com/secret-cinema-society-david-lynch-films-drag-show-sf/\n\n
+ Enter the strange\, surreal & wonderfully unsettling world of David Lynch
+  ft Blue Velvet and Mulhollald Drive + a special drag performance Secret 
+ Cinema Society invites you to escape the ordinary and immerse yourself in
+  Lynch’s unmistakable universe of mystery\, suspense\, and surreal stor
+ ytelling. The evening ...
+END:VEVENT
+END:VCALENDAR

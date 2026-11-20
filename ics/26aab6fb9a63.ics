@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:26aab6fb9a63@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261120T213000
+DTEND;TZID=America/Los_Angeles:20261121T013000
+SUMMARY:Cuffing Season: Queer Flirt Night
+LOCATION:Arcana\, San Francisco
+URL:https://ma.to/event/cuffing-season-queer-flirt-night-20-nov-2026
+DESCRIPTION:Gay / queer\nhttps://ma.to/event/cuffing-season-queer-flirt-ni
+ ght-20-nov-2026\n\nLESBEAUX x QUEER HEART’S DESIRE present Cuffing Seas
+ on: A Queer Flirt Night\, marking the event’s one-year anniversary. 21+
+  event inviting QTBIPOC to the front. A Munch Social Hour runs 9:30 PM–
+ 10:30 PM upstairs. Featuring hosts MUDD THE TWO SPIRIT\, with sounds by M
+ ASHALLAH\, MAMA SAN\, and COWBOY BLVCK. How it works: Take a numbered nam
+ e tag\, add a photo to the polaroid cruising board\, and write not
+END:VEVENT
+END:VCALENDAR

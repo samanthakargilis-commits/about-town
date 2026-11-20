@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b63867d62b69@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:2026-27 Castro Valley: 3Crosses Christmas Village Ice Rink
+LOCATION:3Crosses Church\, 20600 John Drive\, Castro Valley – Cost: Free
+  admission to the village\; ic
+URL:https://sf.funcheap.com/city-guide/ice-skate-bay-area/
+DESCRIPTION:Gay / queer · Featured on Funcheap\nhttps://sf.funcheap.com/c
+ ity-guide/ice-skate-bay-area/\n\n– Dates: November 27\, 2026 – Januar
+ y 3\, 2027 (weekends and select dates) – Where: 3Crosses Church\, 20600
+  John Drive\, Castro Valley – Cost: Free admission to the village\; ice
+  skating costs $15-$18 per person. Visit the largest outdoor ice skating 
+ rink in the East Bay \, surrounded by festive lights and a holiday villag
+ e packed with family-friendly activities. Beyond skating\, there’s a fe
+ stive train 
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ac188f18a7d5@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261120T200000
+DTEND;TZID=America/Los_Angeles:20261120T220000
+SUMMARY:Dance Fridays Salsa Bachata Party
+LOCATION:Space 550\, 550 Barneveld Ave\, San Francisco\, CA 94124\, San Fr
+ ancisco
+URL:https://ma.to/event/dance-fridays-salsa-bachata-party-20-nov-2026
+DESCRIPTION:Theatre\nhttps://ma.to/event/dance-fridays-salsa-bachata-party
+ -20-nov-2026\n\nSpace 550 presents Dance Fridays\, a salsa and bachata pa
+ rty across two rooms. The night opens at 8 PM with Beginners Bachata with
+  Ricardo\, followed at 9 PM by Beginners Salsa with Ricardo and Intermedi
+ ate Bachata with Kristin. DJ Goodsho and DJ Sal play salsa in the salsa r
+ oom\, and DJ Thiencito plays bachata in the bachata room. Early-bird tick
+ ets cost $15 and must be purchased before Wednesday at
+END:VEVENT
+END:VCALENDAR

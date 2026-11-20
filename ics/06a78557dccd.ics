@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:06a78557dccd@bay-events
+DTSTAMP:20261120T212540Z
+DTSTART;TZID=America/Los_Angeles:20261206T130000
+DTEND;TZID=America/Los_Angeles:20261206T160000
+SUMMARY:Holiday Drink & Draw Watch Along - The Preacher's Wife
+LOCATION:Kinfolx\, 1951 Telegraph Ave\, Ste 4 Oakland\, Oakland
+URL:https://partiful.com/e/tNgfJ2R8jhXfKnBHQpGl
+DESCRIPTION:Art + Craft · Oakland\nhttps://partiful.com/e/tNgfJ2R8jhXfKnB
+ HQpGl\n\nJoin us for Holiday themed Drink & Draw at Kinfolx as we watch "
+ The Preachers Wife" Join us at Kinfolx on December 6th\, from 1–4 PM\, 
+ as we get into the Holiday spirit and watch "The Preacher’s Wife." Draw
+  \, color\, create\, and sip on some cozy café drinks with new friends. 
+ Make a Christmas card\, color a holiday scene\, or just come hang out and
+  bring your own work. We’ll have art materials such as p
+END:VEVENT
+END:VCALENDAR

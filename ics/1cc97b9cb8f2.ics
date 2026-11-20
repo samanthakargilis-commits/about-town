@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1cc97b9cb8f2@bay-events
+DTSTAMP:20261120T212544Z
+DTSTART;TZID=America/Los_Angeles:20261213T130000
+DTEND;TZID=America/Los_Angeles:20261213T160000
+SUMMARY:The Original San Jose Nutcracker
+LOCATION:San Jose Center for the Performing Arts\, 255 South Almaden Boule
+ vard\, San Jose\, CA 95113 San Jose\, San Jose
+URL:https://www.eventbrite.com/e/the-original-san-jose-nutcracker-tickets-
+ 2000280259101
+DESCRIPTION:San Jose\nhttps://www.eventbrite.com/e/the-original-san-jose-n
+ utcracker-tickets-2000280259101\n\nThe Tradition Continues! Join our 61st
+  Anniversary production of the holiday classic at the San Jose Center for
+  Performing Arts!
+END:VEVENT
+END:VCALENDAR

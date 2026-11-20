@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:754d65bb9607@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261120T190000
+DTEND;TZID=America/Los_Angeles:20261120T210000
+SUMMARY:Transcendent Talent
+LOCATION:Oasis\, 298 11th St\, San Francisco\, CA 94103\, San Francisco
+URL:https://ma.to/event/transcendent-talent-20-nov-2026
+DESCRIPTION:Musical theatre + Gay / queer\nhttps://ma.to/event/transcenden
+ t-talent-20-nov-2026\n\nTranscendent Talent is a night of trans joy cabar
+ et at Oasis for Trans Day of Remembrance. Featuring performances by Vanil
+ la Meringue\, Mahlae Balenciaga\, Kipper Snacks\, Meatflap\, Mojo Carter\
+ , Sally Limon\, Helixir\, Ella Gunt and The One and Only Rexy. Doors open
+  at 6pm for the 7pm show. Oasis is 21+ for all events\; a valid ID is req
+ uired. Tickets are available through the venue's website.
+END:VEVENT
+END:VCALENDAR

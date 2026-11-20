@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0a7c225e167c@bay-events
+DTSTAMP:20261120T212544Z
+DTSTART;TZID=America/Los_Angeles:20261205T200000
+DTEND;TZID=America/Los_Angeles:20261205T220000
+SUMMARY:Slow Joy/ aWannabe/ TBA
+LOCATION:Neck of the Woods\, 406 Clement St\, San Francisco
+URL:https://www.ticketweb.com/event/slow-joy-awannabe-tba-neck-of-the-wood
+ s-tickets/14391834?theme=nwoods&REFID=clientsitewp
+DESCRIPTION:New in your area\nhttps://www.ticketweb.com/event/slow-joy-awa
+ nnabe-tba-neck-of-the-woods-tickets/14391834?theme=nwoods&REFID=clientsit
+ ewp\n\nSlow Joy aWannabe TBA Saturday Decemeber 5th 2026 Neck of the Wood
+ s 406 Clement St San Francisco\, CA 94118 $18 in adv $25 at the Read More
+END:VEVENT
+END:VCALENDAR

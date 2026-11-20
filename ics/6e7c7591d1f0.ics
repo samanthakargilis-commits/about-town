@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6e7c7591d1f0@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;TZID=America/Los_Angeles:20261211T183000
+DTEND;TZID=America/Los_Angeles:20261211T203000
+SUMMARY:Season of Love by Helena Greer
+LOCATION:Pride & Petals\, 6607 Telegraph Avenue\, Oakland\, CA Oakland\, O
+ akland
+URL:https://www.meetup.com/pride-petals-sapphic-romance-book-club/events/3
+ 17447942/
+DESCRIPTION:Comedy + Reading · Your reading tastes · Oakland\nhttps://ww
+ w.meetup.com/pride-petals-sapphic-romance-book-club/events/317447942/\n\n
+ For our December 11th book club\, we have chosen *Season of Love* by Hele
+ na Greer: We're wrapping up the year with a little holiday romance! For o
+ ur December 11th Sapphic Romance Book Club\, we've chosen *Season of Love
+ * by Helena Greer\, a heartfelt\, funny\, and wonderfully queer story abo
+ ut second chances\, complicated families\, and finding love where you lea
+ st expect it. When Miriam Blum unexpectedl
+END:VEVENT
+END:VCALENDAR

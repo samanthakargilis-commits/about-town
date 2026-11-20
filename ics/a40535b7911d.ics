@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a40535b7911d@bay-events
+DTSTAMP:20261120T212538Z
+DTSTART;TZID=America/Los_Angeles:20261203T173000
+DTEND;TZID=America/Los_Angeles:20261203T190000
+SUMMARY:What We Carry: Free Artist Panel w/ 5 Bay Area Artists (USF)
+LOCATION:Xavier Hall\, Fromm Building\, University of San Francisco\, 2497
+  Golden Gate Ave\, San Francisco\, CA 94118\, San Francisco
+URL:https://sf.funcheap.com/carry-free-artist-panel-5-bay-area-artists-usf
+ /
+DESCRIPTION:Art + Discourse · Thursday evening\nhttps://sf.funcheap.com/c
+ arry-free-artist-panel-5-bay-area-artists-usf/\n\nJoin us for an artist p
+ anel and celebration for the exhibition\, What We Carry\, featuring artis
+ ts Al-An deSouza\, Angela Hennessy\, Stephanie Syjuco\, Rupy C. Tut\, and
+  Maryam Yousif. Five Bay Area artists explore questions of inheritance fr
+ om those who came before us–in our bodies\, in our ...
+END:VEVENT
+END:VCALENDAR

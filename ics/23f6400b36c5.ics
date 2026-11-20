@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:23f6400b36c5@bay-events
+DTSTAMP:20261120T212540Z
+DTSTART;TZID=America/Los_Angeles:20261120T180000
+DTEND;TZID=America/Los_Angeles:20261120T210000
+SUMMARY:Banda Sin Nombre Trio
+LOCATION:The Halfway Club\, 1166 Geneva Ave\, San Francisco\, CA 94112\, S
+ an Francisco
+URL:https://ma.to/event/banda-sin-nombre-trio-20-nov-2026
+DESCRIPTION:Concerts + Singing\nhttps://ma.to/event/banda-sin-nombre-trio-
+ 20-nov-2026\n\nBanda Sin Nombre Trio performs live at The Halfway Club\, 
+ blending rich vocal harmonies with global rhythms including cumbia\, Appa
+ lachian old-time\, Catalan rumba\, Peruvian chicha and klezmer. The all-a
+ ges bar and full-service restaurant serves food\, beer and cocktails. The
+  music runs 6–9pm\, and there is no cover charge.
+END:VEVENT
+END:VCALENDAR

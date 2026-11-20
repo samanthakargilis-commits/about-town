@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a97d3806d586@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261122T080000
+DTEND;TZID=America/Los_Angeles:20261122T120000
+SUMMARY:~washi tape journaling~
+LOCATION:Cafenated Coffee Co.\, 2085 Vine St Berkeley\, Berkeley
+URL:https://partiful.com/e/g0jdPHomGYfNZRVLvFgR
+DESCRIPTION:Berkeley\nhttps://partiful.com/e/g0jdPHomGYfNZRVLvFgR\n\nsooo 
+ I was thinking we could washi tape journal together (I'll post an example
+  of what I mean by this) 💛 anyways I will bring the washi tape so you 
+ just need to bring a journal and a writing utensil and yourself. i'll als
+ o be bringing journaling prompts you can choose from📝 I'm going to get
+  there early around 8 AM to get a big table on the patio but feel free to
+  arrive any time before 12 hope you 
+END:VEVENT
+END:VCALENDAR

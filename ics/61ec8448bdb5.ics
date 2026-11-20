@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:61ec8448bdb5@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261207T163000
+DTEND;TZID=America/Los_Angeles:20261207T183000
+SUMMARY:RetailReady x Dandelion CPG Holiday Mixer
+LOCATION:San Francisco\, CA\, undefined undefined San Francisco\, San Fran
+ cisco
+URL:https://partiful.com/e/iHzz9zsle1fBWJII6JGL
+DESCRIPTION:New in your area\nhttps://partiful.com/e/iHzz9zsle1fBWJII6JGL\
+ n\nSF CPG leaders + local retailers + Dandelion Chocolate = the best holi
+ day mixer of the season. Network over drinks\, make your own truffles\, a
+ nd walk out with a holiday gift that’s actually handmade. Limited spots
+  due to the nature of the space/activity\, please RSVP to secure your pla
+ ce.
+END:VEVENT
+END:VCALENDAR

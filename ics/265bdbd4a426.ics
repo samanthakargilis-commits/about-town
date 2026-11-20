@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:265bdbd4a426@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261120T190000
+DTEND;TZID=America/Los_Angeles:20261120T210000
+SUMMARY:TRASH PROM WALK OF SHAME
+LOCATION:Monument\, 140 9th St\, SF\, San Francisco
+URL:https://ma.to/event/trash-prom-walk-of-shame-20-nov-2026
+DESCRIPTION:Art\nhttps://ma.to/event/trash-prom-walk-of-shame-20-nov-2026\
+ n\nTRASH PROM WALK OF SHAME is a night of runway\, performance\, art and 
+ fashion at Monument. Haus of Jubilee presents it in collaboration with FO
+ UFOUHA!\, with support from the San Francisco Arts Commission. It takes p
+ lace Friday\, November 20\; doors open at 7pm. Tiers 1 and 2 are sold out
+ \, and tickets are sold through Eventbrite.
+END:VEVENT
+END:VCALENDAR

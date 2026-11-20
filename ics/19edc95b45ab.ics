@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:19edc95b45ab@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261121T110000
+DTEND;TZID=America/Los_Angeles:20261121T150000
+SUMMARY:Holiday Open House & Marketplace
+LOCATION:Grand Cru Custom Crush\, Windsor\, Windsor
+URL:https://ma.to/event/holiday-open-house-marketplace-21-nov-2026
+DESCRIPTION:Windsor\nhttps://ma.to/event/holiday-open-house-marketplace-21
+ -nov-2026\n\nThe Holiday Open House & Marketplace takes place at Grand Cr
+ u Custom Crush in Windsor on Nov. 21 from 11 am to 3 pm. The market bring
+ s together local wine\, local food and local crafts. Quack Quack POP! is 
+ part of the marketplace with duck fat popcorn.
+END:VEVENT
+END:VCALENDAR

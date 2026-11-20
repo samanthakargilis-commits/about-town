@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f7eb640d6bf1@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261121T130000
+DTEND;TZID=America/Los_Angeles:20261121T150000
+SUMMARY:A Conversation on Azzedine Alaïa
+LOCATION:Legion of Honor\, 100 34th Avenue\, San Francisco\, San Francisco
+URL:https://ma.to/event/a-conversation-on-azzedine-alaia-21-nov-2026
+DESCRIPTION:Discourse + Museum exhibits\nhttps://ma.to/event/a-conversatio
+ n-on-azzedine-alaia-21-nov-2026\n\nNov 21 · San Francisco. A conversatio
+ n on Azzedine Alaïa at the Legion of Honor. When Saturday\, 21 November 
+ 13:00 · America/Los_Angeles Add to Calendar Add to Calendar About A conv
+ ersation on Azzedine Alaïa at the Legion of Honor. Organised by Legion o
+ f Honor Museum Where Legion of Honor \, San Francisco 100 34th Avenue\, S
+ an Francisco Open in Google Maps
+END:VEVENT
+END:VCALENDAR

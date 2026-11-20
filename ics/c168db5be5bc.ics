@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c168db5be5bc@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261122T170000
+DTEND;TZID=America/Los_Angeles:20261122T183000
+SUMMARY:Craftathon: Reimagine the Ordinary
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/cboj2twz
+DESCRIPTION:Theatre + Art\nhttps://luma.com/cboj2twz\n\nEveryone is a crea
+ tor. Craftathon is a playground for curious minds and people who love mak
+ ing things. A chance to step away from screens\, get hands messy\, play w
+ ith unexpected materials\, and turn imagination into something real. This
+  time\, let's Reimagine the Ordinary. Pick something from everyday life a
+ nd show us how you see it differently. Turn something familiar into somet
+ hing unexpected\, pers
+END:VEVENT
+END:VCALENDAR

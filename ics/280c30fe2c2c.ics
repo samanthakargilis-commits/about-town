@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:280c30fe2c2c@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261120T190000
+DTEND;TZID=America/Los_Angeles:20261120T210000
+SUMMARY:4K Screening: Raise the Red Lantern
+LOCATION:The Roxie Theater\, San Francisco
+URL:https://ma.to/event/4k-screening-raise-the-red-lantern-20-nov-2026
+DESCRIPTION:Theatre\nhttps://ma.to/event/4k-screening-raise-the-red-lanter
+ n-20-nov-2026\n\nThe 35th-anniversary 4K restoration of Zhang Yimou’s R
+ aise the Red Lantern opens at The Roxie Theater on November 20. Gong Li s
+ tars in the film set in 1920s China\, an Academy Award–nominated tale o
+ f power\, jealousy and oppression described by Roger Ebert as “a film o
+ f voluptuous physical beauty and angry passions.” It is co-presented by
+  @danxi_am0ment and #BACCS. Tickets are available through the 
+END:VEVENT
+END:VCALENDAR

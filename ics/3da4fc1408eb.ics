@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3da4fc1408eb@bay-events
+DTSTAMP:20261120T212540Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Communal Table at The Drawing Room Annex
+LOCATION:The Drawing Room Annex\, 599 Valencia Street\, San Francisco\, Sa
+ n Francisco
+URL:https://sf.funcheap.com/communal-table-drawing-room-annex/
+DESCRIPTION:Art\nhttps://sf.funcheap.com/communal-table-drawing-room-annex
+ /\n\nDRAW\, CONNECT\, LEARN AND INSPIRE ONE ANOTHER AT 599 VALENCIA STREE
+ T. We’re pulling out all the tables and chairs\, setting up a long tabl
+ e draw plus “stations” to explore still life\, illustration\, sketchb
+ ook and mixed media arts. Supplies provided or you can bring your own (no
+  ...
+END:VEVENT
+END:VCALENDAR

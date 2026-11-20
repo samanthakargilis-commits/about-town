@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7f47d730e13e@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261219T153000
+DTEND;TZID=America/Los_Angeles:20261219T183000
+SUMMARY:merry scrapsgiving session two
+LOCATION:Arrive Vacaville\, 148 Peabody Rd Vacaville\, Vacaville
+URL:https://partiful.com/e/hbKP7Vntmbj5DnyVV3kI
+DESCRIPTION:Vacaville\nhttps://partiful.com/e/hbKP7Vntmbj5DnyVV3kI\n\nhapp
+ y holidays from solano scrap&yap\, you're invited to merry scrapsgiving\,
+  a fun festive sanrio themed event! ♡ we will be doing white elephant\,
+  stationery/trinket style with a minimum of $10. (this is optional\, but 
+ encouraged) .✦ ݁˖ your ticket includes .✦ ݁˖ ⋆ holiday themed s
+ crap pack with ephemera\, sticker sheets\, die cut stickers\, and sponsor
+ ed goodies ⋆ access to unlimited photobooth with d
+END:VEVENT
+END:VCALENDAR

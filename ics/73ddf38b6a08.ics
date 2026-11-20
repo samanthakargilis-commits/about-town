@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:73ddf38b6a08@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;TZID=America/Los_Angeles:20261120T183000
+DTEND;TZID=America/Los_Angeles:20261120T210000
+SUMMARY:VOX GEN MOVIE NIGHT
+LOCATION:2440 Leghorn St\, 2440 Leghorn St Mountain View\, Mountain View
+URL:https://partiful.com/e/us2zXtjw1NyoEKMUpfQj
+DESCRIPTION:Theatre + Weird & unusual · Mountain View\nhttps://partiful.c
+ om/e/us2zXtjw1NyoEKMUpfQj\n\n🍿🐀 BON APPÉTIT\, VOX GEN! You’re of
+ ficially invited to a movie night like NO OTHER!! 🎬🇫🇷 We’re br
+ inging Paris to Vox Gen for an IMMERSIVE showing of RATATOUILLE! 👨‍
+ 🍳🍝 But what does IMMERSIVE mean?! This isn’t your typical sit-bac
+ k-and-watch movie night. We’re bringing the movie to LIFE! As the movie
+  plays\, you’ll get to experience what’s happening on screen IN REAL 
+ LIFE! Think food served at the sa
+END:VEVENT
+END:VCALENDAR

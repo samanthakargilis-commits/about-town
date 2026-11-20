@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:80be9449da18@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261120T190000
+DTEND;TZID=America/Los_Angeles:20261120T210000
+SUMMARY:George Cotsirilos Quartet
+LOCATION:Meyhouse Restaurant & Jazz Club\, San Ramon\, San Ramon
+URL:https://ma.to/event/george-cotsirilos-quartet-20-nov-2026
+DESCRIPTION:Concerts · San Ramon\nhttps://ma.to/event/george-cotsirilos-q
+ uartet-20-nov-2026\n\nGeorge Cotsirilos Quartet performs live jazz at Mey
+ house Restaurant & Jazz Club in San Ramon as part of the venue's November
+  jazz programme.
+END:VEVENT
+END:VCALENDAR

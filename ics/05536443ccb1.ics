@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:05536443ccb1@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Palisades Tahoe opening weekend
+LOCATION:
+URL:https://secretsanfrancisco.com/tahoes-largest-ski-resort-palisades-ope
+ ning/
+DESCRIPTION:New in your area\nhttps://secretsanfrancisco.com/tahoes-larges
+ t-ski-resort-palisades-opening/\n\nPalisades will open lifts on November 
+ 21\, 2026\, a fter recent snowfall allowed the resort to open ahead of sc
+ hedule. The original opening date was November 25\, but now eager skiers 
+ and snowboarders can head to the slopes this weekend. Lifts will open at 
+ 9 am and operate until 4 pm starting this Saturday.
+END:VEVENT
+END:VCALENDAR

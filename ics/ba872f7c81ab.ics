@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ba872f7c81ab@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261120T190000
+DTEND;TZID=America/Los_Angeles:20261120T210000
+SUMMARY:Sunrise on the Reaping
+LOCATION:Alamo Drafthouse New Mission\, 2550 Mission St\, San Francisco\, 
+ CA 94110\, San Francisco
+URL:https://ma.to/event/sunrise-on-the-reaping-2026-11-20
+DESCRIPTION:New in your area\nhttps://ma.to/event/sunrise-on-the-reaping-2
+ 026-11-20\n\nThe Hunger Games: Sunrise on the Reaping opens in theaters o
+ n November 20\, screening at Alamo Drafthouse New Mission. Tickets for th
+ e film are on sale now. The story centres on the 50th Hunger Games\, whic
+ h doubles the number of tributes.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2bd9ebceeccb@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;TZID=America/Los_Angeles:20261120T190000
+DTEND;TZID=America/Los_Angeles:20261120T210000
+SUMMARY:Conservatory Light Show
+LOCATION:100 John F Kennedy Dr\, 100 John F Kennedy Dr San Francisco\, San
+  Francisco
+URL:https://partiful.com/e/rFzMbEFJTLou3wsRIL3C
+DESCRIPTION:Museum exhibits + Art\nhttps://partiful.com/e/rFzMbEFJTLou3wsR
+ IL3C\n\nThe Conservatory of Flowers glows after dark with Photosynthesis\
+ , its nightly light show. Free\, nightly\, go any evening as it's an ongo
+ ing installation! This event is not hosted by Partiful. It is an event we
+  recommend\, hosted by the Conservatory of Flowers. Find more details at 
+ the link above
+END:VEVENT
+END:VCALENDAR

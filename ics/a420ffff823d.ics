@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a420ffff823d@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261217T180000
+DTEND;TZID=America/Los_Angeles:20261217T200000
+SUMMARY:Rambler Readers December Meeting
+LOCATION:Bay Area\, None\, Bay Area\, CA Bay Area\, Bay Area
+URL:https://www.meetup.com/south-bay-women-readers/events/317214456/
+DESCRIPTION:Thursday evening · Bay Area\nhttps://www.meetup.com/south-bay
+ -women-readers/events/317214456/\n\nLocation: Lori's house in Los Gatos. 
+ Attendees will receive an email with the address several days prior to th
+ e meeting. Potluck\, Lori will provide a main dish\, we provide everythin
+ g else. This month's book selection: Yesteryear by Caro Claire Burke Abou
+ t the book: A traditional American woman\, a “tradwife” influencer\, 
+ suddenly awakens in the brutal reality of 1855—where she must unravel w
+ hether t
+END:VEVENT
+END:VCALENDAR

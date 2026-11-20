@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8d2cd0e6366e@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;TZID=America/Los_Angeles:20261120T193000
+DTEND;TZID=America/Los_Angeles:20261120T210000
+SUMMARY:NOT POEMS! Poetry Night
+LOCATION:San Francisco Zen Center City Center\, San Francisco
+URL:https://ma.to/event/not-poems-poetry-night-20-nov-2026
+DESCRIPTION:Writing + Meditation\nhttps://ma.to/event/not-poems-poetry-nig
+ ht-20-nov-2026\n\nNOT POEMS! is a free monthly poetry night at the San Fr
+ ancisco Zen Center City Center\, featuring @Hyazinthus. Christopher Robin
+  Gallagher and Kevin Starbard facilitate the evening\, which runs 7:30–
+ 9:00 pm and centers on poetry and open expression.
+END:VEVENT
+END:VCALENDAR

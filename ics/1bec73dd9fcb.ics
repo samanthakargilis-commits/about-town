@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1bec73dd9fcb@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261120T130000
+DTEND;TZID=America/Los_Angeles:20261120T140000
+SUMMARY:East Bay Vivarium Reptile Show
+LOCATION:Lakewood Branch Library\, 760 Lakechime Dr.\, Sunnyvale\, CA\, Su
+ nnyvale
+URL:https://ma.to/event/east-bay-vivarium-reptile-show-20-nov-2026
+DESCRIPTION:Animals + Reading · Sunnyvale\nhttps://ma.to/event/east-bay-v
+ ivarium-reptile-show-20-nov-2026\n\nEast Bay Vivarium's Traveling Reptile
+  Show offers an up-close encounter with live reptile ambassadors at Lakew
+ ood Branch Library. The program covers the animals' behaviors and habitat
+ s and includes fun facts about the creatures. All ages are welcome\, and 
+ space is limited.
+END:VEVENT
+END:VCALENDAR

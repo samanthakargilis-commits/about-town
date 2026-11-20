@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ce4d9db9b82f@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261121T183000
+DTEND;TZID=America/Los_Angeles:20261121T203000
+SUMMARY:Blackout Saturday @ The Brixton
+LOCATION:The Brixton\, 2140 Union St San Francisco\, San Francisco
+URL:https://partiful.com/e/MtttvwcjaCsz2zXtcpRC
+DESCRIPTION:New in your area\nhttps://partiful.com/e/MtttvwcjaCsz2zXtcpRC\
+ n\nBLACKOUT SATURDAY 🖤 Saturday\, November 21 at The Brixton Sponsored
+  by Surfside & Super Lyte With Blackout Wednesday around the corner and e
+ veryone heading home for Thanksgiving\, we’re getting the crew together
+  for a proper send-off before you leave the city. We’ll be partying fro
+ m 9:30–1:30. The theme is blackout—dress accordingly 🕶️ Excited 
+ for our first collab with SutroHouse! Sign up on Partifu
+END:VEVENT
+END:VCALENDAR

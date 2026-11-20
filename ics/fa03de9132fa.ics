@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fa03de9132fa@bay-events
+DTSTAMP:20261120T212538Z
+DTSTART;TZID=America/Los_Angeles:20261206T100000
+DTEND;TZID=America/Los_Angeles:20261206T160000
+SUMMARY:“Le Grand Marche” Free French Holiday Market
+LOCATION:Eglise Notre Dame des Victoires\, Marist Hall\, 566 Bush Street
+URL:https://sf.funcheap.com/le-grand-marche-free-french-holiday-market-sf/
+DESCRIPTION:Fairs & festivals · A yearly tradition\nhttps://sf.funcheap.c
+ om/le-grand-marche-free-french-holiday-market-sf/\n\nÉcole Notre Dame de
+ s Victoires\, the little French\, Catholic school in downtown San Francis
+ co(known to most as NDV) presents Le Grand Marché—a Christmas Market b
+ lending French tradition with San Francisco charm. Featuring curated arti
+ sans and festive fare\, this signature event celebrates community\, cultu
+ re and holiday spirit as ...
+END:VEVENT
+END:VCALENDAR

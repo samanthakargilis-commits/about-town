@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5b85825be3d9@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261121T110000
+DTEND;TZID=America/Los_Angeles:20261121T130000
+SUMMARY:ARANCINI POP UP @Oko Designs Stained Glass
+LOCATION:OKO Designs\, 420 Sutter St San Francisco\, San Francisco
+URL:https://partiful.com/e/DalR7SXJoz70mImRH6vw
+DESCRIPTION:New in your area\nhttps://partiful.com/e/DalR7SXJoz70mImRH6vw\
+ n\nMAMOUNETTE ARANCINI IS POPPING UP AT OKO DESIGNS STAINED GLASS Come ch
+ eck out my talented sister’s stained glass studio as you grab some lunc
+ htime arancini! Every order gets a $20 discount on a future stained glass
+  workshop. PREORDER ON HOTPLATE BY 11/19 at 6PM - LINK ABOVE Current Menu
+  Items: 🍷 Bourguignon - Traditional French beef braise 🍆 Ratatouill
+ e - French vegetable stew\, no frills 🧀 Cacio e
+END:VEVENT
+END:VCALENDAR

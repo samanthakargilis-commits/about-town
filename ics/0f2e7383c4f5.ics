@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0f2e7383c4f5@bay-events
+DTSTAMP:20261120T212538Z
+DTSTART;TZID=America/Los_Angeles:20261121T130000
+DTEND;TZID=America/Los_Angeles:20261121T150000
+SUMMARY:Jing Ying Cantonese Opera
+LOCATION:Children's Creativity Museum Theater\, 221 4th St\, San Francisco
+ \, CA 94103\, San Francisco
+URL:https://ma.to/event/jing-ying-cantonese-opera-2026-11-21
+DESCRIPTION:Concerts + Musical theatre\nhttps://ma.to/event/jing-ying-cant
+ onese-opera-2026-11-21\n\nJing Ying Cantonese Opera Institute presents a 
+ Cantonese opera performance followed by a talkback at Yerba Buena Gardens
+ . The programme features two classic scenes in full costume: "Noble Sacri
+ fice" (帝女花之香夭) from the Story of Princess Cheung Ping\, perfo
+ rmed by Judy Jung (程小勳) and Esther Tang (鄭宗妃)\, and "Tragedy 
+ at the Temple" (打神)\, performed by Shirley Ng (陳小梨). A live mus
+ ical ensemble accompanies
+END:VEVENT
+END:VCALENDAR

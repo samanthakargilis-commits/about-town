@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f5283ceb9fb2@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261120T190000
+DTEND;TZID=America/Los_Angeles:20261120T210000
+SUMMARY:Darrieussecq & Anne de Marcken
+LOCATION:Third Place Books\, San Francisco
+URL:https://ma.to/event/darrieussecq-anne-de-marcken-20-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/darrieussecq-anne-de-mar
+ cken-20-nov-2026\n\nMarie Darrieussecq appears with Anne de Marcken to di
+ scuss her work and her two newly translated novels\, How to Make a Woman 
+ and Our Life in the Forest\, both published in English by Transit Books. 
+ The novels centre on two childhood friends coming of age in the French Ba
+ sque Country of the 1980s\, and on a woman in a near-future world reflect
+ ing on her failing body\, her clone and the mechanisms of t
+END:VEVENT
+END:VCALENDAR

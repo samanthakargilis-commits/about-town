@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3de45dcd4e7e@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Guajirón: Free Cuban Jam & Salsa at Boom Boom Room
+LOCATION:Boom Boom Room\, 1601 Fillmore St.\, San Francisco\, CA\, San Fra
+ ncisco
+URL:https://sf.funcheap.com/guajirn-free-cuban-jam-salsa-boom-boom-room/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/guajirn-free-cuban-j
+ am-salsa-boom-boom-room/\n\nFree live Cuban son\, salsa and tropical jazz
+  with Guajirón at Boom Boom Room on Sunday\, November 29 and Sunday\, De
+ cember 27\, 2026\, 7:30–11:30 p.m. Ages 21+. Come dance\, enjoy the mus
+ ic\, or sit in for an Afro-Cuban jam. Venue: 1601 Fillmore St\, San Franc
+ isco\, ...
+END:VEVENT
+END:VCALENDAR

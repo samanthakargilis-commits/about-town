@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:753372d09b62@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;TZID=America/Los_Angeles:20261120T173000
+DTEND;TZID=America/Los_Angeles:20261120T200000
+SUMMARY:JAX Jams: Live Jazz
+LOCATION:JAX SoMa Tasting Room\, 326 Brannan St\, San Francisco
+URL:https://ma.to/event/jax-jams-live-jazz-20-nov-2026
+DESCRIPTION:Concerts + Art\nhttps://ma.to/event/jax-jams-live-jazz-20-nov-
+ 2026\n\nJAX Jams brings an evening of live music\, pizza and JAX wine to 
+ the JAX SoMa Tasting Room. Graham Messer performs on piano and Smith Dobs
+ on on saxophone\; both are San Francisco-based artists. Guests can gather
+  around the fire with a glass of wine. Admission is free. Sponsored by Ja
+ zz In The Neighborhood.
+END:VEVENT
+END:VCALENDAR

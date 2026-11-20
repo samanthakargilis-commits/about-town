@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7d4a7f1e1aa5@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;TZID=America/Los_Angeles:20261121T120000
+DTEND;TZID=America/Los_Angeles:20261121T140000
+SUMMARY:OUTLIERS Group Exhibition
+LOCATION:Punk Majesty Underground Art Gallery\, San Francisco
+URL:https://ma.to/event/outliers-group-exhibition-21-nov-2026
+DESCRIPTION:Museum exhibits + Art\nhttps://ma.to/event/outliers-group-exhi
+ bition-21-nov-2026\n\nOUTLIERS is a November–December group exhibition 
+ at Punk Majesty Underground Art Gallery featuring original wall art and j
+ ewelry/accessories in varied styles and mediums. The exhibition has no sp
+ ecific theme\, and all selected works are priced under $100. Selected wor
+ ks are featured every Saturday during gallery hours\; the show also appea
+ rs during December’s SF First Thursdays Art Walk.
+END:VEVENT
+END:VCALENDAR

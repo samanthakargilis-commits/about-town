@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0ec1087d2cf7@bay-events
+DTSTAMP:20261120T212544Z
+DTSTART;TZID=America/Los_Angeles:20261120T162000
+DTEND;TZID=America/Los_Angeles:20261120T214500
+SUMMARY:$40 Thanksgiving “”Smoke-Out w/ 1\,000 Complimentary Joints
+LOCATION:Barbary Coast\, 952 Mission St.\, San Francisco\, CA\, San Franci
+ sco
+URL:https://sf.funcheap.com/40-thanksgiving-smokeout-1000-complimentary-jo
+ ints-sf/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/40-thanksgiving-smok
+ eout-1000-complimentary-joints-sf/\n\nCome Party and Celebrate Thanksgivi
+ ng @ Barbary Coast during the... NIGHT OF 1000 JOINTS $40 Purchase at Cou
+ nter to Enter – Complimentary Joint Bar 5-9 PM COME SMOKE 1000 JOINTS W
+ ITH US Featuring: Raw Garden\, Sluggers\, MicroGreenz and Mocktails by Un
+ cle Arnies
+END:VEVENT
+END:VCALENDAR

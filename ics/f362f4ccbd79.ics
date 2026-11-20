@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f362f4ccbd79@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261120T140000
+DTEND;TZID=America/Los_Angeles:20261120T150000
+SUMMARY:Berryessa Book Club: Native Voices
+LOCATION:Berryessa Branch Library\, San José Public Library\, Palo Alto
+URL:https://ma.to/event/berryessa-book-club-native-voices-20-nov-2026
+DESCRIPTION:Reading + Discourse · Palo Alto\nhttps://ma.to/event/berryess
+ a-book-club-native-voices-20-nov-2026\n\nThe Berryessa Branch Library hos
+ ts a special literary discussion on Native voices as part of Native Ameri
+ can Heritage Month. The month's Book Club and Reads feature also includes
+  staff-picked reading lists exploring Native American life\, history\, cu
+ lture and traditions.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a64298ac7d7d@bay-events
+DTSTAMP:20261120T212544Z
+DTSTART;TZID=America/Los_Angeles:20261218T190000
+DTEND;TZID=America/Los_Angeles:20261218T210000
+SUMMARY:Big Bad Bitchfest 3
+LOCATION:Neck of the Woods\, 406 Clement St\, San Francisco
+URL:https://www.ticketweb.com/event/big-bad-bitchfest-3-night-neck-of-the-
+ woods-tickets/15055673?theme=nwoods&REFID=clientsitewp
+DESCRIPTION:Fairs & festivals\nhttps://www.ticketweb.com/event/big-bad-bit
+ chfest-3-night-neck-of-the-woods-tickets/15055673?theme=nwoods&REFID=clie
+ ntsitewp\n\nBlack Dahlia Presents: Big Bad Bitchfest 3 Featuring: Damage 
+ Party Whoremones Whorifed Wink Cunt Friday December 18th 2026 Neck of the
+  Woods 406 Clement St Read More
+END:VEVENT
+END:VCALENDAR

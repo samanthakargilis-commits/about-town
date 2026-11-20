@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f99baed3166c@bay-events
+DTSTAMP:20261120T212538Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:2026-27 Sausalito: Bay Area Discovery Museum’s Winter Wonderlab 
+ (Iceless)
+LOCATION:Bay Area Discovery Museum\, 557 McReynolds Road\, Sausalito – C
+ ost: Included with museum adm
+URL:https://sf.funcheap.com/city-guide/ice-skate-bay-area/
+DESCRIPTION:Craft + Theatre · Featured on Funcheap\nhttps://sf.funcheap.c
+ om/city-guide/ice-skate-bay-area/\n\n– Dates: November 21\, 2026 – Ja
+ nuary 3\, 2027 (weekends and select weekdays) – Where: Bay Area Discove
+ ry Museum\, 557 McReynolds Road\, Sausalito – Cost: Included with museu
+ m admission Glide across an iceless skating rink at the Bay Area Discover
+ y Museum’s annual Winter Wonderlab. Designed with younger visitors in m
+ ind\, the winter experience also features giant play gingerbread houses\,
+  a Toy Makers S
+END:VEVENT
+END:VCALENDAR

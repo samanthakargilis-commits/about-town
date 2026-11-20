@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:50e0c35e5729@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261121T200000
+DTEND;TZID=America/Los_Angeles:20261121T220000
+SUMMARY:RNB Social Club
+LOCATION:pressclubsf\, San Francisco
+URL:https://ma.to/event/rnbsocialclub-millennial-night-21-nov-2026
+DESCRIPTION:Museum exhibits\nhttps://ma.to/event/rnbsocialclub-millennial-
+ night-21-nov-2026\n\nRNB Social Club is an evening of R&B music and socia
+ lizing at pressclubsf. This millennial-focused nightlife social event fea
+ tures a playful 'fine wine' theme\, with the line 'Millennials: The Oldes
+ t Youngest Looking Group.' The Saturday event starts at 8pm.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:36eba8b934f3@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261120T120000
+DTEND;TZID=America/Los_Angeles:20261120T160000
+SUMMARY:Free Lunch Friday!!!
+LOCATION:Comstock Saloon\, 155 Columbus Ave\, San Francisco\, California 9
+ 4133\, San Francisco
+URL:https://ma.to/event/free-lunch-friday-20-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/free-lunch-friday-20-nov
+ -2026\n\nSalt and Pepper Chicken Wings with Chow Mein stir-fry noodles ar
+ e free with a couple of beverages. @hurstknollwhiskey is the whiskey spon
+ sor\; its 101-proof rye is suited to a classic cocktail or highball. Food
+  is available from noon to 4pm or until it runs out\, and friends of the 
+ saloon are expected.
+END:VEVENT
+END:VCALENDAR

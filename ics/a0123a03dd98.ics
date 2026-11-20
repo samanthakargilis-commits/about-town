@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a0123a03dd98@bay-events
+DTSTAMP:20261120T212538Z
+DTSTART;TZID=America/Los_Angeles:20261205T100000
+DTEND;TZID=America/Los_Angeles:20261205T140000
+SUMMARY:Holiday Hikes & Hands-on Fun with Environmental Volunteers (Palo A
+ lto)
+LOCATION:Environmental Volunteers EcoCenter\, 2560 Embarcadero Rd.\, Palo 
+ Alto\, CA\, Palo Alto
+URL:https://sf.funcheap.com/holiday-hikes-handson-fun-environmental-volunt
+ eers-palo-alto/
+DESCRIPTION:Craft + Animals · Palo Alto\nhttps://sf.funcheap.com/holiday-
+ hikes-handson-fun-environmental-volunteers-palo-alto/\n\nJoin Environment
+ al Volunteers for a day of nature hikes\, owl pellet dissection activitie
+ s\, and sustainable craft-making at the EcoCenter! Have you ever wanted a
+  space to be active\, make art\, and learn science all in one day? Now yo
+ u can! Come to the EcoCenter on December ...
+END:VEVENT
+END:VCALENDAR

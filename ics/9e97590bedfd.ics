@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9e97590bedfd@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261121T130000
+DTEND;TZID=America/Los_Angeles:20261121T160000
+SUMMARY:Glow & Jingle Pop-Up
+LOCATION:The Cowrie Collective\, 645 Market Street\, San Francisco\, CA 94
+ 104\, San Francisco
+URL:https://ma.to/event/glow-jingle-pop-up-event-21-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/glow-jingle-pop-up-event
+ -21-nov-2026\n\nEn Vie Naturals brings Glow & Jingle to The Cowrie Collec
+ tive for an afternoon of holiday shopping. The pop-up features artisan ve
+ gan skincare\, aromatic aromatherapy sprays\, nourishing body butters\, a
+ nd curated holiday gifts alongside small-business shopping in a festive s
+ etting. Tickets are available through Eventbrite.
+END:VEVENT
+END:VCALENDAR

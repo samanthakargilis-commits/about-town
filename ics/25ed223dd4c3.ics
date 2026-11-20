@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:25ed223dd4c3@bay-events
+DTSTAMP:20261120T212540Z
+DTSTART;TZID=America/Los_Angeles:20261120T204500
+DTEND;TZID=America/Los_Angeles:20261120T224500
+SUMMARY:Aliens: Special Edition
+LOCATION:The Roxie Theater\, San Francisco
+URL:https://ma.to/event/aliens-special-edition-screening-20-nov-2026
+DESCRIPTION:Theatre + Museum exhibits\nhttps://ma.to/event/aliens-special-
+ edition-screening-20-nov-2026\n\nJames Cameron’s ALIENS (1986) screens 
+ in its Special Edition cut as part of The Future According to Syd Mead se
+ ries. Syd Mead designed the U.S.S. Sulaco\, the military spacecraft carry
+ ing Ripley and the Colonial Marines. This screening is part of a film ser
+ ies exploring the cinematic influence of visionary designer Syd Mead\, ti
+ med to the Future Pastime exhibition at the Transamerica Pyramid Annex G
+END:VEVENT
+END:VCALENDAR

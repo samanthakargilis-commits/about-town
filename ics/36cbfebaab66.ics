@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:36cbfebaab66@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261220T190000
+DTEND;TZID=America/Los_Angeles:20261220T210000
+SUMMARY:Frosty’s Boozy Wonderland at The Function
+LOCATION:1414 Market St
+URL:https://www.eventbrite.com/e/sfs-christmas-bar-holiday-comedy-pop-up-f
+ rostys-boozy-wonderland-2024-tickets-1104175020209
+DESCRIPTION:Comedy · Featured on Funcheap\nhttps://www.eventbrite.com/e/s
+ fs-christmas-bar-holiday-comedy-pop-up-frostys-boozy-wonderland-2024-tick
+ ets-1104175020209\n\nLocation: 1414 Market St.\, San Francisco Dates: All
+  December 2024\, 7 Nights a Week – No tickets required for Happy Hour T
+ ue-Fri (5-6p) w/ $2 off cocktails This brand-new holiday pop-up bar and c
+ omedy club experience transforms The Function\, San Francisco’s first B
+ lack-owned comedy club\, into a winter wonderland with twinkling lights\,
+  festive decor\, and 12 handcrafted cocktails like Yule Be Buzzed 
+END:VEVENT
+END:VCALENDAR

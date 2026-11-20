@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d009d3336117@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261121T120000
+DTEND;TZID=America/Los_Angeles:20261121T180000
+SUMMARY:Soul Resonance Fan Event
+LOCATION:My Cup of Tea\, 2666 Ocean Ave\, San Francisco\, CA\, San Francis
+ co
+URL:https://ma.to/event/soul-eater-cup-sleeve-event-21-nov-2026
+DESCRIPTION:Art\nhttps://ma.to/event/soul-eater-cup-sleeve-event-21-nov-20
+ 26\n\nSoul Resonance is an unofficial\, fan-held Soul Eater event at My C
+ up of Tea. The event features a special themed drink menu including Meist
+ er/Weapon matcha latte\, Medusa's Snake Tea\, and Kishin Egg smoothie. Ea
+ ch drink purchase includes a choice of exclusive cup sleeve while supplie
+ s last\; proof of purchase (receipt) is required. The event also hosts a 
+ merch market featuring artist-made photocards
+END:VEVENT
+END:VCALENDAR

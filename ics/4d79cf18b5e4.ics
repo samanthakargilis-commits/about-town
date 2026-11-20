@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4d79cf18b5e4@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261206T100000
+DTEND;TZID=America/Los_Angeles:20261206T110000
+SUMMARY:STINA X MANGO: Community Shop
+LOCATION:Mango\, 1602 Redwood Hwy Corte Madera\, Corte Madera
+URL:https://partiful.com/e/mn4ZMsBNtJI5e5MKmRZq
+DESCRIPTION:Corte Madera\nhttps://partiful.com/e/mn4ZMsBNtJI5e5MKmRZq\n\nY
+ ou’re invited to a curated shopping event at MANGO\, hosted by local cr
+ eator @stinafficial 🧥👢🧣 Enjoy a private discount of 30% off full
+  priced items to jump start your holiday shopping 🎁 + light drinks & b
+ ites 🥭✨ Invite all your fashionista friends & check back for more su
+ rprises! See you there 😘👋
+END:VEVENT
+END:VCALENDAR

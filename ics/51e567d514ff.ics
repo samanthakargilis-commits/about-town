@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:51e567d514ff@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261120T160000
+DTEND;TZID=America/Los_Angeles:20261120T200000
+SUMMARY:Depop After Class | Berkeley
+LOCATION:UC Theatre\, 2036 University Avenue\, Berkeley\, California 94704
+ \, United States Berkeley\, Berkeley
+URL:https://dice.fm/event/6aee412e13b4df0001a5739b
+DESCRIPTION:Theatre + Weird & unusual · Berkeley\nhttps://dice.fm/event/6
+ aee412e13b4df0001a5739b\n\nWhen class ends\, the market opens. Depop is t
+ aking over UC Theatre and transforming it into an underground-inspired ma
+ rketplace where taste recognizes taste. Pull up to kick off your weekend 
+ by shopping unlisted drops from the best local sellers\, custom remix you
+ r fit and catch a special live performance from Magdalena Bay. Must be 18
+ + and show your student ID to enter. Sold Out? Join the Dice wai
+END:VEVENT
+END:VCALENDAR

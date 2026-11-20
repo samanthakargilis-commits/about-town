@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7f4850c6bc0a@bay-events
+DTSTAMP:20261120T212538Z
+DTSTART;TZID=America/Los_Angeles:20261121T200000
+DTEND;TZID=America/Los_Angeles:20261121T220000
+SUMMARY:Stand-Up Comedy at Balboa Theatre
+LOCATION:Balboa Theatre\, San Francisco
+URL:https://ma.to/event/stand-up-comedy-at-balboa-theatre-21-nov-2026
+DESCRIPTION:Comedy + Theatre\nhttps://ma.to/event/stand-up-comedy-at-balbo
+ a-theatre-21-nov-2026\n\nStand-up comedy at the Balboa Theatre in the Ric
+ hmond District. The first half features shorter sets from up-and-coming B
+ ay Area comedians\, with an intermission for beer or popcorn from the lob
+ by or a bathroom break. The second half features national touring and vet
+ eran comedians\, plus surprise pop-in guest sets. Johana Coca headlines. 
+ She is a Los Angeles-based stand-up comedian with Honduran roo
+END:VEVENT
+END:VCALENDAR

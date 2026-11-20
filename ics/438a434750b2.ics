@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:438a434750b2@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261126T120000
+DTEND;TZID=America/Los_Angeles:20261126T140000
+SUMMARY:Martin de Porres House of Hospitality – Thanksgiving 2026
+LOCATION:225 Potre
+URL:https://martindeporres.org/volunteer-sign-up/
+DESCRIPTION:Featured on Funcheap\nhttps://martindeporres.org/volunteer-sig
+ n-up/\n\nHelp Martin de Porres House of Hospitality serve its annual Than
+ ksgiving meal to the community. This volunteer-run organization welcomes 
+ guests for a free\, all-vegetarian Thanksgiving lunch\, served with the s
+ pirit of compassion and hospitality. Thursday\, November 26\, 2026 | 12 p
+ m to 2 pm | 225 Potrero Ave.\, San Francisco Thanksgiving Day volunteer s
+ hifts are currently full. However\, volunteers are
+END:VEVENT
+END:VCALENDAR

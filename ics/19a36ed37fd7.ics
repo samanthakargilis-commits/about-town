@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:19a36ed37fd7@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;TZID=America/Los_Angeles:20261203T180000
+DTEND;TZID=America/Los_Angeles:20261203T200000
+SUMMARY:NightLife: Naughty or Nice (California Academy of Sciences)
+LOCATION:California Academy of Sciences\, 55 Music Concourse Dr\, San Fran
+ cisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/bay-area-millennials-and-gen-z-meetup-group/eve
+ nts/317007354/
+DESCRIPTION:Museum exhibits + Animals · Thursday evening\nhttps://www.mee
+ tup.com/bay-area-millennials-and-gen-z-meetup-group/events/317007354/\n\n
+ Let's get naughty this holiday season! Are you single and ready to mingle
+ ? Dress in red and visit us at Cal Academy this December to meet the love
+  of your life... or make friends. that's cool too. Either way\, with the 
+ Cal Acdemy NightLife admission ticket\, you will make unforgettable holid
+ ay memories as you enjoy their lively music venue\, incredible science\, 
+ and breathtaking exhibits along with a 
+END:VEVENT
+END:VCALENDAR

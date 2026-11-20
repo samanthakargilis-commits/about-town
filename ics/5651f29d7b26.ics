@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5651f29d7b26@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261120T120000
+DTEND;TZID=America/Los_Angeles:20261120T140000
+SUMMARY:Arranging Without Kenzans
+LOCATION:San Francisco County Fair Building\, 1199 9th Avenue\, San Franci
+ sco
+URL:https://ma.to/event/arranging-without-kenzans-20-nov-2026
+DESCRIPTION:Fairs & festivals\nhttps://ma.to/event/arranging-without-kenza
+ ns-20-nov-2026\n\nHosted by Ikebana International\, the demonstration foc
+ uses on kenzan-free ikebana arrangements and the use of frameworks and ot
+ her supports in Japanese floral design. Sogetsu master teacher Katsuko Th
+ ielke demonstrates the techniques. Doors open at 11:00 AM and the program
+ me begins at noon at the San Francisco County Fair Building. Visitors are
+  welcome.
+END:VEVENT
+END:VCALENDAR

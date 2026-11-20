@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5d6dac3d4a4d@bay-events
+DTSTAMP:20261120T212538Z
+DTSTART;TZID=America/Los_Angeles:20261121T100000
+DTEND;TZID=America/Los_Angeles:20261121T120000
+SUMMARY:West Coast Craft Winter ’26
+LOCATION:Fort Mason Center\, 2 Marina Blvd Bldg C San Francisco\, San Fran
+ cisco
+URL:https://partiful.com/e/PBUHGKUf7bR3K8slblVH
+DESCRIPTION:Craft + Fairs & festivals\nhttps://partiful.com/e/PBUHGKUf7bR3
+ K8slblVH\n\nhttps://www.instagram.com/p/DfF0vAMyd4q/ "West Coast Craft Wi
+ nter ’26 returns to the Festival Pavilion @fortmasoncenter November 21 
+ & 22 🌁 Spend the weekend with 275+ artist and designer craftspeople fr
+ om near and far. Two full days to wander\, discover something you didn’
+ t know you needed\, eat something delicious\, run into friends\, and find
+  very good things made by very good people. Our favorite w
+END:VEVENT
+END:VCALENDAR

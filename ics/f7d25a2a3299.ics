@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f7d25a2a3299@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:Turkey Day Workout
+LOCATION:IMPACT! Kickboxing Fitness\, 836 Brittan Avenue\, San Carlos\, CA
+ \, San Carlos
+URL:https://sf.funcheap.com/turkey-day-workout-2/
+DESCRIPTION:A yearly tradition · San Carlos\nhttps://sf.funcheap.com/turk
+ ey-day-workout-2/\n\nWork up a sweat before the big feast! Join us at IMP
+ ACT! Kickboxing Fitness on Thursday\, November 26\, 2026\, at 10 AM for o
+ ur special Turkey Day Workout! This is the ONLY class we’re holding on 
+ Thanksgiving Day\, so don’t miss it! A Workout That’s Anything ...
+END:VEVENT
+END:VCALENDAR

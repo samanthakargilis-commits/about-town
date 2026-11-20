@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:046d35a1404b@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261120T180000
+DTEND;TZID=America/Los_Angeles:20261120T220000
+SUMMARY:Moda Market at City Station
+LOCATION:City Station\, 701 Valencia Street\, San Francisco\, San Francisc
+ o
+URL:https://ma.to/event/moda-market-at-city-station-20-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/moda-market-at-city-stat
+ ion-20-nov-2026\n\nModa Market returns for an evening of vintage shopping
+ \, local businesses and music at City Station. Featuring live performance
+ s from @mooncakemydarling and @quietnacho. The market runs 6–10 pm\, wi
+ th dancing and picnic benches\, and attendees can get food at restaurants
+  along Valencia Street.
+END:VEVENT
+END:VCALENDAR

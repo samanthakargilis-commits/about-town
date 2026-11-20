@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4b57424f44ed@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261206T160000
+DTEND;TZID=America/Los_Angeles:20261206T180000
+SUMMARY:Chanukah Celebration & Hot Air Balloon Gelt Drop (Petaluma)
+LOCATION:Petaluma Fairgrounds\, 175 Fairgrounds Dr\, Petaluma\, CA\, Petal
+ uma
+URL:https://sf.funcheap.com/chanukah-celebration-hot-air-balloon-gelt-drop
+ -petaluma/
+DESCRIPTION:Petaluma\nhttps://sf.funcheap.com/chanukah-celebration-hot-air
+ -balloon-gelt-drop-petaluma/\n\nChanukah Celebration & Hot Air Balloon Ge
+ lt Drop Join us for Petaluma’s annual community Chanukah celebration! E
+ njoy the spectacular Hot Air Balloon Gelt Drop\, live entertainment\, Cha
+ nukah music\, delicious latkes and donuts\, and fun activities for the wh
+ ole family. ️ Free admission! RSVP below. ️ Sunday\, December 6\, 4:0
+ 0-6:00pm Petaluma Fairgrounds ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ecfe987701fb@bay-events
+DTSTAMP:20261120T212540Z
+DTSTART;TZID=America/Los_Angeles:20261121T100000
+DTEND;TZID=America/Los_Angeles:20261121T123000
+SUMMARY:Shoot-n-Shoot SF Photo Workshop
+LOCATION:THE HALL Bar & Billiards\, San Francisco
+URL:https://ma.to/event/shoot-n-shoot-sf-photo-workshop-21-nov-2026
+DESCRIPTION:Theatre + Concerts\nhttps://ma.to/event/shoot-n-shoot-sf-photo
+ -workshop-21-nov-2026\n\nShoot-n-Shoot is a two-and-a-half-hour dance pho
+ tography workshop at The Hall\, a billiards hall in San Francisco. Ashlei
+ gh Wilson and Alexandra FitzGibbon host. Attendees photograph dancers pla
+ ying pool while working with natural light from skylights and moodier lig
+ hting near the bar. The dance models are Amanda Smith\, an Alonzo King LI
+ NES Ballet dancer and former Dance Theatre of Harlem dancer\, a
+END:VEVENT
+END:VCALENDAR

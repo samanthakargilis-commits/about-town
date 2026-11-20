@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cb4fc9fb5713@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261121T200000
+DTEND;TZID=America/Los_Angeles:20261121T220000
+SUMMARY:Anthony Jeselnik: Wrath of Man
+LOCATION:The Masonic\, 1111 California St\, San Francisco
+URL:https://ma.to/event/anthony-jeselnik-wrath-of-man-21-nov-2026
+DESCRIPTION:Comedy\nhttps://ma.to/event/anthony-jeselnik-wrath-of-man-21-n
+ ov-2026\n\nAnthony Jeselnik is bringing his new stand-up tour\, Wrath of 
+ Man\, to San Francisco. Expect his signature dark humor and perfectly tim
+ ed delivery in the heart of the city. Tickets go on sale Thursday\, June 
+ 11th at 10am PT—check for details on the profile.
+END:VEVENT
+END:VCALENDAR

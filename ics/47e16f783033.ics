@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:47e16f783033@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261120T183000
+DTEND;TZID=America/Los_Angeles:20261120T203000
+SUMMARY:French Ciné-Club: Chic! (2015)
+LOCATION:Emerson Montessori School\, 2800 W Bayshore Rd\, Palo Alto\, Palo
+  Alto
+URL:https://ma.to/event/french-cine-club-chic-2015-20-nov-2026
+DESCRIPTION:Comedy + Discourse · Palo Alto\nhttps://ma.to/event/french-ci
+ ne-club-chic-2015-20-nov-2026\n\nAlliance Française Silicon Valley's Cin
+ é-Club presents Chic! (2015)\, Jérôme Cornuau's French comedy starring
+  Fanny Ardant and Marina Hands. The film is shown in French with English 
+ subtitles. Before the screening\, the evening includes French food\, wine
+ \, and networking\, with a buffet by Fabrique Délices\, Frenchery\, and 
+ AF Silicon Valley. Hélène Laroche Davis\, PhD\, gives an introduction\,
+  and a bilin
+END:VEVENT
+END:VCALENDAR

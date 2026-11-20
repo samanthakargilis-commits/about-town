@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6170c2c6ed66@bay-events
+DTSTAMP:20261120T212538Z
+DTSTART;VALUE=DATE:20261122
+DTEND;VALUE=DATE:20261123
+SUMMARY:Free Chanukah Fair w/ Live Music + Latkes
+LOCATION:Congregation Am Tikvah\, 625 Brotherhood Way.
+URL:https://sf.funcheap.com/free-chanukah-fair-live-music-latkes-sf/
+DESCRIPTION:Fairs & festivals + Concerts · A yearly tradition\nhttps://sf
+ .funcheap.com/free-chanukah-fair-live-music-latkes-sf/\n\nWomen of Am Tik
+ vah Chanukah Fair Sunday\, November 22\, 10:30am – 3pm Please join us S
+ unday\, November 22 from 10:30am to 3:00pm\, for our annual family-friend
+ ly Chanukah Fair. Bring your friends and family! We’ll have live music 
+ with the Jon Frank Quartet from 11 am to 1 pm and ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a7fa6104316f@bay-events
+DTSTAMP:20261120T212538Z
+DTSTART;TZID=America/Los_Angeles:20261120T193000
+DTEND;TZID=America/Los_Angeles:20261120T213000
+SUMMARY:Film: The Faggots & Their Friends
+LOCATION:Queer Arts Featured\, 575 Castro St\, San Francisco\, San Francis
+ co
+URL:https://ma.to/event/film-the-faggots-their-friends-20-nov-2026
+DESCRIPTION:Gay / queer + Museum exhibits\nhttps://ma.to/event/film-the-fa
+ ggots-their-friends-20-nov-2026\n\nA screening of The Faggots and Their F
+ riends Between Revolutions\, adapted and directed by Paul Rice\, in the l
+ iving room at Queer Arts Featured. The 40-minute film is a poetic cinemat
+ ic envisioning of the 1970s queer manifesto\, contrasting nature's quiet 
+ strength with the rigid architecture of power. The film is planned to sta
+ rt at 7:30pm\; arriving by 7pm is recommended to get a seat. A Q&A with P
+ a
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0ac9f1d87d63@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;TZID=America/Los_Angeles:20261121T100000
+DTEND;TZID=America/Los_Angeles:20261121T180000
+SUMMARY:Great Dickens Christmas Fair
+LOCATION:Cow Palace\, Daly City\, Daly City
+URL:https://ma.to/event/great-dickens-christmas-fair-21-nov-2026
+DESCRIPTION:Fairs & festivals + Museum exhibits · Daly City\nhttps://ma.t
+ o/event/great-dickens-christmas-fair-21-nov-2026\n\nThe Great Dickens Chr
+ istmas Fair fills four acres of exhibition halls with a Victorian holiday
+  village\, cobblestone-style streets\, costumed characters\, lively pubs\
+ , festive shops and live performances. Artisan markets and traditional Br
+ itish food are part of the fair\, and hundreds of performers bring Charle
+ s Dickens’s world to life. It first opened in 1970. The fair runs weeke
+ nds through December 
+END:VEVENT
+END:VCALENDAR

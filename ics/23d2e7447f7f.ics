@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:23d2e7447f7f@bay-events
+DTSTAMP:20261120T212540Z
+DTSTART;TZID=America/Los_Angeles:20261221T210000
+DTEND;TZID=America/Los_Angeles:20261221T230000
+SUMMARY:“Ursid” Last Meteor Shower of 2026: Peaks on Winter Solstice
+LOCATION:All Over San Francisco\, San Francisco\, CA
+URL:https://sf.funcheap.com/annual-ursids-meteor-shower/
+DESCRIPTION:A yearly tradition\nhttps://sf.funcheap.com/annual-ursids-mete
+ or-shower/\n\nThe annual Ursid meteor shower always peaks near the time o
+ f the December winter solstice. The low-key Ursid meteor shower is expect
+ ed to be active from December 17 to December 26\, 2026. It typically peak
+ s around the December solstice. In 2026\, expect peak viewing in the ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:287ef6c2f8e6@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261120T190000
+DTEND;TZID=America/Los_Angeles:20261120T210000
+SUMMARY:Monique Wittig in California
+LOCATION:@etalgallerysf\, 2831a Mission Street\, San Francisco\, San Franc
+ isco
+URL:https://ma.to/event/monique-wittig-in-california-20-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/monique-wittig-in-califo
+ rnia-20-nov-2026\n\nMonique Wittig in California takes place at 7 PM at @
+ etalgallerysf\, 2831a Mission Street\, San Francisco\, presented by @smal
+ lpresstraffic and @bayarealesbianarchives.
+END:VEVENT
+END:VCALENDAR

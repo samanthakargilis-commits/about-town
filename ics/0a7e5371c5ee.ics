@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0a7e5371c5ee@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261120T193000
+DTEND;TZID=America/Los_Angeles:20261120T213000
+SUMMARY:Caitlin Peluffo: Stand-Up
+LOCATION:The Punch Line\, 444 Battery St\, San Francisco\, CA 94111\, San 
+ Francisco
+URL:https://ma.to/event/caitlin-peluffo-stand-up-20-nov-2026
+DESCRIPTION:Comedy\nhttps://ma.to/event/caitlin-peluffo-stand-up-20-nov-20
+ 26\n\nCaitlin Peluffo performs stand-up at The Punch Line in San Francisc
+ o. This 7:30 PM set is part of her November 18–21 run. Six originally l
+ isted shows sold out and the club added a seventh performance.
+END:VEVENT
+END:VCALENDAR

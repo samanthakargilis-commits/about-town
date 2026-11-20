@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:96e9ad716eff@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Nature Journaling and Scientific Illustration
+LOCATION:Rotary Natural Science Center\, 600 Bellevue Avenue\, Oakland\, C
+ alifornia\, 94610\, Oakland
+URL:https://sf.funcheap.com/nature-journaling-scientific-illustration/
+DESCRIPTION:Art + Comedy · Oakland\nhttps://sf.funcheap.com/nature-journa
+ ling-scientific-illustration/\n\nCalling all artists and soon-to-be artis
+ ts! Join the Rotary Natural Science Center at Lake Merritt for a workshop
+  series focused on nature journaling and scientific illustration. Develop
+  drawing skills through guided exercises and open practice time Learn abo
+ ut Lake Merritt’s ecology and natural history Sketch birds and plants .
+ ..
+END:VEVENT
+END:VCALENDAR

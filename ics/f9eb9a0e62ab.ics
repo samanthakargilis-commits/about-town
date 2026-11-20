@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f9eb9a0e62ab@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261216T193000
+DTEND;TZID=America/Los_Angeles:20261216T233000
+SUMMARY:Sugar Candy Mountain ~ The Breathing Room ~ Marika Christine
+LOCATION:Bottom Of The Hill\, 1233 17th Street\, San Francisco\, Californi
+ a 94107\, United States San Francisco\, San Francisco
+URL:https://dice.fm/event/6afba2b0e57d3e0001121319
+DESCRIPTION:New in your area\nhttps://dice.fm/event/6afba2b0e57d3e00011213
+ 19\n\nSunny\, retro and sophisticated\, Sugar Candy Mountain headlines ou
+ r midweek rhythm. Support provided by The Breathing Room and their atmosp
+ heric dreampop. Marika Christine starts it up with tender\, evocative son
+ gwriting that is distinctly Bay Area inspired. The Bottom of the Hill doe
+ s not use QR codes for entry. You must present a valid photo ID that matc
+ hes the name on your DICE ticket to enter. A
+END:VEVENT
+END:VCALENDAR

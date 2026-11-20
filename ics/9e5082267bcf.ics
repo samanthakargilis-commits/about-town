@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9e5082267bcf@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261121T100000
+DTEND;TZID=America/Los_Angeles:20261121T120000
+SUMMARY:Feed Ourselves Symposium
+LOCATION:Oakland\, Oakland
+URL:https://ma.to/event/feed-ourselves-symposium-2026-11-21
+DESCRIPTION:Discourse · Oakland\nhttps://ma.to/event/feed-ourselves-sympo
+ sium-2026-11-21\n\nAn in-person symposium in Oakland marking 60 years sin
+ ce the founding of the Black Panther Party. It is presented with the thir
+ d issue of Black Life Everywhere\, Feed Ourselves\, Free Ourselves. Black
+  Life Everywhere is a digital\, multimedia magazine centered in the radic
+ al spirit of resistance and hope across the Black diaspora and an initiat
+ ive of Black Youth Project\, founded by Dr. Cathy Cohen. T
+END:VEVENT
+END:VCALENDAR

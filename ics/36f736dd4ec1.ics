@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:36f736dd4ec1@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261121T130000
+DTEND;TZID=America/Los_Angeles:20261121T150000
+SUMMARY:The Art of Bay Area Boxing
+LOCATION:Henry J. Kaiser Center for the Arts\, San Francisco
+URL:https://ma.to/event/the-art-of-bay-area-boxing-21-nov-2026
+DESCRIPTION:Art + Discourse\nhttps://ma.to/event/the-art-of-bay-area-boxin
+ g-21-nov-2026\n\nThe event opens with a screening of Sons of the Sweet Sc
+ ience presented by filmmaker Renee Moncada-McElroy\, followed by a no-con
+ tact boxing demonstration led by former pro boxer and trainer Dalia “La
+  Pantera” Gomez\, aka Coach G. A keynote conversation features undefeat
+ ed pro boxer Anthony Garnica and top-ranked amateur boxer Thomas McElroy 
+ Jr. The programme celebrates the stories\, history and next
+END:VEVENT
+END:VCALENDAR

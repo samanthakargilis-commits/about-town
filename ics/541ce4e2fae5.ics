@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:541ce4e2fae5@bay-events
+DTSTAMP:20261120T212538Z
+DTSTART;TZID=America/Los_Angeles:20261231T170000
+DTEND;TZID=America/Los_Angeles:20261231T190000
+SUMMARY:San Francisco New Year’s Eve Fireworks at Midnight
+LOCATION:El Camino High School\, 1320 Mission Rd\, South San Francisco\, C
+ A 94080 Get Your Tickets Now
+URL:https://sf.funcheap.com/city-guide/december-street-fairs-festivals/
+DESCRIPTION:Craft + Fairs & festivals · Featured on Funcheap · Thursday 
+ evening\nhttps://sf.funcheap.com/city-guide/december-street-fairs-festiva
+ ls/\n\nDecember 31\, 2026 – SF (Embarcadero) – FREE – Ring in 2026 
+ with San Francisco’s free waterfront fireworks show\, a midnight burst 
+ of color over the Bay that draws thousands to the Embarcadero for the cit
+ y’s biggest New Year’s Eve tradition . David Yu Friday\, November 20 
+ Colma’s Asian Night Market & Parol Lantern Workshop Friday\, November 2
+ 0 – 5:00 pm - Ends at 8:00 pm | Cost: FREE | Colma Community
+END:VEVENT
+END:VCALENDAR

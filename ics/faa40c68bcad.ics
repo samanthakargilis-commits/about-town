@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:faa40c68bcad@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;TZID=America/Los_Angeles:20261120T200000
+DTEND;TZID=America/Los_Angeles:20261120T220000
+SUMMARY:MALÊS Film Screening
+LOCATION:Caf’s Casa de Cultura\, 1901 San Pablo Avenue\, Berkeley\, Cali
+ fornia\, Berkeley
+URL:https://ma.to/event/males-film-screening-20-nov-2026
+DESCRIPTION:Theatre + Discourse · Berkeley\nhttps://ma.to/event/males-fil
+ m-screening-20-nov-2026\n\nFree screening of MALÊS\, a historical drama 
+ about the Malês revolt in Brazil in 1835\, held in celebration of Zumbi 
+ Day and Brazilian Black Consciousness Month. Doors open at 7 PM. The even
+ ing includes Tambores with Julio Remelexo and the film at 8 PM\, followed
+  by a community discussion. Admission is free.
+END:VEVENT
+END:VCALENDAR

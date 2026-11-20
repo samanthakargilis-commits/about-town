@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:815d73ed2175@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261120T203000
+DTEND;TZID=America/Los_Angeles:20261121T013000
+SUMMARY:Spaced Out DJ Night
+LOCATION:Phonobar\, San Francisco
+URL:https://ma.to/event/spaced-out-2026-11-20
+DESCRIPTION:New in your area\nhttps://ma.to/event/spaced-out-2026-11-20\n\
+ nSpaced Out takes over Phonobar in San Francisco on Nov 20\, 2026\, featu
+ ring Voiage\, Richard C\, and Aaron F on the decks. Expect a night moving
+  through chuggers\, Balearic\, new beat\, deep house\, and belters. The n
+ ight runs from 8:30 PM to 1:30 AM. Entry is 21+ and free of charge.
+END:VEVENT
+END:VCALENDAR

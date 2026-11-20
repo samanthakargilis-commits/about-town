@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0569229c0a95@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261121T140000
+DTEND;TZID=America/Los_Angeles:20261121T160000
+SUMMARY:EXiT: ECLÉCTICA — Llane Alexis
+LOCATION:@cclarkgallery\, 248 Utah Street\, San Francisco\, San Francisco
+URL:https://ma.to/event/exit-eclectica-llane-alexis-21-nov-2026
+DESCRIPTION:Art + Discourse\nhttps://ma.to/event/exit-eclectica-llane-alex
+ is-21-nov-2026\n\nNov 21 · @cclarkgallery\, San Francisco. Opening recep
+ tion and artist talk for EXiT: ECLÉCTICA\, a focus on Llane Alexis. When
+  Saturday\, 21 November 14:00–16:00 · America/Los_Angeles Add to Calen
+ dar Add to Calendar About Opening reception and artist talk for EXiT: ECL
+ ÉCTICA\, a focus on Llane Alexis. Organised by artbae.info Where @cclark
+ gallery \, San Francisco 248 Utah Street\, San Francisco Open in 
+END:VEVENT
+END:VCALENDAR

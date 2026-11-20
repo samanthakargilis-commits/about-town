@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d9cfe61b476e@bay-events
+DTSTAMP:20261120T212538Z
+DTSTART;TZID=America/Los_Angeles:20261121T190000
+DTEND;TZID=America/Los_Angeles:20261121T210000
+SUMMARY:Ecstatic Chanting with Jai Uttal & Friends
+LOCATION:The Castro Room\, 97 Collingwood St\, San Francisco\, CA 94114\, 
+ USA\, San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/san-francisco-kirtan-connection/events/31744379
+ 3/
+DESCRIPTION:Musical theatre + Singing\nhttps://www.meetup.com/san-francisc
+ o-kirtan-connection/events/317443793/\n\nSaturday\, November 21\, 2026 7:
+ 00 - 9:00p **With**Jai Uttal + Friends **Where**The Castro Room 97 Collin
+ gwood Street\, San Francisco **Price**$40 [register/ticket](https://sweat
+ pals.com/event/ecstatic-chanting-with-jai-uttal-friends?theme=light&local
+ e=en) **About** Embark on a vocal journey through the sacred sounds of an
+ cient India. With call-and-response group chanting and storytelling\, Jai
+  Uttal 
+END:VEVENT
+END:VCALENDAR

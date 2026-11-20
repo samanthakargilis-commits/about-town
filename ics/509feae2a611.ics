@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:509feae2a611@bay-events
+DTSTAMP:20261120T212540Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:2026 Thrive City Winter Wonderland Ice Skating (Indoors)
+LOCATION:7 Warriors Way\, Suite 100\, Thrive City\, SF (Indoors) – Cost:
+  FREE with RSVP (complimentary
+URL:https://sf.funcheap.com/city-guide/ice-skate-bay-area/
+DESCRIPTION:Featured on Funcheap\nhttps://sf.funcheap.com/city-guide/ice-s
+ kate-bay-area/\n\n– Dates: December 12-13\, 17-20\, and 26-30\, 2026 
+ – Where: 7 Warriors Way\, Suite 100\, Thrive City\, SF (Indoors) – Co
+ st: FREE with RSVP (complimentary skate rentals with a $5 suggested donat
+ ion) Thrive City’s free holiday ice skating experience returns for 2026
+  with a smooth synthetic ice rink in a brand new indoor location at Chase
+  Center . Open on select dates from December 12-30\, the rink offers 2
+END:VEVENT
+END:VCALENDAR

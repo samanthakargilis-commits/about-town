@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c5d636bcd522@bay-events
+DTSTAMP:20261120T212538Z
+DTSTART;TZID=America/Los_Angeles:20261121T200000
+DTEND;TZID=America/Los_Angeles:20261122T020000
+SUMMARY:RAVEN headlines Big Top Saturday Drag & Dance Party Beaux in Castr
+ o
+LOCATION:Beaux\, 2344 Market Street\, San Francisco\, CA 94114 San Francis
+ co\, San Francisco
+URL:https://www.eventbrite.com/e/raven-headlines-big-top-saturday-drag-dan
+ ce-party-beaux-in-castro-tickets-1998650821409
+DESCRIPTION:Gay / queer + Camp & Halloween\nhttps://www.eventbrite.com/e/r
+ aven-headlines-big-top-saturday-drag-dance-party-beaux-in-castro-tickets-
+ 1998650821409\n\nRAVEN is coming to let you have it at Big Top at Beaux S
+ aturday November 21st. This Drag Race legend is going to turn you out at.
+  Get tix!
+END:VEVENT
+END:VCALENDAR

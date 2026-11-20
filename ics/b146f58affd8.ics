@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b146f58affd8@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;TZID=America/Los_Angeles:20261121T131500
+DTEND;TZID=America/Los_Angeles:20261121T151500
+SUMMARY:Ukraïne Cookbook Talk & Signing
+LOCATION:Leica Store San Francisco\, San Francisco
+URL:https://ma.to/event/ukraine-cookbook-talk-signing-2026-11-21
+DESCRIPTION:Reading + Discourse\nhttps://ma.to/event/ukraine-cookbook-talk
+ -signing-2026-11-21\n\nLeica Store San Francisco hosts an afternoon with 
+ Ukrainian chef Anna Voloshyna and photographer Jason Perry celebrating Uk
+ raïne: Recipes and Stories from Kyiv to the Black Sea\, their cookbook a
+ nd travelogue published by Chronicle Books. The conversation begins at 1:
+ 15 PM\, with Voloshyna and Perry sharing stories behind the making of the
+  book and their experiences documenting Ukraine\, from the str
+END:VEVENT
+END:VCALENDAR

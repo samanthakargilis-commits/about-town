@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c0af81558922@bay-events
+DTSTAMP:20261120T212538Z
+DTSTART;TZID=America/Los_Angeles:20261121T200000
+DTEND;TZID=America/Los_Angeles:20261121T220000
+SUMMARY:Tactical Frivolity: Joyful Raven
+LOCATION:The Marsh Berkeley\, Berkeley
+URL:https://ma.to/event/tactical-frivolity-22-nov-2026
+DESCRIPTION:Comedy + Animals · Berkeley\nhttps://ma.to/event/tactical-fri
+ volity-22-nov-2026\n\nJoyful Raven performs Tactical Frivolity: How to Sa
+ ve the World in a Unitard at The Marsh Berkeley\, a solo show blending st
+ andup\, drag\, storytelling and clown. Raised in a radical theater compan
+ y\, Raven traces a life spent trying to save the world through theater\, 
+ animal-print unitards and political performances\, taking the audience on
+  a dystopian and comic journey. This is the first of two announ
+END:VEVENT
+END:VCALENDAR

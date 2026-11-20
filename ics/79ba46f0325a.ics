@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:79ba46f0325a@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261120T163000
+DTEND;TZID=America/Los_Angeles:20261120T193000
+SUMMARY:Dwayne Charles Project
+LOCATION:The Bandshell\, Golden Gate Park\, San Francisco
+URL:https://ma.to/event/dwayne-charles-project-20-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/dwayne-charles-project-2
+ 0-nov-2026\n\nThe final week of the 2026 season at The Bandshell in Golde
+ n Gate Park features the Dwayne Charles Project. This Friday Happy Hour p
+ rogram runs from 4:30pm to 7:30pm and spans Christian\, gospel\, inspirat
+ ional jazz\, and R&B music. This is a free event.
+END:VEVENT
+END:VCALENDAR

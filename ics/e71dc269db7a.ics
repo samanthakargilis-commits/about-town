@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e71dc269db7a@bay-events
+DTSTAMP:20261120T212540Z
+DTSTART;TZID=America/Los_Angeles:20261125T200000
+DTEND;TZID=America/Los_Angeles:20261125T235900
+SUMMARY:SpudsGiving 2: Thanksgiving Eve Free Baked Potato Bar + Vinyl DJs
+LOCATION:St Mary's Pub\, 3845 Mission St\, San Francisco\, CA\, San Franci
+ sco
+URL:https://sf.funcheap.com/spudsgiving-2-thanksgiving-eve-free-baked-pota
+ to-bar-vinyl-djs-sf/
+DESCRIPTION:A yearly tradition\nhttps://sf.funcheap.com/spudsgiving-2-than
+ ksgiving-eve-free-baked-potato-bar-vinyl-djs-sf/\n\nThe night before Than
+ ksgiving Wednesday 11/25 SpudsGiving is back at St. Mary’s Pub. Vinyl D
+ Js spin Hip Hop / Rap & 80s 90s 00s favorites while serving up a FREE* fu
+ lly loaded and operational baked potato bar (*FREE Pay What You Want / Do
+ nations) 21+ ...
+END:VEVENT
+END:VCALENDAR

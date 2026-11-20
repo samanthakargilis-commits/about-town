@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f2dbe10747fe@bay-events
+DTSTAMP:20261120T212538Z
+DTSTART;TZID=America/Los_Angeles:20261212T100000
+DTEND;TZID=America/Los_Angeles:20261212T163000
+SUMMARY:SF Holiday Maker’s Market at the Museum of the Eye
+LOCATION:Truhlsen-Marmor Museum of the Eye\, 645 Beach St\, San Francisco\
+ , CA 94109\, San Francisco
+URL:https://sf.funcheap.com/sf-holiday-makers-market-museum-eye-dec-1213/
+DESCRIPTION:Craft + Fairs & festivals\nhttps://sf.funcheap.com/sf-holiday-
+ makers-market-museum-eye-dec-1213/\n\nMark your calendars for the Museum 
+ of the Eye’s December event: the Holiday Maker’s Market! A weekend of
+  local artisans\, hands-on crafts\, and holiday cheer. Shop unique goods 
+ from local makers\, find one-of-a-kind gifts\, and get creative with a va
+ riety of crafts featuring eye symbolism ...
+END:VEVENT
+END:VCALENDAR

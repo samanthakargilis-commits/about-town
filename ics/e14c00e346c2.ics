@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e14c00e346c2@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261114T080000
+DTEND;TZID=America/Los_Angeles:20261114T100000
+SUMMARY:Cut Your Own: Santa’s Tree Farm and Village
+LOCATION:Half Moon Bay
+URL:https://www.santastreefarm.com/images/coupons/santas-tree-farm-coupon_
+ 2026.pdf
+DESCRIPTION:Discourse · Featured on Funcheap\nhttps://www.santastreefarm.
+ com/images/coupons/santas-tree-farm-coupon_2026.pdf\n\nHalf Moon Bay | Sa
+ nta’s Tree Farm invites customers to cut down their own Christmas tree 
+ at this sprawling 487-acre farm . Grab a saw and head out into the fields
+  to choose from five different varieties\, including Douglas fir\, Monter
+ ey pine\, redwood\, cedar and Norway spruce. Trees up to 13 feet tall are
+  available in the fields this year\, and pre-cut trees are also sold in t
+ he barn. Picnic tables a
+END:VEVENT
+END:VCALENDAR

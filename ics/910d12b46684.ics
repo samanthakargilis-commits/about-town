@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:910d12b46684@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261120T100000
+DTEND;TZID=America/Los_Angeles:20261120T120000
+SUMMARY:GreenRow Grand Opening Weekend
+LOCATION:GreenRow at Town & Country Village\, Suite 10\, 855 El Camino Rea
+ l\, Palo Alto\, CA\, Palo Alto
+URL:https://ma.to/event/greenrow-grand-opening-weekend-20-nov-2026
+DESCRIPTION:Palo Alto\nhttps://ma.to/event/greenrow-grand-opening-weekend-
+ 20-nov-2026\n\nGreenRow\, a new home furnishings brand from Williams-Sono
+ ma\, Inc.\, opens at Town & Country Village with a grand opening weekend 
+ of special in-store experiences open to the public. The Palo Alto store o
+ ffers furniture\, lighting\, rugs\, bedding\, tabletop and décor\, along
+  with vintage and found items. A portion of net proceeds from opening wee
+ kend sales is donated to Filoli Historic House & Garden. Th
+END:VEVENT
+END:VCALENDAR

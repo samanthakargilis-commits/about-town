@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d9c8ce26b73f@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261120T170000
+DTEND;TZID=America/Los_Angeles:20261120T230000
+SUMMARY:Discodelic Warm Up Party
+LOCATION:Discodelic\, 3174 24th St\, San Francisco\, San Francisco
+URL:https://ma.to/event/discodelic-warm-up-party-20-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/discodelic-warm-up-party
+ -20-nov-2026\n\nNight two of the 2026 Bay Area Reggae Weekender\, present
+ ed by Discodelic and Tip Top Reggae Club. The event features internationa
+ l selectors Tommy Far East (Tokyo) and Tiny T\, the Mighty Cloudburst (Lo
+ ndon). Also on the decks are Reggaedelic (San Jose)\, Ruffy TNT\, Discode
+ lica\, Miles Ake (San Francisco) and Boss Selektah (Los Angeles). Entry i
+ s limited to Transit Pass holders\; grab tickets via the 
+END:VEVENT
+END:VCALENDAR

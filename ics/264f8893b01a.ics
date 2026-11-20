@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:264f8893b01a@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261121T100000
+DTEND;TZID=America/Los_Angeles:20261121T120000
+SUMMARY:Holiday Resin Wave Board Workshop
+LOCATION:Jiaren Cafe\, San Francisco
+URL:https://ma.to/event/holiday-resin-wave-board-workshop-21-nov-2026
+DESCRIPTION:Art\nhttps://ma.to/event/holiday-resin-wave-board-workshop-21-
+ nov-2026\n\nA hands-on resin art workshop at Jiaren Cafe in Santa Clara\,
+  CA\, offered during the holiday season. Participants create an ocean-ins
+ pired wave board and take it home. No experience is needed\, and friends 
+ and family can take part. The workshop is held every Saturday at 10 AM.
+END:VEVENT
+END:VCALENDAR

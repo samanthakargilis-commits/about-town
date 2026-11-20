@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:074814a4a079@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261120T183000
+DTEND;TZID=America/Los_Angeles:20261120T213000
+SUMMARY:Schleptet Plays Holiday Favorites
+LOCATION:Ocean Ale House\, 1314 Ocean Ave\, San Francisco
+URL:https://ma.to/event/schleptet-plays-holiday-favorites-21-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/schleptet-plays-holiday-
+ favorites-21-nov-2026\n\nSchleptet (John Watson\, Greg German\, and Craig
+  Kleinman) performs their annual winter holiday special\, “Schleptet Kl
+ einman Plays Your Holiday Favorites\,” at Ocean Ale House. This perform
+ ance is part of the venue's Third Friday Stardates series. Expect a genre
+ -bending set ranging from jazz and funk to TV theme songs and reggae. Foo
+ d and drinks are available. It's a neighborhood staple worth the tri
+END:VEVENT
+END:VCALENDAR

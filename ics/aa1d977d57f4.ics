@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:aa1d977d57f4@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:Walk It. Shop It. Crockett
+LOCATION:Monarch Store\, 1308 Pomona Street
+URL:https://sf.funcheap.com/walk-shop-crockett-3/
+DESCRIPTION:Craft + Art\nhttps://sf.funcheap.com/walk-shop-crockett-3/\n\n
+ On Nov. 21st\, a tiny historic waterfront town is reinventing itself thro
+ ugh independent retail. Every third Saturday in Crockett\, visitors can w
+ alk from shop to shop meeting artists\, designers\, vintage dealers\, mak
+ ers\, and guest vendors\, all while collecting signatures for a store-wid
+ e raffle. So treat yourself to a ...
+END:VEVENT
+END:VCALENDAR

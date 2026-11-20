@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a59e423df97c@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261121T110000
+DTEND;TZID=America/Los_Angeles:20261121T160000
+SUMMARY:Sabado Gigante Heritage Celeb
+LOCATION:16th & 24th Street BART Plazas\, San Francisco\, San Francisco
+URL:https://ma.to/event/sabado-gigante-heritage-celebration-21-nov-2026
+DESCRIPTION:Art\nhttps://ma.to/event/sabado-gigante-heritage-celebration-2
+ 1-nov-2026\n\nSabado Gigante returns for a free community celebration dur
+ ing Native American Heritage Month in San Francisco’s American Indian C
+ ultural District. Native American performers\, artists and local vendors 
+ come together for live cultural performances\, shopping with Native Ameri
+ can vendors and local artisans\, kids’ and family activities\, face pai
+ nting\, a photo booth\, and live DJ music throughout the af
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:902a8c45920d@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261122T110000
+DTEND;TZID=America/Los_Angeles:20261122T130000
+SUMMARY:Tiny Tea Room Vol. 5: Korean Fermented Teas
+LOCATION:Timebeing Teahouse\, 430 Haight St San Francisco\, San Francisco
+URL:https://partiful.com/e/tPtJS2ecYyBmCrcts6XQ
+DESCRIPTION:Art + Writing\nhttps://partiful.com/e/tPtJS2ecYyBmCrcts6XQ\n\n
+ Tiny Tea Room Vol. 5: Korean Fermented Teas Featuring Roots and Rituals J
+ oin Tsering\, founder of Roots and Rituals\, for an intimate exploration 
+ of Korea’s fermented tea traditions\, with a focus on Hadong\, one of K
+ orea’s oldest tea-producing regions. Drawing on his experiences traveli
+ ng through Korea and working directly with small tea farmers\, Tsering wi
+ ll share stories of the people\, places\, and 
+END:VEVENT
+END:VCALENDAR

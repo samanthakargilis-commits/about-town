@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7d42cdd6c663@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261120T190000
+DTEND;TZID=America/Los_Angeles:20261120T210000
+SUMMARY:On the Road (En El Camino)
+LOCATION:The Roxie Theater\, San Francisco
+URL:https://ma.to/event/on-the-road-en-el-camino-20-nov-2026
+DESCRIPTION:Gay / queer + Theatre\nhttps://ma.to/event/on-the-road-en-el-c
+ amino-20-nov-2026\n\nON THE ROAD (EN EL CAMINO) opens at The Roxie Theate
+ r on November 20. Directed by David Pablos and produced by Diego Luna\, t
+ his queer road thriller is set in the hyper-masculine world of long-haul 
+ trucking in northern Mexico. Mexico’s official Oscar submission\, the f
+ ilm won Best Film in Venice’s Horizons section\, the Queer Lion\, and s
+ ix Ariel Awards\, including Best Picture and Best Director. Descr
+END:VEVENT
+END:VCALENDAR

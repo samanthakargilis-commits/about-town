@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8ef76f064806@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261120T190000
+DTEND;TZID=America/Los_Angeles:20261120T210000
+SUMMARY:Devolution: Dennis Pepa Benefit
+LOCATION:DNA Lounge\, 375 Eleventh St\, San Francisco\, San Francisco
+URL:https://ma.to/event/devolution-dennis-pepa-benefit-2026-11-20
+DESCRIPTION:Concerts\nhttps://ma.to/event/devolution-dennis-pepa-benefit-2
+ 026-11-20\n\nDevolution and Friends: Dennis Pepa Benefit raises money to 
+ help Dennis Pepa in his cancer battle\, with all proceeds supporting the 
+ cause. Dennis Pepa is an original member of Death Angel. The bill brings 
+ together San Francisco metal band Devolution\, Blind Illusion and Big Lai
+ r & The Brown Sound\, with metal\, hard rock\, blues rock and thrash\, pl
+ us an all-star metal jam session. The concert is all a
+END:VEVENT
+END:VCALENDAR

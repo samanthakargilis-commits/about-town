@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:932f5eed265a@bay-events
+DTSTAMP:20261120T212544Z
+DTSTART;VALUE=DATE:20261121
+DTEND;VALUE=DATE:20261122
+SUMMARY:$99 lift tickets
+LOCATION:
+URL:https://www.palisadestahoe.com/events-and-activities/events-calendar/o
+ pening-day
+DESCRIPTION:New in your area\nhttps://www.palisadestahoe.com/events-and-ac
+ tivities/events-calendar/opening-day\n\nTo kick off the season\, the reso
+ rt is offering $99 lift tickets for November 21 through 24 . After openin
+ g weekend\, tickets range from $159 to $289 \, depending on the day. Many
+  people opt to purchase a season pass instead of individual tickets\, whi
+ ch allows access to multiple resorts. You can purchase tickets on the Pal
+ isades Tahoe website.
+END:VEVENT
+END:VCALENDAR

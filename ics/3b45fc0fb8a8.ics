@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3b45fc0fb8a8@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;TZID=America/Los_Angeles:20261120T180000
+DTEND;TZID=America/Los_Angeles:20261120T220000
+SUMMARY:Closing Night
+LOCATION:A Loft of One's Own\, 5757 Horton St Emeryville\, Emeryville
+URL:https://partiful.com/e/ccFJTSYEwQaRJUQAdUuE
+DESCRIPTION:Museum exhibits + Art · Emeryville\nhttps://partiful.com/e/cc
+ FJTSYEwQaRJUQAdUuE\n\nFive weeks ago\, we opened our doors so we could re
+ vel in tenderness together. Now we’re gathering one last time to celebr
+ ate everything we’ve held. This living archive grew with every person w
+ ho walked through it\, and we want to close it out the way it began: toge
+ ther 🫂 It also happens to be both of our birthdays\, so come celebrate
+  with us. The night will hold: 🌸 Open decks\, so bring a record to s
+END:VEVENT
+END:VCALENDAR

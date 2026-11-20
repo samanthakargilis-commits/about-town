@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:98ab6babb7d0@bay-events
+DTSTAMP:20261120T212542Z
+DTSTART;TZID=America/Los_Angeles:20261212T193000
+DTEND;TZID=America/Los_Angeles:20261212T213000
+SUMMARY:Nog and White Elephant
+LOCATION:1009 Chester Street\, 1009 Chester St\, Oakland\, CA 94607\, USA\
+ , Oakland\, CA Oakland\, Oakland
+URL:https://www.meetup.com/queer-fun-fridays/events/317431264/
+DESCRIPTION:Comedy · Oakland\nhttps://www.meetup.com/queer-fun-fridays/ev
+ ents/317431264/\n\nHoliday party\, potluck style\, (1) bring gluten-free 
+ nibbles or treats to share OR a beverage\, (vegan food and bev options su
+ per welcome)\, AND (2) bring a white elephant gift. Gift value $0-$10 exp
+ ected\, HARD cap at $20. Goofy\, homemade\, funny\, re-gifted all welcome
+ . Bonus points for fabulous wrapping of even the most deeply impractical 
+ gift.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:356c4d14ac5e@bay-events
+DTSTAMP:20261120T212543Z
+DTSTART;TZID=America/Los_Angeles:20261126T103000
+DTEND;TZID=America/Los_Angeles:20261126T123000
+SUMMARY:Little Brothers: Friends of the Elderly 2026 – San Francisco
+LOCATION:
+URL:https://www.littlebrotherssf.org/special-events/036pjf98b4eqfahzz24pdg
+ 3ezu5jz4
+DESCRIPTION:Featured on Funcheap\nhttps://www.littlebrotherssf.org/special
+ -events/036pjf98b4eqfahzz24pdg3ezu5jz4\n\nMake a difference in an older a
+ dult’s Thanksgiving by volunteering with Little Brothers: Friends of th
+ e Elderly. Volunteers can choose between delivering a Thanksgiving meal a
+ nd spending time visiting with an older adult in their home\, or simply d
+ elivering meals to multiple seniors who prefer not to have an in-person v
+ isit. Family and friends are welcome to join\, provided at least one pers
+ on in ea
+END:VEVENT
+END:VCALENDAR

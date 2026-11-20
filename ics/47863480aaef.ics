@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:47863480aaef@bay-events
+DTSTAMP:20261120T212541Z
+DTSTART;TZID=America/Los_Angeles:20261121T090000
+DTEND;TZID=America/Los_Angeles:20261121T110000
+SUMMARY:Watercolor Workshop with Silpa
+LOCATION:Jiaren Cafe\, Santa Clara\, CA\, Santa Clara
+URL:https://ma.to/event/watercolor-workshop-with-silpa-21-nov-2026
+DESCRIPTION:Craft · Santa Clara\nhttps://ma.to/event/watercolor-workshop-
+ with-silpa-21-nov-2026\n\nA public watercolor workshop led by Silpa (@bru
+ shtints) takes place every Saturday at 9 AM. The class has upgraded water
+ color supplies and capacity for 15 people. Silpa guides attendees in crea
+ ting their own watercolor artwork\, whether they come with friends\, fami
+ ly or on their own. The workshop is held at Jiaren Cafe in Santa Clara\, 
+ CA.
+END:VEVENT
+END:VCALENDAR

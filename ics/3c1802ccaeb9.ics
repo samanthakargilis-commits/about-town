@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3c1802ccaeb9@bay-events
+DTSTAMP:20261120T212539Z
+DTSTART;TZID=America/Los_Angeles:20261212T130000
+DTEND;TZID=America/Los_Angeles:20261212T200000
+SUMMARY:Holiday Pottery Pop-Up Sale
+LOCATION:Wondrous Brewing Company\, 1306 65th St Emeryville\, Emeryville
+URL:https://partiful.com/e/v7DScgAx9hosAWgudGOj
+DESCRIPTION:Craft + Art · Emeryville\nhttps://partiful.com/e/v7DScgAx9hos
+ AWgudGOj\n\nJoin us for a one day pottery pop up on December 12 to have a
+  drink and celebrate pots while getting some holiday shopping done! Inclu
+ ded in the pop up are seven Northern California potters working in a dive
+ rse range of styles. Included Artists: - Casey Beck - Katie Gibbs - Laure
+ n Nguyen - Matt Fishman - Nick Werkmeister - Stephanie Yee - Syd Ruckdesc
+ hel
+END:VEVENT
+END:VCALENDAR
