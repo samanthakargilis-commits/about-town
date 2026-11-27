@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:299af491b41d@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261203T180000
+DTEND;TZID=America/Los_Angeles:20261203T210000
+SUMMARY:Un-Silent Night: A Goody Holiday Party
+LOCATION:330 Pine St\, 330 Pine St\, San Francisco\, CA 94104\, USA\, San 
+ Francisco
+URL:https://luma.com/goody-holiday-party
+DESCRIPTION:Singing · Thursday evening\nhttps://luma.com/goody-holiday-pa
+ rty\n\nWe’re a gifting company\, so December is kind of our jam. What b
+ etter way to celebrate the end of the year than with a holiday bash? 🎊
+  You’re invited to the Goody Showroom in downtown SF for a night of fes
+ tive surprises\, with plenty of singing and dancing to go around. Felix a
+ nd Fingers Dueling Pianos will be taking requests all night\, so bring yo
+ ur go-to song (we’ve already cued up Mariah Carey an
+END:VEVENT
+END:VCALENDAR

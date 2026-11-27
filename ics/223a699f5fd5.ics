@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:223a699f5fd5@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:Winter Art Sale
+LOCATION:SF Senior Center - Aquatic Park\, 890 Beach Street @ Polk / Ghira
+ rdelli in San Francisco
+URL:https://sf.funcheap.com/winter-art-sale/
+DESCRIPTION:Art + Craft\nhttps://sf.funcheap.com/winter-art-sale/\n\nWinte
+ r Art Sale features Ceramics\, Painting and Photography & more! Works for
+  sale by Senior participants where all proceeds benefit the non-profit Sa
+ n Francisco Senior Center for its ongoing programs where hundreds of seni
+ ors engage through its array of programs. This year celebrates the Center
+ ’s ...
+END:VEVENT
+END:VCALENDAR

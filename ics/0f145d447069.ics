@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0f145d447069@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261202T190000
+DTEND;TZID=America/Los_Angeles:20261202T210000
+SUMMARY:San Francisco\, Uncovered: The Stories Behind the Skyline
+LOCATION:Madrone Art Bar\, Madrone Art Bar\, 500 Divisadero St\, San Franc
+ isco\, CA 94117\, USA\, San Francisco
+URL:https://luma.com/05ug8thf
+DESCRIPTION:Art + Discourse\nhttps://luma.com/05ug8thf\n\n🌁 Look out at
+  the San Francisco skyline and you'll see some of the most recognizable l
+ andmarks in the world. But have you ever stopped to wonder why they exist
+ ? What is Sutro Tower actually for? What's the real story behind Coit Tow
+ er? And how did a grand Roman-style rotunda end up next to a lagoon in th
+ e Marina? In this lecture\, Hannah Blazei\, KPIX journalist and founder o
+ f Good Stories San Franc
+END:VEVENT
+END:VCALENDAR

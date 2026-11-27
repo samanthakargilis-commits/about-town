@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:596b5d533ba8@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261211T180000
+DTEND;TZID=America/Los_Angeles:20261211T200000
+SUMMARY:"Cookies & Carols" All-City Holiday Sing-Along
+LOCATION:901 Civic Campus Way\, 901 Civic Campus Wy\, South San Francisco\
+ , CA 94080\, USA\, South San Francisco\, CA South San Francisco\, South S
+ an Francisco
+URL:https://www.meetup.com/south-san-francisco-folk-jam/events/317289317/
+DESCRIPTION:Singing + Theatre · South San Francisco\nhttps://www.meetup.c
+ om/south-san-francisco-folk-jam/events/317289317/\n\nThe South City Folk 
+ Jam is hosting our annual "Cookies & Carols" All-City Holiday Sing-Along 
+ on Friday\, Dec. 11th from 6-8 pm. This is a big event where we encourage
+  everyone to come out\, whether you play an instrument or just like to si
+ ng\, and gather for a special evening of singing Christmas songs together
+ . There will be music\, cookies\, decorations\, and a whole lot of fun fo
+ r young and old. And 
+END:VEVENT
+END:VCALENDAR

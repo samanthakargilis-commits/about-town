@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:921bd02f8ba1@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261128T000000
+DTEND;TZID=America/Los_Angeles:20261128T020000
+SUMMARY:Craft Club & Fellowship
+LOCATION:San Francisco Public Library\, Deaf Services Center\, San Francis
+ co
+URL:https://ma.to/event/craft-club-fellowship-28-nov-2026
+DESCRIPTION:Craft + Reading\nhttps://ma.to/event/craft-club-fellowship-28-
+ nov-2026\n\nCraft Club brings the community together at the Deaf Services
+  Center inside the San Francisco Public Library for crafts\, fellowship a
+ nd community connection. Kei-Che Randle hosts the ASL-centered gathering.
+END:VEVENT
+END:VCALENDAR

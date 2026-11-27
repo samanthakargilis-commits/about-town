@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c145ffc21f83@bay-events
+DTSTAMP:20261127T221645Z
+DTSTART;TZID=America/Los_Angeles:20261127T000000
+DTEND;TZID=America/Los_Angeles:20261127T020000
+SUMMARY:West Coast Craft: Last Day
+LOCATION:Festival Pavilion at Fort Mason Center for Arts & Culture\, San F
+ rancisco
+URL:https://ma.to/event/west-coast-craft-last-day-27-nov-2026
+DESCRIPTION:Craft + Fairs & festivals\nhttps://ma.to/event/west-coast-craf
+ t-last-day-27-nov-2026\n\nWest Coast Craft brings 275 independent makers 
+ together under one roof at Festival Pavilion at Fort Mason Center for Art
+ s & Culture. The fair's final day has free entry and remains open until 6
+ .
+END:VEVENT
+END:VCALENDAR

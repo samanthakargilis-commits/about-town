@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d796ceb24b32@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261204T170000
+DTEND;TZID=America/Los_Angeles:20261204T190000
+SUMMARY:SF’s 2026 “Winterfest” at Salesforce Park
+LOCATION:Salesforce Park\, 425 Mission St.\, San Francisco\, CA\, San Fran
+ cisco
+URL:https://sf.funcheap.com/sfs-2026-winterfest-salesforce-park-dec-46/
+DESCRIPTION:A yearly tradition\nhttps://sf.funcheap.com/sfs-2026-winterfes
+ t-salesforce-park-dec-46/\n\nIt’s almost time to light up the night! Th
+ e 7th annual Winterfest returns to TJPA’s Salesforce Park on the weeken
+ d of December 4th-6th. Bundle up and join us for a weekend full of festiv
+ e fun\, including a holiday swing dance\, seasonal movies and crafts\, an
+ d ...
+END:VEVENT
+END:VCALENDAR

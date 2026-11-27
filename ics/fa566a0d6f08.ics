@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fa566a0d6f08@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261212T121500
+DTEND;TZID=America/Los_Angeles:20261212T141500
+SUMMARY:"Parasol Against the Axe" by Helen Oyeyemi
+LOCATION:Cafe La Boheme\, 3318 24th St.\, across 24th from BART\, San Fran
+ cisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/classic-literature-and-cafes/events/311372128/
+DESCRIPTION:Reading · Your reading tastes\nhttps://www.meetup.com/classic
+ -literature-and-cafes/events/311372128/\n\n"In Helen Oyeyemi’s joyous n
+ ew novel\, the Czech capital is a living thing—one that can let you in 
+ or spit you out. For reasons of her own\, Hero Tojosoa accepts an invitat
+ ion she was half expected to decline\, and finds herself in Prague on a b
+ achelorette weekend hosted by her estranged friend Sofie. Little does she
+  know she’s arrived in a city with a penchant for playing tricks on the
+  unsuspecting.
+END:VEVENT
+END:VCALENDAR

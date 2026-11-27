@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3c31bd4f1668@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261217T193000
+DTEND;TZID=America/Los_Angeles:20261217T213000
+SUMMARY:Secret Guest List: Cobb’s Free Comedy Nights (Ha Ha Holiday Alls
+ tars)
+LOCATION:Cobb's Comedy Club\, 915 Columbus Ave\, San Francisco\, CA 94133\
+ , San Francisco
+URL:https://sf.funcheap.com/secret-guest-list-cobbs-free-comedy-nights-ha-
+ ha-holiday-allstars/
+DESCRIPTION:Comedy + Weird & unusual · 2-drink minimum · Thursday evenin
+ g\nhttps://sf.funcheap.com/secret-guest-list-cobbs-free-comedy-nights-ha-
+ ha-holiday-allstars/\n\nCobb’s Comedy Club has a secret guestlist for a
+  handpicked group of shows at SF’s biggest comedy club. Every month the
+ y handpick some of SF’s top local comedians to showcase for you – oft
+ en with credits like SF Sketchfest\, NBC\, Comedy Central and more. Secre
+ t ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:10138bc20f43@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261205T090000
+DTEND;TZID=America/Los_Angeles:20261205T130000
+SUMMARY:A Yuletide Gathering: Bayfolk Botanicals Holiday Pop-Up
+LOCATION:Vino Rosso Parklet\, 629 Cortland Ave\, San Francisco\, San Franc
+ isco
+URL:https://sf.funcheap.com/yuletide-gathering-bayfolk-botanicals-holiday-
+ popup-sf/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/yuletide-gathering-b
+ ayfolk-botanicals-holiday-popup-sf/\n\nJoin Bayfolk Botanicals for A Yule
+ tide Gathering\, a neighborhood holiday pop-up celebrating the beauty of 
+ winter\, the natural world\, and the season of giving. Spend a winter mor
+ ning exploring a seasonal collection of fresh flower bouquets\, fragrant 
+ evergreen wreaths\, garlands\, holiday floral arrangements\, and paperwhi
+ te and ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9e8250c6e7ab@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261128T090000
+DTEND;TZID=America/Los_Angeles:20261128T110000
+SUMMARY:The Guardsmen Tree Lot
+LOCATION:Fort Mason Center\, San Francisco
+URL:https://ma.to/event/the-guardsmen-tree-lot-28-nov-2026-1
+DESCRIPTION:Fairs & festivals\nhttps://ma.to/event/the-guardsmen-tree-lot-
+ 28-nov-2026-1\n\nThe Guardsmen Tree Lot returns to Fort Mason Center’s 
+ Festival Pavilion as a holiday tradition benefiting Bay Area youth. The l
+ ot opens for the San Francisco holiday season on Nov. 28 at 9 AM\, featur
+ ing Santa visits\, decorated Christmas trees\, and local food creators. T
+ he event runs from November 28 through December 15. Food and event lineup
+ s to be announced.
+END:VEVENT
+END:VCALENDAR

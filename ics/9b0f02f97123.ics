@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9b0f02f97123@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;TZID=America/Los_Angeles:20261129T180000
+DTEND;TZID=America/Los_Angeles:20261129T220000
+SUMMARY:SF’s 2026 Union Square’s Great Holiday Tree
+LOCATION:Union Square Park\, Geary and Powell\, San Francisco\, CA\, San F
+ rancisco
+URL:https://sf.funcheap.com/sfs-2026-union-squares-great-holiday-tree-nov-
+ 27-jan-1-2/
+DESCRIPTION:Art · A yearly tradition\nhttps://sf.funcheap.com/sfs-2026-un
+ ion-squares-great-holiday-tree-nov-27-jan-1-2/\n\nFor generations\, Union
+  Square’s iconic Christmas tree has been a centerpiece of San Francisco
+ ’s holiday season\, drawing visitors downtown to see the city sparkle f
+ or the holidays. But 2026 brings a big change to this beloved tradition: 
+ after years of towering artificial trees\, Union Square ...
+END:VEVENT
+END:VCALENDAR

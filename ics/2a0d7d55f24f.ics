@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2a0d7d55f24f@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261127T200000
+DTEND;TZID=America/Los_Angeles:20261127T220000
+SUMMARY:FWD - Friday We Dance
+LOCATION:Hello Stranger Bar\, 1724 Broadway\, Downtown Oakland\, Oakland
+URL:https://ma.to/event/fwd-friday-we-dance-27-nov-2026
+DESCRIPTION:Oakland\nhttps://ma.to/event/fwd-friday-we-dance-27-nov-2026\n
+ \nFWD - Friday We Dance is a DJ night with Wonway Posibul at Hello Strang
+ er Bar as part of its Holiday Weekend lineup in Downtown Oakland. Doors o
+ pen at 8pm\; guests must be 21 or older.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e2eca692ff67@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261209T183000
+DTEND;TZID=America/Los_Angeles:20261209T203000
+SUMMARY:Quietly Queer Holiday Lights Stroll
+LOCATION:Fairmont San Francisco\, 950 Mason St\, San Francisco\, CA 94108\
+ , USA\, San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/quietly-queer-meetup-for-lgbtq-introverts-and-a
+ llies/events/317509710/
+DESCRIPTION:Gay / queer\nhttps://www.meetup.com/quietly-queer-meetup-for-l
+ gbtq-introverts-and-allies/events/317509710/\n\nHey everyone - Join us fo
+ r a festive evening exploring some of San Francisco's holiday displays an
+ d dazzling downtown lights on Wednesday\, December 9! This one's for thos
+ e who love holiday sightseeing and cheer! We'll start by meeting in the l
+ obby of the **Fairmont San Francisco** at 6:30PM\, where we'll check out 
+ the hotel's holiday-decorated oversized tree and its famous life-sized gi
+ ngerbread ho
+END:VEVENT
+END:VCALENDAR

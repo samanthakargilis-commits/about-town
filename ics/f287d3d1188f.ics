@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f287d3d1188f@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261202T180000
+DTEND;TZID=America/Los_Angeles:20261202T210000
+SUMMARY:Meet the Lab: Mistral
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/mistral-meet-the-lab-sf-12-2026
+DESCRIPTION:Discourse\nhttps://luma.com/mistral-meet-the-lab-sf-12-2026\n\
+ nMeet the scientists behind Mistral's frontier and open-weight models ove
+ r drinks and hor’ douvres. What to expect: An evening with Mistral’s 
+ science and applied AI teams. Hear directly from our researchers on what
+ ’s on the roadmap and recent developments across our specialty models\,
+  including the science behind Voice/Audio\, OCR\, and our open-source lin
+ eup. Open Q&A to follow\, then stick around for
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5af2bf18da64@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:“Wiener Wednesday” Free Hot Dog Night at Rye
+LOCATION:Rye Bar\, 688 Geary St. San Francisco\, CA 94102
+URL:https://sf.funcheap.com/wiener-wednesday-free-hot-dog-night-at-rye-sf-
+ 239/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/wiener-wednesday-fre
+ e-hot-dog-night-at-rye-sf-239/\n\nSubmitted by the Event Organizer“Wien
+ er Wednesday” Free Hot Dog Night at Rye (SF) @ryebarsf With a name like
+  “Rye\,” this bar is obviously whiskey-centric... but on Wednesday ni
+ ghts the bar leans towards tequila is also awesomely hot dog centric! Com
+ e to Rye Bar every Wednesday for free hot dogs with every Hornitos cockta
+ il purchase. Mo and Kat are you bartenders and hot dog slingers for the n
+ ight 
+END:VEVENT
+END:VCALENDAR

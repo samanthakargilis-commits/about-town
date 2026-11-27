@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:289fbbb3d797@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261130T193000
+DTEND;TZID=America/Los_Angeles:20261130T213000
+SUMMARY:REWARDS PROGRAM: Stick and Bindle
+LOCATION:Artists' Television Access\, 992 Valencia St.\, SF\, San Francisc
+ o
+URL:https://ma.to/event/rewards-program-stick-and-bindle-30-nov-2026
+DESCRIPTION:Meditation + Concerts\nhttps://ma.to/event/rewards-program-sti
+ ck-and-bindle-30-nov-2026\n\nREWARDS PROGRAM\, a space jazz trio\, perfor
+ ms a live\, improvised score for Stick and Bindle\, an expanded-cinema me
+ ditation on the laborer in transit\, the vagabond\, and the rambler. The 
+ visuals combine hand-painted 16mm loops\, found footage from @prelingerar
+ chives\, and hand-painted 35mm slides from the late 1960s. For this editi
+ on\, the visuals are a special collaboration with musician and artist Kat
+END:VEVENT
+END:VCALENDAR

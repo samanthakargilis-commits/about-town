@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c6d2fc0387f7@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261128T000000
+DTEND;TZID=America/Los_Angeles:20261128T020000
+SUMMARY:Traveler’s Journal Workshop
+LOCATION:Kindred Studio\, San Francisco
+URL:https://ma.to/event/travelers-journal-workshop-28-nov-2026
+DESCRIPTION:Craft\nhttps://ma.to/event/travelers-journal-workshop-28-nov-2
+ 026\n\nTraveler’s Journal Workshop is a sold-out keepsake-craft worksho
+ p at Kindred Studio\, part of a weekend series of workshops for friends\,
+  family\, or solo attendees. The 28 November session is sold out.
+END:VEVENT
+END:VCALENDAR

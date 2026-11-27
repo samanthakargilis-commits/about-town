@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3b8dc683a862@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:’80s Ice Rink Party w/ Madonna & Prince (Union Square)
+LOCATION:The Safeway Holiday Ice Rink in Union Square presented by Kaiser 
+ Perma\, 333 Post Street\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/80s-ice-rink-party-madonna-prince-union-square
+ /
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/80s-ice-rink-party-m
+ adonna-prince-union-square/\n\nGet ready to rewind the clock and skate to
+  the sounds of the 1980s! Join us for Flashback Fridays—a totally tubul
+ ar night of throwback jams\, big hair\, and even bigger energy. Greatest 
+ Hits 103.7 will be live at the rink\, spinning iconic tracks from legends
+  ...
+END:VEVENT
+END:VCALENDAR

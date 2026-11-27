@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:40cf559785cd@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261127T180000
+DTEND;TZID=America/Los_Angeles:20261127T200000
+SUMMARY:Winter Wonderland Lighting Ceremony
+LOCATION:Thrive City\, San Francisco
+URL:https://ma.to/event/winter-wonderland-lighting-ceremony-27-nov-2026
+DESCRIPTION:Spirituality\nhttps://ma.to/event/winter-wonderland-lighting-c
+ eremony-27-nov-2026\n\nThrive City's Winter Wonderland Lighting Ceremony 
+ includes soulful performances by Oakland icons Goapele and The California
+  Honeydrops. The event takes place in the entertainment district surround
+ ing Chase Center.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:109139ec3cc7@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261127T180000
+DTEND;TZID=America/Los_Angeles:20261127T210000
+SUMMARY:Hex Pest\, The Queen & I + 2 More
+LOCATION:Up The Creek Records\, 2042 Mt Diablo\, Walnut Creek\, Walnut Cre
+ ek
+URL:https://ma.to/event/hex-pest-the-queen-i-2-more-27-nov-2026
+DESCRIPTION:Walnut Creek\nhttps://ma.to/event/hex-pest-the-queen-i-2-more-
+ 27-nov-2026\n\nHex Pest\, The Queen & I\, Alpine Decline and Flowers for 
+ Angela perform live at Up The Creek Records. The all-ages show runs 6–9
+ pm and covers shoegaze\, indie rock\, psychedelia and more. Tickets start
+  at $15.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:824fc91328b9@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;TZID=America/Los_Angeles:20261127T180000
+DTEND;TZID=America/Los_Angeles:20261127T210000
+SUMMARY:Fourth Friday at Gallery House
+LOCATION:Gallery House\, 320 S. California Ave\, Palo Alto
+URL:http://Galleryhouse.art
+DESCRIPTION:Art + Concerts · Palo Alto\nhttp://Galleryhouse.art\n\nA mont
+ hly Fourth Friday music celebration at an award-winning downtown gallery\
+ , with live music\, complimentary refreshments\, and the chance to meet t
+ he local artists on view.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b7a361af754a@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261130T190000
+DTEND;TZID=America/Los_Angeles:20261130T210000
+SUMMARY:SF Chess Club - St. Andrews Day
+LOCATION:Anina\, 482 Hayes St San Francisco\, San Francisco
+URL:https://partiful.com/e/opVklFNjKWbzGN354fCB
+DESCRIPTION:New in your area\nhttps://partiful.com/e/opVklFNjKWbzGN354fCB\
+ n\nAnina is 21+ BRING YOUR ID - outside food is allowed! It is St. Andrew
+ s Day - Patron Saint of Scotland - come say hi to Andrew! We are currentl
+ y fundraising for new boards - Venmo @connorsullivan1998 with "SF Chess C
+ lub" in the note - a $5 donation gets us half of a board! make sure you g
+ et a drink - our hosts at Anina are very supportive! All Levels Welcome -
+  Every Monday Night Chess with San Fra
+END:VEVENT
+END:VCALENDAR

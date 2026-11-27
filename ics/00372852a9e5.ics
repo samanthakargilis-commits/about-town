@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:00372852a9e5@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261202T180000
+DTEND;TZID=America/Los_Angeles:20261202T200000
+SUMMARY:Richard Rorty: "Truth Is Made Rather than Found"
+LOCATION:The Fold\, 3359 26th St\, San Francisco\, CA 94110\, USA\, San Fr
+ ancisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/sf-philosophy-reading-group/events/317464674/
+DESCRIPTION:Writing\nhttps://www.meetup.com/sf-philosophy-reading-group/ev
+ ents/317464674/\n\nFor this session we'll read two short pieces by Richar
+ d Rorty: the essay "Solidarity or Objectivity?" (about 14 pages) and "The
+  Contingency of Language\," the first chapter of *Contingency\, Irony\, a
+ nd Solidarity* (about 20 pages). Together\, they ask what becomes of trut
+ h and inquiry if we stop thinking of language as a mirror of reality. In 
+ "Solidarity or Objectivity?"\, Rorty describes two ways peo
+END:VEVENT
+END:VCALENDAR

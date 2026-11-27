@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:29cd409ffd24@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261127T220000
+DTEND;TZID=America/Los_Angeles:20261128T020000
+SUMMARY:UHAUL SF: Queer Fam Friendsgiving
+LOCATION:Jolene’s Bar\, San Francisco
+URL:https://ma.to/event/uhaul-sf-queer-fam-friendsgiving-27-nov-2026
+DESCRIPTION:Gay / queer\nhttps://ma.to/event/uhaul-sf-queer-fam-friendsgiv
+ ing-27-nov-2026\n\nUHAUL SF presents The Queen Queer Fam Friendsgiving Ga
+ thering\, San Francisco’s party for sapphics\, at Jolene’s Bar on Fri
+ day\, November 27\, from 10pm to 2am. Happy hour runs from 7pm to 9pm.
+END:VEVENT
+END:VCALENDAR

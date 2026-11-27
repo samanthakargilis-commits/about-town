@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:420216ffc3e9@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261127T193000
+DTEND;TZID=America/Los_Angeles:20261127T213000
+SUMMARY:Sleepless Nights: Gram Parsons
+LOCATION:The Chapel\, 777 Valencia St\, San Francisco\, San Francisco
+URL:https://ma.to/event/sleepless-nights-xx-27-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/sleepless-nights-xx-27-n
+ ov-2026\n\nSleepless Nights XX marks 20 years of Gram Parsons tributes in
+  San Francisco. The cosmic American music night features Bar Fight\, Aaro
+ n Burnham & the Brushfires\, East Bay Breeze\, Paula Frazer & Tarnation\,
+  Sweet Chariot\, Brian Mello & the Afterglow\, Country Risqué\, Nashvill
+ e Honeymoon\, and Penelope Houston & the Jailbirds. Curated by @sheabonez
+  and presented by FolkYEAH!\, the event is a benefit for
+END:VEVENT
+END:VCALENDAR

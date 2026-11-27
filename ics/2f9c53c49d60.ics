@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2f9c53c49d60@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261127T193000
+DTEND;TZID=America/Los_Angeles:20261127T213000
+SUMMARY:Eric Wyatt Live at Black Cat
+LOCATION:Black Cat Jazz Supper Club\, San Francisco
+URL:https://ma.to/event/eric-wyatt-live-at-black-cat-27-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/eric-wyatt-live-at-black
+ -cat-27-nov-2026\n\nBrooklyn-born tenor saxophonist Eric Wyatt performs l
+ ive at Black Cat on November 27\, 2026\, as part of the November 27–29 
+ engagement. His powerful tenor sound draws on deep swing and blues-soaked
+  soul\, carrying the New York jazz tradition forward. Wyatt has performed
+  alongside Roy Hargrove\, Branford Marsalis\, Kenny Garrett\, Jeff “Tai
+ n” Watts\, and Robert Glasper\, among others\, and is billed as a So
+END:VEVENT
+END:VCALENDAR

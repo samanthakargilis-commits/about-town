@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:14ff3dee663d@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261127T190000
+DTEND;TZID=America/Los_Angeles:20261127T220000
+SUMMARY:Fall in Love Speed Dating & Mixer
+LOCATION:Aloft Dublin-Pleasanton\, Pleasanton
+URL:https://ma.to/event/fall-in-love-speed-dating-mixer-27-nov-2026
+DESCRIPTION:Pleasanton\nhttps://ma.to/event/fall-in-love-speed-dating-mixe
+ r-27-nov-2026\n\nFall in Love Speed Dating & Mixer is a singles event for
+  ages 29–59 at Aloft Dublin-Pleasanton. Speed dating runs 7pm–9pm\, f
+ ollowed by a mixer from 9pm–10pm. A ticket includes entry into a raffle
+  for one complimentary night stay.
+END:VEVENT
+END:VCALENDAR

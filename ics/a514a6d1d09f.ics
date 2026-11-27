@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a514a6d1d09f@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261201T201500
+DTEND;TZID=America/Los_Angeles:20261201T213000
+SUMMARY:Breathing Ecstasy : Tantric Way of Breathing
+LOCATION:Yoga Society of San Francisco\, 2872 Folsom St\, San Francisco\, 
+ CA 94110 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/breathing-ecstasy-tantric-way-of-breathin
+ g-tickets-1982313706659
+DESCRIPTION:Meditation\nhttps://www.eventbrite.com/e/breathing-ecstasy-tan
+ tric-way-of-breathing-tickets-1982313706659\n\nOpening Body and Breath to
+  reduce stress\, trauma\, and awakening Energy and Space! (Marriage of Sh
+ akit and Shiva)
+END:VEVENT
+END:VCALENDAR

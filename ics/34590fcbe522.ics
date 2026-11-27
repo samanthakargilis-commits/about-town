@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:34590fcbe522@bay-events
+DTSTAMP:20261127T221651Z
+DTSTART;TZID=America/Los_Angeles:20261128T190000
+DTEND;TZID=America/Los_Angeles:20261128T220000
+SUMMARY:A Night Out with New Friends: San Francisco Dinner Club
+LOCATION:Restaurant of the Week\, Brannan Street\, San Francisco\, CA 9410
+ 7 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/a-night-out-with-new-friends-san-francisc
+ o-dinner-club-tickets-1990389102385
+DESCRIPTION:New in your area\nhttps://www.eventbrite.com/e/a-night-out-wit
+ h-new-friends-san-francisco-dinner-club-tickets-1990389102385\n\nMeet you
+ r new best friends over dinner with strangers! Connect with other locals 
+ via our evening meetups in your city.
+END:VEVENT
+END:VCALENDAR

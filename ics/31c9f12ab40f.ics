@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:31c9f12ab40f@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;VALUE=DATE:20261204
+DTEND;VALUE=DATE:20261205
+SUMMARY:2026 Ross: Winter Wonderland
+LOCATION:Marin Art & Garden Center\, 30 Sir Francis Drake Blvd
+URL:https://sf.funcheap.com/city-guide/ice-skate-bay-area/
+DESCRIPTION:Singing + Fairs & festivals · Featured on Funcheap\nhttps://s
+ f.funcheap.com/city-guide/ice-skate-bay-area/\n\n– Dates: December 4-23
+ \, 2026 – Where: Marin Art & Garden Center\, 30 Sir Francis Drake Blvd.
+ \, Ross – Cost: $30 per person (includes skate rental\; 45-minute skati
+ ng session\, plus fees) Get ready for a wondrous winter experience in the
+  Garden\, where you can lace up your skates for a spin under falling snow
+  and twinkling lights . The outdoor skating rink is set beneath bistro li
+ ghts\, with festive musi
+END:VEVENT
+END:VCALENDAR

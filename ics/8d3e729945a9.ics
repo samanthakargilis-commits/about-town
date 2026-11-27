@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8d3e729945a9@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261231T180000
+DTEND;TZID=America/Los_Angeles:20270101T010000
+SUMMARY:New Year’s Eve 2027 Party: “Puttin’ on the Glitz” Union Sq
+ uare (Hotel Nikko)
+LOCATION:Hotel Nikko\, 222 Mason St. San Francisco\, CA
+URL:https://sf.funcheap.com/union-square-years-eve-2027-party-hotel-nikko/
+DESCRIPTION:Comedy · Thursday evening\nhttps://sf.funcheap.com/union-squa
+ re-years-eve-2027-party-hotel-nikko/\n\nPresented by Hotel Nikko\, Philli
+ p Bell Events\, LaDonna\, J’LaChic Productions\, enjoy an extraordinary
+  New Year’s Eve celebration at the iconic Hotel Nikko San Francisco (3r
+ d and 25th floors). Dress to impress for a glamorous\, black-tie evening!
+  Multiple ballrooms with live entertainment and DJs keeping the energy ..
+ .
+END:VEVENT
+END:VCALENDAR

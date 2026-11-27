@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3c5247487980@bay-events
+DTSTAMP:20261127T221645Z
+DTSTART;TZID=America/Los_Angeles:20261206T100000
+DTEND;TZID=America/Los_Angeles:20261206T110000
+SUMMARY:The Feminist Book Club- The Handmaid's Tale
+LOCATION:Firehouse Coffee & Tea\, 317 Johnson St Sausalito\, Sausalito
+URL:https://partiful.com/e/ZmYClWtfLth4rLofFqMM
+DESCRIPTION:⭐ Margaret Atwood · Reading · Sausalito\nhttps://partiful.
+ com/e/ZmYClWtfLth4rLofFqMM\n\nFor our December meeting of The Feminist Bo
+ ok Club\, we will be discussing The Handmaid's Tale by Margaret Atwood. P
+ lease come prepared to discuss the book and its themes. We will be focusi
+ ng on the book\, not the TV series based on the book. **We will meet at F
+ irehouse Coffee\, but if many people are expected to join the location ma
+ y change to accommodate our group. The Handmaid's Tale Synopsis (fro
+END:VEVENT
+END:VCALENDAR

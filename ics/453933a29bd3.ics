@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:453933a29bd3@bay-events
+DTSTAMP:20261127T221645Z
+DTSTART;TZID=America/Los_Angeles:20261220T183000
+DTEND;TZID=America/Los_Angeles:20261220T210000
+SUMMARY:The Dollmaker - An Immersive Musical (Extended Again!)
+LOCATION:The Oakland Grove\, The Oakland Grove\, 3630 Telegraph Ave\, Oakl
+ and\, CA 94609\, USA\, Oakland
+URL:https://luma.com/lfbc6igx
+DESCRIPTION:Musical theatre + Theatre · Oakland\nhttps://luma.com/lfbc6ig
+ x\n\nExtended by popular demand! An obsessive Dollmaker spills his glue\,
+  goes on a fume-induced trip\, and becomes one of his own pull-string dol
+ ls. He wanders a handmade world of dolls\, searching for a way back to th
+ e family he's left behind. Half shadow puppetry\, half interactive musica
+ l\; you'll join the chorus of dolls haunting this Dollmaker's fever dream
+ . ~30 min sitting/standing/moving/immersive s
+END:VEVENT
+END:VCALENDAR

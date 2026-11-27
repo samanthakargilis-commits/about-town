@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e1320786db91@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261127T000000
+DTEND;TZID=America/Los_Angeles:20261127T020000
+SUMMARY:Standup Comedy with Ki' Shae
+LOCATION:Danny Coyle’s\, 668 Haight St\, San Francisco
+URL:https://ma.to/event/standup-comedy-with-ki-shae-27-nov-2026
+DESCRIPTION:Comedy\nhttps://ma.to/event/standup-comedy-with-ki-shae-27-nov
+ -2026\n\nNov 27 · San Francisco. Ki' Shae hosts a standup comedy show at
+  Danny Coyle’s. When Friday\, 27 November Add to Calendar Add to Calend
+ ar About Ki' Shae hosts a standup comedy show at Danny Coyle’s. Organis
+ ed by San Francisco Trivia & Bingo Where Danny Coyle’s \, San Francisco
+  668 Haight St Open in Google Maps
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4e0952417540@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;TZID=America/Los_Angeles:20261206T140000
+DTEND;TZID=America/Los_Angeles:20261206T170000
+SUMMARY:Winter Market & Free Bike Workshop (South San Francisco)
+LOCATION:Six Cycles\, 636 El Camino Real\, Ste. E\, South San Francisco\, 
+ CA 94080\, South San Francisco
+URL:https://sf.funcheap.com/winter-market-free-bike-workshop-south-san-fra
+ ncisco/
+DESCRIPTION:Craft + Art · South San Francisco\nhttps://sf.funcheap.com/wi
+ nter-market-free-bike-workshop-south-san-francisco/\n\nGet a head start o
+ n holiday shopping at this cozy Winter Market at Six Cycles\, a brand new
+  independent bike shop in South San Francisco. Browse local makers offeri
+ ng jewelry\, art\, botanical skincare\, herbal tea\, matcha\, live plants
+  and more\, with gifts for loved ones ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1c16bd9cb9ca@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261128T000000
+DTEND;TZID=America/Los_Angeles:20261128T020000
+SUMMARY:Joy of the Town
+LOCATION:Oakland\, CA\, Oakland
+URL:https://ma.to/event/joy-of-the-town-28-nov-2026
+DESCRIPTION:Oakland\nhttps://ma.to/event/joy-of-the-town-28-nov-2026\n\nSa
+ n Francisco. Joy of the Town is an event in Oakland\, CA\, on November 28
+ . When Saturday\, 28 November Add to Calendar Add to Calendar About Joy o
+ f the Town is an event in Oakland\, CA\, on November 28. Organised by In 
+ The Black Where Oakland\, CA \, San Francisco Open in Google Maps
+END:VEVENT
+END:VCALENDAR

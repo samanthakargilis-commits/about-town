@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e484ca08f5b4@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261127T190000
+DTEND;TZID=America/Los_Angeles:20261127T210000
+SUMMARY:FRAXIOM with Can of Bliss
+LOCATION:Kilowatt\, 3160 16th St\, San Francisco\, CA\, San Francisco
+URL:https://ma.to/event/fraxiom-with-can-of-bliss-27-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/fraxiom-with-can-of-blis
+ s-27-nov-2026\n\nFRAXIOM headlines a three-act live electronic bill at Ki
+ lowatt\, joined by Can of Bliss and Lil Bebe Cyborg. The show is part of 
+ the USA Fall '26 tour\, billed on the poster as The Adventures of Jester 
+ Jackelope: The Adventures in Question. Doors open at 7pm\; the venue is 2
+ 1+. Tickets are available online or at the door. Kilowatt is at 3160 16th
+  St in San Francisco.
+END:VEVENT
+END:VCALENDAR

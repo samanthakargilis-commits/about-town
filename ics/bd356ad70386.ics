@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bd356ad70386@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;TZID=America/Los_Angeles:20261210T180000
+DTEND;TZID=America/Los_Angeles:20261210T200000
+SUMMARY:SERIES FINALE. My last Drink & Draw! 21+ In San Francisco come cel
+ ebrate
+LOCATION:540 club @ 540 Clement Street\, San Francisco\, 540 Clement Stree
+ t\, San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/meetup-group-glpdmivm/events/316257646/
+DESCRIPTION:Art + Concerts · Thursday evening\nhttps://www.meetup.com/mee
+ tup-group-glpdmivm/events/316257646/\n\nAfter 4 years of running this eve
+ nt every month\, the time has come to take a break. Join me in celebratin
+ g what we made together (and some holiday ornaments) for our final aka se
+ ries finale of Drink & Draw Grab your art supplies and come join us for a
+  community Drink & Draw at 540 Bar in San Francisco to join.21+ FREE TO J
+ OIN (but please 2 drink boozy/not min to support our local only small bus
+ ine
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d1c08ad7fac2@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261128T130000
+DTEND;TZID=America/Los_Angeles:20261128T150000
+SUMMARY:Cocktail Party at Chez Tomas
+LOCATION:946 Galvin Dr\, 946 Galvin Dr\, El Cerrito\, CA 94530\, USA\, El 
+ Cerrito\, CA El Cerrito\, El Cerrito
+URL:https://www.meetup.com/senior-singles-meet-and-greet-events/events/317
+ 552050/
+DESCRIPTION:Craft · El Cerrito\nhttps://www.meetup.com/senior-singles-mee
+ t-and-greet-events/events/317552050/\n\n**Since the weather no longer per
+ mits me to host outdoor parties in my gardens\, the next event at Chez To
+ mas will be a Cocktail party in my house next Saturday from 1:00 to 4:00p
+ .m. Unlike my garden parties there will be no potluck dinner dishes on th
+ e menu. Instead I'll be asking guests to bring wine\, craft beer\, champa
+ gne or other beverage. If they wish\, guests can also bring finger food t
+ hat wo
+END:VEVENT
+END:VCALENDAR

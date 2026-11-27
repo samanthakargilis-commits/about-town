@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:58341e7f2634@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261129T110000
+DTEND;TZID=America/Los_Angeles:20261129T150000
+SUMMARY:SADE & Champagne Brunch
+LOCATION:Victory Hall\, 330 Ritch\, San Francisco\, San Francisco
+URL:https://ma.to/event/sade-champagne-brunch-29-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/sade-champagne-brunch-29
+ -nov-2026\n\nSADE & Champagne Brunch is a daytime Victory Hall event with
+  DJ MR.E playing SADE originals drawn from all her albums\, plus remixes 
+ and covers\, for four hours of strictly SADE. FRAN BOOGIE hosts. Brunch s
+ pecials are by Little Skillet × Al Pastor Papi\, with cocktails by Victo
+ ry Hall and bottomless mimosas available. Dining tables are reserved for 
+ 90 minutes from seating\, and guests can continue at 
+END:VEVENT
+END:VCALENDAR

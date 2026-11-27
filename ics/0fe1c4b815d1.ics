@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0fe1c4b815d1@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261223T164500
+DTEND;TZID=America/Los_Angeles:20261223T235900
+SUMMARY:Last “Supermoon”of 2026 Over San Francisco
+LOCATION:San Francisco Bay Area
+URL:https://sf.funcheap.com/last-supermoonof-2026-over-san-francisco/
+DESCRIPTION:Spirituality · A yearly tradition\nhttps://sf.funcheap.com/la
+ st-supermoonof-2026-over-san-francisco/\n\n“Supermoon” Night Over San
+  Francisco 2026 David Yu via Flickr Thanks to an optical illusion in the 
+ sky\, the moon will appear bigger and brighter than normal in the San Fra
+ ncisco Bay Area in the night\, during what astronomers call a “supermoo
+ n.” Because the sun is about 50\,000 miles closer to the earth than at 
+ its furthest point – and it’s a full or new moon – the moon will ap
+ pear larger and bright
+END:VEVENT
+END:VCALENDAR

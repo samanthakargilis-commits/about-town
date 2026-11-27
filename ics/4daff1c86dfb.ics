@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4daff1c86dfb@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;TZID=America/Los_Angeles:20261203T160000
+DTEND;TZID=America/Los_Angeles:20261203T190000
+SUMMARY:Presentation: Latinx History Night
+LOCATION:Latino/Hispanic Community Room - Main Library\, 100 Larkin Street
+  San Francisco\, CA 94102
+URL:https://sf.funcheap.com/presentation-latinx-history-night/
+DESCRIPTION:Reading + Art\nhttps://sf.funcheap.com/presentation-latinx-his
+ tory-night/\n\nExplore the contributions of the Latinx community to San F
+ rancisco’s political\, social and cultural life through a History Night
+  presentation by students from San Francisco State University’s Latina/
+ Latino Studies Department. Students share their work on the community’s
+  role in organizing\, politics\, culture and art. Refreshments ...
+END:VEVENT
+END:VCALENDAR

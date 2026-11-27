@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:20bc933dd6d8@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261205T100000
+DTEND;TZID=America/Los_Angeles:20261205T180000
+SUMMARY:Italian Christmas Market “Mercatino di Natale” at Fort Mason
+LOCATION:Museo Italo Americano\, Fort Mason Center\, Building C\, San Fran
+ cisco\, CA 94123\, San Francisco
+URL:https://sf.funcheap.com/italian-christmas-market-mercatino-di-natale-f
+ ort-mason-sf/
+DESCRIPTION:A yearly tradition\nhttps://sf.funcheap.com/italian-christmas-
+ market-mercatino-di-natale-fort-mason-sf/\n\nThe magic of the holidays is
+  coming back to the Museo with the Mercatino di Natale 2026 Get ready for
+  a weekend filled with Italian traditions\, unique gifts\, delicious trea
+ ts\, and plenty of holiday cheer. – Discover Italian and Italian Americ
+ an vendors – Shop handmade gifts and artisanal ...
+END:VEVENT
+END:VCALENDAR

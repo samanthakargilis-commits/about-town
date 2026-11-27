@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:41887de97b19@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261209T180000
+DTEND;TZID=America/Los_Angeles:20261209T210000
+SUMMARY:Ethics after AGI: A Conversation with Peter Singer and Rob Reich
+LOCATION:Gray Area / Grand Theater\, Gray Area / Grand Theater\, 2665 Miss
+ ion St\, San Francisco\, CA 94110\, USA\, San Francisco
+URL:https://luma.com/6nugn61r
+DESCRIPTION:Discourse + Animals\nhttps://luma.com/6nugn61r\n\nEthics after
+  AGI A conversation with Peter Singer and Rob Reich Presented by The Phil
+ osophy & Society Initiative at the Aspen Institute and Persona AGI promis
+ es major changes to our politics\, economy\, and most intimate decision m
+ aking. On December 9\, two of our finest ethical thinkers\, Peter Singer 
+ (Princeton) and Rob Reich (Stanford)\, will argue about the principles ne
+ eded to guide us through the
+END:VEVENT
+END:VCALENDAR

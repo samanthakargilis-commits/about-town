@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:73db347f1c0d@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Afterthanks ’26
+LOCATION:The Bistro – Hayward\, 1001 B Street • Hayward\, CA 94541
+URL:https://sf.funcheap.com/afterthanks-26/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/afterthanks-26/\n\nH
+ i Friends! Avoid the crowds\, avoid the stores and feast your eyes and ea
+ rs on some amazing local talent. We’re doing a Friendsgiving at The Bis
+ tro in Downtown Hayward Fri 11/27. From 2 – 6. You can enjoy sets from 
+ Katherine Park\, Frances Ancheta\, Ants Fujinaga\, ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6530b7b8f0c4@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261213T110000
+DTEND;TZID=America/Los_Angeles:20261213T160000
+SUMMARY:HOLY MOLY! Winter Market at the real Princess Diaries House
+LOCATION:724 Brazil Ave\, 724 Brazil Ave San Francisco\, San Francisco
+URL:https://partiful.com/e/0vfKni2xUyBThQFRrvJD
+DESCRIPTION:Concerts + Art\nhttps://partiful.com/e/0vfKni2xUyBThQFRrvJD\n\
+ nJoin us for the annual Holy Moly winter market and the 25th anniversary 
+ of The Princess Diaries at the real Firehouse featured in the movie! Pre-
+ order limited edition merch here! https://lalele.co/collections/holy-moly
+ -limited-edition-merch 🎨30 Art and food vendors\, a screen printing st
+ ation where you can bring your own item or purchase apparel for a screen 
+ printed souvenir\, live music and the per
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dce8030b38b2@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261129T000000
+DTEND;TZID=America/Los_Angeles:20261129T020000
+SUMMARY:Movember at Livermore Barber Shop
+LOCATION:Livermore Barber Shop\, Livermore
+URL:https://ma.to/event/movember-at-livermore-barber-shop-29-nov-2026
+DESCRIPTION:Livermore\nhttps://ma.to/event/movember-at-livermore-barber-sh
+ op-29-nov-2026\n\nA Movember fundraiser hosted by Alameda County Firefigh
+ ters and Local 55 at Livermore Barber Shop. The event centers on growing 
+ a moustache and raising money\, with all proceeds going to the Local 55 C
+ harity Fund.
+END:VEVENT
+END:VCALENDAR

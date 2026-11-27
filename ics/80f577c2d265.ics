@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:80f577c2d265@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261127T235900
+DTEND;TZID=America/Los_Angeles:20261128T015900
+SUMMARY:San Francisco Symphony’s “Black Friday Sale” Up to 50% Off
+LOCATION:Davies Symphony Hall\, 201 Van Ness Ave\, San Francisco\, CA 9410
+ 2\, San Francisco
+URL:https://sf.funcheap.com/san-francisco-symphonys-black-friday-sale-up-t
+ o-50-off-nov-23-30-5/
+DESCRIPTION:Concerts\nhttps://sf.funcheap.com/san-francisco-symphonys-blac
+ k-friday-sale-up-to-50-off-nov-23-30-5/\n\nBLACK FRIDAY SALE! Make your s
+ eason merrier with music: Our Black Friday Sale is here! Get 50% Off Tick
+ ets to Select Concerts Tickets start at just $14.50 (pending availability
+ ) Act now—sale ends Monday\, November 30\, at 11:59pm Black Friday Sale
+  Up to 50% off November 23-30\, 2026 – ...
+END:VEVENT
+END:VCALENDAR

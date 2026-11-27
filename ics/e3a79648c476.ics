@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e3a79648c476@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;VALUE=DATE:20261128
+DTEND;VALUE=DATE:20261129
+SUMMARY:Laugh Track City: Live Improv Comedy in Fremont
+LOCATION:Made Up Theatre\, 3392 Seldon Court\, Fremont\, CA\, 94539\, Frem
+ ont
+URL:https://sf.funcheap.com/laugh-track-city-live-improv-comedy-fremont-3/
+DESCRIPTION:Comedy + Theatre · Fremont\nhttps://sf.funcheap.com/laugh-tra
+ ck-city-live-improv-comedy-fremont-3/\n\nLaugh Track City turns audience 
+ suggestions into fast-paced improv games and scenes. Every show is differ
+ ent\, and participation is optional. Saturdays November 28 and December 5
+ \, 12\, and 19. Doors 6:45 PM\, show 7–8:15 PM. $17.50 including fees. 
+ Recommended for ages 16+. Second floor\, stairs ...
+END:VEVENT
+END:VCALENDAR

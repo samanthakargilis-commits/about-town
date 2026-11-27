@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:46a3c5d17cce@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261128T194500
+DTEND;TZID=America/Los_Angeles:20261128T213000
+SUMMARY:Stand-Up Comedy at Mr. Bing's in Downtown San Francisco
+LOCATION:Mr. Bing's\, 201 Columbus ave\, San Francisco\, CA 94133 San Fran
+ cisco\, San Francisco
+URL:https://www.eventbrite.com/e/stand-up-comedy-at-mr-bings-in-downtown-s
+ an-francisco-tickets-1980338621125
+DESCRIPTION:Comedy + Weird & unusual\nhttps://www.eventbrite.com/e/stand-u
+ p-comedy-at-mr-bings-in-downtown-san-francisco-tickets-1980338621125\n\nS
+ F's best underground stand-up comedy show is back! Come to Mr. Bing in No
+ rth Beach for the best comedians from the Bay\, LA and more!
+END:VEVENT
+END:VCALENDAR

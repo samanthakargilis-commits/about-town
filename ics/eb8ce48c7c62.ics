@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:eb8ce48c7c62@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261205T220000
+DTEND;TZID=America/Los_Angeles:20261206T000000
+SUMMARY:FRYTM Presents: SAGMO
+LOCATION:Monarch\, 101 6th St San Francisco\, San Francisco
+URL:https://partiful.com/e/v6uFODLYWphO8bpYaVXF
+DESCRIPTION:Art + Dance nights\nhttps://partiful.com/e/v6uFODLYWphO8bpYaVX
+ F\n\nFRYTM Presents: SAGMO Saturday December 5\, 2026 | Monarch SAGMO is 
+ one of the most exciting new artists on Maccabi House. A DJ and producer 
+ who pushes boundaries\, moving between genres with the dancefloor always 
+ at the center. His sound is rooted in house\, with the euphoria of disco\
+ , psychedelic textures and the attitude of punk rock. His productions hav
+ e earned support from heavyweights including
+END:VEVENT
+END:VCALENDAR

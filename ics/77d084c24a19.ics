@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:77d084c24a19@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
+SUMMARY:Manarchy: The Last Lapdance at Oasis
+LOCATION:Oasis\, 298 11th St\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/manarchy-lapdance-oasis/
+DESCRIPTION:Theatre\nhttps://sf.funcheap.com/manarchy-lapdance-oasis/\n\nM
+ anarchy\, the Bay’s wild “Male” Revue turns 10 and embraces the end
+ ! Come see us work the pole\, the stage\, & work you up one last time! It
+ ’s been a Decade of Debauchery in the Bay for your friendly neighborhoo
+ d Manarchists\, but now it’s time to ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d852cabf9c26@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261127T220000
+DTEND;TZID=America/Los_Angeles:20261128T020000
+SUMMARY:Yalla Habibi SJ: ARABIC THANKSGIVING @PURE NIGHTCLUB | NOV 27
+LOCATION:Pure Nightclub\, 146 South Murphy Avenue\, Sunnyvale\, CA 94086 S
+ unnyvale\, Sunnyvale
+URL:https://www.eventbrite.com/e/yalla-habibi-sj-arabic-thanksgiving-pure-
+ nightclub-nov-27-tickets-2004688130162
+DESCRIPTION:Sunnyvale\nhttps://www.eventbrite.com/e/yalla-habibi-sj-arabic
+ -thanksgiving-pure-nightclub-nov-27-tickets-2004688130162\n\nSAN JOSE\, T
+ hanksgiving weekend is going WILD! Arabic anthems\, insane energy & nonst
+ op dancing at PURE Nightclub!
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b6b5fc1ff8f9@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261205T090000
+DTEND;TZID=America/Los_Angeles:20261205T160000
+SUMMARY:Zip x SŌHN | Fuel your flow pop-up
+LOCATION:Sohn\, 2535 3rd St San Francisco\, San Francisco
+URL:https://partiful.com/e/Q3tLOAi2LjQmu0HRfFmI
+DESCRIPTION:Dance nights\nhttps://partiful.com/e/Q3tLOAi2LjQmu0HRfFmI\n\nW
+ e’re picking up the tab at SŌHN for the day! Join us Saturday\, Decemb
+ er 5\, from 9 AM–4 PM for free cream-top matchas\, kimchi fried rice\, 
+ custom drinks\, Sip n’ Zip merch\, a live DJ set\, and a chance to conn
+ ect with the local community. A little something from Zip\, the platform 
+ helping businesses spend smarter. First come\, first served. RSVPs do not
+  guarantee entry. Access is subject to venue capac
+END:VEVENT
+END:VCALENDAR

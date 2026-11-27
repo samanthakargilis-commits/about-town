@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6c5d1214ad58@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261129T180000
+DTEND;TZID=America/Los_Angeles:20261129T200000
+SUMMARY:In the Mood for Love Screening
+LOCATION:New People Cinema\, San Francisco
+URL:https://ma.to/event/in-the-mood-for-love-29-nov-2026
+DESCRIPTION:Theatre\nhttps://ma.to/event/in-the-mood-for-love-29-nov-2026\
+ n\nWong Kar-wai’s 2000 film In the Mood for Love screens at New People 
+ Cinema in San Francisco’s Japantown. Set in early-’60s Hong Kong\, it
+  stars Maggie Cheung and Tony Leung as neighbors brought together by the 
+ suspicion that their spouses are having an affair. Part of the Thanksgivi
+ ng weekend programme. Tickets are available through the Roxie Theater.
+END:VEVENT
+END:VCALENDAR

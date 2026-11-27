@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1d4f4e7d0433@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Stand-Up Comedy Show: Laughs at Lariat
+LOCATION:The Lariat Tavern\, 1428 El Camino Real\, Belmont\, Belmont
+URL:https://sf.funcheap.com/standup-comedy-show-laughs-lariat/
+DESCRIPTION:Comedy · Belmont\nhttps://sf.funcheap.com/standup-comedy-show
+ -laughs-lariat/\n\nStand-Up Comedy Returns to The Lariat Tavern\, Friday\
+ , November 27th for this SPECIAL EVENT! After a long day of eating Turkey
+  it’s time to be entertained by the best Stand-Up Comedians in the Bay 
+ Area. Welcome to one of the best Stand-Up Comedy Shows in the ...
+END:VEVENT
+END:VCALENDAR

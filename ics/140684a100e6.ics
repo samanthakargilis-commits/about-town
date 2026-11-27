@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:140684a100e6@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261205T110000
+DTEND;TZID=America/Los_Angeles:20261205T170000
+SUMMARY:Laurel Burch Studios Holiday Sale in Oakland
+LOCATION:Laurel Burch Studios (Oakland)\, 6050 Lowell St.\, STE #118\, Oak
+ land\, CA 94608\, Oakland
+URL:https://sf.funcheap.com/laurel-burch-studios-holiday-sale-oakland-dec-
+ 56-dec-1213/
+DESCRIPTION:A yearly tradition · Oakland\nhttps://sf.funcheap.com/laurel-
+ burch-studios-holiday-sale-oakland-dec-56-dec-1213/\n\nYou’re Invited t
+ o Laurel Burch Studios Holiday Sale! Join us for two festive weekends of 
+ holiday savings at Laurel Burch Studios on December 5–6 & 12–13 from 
+ 11am-5pm in our beautiful New Suite #106\, 6050 Lowell St.\, Oakland. Sto
+ p by for a splash of color and a ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1aa7f9fff9df@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:Sleigh The Day: Free Holiday Market + Sled Photo Booth (Newark)
+LOCATION:Ohlone College Newark Center\, 39399 Cherry Street\, Newark\, CA 
+ 94560\, Newark
+URL:https://sf.funcheap.com/sleigh-day-free-holiday-market-sled-photo-boot
+ h-newark/
+DESCRIPTION:Fairs & festivals · A yearly tradition · Newark\nhttps://sf.
+ funcheap.com/sleigh-day-free-holiday-market-sled-photo-booth-newark/\n\nL
+ et’s get fancy and festive! Come dressed in your own traditional holida
+ y attire\, silly winter socks\, an “ugly sweater”\, matching plaid pj
+ ’s with friends\, or cozy and layered up. Celebrate the season at our b
+ rand-new holiday market! SLEIGH THE DAY with us\, Sat Dec 12 from ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:36eb4f6f36f4@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261130T120000
+DTEND;TZID=America/Los_Angeles:20261130T123000
+SUMMARY:30 Minute Lunchtime Guided Meditation
+LOCATION:Kadampa Meditation Center SF\, 3324 17th Street\, San Francisco\,
+  CA 94110 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/30-minute-lunchtime-guided-meditation-tic
+ kets-1978844467070
+DESCRIPTION:Meditation + Spirituality\nhttps://www.eventbrite.com/e/30-min
+ ute-lunchtime-guided-meditation-tickets-1978844467070\n\nTake a quick bre
+ ak midday and de-stress with simple\, guided meditations anyone can enjoy
+ . Two free passes for future classes.
+END:VEVENT
+END:VCALENDAR

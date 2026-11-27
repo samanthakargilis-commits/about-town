@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7ed270db5181@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261127T193000
+DTEND;TZID=America/Los_Angeles:20261127T213000
+SUMMARY:Lavay Smith at Rancho Nicasio
+LOCATION:Rancho Nicasio\, San Francisco
+URL:https://ma.to/event/lavay-smith-rancho-nicasio-2026-11-27
+DESCRIPTION:New in your area\nhttps://ma.to/event/lavay-smith-rancho-nicas
+ io-2026-11-27\n\nLavay Smith & Her Red Hot Skillet Lickers perform live a
+ t Rancho Nicasio. Red Hot Skillet Lickers join the singer for a live show
+  as part of their fall dates.
+END:VEVENT
+END:VCALENDAR

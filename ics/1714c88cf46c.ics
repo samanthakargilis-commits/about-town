@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1714c88cf46c@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;TZID=America/Los_Angeles:20261205T110000
+DTEND;TZID=America/Los_Angeles:20261205T150000
+SUMMARY:Pottery Sale
+LOCATION:2946 Turk Blvd\, 2946 Turk Blvd San Francisco\, San Francisco
+URL:https://partiful.com/e/De4QhSpwxfn7LP6fyGK3
+DESCRIPTION:Craft + Art\nhttps://partiful.com/e/De4QhSpwxfn7LP6fyGK3\n\nNe
+ ed gifts for the holidays? Need art to decorate your house? Buy handmade 
+ & local! I’ve got a ton of pottery filling up my house. Please help giv
+ e all these pieces new homes! There will be a variety of prices\, and som
+ ething for everyone. Check out my instagram for a preview of my work @cla
+ ybyclaire_sf The sale will be garage sale style\, open to the public\, so
+  come by early to get first pick!
+END:VEVENT
+END:VCALENDAR

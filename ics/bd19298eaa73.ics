@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bd19298eaa73@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261205T070000
+DTEND;TZID=America/Los_Angeles:20261205T090000
+SUMMARY:The count of monte cristo one sitting book reading challenge
+LOCATION:Golden Gate Park\, 501 Stanyan St San Francisco\, San Francisco
+URL:https://partiful.com/e/RPTTNAtrvqZ1dfVhE1Vp
+DESCRIPTION:Reading\nhttps://partiful.com/e/RPTTNAtrvqZ1dfVhE1Vp\n\nCome b
+ ring the count of monte cristo and try and finish it in one sitting with 
+ me. Bring snacks and coffee it’s going to be a long day Location could 
+ change if it rains Byob (bring your own book)
+END:VEVENT
+END:VCALENDAR

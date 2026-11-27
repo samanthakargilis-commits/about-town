@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3a45724b80da@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261201T180000
+DTEND;TZID=America/Los_Angeles:20261201T200000
+SUMMARY:French Artists in Early California
+LOCATION:Francophone Museum\, 1345 Bush Street\, San Francisco
+URL:https://ma.to/event/gold-rush-talk-french-argonauts-01-dec-2026
+DESCRIPTION:Art + Museum exhibits\nhttps://ma.to/event/gold-rush-talk-fren
+ ch-argonauts-01-dec-2026\n\nHistorian and author Dr. Claudine Chalmers dr
+ aws on decades of research in French and American archives to present the
+  stories\, writings and illustrations of French explorers\, artists and c
+ hroniclers in early California. Part of the lecture tour 'The French heri
+ tage of the Gold Rush in California'\, this conference talk (delivered in
+  French) draws on letters\, travel accounts and sketches by French 
+END:VEVENT
+END:VCALENDAR

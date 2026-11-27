@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bfe6cc6fbb06@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261206T113000
+DTEND;TZID=America/Los_Angeles:20261206T133000
+SUMMARY:$10 “Grinch” Movie Party: Free Dolls & No Previews (Cinemark 1
+ 6 San Leandro)
+LOCATION:Cinemark Century 16\, 15555 E 14th St\, Ste 600\, San Leandro\, C
+ A 94578\, San Leandro
+URL:https://sf.funcheap.com/10-grinch-movie-party-free-dolls-previews-cine
+ mark-16-san-leandro/
+DESCRIPTION:Your kind of movie · San Leandro\nhttps://sf.funcheap.com/10-
+ grinch-movie-party-free-dolls-previews-cinemark-16-san-leandro/\n\nHey Ea
+ st Bay families! The holidays are here\, and we’re bringing a cozy\, jo
+ yful movie party your kids will be talking about all season. Join us on S
+ unday\, December 6th for a private screening of The Grinch (2018)\, narra
+ ted by Pharrell Williams\, at Cinemark Bay Fair ...
+END:VEVENT
+END:VCALENDAR

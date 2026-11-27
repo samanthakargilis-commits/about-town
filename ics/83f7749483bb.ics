@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:83f7749483bb@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;TZID=America/Los_Angeles:20261206T140000
+DTEND;TZID=America/Los_Angeles:20261206T170000
+SUMMARY:Camp Scrap @ Rodeo Makers Meet Up
+LOCATION:Lefty Gomez Recreation Center & Ball Field\, 470 Parker Ave Rodeo
+ \, Rodeo
+URL:https://partiful.com/e/CRYnzqECAgla8mKvrjlz
+DESCRIPTION:Craft · Rodeo\nhttps://partiful.com/e/CRYnzqECAgla8mKvrjlz\n\
+ nRodeo Makers Meet Up & (totally casual) Holiday Potluck Our first meet u
+ p was so much fun\, and we hope you’ll join us for our December gatheri
+ ng! You can choose to design and write letters\, craft with recycled mate
+ rials\, or work on a creative project of your own. Saturday\, December 6 
+ 2 pm to 5 pm Lefty Gomez Recreation Center Snail Mail Design and Writing*
+  Margaret of Honeycutt & Co. will lead us 
+END:VEVENT
+END:VCALENDAR

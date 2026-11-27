@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:834a4bb9892f@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261231T210000
+DTEND;TZID=America/Los_Angeles:20270101T040000
+SUMMARY:NYE HouseParty: Decentered x Palette x Gather
+LOCATION:Decentered Studio\, 1175 Folsom St San Francisco\, San Francisco
+URL:https://partiful.com/e/wIH0Tu1V9JFbeqUCVzzk
+DESCRIPTION:Musical theatre + Art · Thursday evening\nhttps://partiful.co
+ m/e/wIH0Tu1V9JFbeqUCVzzk\n\nJoin Decentered Arts\, Palette\, Gather SF an
+ d friends for a dreamy house party this NYE. Bring in 2027 with friends\,
+  community\, tea\, dancing\, and incredible music all night long!🎶 We 
+ expect this event to sell out\, so don't snooze on grabbing your ticket 
+ 💃 Early Bird ends Dec 5th\, GA ends Dec 25th or until we hit our cap\,
+  Late Bird available until we sell out! What to expect: 2 floors\, 3 diff
+ erent s
+END:VEVENT
+END:VCALENDAR

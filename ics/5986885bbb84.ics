@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5986885bbb84@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261205T100000
+DTEND;TZID=America/Los_Angeles:20261205T120000
+SUMMARY:Walk a mile in someone’s shoes
+LOCATION:Flywheel Coffee Roasters\, 672 Stanyan St San Francisco\, San Fra
+ ncisco
+URL:https://partiful.com/e/bug84ceyBIazCQujZW5i
+DESCRIPTION:New in your area\nhttps://partiful.com/e/bug84ceyBIazCQujZW5i\
+ n\nThey say you don’t know someone until you walk a mile in their shoes
+ ! Come meetup and swap shoes with someone and walk a mile with them. We w
+ ill be walking in GGP for a mile in swapped shoes and then head to Flywhe
+ el for coffee! Some ground rules: 1. Please wear shoes you would feel com
+ fortable having someone walk a mile in (aka no holes) 2. Sneakers only. N
+ o high heels\, flip flops\, or other shoes
+END:VEVENT
+END:VCALENDAR

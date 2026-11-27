@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:13f7e6c4555d@bay-events
+DTSTAMP:20261127T221645Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:SF’s 14th Annual “Winter Wonderland” Festival 2026
+LOCATION:Bayview\, San Francisco
+URL:https://www.eventbrite.com/e/14th-annual-winter-wonderland-2026-ticket
+ s-2004133760026
+DESCRIPTION:Fairs & festivals + Concerts · Featured on Funcheap\nhttps://
+ www.eventbrite.com/e/14th-annual-winter-wonderland-2026-tickets-200413376
+ 0026\n\nDecember 12\, 2026 – SF (Bayview) – FREE – Celebrate the ho
+ lidays at Bayview Opera House’s Winter Wonderland\, featuring a holiday
+  marketplace with local vendors\, hands-on arts and crafts\, live music\,
+  family games\, free family portraits \, seasonal treats and a special vi
+ sit from Black Santa . Bayview Opera House
+END:VEVENT
+END:VCALENDAR

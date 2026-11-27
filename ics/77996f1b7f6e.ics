@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:77996f1b7f6e@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261127T194500
+DTEND;TZID=America/Los_Angeles:20261128T013000
+SUMMARY:Salsa and Bachata Dancing\, Dance Fridays Dance Lessons\, Bar & Ni
+ ghtclub
+LOCATION:Dance Salsa and Bachata Fridays - Space 550\, 550 Barneveld Avenu
+ e\, San Francisco\, CA 94124 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/salsa-and-bachata-dancing-dance-fridays-d
+ ance-lessons-bar-nightclub-tickets-1979106046461
+DESCRIPTION:New in your area\nhttps://www.eventbrite.com/e/salsa-and-bacha
+ ta-dancing-dance-fridays-dance-lessons-bar-nightclub-tickets-197910604646
+ 1\n\nGet ready to move and groove at Dance Fridays - an electrifying nigh
+ t of salsa and bachata dancing\, epic dance lessons\, Full Bar & Patio 21
+ +
+END:VEVENT
+END:VCALENDAR

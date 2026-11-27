@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3a5dd72d81fd@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261205T140000
+DTEND;TZID=America/Los_Angeles:20261205T170000
+SUMMARY:Free Rockridge Holiday Stroll: Shops Jazz + Seasonal Sips (Oakland
+ )
+LOCATION:Rockridge District\, 5655 College Ave\, Oakland\, CA 94618\, Oakl
+ and
+URL:https://sf.funcheap.com/free-rockridge-holiday-stroll-shops-jazz-seaso
+ nal-sips-oakland/
+DESCRIPTION:A yearly tradition · Oakland\nhttps://sf.funcheap.com/free-ro
+ ckridge-holiday-stroll-shops-jazz-seasonal-sips-oakland/\n\nSip\, sample\
+ , and shop your way through a joyous evening in Oakland’s Rockridge dis
+ trict! Celebrate the season at Rockridge Holidaze\, a festive afternoon o
+ f holiday shopping\, delicious treats\, sparkling sips and community chee
+ r! Stroll a full mile of College Avenue while discovering unique gifts\, 
+ special promotions ...
+END:VEVENT
+END:VCALENDAR

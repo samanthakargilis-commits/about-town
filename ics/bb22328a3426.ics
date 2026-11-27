@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bb22328a3426@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261210T183000
+DTEND;TZID=America/Los_Angeles:20261210T213000
+SUMMARY:140th SF Hardware Meetup | Holiday Party @ Studio 45
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/tggaz0h9
+DESCRIPTION:Singing + Discourse · Thursday evening\nhttps://luma.com/tgga
+ z0h9\n\nJoin us for our 140th SF Hardware Meetup Holiday Party! 🤖 Brin
+ g physical demos for open mic! It can be products\, prototypes\, componen
+ ts\, or anything physical. Agenda 6:30 -7:00p - Arrival\, mingle\, grab r
+ efreshments 7:00 -7:05p - Welcome and introduction 7:05 - 8:00p - Guest T
+ alks 8:00 - 8:30p - Community open mic Anyone will have the chance for a 
+ 2min pitch to demo a prototype or talk about what t
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:153c1ff2684f@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;TZID=America/Los_Angeles:20261213T130000
+DTEND;TZID=America/Los_Angeles:20261213T180000
+SUMMARY:Sin Miedo Gallery's Record Fair
+LOCATION:Sin Miedo Gallery\, 2831 Mission St San Francisco\, San Francisco
+URL:https://partiful.com/e/AKB5wBeiB3dyah4F2XMl
+DESCRIPTION:Fairs & festivals + Art\nhttps://partiful.com/e/AKB5wBeiB3dyah
+ 4F2XMl\n\n✴ Sin Miedo Gallery & @etalgallerys & @mholtmusic Present: Re
+ cord Fair! Held at both our gallery and @etalgallerysf ✴ Join us on Dec
+ ember 13th and shop directly from local Pinchadiscos y Tocadores in the B
+ ay Area. We'll be taking over BOTH galleries. Come ready to dig and fall 
+ in love with analog music. 🎨 Art by @dyegress \; inspired by Shagg Art
+ .
+END:VEVENT
+END:VCALENDAR

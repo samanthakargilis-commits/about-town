@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6ecb2f9225e1@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261206T130000
+DTEND;TZID=America/Los_Angeles:20261206T160000
+SUMMARY:Sunnyvale Coffee Club | Foodies + New Friends
+LOCATION:Cafe of the Month\, East Arques Avenue\, Sunnyvale\, CA 94085 Sun
+ nyvale\, Sunnyvale
+URL:https://www.eventbrite.com/e/sunnyvale-coffee-club-foodies-new-friends
+ -tickets-1992266886889
+DESCRIPTION:Sunnyvale\nhttps://www.eventbrite.com/e/sunnyvale-coffee-club-
+ foodies-new-friends-tickets-1992266886889\n\nIt starts with coffee or bru
+ nch\, then join other group outings! You sign up\, and we book the reserv
+ ation! Support local businesses.
+END:VEVENT
+END:VCALENDAR

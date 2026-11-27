@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9b0973f9820d@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261130T190000
+DTEND;TZID=America/Los_Angeles:20261130T210000
+SUMMARY:Monday Trivia at Barbary Coast
+LOCATION:Barbary Coast Dispensary\, 952 Mission Street\, San Francisco
+URL:https://ma.to/event/monday-trivia-at-barbary-coast-30-nov-2026-1
+DESCRIPTION:New in your area\nhttps://ma.to/event/monday-trivia-at-barbary
+ -coast-30-nov-2026-1\n\nWeekly trivia runs every Monday from 7 to 9 p.m. 
+ at Barbary Coast Dispensary\, 952 Mission Street (near 5th Street). Prize
+ s are awarded to the top teams and to the team with the best name.
+END:VEVENT
+END:VCALENDAR

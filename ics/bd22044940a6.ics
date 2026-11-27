@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bd22044940a6@bay-events
+DTSTAMP:20261127T221645Z
+DTSTART;VALUE=DATE:20261218
+DTEND;VALUE=DATE:20261219
+SUMMARY:Free Bookstore Comedy Night w/ Bay Area Comics (Adobe Books)
+LOCATION:Adobe Books\, 3130 24th St\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/free-bookstore-comedy-night-bay-area-comics-ad
+ obe-books/
+DESCRIPTION:Comedy + Reading\nhttps://sf.funcheap.com/free-bookstore-comed
+ y-night-bay-area-comics-adobe-books/\n\nThe only Comedy Show in a booksto
+ re! Join us for a night of laughs with some of the best comics in the Bay
+ . Hosted by the Amazing Adobe Books & Arts Cooperative\, this is a differ
+ ent more intimate show. No one is getting rosted! Join ...
+END:VEVENT
+END:VCALENDAR

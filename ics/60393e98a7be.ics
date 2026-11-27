@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:60393e98a7be@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261127T180000
+DTEND;TZID=America/Los_Angeles:20261127T200000
+SUMMARY:Textured Art Session
+LOCATION:Jiaren Cafe\, Santa Clara\, Santa Clara
+URL:https://ma.to/event/textured-art-session-27-nov-2026
+DESCRIPTION:Art · Santa Clara\nhttps://ma.to/event/textured-art-session-2
+ 7-nov-2026\n\nA textured art session at Jiaren Cafe in Santa Clara\, with
+  floral artwork as a theme. Participants use paint and texture to create 
+ their own pieces in a social\, creative setting. The session takes place 
+ every Friday.
+END:VEVENT
+END:VCALENDAR

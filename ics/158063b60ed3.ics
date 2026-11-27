@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:158063b60ed3@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261129T180000
+DTEND;TZID=America/Los_Angeles:20261129T200000
+SUMMARY:Sunday Trivia at Scopo Divino
+LOCATION:Scopo Divino\, 2800 California St #101\, San Francisco
+URL:https://ma.to/event/sunday-trivia-at-scopo-divino-29-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/sunday-trivia-at-scopo-d
+ ivino-29-nov-2026\n\nWeekly team trivia at Scopo Divino near Divisadero\,
+  held Sundays from 6 to 8 PM. Prizes go to the top teams and the best tea
+ m name. RSVP is available through the organiser's link.
+END:VEVENT
+END:VCALENDAR

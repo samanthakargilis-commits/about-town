@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:284bc0edbfb7@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:Watercolor & Letter-Writing Workshop at Hunt & Gather: Winter Wish
+ es
+LOCATION:Hunt & Gather\, 1355 Market St.\, Suite 100\, San Francisco\, CA 
+ 94103\, San Francisco
+URL:https://sf.funcheap.com/watercolor-letterwriting-workshop-hunt-gather-
+ winter-wishes/
+DESCRIPTION:Writing + Art\nhttps://sf.funcheap.com/watercolor-letterwritin
+ g-workshop-hunt-gather-winter-wishes/\n\nWinter Wishes: Watercolor Cards 
+ & Letter-Writing at Hunt & Gather\, Where: 1355 Market Street\, San Franc
+ isco (at 10th & Market St.) When: Tuesday\, December 1st\, 2026 from 4:30
+ pm-7:00pm Slow down\, pick up a brush\, and make something personal to se
+ nd. Join artists Joanna Blume and Beth Gregory at ...
+END:VEVENT
+END:VCALENDAR

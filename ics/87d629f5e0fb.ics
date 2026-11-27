@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:87d629f5e0fb@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261130T173000
+DTEND;TZID=America/Los_Angeles:20261130T193000
+SUMMARY:Holiday Lighting Celebration
+LOCATION:Huntington Park\, California St. & Taylor St.\, San Francisco
+URL:https://ma.to/event/holiday-lighting-celebration-30-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/holiday-lighting-celebra
+ tion-30-nov-2026\n\nThe Nob Hill Association and Nob Hill Foundation pres
+ ent the annual Holiday Lighting Celebration at Huntington Park. Join the 
+ neighborhood for an evening of holiday music\, festive treats\, warm beve
+ rages\, and family-friendly activities. The event features the official l
+ ighting of the holiday star above the fountain and recognizes the SFFD an
+ d SFPD Protectors of the Year. This community gathering is
+END:VEVENT
+END:VCALENDAR

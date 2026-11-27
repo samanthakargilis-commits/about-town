@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cd4e2e41a777@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261127T183000
+DTEND;TZID=America/Los_Angeles:20261127T203000
+SUMMARY:Beyond the Pill: SF Premiere & Q&A
+LOCATION:The Faight\, 475 Haight St\, San Francisco\, San Francisco
+URL:https://ma.to/event/beyond-the-pill-sf-premiere-qa-27-nov-2026
+DESCRIPTION:Discourse\nhttps://ma.to/event/beyond-the-pill-sf-premiere-qa-
+ 27-nov-2026\n\nThe San Francisco premiere of Jonathan Ramalho’s documen
+ tary Beyond the Pill takes place downstairs at The Faight. Doors open at 
+ 6pm\, followed by an introduction at 6:30pm and the film at 6:40pm. Jonat
+ han Ramalho joins Moonsun Kim for a Q&A after the screening\, and drinks 
+ follow. The film follows Ramalho’s recovery after five months in a Lond
+ on psychiatric ward and the conversations he had about w
+END:VEVENT
+END:VCALENDAR

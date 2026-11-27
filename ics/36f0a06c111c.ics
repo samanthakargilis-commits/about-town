@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:36f0a06c111c@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Miracle at P.C.H.
+LOCATION:
+URL:https://www.pacificcocktailsf.com/
+DESCRIPTION:Craft\nhttps://www.pacificcocktailsf.com/\n\nPhoto by @miracle
+ atpch on Instagram Pacific Cocktail Haven is a swanky cocktail bar just a
+  short walk from Union Square. Typically\, the upscale bar serves craft c
+ ocktails and routinely wins awards and tops lists. During the holiday sea
+ son\, the bar transforms into Miracle at PCH \, donning twinkling lights\
+ , walls covered in festive wrapping paper\, and numerous other decoration
+ s throughout the bar. T
+END:VEVENT
+END:VCALENDAR

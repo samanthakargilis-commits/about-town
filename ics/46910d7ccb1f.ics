@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:46910d7ccb1f@bay-events
+DTSTAMP:20261127T221645Z
+DTSTART;TZID=America/Los_Angeles:20261127T110000
+DTEND;TZID=America/Los_Angeles:20261127T180000
+SUMMARY:SJMADE Holiday Fair 2026
+LOCATION:Santa Clara Convention Center\, 5001 Great America Pkwy\, Santa C
+ lara\, CA\, Santa Clara
+URL:https://ma.to/event/sjmade-holiday-fair-2026-27-nov-2026
+DESCRIPTION:Fairs & festivals + Craft · Santa Clara\nhttps://ma.to/event/
+ sjmade-holiday-fair-2026-27-nov-2026\n\nThe SJMADE Holiday Fair 2026 is a
+ n indoor holiday craft fair at the Santa Clara Convention Center featurin
+ g over 350 makers\, artists\, designers\, illustrators\, artisans\, baker
+ s\, crafters and creative small businesses. Admission is free. Open 11 AM
+  to 6 PM each day on Nov 27 and Nov 28. The first 1\,000 attendees each d
+ ay receive an event-exclusive grocery bag giveaway featuring illustration
+ s by @bea
+END:VEVENT
+END:VCALENDAR

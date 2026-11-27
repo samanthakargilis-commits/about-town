@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:809cccf004b9@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261127T193000
+DTEND;TZID=America/Los_Angeles:20261127T213000
+SUMMARY:Jason Marsalis Quartet
+LOCATION:Miner Auditorium\, SFJAZZ Center\, San Francisco
+URL:https://ma.to/event/jason-marsalis-quartet-27-nov-2026
+DESCRIPTION:Concerts\nhttps://ma.to/event/jason-marsalis-quartet-27-nov-20
+ 26\n\nNEA Jazz Master Jason Marsalis\, a vibraphonist and drummer\, leads
+  his quartet at Miner Auditorium\, with vocalist and composer Vanisha Gou
+ ld joining the performance. The set begins at 7:30 PM on Friday\, Novembe
+ r 27\, 2026\, at the SFJAZZ Center.
+END:VEVENT
+END:VCALENDAR

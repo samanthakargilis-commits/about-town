@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b5c1171fd562@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261127T120000
+DTEND;TZID=America/Los_Angeles:20261127T140000
+SUMMARY:Black Friday Record Store Day
+LOCATION:Thrillhouse Records\, 3422 Mission Street\, San Francisco\, CA 94
+ 110\, San Francisco
+URL:https://ma.to/event/black-friday-record-store-day-2026-11-27
+DESCRIPTION:Fairs & festivals + Art\nhttps://ma.to/event/black-friday-reco
+ rd-store-day-2026-11-27\n\nUp The Creek Records marks Record Store Day Bl
+ ack Friday with an in-person drop of limited-edition and first-time-on-vi
+ nyl releases. The shop opens at 10:00 on Friday\, the day after Thanksgiv
+ ing. One copy of any item is allowed per customer. No special orders or h
+ olds are available for Record Store Day events\; holds can begin on Satur
+ day. Manny and Mary are buying Noah's gift cards for coffee for 
+END:VEVENT
+END:VCALENDAR

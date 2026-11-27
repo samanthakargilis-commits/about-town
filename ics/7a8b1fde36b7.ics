@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7a8b1fde36b7@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261128T173000
+DTEND;TZID=America/Los_Angeles:20261128T193000
+SUMMARY:Lightscape: One-Mile Light Trail
+LOCATION:San Francisco Botanical Garden\, San Francisco
+URL:https://ma.to/event/lightscape-one-mile-light-trail-28-nov-2026
+DESCRIPTION:Theatre + Weird & unusual\nhttps://ma.to/event/lightscape-one-
+ mile-light-trail-28-nov-2026\n\nLightscape is a one-mile illuminated trai
+ l through San Francisco Botanical Garden\, lined with a million lights an
+ d passing glowing poppies\, dancing fireflies and the Winter Cathedral. H
+ ot chocolate\, food and drinks are available\, along with photo opportuni
+ ties and immersive music and light displays. The route follows paved path
+ s and is stroller-friendly\, and the experience suits families\, couples 
+END:VEVENT
+END:VCALENDAR

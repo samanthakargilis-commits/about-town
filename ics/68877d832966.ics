@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:68877d832966@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261127T000000
+DTEND;TZID=America/Los_Angeles:20261127T020000
+SUMMARY:SAKE ONE DJ Night
+LOCATION:Still OG\, 66 S 1st St\, San Jose\, CA 95113\, San Jose
+URL:https://ma.to/event/sake-one-dj-night-27-nov-2026
+DESCRIPTION:San Jose\nhttps://ma.to/event/sake-one-dj-night-27-nov-2026\n\
+ nSAKE ONE is the listed DJ for Friday night during Still OG's five-night 
+ run of DJs\, drinks and late-night dancing. Guests are encouraged to brin
+ g friends and dancing shoes. Still OG is a HiFi vinyl bar in Downtown San
+  Jose.
+END:VEVENT
+END:VCALENDAR

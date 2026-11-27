@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a9f9c9d2ab6d@bay-events
+DTSTAMP:20261127T221645Z
+DTSTART;TZID=America/Los_Angeles:20261213T110000
+DTEND;TZID=America/Los_Angeles:20261213T160000
+SUMMARY:2026 Holiday Craft Fair: Handmade Gifts + Free Hot Cider
+LOCATION:Harvey Milk Center for the Arts\, 50 Scott St San Francisco\, San
+  Francisco
+URL:https://partiful.com/e/Ol8FKZvcCxFcBflJFI1b
+DESCRIPTION:Craft + Fairs & festivals\nhttps://partiful.com/e/Ol8FKZvcCxFc
+ BflJFI1b\n\nHarvey Milk Center for the Arts is proud to host its 9th annu
+ al Holiday Craft Fair on Sunday\, December 13th\, 2026. The event will in
+ clude numerous local artists offering their unique handmade holiday gifts
+  for sale to the public. Our destination art center will also host family
+  friendly craft activities for all ages and fun/free photo booth opportun
+ ities. Stop by Harvey Milk to find hand-crafted o
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:954be7b9db98@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261127T183000
+DTEND;TZID=America/Los_Angeles:20261127T203000
+SUMMARY:Holiday Soul with DJ Fuchsia
+LOCATION:Woodhams Lounge\, San Francisco
+URL:https://ma.to/event/holiday-soul-with-dj-fuchsia-27-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/holiday-soul-with-dj-fuc
+ hsia-27-nov-2026\n\nDJ Fuchsia\, co-founder of San Jose's Vinyl Council S
+ oul Club\, is on the decks for Holiday Soul with the Alameda Soul Club an
+ d Vinyl Council\, San Jose. The evening brings soul music\, dancing and g
+ ood company at Woodhams Lounge. Details should be confirmed directly with
+  the organiser.
+END:VEVENT
+END:VCALENDAR

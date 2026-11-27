@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:51214da7fbd9@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;TZID=America/Los_Angeles:20261127T170000
+DTEND;TZID=America/Los_Angeles:20261127T220000
+SUMMARY:Chinatown Night Market Sessions
+LOCATION:8th & Franklin\, Oakland Chinatown\, Oakland
+URL:https://ma.to/event/chinatown-night-market-sessions-27-nov-2026-1
+DESCRIPTION:Fairs & festivals + Art · Oakland\nhttps://ma.to/event/chinat
+ own-night-market-sessions-27-nov-2026-1\n\nChinatown Night Market “Sess
+ ions” brings an evening market to Oakland Chinatown on Black Friday\, N
+ ovember 27\, from 5 to 10pm. Presented by LOUÏE and Chinatown Oakland\, 
+ the event features DJ sets from Caldee\, Umami\, and Aux Cord & Friends\,
+  which will be filmed live for YouTube. The evening includes an art insta
+ llation\, vintage shopping\, and food\, plus a curated G-Wagon installati
+ on and DJ booth by 
+END:VEVENT
+END:VCALENDAR

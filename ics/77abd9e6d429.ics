@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:77abd9e6d429@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261206T120000
+DTEND;TZID=America/Los_Angeles:20261206T140000
+SUMMARY:Lattes & Lore #3 + A Few Club Updates 🌌✨📚
+LOCATION:Cafe Rumi\, 4799 Heyer Ave\, Castro Valley\, CA Castro Valley\, C
+ astro Valley
+URL:https://www.meetup.com/lattes-and-lore-a-romantasy-book-club/events/31
+ 7545424/
+DESCRIPTION:Reading + Theatre · Your reading tastes · Castro Valley\nhtt
+ ps://www.meetup.com/lattes-and-lore-a-romantasy-book-club/events/31754542
+ 4/\n\n**Woop woop\, our 3rd Lattes & Lore meetup is officially the one wh
+ ere we start discussing Dominion 😎 We agreed to aim for about halfway 
+ through\, so no pressure to speed-run the book lol** **I’m excited to f
+ inally get into everyone’s thoughts and theories\, and of course keep t
+ he cozy hangout energy going too. Can’t wait to see familiar faces agai
+ n and hopefully meet some new ones as well ❤️** **We 
+END:VEVENT
+END:VCALENDAR

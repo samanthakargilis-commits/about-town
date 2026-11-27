@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e97ad4993059@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;VALUE=DATE:20261201
+DTEND;VALUE=DATE:20261202
+SUMMARY:See A Live-Filmed 17th-Century Comedy
+LOCATION:The Lost Church\, 988 Columbus Ave\, SF\, CA\, SF
+URL:https://sf.funcheap.com/livefilmed-17thcentury-comedy-sf/
+DESCRIPTION:Comedy\nhttps://sf.funcheap.com/livefilmed-17thcentury-comedy-
+ sf/\n\n$25 General Admission Doors at 7:30pm. Show from 8:15-10:30pm with
+  one intermission ALL AGES Earlybirds! $3 off each ticket when you use th
+ e code earlybird1 at checkout. Offer ends November 29th. Promo Codes are 
+ not applicable at the door. Codes are not case sensitive\, but must be ty
+ ped as one word. What Ho! Tired of endless war? How about some hilarity? 
+ See ...
+END:VEVENT
+END:VCALENDAR

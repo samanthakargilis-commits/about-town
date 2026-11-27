@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d2e229a908d3@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261127T213000
+DTEND;TZID=America/Los_Angeles:20261127T233000
+SUMMARY:TOONIN DJ Night
+LOCATION:Five Points Cocktail Bar\, 169 W. Santa Clara St.\, Santa Clara
+URL:https://ma.to/event/toonin-dj-night-27-nov-2026
+DESCRIPTION:Santa Clara\nhttps://ma.to/event/toonin-dj-night-27-nov-2026\n
+ \nTOONIN DJs at Five Points Cocktail Bar from 9:30 PM until last call. Th
+ e night is part of the bar's DJ lineup for the week\, which also lists Ja
+ yare on 11.25\, Rekless on 11.28 and Glen Coco on 11.29\, each running fr
+ om 9:30 PM to last call.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b7eed65d7e35@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261127T140000
+DTEND;TZID=America/Los_Angeles:20261127T180000
+SUMMARY:AfterThanks '26 Songwriter Showcase
+LOCATION:The Bistro\, Hayward\, Hayward
+URL:https://ma.to/event/afterthanks-26-songwriter-showcase-27-nov-2026
+DESCRIPTION:Hayward\nhttps://ma.to/event/afterthanks-26-songwriter-showcas
+ e-27-nov-2026\n\nJohn Rybak's AfterThanks '26 is a Quaranpalooza songwrit
+ er showcase at The Bistro in Hayward\, held on the Friday after Thanksgiv
+ ing. The programme runs 2-6 PM with performances by Katherine Park\, Bard
+ power\, Sara Rodenburg\, Joyce Lee\, Frances Ancheta\, and John Rybak and
+  Friends.
+END:VEVENT
+END:VCALENDAR

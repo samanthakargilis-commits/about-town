@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:885f491fd915@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Mads Tolling & Edward Simon
+LOCATION:Piedmont Piano Company\, 1728 San Pablo Ave\, Oakland\, CA 94612\
+ , Oakland
+URL:https://sf.funcheap.com/mads-tolling-edward-simon/
+DESCRIPTION:Musical theatre · Oakland\nhttps://sf.funcheap.com/mads-tolli
+ ng-edward-simon/\n\nGrammy award-winning Danish violinist Mads Tolling an
+ d world-class Venezuelan jazz pianist Edward Simon embark on a musical od
+ yssey\, finding the connections between the rich tapestries of jazz and t
+ he folkloric melodies of Latin America and Scandinavia. They will share m
+ usic by Egberto Gismonti\, Astor Piazzolla\, ...
+END:VEVENT
+END:VCALENDAR

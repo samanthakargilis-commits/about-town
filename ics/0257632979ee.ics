@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0257632979ee@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261204T133000
+DTEND;TZID=America/Los_Angeles:20261204T153000
+SUMMARY:Living Better Book Club
+LOCATION:Espresso Roma\, 1549 Hopkins St\, Berkeley\, CA Berkeley\, Berkel
+ ey
+URL:https://www.meetup.com/meetup-group-sgxmfvvk/events/317278505/
+DESCRIPTION:Reading · Berkeley\nhttps://www.meetup.com/meetup-group-sgxmf
+ vvk/events/317278505/\n\nNEW Start Time: **1:30 pm**. Mark your calendar!
+  Usually about seven or eight people show up FYI—even if they don't all
+  sign up here. :) We will be reading and discussing **"Orbital"** by Sama
+ ntha Harvey. A slender novel of epic power and the winner of the Booker P
+ rize 2024\, Orbital deftly snapshots one day in the lives of six women an
+ d men traveling through space. Selected for one of the last spa
+END:VEVENT
+END:VCALENDAR

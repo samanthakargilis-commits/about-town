@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5a4994ba30bd@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;TZID=America/Los_Angeles:20261202T170000
+DTEND;TZID=America/Los_Angeles:20261202T190000
+SUMMARY:Objects: USA: JB Blunk Film & Talk
+LOCATION:The Museum of Craft and Design\, San Francisco
+URL:https://ma.to/event/objects-usa-jb-blunk-film-talk-02-dec-2026
+DESCRIPTION:Discourse + Craft\nhttps://ma.to/event/objects-usa-jb-blunk-fi
+ lm-talk-02-dec-2026\n\nThe Museum of Craft and Design hosts a special tal
+ k and 16mm film screening with San Francisco-based artist and filmmaker N
+ athan Zack\, presented within the OBJECTS: USA programme. The screening s
+ hows footage Zack filmed at JB Blunk’s handbuilt home in Inverness\, fo
+ llowed by a conversation about his process. Zack works with film\, embrac
+ ing the limitations and unpredictability of analog filmmaking\, 
+END:VEVENT
+END:VCALENDAR

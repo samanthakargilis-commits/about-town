@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a48b1bb9c7a8@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;VALUE=DATE:20261209
+DTEND;VALUE=DATE:20261210
+SUMMARY:Music: the Gathering
+LOCATION:Savoy Tivoli\, 1434 Grant Ave\, San Francisco\, CA\, San Francisc
+ o
+URL:https://sf.funcheap.com/music-gathering-3/
+DESCRIPTION:Craft + Theatre\nhttps://sf.funcheap.com/music-gathering-3/\n\
+ nMusic: the Gathering is back at Savoy Tivoli! Come play tunes with Jason
+ \, Clay\, and the House Band\, and hop on stage! All skill levels and ins
+ truments are welcome. In the second room\, we have Sealed and Commander g
+ ames of MTG\; brackets 2-3-4 are welcome\, ...
+END:VEVENT
+END:VCALENDAR

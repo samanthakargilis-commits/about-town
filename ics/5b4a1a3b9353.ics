@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5b4a1a3b9353@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;TZID=America/Los_Angeles:20261128T143000
+DTEND;TZID=America/Los_Angeles:20261128T170000
+SUMMARY:Silent Reading @ Sports Basement Bryant
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/ssportsbasement
+DESCRIPTION:Reading + Discourse\nhttps://luma.com/ssportsbasement\n\nSilen
+ t Reading at Sports Basement Bryant 📚 Bring whatever you’re currentl
+ y reading and spend an afternoon reading alongside other people. Read in 
+ the Park has been bringing readers together around the Bay Area since Apr
+ il 2026. There’s no assigned book\, no reading list\, and nothing you n
+ eed to prepare. We’ll start by getting settled and spending some quiet 
+ time reading together. After that\, we’ll 
+END:VEVENT
+END:VCALENDAR

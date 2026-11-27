@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7bed5ae32cc8@bay-events
+DTSTAMP:20261127T221651Z
+DTSTART;TZID=America/Los_Angeles:20261213T160000
+DTEND;TZID=America/Los_Angeles:20261213T180000
+SUMMARY:The Mini Bliss Experience
+LOCATION:Oakland\, null null Oakland\, Oakland
+URL:https://partiful.com/e/AZv1Fbk6g28rf4mj1yW4
+DESCRIPTION:Oakland\nhttps://partiful.com/e/AZv1Fbk6g28rf4mj1yW4\n\nMINI B
+ LISS PRESENTS THE MINI BLISS EXPERIENCE An Exclusive Afro-Fusion Culinary
+  Affair A Taste of Elegance. A Celebration of Flavor. Join us for an unfo
+ rgettable culinary experience featuring elevated Afro-fusion canapés\, s
+ ignature mocktails\, exquisite multi-course dining\, and beautifully cura
+ ted moments. YOUR EXPERIENCE INCLUDES 🥂 An Elegant Cocktail Hour Indul
+ ge in beautifully crafted Afro-fusio
+END:VEVENT
+END:VCALENDAR

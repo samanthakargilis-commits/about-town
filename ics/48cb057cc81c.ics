@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:48cb057cc81c@bay-events
+DTSTAMP:20261127T221645Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261213
+SUMMARY:24th Annual “Unsilent Night” Boombox Parade in The Mission
+LOCATION:Bay Area
+URL:https://sf.funcheap.com/city-guide/december-street-fairs-festivals/
+DESCRIPTION:Fairs & festivals + Weird & unusual · Featured on Funcheap ·
+  Bay Area\nhttps://sf.funcheap.com/city-guide/december-street-fairs-festi
+ vals/\n\nDecember 12-20\, 2026 – Bay Area – FREE – Celebrate the re
+ turn of Unsilent Night \, an annual holiday tradition where participants 
+ carry boomboxes and portable speakers playing four different electronic m
+ usic tracks simultaneously\, creating a one-of-a-kind musical parade thro
+ ugh city streets . There are four Bay Area events this year: Berkeley (De
+ c. 12\, new for 2026 )\, Marina (Dec. 16)\, San Francisc
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:1a21e817e04c@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261227T120000
+DTEND;TZID=America/Los_Angeles:20261227T140000
+SUMMARY:December 2026 Book Discussion: TBD (Vote Now)
+LOCATION:Oakland United Beerworks\, 262 2nd St\, Oakland\, CA 94607\, USA\
+ , Oakland\, CA Oakland\, Oakland
+URL:https://www.meetup.com/books-brew-oakland/events/317570784/
+DESCRIPTION:Discourse + Reading · Oakland\nhttps://www.meetup.com/books-b
+ rew-oakland/events/317570784/\n\n## 📚 Vote for Our December Read! 🍻
+  We're closing out 2026 with one more great read\, and it's time to decid
+ e what we'll be discussing at our December Books & Brew meetup! This mont
+ h's lineup has a little bit of everything: magic\, mystery\, adventure\, 
+ and plenty of stories to get lost in. ✨ Here's what's on the ballot: 
+ 📖 **The Bone Shard Daughter** by Andrea Stewart 📖 **Muñeca** by Cy
+ nthia Gómez 📖 **
+END:VEVENT
+END:VCALENDAR

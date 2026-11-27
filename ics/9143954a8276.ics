@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9143954a8276@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;VALUE=DATE:20261203
+DTEND;VALUE=DATE:20261204
+SUMMARY:Artist Talk with Klea McKenna
+LOCATION:Kala Gallery\, 2990 San Pablo Ave
+URL:https://sf.funcheap.com/artist-talk-klea-mckenna/
+DESCRIPTION:Art + Discourse\nhttps://sf.funcheap.com/artist-talk-klea-mcke
+ nna/\n\nJoin us on December 3rd at 6pm for an artist talk with 2025–26 
+ Kala Fellow Klea McKenna. McKenna will share the process of making her in
+ stallation The Remedy–both how she makes large shaped-plate intaglio pr
+ ints using cardboard plates–as well as her writing and illustration pro
+ cess. ...
+END:VEVENT
+END:VCALENDAR

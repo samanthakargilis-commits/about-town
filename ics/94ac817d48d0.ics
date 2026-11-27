@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:94ac817d48d0@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;TZID=America/Los_Angeles:20261202T180000
+DTEND;TZID=America/Los_Angeles:20261202T200000
+SUMMARY:Patch Bay: Sheena Dham Artist Talk
+LOCATION:Gray Area / Grand Theater\, 2665 Mission St\, San Francisco\, San
+  Francisco
+URL:https://ma.to/event/patch-bay-sheena-dham-artist-talk-02-dec-2026
+DESCRIPTION:Art + Discourse\nhttps://ma.to/event/patch-bay-sheena-dham-art
+ ist-talk-02-dec-2026\n\nSheena Dham\, a Gujarati American musician\, comp
+ oser and collaborating artist working across sound\, visual art and perfo
+ rmance\, leads an artist talk for Patch Bay. She will draw on projects sp
+ anning dance\, extreme sports and documentary film to discuss how she col
+ laborates\, how resourcefulness and community open new opportunities\, an
+ d what interdisciplinary work makes possible\, followed by an open 
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4d6ee03c20bf@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261219T190000
+DTEND;TZID=America/Los_Angeles:20261219T230000
+SUMMARY:Like Roses ~ Kiss the Scientist ~ Ikana
+LOCATION:Bottom Of The Hill\, 1233 17th Street\, San Francisco\, Californi
+ a 94107\, United States San Francisco\, San Francisco
+URL:https://dice.fm/event/6b04e01026b285000152d23d
+DESCRIPTION:New in your area\nhttps://dice.fm/event/6b04e01026b285000152d2
+ 3d\n\nx The Bottom of the Hill does not use QR codes for entry. You must 
+ present a valid photo ID that matches the name on your DICE ticket to ent
+ er. All ticket transfers must be completed through the DICE app before th
+ e transfer deadline. Instructions on how to transfer a ticket can be foun
+ d here: https://dicefm.zendesk.com/hc/en-gb/articles/4409669378449-How-to
+ -send-tickets-to-a-friend
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:98b4e224cf8d@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261209T190000
+DTEND;TZID=America/Los_Angeles:20261209T210000
+SUMMARY:Talking Ourselves Into (and Out of) Connection
+LOCATION:Swedish American Hall\, Swedish American Hall\, 2174 Market St\, 
+ San Francisco\, CA 94114\, USA\, San Francisco
+URL:https://luma.com/t2a3cjw0
+DESCRIPTION:Comedy + Discourse\nhttps://luma.com/t2a3cjw0\n\n💬 What is 
+ actually happening beneath the surface of an ordinary conversation? We ta
+ lk to people every day\, but research reveals surprising blindspots in ou
+ r conversational awareness. We don't realize that we're quietly calculati
+ ng the end of another person's sentence\, actively building a shared sens
+ e of reality\, or leaning on well-worn paths to make others laugh. In thi
+ s talk\, Zachary Reese\, profe
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:99e1e8031f68@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261128T160000
+DTEND;TZID=America/Los_Angeles:20261128T220000
+SUMMARY:“Sleiiigh Holiday Bar” Launch Party w/ DJs + Free Cider
+LOCATION:620 Jones\, 620 Jones St. San Francisco
+URL:https://sf.funcheap.com/sleiiigh-holiday-bar-launch-party-djs-free-cid
+ er-sf/
+DESCRIPTION:A yearly tradition\nhttps://sf.funcheap.com/sleiiigh-holiday-b
+ ar-launch-party-djs-free-cider-sf/\n\nOkay\, it’s official. We’re har
+ d launching the holidays. And this year\, we’re doing the absolute most
+ . 620 Jones is getting a full holiday makeover\, transforming into SLEIII
+ GH! Bar: A festive wonderland of twinkling lights\, over-the-top decorati
+ ons\, holiday cocktails\, and just the right amount of mischief. We’re 
+ kicking things ...
+END:VEVENT
+END:VCALENDAR

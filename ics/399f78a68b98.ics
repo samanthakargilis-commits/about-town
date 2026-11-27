@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:399f78a68b98@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261216T170000
+DTEND;TZID=America/Los_Angeles:20261216T203000
+SUMMARY:Bay Area DSPy Meetup & Book Launch
+LOCATION:Figma\, Figma\, 760 Market St Fl 10\, San Francisco\, CA 94102\, 
+ USA\, San Francisco
+URL:https://luma.com/2czukysp
+DESCRIPTION:Reading + Discourse\nhttps://luma.com/2czukysp\n\nThe Bay Area
+  DSPy Meetup is back\, this time hosted by our friends at Figma\, and wit
+ h a book launch. We’re celebrating Mike Taylor’s Context Engineering 
+ with DSPy\, then we’ll eat\, drink\, and talk shop until we get kicked 
+ out. We’ve got some great lightning talks on DSPy\, building AI systems
+ \, evaluations\, and optimizers. Mike Taylor (Head of Evals at Every) wil
+ l share a case study from his new book.
+END:VEVENT
+END:VCALENDAR

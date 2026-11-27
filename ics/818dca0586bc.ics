@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:818dca0586bc@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261211T110000
+DTEND;TZID=America/Los_Angeles:20261211T140000
+SUMMARY:cosmic dust x tall confections POP-UP @ Paper Son
+LOCATION:Paper Son Coffee\, 303 2nd St\, Unit N102 San Francisco\, San Fra
+ ncisco
+URL:https://partiful.com/e/0NUpgcGiOjxxYmiBzfHC
+DESCRIPTION:New in your area\nhttps://partiful.com/e/0NUpgcGiOjxxYmiBzfHC\
+ n\nCome for coffee and chocolate\, stay for friendship (: Paper Son has g
+ enerously opened their doors for Cosmic Dust and Tall Confections to hang
+  out\, brew delicious coffee\, and sell fun chocolates! All just in time 
+ for the holiday season. (we've heard that coffee and chocolate make reall
+ y good holiday gifts) Jenny will be offering the following as pour-overs 
+ throughout the day: - Colombia - passion 
+END:VEVENT
+END:VCALENDAR

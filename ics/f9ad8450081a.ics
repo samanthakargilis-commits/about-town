@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f9ad8450081a@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261130T190000
+DTEND;TZID=America/Los_Angeles:20261130T220000
+SUMMARY:Foodies + New Friends: San Francisco | Fitness + Wellness Edition
+LOCATION:Restaurant of the Week\, Castro Street\, San Francisco\, CA 94114
+  San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/foodies-new-friends-san-francisco-fitness
+ -wellness-edition-tickets-1977059617537
+DESCRIPTION:New in your area\nhttps://www.eventbrite.com/e/foodies-new-fri
+ ends-san-francisco-fitness-wellness-edition-tickets-1977059617537\n\nAre 
+ you in search for new friends? Meet others in the city over fun food and 
+ a relaxed atmosphere. Fitness + wellness edition.
+END:VEVENT
+END:VCALENDAR

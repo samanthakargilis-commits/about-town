@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f87958706761@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261128T000000
+DTEND;TZID=America/Los_Angeles:20261128T020000
+SUMMARY:West Coast Craft
+LOCATION:People I've Loved\, San Francisco
+URL:https://ma.to/event/west-coast-craft-28-nov-2026
+DESCRIPTION:Craft + Art\nhttps://ma.to/event/west-coast-craft-28-nov-2026\
+ n\nPeople I’ve Loved has a booth at West Coast Craft with framed art pr
+ ints\, stickers\, notebooks\, and small goods. Stickers are $4 each or th
+ ree for $10. The booth is set up for visitors to have a socially awkward 
+ interaction with the artist.
+END:VEVENT
+END:VCALENDAR

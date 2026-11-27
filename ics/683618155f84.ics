@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:683618155f84@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261127T193000
+DTEND;TZID=America/Los_Angeles:20261127T213000
+SUMMARY:Dance That Turkey Off: Salsa & Bachata Night After Thanksgiving
+LOCATION:Space 550\, 550 Barneveld Ave\, San Francisco\, CA\, San Francisc
+ o
+URL:https://sf.funcheap.com/dance-turkey-salsa-bachata-night-thanksgiving/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/dance-turkey-salsa-b
+ achata-night-thanksgiving/\n\nDance off the turkey the night after Thanks
+ giving at Dance Fridays\, San Francisco’s biggest weekly salsa and bach
+ ata party\, with over 500 dancers every Friday at Space 550. New to danci
+ ng? Beginner salsa and bachata lessons start at 8pm\, so you can learn th
+ e basics before ...
+END:VEVENT
+END:VCALENDAR

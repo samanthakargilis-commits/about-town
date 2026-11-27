@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:58fd09317e55@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261213T120000
+DTEND;TZID=America/Los_Angeles:20261213T143000
+SUMMARY:The Haunted Toys of Christmas
+LOCATION:Gregangelo Museum\, 225 San Leandro Way\, San Francisco\, CA 9412
+ 7 San Francisco\, San Francisco
+URL:https://www.eventbrite.com/e/the-haunted-toys-of-christmas-tickets-200
+ 4791383997
+DESCRIPTION:Weird & unusual + Theatre\nhttps://www.eventbrite.com/e/the-ha
+ unted-toys-of-christmas-tickets-2004791383997\n\nForgotten toys\, flashli
+ ght adventure\, haunted holiday tea party! San Francisco’s underground 
+ immersive experience. Ages 16+ | 2.5 hour
+END:VEVENT
+END:VCALENDAR

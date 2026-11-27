@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c33f8397c8ad@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261127T160000
+DTEND;TZID=America/Los_Angeles:20261127T220000
+SUMMARY:Black Friday Salseró Night
+LOCATION:The Ramp\, San Francisco
+URL:https://ma.to/event/black-friday-salsero-night-27-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/black-friday-salsero-nig
+ ht-27-nov-2026\n\nBlack Friday Salseró Appreciation Night brings salsa d
+ ancing to The Ramp in San Francisco on Friday\, November 27\, 4–10 PM. 
+ BAYCULTURA hosts\, with DJs spinning salsa rhythms throughout the evening
+ . Admission is free for ladies\, $10 for gentlemen at the door\, and $5 i
+ n advance on Eventbrite. The event is 21+ only.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a4f1a431b31a@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261128T143000
+DTEND;TZID=America/Los_Angeles:20261128T163000
+SUMMARY:Zoom Meeting - Sat. Nov 28\, 2026
+LOCATION:Meeting info will be sent to your message inbox!\, 100 Larkin St\
+ , San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/grief-loss-and-change-writers-group/events/3174
+ 48120/
+DESCRIPTION:New in your area\nhttps://www.meetup.com/grief-loss-and-change
+ -writers-group/events/317448120/\n\nHi everyone! Welcome to our first mee
+ ting. Note that due to current meetup account status (and the fact that t
+ his is our first meeting to test the waters!) - we'll keep maximum member
+  count to 10 total individuals\, and 1 total hour of meet-up time\, just 
+ for now :) **How to join: Please ignore the placeholder address on this e
+ vent description below!** The Zoom link will be sent to our Meetup inbox 
+END:VEVENT
+END:VCALENDAR

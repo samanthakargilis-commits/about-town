@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7f3649f95d16@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261208T173000
+DTEND;TZID=America/Los_Angeles:20261208T203000
+SUMMARY:State of Models by OpenRouter
+LOCATION:The Melody of San Francisco\, The Melody of San Francisco\, 906 B
+ roadway\, San Francisco\, CA 94133\, USA\, San Francisco
+URL:https://luma.com/openro-3gcd
+DESCRIPTION:New in your area\nhttps://luma.com/openro-3gcd\n\n10M+ users w
+ orldwide. 600+ AI models from 80+ providers. 800T+ tokens processed month
+ ly. Billions of real-world decisions about which models to use\, when\, a
+ nd why. What if you could see what's actually happening across the AI eco
+ system\, beyond what benchmarks tell you? Welcome to State of Models\, Op
+ enRouter’s flagship thought leadership series\, where we go beyond benc
+ hmarks to uncover how AI is ac
+END:VEVENT
+END:VCALENDAR

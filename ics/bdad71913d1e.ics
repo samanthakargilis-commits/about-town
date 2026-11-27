@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bdad71913d1e@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261202T110000
+DTEND;TZID=America/Los_Angeles:20261202T120000
+SUMMARY:French Eyes on the Gold Rush
+LOCATION:Library of French Thought\, Dwinelle Hall\, San Francisco
+URL:https://ma.to/event/french-eyes-on-the-gold-rush-2026-12-02
+DESCRIPTION:Reading + Discourse\nhttps://ma.to/event/french-eyes-on-the-go
+ ld-rush-2026-12-02\n\nPart of the Center of Excellence in French and Fran
+ cophone Studies Fall 2026 Lecture Series. Historian and author Dr. Claudi
+ ne Chalmers draws on decades of research in French and American archives 
+ to present the stories\, writings and illustrations of those who witnesse
+ d the transformation of the American West. The lecture 'French Eyes on th
+ e Gold Rush' is delivered at the Library of French Thought
+END:VEVENT
+END:VCALENDAR

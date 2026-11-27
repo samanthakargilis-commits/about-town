@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f53cca15821d@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;TZID=America/Los_Angeles:20261205T110000
+DTEND;TZID=America/Los_Angeles:20261205T160000
+SUMMARY:Clayroom SF Annual Holiday Sale!
+LOCATION:Drawing Room Annex\, 599 Valencia St San Francisco\, San Francisc
+ o
+URL:https://partiful.com/e/QnSI5LAW46htjCckZzno
+DESCRIPTION:Craft + Art\nhttps://partiful.com/e/QnSI5LAW46htjCckZzno\n\nPl
+ ease join us for another year of supporting local art! Clayroom SF is hos
+ ting their annual holiday craft market at the Drawing Room Annex on Decem
+ ber 5th from 11am-4pm. There will be over 30 unique vendors selling their
+  wares ranging from ceramics to textiles and prints. Shop local this holi
+ day season!!
+END:VEVENT
+END:VCALENDAR

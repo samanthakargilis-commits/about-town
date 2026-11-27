@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b87f64da4569@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261127T110000
+DTEND;TZID=America/Los_Angeles:20261127T160000
+SUMMARY:Soul Kitchen Saturday Brunch
+LOCATION:Victory Hall\, 360 Ritch St\, San Francisco\, San Francisco
+URL:https://ma.to/event/soul-kitchen-saturday-brunch-27-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/soul-kitchen-saturday-br
+ unch-27-nov-2026\n\nSoul Kitchen Saturday Brunch serves comfort plates at
+  Victory Hall: classic chicken and waffles\, a fried chicken sandwich wit
+ h pickles and jalapeño kale slaw\, mac and cheese topped with BBQ pulled
+  pork\, and seasoned fries for the table. Brunch runs 11am–4pm.
+END:VEVENT
+END:VCALENDAR

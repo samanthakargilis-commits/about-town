@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:77e071ee9441@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261231T210000
+DTEND;TZID=America/Los_Angeles:20270101T020000
+SUMMARY:3rd Annual “A Very Purple NYE” w/ Purple Rain And Sign “O”
+  The Times (Vogue Theatre)
+LOCATION:Vogue Theatre\, 3290 Sacramento Street\, San Francisco\, CA\, San
+  Francisco
+URL:https://sf.funcheap.com/3rd-annual-purple-nye-purple-rain-sign-times-v
+ ogue-theatre/
+DESCRIPTION:Concerts · A yearly tradition · Thursday evening\nhttps://sf
+ .funcheap.com/3rd-annual-purple-nye-purple-rain-sign-times-vogue-theatre/
+ \n\nThe VOGUE Theatre Presents ~ A Very Purple New Years Eve! 3rd Annual 
+ NYE Party! Featuring A 4K Restoration Of PURPLE RAIN And Concert Film ~ S
+ ign ☮️ The Times Thursday December 31 New Years Eve! Doors Open At 9:
+ 00pm Purple Music Videos\, Before The Film! Purple Rain Starting At 10:00
+ pm Midnight Countdown With Complimentary Champagne ...
+END:VEVENT
+END:VCALENDAR

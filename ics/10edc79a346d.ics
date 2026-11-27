@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:10edc79a346d@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261127T193000
+DTEND;TZID=America/Los_Angeles:20261127T213000
+SUMMARY:Salsa Lessons & Live Music
+LOCATION:Cigar Bar & Grill\, 850 Montgomery St.\, San Francisco\, San Fran
+ cisco
+URL:https://ma.to/event/salsa-night-lessons-live-music-27-nov-2026
+DESCRIPTION:Concerts\nhttps://ma.to/event/salsa-night-lessons-live-music-2
+ 7-nov-2026\n\nSalsa lessons with Ava & Rodolfo starting at 7:30 PM (doors
+  7:00 PM)\, followed by live salsa bands starting at 9:30 PM. Lessons are
+  $14 in advance or $20 at the door. Open to all levels\, no partner neede
+ d. The event takes place downstairs at Cigar Bar & Grill. The venue offer
+ s cocktails\, two full bars\, Pan-Latin cuisine and a heated open-air cou
+ rtyard.
+END:VEVENT
+END:VCALENDAR

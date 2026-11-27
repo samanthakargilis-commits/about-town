@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9c2ce8cfecd1@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261128T083000
+DTEND;TZID=America/Los_Angeles:20261128T113000
+SUMMARY:Party Pace 5K
+LOCATION:SPARK Social San José\, 140 S Montgomery St\, San Jose\, CA\, Sa
+ n Jose
+URL:https://ma.to/event/party-pace-5k-28-nov-2026
+DESCRIPTION:San Jose\nhttps://ma.to/event/party-pace-5k-28-nov-2026\n\nPar
+ ty Pace 5K is an outdoor community run at SPARK Social San José\, open t
+ o first-timers and regular runners alike. The event runs from 8:30 AM to 
+ 11:30 AM\, with Brews & Bounce providing the music and an end-of-run cele
+ bration. The 5K is led by Sole Collective\, Coffee Run Collective\, and o
+ ther local run crews and fitness groups. An RSVP link is available in the
+  organiser's bio.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4a72f20b0afd@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;VALUE=DATE:20261202
+DTEND;VALUE=DATE:20261203
+SUMMARY:Gallery Tour & Sketching Activity: Behind the Curtain
+LOCATION:Yerba Buena Center for the Arts\, 701 Mission St\, San Francisco\
+ , CA\, San Francisco
+URL:https://sf.funcheap.com/gallery-tour-sketching-activity-curtain/
+DESCRIPTION:Art + Museum exhibits\nhttps://sf.funcheap.com/gallery-tour-sk
+ etching-activity-curtain/\n\nMeet in the Grand Lobby for a guided tour of
+  “GaHee Park: Behind the Curtain” and sketching activity inspired by 
+ the exhibition. Led by YBCA teaching artists\, join us for this unique op
+ portunity to learn more about this exhibition. Materials will be provided
+ \, and participants can ...
+END:VEVENT
+END:VCALENDAR

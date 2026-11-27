@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:895f4c1fc7e2@bay-events
+DTSTAMP:20261127T221651Z
+DTSTART;TZID=America/Los_Angeles:20261208T173000
+DTEND;TZID=America/Los_Angeles:20261208T200000
+SUMMARY:Sushi Making Class: Tuesday & Saturday Dinner\, San Francisco
+LOCATION:Hotel Kabuki\, 1625 Post Street\, San Francisco\, CA 94115 San Fr
+ ancisco\, San Francisco
+URL:https://www.eventbrite.com/e/sushi-making-class-tuesday-saturday-dinne
+ r-san-francisco-tickets-1962783164281
+DESCRIPTION:New in your area\nhttps://www.eventbrite.com/e/sushi-making-cl
+ ass-tuesday-saturday-dinner-san-francisco-tickets-1962783164281\n\nYou ca
+ n make mouth-watering\, deliciously beautiful Sushi using fresh\, sustain
+ able seafood
+END:VEVENT
+END:VCALENDAR

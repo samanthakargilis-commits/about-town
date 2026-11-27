@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c9e50cf91d4b@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261213T190000
+DTEND;TZID=America/Los_Angeles:20261213T210000
+SUMMARY:Christmas Mixer for 40+
+LOCATION:Mog Asu Wine Bar & Bottle Shop\, 1 Blackfield Dr Ste 14\, Belvede
+ re Tiburon\, CA 94920\, USA\, Tiburon\, CA Tiburon\, Tiburon
+URL:https://www.meetup.com/iwanttodothatsf/events/317422262/
+DESCRIPTION:Discourse · Tiburon\nhttps://www.meetup.com/iwanttodothatsf/e
+ vents/317422262/\n\nUnwrap new possibilities this holiday season! Skip th
+ e noisy bars and join us for a relaxed\, fun evening designed specificall
+ y for singles ages 40 and up. Whether you're looking to meet someone spec
+ ial or simply expand your social circle\, this mixer is the perfect spot 
+ to mingle\, connect\, and celebrate the season in great company. WHEN: Su
+ nday\\\, December 13\\\, 2026\\| 7:00 PM – 9:00 PM WHERE: [Mog A
+END:VEVENT
+END:VCALENDAR

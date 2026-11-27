@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ad42c5f22279@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261128T120000
+DTEND;TZID=America/Los_Angeles:20261128T140000
+SUMMARY:Knitting with Friends
+LOCATION:doña\, 3770 Piedmont Ave\, Oakland\, CA 94611\, USA\, Oakland\, 
+ CA Oakland\, Oakland
+URL:https://www.meetup.com/east-bay-knitters-unite/events/317546396/
+DESCRIPTION:Craft + Discourse · Oakland\nhttps://www.meetup.com/east-bay-
+ knitters-unite/events/317546396/\n\nGreetings yarn enthusiasts! Join us S
+ aturday for food\, conversation and knitting ( crochet too of course). I 
+ look forward to see you all at Dona on Piedmont Ave. It’s a huge space 
+ so I will get there early and post here where we are located. There is a 
+ large outdoor space with heaters so that is a possibility if we are a big
+  group so be prepared for weather. Have a lovely Thanksgiving. See you Sa
+ t
+END:VEVENT
+END:VCALENDAR

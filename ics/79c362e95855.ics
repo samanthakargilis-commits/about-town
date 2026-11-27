@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:79c362e95855@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261203T193000
+DTEND;TZID=America/Los_Angeles:20261203T213000
+SUMMARY:Philharmonia Baroque Orchestra & Chorale: “Baroque Brilliance”
+  Live (Palo Alto)
+LOCATION:First United Methodist Church\, 625 Hamilton Avenue\, Palo Alto\,
+  CA\, Palo Alto
+URL:https://sf.funcheap.com/philharmonia-baroque-orchestra-chorale-baroque
+ -brilliance-live-palo-alto/
+DESCRIPTION:Concerts · Thursday evening · Palo Alto\nhttps://sf.funcheap
+ .com/philharmonia-baroque-orchestra-chorale-baroque-brilliance-live-palo-
+ alto/\n\nFrom soaring soprano melodies to triumphant trumpet fanfares\, B
+ aroque composers knew how to make an occasion feel special! Make live mus
+ ic part of your holiday celebrations with Philharmonia Baroque Orchestra 
+ in Baroque Brilliance\, December 3–5 in Palo Alto\, San Francisco\, and
+  Berkeley. Performed on period ...
+END:VEVENT
+END:VCALENDAR

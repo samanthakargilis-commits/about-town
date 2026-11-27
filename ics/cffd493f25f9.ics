@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cffd493f25f9@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261129T000000
+DTEND;TZID=America/Los_Angeles:20261129T020000
+SUMMARY:Turkeys & Touchdowns Tailgate
+LOCATION:Levi's Stadium — Green Lot 1\, Pole 20\, San Francisco
+URL:https://ma.to/event/turkeys-touchdowns-tailgate-29-nov-2026
+DESCRIPTION:Spirituality\nhttps://ma.to/event/turkeys-touchdowns-tailgate-
+ 29-nov-2026\n\nThe official Turkeys & Touchdowns Tailgate brings the Fait
+ hful Thanksgiving Feast to Green Lot 1 at Pole 20 outside Levi's Stadium 
+ before the 49ers vs Seahawks game. Mesquite & Oak BBQ serves smoked turke
+ y\, brisket and chicken\, with donations accepted. DJ Jaymo is live in th
+ e mix\, Where My Niners At handles MC duties\, and free sponsor giveaways
+  are part of the gathering. Live performances include 
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a0b3445fb3fc@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;TZID=America/Los_Angeles:20261225T073000
+DTEND;TZID=America/Los_Angeles:20261225T160000
+SUMMARY:Free Admission Day for Christmas at San Francisco Botanical Garden
+  (2026)
+LOCATION:San Francisco Botanical Garden\, 1199 9th Avenue\, San Francisco\
+ , CA 94122\, San Francisco
+URL:https://sf.funcheap.com/free-admission-christmas-day-san-francisco-bot
+ anical-garden/
+DESCRIPTION:Museum exhibits · A yearly tradition\nhttps://sf.funcheap.com
+ /free-admission-christmas-day-san-francisco-botanical-garden/\n\nThe San 
+ Francisco Botanical Garden is one of the most diverse gardens in the worl
+ d. A unique urban oasis\, the garden is a living museum within Golden Gat
+ e Park\, offering 55 acres of both landscaped gardens and open spaces\, a
+ nd showcasing over 9\,000 different kinds ...
+END:VEVENT
+END:VCALENDAR

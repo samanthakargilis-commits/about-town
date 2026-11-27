@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ee053509366b@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261127T160000
+DTEND;TZID=America/Los_Angeles:20261127T180000
+SUMMARY:Thrive City’s “Winter Wonderland” 2026 Tree Lighting Ceremon
+ y
+LOCATION:Thrive City\, 1 Warriors Way San Francisco\, CA
+URL:https://sf.funcheap.com/thrive-citys-winter-wonderland-tree-lighting-c
+ eremony-sf/
+DESCRIPTION:Spirituality\nhttps://sf.funcheap.com/thrive-citys-winter-wond
+ erland-tree-lighting-ceremony-sf/\n\nThe holiday season is officially her
+ e! Thrive City is kicking off this festive time of year with our annual W
+ inter Wonderland Lighting Ceremony\, celebrating the illumination of the 
+ Bay Area’s tallest holiday tree standing at 90 feet tall! Gather on our
+  plaza for an evening filled ...
+END:VEVENT
+END:VCALENDAR

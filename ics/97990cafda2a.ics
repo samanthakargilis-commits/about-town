@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:97990cafda2a@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261205T080000
+DTEND;TZID=America/Los_Angeles:20261205T100000
+SUMMARY:The Hunger Games 13k Quest | Berkeley
+LOCATION:Berkeley Hills & University of California\, 2151 Martin Luther Ki
+ ng Jr Way Berkeley\, Berkeley
+URL:https://partiful.com/e/wBwwqEHNlXwgr9PSgI6Q
+DESCRIPTION:Berkeley\nhttps://partiful.com/e/wBwwqEHNlXwgr9PSgI6Q\n\nThe A
+ theon Quest #400: The Hunger Games edition is an epic 13k fun run competi
+ tion with obstacles\, targets\, puzzles\, and trivia along the way\, base
+ d on Panema and the world of The Hunger Games book & film franchise. Tip:
+  You’ll want to brush up on your knowledge of the books and films withi
+ n the franchise up to this point if you want to survive and become the ne
+ xt Victor of The Hunger Games. With 
+END:VEVENT
+END:VCALENDAR

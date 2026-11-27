@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:519f70c5cda9@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261205T093000
+DTEND;TZID=America/Los_Angeles:20261205T163000
+SUMMARY:IlluminOdyssey 10: Interactive Glowing Science Adventure
+LOCATION:CuriOdyssey\, 1651 Coyote Point Dr. San Mateo\, CA
+URL:https://sf.funcheap.com/illuminodyssey-10-interactive-glowing-science-
+ adventure-nov-14-jan-24/
+DESCRIPTION:Theatre + Weird & unusual\nhttps://sf.funcheap.com/illuminodys
+ sey-10-interactive-glowing-science-adventure-nov-14-jan-24/\n\n10 years. 
+ 10 new exhibits. One glowing holiday journey into the science of light. C
+ atch the light: November 14\, 2026 – January 24\, 2027. Inspired by the
+  science of light\, IlluminOdyssey is an immersive\, interactive installa
+ tion that will mesmerize kids and adults of all ages. ...
+END:VEVENT
+END:VCALENDAR

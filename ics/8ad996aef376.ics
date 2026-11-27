@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8ad996aef376@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261128T000000
+DTEND;TZID=America/Los_Angeles:20261128T020000
+SUMMARY:ODC/Dance: Velveteen Rabbit 2026
+LOCATION:YBCA\, 701 Mission St\, San Francisco\, CA\, San Francisco
+URL:https://sf.funcheap.com/odcdance-velveteen-rabbit-2026/
+DESCRIPTION:Theatre + Museum exhibits · A yearly tradition\nhttps://sf.fu
+ ncheap.com/odcdance-velveteen-rabbit-2026/\n\n“ ...a trip down memory l
+ ane that children of all ages will find hard to resist.” SAN FRANCISCO 
+ CHRONICLE Voted San Francisco Magazine’s Best Dance Experience\, ODC/Da
+ nce returns to the stage with the 40th anniversary of the beloved Bay Are
+ a holiday tradition\, The Velveteen Rabbit\, choreographed by ...
+END:VEVENT
+END:VCALENDAR

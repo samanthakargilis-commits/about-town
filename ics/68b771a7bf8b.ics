@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:68b771a7bf8b@bay-events
+DTSTAMP:20261127T221645Z
+DTSTART;TZID=America/Los_Angeles:20261216T180000
+DTEND;TZID=America/Los_Angeles:20261216T190000
+SUMMARY:“Unsilent Night” SF’s Boombox Xmas Parade in The Marina (202
+ 6)
+LOCATION:Golden Gate Valley Branch Library\, 1801 Green Street\, San Franc
+ isco\, CA\, San Francisco
+URL:https://sf.funcheap.com/unsilent-night-parade-sf-marina/
+DESCRIPTION:Fairs & festivals + Weird & unusual\nhttps://sf.funcheap.com/u
+ nsilent-night-parade-sf-marina/\n\nUnsilent Night is a participatory soun
+ d artwork by composer Phil Kline\, an ethereal\, electronic soundscape pl
+ ayed by the audience on boomboxes carried through city streets. Each part
+ icipant gets one of four tracks of music in the form of a MP3 or through 
+ the app. All four ...
+END:VEVENT
+END:VCALENDAR

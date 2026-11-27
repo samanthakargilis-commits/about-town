@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:78215eb69cf7@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261216T180000
+DTEND;TZID=America/Los_Angeles:20261216T214500
+SUMMARY:Dune: Part Three [Pre-release Screening] - Fireworks x LangChain
+LOCATION:Alamo Drafthouse Cinema New Mission\, Alamo Drafthouse Cinema New
+  Mission\, 2550 Mission St\, San Francisco\, CA 94110\, USA\, San Francis
+ co
+URL:https://luma.com/fireworks-imk2
+DESCRIPTION:New in your area\nhttps://luma.com/fireworks-imk2\n\nBefore it
+ s wide release\, witness Denis Villeneuve's epic on the big screen. Join 
+ Fireworks and LangChain for an exclusive early viewing of Dune: Part Thre
+ e at Alamo Drafthouse. A private screening of Denis Villeneuve's Dune Foo
+ d\, cocktails\, beer\, and wine Great company (engineers\, founders\, and
+  sci-fi devotees) Dune-worthy swag to take home Schedule 6:00PM — Check
+ -in Opens & Drinks at Private Bar 
+END:VEVENT
+END:VCALENDAR

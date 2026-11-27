@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:93263c78ea44@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261128T000000
+DTEND;TZID=America/Los_Angeles:20261128T020000
+SUMMARY:Intro To Sculpting: Gift Making
+LOCATION:Artillery AG Pottery Studio\, San Francisco
+URL:https://ma.to/event/one-time-sculpting-handbuilding-28-nov-2026
+DESCRIPTION:Craft\nhttps://ma.to/event/one-time-sculpting-handbuilding-28-
+ nov-2026\n\nIntroductory one-time class in sculpting and handbuilding wit
+ h clay at Artillery AG Pottery Studio in San Francisco. This hands-on ses
+ sion is specifically tailored for making holiday gifts and is an ideal ac
+ tivity to share with visiting family and friends. Booking is available th
+ rough the studio's website.
+END:VEVENT
+END:VCALENDAR

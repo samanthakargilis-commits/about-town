@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dc4bdb1622a4@bay-events
+DTSTAMP:20261127T221645Z
+DTSTART;TZID=America/Los_Angeles:20261127T110000
+DTEND;TZID=America/Los_Angeles:20261127T130000
+SUMMARY:Bolinas Arts Weekend: 30+ Artists Open Studios
+LOCATION:Bolinas & Stinson Beach Arts Venues\, Wharf Road\, Bolinas\, CA 9
+ 4924\, Bolinas
+URL:https://sf.funcheap.com/bolinas-arts-weekend-30-artists-open-studios-n
+ ov-2729/
+DESCRIPTION:Big Bay Area traditions + Art · A yearly tradition · Bolinas
+ \nhttps://sf.funcheap.com/bolinas-arts-weekend-30-artists-open-studios-no
+ v-2729/\n\nBolinas Arts Weekend. Fri to Sun\, Nov 27 to 29. More than 30 
+ artists open 17 studios in barns\, sheds\, and workshops around Bolinas L
+ agoon in Bolinas and Stinson Beach. Plus a Paul Harris centennial at the 
+ Bolinas Museum\, a youth art showcase\, an artist ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:588b0f2b4eb9@bay-events
+DTSTAMP:20261127T221651Z
+DTSTART;TZID=America/Los_Angeles:20261127T190000
+DTEND;TZID=America/Los_Angeles:20261127T210000
+SUMMARY:Emily Day & Cosmo Alleycats
+LOCATION:Keys Jazz Bistro\, 498 Broadway\, San Francisco\, San Francisco
+URL:https://ma.to/event/emily-day-cosmo-alleycats-27-nov-2026-1
+DESCRIPTION:New in your area\nhttps://ma.to/event/emily-day-cosmo-alleycat
+ s-27-nov-2026-1\n\nThe 7pm set features Emily Day & Cosmo Alleycats perfo
+ rming “Old Sweet Songs\,” with timeless melodies\, original tunes and
+  playful improvisation. Scott Yanow has called Emily Day “one of the ma
+ jor singers in her field.” Tickets are $40\; advance purchase is sugges
+ ted and admission is first come\, first served. The venue requests arriva
+ l one hour early\; will-call check-in uses the ticket holder’s last
+END:VEVENT
+END:VCALENDAR

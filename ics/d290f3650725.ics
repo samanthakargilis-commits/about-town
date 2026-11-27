@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d290f3650725@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261202T000000
+DTEND;TZID=America/Los_Angeles:20261202T020000
+SUMMARY:Littorai Wine Dinner with Ted
+LOCATION:The Morris\, San Francisco
+URL:https://ma.to/event/littorai-wine-dinner-with-ted-lemon-02-dec-2026
+DESCRIPTION:Discourse\nhttps://ma.to/event/littorai-wine-dinner-with-ted-l
+ emon-02-dec-2026\n\nThe Morris continues its Farmers in Wine dinner serie
+ s with Ted Lemon of Littorai\, celebrating 30 years of Littorai and 10 ye
+ ars of The Morris. A special selection of Littorai wines is served alongs
+ ide a menu\, with Ted and Heidi joining to share the stories\, vineyards\
+ , and philosophy behind the bottles. Ted is a leader in biodynamic and re
+ generative farming\, and Littorai remains a benchmark for Ca
+END:VEVENT
+END:VCALENDAR

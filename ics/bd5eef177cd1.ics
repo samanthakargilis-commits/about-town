@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bd5eef177cd1@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261127T123000
+DTEND;TZID=America/Los_Angeles:20261127T143000
+SUMMARY:Florida State vs Florida Game Watch
+LOCATION:Bartlett Hall\, San Francisco\, CA\, San Francisco
+URL:https://ma.to/event/florida-state-vs-florida-game-watch-27-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/florida-state-vs-florida
+ -game-watch-27-nov-2026\n\nThe San Francisco Seminole Club hosts a Florid
+ a State vs Florida game watch at Bartlett Hall in San Francisco. Florida 
+ State vs Florida is set for 12:30 PM PST. Bartlett Hall is a brewery and 
+ is located near Black Friday shopping.
+END:VEVENT
+END:VCALENDAR

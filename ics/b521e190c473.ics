@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b521e190c473@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261127T000000
+DTEND;TZID=America/Los_Angeles:20261127T020000
+SUMMARY:Handmade Closet Sale
+LOCATION:Fiber Circle Studio\, Petaluma\, Petaluma
+URL:https://ma.to/event/handmade-closet-sale-27-nov-2026
+DESCRIPTION:Petaluma\nhttps://ma.to/event/handmade-closet-sale-27-nov-2026
+ \n\nNov 27 · San Francisco. A handmade closet sale at Fiber Circle Studi
+ o in Petaluma. When Friday\, 27 November Add to Calendar Add to Calendar 
+ About A handmade closet sale at Fiber Circle Studio in Petaluma. Organise
+ d by Barber Lee Spirits Where Fiber Circle Studio\, Petaluma \, San Franc
+ isco Open in Google Maps
+END:VEVENT
+END:VCALENDAR

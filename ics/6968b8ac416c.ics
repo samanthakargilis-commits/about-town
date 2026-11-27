@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:6968b8ac416c@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;TZID=America/Los_Angeles:20261211T160000
+DTEND;TZID=America/Los_Angeles:20261211T200000
+SUMMARY:Holidays on Taraval
+LOCATION:McCoppin Square\, 24th and Taraval San Francisco\, San Francisco
+URL:https://partiful.com/e/2ofWAz5VnmJT8QWlP9hH
+DESCRIPTION:Craft + Fairs & festivals\nhttps://partiful.com/e/2ofWAz5VnmJT
+ 8QWlP9hH\n\nHolidays on Taraval is a one-block holiday market at McCoppin
+  Square\, with the annual tree lighting\, makers and merchants\, performa
+ nces\, and arts and crafts. Hosts are the People of Parkside Sunset\, the
+  Sunset Night Market Collaborative\, and Sunset Mercantile. Free to atten
+ d. This is a recommendation\, not hosted by Partiful - hosted by the Peop
+ le of Parkside Sunset\, the Sunset Night Market Collabo
+END:VEVENT
+END:VCALENDAR

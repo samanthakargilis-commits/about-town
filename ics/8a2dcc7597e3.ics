@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8a2dcc7597e3@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;VALUE=DATE:20261205
+DTEND;VALUE=DATE:20261206
+SUMMARY:2026 BART SweaterFest
+LOCATION:Rockridge\, Oakland
+URL:https://www.bart.gov/news/articles/2026/news20261113
+DESCRIPTION:Featured on Funcheap · Oakland\nhttps://www.bart.gov/news/art
+ icles/2026/news20261113\n\nDecember 5\, 2026 – Oakland (Rockridge) – 
+ FREE – BART’s annual SweaterFest is back at Rockridge Station with a 
+ festive afternoon of holiday sweaters\, carolers\, crafts\, photo ops and
+  a pop-up shop selling BART holiday merch. New for 2026\, try your hand a
+ t writing a holiday-themed BART station announcement\, with the winning e
+ ntry recorded and played in stations over the holidays. Bonus: Ride BART 
+ to 
+END:VEVENT
+END:VCALENDAR

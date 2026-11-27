@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:13faaba46490@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261210T210000
+DTEND;TZID=America/Los_Angeles:20261211T020000
+SUMMARY:yaoi ★ rave: JOCKS vs N3RDS! | San Francisco\, CA
+LOCATION:The Cafe\, 2369 Market Street\, San Francisco\, California 94114\
+ , United States San Francisco\, San Francisco
+URL:https://dice.fm/event/6b047066fff1cf00015d374a
+DESCRIPTION:Weird & unusual · Thursday evening\nhttps://dice.fm/event/6b0
+ 47066fff1cf00015d374a\n\nYAOI★ RAVE UNIVERSITY: JOCKS vs N3RDZ — SAN 
+ FRANCISCO\, CALIFORNIA Thursday\, December 10 • The Cafe • San Franci
+ sco • 9PM–2AM Class is back in session at YAOI★ Rave University as 
+ THE CAFE - San Francisco transforms into a full night of varsity rivalry\
+ , nerd crushes\, locker-room tension and after-class trouble. Choose your
+  side: JOCKS vs N3RDZ. Come dressed in varsity jerseys\, gym shorts\, let
+ terman 
+END:VEVENT
+END:VCALENDAR

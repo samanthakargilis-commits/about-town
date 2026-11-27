@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3c837290dfe8@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261127T123000
+DTEND;TZID=America/Los_Angeles:20261127T183000
+SUMMARY:Build Tools for Good: An Afternoon of Giving Back
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/apbhgqus
+DESCRIPTION:Discourse\nhttps://luma.com/apbhgqus\n\nThis Thanksgiving\, le
+ t's turn our gratitude into something we can give. Join us for an afterno
+ on of building tools for good. We're bringing together people with differ
+ ent skills\, experiences\, and perspectives to create tools that help peo
+ ple and causes we care about. Think of someone in your life who could use
+  a helping hand. Maybe it's a friend\, family member\, nonprofit\, or com
+ munity you care abo
+END:VEVENT
+END:VCALENDAR

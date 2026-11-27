@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0a77e7c5d224@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261127T200000
+DTEND;TZID=America/Los_Angeles:20261127T220000
+SUMMARY:The Steadfast Heart
+LOCATION:LGIC\, 16769 Farley Road\, Palo Alto
+URL:https://ma.to/event/the-steadfast-heart-27-nov-2026
+DESCRIPTION:Discourse · Palo Alto\nhttps://ma.to/event/the-steadfast-hear
+ t-27-nov-2026\n\nThe Steadfast Heart: From Loving Allah to Meeting Allah 
+ is a talk with Shaykh Junaid Bhaiyat about nurturing love for Allah and r
+ emaining steadfast on the journey to meeting Him. The talk follows Isha a
+ t 8:00 PM. Chai and cookies follow\, and guests can bring something sweet
+  to share.
+END:VEVENT
+END:VCALENDAR

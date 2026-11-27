@@ -1,0 +1,43 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e2ab1c138307@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;TZID=America/Los_Angeles:20261209T163000
+DTEND;TZID=America/Los_Angeles:20261209T183000
+SUMMARY:Union Square’s 2026 Chanukah Festival: 25-Foot-Tall Menorah (6th
+  Night)
+LOCATION:Union Square Park\, Geary and Powell\, San Francisco\, CA\, San F
+ rancisco
+URL:https://sf.funcheap.com/union-squares-2026-chanukah-festival-25-foot-t
+ all-menorah-6th-night/
+DESCRIPTION:Fairs & festivals + Weird & unusual · A yearly tradition\nhtt
+ ps://sf.funcheap.com/union-squares-2026-chanukah-festival-25-foot-tall-me
+ norah-6th-night/\n\nUnion Square’s 2026 Chanukah Festival: 25-Foot-Tall
+  Menorah (Dec. 4-11) Bill Graham Menorah Lighting it up since 1975\, San 
+ Francisco celebrates the 51st anniversary of the first giant public menor
+ ah outside Israel\, a landmark Bill Graham project that inspired thousand
+ s of menorahs around the world. This year’s eight-night celebration bri
+ ngs music\, community gatherings\, and nightly ceremonies honor
+END:VEVENT
+END:VCALENDAR

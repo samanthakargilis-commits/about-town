@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:010b4dd6191e@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261201T113000
+DTEND;TZID=America/Los_Angeles:20261201T133000
+SUMMARY:33rd Annual World AIDS Day National Observance
+LOCATION:Golden Gate Park\, San Francisco
+URL:https://www.eventbrite.com/e/world-aids-day-national-observance-2026-t
+ ickets-2003471889353
+DESCRIPTION:Featured on Funcheap\nhttps://www.eventbrite.com/e/world-aids-
+ day-national-observance-2026-tickets-2003471889353\n\nDecember 1\, 2026 
+ – SF (Golden Gate Park) – FREE – Gather at the National AIDS Memori
+ al Grove for the annual World AIDS Day observance\, honoring those lost t
+ o HIV/AIDS and recognizing the local activists and advocates who have fou
+ ght for awareness\, compassion and an end to stigma. Set among the redwoo
+ ds of Golden Gate Park\, the gathering offers a chance to remember\, refl
+ ect and stand together . Nat
+END:VEVENT
+END:VCALENDAR

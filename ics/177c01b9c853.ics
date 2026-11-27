@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:177c01b9c853@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261128T193000
+DTEND;TZID=America/Los_Angeles:20261128T213000
+SUMMARY:Flip Side Comedy Stand-Up
+LOCATION:Up The Creek Records\, 2042 Mt Diablo Blvd\, San Francisco
+URL:https://ma.to/event/flip-side-comedy-stand-up-show-28-nov-2026
+DESCRIPTION:Comedy\nhttps://ma.to/event/flip-side-comedy-stand-up-show-28-
+ nov-2026\n\nFlip Side Comedy is a monthly stand-up show hosted by Dave Ha
+ y featuring comics seen at Punch Line\, Cobb's\, and SF Sketchfest. Doors
+  open at 7:00 PM and the show starts at 7:30 PM. Admission is a sliding-s
+ cale donation of approximately $15. Limited seating available. 18+ only.
+END:VEVENT
+END:VCALENDAR

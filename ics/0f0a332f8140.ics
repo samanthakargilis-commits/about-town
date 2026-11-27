@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0f0a332f8140@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261127T190000
+DTEND;TZID=America/Los_Angeles:20261127T230000
+SUMMARY:Directions In Stereo
+LOCATION:540 Bar\, 540 Clement St\, SF\, CA\, San Francisco
+URL:https://ma.to/event/directions-in-stereo-27-nov-2026
+DESCRIPTION:Craft\nhttps://ma.to/event/directions-in-stereo-27-nov-2026\n\
+ nA human-curated sound and vision event at 540 Bar in San Francisco. Resi
+ dent DJ Circuit73 takes the decks for an all-vinyl night of funk\, soul\,
+  jazz\, and rock. Grab a local craft beer or seasonal cocktail in this in
+ clusive Richmond district community space.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:95d96cf411e7@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;TZID=America/Los_Angeles:20261203T190000
+DTEND;TZID=America/Los_Angeles:20261203T210000
+SUMMARY:SF - Thursday Night Drop-In Improv Class (SanFrancisco-CA)
+LOCATION:450 Geary St\, 450 Geary Street\, San Francisco\, CA 94102 San Fr
+ ancisco\, San Francisco
+URL:https://www.eventbrite.com/e/sf-thursday-night-drop-in-improv-class-sa
+ nfrancisco-ca-registration-1977905181642
+DESCRIPTION:Comedy + Theatre · Thursday evening\nhttps://www.eventbrite.c
+ om/e/sf-thursday-night-drop-in-improv-class-sanfrancisco-ca-registration-
+ 1977905181642\n\nSAN FRANCISCO\, CA - Come play\, bring a friend\, and me
+ et new people in Leela's weekly drop-in improv class.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0a1d81106542@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261219T110000
+DTEND;TZID=America/Los_Angeles:20261219T160000
+SUMMARY:Winter Outpost Holiday Market at Pacific Pipe Climbing Gym (Oaklan
+ d)
+LOCATION:Pacific Pipe\, 2140 Mandela Parkway\, Oakland\, CA 94607\, Oaklan
+ d
+URL:https://sf.funcheap.com/winter-outpost-holiday-market-pacific-pipe-cli
+ mbing-gym-oakland/
+DESCRIPTION:Fairs & festivals · Oakland\nhttps://sf.funcheap.com/winter-o
+ utpost-holiday-market-pacific-pipe-climbing-gym-oakland/\n\nIf you climb\
+ , run\, hike\, ski or ride\, this is your crowd. On Saturday\, Dec. 19\, 
+ West Oakland’s Pacific Pipe\, the largest climbing gym on the West Coas
+ t\, hosts Winter Outpost\, a free market for the Bay’s outdoor communit
+ y and their families. Get suited up for ...
+END:VEVENT
+END:VCALENDAR

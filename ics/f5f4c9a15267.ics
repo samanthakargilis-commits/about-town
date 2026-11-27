@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f5f4c9a15267@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Amy Oppenheimer’s Looking For Justice (In All The Wrong Places)
+LOCATION:The Marsh San Francisco Main Stage\, 1062 Valencia Street San Fra
+ ncisco\, CA 94110
+URL:https://sf.funcheap.com/amy-oppenheimers-justice-wrong-places/
+DESCRIPTION:Theatre\nhttps://sf.funcheap.com/amy-oppenheimers-justice-wron
+ g-places/\n\nWritten & Performed by: Amy Oppenheimer Director: David Ford
+  Performance Coach: Julia McNeal 5:00 pm Sundays\, November 29 – Decemb
+ er 13\, 2026. The Marsh Berkeley will present an encore run of lawyer and
+  retired judge Amy Oppenheimer’s seminal work Looking for Justice (In A
+ ll the Wrong Places). Praised by ...
+END:VEVENT
+END:VCALENDAR

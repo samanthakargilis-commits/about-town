@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:afbe625bfbd6@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261202T173000
+DTEND;TZID=America/Los_Angeles:20261202T190000
+SUMMARY:Transgender History Focus Group
+LOCATION:San Francisco\, San Francisco
+URL:https://ma.to/event/transgender-history-focus-group-02-dec-2026-1
+DESCRIPTION:Gay / queer\nhttps://ma.to/event/transgender-history-focus-gro
+ up-02-dec-2026-1\n\nThe Transgender District hosts an in-person focus gro
+ up about its first-ever transgender history walking tour. The session cov
+ ers what the walking tours are\, how they will run\, which historical spa
+ ces and figures will be highlighted\, and gathers community feedback. It 
+ runs December 2 from 5:30 to 7 pm. The district seeks 25 participants who
+  identify as trans\, gender expansive\, or non-binary and li
+END:VEVENT
+END:VCALENDAR

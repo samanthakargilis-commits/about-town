@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ca9bba28dff3@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;TZID=America/Los_Angeles:20261128T190000
+DTEND;TZID=America/Los_Angeles:20261128T223000
+SUMMARY:SF’s Free “Black Friday” Comedy Fest at Black-Owned Comedy C
+ lub
+LOCATION:The Function\, 1414 Market Street\, San Francisco\, CA\, San Fran
+ cisco
+URL:https://sf.funcheap.com/sfs-free-black-friday-comedy-fest-at-black-own
+ ed-comedy-club-nov-27-28/
+DESCRIPTION:Comedy\nhttps://sf.funcheap.com/sfs-free-black-friday-comedy-f
+ est-at-black-owned-comedy-club-nov-27-28/\n\nBlack Friday Comedy Weekend 
+ at SF’s ONLY BLACK-OWNED COMEDY CLUB Spend Black Friday 2026 weekend wi
+ th some of the funniest Black comedians from San Francisco and across the
+  Bay Area. We’re putting on four shows at The Function\, SF’s only Bl
+ ack-owned comedy club\, co-owned by ...
+END:VEVENT
+END:VCALENDAR

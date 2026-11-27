@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:cdc8b053dd82@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Ms. CarOlé Flamenco’s Flamenco Master Workshops
+LOCATION:LINES Dance Center\, 26 7th St\, San Francisco\, CA 94103\, San F
+ rancisco
+URL:https://sf.funcheap.com/ms-carol-flamencos-flamenco-master-workshops/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/ms-carol-flamencos-f
+ lamenco-master-workshops/\n\nMs. CarOlé Flamenco’s Flamenco Master Wor
+ kshops Select Sundays LINES Dance Center 26 7th St\, San Francisco\, CA 9
+ 4103 • Come dance with us\, this is a Level 1–2 class\, please wear c
+ omfortable clothes you can sweat in • Advanced and professional classes
+  also offered • Private lessons available $30 Pre-registration required
+ . Please contact us here: caroleflamenco.com CarOlé ...
+END:VEVENT
+END:VCALENDAR

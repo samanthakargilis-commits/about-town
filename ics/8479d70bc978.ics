@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8479d70bc978@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261128T200000
+DTEND;TZID=America/Los_Angeles:20261128T220000
+SUMMARY:San Francisco Playhouse’s “Peter Pan Goes Wrong”
+LOCATION:San Francisco Playhouse\, 450 Post St.\, San Francisco\, CA\, San
+  Francisco
+URL:https://sf.funcheap.com/5-off-tix-san-francisco-playhouses-peter-pan-g
+ oes-wrong-sept-26-nov-28-5/
+DESCRIPTION:Musical theatre + Theatre\nhttps://sf.funcheap.com/5-off-tix-s
+ an-francisco-playhouses-peter-pan-goes-wrong-sept-26-nov-28-5/\n\nPeter P
+ an Goes Wrong closes its run with a final performance at San Francisco Pl
+ ayhouse. The production has drawn praise from the San Francisco Chronicle
+ \, Bay City News\, Broke-Ass Stuart\, Broadway World\, East Bay Times\, a
+ nd TheatreUS. Limited tickets remain for this final show.
+END:VEVENT
+END:VCALENDAR

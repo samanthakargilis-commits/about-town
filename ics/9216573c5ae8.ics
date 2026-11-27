@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9216573c5ae8@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261128T130000
+DTEND;TZID=America/Los_Angeles:20261128T170000
+SUMMARY:Wabi Blobi Dry Erase Launch Party
+LOCATION:Gamescape SF\, 333 Divisadero\, San Francisco
+URL:https://ma.to/event/wabi-blobi-dry-erase-launch-party-28-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/wabi-blobi-dry-erase-lau
+ nch-party-28-nov-2026\n\nGamescape hosts a launch party for the Wabi Blob
+ i Dry Erase Edition with the designer and crew from @playwabiblobi. The f
+ ree event runs from 1 to 5 PM\, and advance registration is encouraged be
+ cause space is limited.
+END:VEVENT
+END:VCALENDAR

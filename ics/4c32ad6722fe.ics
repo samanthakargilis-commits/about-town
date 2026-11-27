@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4c32ad6722fe@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261213T130000
+DTEND;TZID=America/Los_Angeles:20261213T150000
+SUMMARY:Outdoor Social Meetup (San Francisco) - friendly faces and good co
+ nversation!
+LOCATION:Salesforce Park\, 425 Mission St\, San Francisco\, CA San Francis
+ co\, San Francisco
+URL:https://www.meetup.com/acesofsf/events/312839510/
+DESCRIPTION:Discourse\nhttps://www.meetup.com/acesofsf/events/312839510/\n
+ \nDrop-in social meetups usually occur around the third weekend of the mo
+ nth from 1-3 pm\, rotating between San Francisco\, South Bay\, and East B
+ ay. Aces and friends are all welcome to attend. Masks are optional since 
+ this is an outdoor event. It may be chilly\, however\, so dress warmly an
+ d check the weather report. We will be meeting at the outdoor tables in t
+ he plaza area at the center of Salesforce/
+END:VEVENT
+END:VCALENDAR

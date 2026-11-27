@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ecc6403076c0@bay-events
+DTSTAMP:20261127T221645Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:Holiday Gift Shopping: 160+ Original Artworks (Oakland)
+LOCATION:Creative Growth Art Center\, 355 24th St\, Oakland\, CA 94612\, O
+ akland
+URL:https://sf.funcheap.com/holiday-gift-shopping-160-original-artworks-oa
+ kland/
+DESCRIPTION:Museum exhibits + Art · A yearly tradition · Oakland\nhttps:
+ //sf.funcheap.com/holiday-gift-shopping-160-original-artworks-oakland/\n\
+ nThe joyous and festive annual Holiday Show return this December. Our fin
+ al exhibition of the year features artwork by every artist in our studio\
+ , with over 160 works on display. In addition to the exhibition\, opening
+  weekend is complimented with a two-day studio-wide Holiday Sale ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:65f9c90187d3@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261220T170000
+DTEND;TZID=America/Los_Angeles:20261220T190000
+SUMMARY:35th Annual Candlelight Christmas Concert (Mission Dolores Basilic
+ a)
+LOCATION:Mission Dolores Basilica\, 310 Dolores St.\, San Francisco\, Ca\,
+  Ca
+URL:https://sf.funcheap.com/35th-annual-candlelight-christmas-concert-miss
+ ion-dolores-basilica/
+DESCRIPTION:Concerts + Singing · A yearly tradition · Ca\nhttps://sf.fun
+ cheap.com/35th-annual-candlelight-christmas-concert-mission-dolores-basil
+ ica/\n\nThe program will begin with three traditional hymns sung in Latin
+ : Hodie Christus Natus Est (Today Christ Is Born)\, Ave Maris Stella (Hai
+ l Star of the Sea)\, and Personet Hodie (14th Century carol). Subsequent 
+ selections will include the 16th Century Spanish carol Riu\, Riu\, Chiu\,
+  ...
+END:VEVENT
+END:VCALENDAR

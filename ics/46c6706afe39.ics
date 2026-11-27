@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:46c6706afe39@bay-events
+DTSTAMP:20261127T221645Z
+DTSTART;TZID=America/Los_Angeles:20261203T180000
+DTEND;TZID=America/Los_Angeles:20261203T220000
+SUMMARY:Art Space at Lower Polk -Holiday Market
+LOCATION:1170 Sutter Street\, San Francisco\, CA 94109\, 1170 Sutter Stree
+ t\, San Francisco CA 94109\, San Francisco
+URL:https://sf.funcheap.com/art-space-polk-holiday-market-sf/
+DESCRIPTION:Fairs & festivals + Art · Thursday evening\nhttps://sf.funche
+ ap.com/art-space-polk-holiday-market-sf/\n\nJoin us on Thursday\, Decembe
+ r 3rd\, for a special Holiday edition of Art Space at Lower Polk! Celebra
+ te the season with an evening of local art\, creativity\, and holiday sho
+ pping. Explore a festive pop-up market featuring a rotating lineup of loc
+ al artists and makers showcasing ...
+END:VEVENT
+END:VCALENDAR

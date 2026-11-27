@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:755653a15c2b@bay-events
+DTSTAMP:20261127T221645Z
+DTSTART;TZID=America/Los_Angeles:20261210T210000
+DTEND;TZID=America/Los_Angeles:20261210T230000
+SUMMARY:Cole Valley Nights holiday block party
+LOCATION:
+URL:https://secretsanfrancisco.com/cole-valley-holiday-night-market-free-b
+ lock-party/
+DESCRIPTION:Fairs & festivals + Craft · Thursday evening\nhttps://secrets
+ anfrancisco.com/cole-valley-holiday-night-market-free-block-party/\n\nPre
+ vious Cole Valley Nights. Photo courtesy of the Civic Joy Fund On Decembe
+ r 10\, 2026 \, Cole Valley will shut down part of Cole Street for the hol
+ iday night market and block party. The community event will take place be
+ tween 4 and 9 pm\, with dozens of local vendors. The holiday market is pe
+ rfect for finding a unique gift\, and you can expect other fun activities
+  like origami making. Plus\, there wi
+END:VEVENT
+END:VCALENDAR

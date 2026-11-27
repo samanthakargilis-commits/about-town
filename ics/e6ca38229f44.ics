@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e6ca38229f44@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261204T170000
+DTEND;TZID=America/Los_Angeles:20261204T230000
+SUMMARY:Lower Haight Social Club at Peacock Lounge
+LOCATION:Peacock Lounge\, 552 Haight St\, San Francisco\, CA 94117\, San F
+ rancisco
+URL:https://sf.funcheap.com/haight-social-club-peacock-lounge-sf/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/haight-social-club-p
+ eacock-lounge-sf/\n\nFriday December 4th In Lower Haight! The return of L
+ ower Haight Social Club. You are invited to join us at the world famous P
+ eacock Lounge. Located in beautiful Lower Haight\, come take a trip back 
+ to 1996- Have a drink\, grab a bite\, listen to some tunes\, ...
+END:VEVENT
+END:VCALENDAR

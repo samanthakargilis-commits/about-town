@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:541ce4e2fae5@bay-events
+DTSTAMP:20261127T221645Z
+DTSTART;TZID=America/Los_Angeles:20261231T110000
+DTEND;TZID=America/Los_Angeles:20261231T130000
+SUMMARY:San Francisco New Year’s Eve Fireworks at Midnight
+LOCATION:El Camino High School\, 1320 Mission Rd\, South San Francisco\, C
+ A 94080 Get Your Tickets Now
+URL:https://sf.funcheap.com/city-guide/december-street-fairs-festivals/
+DESCRIPTION:Craft + Singing · A yearly tradition\nhttps://sf.funcheap.com
+ /city-guide/december-street-fairs-festivals/\n\nDecember 31\, 2026 – SF
+  (Embarcadero) – FREE – Ring in 2026 with San Francisco’s free wate
+ rfront fireworks show\, a midnight burst of color over the Bay that draws
+  thousands to the Embarcadero for the city’s biggest New Year’s Eve t
+ radition . David Yu Friday\, November 27 SJ Made Holiday Craft Fair 2026 
+ w/350+ Makers in Santa Clara (Nov. 27-28) Friday\, November 27 – 11:00 
+ am - Ends at 6:00 pm | Cost:
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3f5ab8155f00@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;TZID=America/Los_Angeles:20261205T160000
+DTEND;TZID=America/Los_Angeles:20261205T180000
+SUMMARY:krampus pageant
+LOCATION:El Rio\, 3158 Mission St San Francisco\, San Francisco
+URL:https://partiful.com/e/dGgxNNUwKf3GC6sKx3ex
+DESCRIPTION:Gay / queer + Camp & Halloween\nhttps://partiful.com/e/dGgxNNU
+ wKf3GC6sKx3ex\n\n** This event is a repost ** :] El Rio is hosting a Kram
+ pus Pageant. An opportunity to get out of the house\, come thru after wor
+ k or before work. Small social. $10-$20 donation at the door. Doors open 
+ at 3pm. Valid ID is required. Stories to be told through dance & music. I
+ t's a pretty chill and fun event. Krampus in drag. May get a little loud 
+ since its a smaller inside space. * If it gets too ov
+END:VEVENT
+END:VCALENDAR

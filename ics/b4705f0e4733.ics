@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b4705f0e4733@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261127T200000
+DTEND;TZID=America/Los_Angeles:20261127T220000
+SUMMARY:Jay Alexander: Mentalist
+LOCATION:Throckmorton Theatre\, Mill Valley\, Mill Valley
+URL:https://ma.to/event/jay-alexander-mentalist-27-nov-2026
+DESCRIPTION:Comedy + Reading · Mill Valley\nhttps://ma.to/event/jay-alexa
+ nder-mentalist-27-nov-2026\n\nA mentalism stage show featuring mind readi
+ ng\, illusions\, sleight of hand and comedy. The November 27 performance 
+ begins at 8 PM at Throckmorton Theatre in Mill Valley\; another performan
+ ce is scheduled for November 28 at 8 PM.
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7e214485826b@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261127T140000
+DTEND;TZID=America/Los_Angeles:20261127T180000
+SUMMARY:Aftershanks 2026: Music & Beer
+LOCATION:The Bistro\, 1001 B Street\, Hayward\, CA 94541\, Hayward
+URL:https://ma.to/event/aftershanks-2026-music-beer-27-nov-2026
+DESCRIPTION:Theatre · Hayward\nhttps://ma.to/event/aftershanks-2026-music
+ -beer-27-nov-2026\n\nAftershanks 2026 is a music and beer event at The Bi
+ stro on the Friday after Thanksgiving. Admission is free\, and the venue 
+ offers 20 taps and a beer garden. Order of play: Katherine Park 2–2:20\
+ , Ant Fujinaga 2:30–2:50\, Frances Ancheta 3–3:20\, Sara Rodenburg 3:
+ 30–3:50\, Joyce Lee 4–4:30\, Bay Station Duo 4:40–5:10\, and John R
+ ybak + Friends 5:20–6. The venue is at 1001 B Street\, Hayward\, CA 945
+ 41\, wi
+END:VEVENT
+END:VCALENDAR

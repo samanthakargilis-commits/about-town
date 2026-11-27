@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:75832622ee0e@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261206T090000
+DTEND;TZID=America/Los_Angeles:20261206T170000
+SUMMARY:Winterfest 2026 Wreath Making (Salesforce Park)
+LOCATION:Salesforce Park\, 425 Mission St.\, San Francisco\, CA\, San Fran
+ cisco
+URL:https://sf.funcheap.com/winterfest-2026-wreath-making-salesforce-park/
+DESCRIPTION:A yearly tradition\nhttps://sf.funcheap.com/winterfest-2026-wr
+ eath-making-salesforce-park/\n\nAll-day Wreath Making Party Make and brin
+ g home your own wreath with a complimentary frame\, greens\, and flourish
+ es! A free RSVP is required. Learn more and sign up for your desired sess
+ ion at the links below. RSVPs open on Monday\, November 23rd at 12pm. 9 
+ – 11 ...
+END:VEVENT
+END:VCALENDAR

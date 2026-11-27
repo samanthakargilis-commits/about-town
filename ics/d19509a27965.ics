@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d19509a27965@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261220T193000
+DTEND;TZID=America/Los_Angeles:20261220T213000
+SUMMARY:Media Meltdown presents: A Christmas Carol
+LOCATION:4 Star Theater\, 2200 Clement St\, San Francisco
+URL:https://ticketing.uswest.veezi.com/purchase/20443?siteToken=d2atbcege5
+ knqsavntt91g1250
+DESCRIPTION:Singing\nhttps://ticketing.uswest.veezi.com/purchase/20443?sit
+ eToken=d2atbcege5knqsavntt91g1250\n\nA CHRISTMAS CAROL (1999) If you want
+  three ghosts to come to you in the night... If you’re a tortured soul 
+ wearing the chains you forged in life... If you’re a dirty poor who wan
+ ts to be findommed by the late Sir Patrick Stewart during his peak hottie
+  era... then this month’s Movie Madhouse is for you! Join the heathens 
+ over at Media Meltdown as they celebrate the legacy of the great actor wi
+ th hi
+END:VEVENT
+END:VCALENDAR

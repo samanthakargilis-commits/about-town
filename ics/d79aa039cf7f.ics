@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d79aa039cf7f@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261129T130000
+DTEND;TZID=America/Los_Angeles:20261129T150000
+SUMMARY:San Francisco Dating Night From Home\, Verified Crowd
+LOCATION:300 Gough Street\, 300 Gough St\, San Francisco\, CA 94102\, USA\
+ , San Francisco\, CA San Francisco\, San Francisco
+URL:https://www.meetup.com/sing-together-choir-social-circle/events/317563
+ 318/
+DESCRIPTION:Singing + Concerts\nhttps://www.meetup.com/sing-together-choir
+ -social-circle/events/317563318/\n\n**✨ San Francisco Zoom Speed Dating
+  – Personality & Age Matched** Genuine conversations with real locals 
+ — all from your living room. We match you with compatible San Francisco
+  locals using a quick personality quiz. You'll chat one-on-one on Zoom in
+  short timed rounds while a host guides the session. **Pick your age grou
+ p and sign up:** * **Ages 18-32** → [REGISTER HERE](https://theliveroun
+ d.com/p
+END:VEVENT
+END:VCALENDAR

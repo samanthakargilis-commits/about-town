@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:547f700068e2@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;VALUE=DATE:20261129
+DTEND;VALUE=DATE:20261130
+SUMMARY:Edgardo Cambón Presents “Gracias Bay Area” 40 Years Celebrati
+ on
+LOCATION:The Freight 2020 Addison Street Berkeley\, CA 94704
+URL:https://sf.funcheap.com/edgardo-cambn-presents-gracias-bay-area-40-yea
+ rs-celebration/
+DESCRIPTION:New in your area\nhttps://sf.funcheap.com/edgardo-cambn-presen
+ ts-gracias-bay-area-40-years-celebration/\n\nEdgardo Cambón Presents “
+ Gracias Bay Area” 40 Years Celebration! Schedule: Doors 6:00 PM\; Show 
+ 7:00 PM. Free dance lesson with Rueda con Ritmo begins at 6:10 PM (bring 
+ your dancing shoes!). Edgardo Cambón stands out as a dynamic and passion
+ ate force in the San Francisco Bay Area’s ...
+END:VEVENT
+END:VCALENDAR

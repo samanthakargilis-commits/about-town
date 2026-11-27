@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c8dc72a2bbce@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261212T100000
+DTEND;TZID=America/Los_Angeles:20261212T120000
+SUMMARY:The Heart of Addiction
+LOCATION:SF Dharma Collective\, 2929 24th St\, San Francisco\, CA San Fran
+ cisco\, San Francisco
+URL:https://www.meetup.com/san-francisco-mindfulness-meetup/events/3175457
+ 12/
+DESCRIPTION:Meditation + Spirituality\nhttps://www.meetup.com/san-francisc
+ o-mindfulness-meetup/events/317545712/\n\n## Working with Shame & Repairi
+ ng Attachment Wounds **with George Haas** Are you caught in an addiction 
+ relapse cycle\, and feel ready to heal the root issues that fuel your add
+ iction? **Join us in Meditation x Addiction Daylong Immersion. Led by med
+ itation teacher George Haas\, this daylong brings together attachment rep
+ air\, G. Allan Marlatt’s work on relapse prevention\, and Buddhist medi
+ tation to 
+END:VEVENT
+END:VCALENDAR

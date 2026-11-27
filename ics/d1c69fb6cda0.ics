@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d1c69fb6cda0@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261128T160000
+DTEND;TZID=America/Los_Angeles:20261128T190000
+SUMMARY:Elia Prata Launch Party/ Holiday Jewelry Pop Up
+LOCATION:Friend of a Friend\, 705 Columbus Ave San Francisco\, San Francis
+ co
+URL:https://partiful.com/e/Nt6ImoTv86IxwXUJYhPD
+DESCRIPTION:New in your area\nhttps://partiful.com/e/Nt6ImoTv86IxwXUJYhPD\
+ n\nSan Francisco\, something very exciting is coming your way! Elia Prata
+  will be at Friend of a Friend wine shop for an exclusive holiday pop-up 
+ shop to launch our new brand. Hand made silver jewelry\, wine curated by 
+ Friend of a Friend\, and an amazing DJ! 📍705 Columbus Ave\, San Franci
+ sco CA 94133 November 28th 4-7pm Bring your friends and come to shop\, dr
+ ink\, dance and celebrate 🎉 Cash and Venmo pref
+END:VEVENT
+END:VCALENDAR

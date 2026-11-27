@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:234e71c44ca9@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;TZID=America/Los_Angeles:20261221T174500
+DTEND;TZID=America/Los_Angeles:20261221T210000
+SUMMARY:cine cue presents ★: carol
+LOCATION:Roxie Theater\, 3117 16th St San Francisco\, San Francisco
+URL:https://partiful.com/e/7bf9zJL4P7dRFIu81l63
+DESCRIPTION:Singing + Theatre\nhttps://partiful.com/e/7bf9zJL4P7dRFIu81l63
+ \n\ncine cue is a film club with a pool bar debrief 🎱 on a mission to 
+ save independent theatre and bring back pool bar culture 💿 ◈ set dur
+ ing Christmastime in 1950s New York\, Todd Haynes’ adaptation of Patric
+ ia Highsmith’s The Price of Salt centers on shy\, aspiring photographer
+  Therese Belivet\, whose world changes when she meets the elegant Carol A
+ ird. ◈ as Carol struggles to maintain custody of her d
+END:VEVENT
+END:VCALENDAR

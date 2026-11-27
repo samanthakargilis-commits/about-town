@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:83fa4f6fde9e@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;TZID=America/Los_Angeles:20261211T173000
+DTEND;TZID=America/Los_Angeles:20261211T220000
+SUMMARY:Let’s Glow SF 2026: SF’s Huge Holiday Projection Arts Festival
+LOCATION:Downtown San Francisco\, Howard & 2nd Streets\, San Francisco\, C
+ A\, San Francisco
+URL:https://sf.funcheap.com/lets-glow-sf-2026-sfs-huge-holiday-projection-
+ arts-festival-dec-4-13-12/
+DESCRIPTION:Fairs & festivals · A yearly tradition\nhttps://sf.funcheap.c
+ om/lets-glow-sf-2026-sfs-huge-holiday-projection-arts-festival-dec-4-13-1
+ 2/\n\nLet’s Glow SF\, the nation’s largest free holiday projection ar
+ ts festival\, is lighting up downtown San Francisco once again for its si
+ xth and brightest year yet. This all-ages\, family-friendly festival runs
+  for 10 dazzling nights from December 4-13\, 2026. Experience breathtakin
+ g animated projections illuminating iconic buildings ...
+END:VEVENT
+END:VCALENDAR

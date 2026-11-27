@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b906b3a87713@bay-events
+DTSTAMP:20261127T221645Z
+DTSTART;TZID=America/Los_Angeles:20261203T170000
+DTEND;TZID=America/Los_Angeles:20261203T210000
+SUMMARY:Holiday Art Pop-Up: One-Of-A-Kind Gifts Under $100 (Punk Majesty)
+LOCATION:Punk Majesty\, 1124 Sutter Street\, San Francisco\, CA\, San Fran
+ cisco
+URL:https://sf.funcheap.com/holiday-art-popup-oneofakind-gifts-100-punk-ma
+ jesty/
+DESCRIPTION:Art + Museum exhibits · Thursday evening\nhttps://sf.funcheap
+ .com/holiday-art-popup-oneofakind-gifts-100-punk-majesty/\n\nOUTLIERS Exh
+ ibition Original Art. Unexpected Gifts. Everything Under $100. Join us fo
+ r SF First Thursday Art Walk on December 3 as Punk Majesty presents OUTLI
+ ERS\, a group exhibition featuring original artwork and unique accessorie
+ s by an eclectic collection of independent artists\, with everything pric
+ ed under $100. Discover one-of-a-kind ...
+END:VEVENT
+END:VCALENDAR

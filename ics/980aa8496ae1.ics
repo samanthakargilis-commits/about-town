@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:980aa8496ae1@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261215T181500
+DTEND;TZID=America/Los_Angeles:20261215T201500
+SUMMARY:December Read - I See You've Called in Dead by John Kenney
+LOCATION:Barnes & Noble\, 11 W Hillsdale Blvd\, San Mateo\, CA San Mateo\,
+  San Mateo
+URL:https://www.meetup.com/meetup-group-ebzcslow/events/317488541/
+DESCRIPTION:Reading + Writing · San Mateo\nhttps://www.meetup.com/meetup-
+ group-ebzcslow/events/317488541/\n\nJoin us to discuss our November 2026 
+ book\, ***I See You've Called in Dead* by John Kenney**. Please note the 
+ group attendance policy: 1. Show up if you mark yourself as "Going." Repe
+ ated no-shows or dropping out at the last minute fills up slots for other
+ s. 2. Do not just show up. You must have a confirmed "Going" status to at
+ tend our events. About the book: One of NPR’s Book We Love 2025 · A Go
+ th
+END:VEVENT
+END:VCALENDAR

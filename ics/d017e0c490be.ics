@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d017e0c490be@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261128T183000
+DTEND;TZID=America/Los_Angeles:20261128T203000
+SUMMARY:Deacon Dave’s Christmas Display
+LOCATION:Deacon Dave’s Christmas Display\, 352 Hillcrest Ave\, Livermore
+ \, Livermore
+URL:https://ma.to/event/deacon-daves-christmas-display-28-nov-2026
+DESCRIPTION:Livermore\nhttps://ma.to/event/deacon-daves-christmas-display-
+ 28-nov-2026\n\nDeacon Dave’s Christmas Display opens on Sat Nov 28 at 6
+ :30 PM and is scheduled to close Jan 1. Admission is free. The holiday li
+ ght display is at 352 Hillcrest Ave in Livermore.
+END:VEVENT
+END:VCALENDAR

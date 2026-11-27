@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:db58a9c8f3e6@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261128T170000
+DTEND;TZID=America/Los_Angeles:20261128T190000
+SUMMARY:Brian Copeland: The Jewelry Box
+LOCATION:The Marsh San Francisco\, 1062 Valencia St\, San Francisco\, San 
+ Francisco
+URL:https://ma.to/event/the-jewelry-box-a-christmas-story-28-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/the-jewelry-box-a-christ
+ mas-story-28-nov-2026\n\nBrian Copeland performs his family-friendly show
+ \, The Jewelry Box... A Genuine Christmas Story\, at The Marsh San Franci
+ sco. In 1970s East Oakland\, six-year-old Brian tries to raise $11.97 to 
+ buy his mother a jewelry box. The production is written and performed by 
+ Brian Copeland\, developed by David Ford and Brian Copeland\, and directe
+ d by David Ford. Tickets are available by phone at 415-282-3055\, 
+END:VEVENT
+END:VCALENDAR

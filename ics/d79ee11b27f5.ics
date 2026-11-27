@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d79ee11b27f5@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261206T170000
+DTEND;TZID=America/Los_Angeles:20261206T190000
+SUMMARY:Winter Solstice Drum Circle
+LOCATION:The Sacred Stream Center\, 2149 Byron Street\, Berkeley\, CA Berk
+ eley\, Berkeley
+URL:https://www.meetup.com/sacred-stream-solstice-and-equinox-drum-circle-
+ meetup-group/events/314516211/
+DESCRIPTION:Meditation + Spirituality · Berkeley\nhttps://www.meetup.com/
+ sacred-stream-solstice-and-equinox-drum-circle-meetup-group/events/314516
+ 211/\n\nOur drum circles are held four times a year on the solstices and 
+ equinoxes. The focus of our circles is on healing for individuals\, the c
+ ommunity\, and the earth. Ours is the longest running drum circle in the 
+ San Francisco Bay Area\, having started in 1998. The format for the circl
+ e includes calling power\, drum circle meditation (or journey)\, healing 
+ circle and closing circle. Please note that this
+END:VEVENT
+END:VCALENDAR

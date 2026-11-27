@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b4f65a602787@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:Berkeley Art Club: Winter Wonder Market
+LOCATION:Gilman Brewing Company\, 912 Gilman St\, Berkeley\, CA 94710\, Be
+ rkeley
+URL:https://sf.funcheap.com/berkeley-art-club-winter-market/
+DESCRIPTION:Art + Craft · Berkeley\nhttps://sf.funcheap.com/berkeley-art-
+ club-winter-market/\n\nEnjoy whimsical live music\, food and locally brew
+ ed beers while shopping from 20+ local artists and makers. This event is 
+ also a fundraiser! Join us for Berkeley Art Club’s Winter Wonder Market
+  at Gilman! Enjoy whimsical live music\, food and locally brewed beers wh
+ ile shopping from ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:270b0c3a62b2@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;TZID=America/Los_Angeles:20261217T170000
+DTEND;TZID=America/Los_Angeles:20261217T220000
+SUMMARY:4th Annual Bat Show 2026: Nocturnal Emissions & Holiday Havoc (111
+  Minna)
+LOCATION:111 Minna Gallery\, 111 Minna St.\, San Francisco\, CA\, San Fran
+ cisco
+URL:https://sf.funcheap.com/4th-annual-bat-show-2026-nocturnal-emissions-h
+ oliday-havoc-111-minna/
+DESCRIPTION:Art · Thursday evening\nhttps://sf.funcheap.com/4th-annual-ba
+ t-show-2026-nocturnal-emissions-holiday-havoc-111-minna/\n\nThe 4th Annua
+ l Bat Show 2026: Nocturnal Emissions & Holiday Havoc! Featuring a Live Pe
+ rformance by BATNAP! Thursday\, December 17\, 2026 | 5–10 PM 111 Minna 
+ Gallery | San Francisco\, CA San Francisco\, CA — Winston Smith’s Stu
+ dio Fallout and legendary punk record label Alternative Tentacles are tea
+ ming up ...
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d4b489c81893@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261205T150000
+DTEND;TZID=America/Los_Angeles:20261205T170000
+SUMMARY:Holiday Cookie Swap
+LOCATION:Snibspace\, 1088 Branham Ln San Jose\, San Jose
+URL:https://partiful.com/e/W7IoMQtLtzxPqSCMDkdv
+DESCRIPTION:San Jose\nhttps://partiful.com/e/W7IoMQtLtzxPqSCMDkdv\n\nHolid
+ ay Cookie Swap with Bites by Megg Date: Saturday\, December 5 Time: 3-5pm
+  Place: Snibspace\, San Jose Attire: Casual / Holiday / Ugly Sweaters Cos
+ t: $30 per person This one’s for the cookie lovers! Bring the cookies y
+ our friends always ask you to make\, or use this as your excuse to try th
+ at new recipe you’ve been saving. We’ll spend the afternoon snacking\
+ , meeting new people\, and swapping cooki
+END:VEVENT
+END:VCALENDAR

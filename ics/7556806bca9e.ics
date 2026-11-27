@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:7556806bca9e@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261127T143000
+DTEND;TZID=America/Los_Angeles:20261127T163000
+SUMMARY:Charli XCX - BRAT: Dance
+LOCATION:Envelop SF\, San Francisco
+URL:https://ma.to/event/charli-xcx-brat-dance-27-nov-2026
+DESCRIPTION:Theatre + Weird & unusual\nhttps://ma.to/event/charli-xcx-brat
+ -dance-27-nov-2026\n\nCharli XCX's BRAT is the subject of this immersive 
+ listening session at Envelop SF. The record is presented as a pop album b
+ uilt for the dancefloor\, with club-ready beats\, sharp hooks and unfilte
+ red lyrics. This session begins at 2:30 PM. Guests can come alone or with
+  friends\, meet on the dancefloor and listen together. Tickets are availa
+ ble through the link in Envelop's bio.
+END:VEVENT
+END:VCALENDAR

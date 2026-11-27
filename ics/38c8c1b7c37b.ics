@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:38c8c1b7c37b@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261128T110000
+DTEND;TZID=America/Los_Angeles:20261128T160000
+SUMMARY:Soul Kitchen Brunch
+LOCATION:Victory Hall\, 360 Ritch St\, San Francisco\, CA\, San Francisco
+URL:https://ma.to/event/soul-kitchen-brunch-28-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/soul-kitchen-brunch-28-n
+ ov-2026\n\nSoul Kitchen Brunch returns to Victory Hall with an all-vinyl 
+ soundtrack from resident DJs @duginf\, @w_southon1961\, and @djmaxchamp. 
+ Little Skillet handles the kitchen. The selections range from Dilla and J
+ anet to Chicago house. Features a photo booth in the Parlor. Brunch runs 
+ every Saturday from 11am to 4pm.
+END:VEVENT
+END:VCALENDAR

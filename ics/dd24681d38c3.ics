@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:dd24681d38c3@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261201T180000
+DTEND;TZID=America/Los_Angeles:20261201T200000
+SUMMARY:When Agents Compete: The Hidden Bottlenecks of Scale | RocketRide 
+ × Hotdata Fireside
+LOCATION:360 Post St\, 360 Post St\, San Francisco\, CA 94108\, USA\, San 
+ Francisco
+URL:https://luma.com/rocket-79qt
+DESCRIPTION:Discourse\nhttps://luma.com/rocket-79qt\n\nOne agent is a demo
+ . Fifty agents is a traffic jam. As teams go from one agent to many\, the
+  agents start competing for the same data\, tools\, context and compute. 
+ Queries pile up\, answers drift\, costs climb\, and things quietly break 
+ where nobody is looking. Join two founders for a candid fireside chat on 
+ where scale really hurts and how to build agents that hold up when there 
+ are lots of them. What
+END:VEVENT
+END:VCALENDAR

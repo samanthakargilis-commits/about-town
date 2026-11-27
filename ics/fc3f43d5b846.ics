@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:fc3f43d5b846@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261127T210000
+DTEND;TZID=America/Los_Angeles:20261128T010000
+SUMMARY:Broken Promises: R&B & Hip-Hop
+LOCATION:Vinnie’s Bar & Grill\, Concord\, CA\, Concord
+URL:https://ma.to/event/broken-promises-rb-hip-hop-27-nov-2026
+DESCRIPTION:Concord\nhttps://ma.to/event/broken-promises-rb-hip-hop-27-nov
+ -2026\n\nDJ Heartbreak returns to Vinnie’s Bar & Grill in Concord for t
+ he Black Friday edition of Broken Promises. Expect a night of R&B and hip
+ -hop\, featuring DJ Heartbreak and DJ Sami on the decks\, with a special 
+ performance and hosting by CHARLIEEE (Mr. Outside). Doors open at 8pm\; m
+ usic/show runs from 9pm to 1am. Admission is $20 presale or $30 at the do
+ or. 21+ event with a full bar and tables availabl
+END:VEVENT
+END:VCALENDAR

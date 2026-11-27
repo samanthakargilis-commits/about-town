@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:4b37b7b8cda8@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261129T190000
+DTEND;TZID=America/Los_Angeles:20261129T220000
+SUMMARY:Single Awareness Dinner: San Jose | Foodies + New Friends
+LOCATION:Restaurant of the Week\, Post Street\, San Jose\, CA 95113 San Jo
+ se\, San Jose
+URL:https://www.eventbrite.com/e/single-awareness-dinner-san-jose-foodies-
+ new-friends-tickets-1987760511198
+DESCRIPTION:San Jose\nhttps://www.eventbrite.com/e/single-awareness-dinner
+ -san-jose-foodies-new-friends-tickets-1987760511198\n\nCome hang out\, me
+ et cool food lovers\, and make new friends while supporting local busines
+ ses.
+END:VEVENT
+END:VCALENDAR

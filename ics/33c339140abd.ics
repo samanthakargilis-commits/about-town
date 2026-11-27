@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:33c339140abd@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261219T110000
+DTEND;TZID=America/Los_Angeles:20261219T130000
+SUMMARY:Gay/Bi/Queer/Trans+ Men: Dog Speed Dating
+LOCATION:Headlands Brewing - Berkeley\, 1280 Gilman St\, Berkeley\, CA 947
+ 02\, USA\, Berkeley\, CA Berkeley\, Berkeley
+URL:https://www.meetup.com/together-date-and-friends/events/317310361/
+DESCRIPTION:Gay / queer + Discourse · Berkeley\nhttps://www.meetup.com/to
+ gether-date-and-friends/events/317310361/\n\nBring your pup and your char
+ m for a fun\, fast-paced meet-and-greet with other gay\, bi\, queer\, and
+  trans+ men. I am hosting an Gay/Bi/Queer/Trans+: Dog Speed Dating event 
+ over in Berkeley! It will be at Headlands Brewing. If you have a friendly
+  dog\, bring your companion along. No dog is required for this event. You
+  must like dogs though. **I will be doing giveaway prizes for this event.
+ ** I will pr
+END:VEVENT
+END:VCALENDAR

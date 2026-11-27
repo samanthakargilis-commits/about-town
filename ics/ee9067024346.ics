@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ee9067024346@bay-events
+DTSTAMP:20261127T221645Z
+DTSTART;TZID=America/Los_Angeles:20261209T110000
+DTEND;TZID=America/Los_Angeles:20261209T190000
+SUMMARY:Winter Walk\, Union Square
+LOCATION:Maiden Lane\, 222 Stockton St San Francisco\, San Francisco
+URL:https://partiful.com/e/pUWNBQ2r0ncV2v61vTXq
+DESCRIPTION:Craft + Fairs & festivals\nhttps://partiful.com/e/pUWNBQ2r0ncV
+ 2v61vTXq\n\nWinter Walk returns to Union Square as a European-style holid
+ ay market on two blocks of Maiden Lane. Wooden chalets host rotating loca
+ l makers and artists\, with seasonal food and drinks and live entertainme
+ nt. Free admission\; open Mon–Wed 11 AM–7 PM and Thu–Sun 11 AM–8 
+ PM\, closed Christmas Day. This is a recommendation\, not hosted by Parti
+ ful - hosted by Union Square Alliance. Learn more using the
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:0ea4450bcdff@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261213T120000
+DTEND;TZID=America/Los_Angeles:20261213T140000
+SUMMARY:December Book Club/Cookie Swap: The Bear and the Nightingale
+LOCATION:Marin Art and Garden Center\, 30 Sir Francis Drake Blvd\, Ross\, 
+ CA Ross\, Ross
+URL:https://www.meetup.com/millennial-book-lovers-of-marin/events/31734934
+ 7/
+DESCRIPTION:Reading + Art · Ross\nhttps://www.meetup.com/millennial-book-
+ lovers-of-marin/events/317349347/\n\nThe last couple months of the year m
+ eans it’s time for a cozy book and a cookie swap! For the next meet up 
+ in December\, we’ll be reading The Bear and the Nightingale by Katherin
+ e Arden. The Marin library system has plenty of copies available. We’ll
+  also have a casual cookie swap for anyone who wants to bake some cookies
+  or other holiday treats to share with others. Be sure to bring a contain
+ er to 
+END:VEVENT
+END:VCALENDAR

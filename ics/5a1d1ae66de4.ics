@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5a1d1ae66de4@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261127T000000
+DTEND;TZID=America/Los_Angeles:20261127T020000
+SUMMARY:Hidden Turkey Scavenger Hunt
+LOCATION:Gamescape SF\, 333 Divisadero\, San Francisco\, CA\, San Francisc
+ o
+URL:https://ma.to/event/hidden-turkey-scavenger-hunt-27-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/hidden-turkey-scavenger-
+ hunt-27-nov-2026\n\nThe Gamescape Crew hid turkeys around the store for a
+  Thanksgiving-themed scavenger hunt. Visitors can search the shop to find
+  all of the hidden turkeys. The in-store hunt is available through the en
+ d of November during store hours.
+END:VEVENT
+END:VCALENDAR

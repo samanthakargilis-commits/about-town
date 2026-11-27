@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:069b52d1d884@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261128T100000
+DTEND;TZID=America/Los_Angeles:20261128T120000
+SUMMARY:Bayarea Group SK8 Class
+LOCATION:Brooklyn Basin\, 288 9th Ave\, Oakland\, CA\, Oakland
+URL:https://ma.to/event/bayarea-group-sk8-class-28-nov-2026
+DESCRIPTION:Oakland\nhttps://ma.to/event/bayarea-group-sk8-class-28-nov-20
+ 26\n\nBayarea Group SK8 Class with BowTie is a two-hour\, all-levels Satu
+ rday morning skate session at Brooklyn Basin. It includes a warm-up\, FUN
+ damentals\, choreography and a cool-down with a skate version of a line d
+ ance. Participants bring water\, towels and chairs. Admission is $25 per 
+ person. The outdoor class runs weekly\, with a weather check on Wednesday
+ s.
+END:VEVENT
+END:VCALENDAR

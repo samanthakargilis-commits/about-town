@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b5b1ffc414e0@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261128T000000
+DTEND;TZID=America/Los_Angeles:20261128T020000
+SUMMARY:Sketching in the Galleries
+LOCATION:de Young\, San Francisco
+URL:https://ma.to/event/sketching-in-the-galleries-28-nov-2026
+DESCRIPTION:Museum exhibits\nhttps://ma.to/event/sketching-in-the-gallerie
+ s-28-nov-2026\n\nNov 28 · San Francisco. A sketching session in the de Y
+ oung galleries. When Saturday\, 28 November Add to Calendar Add to Calend
+ ar About A sketching session in the de Young galleries. Organised by Legi
+ on of Honor Museum Where de Young \, San Francisco Open in Google Maps
+END:VEVENT
+END:VCALENDAR

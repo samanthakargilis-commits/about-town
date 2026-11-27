@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d787111860a0@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261128T090000
+DTEND;TZID=America/Los_Angeles:20261128T110000
+SUMMARY:Michigan vs Ohio State Watch Party
+LOCATION:Underdogs Cantina\, San Francisco
+URL:https://ma.to/event/michigan-vs-ohio-state-watch-party-28-nov-2026-1
+DESCRIPTION:New in your area\nhttps://ma.to/event/michigan-vs-ohio-state-w
+ atch-party-28-nov-2026-1\n\nUnderdogs Cantina shows Michigan vs Ohio Stat
+ e on Saturday\, November 28\, kicking off at 9 AM. The sports bar across 
+ from Oracle Park opens early for the game\, the first of four college foo
+ tball games there that day: USC vs UCLA follows at 12:30 PM\, then Auburn
+  vs Alabama and Oregon vs Washington at 4:30 PM.
+END:VEVENT
+END:VCALENDAR

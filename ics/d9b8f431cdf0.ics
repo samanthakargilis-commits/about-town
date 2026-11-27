@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d9b8f431cdf0@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261127T170000
+DTEND;TZID=America/Los_Angeles:20261127T190000
+SUMMARY:Miracle at P.C.H Opening Day
+LOCATION:Pacific Cocktail Haven\, 550 Sutter Street\, San Francisco\, CA 9
+ 4108\, San Francisco
+URL:https://ma.to/event/miracle-at-pch-opening-day-27-nov-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/miracle-at-pch-opening-d
+ ay-27-nov-2026\n\nMiracle at P.C.H returns for its 10th year with an open
+ ing on Friday\, November 27 at 5pm at Pacific Cocktail Haven. The Christm
+ as-themed cocktail pop-up also adds a second location this year at sister
+  bar Kona's SF.
+END:VEVENT
+END:VCALENDAR

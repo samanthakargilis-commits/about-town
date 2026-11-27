@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:3f8a7cf9d5ea@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261127T193000
+DTEND;TZID=America/Los_Angeles:20261127T213000
+SUMMARY:Janet Thornburg: Cognitive Divine
+LOCATION:The Marsh San Francisco\, San Francisco
+URL:https://ma.to/event/janet-thornburg-cognitive-divine-28-nov-2026
+DESCRIPTION:Comedy + Fairs & festivals\nhttps://ma.to/event/janet-thornbur
+ g-cognitive-divine-28-nov-2026\n\nJanet Thornburg performs her award-winn
+ ing solo comedy Cognitive Divine\, bringing seven opinionated sides of he
+ rself to life as they clash over parties\, shopping\, writing\, relations
+ hips\, and life choices. Winner of Best Full-Length Comedy at The Marsh
+ ’s In Front Of Your Eyes 2026 Festival. The show runs Fridays at 7:30 P
+ M from November 6 through December 11 at The Marsh San Francisco. SPECIAL
+  OPEN
+END:VEVENT
+END:VCALENDAR

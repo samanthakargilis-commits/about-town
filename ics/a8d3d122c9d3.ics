@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:a8d3d122c9d3@bay-events
+DTSTAMP:20261127T221645Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Black Friday Night Live (Crockett)
+LOCATION:Monarch Store\, 1308 Pomona Street\, Crockett\, CA\, Crockett
+URL:https://sf.funcheap.com/black-friday-night-live-crockett/
+DESCRIPTION:Musical theatre + Fairs & festivals · Crockett\nhttps://sf.fu
+ ncheap.com/black-friday-night-live-crockett/\n\nSkip the conventional Bla
+ ck Friday madness and head to Crockett for Night Trip\, Pomona Street’s
+  last-Friday-of-the-month block party celebrating independent businesses\
+ , music\, art and community. This month\, Monarch presents a special free
+  live performance by EnSpirits\, featuring the extraordinary musical tale
+ nts of Crockett’s own\, Dave Tweedie ...
+END:VEVENT
+END:VCALENDAR

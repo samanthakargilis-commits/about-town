@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:c9cad7ede1dc@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;TZID=America/Los_Angeles:20261212T170000
+DTEND;TZID=America/Los_Angeles:20261212T203000
+SUMMARY:Hikma Health Presents American Doctor: A Screening & Conversation 
+ on Gaza with Dr. Feroze Sidhwa
+LOCATION:Gray Area / Grand Theater\, Gray Area / Grand Theater\, 2665 Miss
+ ion St\, San Francisco\, CA 94110\, USA\, San Francisco
+URL:https://luma.com/pc1njemo
+DESCRIPTION:Discourse + Theatre\nhttps://luma.com/pc1njemo\n\nJoin Hikma H
+ ealth for a special screening of American Doctor\, the acclaimed document
+ ary following three American physicians who travel to Gaza to provide lif
+ esaving medical care amid extraordinary circumstances. Following the scre
+ ening\, we'll be joined in person by Dr. Feroze Sidhwa\, a trauma and cri
+ tical care surgeon featured in the film\, for a special conversation and 
+ audience Q&A about deliveri
+END:VEVENT
+END:VCALENDAR

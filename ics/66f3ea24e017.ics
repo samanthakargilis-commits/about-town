@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:66f3ea24e017@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261127T193000
+DTEND;TZID=America/Los_Angeles:20261127T213000
+SUMMARY:Magic of Jade
+LOCATION:Sebastiani Theatre\, San Francisco
+URL:https://ma.to/event/magic-of-jade-starring-jade-27-nov-2026
+DESCRIPTION:Comedy + Theatre\nhttps://ma.to/event/magic-of-jade-starring-j
+ ade-27-nov-2026\n\n“Magic of Jade” is an evening stage show starring 
+ Jade\, blending magic\, dance\, theatre and comedy. The family-friendly p
+ erformance includes moments of wonder and mystery\, with a routine featur
+ ing a mother- or grandmother-like figure on stage and a borrowed ring. It
+  takes place at Sebastiani Theatre in Sonoma on the night after Thanksgiv
+ ing.
+END:VEVENT
+END:VCALENDAR

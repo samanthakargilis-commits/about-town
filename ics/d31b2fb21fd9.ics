@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:d31b2fb21fd9@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261212T170000
+DTEND;TZID=America/Los_Angeles:20261212T190000
+SUMMARY:Second Saturday of the Month - Live and In Person #38 -- HOLIDAY S
+ ONGS!
+LOCATION:San Francisco\, San Francisco
+URL:https://www.meetup.com/san-francisco-ukulele-meetup/events/317187532/
+DESCRIPTION:Singing + U-pick farms\nhttps://www.meetup.com/san-francisco-u
+ kulele-meetup/events/317187532/\n\nTHIS IS AN IN-PERSON MEETUP! **This mo
+ nth\, we will play songs from the most recently updated 2023 San Francisc
+ o Ukulele Rebellion Holiday Songbook. There's a dropbox link to the Holid
+ ay Songbook below and in the comments. At this meeting\, we'll be able to
+  practice holiday songs we'll be playing at the Embarcadero later in Dece
+ mber.** If you'd like to play a song that isn't in the Holiday Songbook\,
+END:VEVENT
+END:VCALENDAR

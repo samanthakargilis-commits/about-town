@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:bb00eb768ea6@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261129T000000
+DTEND;TZID=America/Los_Angeles:20261129T020000
+SUMMARY:S.F. Comedy Showcase
+LOCATION:The Punch Line\, San Francisco
+URL:https://ma.to/event/sf-comedy-showcase-29-nov-2026
+DESCRIPTION:Comedy + Theatre\nhttps://ma.to/event/sf-comedy-showcase-29-no
+ v-2026\n\nThe S.F. Comedy Showcase brings stand-up comedy to The Punch Li
+ ne in San Francisco on Sunday\, November 29. Ali Wong\, W. Kamau Bell and
+  Hasan Minhaj are among comics who have appeared at the showcase\, which 
+ has also been a stage for rising comics. The Punch Line is a historic San
+  Francisco comedy venue with a performance history of more than 45 years.
+  Unannounced guests may drop in\, and tickets for
+END:VEVENT
+END:VCALENDAR

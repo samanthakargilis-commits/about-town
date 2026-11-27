@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:40f6bc8e0e12@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261205T090000
+DTEND;TZID=America/Los_Angeles:20261205T120000
+SUMMARY:Presidio Planting Day 2026
+LOCATION:The Presidio\, San Francisco
+URL:https://presidio.gov/explore/events/presidio-planting-day-2026/
+DESCRIPTION:New in your area\nhttps://presidio.gov/explore/events/presidio
+ -planting-day-2026/\n\nJoin a team of volunteers for Presidio Planting Da
+ y 2026 and help plant seeds and steward the park at this free San Francis
+ co event.
+END:VEVENT
+END:VCALENDAR

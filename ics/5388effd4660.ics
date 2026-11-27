@@ -1,0 +1,36 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5388effd4660@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261127T000000
+DTEND;TZID=America/Los_Angeles:20261127T020000
+SUMMARY:Friendsgiving One Night Class
+LOCATION:uncle paul’s ceramics\, San Francisco
+URL:https://ma.to/event/friendsgiving-one-night-class-27-nov-2026
+DESCRIPTION:Craft\nhttps://ma.to/event/friendsgiving-one-night-class-27-no
+ v-2026\n\nuncle paul’s ceramics hosts a one-night ceramics class in Nor
+ th Beach for Friendsgiving groups. Friends can bring their own group to t
+ he studio for a hands-on session.
+END:VEVENT
+END:VCALENDAR

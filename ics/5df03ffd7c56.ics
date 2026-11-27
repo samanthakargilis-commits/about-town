@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:5df03ffd7c56@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;TZID=America/Los_Angeles:20261220T120000
+DTEND;TZID=America/Los_Angeles:20261220T140000
+SUMMARY:Cybersentics Book Club: Love Testers + Musée Mécanique Tour
+LOCATION:Musée Mécanique\, Pier 45\, San Francisco\, CA 94133\, San Fran
+ cisco
+URL:https://sf.funcheap.com/cybersentics-book-club-love-testers-muse-mcani
+ que-tour-sf/
+DESCRIPTION:Reading\nhttps://sf.funcheap.com/cybersentics-book-club-love-t
+ esters-muse-mcanique-tour-sf/\n\n​Can love be measured? For over a hund
+ red years\, we have been on a quest to measure love and uncover the princ
+ iples of romantic affection. . . ​This month\, we’re reading “Love 
+ Tester Machines\,” a history of devices that promised to predict whethe
+ r two people were ...
+END:VEVENT
+END:VCALENDAR

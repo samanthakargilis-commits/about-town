@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:399d61d5bb46@bay-events
+DTSTAMP:20261127T221647Z
+DTSTART;VALUE=DATE:20261219
+DTEND;VALUE=DATE:20261220
+SUMMARY:1st Annual Holidaze Market (Berkeley)
+LOCATION:The Berkeley Alembic\, 2820 Seventh Street\, Berkeley\, CA 94710\
+ , Berkeley
+URL:https://sf.funcheap.com/1st-annual-holidaze-market-berkeley/
+DESCRIPTION:Spirituality + Art · Berkeley\nhttps://sf.funcheap.com/1st-an
+ nual-holidaze-market-berkeley/\n\nYou are cordially invited to the first 
+ annual Holidaze Market at the Berkeley Alembic\, featuring psychedelic an
+ d visionary artists and artisans. The Market’s premier vendors are brin
+ ging boho talisman hats\, hand-carved pipes\, spiritual goods\, handmade 
+ soaps\, original art\, prints\, textiles\, jewelry\, and so much more. ..
+ .
+END:VEVENT
+END:VCALENDAR

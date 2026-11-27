@@ -1,0 +1,42 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ef2f7dba1ebc@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261204T193000
+DTEND;TZID=America/Los_Angeles:20261204T213000
+SUMMARY:Philharmonia Baroque Orchestra & Chorale: “Baroque Brilliance”
+  Live
+LOCATION:Herbst Theatre\, 401 Van Ness Avenue\, San Francisco\, CA\, San F
+ rancisco
+URL:https://sf.funcheap.com/philharmonia-baroque-orchestra-chorale-baroque
+ -brilliance-live-dec-35/
+DESCRIPTION:Concerts + Theatre\nhttps://sf.funcheap.com/philharmonia-baroq
+ ue-orchestra-chorale-baroque-brilliance-live-dec-35/\n\nFrom soaring sopr
+ ano melodies to triumphant trumpet fanfares\, Baroque composers knew how 
+ to make an occasion feel special! Make live music part of your holiday ce
+ lebrations with Philharmonia Baroque Orchestra in Baroque Brilliance\, De
+ cember 3–5 in Palo Alto\, San Francisco\, and Berkeley. Performed on pe
+ riod ...
+END:VEVENT
+END:VCALENDAR

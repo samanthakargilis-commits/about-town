@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:8fe963a64cfe@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261218T193000
+DTEND;TZID=America/Los_Angeles:20261218T213000
+SUMMARY:“Elf” Live in Concert with SF Symphony
+LOCATION:Davies Symphony Hall\, 201 Van Ness Ave\, San Francisco\, CA 9410
+ 2\, San Francisco
+URL:https://sf.funcheap.com/elf-live-in-concert-with-sf-symphony-dec-18-20
+ /
+DESCRIPTION:Concerts\nhttps://sf.funcheap.com/elf-live-in-concert-with-sf-
+ symphony-dec-18-20/\n\nExperience your favorite Christmas film transforme
+ d with the music of a live symphony orchestra in ElfTM in Concert! Audien
+ ces can rediscover the magic of this holiday classic as the film’s comp
+ oser\, John Debney\, conducts the San Francisco Symphony in his wonderful
+  score while Santa Claus ...
+END:VEVENT
+END:VCALENDAR

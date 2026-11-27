@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f431f00e0034@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261130T200000
+DTEND;TZID=America/Los_Angeles:20261130T220000
+SUMMARY:A John Waters Christmas
+LOCATION:Great American Music Hall\, 859 O'Farrell St\, San Francisco\, CA
+ \, San Francisco
+URL:https://ma.to/event/a-john-waters-christmas-30-nov-2026
+DESCRIPTION:Theatre\nhttps://ma.to/event/a-john-waters-christmas-30-nov-20
+ 26\n\nThe Pope of Trash and Saint of Sleaze\, John Waters\, returns for h
+ is annual holiday tradition. Expect a night of unfiltered stories and sub
+ versive cheer as the legendary cult filmmaker takes over the Great Americ
+ an Music Hall stage for his no-holds-barred holiday extravaganza. Ticket 
+ holders can show their tickets at Ula and Zingari for 10% off.
+END:VEVENT
+END:VCALENDAR

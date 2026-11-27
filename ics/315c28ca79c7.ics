@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:315c28ca79c7@bay-events
+DTSTAMP:20261127T221645Z
+DTSTART;TZID=America/Los_Angeles:20261212T110000
+DTEND;TZID=America/Los_Angeles:20261212T170000
+SUMMARY:San Francisco Winter Vibe Art Fair w/ 125+ Artists & Makers (Pier 
+ 27)
+LOCATION:Pier 27\, Pier 27\, The Embarcadero\, San Francisco\, CA 94113\, 
+ San Francisco
+URL:https://sf.funcheap.com/san-francisco-winter-vibe-art-fair-125-artists
+ -makers-pier-27/
+DESCRIPTION:Craft + Fairs & festivals\nhttps://sf.funcheap.com/san-francis
+ co-winter-vibe-art-fair-125-artists-makers-pier-27/\n\nVibe Artisan Marke
+ ts is coming back to San Francisco for its first-ever Holiday Winter even
+ t. A brand new city\, a fresh lineup of artists\, and a completely new ex
+ perience set against stunning views and an iconic SF backdrop. This is Vi
+ be\, reimagined for San Francisco. Shop ...
+END:VEVENT
+END:VCALENDAR

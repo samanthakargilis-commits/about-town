@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:b3019e636e5a@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261208T180000
+DTEND;TZID=America/Los_Angeles:20261208T203000
+SUMMARY:vol 4: cozy fireside growth gossip
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/lifmrflr
+DESCRIPTION:New in your area\nhttps://luma.com/lifmrflr\n\nWe're excited t
+ o welcome Lauren\, Head of Growth at Serval\, to come chat about everythi
+ ng she's helped build at one of the fastest growing AI startups. We'll ha
+ ve dinner & cozy drinks provided\, so come in your most festive sweater a
+ nd prepare your most pressing questions you have for Lauren! Agenda: 6:00
+ -6:45: Mingle & food 6:45-7:45: Fireside chat 7:45-8:30: Mingling resumes
+  Please only RSVP if yo
+END:VEVENT
+END:VCALENDAR

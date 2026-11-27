@@ -1,0 +1,40 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f447e63adb35@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;TZID=America/Los_Angeles:20261127T100000
+DTEND;TZID=America/Los_Angeles:20261127T180000
+SUMMARY:Great Dickens Christmas Fair
+LOCATION:Cow Palace\, Daly City\, Daly City
+URL:https://ma.to/event/great-dickens-christmas-fair-27-nov-2026-1
+DESCRIPTION:Fairs & festivals + Singing · Daly City\nhttps://ma.to/event/
+ great-dickens-christmas-fair-27-nov-2026-1\n\nThe Great Dickens Christmas
+  Fair returns for its 2026 holiday season\, celebrating more than 56 year
+ s of tradition. It recreates the snowy streets of Victorian London across
+  four acres of exhibition halls with more than 800 costumed characters\, 
+ including Charles Dickens and figures from his novels. The fair features 
+ seven stages of live entertainment including caroling\, dancing\, and the
+ atrical perf
+END:VEVENT
+END:VCALENDAR

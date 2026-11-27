@@ -1,0 +1,37 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ea8e06ee973b@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261127T180000
+DTEND;TZID=America/Los_Angeles:20261127T200000
+SUMMARY:Borscht & Beats
+LOCATION:DACHA Kitchen & Bar\, 1085 Sutter Street\, San Francisco\, San Fr
+ ancisco
+URL:https://ma.to/event/borscht-beats-2026-11-27
+DESCRIPTION:New in your area\nhttps://ma.to/event/borscht-beats-2026-11-27
+ \n\nBorscht & Beats is a monthly gathering on the fourth Friday of the mo
+ nth with Eastern European food and music. The gatherings continue to supp
+ ort Ukraine. Reservations can be made.
+END:VEVENT
+END:VCALENDAR

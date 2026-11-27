@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:21048ad554a0@bay-events
+DTSTAMP:20261127T221646Z
+DTSTART;TZID=America/Los_Angeles:20261203T173000
+DTEND;TZID=America/Los_Angeles:20261203T220000
+SUMMARY:Antler SF After Dark V2: Building with Voice
+LOCATION:San Francisco\, CA\, San Francisco
+URL:https://luma.com/antlerus-fd0t
+DESCRIPTION:Museum exhibits + Singing · Thursday evening\nhttps://luma.co
+ m/antlerus-fd0t\n\nAn open workspace for operators\, builders\, and futur
+ e founders tinkering with what's next. This time\, we're building with vo
+ ice. Have an idea you can't stop thinking about? A voice agent you've bee
+ n meaning to prototype? Or simply an itch to build something new? Join us
+  for Antler SF After Dark V2\, an evening working session for operators a
+ nd builders who want dedicated time\, space\, and community 
+END:VEVENT
+END:VCALENDAR

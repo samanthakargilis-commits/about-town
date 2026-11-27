@@ -1,0 +1,39 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:e9c1c6f361c7@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261128T000000
+DTEND;TZID=America/Los_Angeles:20261128T020000
+SUMMARY:Second Set: Live Jazz + Vinyl
+LOCATION:The Battery\, 717 Battery St\, San Francisco\, CA 94111\, San Fra
+ ncisco
+URL:https://ma.to/event/second-set-live-jazz-nov-28-2026
+DESCRIPTION:New in your area\nhttps://ma.to/event/second-set-live-jazz-nov
+ -28-2026\n\nThe Second Set series brings live jazz to Saturday dinner at 
+ The Battery each week through the end of the year\, with musicians featur
+ ed at SFJAZZ and Yoshi's. Vinyl spins in the Living Room alongside the se
+ ts\, and Chef Jason serves fresh pizzas in the Garden to be enjoyed by th
+ e fire pits.
+END:VEVENT
+END:VCALENDAR

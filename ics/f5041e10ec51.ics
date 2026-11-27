@@ -1,0 +1,41 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f5041e10ec51@bay-events
+DTSTAMP:20261127T221648Z
+DTSTART;TZID=America/Los_Angeles:20261202T170000
+DTEND;TZID=America/Los_Angeles:20261202T190000
+SUMMARY:Land\, Data\, and the Taste of Place: A Honey Tasting with HiveTra
+ cks
+LOCATION:9Zero Climate Innovation Hub\, 9Zero Climate Innovation Hub\, 350
+  California St 4th floor\, San Francisco\, CA 94104\, USA\, San Francisco
+URL:https://luma.com/9zero-mzgy
+DESCRIPTION:Discourse\nhttps://luma.com/9zero-mzgy\n\nLand\, Data\, and th
+ e Taste of Place: A Honey Tasting with HiveTracks Every jar of honey tell
+ s a story about where it came from: what was blooming\, how healthy the l
+ and was\, and how the bees did that season. What if we could read that st
+ ory as data? Join us at 9Zero for an evening of honey tasting with Max R
+ ünzel\, Co-Founder and CEO of HiveTracks. HiveTracks turns what people s
+ ee on the ground—hive 
+END:VEVENT
+END:VCALENDAR

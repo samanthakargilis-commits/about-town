@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:9a4310e48078@bay-events
+DTSTAMP:20261127T221645Z
+DTSTART;TZID=America/Los_Angeles:20261201T190000
+DTEND;TZID=America/Los_Angeles:20261201T210000
+SUMMARY:Jen Siraganian Poetry Reading
+LOCATION:Green Apple Books on the Park\, 1231 9th Ave\, SF\, San Francisco
+URL:https://ma.to/event/jen-siraganian-poetry-reading-01-dec-2026
+DESCRIPTION:Reading + Writing\nhttps://ma.to/event/jen-siraganian-poetry-r
+ eading-01-dec-2026\n\nLitquake presents a release reading for Jen Siragan
+ ian’s debut poetry collection\, Everything Has Been Moved\, Even the De
+ ad\, with Tongo Eisen-Martin\, Nancy Miller Gomez\, and Christin Rice fea
+ tured. Admission is free\, and RSVP is available through the organiser’
+ s link.
+END:VEVENT
+END:VCALENDAR

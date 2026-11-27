@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:96cbb9f5a831@bay-events
+DTSTAMP:20261127T221650Z
+DTSTART;TZID=America/Los_Angeles:20261128T090000
+DTEND;TZID=America/Los_Angeles:20261128T100000
+SUMMARY:Mat Pilates with Bay Views
+LOCATION:Casa Madrona Hotel & Spa\, 801 Bridgeway\, Sausalito\, CA 94965 S
+ ausalito\, Sausalito
+URL:https://www.eventbrite.com/e/mat-pilates-with-bay-views-tickets-198843
+ 6230292
+DESCRIPTION:Sausalito\nhttps://www.eventbrite.com/e/mat-pilates-with-bay-v
+ iews-tickets-1988436230292\n\nMat Pilates with sweeping bay views at Casa
+  Madrona. A serene\, strength-focused class designed to sculpt\, align\, 
+ and restore.
+END:VEVENT
+END:VCALENDAR

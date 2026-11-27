@@ -1,0 +1,38 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//About Town//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:f6dada67a675@bay-events
+DTSTAMP:20261127T221649Z
+DTSTART;TZID=America/Los_Angeles:20261127T150000
+DTEND;TZID=America/Los_Angeles:20261127T210000
+SUMMARY:ModaSocial Black Friday Market
+LOCATION:City Station\, 701 Valencia Street\, San Francisco\, San Francisc
+ o
+URL:https://ma.to/event/modasocial-black-friday-market-27-nov-2026
+DESCRIPTION:Fairs & festivals\nhttps://ma.to/event/modasocial-black-friday
+ -market-27-nov-2026\n\nModaSocial's Black Friday edition of its Fourth Fr
+ iday night market takes place at City Station in the Mission. Vintage sel
+ lers offer deals while local DJs spin through the afternoon and into the 
+ night. The market runs from 3pm to 9pm at 701 Valencia Street.
+END:VEVENT
+END:VCALENDAR
